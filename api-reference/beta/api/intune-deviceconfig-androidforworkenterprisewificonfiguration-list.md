@@ -3,7 +3,7 @@ title: "List androidForWorkEnterpriseWiFiConfigurations"
 description: "List properties and relationships of the androidForWorkEnterpriseWiFiConfiguration objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -112,6 +112,7 @@ Content-Length: 1918
   ]
 }
 ```
+
 
 
 

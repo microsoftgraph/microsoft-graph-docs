@@ -3,7 +3,7 @@ title: "Grant an appRoleAssignment to a group"
 description: "Grant an app role assignment to a group."
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "groups"
 author: "psignoret"
 ---
 
@@ -19,7 +19,7 @@ Use this API to assign an app role to a group. All direct members of the group w
 - `resourceId`: The `id` of the resource `servicePrincipal` which has defined the app role.
 - `appRoleId`: The `id` of the `appRole` (defined on the resource service principal) to assign to the group.
 
-Additional licenses might be required to [use a group to manage access to applications](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-saasapps).
+Additional licenses might be required to [use a group to manage access to applications](/azure/active-directory/users-groups-roles/groups-saasapps).
 
 ## Permissions
 
@@ -90,6 +90,10 @@ Content-Length: 110
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/group-create-approleassignment-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-create-approleassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

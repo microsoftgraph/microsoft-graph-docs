@@ -3,7 +3,7 @@ title: "List appRoleAssignments granted to a group"
 description: "Retrieve the list of appRoleAssignments that have been granted to a group."
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "groups"
 author: "psignoret"
 ---
 
@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/beta/groups/{id}/appRoleAssignments
 [!INCLUDE [sample-code](../includes/snippets/objc/group-get-approleassignments-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-get-approleassignments-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -126,3 +130,5 @@ Content-length: 306
   ]
 }
 -->
+
+

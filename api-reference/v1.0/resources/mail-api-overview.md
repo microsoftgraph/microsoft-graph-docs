@@ -10,8 +10,7 @@ doc_type: conceptualPageType
 # Use the Outlook mail REST API
 
 Microsoft Graph lets your app get authorized access to a user's Outlook mail data in a personal or organization account.
-With the [appropriate delegated or application permissions](/graph/permissions-reference), your app can access the mail data of
-the signed-in user or any user in a tenant. 
+With the appropriate delegated or application [mail permissions](/graph/permissions-reference#mail-permissions), your app can access the mail data of the signed-in user or any user in a tenant. For more information on access tokens, app registration, and delegated and application permissions, see [Authentication and authorization basics](/graph/auth/auth-concepts).
 
 [!INCLUDE [outlook-mailbox-type-support](../../includes/outlook-mailbox-type-support.md)]
 
@@ -60,7 +59,7 @@ The Microsoft Graph API also provides methods and actions that support common us
 | Organize messages in a mail folder hierarchy | [mailFolder](../resources/mailfolder.md)  | [Methods of mailFolder](../resources/mailfolder.md#methods) |
 | Categorize messages | [outlookCategory](../resources/outlookcategory.md) | [Methods of outlookCategory](../resources/outlookcategory.md#methods) |
 | Use Inbox rules to automate actions such as forwarding specific incoming messages | [messageRule](../resources/messagerule.md) | [Methods of messageRule](../resources/messagerule.md#methods) |
-| Get Internet message headers of a message | [message](../resources/message.md) | [Get the **internetMessageHeaders** property of a message](../api/message-get.md#example-2). |
+| Get Internet message headers of a message | [message](../resources/message.md) | [Get the **internetMessageHeaders** property of a message](../api/message-get.md#example-2-get-internet-message-headers). |
 | Search and filter messages | [message](../resources/message.md) | [Query parameters](/graph/query-parameters)  |
 | Get notified of changes to messages in a folder | [subscription](../resources/subscription.md) | [Working with webhooks in Microsoft Graph](../resources/webhooks.md) |
 | Synchronize messages or mail folder hierarchy | [message](../resources/message.md) | [Get incremental changes to messages in a folder](/graph/delta-query-messages) |
@@ -81,3 +80,4 @@ The mail API can open up new ways for you to engage with users:
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+

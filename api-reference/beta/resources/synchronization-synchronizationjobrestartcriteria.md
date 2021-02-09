@@ -4,7 +4,7 @@ description: "Defines the scope of the synchronizationJob: restart action."
 localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # synchronizationJobRestartCriteria resource type
@@ -34,8 +34,11 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "resetScope": "String"
+    "criteria": {
+        "resetScope": "String"
+    }
 }
+
 
 ```
 
@@ -51,3 +54,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

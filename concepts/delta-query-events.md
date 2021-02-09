@@ -1,7 +1,7 @@
 ---
 title: "Get incremental changes to events in a calendar view "
 description: "A calendar view is a collection of events in a date/time range from the default calendar (../me/calendarview) "
-author: "baywet"
+author: "davidmu1"
 localization_priority: Priority
 ms.custom: graphiamtop20
 ---
@@ -43,9 +43,9 @@ A GET request with the **delta** function returns either:
 - A `nextLink` (that contains a URL with a **delta** function call and a _skipToken_), or 
 - A `deltaLink` (that contains a URL with a **delta** function call and _deltaToken_).
 
-These tokens are [state tokens](delta-query-overview.md#state-tokens) which encode the refs/remotes/microsoftgraph/master
+These tokens are [state tokens](delta-query-overview.md#state-tokens) which encode the 
 _startDateTime_ and _endDateTime_ parameters, and any other query parameter 
-in your initial delta query GET request. 
+in your initial delta query GET request. You do not need to include these parameters in subsequent requests as they are encoded in the tokens.
 
 State tokens are completely opaque to the client. 
 To proceed with a round of change tracking, simply copy and apply the `nextLink` or 

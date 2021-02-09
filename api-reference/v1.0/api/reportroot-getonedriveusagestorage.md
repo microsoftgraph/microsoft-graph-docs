@@ -3,7 +3,7 @@ title: "reportRoot: getOneDriveUsageStorage"
 description: "Get the trend on the amount of storage you are using in OneDrive for Business."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -120,3 +120,4 @@ Report Refresh Date,Site Type,Storage Used (Byte),Report Date,Report Period
   "suppressions": [
   ]
 }-->
+

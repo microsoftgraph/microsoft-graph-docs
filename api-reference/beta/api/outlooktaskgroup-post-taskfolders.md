@@ -7,11 +7,14 @@ ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Create outlookTaskFolder
+# Create outlookTaskFolder (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-allup](../../includes/outlooktask-deprecate-allup.md)]
+
 
 Create an Outlook task folder under a specified [outlookTaskGroup](../resources/outlooktaskgroup.md).
 ## Permissions
@@ -99,3 +102,5 @@ Content-length: 151
   "suppressions": []
 }
 -->
+
+

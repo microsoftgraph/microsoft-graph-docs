@@ -33,7 +33,7 @@ GET /education/classes/{id}/assignments
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -86,6 +86,7 @@ Content-length: 344
   "value": [
     {
       "id": "19002",
+      "addedStudentAction": "String",
       "allowLateSubmissions": true,
       "allowStudentsToAddResourcesToSubmission": true,
       "assignDateTime": "2014-02-01T00:00:00Z",
@@ -121,6 +122,7 @@ Content-length: 344
           }
       },
       "lastModifiedDateTime": "2014-02-01T00:00:00Z",
+      "notificationChannelUrl": "String",
       "status": "published"
     }
   ]

@@ -2,7 +2,7 @@
 title: "mailboxSettings resource type"
 description: "Settings for the primary mailbox of the signed-in user."
 localization_priority: Normal
-author: "svpsiva"
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
@@ -69,3 +69,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

@@ -47,7 +47,8 @@ const event = {
       },
       type: "required"
     }
-  ]
+  ],
+  allowNewTimeProposals: true
 };
 
 let res = await client.api('/me/events')

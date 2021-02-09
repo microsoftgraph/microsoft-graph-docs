@@ -3,7 +3,7 @@ title: "domainDnsRecord resource type"
 description: "The DomainDnsRecord entity is used to present DNS records."
 localization_priority: Normal
 author: "adimitui"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
@@ -62,3 +62,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -3,7 +3,7 @@ title: "keyCredential resource type"
 description: "Contains a key credential associated with an application or a service principal. The **keyCredentials** property of the application and servicePrincipal entities is a collection of **keyCredential**."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 author: "sureshja"
 ---
 
@@ -65,3 +65,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

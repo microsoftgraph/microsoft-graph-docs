@@ -3,7 +3,7 @@ title: "Update icon"
 description: "Update the properties of icon object."
 localization_priority: Normal
 doc_type: apiPageType
-author: ""
+author: "ruoyingl"
 ms.prod: ""
 ---
 
@@ -92,3 +92,5 @@ Content-length: 39
   "suppressions": []
 }
 -->
+
+

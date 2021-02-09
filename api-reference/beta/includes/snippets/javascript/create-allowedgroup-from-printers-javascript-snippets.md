@@ -10,12 +10,12 @@ const options = {
 
 const client = Client.init(options);
 
-const printIdentity = {
+const group = {
   @odata.id: "https://graph.microsoft.com/beta/groups/{id}"
 };
 
 let res = await client.api('/print/shares/{id}/allowedGroups/$ref')
 	.version('beta')
-	.post(printIdentity);
+	.post(group);
 
 ```

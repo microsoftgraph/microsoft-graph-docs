@@ -3,7 +3,7 @@ title: "reportRoot: getSharePointSiteUsageFileCounts"
 description: "Get the total number of files across all sites and the number of active files. A file (user or system) is considered active if it has been saved, synced, modified, or shared within the specified time period."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -183,3 +183,5 @@ Content-Length: 255
   "suppressions": [
   ]
 }-->
+
+

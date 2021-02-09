@@ -3,7 +3,7 @@ title: "passwordCredential resource type"
 description: "Contains a password credential associated with an application or a service principal."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 author: "sureshja"
 ---
 
@@ -80,3 +80,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

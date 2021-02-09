@@ -3,7 +3,7 @@ title: "reportRoot: getYammerDeviceUsageUserCounts"
 description: "Get the number of daily users by device type."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -124,3 +124,4 @@ Report Refresh Date,Web,Windows Phone,Android Phone,iPhone,iPad,Other,Report Dat
   "suppressions": [
   ]
 }-->
+

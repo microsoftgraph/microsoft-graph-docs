@@ -3,7 +3,7 @@ title: "depEnrollmentProfile resource type"
 description: "The depEnrollmentProfile resource represents an Apple Device Enrollment Program (DEP) enrollment profile. This type of profile must be assigned to Apple DEP serial numbers before the corresponding devices can enroll via DEP."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -117,6 +117,7 @@ Here is a JSON representation of the resource.
   "enableSharedIPad": true
 }
 ```
+
 
 
 

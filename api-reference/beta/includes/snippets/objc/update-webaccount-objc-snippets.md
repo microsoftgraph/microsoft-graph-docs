@@ -12,14 +12,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphWebAccount *webAccount = [[MSGraphWebAccount alloc] init];
-[webAccount setDescription:@"description-value"];
-[webAccount setUserId:@"userId-value"];
-MSGraphServiceInformation *service = [[MSGraphServiceInformation alloc] init];
-[service setName:@"name-value"];
-[service setWebUrl:@"webUrl-value"];
-[webAccount setService:service];
-[webAccount setStatusMessage:@"statusMessage-value"];
-[webAccount setWebUrl:@"webUrl-value"];
+[webAccount setWebUrl:@"https://github.com/innocenty.popov"];
 
 NSError *error;
 NSData *webAccountData = [webAccount getSerializedDataWithError:&error];

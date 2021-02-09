@@ -23,6 +23,7 @@ const event = {
   isOnlineMeeting: true,
   onlineMeetingProvider: "teamsForBusiness",
   isReminderOn: true,
+  hideAttendees: false,
   categories: ["Red category"]
 };
 

@@ -30,7 +30,7 @@ Authentication providers implement the code required to acquire a token using th
 | | Interactive | Delegated Consumer/Org | [Interactive Provider](#InteractiveProvider) |
 
 
-## <a name="AuthCodeProvider"/>Authorization code provider
+## <a name="AuthCodeProvider" ></a>Authorization code provider
 
 The authorization code flow enables native and web apps to securely obtain tokens in the name of the user. To learn more, see [Microsoft identity platform and OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 
@@ -79,7 +79,7 @@ Not available, yet. Please vote for or open a [Microsoft Graph feature request](
 
 ---
 
-##  <a name="ClientCredentialsProvider"/>Client credentials provider
+##  <a name="ClientCredentialsProvider"></a>Client credentials provider
 
 The client credential flow enables service applications to run without user interaction. Access is based on the identity of the application. For more information, see [Microsoft identity platform and the OAuth 2.0 client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).
 
@@ -107,7 +107,7 @@ ClientCredentialProvider authProvider = new ClientCredentialProvider(
                                                     scopes,
                                                     clientSecret,
                                                     tenant,
-                                                    endpoint);
+                                                    NationalCloud.Global);
 ```
 
 # [Android](#tab/Android)
@@ -128,7 +128,7 @@ Not available, yet. Please support or open a [Microsoft Graph feature request](h
 
 ---
 
-##  <a name="OnBehalfOfProvider"/>On-behalf-of provider
+##  <a name="OnBehalfOfProvider"></a>On-behalf-of provider
 
 The on-behalf-of flow is applicable when your application calls a service/web API which in turns calls the Microsoft Graph API. Learn more by reading [Microsoft identity platform and OAuth 2.0 On-Behalf-Of flow](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
 
@@ -170,7 +170,7 @@ Not yet available. Please vote for or open a [Microsoft Graph feature request](h
 
 ---
 
-## <a name="ImplicitProvider"/>Implicit provider
+## <a name="ImplicitProvider"></a>Implicit provider
 
 The implicit grant flow is used in browser-based applications. For more information, see [Microsoft identity platform and Implicit grant flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow).
 
@@ -222,7 +222,7 @@ Not applicable.
 
 ---
 
-##  <a name="DeviceCodeProvider"/>Device code provider
+##  <a name="DeviceCodeProvider"></a>Device code provider
 
 The device code flow enables sign in to devices by way of another device. For details, see [Microsoft identity platform and the OAuth 2.0 device code flow](/azure/active-directory/develop/v2-oauth2-device-code).
 
@@ -264,7 +264,7 @@ Not yet available. Please vote for or open a [Microsoft Graph feature request](h
 
 ---
 
-##  <a name="IntegratedWindowsProvider"/>Integrated Windows provider
+##  <a name="IntegratedWindowsProvider"></a>Integrated Windows provider
 
 The integrated Windows flow provides a way for Windows computers to silently acquire an access token when they are domain joined. For details, see [Integrated Windows authentication](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Integrated-Windows-Authentication).
 
@@ -305,7 +305,7 @@ Not applicable.
 
 ---
 
-##  <a name="InteractiveProvider"/>Interactive provider
+##  <a name="InteractiveProvider"></a>Interactive provider
 
 The interactive flow is used by mobile applications (Xamarin and UWP) and desktops applications to call Microsoft Graph in the name of a user. For details, see [Acquiring tokens interactively](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Acquiring-tokens-interactively).
 
@@ -367,7 +367,7 @@ Not applicable.
 
 ---
 
-##  <a name="UsernamePasswordProvider"/>Username/password provider
+##  <a name="UsernamePasswordProvider"></a>Username/password provider
 
 The username/password provider allows an application to sign in a user by using their username and password. Use this flow only when you cannot use any of the other OAuth flows. For more information, see [Microsoft identity platform and the OAuth 2.0 resource owner password credential](/azure/active-directory/develop/v2-oauth-ropc)
 

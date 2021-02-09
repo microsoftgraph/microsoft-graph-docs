@@ -3,7 +3,7 @@ title: "Microsoft 365 groups activity reports"
 description: "You can use the Groups activity reports to gain insights into the activity of Microsoft 365 groups in your organization and see how many Microsoft 365 groups are being created and used."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: conceptualPageType
 ---
 
@@ -24,3 +24,4 @@ You can use the Groups activity reports to gain insights into the activity of Mi
 | [Get group counts](../api/reportroot-getoffice365groupsactivitygroupcounts.md) | Stream          | Get the daily total number of groups and how many of them were active based on email conversations, Yammer posts, and SharePoint file activities. |
 | [Get storage](../api/reportroot-getoffice365groupsactivitystorage.md) | Stream          | Get the total storage used across all group mailboxes and group sites. |
 | [Get file counts](../api/reportroot-getoffice365groupsactivityfilecounts.md) | Stream          | Get the total number of files and how many of them were active across all group sites associated with a Microsoft 365 group. |
+

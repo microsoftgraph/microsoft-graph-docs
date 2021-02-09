@@ -3,7 +3,7 @@ title: "List appRoleAssignments granted to a group"
 description: "Retrieve the list of appRoleAssignments that have been granted to a group."
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "groups"
 author: "psignoret"
 ---
 
@@ -128,3 +128,4 @@ Content-length: 306
   ]
 }
 -->
+

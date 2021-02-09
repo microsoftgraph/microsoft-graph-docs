@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of an [onlineMeeting](../resources/onlinemeeting.md) object.
 
-> **Note:** The `GET` method is currently only supported for a [VTC conference id](https://docs.microsoft.com/microsoftteams/cloud-video-interop-for-teams-set-up). These IDs are generated for Cloud-Video-Interop licensed users and this method is used to get the details to join the meeting.
+> **Note:** The `GET` method is currently only supported for a [VTC conference id](/microsoftteams/cloud-video-interop-for-teams-set-up). These IDs are generated for Cloud-Video-Interop licensed users and this method is used to get the details to join the meeting.
 
 ## Permissions
 
@@ -149,7 +149,13 @@ Content-Length: 1574
   },
   "startDateTime": "2018-05-30T00:30:00Z",
   "subject": "Test Meeting.",
-  "videoTeleconferenceId": "123456789"
+  "videoTeleconferenceId": "123456789",
+  "lobbyBypassSettings": {
+    "scope": "everyone",
+    "isDialInBypassEnabled": true
+  },
+  "isEntryExitAnnounced": true,
+  "allowedPresenters": "everyone"
 }
 ```
 

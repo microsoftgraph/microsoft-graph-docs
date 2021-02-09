@@ -3,7 +3,7 @@ title: "macOsVppAppAssignedLicense resource type"
 description: "MacOS Volume Purchase Program license assignment. This class does not support Create, Delete, or Update."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -56,6 +56,7 @@ Here is a JSON representation of the resource.
   "userPrincipalName": "String"
 }
 ```
+
 
 
 

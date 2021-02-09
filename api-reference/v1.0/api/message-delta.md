@@ -2,7 +2,7 @@
 title: "message: delta"
 description: "Get a set of messages that have been added, deleted, or updated in a specified folder."
 localization_priority: Priority
-author: "svpsiva"
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -164,3 +164,4 @@ Content-length: 337
   "suppressions": [
   ]
 }-->
+

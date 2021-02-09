@@ -3,7 +3,7 @@ title: "importedAppleDeviceIdentity resource type"
 description: "The importedAppleDeviceIdentity resource represents the imported device identity of an Apple device ."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -34,7 +34,7 @@ The importedAppleDeviceIdentity resource represents the imported device identity
 |serialNumber|String|Device serial number|
 |requestedEnrollmentProfileId|String|Enrollment profile Id admin intends to apply to the device during next enrollment|
 |requestedEnrollmentProfileAssignmentDateTime|DateTimeOffset|The time enrollment profile was assigned to the device|
-|isSupervised|Boolean|Indicates if the Apple device is supervised. More information is at: https://support.apple.com/en-us/HT202837|
+|isSupervised|Boolean|Indicates if the Apple device is supervised. More information is at: https://support.apple.com/HT202837|
 |discoverySource|[discoverySource](../resources/intune-enrollment-discoverysource.md)|Apple device discovery source. Possible values are: `unknown`, `adminImport`, `deviceEnrollmentProgram`.|
 |isDeleted|Boolean|Indicates if the device is deleted from Apple Business Manager|
 |createdDateTime|DateTimeOffset|Created Date Time of the device|
@@ -71,6 +71,7 @@ Here is a JSON representation of the resource.
   "platform": "String"
 }
 ```
+
 
 
 

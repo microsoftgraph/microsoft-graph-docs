@@ -35,8 +35,11 @@ Represents a set of configurations used to synchronize education entities and ro
 
 | Property                             | Type                                                   | Description                                                                                                                       |
 | :----------------------------------- | :----------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------- |
-| displayName                          | string                                                 | Name of the configuration profile for syncing identities.                                                                         |
+| id                                   | String                                                 | The unique identifier for the resource. (read-only)                                                                               |
+| displayName                          | String                                                 | Name of the configuration profile for syncing identities.                                                                         |
 | dataProvider                         | [educationSynchronizationDataProvider]                 | The data provider used for the profile.                                                                                           |
+| expirationDate                       | Date                                                   | The date the profile should be considered expired and cease syncing. When `null`. the profile will never expire. (optional)       |
+| handleSpecialCharacterConstraint     | Bool                                                   | Determines if School Data Sync should automatically replace unsupported special characters while syncing from source.             |
 | identitySynchronizationConfiguration | [educationIdentitySynchronizationConfiguration]        | Determines how the Profile should [create new][fullsync] or [match existing][dirsync] AAD Users.                                  |
 | licensesToAssign                     | [educationSynchronizationLicenseAssignment] collection | License setup configuration.                                                                                                      |
 | state                                | educationSynchronizationProfileState                   | The state of the profile. Possible values are: `provisioning`, `provisioned`, `provisioningFailed`, `deleting`, `deletionFailed`. |
@@ -52,11 +55,11 @@ Represents a set of configurations used to synchronize education entities and ro
 
 Each [educationSynchronizationProfile] must specify one of the follow data providers to use as the synchronization source.
 
-| Data Provider                       | Description                                                                                        |
-| :---------------------------------- | :------------------------------------------------------------------------------------------------- |
-| [educationCsvDataProvider]          | CSV files uploaded to the Profile's [SAS URL](../api/educationsynchronizationprofile-uploadurl.md) |
+| Data Provider                                                             | Description                                                                                        |
+| :------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------- |
+| [educationCsvDataProvider]                                                | CSV files uploaded to the Profile's [SAS URL](../api/educationsynchronizationprofile-uploadurl.md) |
 | [educationOneRosterApiDataProvider](educationonerosterapidataprovider.md) | OneRoster v1.1 API                                                                                 |
-| [educationPowerSchoolDataProvider]  | PowerSchool API                                                                                    |
+| [educationPowerSchoolDataProvider]                                        | PowerSchool API                                                                                    |
 
 ## JSON representation
 
@@ -98,7 +101,8 @@ The following is a JSON representation of the **educationSynchronizationProfile*
       "@odata.type": "microsoft.graph.educationSynchronizationLicenseAssignment"
     }
   ],
-  "handleSpecialCharacterConstraint": "Boolean"
+  "handleSpecialCharacterConstraint": "Boolean",
+  "expirationDate": "Date"
 }
 ```
 
@@ -127,3 +131,5 @@ The following is a JSON representation of the **educationSynchronizationProfile*
       "Error: microsoft.graph.educationSynchronizationProfile/dataProvider:\r\n      Referenced type microsoft.graph.educationSynchronizationDataProvider is not defined in the doc set! Potential suggestion: UNKNOWN"
   ]
 }-->
+
+

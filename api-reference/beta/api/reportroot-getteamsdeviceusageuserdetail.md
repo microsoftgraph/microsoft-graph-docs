@@ -3,7 +3,7 @@ title: "reportRoot: getTeamsDeviceUsageUserDetail"
 description: "Get details about Microsoft Teams device usage by user."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -199,3 +199,5 @@ Content-Length: 374
   "suppressions": [
   ]
 }-->
+
+

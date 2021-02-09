@@ -4,7 +4,7 @@ description: "Contains a collection of values for the operand."
 localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # filterOperand resource type
@@ -51,3 +51,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

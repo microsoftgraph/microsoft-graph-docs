@@ -1,7 +1,7 @@
 ---
 title: "Create Message"
 description: "Use this API to create a new Message in a mailfolder."
-author: "svpsiva"
+author: "abheek-das"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -117,3 +117,4 @@ Content-length: 248
   "suppressions": [
   ]
 }-->
+

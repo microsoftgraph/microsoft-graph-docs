@@ -37,3 +37,4 @@ Here is a JSON representation of the resource
 | displayName      	| String	      | The display name of the user who shared the item. |
 | id     		  | String        | The id of the user who shared the item.     |
 | address      	      | String	    | The email address of the user who shared the item.  |
+

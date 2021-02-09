@@ -12,7 +12,9 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphPlannerPlan *plannerPlan = [[MSGraphPlannerPlan alloc] init];
-[plannerPlan setOwner:@"ebf3b108-5234-4e22-b93d-656d7dae5874"];
+MSGraphPlannerPlanContainer *container = [[MSGraphPlannerPlanContainer alloc] init];
+[container setUrl:@"https://graph.microsoft.com/beta/groups/ebf3b108-5234-4e22-b93d-656d7dae5874"];
+[plannerPlan setContainer:container];
 [plannerPlan setTitle:@"title-value"];
 
 NSError *error;

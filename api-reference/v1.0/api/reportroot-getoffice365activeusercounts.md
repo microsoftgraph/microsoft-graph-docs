@@ -3,7 +3,7 @@ title: "reportRoot: getOffice365ActiveUserCounts"
 description: "Get the count of daily active users in the reporting period by product."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -124,3 +124,4 @@ Report Refresh Date,Office 365,Exchange,OneDrive,SharePoint,Skype For Business,Y
   "suppressions": [
   ]
 }-->
+

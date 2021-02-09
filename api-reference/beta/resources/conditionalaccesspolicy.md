@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Azure Active Directory conditional access policy. Conditional access policies are custom rules that define an access scenario. For more information, see the [Conditional access documentation](https://docs.microsoft.com/azure/active-directory/conditional-access/).
+Represents an Azure Active Directory conditional access policy. Conditional access policies are custom rules that define an access scenario. For more information, see the [Conditional access documentation](/azure/active-directory/conditional-access/).
 
 ## Methods
 
@@ -56,7 +56,6 @@ The following is a JSON representation of the resource.
     "grantControls"
   ],
   "@odata.type": "microsoft.graph.conditionalAccessPolicy",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

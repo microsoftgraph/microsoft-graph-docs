@@ -3,7 +3,7 @@ title: "Get androidStoreApp"
 description: "Read properties and relationships of the androidStoreApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1511
+Content-Length: 1616
 
 {
   "value": {
@@ -94,6 +94,8 @@ Content-Length: 1511
       "Role Scope Tag Ids value"
     ],
     "dependentAppCount": 1,
+    "supersedingAppCount": 3,
+    "supersededAppCount": 2,
     "packageId": "Package Id value",
     "appIdentifier": "App Identifier value",
     "appStoreUrl": "https://example.com/appStoreUrl/",
@@ -112,11 +114,14 @@ Content-Length: 1511
       "v7_1": true,
       "v8_0": true,
       "v8_1": true,
-      "v9_0": true
+      "v9_0": true,
+      "v10_0": true,
+      "v11_0": true
     }
   }
 }
 ```
+
 
 
 

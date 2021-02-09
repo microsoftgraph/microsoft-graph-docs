@@ -49,12 +49,8 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `204, No Content` response code. It does not return anything in the response body.
 
-## See also
-
-- [How to complete an access review](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-complete-access-review)
-
 ## Example
-##### Request
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -76,9 +72,13 @@ POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F0
 [!INCLUDE [sample-code](../includes/snippets/objc/apply-accessreview-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/apply-accessreview-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
+### Response
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
@@ -101,3 +101,7 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+## See also
+
+- [How to complete an access review](/azure/active-directory/active-directory-azure-ad-controls-complete-access-review)

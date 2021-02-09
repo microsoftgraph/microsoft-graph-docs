@@ -3,7 +3,7 @@ title: "reportRoot: getYammerActivityUserDetail"
 description: "Get details about Yammer activity by user."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -157,3 +157,4 @@ Report Refresh Date,User Principal Name,Display Name,User State,State Change Dat
   "suppressions": [
   ]
 }-->
+

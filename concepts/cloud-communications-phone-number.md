@@ -12,7 +12,7 @@ This article describes how to create a bot that is reachable through a phone num
 
 - **Application** – An application that is hosted on Azure, also referred to as a **bot**.
 
-- **Application instance** – A disabled-user object that can be assigned to a phone number that can be used by a bot. This is also known as a [resource account](https://docs.microsoft.com/microsoftteams/manage-resource-accounts). This is the only way a phone number can be assigned to a bot.
+- **Application instance** – A disabled-user object that can be assigned to a phone number that can be used by a bot. This is also known as a [resource account](/microsoftteams/manage-resource-accounts). This is the only way a phone number can be assigned to a bot.
 
 One application can have multiple application instances, and each tenant can have multiple application instances, as shown in the following image.
 
@@ -53,16 +53,15 @@ When the application instance is created, use the sync cmdlet.
 
 ### Assign a virtual user license to your application instance
 
-Assign a virtual user license to your application instance. For details, see [Phone system virtual user license](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/virtual-user).
+Assign a virtual user license to your application instance. For details, see [Phone system virtual user license](/microsoftteams/teams-add-on-licensing/virtual-user).
 
 ### Assign a phone number to the application instance (only tenant admin)
 
-To assign the phone number to the application instance, the tenant addmin:
+To assign the phone number to the application instance, the tenant admin:
 
-1. Signs in to the Skype for Business admin center as a tenant admin
-2. Goes to **Admin center** > **Teams and Skype** > **Skype legacy admin**.
-3. Goes to **Voice** > **Phone numbers**
-4. Assigns a service phone number (+11D format) using the following cmdlet.
+1. Signs in to the Teams admin center as a tenant admin.
+2. Goes to **Teams Admin center** > **Voice** > **Phone Numbers**.
+3. Assigns a service phone number (+11D format) using the following cmdlet.
 
   `PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <user@contoso.com> -TelephoneNumber <phone_number>`
 
@@ -84,4 +83,3 @@ After unassigning the number, you can assign a different number to the bot by us
 
 - [Incident bot sample](https://github.com/microsoftgraph/microsoft-graph-comms-samples/tree/master/Samples/BetaSamples/RemoteMediaSamples/IncidentBot). 
  - For details about how to deploy, see [Deploying the sample](https://github.com/microsoftgraph/microsoft-graph-comms-samples/blob/master/Samples/BetaSamples/RemoteMediaSamples/README.md#deploying-the-sample).
-

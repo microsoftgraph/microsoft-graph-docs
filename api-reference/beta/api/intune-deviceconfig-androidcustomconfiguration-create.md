@@ -3,7 +3,7 @@ title: "Create androidCustomConfiguration"
 description: "Create a new androidCustomConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -74,7 +74,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1241
+Content-length: 1269
 
 {
   "@odata.type": "#microsoft.graph.androidCustomConfiguration",
@@ -111,7 +111,8 @@ Content-length: 1241
       "@odata.type": "microsoft.graph.omaSetting",
       "displayName": "Display Name value",
       "description": "Description value",
-      "omaUri": "Oma Uri value"
+      "omaUri": "Oma Uri value",
+      "isEncrypted": true
     }
   ]
 }
@@ -122,7 +123,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1413
+Content-Length: 1441
 
 {
   "@odata.type": "#microsoft.graph.androidCustomConfiguration",
@@ -162,11 +163,13 @@ Content-Length: 1413
       "@odata.type": "microsoft.graph.omaSetting",
       "displayName": "Display Name value",
       "description": "Description value",
-      "omaUri": "Oma Uri value"
+      "omaUri": "Oma Uri value",
+      "isEncrypted": true
     }
   ]
 }
 ```
+
 
 
 

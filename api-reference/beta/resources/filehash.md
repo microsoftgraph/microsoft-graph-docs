@@ -4,7 +4,7 @@ description: "Contains stateful information about file hashes (cryptographic and
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "preetikr"
 ---
 
 # fileHash resource type
@@ -49,3 +49,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

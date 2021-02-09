@@ -3,7 +3,7 @@ title: "reportRoot: getEmailAppUsageUserDetail"
 description: "Get details about which activities users performed on the various email apps."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -213,3 +213,5 @@ Content-Length: 515
   "suppressions": [
   ]
 }-->
+
+

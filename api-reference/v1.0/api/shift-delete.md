@@ -23,8 +23,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Schedule.Read.All, Schedule.ReadWrite.All |
 
-> **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
-
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -109,3 +107,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+

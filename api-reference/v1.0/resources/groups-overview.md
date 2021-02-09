@@ -13,9 +13,9 @@ Groups are collections of [users](user.md) and other principals who share access
 
 > **Note**: Groups can only be created through work or school accounts. Personal Microsoft accounts don't support groups.
 
-| Type              | Use case | groupType | mail-enabled | security-enabled | Can be created and managed via API? |
+| Type              | Use case | groupTypes | mailEnabled | securityEnabled | Created and managed via API |
 |-------------------|----------|-----------|--------------|------------------|--------------------------------|
-| [Microsoft 365 groups](#microsoft-365-groups) | Facilitating user collaboration with shared Microsoft online resources. | `["Unified"]` | `true` | `false` | Yes |
+| [Microsoft 365 groups](#microsoft-365-groups) | Facilitating user collaboration with shared Microsoft online resources. | `["Unified"]` | `true` | `true` or `false` | Yes |
 | [Security groups](#security-groups-and-mail-enabled-security-groups) | Controlling user access to in-app resources. | `[]` | `false` | `true` | Yes |
 | [Mail-enabled security groups](#security-groups-and-mail-enabled-security-groups) | Controlling user access to in-app resources, with a shared group mailbox. | `[]` | `true` | `true` | No |
 | Distribution groups | Distributing mail to the members of the group. It is recommended to use Microsoft 365 groups due to the richer set of resources it provides. | `[]` | `true` | `false` | No |
@@ -67,7 +67,7 @@ To learn more about Microsoft 365 groups and the administrator experiences, see 
 
 Security groups are for controlling user access to resources. By checking whether a user is a member of a security group, your app can make authorization decisions when that user is trying to access some secure resources in your app. Security groups can have users and other security groups as members.
 
-Mail-enabled security groups are used in the same way that security groups are, but with the added feature of a shared mailbox for the groups. Mail-enabled security groups can't be created through the API, but other group operations work.  Mail-enabled security groups are read only. Learn more in the [Manage mail-enabled security groups Exchange article](https://technet.microsoft.com/library/bb123521%28v=exchg.160%29.aspx).
+Mail-enabled security groups are used in the same way that security groups are, but with the added feature of a shared mailbox for the groups. Mail-enabled security groups can't be created through the API, but other group operations work.  Mail-enabled security groups are read only. Learn more in the [Manage mail-enabled security groups Exchange article](/Exchange/recipients/mail-enabled-security-groups).
 
 ### Security group example
 
@@ -93,7 +93,7 @@ The following is a JSON representation of a security group.
 ```
 ## Dynamic membership
 
-All types of groups can have dynamic membership rules that automatically add or remove members from the group based on user properties. For example, a "Marketing employees" group would include every user with the department property set to "Marketing", so that new marketing employees are automatically added to the group and employees who leave the department are automatically removed from the group. This rule can be specified in a "membershipRule" field during group creation as `"membershipRule": 'user.department -eq "Marketing"'`. GroupType must also include `"DynamicMembership"`. The following request creates a new Microsoft 365 group for the marketing employees:
+All types of groups can have dynamic membership rules that automatically add or remove members from the group based on user properties. For example, a "Marketing employees" group would include every user with the department property set to "Marketing", so that new marketing employees are automatically added to the group and employees who leave the department are automatically removed from the group. This rule can be specified in a "membershipRule" field during group creation as `"membershipRule": 'user.department -eq "Marketing"'`. GroupTypes must also include `"DynamicMembership"`. The following request creates a new Microsoft 365 group for the marketing employees:
 
 ```http
 POST https://graph.microsoft.com/beta/groups
@@ -107,7 +107,7 @@ POST https://graph.microsoft.com/beta/groups
     "mailEnabled": true,
     "mailNickname": "marketing",
     "securityEnabled": false,
-    "membershipRule": 'user.department -eq "Marketing"',
+    "membershipRule": "user.department -eq \"Marketing\"",
     "membershipRuleProcessingState": "on"
 }
 ```
@@ -122,7 +122,7 @@ Microsoft 365 groups in Yammer are used to facilitate user collaboration through
 
 ## Group-based licensing
 
-You can use group-based licensing to assign one or more product licenses to an Azure AD group. Azure AD ensures that the licenses are assigned to all members of the group. Any new members who join the group are assigned the appropriate licenses. When they leave the group, those licenses are removed. The feature can only be used with security groups and Microsoft 365 groups that have `securityEnabled=TRUE`. To learn more about group-based licensing, see [What is group-based licensing in Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
+You can use group-based licensing to assign one or more product licenses to an Azure AD group. Azure AD ensures that the licenses are assigned to all members of the group. Any new members who join the group are assigned the appropriate licenses. When they leave the group, those licenses are removed. The feature can only be used with security groups and Microsoft 365 groups that have `securityEnabled=TRUE`. To learn more about group-based licensing, see [What is group-based licensing in Azure Active Directory?](/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal).
 
 ## Common use cases
 

@@ -33,7 +33,6 @@ The following is a JSON definition of the resource.
 <!--{
   "blockType": "resource",
   "optionalProperties": [],
-  "baseType": "",
   "@odata.type": "microsoft.graph.regionalFormatOverrides"
 }-->
 
@@ -55,3 +54,5 @@ The following is a JSON definition of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

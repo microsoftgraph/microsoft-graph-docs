@@ -3,7 +3,7 @@ title: "List assigned homeRealmDiscoveryPolicies"
 description: "List homeRealmDiscoveryPolicies that are assigned to a service principal."
 localization_priority: Normal
 author: "hpsin"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
@@ -122,3 +122,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

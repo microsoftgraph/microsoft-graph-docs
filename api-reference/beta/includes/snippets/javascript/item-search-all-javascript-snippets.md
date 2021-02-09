@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/drive/search(q='{search-query}')')
+let res = await client.api('/me/drive/search(q='Contoso Project')')
 	.version('beta')
 	.get();
 

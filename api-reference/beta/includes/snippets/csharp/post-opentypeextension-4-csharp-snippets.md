@@ -13,7 +13,7 @@ var post = new Post
 		ContentType = BodyType.Html,
 		Content = "<html><body><div><div><div><div>When and where? </div></div></div></div></body></html>"
 	},
-	Extensions = (IPostExtensionsCollectionPage)new List<Extension>()
+	Extensions = new PostExtensionsCollectionPage()
 	{
 		new OpenTypeExtension
 		{

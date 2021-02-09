@@ -15,12 +15,12 @@ This article explains how to get those values for the built-in tab types.
 
 ## Custom tabs
 
-To use Microsoft Graph to configure a tab associated with a [tab provider](https://docs.microsoft.com/microsoftteams/platform/concepts/tabs/tabs-overview) that you wrote,
+To use Microsoft Graph to configure a tab associated with a [tab provider](/microsoftteams/platform/concepts/tabs/tabs-overview) that you wrote,
 identify the `entityId`, `contentUrl`, `removeUrl`, and `websiteUrl`
-that the app's [configuration UI provides to Microsoft Teams](https://docs.microsoft.com/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest),
+that the app's [configuration UI provides to Microsoft Teams](/javascript/api/@microsoft/teams-js/microsoftteams.settings.settings?view=msteams-client-js-latest),
 and pass the same `entityId`, `contentUrl`, `removeUrl`, and `websiteUrl` values to Microsoft Graph.
 
-The `teamsAppId` is the same as the `id` in the [app manifest schema for Microsoft Teams](https://docs.microsoft.com/microsoftteams/platform/resources/schema/manifest-schema).
+The `teamsAppId` is the same as the `id` in the [app manifest schema for Microsoft Teams](/microsoftteams/platform/resources/schema/manifest-schema).
 
 ## Website tabs
 
@@ -85,7 +85,7 @@ The following is the configuration.
 
 ### Example: Create a configured document library tab
 
-The following example creates a configured Word tab.
+The following example creates a configured document library tab.
 
 ```http
 POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
@@ -104,13 +104,13 @@ POST https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/tabs
 ## Wiki tabs
 
 For wiki tabs, the `teamsAppId` is `com.microsoft.teamspace.tab.wiki`.
-Wiki tabs do not support configuration through Graph.
-Note, however, that there isn't much to configure --
-in an un-configured wiki tab, the first user just needs to select **Set up tab** to configure it.
+Wiki tabs do not support configuration through Microsoft Graph.
+Note, however, that there isn't much to configure -
+in an unconfigured wiki tab, the first user just needs to select **Set up tab** to configure it.
 
 ## Planner tabs
 
-For Planner tabs, the teamsAppId is `com.microsoft.teamspace.tab.planner`. 
+For Planner tabs, the `teamsAppId` is `com.microsoft.teamspace.tab.planner`. 
 Configuration is not supported.
 
 ## Microsoft Stream tabs

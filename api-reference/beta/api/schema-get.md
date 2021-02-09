@@ -80,6 +80,10 @@ GET https://graph.microsoft.com/beta/external/connections/contosohr/schema
 [!INCLUDE [sample-code](../includes/snippets/objc/get-schema-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-schema-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -103,16 +107,21 @@ Content-type: application/json
   "baseType": "microsoft.graph.externalItem",
   "properties": [
     {
-      "name": "title",
+      "name": "ticketTitle",
       "type": "String",
       "isSearchable": true,
-      "isRetrievable": true
+      "isRetrievable": true,
+      "labels": [
+        "title"
+      ]
     },
     {
       "name": "priority",
       "type": "String",
       "isQueryable": true,
-      "isRetrievable": true
+      "isRetrievable": true,
+      "isRefinable": true,
+      "isSearchable": false
     },
     {
       "name": "assignee",
@@ -132,3 +141,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

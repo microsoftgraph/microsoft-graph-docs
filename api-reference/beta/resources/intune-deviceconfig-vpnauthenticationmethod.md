@@ -3,7 +3,7 @@ title: "vpnAuthenticationMethod enum type"
 description: "VPN Authentication Method."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -24,6 +24,8 @@ VPN Authentication Method.
 |usernameAndPassword|1|Use username and password for authentication.|
 |sharedSecret|2|Use Shared Secret for Authentication.  Only valid for iOS IKEv2.|
 |derivedCredential|3|Use Derived Credential for Authentication.|
+|azureAD|4|Use Azure AD for authentication.|
+
 
 
 

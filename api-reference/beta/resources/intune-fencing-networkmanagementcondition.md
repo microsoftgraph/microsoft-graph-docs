@@ -3,7 +3,7 @@ title: "networkManagementCondition resource type"
 description: "Contains the information to define a network management condition."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -66,6 +66,7 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
 
 
 

@@ -3,7 +3,7 @@ title: "userExperienceAnalyticsBaseline resource type"
 description: "The user experience analytics baseline entity contains baseline values against which to compare the user experience analytics scores."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -40,6 +40,9 @@ The user experience analytics baseline entity contains baseline values against w
 |:---|:---|:---|
 |deviceBootPerformanceMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|The user experience analytics device boot performance metrics.|
 |bestPracticesMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|The user experience analytics best practices metrics.|
+|rebootAnalyticsMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|The user experience analytics reboot analytics metrics.|
+|resourcePerformanceMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|The user experience analytics resource performance metrics.|
+|appHealthMetrics|[userExperienceAnalyticsCategory](../resources/intune-devices-userexperienceanalyticscategory.md)|The user experience analytics app health metrics.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -59,6 +62,7 @@ Here is a JSON representation of the resource.
   "createdDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

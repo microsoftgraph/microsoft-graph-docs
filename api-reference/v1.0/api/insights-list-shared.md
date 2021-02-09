@@ -38,7 +38,7 @@ GET https://graph.microsoft.com/v1.0/me/insights/shared/{id}/resource
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 You can use the `$filter` query parameter to filter shared items. For example, based on **type**:
 
@@ -112,4 +112,3 @@ Here is an example of the response. Note: The response object shown here may be 
                 "type: "type-value" 
 }
 ```
-

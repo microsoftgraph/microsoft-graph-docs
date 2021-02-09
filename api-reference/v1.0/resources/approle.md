@@ -3,7 +3,7 @@ title: "appRole resource type"
 description: "Represents an application role that may be requested by a client application calling another application or that may be used to assign an application to users or groups in a specified application role."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 author: "sureshja"
 ---
 
@@ -21,7 +21,7 @@ With [appRoleAssignments](approleassignment.md), app roles can be assigned to us
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|allowedMemberTypes|String collection|Specifies whether this app role can be assigned to users and groups (by setting to `["User"]`), to other application's (by setting to `["Application"]`, or both (by setting to `["User", "Application"]`). App roles supporting assignment of other applications' service principals are also known as [application permissions](/graph/auth/auth-concepts#microsoft-graph-permissions).|
+|allowedMemberTypes|String collection|Specifies whether this app role can be assigned to users and groups (by setting to `["User"]`), to other application's (by setting to `["Application"]`, or both (by setting to `["User", "Application"]`). App roles supporting assignment to other applications' service principals are also known as [application permissions](/graph/auth/auth-concepts#microsoft-graph-permissions). The "Application" value is only supported for app roles defined on **application** entities.|
 |description|String|The description for the app role. This is displayed when the app role is being assigned and, if the app role functions as an application permission, during  consent experiences.|
 |displayName|String|Display name for the permission that appears in the app role assignment and consent experiences.|
 |id|Guid|Unique role identifier inside the **appRoles** collection. When creating a new app role, a new Guid identifier must be provided. |
@@ -65,3 +65,4 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+

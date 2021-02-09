@@ -3,7 +3,7 @@ title: "Create deviceConfigurationConflictSummary"
 description: "Create a new deviceConfigurationConflictSummary object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -65,7 +65,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurationConflictSummary
 Content-type: application/json
-Content-length: 361
+Content-length: 398
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationConflictSummary",
@@ -73,7 +73,8 @@ Content-length: 361
     {
       "@odata.type": "microsoft.graph.settingSource",
       "id": "Id value",
-      "displayName": "Display Name value"
+      "displayName": "Display Name value",
+      "sourceType": "deviceIntent"
     }
   ],
   "contributingSettings": [
@@ -88,7 +89,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 410
+Content-Length: 447
 
 {
   "@odata.type": "#microsoft.graph.deviceConfigurationConflictSummary",
@@ -96,7 +97,8 @@ Content-Length: 410
     {
       "@odata.type": "microsoft.graph.settingSource",
       "id": "Id value",
-      "displayName": "Display Name value"
+      "displayName": "Display Name value",
+      "sourceType": "deviceIntent"
     }
   ],
   "id": "d5f22c23-2c23-d5f2-232c-f2d5232cf2d5",
@@ -106,6 +108,7 @@ Content-Length: 410
   "deviceCheckinsImpacted": 6
 }
 ```
+
 
 
 

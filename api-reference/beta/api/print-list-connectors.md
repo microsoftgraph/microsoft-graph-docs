@@ -1,5 +1,5 @@
 ---
-title: Get connectors
+title: List printConnectors
 description: Retrieve a list of connectors.
 author: braedenp-msft
 localization_priority: Normal
@@ -7,22 +7,24 @@ ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# List connectors
+# List printConnectors
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of connectors.
+Retrieve a list of print connectors.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table. The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
-|Delegated (work or school account)| Users.Read.All |
+|Delegated (work or school account)| PrintConnector.Read.All, PrintConnector.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application|Not Supported.|
+|Application| Not Supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -34,7 +36,7 @@ GET /print/connectors
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
 
 ### Exceptions
-Some operators are not supported: `$count`, `$orderby`, `$search`, `$filter`.
+Some operators are not supported: `$count`, `$search`, `$filter`.
 
 ## Request headers
 | Name      |Description|
@@ -44,9 +46,9 @@ Some operators are not supported: `$count`, `$orderby`, `$search`, `$filter`.
 ## Request body
 Do not supply a request body for this method.
 ## Response
-If successful, this method returns a `200 OK` response code and collection of [connector](../resources/printconnector.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [printConnector](../resources/printconnector.md) objects in the response body.
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -69,9 +71,13 @@ GET https://graph.microsoft.com/beta/print/connectors
 [!INCLUDE [sample-code](../includes/snippets/objc/get-connectors-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-connectors-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
+### Response
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- {

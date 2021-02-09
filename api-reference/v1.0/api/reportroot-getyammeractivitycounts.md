@@ -3,7 +3,7 @@ title: "reportRoot: getYammerActivityCounts"
 description: "Get the trends on the amount of Yammer activity in your organization by how many messages were posted, read, and liked."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -121,3 +121,4 @@ Report Refresh Date,Liked,Posted,Read,Report Date,Report Period
   "suppressions": [
   ]
 }-->
+

@@ -4,7 +4,7 @@ description: "Performs synchronization by periodically running in the background
 localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # synchronizationJob resource type
@@ -29,7 +29,7 @@ Performs synchronization by periodically running in the background, polling for 
 |[Get synchronizationSchema](../api/synchronization-synchronizationschema-get.md)    |[synchronizationSchema](synchronization-synchronizationschema.md)   |Retrieve the job's effective synchronization schema.|
 |[Update synchronizationSchema](../api/synchronization-synchronizationschema-update.md)    |None   |Update the job's synchronization schema. |
 |[Validate credentials](../api/synchronization-synchronizationjob-validatecredentials.md)|None|Test provided credentials against target directory.|
-
+|[provisionOnDemand](../api/synchronization-synchronizationjob-provision-on-demand.md)|[synchronizationJobApplicationParameters](../resources/synchronization-synchronizationjobapplicationparameters.md) collection|Represents the objects that will be provisioned and the synchronization rules executed. The resource is primarily used for on-demand provisioning. |
 ## Properties
 
 | Property      | Type      | Description    |
@@ -81,3 +81,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

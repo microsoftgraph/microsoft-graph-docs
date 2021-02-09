@@ -3,7 +3,7 @@ title: "servicePrincipal: checkMemberGroups"
 description: "Check for membership in the specified list of groups. Returns from the list those groups of which the service principal has a direct or transitive membership."
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 author: "sureshja"
 ---
 
@@ -81,6 +81,10 @@ Content-length: 44
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-checkmembergroups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-checkmembergroups-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -117,3 +121,6 @@ Content-length: 39
   ]
 }
 -->
+
+
+

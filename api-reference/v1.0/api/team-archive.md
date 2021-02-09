@@ -28,7 +28,9 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application |TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application | TeamSettings.ReadWrite.Group*, TeamSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+
+> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
@@ -49,7 +51,7 @@ In the request, you may _optionally_ include the `shouldSetSpoSiteReadOnlyForMem
     "shouldSetSpoSiteReadOnlyForMembers": true
 }
 ```
-This optional parameter defines whether to set permissions for team members to read-only on the Sharepoint Online site associated with the team. Setting it to false or omitting the body altogether will result in this step being skipped.
+This optional parameter defines whether to set permissions for team members to read-only on the SharePoint Online site associated with the team. Setting it to false or omitting the body altogether will result in this step being skipped.
 
 >[!IMPORTANT]
 >The `shouldSetSpoSiteReadOnlyForMembers` parameter is not supported in the application context.
@@ -110,3 +112,4 @@ Content-Length: 0
   "section": "documentation",
   "tocPath": ""
 }-->
+

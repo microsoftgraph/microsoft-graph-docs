@@ -3,7 +3,7 @@ title: "generateApplePushNotificationCertificateSigningRequest action"
 description: "Download Apple push notification certificate signing request"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -66,6 +66,7 @@ Content-Length: 85
   "value": "Generate Apple Push Notification Certificate Signing Request value"
 }
 ```
+
 
 
 

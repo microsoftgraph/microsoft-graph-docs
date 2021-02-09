@@ -3,7 +3,7 @@ title: "ratingAustraliaTelevisionType enum type"
 description: "TV content rating labels in Australia"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -27,6 +27,8 @@ TV content rating labels in Australia
 |mature|6|The M classification is recommended for viewers over 15|
 |agesAbove15|7|The MA15+ classification is not suitable for viewers under 15|
 |agesAbove15AdultViolence|8|The AV15+ classification is not suitable for viewers under 15, adult violence-specific|
+
+
 
 
 

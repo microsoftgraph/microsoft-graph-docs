@@ -3,7 +3,7 @@ title: "deviceEnrollmentPlatformRestrictionsConfiguration resource type"
 description: "Device Enrollment Configuration that restricts the types of devices a user can enroll"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -42,9 +42,11 @@ Inherits from [deviceEnrollmentConfiguration](../resources/intune-shared-devicee
 |roleScopeTagIds|String collection|Optional role scope tags for the enrollment restrictions. Inherited from [deviceEnrollmentConfiguration](../resources/intune-shared-deviceenrollmentconfiguration.md)|
 |iosRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Ios restrictions based on platform, platform operating system version, and device ownership|
 |windowsRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Windows restrictions based on platform, platform operating system version, and device ownership|
+|windowsHomeSkuRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Windows Home Sku restrictions based on platform, platform operating system version, and device ownership|
 |windowsMobileRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Windows mobile restrictions based on platform, platform operating system version, and device ownership|
 |androidRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Android restrictions based on platform, platform operating system version, and device ownership|
 |androidForWorkRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Android for work restrictions based on platform, platform operating system version, and device ownership|
+|aospRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|AOSP restrictions based on platform, platform operating system version, and device ownership|
 |macRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Mac restrictions based on platform, platform operating system version, and device ownership|
 |macOSRestriction|[deviceEnrollmentPlatformRestriction](../resources/intune-onboarding-deviceenrollmentplatformrestriction.md)|Mac restrictions based on platform, platform operating system version, and device ownership|
 
@@ -82,6 +84,9 @@ Here is a JSON representation of the resource.
     "osMaximumVersion": "String",
     "blockedManufacturers": [
       "String"
+    ],
+    "blockedSkus": [
+      "String"
     ]
   },
   "windowsRestriction": {
@@ -91,6 +96,22 @@ Here is a JSON representation of the resource.
     "osMinimumVersion": "String",
     "osMaximumVersion": "String",
     "blockedManufacturers": [
+      "String"
+    ],
+    "blockedSkus": [
+      "String"
+    ]
+  },
+  "windowsHomeSkuRestriction": {
+    "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
+    "platformBlocked": true,
+    "personalDeviceEnrollmentBlocked": true,
+    "osMinimumVersion": "String",
+    "osMaximumVersion": "String",
+    "blockedManufacturers": [
+      "String"
+    ],
+    "blockedSkus": [
       "String"
     ]
   },
@@ -102,6 +123,9 @@ Here is a JSON representation of the resource.
     "osMaximumVersion": "String",
     "blockedManufacturers": [
       "String"
+    ],
+    "blockedSkus": [
+      "String"
     ]
   },
   "androidRestriction": {
@@ -111,6 +135,9 @@ Here is a JSON representation of the resource.
     "osMinimumVersion": "String",
     "osMaximumVersion": "String",
     "blockedManufacturers": [
+      "String"
+    ],
+    "blockedSkus": [
       "String"
     ]
   },
@@ -122,6 +149,22 @@ Here is a JSON representation of the resource.
     "osMaximumVersion": "String",
     "blockedManufacturers": [
       "String"
+    ],
+    "blockedSkus": [
+      "String"
+    ]
+  },
+  "aospRestriction": {
+    "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
+    "platformBlocked": true,
+    "personalDeviceEnrollmentBlocked": true,
+    "osMinimumVersion": "String",
+    "osMaximumVersion": "String",
+    "blockedManufacturers": [
+      "String"
+    ],
+    "blockedSkus": [
+      "String"
     ]
   },
   "macRestriction": {
@@ -131,6 +174,9 @@ Here is a JSON representation of the resource.
     "osMinimumVersion": "String",
     "osMaximumVersion": "String",
     "blockedManufacturers": [
+      "String"
+    ],
+    "blockedSkus": [
       "String"
     ]
   },
@@ -142,10 +188,14 @@ Here is a JSON representation of the resource.
     "osMaximumVersion": "String",
     "blockedManufacturers": [
       "String"
+    ],
+    "blockedSkus": [
+      "String"
     ]
   }
 }
 ```
+
 
 
 

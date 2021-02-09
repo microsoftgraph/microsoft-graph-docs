@@ -4,7 +4,7 @@ description: " API. The service will query for the most recent historyItems, and
 localization_priority: Normal
 ms.prod: "project-rome"
 doc_type: apiPageType
-author: ""
+author: "ailae"
 ---
 
 # Get recent user activities
@@ -35,7 +35,7 @@ GET /me/activities/recent
 
 ## Optional query parameters
 
-This method supports some [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response. The following query parameters are supported:
+This method supports some [OData Query Parameters](/graph/query-parameters) to help customize the response. The following query parameters are supported:
 
 - $expand for the **historyItems** navigation property.
 - $top to limit the maximum number of items across pages.

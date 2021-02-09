@@ -4,7 +4,7 @@ description: "This resource contains compliance certification data associated wi
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "preetikr"
 ---
 
 #  certificationControl resource type
@@ -46,3 +46,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

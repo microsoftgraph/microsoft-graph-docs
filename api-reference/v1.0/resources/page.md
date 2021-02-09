@@ -2,7 +2,7 @@
 title: "page resource type"
 description: "A page in a OneNote notebook."
 localization_priority: Normal
-author: ""
+author: "jewan-microsoft"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -83,3 +83,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -1,7 +1,7 @@
 ---
 title: "message: move"
 description: "Move a message to a folder. This creates a new copy of the message in the destination folder and removes the original message."
-author: "svpsiva"
+author: "abheek-das"
 localization_priority: Priority
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -192,3 +192,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

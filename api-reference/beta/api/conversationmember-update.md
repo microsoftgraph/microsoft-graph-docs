@@ -1,6 +1,6 @@
 ---
 title: "Update conversationMember"
-description: "Update the role of a conversationMember in a channel."
+description: "Update the role of a conversationMember in a team or channel."
 author: "clearab"
 doc_type: "apiPageType"
 localization_priority: Normal
@@ -13,10 +13,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the role of a [conversationMember](../resources/conversationmember.md) in a [channel](../resources/channel.md).
+Update the role of a [conversationMember](../resources/conversationmember.md) in a 
+[team](../resources/team.md).
+or [channel](../resources/channel.md).
 
 > [!NOTE]
-> This operation is only supported on channels with a [channelMembershipType](../resources/enums.md#channelmembershiptype-values) of `private`. Calls with any other [channelMembershipType](../resources/enums.md#channelmembershiptype-values) will return a `400 Bad Request` response.
+> On channels, this operation is only supported on channels with a [channelMembershipType](../resources/enums.md#channelmembershiptype-values) of `private`. Calls with any other [channelMembershipType](../resources/enums.md#channelmembershiptype-values) will return a `400 Bad Request` response.
 
 ## Permissions
 
@@ -24,13 +26,14 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
-|Delegated (work or school account)| ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Delegated (work or school account)| In teams: TeamMember.ReadWrite.All<br/>In channels: ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not supported|
-|Application| ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application| In teams: TeamMember.ReadWrite.All<br/>In channels:  ChannelMember.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored"} -->
 ```http
+PATCH /teams/{id}/members/{id}
 PATCH /teams/{id}/channels/{id}/members/{id}
 ```
 
@@ -69,6 +72,7 @@ content-type: application/json
 content-length: 26
 
 {
+  "@odata.type":"#microsoft.graph.aadUserConversationMember",
   "roles": ["owner"]
 }
 ```
@@ -82,6 +86,10 @@ content-length: 26
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/update-conversation-member-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-conversation-member-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -112,3 +120,5 @@ Content-length: 475
   "email": null
 }
 ```
+
+

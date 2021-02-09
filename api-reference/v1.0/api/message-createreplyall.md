@@ -2,7 +2,7 @@
 title: "message: createReplyAll"
 description: "Create a draft to reply to the sender and all the recipients of the specified message. You can then update the draft to add reply content to the **body** or change other message properties, or, simply send the draft."
 localization_priority: Normal
-author: "svpsiva"
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -110,3 +110,4 @@ Content-length: 248
   "suppressions": [
   ]
 }-->
+

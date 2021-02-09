@@ -9,7 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var personAnniversary = new PersonAnniversary
 {
 	Type = AnniversaryType.Birthday,
-	Date = new Date(1900,1,1)
+	Date = new Date(1980,1,8)
 };
 
 await graphClient.Me.Profile.Anniversaries

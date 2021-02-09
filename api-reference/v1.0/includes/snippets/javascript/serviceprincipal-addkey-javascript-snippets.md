@@ -22,7 +22,7 @@ const keyCredential = {
     proof:"eyJ0eXAiOiJ..."
 };
 
-let res = await client.api('/serviceprincipals/{id}/addKey')
+let res = await client.api('/servicePrincipals/{id}/addKey')
 	.post(keyCredential);
 
 ```

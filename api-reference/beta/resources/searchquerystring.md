@@ -3,19 +3,18 @@ title: "searchQueryString resource type"
 description: "searchQueryString"
 localization_priority: Normal
 author: "nmoreau"
-ms.prod: ""
+ms.prod: "search"
 doc_type: "resourcePageType"
 ---
 
-# searchQueryString resource type
+# searchQueryString resource type (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 The search terms for the query.
-
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
 
 ## Properties
 
@@ -51,3 +50,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

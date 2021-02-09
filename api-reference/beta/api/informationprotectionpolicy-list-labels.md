@@ -28,10 +28,15 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
-
+To get labels available to the signed-in user or specified user:
 ```http
-GET me/informationprotection/policy/labels
-GET /informationprotection/policy/labels
+GET /me/informationProtection/policy/labels
+GET /users/{id | user-principal-name}/informationProtection/policy/labels
+```
+
+To get labels available to the organization:
+```http
+GET /informationProtection/policy/labels
 ```
 
 ## Optional query parameters
@@ -66,7 +71,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/informationprotection/policy/labels
+GET https://graph.microsoft.com/beta/me/informationProtection/policy/labels
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-labels-csharp-snippets.md)]
@@ -78,6 +83,10 @@ GET https://graph.microsoft.com/beta/me/informationprotection/policy/labels
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-labels-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-labels-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -144,3 +153,5 @@ User-agent: ContosoLOBApp/1.0
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

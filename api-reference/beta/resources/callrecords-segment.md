@@ -2,7 +2,7 @@
 title: "segment resource type"
 description: "The segment type"
 localization_priority: Normal
-author: "stephenjust"
+author: "williamlooney"
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"
 ---
@@ -50,7 +50,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.callRecords.segment",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
@@ -75,3 +74,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -3,7 +3,7 @@ title: "optionalClaim resource type"
 description: "Contains an optional claim associated with an application."
 localization_priority: Normal
 author: "sureshja"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "resourcePageType"
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Contains an optional claim associated with an [application](application.md) <!-- or a service principal -->. The **idToken**, **accessToken**, and **saml2Token** properties of the [optionalClaims](optionalclaims.md) resource is a collection of **optionalClaim**. If supported by a specific claim, you can also modify the behavior of the optionalClaim using the `additionalProperties` property. 
 
-See [provide optional claims to your Azure AD app](https://docs.microsoft.com/azure/active-directory/develop/active-directory-optional-claims) for more information.
+See [provide optional claims to your Azure AD app](/azure/active-directory/develop/active-directory-optional-claims) for more information.
 
 ## Properties
 

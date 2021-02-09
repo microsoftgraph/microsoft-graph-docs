@@ -13,11 +13,14 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphSkillProficiency *skillProficiency = [[MSGraphSkillProficiency alloc] init];
 NSMutableArray *categoriesList = [[NSMutableArray alloc] init];
-[categoriesList addObject: @"categories-value"];
+[categoriesList addObject: @"Professional"];
 [skillProficiency setCategories:categoriesList];
-[skillProficiency setDisplayName:@"displayName-value"];
-[skillProficiency setProficiency: [MSGraphSkillProficiencyLevel elementary]];
-[skillProficiency setWebUrl:@"webUrl-value"];
+[skillProficiency setAllowedAudiences: [MSGraphAllowedAudiences organization]];
+[skillProficiency setDisplayName:@"API Design"];
+[skillProficiency setProficiency: [MSGraphSkillProficiencyLevel generalProfessional]];
+NSMutableArray *collaborationTagsList = [[NSMutableArray alloc] init];
+[collaborationTagsList addObject: @"ableToMentor"];
+[skillProficiency setCollaborationTags:collaborationTagsList];
 
 NSError *error;
 NSData *skillProficiencyData = [skillProficiency getSerializedDataWithError:&error];

@@ -4,7 +4,7 @@ description: "Represents a key-value pair where the key is a string and the valu
 localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # stringKeyObjectValuePair resource type
@@ -55,3 +55,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

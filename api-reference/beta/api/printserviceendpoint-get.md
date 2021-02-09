@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Retrieve the properties and relationships of a print service endpoint.
 
 ## Permissions
-No permissions are needed to call this API, but the user's tenant must have an active Universal Print subscription.
+No permissions are needed to call this API, but to use the Universal Print service, the user or app's tenant must have an active Universal Print subscription.
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
@@ -66,6 +66,10 @@ GET https://graph.microsoft.com/beta/print/services/{id}/endpoints/{name}
 [!INCLUDE [sample-code](../includes/snippets/objc/get-printserviceendpoint-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-printserviceendpoint-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -98,3 +102,5 @@ Content-length: 260
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

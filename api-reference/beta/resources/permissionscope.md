@@ -3,7 +3,7 @@ title: "permissionScope resource type"
 description: "Represents the definition of a delegated permission, sometimes referred to as an OAuth 2.0 permission or an OAuth 2.0 scope. Once defined, the delegated permission may then be requested by a client application"
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 author: "psignoret"
 ---
 
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the definition of a [delegated permission](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types).
+Represents the definition of a [delegated permission](/azure/active-directory/develop/v2-permissions-and-consent#permission-types).
 
-Delegated permissions can be requested by client applications needing an access token to the API which defined the permissions. Delegated permissions can be requested [dynamically](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#requesting-individual-user-consent), using the `scopes` parameter in an authorization request to the Microsoft identity platform, or [statically](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#the-default-scope), through the **requiredResourceAccess** collection on the [application](application.md) object.
+Delegated permissions can be requested by client applications needing an access token to the API which defined the permissions. Delegated permissions can be requested [dynamically](/azure/active-directory/develop/v2-permissions-and-consent#requesting-individual-user-consent), using the `scopes` parameter in an authorization request to the Microsoft identity platform, or [statically](/azure/active-directory/develop/v2-permissions-and-consent#the-default-scope), through the **requiredResourceAccess** collection on the [application](application.md) object.
 
 ## Properties
 

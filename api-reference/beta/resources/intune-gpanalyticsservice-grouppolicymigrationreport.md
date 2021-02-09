@@ -3,7 +3,7 @@ title: "groupPolicyMigrationReport resource type"
 description: "The Group Policy migration report."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -76,6 +76,7 @@ Here is a JSON representation of the resource.
   "supportedSettingsPercent": 1024
 }
 ```
+
 
 
 

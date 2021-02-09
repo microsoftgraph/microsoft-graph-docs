@@ -19,7 +19,7 @@ The following example shows the `mgt-teams-channel-picker` component. Start sear
 
 ## Getting the selected channel
 
-Use the `selectedItem` property to retrieve the currently selected channel and parent team. This value will be null if no channel has been selected. `selectedItem` contains two properties: `channel` ([MicrosoftGraph.Channel](/graph/api/resources/channel?view=graph-rest-1.0)) and `team` ([MicrosoftGraph.Team](/graph/api/resources/team?view=graph-rest-1.0)).
+Use the `selectedItem` property to retrieve the currently selected channel and parent team. This value will be null if no channel has been selected. `selectedItem` contains two properties: `channel` ([MicrosoftGraph.Channel](/graph/api/resources/channel)) and `team` ([MicrosoftGraph.Team](/graph/api/resources/team)).
 
 ```javascript
 const channelPicker = document.querySelector('mgt-teams-channel-picker');
@@ -57,27 +57,28 @@ mgt-teams-channel-picker {
     --input-border-top: 2px rgba(255, 255, 255, 0.5) solid;
 
     --input-background-color: #1f1f1f; /* input area background color */
-    --input-hover-color: #008394; /* input area border hover color */
-    --input-focus-color: #0f78d4; /* input area border focus color */
+    --input-border-color--hover: #008394; /* input area border hover color */
+    --input-border-color--focus: #0f78d4; /* input area border focus color */
 
     --dropdown-background-color: #1f1f1f; /* channel background color */
     --dropdown-item-hover-background: #333d47; /* channel or team hover background */
     --dropdown-item-selected-background: #0F78D4; /* selected channel background color */
 
-    --font-color: white; /* input area border focus color */
+    --color: white; /* input area border focus color */
     --arrow-fill: #ffffff;
-    --placeholder-focus-color: rgba(255, 255, 255, 0.8); /* place holder text focus color */
+    --placeholder-color: #f1f1f1; /* placeholder text color */
+    --placeholder-color--focus: rgba(255, 255, 255, 0.8); /* place holder text focus color */
 }
 ```
 
 ## Events
 | Event | Detail | Description |
 | --- | --- | --- |
-| selectionChanged | The detail contains the currently selected item  of `{channel : `[MicrosoftGraph.Channel](/graph/api/resources/channel?view=graph-rest-1.0)`, team: `[MicrosoftGraph.Team](/graph/api/resources/team?view=graph-rest-1.0)`}` | Fired when user makes a change in selection of a channel. |
+| selectionChanged | The detail contains the currently selected item  of `{channel : `[MicrosoftGraph.Channel](/graph/api/resources/channel)`, team: `[MicrosoftGraph.Team](/graph/api/resources/team)`}` | Fired when user makes a change in selection of a channel. |
 
 ## Templates
 
- `mgt-teams-channel-picker` supports several [templates](../templates.md) that you can use to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.
+ `mgt-teams-channel-picker` supports several [templates](../customize-components/templates.md) that you can use to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.
 
 | Data type | Data context | Description |
 | --- | --- | --- |
@@ -101,12 +102,12 @@ This component uses the following Microsoft Graph APIs and permissions.
 
 | API                                                                                                              | Permission  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
-| [/me/joinedTeams](/graph/api/user-list-joinedteams?view=graph-rest-1.0)                    | User.Read.All        |
-| [/teams/${id}/channels](/graph/api/channel-list?view=graph-rest-1.0) | Group.Read.All        |
+| [/me/joinedTeams](/graph/api/user-list-joinedteams)                    | User.Read.All        |
+| [/teams/${id}/channels](/graph/api/channel-list) | Group.Read.All        |
 
 ## Authentication
 
-The control uses the global authentication provider described in the [authentication documentation](./../providers.md).
+The control uses the global authentication provider described in the [authentication documentation](../providers/providers.md).
 
 ## Extend for more control
 

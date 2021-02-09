@@ -3,7 +3,7 @@ title: "appLogUploadState enum type"
 description: "AppLogUploadStatus"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -23,6 +23,7 @@ AppLogUploadStatus
 |pending|0|Request is waiting to be processed or under processing|
 |completed|1|Request is completed with file uploaded to Azure blob for download.|
 |failed|2|Request finished processing and in error state.|
+
 
 
 

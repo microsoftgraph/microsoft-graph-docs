@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: resourcePageType
 ---
 
-# realtedContact resource type
+# relatedContact resource type
 
 Namespace: microsoft.graph
 
@@ -60,3 +60,4 @@ The following is a JSON representation of the resource.
   ]
 }
 -->
+

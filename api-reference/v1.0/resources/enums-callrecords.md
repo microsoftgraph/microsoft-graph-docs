@@ -7,6 +7,8 @@ ms.prod: "cloud-communications"
 author: "gageames"
 ---
 
+# Call records enum values
+
 Namespace: microsoft.graph.callRecords
 
 ### callType values
@@ -151,3 +153,4 @@ Namespace: microsoft.graph.callRecords
   "namespace": "microsoft.graph.callRecords"
 }
 -->
+

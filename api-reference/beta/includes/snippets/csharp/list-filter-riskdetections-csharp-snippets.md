@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var riskDetections = await graphClient.RiskDetections
+var riskDetections = await graphClient.IdentityProtection.RiskDetections
 	.Request()
 	.Filter("riskEventType eq 'unfamiliarFeatures' or riskLevel eq 'medium'")
 	.GetAsync();

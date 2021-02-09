@@ -2,8 +2,8 @@
 title: "Get signIn"
 description: "Describes the get method of the signIn resource (entity) from the Microsoft Graph API."
 localization_priority: Normal
-author: "kholtz"
-ms.prod: "microsoft-identity-platform"
+author: "besiler"
+ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 
@@ -180,3 +180,4 @@ Content-length: 211
   "suppressions": [
   ]
 }-->
+

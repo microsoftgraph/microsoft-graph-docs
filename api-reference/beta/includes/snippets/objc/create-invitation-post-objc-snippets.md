@@ -13,7 +13,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphInvitation *invitation = [[MSGraphInvitation alloc] init];
 [invitation setInvitedUserEmailAddress:@"yyy@test.com"];
-[invitation setInviteRedirectUrl:@"https://myapp.com"];
+[invitation setInviteRedirectUrl:@"https://myapp.contoso.com"];
 
 NSError *error;
 NSData *invitationData = [invitation getSerializedDataWithError:&error];

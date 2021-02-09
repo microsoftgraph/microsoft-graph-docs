@@ -3,7 +3,7 @@ title: "List mobileAppAssignments"
 description: "List properties and relationships of the mobileAppAssignment objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 733
+Content-Length: 763
 
 {
   "value": [
@@ -76,7 +76,8 @@ Content-Length: 733
       "settings": {
         "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
         "vpnConfigurationId": "Vpn Configuration Id value",
-        "uninstallOnDeviceRemoval": true
+        "uninstallOnDeviceRemoval": true,
+        "isRemovable": true
       },
       "source": "policySets",
       "sourceId": "Source Id value"
@@ -84,6 +85,7 @@ Content-Length: 733
   ]
 }
 ```
+
 
 
 

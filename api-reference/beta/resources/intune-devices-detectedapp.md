@@ -3,7 +3,7 @@ title: "detectedApp resource type"
 description: "A managed or unmanaged app that is installed on a managed device. Unmanaged apps will only appear for devices marked as corporate owned."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -38,7 +38,7 @@ A managed or unmanaged app that is installed on a managed device. Unmanaged apps
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|managedDevices|[managedDevice](../resources/intune-devices-manageddevice.md) collection|The devices that have the discovered application installed|
+|managedDevices|[managedDevice](../resources/intune-shared-manageddevice.md) collection|The devices that have the discovered application installed|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -58,6 +58,7 @@ Here is a JSON representation of the resource.
   "deviceCount": 1024
 }
 ```
+
 
 
 

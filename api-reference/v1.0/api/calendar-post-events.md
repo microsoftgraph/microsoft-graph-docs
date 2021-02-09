@@ -60,8 +60,7 @@ If successful, this method returns `201 Created` response code and [event](../re
 ### Example 1: Create an event in a specific calendar
 
 #### Request
-Here is an example of the request.
-In the request body, supply a JSON representation of [event](../resources/event.md) object.
+The following example creates an event in a specific calendar and assigns the event an optional **transactionId** value.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -98,7 +97,8 @@ Content-type: application/json
       },
       "type": "required"
     }
-  ]
+  ],
+  "transactionId":"7E163156-7762-4BEB-A1C6-729EA81755A7"
 }
 ```
 # [C#](#tab/csharp)
@@ -121,7 +121,9 @@ Content-type: application/json
 
 
 #### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -145,15 +147,18 @@ Content-type: application/json
     "reminderMinutesBeforeStart": 15,
     "isReminderOn": true,
     "hasAttachments": false,
+    "hideAttendees": false,
     "subject": "Let's go for lunch",
     "bodyPreview": "Does mid month work for you?",
     "importance": "normal",
     "sensitivity": "normal",
     "isAllDay": false,
     "isCancelled": false,
+    "isDraft": false,
     "isOrganizer": true,
     "responseRequested": true,
     "seriesMasterId": null,
+    "transactionId":"7E163156-7762-4BEB-A1C6-729EA81755A7",
     "showAs": "busy",
     "type": "singleInstance",
     "webLink": "https://outlook.office365.com/owa/?itemid=AAMkAGViNDU7zAAAAA7zAAAZb2ckAAA%3D&exvsurl=1&path=/calendar/item",
@@ -218,9 +223,6 @@ Content-type: application/json
 #### Request
 The following example creates an event in the specified calendar of the signed-in user's and enables it as an online meeting.
 
-In the request body, supply a JSON representation of [event](../resources/event.md) object.
-
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -281,7 +283,9 @@ Content-type: application/json
 
 
 #### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -306,12 +310,14 @@ Content-type: application/json
     "reminderMinutesBeforeStart": 15,
     "isReminderOn": true,
     "hasAttachments": false,
+    "hideAttendees": false,
     "subject": "Let's go for lunch",
     "bodyPreview": "Does next month work for you?",
     "importance": "normal",
     "sensitivity": "normal",
     "isAllDay": false,
     "isCancelled": false,
+    "isDraft": false,
     "isOrganizer": true,
     "responseRequested": true,
     "seriesMasterId": null,
@@ -389,3 +395,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

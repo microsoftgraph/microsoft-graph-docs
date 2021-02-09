@@ -1,7 +1,7 @@
 ---
 title: "Get message"
 description: "Retrieve the properties and relationships of a message object."
-author: "svpsiva"
+author: "abheek-das"
 localization_priority: Priority
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of a [message](../resources/message.md) object.
 
-You can use the `$value` parameter to [get the MIME content of a message](/graph/outlook-get-mime-message).
+You can use the `$value` parameter to [get the MIME content of a message](/graph/outlook-get-mime-message). See also an [example](#example-4-get-mime-content) below.
 
 There are two scenarios where an app can get a message in another user's mail folder:
 
@@ -53,7 +53,7 @@ GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}/$value
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 Use the `$value` parameter to get the MIME content of a message.
 ## Request headers
@@ -73,7 +73,7 @@ Specifying the `$value` parameter returns the message content in MIME format, an
 
 
 ## Examples
-### Example 1
+### Example 1: Get a specific message
 #### Request
 Here is an example of the request.
 
@@ -180,7 +180,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2
+### Example 2: Get Internet message headers
 #### Request
 The next example uses a `$select` query parameter to get the Internet message headers of a message. 
 
@@ -248,7 +248,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3
+### Example 3: Get message body in text format
 #### Request
 
 The third example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** and **uniqueBody** of the specified message in text format.
@@ -315,7 +315,7 @@ Preference-Applied: outlook.body-content-type="text"
 }
 ```
 
-### Example 4
+### Example 4: Get MIME content
 #### Request
 The fourth example gets the MIME content of a message in the signed-in user's mailbox.
 

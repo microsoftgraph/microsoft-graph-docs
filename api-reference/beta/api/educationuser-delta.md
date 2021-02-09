@@ -19,20 +19,18 @@ Get newly created or updated [educationUser](../resources/educationuser.md) with
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions (from least to most privileged)     |
-| :------------------------------------- | :---------------------------------------------- |
-| Delegated (work or school account)     | Not supported.                                  |
-| Delegated (personal Microsoft account) | Not supported.                                  |
-| Application                            | EduRoster.Read.All, or EduRoster.WriteWrite.All |
+| Permission type                        | Permissions (from least to most privileged)                              |
+| :------------------------------------- | :----------------------------------------------------------------------- |
+| Delegated (work or school account)     | EduRoster.ReadBasic, EduRoster.Read, or EduRoster.ReadWrite              |
+| Delegated (personal Microsoft account) | Not supported.                                                           |
+| Application                            | EduRoster.ReadBasic.All, EduRoster.Read.All, or EduRoster.WriteWrite.All |
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /education/me/delta
-POST /education/users/{id}/delta
-POST /education/schools/{id}/users/{id}/delta
+GET /education/users/delta
 ```
 
 ## Request headers
@@ -56,20 +54,40 @@ If successful, this method returns a `200 OK` response code and an [educationUse
 
 The following example shows how to call this API.
 
-##### Request
+### Request
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "educationuser_delta"
 }-->
 
-```http
-POST https://graph.microsoft.com/v1.0/education/me/delta
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/education/users/delta
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/educationuser-delta-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### Response
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/educationuser-delta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/educationuser-delta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/educationuser-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### Response
 
 The following is an example of the response.
 
@@ -90,35 +108,37 @@ Content-length: 1039
 {
   "value": [
     {
-      "primaryRole": "primaryRole-value",
-      "middleName": "middleName-value",
-      "externalSource": "externalSource-value",
-      "residenceAddress": {
-        "type": "type-value",
-        "postOfficeBox": "postOfficeBox-value",
-        "street": "street-value",
-        "city": "city-value",
-        "state": "state-value",
-        "countryOrRegion": "countryOrRegion-value",
-        "postalCode": "postalCode-value"
+      "accountEnabled": true,
+      "assignedLicenses": [{ "@odata.type": "microsoft.graph.assignedLicense" }],
+      "assignedPlans": [{ "@odata.type": "microsoft.graph.assignedPlan" }],
+      "businessPhones": ["String"],
+      "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+      "department": "String",
+      "displayName": "String",
+      "externalSource": "string",
+      "givenName": "String",
+      "id": "String (identifier)",
+      "mail": "String",
+      "mailNickname": "String",
+      "mailingAddress": { "@odata.type": "microsoft.graph.physicalAddress" },
+      "middleName": "String",
+      "mobilePhone": "String",
+      "officeLocation": "String",
+      "onPremisesInfo": {
+        "@odata.type": "microsoft.graph.educationOnPremisesInfo"
       },
-      "mailingAddress": {
-        "type": "type-value",
-        "postOfficeBox": "postOfficeBox-value",
-        "street": "street-value",
-        "city": "city-value",
-        "state": "state-value",
-        "countryOrRegion": "countryOrRegion-value",
-        "postalCode": "postalCode-value"
-      },
-      "student": {
-        "graduationYear": "graduationYear-value",
-        "grade": "grade-value",
-        "birthDate": "datetime-value",
-        "gender": "gender-value",
-        "studentNumber": "studentNumber-value",
-        "externalId": "externalId-value"
-      }
+      "passwordPolicies": "String",
+      "passwordProfile": { "@odata.type": "microsoft.graph.passwordProfile" },
+      "preferredLanguage": "String",
+      "primaryRole": "string",
+      "provisionedPlans": [{ "@odata.type": "microsoft.graph.provisionedPlan" }],
+      "residenceAddress": { "@odata.type": "microsoft.graph.physicalAddress" },
+      "student": { "@odata.type": "microsoft.graph.educationStudent" },
+      "surname": "String",
+      "teacher": { "@odata.type": "microsoft.graph.educationTeacher" },
+      "usageLocation": "String",
+      "userPrincipalName": "String",
+      "userType": "String"
     }
   ]
 }
@@ -133,3 +153,5 @@ Content-length: 1039
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

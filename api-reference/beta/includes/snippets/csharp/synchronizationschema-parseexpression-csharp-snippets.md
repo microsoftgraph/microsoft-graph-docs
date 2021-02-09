@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var expression = "Replace([preferredLanguage], \"-\", , , \"_\", ,  )";
 
-var targetAttributeDefinition = null;
+AttributeDefinition targetAttributeDefinition = null;
 
 var testInputObject = new ExpressionInputObject
 {

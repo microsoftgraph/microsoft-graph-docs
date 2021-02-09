@@ -63,8 +63,8 @@ Get started with SharePoint in Microsoft Graph by learning more about [working w
 [querying]: /graph/api/listitem-get?view=graph-rest-1.0
 [drive]: /graph/api/resources/drive?view=graph-rest-1.0
 [OneDrive API]: /graph/api/resources/onedrive?view=graph-rest-1.0
-[SharePoint Framework]: https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview
-[SharePoint Add-ins]: https://docs.microsoft.com/sharepoint/dev/sp-add-ins/sharepoint-add-ins
+[SharePoint Framework]: /sharepoint/dev/spfx/sharepoint-framework-overview
+[SharePoint Add-ins]: /sharepoint/dev/sp-add-ins/sharepoint-add-ins
 [SharePoint Dev Center]: https://developer.microsoft.com/sharepoint
-[SharePoint Developer Docs]: https://aka.ms/spdev-docs
+[SharePoint Developer Docs]: /sharepoint/dev/
 [SharePoint]: /graph/api/resources/sharepoint?view=graph-rest-1.0

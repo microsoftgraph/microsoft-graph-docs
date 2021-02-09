@@ -7,17 +7,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me/drive/items/{id}/workbook/names/addFormulaLocal"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me/drive/items/{id}/workbook/names/add"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
 
-NSString *name = @"test7";
+NSString *name = @"test5";
 payloadDictionary[@"name"] = name;
 
-NSString *formula = @"=SUM(Sheet2!$A$1+Sheet2!$A$2)";
-payloadDictionary[@"formula"] = formula;
+NSString *reference = @"=Sheet1!$F$15:$N$27";
+payloadDictionary[@"reference"] = reference;
 
 NSString *comment = @"Comment for the named item";
 payloadDictionary[@"comment"] = comment;

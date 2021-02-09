@@ -4,7 +4,7 @@ description: "A page in a OneNote notebook."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "jewan-microsoft"
 ---
 
 # onenotePage resource type
@@ -56,7 +56,7 @@ Here is a JSON representation of the resource.
     "parentSection"
   ],
   "keyProperty": "id",
-  "baseType":"microsoft.graph.entity",  
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.onenotePage"
 }-->
 
@@ -88,3 +88,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

@@ -105,6 +105,7 @@ Content-length: 1131
     },
     "attachments": [
       {
+        "@odata.type": "#microsoft.graph.fileAttachment",
         "lastModifiedDateTime": "2016-10-19T10:37:00Z",
         "name": "name-value",
         "contentType": "contentType-value",
@@ -122,6 +123,10 @@ Content-length: 1131
 
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/post-reply-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-reply-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -151,3 +156,5 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
+
+

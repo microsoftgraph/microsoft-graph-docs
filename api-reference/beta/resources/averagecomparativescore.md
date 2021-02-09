@@ -4,7 +4,7 @@ description: "This resource contains various different scores based by different
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "preetikr"
 ---
 
 #  averageComparativeScore resource type
@@ -52,3 +52,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

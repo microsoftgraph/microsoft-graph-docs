@@ -3,7 +3,7 @@ title: "Update deviceManagementAutopilotPolicyStatusDetail"
 description: "Update the properties of a deviceManagementAutopilotPolicyStatusDetail object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -54,6 +54,7 @@ The following table shows the properties that are required when you create the [
 |complianceStatus|[deviceManagementAutopilotPolicyComplianceStatus](../resources/intune-troubleshooting-devicemanagementautopilotpolicycompliancestatus.md)|The policy compliance status. Possible values are: `unknown`, `compliant`, `installed`, `notCompliant`, `notInstalled`, `error`.|
 |trackedOnEnrollmentStatus|Boolean|Indicates if this prolicy was tracked as part of the autopilot bootstrap enrollment sync session|
 |lastReportedDateTime|DateTimeOffset|Timestamp of the reported policy status|
+|errorCode|Int32|The errorode associated with the compliance or enforcement status of the policy. Error code for enforcement status takes precedence if it exists.|
 
 
 
@@ -67,7 +68,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/autopilotEvents/{deviceManagementAutopilotEventId}/policyStatusDetails/{deviceManagementAutopilotPolicyStatusDetailId}
 Content-type: application/json
-Content-length: 295
+Content-length: 314
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementAutopilotPolicyStatusDetail",
@@ -75,7 +76,8 @@ Content-length: 295
   "policyType": "application",
   "complianceStatus": "compliant",
   "trackedOnEnrollmentStatus": true,
-  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
+  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
+  "errorCode": 9
 }
 ```
 
@@ -84,7 +86,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 344
+Content-Length: 363
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementAutopilotPolicyStatusDetail",
@@ -93,9 +95,11 @@ Content-Length: 344
   "policyType": "application",
   "complianceStatus": "compliant",
   "trackedOnEnrollmentStatus": true,
-  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
+  "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
+  "errorCode": 9
 }
 ```
+
 
 
 

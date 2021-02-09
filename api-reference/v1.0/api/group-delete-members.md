@@ -49,7 +49,7 @@ The following is an example of the request.
   "name": "delete_member_from_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/v1.0/groups/{id}/members/{id}/$ref
+DELETE https://graph.microsoft.com/v1.0/groups/{group-id}/members/{directory-object-id}/$ref
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-member-from-group-csharp-snippets.md)]
@@ -69,7 +69,7 @@ DELETE https://graph.microsoft.com/v1.0/groups/{id}/members/{id}/$ref
 
 ---
 
-In the request, specify the `id` of the directory object you want to remove after the $ref segment.
+In the request, specify the identifier of the group and the identifier of the directory object you want to remove.
 
 #### Response
 The following is an example of the response.
@@ -94,3 +94,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

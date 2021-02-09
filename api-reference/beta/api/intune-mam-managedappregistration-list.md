@@ -3,7 +3,7 @@ title: "List managedAppRegistrations"
 description: "List properties and relationships of the managedAppRegistration objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1063
+Content-Length: 1064
 
 {
   "value": [
@@ -83,8 +83,8 @@ Content-Length: 1063
       ],
       "userId": "User Id value",
       "appIdentifier": {
-        "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
-        "packageId": "Package Id value"
+        "@odata.type": "microsoft.graph.windowsAppIdentifier",
+        "windowsAppId": "Windows App Id value"
       },
       "id": "5496aa60-aa60-5496-60aa-965460aa9654",
       "version": "Version value"
@@ -92,6 +92,7 @@ Content-Length: 1063
   ]
 }
 ```
+
 
 
 

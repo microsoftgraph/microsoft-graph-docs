@@ -8,7 +8,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 Contact contact = new Contact();
 contact.parentFolderId = "parentFolderId-value";
-contact.birthday = "datetime-value";
+contact.birthday = CalendarSerializer.deserialize("datetime-value");
 contact.fileAs = "fileAs-value";
 contact.displayName = "displayName-value";
 contact.givenName = "givenName-value";

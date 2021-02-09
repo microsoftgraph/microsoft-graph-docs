@@ -3,7 +3,7 @@ title: "reportRoot: getEmailActivityUserDetail"
 description: "Get details about email activity users have performed."
 localization_priority: Priority
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -130,3 +130,4 @@ Report Refresh Date,User Principal Name,Display Name,Is Deleted,Deleted Date,Las
   "suppressions": [
   ]
 }-->
+

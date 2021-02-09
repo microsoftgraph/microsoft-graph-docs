@@ -35,7 +35,7 @@ The use cases for the APIs in this section involve building [Microsoft Graph con
 
 ## Known limitations
 
-The following are current knownlimitations:
+The following are current known limitations:
 
 - Organizations are limited to a maximum of 10 connections.
 - Only Azure Active Directory identities are supported.
@@ -43,7 +43,7 @@ The following are current knownlimitations:
 - An application is limited to four concurrent operations on a connection.
 - Connections have a capacity limit of 700,000 items or ~70 GB of data.
 - Maximum size of an `externalItem` entity is 4 MB.
-- Refining and sorting results is not supported.
+- Sorting results is not supported.
 - Result ranking is best effort.
 
 ## What's new
@@ -54,3 +54,5 @@ Find out about the [latest new features and updates](/graph/whats-new-overview) 
 - See the [Microsoft Search API overview](/graph/search-concept-overview).
 - Drill down on the methods, properties, and relationships of the [externalConnection](externalconnection.md), [schema](schema.md), and [externalItem](externalitem.md) resources.
 - Check out the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub.
+
+

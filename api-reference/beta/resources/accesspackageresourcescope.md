@@ -3,7 +3,7 @@ title: "accessPackageResourceScope resource type"
 description: "In Azure AD entitlement management, an access package resource scope is a reference to a scope within a resource."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
 
@@ -46,7 +46,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.accessPackageResourceScope",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
@@ -72,3 +71,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -14,7 +14,7 @@ var chatMessage = new ChatMessage
 	}
 };
 
-await graphClient.Teams["{id}"].Channels["{id}"].Messages
+await graphClient.Chats["{id}"].Messages
 	.Request()
 	.AddAsync(chatMessage);
 

@@ -30,7 +30,10 @@ end.timeZone = "Pacific Standard Time";
 item.end = end;
 attachments.item = item;
 attachmentsList.add(attachments);
-post.attachments = attachmentsList;
+AttachmentCollectionResponse attachmentCollectionResponse = new AttachmentCollectionResponse();
+attachmentCollectionResponse.value = attachmentsList;
+AttachmentCollectionPage attachmentCollectionPage = new AttachmentCollectionPage(attachmentCollectionResponse, null);
+post.attachments = attachmentCollectionPage;
 
 graphClient.groups("1848753d-185d-4c08-a4e4-6ee40521d115").threads("AAQkADJUdfolA==")
 	.reply(post)

@@ -3,7 +3,7 @@ title: "reportRoot: getSkypeForBusinessDeviceUsageDistributionUserCounts"
 description: "Get the number of users using unique devices in your organization. The report will show you the number of users per device including Windows, Windows phone, Android phone, iPhone, and iPad."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -122,3 +122,4 @@ Report Refresh Date,Windows,Windows Phone,Android Phone,iPhone,iPad,Report Perio
   "suppressions": [
   ]
 }-->
+

@@ -57,7 +57,7 @@ var contentInfo = new ContentInfo
 	}
 };
 
-await graphClient.Informationprotection.Policy.Labels
+await graphClient.InformationProtection.Policy.Labels
 	.ExtractLabel(contentInfo)
 	.Request()
 	.Header("User-Agent","ContosoLOBApp/1.0")

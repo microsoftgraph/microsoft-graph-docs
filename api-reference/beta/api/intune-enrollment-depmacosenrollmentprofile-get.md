@@ -3,7 +3,7 @@ title: "Get depMacOSEnrollmentProfile"
 description: "Read properties and relationships of the depMacOSEnrollmentProfile object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1396
+Content-Length: 1438
 
 {
   "value": {
@@ -78,7 +78,6 @@ Content-Length: 1396
     "isDefault": true,
     "supervisedModeEnabled": true,
     "supportDepartment": "Support Department value",
-    "passCodeDisabled": true,
     "isMandatory": true,
     "locationDisabled": true,
     "supportPhoneNumber": "Support Phone Number value",
@@ -88,7 +87,6 @@ Content-Length: 1396
     "termsAndConditionsDisabled": true,
     "touchIdDisabled": true,
     "applePayDisabled": true,
-    "zoomDisabled": true,
     "siriDisabled": true,
     "diagnosticsDisabled": true,
     "displayToneSetupDisabled": true,
@@ -99,11 +97,15 @@ Content-Length: 1396
     "registrationDisabled": true,
     "fileVaultDisabled": true,
     "iCloudDiagnosticsDisabled": true,
+    "passCodeDisabled": true,
+    "zoomDisabled": true,
     "iCloudStorageDisabled": true,
-    "chooseYourLockScreenDisabled": true
+    "chooseYourLockScreenDisabled": true,
+    "accessibilityScreenDisabled": true
   }
 }
 ```
+
 
 
 

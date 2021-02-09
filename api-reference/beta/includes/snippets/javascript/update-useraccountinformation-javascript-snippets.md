@@ -11,13 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const userAccountInformation = {
-  ageGroup: "ageGroup-value",
-  countryCode: "countryCode-value",
-  preferredLanguageTag: {
-    locale: "locale-value",
-    displayName: "displayName-value"
-  },
-  userPrincipalName: "userPrincipalName-value"
+  countryCode: "NO"
 };
 
 let res = await client.api('/me/profile/account/{id}')

@@ -46,7 +46,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.educationRubricOutcome",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
@@ -68,3 +67,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

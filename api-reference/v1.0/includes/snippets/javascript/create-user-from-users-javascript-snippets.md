@@ -12,12 +12,12 @@ const client = Client.init(options);
 
 const user = {
   accountEnabled: true,
-  displayName: "displayName-value",
-  mailNickname: "mailNickname-value",
-  userPrincipalName: "upn-value@tenant-value.onmicrosoft.com",
+  displayName: "Adele Vance",
+  mailNickname: "AdeleV",
+  userPrincipalName: "AdeleV@contoso.onmicrosoft.com",
   "passwordProfile" : {
     forceChangePasswordNextSignIn: true,
-    password: "password-value"
+    password: "xWwvJ]6NMw+bWH-d"
   }
 };
 

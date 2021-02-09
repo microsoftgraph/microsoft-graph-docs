@@ -3,7 +3,7 @@ title: "resourceAction resource type"
 description: "Set of allowed and not allowed actions for a resource."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -44,6 +44,7 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
 
 
 

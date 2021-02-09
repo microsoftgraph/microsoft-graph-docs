@@ -3,7 +3,7 @@ title: "Remove owner"
 description: "Remove an owner from a servicePrincipals."
 author: "sureshja"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: apiPageType
 ---
 
@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /serviceprincipals/{id}/owners/{id}/$ref
+DELETE /servicePrincipals/{id}/owners/{id}/$ref
 
 ```
 ## Request headers
@@ -55,7 +55,7 @@ The following example shows the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/serviceprincipals/{id}/owners/{id}/$ref
+DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/owners/{id}/$ref
 Content-type: application/json
 Content-length: 30
 
@@ -111,3 +111,6 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+
+

@@ -26,19 +26,20 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | User.ReadWrite.All                          |
 
 ## HTTP request
-
-<!-- { "blockType": "ignored" } -->
-
-```http
-DELETE /me/profile/phones/{id}
+<!-- {
+  "blockType": "ignored"
+}
+-->
+``` http
+DELETE /me/profile/phones/{itemPhoneId}
+DELETE /user/{userId}/profile/phones/{itemPhoneId}
 ```
 
 ## Request headers
 
-| Name           |Description                  |
-|:---------------|:----------------------------|
-| Authorization  | Bearer {token}. Required.   |
-| Content-Type   | application/json. Required. |
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
 
 ## Request body
 
@@ -46,57 +47,31 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
 ### Request
 
-The following is an example of the request.
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_itemphone"
-}-->
+}
+-->
 
-```http
-DELETE https://graph.microsoft.com/beta/me/profile/phones/{id}
+``` http
+DELETE https://graph.microsoft.com/beta/user/{userId}/profile/phones/{itemPhoneId}
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-itemphone-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-itemphone-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-itemphone-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### Response
-
-The following is an example of the response.
 
 <!-- {
   "blockType": "response",
   "truncated": true
-} -->
-
-```http
+}
+-->
+``` http
 HTTP/1.1 204 No Content
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Delete itemPhone",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
+

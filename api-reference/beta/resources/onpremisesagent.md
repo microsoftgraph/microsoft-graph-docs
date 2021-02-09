@@ -3,7 +3,7 @@ title: "onPremisesAgent resource type"
 description: "onPremisesAgent resource type."
 localization_priority: Normal
 author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "resourcePageType"
 ---
 
@@ -50,7 +50,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.onPremisesAgent",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
@@ -73,3 +72,6 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
+

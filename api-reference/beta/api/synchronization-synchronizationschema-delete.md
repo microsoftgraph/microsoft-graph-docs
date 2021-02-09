@@ -4,7 +4,7 @@ description: "Deletes the customized schema and resets the schema to the default
 localization_priority: Normal
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # Delete synchronizationSchema
@@ -76,3 +76,5 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
+

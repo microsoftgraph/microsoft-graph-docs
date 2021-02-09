@@ -1,7 +1,7 @@
 ---
 title: "List mailFolders"
 description: "Get the mail folder collection under the root folder of the signed-in user. "
-author: "svpsiva"
+author: "abheek-das"
 localization_priority: Priority
 doc_type: apiPageType
 ms.prod: "outlook"
@@ -169,3 +169,4 @@ Content-length: 232
   "suppressions": [
   ]
 }-->
+

@@ -55,9 +55,9 @@ var post = new Post
 	InReplyTo = new Post
 	{
 	},
-	Attachments = (IPostAttachmentsCollectionPage)new List<Attachment>()
+	Attachments = new PostAttachmentsCollectionPage()
 	{
-		new Attachment
+		new FileAttachment
 		{
 			LastModifiedDateTime = DateTimeOffset.Parse("datetime-value"),
 			Name = "name-value",

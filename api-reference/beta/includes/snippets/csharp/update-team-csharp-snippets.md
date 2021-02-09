@@ -8,6 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var team = new Team
 {
+	IsMembershipLimitedToOwners = true,
 	MemberSettings = new TeamMemberSettings
 	{
 		AllowCreateUpdateChannels = true

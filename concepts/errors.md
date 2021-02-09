@@ -1,21 +1,12 @@
 ---
 title: "Microsoft Graph error responses and resource types"
-description: "  "
+description: "This topic describes some of the errors that can be returned in Microsoft Graph responses."
 localization_priority: Priority
 ---
 
 # Microsoft Graph error responses and resource types
 
-<!--In this article:
-  
--	[Status code](#msg-status-code)
--	[Error resource type](#msg-error-resource-type)
--	[Code property](#msg-code-property)
-
-<a name="msg_error_response"> </a> -->
-
-Errors in Microsoft Graph are returned using standard HTTP status codes, as well as a JSON error
-response object.
+Errors in Microsoft Graph are returned using standard HTTP status codes, as well as a JSON error response object.
 
 ## HTTP status codes
 
@@ -25,7 +16,7 @@ The following table lists and describes the HTTP status codes that can be return
 |:------------|:--------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------|
 | 400         | Bad Request                     | Cannot process the request because it is malformed or incorrect.                                                                       |
 | 401         | Unauthorized                    | Required authentication information is either missing or not valid for the resource.                                                   |
-| 403         | Forbidden                       | Access is denied to the requested resource. The user might not have enough permission. <br /><br /> **Important:** If conditional access policies are applied to a resource, a HTTP 403; Forbidden error=insufficent_claims may be returned. For more details on Microsoft Graph and conditional access see [Developer Guidance for Azure Active Directory Conditional Access](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer)  |
+| 403         | Forbidden                       | Access is denied to the requested resource. The user might not have enough permission. <br /><br /> **Important:** If conditional access policies are applied to a resource, a HTTP 403; Forbidden error=insufficent_claims may be returned. For more details on Microsoft Graph and conditional access see [Developer Guidance for Azure Active Directory Conditional Access](/azure/active-directory/develop/active-directory-conditional-access-developer)  |
 | 404         | Not Found                       | The requested resource doesn’t exist.                                                                                                  |
 | 405         | Method Not Allowed              | The HTTP method in the request is not allowed on the resource.                                                                         |
 | 406         | Not Acceptable                  | This service doesn’t support the format requested in the Accept header.                                                                |
@@ -100,8 +91,8 @@ properties:
 
 | Property name  | Value                  | Description\                                                                                               |
 |:---------------|:-----------------------|:-----------------------------------------------------------------------------------------------------------|
-| **code**       | string                 | An error code string for the error that occured                                                            |
-| **message**    | string                 | A developer ready message about the error that occured. This should not be displayed to the user directly. |
+| **code**       | string                 | An error code string for the error that occurred                                                            |
+| **message**    | string                 | A developer ready message about the error that occurred. This should not be displayed to the user directly. |
 | **innererror** | error object           | Optional. Additional error objects that may be more specific than the top level error.                     |
 
 <!--<a name="msg_code_property"> </a> -->
@@ -115,6 +106,7 @@ prepared to handle any one of these errors.
 |:--------------------------|:--------------
 | **accessDenied**          | The caller doesn't have permission to perform the action. 
 | **activityLimitReached**  | The app or user has been throttled.
+| **extensionError**        | The mailbox is located on premises and the Exchange server does not support federated Microsoft Graph requests, or an [application policy](./auth-limit-mailbox-access.md) prevents the application from accessing the mailbox.
 | **generalException**      | An unspecified error has occurred.
 | **invalidRange**          | The specified byte range is invalid or unavailable.
 | **invalidRequest**        | The request is malformed or incorrect.

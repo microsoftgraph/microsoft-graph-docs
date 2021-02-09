@@ -12,9 +12,9 @@ const client = Client.init(options);
 
 const user = {
   businessPhones: [
-    "businessPhones-value"
+    "+1 425 555 0109"
   ],
-  officeLocation: "city-value"
+  officeLocation: "18/2111"
 };
 
 let res = await client.api('/me')

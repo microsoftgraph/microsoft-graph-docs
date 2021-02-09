@@ -3,7 +3,7 @@ title: "assignmentReviewSettings resource type"
 description: "The assignmentReviewSettings type, used for the accessReviewSettings property of an access package assignment policy, provides additional settings to select who must review access package assignments from this policy, and how often they must be reviewed."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
 
@@ -38,8 +38,7 @@ The following is a JSON representation of the access review settings property of
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.assignmentReviewSettings",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.assignmentReviewSettings"
 }-->
 
 ```json
@@ -63,3 +62,5 @@ The following is a JSON representation of the access review settings property of
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

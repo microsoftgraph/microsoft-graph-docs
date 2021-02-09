@@ -3,7 +3,7 @@ title: "Get iosikEv2VpnConfiguration"
 description: "Read properties and relationships of the iosikEv2VpnConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5469
+Content-Length: 6013
 
 {
   "value": {
@@ -151,6 +151,14 @@ Content-Length: 5469
         "probeRequiredUrl": "https://example.com/probeRequiredUrl/"
       }
     ],
+    "providerType": "appProxy",
+    "associatedDomains": [
+      "Associated Domains value"
+    ],
+    "excludedDomains": [
+      "Excluded Domains value"
+    ],
+    "disableOnDemandUserOverride": true,
     "proxyServer": {
       "@odata.type": "microsoft.graph.vpnProxyServer",
       "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
@@ -158,13 +166,22 @@ Content-Length: 5469
       "port": 4
     },
     "optInToDeviceIdSharing": true,
-    "providerType": "appProxy",
     "userDomain": "User Domain value",
     "strictEnforcement": true,
     "cloudName": "Cloud Name value",
     "excludeList": [
       "Exclude List value"
     ],
+    "targetedMobileApps": [
+      {
+        "@odata.type": "microsoft.graph.appListItem",
+        "name": "Name value",
+        "publisher": "Publisher value",
+        "appStoreUrl": "https://example.com/appStoreUrl/",
+        "appId": "App Id value"
+      }
+    ],
+    "microsoftTunnelSiteId": "Microsoft Tunnel Site Id value",
     "childSecurityAssociationParameters": {
       "@odata.type": "microsoft.graph.iosVpnSecurityAssociationParameters",
       "securityEncryptionAlgorithm": "des",
@@ -215,10 +232,12 @@ Content-Length: 5469
       "natKeepAliveIntervalInSeconds": 13,
       "natKeepAliveOffloadEnable": true
     },
-    "enableAlwaysOnConfiguration": true
+    "enableAlwaysOnConfiguration": true,
+    "mtuSizeInBytes": 14
   }
 }
 ```
+
 
 
 

@@ -3,7 +3,7 @@ title: "Get deviceEnrollmentPlatformRestrictionsConfiguration"
 description: "Read properties and relationships of the deviceEnrollmentPlatformRestrictionsConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3178
+Content-Length: 4528
 
 {
   "value": {
@@ -86,6 +86,9 @@ Content-Length: 3178
       "osMaximumVersion": "Os Maximum Version value",
       "blockedManufacturers": [
         "Blocked Manufacturers value"
+      ],
+      "blockedSkus": [
+        "Blocked Skus value"
       ]
     },
     "windowsRestriction": {
@@ -96,6 +99,22 @@ Content-Length: 3178
       "osMaximumVersion": "Os Maximum Version value",
       "blockedManufacturers": [
         "Blocked Manufacturers value"
+      ],
+      "blockedSkus": [
+        "Blocked Skus value"
+      ]
+    },
+    "windowsHomeSkuRestriction": {
+      "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
+      "platformBlocked": true,
+      "personalDeviceEnrollmentBlocked": true,
+      "osMinimumVersion": "Os Minimum Version value",
+      "osMaximumVersion": "Os Maximum Version value",
+      "blockedManufacturers": [
+        "Blocked Manufacturers value"
+      ],
+      "blockedSkus": [
+        "Blocked Skus value"
       ]
     },
     "windowsMobileRestriction": {
@@ -106,6 +125,9 @@ Content-Length: 3178
       "osMaximumVersion": "Os Maximum Version value",
       "blockedManufacturers": [
         "Blocked Manufacturers value"
+      ],
+      "blockedSkus": [
+        "Blocked Skus value"
       ]
     },
     "androidRestriction": {
@@ -116,6 +138,9 @@ Content-Length: 3178
       "osMaximumVersion": "Os Maximum Version value",
       "blockedManufacturers": [
         "Blocked Manufacturers value"
+      ],
+      "blockedSkus": [
+        "Blocked Skus value"
       ]
     },
     "androidForWorkRestriction": {
@@ -126,6 +151,22 @@ Content-Length: 3178
       "osMaximumVersion": "Os Maximum Version value",
       "blockedManufacturers": [
         "Blocked Manufacturers value"
+      ],
+      "blockedSkus": [
+        "Blocked Skus value"
+      ]
+    },
+    "aospRestriction": {
+      "@odata.type": "microsoft.graph.deviceEnrollmentPlatformRestriction",
+      "platformBlocked": true,
+      "personalDeviceEnrollmentBlocked": true,
+      "osMinimumVersion": "Os Minimum Version value",
+      "osMaximumVersion": "Os Maximum Version value",
+      "blockedManufacturers": [
+        "Blocked Manufacturers value"
+      ],
+      "blockedSkus": [
+        "Blocked Skus value"
       ]
     },
     "macRestriction": {
@@ -136,6 +177,9 @@ Content-Length: 3178
       "osMaximumVersion": "Os Maximum Version value",
       "blockedManufacturers": [
         "Blocked Manufacturers value"
+      ],
+      "blockedSkus": [
+        "Blocked Skus value"
       ]
     },
     "macOSRestriction": {
@@ -146,11 +190,15 @@ Content-Length: 3178
       "osMaximumVersion": "Os Maximum Version value",
       "blockedManufacturers": [
         "Blocked Manufacturers value"
+      ],
+      "blockedSkus": [
+        "Blocked Skus value"
       ]
     }
   }
 }
 ```
+
 
 
 

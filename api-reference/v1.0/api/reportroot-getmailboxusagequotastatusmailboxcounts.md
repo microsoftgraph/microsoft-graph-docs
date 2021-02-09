@@ -3,7 +3,7 @@ title: "reportRoot: getMailboxUsageQuotaStatusMailboxCounts"
 description: "Get the count of user mailboxes in each quota category."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -123,3 +123,4 @@ Report Refresh Date,Under Limit,Warning Issued,Send Prohibited,Send/Receive Proh
   "suppressions": [
   ]
 }-->
+

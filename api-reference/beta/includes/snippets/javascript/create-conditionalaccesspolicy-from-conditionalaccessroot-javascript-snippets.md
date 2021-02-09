@@ -20,7 +20,7 @@ const conditionalAccessPolicy = {
             ]
         },
         users: {
-            includeGroups: ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"],
+            includeGroups: ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"]
         },
         devices: {
             includeDeviceStates: [

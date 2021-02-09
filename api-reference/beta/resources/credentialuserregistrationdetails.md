@@ -2,8 +2,8 @@
 title: "credentialUserRegistrationDetails resource type"
 description: "Represents the details of the usage of self-service password reset and multi-factor authentication (MFA) for all registered users."
 localization_priority: Normal
-author: "khotz"
-ms.prod: "reports"
+author: "besiler"
+ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"
 ---
 
@@ -26,7 +26,7 @@ Represents the details of the usage of self-service password reset and multi-fac
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| authMethods | registrationAuthMethod collection | Represents the authentication method that the user used. Possible values are: `email`, `mobilePhone`, `officePhone`, `securityQuestion` (only used for self-service password reset), `appNotification`, `appCode`, and `alternateMobilePhone` (supported only in registration). |
+| authMethods | registrationAuthMethod collection | Represents the authentication method that the user has registered. Possible values are: `email`, `mobilePhone`, `officePhone`, `securityQuestion` (only used for self-service password reset), `appNotification`, `appCode`, and `alternateMobilePhone` (supported only in registration). |
 | id | String | The unique identifier for the activity. Read-only.|
 | isCapable | Boolean | Indicates whether the user is ready to perform self-service password reset or MFA. |
 | isEnabled | Boolean | Indiciates whether the user enabled to perform self-service password reset. |
@@ -49,7 +49,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.credentialUserRegistrationDetails",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
@@ -75,3 +74,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

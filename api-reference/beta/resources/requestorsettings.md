@@ -3,7 +3,7 @@ title: "requestorSettings complex type"
 description: "Used for the `requestorSettings` property of an access package assignment policy. Provides additional settings to select who can create a request."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
 
@@ -22,15 +22,15 @@ Used for the **requestorSettings** property of an [access package assignment pol
 |Users in your directory who are members of a group|`SpecificDirectorySubjects`|[groupMembers](groupmembers.md)|
 |Users in your directory with `userType` value of `member`|`AllExistingDirectoryMemberUsers`|empty array|
 |Users in your directory|`AllExistingDirectorySubjects`|empty array|
-|Users in specific other connected organizations already configured|`SpecificConnectedOrganizationSubjects`|[connectedOrganizationMembers](connectedorganizationmembers.md)|
-|Users from any other connected organizations already configured|`AllExistingConnectedOrganizationSubjects`|empty array|
+|Users in specific connected organizations|`SpecificConnectedOrganizationSubjects`|[connectedOrganizationMembers](connectedorganizationmembers.md)|
+|Users from any connected organizations that have the state property of the connected organization set to `configured`.|`AllConfiguredConnectedOrganizationSubjects`|empty array|
 |Any user|`AllExternalSubjects`|empty array|
 
 ## Properties
 
 | Property                     | Type                      | Description |
 | :--------------------------- | :------------------------ | :---------- |
-| scopeType |String |Who can request. One of `NoSubjects`, `SpecificDirectorySubjects`, `SpecificConnectedOrganizationSubjects`, `AllExistingConnectedOrganizationSubjects`, `AllExistingDirectoryMemberUsers`, `AllExistingDirectorySubjects` or `AllExternalSubjects`.  |
+| scopeType |String |Who can request. One of `NoSubjects`, `SpecificDirectorySubjects`, `SpecificConnectedOrganizationSubjects`, `AllConfiguredConnectedOrganizationSubjects`, `AllExistingConnectedOrganizationSubjects`, `AllExistingDirectoryMemberUsers`, `AllExistingDirectorySubjects` or `AllExternalSubjects`.  |
 | acceptRequests | Boolean | Indicates whether new requests are accepted on this policy. |
 | allowedRequestors | [userSet](userset.md) collection| The users who are allowed to request on this policy, which can be [singleUser](singleuser.md), [groupMembers](groupmembers.md), and [connectedOrganizationMembers](connectedorganizationmembers.md). |
 
@@ -44,8 +44,7 @@ The following is a JSON representation of the **requestorSettings** property of 
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.requestorSettings",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.requestorSettings"
 }-->
 
 ```json
@@ -73,3 +72,5 @@ The following is a JSON representation of the **requestorSettings** property of 
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

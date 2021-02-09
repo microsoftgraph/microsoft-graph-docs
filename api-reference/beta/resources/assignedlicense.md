@@ -4,7 +4,7 @@ description: "Represents a license assigned to a user. The **assignedLicenses** 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "krbain"
 ---
 
 # assignedLicense resource type
@@ -54,3 +54,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

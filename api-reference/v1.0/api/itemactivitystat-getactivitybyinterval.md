@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Get a collection of [itemActivityStats][] resources for the activities that took place on this resource within the specified time interval.
 
->**Note:** The **itemAnalytics** resource is not yet available in all [national deployments](/graph/deployments).
+>**Note:** The **itemAnalytics** resource is not yet available in all [national deployments](/graph/deployments). 
 
 Analytics aggregates might not be available for all action types.
 
@@ -44,6 +44,8 @@ GET /sites/{site-id}/lists/{list-id}/items/{item-id}/getActivitiesByInterval(sta
 | startDateTime  | string (timestamp) | The start time over which to aggregate activities.
 | endDateTime    | string (timestamp) | The end time over which to aggregate activities.
 | interval       | string             | The aggregation interval.
+
+>**Note:** This API only supports a time range of 90 days for daily counts. The value of the `startDateTime` and `endDateTime` parameters must represent a time range of less than 90 days.
 
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.
@@ -141,3 +143,4 @@ Content-type: application/json
   "suppressions": []
 }
 -->
+

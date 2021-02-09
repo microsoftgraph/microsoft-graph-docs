@@ -34,7 +34,7 @@ GET /me/mailFolders/{id}/messages/{id}
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages/{id}
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -46,8 +46,11 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and [eventMessage](../resources/eventmessage.md) object in the response body.
-## Example
-##### Request 1
+## Examples
+
+### Example 1
+#### Request
+
 The first example shows how to get the properties of an event message based on the event message ID.
 
 # [HTTP](#tab/http)
@@ -77,13 +80,13 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_lAAA=
 
 ---
 
-##### Response 1
+#### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "name": "get_eventmessage",
   "truncated": true,
-  "@odata.type": "microsoft.graph.eventMessage"
+  "@odata.type": "microsoft.graph.eventMessageRequest"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -91,7 +94,7 @@ Content-type: application/json
 
 {
     "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('8fd6e83b-3cc0-4bf0-8b26-950f4d7110f6')/messages/$entity",
-    "@odata.type":"#microsoft.graph.eventMessage",
+    "@odata.type":"#microsoft.graph.eventMessageRequest",
     "@odata.etag":"W/\"CwAAABYAAABXlB/SL0N4Q6g6o+jSYAEuAAAImkVD\"",
     "id":"AAMkADYAAAImV_lAAA=",
     "createdDateTime":"2017-12-27T21:58:36Z",
@@ -153,7 +156,8 @@ Content-type: application/json
 }
 ```
 
-##### Request 2
+### Example 2
+#### Request
 The second example shows how to get the event associated with an event message. It uses 
 the event message ID to get the event message, explicitly provides a cast on the event message to access its **event** navigation property, 
 and apply an $expand parameter to get the properties of the event.
@@ -185,14 +189,14 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADYAAAImV_jAAA=?$expand=mic
 
 ---
 
-##### Response 2
+#### Response
 Here is an example of the response. The properties of the associated event are returned in the response. 
 Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
   "blockType": "response",
   "name": "get_event_based_on_eventmessage",
   "truncated": true,
-  "@odata.type": "microsoft.graph.eventMessage"
+  "@odata.type": "microsoft.graph.eventMessageRequest"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -200,7 +204,7 @@ Content-type: application/json
 
 {
    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#users('8fd6e83b-3cc0-4bf0-8b26-950f4d7110f6')/messages/$entity",
-   "@odata.type":"#microsoft.graph.eventMessage",
+   "@odata.type":"#microsoft.graph.eventMessageRequest",
    "@odata.etag":"W/\"CwAAABYAAABXlB/SL0N4Q6g6o+jSYAEuAAAImkVF\"",
    "id":"AAMkADYAAAImV_jAAA=",
    "createdDateTime":"2017-12-27T21:54:55Z",

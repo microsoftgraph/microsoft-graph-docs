@@ -16,10 +16,9 @@ const redirect = {
       @odata.type: "#microsoft.graph.invitationParticipantInfo",
       identity: {
         @odata.type: "#microsoft.graph.identitySet",
-        application: {
+        phone: {
           @odata.type: "#microsoft.graph.identity",
-          displayName: "test bot 2",
-          id: "22bfd41f-550e-477d-8789-f6f7bd2a5e8b"
+          id: "+12345678901"
         }
       }
     }

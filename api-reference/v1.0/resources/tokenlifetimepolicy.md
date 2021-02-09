@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 
 
-Represents a policy that can control the lifetime of a JWT access token, an ID token or a SAML 1.1/2.0 token issued by Azure Active Directory (Azure AD). You can set token lifetimes for all apps in your organization, for a multi-tenant (multi-organization) application, or for a specific service principal in your organization.  For more scenario details see [Configurable token lifetimes in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes).
+Represents a policy that can control the lifetime of a JWT access token, an ID token or a SAML 1.1/2.0 token issued by Azure Active Directory (Azure AD). You can set token lifetimes for all apps in your organization, for a multi-tenant (multi-organization) application, or for a specific service principal in your organization.  For more scenario details see [Configurable token lifetimes in Azure Active Directory](/azure/active-directory/develop/active-directory-configurable-token-lifetimes).
 
 >**Note:** Configuring this policy for Refresh Tokens and Session Tokens is not supported.
 
@@ -78,7 +78,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.tokenLifetimePolicy",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

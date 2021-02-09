@@ -1,0 +1,102 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "b96cd9c9-df0e-4739-b79a-2395b92ebb31",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workbookOperation,workbook",
+          "ChangeType": "Addition",
+          "Description": "Added the [workbookOperation](https://docs.microsoft.com/en-us/graph/api/resources/workbookoperation) relationship to the [workbook](https://docs.microsoft.com/en-us/graph/api/resources/workbook?view=graph-rest-beta) entity.",
+          "Target": "workbookOperation,workbook"
+        },
+        {
+          "Id": "b96cd9c9-df0e-4739-b79a-2395b92ebb31",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Get workbookOperation,workbookOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the  [Get workbookOperation](https://docs.microsoft.com/en-us/graph/api/workbookoperation-get) method to the [workbookOperation](https://docs.microsoft.com/en-us/graph/api/resources/workbookoperation?view=graph-rest-beta) entity",
+          "Target": "Get workbookOperation,workbookOperation"
+        }
+      ],
+      "Id": "b96cd9c9-df0e-4739-b79a-2395b92ebb31",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-07-01T00:00:00",
+      "WorkloadArea": "Workbooks and charts",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fcbd588d-a8f1-46f1-9725-365c357f2f02",
+          "ApiChange": "Property",
+          "ChangedApiName": "legacyId,id,legacyId",
+          "ChangeType": "Change",
+          "Description": "Added the **legacyId** property to the [Excel Table](https://docs.microsoft.com/en-us/graph/api/resources/table?view=graph-rest-1.0) entity. This will contain the numeric value identifier (string data type) that will remain constact for a given Excel table. This is provided as an additional metadata if the application relied on the legacy identifier used in older Excel client applications. Note: The **id** and **legacyId** property should be treated as an opaque string value and should not be parsed to any other type within your application.",
+          "Target": "Excel Table"
+        }
+      ],
+      "Id": "fcbd588d-a8f1-46f1-9725-365c357f2f02",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2018-03-01T00:00:00",
+      "WorkloadArea": "Workbooks and charts",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "bacce3a8-5bf2-4c2e-aec1-e03176910c02",
+          "ApiChange": "Property",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added workbookPivotTable resource, refresh and refreshAll action on pivotTables, workbookRangeView resource, visibleView action on the filtered range to return workbookRangeView to the user, get rows collection and range resource off of visibleView, columnsAfter, columnsBefore, resizedRange, rowsAbove, and rowsBelow functions off of range resource, and new table properties.",
+          "Target": ""
+        }
+      ],
+      "Id": "bacce3a8-5bf2-4c2e-aec1-e03176910c02",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2016-12-01T00:00:00",
+      "WorkloadArea": "Workbooks and charts",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "97f0ddf6-07f8-45b1-b74e-ef8070b80d97",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Power your apps with the new Excel REST API on the Microsoft Graph",
+          "ChangeType": "Addition",
+          "Description": "Excel REST API on Microsoft Graph is generally available. Now you can build rich and deep integrations with Excel workbooks in Microsoft 365. See the [Power your apps with the new Excel REST API on the Microsoft Graph](https://developer.microsoft.com/office/blogs/power-your-apps-with-the-new-excel-rest-api/) blog post for more details.",
+          "Target": "Power your apps with the new Excel REST API on the Microsoft Graph"
+        }
+      ],
+      "Id": "97f0ddf6-07f8-45b1-b74e-ef8070b80d97",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2016-08-01T00:00:00",
+      "WorkloadArea": "Workbooks and charts",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c26b71a5-2e97-4529-ae9c-93dfa37dabb3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Working with Excel in Microsoft Graph",
+          "ChangeType": "Addition",
+          "Description": "We are adding new Excel REST APIs that let you read and modify data in an Excel workbook. It is now possible to build smart apps that allows users to get value out of the content stored in an Excel workbook by providing insights into the data. Take advantage of analytical powers of Excel, create tables and charts and extract visually appealing chart image - all from within your app. For details, see [Working with Excel in Microsoft Graph](https://docs.microsoft.com/en-us/graph/api/resources/excel?view=graph-rest-beta).",
+          "Target": "Working with Excel in Microsoft Graph"
+        }
+      ],
+      "Id": "c26b71a5-2e97-4529-ae9c-93dfa37dabb3",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2016-03-01T00:00:00",
+      "WorkloadArea": "Workbooks and charts",
+      "SubArea": ""
+    }
+  ]
+}

@@ -3,7 +3,7 @@ title: "List defaultManagedAppProtections"
 description: "List properties and relationships of the defaultManagedAppProtection objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5428
+Content-Length: 6001
 
 {
   "value": [
@@ -99,6 +99,9 @@ Content-Length: 5428
       "printBlocked": true,
       "fingerprintBlocked": true,
       "disableAppPinIfDevicePinIsSet": true,
+      "maximumRequiredOsVersion": "Maximum Required Os Version value",
+      "maximumWarningOsVersion": "Maximum Warning Os Version value",
+      "maximumWipeOsVersion": "Maximum Wipe Os Version value",
       "minimumRequiredOsVersion": "Minimum Required Os Version value",
       "minimumWarningOsVersion": "Minimum Warning Os Version value",
       "minimumRequiredAppVersion": "Minimum Required App Version value",
@@ -176,11 +179,19 @@ Content-Length: 5428
       "appActionIfAndroidDeviceModelNotAllowed": "wipe",
       "customDialerAppProtocol": "Custom Dialer App Protocol value",
       "customDialerAppPackageId": "Custom Dialer App Package Id value",
-      "customDialerAppDisplayName": "Custom Dialer App Display Name value"
+      "customDialerAppDisplayName": "Custom Dialer App Display Name value",
+      "biometricAuthenticationBlocked": true,
+      "requiredAndroidSafetyNetEvaluationType": "hardwareBacked",
+      "blockAfterCompanyPortalUpdateDeferralInDays": 11,
+      "warnAfterCompanyPortalUpdateDeferralInDays": 10,
+      "wipeAfterCompanyPortalUpdateDeferralInDays": 10,
+      "deviceLockRequired": true,
+      "appActionIfDeviceLockNotSet": "wipe"
     }
   ]
 }
 ```
+
 
 
 

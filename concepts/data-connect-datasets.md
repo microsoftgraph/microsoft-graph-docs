@@ -18,21 +18,21 @@ Data connect supports the following datasets today. To view the schemas for each
 
 |Dataset name|Description|
 |-------------|-----------|
-|BasicDataSet_v0.Contact_v0|Contains contact information from each user's address book. The schema for these entities resembles the [Microsoft Graph personal contacts schema](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/contact).| 
-|BasicDataSet_v0.Event_v0|Contains the events in each user's calendar. The schema for these entities resembles the [Microsoft Graph calendar events schema](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/event).| 
-|BasicDataSet_v0.Message_v0|Contains the message in each user's mailbox. The schema for these entities resembles the [Microsoft Graph messages schema](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/message).| 
-|BasicDataSet_v0.SentItem_v0|Contains the messages sent from each user's mailbox. The schema for these entities resembles the [Microsoft Graph messages schema](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/message).| 
+|BasicDataSet_v0.Contact_v0|Contains contact information from each user's address book. The schema for these entities resembles the [Microsoft Graph personal contacts schema](/graph/api/resources/contact).| 
+|BasicDataSet_v0.Event_v0|Contains the events in each user's calendar. The schema for these entities resembles the [Microsoft Graph calendar events schema](/graph/api/resources/event).| 
+|BasicDataSet_v0.Message_v0|Contains the message in each user's mailbox. The schema for these entities resembles the [Microsoft Graph messages schema](/graph/api/resources/message).| 
+|BasicDataSet_v0.SentItem_v0|Contains the messages sent from each user's mailbox. The schema for these entities resembles the [Microsoft Graph messages schema](/graph/api/resources/message).| 
 |BasicDataSet_v0.User_v0|Contains user information (DisplayName, UserPrincipalName, and so on).| 
-|BasicDataSet_v0.MailboxSettings_v0|Contains the mailbox settings of each user. The schema for these entities corresponds to the [Microsoft Graph mailbox settings schema](https://docs.microsoft.com/graph/api/resources/mailboxsettings?view=graph-rest-1.0).| 
-|BasicDataSet_v0.MailFolder_v0|Contains the mail folders from each user's mailbox. The schema for these entities corresponds to the [Microsoft Graph mail folders schema](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/mailfolder).|
-|BasicDataSet_v0.Manager_v0|Contains user information for the manager of each user. The schema for these entities corresponds to [Microsoft Graph user schema](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/user).|
-|BasicDataSet_v0.DirectReport_v0|Contains user information about the employees that directly report to each user. The schema for these entities corresponds to the [Microsoft Graph user schema](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/user).|
+|BasicDataSet_v0.MailboxSettings_v0|Contains the mailbox settings of each user. The schema for these entities corresponds to the [Microsoft Graph mailbox settings schema](/graph/api/resources/mailboxsettings?view=graph-rest-1.0).| 
+|BasicDataSet_v0.MailFolder_v0|Contains the mail folders from each user's mailbox. The schema for these entities corresponds to the [Microsoft Graph mail folders schema](/graph/api/resources/mailfolder).|
+|BasicDataSet_v0.Manager_v0|Contains user information for the manager of each user. The schema for these entities corresponds to [Microsoft Graph user schema](/graph/api/resources/user).|
+|BasicDataSet_v0.DirectReport_v0|Contains user information about the employees that directly report to each user. The schema for these entities corresponds to the [Microsoft Graph user schema](/graph/api/resources/user).|
 |BasicDataSet_v0.CalendarView_v0|Contains the events  The schema for these entities corresponds to the [Microsoft Graph user schema](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/events).|
-|BasicDataSet_v0.User_v1|This table contains user information. The schema for these entities corresponds to the [Microsoft Graph user schema](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/user).|
-|BasicDataSet_v0.Contact_v1|Contains contact information from each user's address book. The schema for these entities corresponds to the [Microsoft Graph personal contacts schema](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/contact).|
-|BasicDataSet_v0.Event_v1|Contains the events in each user's calendar. The schema for these entities corresponds to the [Microsoft Graph calendar events schema](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/event).|
-|BasicDataSet_v0.Message_v1|Contains the message in each user's mailbox. The schema for these entities corresponds to the [Microsoft Graph messages schema](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/message).|
-|BasicDataSet_v0.SentItem_v1|Contains the message sent from each user's mailbox. The schema for these entities corresponds to the [Microsoft Graph messages schema](https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/message).|
+|BasicDataSet_v0.User_v1|This table contains user information. The schema for these entities corresponds to the [Microsoft Graph user schema](/graph/api/resources/user).|
+|BasicDataSet_v0.Contact_v1|Contains contact information from each user's address book. The schema for these entities corresponds to the [Microsoft Graph personal contacts schema](/graph/api/resources/contact).|
+|BasicDataSet_v0.Event_v1|Contains the events in each user's calendar. The schema for these entities corresponds to the [Microsoft Graph calendar events schema](/graph/api/resources/event).|
+|BasicDataSet_v0.Message_v1|Contains the message in each user's mailbox. The schema for these entities corresponds to the [Microsoft Graph messages schema](/graph/api/resources/message).|
+|BasicDataSet_v0.SentItem_v1|Contains the message sent from each user's mailbox. The schema for these entities corresponds to the [Microsoft Graph messages schema](/graph/api/resources/message).|
 
 ## Regions
 
@@ -61,4 +61,4 @@ The following characteristics apply to sinks:
 
 ## Next Steps
 
-For more information about how to create data connect pipelines as a part of an Azure Data Factory, see the [Azure Data Factory Office 365 connector documentation](https://docs.microsoft.com/azure/data-factory/connector-office-365).  
+For more information about how to create data connect pipelines as a part of an Azure Data Factory, see the [Azure Data Factory Office 365 connector documentation](/azure/data-factory/connector-office-365).

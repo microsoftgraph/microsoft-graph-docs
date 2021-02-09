@@ -6,14 +6,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var name = "test7";
+var name = "test5";
 
-var formula = "=SUM(Sheet2!$A$1+Sheet2!$A$2)";
+var reference = "=Sheet1!$F$15:$N$27";
 
 var comment = "Comment for the named item";
 
 await graphClient.Me.Drive.Items["{id}"].Workbook.Names
-	.AddFormulaLocal(name,formula,comment)
+	.Add(name,reference,comment)
 	.Request()
 	.PostAsync();
 

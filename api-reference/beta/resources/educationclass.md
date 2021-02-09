@@ -13,7 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a class within a school. The **educationClass** resource corresponds to the Microsoft 365 group and shares the same ID. Students are regular members of the class, and teachers are owners and have appropriate rights. For Microsoft 365 experiences to work correctly, teachers must be members of both the teachers and members collections.
+Represents a class within a school. The **educationClass** resource currently corresponds to a Microsoft 365 [group] and shares the same ID.
+Students are regular members of the class, and Teachers are owners and have appropriate rights.
+
+> [!IMPORTANT]
+> For Microsoft 365 experiences to work correctly, teachers must be members of both the teachers and members collections.
 
 ## Methods
 
@@ -29,7 +33,7 @@ Represents a class within a school. The **educationClass** resource corresponds 
 | [Remove teacher](../api/educationclass-delete-teachers.md)              | [educationUser]                                | Remove an **educationUser** from the class through the teachers navigation property.      |
 | [Create educationAssignment](../api/educationclass-post-assignments.md) | [educationAssignment]                          | Create a new **educationAssignment** by posting to the assignments collection.            |
 | [List assignments](../api/educationclass-list-assignments.md)           | [educationAssignment]collection                | Get an **educationAssignment** object collection.                                         |
-| [Get group](../api/educationclass-get-group.md)                         | [group]                                        | Get the Microsoft 365 **group** that corresponds to this **educationClass**.                 |
+| [Get group](../api/educationclass-get-group.md)                         | [group]                                        | Get the Microsoft 365 **group** that corresponds to this **educationClass**.              |
 | [Create educationCategory](../api/educationclass-post-category.md)      | [educationCategory]                            | Create a new **educationCategory** for this class.                                        |
 | [List categories](../api/educationclass-list-categories.md)             | [educationCategory] collection                 | Get a list of **educationCategory** objects belonging to this class.                      |
 | [Update](../api/educationclass-update.md)                               | [educationClass]                               | Update **educationClass** object.                                                         |
@@ -38,20 +42,21 @@ Represents a class within a school. The **educationClass** resource corresponds 
 
 ## Properties
 
-| Property       | Type                                  | Description                                                                             |
-| :------------- | :------------------------------------ | :-------------------------------------------------------------------------------------- |
-| id             | String                                | Unique identifier for the class.                                                        |
-| classCode      | String                                | Class code used by the school to identify the class.                                    |
-| course         | [educationCourse](educationcourse.md) | Course information for the class                                                        |
-| createdBy      | [identitySet]                         | Entity who created the class                                                            |
-| description    | String                                | Description of the class.                                                               |
-| displayName    | String                                | Name of the class.                                                                      |
-| externalId     | String                                | ID of the class from the syncing system.                                                |
-| externalName   | String                                | Name of the class in the syncing system.                                                |
-| externalSource | String                                | How this class was created. Possible values are: `sis`, `manual`, `lms`. |
-| grade          | String                                | Grade level of the class.                                                               |
-| mailNickname   | String                                | Mail name for sending email to all members, if this is enabled.                         |
-| term           | [educationTerm]                       | Term for the class.                                                                     |
+| Property             | Type                                  | Description                                                                                                                                                          |
+| :------------------- | :------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| id                   | String                                | Unique identifier for the class.                                                                                                                                     |
+| classCode            | String                                | Class code used by the school to identify the class.                                                                                                                 |
+| course               | [educationCourse](educationcourse.md) | Course information for the class                                                                                                                                     |
+| createdBy            | [identitySet]                         | Entity who created the class                                                                                                                                         |
+| description          | String                                | Description of the class.                                                                                                                                            |
+| displayName          | String                                | Name of the class.                                                                                                                                                   |
+| externalId           | String                                | ID of the class from the syncing system.                                                                                                                             |
+| externalName         | String                                | Name of the class in the syncing system.                                                                                                                             |
+| externalSource       | String                                | The type of external source this resource was generated from (automatically determined from `externalSourceDetail`). Possible values are: `sis`, `lms`, or `manual`. |
+| externalSourceDetail | String                                | The name of the external source this resources was generated from.                                                                                                   |
+| grade                | String                                | Grade level of the class.                                                                                                                                            |
+| mailNickname         | String                                | Mail name for sending email to all members, if this is enabled.                                                                                                      |
+| term                 | [educationTerm]                       | Term for the class.                                                                                                                                                  |
 
 ## Relationships
 
@@ -116,3 +121,5 @@ The following is a JSON representation of the resource.
 [educationterm]: educationterm.md
 [identityset]: identityset.md
 [group]: group.md
+
+

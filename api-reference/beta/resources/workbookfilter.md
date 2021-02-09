@@ -4,7 +4,7 @@ description: "Manages the filtering of a table's column."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "excel"
-author: ""
+author: "ruoyingl"
 ---
 
 # workbookFilter resource type
@@ -64,3 +64,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

@@ -10,10 +10,10 @@ ms.prod: "microsoft-identity-platform"
 
 Authorization errors can occur as a result of several different issues, most of which generate a 403 error (with a few exceptions). For example, the following can all lead to authorization errors:
 
-* Incorrect [access token acquisition flows](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)
-* Poorly configured [permission scopes](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes)
-* Lack of [consent](https://docs.microsoft.com/azure/active-directory/develop/active-directory-devhowto-multi-tenant-overview#understanding-user-and-admin-consent)
-* Lack of [permissions](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent)
+* Incorrect [access token acquisition flows](/azure/active-directory/develop/active-directory-authentication-scenarios)
+* Poorly configured [permission scopes](/azure/active-directory/develop/active-directory-v2-scopes)
+* Lack of [consent](/azure/active-directory/develop/active-directory-devhowto-multi-tenant-overview#understanding-user-and-admin-consent)
+* Lack of [permissions](/azure/active-directory/develop/v2-permissions-and-consent)
 
 ## Steps to resolve common errors
 
@@ -21,28 +21,28 @@ To resolve common authorization errors, try the steps described for the error th
 
 **401 Unauthorized error: Is your token valid?** <br>
 
-Make sure that your application is presenting a valid access token to Microsoft Graph as part of the request. This error often means that the access token may be missing in the HTTP authenticate request header or that the token is invalid or has expired. We strongly recommend that you use the [Microsoft Authentication Library (MSAL)](https://docs.microsoft.com/azure/active-directory/develop/msal-overview) for access token acquisition. Additionally this error may occur, if you try to use a delegated access token granted to a personal Microsoft account, to access an API that only supports work or school accounts (organizational accounts). 
+Make sure that your application is presenting a valid access token to Microsoft Graph as part of the request. This error often means that the access token may be missing in the HTTP authenticate request header or that the token is invalid or has expired. We strongly recommend that you use the [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview) for access token acquisition. Additionally this error may occur, if you try to use a delegated access token granted to a personal Microsoft account, to access an API that only supports work or school accounts (organizational accounts). 
 
 **403 Forbidden error: Have you chosen the right set of permissions?**<br>
 
 Verify that you have requested the correct set of permissions based on the Microsoft Graph APIs your app calls. The least privileged permissions that we recommend are provided in all the Microsoft Graph API method reference topics. Additionally, those permissions must be granted to the application by a user or an administrator. Granting permissions normally happens through a consent page or by granting permissions using the Azure Portal application registration blade. From the **Settings** blade for the application, click **Required Permissions**, and then click **Grant Permissions**. <br>
 
-* [Microsoft Graph permissions](https://docs.microsoft.com/graph/permissions-reference) <br>
-* [Understanding Azure AD permissions and consent](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent) <br>
+* [Microsoft Graph permissions](./permissions-reference.md) <br>
+* [Understanding Azure AD permissions and consent](/azure/active-directory/develop/v2-permissions-and-consent) <br>
 
 **403 Forbidden error: Did your app acquire a token to match chosen permissions?** <br>
 
 Make sure that the type of permissions requested or granted matches the type of access token that your app acquires. You might be requesting and granting application permissions but using delegated interactive code flow tokens instead of client credential flow tokens, or requesting and granting delegated permissions but using client credential flow tokens instead of delegated code flow tokens. <br>
-* [Get access on behalf of users and delegated permissions](https://docs.microsoft.com/graph/auth_v2_user) 
-* [Azure AD v2.0 - OAuth 2.0 authorization code flow](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-auth-code-flow)
-* [Get access without a user (daemon service) and application permissions](https://docs.microsoft.com/graph/auth_v2_service)
-* [Azure AD v2.0 - OAuth 2.0 client credentials flow](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)
+* [Get access on behalf of users and delegated permissions](/graph/auth_v2_user) 
+* [Azure AD v2.0 - OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow)
+* [Get access without a user (daemon service) and application permissions](/graph/auth_v2_service)
+* [Azure AD v2.0 - OAuth 2.0 client credentials flow](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow)
 
 **403 Forbidden error: Resetting password** <br>
 
 Currently, there are no application permission daemon service-to-service permissions that allow resetting user passwords. These APIs are only supported using the interactive delegated code flows with a signed-in administrator.
 
-* [Microsoft Graph permissions](https://docs.microsoft.com/graph/permissions-reference) <br>
+* [Microsoft Graph permissions](./permissions-reference.md) <br>
 
 **403 Forbidden: Does the user have access and are they licensed?** <br>
 
@@ -56,5 +56,5 @@ API services like Microsoft Graph check that the *aud* claim (audience) in the r
 
 Based on an organization's CA policies, a user accessing Microsoft Graph resources via your app might be challenged for additional information that is not present in the access token your app originally acquired. In this case, your app receives a 400 with an *interaction_required* error during access token acquisition or a 403 with *insufficient_claims* error when calling Microsoft Graph. In both cases, the error response contains additional information that can be presented to the authorize endpoint to challenge the user for additional information (like multi-factor authentication or device enrollment).
 
-* [Handling conditional access challenges using MSAL](https://docs.microsoft.com/azure/active-directory/develop/msal-handling-exceptions#conditional-access-and-claims-challenges)
-* [Developer guidance for Azure Active Directory conditional access](https://docs.microsoft.com/azure/active-directory/develop/conditional-access-dev-guide)
+* [Handling conditional access challenges using MSAL](/azure/active-directory/develop/msal-handling-exceptions#conditional-access-and-claims-challenges)
+* [Developer guidance for Azure Active Directory conditional access](/azure/active-directory/develop/conditional-access-dev-guide)

@@ -26,20 +26,33 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | User.Read, User.ReadWrite    |
 |Application | User.Read.All, User.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 
-## HTTP request
+Calling the `/me` endpoint requires a signed-in user and therefore a delegated permission. Application permissions are not supported when using the `/me` endpoint.
+
+For a specific user:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}
 ```
+
+For the signed-in user:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me
+```
+
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+
 ## Request headers
+
 | Header       | Value|
 |:-----------|:------|
 | Authorization  | Bearer {token}. Required.|
 | Content-Type   | application/json |
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -75,6 +88,10 @@ GET https://graph.microsoft.com/beta/me
 [!INCLUDE [sample-code](../includes/snippets/objc/get-user-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-user-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -91,16 +108,16 @@ Content-type: application/json
 Content-length: 491
 
 {
-   "displayName": "displayName-value",
-   "givenName": "givenName-value",
-   "jobTitle": "jobTitle-value",
-   "mail": "mail-value",
-   "mobilePhone": "mobilePhone-value",
-   "officeLocation": "officeLocation-value",
-   "preferredLanguage": "preferredLanguage-value",
-   "surname": "surname-value",
-   "userPrincipalName": "userPrincipalName-value",
-   "id": "id-value"
+   "displayName": "Adele Vance",
+   "givenName": "Adele",
+   "jobTitle": "Retail Manager",
+   "mail": "AdeleV@contoso.onmicrosoft.com",
+   "mobilePhone": "+1 425 555 0109",
+   "officeLocation": "18/2111",
+   "preferredLanguage": "en-US",
+   "surname": "Vance",
+   "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
+   "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
 }
 ```
 
@@ -131,6 +148,10 @@ GET https://graph.microsoft.com/beta/users/{id}
 [!INCLUDE [sample-code](../includes/snippets/objc/get-other-user-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-other-user-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -148,16 +169,16 @@ Content-type: application/json
 Content-length: 491
 
 {
-      "displayName": "displayName-value",
-      "givenName": "givenName-value",
-      "jobTitle": "jobTitle-value",
-      "mail": "mail-value",
-      "mobilePhone": "mobilePhone-value",
-      "officeLocation": "officeLocation-value",
-      "preferredLanguage": "preferredLanguage-value",
-      "surname": "surname-value",
-      "userPrincipalName": "userPrincipalName-value",
-      "id": "id-value"
+      "displayName": "Adele Vance",
+      "givenName": "Adele",
+      "jobTitle": "Retail Manager",
+      "mail": "AdeleV@contoso.onmicrosoft.com",
+      "mobilePhone": "+1 425 555 0109",
+      "officeLocation": "18/2111",
+      "preferredLanguage": "en-US",
+      "surname": "Vance",
+      "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
+      "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
 }
 ```
 

@@ -3,7 +3,7 @@ title: "appScope resource type"
 description: "An app scope is a scope defined and understood by a specific application."
 localization_priority: Normal
 author: "sureshja"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "resourcePageType"
 ---
 
@@ -60,3 +60,4 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+

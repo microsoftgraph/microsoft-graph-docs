@@ -16,7 +16,7 @@ In order to send a notification to your user, your application service will:
 2. Post a notification to the Microsoft Graph API using the auth token, and target the user with a [user notification subscription ID](/graph/api/notifications-post) that is obtained from your app client when creating a subscription.
 
 > [!NOTE]
-> For a simplified authentication story, we recommend using the new and improved, lightweight [notification SDK](https://aka.ms/GNSDK) on the client-side with a user notification subscription ID to receive notifications and manage notification state. Alternatively, you can  post notifications on behalf of the user via delegated permissions and your app service will need to maintain access tokens and refresh tokens, but this is not recommended. To learn more about OAuth 2.0 OBO flow, see [Service-to-service calls that use delegated user identity in the On-Behalf-Of flow](https://docs.microsoft.com/azure/active-directory/develop/v1-oauth2-on-behalf-of-flow). 
+> For a simplified authentication story, we recommend using the new and improved, lightweight [notification SDK](https://aka.ms/GNSDK) on the client-side with a user notification subscription ID to receive notifications and manage notification state. Alternatively, you can  post notifications on behalf of the user via delegated permissions and your app service will need to maintain access tokens and refresh tokens, but this is not recommended. To learn more about OAuth 2.0 OBO flow, see [Service-to-service calls that use delegated user identity in the On-Behalf-Of flow](/azure/active-directory/develop/v1-oauth2-on-behalf-of-flow). 
 
 
 ## Guaranteed delivery on iOS

@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 DELETE /me/profile/projects/{id}
+DELETE /users/{id | userPrincipalName}/profile/projects/{id}
 ```
 
 ## Request headers
@@ -75,8 +76,11 @@ DELETE https://graph.microsoft.com/beta/me/profile/projects/{id}
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-projectparticipation-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
----
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-projectparticipation-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+---
 
 ### Response
 
@@ -91,12 +95,4 @@ The following is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Delete projectParticipation",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
+

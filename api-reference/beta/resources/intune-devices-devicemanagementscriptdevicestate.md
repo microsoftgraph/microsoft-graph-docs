@@ -3,7 +3,7 @@ title: "deviceManagementScriptDeviceState resource type"
 description: "Contains properties for device run state of the device management script."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -39,7 +39,7 @@ Contains properties for device run state of the device management script.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|managedDevice|[managedDevice](../resources/intune-devices-manageddevice.md)|The managed devices that executes the device management script.|
+|managedDevice|[managedDevice](../resources/intune-shared-manageddevice.md)|The managed devices that executes the device management script.|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -60,6 +60,7 @@ Here is a JSON representation of the resource.
   "errorDescription": "String"
 }
 ```
+
 
 
 

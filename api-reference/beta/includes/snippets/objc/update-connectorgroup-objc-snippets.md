@@ -7,13 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}"]]];
-[urlRequest setHTTPMethod:@"PATCH"];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/onPremisesPublishingProfiles/applicationProxy/connectorGroups"]]];
+[urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphConnectorGroup *connectorGroup = [[MSGraphConnectorGroup alloc] init];
-[connectorGroup setName:@"name-value"];
-[connectorGroup setRegion: [MSGraphConnectorGroupRegion nam]];
+[connectorGroup setName:@"Connector Group Demo"];
 
 NSError *error;
 NSData *connectorGroupData = [connectorGroup getSerializedDataWithError:&error];

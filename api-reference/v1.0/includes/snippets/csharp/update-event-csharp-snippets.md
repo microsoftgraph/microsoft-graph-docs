@@ -21,6 +21,7 @@ var @event = new Event
 	IsOnlineMeeting = true,
 	OnlineMeetingProvider = OnlineMeetingProviderType.TeamsForBusiness,
 	IsReminderOn = true,
+	HideAttendees = false,
 	Categories = new List<String>()
 	{
 		"Red category"

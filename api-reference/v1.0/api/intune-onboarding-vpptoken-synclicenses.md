@@ -3,7 +3,7 @@ title: "syncLicenses action"
 description: "Syncs licenses associated with a specific appleVolumePurchaseProgramToken"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -78,6 +78,9 @@ Content-Length: 619
   }
 }
 ```
+
+
+
 
 
 

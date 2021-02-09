@@ -3,7 +3,7 @@ title: "Update androidWorkProfileGeneralDeviceConfiguration"
 description: "Update the properties of a androidWorkProfileGeneralDeviceConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -61,7 +61,9 @@ The following table shows the properties that are required when you create the [
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|passwordBlockFaceUnlock|Boolean|Indicates whether or not to block face unlock.|
 |passwordBlockFingerprintUnlock|Boolean|Indicates whether or not to block fingerprint unlock.|
+|passwordBlockIrisUnlock|Boolean|Indicates whether or not to block iris unlock.|
 |passwordBlockTrustAgents|Boolean|Indicates whether or not to block Smart Lock and other trust agents.|
 |passwordExpirationDays|Int32|Number of days before the password expires. Valid values 1 to 365|
 |passwordMinimumLength|Int32|Minimum length of passwords. Valid values 4 to 16|
@@ -69,6 +71,7 @@ The following table shows the properties that are required when you create the [
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block. Valid values 0 to 24|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Number of sign in failures allowed before factory reset. Valid values 1 to 16|
 |passwordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|Type of password that is required. Possible values are: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
+|workProfileAllowAppInstallsFromUnknownSources|Boolean|Indicates whether to allow installation of apps from unknown sources.|
 |workProfileDataSharingType|[androidWorkProfileCrossProfileDataSharingType](../resources/intune-deviceconfig-androidworkprofilecrossprofiledatasharingtype.md)|Type of data sharing that is allowed. Possible values are: `deviceDefault`, `preventAny`, `allowPersonalToWork`, `noRestrictions`.|
 |workProfileBlockNotificationsWhileDeviceLocked|Boolean|Indicates whether or not to block notifications while device locked.|
 |workProfileBlockAddingAccounts|Boolean|Block users from adding/removing accounts in work profile.|
@@ -79,7 +82,9 @@ The following table shows the properties that are required when you create the [
 |workProfileBlockCrossProfileContactsSearch|Boolean|Block work profile contacts availability in personal profile.|
 |workProfileBlockCrossProfileCopyPaste|Boolean|Boolean that indicates if the setting disallow cross profile copy/paste is enabled.|
 |workProfileDefaultAppPermissionPolicy|[androidWorkProfileDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androidworkprofiledefaultapppermissionpolicytype.md)|Type of password that is required. Possible values are: `deviceDefault`, `prompt`, `autoGrant`, `autoDeny`.|
+|workProfilePasswordBlockFaceUnlock|Boolean|Indicates whether or not to block face unlock for work profile.|
 |workProfilePasswordBlockFingerprintUnlock|Boolean|Indicates whether or not to block fingerprint unlock for work profile.|
+|workProfilePasswordBlockIrisUnlock|Boolean|Indicates whether or not to block iris unlock for work profile.|
 |workProfilePasswordBlockTrustAgents|Boolean|Indicates whether or not to block Smart Lock and other trust agents for work profile.|
 |workProfilePasswordExpirationDays|Int32|Number of days before the work profile password expires. Valid values 1 to 365|
 |workProfilePasswordMinimumLength|Int32|Minimum length of work profile password. Valid values 4 to 16|
@@ -112,7 +117,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 2917
+Content-length: 3141
 
 {
   "@odata.type": "#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration",
@@ -144,7 +149,9 @@ Content-length: 2917
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "passwordBlockFaceUnlock": true,
   "passwordBlockFingerprintUnlock": true,
+  "passwordBlockIrisUnlock": true,
   "passwordBlockTrustAgents": true,
   "passwordExpirationDays": 6,
   "passwordMinimumLength": 5,
@@ -152,6 +159,7 @@ Content-length: 2917
   "passwordPreviousPasswordBlockCount": 2,
   "passwordSignInFailureCountBeforeFactoryReset": 12,
   "passwordRequiredType": "lowSecurityBiometric",
+  "workProfileAllowAppInstallsFromUnknownSources": true,
   "workProfileDataSharingType": "preventAny",
   "workProfileBlockNotificationsWhileDeviceLocked": true,
   "workProfileBlockAddingAccounts": true,
@@ -162,7 +170,9 @@ Content-length: 2917
   "workProfileBlockCrossProfileContactsSearch": true,
   "workProfileBlockCrossProfileCopyPaste": true,
   "workProfileDefaultAppPermissionPolicy": "prompt",
+  "workProfilePasswordBlockFaceUnlock": true,
   "workProfilePasswordBlockFingerprintUnlock": true,
+  "workProfilePasswordBlockIrisUnlock": true,
   "workProfilePasswordBlockTrustAgents": true,
   "workProfilePasswordExpirationDays": 1,
   "workProfilePasswordMinimumLength": 0,
@@ -190,7 +200,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3089
+Content-Length: 3313
 
 {
   "@odata.type": "#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration",
@@ -225,7 +235,9 @@ Content-Length: 3089
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "passwordBlockFaceUnlock": true,
   "passwordBlockFingerprintUnlock": true,
+  "passwordBlockIrisUnlock": true,
   "passwordBlockTrustAgents": true,
   "passwordExpirationDays": 6,
   "passwordMinimumLength": 5,
@@ -233,6 +245,7 @@ Content-Length: 3089
   "passwordPreviousPasswordBlockCount": 2,
   "passwordSignInFailureCountBeforeFactoryReset": 12,
   "passwordRequiredType": "lowSecurityBiometric",
+  "workProfileAllowAppInstallsFromUnknownSources": true,
   "workProfileDataSharingType": "preventAny",
   "workProfileBlockNotificationsWhileDeviceLocked": true,
   "workProfileBlockAddingAccounts": true,
@@ -243,7 +256,9 @@ Content-Length: 3089
   "workProfileBlockCrossProfileContactsSearch": true,
   "workProfileBlockCrossProfileCopyPaste": true,
   "workProfileDefaultAppPermissionPolicy": "prompt",
+  "workProfilePasswordBlockFaceUnlock": true,
   "workProfilePasswordBlockFingerprintUnlock": true,
+  "workProfilePasswordBlockIrisUnlock": true,
   "workProfilePasswordBlockTrustAgents": true,
   "workProfilePasswordExpirationDays": 1,
   "workProfilePasswordMinimumLength": 0,
@@ -265,6 +280,7 @@ Content-Length: 3089
   "workProfileBlockPersonalAppInstallsFromUnknownSources": true
 }
 ```
+
 
 
 

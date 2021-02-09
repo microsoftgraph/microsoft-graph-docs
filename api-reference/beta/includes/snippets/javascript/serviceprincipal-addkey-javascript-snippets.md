@@ -22,7 +22,7 @@ const addKey = {
     proof:"eyJ0eXAiOiJ..."
 };
 
-let res = await client.api('/serviceprincipals/{id}/addKey')
+let res = await client.api('/servicePrincipals/{id}/addKey')
 	.version('beta')
 	.post(addKey);
 

@@ -8,8 +8,8 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 String callbackUri = "https://bot.contoso.com/api/calls";
 
-LinkedList<String> acceptedModalitiesList = new LinkedList<String>();
-acceptedModalitiesList.add("audio");
+LinkedList<Modality> acceptedModalitiesList = new LinkedList<Modality>();
+acceptedModalitiesList.add(Modality.AUDIO);
 
 AppHostedMediaConfig mediaConfig = new AppHostedMediaConfig();
 mediaConfig.blob = "<Media Session Configuration Blob>";

@@ -3,7 +3,7 @@ title: "application: addKey"
 description: "Add a key credential to an application."
 localization_priority: Normal
 author: "sureshja"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
@@ -186,3 +186,4 @@ Content-Type: application/json
     "Error: application_addkey:\r\n      Resource type was null or missing, so we assume there is no response to validate."
     ]
 }-->
+

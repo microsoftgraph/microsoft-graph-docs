@@ -32,14 +32,23 @@ Represents a tenant's customizable terms of use agreement that is created and ma
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|displayName|String|Display name of the agreement.|
+|displayName|String|Display name of the agreement. The display name is used for internal tracking of the agreement but is not shown to end users who view the agreement.|
 |id|String| Read-only.|
-|isViewingBeforeAcceptanceRequired|Boolean|Indicates whether the user has to expand and view the agreement before accepting.|
+|isPerDeviceAcceptanceRequired|Boolean|This setting enables you to require end users to accept this agreement on every device that they are accessing it from. The end user will be required to register their device in Azure AD, if they haven't already done so.|
+|isViewingBeforeAcceptanceRequired|Boolean|Indicates whether the user has to expand the agreement before accepting.|
+|termsExpiration|[termsExpiration](termsexpiration.md)| Expiration schedule and frequency of agreement for all users. |
+|userReacceptRequiredFrequency|Duration|The duration after which the user must re-accept the terms of use. The value is represented in ISO 8601 format for durations.|
+
 
 ## Relationships
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|files|[agreementFile](agreementfile.md) collection|Read-only. PDFs linked to this agreement.|
+|acceptances|[agreementAcceptance](agreementacceptance.md) collection|Read-only. Information about acceptances of this agreement.|
+|files|[agreementFileLocalization](agreementfilelocalization.md) collection| PDFs linked to this agreement. **Note:** This property is in the process of being deprecated. Use the  **file** property instead.|
+|file|[agreementFile](agreementfile.md) | Default PDF linked to this agreement.|
+|file/localizations|[agreementFileLocalization](agreementfilelocalization.md) collection|The localized versions of the agreement files attached to the agreement.|
+|file/localizations/{localizationId}/versions|[agreementFileVersion](agreementfileversion.md) collection|The version history for the localized agreement file.|
+
 
 ## JSON representation
 
@@ -56,11 +65,15 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "displayName": "String",
   "id": "String (identifier)",
-  "isViewingBeforeAcceptanceRequired": true
+  "displayName": "MSGraph Sample",
+  "isViewingBeforeAcceptanceRequired": true,
+  "isPerDeviceAcceptanceRequired": false,
+  "termsExpiration": {
+    "startDateTime": "2018-10-01T00:00:00.0000000Z",
+    "frequency": "PT1M"
+  }
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -75,3 +88,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

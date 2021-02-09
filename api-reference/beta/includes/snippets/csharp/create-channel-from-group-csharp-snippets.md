@@ -13,7 +13,7 @@ var channel = new Channel
 	MembershipType = ChannelMembershipType.Standard
 };
 
-await graphClient.Teams["{id}"].Channels
+await graphClient.Teams["57fb72d0-d811-46f4-8947-305e6072eaa5"].Channels
 	.Request()
 	.AddAsync(channel);
 

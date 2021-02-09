@@ -3,7 +3,7 @@ title: "windowsHealthMonitoringScope enum type"
 description: "Device health monitoring scope"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -23,7 +23,8 @@ Device health monitoring scope
 |undefined|0|Undefined|
 |healthMonitoring|1|Basic events for windows device health monitoring|
 |bootPerformance|2|Boot performance events|
-|userExperienceAnalytics|4|User experience analytics events|
+|windowsUpdates|4|Windows updates events|
+
 
 
 

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/profile/emails/{id}')
+let res = await client.api('/users/{userId}/profile/emails/{id}')
 	.version('beta')
 	.get();
 

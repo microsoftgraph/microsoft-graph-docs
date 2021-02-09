@@ -1,11 +1,12 @@
+<!-- markdownlint-disable MD041 -->
+
 ```typescript
-const options = {
-	authProvider,
-};
+// GET https://graph.microsoft.com/v1.0/me/calendar/calendarView
 
-const client = Client.init(options);
+const start = '2020-01-01T19:00:00';
+const end = '2020-01-07T19:00:00';
 
-let calendar = await client.api('/me/calendar/calendarView?startDateTime=2017-01-01T19:00:00.0000000&endDateTime=2017-01-07T19:00:00.0000000')
-	.get();
-
+let calendar = await client
+  .api(`/me/calendar/calendarView?startDateTime=${start}&endDateTime=${end}`)
+  .get();
 ```

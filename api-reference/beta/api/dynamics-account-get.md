@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 
 ## HTTP request
-```
+```http
 GET /financials/companies/{id}/accounts/{id}
 ```
 
@@ -72,3 +72,5 @@ Here is an example of the response.
     "lastModifiedDateTime": "2017-03-15T02:20:58.747Z"
 }
 ```
+
+

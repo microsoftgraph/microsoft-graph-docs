@@ -3,7 +3,7 @@ title: "Update deviceManagementSettingDefinition"
 description: "Update the properties of a deviceManagementSettingDefinition object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -58,6 +58,8 @@ The following table shows the properties that are required when you create the [
 |description|String|The setting's description|
 |placeholderText|String|Placeholder text as an example of valid input|
 |documentationUrl|String|Url to setting documentation|
+|headerTitle|String|title of the setting header represents a category/section of a setting/settings|
+|headerSubtitle|String|subtitle of the setting header for more details about the category/section|
 |keywords|String collection|Keywords associated with the setting|
 |constraints|[deviceManagementConstraint](../resources/intune-deviceintent-devicemanagementconstraint.md) collection|Collection of constraints for the setting value|
 |dependencies|[deviceManagementSettingDependency](../resources/intune-deviceintent-devicemanagementsettingdependency.md) collection|Collection of dependencies on other settings|
@@ -74,7 +76,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/settingDefinitions/{deviceManagementSettingDefinitionId}
 Content-type: application/json
-Content-length: 928
+Content-length: 1014
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementSettingDefinition",
@@ -84,6 +86,8 @@ Content-length: 928
   "description": "Description value",
   "placeholderText": "Placeholder Text value",
   "documentationUrl": "https://example.com/documentationUrl/",
+  "headerTitle": "Header Title value",
+  "headerSubtitle": "Header Subtitle value",
   "keywords": [
     "Keywords value"
   ],
@@ -117,7 +121,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 977
+Content-Length: 1063
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementSettingDefinition",
@@ -128,6 +132,8 @@ Content-Length: 977
   "description": "Description value",
   "placeholderText": "Placeholder Text value",
   "documentationUrl": "https://example.com/documentationUrl/",
+  "headerTitle": "Header Title value",
+  "headerSubtitle": "Header Subtitle value",
   "keywords": [
     "Keywords value"
   ],
@@ -155,6 +161,7 @@ Content-Length: 977
   ]
 }
 ```
+
 
 
 

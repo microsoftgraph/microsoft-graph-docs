@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete [profile](../resources/profile.md) object from a user's account.
+Deletes a [profile](../resources/profile.md) object from a user's account.
 
 ## Permissions
 
@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged)                                      |
 |:---------------------------------------|:---------------------------------------------------------------------------------|
-| Delegated (work or school account)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Delegated (personal Microsoft account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All |
-| Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All                            |
+| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All |
+| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All |
+| Application                            | User.ReadWrite.All                            |
 
 ## HTTP request
 
@@ -31,6 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 DELETE /me/profile
+DELETE /users/{id | userPrincipalName}/profile
 ```
 
 ## Request headers
@@ -75,6 +76,10 @@ DELETE https://graph.microsoft.com/beta/me/profile
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-profile-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-profile-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -91,12 +96,4 @@ The following is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Delete profile",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
+

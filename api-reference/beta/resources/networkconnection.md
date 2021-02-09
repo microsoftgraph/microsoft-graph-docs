@@ -4,7 +4,7 @@ description: " > **Important:** APIs under the /beta version in Microsoft Graph 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "preetikr"
 ---
 
 # networkConnection resource type
@@ -118,3 +118,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

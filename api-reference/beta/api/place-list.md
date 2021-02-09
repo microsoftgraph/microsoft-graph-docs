@@ -115,6 +115,10 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.room
 [!INCLUDE [sample-code](../includes/snippets/objc/get-all-rooms-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-all-rooms-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -157,11 +161,11 @@ Content-type: application/json
       "phone": "000-000-0000",
       "nickname": "Conf Room",
       "label": "100",
-      "capacity": "50",
+      "capacity": 50,
       "building": "1",
       "floorNumber": 1,
       "isManaged": true,
-      "isWheelchairAccessible": false,
+      "isWheelChairAccessible": false,
       "bookingType": "standard",
       "tags": [
         "bean bags"
@@ -188,11 +192,11 @@ Content-type: application/json
       "phone": "000-000-0000",
       "nickname": "Conf Room",
       "label": "200",
-      "capacity": "40",
+      "capacity": 40,
       "building": "2",
       "floorNumber": 2,
       "isManaged": true,
-      "isWheelchairAccessible": false,
+      "isWheelChairAccessible": false,
       "bookingType": "standard",
       "tags": [
         "benches",
@@ -231,6 +235,10 @@ GET https://graph.microsoft.com/beta/places/microsoft.graph.roomlist
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-all-roomlists-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-all-roomlists-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -316,6 +324,10 @@ GET https://graph.microsoft.com/beta/places/bldg2@contoso.com/microsoft.graph.ro
 [!INCLUDE [sample-code](../includes/snippets/objc/get-rooms-in-roomlist-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-rooms-in-roomlist-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -358,11 +370,11 @@ Content-type: application/json
       "phone": "000-000-0000",
       "nickname": "Conf Room",
       "label": "200",
-      "capacity": "40",
+      "capacity": 40,
       "building": "2",
       "floorNumber": 2,
       "isManaged": true,
-      "isWheelchairAccessible": false,
+      "isWheelChairAccessible": false,
       "bookingType": "standard",
       "tags": [
         "benches",
@@ -388,3 +400,5 @@ Content-type: application/json
     "Error: Malformed function params 'id-of-roomlist'"
   ]
 }-->
+
+

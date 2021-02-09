@@ -2,7 +2,7 @@
 title: "calendar: getSchedule"
 description: "Get the free/busy availability information for a collection of users, distributions lists, or resources, for a specified time period."
 localization_priority: Priority
-author: "angelgolfer-ms"
+author: "tariq-sharif"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -89,6 +89,10 @@ Content-Type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/calendar-getschedule-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/calendar-getschedule-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -252,3 +256,5 @@ Content-type: application/json
   "suppressions": []
 }
 -->
+
+

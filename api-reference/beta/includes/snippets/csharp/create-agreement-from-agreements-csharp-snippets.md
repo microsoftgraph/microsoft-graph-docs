@@ -10,9 +10,9 @@ var agreement = new Agreement
 {
 	DisplayName = "MSGraph Sample",
 	IsViewingBeforeAcceptanceRequired = true,
-	Files = (IAgreementFilesCollectionPage)new List<AgreementFile>()
+	Files = new AgreementFilesCollectionPage()
 	{
-		new AgreementFile
+		new AgreementFileLocalization
 		{
 			FileName = "TOU.pdf",
 			Language = "en",

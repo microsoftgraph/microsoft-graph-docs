@@ -3,7 +3,7 @@ title: "Get managedDeviceOverview"
 description: "Read properties and relationships of the managedDeviceOverview object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1320
+Content-Length: 1434
 
 {
   "value": {
@@ -84,7 +84,10 @@ Content-Length: 1320
       "androidDeviceAdminCount": 7,
       "androidFullyManagedCount": 8,
       "androidWorkProfileCount": 7,
-      "configMgrDeviceCount": 4
+      "androidCorporateWorkProfileCount": 0,
+      "configMgrDeviceCount": 4,
+      "aospUserlessCount": 1,
+      "aospUserAssociatedCount": 7
     },
     "deviceExchangeAccessStateSummary": {
       "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
@@ -107,6 +110,7 @@ Content-Length: 1320
   }
 }
 ```
+
 
 
 

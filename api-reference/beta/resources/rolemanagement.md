@@ -17,7 +17,7 @@ Represents a Microsoft 365 RBAC role management entity. Provides access to role 
 
 For more information, see: 
 * [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles).
-* [Role-based access control (RBAC) with Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control)
+* [Role-based access control (RBAC) with Microsoft Intune](/mem/intune/fundamentals/role-based-access-control)
 
 ## Methods
 

@@ -4,7 +4,7 @@ description: "Represents the current status of the synchronizationJob."
 localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # synchronizationStatus resource type
@@ -84,3 +84,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

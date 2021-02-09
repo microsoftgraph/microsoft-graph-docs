@@ -1,5 +1,5 @@
 ---
-title: Get services
+title: List printServices
 description: Retrieve a list of printService objects that represent the services available to your tenant.
 author: braedenp-msft
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: universal-print
 doc_type: apiPageType
 ---
 
-# List services
+# List printServices
 
 Namespace: microsoft.graph
 
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Retrieve a list of [printService](../resources/printservice.md) objects that represent the **services** available to your tenant.
 
 ## Permissions
-No permissions are needed to call this API, but the user's tenant must have an active Universal Print subscription.
+No permissions are needed to call this API, but to use the Universal Print service, the user or app's tenant must have an active Universal Print subscription.
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
@@ -66,6 +66,10 @@ GET https://graph.microsoft.com/beta/print/services
 [!INCLUDE [sample-code](../includes/snippets/objc/get-services-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-services-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -108,3 +112,5 @@ Content-length: 389
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

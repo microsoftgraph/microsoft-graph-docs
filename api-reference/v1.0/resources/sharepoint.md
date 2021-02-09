@@ -3,7 +3,7 @@ title: "Working with SharePoint sites in Microsoft Graph"
 description: "The SharePoint API in Microsoft Graph supports the following core scenarios:"
 localization_priority: Priority
 ms.prod: "sharepoint"
-author: ""
+author: "JeremyKelley"
 doc_type: conceptualPageType
 ---
 
@@ -134,3 +134,4 @@ Find out about the [latest new features and updates](/graph/whats-new-overview) 
   "tocPath": "Getting Started",
   "tocIndex": -100
 } -->
+

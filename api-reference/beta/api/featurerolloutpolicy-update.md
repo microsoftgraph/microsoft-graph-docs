@@ -66,7 +66,6 @@ The following is an example of the request.
 
 ```http
 PATCH https://graph.microsoft.com/v1.0/directory/featureRolloutPolicies/d7ab4886-d7f0-441b-a5e6-e62d7328d18a
-
 Content-type: application/json
 
 {
@@ -102,3 +101,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

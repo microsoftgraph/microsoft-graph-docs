@@ -3,7 +3,7 @@ title: "Create mobileAppAssignment"
 description: "Create a new mobileAppAssignment object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -67,7 +67,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/assignments
 Content-type: application/json
-Content-length: 591
+Content-length: 617
 
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignment",
@@ -80,7 +80,8 @@ Content-length: 591
   "settings": {
     "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
     "vpnConfigurationId": "Vpn Configuration Id value",
-    "uninstallOnDeviceRemoval": true
+    "uninstallOnDeviceRemoval": true,
+    "isRemovable": true
   },
   "source": "policySets",
   "sourceId": "Source Id value"
@@ -92,7 +93,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 640
+Content-Length: 666
 
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignment",
@@ -106,12 +107,14 @@ Content-Length: 640
   "settings": {
     "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
     "vpnConfigurationId": "Vpn Configuration Id value",
-    "uninstallOnDeviceRemoval": true
+    "uninstallOnDeviceRemoval": true,
+    "isRemovable": true
   },
   "source": "policySets",
   "sourceId": "Source Id value"
 }
 ```
+
 
 
 

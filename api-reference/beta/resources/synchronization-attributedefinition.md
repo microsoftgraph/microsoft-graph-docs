@@ -4,7 +4,7 @@ description: "Describes an attribute of an object."
 localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # attributeDefinition resource type
@@ -21,6 +21,7 @@ Describes an attribute of an object.
 |:--------------|:----------|:---------------|
 |anchor         |Boolean    | `true` if the attribute should be used as the anchor for the object. Anchor attributes must have a unique value identifying an object, and must be immutable. Default is `false`. One, and only one, of the object's attributes must be designated as the anchor to support synchronization. |
 |caseExact      |Boolean    |`true` if value of this attribute should be treated as case-sensitive. This setting affects how the synchronization engine detects changes for the attribute.|
+|flowNullValues |Boolean    |'true' to allow null values for attributes.|
 |metadata       |[metadataEntry](../resources/synchronization-metadataentry.md) collection   |Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.|
 |multivalued    |Boolean    |`true` if an attribute can have multiple values. Default is `false`.|
 |mutability     |String     |An attribute's mutability. Possible values are:  `ReadWrite`, `ReadOnly`, `Immutable`, `WriteOnly`. Default is `ReadWrite`.|
@@ -46,6 +47,7 @@ The following is a JSON representation of the resource.
   "anchor": true,
   "caseExact": true,
   "defaultValue": "String",
+  "flowNullValues": true,
   "metadata": [{"@odata.type": "microsoft.graph.metadataEntry"}],
   "multivalued": true,
   "mutability": "String",
@@ -69,3 +71,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

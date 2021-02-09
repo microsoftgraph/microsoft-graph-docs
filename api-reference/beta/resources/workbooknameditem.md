@@ -4,7 +4,7 @@ description: "Represents a defined name for a range of cells or value. Names can
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "excel"
-author: ""
+author: "ruoyingl"
 ---
 
 # workbookNamedItem resource type
@@ -64,7 +64,7 @@ Here is a JSON representation of the resource.
   "type": "string",
   "value": "string",
   "visible": true
-  
+
 }
 
 ```
@@ -81,3 +81,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

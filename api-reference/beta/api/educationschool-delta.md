@@ -30,10 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /education/schools/{id}/delta
-POST /education/me/schools/{id}/delta
-POST /education/users/{id}/schools/{id}/delta
-
+GET /education/schools/delta
 ```
 
 ## Request headers
@@ -57,20 +54,40 @@ If successful, this method returns a `200 OK` response code and an [educationSch
 
 The following example shows how to call this API.
 
-##### Request
+### Request
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "educationschool_delta"
 }-->
 
-```http
-POST https://graph.microsoft.com/v1.0/education/schools/{id}/delta
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/education/schools/delta
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/educationschool-delta-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### Response
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/educationschool-delta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/educationschool-delta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/educationschool-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### Response
 
 The following is an example of the response.
 
@@ -91,12 +108,20 @@ Content-length: 313
 {
   "value": [
     {
-      "principalEmail": "principalEmail-value",
-      "principalName": "principalName-value",
-      "externalPrincipalId": "externalPrincipalId-value",
-      "lowestGrade": "lowestGrade-value",
-      "highestGrade": "highestGrade-value",
-      "schoolNumber": "schoolNumber-value"
+      "address": { "@odata.type": "microsoft.graph.physicalAddress" },
+      "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+      "description": "String",
+      "displayName": "String",
+      "externalId": "String",
+      "externalPrincipalId": "String",
+      "externalSource": "string",
+      "highestGrade": "String",
+      "id": "String (identifier)",
+      "lowestGrade": "String",
+      "phone": "String",
+      "principalEmail": "String",
+      "principalName": "String",
+      "schoolNumber": "String"
     }
   ]
 }
@@ -111,3 +136,5 @@ Content-length: 313
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

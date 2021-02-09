@@ -13,17 +13,22 @@ var schema = new Schema
 	{
 		new Property
 		{
-			Name = "title",
+			Name = "ticketTitle",
 			Type = PropertyType.String,
 			IsSearchable = true,
-			IsRetrievable = true
+			IsRetrievable = true,
+			Labels = new List<Label>()
+			{
+				Label.Title
+			}
 		},
 		new Property
 		{
 			Name = "priority",
 			Type = PropertyType.String,
 			IsQueryable = true,
-			IsRetrievable = true
+			IsRetrievable = true,
+			IsSearchable = false
 		},
 		new Property
 		{
@@ -34,7 +39,7 @@ var schema = new Schema
 	}
 };
 
-await graphClient.Connections["contosohr"].Schema
+await graphClient.External.Connections["contosohr"].Schema
 	.Request()
 	.Header("Prefer","respond-async")
 	.AddAsync(schema);

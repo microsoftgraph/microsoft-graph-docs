@@ -11,8 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const personAnniversary = {
-  type: "type-value",
-  date: "datetime-value"
+  allowedAudiences: "contacts"
 };
 
 let res = await client.api('/me/profile/anniversaries/{id}')

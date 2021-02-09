@@ -3,7 +3,7 @@ title: "extensionProperty resource type"
 description: "Represents a directory extension"
 localization_priority: Normal
 author: "keylimesoda"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: "resourcePageType"
 ---
 
@@ -20,7 +20,7 @@ Extensions can be added to [user](user.md), [group](group.md), [organization](or
 > [!IMPORTANT]
 > Azure AD schema extensions described here are available in Microsoft Graph for backwards compatibility reasons only.
 > It allows you to use Microsoft Graph to continue to manage extension properties added through Azure AD Graph or 
-> [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-azure-ad-connect).
+> [Azure AD Connect](/azure/active-directory/hybrid/whatis-azure-ad-connect).
 > For new custom extensions, we recommend that you use Microsoft Graph schema extensions for [adding custom data to resources](/graph/extensibility-overview).
 
 ## Methods
@@ -55,7 +55,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.extensionProperty",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

@@ -44,11 +44,11 @@ The following is a JSON definition of the resource.
 ```json
 {
     "defaultDisplayLanguage": {"@odata.type":"microsoft.graph.localeInfo"},
-    "authoringLanguages":[{"@odata.type":"microsoft.graph.localeInfo"}] ,
+    "authoringLanguages": [{"@odata.type":"microsoft.graph.localeInfo"}],
     "defaultTranslationLanguage": {"@odata.type":"microsoft.graph.localeInfo"},
     "defaultSpeechInputLanguage": {"@odata.type":"microsoft.graph.localeInfo"},
-    "defaultRegionalFormat":{"@odata.type":"microsoft.graph.localeInfo"} ,
-    "regionalFormatOverrides":{"@odata.type":"microsoft.graph.regionalFormatOverrides"}
+    "defaultRegionalFormat": {"@odata.type":"microsoft.graph.localeInfo"},
+    "regionalFormatOverrides": {"@odata.type":"microsoft.graph.regionalFormatOverrides"}
 }
 ```
 <!-- {
@@ -58,3 +58,5 @@ The following is a JSON definition of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

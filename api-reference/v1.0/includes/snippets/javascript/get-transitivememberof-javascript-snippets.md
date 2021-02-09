@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/transitiveMemberOf')
+let res = await client.api('/users/{id}/transitiveMemberOf')
 	.get();
 
 ```

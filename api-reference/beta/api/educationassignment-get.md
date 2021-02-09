@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /education/classes/{id}/assignments/{id}
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 | Header       | Value |
@@ -70,6 +70,7 @@ Content-length: 279
 
 {
   "id": "19002",
+  "addedStudentAction": "none",
   "allowLateSubmissions": true,
   "allowStudentsToAddResourcesToSubmission": true,
   "assignDateTime": "String (timestamp)",
@@ -101,6 +102,7 @@ Content-length: 279
     }
   },
   "lastModifiedDateTime": "2014-01-01T00:00:00Z",
+  "notificationChannelUrl": null,
   "status": "assigned"
 }
 ```

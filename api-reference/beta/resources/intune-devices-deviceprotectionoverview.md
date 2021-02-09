@@ -3,7 +3,7 @@ title: "deviceProtectionOverview resource type"
 description: "Hardware information of a given device."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -30,6 +30,7 @@ Hardware information of a given device.
 |pendingManualStepsDeviceCount|Int32|Pending manual steps device count.|
 |pendingOfflineScanDeviceCount|Int32|Pending offline scan device count.|
 |criticalFailuresDeviceCount|Int32|Critical failures device count.|
+|pendingQuickScanDeviceCount|Int32|Pending quick scan device count. Valid values -2147483648 to 2147483647|
 
 ## Relationships
 None
@@ -53,9 +54,11 @@ Here is a JSON representation of the resource.
   "pendingRestartDeviceCount": 1024,
   "pendingManualStepsDeviceCount": 1024,
   "pendingOfflineScanDeviceCount": 1024,
-  "criticalFailuresDeviceCount": 1024
+  "criticalFailuresDeviceCount": 1024,
+  "pendingQuickScanDeviceCount": 1024
 }
 ```
+
 
 
 

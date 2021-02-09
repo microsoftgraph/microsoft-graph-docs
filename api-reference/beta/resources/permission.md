@@ -73,12 +73,11 @@ Here is a JSON representation of the resource.
 
 ### Roles property values
 
-| Value        | Details                                                                        |
-|:------------|:-------------------------------------------------------------------------------|
-| `read`      | Provides the ability to read the metadata and contents of the item.            |
-| `write`     | Provides the ability to read and modify the metadata and contents of the item. |
-| `sp.owner`  | For SharePoint and OneDrive for Business this represents the owner role.       |
-| `sp.member` | For SharePoint and OneDrive for Business this represents the member role.      |
+| Role              | Details                                                                        |
+|:------------------|:-------------------------------------------------------------------------------|
+| read            | Provides the ability to read the metadata and contents of the item.            |
+| write           | Provides the ability to read and modify the metadata and contents of the item. |
+| sp.full control | For SharePoint and OneDrive for Business this represents the owner role.       |
 
 The permission resource uses _facets_ to provide information about the kind of permission represented by the resource.
 
@@ -244,7 +243,7 @@ After the sharing invitation has been redeemed by a user, the **grantedTo** prop
 | [Update](../api/permission-update.md)                    | `PATCH /drive/items/{item-id}/permissions/{id}`
 | [Delete](../api/permission-delete.md)                    | `DELETE /drive/items/{item-id}/permissions/{id}`
 | [Add users to sharing link](../api/permission-grant.md)  | `POST /shares/{encoded-sharing-url}/permission/grant`
-
+| [Revoke grants](../api/permission-revokegrants.md)   | `POST /drive/items/{item-id}/permissions/{id}/revokeGrants`
 
 [createLink]: ../api/driveitem-createlink.md
 [grant]: ../api/permission-grant.md

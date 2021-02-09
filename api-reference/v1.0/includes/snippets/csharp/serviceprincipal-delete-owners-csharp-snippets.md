@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Serviceprincipals["{id}"].Owners["{id}"].Reference
+await graphClient.ServicePrincipals["{id}"].Owners["{id}"].Reference
 	.Request()
 	.DeleteAsync();
 

@@ -9,14 +9,14 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 KeyCredential keyCredential = new KeyCredential();
 keyCredential.type = "X509CertAndPassword";
 keyCredential.usage = "Sign";
-keyCredential.key = "MIIDYDCCAki...";
+keyCredential.key = Base64.getDecoder().decode("MIIDYDCCAki...");
 
 PasswordCredential passwordCredential = new PasswordCredential();
 passwordCredential.secretText = "MKTr0w1...";
 
 String proof = "eyJ0eXAiOiJ...";
 
-graphClient.serviceprincipals("{id}")
+graphClient.servicePrincipals("{id}")
 	.addKey(keyCredential,passwordCredential,proof)
 	.buildRequest()
 	.post();

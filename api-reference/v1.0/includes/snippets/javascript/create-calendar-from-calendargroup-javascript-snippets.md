@@ -10,9 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const calendar = Content-type: application/json
-
-{
+const calendar = {
   name: "Marketing calendar"
 };
 

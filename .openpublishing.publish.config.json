@@ -50,13 +50,5 @@
   ],
   "branch_target_mapping": {},
   "need_generate_pdf_url_template": false,
-  "targets": {},
-  "JoinTOCPlugin": [
-    {
-      "ReferenceTOC": "api-reference/v1.0/toc.yml",
-      "ReferenceTOCUrl": "/graph/api/toc.json",
-      "ConceptualTOC": "concepts/toc.yml",
-      "ConceptualTOCUrl": "/graph/concepts/toc.json"
-    }
-  ]
+  "targets": {}
 }

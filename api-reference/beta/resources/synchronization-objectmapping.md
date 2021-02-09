@@ -4,7 +4,7 @@ description: "Defines how a given object should be synchronized from source dire
 localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # objectMapping resource type
@@ -358,3 +358,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

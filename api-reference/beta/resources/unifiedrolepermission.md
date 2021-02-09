@@ -19,7 +19,7 @@ Represents a collection of allowed resource actions and the conditions that must
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|allowedResourceActions|String collection| Set of tasks that can be perfomed on a resource. |
+|allowedResourceActions|String collection| Set of tasks that can be performed on a resource. |
 |condition|String| Optional constraints that must be met for the permission to be effective. |
 
 ### allowedResourceActions property
@@ -48,8 +48,8 @@ For example: `microsoft.directory/applications/credentials/update`.
 ### condition property
 Conditions define constraints that must be met. For example, a requirement that the principal be an "owner" of the target. The following are the supported conditions:
 
-- Self: "@Subject.objectId == @Resource.objectId"
-- Owner: "@Subject.objectId Any_of @Resource.owners"
+- Self: "$ResourceIsSelf"
+- Owner: "$SubjectIsOwner"
 
 The following is an example of a role permission with a condition.
 
@@ -60,7 +60,7 @@ The following is an example of a role permission with a condition.
                 "microsoft.directory/applications/basic/update",
                 "microsoft.directory/applications/credentials/update"
             ],
-            "condition":  "@Subject.objectId Any_of @Resource.owners"
+            "condition":  "$SubjectIsOwner"
         }
     ]
 
@@ -87,8 +87,8 @@ The following is a JSON representation of the resource.
 ```
 ## See also
 
-- [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) - For information about permissions for built-in directory roles.
-- [Application registration subtypes and permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/roles-custom-available-permissions) -  For information about permissions that are available for custom directory roles. 
+- [Administrator role permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) - For information about permissions for built-in directory roles.
+- [Application registration subtypes and permissions in Azure Active Directory](/azure/active-directory/users-groups-roles/roles-custom-available-permissions) -  For information about permissions that are available for custom directory roles. 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

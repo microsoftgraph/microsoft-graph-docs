@@ -3,7 +3,7 @@ title: "windowsMinimumOperatingSystem resource type"
 description: "The minimum operating system required for a Windows mobile app."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -29,6 +29,8 @@ The minimum operating system required for a Windows mobile app.
 |v10_1803|Boolean|Windows 10 1803 or later.|
 |v10_1809|Boolean|Windows 10 1809 or later.|
 |v10_1903|Boolean|Windows 10 1903 or later.|
+|v10_1909|Boolean|Windows 10 1909 or later.|
+|v10_2004|Boolean|Windows 10 2004 or later.|
 
 ## Relationships
 None
@@ -51,9 +53,12 @@ Here is a JSON representation of the resource.
   "v10_1709": true,
   "v10_1803": true,
   "v10_1809": true,
-  "v10_1903": true
+  "v10_1903": true,
+  "v10_1909": true,
+  "v10_2004": true
 }
 ```
+
 
 
 

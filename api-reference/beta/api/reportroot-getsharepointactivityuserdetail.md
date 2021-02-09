@@ -3,7 +3,7 @@ title: "reportRoot: getSharePointActivityUserDetail"
 description: "Get details about SharePoint activity by user."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -203,3 +203,5 @@ Content-Length: 473
   "suppressions": [
   ]
 }-->
+
+

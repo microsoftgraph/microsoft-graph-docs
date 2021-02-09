@@ -3,7 +3,7 @@ title: "Grant an appRoleAssignment to a service principal"
 description: "Grant an app role assignment to a service principal."
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 author: "sureshja"
 ---
 
@@ -14,7 +14,7 @@ Namespace: microsoft.graph
 
 Assign an app role for a resource service principal, to a user, group, or client service principal.
 
-App roles that are assigned to service principals are also known as [application permissions](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Application permissions can be granted directly with app role assignments, or through a [consent experience](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience).
+App roles that are assigned to service principals are also known as [application permissions](/azure/active-directory/develop/v2-permissions-and-consent#permission-types). Application permissions can be granted directly with app role assignments, or through a [consent experience](/azure/active-directory/develop/application-consent-experience).
 
 To grant an app role assignment, you need three identifiers:
 
@@ -112,7 +112,7 @@ Here is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
 Content-length: 253
 

@@ -20,7 +20,7 @@ const schemaExtension = {
       name:"additional-name-value",
       type:"additional-type-value"
     }
-  ],
+  ]
 };
 
 let res = await client.api('/schemaExtensions/{id}')

@@ -2,7 +2,7 @@
 title: "Email app usage reports"
 description: "You can see how many email apps are used to connect to Exchange Online. You can also see which versions of Outlook apps are used which will enable you to follow up with users who should upgrade to supported Outlook versions."
 localization_priority: Normal
-author: "pranoychaudhuri"
+author: "sarahwxy"
 ms.prod: "reports"
 doc_type: conceptualPageType
 ---
@@ -25,3 +25,5 @@ You can see how many email apps are used to connect to Exchange Online. You can 
 | [Get apps user counts](../api/reportroot-getemailappusageappsusercounts.md) | Stream          | [emailAppUsageAppsUserCounts](../resources/emailappusageappsusercounts.md) | Get the count of unique users per email app. |
 | [Get user counts](../api/reportroot-getemailappusageusercounts.md) | Stream          | [emailAppUsageUserCounts](../resources/emailappusageusercounts.md) | Get the count of unique users that connected to Exchange Online using any email app. |
 | [Get versions user counts](../api/reportroot-getemailappusageversionsusercounts.md) | Stream          | [emailAppUsageVersionsUserCounts](../resources/emailappusageversionsusercounts.md) | Get the count of unique users by Outlook desktop version. |
+
+

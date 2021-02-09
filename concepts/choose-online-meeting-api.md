@@ -57,5 +57,5 @@ The following table details the differences at the API level.
 
 
 ## See also
-- [Use Outlook to organize or attend meetings online](outlook-calendar-online-meetings.md)
+- [Enable an event as an online meeting in an Outlook calendar](outlook-calendar-online-meetings.md)
 - [Use the cloud communications API to create or join online meetings](cloud-communications-online-meetings.md)

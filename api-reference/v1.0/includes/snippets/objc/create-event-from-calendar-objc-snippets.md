@@ -37,6 +37,7 @@ MSGraphEmailAddress *emailAddress = [[MSGraphEmailAddress alloc] init];
 [attendees setType: [MSGraphAttendeeType required]];
 [attendeesList addObject: attendees];
 [event setAttendees:attendeesList];
+[event setTransactionId:@"7E163156-7762-4BEB-A1C6-729EA81755A7"];
 
 NSError *error;
 NSData *eventData = [event getSerializedDataWithError:&error];

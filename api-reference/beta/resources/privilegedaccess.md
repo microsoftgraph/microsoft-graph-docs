@@ -3,8 +3,8 @@ title: "privilegedAccess resource type"
 description: " for example, `privilegedAccess/azureResources` represents PIM managing privileged access to Azure resources."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "governance"
+author: "shauliu"
 ---
 
 # privilegedAccess resource type
@@ -69,3 +69,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

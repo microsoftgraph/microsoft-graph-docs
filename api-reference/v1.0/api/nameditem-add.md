@@ -2,7 +2,7 @@
 title: "Add Named Item"
 description: "Adds a new name to the collection of the given scope using the user's locale for the formula."
 localization_priority: Normal
-author: ""
+author: "ruoyingl"
 ms.prod: ""
 doc_type: apiPageType
 ---
@@ -130,3 +130,4 @@ Content-length: 109
   ],
   "tocPath": ""
 }-->
+

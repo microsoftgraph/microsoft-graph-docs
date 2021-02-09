@@ -1,0 +1,78 @@
+{
+    "changelog": [
+        {
+            "ChangeList": [
+                {
+                    "Id": "2ee81f9c-251c-11eb-8461-5e37877ca705",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "searchRequest",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [searchRequest](https://docs.microsoft.com/en-us/graph/api/resources/searchRequest?view=graph-rest-1.0) resource type",
+                    "Target": "searchRequest"
+                },
+                {
+                    "Id": "2eecd0a7-251c-11eb-8461-5e37877ca705",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "searchQuery",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [searchQuery](https://docs.microsoft.com/en-us/graph/api/resources/searchQuery?view=graph-rest-1.0) resource type",
+                    "Target": "searchQuery"
+                },
+                {
+                    "Id": "2eef29a4-251c-11eb-8461-5e37877ca705",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "searchResponse",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [searchResponse](https://docs.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-1.0) resource type",
+                    "Target": "searchResponse"
+                },
+                {
+                    "Id": "2ef17baa-251c-11eb-8461-5e37877ca705",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "searchHitsContainer",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [searchHitsContainer](https://docs.microsoft.com/en-us/graph/api/resources/searchHitsContainer?view=graph-rest-1.0) resource type",
+                    "Target": "searchHitsContainer"
+                },
+                {
+                    "Id": "2ef3f5b8-251c-11eb-8461-5e37877ca705",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "searchHit",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [searchHit](https://docs.microsoft.com/en-us/graph/api/resources/searchHit?view=graph-rest-1.0) resource type",
+                    "Target": "searchHit"
+                },
+                {
+                    "Id": "2ef65887-251c-11eb-8461-5e37877ca705",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "searchEntity",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [searchEntity](https://docs.microsoft.com/en-us/graph/api/resources/searchEntity?view=graph-rest-1.0) resource type",
+                    "Target": "searchEntity"
+                },
+                {
+                    "Id": "2ef8bfab-251c-11eb-8461-5e37877ca705",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "entityType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **entityType** enumeration type",
+                    "Target": "entityType"
+                },
+                {
+                    "Id": "2efb3300-251c-11eb-8461-5e37877ca705",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "query",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [query](https://docs.microsoft.com/en-us/graph/api/searchEntity-query?view=graph-rest-1.0) method to the [searchEntity](https://docs.microsoft.com/en-us/graph/api/resources/searchEntity?view=graph-rest-1.0) resource",
+                    "Target": "searchEntity"
+                }
+            ],
+            "Id": "2ee31212-251c-11eb-8461-5e37877ca705",
+            "Cloud": "prd",
+            "Version": "v1.0",
+            "CreatedDateTime": "2020-11-12T19:20:54.087Z",
+            "WorkloadArea": "Search",
+            "SubArea": ""
+        }
+    ]
+}

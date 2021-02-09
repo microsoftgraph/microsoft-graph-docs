@@ -13,8 +13,7 @@ var tokenIssuancePolicy = new TokenIssuancePolicy
 		"definition-value"
 	},
 	DisplayName = "displayName-value",
-	IsOrganizationDefault = true,
-	Type = "type-value"
+	IsOrganizationDefault = true
 };
 
 await graphClient.Policies.TokenIssuancePolicies["{id}"]

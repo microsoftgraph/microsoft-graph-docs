@@ -3,7 +3,7 @@ title: "deviceComplianceScriptRule resource type"
 description: "Not yet documented"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -22,7 +22,9 @@ Not yet documented
 |:---|:---|:---|
 |settingName|String|Setting name specified in the rule.|
 |operator|[operator](../resources/intune-deviceconfig-operator.md)|Operator specified in the rule. Possible values are: `none`, `and`, `or`, `isEquals`, `notEquals`, `greaterThan`, `lessThan`, `between`, `notBetween`, `greaterEquals`, `lessEquals`, `dayTimeBetween`, `beginsWith`, `notBeginsWith`, `endsWith`, `notEndsWith`, `contains`, `notContains`, `allOf`, `oneOf`, `noneOf`, `setEquals`, `orderedSetEquals`, `subsetOf`, `excludesAll`.|
+|deviceComplianceScriptRulOperator|[deviceComplianceScriptRulOperator](../resources/intune-deviceconfig-devicecompliancescriptruloperator.md)|Operator specified in the rule. Possible values are: `none`, `and`, `or`, `isEquals`, `notEquals`, `greaterThan`, `lessThan`, `between`, `notBetween`, `greaterEquals`, `lessEquals`, `dayTimeBetween`, `beginsWith`, `notBeginsWith`, `endsWith`, `notEndsWith`, `contains`, `notContains`, `allOf`, `oneOf`, `noneOf`, `setEquals`, `orderedSetEquals`, `subsetOf`, `excludesAll`.|
 |dataType|[dataType](../resources/intune-deviceconfig-datatype.md)|Data type specified in the rule. Possible values are: `none`, `boolean`, `int64`, `double`, `string`, `dateTime`, `version`, `base64`, `xml`, `booleanArray`, `int64Array`, `doubleArray`, `stringArray`, `dateTimeArray`, `versionArray`.|
+|deviceComplianceScriptRuleDataType|[deviceComplianceScriptRuleDataType](../resources/intune-deviceconfig-devicecompliancescriptruledatatype.md)|Data type specified in the rule. Possible values are: `none`, `boolean`, `int64`, `double`, `string`, `dateTime`, `version`, `base64`, `xml`, `booleanArray`, `int64Array`, `doubleArray`, `stringArray`, `dateTimeArray`, `versionArray`.|
 |operand|String|Operand specified in the rule.|
 
 ## Relationships
@@ -40,10 +42,13 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.deviceComplianceScriptRule",
   "settingName": "String",
   "operator": "String",
+  "deviceComplianceScriptRulOperator": "String",
   "dataType": "String",
+  "deviceComplianceScriptRuleDataType": "String",
   "operand": "String"
 }
 ```
+
 
 
 

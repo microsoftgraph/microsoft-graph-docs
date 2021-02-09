@@ -1,0 +1,926 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "0a01c9dd-93ec-4529-875e-842a925277d1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ediscoveryCase,reviewSet,reviewSetQuery",
+          "ChangeType": "Addition",
+          "Description": "Introduced the compliance eDiscovery API, including the [ediscoveryCase](https://docs.microsoft.com/en-us/graph/api/resources/ediscoverycase?view=graph-rest-beta), [reviewSet](https://docs.microsoft.com/en-us/graph/api/resources/reviewset?view=graph-rest-beta), and [reviewSetQuery](https://docs.microsoft.com/en-us/graph/api/resources/reviewsetquery?view=graph-rest-beta), and operations.",
+          "Target": "ediscoveryCase,reviewSet,reviewSetQuery"
+        }
+      ],
+      "Id": "0a01c9dd-93ec-4529-875e-842a925277d1",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-07-01T00:00:00",
+      "WorkloadArea": "Compliance ",
+      "SubArea": "eDiscovery"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "13bdd50b-5817-4a82-a7c9-730696cebdfc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "schema extensions,Microsoft Cloud for US Government",
+          "ChangeType": "Addition",
+          "Description": "The [schema extensions](https://docs.microsoft.com/en-us/graph/api/resources/schemaextension) feature is now generally available in [Microsoft Cloud for US Government](https://docs.microsoft.com/en-us/graph/deployments).",
+          "Target": "schema extensions,Microsoft Cloud for US Government"
+        }
+      ],
+      "Id": "13bdd50b-5817-4a82-a7c9-730696cebdfc",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-07-01T00:00:00",
+      "WorkloadArea": "Extensions ",
+      "SubArea": "Schema extensions"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ca2707d8-fb80-4253-a6b5-6582f1ff61f9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mgt-get",
+          "ChangeType": "Addition",
+          "Description": "Added the [mgt-get](https://docs.microsoft.com/en-us/graph/toolkit/components/get) component.",
+          "Target": "mgt-get"
+        },
+        {
+          "Id": "ca2707d8-fb80-4253-a6b5-6582f1ff61f9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Proxy provider",
+          "ChangeType": "Addition",
+          "Description": "Added [Proxy provider](https://docs.microsoft.com/en-us/graph/toolkit/providers/proxy).",
+          "Target": "Proxy provider"
+        },
+        {
+          "Id": "ca2707d8-fb80-4253-a6b5-6582f1ff61f9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "inherit-details",
+          "ChangeType": "Addition",
+          "Description": "Added the **inherit-details** attribute to the [person card component](https://docs.microsoft.com/en-us/graph/toolkit/components/person).",
+          "Target": "person card component"
+        },
+        {
+          "Id": "ca2707d8-fb80-4253-a6b5-6582f1ff61f9",
+          "ApiChange": "Property",
+          "ChangedApiName": "selectedPeople",
+          "ChangeType": "Addition",
+          "Description": "Added the **selectedPeople** property to the [people picker component](https://docs.microsoft.com/en-us/graph/toolkit/components/people-picker).",
+          "Target": "people picker component"
+        },
+        {
+          "Id": "ca2707d8-fb80-4253-a6b5-6582f1ff61f9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "loading,error",
+          "ChangeType": "Addition",
+          "Description": "Added the **loading** and **error** templates to the [people picker component](https://docs.microsoft.com/en-us/graph/toolkit/components/people-picker).",
+          "Target": "people picker component"
+        },
+        {
+          "Id": "ca2707d8-fb80-4253-a6b5-6582f1ff61f9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "task,task-details",
+          "ChangeType": "Addition",
+          "Description": "Added the **task** and **task-details** templates to the [tasks component](https://docs.microsoft.com/en-us/graph/toolkit/components/tasks).",
+          "Target": "tasks component"
+        },
+        {
+          "Id": "ca2707d8-fb80-4253-a6b5-6582f1ff61f9",
+          "ApiChange": "Property",
+          "ChangedApiName": "isNewTaskVisible",
+          "ChangeType": "Addition",
+          "Description": "Added the **isNewTaskVisible** property to the [tasks component](https://docs.microsoft.com/en-us/graph/toolkit/components/tasks).",
+          "Target": "tasks component"
+        },
+        {
+          "Id": "ca2707d8-fb80-4253-a6b5-6582f1ff61f9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "group-id",
+          "ChangeType": "Addition",
+          "Description": "Added the **group-id** attribute to the [tasks component](https://docs.microsoft.com/en-us/graph/toolkit/components/tasks).",
+          "Target": "tasks component"
+        },
+        {
+          "Id": "ca2707d8-fb80-4253-a6b5-6582f1ff61f9",
+          "ApiChange": "Property",
+          "ChangedApiName": "taskFilter",
+          "ChangeType": "Addition",
+          "Description": "Added the **taskFilter** property to the [tasks component](https://docs.microsoft.com/en-us/graph/toolkit/components/tasks).",
+          "Target": "tasks component"
+        },
+        {
+          "Id": "ca2707d8-fb80-4253-a6b5-6582f1ff61f9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "eventClick",
+          "ChangeType": "Addition",
+          "Description": "Added the **eventClick** event to the [agenda component](https://docs.microsoft.com/en-us/graph/toolkit/components/agenda).",
+          "Target": "agenda component"
+        },
+        {
+          "Id": "ca2707d8-fb80-4253-a6b5-6582f1ff61f9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "person-card",
+          "ChangeType": "Addition",
+          "Description": "Added the **person-card** attribute to the [people component](https://docs.microsoft.com/en-us/graph/toolkit/components/people).",
+          "Target": "people component"
+        },
+        {
+          "Id": "ca2707d8-fb80-4253-a6b5-6582f1ff61f9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "user-ids",
+          "ChangeType": "Addition",
+          "Description": "Added the **user-ids** attribute to the [people component](https://docs.microsoft.com/en-us/graph/toolkit/components/people).",
+          "Target": "people component"
+        }
+      ],
+      "Id": "ca2707d8-fb80-4253-a6b5-6582f1ff61f9",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2019-12-01T00:00:00",
+      "WorkloadArea": "Microsoft Graph Toolkit",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "72618597-8ff0-48ac-96ca-3dc6a2acfb62",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowNewTimeProposals",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowNewTimeProposals** property to the [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-beta) and [eventMessageRequest](https://docs.microsoft.com/en-us/graph/api/resources/eventmessagerequest?view=graph-rest-beta) entities.",
+          "Target": "event,eventMessageRequest"
+        },
+        {
+          "Id": "72618597-8ff0-48ac-96ca-3dc6a2acfb62",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "proposedNewTime,event",
+          "ChangeType": "Addition",
+          "Description": "Added the **proposedNewTime** optional parameter to the [tentativelyAccept](https://docs.microsoft.com/en-us/graph/api/event-tentativelyaccept?view=graph-rest-beta) and [decline](https://docs.microsoft.com/en-us/graph/api/event-decline?view=graph-rest-beta) methods of **event**.",
+          "Target": "tentativelyAccept,decline"
+        },
+        {
+          "Id": "72618597-8ff0-48ac-96ca-3dc6a2acfb62",
+          "ApiChange": "Property",
+          "ChangedApiName": "proposedNewTime,responseType",
+          "ChangeType": "Addition",
+          "Description": "Added the [eventMessageResponse](https://docs.microsoft.com/en-us/graph/api/resources/eventmessageresponse?view=graph-rest-beta) entity that is based on [eventMessage](https://docs.microsoft.com/en-us/graph/api/resources/eventmessage?view=graph-rest-beta), and in addition, includes the **proposedNewTime** and **responseType** properties.",
+          "Target": "eventMessageResponse,eventMessage"
+        },
+        {
+          "Id": "72618597-8ff0-48ac-96ca-3dc6a2acfb62",
+          "ApiChange": "Property",
+          "ChangedApiName": "proposedNewTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **proposedNewTime** property to the [attendee](https://docs.microsoft.com/en-us/graph/api/resources/attendee?view=graph-rest-beta) complex type.",
+          "Target": "attendee"
+        }
+      ],
+      "Id": "72618597-8ff0-48ac-96ca-3dc6a2acfb62",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2019-11-01T00:00:00",
+      "WorkloadArea": "October 2019",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6446fff4-2844-409c-93e0-988408e3df12",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Microsoft Graph data connect (preview)",
+          "ChangeType": "Addition",
+          "Description": "Introduced the ability to access Microsoft 365 data in bulk. For details, see [Microsoft Graph data connect (preview)](data-connect-overview.md).",
+          "Target": "Microsoft Graph data connect (preview)"
+        }
+      ],
+      "Id": "6446fff4-2844-409c-93e0-988408e3df12",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2018-09-01T00:00:00",
+      "WorkloadArea": "Data access",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "701fd3ae-9365-4fef-8196-bbf769e3fe4b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "bookingBusiness,List,Create,Get,Update,Delete,Publish,Unpublish,Microsoft Bookings API",
+          "ChangeType": "Addition",
+          "Description": "Added the [bookingBusiness](https://docs.microsoft.com/en-us/graph/api/resources/bookingbusiness?view=graph-rest-beta) entity and the following CRUD methods and actions: \u003Cbr\u003E [List](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-list?view=graph-rest-beta) \u003Cbr\u003E [Create](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-post-bookingbusinesses?view=graph-rest-beta) \u003Cbr\u003E [Get](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-get?view=graph-rest-beta) \u003Cbr\u003E [Update](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-update?view=graph-rest-beta) \u003Cbr\u003E [Delete](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-delete?view=graph-rest-beta) \u003Cbr\u003E [Publish](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-publish?view=graph-rest-beta) \u003Cbr\u003E [Unpublish](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-unpublish?view=graph-rest-beta). \u003Cbr\u003E Find out more about integrating with the [Microsoft Bookings API](booking-concept-overview.md).",
+          "Target": "bookingBusiness,List,Create,Get,Update,Delete,Publish,Unpublish,Microsoft Bookings API"
+        },
+        {
+          "Id": "701fd3ae-9365-4fef-8196-bbf769e3fe4b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "bookingAppointment,List,Create,Get,Update,Delete,Cancel",
+          "ChangeType": "Addition",
+          "Description": "Added the [bookingAppointment](https://docs.microsoft.com/en-us/graph/api/resources/bookingappointment?view=graph-rest-beta) entity and the following CRUD methods and action: \u003Cbr\u003E [List](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-list-appointments?view=graph-rest-beta) \u003Cbr\u003E [Create](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-post-appointments?view=graph-rest-beta) \u003Cbr\u003E [Get](https://docs.microsoft.com/en-us/graph/api/bookingappointment-get?view=graph-rest-beta) \u003Cbr\u003E [Update](https://docs.microsoft.com/en-us/graph/api/bookingappointment-update?view=graph-rest-beta) \u003Cbr\u003E [Delete](https://docs.microsoft.com/en-us/graph/api/bookingappointment-delete?view=graph-rest-beta) \u003Cbr\u003E [Cancel](https://docs.microsoft.com/en-us/graph/api/bookingappointment-cancel?view=graph-rest-beta).",
+          "Target": "bookingAppointment,List,Create,Get,Update,Delete,Cancel"
+        },
+        {
+          "Id": "701fd3ae-9365-4fef-8196-bbf769e3fe4b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "bookingCurrency,List,Get",
+          "ChangeType": "Addition",
+          "Description": "Added the [bookingCurrency](https://docs.microsoft.com/en-us/graph/api/resources/bookingcurrency?view=graph-rest-beta) entity and the following methods: \u003Cbr\u003E [List](https://docs.microsoft.com/en-us/graph/api/bookingcurrency-list?view=graph-rest-beta) \u003Cbr\u003E [Get](https://docs.microsoft.com/en-us/graph/api/bookingcurrency-get?view=graph-rest-beta).",
+          "Target": "bookingCurrency,List,Get"
+        },
+        {
+          "Id": "701fd3ae-9365-4fef-8196-bbf769e3fe4b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "bookingCustomer,List,Create,Get,Update,Delete",
+          "ChangeType": "Addition",
+          "Description": "Added the [bookingCustomer](https://docs.microsoft.com/en-us/graph/api/resources/bookingcustomer?view=graph-rest-beta) entity and the following CRUD methods: \u003Cbr\u003E [List](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-list-customers?view=graph-rest-beta) \u003Cbr\u003E [Create](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-post-customers?view=graph-rest-beta) \u003Cbr\u003E [Get](https://docs.microsoft.com/en-us/graph/api/bookingcustomer-get?view=graph-rest-beta) \u003Cbr\u003E [Update](https://docs.microsoft.com/en-us/graph/api/bookingcustomer-update?view=graph-rest-beta) \u003Cbr\u003E [Delete](https://docs.microsoft.com/en-us/graph/api/bookingcustomer-delete?view=graph-rest-beta).",
+          "Target": "bookingCustomer,List,Create,Get,Update,Delete"
+        },
+        {
+          "Id": "701fd3ae-9365-4fef-8196-bbf769e3fe4b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "bookingService,List,Create,Get,Update,Delete",
+          "ChangeType": "Addition",
+          "Description": "Added the [bookingService](https://docs.microsoft.com/en-us/graph/api/resources/bookingservice?view=graph-rest-beta) entity and the following CRUD methods: \u003Cbr\u003E [List](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-list-services?view=graph-rest-beta) \u003Cbr\u003E [Create](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-post-services?view=graph-rest-beta) \u003Cbr\u003E [Get](https://docs.microsoft.com/en-us/graph/api/bookingservice-get?view=graph-rest-beta) \u003Cbr\u003E [Update](https://docs.microsoft.com/en-us/graph/api/bookingservice-update?view=graph-rest-beta) \u003Cbr\u003E [Delete](https://docs.microsoft.com/en-us/graph/api/bookingservice-delete?view=graph-rest-beta).",
+          "Target": "bookingService,List,Create,Get,Update,Delete"
+        },
+        {
+          "Id": "701fd3ae-9365-4fef-8196-bbf769e3fe4b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "bookingStaffMember,List,Create,Get,Update,Delete",
+          "ChangeType": "Addition",
+          "Description": "Added the [bookingStaffMember](https://docs.microsoft.com/en-us/graph/api/resources/bookingstaffmember?view=graph-rest-beta) entity and the following CRUD methods: \u003Cbr\u003E [List](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-list-staffmembers?view=graph-rest-beta) \u003Cbr\u003E [Create](https://docs.microsoft.com/en-us/graph/api/bookingbusiness-post-staffmembers?view=graph-rest-beta) \u003Cbr\u003E [Get](https://docs.microsoft.com/en-us/graph/api/bookingstaffmember-get?view=graph-rest-beta) \u003Cbr\u003E [Update](https://docs.microsoft.com/en-us/graph/api/bookingstaffmember-update?view=graph-rest-beta) \u003Cbr\u003E [Delete](https://docs.microsoft.com/en-us/graph/api/bookingstaffmember-delete?view=graph-rest-beta).",
+          "Target": "bookingStaffMember,List,Create,Get,Update,Delete"
+        },
+        {
+          "Id": "701fd3ae-9365-4fef-8196-bbf769e3fe4b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "bookingNamedEntity,bookingPerson,bookingReminder,bookingWorkHours,bookingWorkTimeSlot",
+          "ChangeType": "Addition",
+          "Description": "Added the following complex types: \u003Cbr\u003E [bookingNamedEntity](https://docs.microsoft.com/en-us/graph/api/resources/bookingnamedentity?view=graph-rest-beta) \u003Cbr\u003E [bookingPerson](https://docs.microsoft.com/en-us/graph/api/resources/bookingperson?view=graph-rest-beta) \u003Cbr\u003E [bookingReminder](https://docs.microsoft.com/en-us/graph/api/resources/bookingreminder?view=graph-rest-beta) \u003Cbr\u003E [bookingWorkHours](https://docs.microsoft.com/en-us/graph/api/resources/bookingworkhours?view=graph-rest-beta) \u003Cbr\u003E [bookingWorkTimeSlot](https://docs.microsoft.com/en-us/graph/api/resources/bookingworktimeslot?view=graph-rest-beta).",
+          "Target": "bookingNamedEntity,bookingPerson,bookingReminder,bookingWorkHours,bookingWorkTimeSlot"
+        }
+      ],
+      "Id": "701fd3ae-9365-4fef-8196-bbf769e3fe4b",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2018-05-01T00:00:00",
+      "WorkloadArea": "Customer booking",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f88a3741-db20-48a3-8e14-e3430f99ec77",
+          "ApiChange": "Resource",
+          "ChangedApiName": "JSON batching",
+          "ChangeType": "Change",
+          "Description": "Increased [JSON batching](json-batching.md) internal request limit from 5 to 20.",
+          "Target": "JSON batching"
+        }
+      ],
+      "Id": "f88a3741-db20-48a3-8e14-e3430f99ec77",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2018-01-01T00:00:00",
+      "WorkloadArea": "Batching",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f88a3741-db20-48a3-8e14-e3430f99ec77",
+          "ApiChange": "Resource",
+          "ChangedApiName": "JSON batching",
+          "ChangeType": "Addition",
+          "Description": "Added [JSON batching](json-batching.md) support. Internal request limit set to 20.",
+          "Target": "JSON batching"
+        }
+      ],
+      "Id": "f88a3741-db20-48a3-8e14-e3430f99ec77",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2018-01-01T00:00:00",
+      "WorkloadArea": "Batching",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "67c58ec6-075c-4bf3-89a8-d45cb2567cc5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "users,groups",
+          "ChangeType": "Change",
+          "Description": "Add additional optional query filtering capability (by id) to [users](https://docs.microsoft.com/en-us/graph/api/user-delta?view=graph-rest-beta) and [groups](https://docs.microsoft.com/en-us/graph/api/group-delta?view=graph-rest-beta).",
+          "Target": "users,groups"
+        }
+      ],
+      "Id": "67c58ec6-075c-4bf3-89a8-d45cb2567cc5",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2017-05-01T00:00:00",
+      "WorkloadArea": "Change tracking",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "67c58ec6-075c-4bf3-89a8-d45cb2567cc5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "delta query,Get incremental changes to groups,Get incremental changes to messages in a folder,Get incremental changes to users",
+          "ChangeType": "Addition",
+          "Description": "Add delta function support to v1.0. Add to the following entities to perform [delta query](delta-query-overview.md):, contact, contactFolder, event, group, mailFolder, message, user, See the following for examples:, [Get incremental changes to groups](delta-query-groups.md), [Get incremental changes to messages in a folder](delta-query-messages.md), [Get incremental changes to users](delta-query-users.md)",
+          "Target": "delta query,Get incremental changes to groups,Get incremental changes to messages in a folder,Get incremental changes to users"
+        }
+      ],
+      "Id": "67c58ec6-075c-4bf3-89a8-d45cb2567cc5",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2017-05-01T00:00:00",
+      "WorkloadArea": "Change tracking",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c6dfdc40-cdc3-41af-8259-c09e431ebadf",
+          "ApiChange": "Property",
+          "ChangedApiName": "user",
+          "ChangeType": "Change",
+          "Description": "Added deletedDateTime property to [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) entity.",
+          "Target": "user"
+        },
+        {
+          "Id": "c6dfdc40-cdc3-41af-8259-c09e431ebadf",
+          "ApiChange": "Property",
+          "ChangedApiName": "group",
+          "ChangeType": "Change",
+          "Description": "Added deletedDateTime property to [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-beta) entity.",
+          "Target": "group"
+        },
+        {
+          "Id": "c6dfdc40-cdc3-41af-8259-c09e431ebadf",
+          "ApiChange": "Property",
+          "ChangedApiName": "application",
+          "ChangeType": "Change",
+          "Description": "Added deletedDateTime property to [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) entity.",
+          "Target": "application"
+        }
+      ],
+      "Id": "c6dfdc40-cdc3-41af-8259-c09e431ebadf",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2017-05-01T00:00:00",
+      "WorkloadArea": "Added deletedDateTime property",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "cbee22dd-507a-49e0-8571-004daaf91fc6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "domains,domain,domainDnsRecord,domainDnsCnameRecord,domainDnsMxRecord,domainDnsSrvRecord,domainDnsTxtRecord,domainDnsUnavailableRecord,verify",
+          "ChangeType": "Addition",
+          "Description": "Added operations on [domains](https://docs.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-1.0)., New entities:\u003C/br\u003E[domain](https://docs.microsoft.com/en-us/graph/api/resources/domain?view=graph-rest-1.0), [domainDnsRecord](https://docs.microsoft.com/en-us/graph/api/resources/domaindnsrecord?view=graph-rest-1.0), [domainDnsCnameRecord](https://docs.microsoft.com/en-us/graph/api/resources/domaindnscnamerecord?view=graph-rest-1.0), [domainDnsMxRecord](https://docs.microsoft.com/en-us/graph/api/resources/domaindnsmxrecord?view=graph-rest-1.0), [domainDnsSrvRecord](https://docs.microsoft.com/en-us/graph/api/resources/domaindnssrvrecord?view=graph-rest-1.0), [domainDnsTxtRecord](https://docs.microsoft.com/en-us/graph/api/resources/domaindnstxtrecord?view=graph-rest-1.0), [domainDnsUnavailableRecord](https://docs.microsoft.com/en-us/graph/api/resources/domaindnsunavailablerecord?view=graph-rest-1.0), New actions:\u003C/br\u003E[verify](https://docs.microsoft.com/en-us/graph/api/domain-verify?view=graph-rest-1.0)",
+          "Target": "domains,domain,domainDnsRecord,domainDnsCnameRecord,domainDnsMxRecord,domainDnsSrvRecord,domainDnsTxtRecord,domainDnsUnavailableRecord,verify"
+        }
+      ],
+      "Id": "cbee22dd-507a-49e0-8571-004daaf91fc6",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2017-05-01T00:00:00",
+      "WorkloadArea": "Added domain operations to v1.0",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d63dc0c9-1b01-40c3-9b52-7de74a02df56",
+          "ApiChange": "Resource",
+          "ChangedApiName": "contract",
+          "ChangeType": "Addition",
+          "Description": "New entity:\u003C/br\u003E[contract](https://docs.microsoft.com/en-us/graph/api/resources/contract?view=graph-rest-1.0)",
+          "Target": "contract"
+        }
+      ],
+      "Id": "d63dc0c9-1b01-40c3-9b52-7de74a02df56",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2017-05-01T00:00:00",
+      "WorkloadArea": "Added contracts to v1.0",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b35b7681-3136-430b-9ff0-8d77b38d5a13",
+          "ApiChange": "Resource",
+          "ChangedApiName": "licenseDetails",
+          "ChangeType": "Addition",
+          "Description": "New entity:\u003C/br\u003E[licenseDetails](https://docs.microsoft.com/en-us/graph/api/resources/licensedetails?view=graph-rest-1.0)",
+          "Target": "licenseDetails"
+        },
+        {
+          "Id": "b35b7681-3136-430b-9ff0-8d77b38d5a13",
+          "ApiChange": "Property",
+          "ChangedApiName": "licensedetails,users",
+          "ChangeType": "Change",
+          "Description": "New [licensedetails](https://docs.microsoft.com/en-us/graph/api/user-list-licensedetails?view=graph-rest-1.0) navigation property on [users](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0)",
+          "Target": "licensedetails,users"
+        }
+      ],
+      "Id": "b35b7681-3136-430b-9ff0-8d77b38d5a13",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2017-05-01T00:00:00",
+      "WorkloadArea": "Added licenseDetails to v1.0",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "87a1ff39-8824-454e-a021-4cebbd907775",
+          "ApiChange": "Resource",
+          "ChangedApiName": "$expand",
+          "ChangeType": "Addition",
+          "Description": "Support for **$expand** to [get open extensions](https://docs.microsoft.com/en-us/graph/api/opentypeextension-get?view=graph-rest-1.0) in [administrativeUnit](https://docs.microsoft.com/en-us/graph/api/resources/administrativeunit?view=graph-rest-beta).",
+          "Target": "get open extensions,administrativeUnit"
+        }
+      ],
+      "Id": "87a1ff39-8824-454e-a021-4cebbd907775",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2017-05-01T00:00:00",
+      "WorkloadArea": "Extensions ",
+      "SubArea": "Open extensions"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "87a1ff39-8824-454e-a021-4cebbd907775",
+          "ApiChange": "Resource",
+          "ChangedApiName": "openTypeExtension,device,group,organization,user",
+          "ChangeType": "Addition",
+          "Description": "Support for [openTypeExtension](https://docs.microsoft.com/en-us/graph/api/resources/opentypeextension?view=graph-rest-1.0) in the following resources - [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0), [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0),[organization](https://docs.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-1.0), [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0).",
+          "Target": "openTypeExtension,device,group,organization,user"
+        },
+        {
+          "Id": "87a1ff39-8824-454e-a021-4cebbd907775",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "When the user is signed-in with a personal Microsoft account, support for open extensions in the following resources - event, post, group, message, contact, and user. (This is in addition to these resources, plus device, group, organization and user, supporting open extensions when the user signs in using a work or school account.)",
+          "Target": ""
+        },
+        {
+          "Id": "87a1ff39-8824-454e-a021-4cebbd907775",
+          "ApiChange": "Resource",
+          "ChangedApiName": "$expand",
+          "ChangeType": "Addition",
+          "Description": "Support for **$expand** to [get open extensions](https://docs.microsoft.com/en-us/graph/api/opentypeextension-get?view=graph-rest-1.0) in the following resources: [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0), [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0),[organization](https://docs.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-1.0), [post](https://docs.microsoft.com/en-us/graph/api/resources/post?view=graph-rest-1.0), [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0).",
+          "Target": "get open extensions,device,group,organization,post,user"
+        }
+      ],
+      "Id": "87a1ff39-8824-454e-a021-4cebbd907775",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2017-05-01T00:00:00",
+      "WorkloadArea": "Extensions ",
+      "SubArea": "Open extensions"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2f2c8f95-3315-4d43-a8c0-bb74451112b5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "schemaExtension,contact,device,event,group,message,organization,post,user,administrativeUnit",
+          "ChangeType": "Addition",
+          "Description": "New resource [schemaExtension](https://docs.microsoft.com/en-us/graph/api/resources/schemaextension?view=graph-rest-1.0) and CRUD methods to manage extension definitions for the following resources: [contact](https://docs.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-1.0), [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0), [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-1.0), [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0), [message](https://docs.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-1.0), [organization](https://docs.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-1.0), [post](https://docs.microsoft.com/en-us/graph/api/resources/post?view=graph-rest-1.0), [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0). Note that support for [administrativeUnit](https://docs.microsoft.com/en-us/graph/api/resources/administrativeunit?view=graph-rest-beta) is still limited to the beta version as before.",
+          "Target": "schemaExtension,contact,device,event,group,message,organization,post,user,administrativeUnit"
+        },
+        {
+          "Id": "2f2c8f95-3315-4d43-a8c0-bb74451112b5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "contact,device,event,group,message,organization,post,user",
+          "ChangeType": "Addition",
+          "Description": "The existing POST, GET, and PATCH methods of the following resources - [contact](https://docs.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-1.0), [device](https://docs.microsoft.com/en-us/graph/api/resources/device?view=graph-rest-1.0), [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-1.0), [group](https://docs.microsoft.com/en-us/graph/api/resources/group?view=graph-rest-1.0), [message](https://docs.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-1.0), [organization](https://docs.microsoft.com/en-us/graph/api/resources/organization?view=graph-rest-1.0), [post](https://docs.microsoft.com/en-us/graph/api/resources/post?view=graph-rest-1.0), [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) - now support adding, getting, and updating or deleting custom data stored as schema extensions in the corresponding resource instances.",
+          "Target": "contact,device,event,group,message,organization,post,user"
+        },
+        {
+          "Id": "2f2c8f95-3315-4d43-a8c0-bb74451112b5",
+          "ApiChange": "Property",
+          "ChangedApiName": "$filter",
+          "ChangeType": "Addition",
+          "Description": "You can now use **$filter** to look for resource instances with properties that match specific extension property values, such as extension name. See this [example](extensibility-schema-groups.md#5-get-a-group-and-its-extension-data) for details.",
+          "Target": "example"
+        },
+        {
+          "Id": "2f2c8f95-3315-4d43-a8c0-bb74451112b5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Deleting a schema extension definition",
+          "ChangeType": "Change",
+          "Description": "[Deleting a schema extension definition](https://docs.microsoft.com/en-us/graph/api/schemaextension-delete?view=graph-rest-1.0) no longer affects accessing custom data that has been added based on that definition.",
+          "Target": "Deleting a schema extension definition"
+        },
+        {
+          "Id": "2f2c8f95-3315-4d43-a8c0-bb74451112b5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Change",
+          "Description": "You can now set a schema extension complex type to null, to remove a schema extension from a resource instance.",
+          "Target": ""
+        }
+      ],
+      "Id": "2f2c8f95-3315-4d43-a8c0-bb74451112b5",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2017-05-01T00:00:00",
+      "WorkloadArea": "Extensions ",
+      "SubArea": "Schema extensions"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1bd344b2-067c-460e-9a19-57d5ed0b5715",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authorization topic",
+          "ChangeType": "Addition",
+          "Description": "Added new preview capability to allow Cloud Solution Provider pre-consented applications to call Microsoft Graph, described in a new [authorization topic](auth-cloudsolutionprovider.md).",
+          "Target": "authorization topic"
+        }
+      ],
+      "Id": "1bd344b2-067c-460e-9a19-57d5ed0b5715",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2017-04-01T00:00:00",
+      "WorkloadArea": "Cloud Solution Provider",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1aab83f4-ed55-4a81-8e12-a8c4f40a84ff",
+          "ApiChange": "Resource",
+          "ChangedApiName": "schema extensions,Add custom data to groups using Schema Extensions (preview)",
+          "ChangeType": "Addition",
+          "Description": "Extend Microsoft Graph with application data by using [schema extensions](extensibility-overview.md#schema-extensions).  This is supported on the following resources:, administrative unit, calendar event, device, group, message, organization, personal contact, post, user, See the following example:, [Add custom data to groups using Schema Extensions (preview)](extensibility-schema-groups.md)",
+          "Target": "schema extensions,Add custom data to groups using Schema Extensions (preview)"
+        },
+        {
+          "Id": "1aab83f4-ed55-4a81-8e12-a8c4f40a84ff",
+          "ApiChange": "Resource",
+          "ChangedApiName": "schema extensions",
+          "ChangeType": "Addition",
+          "Description": "Provided an alternative way to create a schema extension definition without requiring a verified .com vanity domain. See [schema extensions](extensibility-overview.md#schema-extensions) for details.",
+          "Target": "schema extensions"
+        }
+      ],
+      "Id": "1aab83f4-ed55-4a81-8e12-a8c4f40a84ff",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2017-03-01T00:00:00",
+      "WorkloadArea": "Extensions ",
+      "SubArea": "Schema extensions"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1b6493c3-30c6-429c-9ced-cba8af346387",
+          "ApiChange": "Resource",
+          "ChangedApiName": "open extensions,Add custom data to users using open extensions (preview)",
+          "ChangeType": "Addition",
+          "Description": "Added resources that support [open extensions](extensibility-overview.md#open-extensions): , administrative unit, device, group, organization, user, See the following example:, [Add custom data to users using open extensions (preview)](extensibility-open-users.md)",
+          "Target": "open extensions,Add custom data to users using open extensions (preview)"
+        }
+      ],
+      "Id": "1b6493c3-30c6-429c-9ced-cba8af346387",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2017-03-01T00:00:00",
+      "WorkloadArea": "Extensions ",
+      "SubArea": "Open extensions"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1b6493c3-30c6-429c-9ced-cba8af346387",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Change",
+          "Description": "Renamed former \u0022Office 365 data extensions\u0022 as \u0022open extensions\u0022.",
+          "Target": ""
+        }
+      ],
+      "Id": "1b6493c3-30c6-429c-9ced-cba8af346387",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2017-03-01T00:00:00",
+      "WorkloadArea": "Extensions ",
+      "SubArea": "Open extensions"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f4f79b77-0682-41a7-927b-bae57967c5e3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "delta query,Get incremental changes to groups (preview),Get incremental changes to messages in a folder (preview),Get incremental changes to users (preview)",
+          "ChangeType": "Addition",
+          "Description": "A new delta function add to the following entities to perform [delta query](delta-query-overview.md):, contact, contactFolder, event, group, mailFolder, message, user, See the following for examples:, [Get incremental changes to groups (preview)](delta-query-groups.md), [Get incremental changes to messages in a folder (preview)](delta-query-messages.md), [Get incremental changes to users (preview)](delta-query-users.md)",
+          "Target": "delta query,Get incremental changes to groups (preview),Get incremental changes to messages in a folder (preview),Get incremental changes to users (preview)"
+        }
+      ],
+      "Id": "f4f79b77-0682-41a7-927b-bae57967c5e3",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2016-12-01T00:00:00",
+      "WorkloadArea": "Change tracking",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e91d9ba7-e1af-44c4-9b80-b6aba05cecaa",
+          "ApiChange": "Resource",
+          "ChangedApiName": "daemon \u0026 long running processes in business scenarios",
+          "ChangeType": "Addition",
+          "Description": "The v2.0 auth endpoint now supports the client_credentials OAuth grant, which can be used for [daemon \u0026 long running processes in business scenarios](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow).",
+          "Target": "daemon \u0026 long running processes in business scenarios"
+        },
+        {
+          "Id": "e91d9ba7-e1af-44c4-9b80-b6aba05cecaa",
+          "ApiChange": "Resource",
+          "ChangedApiName": "permission scopes that require administrator\u0027s consent,admin consent endpoint",
+          "ChangeType": "Addition",
+          "Description": "The v2.0 auth endpoint now supports [permission scopes that require administrator\u0027s consent](permissions-reference.md), via the [admin consent endpoint](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#admin-restricted-permissions).",
+          "Target": "permission scopes that require administrator\u0027s consent,admin consent endpoint"
+        },
+        {
+          "Id": "e91d9ba7-e1af-44c4-9b80-b6aba05cecaa",
+          "ApiChange": "Resource",
+          "ChangedApiName": "admin consent endpoint",
+          "ChangeType": "Addition",
+          "Description": "The v2.0 auth endpoint now supports administrative consent for all users in a tenant, via the [admin consent endpoint](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#admin-restricted-permissions).",
+          "Target": "admin consent endpoint"
+        }
+      ],
+      "Id": "e91d9ba7-e1af-44c4-9b80-b6aba05cecaa",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2016-10-01T00:00:00",
+      "WorkloadArea": "Authorization provider",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b0c3999b-a15b-408e-9b94-356fb44405a0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Note:",
+          "ChangeType": "Addition",
+          "Description": "Apps can use v1.0 Outlook Mail, Calendar, and Contacts APIs to access on-premises mailboxes in a hybrid deployment with Exchange 2016 Cumulative Update 3 (CU3). Find more details about REST API support in specific [hybrid deployments](hybrid-rest-support.md). **Note:** If you\u0027re using these sets of API in v1.0, you can now find your apps, including production apps, working for on-premises mailboxes that meet the specific hybrid deployment requirements. This capability is only in preview.",
+          "Target": "hybrid deployments"
+        }
+      ],
+      "Id": "b0c3999b-a15b-408e-9b94-356fb44405a0",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2016-09-01T00:00:00",
+      "WorkloadArea": "Hybrid deployment",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "62954073-e0b4-4300-addd-53676a9ead63",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "",
+          "ChangeType": "Change",
+          "Description": "Query parameters without $ prefixes are supported as of 09/26/16. The $ prefix in query parameters is optional.",
+          "Target": ""
+        }
+      ],
+      "Id": "62954073-e0b4-4300-addd-53676a9ead63",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2016-09-01T00:00:00",
+      "WorkloadArea": "Query parameters",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5705ba5c-af3b-4cb5-a327-d430d57bd9cc",
+          "ApiChange": "Property",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added support for PATCH request against structural properties. For example: \u0027PATCH /me/mailboxSettings\u0027.",
+          "Target": ""
+        },
+        {
+          "Id": "5705ba5c-af3b-4cb5-a327-d430d57bd9cc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Azure Active Directory is now used as a fallback for /beta/users/id/photo requests when Outlook is unable to service the request, for example when the user has no mailbox license or the tenant does not have an Exchange Online subscription. NOTE: this fallback is available for both GET and PATCH.",
+          "Target": ""
+        },
+        {
+          "Id": "5705ba5c-af3b-4cb5-a327-d430d57bd9cc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added support for cast segment in expand path. For example: \u0027https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event\u0027.",
+          "Target": ""
+        }
+      ],
+      "Id": "5705ba5c-af3b-4cb5-a327-d430d57bd9cc",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2016-04-01T00:00:00",
+      "WorkloadArea": "General",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5705ba5c-af3b-4cb5-a327-d430d57bd9cc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added support for honoring _Accept-Encoding:gzip_.",
+          "Target": ""
+        },
+        {
+          "Id": "5705ba5c-af3b-4cb5-a327-d430d57bd9cc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added support for cast segment in expand path. For example, \u0027https://graph.microsoft.com/v1.0/me/messages?$expand=microsoft.graph.eventMessage/event\u0027.",
+          "Target": ""
+        }
+      ],
+      "Id": "5705ba5c-af3b-4cb5-a327-d430d57bd9cc",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2016-04-01T00:00:00",
+      "WorkloadArea": "General",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ff2fbf5f-72bb-4c76-acfa-adbd50c46eb7",
+          "ApiChange": "Property",
+          "ChangedApiName": "",
+          "ChangeType": "Change",
+          "Description": "Cleaned up subscription property names.",
+          "Target": ""
+        },
+        {
+          "Id": "ff2fbf5f-72bb-4c76-acfa-adbd50c46eb7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "We\u0027ve added the capability to discover (through _directorySettingTemplates_) and override the default behavior (by creating a _setting_ from the template) for entities and their associated functionality. Initially this only template provided is to control behaviors on Office groups.",
+          "Target": ""
+        }
+      ],
+      "Id": "ff2fbf5f-72bb-4c76-acfa-adbd50c46eb7",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2016-03-01T00:00:00",
+      "WorkloadArea": "General",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ff2fbf5f-72bb-4c76-acfa-adbd50c46eb7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Improved error message when resolving tenant alias and rejected JWT (AAD) tokens.",
+          "Target": ""
+        },
+        {
+          "Id": "ff2fbf5f-72bb-4c76-acfa-adbd50c46eb7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "The location of the authorization service endpoint is now returned in the _www-authenticate_ header when a request is received with an empty bearer token.",
+          "Target": ""
+        },
+        {
+          "Id": "ff2fbf5f-72bb-4c76-acfa-adbd50c46eb7",
+          "ApiChange": "Property",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "The ability to filter on an entity\u0027s id property is now fixed. Example: GET https://graph.microsoft.com/v1.0/users?$filter=id\u002Beq\u002B\u0027x\u0027, Previously, any POST requests to service actions and functions require prefixing the action or function name with the microsoft.graph prefix. For example: POST https://graph.microsoft.com/v1.0/me/Microsoft.Graph.getMemberGroups., The prefix is now no longer required (although it can still be specified). So the following would now also work: POST https://graph.microsoft.com/v1.0/me/getMemberGroups.",
+          "Target": ""
+        }
+      ],
+      "Id": "ff2fbf5f-72bb-4c76-acfa-adbd50c46eb7",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2016-03-01T00:00:00",
+      "WorkloadArea": "General",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5ea132db-190c-4c33-9886-ee286db069e5",
+          "ApiChange": "Property",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added _sharingInvitation_ property to provide details of any associated sharing invitation for this permission.",
+          "Target": ""
+        }
+      ],
+      "Id": "5ea132db-190c-4c33-9886-ee286db069e5",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2016-03-01T00:00:00",
+      "WorkloadArea": "Permission",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "cf0701aa-a514-446d-be76-bcbfe3571d5d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Deletion",
+          "Description": "Removed various unimplemented types from the beta schema to more closely match the 1.0 schema.",
+          "Target": ""
+        }
+      ],
+      "Id": "cf0701aa-a514-446d-be76-bcbfe3571d5d",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2016-02-01T00:00:00",
+      "WorkloadArea": "General",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "cf0701aa-a514-446d-be76-bcbfe3571d5d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Change",
+          "Description": "-_/me/drive_ now works for both Microsoft accounts and Work and School accounts.",
+          "Target": ""
+        },
+        {
+          "Id": "cf0701aa-a514-446d-be76-bcbfe3571d5d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Change",
+          "Description": "Drive requests for accounts whose OneDrive storage was provisioned on demand work more reliably and work in more scenarios where tenant default SharePoint sites use non-standard names.",
+          "Target": ""
+        }
+      ],
+      "Id": "cf0701aa-a514-446d-be76-bcbfe3571d5d",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2016-02-01T00:00:00",
+      "WorkloadArea": "General",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a8b0a61a-f840-431c-9a78-39c2cb17d1a7",
+          "ApiChange": "Property",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added support for complex type property sorting and filtering.",
+          "Target": ""
+        },
+        {
+          "Id": "a8b0a61a-f840-431c-9a78-39c2cb17d1a7",
+          "ApiChange": "Property",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added authorization_uri property in the www-authenticate header on a 401 response. This uri can be used to start the token acquisition flow.",
+          "Target": ""
+        },
+        {
+          "Id": "a8b0a61a-f840-431c-9a78-39c2cb17d1a7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Improved error messages across users and groups.",
+          "Target": ""
+        }
+      ],
+      "Id": "a8b0a61a-f840-431c-9a78-39c2cb17d1a7",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2015-12-01T00:00:00",
+      "WorkloadArea": "General",
+      "SubArea": ""
+    }
+  ]
+}

@@ -3,7 +3,7 @@ title: "deviceComplianceScriptValidationResult resource type"
 description: "Not yet documented"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -42,7 +42,9 @@ Here is a JSON representation of the resource.
       "@odata.type": "microsoft.graph.deviceComplianceScriptRule",
       "settingName": "String",
       "operator": "String",
+      "deviceComplianceScriptRulOperator": "String",
       "dataType": "String",
+      "deviceComplianceScriptRuleDataType": "String",
       "operand": "String"
     }
   ],
@@ -50,6 +52,7 @@ Here is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.deviceComplianceScriptError",
       "code": "String",
+      "deviceComplianceScriptRulesValidationError": "String",
       "message": "String"
     }
   ],
@@ -57,12 +60,14 @@ Here is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.deviceComplianceScriptRuleError",
       "code": "String",
+      "deviceComplianceScriptRulesValidationError": "String",
       "message": "String",
       "settingName": "String"
     }
   ]
 }
 ```
+
 
 
 

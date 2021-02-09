@@ -30,8 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /education/classes/{id}/delta
-POST /education/me/classes/{id}/delta
+GET /education/classes/delta
 ```
 
 ## Request headers
@@ -55,20 +54,40 @@ If successful, this method returns a `200 OK` response code and an [educationCla
 
 The following example shows how to call this API.
 
-##### Request
+### Request
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "educationclass_delta"
 }-->
 
-```http
-POST https://graph.microsoft.com/v1.0/education/classes/{id}/delta
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/education/classes/delta
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/educationclass-delta-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-##### Response
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/educationclass-delta-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/educationclass-delta-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/educationclass-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+### Response
 
 The following is an example of the response.
 
@@ -89,25 +108,18 @@ Content-length: 585
 {
   "value": [
     {
-      "displayName": "displayName-value",
-      "mailNickname": "mailNickname-value",
-      "description": "description-value",
-      "createdBy": {
-        "application": {
-          "displayName": "displayName-value",
-          "id": "id-value"
-        },
-        "device": {
-          "displayName": "displayName-value",
-          "id": "id-value"
-        },
-        "user": {
-          "displayName": "displayName-value",
-          "id": "id-value"
-        }
-      },
-      "classCode": "classCode-value",
-      "externalName": "externalName-value"
+      "classCode": "String",
+      "course": { "@odata.type": "microsoft.graph.educationCourse" },
+      "createdBy": { "@odata.type": "microsoft.graph.identitySet" },
+      "description": "String",
+      "displayName": "String",
+      "externalId": "String",
+      "externalName": "String",
+      "externalSource": "string",
+      "grade": "string",
+      "id": "String (identifier)",
+      "mailNickname": "String",
+      "term": { "@odata.type": "microsoft.graph.educationTerm" }
     }
   ]
 }
@@ -122,3 +134,5 @@ Content-length: 585
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

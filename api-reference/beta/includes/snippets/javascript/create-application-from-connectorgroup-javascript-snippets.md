@@ -10,12 +10,12 @@ const options = {
 
 const client = Client.init(options);
 
-const application = {
-  @odata.id: "https://graph.microsoft.com/beta/applications/{id}"
+const connectorGroup = {
+  @odata.id: "https://graph.microsoft.com/onPremisesPublishingProfiles/applicationproxy/connectorGroups/{id}"
 };
 
-let res = await client.api('/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}/applications')
+let res = await client.api('/applications/{id}/connectorGroup/$ref')
 	.version('beta')
-	.post(application);
+	.put(connectorGroup);
 
 ```

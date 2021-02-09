@@ -3,7 +3,7 @@ title: "reportRoot: getSkypeForBusinessOrganizerActivityMinuteCounts"
 description: "Get usage trends on the length in minutes and type of conference sessions held and organized by users in your organization. Types of conference sessions include audio/video, and dial-in and dial-out - Microsoft."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -121,3 +121,4 @@ Report Refresh Date,Report Date,Report Period,Audio/Video,Dial-in Microsoft,Dial
   "suppressions": [
   ]
 }-->
+

@@ -3,7 +3,7 @@ title: "reportRoot: getEmailAppUsageAppsUserCounts"
 description: "Get the count of unique users per email app."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -126,3 +126,4 @@ Report Refresh Date,Mail For Mac,Outlook For Mac,Outlook For Windows,Outlook For
   "suppressions": [
   ]
 }-->
+

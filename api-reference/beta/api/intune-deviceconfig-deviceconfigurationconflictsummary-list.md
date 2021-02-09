@@ -3,7 +3,7 @@ title: "List deviceConfigurationConflictSummaries"
 description: "List properties and relationships of the deviceConfigurationConflictSummary objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 495
+Content-Length: 536
 
 {
   "value": [
@@ -70,7 +70,8 @@ Content-Length: 495
         {
           "@odata.type": "microsoft.graph.settingSource",
           "id": "Id value",
-          "displayName": "Display Name value"
+          "displayName": "Display Name value",
+          "sourceType": "deviceIntent"
         }
       ],
       "id": "d5f22c23-2c23-d5f2-232c-f2d5232cf2d5",
@@ -82,6 +83,7 @@ Content-Length: 495
   ]
 }
 ```
+
 
 
 

@@ -3,8 +3,8 @@ title: "governancePermission resource type"
 description: "Represents the access permission that a governanceSubject has to a specific governanceResource.  "
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "governance"
+author: "shauliu"
 ---
 
 # governancePermission resource type
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the access permission that a [governanceSubject](../resources/governancesubject.md) has to a specific [governanceResource](../resources/governanceresource.md).  
+Represents the access permission that a [governanceSubject](../resources/governancesubject.md) has to a specific [governanceResource](../resources/governanceresource.md).
 
 
 ## Properties
@@ -41,3 +41,5 @@ Here is a JSON representation of the resource.
 }
 
 ```
+
+

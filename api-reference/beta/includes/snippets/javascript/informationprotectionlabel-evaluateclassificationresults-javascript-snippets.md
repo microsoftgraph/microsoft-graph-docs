@@ -25,10 +25,10 @@ const informationProtectionAction = {
       count: 4,
       confidenceLevel: 75
     }
-   ]
+  ]
 };
 
-let res = await client.api('/informationprotection/policy/labels/evaluateClassificationResults')
+let res = await client.api('/informationProtection/policy/labels/evaluateClassificationResults')
 	.version('beta')
 	.post(informationProtectionAction);
 

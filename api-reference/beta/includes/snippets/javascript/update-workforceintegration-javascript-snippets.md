@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const workforceIntegrations = {
+const workforceIntegration = {
   displayName: "displayName-value",
   apiVersion: 99,
   encryption: {
@@ -22,8 +22,8 @@ const workforceIntegrations = {
   supports: "supports-value"
 };
 
-let res = await client.api('/teamwork/workforceIntegrations')
+let res = await client.api('/teamwork/workforceIntegrations/{workforceIntegrationId}')
 	.version('beta')
-	.update(workforceIntegrations);
+	.update(workforceIntegration);
 
 ```

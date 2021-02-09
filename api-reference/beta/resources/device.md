@@ -29,7 +29,8 @@ This resource lets you add your own data to custom properties using [extensions]
 |[List transitive memberOf](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups that the device is a member of. This operation is transitive. |
 |[List registeredOwners](../api/device-list-registeredowners.md) |[directoryObject](directoryobject.md) collection| Get the users that are registered owners of the device from the registeredOwners navigation property.|
 |[List registeredUsers](../api/device-list-registeredusers.md) |[directoryObject](directoryobject.md) collection| Get the registered users of the device from the registeredUsers navigation property.|
-|[checkMemberObjects](../api/device-checkmemberobjects.md) | String collection | Check for membership in a list of group, directory role, or administrative unit objects. |
+|[List usageRights](../api/device-list-usagerights.md) | [usageRight](usageright.md) collection | Get a collection of usage rights granted to the device.|
+|[checkMemberObjects](../api/device-checkmemberobjects.md) | String collection | Check for membership in a list of groups, directory role, or administrative unit objects. |
 |**Open extensions**| | |
 |[Create open extension](../api/opentypeextension-post-opentypeextension.md) |[openTypeExtension](opentypeextension.md)| Create an open extension and add custom properties to a new or existing resource.|
 |[Get open extension](../api/opentypeextension-get.md) |[openTypeExtension](opentypeextension.md) collection| Get an open extension identified by the extension name.|
@@ -48,18 +49,19 @@ This resource lets you add your own data to custom properties using [extensions]
 |deviceVersion|Int32| For internal use only. |
 |displayName|String| The display name for the device. Required. |
 |id|String|The unique identifier for the device. Inherited from [directoryObject](directoryobject.md). Key, Not nullable. Read-only.|
-|isCompliant|Boolean|**true** if the device complies with Mobile Device Management (MDM) policies; otherwise, **false**. Read-only. This can only be updated by Intune for any device OS type or by an [approved MDM app](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for Windows OS devices.|
-|isManaged|Boolean|**true** if the device is managed by a Mobile Device Management (MDM) app; otherwise, **false**. This can only be updated by Intune for any device OS type or by an [approved MDM app](https://docs.microsoft.com/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for Windows OS devices. |
+|isCompliant|Boolean|**true** if the device complies with Mobile Device Management (MDM) policies; otherwise, **false**. Read-only. This can only be updated by Intune for any device OS type or by an [approved MDM app](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for Windows OS devices.|
+|isManaged|Boolean|**true** if the device is managed by a Mobile Device Management (MDM) app; otherwise, **false**. This can only be updated by Intune for any device OS type or by an [approved MDM app](/windows/client-management/mdm/azure-active-directory-integration-with-mdm) for Windows OS devices. |
 |manufacturer|String| Manufacturer of the device. Read-only. |
 |mdmAppId|String|Application identifier used to register device into MDM. <br><br>Read-only. Supports $filter.|
 |model|String| Model of the device. Read-only. |
-|onPremisesLastSyncDateTime|DateTimeOffset|The last time at which the object was synced with the on-premises directory.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` Read-only. |
+|onPremisesLastSyncDateTime|DateTimeOffset|The last time at which the object was synced with the on-premises directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'` Read-only. |
 |onPremisesSyncEnabled|Boolean|**true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default). Read-only.|
 |operatingSystem|String| The type of operating system on the device. Required. |
 |operatingSystemVersion|String| Operating system version of the device. Required. |
 |physicalIds|String collection| For internal use only. Not nullable. |
 |profileType|String|The profile type of the device. Possible values:<br />**RegisteredDevice** (default)<br />**SecureVM**<br />**Printer**<br />**Shared**<br />**IoT**|
 |systemLabels|String collection| List of labels applied to the device by the system. |
+|hostNames|String collection| List of hostNames for the device.|
 |trustType|String| Type of trust for the joined device. Read-only. Possible values: <br />**Workplace** - indicates *bring your own personal devices*<br />**AzureAd** - Cloud only joined devices<br />**ServerAd** - on-premises domain joined devices joined to Azure AD. For more details, see [Introduction to device management in Azure Active Directory](/azure/active-directory/device-management-introduction) |
 |Name| String | Friendly name of a device. Only returned if user signs in with a Microsoft account as part of Project Rome. |
 |Status | String| Device is online or offline. Only returned if user signs in with a Microsoft account as part of Project Rome. |
@@ -78,6 +80,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |registeredOwners|[directoryObject](directoryobject.md) collection|Users that are registered owners of the device. Read-only. Nullable.|
 |registeredUsers|[directoryObject](directoryobject.md) collection|Users that are registered users of the device. Read-only. Nullable.|
 |commands | [command](command.md) collection | Set of commands sent to this device|
+|usageRight|[usageRight](usageright.md) collection|Represents the usage rights a device has been granted. |
 
 ## JSON representation
 
@@ -114,6 +117,7 @@ The following is a JSON representation of the resource.
   "physicalIds": ["string"],
   "profileType": "string",
   "systemLabels": ["string"],
+  "hostNames" : ["string"],
   "trustType": "string",
   "Name": "string",
   "Status": "string",

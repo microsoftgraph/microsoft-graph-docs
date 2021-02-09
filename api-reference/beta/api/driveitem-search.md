@@ -52,14 +52,13 @@ This method supports the `$expand`, `$select`, `$skipToken`, `$top`, and `$order
 
 ### Request
 
-Here is an example of the request searching the current user's OneDrive
-
+The following example searches for a match for "Contoso Project" across several fields in the signed-in user's drive items.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "item_search" }-->
 
 ```msgraph-interactive
-GET /me/drive/root/search(q='{search-query}')
+GET /me/drive/root/search(q='Contoso Project')
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/item-search-csharp-snippets.md)]
@@ -71,6 +70,10 @@ GET /me/drive/root/search(q='{search-query}')
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/item-search-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/item-search-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -121,7 +124,7 @@ To broaden the search scope, use the **search** method on the [Drive](../resourc
 <!-- { "blockType": "request", "name": "item_search_all" }-->
 
 ```msgraph-interactive
-GET /me/drive/search(q='{search-query}')
+GET /me/drive/search(q='Contoso Project')
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/item-search-all-csharp-snippets.md)]
@@ -133,6 +136,10 @@ GET /me/drive/search(q='{search-query}')
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/item-search-all-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/item-search-all-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -189,3 +196,5 @@ how errors are returned.
   ]
 }
 -->
+
+

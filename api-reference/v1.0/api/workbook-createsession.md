@@ -1,17 +1,17 @@
 ---
-title: "Create Session"
-description: "Use this API to create a new workbook session. "
+title: "workbook: createSession"
+description: "Create a new workbook session."
 author: "lumine2008"
 localization_priority: Normal
 ms.prod: "excel"
 doc_type: apiPageType
 ---
 
-# Create Session
+# workbook: createSession
 
 Namespace: microsoft.graph
 
-Use this API to create a new workbook session. 
+Create a new workbook session. 
 
 Excel APIs can be called in one of two modes: 
 
@@ -22,7 +22,13 @@ To represent the session in the API, use the `workbook-session-id: {session-id}`
 
 >**Note:** The session header is not required for an Excel API to work. However, we recommend that you use the session header to improve performance. If you don't use a session header, changes made during the API call _are_ persisted to the file.  
 
-## Error Handling
+In some cases, creating a new session requires an indeterminate time to complete. Microsoft Graph also provides a long running operations pattern. This pattern provides a way to poll for creation status updates, without waiting for the creation to complete. The following are the steps:
+
+1. A `Prefer: respond-async` header is added to the request to indicate that it is a long-running operation.
+2. The response returns a `Location` header to specify the URL for polling the creation operation status. You can get the operation status by accessing the specified URL. The status will be one of the following: `notStarted`, `running`, `succeeded`, or `failed`.
+3. After the operation completes, you can request the status again and the response will show either `succeeded` or `failed`.
+
+## Error handling
 
 This request might occasionally receive a 504 HTTP error. The appropriate response to this error is to repeat the request.
 
@@ -46,15 +52,17 @@ POST /workbook/createSession
 | Authorization  | Bearer {token}. Required. |
 
 ## Request body
-In the request body, supply a JSON representation of [WorkbookSessionInfo](../resources/workbooksessioninfo.md) object.
+In the request body, supply a JSON representation of [workbookSessionInfo](../resources/workbooksessioninfo.md) object.
 
 ## Response
 
-If successful, this method returns `201 Created` response code and [WorkbookSessionInfo](../resources/workbooksessioninfo.md) object in the response body.
+If successful, this method returns a `201 Created` response code and a [workbookSessionInfo](../resources/workbooksessioninfo.md) object in the response body. For a long-running operation, it returns a `202 Accepted ` response code and a `Location` header with an empty body in the response.
 
-## Example
-##### Request
-Here is an example of the request.
+## Examples
+
+### Example 1: Basic session creation
+#### Request
+
 
 # [HTTP](#tab/http)
 <!-- {
@@ -88,10 +96,8 @@ Content-length: 52
 
 ---
 
-In the request body, supply a JSON representation of [WorkbookSessionInfo](../resources/workbooksessioninfo.md) object.
-
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+#### Response
+>**Note:** The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -108,6 +114,35 @@ Content-length: 52
 }
 ```
 
+### Example 2: Session creation with long-running operation pattern
+
+#### Request
+
+```http
+POST https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/worksheets({id})/createSession
+Prefer: respond-async
+Content-type: application/json
+{
+    "persistChanges": true
+}
+```
+
+#### Response
+>**Note:** The response object shown here might be shortened for readability. 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.workbookSessionInfo"
+} -->
+```http
+HTTP/1.1 202 Accepted
+Location: https://graph.microsoft.com/v1.0/me/drive/items/{drive-item-id}/workbook/operations/{operation-id}
+Content-type: application/json
+{
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79 
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -119,3 +154,4 @@ Content-length: 52
   "suppressions": [
   ]
 }-->
+

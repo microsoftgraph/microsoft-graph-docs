@@ -12,7 +12,13 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents information for an iterative process to upload large files to OneDrive, OneDrive for Business, or SharePoint document libraries, or to Outlook [event](event.md) and [message](message.md) items as attachments.
+Represents information for an iterative process to upload large files to:
+
+- OneDrive
+- OneDrive for Business
+- SharePoint document libraries
+- Outlook [event](event.md) and [message](message.md) items as attachments
+- Universal Print [printDocument](printdocument.md) items
 
 ## JSON representation
 
@@ -58,3 +64,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

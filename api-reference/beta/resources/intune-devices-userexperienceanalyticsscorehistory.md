@@ -3,7 +3,7 @@ title: "userExperienceAnalyticsScoreHistory resource type"
 description: "The user experience analytics device startup score history."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -31,10 +31,11 @@ The user experience analytics device startup score history.
 |:---|:---|:---|
 |id|String|The unique identifier of the user experience analytics device startup process.|
 |startupDateTime|DateTimeOffset|The user experience analytics device startup date time.|
-|startupScore|Int32|User experience analytics device startup score.|
-|coreBootScore|Int32|The user experience analytics device core boot score.|
-|coreSigninScore|Int32|The User experience analytics device core sign-in score.|
-|recommendedSoftwareScore|Int32|The User experience analytics device core sign-in score.|
+|startupScore|Int32|User experience analytics device startup score. Score will be in the range 0-100, 100 is the ideal score.|
+|coreBootScore|Int32|The user experience analytics device core boot score. Score will be in the range 0-100, 100 is the ideal score.|
+|coreSigninScore|Int32|The User experience analytics device core sign-in score. Score will be in the range 0-100, 100 is the ideal score.|
+|recommendedSoftwareScore|Int32|The User experience analytics device core sign-in score. Score will be in the range 0-100, 100 is the ideal score.|
+|restartScore|Int32|Restart score. Score will be in the range 0-100, 100 is the ideal score, 0 indicates excessive restarts. Valid values 0 to 9999999|
 
 ## Relationships
 None
@@ -55,9 +56,11 @@ Here is a JSON representation of the resource.
   "startupScore": 1024,
   "coreBootScore": 1024,
   "coreSigninScore": 1024,
-  "recommendedSoftwareScore": 1024
+  "recommendedSoftwareScore": 1024,
+  "restartScore": 1024
 }
 ```
+
 
 
 

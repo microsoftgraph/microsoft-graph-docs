@@ -12,6 +12,6 @@ const client = Client.init(options);
 
 let res = await client.api('/trustFramework/keySets/{id}/getActiveKey')
 	.version('beta')
-	.post();
+	.get();
 
 ```

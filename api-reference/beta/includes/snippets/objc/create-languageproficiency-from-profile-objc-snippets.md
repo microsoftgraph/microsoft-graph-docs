@@ -12,9 +12,11 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphLanguageProficiency *languageProficiency = [[MSGraphLanguageProficiency alloc] init];
-[languageProficiency setDisplayName:@"displayName-value"];
-[languageProficiency setTag:@"tag-value"];
-[languageProficiency setProficiency: [MSGraphLanguageProficiencyLevel elementary]];
+[languageProficiency setDisplayName:@"Norwegian Bokmål"];
+[languageProficiency setTag:@"nb-NO"];
+[languageProficiency setSpoken: [MSGraphLanguageProficiencyLevel nativeOrBilingual]];
+[languageProficiency setWritten: [MSGraphLanguageProficiencyLevel nativeOrBilingual]];
+[languageProficiency setReading: [MSGraphLanguageProficiencyLevel nativeOrBilingual]];
 
 NSError *error;
 NSData *languageProficiencyData = [languageProficiency getSerializedDataWithError:&error];

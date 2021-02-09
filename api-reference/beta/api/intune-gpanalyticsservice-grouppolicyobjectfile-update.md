@@ -3,7 +3,7 @@ title: "Update groupPolicyObjectFile"
 description: "Update the properties of a groupPolicyObjectFile object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -94,6 +94,7 @@ Content-Length: 389
   "content": "Content value"
 }
 ```
+
 
 
 

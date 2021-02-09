@@ -2,7 +2,7 @@
 title: "List rules"
 description: "Get all the messageRule objects defined for the user's Inbox."
 localization_priority: Normal
-author: "svpsiva"
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -29,7 +29,7 @@ GET /me/mailFolders/inbox/messageRules
 GET /users/{id | userPrincipalName}/mailFolders/inbox/messageRules
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|

@@ -3,7 +3,7 @@ title: "Create managedAppProtectionPolicySetItem"
 description: "Create a new managedAppProtectionPolicySetItem object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -110,6 +110,7 @@ Content-Length: 561
   "targetedAppManagementLevels": "Targeted App Management Levels value"
 }
 ```
+
 
 
 

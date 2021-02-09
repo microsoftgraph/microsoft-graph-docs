@@ -16,13 +16,14 @@ This API provides calling functionality as well as the ability to create and ret
 
 ## Authorization
 
-One of the following [permissions](https://docs.microsoft.com/graph/permissions-reference#calls-permissions) is required to access the communications API. These permissions need to be granted by the administrator
+One of the following [permissions](/graph/permissions-reference#calls-permissions) is required to access the communications API. These permissions need to be granted by the administrator
 
 | Scenario                 | Permissions                                  |
 |:------------------------------------|:---------------------------------------------|
 | Calling                 | Calls.JoinGroupCallsasGuest.All, Calls.JoinGroupCalls.All, Calls.Initiate.All, Calls.InitiateGroupCalls.All, Calls.AccessMedia.All |
 | Meetings                 | OnlineMeetings.ReadWrite.All, OnlineMeetings.Read.All |
 | Call records             | CallRecords.Read.All |
+| Presences             | Presence.Read, Presence.Read.All |
 
 ## Common use cases
 
@@ -30,20 +31,22 @@ The following table lists some of the common uses for the communications API.
 
 | Use cases                         | REST resources                                 | See also  |
 |:------------------------------------|:---------------------------------------------|:----------|
-| Creating and joining 1-1 and group calls   | [Call](https://docs.microsoft.com/graph/api/resources/call?view=graph-rest-v1.0)| [Methods for calls](https://docs.microsoft.com/graph/api/resources/call?view=graph-rest-v1.0#methods)| 
-|IVR calls   |     | [Methods for IVR](https://docs.microsoft.com/graph/api/resources/calls-api-ivr-overview?view=graph-rest-v1.0)
-| Call controls (participant) | [Participant](https://docs.microsoft.com/graph/api/resources/participant?view=graph-rest-v1.0)   ||
-|Meetings|[onlineMeeting](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-v1.0)| [Methods for meetings](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-v1.0#methods)|
+| Creating and joining 1-1 and group calls   | [Call](/graph/api/resources/call?view=graph-rest-v1.0)| [Methods for calls](/graph/api/resources/call?view=graph-rest-v1.0#methods)| 
+|IVR calls   |     | [Methods for IVR](/graph/api/resources/calls-api-ivr-overview?view=graph-rest-v1.0)
+| Call controls (participant) | [Participant](/graph/api/resources/participant?view=graph-rest-v1.0)   ||
+|Meetings|[onlineMeeting](/graph/api/resources/onlinemeeting?view=graph-rest-v1.0)| [Methods for meetings](/graph/api/resources/onlinemeeting?view=graph-rest-v1.0#methods)|
 | Retrieving call records | [callRecord](/graph/api/resources/callrecords-callrecord?view=graph-rest-1.0) | [Webhook subscriptions](/graph/api/resources/webhooks?view=graph-rest-1.0) |
+|Presences|[presence](/graph/api/resources/presence?view=graph-rest-v1.0)||
 
 ## Common properties
 
 | Resource                | Properties                             |
 |:------------------------------------|:---------------------------------------------|
-| call                               | [call properties](https://docs.microsoft.com/graph/api/resources/call?view=graph-rest-v1.0#properties)  |
-| participant                         | [participant properties](https://docs.microsoft.com/graph/api/resources/participant?view=graph-rest-v1.0#properties) |
-| onlineMeeting                            | [onlineMeeting properties](https://docs.microsoft.com/graph/api/resources/onlinemeeting?view=graph-rest-v1.0#properties)                     |
+| call                               | [call properties](/graph/api/resources/call?view=graph-rest-v1.0#properties)  |
+| participant                         | [participant properties](/graph/api/resources/participant?view=graph-rest-v1.0#properties) |
+| onlineMeeting                            | [onlineMeeting properties](/graph/api/resources/onlinemeeting?view=graph-rest-v1.0#properties)                     |
 | callRecord | [callRecord properties](/graph/api/resources/callrecords-callrecord#properties) |
+|presence|[presence](/graph/api/resources/presence?view=graph-rest-v1.0)|
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

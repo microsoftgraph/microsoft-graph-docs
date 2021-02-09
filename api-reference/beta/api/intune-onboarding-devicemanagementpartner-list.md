@@ -3,7 +3,7 @@ title: "List deviceManagementPartners"
 description: "List properties and relationships of the deviceManagementPartner objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1242
+Content-Length: 1314
 
 {
   "value": [
@@ -81,9 +81,10 @@ Content-Length: 1242
         {
           "@odata.type": "microsoft.graph.deviceManagementPartnerAssignment",
           "target": {
-            "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+            "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
             "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-            "deviceAndAppManagementAssignmentFilterType": "include"
+            "deviceAndAppManagementAssignmentFilterType": "include",
+            "collectionId": "Collection Id value"
           }
         }
       ]
@@ -91,6 +92,7 @@ Content-Length: 1242
   ]
 }
 ```
+
 
 
 

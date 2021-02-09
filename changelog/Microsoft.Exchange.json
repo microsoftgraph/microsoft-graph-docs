@@ -1,0 +1,1748 @@
+{
+  "changelog": [    
+    {
+      "ChangeList": [
+        {
+          "Id": "58585680-2aae-4690-a3f0-7828dc866c20",
+          "ApiChange": "Property",
+          "ChangedApiName": "hideAttendees",
+          "ChangeType": "Addition",
+          "Description": "Added the **hideAttendees** property to the [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-beta) entity.",
+          "Target": "event"
+        }
+      ],
+      "Id": "58585680-2aae-4690-a3f0-7828dc866c20",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-09T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7cb824eb-562c-4e5d-bbad-655310bf25e0",
+          "ApiChange": "Property",
+          "ChangedApiName": "hideAttendees",
+          "ChangeType": "Addition",
+          "Description": "Added the **hideAttendees** property to the [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-1.0) entity.",
+          "Target": "event"
+        }
+      ],
+      "Id": "7cb824eb-562c-4e5d-bbad-655310bf25e0",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-12-17T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
+          "ApiChange": "Property",
+          "ChangedApiName": "isDefaultCalendar",
+          "ChangeType": "Addition",
+          "Description": "Added the **isDefaultCalendar** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) entity.",
+          "Target": "Calendar"
+        }
+      ],
+      "Id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-09-01T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
+          "ApiChange": "Property",
+          "ChangedApiName": "hexColor",
+          "ChangeType": "Addition",
+          "Description": "Added the **hexColor** property to the [calendar](https://docs.microsoft.com/en-us/graph/api/resources/calendar) entity.",
+          "Target": "calendar"
+        },
+        {
+          "Id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
+          "ApiChange": "Property",
+          "ChangedApiName": "isDraft",
+          "ChangeType": "Addition",
+          "Description": "Added the **isDraft** property to the [event](https://docs.microsoft.com/en-us/graph/api/resources/event) entity.",
+          "Target": "event"
+        }        
+      ],
+      "Id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-12-18T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
+          "ApiChange": "Method",
+          "ChangedApiName": "cancel",
+          "ChangeType": "Addition",
+          "Description": "Added the [cancel](https://docs.microsoft.com/en-us/graph/api/event-cancel) method to manage [event](https://docs.microsoft.com/en-us/graph/api/resources/event) resources in a calendar.",
+          "Target": "event"
+        },
+        {
+          "Id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
+          "ApiChange": "Method",
+          "ChangedApiName": "forward",
+          "ChangeType": "Addition",
+          "Description": "Added the [forward](https://docs.microsoft.com/en-us/graph/api/event-forward) method to manage [event](https://docs.microsoft.com/en-us/graph/api/resources/event) resources in a calendar.",
+          "Target": "event"
+        }
+      ],
+      "Id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-12-19T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ce3c6f2b-b3e3-4efe-aa1a-046ed1b62e3c",
+          "ApiChange": "Property",
+          "ChangedApiName": "isHidden",
+          "ChangeType": "Addition",
+          "Description": "Added the **isHidden** property to [mailFolder](https://docs.microsoft.com/en-us/graph/api/resources/mailfolder?view=graph-rest-beta) entity.",
+          "Target": "mailFolder"
+        },
+        {
+          "Id": "ce3c6f2b-b3e3-4efe-aa1a-046ed1b62e3c",
+          "ApiChange": "Method",
+          "ChangedApiName": "includeHiddenFolders",
+          "ChangeType": "Addition",
+          "Description": "Added the support of the optional `includeHiddenFolders` query parameter to the [list mailFolders](https://docs.microsoft.com/en-us/graph/api/user-list-mailfolders?view=graph-rest-beta) operation.",
+          "Target": "mailFolder"
+        }
+      ],
+      "Id": "ce3c6f2b-b3e3-4efe-aa1a-046ed1b62e3c",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-08T00:00:00.000Z",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "656072a4-9a39-4731-8322-13932419895a",
+          "ApiChange": "Property",
+          "ChangedApiName": "transactionId",
+          "ChangeType": "Addition",
+          "Description": "Added the **transactionId** property to the [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-1.0) entity.",
+          "Target": "event"
+        }
+      ],
+      "Id": "656072a4-9a39-4731-8322-13932419895a",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-09-01T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8a32aa94-ac63-42d3-b323-5312bfc80a9d",
+          "ApiChange": "Property",
+          "ChangedApiName": "cancelledOccurrences,exceptionOccurrences,occurrenceId",
+          "ChangeType": "Addition",
+          "Description": "Added the **cancelledOccurrences**, **exceptionOccurrences**, and **occurrenceId** properties to the [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-beta) entity.",
+          "Target": "event"
+        }
+      ],
+      "Id": "8a32aa94-ac63-42d3-b323-5312bfc80a9d",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-08-01T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f5824007-1349-4ab9-b1c3-1b294d2c5bd4",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowNewTimeProposals",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowNewTimeProposals** property to the [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-1.0) and [eventMessageRequest](https://docs.microsoft.com/en-us/graph/api/resources/eventmessagerequest?view=graph-rest-1.0) entities.",
+          "Target": "event,eventMessageRequest"
+        },
+        {
+          "Id": "f5824007-1349-4ab9-b1c3-1b294d2c5bd4",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "proposedNewTime,event",
+          "ChangeType": "Addition",
+          "Description": "Added the **proposedNewTime** optional parameter to the [tentativelyAccept](https://docs.microsoft.com/en-us/graph/api/event-tentativelyaccept?view=graph-rest-1.0) and [decline](https://docs.microsoft.com/en-us/graph/api/event-decline?view=graph-rest-1.0) methods of **event**.",
+          "Target": "tentativelyAccept,decline"
+        },
+        {
+          "Id": "f5824007-1349-4ab9-b1c3-1b294d2c5bd4",
+          "ApiChange": "Property",
+          "ChangedApiName": "proposedNewTime,responseType",
+          "ChangeType": "Addition",
+          "Description": "Added the [eventMessageResponse](https://docs.microsoft.com/en-us/graph/api/resources/eventmessageresponse?view=graph-rest-1.0) entity that is based on [eventMessage](https://docs.microsoft.com/en-us/graph/api/resources/eventmessage?view=graph-rest-1.0), and in addition, includes the **proposedNewTime** and **responseType** properties.",
+          "Target": "eventMessageResponse,eventMessage"
+        },
+        {
+          "Id": "f5824007-1349-4ab9-b1c3-1b294d2c5bd4",
+          "ApiChange": "Property",
+          "ChangedApiName": "proposedNewTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **proposedNewTime** property to the [attendee](https://docs.microsoft.com/en-us/graph/api/resources/attendee?view=graph-rest-1.0) complex type.",
+          "Target": "attendee"
+        }
+      ],
+      "Id": "f5824007-1349-4ab9-b1c3-1b294d2c5bd4",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-07-01T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "13064a4f-262d-40eb-ac18-5c6396974ed7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "The [delta](https://docs.microsoft.com/en-us/graph/api/event-delta?view=graph-rest-beta) function supports an additional scenario to get incremental changes (new, updated, or removed) of events in a user calendar without necessarily being bounded by a date range.",
+          "Target": "delta"
+        }
+      ],
+      "Id": "13064a4f-262d-40eb-ac18-5c6396974ed7",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-06-01T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f3578765-292a-41ee-8ea0-25e2d3af894e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "place,room,roomList",
+          "ChangeType": "Addition",
+          "Description": "Places API available in v1. Added the [place](https://docs.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-1.0), [room](https://docs.microsoft.com/en-us/graph/api/resources/room?view=graph-rest-1.0), [roomList](https://docs.microsoft.com/en-us/graph/api/resources/room?view=graph-rest-1.0) resources and their methods to provide rich details for locations in apps.",
+          "Target": "place,room,roomList"
+        }
+      ],
+      "Id": "f3578765-292a-41ee-8ea0-25e2d3af894e",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-05-01T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1d23abca-e161-4b92-b476-16d2ddae3b70",
+          "ApiChange": "Resource",
+          "ChangedApiName": "places API",
+          "ChangeType": "Addition",
+          "Description": "Added pagination support for the [places API](https://docs.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta).",
+          "Target": "places API"
+        }
+      ],
+      "Id": "1d23abca-e161-4b92-b476-16d2ddae3b70",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-04-01T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1d23abca-e161-4b92-b476-16d2ddae3b70",
+          "ApiChange": "Resource",
+          "ChangedApiName": "calendarPermission",
+          "ChangeType": "Addition",
+          "Description": "Added new entity [calendarPermission](https://docs.microsoft.com/en-us/graph/api/resources/calendarpermission?view=graph-rest-1.0).",
+          "Target": "calendarPermission"
+        },
+        {
+          "Id": "1d23abca-e161-4b92-b476-16d2ddae3b70",
+          "ApiChange": "Resource",
+          "ChangedApiName": "get,update,delete,calendarPermission,calendar",
+          "ChangeType": "Addition",
+          "Description": "Added [get](https://docs.microsoft.com/en-us/graph/api/calendarpermission-get?view=graph-rest-1.0), [update](https://docs.microsoft.com/en-us/graph/api/calendarpermission-update?view=graph-rest-1.0) and [delete](https://docs.microsoft.com/en-us/graph/api/calendarpermission-delete?view=graph-rest-1.0) APIs to manage [calendarPermission](https://docs.microsoft.com/en-us/graph/api/resources/calendarpermission?view=graph-rest-1.0) resources on [calendar](https://docs.microsoft.com/en-us/graph/api/resources/calendar?view=graph-rest-1.0).",
+          "Target": "get,update,delete,calendarPermission,calendar"
+        },
+        {
+          "Id": "1d23abca-e161-4b92-b476-16d2ddae3b70",
+          "ApiChange": "Resource",
+          "ChangedApiName": "onlineMeetingInfo",
+          "ChangeType": "Addition",
+          "Description": "Added new complex type [onlineMeetingInfo](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeetinginfo?view=graph-rest-1.0).",
+          "Target": "onlineMeetingInfo"
+        },
+        {
+          "Id": "1d23abca-e161-4b92-b476-16d2ddae3b70",
+          "ApiChange": "Property",
+          "ChangedApiName": "isOnlineMeeting,onlineMeetingProvider,onlineMeeting,isOnlineMeeting,onlineMeetingProvider,event",
+          "ChangeType": "Addition",
+          "Description": "Added the **isOnlineMeeting**, **onlineMeetingProvider** and **onlineMeeting** properties to the [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-1.0) entity. **isOnlineMeeting** and **onlineMeetingProvider** are optional parameters to the [create](https://docs.microsoft.com/en-us/graph/api/user-post-events?view=graph-rest-1.0) and [update](https://docs.microsoft.com/en-us/graph/api/event-update?view=graph-rest-1.0) methods of **event**.",
+          "Target": "event,create,update"
+        },
+        {
+          "Id": "1d23abca-e161-4b92-b476-16d2ddae3b70",
+          "ApiChange": "Property",
+          "ChangedApiName": "defaultOnlineMeetingProviders,allowedOnlineMeetingProviders",
+          "ChangeType": "Addition",
+          "Description": "Added the **defaultOnlineMeetingProviders** and **allowedOnlineMeetingProviders** properties to the [calendar](https://docs.microsoft.com/en-us/graph/api/resources/calendar?view=graph-rest-1.0) entity.",
+          "Target": "calendar"
+        },
+        {
+          "Id": "1d23abca-e161-4b92-b476-16d2ddae3b70",
+          "ApiChange": "Property",
+          "ChangedApiName": "isTallyingResponses",
+          "ChangeType": "Addition",
+          "Description": "Added the **isTallyingResponses** property to the [calendar](https://docs.microsoft.com/en-us/graph/api/resources/calendar?view=graph-rest-1.0) entity.",
+          "Target": "calendar"
+        },
+        {
+          "Id": "1d23abca-e161-4b92-b476-16d2ddae3b70",
+          "ApiChange": "Property",
+          "ChangedApiName": "isRemovable",
+          "ChangeType": "Addition",
+          "Description": "Added the **isRemovable** property to the [calendar](https://docs.microsoft.com/en-us/graph/api/resources/calendar?view=graph-rest-1.0) entity.",
+          "Target": "calendar"
+        },
+        {
+          "Id": "1d23abca-e161-4b92-b476-16d2ddae3b70",
+          "ApiChange": "Property",
+          "ChangedApiName": "delegateMeetingMessageDeliveryOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **delegateMeetingMessageDeliveryOptions** property to the [mailboxSettings](https://docs.microsoft.com/en-us/graph/api/resources/mailboxSettings?view=graph-rest-1.0) entity.",
+          "Target": "mailboxSettings"
+        },
+        {
+          "Id": "1d23abca-e161-4b92-b476-16d2ddae3b70",
+          "ApiChange": "Resource",
+          "ChangedApiName": "file attachments up to 150MB,event",
+          "ChangeType": "Addition",
+          "Description": "Support for [file attachments up to 150MB](outlook-large-attachments.md) for an [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-1.0) instance.",
+          "Target": "file attachments up to 150MB,event"
+        }
+      ],
+      "Id": "1d23abca-e161-4b92-b476-16d2ddae3b70",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-04-01T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f57dcaaf-7264-4ff8-b79d-aa27ff744d57",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Adding file attachments up to 150MB,message",
+          "ChangeType": "Addition",
+          "Description": "[Adding file attachments up to 150MB](outlook-large-attachments.md) to a [message](https://docs.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-1.0) instance.",
+          "Target": "Adding file attachments up to 150MB,message"
+        },
+        {
+          "Id": "f57dcaaf-7264-4ff8-b79d-aa27ff744d57",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attachmentType",
+          "ChangeType": "Addition",
+          "Description": "The [attachmentItem](https://docs.microsoft.com/en-us/graph/api/resources/attachmentitem?view=graph-rest-1.0) complex type, [createUploadSession](https://docs.microsoft.com/en-us/graph/api/attachment-createuploadsession?view=graph-rest-1.0) action for the [attachment](https://docs.microsoft.com/en-us/graph/api/resources/attachment?view=graph-rest-1.0) entity, and the **attachmentType** enumeration.",
+          "Target": "attachmentItem,createUploadSession,attachment"
+        }
+      ],
+      "Id": "f57dcaaf-7264-4ff8-b79d-aa27ff744d57",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-04-01T00:00:00",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "bec4942e-185b-453a-9441-d3672267f373",
+          "ApiChange": "Property",
+          "ChangedApiName": "calendarGroupId",
+          "ChangeType": "Addition",
+          "Description": "Added the **calendarGroupId** property to the [calendar](https://docs.microsoft.com/en-us/graph/api/resources/calendar?view=graph-rest-beta) entity.",
+          "Target": "calendar"
+        },
+        {
+          "Id": "bec4942e-185b-453a-9441-d3672267f373",
+          "ApiChange": "Property",
+          "ChangedApiName": "isDraft",
+          "ChangeType": "Addition",
+          "Description": "Added the **isDraft** property to the [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-beta) entity.",
+          "Target": "event"
+        }
+      ],
+      "Id": "bec4942e-185b-453a-9441-d3672267f373",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-03-01T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ce5f75aa-db9a-484c-ac5d-a7676367e3c5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "update a room or roomlist",
+          "ChangeType": "Addition",
+          "Description": "Added the ability to [update a room or roomlist](https://docs.microsoft.com/en-us/graph/api/resources/place-get?view=graph-rest-beta).",
+          "Target": "update a room or roomlist"
+        }
+      ],
+      "Id": "ce5f75aa-db9a-484c-ac5d-a7676367e3c5",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2019-11-01T00:00:00",
+      "WorkloadArea": "Calendar ",
+      "SubArea": "Place"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f71da88e-acf6-486d-a7a1-244353344bcc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Mail.ReadBasic,Mail.ReadBasic.All,create,get,update,delete",
+          "ChangeType": "Addition",
+          "Description": "Added support for the [Mail.ReadBasic](https://docs.microsoft.com/en-us/graph/permissions-reference#mail-permissions) delegated permission and [Mail.ReadBasic.All](https://docs.microsoft.com/en-us/graph/permissions-reference#mail-permissions) application permission to [create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-beta), [get](https://docs.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-beta), [update](https://docs.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-beta), and [delete](https://docs.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-beta) subscriptions for change notifications on message.",
+          "Target": "Mail.ReadBasic,Mail.ReadBasic.All,create,get,update,delete"
+        }
+      ],
+      "Id": "f71da88e-acf6-486d-a7a1-244353344bcc",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2019-11-01T00:00:00",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f71da88e-acf6-486d-a7a1-244353344bcc",
+          "ApiChange": "Property",
+          "ChangedApiName": "conversationIndex",
+          "ChangeType": "Addition",
+          "Description": "Added the **conversationIndex** property to [message](https://docs.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-1.0) and its derived type [eventMessage](https://docs.microsoft.com/en-us/graph/api/resources/eventmessage?view=graph-rest-1.0).",
+          "Target": "message,eventMessage"
+        },
+        {
+          "Id": "f71da88e-acf6-486d-a7a1-244353344bcc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "List messages,Get message,List mail folders,Get mail folder,List child folders,List messages in folder,Get message delta,Get mail folder delta,Create,get,update,delete",
+          "ChangeType": "Addition",
+          "Description": "Added support for the Mail.ReadBasic delegated permission and Mail.ReadBasic.All application permission to:\u003Cbr /\u003E- [List messages](https://docs.microsoft.com/en-us/graph/api/user-list-messages?view=graph-rest-1.0)\u003Cbr /\u003E- [Get message](https://docs.microsoft.com/en-us/graph/api/message-get?view=graph-rest-1.0) \u003Cbr /\u003E- [List mail folders](https://docs.microsoft.com/en-us/graph/api/user-list-mailfolders?view=graph-rest-1.0)\u003Cbr /\u003E- [Get mail folder](https://docs.microsoft.com/en-us/graph/api/mailfolder-get?view=graph-rest-1.0)\u003Cbr /\u003E- [List child folders](https://docs.microsoft.com/en-us/graph/api/mailfolder-list-childfolders?view=graph-rest-1.0)\u003Cbr /\u003E- [List messages in folder](https://docs.microsoft.com/en-us/graph/api/mailfolder-list-childfolders?view=graph-rest-1.0)\u003Cbr /\u003E- [Get message delta](https://docs.microsoft.com/en-us/graph/api/message-delta?view=graph-rest-1.0)\u003Cbr /\u003E- [Get mail folder delta](https://docs.microsoft.com/en-us/graph/api/mailfolder-delta?view=graph-rest-1.0) \u003Cbr /\u003E- [Create](https://docs.microsoft.com/en-us/graph/api/subscription-post-subscriptions?view=graph-rest-1.0), [get](https://docs.microsoft.com/en-us/graph/api/subscription-get?view=graph-rest-1.0), [update](https://docs.microsoft.com/en-us/graph/api/subscription-update?view=graph-rest-1.0), and [delete](https://docs.microsoft.com/en-us/graph/api/subscription-delete?view=graph-rest-1.0) subscriptions for change notifications on message",
+          "Target": "List messages,Get message,List mail folders,Get mail folder,List child folders,List messages in folder,Get message delta,Get mail folder delta,Create,get,update,delete"
+        }
+      ],
+      "Id": "f71da88e-acf6-486d-a7a1-244353344bcc",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2019-11-01T00:00:00",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "89004873-c9ba-4d20-9586-ecb0479b6786",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Adding file attachments up to 150MB,message",
+          "ChangeType": "Addition",
+          "Description": "[Adding file attachments up to 150MB](outlook-large-attachments.md) to a [message](https://docs.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-beta) instance.",
+          "Target": "Adding file attachments up to 150MB,message"
+        },
+        {
+          "Id": "89004873-c9ba-4d20-9586-ecb0479b6786",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attachmentType",
+          "ChangeType": "Addition",
+          "Description": "The [attachmentItem](https://docs.microsoft.com/en-us/graph/api/resources/attachmentitem?view=graph-rest-beta) complex type, [createUploadSession](https://docs.microsoft.com/en-us/graph/api/attachment-createuploadsession?view=graph-rest-beta) action for the [attachment](https://docs.microsoft.com/en-us/graph/api/resources/attachment?view=graph-rest-beta) entity, and the **attachmentType** enumeration.",
+          "Target": "attachmentItem,createUploadSession,attachment"
+        }
+      ],
+      "Id": "89004873-c9ba-4d20-9586-ecb0479b6786",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2019-11-01T00:00:00",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ca2a54c8-ab7b-4517-9888-67e3ec6c36f0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "get the raw contents of a file or item attachment",
+          "ChangeType": "Addition",
+          "Description": "Added the capability to [get the raw contents of a file or item attachment](https://docs.microsoft.com/en-us/graph/api/attachment-get?view=graph-rest-1.0#get-the-raw-contents-of-a-file-or-item-attachment) to an event, message, or group post.",
+          "Target": "get the raw contents of a file or item attachment"
+        }
+      ],
+      "Id": "ca2a54c8-ab7b-4517-9888-67e3ec6c36f0",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2019-09-01T00:00:00",
+      "WorkloadArea": "Calendar, mail, groups",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "6442124f-9a19-4871-accd-eec7efdd3b2c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "get the MIME content of a message",
+          "ChangeType": "Addition",
+          "Description": "Added the capability to [get the MIME content of a message](outlook-get-mime-message.md).",
+          "Target": "get the MIME content of a message"
+        }
+      ],
+      "Id": "6442124f-9a19-4871-accd-eec7efdd3b2c",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2019-09-01T00:00:00",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8e2b0a66-ce63-463b-bc40-fbfcdcfea9c4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "room list",
+          "ChangeType": "Addition",
+          "Description": "Added the [room list](https://docs.microsoft.com/en-us/graph/api/resources/roomlist?view=graph-rest-beta) resource",
+          "Target": "room list"
+        },
+        {
+          "Id": "8e2b0a66-ce63-463b-bc40-fbfcdcfea9c4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "room",
+          "ChangeType": "Addition",
+          "Description": "Added the [room](https://docs.microsoft.com/en-us/graph/api/resources/room?view=graph-rest-beta) resource",
+          "Target": "room"
+        },
+        {
+          "Id": "8e2b0a66-ce63-463b-bc40-fbfcdcfea9c4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "place",
+          "ChangeType": "Addition",
+          "Description": "Added the [place](https://docs.microsoft.com/en-us/graph/api/resources/place?view=graph-rest-beta) resource",
+          "Target": "place"
+        },
+        {
+          "Id": "8e2b0a66-ce63-463b-bc40-fbfcdcfea9c4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "permissions for the places API",
+          "ChangeType": "Addition",
+          "Description": "Added delegated and application [permissions for the places API](permissions-reference.md#places-permissions): Place.Read.All",
+          "Target": "permissions for the places API"
+        }
+      ],
+      "Id": "8e2b0a66-ce63-463b-bc40-fbfcdcfea9c4",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2019-07-01T00:00:00",
+      "WorkloadArea": "Calendar ",
+      "SubArea": "Place"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "cd6f0f9d-99ef-4a9a-854a-4488ab0c1846",
+          "ApiChange": "Resource",
+          "ChangedApiName": "list mailfolders,get a mailfolder,list child folders,list messages in a mail folder,delta query for message,delta query for mailFolder",
+          "ChangeType": "Addition",
+          "Description": "Added support for the Mail.ReadBasic.All application permission in mailFolder API: [list mailfolders](https://docs.microsoft.com/en-us/graph/api/user-list-mailfolders?view=graph-rest-beta), [get a mailfolder](https://docs.microsoft.com/en-us/graph/api/mailfolder-get?view=graph-rest-beta), [list child folders](https://docs.microsoft.com/en-us/graph/api/mailfolder-list-childfolders?view=graph-rest-beta) and [list messages in a mail folder](https://docs.microsoft.com/en-us/graph/api/mailfolder-list-childfolders?view=graph-rest-beta). Also added Mail.ReadBasic.All support in [delta query for message](https://docs.microsoft.com/en-us/graph/api/message-delta?view=graph-rest-beta) and [delta query for mailFolder](https://docs.microsoft.com/en-us/graph/api/mailfolder-delta?view=graph-rest-beta).",
+          "Target": "list mailfolders,get a mailfolder,list child folders,list messages in a mail folder,delta query for message,delta query for mailFolder"
+        }
+      ],
+      "Id": "cd6f0f9d-99ef-4a9a-854a-4488ab0c1846",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2019-07-01T00:00:00",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2f545597-4a95-4306-8921-40aafa6fec8a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "list mailfolders,get a mailfolder,list child folders,list messages in a mail folder,delta query for message,delta query for mailFolder",
+          "ChangeType": "Addition",
+          "Description": "Added support for the Mail.ReadBasic permission in mailFolder API: [list mailfolders](https://docs.microsoft.com/en-us/graph/api/user-list-mailfolders?view=graph-rest-beta), [get a mailfolder](https://docs.microsoft.com/en-us/graph/api/mailfolder-get?view=graph-rest-beta), [list child folders](https://docs.microsoft.com/en-us/graph/api/mailfolder-list-childfolders?view=graph-rest-beta) and [list messages in a mail folder](https://docs.microsoft.com/en-us/graph/api/mailfolder-list-childfolders?view=graph-rest-beta). Also added Mail.ReadBasic support in [delta query for message](https://docs.microsoft.com/en-us/graph/api/message-delta?view=graph-rest-beta) and [delta query for mailFolder](https://docs.microsoft.com/en-us/graph/api/mailfolder-delta?view=graph-rest-beta).",
+          "Target": "list mailfolders,get a mailfolder,list child folders,list messages in a mail folder,delta query for message,delta query for mailFolder"
+        }
+      ],
+      "Id": "2f545597-4a95-4306-8921-40aafa6fec8a",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2019-06-01T00:00:00",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "937000e6-2cab-4a40-a5ea-58e20dab9fbb",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Scoping application permissions to specific Exchange Online mailboxes",
+          "ChangeType": "Addition",
+          "Description": "Added the capability for administrators to limit app access to only specific mailboxes, even when an app has been granted application permissions to mail, mailbox settings, calendars, or contacts. For more details, see [Scoping application permissions to specific Exchange Online mailboxes](auth-limit-mailbox-access.md).",
+          "Target": "Scoping application permissions to specific Exchange Online mailboxes"
+        }
+      ],
+      "Id": "937000e6-2cab-4a40-a5ea-58e20dab9fbb",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2019-05-01T00:00:00",
+      "WorkloadArea": "Calendar, mail, personal contacts",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "98cf9dd8-b9db-4b66-a5c1-a14536066c79",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mailSearchFolder,mailFolder",
+          "ChangeType": "Addition",
+          "Description": "Added the [mailSearchFolder](https://docs.microsoft.com/en-us/graph/api/resources/mailsearchfolder?graph-rest-1.0) entity, which is derived from and supports the methods of the [mailFolder](https://docs.microsoft.com/en-us/graph/api/resources/mailfolder?graph-rest-1.0) entity.",
+          "Target": "mailSearchFolder,mailFolder"
+        }
+      ],
+      "Id": "98cf9dd8-b9db-4b66-a5c1-a14536066c79",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2019-05-01T00:00:00",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "107962a7-b26b-4c66-9308-167532e4ffa0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Mail.ReadBasic (preview) permission,List Messages,Get Message",
+          "ChangeType": "Addition",
+          "Description": "Added support for a new [Mail.ReadBasic (preview) permission](permissions-reference.md#mail-permissions) for [List Messages](https://docs.microsoft.com/en-us/graph/api/user-list-messages?view=graph-rest-beta) and [Get Message](https://docs.microsoft.com/en-us/graph/api/message-get?view=graph-rest-beta).",
+          "Target": "Mail.ReadBasic (preview) permission,List Messages,Get Message"
+        },
+        {
+          "Id": "107962a7-b26b-4c66-9308-167532e4ffa0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "get the MIME content of a message",
+          "ChangeType": "Addition",
+          "Description": "Added the capability to [get the MIME content of a message](outlook-get-mime-message.md).",
+          "Target": "get the MIME content of a message"
+        },
+        {
+          "Id": "107962a7-b26b-4c66-9308-167532e4ffa0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "get the raw contents of a file or item attachment",
+          "ChangeType": "Addition",
+          "Description": "Added the capability to [get the raw contents of a file or item attachment](https://docs.microsoft.com/en-us/graph/api/attachment-get?view=graph-rest-beta#get-the-raw-contents-of-a-file-or-item-attachment) to an event, message, Outlook task, or group post.",
+          "Target": "get the raw contents of a file or item attachment"
+        }
+      ],
+      "Id": "107962a7-b26b-4c66-9308-167532e4ffa0",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2019-04-01T00:00:00",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "234859ca-0b9e-4dd4-80bd-350d849becf6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "findMeetingTimes,February 2019",
+          "ChangeType": "Change",
+          "Description": "Rolled back the type changes related to [findMeetingTimes](https://docs.microsoft.com/en-us/graph/api/user-findmeetingtimes?view=graph-rest-beta) documented in [February 2019](#february-2019). The specific changes are listed in the following rows.",
+          "Target": "findMeetingTimes,February 2019"
+        },
+        {
+          "Id": "234859ca-0b9e-4dd4-80bd-350d849becf6",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "attendees,attendeeDataModel,locationConstraint,locationConstraints,timeConstraint,findMeetingTimesTimeConstraints",
+          "ChangeType": "Change",
+          "Description": "Changed the data type of the following parameters of [findMeetingTimes](https://docs.microsoft.com/en-us/graph/api/user-findmeetingtimes?view=graph-rest-beta): \u003Cbr\u003E**attendees**: from **attendeeDataModel** back to [attendeeBase](https://docs.microsoft.com/en-us/graph/api/resources/attendeebase?view=graph-rest-beta) \u003Cbr\u003E**locationConstraint**: from **locationConstraints** back to [locationConstraint](https://docs.microsoft.com/en-us/graph/api/resources/locationconstraint?view=graph-rest-beta) \u003Cbr\u003E **timeConstraint**: from **findMeetingTimesTimeConstraints** back to [timeConstraint](https://docs.microsoft.com/en-us/graph/api/resources/timeconstraint?view=graph-rest-beta)",
+          "Target": "findMeetingTimes,attendeeBase,locationConstraint,timeConstraint"
+        },
+        {
+          "Id": "234859ca-0b9e-4dd4-80bd-350d849becf6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "findMeetingTimes,findMeetingTimesResponse",
+          "ChangeType": "Change",
+          "Description": "Changed the return type of **findMeetingTimes** from **findMeetingTimesResponse** back to [meetingTimeSuggestionsResult](https://docs.microsoft.com/en-us/graph/api/resources/meetingTimeSuggestionsResult?view=graph-rest-beta)",
+          "Target": "meetingTimeSuggestionsResult"
+        },
+        {
+          "Id": "234859ca-0b9e-4dd4-80bd-350d849becf6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "locationDataModel",
+          "ChangeType": "Change",
+          "Description": "Changed the base type of [locationConstraintItem](https://docs.microsoft.com/en-us/graph/api/resources/locationconstraintitem?view=graph-rest-beta) from **locationDataModel** back to [location](https://docs.microsoft.com/en-us/graph/api/resources/location?view=graph-rest-beta)",
+          "Target": "locationConstraintItem,location"
+        },
+        {
+          "Id": "234859ca-0b9e-4dd4-80bd-350d849becf6",
+          "ApiChange": "Property",
+          "ChangedApiName": "attendeeAvailability,attendeeAvailabilityDataModel,locations,locationDataModel,meetingTimeSlot,meetingTimeSlotDataModel,organizerAvailability,availabilityStatus,freeBusyStatus",
+          "ChangeType": "Change",
+          "Description": "Changed the data types of the following properties of [meetingTimeSuggestion](https://docs.microsoft.com/en-us/graph/api/resources/meetingtimesuggestion?view=graph-rest-beta): \u003Cbr\u003E **attendeeAvailability**: from collection of **attendeeAvailabilityDataModel** back to collection of [attendeeAvailability](https://docs.microsoft.com/en-us/graph/api/resources/attendeeavailability?view=graph-rest-beta) \u003Cbr\u003E **locations**: from collection of **locationDataModel** back to collection of [location](https://docs.microsoft.com/en-us/graph/api/resources/location?view=graph-rest-beta) \u003Cbr\u003E **meetingTimeSlot**: from **meetingTimeSlotDataModel** back to [timeSlot](https://docs.microsoft.com/en-us/graph/api/resources/timeslot?view=graph-rest-beta) \u003Cbr\u003E **organizerAvailability**: from **availabilityStatus** back to **freeBusyStatus**",
+          "Target": "meetingTimeSuggestion,attendeeAvailability,location,timeSlot"
+        },
+        {
+          "Id": "234859ca-0b9e-4dd4-80bd-350d849becf6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attendeeAvailabilityDataModel,attendeeDataModel,findMeetingTimesResponse,findMeetingTimesTimeConstraints,locationConstraints,meetingTimeSlotDataModel,searchWindowTimeSlot",
+          "ChangeType": "Deletion",
+          "Description": "Complex types: \u003Cbr\u003E **attendeeAvailabilityDataModel** \u003Cbr\u003E **attendeeDataModel** \u003Cbr\u003E **findMeetingTimesResponse** \u003Cbr\u003E **findMeetingTimesTimeConstraints** \u003Cbr\u003E **locationConstraints** \u003Cbr\u003E **meetingTimeSlotDataModel** \u003Cbr\u003E **searchWindowTimeSlot**",
+          "Target": ""
+        },
+        {
+          "Id": "234859ca-0b9e-4dd4-80bd-350d849becf6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "addressType,availabilityStatus",
+          "ChangeType": "Deletion",
+          "Description": "Enumerations: \u003Cbr\u003E **addressType** \u003Cbr\u003E **availabilityStatus**",
+          "Target": ""
+        },
+        {
+          "Id": "234859ca-0b9e-4dd4-80bd-350d849becf6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attendeeAvailability,locationConstraint,meetingTimeSuggestionsResult,timeConstraint",
+          "ChangeType": "Addition",
+          "Description": "Restored the following complex types: \u003Cbr\u003E [attendeeAvailability](https://docs.microsoft.com/en-us/graph/api/resources/attendeeavailability?view=graph-rest-beta) \u003Cbr\u003E [locationConstraint](https://docs.microsoft.com/en-us/graph/api/resources/locationconstraint?view=graph-rest-beta) \u003Cbr\u003E [meetingTimeSuggestionsResult](https://docs.microsoft.com/en-us/graph/api/resources/meetingtimesuggestionsresult?view=graph-rest-beta) \u003Cbr\u003E[timeConstraint](https://docs.microsoft.com/en-us/graph/api/resources/timeconstraint?view=graph-rest-beta)",
+          "Target": "attendeeAvailability,locationConstraint,meetingTimeSuggestionsResult,timeConstraint"
+        }
+      ],
+      "Id": "234859ca-0b9e-4dd4-80bd-350d849becf6",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2019-03-01T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "234859ca-0b9e-4dd4-80bd-350d849becf6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "getSchedule,freeBusyError,scheduleInformation,scheduleItem,getting the free/busy, availability information for users, distribution lists, and resources for a given period of time",
+          "ChangeType": "Addition",
+          "Description": "Added the [getSchedule](https://docs.microsoft.com/en-us/graph/api/calendar-getschedule?view=graph-rest-1.0) action, and the [freeBusyError](https://docs.microsoft.com/en-us/graph/api/resources/freebusyerror?view=graph-rest-1.0), [scheduleInformation](https://docs.microsoft.com/en-us/graph/api/resources/scheduleinformation?view=graph-rest-1.0), and [scheduleItem](https://docs.microsoft.com/en-us/graph/api/resources/scheduleitem?view=graph-rest-1.0) complex types to support [getting the free/busy, availability information for users, distribution lists, and resources for a given period of time](outlook-get-free-busy-schedule.md).",
+          "Target": "getSchedule,freeBusyError,scheduleInformation,scheduleItem,getting the free/busy, availability information for users, distribution lists, and resources for a given period of time"
+        }
+      ],
+      "Id": "234859ca-0b9e-4dd4-80bd-350d849becf6",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2019-03-01T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2b8e1cd8-301a-4fec-be7a-9e61946c21b8",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "attendees,attendeeBase,locationConstraint,locationConstraint,timeConstraint,timeConstraint",
+          "ChangeType": "Change",
+          "Description": "Changed the data type of the following parameters of [findMeetingTimes](https://docs.microsoft.com/en-us/graph/api/user-findmeetingtimes?view=graph-rest-beta): \u003Cbr\u003E**attendees**: from **attendeeBase** to [attendeeDataModel](https://docs.microsoft.com/en-us/graph/api/resources/attendeedatamodel?view=graph-rest-beta) \u003Cbr\u003E**locationConstraint**: from **locationConstraint** to [locationConstraints](https://docs.microsoft.com/en-us/graph/api/resources/locationconstraints?view=graph-rest-beta) \u003Cbr\u003E **timeConstraint**: from **timeConstraint** to [findMeetingTimesTimeConstraints](https://docs.microsoft.com/en-us/graph/api/resources/findmeetingtimestimeconstraints?view=graph-rest-beta)",
+          "Target": "findMeetingTimes,attendeeDataModel,locationConstraints,findMeetingTimesTimeConstraints"
+        },
+        {
+          "Id": "2b8e1cd8-301a-4fec-be7a-9e61946c21b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "findMeetingTimes,meetingTimeSuggestionsResult",
+          "ChangeType": "Change",
+          "Description": "Changed the return type of **findMeetingTimes** from **meetingTimeSuggestionsResult** to [findMeetingTimesResponse](https://docs.microsoft.com/en-us/graph/api/resources/findmeetingtimesresponse?view=graph-rest-beta)",
+          "Target": "findMeetingTimesResponse"
+        },
+        {
+          "Id": "2b8e1cd8-301a-4fec-be7a-9e61946c21b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "findMeetingTimes,type",
+          "ChangeType": "Change",
+          "Description": "Changed the response payload of **findMeetingTimes** to exclude the **type** of each attendee that identifies whether the attendee is required, optional, or is a resource",
+          "Target": ""
+        },
+        {
+          "Id": "2b8e1cd8-301a-4fec-be7a-9e61946c21b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "locationConstraintItem,location,locationDataModel",
+          "ChangeType": "Change",
+          "Description": "Changed the base type of [locationConstraintItem](https://docs.microsoft.com/en-us/graph/api/resources/locationconstraintitem?view=graph-rest-beta) from [location](https://docs.microsoft.com/en-us/graph/api/resources/location?view=graph-rest-beta) to [locationDataModel](https://docs.microsoft.com/en-us/graph/api/resources/locationdatamodel?view=graph-rest-beta)",
+          "Target": "locationConstraintItem,location,locationDataModel"
+        },
+        {
+          "Id": "2b8e1cd8-301a-4fec-be7a-9e61946c21b8",
+          "ApiChange": "Property",
+          "ChangedApiName": "attendeeAvailability,attendeeAvailability,locations,meetingTimeSlot,organizerAvailability,freeBusyStatus,availabilityStatus",
+          "ChangeType": "Change",
+          "Description": "Changed the data types of the following properties of [meetingTimeSuggestion](https://docs.microsoft.com/en-us/graph/api/resources/meetingtimesuggestion?view=graph-rest-beta): \u003Cbr\u003E **attendeeAvailability**: from collection of **attendeeAvailability** to collection of [attendeeAvailabilityDataModel](https://docs.microsoft.com/en-us/graph/api/resources/attendeeavailabilitydatamodel?view=graph-rest-beta) \u003Cbr\u003E **locations**: from collection of [location](https://docs.microsoft.com/en-us/graph/api/resources/location?view=graph-rest-beta) to collection of [locationDataModel](https://docs.microsoft.com/en-us/graph/api/resources/locationdatamodel?view=graph-rest-beta) \u003Cbr\u003E **meetingTimeSlot**: from [timeSlot](https://docs.microsoft.com/en-us/graph/api/resources/timeslot?view=graph-rest-beta) to [meetingTimeSlotDataModel](https://docs.microsoft.com/en-us/graph/api/resources/meetingtimeslotdatamodel?view=graph-rest-beta) \u003Cbr\u003E **organizerAvailability**: from **freeBusyStatus** to **availabilityStatus**",
+          "Target": "meetingTimeSuggestion,attendeeAvailabilityDataModel,location,locationDataModel,timeSlot,meetingTimeSlotDataModel"
+        },
+        {
+          "Id": "2b8e1cd8-301a-4fec-be7a-9e61946c21b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attendeeAvailabilityDataModel,attendeeDataModel,findMeetingTimesResponse,findMeetingTimesTimeConstraints,locationConstraints,locationDataModel,meetingTimeSlotDataModel,postalAddress,searchWindowTimeSlot",
+          "ChangeType": "Addition",
+          "Description": "New complex types: \u003Cbr\u003E [attendeeAvailabilityDataModel](https://docs.microsoft.com/en-us/graph/api/resources/attendeeavailabilitydatamodel?view=graph-rest-beta) \u003Cbr\u003E [attendeeDataModel](https://docs.microsoft.com/en-us/graph/api/resources/attendeedatamodel?view=graph-rest-beta) \u003Cbr\u003E [findMeetingTimesResponse](https://docs.microsoft.com/en-us/graph/api/resources/findmeetingtimesresponse?view=graph-rest-beta) \u003Cbr\u003E [findMeetingTimesTimeConstraints](https://docs.microsoft.com/en-us/graph/api/resources/findmeetingtimestimeconstraints?view=graph-rest-beta) \u003Cbr\u003E [locationConstraints](https://docs.microsoft.com/en-us/graph/api/resources/locationconstraints?view=graph-rest-beta) \u003Cbr\u003E [locationDataModel](https://docs.microsoft.com/en-us/graph/api/resources/locationdatamodel?view=graph-rest-beta) \u003Cbr\u003E [meetingTimeSlotDataModel](https://docs.microsoft.com/en-us/graph/api/resources/meetingtimeslotdatamodel?view=graph-rest-beta) \u003Cbr\u003E [postalAddress](https://docs.microsoft.com/en-us/graph/api/resources/postaladdress?view=graph-rest-beta) \u003Cbr\u003E [searchWindowTimeSlot](https://docs.microsoft.com/en-us/graph/api/resources/searchwindowtimeslot?view=graph-rest-beta)",
+          "Target": "attendeeAvailabilityDataModel,attendeeDataModel,findMeetingTimesResponse,findMeetingTimesTimeConstraints,locationConstraints,locationDataModel,meetingTimeSlotDataModel,postalAddress,searchWindowTimeSlot"
+        },
+        {
+          "Id": "2b8e1cd8-301a-4fec-be7a-9e61946c21b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "addressType,availabilityStatus",
+          "ChangeType": "Addition",
+          "Description": "New enumerations: \u003Cbr\u003E **addressType** \u003Cbr\u003E **availabilityStatus**",
+          "Target": ""
+        },
+        {
+          "Id": "2b8e1cd8-301a-4fec-be7a-9e61946c21b8",
+          "ApiChange": "Property",
+          "ChangedApiName": "order",
+          "ChangeType": "Addition",
+          "Description": "Added the **order** property to [meetingTimeSuggestion](https://docs.microsoft.com/en-us/graph/api/resources/meetingtimesuggestion?view=graph-rest-beta)",
+          "Target": "meetingTimeSuggestion"
+        },
+        {
+          "Id": "2b8e1cd8-301a-4fec-be7a-9e61946c21b8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attendeeAvailability,locationConstraint,meetingTimeSuggestionsResult,timeConstraint",
+          "ChangeType": "Deletion",
+          "Description": "Removed the following complex types: \u003Cbr\u003E **attendeeAvailability** \u003Cbr\u003E **locationConstraint** \u003Cbr\u003E **meetingTimeSuggestionsResult** \u003Cbr\u003E**timeConstraint**",
+          "Target": ""
+        }
+      ],
+      "Id": "2b8e1cd8-301a-4fec-be7a-9e61946c21b8",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2019-02-01T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7cff18d4-8e77-42bb-a5fe-190ca994a0a5",
+          "ApiChange": "Property",
+          "ChangedApiName": "internetMessageHeaders",
+          "ChangeType": "Addition",
+          "Description": "The **internetMessageHeaders** property of the [message](https://docs.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-1.0) entity is now writeable on message creation.",
+          "Target": "message"
+        }
+      ],
+      "Id": "7cff18d4-8e77-42bb-a5fe-190ca994a0a5",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2018-09-01T00:00:00",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "23ef3e0f-48bf-4334-a2d3-817321eb629b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "getSchedule,freeBusyError,scheduleInformation,scheduleItem,getting the free/busy, availability information for users, distribution lists, and resources for a given period of time",
+          "ChangeType": "Addition",
+          "Description": "Added the [getSchedule](https://docs.microsoft.com/en-us/graph/api/calendar-getschedule?view=graph-rest-beta) action, and the [freeBusyError](https://docs.microsoft.com/en-us/graph/api/resources/freebusyerror?view=graph-rest-beta), [scheduleInformation](https://docs.microsoft.com/en-us/graph/api/resources/scheduleinformation?view=graph-rest-beta), and [scheduleItem](https://docs.microsoft.com/en-us/graph/api/resources/scheduleitem?view=graph-rest-beta) complex types to support [getting the free/busy, availability information for users, distribution lists, and resources for a given period of time](outlook-get-free-busy-schedule.md).",
+          "Target": "getSchedule,freeBusyError,scheduleInformation,scheduleItem,getting the free/busy, availability information for users, distribution lists, and resources for a given period of time"
+        }
+      ],
+      "Id": "23ef3e0f-48bf-4334-a2d3-817321eb629b",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2018-08-01T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fec55e12-7936-46f9-aea2-2cdd5a823b2b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "typedEmailAddress",
+          "ChangeType": "Addition",
+          "Description": "Added the complex type [typedEmailAddress](https://docs.microsoft.com/en-us/graph/api/resources/typedemailaddress?view=graph-rest-beta).",
+          "Target": "typedEmailAddress"
+        },
+        {
+          "Id": "fec55e12-7936-46f9-aea2-2cdd5a823b2b",
+          "ApiChange": "Property",
+          "ChangedApiName": "emailAddresses,typedEmailAddress",
+          "ChangeType": "Change",
+          "Description": "Changed the type of the **emailAddresses** property of [contact](https://docs.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-beta) to be a collection of **typedEmailAddress** instances.",
+          "Target": "contact"
+        }
+      ],
+      "Id": "fec55e12-7936-46f9-aea2-2cdd5a823b2b",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2018-07-01T00:00:00",
+      "WorkloadArea": "Personal contacts",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "665b7d87-ceb9-438d-898f-60d7feaedc73",
+          "ApiChange": "Property",
+          "ChangedApiName": "locations",
+          "ChangeType": "Addition",
+          "Description": "Added the **locations** property to the [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-1.0) entity to support organizing an event that attendees can attend from more than one location.",
+          "Target": "event"
+        },
+        {
+          "Id": "665b7d87-ceb9-438d-898f-60d7feaedc73",
+          "ApiChange": "Property",
+          "ChangedApiName": "locationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **locationType** property to the [location](https://docs.microsoft.com/en-us/graph/api/resources/location?view=graph-rest-1.0) complex type.",
+          "Target": "location"
+        },
+        {
+          "Id": "665b7d87-ceb9-438d-898f-60d7feaedc73",
+          "ApiChange": "Property",
+          "ChangedApiName": "uniqueId,uniqueIdType",
+          "ChangeType": "Addition",
+          "Description": "Added the **uniqueId** and **uniqueIdType** properties to the [location](https://docs.microsoft.com/en-us/graph/api/resources/location?view=graph-rest-1.0) complex type. These properties are only for internal use at this point.",
+          "Target": "location"
+        }
+      ],
+      "Id": "665b7d87-ceb9-438d-898f-60d7feaedc73",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2018-04-01T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e5fa1b5c-f9a0-49a4-ab2b-84e3ac3725d2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mailSearchFolder",
+          "ChangeType": "Addition",
+          "Description": "Added [mailSearchFolder](https://docs.microsoft.com/en-us/graph/api/resources/mailsearchfolder?view=graph-rest-beta).",
+          "Target": "mailSearchFolder"
+        },
+        {
+          "Id": "e5fa1b5c-f9a0-49a4-ab2b-84e3ac3725d2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Create,Update",
+          "ChangeType": "Addition",
+          "Description": "Added the following APIs for mail search folder: [Create](https://docs.microsoft.com/en-us/graph/api/mailsearchfolder-post?view=graph-rest-beta), [Update](https://docs.microsoft.com/en-us/graph/api/mailsearchfolder-update?view=graph-rest-beta).",
+          "Target": "Create,Update"
+        },
+        {
+          "Id": "e5fa1b5c-f9a0-49a4-ab2b-84e3ac3725d2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "delete mailFolder,get mailFolder,list child folders",
+          "ChangeType": "Change",
+          "Description": "Added support for mail search folder to [delete mailFolder](https://docs.microsoft.com/en-us/graph/api/mailfolder-delete?view=graph-rest-beta), [get mailFolder](https://docs.microsoft.com/en-us/graph/api/mailfolder-get?view=graph-rest-beta), and [list child folders](https://docs.microsoft.com/en-us/graph/api/mailfolder-list-childfolders?view=graph-rest-beta).",
+          "Target": "delete mailFolder,get mailFolder,list child folders"
+        }
+      ],
+      "Id": "e5fa1b5c-f9a0-49a4-ab2b-84e3ac3725d2",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2018-04-01T00:00:00",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e5fa1b5c-f9a0-49a4-ab2b-84e3ac3725d2",
+          "ApiChange": "Property",
+          "ChangedApiName": "flag",
+          "ChangeType": "Addition",
+          "Description": "Added the **flag** property to the [message](https://docs.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-1.0) entity. Added the shared [followupFlag](https://docs.microsoft.com/en-us/graph/api/resources/followupflag?view=graph-rest-1.0) complex type.",
+          "Target": "message,followupFlag"
+        },
+        {
+          "Id": "e5fa1b5c-f9a0-49a4-ab2b-84e3ac3725d2",
+          "ApiChange": "Property",
+          "ChangedApiName": "internetMessageHeaders",
+          "ChangeType": "Addition",
+          "Description": "Added the **internetMessageHeaders** property to the [message](https://docs.microsoft.com/en-us/graph/api/resources/message?view=graph-rest-1.0) entity.",
+          "Target": "message"
+        },
+        {
+          "Id": "e5fa1b5c-f9a0-49a4-ab2b-84e3ac3725d2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "internetMessageHeader",
+          "ChangeType": "Addition",
+          "Description": "Added the [internetMessageHeader](https://docs.microsoft.com/en-us/graph/api/resources/internetmessageheader?view=graph-rest-1.0) complex type.",
+          "Target": "internetMessageHeader"
+        },
+        {
+          "Id": "e5fa1b5c-f9a0-49a4-ab2b-84e3ac3725d2",
+          "ApiChange": "Property",
+          "ChangedApiName": "messageRules,messageRules",
+          "ChangeType": "Addition",
+          "Description": "Added the **messageRules** navigation property to the [mailFolder](https://docs.microsoft.com/en-us/graph/api/resources/mailfolder?view=graph-rest-1.0) entity. **messageRules** is a collection of [messageRule](https://docs.microsoft.com/en-us/graph/api/resources/messagerule?view=graph-rest-1.0) instances.",
+          "Target": "mailFolder,messageRule"
+        },
+        {
+          "Id": "e5fa1b5c-f9a0-49a4-ab2b-84e3ac3725d2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "messageRule,messageRuleActions,messageRulePredicates,sizeRange",
+          "ChangeType": "Addition",
+          "Description": "Added the [messageRule](https://docs.microsoft.com/en-us/graph/api/resources/messagerule?view=graph-rest-1.0) entity, and [messageRuleActions](https://docs.microsoft.com/en-us/graph/api/resources/messageruleactions?view=graph-rest-1.0), [messageRulePredicates](https://docs.microsoft.com/en-us/graph/api/resources/messagerulepredicates?view=graph-rest-1.0), and [sizeRange](https://docs.microsoft.com/en-us/graph/api/resources/sizerange?view=graph-rest-1.0) complex types.",
+          "Target": "messageRule,messageRuleActions,messageRulePredicates,sizeRange"
+        },
+        {
+          "Id": "e5fa1b5c-f9a0-49a4-ab2b-84e3ac3725d2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "create,list,get,update,delete",
+          "ChangeType": "Addition",
+          "Description": "Added the following CRUD operations for message rules: [create](https://docs.microsoft.com/en-us/graph/api/mailfolder-post-messagerules?view=graph-rest-1.0), [list](https://docs.microsoft.com/en-us/graph/api/mailfolder-list-messagerules?view=graph-rest-1.0), [get](https://docs.microsoft.com/en-us/graph/api/messagerule-get?view=graph-rest-1.0), [update](https://docs.microsoft.com/en-us/graph/api/messagerule-update?view=graph-rest-1.0), and [delete](https://docs.microsoft.com/en-us/graph/api/messagerule-delete?view=graph-rest-1.0).",
+          "Target": "create,list,get,update,delete"
+        }
+      ],
+      "Id": "e5fa1b5c-f9a0-49a4-ab2b-84e3ac3725d2",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2018-04-01T00:00:00",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a0accfc1-25b8-4e21-81fd-6e2a42bd3e8f",
+          "ApiChange": "Property",
+          "ChangedApiName": "flag",
+          "ChangeType": "Addition",
+          "Description": "Added the **flag** property to the [contact](https://docs.microsoft.com/en-us/graph/api/resources/contact?view=graph-rest-1.0) entity. Added the shared [followupFlag](https://docs.microsoft.com/en-us/graph/api/resources/followupflag?view=graph-rest-1.0) complex type.",
+          "Target": "contact,followupFlag"
+        }
+      ],
+      "Id": "a0accfc1-25b8-4e21-81fd-6e2a42bd3e8f",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2018-04-01T00:00:00",
+      "WorkloadArea": "Personal contacts",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "87582aef-00c4-4b3d-b3ca-a0152c5d339b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "get that shared mail folder,get the messages in that shared calendar",
+          "ChangeType": "Change",
+          "Description": "This behavior enhancement is about getting a shared mail folder or its message contents, when a user has shared a mail folder with the signed-in user, or has delegated the user\u0027s mailbox to the signed-in user. In such situations, an app can specify that user\u0027s ID or user principal name to [get that shared mail folder](https://docs.microsoft.com/en-us/graph/api/mailfolder-get?view=graph-rest-1.0), or [get the messages in that shared calendar](https://docs.microsoft.com/en-us/graph/api/user-list-messages?view=graph-rest-1.0), as long as the signed-in user has provided delegated permissions to the app.",
+          "Target": "get that shared mail folder,get the messages in that shared calendar"
+        }
+      ],
+      "Id": "87582aef-00c4-4b3d-b3ca-a0152c5d339b",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2017-10-01T00:00:00",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4166f5eb-3aa9-41da-8bd2-a21dbebca889",
+          "ApiChange": "Resource",
+          "ChangedApiName": "findRoomLists,findRooms,user",
+          "ChangeType": "Addition",
+          "Description": "Added the [findRoomLists](https://docs.microsoft.com/en-us/graph/api/user-findroomlists?view=graph-rest-beta) and [findRooms](https://docs.microsoft.com/en-us/graph/api/user-findrooms?view=graph-rest-beta) functions to the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta) entity.",
+          "Target": "findRoomLists,findRooms,user"
+        },
+        {
+          "Id": "4166f5eb-3aa9-41da-8bd2-a21dbebca889",
+          "ApiChange": "Property",
+          "ChangedApiName": "locations",
+          "ChangeType": "Addition",
+          "Description": "Added the **locations** property to the [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-beta) entity to support organizing an event that attendees can attend from more than one location.",
+          "Target": "event"
+        },
+        {
+          "Id": "4166f5eb-3aa9-41da-8bd2-a21dbebca889",
+          "ApiChange": "Property",
+          "ChangedApiName": "locationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **locationType** property to the [location](https://docs.microsoft.com/en-us/graph/api/resources/location?view=graph-rest-beta) complex type.",
+          "Target": "location"
+        },
+        {
+          "Id": "4166f5eb-3aa9-41da-8bd2-a21dbebca889",
+          "ApiChange": "Property",
+          "ChangedApiName": "uniqueId,uniqueIdType",
+          "ChangeType": "Addition",
+          "Description": "Added the **uniqueId** and **uniqueIdType** properties to the [location](https://docs.microsoft.com/en-us/graph/api/resources/location?view=graph-rest-beta) complex type. These properties are only for internal use at this point.",
+          "Target": "location"
+        }
+      ],
+      "Id": "4166f5eb-3aa9-41da-8bd2-a21dbebca889",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2017-09-01T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4166f5eb-3aa9-41da-8bd2-a21dbebca889",
+          "ApiChange": "Resource",
+          "ChangedApiName": "get that shared calendar,get the events in that shared calendar",
+          "ChangeType": "Change",
+          "Description": "This behavior enhancement is about getting a shared calendar or its event contents, when a user has shared a calendar with the signed-in user, or has delegated the user\u0027s mailbox to the signed-in user. In such situations, an app can specify that user\u0027s ID or user principal name to [get that shared calendar](https://docs.microsoft.com/en-us/graph/api/calendar-get?view=graph-rest-1.0), or [get the events in that shared calendar](https://docs.microsoft.com/en-us/graph/api/user-list-events?view=graph-rest-1.0), as long as the signed-in user has provided delegated permissions to the app.",
+          "Target": "get that shared calendar,get the events in that shared calendar"
+        }
+      ],
+      "Id": "4166f5eb-3aa9-41da-8bd2-a21dbebca889",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2017-09-01T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2c8f3620-e9c8-46b5-bc9a-3db25aa5511d",
+          "ApiChange": "Property",
+          "ChangedApiName": "canEdit,canShare,canViewPrivateItems,owner",
+          "ChangeType": "Addition",
+          "Description": "Promoted the following 4 [calendar](https://docs.microsoft.com/en-us/graph/api/resources/calendar?view=graph-rest-1.0) properties to v1.0: **canEdit**, **canShare**, **canViewPrivateItems**, and **owner**.",
+          "Target": "calendar"
+        }
+      ],
+      "Id": "2c8f3620-e9c8-46b5-bc9a-3db25aa5511d",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2017-06-01T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "430319ac-ca6c-4119-a037-67c85965ca88",
+          "ApiChange": "Resource",
+          "ChangedApiName": "event",
+          "ChangeType": "Addition",
+          "Description": "Support getting an **event** body in plain text, as an alternative to the default HTML format. See [get](https://docs.microsoft.com/en-us/graph/api/event-get?view=graph-rest-beta) and [list](https://docs.microsoft.com/en-us/graph/api/user-list-events?view=graph-rest-beta) events for details.",
+          "Target": "get,list"
+        }
+      ],
+      "Id": "430319ac-ca6c-4119-a037-67c85965ca88",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2017-05-01T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "430319ac-ca6c-4119-a037-67c85965ca88",
+          "ApiChange": "Property",
+          "ChangedApiName": "findMeetingTimes,unrestricted,activityDomain,timeConstraint,findMeetingTimes",
+          "ChangeType": "Addition",
+          "Description": "For **findMeetingTimes**, added new enum value **unrestricted** that you specify as the **activityDomain** property, part of the **timeConstraint** parameter. This lets **findMeetingTimes** look for times appropriate for the type of activity you\u0027re scheduling for. See details in the [request body](https://docs.microsoft.com/en-us/graph/api/user-findmeetingtimes?view=graph-rest-1.0#request-body) section.",
+          "Target": "request body"
+        }
+      ],
+      "Id": "430319ac-ca6c-4119-a037-67c85965ca88",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2017-05-01T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8868b3c6-5354-4b35-bbbd-819b24f53e59",
+          "ApiChange": "Resource",
+          "ChangedApiName": "message",
+          "ChangeType": "Change",
+          "Description": "Support getting a **message** body in plain text, as an alternative to the default HTML format. See [get](https://docs.microsoft.com/en-us/graph/api/message-get?view=graph-rest-beta) and [list](https://docs.microsoft.com/en-us/graph/api/user-list-messages?view=graph-rest-beta) events for details.",
+          "Target": "get,list"
+        }
+      ],
+      "Id": "8868b3c6-5354-4b35-bbbd-819b24f53e59",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2017-05-01T00:00:00",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "be0f6e64-44ee-4194-96dd-a8cde1b5f336",
+          "ApiChange": "Resource",
+          "ChangedApiName": "calendar",
+          "ChangeType": "Addition",
+          "Description": "hexColor added to the [calendar](https://docs.microsoft.com/en-us/graph/api/resources/calendar?view=graph-rest-beta) resource.",
+          "Target": "calendar"
+        }
+      ],
+      "Id": "be0f6e64-44ee-4194-96dd-a8cde1b5f336",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2017-01-01T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "be0f6e64-44ee-4194-96dd-a8cde1b5f336",
+          "ApiChange": "Resource",
+          "ChangedApiName": "findMeetingTimes,user",
+          "ChangeType": "Addition",
+          "Description": "New action [findMeetingTimes](https://docs.microsoft.com/en-us/graph/api/user-findmeetingtimes?view=graph-rest-1.0) for the [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-1.0) resource.",
+          "Target": "findMeetingTimes,user"
+        },
+        {
+          "Id": "be0f6e64-44ee-4194-96dd-a8cde1b5f336",
+          "ApiChange": "Property",
+          "ChangedApiName": "attendeeBase",
+          "ChangeType": "Addition",
+          "Description": "New complex type [attendeeBase](https://docs.microsoft.com/en-us/graph/api/resources/attendeebase?view=graph-rest-1.0) which consists of a type property for the attendee type.",
+          "Target": "attendeeBase"
+        },
+        {
+          "Id": "be0f6e64-44ee-4194-96dd-a8cde1b5f336",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attendeeAvailability,locationConstraint,locationConstraintItem,meetingTimeSuggestion,meetingTimeSuggestionsResult,timeConstraint,timeSlot",
+          "ChangeType": "Addition",
+          "Description": "New complex types:, [attendeeAvailability](https://docs.microsoft.com/en-us/graph/api/resources/attendeeavailability?view=graph-rest-1.0), [locationConstraint](https://docs.microsoft.com/en-us/graph/api/resources/locationconstraint?view=graph-rest-1.0) , [locationConstraintItem](https://docs.microsoft.com/en-us/graph/api/resources/locationconstraintitem?view=graph-rest-1.0), [meetingTimeSuggestion](https://docs.microsoft.com/en-us/graph/api/resources/meetingtimesuggestion?view=graph-rest-1.0), [meetingTimeSuggestionsResult](https://docs.microsoft.com/en-us/graph/api/resources/meetingtimesuggestionsresult?view=graph-rest-1.0), [timeConstraint](https://docs.microsoft.com/en-us/graph/api/resources/timeconstraint?view=graph-rest-1.0), [timeSlot](https://docs.microsoft.com/en-us/graph/api/resources/timeslot?view=graph-rest-1.0)",
+          "Target": "attendeeAvailability,locationConstraint,locationConstraintItem,meetingTimeSuggestion,meetingTimeSuggestionsResult,timeConstraint,timeSlot"
+        },
+        {
+          "Id": "be0f6e64-44ee-4194-96dd-a8cde1b5f336",
+          "ApiChange": "Property",
+          "ChangedApiName": "status,type,emailAddress",
+          "ChangeType": "Change",
+          "Description": "The [attendee](https://docs.microsoft.com/en-us/graph/api/resources/attendee?view=graph-rest-1.0) complex type is now derived from attendeeBase, which in turn is derived from [recipient](https://docs.microsoft.com/en-us/graph/api/resources/recipient?view=graph-rest-1.0). Including the inherited properties, it consists of the same **status**, **type** and **emailAddress** properties as before.",
+          "Target": "attendee,recipient"
+        }
+      ],
+      "Id": "be0f6e64-44ee-4194-96dd-a8cde1b5f336",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2017-01-01T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a2f88c7c-c262-48c8-960c-a2dcab791c77",
+          "ApiChange": "Property",
+          "ChangedApiName": "Extended properties",
+          "ChangeType": "Addition",
+          "Description": "[Extended properties](https://docs.microsoft.com/en-us/graph/api/resources/extended-properties-overview?view=graph-rest-1.0) are now supported by the following resources: message, mailFolder, event, calendar, contact, contactFolder, group event, group calendar, group post.",
+          "Target": "Extended properties"
+        }
+      ],
+      "Id": "a2f88c7c-c262-48c8-960c-a2dcab791c77",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2016-09-01T00:00:00",
+      "WorkloadArea": "Calendar, groups, mail, personal contacts",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b7453f8a-161a-4bf9-bfa4-4a10f3d09b94",
+          "ApiChange": "Resource",
+          "ChangedApiName": "forward",
+          "ChangeType": "Addition",
+          "Description": "Added [forward](https://docs.microsoft.com/en-us/graph/api/event-forward?view=graph-rest-beta) action to the event resource.",
+          "Target": "forward"
+        },
+        {
+          "Id": "b7453f8a-161a-4bf9-bfa4-4a10f3d09b94",
+          "ApiChange": "Property",
+          "ChangedApiName": "canEdit,canShare,canViewPrivateItems,isShared,isShareWithMe,owner",
+          "ChangeType": "Addition",
+          "Description": "Added the following properties to the [calendar](https://docs.microsoft.com/en-us/graph/api/resources/calendar?view=graph-rest-beta) resource to support calendar sharing: **canEdit**, **canShare**, **canViewPrivateItems**, **isShared**, **isShareWithMe**, and **owner**.",
+          "Target": "calendar"
+        }
+      ],
+      "Id": "b7453f8a-161a-4bf9-bfa4-4a10f3d09b94",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2016-09-01T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b7453f8a-161a-4bf9-bfa4-4a10f3d09b94",
+          "ApiChange": "Property",
+          "ChangedApiName": "onlineMeetingUrl",
+          "ChangeType": "Addition",
+          "Description": "Added the **onlineMeetingUrl** property to the [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-1.0) resource.",
+          "Target": "event"
+        }
+      ],
+      "Id": "b7453f8a-161a-4bf9-bfa4-4a10f3d09b94",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2016-09-01T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2c521dfb-e1c5-4e39-9af9-023304d70ee7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mention",
+          "ChangeType": "Addition",
+          "Description": "Added support for creating, listing, getting, and deleting one or more instances of [mention](https://docs.microsoft.com/en-us/graph/api/resources/mention?view=graph-rest-beta) in a message. Mentions support calling out to get the attention of other users in a message.",
+          "Target": "mention"
+        },
+        {
+          "Id": "2c521dfb-e1c5-4e39-9af9-023304d70ee7",
+          "ApiChange": "Resource",
+          "ChangedApiName": "getMailTips,automaticRepliesMailTips,mailTips,mailTipsError",
+          "ChangeType": "Addition",
+          "Description": "Added support for the [getMailTips](https://docs.microsoft.com/en-us/graph/api/user-getmailtips?view=graph-rest-beta) action to get any MailTips for specific recipients. Added the following resources: [automaticRepliesMailTips](https://docs.microsoft.com/en-us/graph/api/resources/automaticrepliesmailtips?view=graph-rest-beta), [mailTips](https://docs.microsoft.com/en-us/graph/api/resources/mailtips?view=graph-rest-beta), [mailTipsError](https://docs.microsoft.com/en-us/graph/api/resources/mailtipserror?view=graph-rest-beta).",
+          "Target": "getMailTips,automaticRepliesMailTips,mailTips,mailTipsError"
+        }
+      ],
+      "Id": "2c521dfb-e1c5-4e39-9af9-023304d70ee7",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2016-09-01T00:00:00",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d39f7f50-e353-4434-b7a2-b0166dbaa127",
+          "ApiChange": "Property",
+          "ChangedApiName": "Upcoming changes to Contacts and People APIs",
+          "ChangeType": "Addition",
+          "Description": "As part of the schema change where a few properties are being removed and corresponding collections are being added to contacts endpoint, the following properties have been added to the contacts endpoint: _Websites Collection(ComplexType: Website)_,_Phones Collection (ComplexType: Phone)_, _PostalAddress Collection(ComplexType: PhysicalAddress)_. For details, see the [Upcoming changes to Contacts and People APIs](https://developer.microsoft.com/office/blogs/upcoming-changes-to-contacts-and-people-apis/) blog post.",
+          "Target": "Upcoming changes to Contacts and People APIs"
+        },
+        {
+          "Id": "d39f7f50-e353-4434-b7a2-b0166dbaa127",
+          "ApiChange": "Property",
+          "ChangedApiName": "Upcoming changes to Contacts and People APIs",
+          "ChangeType": "Deletion",
+          "Description": "As part of the schema change where a few properties are being removed and corresponding collections are being added to contacts endpoint, the following properties have been removed from the contacts endpoint: _BusinessHomePage_,_HomePhones_, _MobilePhone1_, _BusinessPhones_, _HomeAddress_, _BusinessAddress_, _OtherAddress_. For details, see the [Upcoming changes to Contacts and People APIs](https://developer.microsoft.com/office/blogs/upcoming-changes-to-contacts-and-people-apis/) blog post.",
+          "Target": "Upcoming changes to Contacts and People APIs"
+        }
+      ],
+      "Id": "d39f7f50-e353-4434-b7a2-b0166dbaa127",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2016-08-01T00:00:00",
+      "WorkloadArea": "Personal contacts",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "0cb38417-5837-4896-b738-f4b19742e1c9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added _extensions_, which is abstract type to support the OData v4 open type openTypeExtension.",
+          "Target": ""
+        }
+      ],
+      "Id": "0cb38417-5837-4896-b738-f4b19742e1c9",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2016-05-01T00:00:00",
+      "WorkloadArea": "Personal contact",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "73b8e3a5-e24b-423b-b7ec-2a9266c6352a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "eventMessageRequest",
+          "ChangeType": "Addition",
+          "Description": "Added _responseRequested_ to the **eventMessageRequest** entity.",
+          "Target": ""
+        }
+      ],
+      "Id": "73b8e3a5-e24b-423b-b7ec-2a9266c6352a",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2016-05-01T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "73b8e3a5-e24b-423b-b7ec-2a9266c6352a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "event",
+          "ChangeType": "Addition",
+          "Description": "Added _extensions_ to the **event** entity, which is abstract type to support the OData v4 open type openTypeExtension.",
+          "Target": ""
+        },
+        {
+          "Id": "73b8e3a5-e24b-423b-b7ec-2a9266c6352a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "eventMessage",
+          "ChangeType": "Addition",
+          "Description": "Added _inferenceClassification_ and _extensions_ to the **eventMessage** entity.",
+          "Target": ""
+        }
+      ],
+      "Id": "73b8e3a5-e24b-423b-b7ec-2a9266c6352a",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2016-05-01T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "47eac3e2-376d-4262-9de4-9e16e054b28f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "message",
+          "ChangeType": "Addition",
+          "Description": "Added _inferenceClassification_ and _extensions_ to the **message** entity.",
+          "Target": ""
+        }
+      ],
+      "Id": "47eac3e2-376d-4262-9de4-9e16e054b28f",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2016-05-01T00:00:00",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f2a2d773-3593-4391-a67f-4e9e157b86b5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "contactFolder",
+          "ChangeType": "Addition",
+          "Description": "Added _wellknownname_ to the **contactFolder** entity.",
+          "Target": ""
+        }
+      ],
+      "Id": "f2a2d773-3593-4391-a67f-4e9e157b86b5",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2016-05-01T00:00:00",
+      "WorkloadArea": "Personal contacts",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5f847fb7-1fc6-4479-8823-510f056ca062",
+          "ApiChange": "Property",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added _singleValueExtendedProperties_ and _multiValueExtendedProperties_ properties.",
+          "Target": ""
+        },
+        {
+          "Id": "5f847fb7-1fc6-4479-8823-510f056ca062",
+          "ApiChange": "Property",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added _suggestionHint_ property to _meetingTimeCandidate_.",
+          "Target": ""
+        },
+        {
+          "Id": "5f847fb7-1fc6-4479-8823-510f056ca062",
+          "ApiChange": "Property",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added _locationUri_ property to _location_.",
+          "Target": ""
+        },
+        {
+          "Id": "5f847fb7-1fc6-4479-8823-510f056ca062",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added _type_ and _postOfficeBox_ to _physicalAddress_.",
+          "Target": ""
+        },
+        {
+          "Id": "5f847fb7-1fc6-4479-8823-510f056ca062",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "",
+          "ChangeType": "Change",
+          "Description": "_findMeetingTimes_ now takes new parameter _ReturnSuggestionHints_.",
+          "Target": ""
+        },
+        {
+          "Id": "5f847fb7-1fc6-4479-8823-510f056ca062",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Change",
+          "Description": "_findMeetingTimes_ now returns a collection of _meetingTimeCandidate_.",
+          "Target": ""
+        }
+      ],
+      "Id": "5f847fb7-1fc6-4479-8823-510f056ca062",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2016-03-01T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "5425f426-74f1-48c7-8691-768a1ac884ea",
+          "ApiChange": "Property",
+          "ChangedApiName": "event",
+          "ChangeType": "Addition",
+          "Description": "Added new property _onlineMeetingUrl_ and new method _cancel_ to the **event** entity.",
+          "Target": ""
+        },
+        {
+          "Id": "5425f426-74f1-48c7-8691-768a1ac884ea",
+          "ApiChange": "Property",
+          "ChangedApiName": "eventMessage",
+          "ChangeType": "Addition",
+          "Description": "Added _startDateTime_, _endDateTime_, _location_, _type_, _recurrence_, _isOutOfDate_, _conversationIndex_, _unsubscribe_, _unsubscribeData_, _unsubscribeEnabled_ and _flag_ properties to the **eventMessage** entity.",
+          "Target": ""
+        },
+        {
+          "Id": "5425f426-74f1-48c7-8691-768a1ac884ea",
+          "ApiChange": "Property",
+          "ChangedApiName": "eventMessage",
+          "ChangeType": "Addition",
+          "Description": "Added _singleValueExtendedProperties_ and _multiValueExtendedProperties_ properties to the **eventMessage** entity.",
+          "Target": ""
+        },
+        {
+          "Id": "5425f426-74f1-48c7-8691-768a1ac884ea",
+          "ApiChange": "Resource",
+          "ChangedApiName": "eventMessage",
+          "ChangeType": "Addition",
+          "Description": "Added new method _unsubscribe_ to the **eventMessage** entity.",
+          "Target": ""
+        }
+      ],
+      "Id": "5425f426-74f1-48c7-8691-768a1ac884ea",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2016-03-01T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "eb107590-dd7a-41ca-b639-44b2972e9573",
+          "ApiChange": "Property",
+          "ChangedApiName": "mailFolder",
+          "ChangeType": "Addition",
+          "Description": "Added _wellKnownName_ and _userConfigurations_ properties to the **mailFolder** entity.",
+          "Target": ""
+        },
+        {
+          "Id": "eb107590-dd7a-41ca-b639-44b2972e9573",
+          "ApiChange": "Property",
+          "ChangedApiName": "mailFolder",
+          "ChangeType": "Addition",
+          "Description": "Added _singleValueExtendedProperties_ and _multiValueExtendedProperties_ properties to the **mailFolder** entity.",
+          "Target": ""
+        },
+        {
+          "Id": "eb107590-dd7a-41ca-b639-44b2972e9573",
+          "ApiChange": "Property",
+          "ChangedApiName": "message",
+          "ChangeType": "Change",
+          "Description": "Renamed _mobilePhone1_ property to _mobilePhone_ in the **message** entity.",
+          "Target": ""
+        },
+        {
+          "Id": "eb107590-dd7a-41ca-b639-44b2972e9573",
+          "ApiChange": "Resource",
+          "ChangedApiName": "message",
+          "ChangeType": "Change",
+          "Description": "_createReply_ and _createReplyAll_ of the **message** entity take new parameter _Message_ and _comment_.",
+          "Target": ""
+        },
+        {
+          "Id": "eb107590-dd7a-41ca-b639-44b2972e9573",
+          "ApiChange": "Resource",
+          "ChangedApiName": "message",
+          "ChangeType": "Change",
+          "Description": "_createForward_ of the **message** entity takes new parameters _Message_, _ToRecipients_ and _comment_.",
+          "Target": ""
+        },
+        {
+          "Id": "eb107590-dd7a-41ca-b639-44b2972e9573",
+          "ApiChange": "Resource",
+          "ChangedApiName": "message",
+          "ChangeType": "Change",
+          "Description": "_reply_, _replyAll_ and _forward_ of the **message** entity take new parameter _Message_.",
+          "Target": ""
+        }
+      ],
+      "Id": "eb107590-dd7a-41ca-b639-44b2972e9573",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2016-03-01T00:00:00",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "eb107590-dd7a-41ca-b639-44b2972e9573",
+          "ApiChange": "Property",
+          "ChangedApiName": "message",
+          "ChangeType": "Addition",
+          "Description": "Added _mobilePhone_ property to the **message** entity.",
+          "Target": ""
+        },
+        {
+          "Id": "eb107590-dd7a-41ca-b639-44b2972e9573",
+          "ApiChange": "Property",
+          "ChangedApiName": "message",
+          "ChangeType": "Addition",
+          "Description": "Added _internetMessageId_ property to the **message** entity. The message ID in the format specified by [RFC2822](https://www.ietf.org/rfc/rfc2822.txt).",
+          "Target": "RFC2822"
+        }
+      ],
+      "Id": "eb107590-dd7a-41ca-b639-44b2972e9573",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2016-03-01T00:00:00",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "06cf0ed1-2076-4e62-8a54-2b2634db7bf1",
+          "ApiChange": "Property",
+          "ChangedApiName": "referenceAttachment,event,message,outlookTask,post",
+          "ChangeType": "Addition",
+          "Description": "Added new properties _sourceUrl_, _providerType_, _thumbnailUrl_, _previewUrl_, _permission_ and _isFolder_ to the **referenceAttachment** entity. (Reference attachments are supported in an **event**, **message**, **outlookTask**, or **post**.)",
+          "Target": ""
+        },
+        {
+          "Id": "06cf0ed1-2076-4e62-8a54-2b2634db7bf1",
+          "ApiChange": "Property",
+          "ChangedApiName": "referenceAttachment",
+          "ChangeType": "Addition",
+          "Description": "Added _singleValueExtendedProperties_ and _multiValueExtendedProperties_ properties to the **referenceAttachment** entity.",
+          "Target": ""
+        },
+        {
+          "Id": "06cf0ed1-2076-4e62-8a54-2b2634db7bf1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added new enum types _referenceAttachmentProvider_ and _referenceAttachmentPermission_.",
+          "Target": ""
+        }
+      ],
+      "Id": "06cf0ed1-2076-4e62-8a54-2b2634db7bf1",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2016-03-01T00:00:00",
+      "WorkloadArea": "Calendar, group, mail, to-do tasks",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "62a8a076-ef27-42ef-9dc0-eb3dd44076ba",
+          "ApiChange": "Property",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added mobilePhone property to personal contacts entity-set.",
+          "Target": ""
+        }
+      ],
+      "Id": "62a8a076-ef27-42ef-9dc0-eb3dd44076ba",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2016-01-01T00:00:00",
+      "WorkloadArea": "Personal contacts",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f5545eaf-7e2f-424a-b4cd-61d5a95cc44f",
+          "ApiChange": "Property",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added mobilePhone property to personal contacts entity-set.",
+          "Target": ""
+        }
+      ],
+      "Id": "f5545eaf-7e2f-424a-b4cd-61d5a95cc44f",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2015-12-01T00:00:00",
+      "WorkloadArea": "Personal contacts",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a0eccf7b-3efb-4c5f-bb1c-4049202b1e0f",
+          "ApiChange": "Property",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added eventMessageRequest subtype of eventMessage and startDateTime, endDateTime, location, type, recurrence and isOutOfDate properties to eventMessage type.",
+          "Target": ""
+        }
+      ],
+      "Id": "a0eccf7b-3efb-4c5f-bb1c-4049202b1e0f",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2015-12-01T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    }
+  ]
+}

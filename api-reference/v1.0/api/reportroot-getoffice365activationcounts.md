@@ -3,7 +3,7 @@ title: "reportRoot: getOffice365ActivationCounts"
 description: "Get the count of Microsoft 365 activations on desktops and devices."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -114,3 +114,4 @@ Report Refresh Date,Product Type,Windows,Mac,Android,iOS,Windows 10 Mobile
   "suppressions": [
   ]
 }-->
+

@@ -10,11 +10,11 @@ var educationUser = new EducationUser
 {
 	AdditionalData = new Dictionary<string, object>()
 	{
-		{"@odata.id", "https://graph.microsoft.com/v1.0/education/users/14011"}
+		{"@odata.id", "https://graph.microsoft.com/v1.0/education/users/13015"}
 	}
 };
 
-await graphClient.Education.Classes["{class-id}"].Teachers.References
+await graphClient.Education.Classes["{class-id}"].Members.References
 	.Request()
 	.AddAsync(educationUser);
 

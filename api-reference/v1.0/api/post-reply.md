@@ -103,6 +103,7 @@ Content-length: 1131
     },
     "attachments": [
       {
+        "@odata.type": "#microsoft.graph.fileAttachment",
         "lastModifiedDateTime": "datetime-value",
         "name": "name-value",
         "contentType": "contentType-value",
@@ -150,3 +151,4 @@ HTTP/1.1 202 Accepted
   "suppressions": [
   ]
 }-->
+

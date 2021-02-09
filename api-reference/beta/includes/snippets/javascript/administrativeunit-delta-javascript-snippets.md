@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/administrativeunits/delta')
+let res = await client.api('/administrativeUnits/delta')
 	.version('beta')
 	.get();
 

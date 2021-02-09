@@ -14,16 +14,20 @@ const schema = {
   baseType: "microsoft.graph.externalItem",
   properties: [
     {
-      name: "title",
+      name: "ticketTitle",
       type: "String",
       isSearchable: "true",
-      isRetrievable: "true"
+      isRetrievable: "true",
+      labels: [
+        "title"
+      ]
     },
     {
       name: "priority",
       type: "String",
       isQueryable: "true",
-      isRetrievable: "true"
+      isRetrievable: "true",
+      isSearchable: "false"
     },
     {
       name: "assignee",
@@ -33,7 +37,7 @@ const schema = {
   ]
 };
 
-let res = await client.api('/connections/contosohr/schema')
+let res = await client.api('/external/connections/contosohr/schema')
 	.version('beta')
 	.post(schema);
 

@@ -10,10 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const connectorGroup = Content-type: application/json
-Content-length: 99
-
-{
+const connectorGroup = {
   @odata.id: "https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}"
 };
 

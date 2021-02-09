@@ -11,7 +11,7 @@ The cloud communications APIs in Microsoft Graph add a new dimension to how your
 
 ## Why integrate with the cloud communications APIs?
 
-Discover the benefits of using cloud communications APIs to buid service applications ([bots](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/calls/register-calling-bot.html?q=create%20bot)).
+Discover the benefits of using cloud communications APIs to build service applications ([bots](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/calls/register-calling-bot.html?q=create%20bot)).
 
 ### Handle incoming calls
 
@@ -43,7 +43,7 @@ To create a more intelligent interaction between your customers and your bot, wh
 
 Integrating with a natural language processing service means that the customer's speech can be analyzed for its sentiment. The bot can then respond to the customer's need accordingly.
 
->**Note:** You may not record or otherwise persist media content from calls or meetings that your application accesses, or data derived from that media content. Make sure you are compliant with the laws and regulations of your area regarding data protection and confidentiality of communications. Please see the [Terms of Use](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use) and consult with your legal counsel for more information.
+>**Note:** You may not record or otherwise persist media content from calls or meetings that your application accesses, or data derived from that media content. Make sure you are compliant with the laws and regulations of your area regarding data protection and confidentiality of communications. Please see the [Terms of Use](/legal/microsoft-apis/terms-of-use) and consult with your legal counsel for more information.
 
 You can use the cloud communications APIs to build a bot that:
 
@@ -94,14 +94,12 @@ Looking for the API reference for this service?
 
 - Use bots to [get started](cloud-communications-get-started.md).
 - Learn more about [calls](cloud-communications-calls.md), [media](cloud-communications-media.md), and [online meetings](cloud-communications-online-meetings.md).
-- View the API usage [limits](cloud-communications-limits.md).
+- View the API usage [limits](throttling.md#cloud-communication-service-limits).
 - Learn how to [manage phone numbers](cloud-communications-phone-number.md) for your bots.
 
 ## See also
 
-- [Delegated and application permissions](https://docs.microsoft.com/azure/active-directory/develop/v1-permissions-and-consent)
-- [Calls permissions](/graph/permissions-reference#calls-permissions)
-- [Online meeting permissions](/graph/permissions-reference#online-meetings-permissions)
+- [Delegated and application permissions](/azure/active-directory/develop/v1-permissions-and-consent)
+- [Calls permissions](./permissions-reference.md#calls-permissions)
+- [Online meeting permissions](./permissions-reference.md#online-meetings-permissions)
 - [Cloud communications samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples)
-
-

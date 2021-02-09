@@ -3,7 +3,7 @@ title: "Get windowsFeatureUpdateProfile"
 description: "Read properties and relationships of the windowsFeatureUpdateProfile object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 412
+Content-Length: 480
 
 {
   "value": {
@@ -73,10 +73,14 @@ Content-Length: 412
     "description": "Description value",
     "featureUpdateVersion": "Feature Update Version value",
     "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
-    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
+    "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+    "roleScopeTagIds": [
+      "Role Scope Tag Ids value"
+    ]
   }
 }
 ```
+
 
 
 

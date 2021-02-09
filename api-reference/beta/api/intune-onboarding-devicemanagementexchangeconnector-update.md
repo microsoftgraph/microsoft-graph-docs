@@ -3,7 +3,7 @@ title: "Update deviceManagementExchangeConnector"
 description: "Update the properties of a deviceManagementExchangeConnector object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -108,6 +108,7 @@ Content-Length: 539
   "exchangeOrganization": "Exchange Organization value"
 }
 ```
+
 
 
 

@@ -3,7 +3,7 @@ title: "Create androidForWorkAppConfigurationSchema"
 description: "Create a new androidForWorkAppConfigurationSchema object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -129,6 +129,7 @@ Content-Length: 844
   ]
 }
 ```
+
 
 
 

@@ -4,7 +4,7 @@ description: "Describes a function that can be used in an attribute mapping to t
 localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # attributeMappingFunctionSchema resource type
@@ -60,3 +60,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

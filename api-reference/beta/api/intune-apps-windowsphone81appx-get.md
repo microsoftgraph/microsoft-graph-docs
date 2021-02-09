@@ -3,7 +3,7 @@ title: "Get windowsPhone81AppX"
 description: "Read properties and relationships of the windowsPhone81AppX object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1798
+Content-Length: 1909
 
 {
   "value": {
@@ -94,6 +94,8 @@ Content-Length: 1798
       "Role Scope Tag Ids value"
     ],
     "dependentAppCount": 1,
+    "supersedingAppCount": 3,
+    "supersededAppCount": 2,
     "committedContentVersion": "Committed Content Version value",
     "fileName": "File Name value",
     "size": 4,
@@ -111,7 +113,9 @@ Content-Length: 1798
       "v10_1709": true,
       "v10_1803": true,
       "v10_1809": true,
-      "v10_1903": true
+      "v10_1903": true,
+      "v10_1909": true,
+      "v10_2004": true
     },
     "phoneProductIdentifier": "Phone Product Identifier value",
     "phonePublisherId": "Phone Publisher Id value",
@@ -119,6 +123,7 @@ Content-Length: 1798
   }
 }
 ```
+
 
 
 

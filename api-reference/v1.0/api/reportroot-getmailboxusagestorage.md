@@ -3,7 +3,7 @@ title: "reportRoot: getMailboxUsageStorage"
 description: "Get the amount of storage used in your organization."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -119,3 +119,4 @@ Report Refresh Date,Storage Used (Byte),Report Date,Report Period
   "suppressions": [
   ]
 }-->
+

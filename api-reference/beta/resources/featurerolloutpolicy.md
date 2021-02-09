@@ -38,6 +38,10 @@ The following are pre-requisites for each of the features that are currently sup
 
 * Enable [PasswordHashSync](/azure/active-directory/hybrid/whatis-phs) from the “Optional features” page in Azure AD Connect.
 
+### EmailAsAlternateId
+
+* Associate alternate email  with user accounts.
+
 ## Methods
 
 | Method                                                                         | Return Type                                     | Description                                                               |
@@ -77,7 +81,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.featureRolloutPolicy",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
@@ -101,3 +104,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

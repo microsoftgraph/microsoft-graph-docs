@@ -20,7 +20,9 @@ You can use Intune app protection policies to help protect your company’s data
 
 The following Graph resources are available to manage app protection polices in Intune:
 
+- [Android device owner enrollment mode](intune-androidforwork-androiddeviceownerenrollmentmode.md)
 - [Android device owner enrollment profile](intune-androidforwork-androiddeviceownerenrollmentprofile.md)
+- [Android device owner enrollment token type](intune-androidforwork-androiddeviceownerenrollmenttokentype.md)
 - [Android enrollment company code](intune-androidforwork-androidenrollmentcompanycode.md)
 - [Android for Work app](intune-apps-androidforworkapp.md)
 - [Android for Work app configuration schema](intune-androidforwork-androidforworkappconfigurationschema.md)
@@ -113,6 +115,9 @@ The following Graph resources are available to manage app protection polices in 
 - [Mobile app publishing state](intune-apps-mobileapppublishingstate.md)
 - [Mobile app relationship](intune-apps-mobileapprelationship.md)
 - [Mobile app relationship state](intune-apps-mobileapprelationshipstate.md)
+- [Mobile app relationship type](intune-apps-mobileapprelationshiptype.md)
+- [Mobile app supersedence](intune-apps-mobileappsupersedence.md)
+- [Mobile app supersedence type](intune-apps-mobileappsupersedencetype.md)
 - [Mobile contained app](intune-apps-mobilecontainedapp.md)
 - [Mobile LOB app](intune-apps-mobilelobapp.md)
 - [Office client checkin status](intune-cirrus-officeclientcheckinstatus.md)
@@ -147,6 +152,7 @@ The following Graph resources are available to manage app protection polices in 
 - [Win32 LOB app power shell script detection type](intune-apps-win32lobapppowershellscriptdetectiontype.md)
 - [Win32 LOB app power shell script requirement](intune-apps-win32lobapppowershellscriptrequirement.md)
 - [Win32 LOB app power shell script rule](intune-apps-win32lobapppowershellscriptrule.md)
+- [Win32 LOB app power shell script rule operation type](intune-apps-win32lobapppowershellscriptruleoperationtype.md)
 - [Win32 LOB app product code detection](intune-apps-win32lobappproductcodedetection.md)
 - [Win32 LOB app product code rule](intune-apps-win32lobappproductcoderule.md)
 - [Win32 LOB app registry detection](intune-apps-win32lobappregistrydetection.md)
@@ -161,7 +167,6 @@ The following Graph resources are available to manage app protection polices in 
 - [Win32 LOB app rule](intune-apps-win32lobapprule.md)
 - [Win32 LOB app rule operator](intune-apps-win32lobappruleoperator.md)
 - [Win32 LOB app rule type](intune-apps-win32lobappruletype.md)
-- [Win32 LOB power shell script rule operation type](intune-apps-win32lobpowershellscriptruleoperationtype.md)
 - [Windows AppX](intune-apps-windowsappx.md)
 - [Windows architecture](intune-apps-windowsarchitecture.md)
 - [Windows device type](intune-apps-windowsdevicetype.md)

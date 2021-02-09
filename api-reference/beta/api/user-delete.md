@@ -27,6 +27,12 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | User.ReadWrite.All |
 
+The work or school account must be in one of the following roles:
++ Global Administrator
++ User Administrator
+
+Only a Global Administrator can delete a user in a Global Administrator role or _any_ user in the tenant. A User Administrator can only delete users who are non-administrators or in specific limited roles. For more details, see [Administrator role permissions in Azure AD](/azure/active-directory/roles/permissions-reference#available-roles).
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -74,6 +80,10 @@ DELETE https://graph.microsoft.com/beta/users/ba9a3254-9f18-4209-aeb3-9e42a35b5b
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-user-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-user-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -100,3 +110,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

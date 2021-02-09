@@ -3,7 +3,7 @@ title: "Get managedIOSStoreApp"
 description: "Read properties and relationships of the managedIOSStoreApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1515
+Content-Length: 1598
 
 {
   "value": {
@@ -94,6 +94,8 @@ Content-Length: 1515
       "Role Scope Tag Ids value"
     ],
     "dependentAppCount": 1,
+    "supersedingAppCount": 3,
+    "supersededAppCount": 2,
     "appAvailability": "lineOfBusiness",
     "version": "Version value",
     "bundleId": "Bundle Id value",
@@ -110,11 +112,13 @@ Content-Length: 1515
       "v10_0": true,
       "v11_0": true,
       "v12_0": true,
-      "v13_0": true
+      "v13_0": true,
+      "v14_0": true
     }
   }
 }
 ```
+
 
 
 

@@ -3,7 +3,7 @@ title: "List managedAppProtections"
 description: "List properties and relationships of the managedAppProtection objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -62,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2637
+Content-Length: 2843
 
 {
   "value": [
@@ -101,6 +101,9 @@ Content-Length: 2637
       "printBlocked": true,
       "fingerprintBlocked": true,
       "disableAppPinIfDevicePinIsSet": true,
+      "maximumRequiredOsVersion": "Maximum Required Os Version value",
+      "maximumWarningOsVersion": "Maximum Warning Os Version value",
+      "maximumWipeOsVersion": "Maximum Wipe Os Version value",
       "minimumRequiredOsVersion": "Minimum Required Os Version value",
       "minimumWarningOsVersion": "Minimum Warning Os Version value",
       "minimumRequiredAppVersion": "Minimum Required App Version value",
@@ -126,6 +129,7 @@ Content-Length: 2637
   ]
 }
 ```
+
 
 
 

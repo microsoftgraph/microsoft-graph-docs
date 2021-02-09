@@ -3,7 +3,7 @@ title: "Update appLogCollectionRequest"
 description: "Update the properties of a appLogCollectionRequest object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -97,6 +97,7 @@ Content-Length: 306
   "completedDateTime": "2016-12-31T23:58:52.3534526-08:00"
 }
 ```
+
 
 
 

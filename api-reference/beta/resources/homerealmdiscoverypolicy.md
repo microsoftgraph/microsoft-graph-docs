@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a policy to control Azure Active Directory authentication behavior for federated users, in particular for auto-acceleration and user authentication restrictions in federated domains. You can set homeRealmDiscoveryPolicy for all service principals in your organization, or for specific service principals in your organization.  For more scenario and policy details see [Configure Azure AD sign in behavior for an application by using a Home Realm Discovery policy](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal).
+Represents a policy to control Azure Active Directory authentication behavior for federated users, in particular for auto-acceleration and user authentication restrictions in federated domains. You can set homeRealmDiscoveryPolicy for all service principals in your organization, or for specific service principals in your organization.  For more scenario and policy details see [Configure Azure AD sign in behavior for an application by using a Home Realm Discovery policy](/azure/active-directory/manage-apps/configure-authentication-for-federated-users-portal) as well as [Sign-in to Azure Active Directory using email as an alternate login ID](/azure/active-directory/authentication/howto-authentication-use-email-signin).
 
 Inherits from [stsPolicy](stsPolicy.md).
 
@@ -27,6 +27,9 @@ Inherits from [stsPolicy](stsPolicy.md).
 | [Update homeRealmDiscoveryPolicy](../api/homerealmdiscoverypolicy-update.md) | None | Update a homeRealmDiscoveryPolicy object. |
 | [Delete homeRealmDiscoveryPolicy](../api/homerealmdiscoverypolicy-delete.md) | None | Delete a homeRealmDiscoveryPolicy object. |
 | [List appliesTo](../api/homerealmdiscoverypolicy-list-appliesto.md) | [directoryObject](directoryobject.md) collection | Get the list of directoryObjects that this policy has been applied to. |
+| [Assign homeRealmDiscoveryPolicy](../api/serviceprincipal-post-homerealmdiscoverypolicies.md) | None | Assign a homeRealmDiscoveryPolicy object to a [servicePrincipal](serviceprincipal.md) object. |
+| [List assigned homeRealmDiscoveryPolicy](../api/serviceprincipal-list-homerealmdiscoverypolicies.md) | [homeRealmDiscoveryPolicy](homerealmdiscoverypolicy.md) collection | List the homeRealmDiscoveryPolicy objects that are assigned to a [servicePrincipal](serviceprincipal.md) object. |
+| [Remove homeRealmDiscoveryPolicy](../api/serviceprincipal-delete-homerealmdiscoverypolicies.md) | None | Remove a homeRealmDiscoveryPolicy object from a [servicePrincipal](serviceprincipal.md) object. |
 
 ## Properties
 
@@ -49,7 +52,8 @@ The properties below form the JSON object that represents a token lifetime polic
 "definition": [
     "{\"HomeRealmDiscoveryPolicy\":
      {\"AccelerateToFederatedDomain\":true,
-      \"PreferredDomain\":\"federated.example.edu\"}}"
+      \"PreferredDomain\":\"federated.example.edu\",
+      \"AlternateIdLogin\":{\"Enabled\":true}}}"
   ]
 ```
 
@@ -58,6 +62,7 @@ The properties below form the JSON object that represents a token lifetime polic
 |AccelerateToFederatedDomain|Boolean| Set to `true` for auto-acceleration (bypass home realm discovery). If `true` and there is only one verified and federated domain in the tenant, then users will be taken straight to the federated identity provider (such as ADFS) for sign in. If `true` and there is more than one verified domain in the tenant, **PreferredDomain** must be specified. Optional.|
 |PreferredDomain|String| Specifies a domain to accelerate sign-in to. It can be omitted if the tenant has only one federated domain. If it is omitted, and there is more than one verified federated domain, this policy has no effect. Required if **AccelerateToFederatedDomain** is `true`.|
 |AllowCloudPasswordValidation|Boolean| Set to `true` to allow an application to authenticate a federated user by presenting username/password credentials directly to the Azure Active Directory token endpoint. Only works if Password Hash Sync is enabled. Optional.|
+|AlternateIdLogin| Json |Set to {"Enabled": true} to allow Azure AD sign-in using email as [an alternate login ID](/azure/active-directory/authentication/howto-authentication-use-email-signin). Only works when **IsOrganizationDefault** is set to `true`. Optional.|
 
 ## Relationships
 
@@ -75,7 +80,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.homeRealmDiscoveryPolicy",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
@@ -85,7 +89,7 @@ The following is a JSON representation of the resource.
   "description": "String",
   "displayName": "String",
   "id": "String (identifier)",
-  "isOrganizationDefault": true,
+  "isOrganizationDefault": true
 }
 ```
 

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Enable a bot to answer an incoming [call](../resources/call.md). The incoming call request can be an invite from a participant in a group call or a peer-to-peer call. If an invite to a group call is received, the notification will contain the [chatInfo](../resources/chatinfo.md) and [meetingInfo](../resources/meetinginfo.md) parameters.
 
-The bot is expected to answer, [reject](./call-reject.md), or [redirect](./call-redirect.md) the call before the call times out. The current timeout value is 15 seconds.
+The bot is expected to answer, [reject](./call-reject.md), or [redirect](./call-redirect.md) the call before the call times out. The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
 
 ## Permissions
 You do not need any permissions to answer a peer-to-peer call. You need one of the following permissions to join a group call. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -429,6 +429,112 @@ Content-Type: application/json
     }
   ]
 }
+```
+
+### Example 3: Answer a policy-based recording call
+
+Under the [Policy-based recording scenario](/microsoftteams/teams-recording-policy), before a participant under policy joins a call, an incoming call notification will be sent to the bot associated with the policy.
+The join information can be found under the **botData** property. The bot can then choose to answer the call and [update the recording status](call-updaterecordingstatus.md) accordingly.
+
+Here is an example of the incoming call notification that a bot would recieve in this case.
+
+```json
+{
+   "@odata.type":"#microsoft.graph.commsNotifications",
+   "value":[
+      {
+         "@odata.type":"#microsoft.graph.commsNotification",
+         "changeType":"created",
+         "resource":"/app/calls/e71f0300-9c1f-4d99-b5f4-2722e877d497",
+         "resourceUrl":"/communications/calls/e71f0300-9c1f-4d99-b5f4-2722e877d497",
+         "resourceData":{
+            "@odata.type":"#microsoft.graph.call",
+            "state":"incoming",
+            "direction":"incoming",
+            "source":{
+               "@odata.type":"#microsoft.graph.participantInfo",
+               "id":"90fad2ce-8989-41a1-8a66-f6636e629a2a",
+               "identity":{
+                  "@odata.type":"#microsoft.graph.identitySet",
+                  "user":{
+                     "@odata.type":"#microsoft.graph.identity",
+                     "id":"8A34A46B-3D17-4ADC-8DCE-DC4E7D572698",
+                     "identityProvider":"AAD"
+                  }
+               },
+               "endpointType":"default",
+               "region":"amer"
+            },
+            "targets":[
+               {
+                  "@odata.type":"#microsoft.graph.invitationParticipantInfo",
+                  "identity":{
+                     "@odata.type":"#microsoft.graph.identitySet",
+                     "applicationInstance":{
+                        "@odata.type":"#microsoft.graph.identity",
+                        "id":"832899f8-2ea1-4604-8413-27bd2892079f",
+                        "identityProvider":"AAD"
+                     }
+                  },
+                  "endpointType":"default",
+                  "id":"4520a1a5-5394-5a41-aa12-9ee6fa18cfc8",
+                  "region":null,
+                  "languageId":null
+               }
+            ],
+            "meetingInfo":{
+               "@odata.type":"#microsoft.graph.tokenMeetingInfo",
+               "token":"join token"
+            },
+            "tenantId":"932899f8-2ea1-4604-8413-27bd2892079f",
+            "myParticipantId":"1520a1a5-5394-4a41-aa72-9ee6fa18cfc8",
+            "callChainId":"05f2f70f-3a9c-47c1-80a9-cc79e91d8cec",
+            "incomingContext":{
+               "@odata.type":"#microsoft.graph.incomingContext",
+               "sourceParticipantId":"30fad2ce-8989-41a1-8a66-f6636e629a2a",
+               "observedParticipantId":"30fad2ce-8989-41a1-8a66-f6636e629a2a"
+            },
+            "id":"e71f0300-9c1f-4d99-b5f4-2722e877d497",
+            "applicationMetadata":{
+               "botData":{
+                  "mediaHostedRegion":"USEA",
+                  "user":{
+                     "participationMethod":"callee",
+                     "clientLocation":"US"
+                  },
+                  "otherSideUser":{
+                     "id":"971f0300-9c1f-4d99-b5f4-2722e877d490",
+                     "participantId":"3520a1a5-5394-4a41-aa72-9ee6fa18cfc8",
+                     "tenantId":"1540a1a5-2394-4a41-aa72-9ee6fa18cfc8",
+                     "onBehalfOf":{
+                        "id":"871f0300-9c1f-4d99-b5f4-2722e877d490"
+                     },
+                     "participationMethod":"caller",
+                     "clientLocation":"EUNO"
+                  },
+                  "inviteReasons":[
+                     "PolicyBasedRecording"
+                  ],
+                  "policyIdentifier":"Test Policy",
+                  "pairedRecorders":[
+                     {
+                        "id":"471f0300-5c1f-4d99-b5f4-2722e877d490",
+                        "participantId":"371f0300-2c1f-4d99-b5f4-2722e877d490"
+                     }
+                  ],
+                  "otherRecorders":[
+                     {
+                        "id":"671f0300-9c1f-4d99-b5f4-2722e877d490",
+                        "participantId":"a71f0300-ec1f-4d99-b5f4-2722e877d490"
+                     }
+                  ]
+               }
+            }
+         }
+      }
+   ]
+}
+
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

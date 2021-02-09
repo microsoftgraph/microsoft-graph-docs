@@ -18,16 +18,16 @@ highlightedContent:
   items:
     - title: Overview of Microsoft Graph
       itemType: overview
-      url: /graph/overview
+      url: ./overview.md
     - title: Services and features
       itemType: concept
-      url: /graph/overview-major-services
+      url: ./overview-major-services.md
     - title: Graph Explorer
       itemType: deploy
       url: https://developer.microsoft.com/graph/graph-explorer/
     - title: What's new in Microsoft Graph
       itemType: overview
-      url: /graph/whats-new-overview
+      url: ./whats-new-overview.md
     - title: Microsoft Graph REST API v1.0
       itemType: reference
       url: /graph/api/overview?toc=.%2Fref%2Ftoc.json&view=graph-rest-1.0
@@ -40,55 +40,55 @@ conceptualContent:
   items:
     - title: Explore
       links:
-        - url: /graph/users-you-can-reach
+        - url: ./users-you-can-reach.md
           itemType: concept
           text: Users you can reach
-        - url: /graph/data-connect-overview
+        - url: ./data-connect-overview.md
           itemType: concept
           text: Microsoft Graph data connect
         - url: https://developer.microsoft.com/graph/quick-start
           itemType: quickstart
           text: Quickstarts
-        - url: /graph/tutorials
+        - url: ./tutorials.yml
           itemType: tutorial
           text: Tutorials
     - title: Learn
       links:
-        - url: /graph/azuread-users-concept-overview
+        - url: ./azuread-users-concept-overview.md
           itemType: overview
           text: Users
-        - url: /graph/teams-concept-overview
+        - url: ./teams-concept-overview.md
           itemType: overview
           text: Teamwork
-        - url: /graph/onedrive-concept-overview
+        - url: ./onedrive-concept-overview.md
           itemType: overview
           text: Files
-        - url: /graph/outlook-calendar-concept-overview
+        - url: ./outlook-calendar-concept-overview.md
           itemType: overview
           text: Calendar
-        - url: /graph/outlook-mail-concept-overview
+        - url: ./outlook-mail-concept-overview.md
           itemType: overview
           text: Mail
-        - url: /graph/azuread-identity-access-management-concept-overview
+        - url: ./azuread-identity-access-management-concept-overview.md
           itemType: overview
           text: Identity and access
     - title: Develop
       links:
-        - url: /graph/auth/auth-concepts
+        - url: ./auth/auth-concepts.md
           itemType: concept
           text: Get auth tokens
-        - url: https://docs.microsoft.com/en-us/graph/use-the-api
+        - url: ./use-the-api.md
           itemType: overview
           text: Use the API
-        - url: /graph/migrate-azure-ad-graph-overview
+        - url: ./migrate-azure-ad-graph-planning-checklist.md
           itemType: overview
           text: Migrate
-        - url: /graph/sdks/sdks-overview
+        - url: ./sdks/sdks-overview.md
           itemType: overview
           text: Use the SDKs
-        - url: /graph/toolkit/overview
+        - url: ./toolkit/overview.md
           itemType: overview
-          text: Use the toolkit
+          text: Use the Toolkit
 
 additionalContent:
   sections:
@@ -96,10 +96,10 @@ additionalContent:
       items:
         - title: Changelog
           summary: Find out what’s changed in the v1.0 and beta versions of the Microsoft Graph API.
-          url: /graph/changelog
+          url: ./changelog.md
         - title: Known issues
           summary: Learn about known issues with Microsoft Graph.
-          url: /graph/known-issues
+          url: ./known-issues.md
         - title: Support
           summary: Ask a question or provide feedback on our APIs or docs.
           url: https://developer.microsoft.com/graph/support
@@ -112,4 +112,3 @@ additionalContent:
         - title: Videos and podcasts
           summary: Check out our video series and podcasts to learn more about Microsoft Graph APIs.
           url: https://developer.microsoft.com/graph/gallery/?filterBy=Videos,Podcasts
-

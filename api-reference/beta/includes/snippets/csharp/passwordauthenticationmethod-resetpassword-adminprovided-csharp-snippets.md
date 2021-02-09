@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var newPassword = "newPassword-value";
 
-await graphClient.Users["{id}"].Authentication.PasswordMethods["{id}"]
+await graphClient.Users["{id | userPrincipalName}"].Authentication.PasswordMethods["{id}"]
 	.ResetPassword(newPassword,null)
 	.Request()
 	.PostAsync();

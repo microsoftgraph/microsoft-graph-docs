@@ -2,7 +2,7 @@
 title: "Integrate your Windows UWP app with the client-side SDK for user notifications"
 description: "Integrate your Windows UWP app with user notifications client SDK."
 localization_priority: Priority
-ms.prod: "Microsoft Graph notifications"
+ms.prod: "notifications"
 ---
 
 # Integrate your Windows UWP app with the client-side SDK for user notifications
@@ -29,7 +29,7 @@ The diagram shows the following steps:
 1. Application logic. This step captures what triggers the notification to be published to the user. This is app-specific logic, and can be an event or data update about something else in Microsoft Graph, such as a new calendar event or task assignment, or else your app service wants to notify the user about.
 2. The app server publishes a notification to the targeted user via the Microsoft Graph notifications API. For more details, see [server side integration](notifications-integrating-app-server.md).
 3. On receiving the web request containing the new notification, Microsoft Graph notifications persists the content of the notification securely in the cloud for this app and this user.
-4. For each app client instance subscribing to receive notifications for this user, Microsoft Graph notifications sends a signal to notify the app client, via the native push service provided by the operating system. In this case, the application is a UWP app on Windows, and it uses [WNS push raw notification](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/raw-notification-overview) to send the signal. 
+4. For each app client instance subscribing to receive notifications for this user, Microsoft Graph notifications sends a signal to notify the app client, via the native push service provided by the operating system. In this case, the application is a UWP app on Windows, and it uses [WNS push raw notification](/windows/uwp/design/shell/tiles-and-notifications/raw-notification-overview) to send the signal. 
 5. After the application is signaled by the incoming push notification, it asks the SDK to fetch for the changes in the user notification store. 
 6. The SDK establishes a secure and compliant connection with the user notifications store in Microsoft Graph.
 7. The SDK gets the data changes - in this case, the new notification contents. 
@@ -52,7 +52,7 @@ The diagram shows the following steps:
 2. App calling into the client SDK to update or delete a notification. Currently, we expose two properties regarding state changes - **userActionState** and **readState** - but your application can define these states and when they need to be updated. For example, when a user dismisses the notification popup, you can update the **userActionState** to be Dismissed. When a user clicks the notification popup and launches the app to consume corresponding app content, you can update the **userActionState** to be Activated and update the **readState** to be Read. 
 3. After the corresponding API is called to update or delete a notification, the SDK will call into the user notification store in the cloud in order to fan-out this change to the other app client instances with the same signed in user. 
 4. On receiving the update/delete request from a client, Microsoft Graph notifications will update the notification store, and identify the other app client instances that subscribed to this change.
-5. For each app client subscription, Microsoft Graph notifications sends a signal to notify the app client, via the native push service provided by the operating system. In this case, this is a UWP app on Windows, and it uses [WNS push raw notification](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/raw-notification-overview) to send the signal. 
+5. For each app client subscription, Microsoft Graph notifications sends a signal to notify the app client, via the native push service provided by the operating system. In this case, this is a UWP app on Windows, and it uses [WNS push raw notification](/windows/uwp/design/shell/tiles-and-notifications/raw-notification-overview) to send the signal. 
 6. After the application is signaled by the incoming push notification, it asks the SDK to fetch for the changes in the user notification store. 
 7. The SDK establishes a secure and compliant connection with the user notifications store in Microsoft Graph.
 8. The SDK gets the data changes - in this case, the changes are notification state updates or notification deletions. 
@@ -83,8 +83,8 @@ After the installation finishes, the package shows up under **References** in th
 
 For more details about including and consuming NuGet packages from your UWP app, see:
 
-* [Use packages from nuget.org](https://docs.microsoft.com/azure/devops/artifacts/nuget/upstream-sources?view=vsts&tabs=new-nav)
-* [Quickstart: Install and use a package in Visual Studio](https://docs.microsoft.com/nuget/quickstart/install-and-use-a-package-in-visual-studio)
+* [Use packages from nuget.org](/azure/devops/artifacts/nuget/upstream-sources?tabs=new-nav&view=vsts)
+* [Quickstart: Install and use a package in Visual Studio](/nuget/quickstart/install-and-use-a-package-in-visual-studio)
 
 
 ## Initializing the Connected Device Platforms
@@ -272,6 +272,6 @@ await channel.DeleteUserNotificationAsync(notification.Id);
 
 ## See also
 
-- [API reference](https://docs.microsoft.com/windows/project-rome/notifications/api-reference-for-windows/) for the full set of APIs related to notification features in the SDK. 
+- [API reference](/windows/project-rome/notifications/api-reference-for-windows/) for the full set of APIs related to notification features in the SDK. 
 - [Client-side sample](https://github.com/Microsoft/project-rome/tree/master/Windows/samples/GraphNotificationsSample) for Windows UWP apps.
-- [App server sample](notifications-integrating-app-server.md) for publishing notifications. 
+- [App server sample](notifications-integrating-app-server.md) for publishing notifications.

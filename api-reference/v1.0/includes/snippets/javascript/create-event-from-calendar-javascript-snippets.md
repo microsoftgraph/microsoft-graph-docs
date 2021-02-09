@@ -35,7 +35,8 @@ const event = {
       },
       type: "required"
     }
-  ]
+  ],
+  transactionId:"7E163156-7762-4BEB-A1C6-729EA81755A7"
 };
 
 let res = await client.api('/me/calendars/AAMkAGViNDU7zAAAAAGtlAAA=/events')

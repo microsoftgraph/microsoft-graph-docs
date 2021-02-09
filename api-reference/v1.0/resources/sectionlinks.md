@@ -2,7 +2,7 @@
 title: "sectionLinks resource type"
 description: "Links for opening a OneNote section."
 localization_priority: Normal
-author: ""
+author: "jewan-microsoft"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -47,3 +47,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

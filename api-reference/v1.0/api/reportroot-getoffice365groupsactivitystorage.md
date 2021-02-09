@@ -3,7 +3,7 @@ title: "reportRoot: getOffice365GroupsActivityStorage"
 description: "Get the total storage used across all group mailboxes and group sites."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -120,3 +120,4 @@ Report Refresh Date,Mailbox Storage Used (Byte),Site Storage Used (Byte),Report 
   "suppressions": [
   ]
 }-->
+

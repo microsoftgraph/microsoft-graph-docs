@@ -3,7 +3,7 @@ title: "deviceManagementSettings resource type"
 description: "Not yet documented"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -29,6 +29,7 @@ Not yet documented
 |derivedCredentialUrl|String|The Derived Credential Provider self-service URI.|
 |androidDeviceAdministratorEnrollmentEnabled|Boolean|The property to determine if Android device administrator enrollment is enabled for this account.|
 |ignoreDevicesForUnsupportedSettingsEnabled|Boolean|The property to determine whether to ignore unsupported compliance settings on certian models of devices.|
+|enableLogCollection|Boolean|Determines whether the log collection feature should be available for use.|
 
 ## Relationships
 None
@@ -51,9 +52,11 @@ Here is a JSON representation of the resource.
   "derivedCredentialProvider": "String",
   "derivedCredentialUrl": "String",
   "androidDeviceAdministratorEnrollmentEnabled": true,
-  "ignoreDevicesForUnsupportedSettingsEnabled": true
+  "ignoreDevicesForUnsupportedSettingsEnabled": true,
+  "enableLogCollection": true
 }
 ```
+
 
 
 

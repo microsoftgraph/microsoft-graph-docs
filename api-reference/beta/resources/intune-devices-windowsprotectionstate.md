@@ -3,7 +3,7 @@ title: "windowsProtectionState resource type"
 description: "Device protection status entity."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -44,6 +44,9 @@ Device protection status entity.
 |lastQuickScanSignatureVersion|String|Last quick scan signature version|
 |lastFullScanSignatureVersion|String|Last full scan signature version|
 |lastReportedDateTime|DateTimeOffset|Last device health status reported time|
+|productStatus|[windowsDefenderProductStatus](../resources/intune-devices-windowsdefenderproductstatus.md)|Product Status of Windows Defender Antivirus. Possible values are: `noStatus`, `serviceNotRunning`, `serviceStartedWithoutMalwareProtection`, `pendingFullScanDueToThreatAction`, `pendingRebootDueToThreatAction`, `pendingManualStepsDueToThreatAction`, `avSignaturesOutOfDate`, `asSignaturesOutOfDate`, `noQuickScanHappenedForSpecifiedPeriod`, `noFullScanHappenedForSpecifiedPeriod`, `systemInitiatedScanInProgress`, `systemInitiatedCleanInProgress`, `samplesPendingSubmission`, `productRunningInEvaluationMode`, `productRunningInNonGenuineMode`, `productExpired`, `offlineScanRequired`, `serviceShutdownAsPartOfSystemShutdown`, `threatRemediationFailedCritically`, `threatRemediationFailedNonCritically`, `noStatusFlagsSet`, `platformOutOfDate`, `platformUpdateInProgress`, `platformAboutToBeOutdated`, `signatureOrPlatformEndOfLifeIsPastOrIsImpending`, `windowsSModeSignaturesInUseOnNonWin10SInstall`.|
+|isVirtualMachine|Boolean|Indicates whether the device is a virtual machine.|
+|tamperProtectionEnabled|Boolean|Indicates whether the Windows Defender tamper protection feature is enabled.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -78,9 +81,13 @@ Here is a JSON representation of the resource.
   "lastFullScanDateTime": "String (timestamp)",
   "lastQuickScanSignatureVersion": "String",
   "lastFullScanSignatureVersion": "String",
-  "lastReportedDateTime": "String (timestamp)"
+  "lastReportedDateTime": "String (timestamp)",
+  "productStatus": "String",
+  "isVirtualMachine": true,
+  "tamperProtectionEnabled": true
 }
 ```
+
 
 
 

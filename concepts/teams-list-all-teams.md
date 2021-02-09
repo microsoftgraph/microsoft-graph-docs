@@ -86,7 +86,7 @@ Content-length: xxx
                 "Team"
             ],
             "securityEnabled": false,
-            "visibility": "Private",
+            "visibility": "Private"
         },
         {
             "id": "8090c93e-ba7c-433e-9f39-08c7ba07c0b3",
@@ -102,7 +102,7 @@ Content-length: xxx
                 "Team"
             ],
             "securityEnabled": false,
-            "visibility": "Private",
+            "visibility": "Private"
         }
     ]
 }

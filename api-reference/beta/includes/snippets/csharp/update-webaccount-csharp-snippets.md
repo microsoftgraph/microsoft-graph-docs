@@ -8,15 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var webAccount = new WebAccount
 {
-	Description = "description-value",
-	UserId = "userId-value",
-	Service = new ServiceInformation
-	{
-		Name = "name-value",
-		WebUrl = "webUrl-value"
-	},
-	StatusMessage = "statusMessage-value",
-	WebUrl = "webUrl-value"
+	WebUrl = "https://github.com/innocenty.popov"
 };
 
 await graphClient.Me.Profile.WebAccounts["{id}"]

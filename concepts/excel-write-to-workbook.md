@@ -26,12 +26,14 @@ For more information about how to reach files in OneDrive folders, see the [Driv
 
 The POST body looks like this:
 
-`{
+```json
+{
   "index": null,
   "values": [
     ['alex darrow', 'adarrow@tenant.onmicrosoft.com']
   ]
-}`
+}
+```
 
 The value of the first `index` parameter specifies the relative position of the row that you're adding to the zero-indexed array of rows. Rows below the inserted row will be shifted downwards. The `null` parameter indicates that the new row will be added to the end.
 
@@ -47,52 +49,56 @@ You'll find the ASP.NET code that constructs and sends the request in the [Graph
 
 The `GraphResources.cs` file provides a helper class for encapsulating both the user data you're retrieving from Microsoft Graph and the request body that you'll use when you write to your workbook.
 
-    public class UserInfo
-    {
-        public string Name { get; set; }
-        public string Address { get; set; }
+```csharp
+public class UserInfo
+{
+    public string Name { get; set; }
+    public string Address { get; set; }
 
-    }
+}
 
-    public class UserInfoRequest
-    {
-        public string index { get; set; }
-        public string[][] values { get; set; }
-    }
+public class UserInfoRequest
+{
+    public string index { get; set; }
+    public string[][] values { get; set; }
+}
+```
 
 The `GraphService.cs` class contains an `AddInfoToExcel` method that populates these classes, serializes the request information into a JSON object, and then passes that object as the POST request body.
 
-        public async Task<string> AddInfoToExcel(string accessToken, string name, string address)
+```csharp
+public async Task<string> AddInfoToExcel(string accessToken, string name, string address)
+{
+    string endpoint = "https://graph.microsoft.com/v1.0/me/drive/root:/demo.xlsx:/workbook/tables/Table1/rows/add";
+    using (var client = new HttpClient())
+    {
+        using (var request = new HttpRequestMessage(HttpMethod.Post, endpoint))
         {
-            string endpoint = "https://graph.microsoft.com/v1.0/me/drive/root:/demo.xlsx:/workbook/tables/Table1/rows/add";
-            using (var client = new HttpClient())
+            // Populate UserInfoRequest object
+            string[] userInfo = { name, address  };
+            string[][] userInfoArray = { userInfo };
+            UserInfoRequest userInfoRequest = new UserInfoRequest();
+            userInfoRequest.index = null;
+            userInfoRequest.values = userInfoArray;
+
+            // Serialize the information in the UserInfoRequest object
+            string jsonBody = JsonConvert.SerializeObject(userInfoRequest);
+            request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
+            request.Content = new StringContent(jsonBody, Encoding.UTF8, "application/json");
+
+            using (var response = await client.SendAsync(request))
             {
-                using (var request = new HttpRequestMessage(HttpMethod.Post, endpoint))
+                if (response.IsSuccessStatusCode)
                 {
-                    // Populate UserInfoRequest object
-                    string[] userInfo = { name, address  };
-                    string[][] userInfoArray = { userInfo };
-                    UserInfoRequest userInfoRequest = new UserInfoRequest();
-                    userInfoRequest.index = null;
-                    userInfoRequest.values = userInfoArray;
-
-                    // Serialize the information in the UserInfoRequest object
-                    string jsonBody = JsonConvert.SerializeObject(userInfoRequest);
-                    request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
-                    request.Content = new StringContent(jsonBody, Encoding.UTF8, "application/json");
-
-                    using (var response = await client.SendAsync(request))
-                    {
-                        if (response.IsSuccessStatusCode)
-                        {
-                            return Resource.Graph_UploadToExcel_Success_Result;
-                        }
-                        return response.ReasonPhrase;
-                    }
+                    return Resource.Graph_UploadToExcel_Success_Result;
                 }
+                return response.ReasonPhrase;
             }
         }
+    }
+}
+```
 
 ## Add a row or rows to an Excel workbook in Angular
 
@@ -103,25 +109,27 @@ Microsoft Graph TypeScript Types](https://github.com/microsoftgraph/msgraph-type
 
 The `addInfoToExcel` function in the `home.service.ts` file constructs the two-dimensional string array and the request body that contains the array. It then uses the Microsoft Graph JavaScript Client Library to construct and send the request. The response comes back in the form of a Promise.
 
-      addInfoToExcel(user: MicrosoftGraph.User) {
-        const userInfo = [];
-        const userEmail = user.mail || user.userPrincipalName;    
-        userInfo.push([user.displayName, userEmail]);
+```typescript
+addInfoToExcel(user: MicrosoftGraph.User) {
+  const userInfo = [];
+  const userEmail = user.mail || user.userPrincipalName;
+  userInfo.push([user.displayName, userEmail]);
 
-        const userInfoRequestBody = {
-          index: null,
-          values: userInfo
-        };   
+  const userInfoRequestBody = {
+    index: null,
+    values: userInfo
+  };
 
-        const body = JSON.stringify(userInfoRequestBody);
+  const body = JSON.stringify(userInfoRequestBody);
 
-        var client = this.getClient();
-        var url = `${this.url}/me/drive/root:/${this.file}:/workbook/tables/${this.table}/rows/add`
-        return Observable.fromPromise(client
-        .api(url)
-        .post(body)
-        );
-      }
+  var client = this.getClient();
+  var url = `${this.url}/me/drive/root:/${this.file}:/workbook/tables/${this.table}/rows/add`
+  return Observable.fromPromise(client
+  .api(url)
+  .post(body)
+  );
+}
+```
 
 ## Add a row or rows to an Excel workbook in React
 
@@ -129,26 +137,28 @@ You'll find the code that constructs and sends the request in the [home.js file]
 
 The `onWriteToExcel` function constructs the two-dimensional string array and passes it as the request body. It uses [axios](https://www.npmjs.com/package/axios) to make the HTTP request.
 
-      onWriteToExcel() {
-        const { token, me } = this.state;
+```typescript
+onWriteToExcel() {
+  const { token, me } = this.state;
 
-        const myEmailAddress = me.mail || me.userPrincipalName;
-        const values = [];
+  const myEmailAddress = me.mail || me.userPrincipalName;
+  const values = [];
 
-        values.push([me.displayName, myEmailAddress]);
+  values.push([me.displayName, myEmailAddress]);
 
-        axios
-          .post('https://graph.microsoft.com/v1.0/me/drive/root:/demo.xlsx:/workbook/tables/Table1/rows/add',
-            { index: null, values },
-            { headers: { Authorization: `Bearer ${token}` }}
-          )
-          .then(res => {
-                          console.log(res);
-                          const successMessage = "Successfully wrote your data to demo.xlsx!";
-                          this.setState ({ successMessage });
-                         })
-          .catch(err => console.error(err));
-      }
+  axios
+    .post('https://graph.microsoft.com/v1.0/me/drive/root:/demo.xlsx:/workbook/tables/Table1/rows/add',
+      { index: null, values },
+      { headers: { Authorization: `Bearer ${token}` }}
+    )
+    .then(res => {
+                    console.log(res);
+                    const successMessage = "Successfully wrote your data to demo.xlsx!";
+                    this.setState ({ successMessage });
+                    })
+    .catch(err => console.error(err));
+}
+```
 
 ## See also
 
@@ -156,4 +166,4 @@ The `onWriteToExcel` function constructs the two-dimensional string array and pa
 * [Use workbook functions in Excel with Microsoft Graph](excel-use-functions.md)
 * [Update a range’s format in Excel with Microsoft Graph](excel-update-range-format.md)
 * [Display a chart image in Excel with Microsoft Graph](excel-display-chart-image.md)
-* [Use the Excel REST API](/graph/api/resources/excel?view=graph-rest-1.0)    
+* [Use the Excel REST API](/graph/api/resources/excel?view=graph-rest-1.0)

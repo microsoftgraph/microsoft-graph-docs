@@ -35,6 +35,8 @@ The following table lists the resources that support open and schema extensions,
 | [Organization](/graph/api/resources/organization?view=graph-rest-1.0) | GA | GA |
 | [Personal contact](/graph/api/resources/contact?view=graph-rest-1.0)| GA | GA |
 | [User](/graph/api/resources/user?view=graph-rest-1.0) | GA | GA |
+| [Task](/graph/api/resources/todotask?view=graph-rest-beta) | GA | GA |
+| [Task list](/graph/api/resources/todotasklist?view=graph-rest-beta) | GA | GA |
 
 You can use extensions on all these resources when signed in with a work or school account. In addition, you can use extensions on the **event**, **post**, **group**, **message**, **contact**, and **user** resources when signed in with a personal account.
 
@@ -119,7 +121,7 @@ The following data types are supported when defining a property in a schema exte
 
 ### Azure AD directory schema extensions
 
-Azure AD supports a similar type of extension, known as [directory schema extensions](https://msdn.microsoft.com/library/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions), on a few [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0) resources. You can use the Microsoft Graph API to manage the [extension property definitions](/graph/api/resources/extensionproperty?view=graph-rest-1.0) and add, get, update and delete _data_ in the properties of these extensions.
+Azure AD supports a similar type of extension, known as [directory schema extensions](/previous-versions/azure/ad/graph/howto/azure-ad-graph-api-directory-schema-extensions), on a few [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0) resources. You can use the Microsoft Graph API to manage the [extension property definitions](/graph/api/resources/extensionproperty?view=graph-rest-1.0) and add, get, update and delete _data_ in the properties of these extensions.
 
 ## Permissions
 
@@ -138,7 +140,7 @@ The following limits apply to directory resources (such as **user**, **group**, 
 
 The following limits apply to Outlook resources (such as **message**, **event**, and **contact**):
 
-- Each open extension is stored in a [MAPI named property](https://msdn.microsoft.com/library/cc765864(v=office.15).aspx), which are a limited resource in a user's mailbox. For more details, see [openTypeExtension resource type](/graph/api/resources/opentypeextension?view=graph-rest-1.0).
+- Each open extension is stored in a [MAPI named property](/office/client-developer/outlook/mapi/mapi-named-properties), which are a limited resource in a user's mailbox. For more details, see [openTypeExtension resource type](/graph/api/resources/opentypeextension?view=graph-rest-1.0).
 
 ### Schema extension limits
 
@@ -156,6 +158,6 @@ For known limitations using extensions, see the [extensions section](known-issue
 
 ## See also
 
-- [Microsoft 365 domains](https://technet.microsoft.com/library/office-365-domains.aspx)
+- [Microsoft 365 domains](/office365/servicedescriptions/office-365-platform-service-description/domains)
 
 - [Adding and verifying a domain for a Microsoft 365 tenant](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)

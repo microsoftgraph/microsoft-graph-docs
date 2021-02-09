@@ -3,7 +3,7 @@ title: "deviceManagementSettingCategory resource type"
 description: "Entity representing a setting category"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -54,6 +54,7 @@ Here is a JSON representation of the resource.
   "hasRequiredSetting": true
 }
 ```
+
 
 
 

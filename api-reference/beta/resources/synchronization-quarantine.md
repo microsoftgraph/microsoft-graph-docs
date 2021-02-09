@@ -4,7 +4,7 @@ description: "Provides information about the quarantine state of a synchronizati
 localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # synchronizationQuarantine resource type
@@ -61,3 +61,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

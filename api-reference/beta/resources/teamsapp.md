@@ -13,18 +13,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-An app in the [Microsoft Teams](teams-api-overview.md) app catalog.
+Represents an app in the [Microsoft Teams](teams-api-overview.md) app catalog.
 
-Users can see these apps in the Microsoft Teams Store, and these apps can be installed in [teams](team.md) using the [Add app to team](../api/teamsappinstallation-add.md) method.
+Users can see these apps in the Microsoft Teams Store, and these apps can be installed in [teams](team.md) using the [Add app to team](../api/team-post-installedapps.md) method.
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List published apps](../api/teamsapp-list.md) | [teamsApp](teamsapp.md) collection | List published apps from the Microsoft Teams apps catalog.|
-|[Publish an app](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | Publish an app to your organization's app catalog.|
-|[Update a published app](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | Update a published app in your organization's app catalog.|
-|[Remove a published app](../api/teamsapp-delete.md) | None | Remove a published app from your organization's app catalog.|
+|[List apps in catalog](../api/appcatalogs-list-teamsapps.md) | [teamsApp](teamsapp.md) collection | List all the apps in the Microsoft Teams apps catalog.|
+|[Upload app to catalog](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | Upload an app to your organization's app catalog.|
+|[Update app in catalog](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | Update an app in your organization's app catalog.|
+|[Delete app from catalog](../api/teamsapp-delete.md) | None | Remove an app from your organization's app catalog.|
+|[Get bot associated with app in catalog](../api/teamworkbot-get.md) | [teamworkbot](teamworkbot.md) | Get the bot associated with the Teams app.|
 
 ## Properties
 
@@ -33,7 +34,7 @@ Users can see these apps in the Microsoft Teams Store, and these apps can be ins
 | id                  | string   | The catalog app's generated app ID (different from the developer-provided ID in the [Microsoft Teams zip app package](/microsoftteams/platform/concepts/apps/apps-package). |
 | externalId          | string   | The ID of the catalog provided by the app developer in the [Microsoft Teams zip app package](/microsoftteams/platform/concepts/apps/apps-package). |
 | displayName                | string   | The name of the catalog app provided by the app developer in the [Microsoft Teams zip app package](/microsoftteams/platform/concepts/apps/apps-package). |
-| distributionMethod  | teamsAppDistributionMethod     | The method of distribution for the app. |
+| distributionMethod  | teamsAppDistributionMethod     | The method of distribution for the app. Read-only.|
 
 ### teamsAppDistributionMethod values
 
@@ -61,8 +62,8 @@ Users can see these apps in the Microsoft Teams Store, and these apps can be ins
 {
   "id": "string",
   "externalId": "string",
-  "displayName": "Test App",
-  "distributionMethod": "Organization"
+  "displayName": "string",
+  "distributionMethod": "string"
 }
 ```
 
@@ -84,4 +85,6 @@ Users can see these apps in the Microsoft Teams Store, and these apps can be ins
   "suppressions": []
 }
 -->
+
+
 

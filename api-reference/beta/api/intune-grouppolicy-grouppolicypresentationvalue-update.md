@@ -3,7 +3,7 @@ title: "Update groupPolicyPresentationValue"
 description: "Update the properties of a groupPolicyPresentationValue object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -85,6 +85,7 @@ Content-Length: 242
   "id": "8132eaab-eaab-8132-abea-3281abea3281"
 }
 ```
+
 
 
 

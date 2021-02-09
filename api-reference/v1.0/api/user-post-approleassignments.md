@@ -3,7 +3,7 @@ title: "Grant an appRoleAssignment to a user"
 description: "Grant an app role assignment to a user."
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "users"
 author: "psignoret"
 ---
 
@@ -138,3 +138,4 @@ Content-length: 253
   ]
 }
 -->
+

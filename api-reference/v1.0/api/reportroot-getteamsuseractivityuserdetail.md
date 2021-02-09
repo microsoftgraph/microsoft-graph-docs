@@ -3,7 +3,7 @@ title: "reportRoot: getTeamsUserActivityUserDetail"
 description: "Get details about Microsoft Teams user activity by user."
 localization_priority: Priority
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -126,3 +126,4 @@ Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Da
   "suppressions": [
   ]
 }-->
+

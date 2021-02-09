@@ -13,11 +13,11 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphPersonInterest *personInterest = [[MSGraphPersonInterest alloc] init];
 NSMutableArray *categoriesList = [[NSMutableArray alloc] init];
-[categoriesList addObject: @"categories-value"];
+[categoriesList addObject: @"Sports"];
 [personInterest setCategories:categoriesList];
-[personInterest setDescription:@"description-value"];
-[personInterest setDisplayName:@"displayName-value"];
-[personInterest setWebUrl:@"webUrl-value"];
+[personInterest setDescription:@"World's greatest football club"];
+[personInterest setDisplayName:@"Chelsea FC"];
+[personInterest setWebUrl:@"https://www.chelseafc.com"];
 
 NSError *error;
 NSData *personInterestData = [personInterest getSerializedDataWithError:&error];

@@ -3,7 +3,7 @@ title: "servicePrincipal: delta"
 description: "Get newly created, updated, or deleted service principals without having to perform a full read of the entire resource collection. See Using Delta Query for details."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 author: "sureshja"
 ---
 
@@ -31,7 +31,7 @@ To begin tracking changes, you make a request including the delta function on th
 GET /servicePrincipals/delta
 ```
 
-### Query parameters
+## Query parameters
 
 Tracking changes incurs a round of one or more **delta** function calls. If you use any query parameter 
 (other than `$deltatoken` and `$skiptoken`), you must specify 
@@ -46,9 +46,9 @@ includes the encoded, desired parameters.
 | $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same resource collection, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that collection.|
 | $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same resource collection. |
 
-## Optional query parameters
+### Optional query parameters
 
-This method supports OData Query Parameters to help customize the response.
+This method supports OData query parameters to help customize the response.
 
 - You can use a `$select` query parameter as in any GET request to specify only the properties your need for best performance. The 
 _id_ property is always returned. 
@@ -160,3 +160,4 @@ Content-type: application/json
   ]
 }
 -->
+

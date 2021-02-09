@@ -4,7 +4,7 @@ description: "Represents an error that occurred during the synchronization proce
 localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # synchronizationError resource type
@@ -57,3 +57,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

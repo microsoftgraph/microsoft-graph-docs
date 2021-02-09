@@ -3,7 +3,7 @@ title: "macOSContentCachingParentSelectionPolicy enum type"
 description: "Determines how content caches select a parent cache."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -26,6 +26,7 @@ Determines how content caches select a parent cache.
 |urlPathHash|3|Hash the path part of the requested URL so that the same parent is always used for the same URL. This is useful for maximizing the size of the combined caches of the parents.|
 |random|4|Choose a parent at random. Use this policy for load balancing.|
 |stickyAvailable|5|Use the first available parent that is available in the Parents list until it becomes unavailable, then advance to the next one. Use this policy for designating floating primary, secondary, and subsequent parents.|
+
 
 
 

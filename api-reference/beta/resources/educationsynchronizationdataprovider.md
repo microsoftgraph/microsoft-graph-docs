@@ -15,22 +15,21 @@ Namespace: microsoft.graph
 
 Represents the data provider to use as the synchronization source for a [educationSynchronizationProfile].
 
-> **Note:** This complex type is abstract. Refer to the specific types of data providers listed.
+> [!NOTE]
+> This complex type is abstract. Refer to the specific types of data providers listed.
 
 ## Providers
 
 | Data Provider                                                             | Description                                                                                        |
-|:--------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------|
+| :------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------- |
 | [educationCsvDataProvider]                                                | CSV files uploaded to the Profile's [SAS URL](../api/educationsynchronizationprofile-uploadurl.md) |
 | [educationOneRosterApiDataProvider](educationonerosterapidataprovider.md) | OneRoster v1.1 API                                                                                 |
 | [educationPowerSchoolDataProvider]                                        | PowerSchool API                                                                                    |
-
-## Properties
-
-No properties are exposed by this type.
 
 [educationsynchronizationprofile]: educationsynchronizationprofile.md
 [educationcsvdataprovider]: educationCsvDataProvider.md
 [educationsynchronizationdataprovider]: educationSynchronizationDataProvider.md
 [educationpowerschooldataprovider]: educationPowerSchoolDataProvider.md
 [educationcsvdataprovider]: educationCsvDataProvider.md
+
+

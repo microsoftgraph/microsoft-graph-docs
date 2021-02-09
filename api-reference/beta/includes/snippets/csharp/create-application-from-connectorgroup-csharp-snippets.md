@@ -6,16 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var application = new Application
-{
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"@odata.id", "https://graph.microsoft.com/beta/applications/{id}"}
-	}
-};
-
-await graphClient.OnPremisesPublishingProfiles["applicationProxy"].ConnectorGroups["{id}"].Applications
+await graphClient.Applications["{id}"].ConnectorGroup.Reference
 	.Request()
-	.AddAsync(application);
+	.PutAsync("{id}");
 
 ```

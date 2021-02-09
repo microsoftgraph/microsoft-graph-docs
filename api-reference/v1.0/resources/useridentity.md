@@ -3,7 +3,7 @@ title: "userIdentity resource type"
 description: "In the context of an Azure AD audit log, this represents the user information that initiated or was affected by an audit activity."
 localization_priority: Normal
 author: "dhanyahk"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "users"
 doc_type: resourcePageType
 ---
 
@@ -58,3 +58,4 @@ Here is a JSON representation of the type.
   ]
 }
 -->
+

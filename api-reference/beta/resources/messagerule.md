@@ -1,7 +1,7 @@
 ---
 title: "messageRule resource type"
 description: "A rule that applies to messages in the Inbox of a user."
-author: "svpsiva"
+author: "abheek-das"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: resourcePageType
@@ -82,3 +82,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

@@ -4,7 +4,7 @@ description: "A section in a OneNote notebook. Sections can contain pages."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "jewan-microsoft"
 ---
 
 # onenoteSection resource type
@@ -59,7 +59,7 @@ Here is a JSON representation of the resource.
     "parentSectionGroup"
   ],
   "keyProperty": "id",
-  "baseType":"microsoft.graph.entity",  
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.onenoteSection"
 }-->
 
@@ -91,3 +91,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

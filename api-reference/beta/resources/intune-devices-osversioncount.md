@@ -3,7 +3,7 @@ title: "osVersionCount resource type"
 description: "Count of devices with malware for each OS version"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -42,6 +42,7 @@ Here is a JSON representation of the resource.
   "lastUpdateDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

@@ -2,8 +2,8 @@
 title: "keyValue resource type"
 description: "Standard key-value pair resource type."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "dougeby"
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
@@ -50,3 +50,4 @@ Here is a JSON representation of the resource.
   "tocPath": ""
 }
 -->
+

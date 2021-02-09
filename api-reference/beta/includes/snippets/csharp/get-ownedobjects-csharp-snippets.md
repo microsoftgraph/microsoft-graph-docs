@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var ownedObjects = await graphClient.Me.OwnedObjects
+var ownedObjects = await graphClient.ServicePrincipals["{id}"].OwnedObjects
 	.Request()
 	.GetAsync();
 

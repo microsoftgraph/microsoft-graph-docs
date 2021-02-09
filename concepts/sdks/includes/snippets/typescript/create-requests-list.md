@@ -1,9 +1,12 @@
-```typescript
-    // GET https://graph.microsoft.com/v1.0/me/messages?$select=subject,sender&$filter=<some condition>&orderBy=receivedDateTime
+<!-- markdownlint-disable MD041 -->
 
-    let messages = await client.api("/me/messages")
-        .select("subject", "sender")
-        .filter("some condition")
-        .orderBy("receivedDateTime")
-        .get();  
+```typescript
+// GET https://graph.microsoft.com/v1.0/me/messages?$select=subject,sender
+// &$filter=<some condition>&orderBy=receivedDateTime
+
+let messages = await client.api('/me/messages')
+  .select('subject', 'sender')
+  .filter('some condition')
+  .orderBy('receivedDateTime')
+  .get();
 ```

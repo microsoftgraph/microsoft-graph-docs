@@ -30,7 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /me/profile/anniversaries/{id} 
+DELETE /me/profile/anniversaries/{id}
+DELETE /users/{id | userPrincipalName}/profile/anniversaries/{id}
 ```
 
 ## Request headers
@@ -74,6 +75,10 @@ DELETE https://graph.microsoft.com/beta/me/profile/anniversaries/{id}
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-personanniversary-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-personanniversary-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -89,12 +94,4 @@ The following is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Delete personAnniversary",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
+

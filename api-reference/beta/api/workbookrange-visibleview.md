@@ -64,6 +64,10 @@ GET https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/range(a
 [!INCLUDE [sample-code](../includes/snippets/objc/workbookrange-visibleview-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/workbookrange-visibleview-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -88,3 +92,5 @@ Content-length: 194
   "index": 99
 }
 ```
+
+

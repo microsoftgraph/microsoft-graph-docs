@@ -41,3 +41,4 @@ Here is a JSON representation of a **contentTypeInfo** resource.
   "section": "documentation",
   "tocPath": "Resources/ContentTypeInfo"
 } -->
+

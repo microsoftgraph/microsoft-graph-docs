@@ -3,7 +3,7 @@ title: "List windowsWifiEnterpriseEAPConfigurations"
 description: "List properties and relationships of the windowsWifiEnterpriseEAPConfiguration objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2722
+Content-Length: 3184
 
 {
   "value": [
@@ -113,6 +113,7 @@ Content-Length: 2722
       "forceFIPSCompliance": true,
       "networkSingleSignOn": "prelogon",
       "maximumAuthenticationTimeoutInSeconds": 5,
+      "userBasedVirtualLan": true,
       "promptForAdditionalAuthenticationCredentials": true,
       "enablePairwiseMasterKeyCaching": true,
       "maximumPairwiseMasterKeyCacheTimeInMinutes": 10,
@@ -125,11 +126,22 @@ Content-Length: 2722
       ],
       "authenticationMethod": "usernameAndPassword",
       "innerAuthenticationProtocolForEAPTTLS": "challengeHandshakeAuthenticationProtocol",
-      "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value"
+      "outerIdentityPrivacyTemporaryValue": "Outer Identity Privacy Temporary Value value",
+      "requireCryptographicBinding": true,
+      "performServerValidation": true,
+      "disableUserPromptForServerValidation": true,
+      "authenticationPeriodInSeconds": 13,
+      "authenticationRetryDelayPeriodInSeconds": 7,
+      "eapolStartPeriodInSeconds": 9,
+      "maximumEAPOLStartMessages": 9,
+      "maximumAuthenticationFailures": 13,
+      "cacheCredentials": true,
+      "authenticationType": "user"
     }
   ]
 }
 ```
+
 
 
 

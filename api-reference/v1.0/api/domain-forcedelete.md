@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Deletes a domain using an asynchronous long-running operation.
 
+Prior to calling [forceDelete](domain-forcedelete.md), you must update or remove any references to **Exchange** as the provisioning service.
+
 The following actions are performed as part of this operation:
 
 * Updates the `userPrincipalName`, `mail`, and `proxyAddresses` properties of `users` with references to the deleted domain to use the initial onmicrosoft.com domain.
@@ -128,3 +130,4 @@ HTTP/1.1 204 OK
   "suppressions": [
   ]
 }-->
+

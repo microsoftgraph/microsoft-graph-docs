@@ -3,7 +3,7 @@ title: "Create iosVppAppAssignedDeviceLicense"
 description: "Create a new iosVppAppAssignedDeviceLicense object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -99,6 +99,7 @@ Content-Length: 376
   "deviceName": "Device Name value"
 }
 ```
+
 
 
 

@@ -3,7 +3,7 @@ title: "List deviceManagementScriptDeviceStates"
 description: "List properties and relationships of the deviceManagementScriptDeviceState objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -34,6 +34,7 @@ One of the following permissions is required to call this API. To learn more, in
 ``` http
 GET /deviceManagement/deviceShellScripts/{deviceShellScriptId}/deviceRunStates
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates
+GET /deviceManagement/deviceCustomAttributeShellScripts/{deviceCustomAttributeShellScriptId}/deviceRunStates
 GET /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/userRunStates/{deviceManagementScriptUserStateId}/deviceRunStates
 ```
 
@@ -78,6 +79,7 @@ Content-Length: 391
   ]
 }
 ```
+
 
 
 

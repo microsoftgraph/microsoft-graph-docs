@@ -12,11 +12,14 @@ const client = Client.init(options);
 
 const skillProficiency = {
   categories: [
-    "categories-value"
+    "Professional"
   ],
-  displayName: "displayName-value",
-  proficiency: "proficiency-value",
-  webUrl: "webUrl-value"
+  allowedAudiences: "organization",
+  displayName: "API Design",
+  proficiency: "generalProfessional",
+  collaborationTags: [
+    "ableToMentor"
+  ]
 };
 
 let res = await client.api('/me/profile/skills')

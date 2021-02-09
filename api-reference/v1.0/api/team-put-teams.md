@@ -1,5 +1,5 @@
 ---
-title: "Create team"
+title: "Create team from group"
 description: "Create a new team under a group."
 author: "nkramer"
 localization_priority: Priority
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Create team
+# Create team from group
 
 Namespace: microsoft.graph
 
@@ -161,3 +161,4 @@ Content-length: 401
 ## See also
 
 - [Creating a group with a team](/graph/teams-create-group-and-team)
+

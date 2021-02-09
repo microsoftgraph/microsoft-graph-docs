@@ -3,7 +3,7 @@ title: "application: delta"
 description: "Get created, updated, or deleted applications without performing a full read of the entire resource collection."
 localization_priority: Normal
 author: "sureshja"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: apiPageType
 ---
 
@@ -165,3 +165,4 @@ Content-type: application/json
   ]
 }
 -->
+

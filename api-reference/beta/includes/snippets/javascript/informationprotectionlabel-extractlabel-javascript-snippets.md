@@ -59,7 +59,7 @@ const informationProtectionContentLabel = {
     }
 };
 
-let res = await client.api('/informationprotection/policy/labels/extractLabel')
+let res = await client.api('/informationProtection/policy/labels/extractLabel')
 	.version('beta')
 	.post(informationProtectionContentLabel);
 

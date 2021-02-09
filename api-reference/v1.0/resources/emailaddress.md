@@ -2,7 +2,7 @@
 title: "emailAddress resource type"
 description: "The name and email address of a contact or message recipient."
 localization_priority: Normal
-author: "svpsiva"
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
@@ -48,3 +48,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

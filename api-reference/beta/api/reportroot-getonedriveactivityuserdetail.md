@@ -3,7 +3,7 @@ title: "reportRoot: getOneDriveActivityUserDetail"
 description: "Get details about OneDrive activity by user."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -201,3 +201,5 @@ Content-Length: 450
   "suppressions": [
   ]
 }-->
+
+

@@ -9,7 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var conversationThread = new ConversationThread
 {
 	Topic = "New Conversation Thread Topic",
-	Posts = (IConversationThreadPostsCollectionPage)new List<Post>()
+	Posts = new ConversationThreadPostsCollectionPage()
 	{
 		new Post
 		{

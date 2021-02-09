@@ -2,7 +2,7 @@
 title: "Create MailFolder"
 description: "Use this API to create a new mail folder in the root folder of the user's mailbox."
 localization_priority: Normal
-author: "svpsiva"
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -60,7 +60,7 @@ Content-type: application/json
 Content-length: 159
 
 {
-  "displayName": "displayName-value"
+  "displayName": "Clutter"
 }
 ```
 # [C#](#tab/csharp)
@@ -95,12 +95,12 @@ Content-type: application/json
 Content-length: 179
 
 {
-  "displayName": "displayName-value",
-  "parentFolderId": "parentFolderId-value",
+  "displayName": "Clutter",
+  "parentFolderId": "AQMkADlmOGQwZmU3LWVjOWMtNDhiYgAtODcxNy1",
   "childFolderCount": 99,
   "unreadItemCount": 99,
   "totalItemCount": 99,
-  "id": "id-value"
+  "id": "hN2Y5OGRhNGYwODEALgAAA0DAKbvJvFhJgcT3lZpkhNQBAA1"
 }
 ```
 
@@ -115,3 +115,4 @@ Content-length: 179
   "suppressions": [
   ]
 }-->
+

@@ -57,7 +57,8 @@ var @event = new Event
 			},
 			Type = AttendeeType.Required
 		}
-	}
+	},
+	AllowNewTimeProposals = true
 };
 
 await graphClient.Me.Events

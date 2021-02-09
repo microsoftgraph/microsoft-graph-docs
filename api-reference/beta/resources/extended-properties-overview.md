@@ -2,7 +2,7 @@
 title: "Outlook extended properties overview"
 description: "Extended properties allow storing custom data and specifically serve as a fallback mechanism for apps to access "
 localization_priority: Normal
-author: "svpsiva"
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: conceptualPageType
 ---
@@ -12,6 +12,8 @@ doc_type: conceptualPageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
 Extended properties allow storing custom data and specifically serve as a fallback mechanism for apps to access
 custom data for Outlook MAPI properties when these properties are _not already exposed in the Microsoft Graph API metadata_.
@@ -37,7 +39,7 @@ Or, in the following Microsoft 365 group resources:
 In most common scenarios, you should be able to use open extensions (represented by [openTypeExtension](../resources/opentypeextension.md), formerly known as
 Office 365 data extensions) to store and access custom data for resource instances in a user's mailbox. Use extended properties only if you
 need to access custom data for Outlook MAPI properties that are not already exposed in the
-[Microsoft Graph API metadata](https://developer.microsoft.com/graph/docs/overview/call_api).
+[Microsoft Graph API metadata](../index.md).
 
 ## Types of extended properties
 
@@ -85,7 +87,7 @@ Use either of the named property formats to define a single-value or multi-value
 Use the proptag format to access properties predefined by MAPI, or by a client or server, and that have not already been exposed in Microsoft Graph. These properties have property identifiers in the 0x0001-0x7fff range. Do not try to define a custom property using the proptag format.
 
 You can find information about mapping an extended property to an existing MAPI property, such as the property identifier and GUID,
-in \[MS-OXPROPS\] Microsoft Corporation, ["Exchange Server Protocols Master Property List"](https://msdn.microsoft.com/library/cc433490%28v=exchg.80%29.aspx).
+in \[MS-OXPROPS\] Microsoft Corporation, ["Exchange Server Protocols Master Property List"](/openspecs/exchange_server_protocols/ms-oxprops/f6ab1613-aefe-447d-a49c-18217230b148).
 
 **Note** After you have chosen one format for the **id**, you should access that extended property by only that format.
 
@@ -100,4 +102,3 @@ Multi-value extended property operations:
 
 - [Create an extended property in a new or existing resource instance](../api/multivaluelegacyextendedproperty-post-multivalueextendedproperties.md)
 - [Get a resource instance with an extended property using `$expand`](../api/multivaluelegacyextendedproperty-get.md)
-

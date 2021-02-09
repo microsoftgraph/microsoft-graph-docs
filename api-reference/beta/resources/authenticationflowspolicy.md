@@ -31,7 +31,6 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.authenticationFlowsPolicy",
-  "baseType": "",
   "openType": false
 }
 -->
@@ -46,3 +45,5 @@ The following is a JSON representation of the resource.
   },
 }
 ```
+
+

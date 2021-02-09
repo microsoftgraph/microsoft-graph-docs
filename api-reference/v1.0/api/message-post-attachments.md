@@ -1,7 +1,7 @@
 ---
 title: "Add attachment"
 description: "Use this API to add an attachment to a message. "
-author: "svpsiva"
+author: "abheek-das"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -207,3 +207,4 @@ Content-length: 162
   "suppressions": [
   ]
 }-->
+

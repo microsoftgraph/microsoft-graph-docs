@@ -3,7 +3,7 @@ title: "List iosStoreApps"
 description: "List properties and relationships of the iosStoreApp objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1529
+Content-Length: 1618
 
 {
   "value": [
@@ -90,6 +90,8 @@ Content-Length: 1529
         "Role Scope Tag Ids value"
       ],
       "dependentAppCount": 1,
+      "supersedingAppCount": 3,
+      "supersededAppCount": 2,
       "bundleId": "Bundle Id value",
       "appStoreUrl": "https://example.com/appStoreUrl/",
       "applicableDeviceType": {
@@ -104,12 +106,14 @@ Content-Length: 1529
         "v10_0": true,
         "v11_0": true,
         "v12_0": true,
-        "v13_0": true
+        "v13_0": true,
+        "v14_0": true
       }
     }
   ]
 }
 ```
+
 
 
 

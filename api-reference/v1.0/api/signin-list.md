@@ -2,8 +2,8 @@
 title: "List signIns"
 description: "Describes the list method of the signIn resource (entity) from the Microsoft Graph API."
 localization_priority: Normal
-author: "kholtz"
-ms.prod: "microsoft-identity-platform"
+author: "besiler"
+ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 
@@ -64,7 +64,6 @@ This method supports the following OData query parameters to help customize the 
 |deviceDetail/browser| eq, startswith|
 |deviceDetail/operatingSystem| eq, startswith|
 |correlationId| eq|
-|isRisky| eq|
 
 ## Response
 
@@ -203,3 +202,4 @@ Content-length: 264
   "suppressions": [
   ]
 }-->
+

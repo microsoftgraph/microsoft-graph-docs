@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var printUserIdentity = new PrintUserIdentity
+var user = new User
 {
 	AdditionalData = new Dictionary<string, object>()
 	{
@@ -16,6 +16,6 @@ var printUserIdentity = new PrintUserIdentity
 
 await graphClient.Print.Shares["{id}"].AllowedUsers.References
 	.Request()
-	.AddAsync(printUserIdentity);
+	.AddAsync(user);
 
 ```

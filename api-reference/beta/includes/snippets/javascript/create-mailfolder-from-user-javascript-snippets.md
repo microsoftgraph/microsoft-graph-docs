@@ -11,7 +11,8 @@ const options = {
 const client = Client.init(options);
 
 const mailFolder = {
-  displayName: "displayName-value"
+  displayName: "Clutter",
+  isHidden: true
 };
 
 let res = await client.api('/me/mailFolders')

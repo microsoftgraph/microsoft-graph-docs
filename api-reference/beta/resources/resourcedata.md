@@ -2,7 +2,7 @@
 title: "resourceData resource type"
 description: "Represents the resouce data attached to the change notification sent to the subscriber."
 localization_priority: Normal
-author: "baywet"
+author: "davidmu1"
 doc_type: resourcePageType
 ms.prod: "non-product-specific"
 ---
@@ -70,3 +70,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

@@ -3,7 +3,7 @@ title: "macOsVppAppAssignmentSettings resource type"
 description: "Contains properties used to assign an Mac VPP mobile app to a group."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -24,6 +24,7 @@ Inherits from [mobileAppAssignmentSettings](../resources/intune-shared-mobileapp
 |Property|Type|Description|
 |:---|:---|:---|
 |useDeviceLicensing|Boolean|Whether or not to use device licensing.|
+|uninstallOnDeviceRemoval|Boolean|Whether or not to uninstall the app when device is removed from Intune.|
 
 ## Relationships
 None
@@ -38,9 +39,11 @@ Here is a JSON representation of the resource.
 ``` json
 {
   "@odata.type": "#microsoft.graph.macOsVppAppAssignmentSettings",
-  "useDeviceLicensing": true
+  "useDeviceLicensing": true,
+  "uninstallOnDeviceRemoval": true
 }
 ```
+
 
 
 

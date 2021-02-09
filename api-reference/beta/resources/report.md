@@ -3,7 +3,7 @@ title: "Working with Microsoft 365 usage reports in Microsoft Graph"
 description: "With Microsoft Graph, you can access Microsoft 365 usage reports resources to get the information about how people in your business are using Microsoft 365 services. For example, you can identify who is using a service a lot and reaching quotas, or who may not need a Microsoft 365 license at all."
 localization_priority: Priority
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: conceptualPageType
 ---
 
@@ -53,3 +53,5 @@ Reports resources and APIs can open up new ways for you to engage with users and
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 Need more ideas? See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+
+

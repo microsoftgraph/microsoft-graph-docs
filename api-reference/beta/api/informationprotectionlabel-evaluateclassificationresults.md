@@ -48,7 +48,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /informationprotection/policy/labels/{id}/evaluateClassificationResults
+POST /informationProtection/policy/labels/{id}/evaluateClassificationResults
 ```
 
 ## Request headers
@@ -66,7 +66,7 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter             | Type                                                                    | Description                                                                                                                                                                                                                                                                           |
 | :-------------------- | :---------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | contentInfo           | [contentInfo](../resources/contentInfo.md)                              | Provides details about the content format, content state, and existing [metadata](../resources/keyvaluepair.md) as key/value pairs.                                                                                                                                                   |
-| classificationResults | [classificationResult](../resources/classificationresult.md) collection | Contains the set of classification results returned by the data classification endpoint. Classificaiton information is used to determine the appropriate label based on the Microsoft Information Protection policy label configuration in Office 365 Security and Compliance Center. |
+| classificationResults | [classificationResult](../resources/classificationresult.md) collection | Contains the set of classification results returned by the data classification endpoint. Classification information is used to determine the appropriate label based on the Microsoft Information Protection policy label configuration in Office 365 Security and Compliance Center. |
 
 ## Response
 
@@ -87,7 +87,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/informationprotection/policy/labels/evaluateClassificationResults
+POST https://graph.microsoft.com/beta/informationProtection/policy/labels/evaluateClassificationResults
 Content-type: application/json
 User-agent: ContosoLOBApp/1.0
 
@@ -106,7 +106,7 @@ User-agent: ContosoLOBApp/1.0
       "count": 4,
       "confidenceLevel": 75
     }
-   ]
+  ]
 }
 ```
 # [C#](#tab/csharp)
@@ -119,6 +119,10 @@ User-agent: ContosoLOBApp/1.0
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/informationprotectionlabel-evaluateclassificationresults-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/informationprotectionlabel-evaluateclassificationresults-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -142,65 +146,65 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.informationProtectionAction)",
-    "value": [
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.informationProtectionAction)",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.applyLabelAction",
+      "responsibleSensitiveTypeIds": [
+        "cb353f78-2b72-4c3c-8827-92ebe4f69fdf"
+      ],
+      "actionSource": "automatic",
+      "label": {
+        "id": "722a5300-ac39-4c9a-88e3-f54c46676417",
+        "name": "Top Secret",
+        "description": "",
+        "color": "#000000",
+        "sensitivity": 13,
+        "tooltip": "This information is Top Secret.",
+        "isActive": true
+      },
+      "actions": [
         {
-            "@odata.type": "#microsoft.graph.applyLabelAction",
-            "responsibleSensitiveTypeIds": [
-                "cb353f78-2b72-4c3c-8827-92ebe4f69fdf"
-            ],
-            "actionSource": "automatic",
-            "label": {
-                "id": "722a5300-ac39-4c9a-88e3-f54c46676417",
-                "name": "Top Secret",
-                "description": "",
-                "color": "#000000",
-                "sensitivity": 13,
-                "tooltip": "This information is Top Secret.",
-                "isActive": true
+          "@odata.type": "#microsoft.graph.protectByTemplateAction",
+          "templateId": "0e7fea72-7bba-4438-a070-95c292cd6f8c"
+        },
+        {
+          "@odata.type": "#microsoft.graph.metadataAction",
+          "metadataToRemove": [],
+          "metadataToAdd": [
+            {
+              "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Enabled",
+              "value": "true"
             },
-            "actions": [
-                {
-                    "@odata.type": "#microsoft.graph.protectByTemplateAction",
-                    "templateId": "0e7fea72-7bba-4438-a070-95c292cd6f8c"
-                },
-                {
-                    "@odata.type": "#microsoft.graph.metadataAction",
-                    "metadataToRemove": [],
-                    "metadataToAdd": [
-                        {
-                            "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Enabled",
-                            "value": "true"
-                        },
-                        {
-                            "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SetDate",
-                            "value": "2019-10-03T21:50:20Z"
-                        },
-                        {
-                            "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Method",
-                            "value": "Standard"
-                        },
-                        {
-                            "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Name",
-                            "value": "Top Secret"
-                        },
-                        {
-                            "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SiteId",
-                            "value": "cb46c030-1825-4e81-a295-151c039dbf02"
-                        },
-                        {
-                            "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ActionId",
-                            "value": "76dc494e-6c59-43e6-88a1-0000edd58fca"
-                        },
-                        {
-                            "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ContentBits",
-                            "value": "8"
-                        }
-                    ]
-                }
-            ]
+            {
+              "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SetDate",
+              "value": "2019-10-03T21:50:20Z"
+            },
+            {
+              "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Method",
+              "value": "Standard"
+            },
+            {
+              "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_Name",
+              "value": "Top Secret"
+            },
+            {
+              "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_SiteId",
+              "value": "cb46c030-1825-4e81-a295-151c039dbf02"
+            },
+            {
+              "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ActionId",
+              "value": "76dc494e-6c59-43e6-88a1-0000edd58fca"
+            },
+            {
+              "name": "MSIP_Label_722a5300-ac39-4c9a-88e3-f54c46676417_ContentBits",
+              "value": "8"
+            }
+          ]
         }
-    ]
+      ]
+    }
+  ]
 }
 ```
 
@@ -213,3 +217,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

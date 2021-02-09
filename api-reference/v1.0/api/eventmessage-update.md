@@ -64,7 +64,7 @@ Content-type: application/json
 Content-length: 248
 
 {
-  "isRead": "true",
+  "isRead": true,
 }
 ```
 # [C#](#tab/csharp)
@@ -122,3 +122,4 @@ Content-length: 248
   "suppressions": [
   ]
 }-->
+

@@ -10,6 +10,7 @@ var team = new Team
 {
 	MemberSettings = new TeamMemberSettings
 	{
+		AllowCreatePrivateChannels = true,
 		AllowCreateUpdateChannels = true
 	},
 	MessagingSettings = new TeamMessagingSettings

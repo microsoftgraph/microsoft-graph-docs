@@ -3,7 +3,7 @@ title: "Get mobileAppPolicySetItem"
 description: "Read properties and relationships of the mobileAppPolicySetItem object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 741
+Content-Length: 769
 
 {
   "value": {
@@ -83,11 +83,13 @@ Content-Length: 741
     "settings": {
       "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
       "vpnConfigurationId": "Vpn Configuration Id value",
-      "uninstallOnDeviceRemoval": true
+      "uninstallOnDeviceRemoval": true,
+      "isRemovable": true
     }
   }
 }
 ```
+
 
 
 

@@ -3,7 +3,7 @@ title: "omaSettingStringXml resource type"
 description: "OMA Settings StringXML definition."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -26,6 +26,7 @@ Inherits from [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 |displayName|String|Display Name. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |description|String|Description. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|String|OMA. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
+|isEncrypted|Boolean|Indicates whether the value field is encrypted. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |fileName|String|File name associated with the Value property (*.xml).|
 |value|Binary|Value. (UTF8 encoded byte array)|
 
@@ -45,10 +46,12 @@ Here is a JSON representation of the resource.
   "displayName": "String",
   "description": "String",
   "omaUri": "String",
+  "isEncrypted": true,
   "fileName": "String",
   "value": "binary"
 }
 ```
+
 
 
 

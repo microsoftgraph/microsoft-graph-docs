@@ -92,7 +92,7 @@ Content-type: application/json
 Content-length: 81
 
 {
-  "id": 99,
+  "id": "99",
   "name": "name-value",
   "index": 99,
   "values": "values-value"
@@ -110,3 +110,4 @@ Content-length: 81
   "suppressions": [
   ]
 }-->
+

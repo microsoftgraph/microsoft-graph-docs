@@ -4,7 +4,7 @@ description: "You can add related content to an event,"
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "outlook"
-author: "svpsiva"
+author: "abheek-das"
 ---
 
 # attachment resource type
@@ -12,6 +12,8 @@ author: "svpsiva"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
 You can add related content to a user [event](../resources/event.md),
 [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or group [post](../resources/post.md) in the form of an attachment. 
@@ -40,11 +42,11 @@ The following methods apply to any of the derived types of attachments (**fileAt
 |[Add attachment to a user event](../api/event-post-attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to an event in a user calendar.|
 |[Add attachment to a message](../api/message-post-attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to a message. This operation limits the size of the attachment you can add to under 4 MB.|
 |[Create session to attach large file](../api/attachment-createuploadsession.md)| [uploadSession](uploadsession.md) | Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to the specified **message**. The file size must be between 3MB and 150MB.|
-|[Add attachment to an Outlook task](../api/outlooktask-post-attachments.md) | [attachment](attachment.md) |Add a file or item attachment to an Outlook task.|
+|[Add attachment to an Outlook task](../api/outlooktask-post-attachments.md) (deprecated) | [attachment](attachment.md) |Add a file or item attachment to an Outlook task.|
 |[Add attachment to a post](../api/post-post-attachments.md) | [attachment](attachment.md) |Add a file, item, or link attachment to a group post.|
 |[List attachments of a user event](../api/event-list-attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for an event in a user calendar. |
 |[List attachments of a message](../api/message-list-attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for a message. |
-|[List attachments of an Outlook task](../api/outlooktask-list-attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for an Outlook task. |
+|[List attachments of an Outlook task](../api/outlooktask-list-attachments.md) (deprecated) | [attachment](attachment.md) collection | Get a list of attachments for an Outlook task. |
 |[List attachments of a post](../api/post-list-attachments.md) | [attachment](attachment.md) collection | Get a list of attachments for a post. |
 |[Delete](../api/attachment-delete.md) | None |Delete an attachment on an event, message, Outlook task, or post. |
 
@@ -87,7 +89,6 @@ Here is a JSON representation of the resource
   "name": "string",
   "size": 1024
 }
-
 ```
 
 
@@ -103,3 +104,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

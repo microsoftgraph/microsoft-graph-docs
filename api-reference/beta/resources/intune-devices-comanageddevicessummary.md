@@ -3,7 +3,7 @@ title: "comanagedDevicesSummary resource type"
 description: "Summary data for co managed devices"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -28,6 +28,7 @@ Summary data for co managed devices
 |endpointProtectionCount|Int32|Number of devices with EndpointProtection swung-over. This property is read-only.|
 |modernAppsCount|Int32|Number of devices with ModernApps swung-over. This property is read-only.|
 |officeAppsCount|Int32|Number of devices with OfficeApps swung-over. This property is read-only.|
+|totalComanagedCount|Int32|Number of Co-Managed Devices. This property is read-only.|
 
 ## Relationships
 None
@@ -49,9 +50,11 @@ Here is a JSON representation of the resource.
   "windowsUpdateForBusinessCount": 1024,
   "endpointProtectionCount": 1024,
   "modernAppsCount": 1024,
-  "officeAppsCount": 1024
+  "officeAppsCount": 1024,
+  "totalComanagedCount": 1024
 }
 ```
+
 
 
 

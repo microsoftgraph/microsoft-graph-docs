@@ -28,10 +28,15 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
-
+To get a label available to the signed-in user or specified user:
 ```http
-GET /informationprotection/policy/labels/{id}
-GET /informationprotection/policy/labels
+GET /me/informationProtection/policy/labels/{id}
+GET /users/{id | user-principal-name}/informationProtection/policy/labels/{id}
+```
+
+To get a label available to the organization:
+```http
+GET /informationProtection/policy/labels/{id}
 ```
 
 ## Optional query parameters
@@ -80,6 +85,10 @@ GET https://graph.microsoft.com/beta/me/informationprotection/policy/labels/{id}
 [!INCLUDE [sample-code](../includes/snippets/objc/get-informationprotectionlabel-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-informationprotectionlabel-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -121,3 +130,5 @@ User-agent: ContosoLOBApp/1.0
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

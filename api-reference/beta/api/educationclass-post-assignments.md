@@ -28,7 +28,6 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/{id}/assignments
-
 ```
 ## Request headers
 | Header       | Value |
@@ -91,6 +90,7 @@ Content-type: application/json
 Content-length: 279
 
 {
+  "addedStudentAction": "none",
   "allowLateSubmissions": true,
   "allowStudentsToAddResourcesToSubmission": true,
   "assignDateTime": "2014-02-01T00:00:00Z",
@@ -126,6 +126,7 @@ Content-length: 279
       }
   },
   "lastModifiedDateTime": "2014-02-01T00:00:00Z",
+  "notificationChannelUrl": null,
   "status": "published"
 }
 ```
@@ -142,3 +143,5 @@ Content-length: 279
   "suppressions": []
 }
 -->
+
+

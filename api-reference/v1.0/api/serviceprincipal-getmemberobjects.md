@@ -3,7 +3,7 @@ title: "servicePrincipal: getMemberObjects"
 description: "Get the list of groups and directory roles that this service principal is a member of.  This check is transitive."
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 author: "sureshja"
 ---
 
@@ -118,3 +118,4 @@ Content-length: 39
   ]
 }
 -->
+

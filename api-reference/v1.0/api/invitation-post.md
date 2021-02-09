@@ -69,7 +69,7 @@ Content-length: 551
 
 {
   "invitedUserEmailAddress": "yyy@test.com",
-  "inviteRedirectUrl": "https://myapp.com"
+  "inviteRedirectUrl": "https://myapp.contoso.com"
 }
 ```
 # [C#](#tab/csharp)
@@ -121,7 +121,7 @@ Content-length: 551
      ],
      "customizedMessageBody": null
   },
-  "inviteRedirectUrl": "https://myapp.com/",
+  "inviteRedirectUrl": "https://myapp.contoso.com",
   "status": "Completed",
   "invitedUser": { "id": "243b1de4-ad9f-421c-a933-d55305fb165d" }
 }
@@ -134,3 +134,4 @@ Content-length: 551
       Property 'invitedUser' is of type Custom but has no custom members."
   ]
 }-->
+

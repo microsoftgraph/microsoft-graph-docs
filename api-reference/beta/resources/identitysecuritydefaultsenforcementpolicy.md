@@ -2,7 +2,7 @@
 title: "identitySecurityDefaultsEnforcementPolicy resource type"
 description: "Represents the Azure Active Directory security defaults policy. Security defaults contain preconfigured security settings that protect against common attacks."
 localization_priority: Normal
-author: "dkershaw10"
+author: "rohinigoyal1"
 ms.prod: "microsoft-identity-platform"
 doc_type: apiPageType
 ---
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the Azure Active Directory [security defaults](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) policy. Security defaults contain preconfigured security settings that protect against common attacks.
+Represents the Azure Active Directory [security defaults](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) policy. Security defaults contain preconfigured security settings that protect against common attacks.
 
 Inherits from [policyBase](../resources/policybase.md).
 
@@ -47,7 +47,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.identitySecurityDefaultsEnforcementPolicy",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

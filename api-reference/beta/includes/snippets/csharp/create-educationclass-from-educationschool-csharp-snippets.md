@@ -6,16 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var educationClass = new EducationClass
-{
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"@odata.id", "https://graph.microsoft.com/beta/education/classes/11006"}
-	}
-};
-
-await graphClient.Education.Schools["10002"].Classes.References
+await graphClient.Education.Schools["10001"].Users["13006"]
 	.Request()
-	.AddAsync(educationClass);
+	.DeleteAsync();
 
 ```

@@ -3,7 +3,7 @@ title: "Update windowsFeatureUpdateProfile"
 description: "Update the properties of a windowsFeatureUpdateProfile object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -54,6 +54,7 @@ The following table shows the properties that are required when you create the [
 |featureUpdateVersion|String|The feature update version that will be deployed to the devices targeted by this profile. The version could be any supported version for example 1709, 1803 or 1809 and so on.|
 |createdDateTime|DateTimeOffset|The date time that the profile was created.|
 |lastModifiedDateTime|DateTimeOffset|The date time that the profile was last modified.|
+|roleScopeTagIds|String collection|List of Scope Tags for this Feature Update entity.|
 
 
 
@@ -67,13 +68,16 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/windowsFeatureUpdateProfiles/{windowsFeatureUpdateProfileId}
 Content-type: application/json
-Content-length: 207
+Content-length: 269
 
 {
   "@odata.type": "#microsoft.graph.windowsFeatureUpdateProfile",
   "displayName": "Display Name value",
   "description": "Description value",
-  "featureUpdateVersion": "Feature Update Version value"
+  "featureUpdateVersion": "Feature Update Version value",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
 
@@ -82,7 +86,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 379
+Content-Length: 441
 
 {
   "@odata.type": "#microsoft.graph.windowsFeatureUpdateProfile",
@@ -91,9 +95,13 @@ Content-Length: 379
   "description": "Description value",
   "featureUpdateVersion": "Feature Update Version value",
   "createdDateTime": "2017-01-01T00:02:43.5775965-08:00",
-  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00"
+  "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+  "roleScopeTagIds": [
+    "Role Scope Tag Ids value"
+  ]
 }
 ```
+
 
 
 

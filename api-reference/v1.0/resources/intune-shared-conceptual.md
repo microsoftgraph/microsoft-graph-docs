@@ -38,3 +38,5 @@ The following Graph resources are shared between Intune workflows:
 
 
 
+
+

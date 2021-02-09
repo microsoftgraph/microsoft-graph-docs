@@ -3,8 +3,8 @@ title: "governanceSubject resource type"
 description: "Represents users, groups, and service principals being managed in Privileged Identity Management (PIM)."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "governance"
+author: "shauliu"
 ---
 
 # governanceSubject resource type
@@ -43,7 +43,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "id": "String",  
+  "id": "String",
   "displayName": "String",
   "email": "String",
   "principalName": "String",
@@ -64,3 +64,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

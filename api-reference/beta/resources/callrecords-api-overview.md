@@ -1,7 +1,7 @@
 ---
 title: "Working with the call records API in Microsoft Graph"
 description: "The Microsoft Graph call records API allows you to retrieve usage and diagnostics data for calls and online meetings within your organization."
-author: "stephenjust"
+author: "williamlooney"
 doc_type: conceptualPageType
 ms.prod: cloud-communications
 localization_priority: Priority
@@ -22,6 +22,8 @@ The call records API is defined in the OData sub-namespace, `microsoft.graph.cal
 | [callRecord](callrecords-callrecord.md) | [Get callRecord](../api/callrecords-callrecord-get.md) |
 | [session](callrecords-session.md) | [Get callRecord](../api/callrecords-callrecord-get.md)<br />[List sessions](../api/callrecords-session-list.md) |
 | [segment](callrecords-segment.md) | [Get callRecord](../api/callrecords-callrecord-get.md)<br />[List sessions](../api/callrecords-session-list.md) |
+| [pstnCallLogRow](callrecords-pstncalllogrow.md)|[Get pstnCallLogRow](../api/callrecords-callrecord-getpstncalls.md) |
+| [directRoutingLogRow](callrecords-directroutinglogrow.md) | [Get directRoutingLogRow](../api/callrecords-callrecord-getdirectroutingcalls.md)|
 
 ## Call record structure
 
@@ -38,3 +40,5 @@ In the diagram above, the numbers denote how many children of each type can be p
 ## See also
 
 - [Webhook subscriptions](/graph/api/resources/webhooks?view=graph-rest-beta)
+
+

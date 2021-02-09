@@ -3,7 +3,7 @@ title: "applicationSignInDetailedSummary resource type - Microsoft Graph API"
 description: "Represents a detailed summary of an application sign-in."
 localization_priority: Normal
 author: "sureshja"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
@@ -68,3 +68,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

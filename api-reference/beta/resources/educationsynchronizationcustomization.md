@@ -42,3 +42,5 @@ Provides settings for customizing the school data profile synchronization of the
   "allowDisplayNameUpdate": "Boolean"
 }
 ```
+
+

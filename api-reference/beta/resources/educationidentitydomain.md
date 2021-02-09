@@ -13,16 +13,17 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the mapping between an education user type and the domain the user's account belongs to. The domain resource is part of the [identity creation configuration](educationidentitycreationconfiguration.md). 
+Represents the mapping between an education user type and the domain the user's account belongs to. The domain resource is part of the [identity creation configuration](educationidentitycreationconfiguration.md).
 
 ## Properties
 
-| Property | Type | Description |
-|:-|:-|:-|
-| **appliesTo** | string |  The user role type to assign to the license. Possible values are: `student`, `teacher`, `faculty`.      |
-| **name** | string |  Represents the domain for the user account.         |
+| Property  | Type   | Description                                                                                        |
+| :-------- | :----- | :------------------------------------------------------------------------------------------------- |
+| appliesTo | String | The user role type to assign to the license. Possible values are: `student`, `teacher`, `faculty`. |
+| name      | String | Represents the domain for the user account.                                                        |
 
 ## JSON representation
+
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
@@ -33,7 +34,9 @@ Represents the mapping between an education user type and the domain the user's 
 
 ```json
 {
-    "appliesTo": {"@odata.type": "microsoft.graph.educationUserRole"},
-    "name": "String"
+  "appliesTo": { "@odata.type": "microsoft.graph.educationUserRole" },
+  "name": "String"
 }
 ```
+
+

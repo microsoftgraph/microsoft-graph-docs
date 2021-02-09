@@ -15,18 +15,24 @@ You can use the Planner API in Microsoft Graph to create tasks and assign them t
 
 Before you get started with the Planner API, it will be helpful to understand how the main objects relate to each other as well as to Microsoft 365 groups.
 
-## Microsoft 365 groups
+## Plan containers
+In Planner, plans are always contained by another resource. The containing resource determines the authoization rules of the plan and all the tasks in it, as well as the lifecycle of the plan. For example, for plans contained by Microsoft 365 groups, 
+group members will be able to create, edit, resolve, and delete tasks in the plan, as well as changing some plan-level properties, such as the name of the plan or label names. Additionally, when the group is deleted, all the plans in the group are automatically deleted, or if a group is restored, all the plans will be automatically restored.
 
-Microsoft 365 groups are the owners of the plans in the Planner API.
+The most common type of container is a Microsoft 365 group.
+
+### Container type: Microsoft 365 groups
+
+Plans are commonly contained in Microsoft 365 groups in the Planner API.
 To [get the plans owned by a group](../api/plannergroup-list-plans.md), make the following HTTP request.
 
 ``` http
 GET /groups/{group-id}/planner/plans
 ```
 
-When [creating a new plan](../api/planner-post-plans.md), make a group its owner by setting the `owner` property on a plan object. Plans must be owned by groups.
+When [creating a new plan](../api/planner-post-plans.md), make a group its container by setting the `container` property on a plan object. Plans must be contained by a supported resource.
 
->**Note:** The user who is creating the plan must be a member of the group that will own the plan. When you create a new group by using [Create group](../api/group-post-groups.md), you are not added to the group as a member. After the group is created, add yourself as a member by using [group post members](../api/group-post-members.md).
+>**Note:** The user who is creating the plan must be a member of the group that will contain the plan. When you create a new group by using [Create group](../api/group-post-groups.md), you are not added to the group as a member. After the group is created, add yourself as a member by using [group post members](../api/group-post-members.md).
 
 ## Plans
 
@@ -165,3 +171,4 @@ The 412 status code can also be returned if the etag value specified in the requ
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
+

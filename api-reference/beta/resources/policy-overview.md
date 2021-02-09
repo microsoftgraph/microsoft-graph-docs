@@ -3,7 +3,7 @@ title: "policy API overview"
 description: "Azure Active Directory uses policies to control Azure AD feature behaviors in your organization."
 localization_priority: Normal
 author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "conceptualPageType"
 ---
 
@@ -31,3 +31,5 @@ Azure Active Directory (Azure AD) uses policies to control Azure AD feature beha
 
 * Review the different policy resouce types listed above and their various methods.
 * Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+
+

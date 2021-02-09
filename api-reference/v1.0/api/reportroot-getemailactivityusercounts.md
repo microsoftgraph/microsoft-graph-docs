@@ -3,7 +3,7 @@ title: "reportRoot: getEmailActivityUserCounts"
 description: "Enables you to understand trends on the number of unique users who are performing email activities like send, read, and receive."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -121,3 +121,4 @@ Report Refresh Date,Send,Receive,Read,Report Date,Report Period
   "suppressions": [
   ]
 }-->
+

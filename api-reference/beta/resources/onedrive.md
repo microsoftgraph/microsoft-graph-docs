@@ -4,7 +4,7 @@ description: "You can use Microsoft Graph to create an app that connects with fi
 localization_priority: Priority
 ms.prod: "sharepoint"
 doc_type: conceptualPageType
-author: ""
+author: "JeremyKelley"
 ---
 
 # Working with files in Microsoft Graph
@@ -85,7 +85,7 @@ This table provides an example of different ways to use the colon character to a
 The [Drive resource](drive.md) is the top-level object within a user's OneDrive or a SharePoint document library.
 Nearly all files operations will start by addressing a specific drive resource.
 
-A drive resource can be addressed either by the drive's unique ID or by the default drive for a [User](user.md), [Group](group.md), or organization. 
+A drive resource can be addressed either by the drive's unique ID or by the default drive for a [User](user.md), [Group](group.md), or organization.
 
 ## DriveItem resource
 
@@ -101,7 +101,7 @@ DriveItems with a **folder** facet act as containers of items, and have a **chil
 OneDrive personal users can add one or more shared items from another drive to their own OneDrive.
 These shared items appear as a **DriveItem** in the **children** collection with a [remoteItem](remoteitem.md) facet.
 
-For more information about working with shared folders and remote items, see [Remote items and shared folders](remoteitem.md).   
+For more information about working with shared folders and remote items, see [Remote items and shared folders](remoteitem.md).
 
 ## Sharing and permissions
 
@@ -112,3 +112,5 @@ Microsoft Graph also provides a way for your app to [access shared content](../a
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
+
+

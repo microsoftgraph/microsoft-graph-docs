@@ -7,7 +7,6 @@ ms.prod: "education"
 doc_type: resourcePageType
 ---
 
-
 # educationIdentitySynchronizationConfiguration resource type
 
 Namespace: microsoft.graph
@@ -17,12 +16,14 @@ Namespace: microsoft.graph
 Abstract base class for all school data profile identity synchronization configurations. The derived classes define the behavior for synchronizing identities. The following are the derived types.
 
 ## Derived types
-| Type | Description |
-|:-|:-|
-| [**educationIdentityMatchingConfiguration**](educationidentitymatchingconfiguration.md) | Use this type to match existing user accounts in Azure Active Directory (Azure AD). |
-| [**educationIdentityCreationConfiguration**](educationidentitycreationconfiguration.md) | Use this type to create new user accounts in Azure AD. |
+
+| Type                                                                                | Description                                                                         |
+| :---------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------- |
+| [educationIdentityMatchingConfiguration](educationidentitymatchingconfiguration.md) | Use this type to **match existing** user accounts in Azure Active Directory. |
+| [educationIdentityCreationConfiguration](educationidentitycreationconfiguration.md) | Use this type to **create new** user accounts in Azure Active Directory.                              |
 
 ## JSON representation
+
 <!-- {
   "blockType": "resource",
    "isAbstract":true,
@@ -33,7 +34,7 @@ Abstract base class for all school data profile identity synchronization configu
 }-->
 
 ```json
-{
-}
+{}
 ```
+
 

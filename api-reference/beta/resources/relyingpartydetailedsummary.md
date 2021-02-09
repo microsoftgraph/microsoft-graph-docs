@@ -2,8 +2,8 @@
 title: "relyingPartyDetailedSummary resource type"
 description: "Represents a relying party in AD FS."
 localization_priority: Normal
-author: "khotz"
-ms.prod: "microsoft-identity-platform"
+author: "besiler"
+ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"
 ---
 
@@ -53,7 +53,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.relyingPartyDetailedSummary",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
@@ -83,3 +82,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
