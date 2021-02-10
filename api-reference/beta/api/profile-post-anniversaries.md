@@ -57,7 +57,7 @@ The following table shows the properties that are possible to set within a new *
 
 ## Response
 
-If successful, this method returns `201, Created` response code and a new [personAnnualEvent](../resources/personanniversary.md) object in the response body.
+If successful, this method returns `201, Created` response code and a new [personAnnualEvent](../resources/personannualevent.md) object in the response body.
 
 ## Examples
 
@@ -68,7 +68,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_personanniversary_from_profile"
+  "name": "create_personannualevent_from_profile"
 }-->
 
 ```http
