@@ -33,6 +33,7 @@ Inherits from [itemFacet](itemfacet.md).
 |categories    |String collection  | Contains categories a user has associated with the website (for example, personal, recipes).  |
 |description   |String             | Contains a description of the website.                                                        |
 |displayName   |String             | Contains a friendly name for the website.                                                     |
+|thumbnailUrl|String|Contains a link to a thumbnail image or resource for the website. |
 |webUrl        |String             | Contains a link to the website itself.                                                        |
 
 ## Properties

@@ -37,6 +37,7 @@ Inherits from [itemFacet](../resources/itemfacet.md).
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Provides the identifier of the user and/or application that last modified the entity. Inherited from [itemFacet](../resources/itemfacet.md).|
 |lastModifiedDateTime|DateTimeOffset|Provides the dateTimeOffset for when the entity was created. Inherited from [itemFacet](../resources/itemfacet.md).|
 |source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
+|thumbnailUrl|String|Contains a link to a thumbnail image or resource for the annotation. |
 
 ## Relationships
 None.

@@ -1,13 +1,13 @@
 ---
-title: "personAnniversary resource type"
-description: "personAnniversary resource type"
+title: "personAnnualEvent resource type"
+description: "personAnnualEvent resource type"
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "resourcePageType"
 ---
 
-# personAnniversary resource type
+# personAnnualEvent resource type
 
 Namespace: microsoft.graph
 
@@ -21,11 +21,11 @@ Inherits from [itemFacet](itemFacet.md).
 
 |Method|Return type|Description|
 |:---|:---|:---|
-|[List anniversaries](../api/profile-list-anniversaries.md)|[personAnniversary](../resources/personanniversary.md) collection|Get the personAnniversary resources from the anniversaries navigation property.|
-|[Create personAnniversary](../api/profile-post-anniversaries.md)|[personAnniversary](../resources/personanniversary.md)|Create a new personAnniversary object.|
-|[Get personAnniversary](../api/personanniversary-get.md)|[personAnniversary](../resources/personanniversary.md)|Read the properties and relationships of a [personAnniversary](../resources/personanniversary.md) object.|
-|[Update personAnniversary](../api/personanniversary-update.md)|[personAnniversary](../resources/personanniversary.md)|Update the properties of a [personAnniversary](../resources/personanniversary.md) object.|
-|[Delete personAnniversary](../api/personanniversary-delete.md)|None|Deletes a [personAnniversary](../resources/personanniversary.md) object.|
+|[List anniversaries](../api/profile-list-anniversaries.md)|[personAnnualEvent](../resources/personannualevent.md) collection|Get the personAnnualEvent resources from the anniversaries navigation property.|
+|[Create personAnnualEvent](../api/profile-post-anniversaries.md)|[personAnnualEvent](../resources/personannualevent.md)|Create a new personAnnualEvent object.|
+|[Get personAnnualEvent](../api/personannualevent-get.md)|[personAnnualEvent](../resources/personannualevent.md)|Read the properties and relationships of a [personAnnualEvent](../resources/personannualevent.md) object.|
+|[Update personAnnualEvent](../api/personannualevent-update.md)|[personAnnualEvent](../resources/personannualevent.md)|Update the properties of a [personAnnualEvent](../resources/personannualevent.md) object.|
+|[Delete personAnnualEvent](../api/personannualevent-delete.md)|None|Deletes a [personAnnualEvent](../resources/personannualevent.md) object.|
 
 ## Properties
 
@@ -40,7 +40,7 @@ Inherits from [itemFacet](itemFacet.md).
 |lastModifiedBy|[identitySet](../resources/identityset.md)|Provides the identifier of the user and/or application that last modified the entity. Inherited from [itemFacet](../resources/itemfacet.md).|
 |lastModifiedDateTime|DateTimeOffset|Provides the dateTimeOffset for when the entity was created. Inherited from [itemFacet](../resources/itemfacet.md).|
 |source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
-|type|anniversaryType|The type of anniversary the date represents. Possible values are: `birthday`, `wedding`, `unknownFutureValue`.|
+|type|anniversaryType|The type of anniversary the date represents. Possible values are: `birthday`, `wedding`, `work`, `other`, `unknownFutureValue`.|
 
 ## Relationships
 None.
@@ -50,14 +50,14 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.personAnniversary",
+  "@odata.type": "microsoft.graph.personAnnualEvent",
   "baseType": "microsoft.graph.itemFacet",
   "openType": false
 }
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.personAnniversary",
+  "@odata.type": "#microsoft.graph.personAnnualEvent",
   "id": "String (identifier)",
   "allowedAudiences": "String",
   "inference": {
@@ -78,5 +78,3 @@ The following is a JSON representation of the resource.
   "date": "Date"
 }
 ```
-
-
