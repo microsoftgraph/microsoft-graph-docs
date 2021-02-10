@@ -40,7 +40,7 @@ Contains properties for device run state of the device compliance script.
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|managedDevice|[managedDevice](../resources/intune-devices-manageddevice.md)|The managed device on which the device compliance script executed|
+|managedDevice|[managedDevice](../resources/intune-shared-manageddevice.md)|The managed device on which the device compliance script executed|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

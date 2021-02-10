@@ -3,7 +3,7 @@ title: "Remove owner"
 description: "Remove an owner from an application."
 author: "sureshja"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: apiPageType
 ---
 

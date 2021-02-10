@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7216
+Content-Length: 8262
 
 {
   "value": [
@@ -165,6 +165,36 @@ Content-Length: 7216
       "kioskModeFolderIcon": "darkSquare",
       "kioskModeWifiAllowedSsids": [
         "Kiosk Mode Wifi Allowed Ssids value"
+      ],
+      "kioskModeAppOrderEnabled": true,
+      "kioskModeAppsInFolderOrderedByName": true,
+      "kioskModeGridHeight": 3,
+      "kioskModeGridWidth": 2,
+      "kioskModeLockHomeScreen": true,
+      "kioskModeManagedFolders": [
+        {
+          "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeManagedFolder",
+          "folderName": "Folder Name value",
+          "folderIdentifier": "Folder Identifier value",
+          "items": [
+            {
+              "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeWeblink",
+              "label": "Label value",
+              "link": "Link value"
+            }
+          ]
+        }
+      ],
+      "kioskModeAppPositions": [
+        {
+          "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeAppPositionItem",
+          "position": 8,
+          "item": {
+            "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeWeblink",
+            "label": "Label value",
+            "link": "Link value"
+          }
+        }
       ],
       "microphoneForceMute": true,
       "networkEscapeHatchAllowed": true,

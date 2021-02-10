@@ -3,7 +3,7 @@ title: "On-premises publishing profiles"
 description: "Various Azure services (for example, Azure Active Directory Connect Passthrough Authentication, Workday to Azure AD users provisioning) allow a conditional access to various on-premises resources from outside the corporate network."
 localization_priority: Normal
 author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "resourcePageType"
 ---
 
@@ -38,5 +38,6 @@ For a tutorial about configuring Application Proxy, see [Automate the configurat
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

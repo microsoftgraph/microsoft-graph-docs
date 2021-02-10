@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var siteSource = new SiteSource
+var siteSource = new Microsoft.Graph.Ediscovery.SiteSource
 {
 	AdditionalData = new Dictionary<string, object>()
 	{

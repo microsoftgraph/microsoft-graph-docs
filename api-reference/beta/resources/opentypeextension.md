@@ -25,7 +25,7 @@ Open extensions are supported by the following resources in the corresponding ve
 
 | Resource | Version |
 |---------------|-------|
-| [Administrative unit](administrativeunit.md)  | Preview only |
+| [Administrative unit](administrativeunit.md)  | GA |
 | [Calendar event](event.md) | GA |
 | Group [calendar event](event.md) | GA |
 | Group conversation thread [post](post.md) | GA |

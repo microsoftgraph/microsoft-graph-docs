@@ -21,7 +21,7 @@ const identityUserFlowAttributeAssignment = {
     }
 };
 
-let res = await client.api('/identity/b2cUserFlows/B2C_1_Consumer/userAttributeAssignments')
+let res = await client.api('/identity/b2xUserFlows/B2X_1_Partner/userAttributeAssignments')
 	.version('beta')
 	.post(identityUserFlowAttributeAssignment);
 

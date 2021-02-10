@@ -2,7 +2,7 @@
 title: "followupFlag resource type"
 description: "Allows setting a flag in an item for the user to follow up on later. "
 localization_priority: Normal
-author: "svpsiva"
+author: "abheek-das"
 ms.prod: ""
 doc_type: resourcePageType
 ---

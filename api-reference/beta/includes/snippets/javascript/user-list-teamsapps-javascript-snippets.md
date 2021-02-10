@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/users/{id}/teamwork/installedApps/{id}')
+let res = await client.api('/users/{id}/teamwork/installedApps')
 	.version('beta')
 	.get();
 

@@ -3,7 +3,7 @@ title: "accessReviewReviewerScope resource type"
 description: "Represents who will review an access review."
 author: "isabelleatmsft"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 

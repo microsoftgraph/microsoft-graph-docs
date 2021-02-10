@@ -4,7 +4,7 @@ description: "Update the properties of serviceprincipal object."
 author: "sureshja"
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # Update servicePrincipal
@@ -132,5 +132,6 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
 
 

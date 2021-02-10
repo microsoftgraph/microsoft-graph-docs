@@ -4,7 +4,7 @@ description: "Summarizes the results of the synchronization job run."
 localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # synchronizationTaskExecution resource type

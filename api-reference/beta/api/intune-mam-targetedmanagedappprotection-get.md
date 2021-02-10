@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2595
+Content-Length: 2795
 
 {
   "value": {
@@ -103,6 +103,9 @@ Content-Length: 2595
     "printBlocked": true,
     "fingerprintBlocked": true,
     "disableAppPinIfDevicePinIsSet": true,
+    "maximumRequiredOsVersion": "Maximum Required Os Version value",
+    "maximumWarningOsVersion": "Maximum Warning Os Version value",
+    "maximumWipeOsVersion": "Maximum Wipe Os Version value",
     "minimumRequiredOsVersion": "Minimum Required Os Version value",
     "minimumWarningOsVersion": "Minimum Warning Os Version value",
     "minimumRequiredAppVersion": "Minimum Required App Version value",

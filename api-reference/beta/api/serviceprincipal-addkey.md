@@ -3,7 +3,7 @@ title: "servicePrincipal: addKey"
 description: "Add a key credential to a servicePrincipal."
 localization_priority: Normal
 author: "sureshja"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
@@ -176,5 +176,6 @@ Content-Type: application/json
     "Error: serviceprincipal_addkey:\r\n      Resource type was null or missing, so we assume there is no response to validate."
     ]
 }-->
+
 
 

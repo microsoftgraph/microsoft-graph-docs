@@ -26,8 +26,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.ipRange",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.ipRange"
 }-->
 
 ```json

@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 11962
+Content-Length: 12006
 
 {
   "value": [
@@ -356,6 +356,7 @@ Content-Length: 11962
       "iTunesBlocked": true,
       "sharedDeviceBlockTemporarySessions": true,
       "appClipsBlocked": true,
+      "applePersonalizedAdsBlocked": true,
       "kioskModeAppType": "appStoreApp"
     }
   ]

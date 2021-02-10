@@ -3,7 +3,7 @@ title: "extensionProperty resource type"
 description: "Represents a directory extension"
 localization_priority: Normal
 author: "keylimesoda"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: "resourcePageType"
 ---
 
@@ -55,7 +55,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.extensionProperty",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

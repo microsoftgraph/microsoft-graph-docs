@@ -17,7 +17,7 @@ IdentityUserFlowAttribute userAttribute = new IdentityUserFlowAttribute();
 userAttribute.id = "extension_guid_shoeSize";
 identityUserFlowAttributeAssignment.userAttribute = userAttribute;
 
-graphClient.identity().b2cUserFlows("B2C_1_Consumer").userAttributeAssignments()
+graphClient.identity().b2xUserFlows("B2X_1_Partner").userAttributeAssignments()
 	.buildRequest()
 	.post(identityUserFlowAttributeAssignment);
 

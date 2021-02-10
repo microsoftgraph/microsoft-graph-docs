@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var privilegedApproval = await graphClient.PrivilegedApproval["{id}"]
+var privilegedApproval = await graphClient.PrivilegedApproval
 	.Request()
 	.GetAsync();
 

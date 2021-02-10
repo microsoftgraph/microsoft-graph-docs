@@ -55,7 +55,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.accessPackageAssignmentRequest",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

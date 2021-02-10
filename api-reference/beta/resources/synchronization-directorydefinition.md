@@ -4,7 +4,7 @@ description: "Provides the synchronization engine information about a directory 
 localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # directoryDefinition resource type

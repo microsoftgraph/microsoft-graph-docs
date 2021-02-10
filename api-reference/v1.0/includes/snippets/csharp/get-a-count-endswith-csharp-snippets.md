@@ -9,8 +9,8 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var users = await graphClient.Users
 	.Request()
 	.Header("ConsistencyLevel","eventual")
-	.Filter("endswith(mail,'a@contoso.com'),")
-	.OrderBy("userPrincipalName ")
+	.Filter("endswith(mail,'a@contoso.com')")
+	.OrderBy("userPrincipalName")
 	.GetAsync();
 
 ```

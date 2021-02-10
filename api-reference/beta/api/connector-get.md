@@ -3,7 +3,7 @@ title: "Get connector"
 description: "Retrieve the properties of a connector object."
 localization_priority: Normal
 author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
@@ -109,3 +109,4 @@ Content-length: 124
   "suppressions": []
 }
 -->
+

@@ -16,7 +16,6 @@ To learn more about authentication providers, see [Providers](./providers.md).
 Initialize the provider inside the `onInit()` method of your web part.
 
 ```ts
-
 // import the providers at the top of the page
 import {Providers, SharePointProvider} from '@microsoft/mgt';
 
@@ -29,7 +28,6 @@ protected async onInit() {
 Now you can add any component in your `render()` method and it will use the SharePoint context to access Microsoft Graph.
 
 ```ts
-
 public render(): void {
     this.domElement.innerHTML = `
       <mgt-agenda></mgt-agenda>
@@ -41,7 +39,7 @@ public render(): void {
 
 ## Sample
 
-For details about how to initalize the SharePoint provider, see the [Build a SharePoint web part](../get-started/build-a-sharepoint-web-part.md) getting started guide.
+For details about how to initialize the SharePoint provider, see the [Build a SharePoint web part](../get-started/build-a-sharepoint-web-part.md) getting started guide.
 
 For a pre-built example that shows you how to use the various components in your SharePoint web parts, see the [SharePoint web part sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/sp-webpart) in the Microsoft Graph Toolkit repository.
 

@@ -11,7 +11,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphCase *case = [[MSGraphCase alloc] init];
+MSGraphEdiscoveryCase *case = [[MSGraphEdiscoveryCase alloc] init];
 [case setDisplayName:@"My Case 1 - Renamed"];
 [case setDescription:@"Updated description"];
 [case setExternalId:@"Updated externalId"];

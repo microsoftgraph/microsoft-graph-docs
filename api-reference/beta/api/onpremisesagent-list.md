@@ -3,7 +3,7 @@ title: "List onPremisesAgents"
 description: "Retrieve a list of onPremisesAgents."
 localization_priority: Normal
 author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
@@ -129,5 +129,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var connectors = await graphClient.OnPremisesPublishingProfiles["applicationProxy"].Connectors
+var connectors = await graphClient.Print.Connectors
 	.Request()
 	.GetAsync();
 

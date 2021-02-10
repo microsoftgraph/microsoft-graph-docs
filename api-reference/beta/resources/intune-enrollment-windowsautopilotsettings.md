@@ -22,7 +22,7 @@ The windowsAutopilotSettings resource represents a Windows Autopilot Account to 
 |:---|:---|:---|
 |[Get windowsAutopilotSettings](../api/intune-enrollment-windowsautopilotsettings-get.md)|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|Read properties and relationships of the [windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md) object.|
 |[Update windowsAutopilotSettings](../api/intune-enrollment-windowsautopilotsettings-update.md)|[windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md)|Update the properties of a [windowsAutopilotSettings](../resources/intune-enrollment-windowsautopilotsettings.md) object.|
-|[sync action](../api/intune-enrollment-windowsautopilotsettings-sync.md)|None|Not yet documented|
+|[sync action](../api/intune-enrollment-windowsautopilotsettings-sync.md)|None|Initiates a sync of all AutoPilot registered devices from Store for Business and other portals. If the sync successful, this action returns a 204 No Content response code. If a sync is already in progress, the action returns a 409 Conflict response code.  If this sync action is called within 10 minutes of the previous sync, the action returns a 429 Too Many Requests response code.|
 
 ## Properties
 |Property|Type|Description|

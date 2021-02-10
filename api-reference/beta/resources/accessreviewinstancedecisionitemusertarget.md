@@ -3,7 +3,7 @@ title: "accessReviewInstanceDecisionItemUserTarget resource type"
 description: "Represents the target of a review as  a user."
 author: "isabelleatmsft"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 

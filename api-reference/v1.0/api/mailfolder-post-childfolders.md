@@ -1,7 +1,7 @@
 ---
 title: "Create MailFolder"
 description: "Use this API to create a new child mailfolder."
-author: "svpsiva"
+author: "abheek-das"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType

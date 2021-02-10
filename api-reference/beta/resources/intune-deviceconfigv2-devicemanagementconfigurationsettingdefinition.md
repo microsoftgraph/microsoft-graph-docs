@@ -39,6 +39,7 @@ Not yet documented
 |rootDefinitionId|String|Root setting definition if the setting is a child setting.|
 |categoryId|String|Specifies the area group under which the setting is configured in a specified configuration service provider (CSP)|
 |settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Setting type, for example, configuration and compliance. Possible values are: `none`, `configuration`.|
+|uxBehavior|[deviceManagementConfigurationControlType](../resources/intune-deviceconfigv2-devicemanagementconfigurationcontroltype.md)|Setting control type representation in the UX. Possible values are: `default`, `dropdown`, `smallTextBox`, `largeTextBox`, `toggle`, `multiheaderGrid`, `contextPane`.|
 |id|String|Identifier for item|
 |description|String|Description of the item|
 |helpText|String|Help text of the item|
@@ -84,6 +85,7 @@ Here is a JSON representation of the resource.
   "rootDefinitionId": "String",
   "categoryId": "String",
   "settingUsage": "String",
+  "uxBehavior": "String",
   "id": "String (identifier)",
   "description": "String",
   "helpText": "String",

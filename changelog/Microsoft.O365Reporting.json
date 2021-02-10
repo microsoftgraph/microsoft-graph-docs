@@ -1,0 +1,78 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "e793c5e3-5c97-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Property",
+          "ChangedApiName": "siteSensitivityLabelId",
+          "ChangeType": "Addition",
+          "Description": "Added the **siteSensitivityLabelId** property to the [sharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) resource.",
+          "Target": "sharePointSiteUsageDetail"
+        },
+        {
+          "Id": "e79628b9-5c97-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Property",
+          "ChangedApiName": "externalSharing",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalSharing** property to the [sharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) resource.",
+          "Target": "sharePointSiteUsageDetail"
+        },
+        {
+          "Id": "e7988a6d-5c97-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Property",
+          "ChangedApiName": "unmanagedDevicePolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the **unmanagedDevicePolicy** property to the [sharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) resource.",
+          "Target": "sharePointSiteUsageDetail"
+        },
+        {
+          "Id": "e79aecbf-5c97-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Property",
+          "ChangedApiName": "geolocation",
+          "ChangeType": "Addition",
+          "Description": "Added the **geolocation** property to the [sharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) resource.",
+          "Target": "sharePointSiteUsageDetail"
+        },
+        {
+          "Id": "e79d5001-5c97-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Property",
+          "ChangedApiName": "anonymousLinkCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **anonymousLinkCount** property to the [sharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) resource.",
+          "Target": "sharePointSiteUsageDetail"
+        },
+        {
+          "Id": "e79fb1a8-5c97-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Property",
+          "ChangedApiName": "companyLinkCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **companyLinkCount** property to the [sharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) resource.",
+          "Target": "sharePointSiteUsageDetail"
+        },
+        {
+          "Id": "e7a2132c-5c97-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Property",
+          "ChangedApiName": "secureLinkForGuestCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **secureLinkForGuestCount** property to the [sharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) resource.",
+          "Target": "sharePointSiteUsageDetail"
+        },
+        {
+          "Id": "e7a48071-5c97-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Property",
+          "ChangedApiName": "secureLinkForMemberCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **secureLinkForMemberCount** property to the [sharePointSiteUsageDetail](https://docs.microsoft.com/en-us/graph/api/resources/sharePointSiteUsageDetail?view=graph-rest-beta) resource.",
+          "Target": "sharePointSiteUsageDetail"
+        }
+      ],
+      "Id": "e7916352-5c97-11eb-8de9-f7f8b8b7f046",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-02-04T09:55:05.981Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Microsoft 365 usage reports"
+    }
+  ]
+}

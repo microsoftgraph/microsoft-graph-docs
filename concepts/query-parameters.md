@@ -50,7 +50,7 @@ The following OData 4.0 capabilities are URL segments, not query parameters.
 
 | Name                     | Description | Example 
 |:-------------------------|:------------|:---------|
-| [$ref](/graph/api/group-post-members?view=graph-rest-1.0&tabs=http) | Updates entities membership to a collection. | `POST /groups/{id}/members/$ref` |
+| [$ref](/graph/api/group-post-members) | Updates entities membership to a collection. | `POST /groups/{id}/members/$ref` |
 | [$value](/graph/api/profilephoto-get) | Retrieves or updates the binary value of an item. | `GET /me/photo/$value` |
 
 ## Encoding query parameters
@@ -90,13 +90,13 @@ GET  https://graph.microsoft.com/v1.0/me/contacts?$count=true
 [Try in Graph Explorer](https://developer.microsoft.com/graph/graph-explorer?request=me/contacts?$count=true&method=GET&version=v1.0)
 
 
-The `$count` query parameter is supported for these collections of resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta):
-- [application](/graph/api/resources/application?view=graph-rest-beta)
-- [orgContact](/graph/api/resources/orgcontact?view=graph-rest-beta)
-- [device](/graph/api/resources/device?view=graph-rest-beta)
-- [group](/graph/api/resources/group?view=graph-rest-beta)
-- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta)
-- [users](/graph/api/resources/user?view=graph-rest-beta).
+The `$count` query parameter is supported for these collections of resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta&preserve-view=true):
+- [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true)
+- [orgContact](/graph/api/resources/orgcontact?view=graph-rest-beta&preserve-view=true)
+- [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true)
+- [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true)
+- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true)
+- [users](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true).
 
 ## expand parameter
 
@@ -122,7 +122,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root?$expand=children($select=id,n
 
 > **Note:** Not all relationships and resources support the `$expand` query parameter. For example, you can expand the **directReports**, **manager**, and **memberOf** relationships on a user, but you cannot expand its **events**, **messages**, or **photo** relationships. Not all resources or relationships support using `$select` on expanded items. 
 > 
-> With Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0), like [user](/graph/api/resources/user?view=graph-rest-1.0) and [group](/graph/api/resources/group?view=graph-rest-1.0), `$expand` is only supported for `beta` and  typically returns a maximum of 20 items for the expanded relationship.
+> With Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject), like [user](/graph/api/resources/user) and [group](/graph/api/resources/group), `$expand` is only supported for `beta` and  typically returns a maximum of 20 items for the expanded relationship.
 
 ## filter parameter
 
@@ -212,7 +212,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/Inbox/messages?$orderby=from
 [Try in Graph Explorer](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$orderby=from/emailAddress/name%20desc,subject&method=GET&version=v1.0)
 
 > **Note:** When you specify $filter the server will infer a sort order for the results. If you use both `$orderby` and `$filter` to get messages, because the server always infers 
-a sort order for the results of a `$filter`, you must [specify properties in certain ways](/graph/api/user-list-messages?view=graph-rest-1.0#using-filter-and-orderby-in-the-same-query).
+a sort order for the results of a `$filter`, you must [specify properties in certain ways](/graph/api/user-list-messages#using-filter-and-orderby-in-the-same-query).
 
 
 The following example shows a query filtered by the **subject** and **importance** properties, and then sorted by the **subject**, **importance**, and 
@@ -224,21 +224,21 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' an
 
 [Try in Graph Explorer](https://developer.microsoft.com/graph/graph-explorer?request=me/messages?$filter=subject%20eq%20%27welcome%27%20and%20importance%20eq%20%27normal%27%20&$orderby=subject,importance,receivedDateTime%20desc&method=GET&version=v1.0)
 
-> **Note:** Combining `$orderby` and `$filter` query parameters is supported on the beta endpoint for the following AD resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta):
+> **Note:** Combining `$orderby` and `$filter` query parameters is supported on the beta endpoint for the following AD resources and their relationships that derive from [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-beta&preserve-view=true):
 >
->- [application](/graph/api/resources/application?view=graph-rest-beta)
->- [orgContact](/graph/api/resources/orgcontact?view=graph-rest-beta)
->- [device](/graph/api/resources/device?view=graph-rest-beta)
->- [group](/graph/api/resources/group?view=graph-rest-beta)
->- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta)
->- [user](/graph/api/resources/user?view=graph-rest-beta)
+>- [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true)
+>- [orgContact](/graph/api/resources/orgcontact?view=graph-rest-beta&preserve-view=true)
+>- [device](/graph/api/resources/device?view=graph-rest-beta&preserve-view=true)
+>- [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true)
+>- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true)
+>- [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true)
 >
 > To use `$orderby` and `$filter` together, you need to:
 >
 > - Add `$count=true` to the query parameters
 > - Add `ConsistencyLevel: eventual` request header
 >
-> See [optional user query parameters](/graph/api/user-list?view=graph-rest-beta&tabs=http#optional-query-parameters) for more information.
+> See [optional user query parameters](/graph/api/user-list?view=graph-rest-beta&preserve-view=true#optional-query-parameters) for more information.
 
 ## search parameter
 
@@ -292,7 +292,7 @@ For more information about searchable email properties, KQL syntax, supported op
 
 You can use the Microsoft Graph People API to retrieve the people who are most relevant to a user. Relevance is determined by the user’s communication and collaboration patterns and business relationships. The People API supports the `$search` query parameter. A `$search` request returns up to 250 results.
 
-Searches on people occur on both the **displayName** and **emailAddress** properties of the [person](/graph/api/resources/person?view=graph-rest-1.0) resource.
+Searches on people occur on both the **displayName** and **emailAddress** properties of the [person](/graph/api/resources/person) resource.
 
 The following request does a search for a person named "Irene McGowen" in the **displayName** and **emailAddress** properties in each person in the **people** collection of the signed-in user. Because a person named "Irene McGowan" is relevant to the signed-in user, the information for "Irene McGowan" is returned.
 
@@ -409,7 +409,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=from,subject
 
 > **Important:** In general, we recommend that you use `$select` to limit the properties returned by a query to those needed by your app. This is especially true of queries that might potentially return a large result set. Limiting the properties returned in each row will reduce network load and help improve your app's performance.
 >
-> In `v1.0`, some Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject?view=graph-rest-1.0), like [user](/graph/api/resources/user?view=graph-rest-1.0) and [group](/graph/api/resources/group?view=graph-rest-1.0), return a limited, default subset of properties on reads. For these resources, you must use `$select` to return properties outside of the default set.  
+> In `v1.0`, some Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject), like [user](/graph/api/resources/user) and [group](/graph/api/resources/group), return a limited, default subset of properties on reads. For these resources, you must use `$select` to return properties outside of the default set.  
 
 ## skip parameter
 
@@ -435,9 +435,9 @@ Use the `$top` query parameter to specify the page size of the result set.
 
 If more items remain in the result set, the response body will contain an `@odata.nextLink` parameter. This parameter contains a URL that you can use to get the next page of results. To learn more, see [Paging](./paging.md). 
 
-$top accepts a minimum value of 1 and a maximum value of 999 (inclusive).  
+The minimum value of $top is 1 and the maximum depends on the corresponding API.  
 
-For example, the following request returns the first five messages in the user's mailbox:
+For example, the following [list messages](/graph/api/user-list-messages) request returns the first five messages in the user's mailbox:
 
 ```http
 GET https://graph.microsoft.com/v1.0/me/messages?$top=5

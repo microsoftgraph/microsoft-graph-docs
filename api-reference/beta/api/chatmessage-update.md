@@ -27,8 +27,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /teams/(team-id)/channels/{channel-id}/chatMessages/{message-id}
-PATCH /users/(user-id)/chats/{chatThread-id}/chatMessages/{message-id}
+PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}
+PATCH /chats/{chatThread-id}/messages/{message-id}
 ```
 
 ## Request headers

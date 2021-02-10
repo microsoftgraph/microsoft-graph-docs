@@ -4,7 +4,7 @@ description: "Create a new synchronization template for a given application."
 localization_priority: Normal
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # Create synchronizationTemplate

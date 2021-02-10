@@ -3,7 +3,7 @@ title: "servicePrincipal: addKey"
 description: "Add a key credential to a servicePrincipal."
 localization_priority: Normal
 author: "sureshja"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 

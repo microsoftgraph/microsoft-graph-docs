@@ -4,7 +4,7 @@ description: "Start an existing synchronization job. If the job is in a paused s
 localization_priority: Normal
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # Start synchronizationJob

@@ -3,7 +3,7 @@ title: "Delete application"
 description: "Delete an application object."
 author: "sureshja"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: apiPageType
 ---
 

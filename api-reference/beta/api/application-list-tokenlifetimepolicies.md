@@ -3,7 +3,7 @@ title: "List assigned tokenLifetimePolicies"
 description: "List tokenLifetimePolicies that are assigned to an application or servicePrincipal."
 localization_priority: Normal
 author: "sureshja"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
@@ -122,5 +122,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

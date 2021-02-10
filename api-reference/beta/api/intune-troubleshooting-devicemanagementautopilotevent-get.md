@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1475
+Content-Length: 1669
 
 {
   "value": {
@@ -80,7 +80,10 @@ Content-Length: 1475
     "windowsAutopilotDeploymentProfileDisplayName": "Windows Autopilot Deployment Profile Display Name value",
     "enrollmentState": "enrolled",
     "windows10EnrollmentCompletionPageConfigurationDisplayName": "Windows10Enrollment Completion Page Configuration Display Name value",
+    "windows10EnrollmentCompletionPageConfigurationId": "Windows10Enrollment Completion Page Configuration Id value",
     "deploymentState": "success",
+    "deviceSetupStatus": "success",
+    "accountSetupStatus": "success",
     "osVersion": "Os Version value",
     "deploymentDuration": "PT3M21.5549443S",
     "deploymentTotalDuration": "PT1M43.5284261S",

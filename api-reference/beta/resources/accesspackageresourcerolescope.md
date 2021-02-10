@@ -49,7 +49,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.accessPackageResourceRoleScope",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

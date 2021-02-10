@@ -1,7 +1,7 @@
 ---
 title: "message: createReply"
 description: "Create a draft of a reply message to include a comment or update any message properties "
-author: "svpsiva"
+author: "abheek-das"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType

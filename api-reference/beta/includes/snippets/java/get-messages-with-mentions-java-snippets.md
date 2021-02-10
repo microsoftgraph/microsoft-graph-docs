@@ -8,7 +8,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 IMessageCollectionPage messages = graphClient.me().messages()
 	.buildRequest()
-	.filter("MentionsPreview/IsMentioned eq true,")
+	.filter("MentionsPreview/IsMentioned eq true")
 	.select("subject,sender,receivedDateTime,mentionsPreview")
 	.get();
 

@@ -4,7 +4,7 @@ description: "List all the functions currently supported in the attributeMapping
 localization_priority: Normal
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # synchronizationSchema: functions

@@ -70,6 +70,7 @@ The following table shows the properties that are required when you create the a
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block. Valid values 0 to 24|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Number of sign in failures allowed before factory reset. Valid values 1 to 16|
 |passwordRequiredType|[androidWorkProfileRequiredPasswordType](../resources/intune-deviceconfig-androidworkprofilerequiredpasswordtype.md)|Type of password that is required. Possible values are: `deviceDefault`, `lowSecurityBiometric`, `required`, `atLeastNumeric`, `numericComplex`, `atLeastAlphabetic`, `atLeastAlphanumeric`, `alphanumericWithSymbols`.|
+|workProfileAllowAppInstallsFromUnknownSources|Boolean|Indicates whether to allow installation of apps from unknown sources.|
 |workProfileDataSharingType|[androidWorkProfileCrossProfileDataSharingType](../resources/intune-deviceconfig-androidworkprofilecrossprofiledatasharingtype.md)|Type of data sharing that is allowed. Possible values are: `deviceDefault`, `preventAny`, `allowPersonalToWork`, `noRestrictions`.|
 |workProfileBlockNotificationsWhileDeviceLocked|Boolean|Indicates whether or not to block notifications while device locked.|
 |workProfileBlockAddingAccounts|Boolean|Block users from adding/removing accounts in work profile.|
@@ -115,7 +116,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 3083
+Content-length: 3141
 
 {
   "@odata.type": "#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration",
@@ -157,6 +158,7 @@ Content-length: 3083
   "passwordPreviousPasswordBlockCount": 2,
   "passwordSignInFailureCountBeforeFactoryReset": 12,
   "passwordRequiredType": "lowSecurityBiometric",
+  "workProfileAllowAppInstallsFromUnknownSources": true,
   "workProfileDataSharingType": "preventAny",
   "workProfileBlockNotificationsWhileDeviceLocked": true,
   "workProfileBlockAddingAccounts": true,
@@ -197,7 +199,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 3255
+Content-Length: 3313
 
 {
   "@odata.type": "#microsoft.graph.androidWorkProfileGeneralDeviceConfiguration",
@@ -242,6 +244,7 @@ Content-Length: 3255
   "passwordPreviousPasswordBlockCount": 2,
   "passwordSignInFailureCountBeforeFactoryReset": 12,
   "passwordRequiredType": "lowSecurityBiometric",
+  "workProfileAllowAppInstallsFromUnknownSources": true,
   "workProfileDataSharingType": "preventAny",
   "workProfileBlockNotificationsWhileDeviceLocked": true,
   "workProfileBlockAddingAccounts": true,

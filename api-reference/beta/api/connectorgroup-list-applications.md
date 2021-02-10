@@ -3,7 +3,7 @@ title: "List applications"
 description: "Retrieve a list of application objects associated with the connectorGroup."
 localization_priority: Normal
 author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
@@ -151,3 +151,4 @@ Content-length: 420
   "suppressions": []
 }
 -->
+

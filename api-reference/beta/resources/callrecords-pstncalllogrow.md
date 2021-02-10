@@ -52,7 +52,6 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "ignored",
   "@odata.type": "microsoft.graph.callRecords.pstnCallLogRow",
-  "baseType": "",
   "keyProperty": "id"
 }
 -->

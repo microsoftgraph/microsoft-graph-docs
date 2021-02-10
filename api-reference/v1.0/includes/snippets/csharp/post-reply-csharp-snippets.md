@@ -57,7 +57,7 @@ var post = new Post
 	},
 	Attachments = new PostAttachmentsCollectionPage()
 	{
-		new Attachment
+		new FileAttachment
 		{
 			LastModifiedDateTime = DateTimeOffset.Parse("datetime-value"),
 			Name = "name-value",

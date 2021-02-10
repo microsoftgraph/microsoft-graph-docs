@@ -28,6 +28,7 @@ Operating System restart category
 |shutdownWithoutUpdate|5|Shutdown without update|
 |longPowerButtonPress|6|Long power button press|
 |bootError|7|Boot error|
+|update|8|Update|
 
 
 

@@ -2,7 +2,7 @@
 title: "message: forward"
 description: "Forward a message, add a comment or modify any updateable properties  "
 localization_priority: Normal
-author: "svpsiva"
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

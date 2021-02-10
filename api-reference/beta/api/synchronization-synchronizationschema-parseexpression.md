@@ -4,7 +4,7 @@ description: "(../resources/synchronization_attributemappingsource.md) object. "
 localization_priority: Normal
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # synchronizationSchema: parseExpression

@@ -121,7 +121,7 @@ First, install `mgt-react`:
 npm install @microsoft/mgt-react
 ```
 
-Locate the `src/components/Tab.js` file and import the components you want to use from the `mgt-react` library. For example to add the `Login` component use:
+Locate the `src/components/Tab.js` file and import the components you want to use from the `mgt-react` library. For example, to add the `Login` component use:
 
 ```js
 import { Login } from "@microsoft/mgt-react"

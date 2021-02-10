@@ -4,7 +4,7 @@ description: "Automate the provisioning of identities from HR systems, Active Di
 localization_priority: Normal
 doc_type: conceptualPageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # Azure AD synchronization API overview

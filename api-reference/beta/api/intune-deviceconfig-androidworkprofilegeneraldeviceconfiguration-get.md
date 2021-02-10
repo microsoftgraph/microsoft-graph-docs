@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3422
+Content-Length: 3482
 
 {
   "value": {
@@ -111,6 +111,7 @@ Content-Length: 3422
     "passwordPreviousPasswordBlockCount": 2,
     "passwordSignInFailureCountBeforeFactoryReset": 12,
     "passwordRequiredType": "lowSecurityBiometric",
+    "workProfileAllowAppInstallsFromUnknownSources": true,
     "workProfileDataSharingType": "preventAny",
     "workProfileBlockNotificationsWhileDeviceLocked": true,
     "workProfileBlockAddingAccounts": true,

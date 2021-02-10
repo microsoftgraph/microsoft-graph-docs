@@ -6,11 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var analytics = await graphClient.Me.Analytics
+var settings = await graphClient.Settings
 	.Request()
-	.Select("Settings")
 	.GetAsync();
-
-var settings = analytics.Settings;
 
 ```

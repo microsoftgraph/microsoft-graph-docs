@@ -3,7 +3,7 @@ title: "Update connectorGroups"
 description: "Update the properties of connectorgroup object."
 localization_priority: Normal
 author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
@@ -118,5 +118,6 @@ Content-length: 119
   "suppressions": []
 }
 -->
+
 
 

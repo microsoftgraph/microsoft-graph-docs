@@ -3,7 +3,7 @@ title: "servicePrincipal: addPassword"
 description: "Add a strong password to a servicePrincipal."
 localization_priority: Normal
 author: "sureshja"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 

@@ -46,7 +46,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.b2cAuthenticationMethodsPolicy",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

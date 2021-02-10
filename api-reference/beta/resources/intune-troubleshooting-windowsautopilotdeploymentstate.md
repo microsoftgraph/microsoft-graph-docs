@@ -25,6 +25,8 @@ Not yet documented
 |inProgress|2|Not yet documented|
 |failure|3|Not yet documented|
 |successWithTimeout|4|Not yet documented|
+|notAttempted|5|Not yet documented|
+|disabled|6|Not yet documented|
 
 
 

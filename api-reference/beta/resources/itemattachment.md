@@ -4,7 +4,7 @@ description: "A contact, event, or message that's attached to another event,"
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "outlook"
-author: "svpsiva"
+author: "abheek-das"
 ---
 
 # itemAttachment resource type

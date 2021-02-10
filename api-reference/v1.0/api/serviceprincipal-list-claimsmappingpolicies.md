@@ -3,7 +3,7 @@ title: "List assigned claimsMappingPolicies"
 description: "List claimsMappingPolicies that are assigned to a service principal."
 localization_priority: Normal
 author: "paulgarn"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 

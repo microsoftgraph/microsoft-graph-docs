@@ -3,7 +3,7 @@ title: "auditActivityInitiator resource type"
 description: "Identifies the resource object that initiates the activity. The initiator can be a user, an app, or a system (which is considered as an app)."
 localization_priority: Normal
 author: "dhanyahk"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 

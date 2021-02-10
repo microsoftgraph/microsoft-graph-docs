@@ -3,7 +3,7 @@ title: "appRole resource type"
 description: "Represents an application role."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 author: "psignoret"
 ---
 

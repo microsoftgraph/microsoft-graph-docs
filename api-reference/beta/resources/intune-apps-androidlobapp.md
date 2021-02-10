@@ -130,7 +130,9 @@ Here is a JSON representation of the resource.
     "v7_1": true,
     "v8_0": true,
     "v8_1": true,
-    "v9_0": true
+    "v9_0": true,
+    "v10_0": true,
+    "v11_0": true
   },
   "versionName": "String",
   "versionCode": "String",

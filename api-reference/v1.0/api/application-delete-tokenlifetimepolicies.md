@@ -3,7 +3,7 @@ title: "Remove tokenLifetimePolicy"
 description: "Remove a tokenLifetimePolicy from an application."
 localization_priority: Normal
 author: "sureshja"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 

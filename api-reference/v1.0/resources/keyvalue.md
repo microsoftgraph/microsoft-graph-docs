@@ -3,7 +3,7 @@ title: "keyValue resource type"
 description: "Standard key-value pair resource type."
 localization_priority: Normal
 author: "dougeby"
-ms.prod: ""
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 

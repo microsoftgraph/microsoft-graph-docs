@@ -3,7 +3,7 @@ title: "credentialUsageSummary resource type"
 description: "Represents the current state of how many users in your organization are using self-service password reset capabilities."
 localization_priority: Normal
 author: "besiler"
-ms.prod: "reports"
+ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"
 ---
 
@@ -45,7 +45,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.credentialUsageSummary",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

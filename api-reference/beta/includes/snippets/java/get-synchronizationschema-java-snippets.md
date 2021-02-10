@@ -6,8 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-SynchronizationSchema synchronizationSchema = graphClient.servicePrincipals("{id}").synchronization().jobs("{jobId}").schema()
-	.buildRequest()
+LinkedList<Option> requestOptions = new LinkedList<Option>();
+requestOptions.add(new HeaderOption("Authorization", "Bearer {Token}"));
+
+SynchronizationSchema synchronizationSchema = graphClient.servicePrincipals("{servicePrincipalId}").synchronization().jobs("{jobId}").schema()
+	.buildRequest( requestOptions )
 	.get();
 
 ```

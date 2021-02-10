@@ -258,3 +258,27 @@ Microsoft Teams users can customize the notifications they see in their feed, as
 Users can click **Edit** next to an app and customize the notifications, as shown in the following example. The `description` field in the Teams app manifest is displayed.
 
 ![Screenshot showing notifications customized to Banner and feed for a Teams app](images/teams-activityfeednotifications/applevelnotificationsettings.png)
+
+## FAQs
+
+### Who needs to install the Teams app?
+
+The target user must have the Teams app that is sending notifications installed.
+
+### Can a user send notifications to themselves?
+
+No, a user cannot send notifications to themselves. For this scenario, use application permissions.
+
+### Can a Teams app control how the notifications are shown to the user?
+
+No, only users are allowed to change notification settings.
+
+### I installed my app, why don't I see notification settings under the user account?
+
+The settings will appear after the first notification is sent by the Teams app. This reduces the number of settings that users see.
+
+### I started getting a 409 (conflict) error, how do I resolve it?
+
+`Conflict` errors primarily occur when multiple Teams apps installed in the same scope (team, chat, user, and so on) have the same Azure AD appId in the `webApplicationInfo` section of the manifest. When this happens, you will get an error such as `Found multiple applications with the same Azure AD App ID 'Your AzureAD AppId'.`. Make sure that you use unique Azure AD apps for unique Teams apps. Note that you can have the same Teams app installed in multiple scopes (team + user for example).
+
+

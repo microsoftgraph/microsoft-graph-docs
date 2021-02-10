@@ -2,7 +2,7 @@
 title: "message: reply"
 description: "Reply to the sender of a message, add a comment or modify any updateable properties all in one **reply** call. "
 localization_priority: Normal
-author: "svpsiva"
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---

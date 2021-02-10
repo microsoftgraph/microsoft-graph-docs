@@ -4,7 +4,7 @@ description: "List existing jobs for a given application instance (service princ
 localization_priority: Normal
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # List synchronization jobs

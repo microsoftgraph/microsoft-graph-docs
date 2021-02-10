@@ -47,8 +47,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.profileCardProperty",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.profileCardProperty"
 }-->
 
 ```json

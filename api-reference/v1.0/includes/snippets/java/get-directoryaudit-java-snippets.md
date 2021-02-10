@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IDirectoryAuditCollectionPage directoryAudits = graphClient.auditLogs().directoryAudits()
+DirectoryAudit directoryAudit = graphClient.auditLogs().directoryAudits("{id}")
 	.buildRequest()
 	.get();
 

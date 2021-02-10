@@ -1,6 +1,22 @@
 {
     "changelog": [
         {
+            "ChangeList": [{
+                "Id": "db18fa68-57bd-4326-84cb-ac217c065b91",
+                "ApiChange": "Property",
+                "ChangedApiName": "inUse",
+                "ChangeType": "Deletion",
+                "Description": "Changed the **inUse** property to be returned only on `select` and not by default.",
+                "Target": "virtualEndpoint"
+            }],
+            "Id": "db18fa68-57bd-4326-84cb-ac217c065b91",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-02-08T15:13:07.177Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"   
+        },
+        {
             "ChangeList": [
                 {
                     "Id": "39c5bed3-40f5-11eb-ae35-ed470c456b69",

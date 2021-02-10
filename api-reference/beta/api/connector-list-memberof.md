@@ -3,7 +3,7 @@ title: "List memberOf"
 description: "Retrieve the connectorgroup the connector is a member of."
 localization_priority: Normal
 author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
@@ -112,3 +112,4 @@ Content-length: 164
   "suppressions": []
 }
 -->
+

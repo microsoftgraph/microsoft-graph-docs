@@ -45,7 +45,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.passwordAuthenticationMethod",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

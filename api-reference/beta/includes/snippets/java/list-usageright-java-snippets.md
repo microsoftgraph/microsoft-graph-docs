@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-Content usageRights = graphClient.users("{userId}").usageRights()
+IUsageRightCollectionPage usageRights = graphClient.devices("{objectId}").usageRights()
 	.buildRequest()
 	.filter("state in ('active', 'suspended') and serviceIdentifier in ('ABCD')")
 	.get();

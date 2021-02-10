@@ -2,7 +2,7 @@
 title: "attachment resource type"
 description: "You can add related content to an event,"
 localization_priority: Priority
-author: "svpsiva"
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---

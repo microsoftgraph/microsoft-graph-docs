@@ -4,7 +4,7 @@ description: "Update the synchronization schema for a given job or template. Thi
 localization_priority: Normal
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # Update synchronizationSchema

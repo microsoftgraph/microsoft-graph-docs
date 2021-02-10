@@ -4,7 +4,7 @@ description: "Create a new serviceprincipal object."
 author: "sureshja"
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # Create servicePrincipal
@@ -156,5 +156,6 @@ Content-type: application/json
   ]
 }
 -->
+
 
 

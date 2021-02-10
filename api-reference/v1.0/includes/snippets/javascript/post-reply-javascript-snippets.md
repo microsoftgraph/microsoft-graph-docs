@@ -51,6 +51,7 @@ const reply = {
     },
     attachments: [
       {
+        @odata.type: "#microsoft.graph.fileAttachment",
         lastModifiedDateTime: "datetime-value",
         name: "name-value",
         contentType: "contentType-value",

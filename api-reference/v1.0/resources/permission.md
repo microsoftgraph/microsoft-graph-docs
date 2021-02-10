@@ -80,7 +80,7 @@ Permissions with an [**invitation**][SharingInvitation] facet represent permissi
 
 ### Roles property values
 
-| Role              | Details                                                                        |
+| Value              | Description                                                                        |
 |:------------------|:-------------------------------------------------------------------------------|
 | read            | Provides the ability to read the metadata and contents of the item.            |
 | write           | Provides the ability to read and modify the metadata and contents of the item. |

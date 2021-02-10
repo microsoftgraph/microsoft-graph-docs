@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 let res = await client.api('/deviceManagement/virtualEndpoint/onPremisesConnections/{id}')
 	.version('beta')
-	.select('id,displayName,subscriptionId,subscriptionName,adDomainName,adDomainUsername,organizationalUnit,virtualNetworkId,subnetId,healthCheckStatus,healthCheckStatusDetails,inUse')
+	.select('id,displayName,healthCheckStatus,healthCheckStatusDetails,inUse')
 	.get();
 
 ```

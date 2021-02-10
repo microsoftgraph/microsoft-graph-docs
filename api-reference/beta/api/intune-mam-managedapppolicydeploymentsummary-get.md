@@ -66,7 +66,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 688
+Content-Length: 689
 
 {
   "value": {
@@ -78,8 +78,8 @@ Content-Length: 688
       {
         "@odata.type": "microsoft.graph.managedAppPolicyDeploymentSummaryPerApp",
         "mobileAppIdentifier": {
-          "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
-          "packageId": "Package Id value"
+          "@odata.type": "microsoft.graph.windowsAppIdentifier",
+          "windowsAppId": "Windows App Id value"
         },
         "configurationAppliedUserCount": 13
       }

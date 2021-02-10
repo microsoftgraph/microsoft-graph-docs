@@ -3,7 +3,7 @@ title: "servicePrincipal: removePassword"
 description: "Remove a password from a servicePrincipal"
 localization_priority: Normal
 author: "sureshja"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 

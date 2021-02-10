@@ -27,9 +27,9 @@ You can use several attributes to change the behavior of the component. The only
 | scopes | scopes | Optional array of strings if using the property or a comma delimited scope if using the attribute. The component will use these scopes (with a supported provider) to ensure that the user has consented to the right permission. |
 | version | version | Optional API version to use when making the GET request. Default is `v1.0`.  |
 | max-pages | maxPages | Optional number of pages (for resources that support paging). Default is 3. Setting this value to 0 will get all pages.  |
-| polling-rate | pollingRate | Optional number of miliseconds. When set, the component will poll the request URI for updates in the defined interval. If using a delta query, polling will always query the delta API. The template will only refresh when the data changes. |
+| polling-rate | pollingRate | Optional number of milliseconds. When set, the component will poll the request URI for updates in the defined interval. If using a delta query, polling will always query the delta API. The template will only refresh when the data changes. |
 | cache-enabled | cacheEnabled | Optional Boolean. When set, it indicates that the response from the resource will be cached. Overriden if `refresh()` is called or if `pollingRate` is in use. Default is `false`. |
-| cache-invalidation-period | cacheInvalidationPeriod | Optional number of miliseconds. When set in combination with `cacheEnabled`, the delay before the cache reaches its invalidation period will be modified by this value. Default is `0` and will use the default invalidation period. |
+| cache-invalidation-period | cacheInvalidationPeriod | Optional number of milliseconds. When set in combination with `cacheEnabled`, the delay before the cache reaches its invalidation period will be modified by this value. Default is `0` and will use the default invalidation period. |
 | type | type | Optional type of the expected response. Default is `json`. Supports `json` or `image` (only be supported on endpoints ending with `/photo/value$`). |
 | N/A | response | Read-only response from Microsoft Graph if request was successful.  |
 | N/A |error| Read-only error from Microsoft Graph if request was not successful. |

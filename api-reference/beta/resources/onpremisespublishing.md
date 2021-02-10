@@ -3,7 +3,7 @@ title: "onPremisesPublishing resource type"
 description: "Represents an Application Proxy onPremisesPublishing object."
 localization_priority: Normal
 author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: resourcePageType
 ---
 

@@ -79,7 +79,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 786
+Content-Length: 1045
 
 {
   "value": {
@@ -89,7 +89,9 @@ Content-Length: 786
         "@odata.type": "microsoft.graph.deviceComplianceScriptRule",
         "settingName": "Setting Name value",
         "operator": "and",
+        "deviceComplianceScriptRulOperator": "and",
         "dataType": "boolean",
+        "deviceComplianceScriptRuleDataType": "boolean",
         "operand": "Operand value"
       }
     ],
@@ -97,6 +99,7 @@ Content-Length: 786
       {
         "@odata.type": "microsoft.graph.deviceComplianceScriptError",
         "code": "jsonFileInvalid",
+        "deviceComplianceScriptRulesValidationError": "jsonFileInvalid",
         "message": "Message value"
       }
     ],
@@ -104,6 +107,7 @@ Content-Length: 786
       {
         "@odata.type": "microsoft.graph.deviceComplianceScriptRuleError",
         "code": "jsonFileInvalid",
+        "deviceComplianceScriptRulesValidationError": "jsonFileInvalid",
         "message": "Message value",
         "settingName": "Setting Name value"
       }

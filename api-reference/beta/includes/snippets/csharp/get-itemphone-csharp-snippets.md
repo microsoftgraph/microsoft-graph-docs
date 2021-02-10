@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var phones = await graphClient.Me.Profile.Phones
+var itemPhone = await graphClient.Me.Profile.Phones["{id}"]
 	.Request()
 	.GetAsync();
 

@@ -4,7 +4,7 @@ description: "Temporarily stop synchronization. All the progress, including job 
 localization_priority: Normal
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # synchronizationJob: pause

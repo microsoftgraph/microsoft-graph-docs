@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 405
+Content-Length: 428
 
 {
   "value": [
@@ -71,7 +71,8 @@ Content-Length: 405
       "policyType": "application",
       "complianceStatus": "compliant",
       "trackedOnEnrollmentStatus": true,
-      "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00"
+      "lastReportedDateTime": "2017-01-01T00:00:17.7769392-08:00",
+      "errorCode": 9
     }
   ]
 }

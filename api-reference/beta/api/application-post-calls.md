@@ -1143,7 +1143,6 @@ With tenant admin credentials, call the following cmdlets on the tenant remote P
 PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <UPN> -TelephoneNumber <TelephoneNumber>
 PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
 ```
-> **Note:** If a tenant has Australian PSTN numbers assigned to any application instances, this call might fail. If a tenant is newly created, it might take several days for this feature to be available.
 
 #### Request
 The following example shows the request to make a peer-to-peer call between the bot and a PSTN number. In this example, the media is hosted by the service. The values of authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID must be replaced with actual values to make the example work.
@@ -1289,8 +1288,6 @@ Content-Type: application/json
 > **Note**: This example requires Calls.Initiate.All and Calls.AccessMedia.All permissions.
 
 This call needs application instance with PSTN number assigned, as described in Example 9.
-
-> **Note:** If a tenant has Australian PSTN numbers assigned to any application instances, this call might not work. If a tenant is newly created, it might take several days for this feature to be available.
 
 #### Request
 The following example shows a request to make a peer-to-peer call between the bot and a PSTN number. In this example, the media is hosted locally by the application. Replace the values for authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID to make the example work.

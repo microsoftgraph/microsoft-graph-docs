@@ -3,7 +3,7 @@ title: "conditionalAccessPlatforms resource type"
 description: "Platforms included in and excluded from the policy scope."
 localization_priority: Normal
 author: "videor"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
 

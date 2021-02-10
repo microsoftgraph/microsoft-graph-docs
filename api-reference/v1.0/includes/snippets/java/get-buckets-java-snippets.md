@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IPlannerBucketCollectionPage buckets = graphClient.planner().plans("{plan-id}").buckets()
+IPlannerBucketCollectionPage buckets = graphClient.planner().buckets()
 	.buildRequest()
 	.get();
 

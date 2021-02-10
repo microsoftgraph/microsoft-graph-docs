@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var custodian = new Custodian
+var custodian = new Microsoft.Graph.Ediscovery.Custodian
 {
 	Email = "AdeleV@contoso.com",
 	ApplyHoldToSources = true

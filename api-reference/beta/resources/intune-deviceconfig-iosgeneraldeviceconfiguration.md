@@ -220,6 +220,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |iTunesBlocked|Boolean|Indicates whether or not to block the iTunes app. Requires a supervised device for iOS 13 and later.|
 |sharedDeviceBlockTemporarySessions|Boolean|Indicates whether or not to block temporary sessions on Shared iPads (iOS 13.4 or later).|
 |appClipsBlocked|Boolean|Prevents a user from adding any App Clips and removes any existing App Clips on the device.|
+|applePersonalizedAdsBlocked|Boolean|Limits Apple personalized advertising when true. Available in iOS 14 and later.|
 |kioskModeAppType|[iosKioskModeAppType](../resources/intune-deviceconfig-ioskioskmodeapptype.md)|Type of app to run in kiosk mode. Possible values are: `notConfigured`, `appStoreApp`, `managedApp`, `builtInApp`.|
 
 ## Relationships
@@ -533,6 +534,7 @@ Here is a JSON representation of the resource.
   "iTunesBlocked": true,
   "sharedDeviceBlockTemporarySessions": true,
   "appClipsBlocked": true,
+  "applePersonalizedAdsBlocked": true,
   "kioskModeAppType": "String"
 }
 ```

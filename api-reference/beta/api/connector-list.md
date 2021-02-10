@@ -3,7 +3,7 @@ title: "List connectors"
 description: "Retrieve a list of connector objects."
 localization_priority: Normal
 author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
@@ -112,3 +112,4 @@ Content-length: 169
   "suppressions": []
 }
 -->
+

@@ -1,7 +1,7 @@
 ---
 title: "messageRulePredicates resource type"
 description: "Represents the set of conditions and exceptions that are available for a rule."
-author: "svpsiva"
+author: "abheek-das"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: resourcePageType

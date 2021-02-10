@@ -1,7 +1,7 @@
 ---
 title: "message: copy"
 description: "Copy a message to a folder."
-author: "svpsiva"
+author: "abheek-das"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType

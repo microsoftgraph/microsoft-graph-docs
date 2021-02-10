@@ -3,7 +3,7 @@ title: "accessReviewRecurrenceSettings resource type"
 description: "Specifies that the access review recurs at regular intervals."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 

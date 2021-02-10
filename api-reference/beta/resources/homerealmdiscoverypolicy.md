@@ -80,7 +80,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.homeRealmDiscoveryPolicy",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

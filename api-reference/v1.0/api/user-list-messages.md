@@ -2,7 +2,7 @@
 title: "List messages"
 description: "Get the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders)."
 localization_priority: Priority
-author: "svpsiva"
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -13,7 +13,11 @@ Namespace: microsoft.graph
 
 Get the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders).
 
-Depending on the page size and mailbox data, getting messages from a mailbox can incur multiple requests. The default page size is 10 messages. To get the next page of messages, simply apply the entire URL returned in `@odata.nextLink` to the next get-messages request. This URL includes any query parameters you may have specified in the initial request. 
+Depending on the page size and mailbox data, getting messages from a mailbox can incur multiple requests. The default page size is 10 messages. Use `$top` to customize the page size, within the range of 1 and 1000.
+
+To improve the operation response time, use `$select` to specify the exact properties you need; see [example 1](#example-1-list-all-messages) below. Fine-tune the values for `$select` and `$top`, especially when you must use a larger page size, as returning a page with hundreds of messages each with a full response payload may trigger the [gateway timeout](/graph/errors#http-status-codes) (HTTP 504).
+
+To get the next page of messages, simply apply the entire URL returned in `@odata.nextLink` to the next get-messages request. This URL includes any query parameters you may have specified in the initial request. 
 
 Do not try to extract the `$skip` value from the `@odata.nextLink` URL to manipulate responses. This API uses the `$skip` value to keep count of all the items it has gone through in the user's mailbox to return a page of message-type items. It's therefore possible that even in the initial response, the `$skip` value is larger than the page size. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
 
@@ -82,8 +86,9 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and collection of [Message](../resources/message.md) objects in the response body.
 
-## Example
-##### Request
+## Examples
+### Example 1: List all messages
+#### Request
 This example gets the default, top 10 messages in the signed-in user's mailbox. It uses `$select` to return a subset of the properties of each message in the response.
 
 # [HTTP](#tab/http)
@@ -112,7 +117,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$select=sender,subject
 
 ---
 
-##### Response
+#### Response
 Here is an example of the response. To get the next page of messages, apply the URL returned in `@odata.nextLink` to a subsequent GET request.
 
 <!-- {

@@ -3,7 +3,7 @@ title: "targetResource resource type"
 description: "Represents target resource types associated with audit activity."
 localization_priority: Normal
 author: "dhanyahk"
-ms.prod: "azure-ad"
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 

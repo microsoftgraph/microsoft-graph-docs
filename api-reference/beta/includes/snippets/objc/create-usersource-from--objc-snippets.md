@@ -11,9 +11,9 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphUserSource *userSource = [[MSGraphUserSource alloc] init];
+MSGraphEdiscoveryUserSource *userSource = [[MSGraphEdiscoveryUserSource alloc] init];
 [userSource setEmail:@"megan@contoso.com"];
-[userSource setIncludedSources: [MSGraphSourceType mailbox]];
+[userSource setIncludedSources: [MSGraphEdiscoverySourceType mailbox]];
 
 NSError *error;
 NSData *userSourceData = [userSource getSerializedDataWithError:&error];

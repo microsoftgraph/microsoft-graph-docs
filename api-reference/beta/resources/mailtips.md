@@ -2,7 +2,7 @@
 title: "mailTips resource type"
 description: "Informative messages about a recipient, that are displayed to users while they are composing a message. For example, an out-of-office message "
 localization_priority: Normal
-author: "svpsiva"
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---

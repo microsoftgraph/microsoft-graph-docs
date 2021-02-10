@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5943
+Content-Length: 6013
 
 {
   "value": {
@@ -152,6 +152,9 @@ Content-Length: 5943
       }
     ],
     "providerType": "appProxy",
+    "associatedDomains": [
+      "Associated Domains value"
+    ],
     "excludedDomains": [
       "Excluded Domains value"
     ],

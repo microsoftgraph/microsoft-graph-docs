@@ -3,7 +3,7 @@ title: "signInStatus resource type"
 description: "Provides the sign-in status (Success or Failure) of the sign-in"
 localization_priority: Normal
 author: "dhanyahk"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 

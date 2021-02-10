@@ -63,13 +63,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 210
+Content-Length: 250
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetricHistory",
     "id": "2b6d6456-6456-2b6d-5664-6d2b56646d2b",
-    "metricDateTime": "2017-01-01T00:00:28.4495993-08:00"
+    "metricDateTime": "2017-01-01T00:00:28.4495993-08:00",
+    "metricType": "Metric Type value"
   }
 }
 ```

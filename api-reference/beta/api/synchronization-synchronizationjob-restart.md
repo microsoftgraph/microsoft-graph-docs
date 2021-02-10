@@ -4,7 +4,7 @@ description: "Restart the synchronization job, forcing it to reprocess all the o
 localization_priority: Normal
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # Restart synchronizationJob

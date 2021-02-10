@@ -48,7 +48,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.callRecords.segment",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

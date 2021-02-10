@@ -8,7 +8,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 IUserCollectionPage users = graphClient.users()
 	.buildRequest()
-	.filter("startswith(displayName,'Eric'),")
+	.filter("startswith(displayName,'Eric')")
 	.select("displayName,signInActivity")
 	.get();
 

@@ -60,7 +60,7 @@ You can populate selected people data by doing one of the following:
      >**Note:** If no user is found for an `id`, no data will be rendered for that `id`.
 
     ```javascript
-    // id = Mirosoft graph User "id"
+    // id = Microsoft graph User "id"
     document.querySelector('mgt-people-picker').selectUsersById(["id","id"])
     ```
 

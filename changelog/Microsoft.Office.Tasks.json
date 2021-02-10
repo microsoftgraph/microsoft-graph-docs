@@ -1,6 +1,88 @@
 {
   "changelog": [
-     {
+    {
+      "ChangeList": [
+        {
+          "Id": "9d024c18-5aa0-11eb-93a5-6e9aaa10c0ef",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "rosterPlans",
+          "ChangeType": "Addition",
+          "Description": "Added the **rosterPlans** relationship to the [plannerUser](https://docs.microsoft.com/en-us/graph/api/resources/plannerUser?view=graph-rest-beta) resource.",
+          "Target": "plannerUser"
+        },
+        {
+          "Id": "9d04ac10-5aa0-11eb-93a5-6e9aaa10c0ef",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "rosters",
+          "ChangeType": "Addition",
+          "Description": "Added the **rosters** relationship to the [planner](https://docs.microsoft.com/en-us/graph/api/resources/planner?view=graph-rest-beta) resource.",
+          "Target": "planner"
+        },
+        {
+          "Id": "9d070d7e-5aa0-11eb-93a5-6e9aaa10c0ef",
+          "ApiChange": "Property",
+          "ChangedApiName": "isCreationContext",
+          "ChangeType": "Addition",
+          "Description": "Added the **isCreationContext** property to the [plannerPlanContext](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanContext?view=graph-rest-beta) resource.",
+          "Target": "plannerPlanContext"
+        },
+        {
+          "Id": "9d096f1c-5aa0-11eb-93a5-6e9aaa10c0ef",
+          "ApiChange": "Property",
+          "ChangedApiName": "customLinkText",
+          "ChangeType": "Addition",
+          "Description": "Added the **customLinkText** property to the [plannerPlanContextDetails](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanContextDetails?view=graph-rest-beta) resource.",
+          "Target": "plannerPlanContextDetails"
+        },
+        {
+          "Id": "9d0bd14e-5aa0-11eb-93a5-6e9aaa10c0ef",
+          "ApiChange": "Property",
+          "ChangedApiName": "displayLinkType",
+          "ChangeType": "Addition",
+          "Description": "Added the **displayLinkType** property to the [plannerPlanContextDetails](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanContextDetails?view=graph-rest-beta) resource.",
+          "Target": "plannerPlanContextDetails"
+        },
+        {
+          "Id": "9d0e338b-5aa0-11eb-93a5-6e9aaa10c0ef",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerRoster",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerRoster](https://docs.microsoft.com/en-us/graph/api/resources/plannerRoster?view=graph-rest-beta) resource type.",
+          "Target": "plannerRoster"
+        },
+        {
+          "Id": "9d109617-5aa0-11eb-93a5-6e9aaa10c0ef",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerRosterMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerRosterMember](https://docs.microsoft.com/en-us/graph/api/resources/plannerRosterMember?view=graph-rest-beta) resource type.",
+          "Target": "plannerRosterMember"
+        },
+        {
+          "Id": "9d12fa1f-5aa0-11eb-93a5-6e9aaa10c0ef",
+          "ApiChange": "Member",
+          "ChangedApiName": "roster",
+          "ChangeType": "Addition",
+          "Description": "Added the `roster` member to the **plannerContainerType** enumeration.",
+          "Target": "plannerContainerType"
+        },
+        {
+          "Id": "9d155be2-5aa0-11eb-93a5-6e9aaa10c0ef",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "plannerPlanContextType",
+          "ChangeType": "Addition",
+          "Description": "Added the **plannerPlanContextType** enumeration type.",
+          "Target": "plannerPlanContextType"
+        }
+      ],
+      "Id": "9cffe61e-5aa0-11eb-93a5-6e9aaa10c0ef",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-02-09T21:52:24.021Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    {
       "ChangeList": [
         {
           "Id": "a4350937-340e-11eb-9836-6aeb5ee7dda6",

@@ -8,7 +8,6 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var message = await graphClient.Me.Messages["AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1iOTVl==="]
 	.Request()
-	.Filter("id eq 'Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')")
 	.Expand("extensions($filter=id%20eq%20'Microsoft.OutlookServices.OpenTypeExtension.Com.Contoso.Referral')")
 	.GetAsync();
 

@@ -55,7 +55,8 @@ The following table shows the properties that are required when you create the m
 |targetPublisher|String|The target mobile app's publisher. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
 |targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|The type of relationship indicating whether the target is a parent or child. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md). Possible values are: `child`, `parent`.|
 |dependencyType|[mobileAppDependencyType](../resources/intune-apps-mobileappdependencytype.md)|The type of dependency relationship between the parent and child apps. Possible values are: `detect`, `autoInstall`.|
-|dependentAppCount|Int32|The total number of dependencies the child app has.|
+|dependentAppCount|Int32|The total number of apps that directly or indirectly depend on the parent app.|
+|dependsOnAppCount|Int32|The total number of apps the child app directly or indirectly depends on.|
 
 
 
@@ -69,7 +70,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/relationships
 Content-type: application/json
-Content-length: 345
+Content-length: 372
 
 {
   "@odata.type": "#microsoft.graph.mobileAppDependency",
@@ -79,7 +80,8 @@ Content-length: 345
   "targetPublisher": "Target Publisher value",
   "targetType": "parent",
   "dependencyType": "autoInstall",
-  "dependentAppCount": 1
+  "dependentAppCount": 1,
+  "dependsOnAppCount": 1
 }
 ```
 
@@ -88,7 +90,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 394
+Content-Length: 421
 
 {
   "@odata.type": "#microsoft.graph.mobileAppDependency",
@@ -99,7 +101,8 @@ Content-Length: 394
   "targetPublisher": "Target Publisher value",
   "targetType": "parent",
   "dependencyType": "autoInstall",
-  "dependentAppCount": 1
+  "dependentAppCount": 1,
+  "dependsOnAppCount": 1
 }
 ```
 

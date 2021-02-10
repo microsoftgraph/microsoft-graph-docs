@@ -440,7 +440,6 @@ With tenant admin credentials, call the following cmdlets on the tenant remote P
 PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <UPN> -TelephoneNumber <TelephoneNumber>
 PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
 ```
-> **Note:** If a tenant has Australian PSTN numbers assigned to any application instances, this call might fail. If a tenant is newly created, it might take several days for this feature to be available.
 
 #### Request
 The following example shows the request.
@@ -613,9 +612,6 @@ Content-Type: application/json
 ### Example 4: Consultative transfer to PSTN number
 
 This call requires an application instance with PSTN number assigned, as described in Example 3.
-
-> **Note:** This call may fail if a tenant has Australian PSTN numbers assigned to any application instances. If a tenant is newly created, it might take several days for this feature to be available.
-
 
 #### Request
 The following example shows the request.

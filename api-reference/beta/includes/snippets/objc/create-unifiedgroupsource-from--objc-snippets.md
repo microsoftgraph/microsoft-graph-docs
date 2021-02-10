@@ -11,8 +11,8 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphUnifiedGroupSource *unifiedGroupSource = [[MSGraphUnifiedGroupSource alloc] init];
-[unifiedGroupSource setIncludedSources: [MSGraphSourceType mailbox]];
+MSGraphEdiscoveryUnifiedGroupSource *unifiedGroupSource = [[MSGraphEdiscoveryUnifiedGroupSource alloc] init];
+[unifiedGroupSource setIncludedSources: [MSGraphEdiscoverySourceType mailbox]];
 
 NSError *error;
 NSData *unifiedGroupSourceData = [unifiedGroupSource getSerializedDataWithError:&error];

@@ -25,6 +25,8 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
+> **Note**: The Teamwork.Migrate.All permission is *only* supported for [migration](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -586,6 +588,8 @@ Content-Length: 0
 #### Request
 
 The following example shows how to create a team for imported messages.
+
+>**Note:** Teams created in migration mode only support the `standard` template.
 
 ```http
 POST https://graph.microsoft.com/beta/teams

@@ -3,7 +3,7 @@ title: "Update application"
 description: "Update the properties of an application object."
 author: "sureshja"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: apiPageType
 ---
 

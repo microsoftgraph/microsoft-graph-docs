@@ -6,9 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var unifiedGroupSource = new UnifiedGroupSource
+var unifiedGroupSource = new Microsoft.Graph.Ediscovery.UnifiedGroupSource
 {
-	IncludedSources = SourceType.Mailbox | SourceType.Site,
+	IncludedSources = Microsoft.Graph.Ediscovery.SourceType.Mailbox | Microsoft.Graph.Ediscovery.SourceType.Site,
 	AdditionalData = new Dictionary<string, object>()
 	{
 		{"group@odata.bind", "/groups/000044f9-47c8-4a87-bccf-291fbf006a54"}

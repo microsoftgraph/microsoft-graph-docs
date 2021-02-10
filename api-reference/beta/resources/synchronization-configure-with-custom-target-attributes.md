@@ -4,7 +4,7 @@ description: "Customize your synchronization schema to include custom attributes
 localization_priority: Normal
 doc_type: conceptualPageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # Configure synchronization with custom target attributes

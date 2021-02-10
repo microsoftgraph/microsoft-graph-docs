@@ -3,7 +3,7 @@ title: "apiAuthenticationConfigurationBase resource type"
 description: "Represents the base type of authentication configuration used for calling an API."
 author: "nickgmicrosoft"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 

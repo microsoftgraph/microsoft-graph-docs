@@ -132,7 +132,9 @@ Here is a JSON representation of the resource.
     "v10_1709": true,
     "v10_1803": true,
     "v10_1809": true,
-    "v10_1903": true
+    "v10_1903": true,
+    "v10_1909": true,
+    "v10_2004": true
   },
   "identityVersion": "String"
 }

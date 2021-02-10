@@ -9,7 +9,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 DirectoryObject directoryObject = new DirectoryObject();
 directoryObject.id = "{id}";
 
-graphClient.devices("{id}").registeredOwners().references()
+graphClient.devices("{id}").registeredUsers().references()
 	.buildRequest()
 	.post(directoryObject);
 

@@ -4,7 +4,7 @@ description: "Defines how the synchronization should be performed for the synchr
 localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # synchronizationRule resource type

@@ -3,7 +3,7 @@ title: "accessPackageAnswer resource type"
 description:  "The complex type for answers to an accessPackageQuestion that are stored on an accessPackageAssignmentRequest."
 author: "markwahl-msft"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 

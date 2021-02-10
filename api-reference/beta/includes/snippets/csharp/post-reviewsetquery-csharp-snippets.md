@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var reviewSetQuery = new ReviewSetQuery
+var reviewSetQuery = new Microsoft.Graph.Ediscovery.ReviewSetQuery
 {
 	DisplayName = "My Query 1",
 	Query = "(subject:\"Quarterly Financials\")"

@@ -21,7 +21,7 @@ var identityUserFlowAttributeAssignment = new IdentityUserFlowAttributeAssignmen
 	}
 };
 
-await graphClient.Identity.B2cUserFlows["B2C_1_Consumer"].UserAttributeAssignments
+await graphClient.Identity.B2xUserFlows["B2X_1_Partner"].UserAttributeAssignments
 	.Request()
 	.AddAsync(identityUserFlowAttributeAssignment);
 

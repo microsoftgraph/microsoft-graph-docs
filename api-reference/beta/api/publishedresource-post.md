@@ -3,7 +3,7 @@ title: "Create publishedResource"
 description: "Create a new **publishedResource** object."
 localization_priority: Normal
 author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
@@ -126,5 +126,6 @@ HTTP/1.1 201 Created
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

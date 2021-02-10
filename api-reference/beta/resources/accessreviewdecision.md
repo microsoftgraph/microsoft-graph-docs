@@ -3,7 +3,7 @@ title: "accessReviewDecision resource type"
 description: "The accessReviewDecision represents an Azure AD access review decision of a particular entity's access."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 

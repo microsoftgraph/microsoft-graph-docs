@@ -54,7 +54,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.educationRubric",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

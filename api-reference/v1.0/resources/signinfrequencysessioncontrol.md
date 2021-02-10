@@ -3,7 +3,7 @@ title: "signInFrequencySessionControl resource type"
 description: "Session control to enforce signin frequency."
 localization_priority: Normal
 author: "videor"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
 

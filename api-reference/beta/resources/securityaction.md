@@ -59,7 +59,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.securityAction",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

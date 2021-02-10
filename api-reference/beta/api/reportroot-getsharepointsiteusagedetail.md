@@ -73,10 +73,18 @@ The CSV file has the following headers for columns:
 - Owner Display Name
 - Is Deleted
 - Last Activity Date
+- Site Sensitivity Label Id
+- External Sharing
+- Unmanaged Device Policy
+- Geo Location
 - File Count
 - Active File Count
 - Page View Count
 - Visited Page Count
+- Anonymous Link Count
+- Company Link Count
+- Secure Link For Guest Count
+- Secure Link For Member Count
 - Storage Used (Byte)
 - Storage Allocated (Byte)
 - Root Web Template
@@ -134,7 +142,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,Site Id,Site URL,Owner Display Name,Is Deleted,Last Activity Date,File Count,Active File Count,Page View Count,Visited Page Count,Storage Used (Byte),Storage Allocated (Byte),Root Web Template,Owner Principal Name,Report Period
+Report Refresh Date,Site Id,Site URL,Owner Display Name,Is Deleted,Last Activity Date,Site Sensitivity Label Id,External Sharing,Unmanaged Device Policy,Geo Location,File Count,Active File Count,Page View Count,Visited Page Count,Anonymous Link Count,Company Link Count,Secure Link For Guest Count,Secure Link For Member Count,Storage Used (Byte),Storage Allocated (Byte),Root Web Template,Owner Principal Name,Report Period
 ```
 
 ### JSON
@@ -184,10 +192,18 @@ Content-Length: 484
       "ownerPrincipalName": "ownerPrincipalName-value", 
       "isDeleted": false, 
       "lastActivityDate": "2017-09-01", 
+      "SiteSensitivityLabelId": "SiteSensitivityLabelId-value",
+      "ExternalSharing": false,
+      "UnmanagedDevicePolicy": "UnmanagedDevicePolicy-value",
+      "GeoLocation": "GeoLocation-value",
       "fileCount": 170, 
       "activeFileCount": 25, 
       "pageViewCount": 7, 
       "visitedPageCount": 3, 
+      "AnonymousLinkCount": 5,
+      "CompanyLinkCount": 8,
+      "SecureLinkForGuestCount": 13,
+      "SecureLinkForMemberCount": 11,
       "storageUsedInBytes": 63442116, 
       "storageAllocatedInBytes": 2748779094400, 
       "rootWebTemplate": "Publishing Site", 

@@ -1,7 +1,7 @@
 ---
 title: "Update mailFolder"
 description: "Update the properties of mailFolder object."
-author: "svpsiva"
+author: "abheek-das"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType

@@ -26,7 +26,7 @@ Represents an Azure Active Directory user object.
 |[Delete user](../api/intune-shared-user-delete.md).|None|Deletes a [user](../resources/intune-shared-user.md).|
 |[Update user](../api/intune-shared-user-update.md) object.|[user](../resources/intune-shared-user.md)|Update the properties of a [user](../resources/intune-shared-user.md) object.|
 |**Device management**|
-|[getLoggedOnManagedDevices function](../api/intune-shared-user-getloggedonmanageddevices.md)|[managedDevice](../resources/intune-devices-manageddevice.md) collection|Not yet documented|
+|[getLoggedOnManagedDevices function](../api/intune-shared-user-getloggedonmanageddevices.md)|[managedDevice](../resources/intune-shared-manageddevice.md) collection|Not yet documented|
 |[removeAllDevicesFromManagement action](../api/intune-shared-user-removealldevicesfrommanagement.md)|None|Retire all devices from management for this user|
 |**Mobile application management (MAM)**|
 |[getManagedAppDiagnosticStatuses function](../api/intune-shared-user-getmanagedappdiagnosticstatuses.md)|[managedAppDiagnosticStatus](../resources/intune-mam-managedappdiagnosticstatus.md) collection|Gets diagnostics validation status for a given user.|
@@ -51,7 +51,7 @@ Represents an Azure Active Directory user object.
 |Relationship|Type|Description|
 |:---|:---|:---|
 |**Device management**|
-|managedDevices|[managedDevice](../resources/intune-devices-manageddevice.md) collection|The managed devices associated with the user.|
+|managedDevices|[managedDevice](../resources/intune-shared-manageddevice.md) collection|The managed devices associated with the user.|
 |**Mobile application management (MAM)**|
 |managedAppRegistrations|[managedAppRegistration](../resources/intune-mam-managedappregistration.md) collection|Zero or more managed app registrations that belong to the user.|
 |**Onboarding**|

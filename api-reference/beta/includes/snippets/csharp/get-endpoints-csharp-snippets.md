@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var reportRoot = await graphClient.Print.Reports["dailyPrintUsageSummariesByPrinter"]
+var endpoints = await graphClient.Groups["{id}"].Endpoints
 	.Request()
 	.GetAsync();
 

@@ -96,6 +96,13 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |kioskModeIconSize|[androidDeviceOwnerKioskModeIconSize](../resources/intune-deviceconfig-androiddeviceownerkioskmodeiconsize.md)|Icon size configuration for managed home screen in Kiosk Mode. Possible values are: `notConfigured`, `smallest`, `small`, `regular`, `large`, `largest`.|
 |kioskModeFolderIcon|[androidDeviceOwnerKioskModeFolderIcon](../resources/intune-deviceconfig-androiddeviceownerkioskmodefoldericon.md)|Folder icon configuration for managed home screen in Kiosk Mode. Possible values are: `notConfigured`, `darkSquare`, `darkCircle`, `lightSquare`, `lightCircle`.|
 |kioskModeWifiAllowedSsids|String collection|The restricted set of WIFI SSIDs available for the user to configure in Kiosk Mode. This collection can contain a maximum of 500 elements.|
+|kioskModeAppOrderEnabled|Boolean|Whether or not to enable app ordering in Kiosk Mode.|
+|kioskModeAppsInFolderOrderedByName|Boolean|Whether or not to alphabetize applications within a folder in Kiosk Mode.|
+|kioskModeGridHeight|Int32|Number of rows for Managed Home Screen grid with app ordering enabled in Kiosk Mode. Valid values 1 to 9999999|
+|kioskModeGridWidth|Int32|Number of columns for Managed Home Screen grid with app ordering enabled in Kiosk Mode. Valid values 1 to 9999999|
+|kioskModeLockHomeScreen|Boolean|Whether or not to lock home screen to the end user in Kiosk Mode.|
+|kioskModeManagedFolders|[androidDeviceOwnerKioskModeManagedFolder](../resources/intune-deviceconfig-androiddeviceownerkioskmodemanagedfolder.md) collection|A list of managed folders for a device in Kiosk Mode. This collection can contain a maximum of 500 elements.|
+|kioskModeAppPositions|[androidDeviceOwnerKioskModeAppPositionItem](../resources/intune-deviceconfig-androiddeviceownerkioskmodeapppositionitem.md) collection|The ordering of items on Kiosk Mode Managed Home Screen. This collection can contain a maximum of 500 elements.|
 |microphoneForceMute|Boolean|Indicates whether or not to block unmuting the microphone on the device.|
 |networkEscapeHatchAllowed|Boolean|Indicates whether or not the device will allow connecting to a temporary network connection at boot time.|
 |nfcBlockOutgoingBeam|Boolean|Indicates whether or not to block NFC outgoing beam.|
@@ -269,6 +276,36 @@ Here is a JSON representation of the resource.
   "kioskModeFolderIcon": "String",
   "kioskModeWifiAllowedSsids": [
     "String"
+  ],
+  "kioskModeAppOrderEnabled": true,
+  "kioskModeAppsInFolderOrderedByName": true,
+  "kioskModeGridHeight": 1024,
+  "kioskModeGridWidth": 1024,
+  "kioskModeLockHomeScreen": true,
+  "kioskModeManagedFolders": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeManagedFolder",
+      "folderName": "String",
+      "folderIdentifier": "String",
+      "items": [
+        {
+          "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeWeblink",
+          "label": "String",
+          "link": "String"
+        }
+      ]
+    }
+  ],
+  "kioskModeAppPositions": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeAppPositionItem",
+      "position": 1024,
+      "item": {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeWeblink",
+        "label": "String",
+        "link": "String"
+      }
+    }
   ],
   "microphoneForceMute": true,
   "networkEscapeHatchAllowed": true,

@@ -6,8 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-graphClient.deviceManagement().virtualEndpoint().cloudPCs("{id}")
-	.reprovision()
+graphClient.deviceManagement().virtualEndpoint().onPremisesConnections("{id}")
+	.runHealthChecks()
 	.buildRequest()
 	.post();
 

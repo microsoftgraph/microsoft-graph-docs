@@ -3,7 +3,7 @@ title: "Get applicationTemplate"
 description: "Retrieve the properties and relationships of applicationtemplate object."
 localization_priority: Normal
 author: "luleonpla"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
@@ -127,5 +127,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

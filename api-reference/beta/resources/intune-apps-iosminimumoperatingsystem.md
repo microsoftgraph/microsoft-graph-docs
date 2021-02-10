@@ -26,6 +26,7 @@ Contains properties of the minimum operating system required for an iOS mobile a
 |v11_0|Boolean|Version 11.0 or later.|
 |v12_0|Boolean|Version 12.0 or later.|
 |v13_0|Boolean|Version 13.0 or later.|
+|v14_0|Boolean|Version 14.0 or later.|
 
 ## Relationships
 None
@@ -45,7 +46,8 @@ Here is a JSON representation of the resource.
   "v10_0": true,
   "v11_0": true,
   "v12_0": true,
-  "v13_0": true
+  "v13_0": true,
+  "v14_0": true
 }
 ```
 

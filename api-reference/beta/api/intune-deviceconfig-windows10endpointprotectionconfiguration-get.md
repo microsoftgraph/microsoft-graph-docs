@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 32710
+Content-Length: 32943
 
 {
   "value": {
@@ -679,6 +679,7 @@ Content-Length: 32710
     "defenderExploitProtectionXml": "ZGVmZW5kZXJFeHBsb2l0UHJvdGVjdGlvblhtbA==",
     "defenderExploitProtectionXmlFileName": "Defender Exploit Protection Xml File Name value",
     "defenderSecurityCenterBlockExploitProtectionOverride": true,
+    "defenderBlockPersistenceThroughWmiType": "block",
     "appLockerApplicationControl": "enforceComponentsAndStoreApps",
     "deviceGuardLocalSystemAuthorityCredentialGuardSettings": "enableWithUEFILock",
     "deviceGuardEnableVirtualizationBasedSecurity": true,
@@ -700,6 +701,10 @@ Content-Length: 32710
     "applicationGuardAllowPrintToNetworkPrinters": true,
     "applicationGuardAllowVirtualGPU": true,
     "applicationGuardAllowFileSaveOnHost": true,
+    "applicationGuardAllowCameraMicrophoneRedirection": true,
+    "applicationGuardCertificateThumbprints": [
+      "Application Guard Certificate Thumbprints value"
+    ],
     "bitLockerAllowStandardUserEncryption": true,
     "bitLockerDisableWarningForOtherDiskEncryption": true,
     "bitLockerEnableStorageCardEncryptionOnMobile": true,

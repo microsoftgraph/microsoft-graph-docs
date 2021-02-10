@@ -4,7 +4,7 @@ description: "Create new synchronization job with a default synchronization sche
 localization_priority: Normal
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # Create synchronizationJob

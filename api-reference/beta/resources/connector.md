@@ -3,7 +3,7 @@ title: "connector resource type"
 description: "Represents an Application Proxy connector."
 author: "japere"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: resourcePageType
 ---
 
@@ -73,5 +73,6 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
 
 

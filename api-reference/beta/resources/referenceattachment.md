@@ -4,7 +4,7 @@ description: "A link to a folder or file (such as a text file or Word document) 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "outlook"
-author: "svpsiva"
+author: "abheek-das"
 ---
 
 # referenceAttachment resource type

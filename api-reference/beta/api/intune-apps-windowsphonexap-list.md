@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1675
+Content-Length: 1729
 
 {
   "value": [
@@ -105,7 +105,9 @@ Content-Length: 1675
         "v10_1709": true,
         "v10_1803": true,
         "v10_1809": true,
-        "v10_1903": true
+        "v10_1903": true,
+        "v10_1909": true,
+        "v10_2004": true
       },
       "productIdentifier": "Product Identifier value",
       "identityVersion": "Identity Version value"

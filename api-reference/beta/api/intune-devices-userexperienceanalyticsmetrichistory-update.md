@@ -50,6 +50,7 @@ The following table shows the properties that are required when you create the [
 |:---|:---|:---|
 |id|String|The unique identifier of the user experience analytics metric history.|
 |metricDateTime|DateTimeOffset|The user experience analytics metric date time.|
+|metricType|String|The user experience analytics metric type.|
 
 
 
@@ -63,11 +64,12 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsMetricHistory/{userExperienceAnalyticsMetricHistoryId}
 Content-type: application/json
-Content-length: 136
+Content-length: 174
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetricHistory",
-  "metricDateTime": "2017-01-01T00:00:28.4495993-08:00"
+  "metricDateTime": "2017-01-01T00:00:28.4495993-08:00",
+  "metricType": "Metric Type value"
 }
 ```
 
@@ -76,12 +78,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 185
+Content-Length: 223
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetricHistory",
   "id": "2b6d6456-6456-2b6d-5664-6d2b56646d2b",
-  "metricDateTime": "2017-01-01T00:00:28.4495993-08:00"
+  "metricDateTime": "2017-01-01T00:00:28.4495993-08:00",
+  "metricType": "Metric Type value"
 }
 ```
 

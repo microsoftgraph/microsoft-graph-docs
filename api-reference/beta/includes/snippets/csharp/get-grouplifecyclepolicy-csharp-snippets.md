@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var groupLifecyclePolicies = await graphClient.GroupLifecyclePolicies
+var groupLifecyclePolicy = await graphClient.GroupLifecyclePolicies["{id}"]
 	.Request()
 	.GetAsync();
 

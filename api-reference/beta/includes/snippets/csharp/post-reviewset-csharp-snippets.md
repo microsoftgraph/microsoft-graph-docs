@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var reviewSet = new ReviewSet
+var reviewSet = new Microsoft.Graph.Ediscovery.ReviewSet
 {
 	DisplayName = "My Reviewset 3"
 };

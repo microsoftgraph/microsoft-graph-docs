@@ -4,7 +4,7 @@ description: "Update (override) the synchronization template associated with a g
 localization_priority: Normal
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # Update synchronizationTemplate

@@ -3,7 +3,7 @@ title: "Add owner"
 description: "Use this API to add an owner to an application."
 author: "sureshja"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: apiPageType
 ---
 
@@ -107,5 +107,6 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
 
 

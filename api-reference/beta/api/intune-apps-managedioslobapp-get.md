@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1839
+Content-Length: 1861
 
 {
   "value": {
@@ -114,7 +114,8 @@ Content-Length: 1839
       "v10_0": true,
       "v11_0": true,
       "v12_0": true,
-      "v13_0": true
+      "v13_0": true,
+      "v14_0": true
     },
     "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
     "versionNumber": "Version Number value",

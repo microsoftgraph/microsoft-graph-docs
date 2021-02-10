@@ -3,7 +3,7 @@ title: "userCredentialUsageDetails resource type"
 description: "Represents the self-service password reset usage for a given tenant."
 localization_priority: Normal
 author: "besiler"
-ms.prod: "reports"
+ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"
 ---
 
@@ -48,7 +48,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.userCredentialUsageDetails",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

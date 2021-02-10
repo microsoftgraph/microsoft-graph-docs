@@ -3,7 +3,7 @@ title: "Add Connector to connectorGroup"
 description: "Use this API to add a connector to a new connectorGroup."
 localization_priority: Normal
 author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
@@ -111,5 +111,6 @@ Content-length: 119
   "suppressions": []
 }
 -->
+
 
 

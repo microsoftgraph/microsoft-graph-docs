@@ -31,6 +31,7 @@ The user experience analytics metric history.
 |:---|:---|:---|
 |id|String|The unique identifier of the user experience analytics metric history.|
 |metricDateTime|DateTimeOffset|The user experience analytics metric date time.|
+|metricType|String|The user experience analytics metric type.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -49,7 +50,8 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetricHistory",
   "id": "String (identifier)",
-  "metricDateTime": "String (timestamp)"
+  "metricDateTime": "String (timestamp)",
+  "metricType": "String"
 }
 ```
 

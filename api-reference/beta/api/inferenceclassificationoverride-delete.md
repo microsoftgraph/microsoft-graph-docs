@@ -3,7 +3,7 @@ title: "Delete inferenceClassificationOverride"
 description: "Delete a Focused Inbox override specified by its ID."
 localization_priority: Normal
 doc_type: apiPageType
-author: "svpsiva"
+author: "abheek-das"
 ms.prod: ""
 ---
 

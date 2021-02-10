@@ -4,7 +4,7 @@ description: "Defines how values for the given target attribute should flow duri
 localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # attributeMapping resource type

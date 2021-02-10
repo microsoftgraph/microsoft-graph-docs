@@ -3,7 +3,7 @@ title: "Delete connectorGroup"
 description: "Delete a connectorGroup."
 localization_priority: Normal
 author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
@@ -94,5 +94,6 @@ HTTP/1.1 204 No Content
   "suppressions": []
 }
 -->
+
 
 

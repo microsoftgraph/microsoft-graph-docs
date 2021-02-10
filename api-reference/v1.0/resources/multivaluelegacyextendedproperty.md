@@ -2,7 +2,7 @@
 title: "multiValueLegacyExtendedProperty resource type"
 description: "An extended property that contains a collection of values."
 localization_priority: Normal
-author: "svpsiva"
+author: "abheek-das"
 ms.prod: ""
 doc_type: resourcePageType
 ---

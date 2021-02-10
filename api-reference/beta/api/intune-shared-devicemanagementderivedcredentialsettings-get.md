@@ -35,7 +35,6 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-
 ``` http
 GET /deviceManagement/derivedCredentials/{deviceManagementDerivedCredentialSettingsId}
 GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/derivedCredentialSettings
@@ -49,7 +48,6 @@ GET /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.gra
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
-
 |Header|Value|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
@@ -65,14 +63,12 @@ If successful, this method returns a `200 OK` response code and [deviceManagemen
 
 ### Request
 Here is an example of the request.
-
 ``` http
 GET https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}/derivedCredentialSettings
 ```
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -84,4 +80,8 @@ Content-Length: 155
     "id": "bc650741-0741-bc65-4107-65bc410765bc"
   }
 }
-```
+
+
+
+
+

@@ -3,7 +3,7 @@ title: "provisioningStep resource type"
 description: "Describes the steps taken to perform an action. "
 localization_priority: Normal
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"
 ---
 

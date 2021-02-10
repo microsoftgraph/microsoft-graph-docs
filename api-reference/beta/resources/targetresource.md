@@ -4,7 +4,7 @@ description: "Defines the targetResource entity resource complex type of the Mic
 author: "cloudhandler"
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 ---
 
 # targetResource resource type

@@ -64,7 +64,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 9519
+Content-Length: 9550
 
 {
   "value": {
@@ -93,6 +93,7 @@ Content-Length: 9519
     "rootDefinitionId": "Root Definition Id value",
     "categoryId": "Category Id value",
     "settingUsage": "configuration",
+    "uxBehavior": "dropdown",
     "id": "30dc0613-0613-30dc-1306-dc301306dc30",
     "description": "Description value",
     "helpText": "Help Text value",

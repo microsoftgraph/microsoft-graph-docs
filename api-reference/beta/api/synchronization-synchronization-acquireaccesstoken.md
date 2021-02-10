@@ -3,7 +3,7 @@ title: "synchronization: acquireAccessToken"
 description: "Acquire an OAuth Access token to authorize the Azure AD provisioning service to provision users into an application"
 author: "ArvindHarinder1"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: apiPageType
 ---
 

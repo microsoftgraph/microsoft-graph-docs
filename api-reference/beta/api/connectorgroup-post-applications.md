@@ -3,7 +3,7 @@ title: "Assign a connectorGroup to an application"
 description: "Use this API to assign a connectorGroup to an application"
 localization_priority: Normal
 author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 # Assign a connectorGroup to an application
@@ -103,5 +103,6 @@ HTTP/1.1 204 No content
   "suppressions": []
 }
 -->
+
 
 

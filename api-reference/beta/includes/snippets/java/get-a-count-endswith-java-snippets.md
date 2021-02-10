@@ -11,8 +11,8 @@ requestOptions.add(new HeaderOption("ConsistencyLevel", "eventual"));
 
 IUserCollectionPage users = graphClient.users()
 	.buildRequest( requestOptions )
-	.filter("endswith(mail,'a@contoso.com'),")
-	.orderBy("userPrincipalName ")
+	.filter("endswith(mail,'a@contoso.com')")
+	.orderBy("userPrincipalName")
 	.get();
 
 ```

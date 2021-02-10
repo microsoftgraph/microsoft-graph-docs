@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Identity.B2xUserFlows["B2X_1_PartnerSignUp"].IdentityProviders["Facebook-OAUTH"].Reference
+await graphClient.Identity.B2cUserFlows["B2C_1_CustomerSignUp"].IdentityProviders["Facebook-OAUTH"].Reference
 	.Request()
 	.DeleteAsync();
 

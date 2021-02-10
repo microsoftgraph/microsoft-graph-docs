@@ -3,7 +3,7 @@ title: "servicePrincipal resource type"
 description: "Represents an instance of an application in a directory. Inherits from directoryObject."
 localization_priority: Priority
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 author: "sureshja"
 ---
 
@@ -205,5 +205,6 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
   ]
 }
 -->
+
 
 

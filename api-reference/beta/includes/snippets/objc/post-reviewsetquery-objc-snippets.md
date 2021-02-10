@@ -11,7 +11,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphReviewSetQuery *reviewSetQuery = [[MSGraphReviewSetQuery alloc] init];
+MSGraphEdiscoveryReviewSetQuery *reviewSetQuery = [[MSGraphEdiscoveryReviewSetQuery alloc] init];
 [reviewSetQuery setDisplayName:@"My Query 1"];
 [reviewSetQuery setQuery:@"(subject:\"Quarterly Financials\")"];
 

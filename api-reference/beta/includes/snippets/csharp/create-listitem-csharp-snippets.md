@@ -6,21 +6,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var listItem = new ListItem
+var fieldValueSet = new FieldValueSet
 {
-	Fields = new FieldValueSet
+	AdditionalData = new Dictionary<string, object>()
 	{
-		AdditionalData = new Dictionary<string, object>()
-		{
-			{"Title", "Widget"},
-			{"Color", "Purple"},
-			{"Weight", "32"}
-		}
+		{"Color", "Fuchsia"},
+		{"Quantity", "934"}
 	}
 };
 
-await graphClient.Sites["{site-id}"].Lists["{list-id}"].Items
+await graphClient.Sites["{site-id}"].Lists["{list-id}"].Items["{item-id}"].Fields
 	.Request()
-	.AddAsync(listItem);
+	.UpdateAsync(fieldValueSet);
 
 ```

@@ -3,7 +3,7 @@ title: "userIdentity type"
 description: "Represents an Azure AD user identity for a reviewer of an access review."
 localization_priority: Normal
 author: "krbain"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "users"
 doc_type: resourcePageType
 ---
 

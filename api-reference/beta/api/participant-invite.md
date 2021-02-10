@@ -723,7 +723,6 @@ With tenant admin credentials, call the following cmdlets on the tenant remote P
 PS C:\> Set-CsOnlineVoiceApplicationInstance -Identity <UPN> -TelephoneNumber <TelephoneNumber>
 PS C:\> Sync-CsOnlineApplicationInstance -ObjectId <ObjectId>
 ```
-> **Note:** If a tenant has Australian PSTN numbers assigned to any application instances, this call might fail. If a tenant is newly created, it might take several days for this feature to be available.
 
 #### Request
 

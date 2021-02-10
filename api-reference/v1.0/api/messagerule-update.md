@@ -1,7 +1,7 @@
 ---
 title: "Update rule"
 description: "Change writable properties on a messageRule object and save the changes."
-author: "svpsiva"
+author: "abheek-das"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType

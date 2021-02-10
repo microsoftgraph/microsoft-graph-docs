@@ -4,7 +4,7 @@ doc_type: resourcePageType
 description: "Provides details about user or application sign-in activity in your directory."
 author: "besiler"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 ---
 
 

@@ -4,7 +4,7 @@ description: "Delete an attachment from a calendar event, message, Outlook task,
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "outlook"
-author: "svpsiva"
+author: "abheek-das"
 ---
 
 # Delete attachment
@@ -19,12 +19,15 @@ Delete an attachment from a user calendar [event](../resources/event.md), [messa
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Depending on the resource (**event**, **message**, **outlookTask**, or **post**) that the attachment is attached to and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
 
-* If accessing attachments in messages: Mail.ReadWrite
-* If accessing attachments in events: Calendars.ReadWrite
-* If accessing attachments in Outlook tasks: Tasks.ReadWrite
-* If accessing attachments in group posts: Group.ReadWrite.All
+| Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
+|:-----|:-----|:-----|:-----|
+| [event](../resources/event.md) | Calendars.ReadWrite | Calendars.ReadWrite | Calendars.ReadWrite |
+| [message](../resources/message.md) | Mail.ReadWrite | Mail.ReadWrite | Mail.ReadWrite |
+| [outlookTask](../resources/outlooktask.md) |  Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
+| [post](../resources/post.md) | Group.ReadWrite.All | Not supported | Not supported |
+
 
 <!--
 * If accessing attachments in Group Events or Posts: Group.ReadWrite.All

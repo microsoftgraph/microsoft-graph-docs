@@ -3,7 +3,7 @@ title: "List applications"
 description: "Get the list of applications in this organization."
 author: "sureshja"
 localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: apiPageType
 ---
 
@@ -251,5 +251,6 @@ Content-type: application/json
   ]
 }
 -->
+
 
 

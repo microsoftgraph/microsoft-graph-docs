@@ -3,7 +3,7 @@ title: "List provisioningObjectSummary"
 description: "Get all provisioning events that occurred in your tenant."
 localization_priority: Normal
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 doc_type: "apiPageType"
 ---
 

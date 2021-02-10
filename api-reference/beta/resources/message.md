@@ -1,7 +1,7 @@
 ---
 title: "message resource type"
 description: "A message in a mailbox folder."
-author: "svpsiva"
+author: "abheek-das"
 localization_priority: Priority
 ms.prod: "outlook"
 doc_type: resourcePageType

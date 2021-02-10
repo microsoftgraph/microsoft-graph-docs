@@ -3,7 +3,7 @@ title: "Create connectorGroup"
 description: "Use this API to create a new connectorGroup."
 localization_priority: Normal
 author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
@@ -113,5 +113,6 @@ Content-length: 119
   "suppressions": []
 }
 -->
+
 
 

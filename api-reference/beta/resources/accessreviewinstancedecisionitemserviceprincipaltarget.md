@@ -3,7 +3,7 @@ title: "accessReviewInstanceDecisionItemServicePrincipalTarget resource type"
 description: "Represents the target of a review as a service principal target."
 author: "isabelleatmsft"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 

@@ -4,7 +4,7 @@ description: "Retrieve the schema for a given synchronization job or template."
 localization_priority: Normal
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # Get synchronizationSchema

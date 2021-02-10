@@ -3,7 +3,7 @@ title: "servicePrincipal: List createdObjects"
 description: "Retrieve a list of directoryobject objects."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 author: "sureshja"
 ---
 
@@ -114,3 +114,4 @@ Content-length: 55
   ]
 }
 -->
+

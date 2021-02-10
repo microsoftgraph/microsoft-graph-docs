@@ -3,6 +3,42 @@
     {
       "ChangeList": [
         {
+          "Id": "aa7c9c04-2a12-458f-9bd5-a46c3b2fccd4",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "permissions",
+          "ChangeType": "Addition",
+          "Description": "Added the **permissions** relationship to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-1.0) resource.",
+          "Target": "site"
+        }
+      ],
+      "Id": "aa7c9c04-2a12-458f-9bd5-a46c3b2fccd4",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-02-05T01:49:05.616Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d6b5ef23-6041-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "permissions",
+          "ChangeType": "Addition",
+          "Description": "Added the **permissions** relationship to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "site"
+        }
+      ],
+      "Id": "d6b38e82-6041-11eb-8de9-f7f8b8b7f046",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-01-27T01:49:05.616Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "d0ae3ac8-8d01-4235-b584-66a251ba1605",
           "ApiChange": "Resource",
           "ChangedApiName": "revokeGrants,permission",
