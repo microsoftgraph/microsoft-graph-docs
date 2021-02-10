@@ -1,6 +1,6 @@
 ---
 title: "Create personAnniversary"
-description: "Use this API to create a new personAnniversary."
+description: "Use this API to create a new personAnnualEvent."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Use this API to create a new [personAnniversary](../resources/personanniversary.md) object in a user's [profile](../resources/profile.md).
+Use this API to create a new [personAnnualEvent](../resources/personannualevent.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -43,9 +43,9 @@ POST /users/{id | userPrincipalName}/profile/anniversaries
 
 ## Request body
 
-In the request body, supply a JSON representation of [personAnniversary](../resources/personanniversary.md) object.
+In the request body, supply a JSON representation of [personAnnualEvent](../resources/personannualevent.md) object.
 
-The following table shows the properties that are possible to set within a new **personAnniversary**** object in a user's [profile](../resources/profile.md).
+The following table shows the properties that are possible to set within a new **personAnnualEvent** object in a user's [profile](../resources/profile.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -53,11 +53,11 @@ The following table shows the properties that are possible to set within a new *
 |date|Date|Contains the date associated with the anniversary type.|
 |inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application. Inherited from [itemFacet](../resources/itemfacet.md).|
 |source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
-|type|anniversaryType|The type of anniversary the date represents. Possible values are: `birthday`, `wedding`, `unknownFutureValue`.|
+|type|personAnnualEventType|The type of anniversary the date represents. Possible values are: `birthday`, `wedding`, `unknownFutureValue`.|
 
 ## Response
 
-If successful, this method returns `201, Created` response code and a new [personAnniversary](../resources/personanniversary.md) object in the response body.
+If successful, this method returns `201, Created` response code and a new [personAnnualEvent](../resources/personanniversary.md) object in the response body.
 
 ## Examples
 
@@ -107,7 +107,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.personAnniversary"
+  "@odata.type": "microsoft.graph.personAnnualEvent"
 } -->
 
 ```http

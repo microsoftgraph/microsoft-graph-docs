@@ -1,6 +1,6 @@
 ---
 title: "List anniversaries"
-description: "Retrieve a list of personAnniversary objects."
+description: "Retrieve a list of personAnnualEvent objects."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a list of [personAnniversary](../resources/personanniversary.md) objects for the given user from their [profile](../resources/profile.md).
+Retrieve a list of [personAnniversary](../resources/personannualevent.md) objects for the given user from their [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -58,7 +58,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and a collection of [personAnniversary](../resources/personanniversary.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and a collection of [personAnnualEvent](../resources/personannualevent.md) objects in the response body.
 
 ## Examples
 
@@ -98,7 +98,7 @@ GET https://graph.microsoft.com/beta/me/profile/anniversaries
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "collection(microsoft.graph.personAnniversary)"
+  "@odata.type": "collection(microsoft.graph.personAnnualEvent)"
 }
 -->
 ``` http

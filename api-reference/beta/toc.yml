@@ -11616,18 +11616,18 @@ items:
             href: api/itemaddress-delete.md
         - name: Anniversaries
           items:
-          - name: Person anniversary
-            href: resources/personanniversary.md
+          - name: Person annual event
+            href: resources/personannualevent.md
           - name: List
             href: api/profile-list-anniversaries.md
           - name: Create
             href: api/profile-post-anniversaries.md
           - name: Get
-            href: api/personanniversary-get.md
+            href: api/personannualevent-get.md
           - name: Update
-            href: api/personanniversary-update.md
+            href: api/personannualevent-update.md
           - name: Delete
-            href: api/personanniversary-delete.md
+            href: api/personannualevent-delete.md
         - name: Awards
           items:
           - name: Person award
