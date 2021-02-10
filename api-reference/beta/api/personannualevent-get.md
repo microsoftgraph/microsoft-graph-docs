@@ -1,19 +1,19 @@
 ---
-title: "Get personAnniversary"
-description: "Retrieve the properties and relationships of a personAnniversary object."
+title: "Get personAnnualEvent"
+description: "Retrieve the properties and relationships of a personAnnualEvent object."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"
 ---
 
-# Get personAnniversary
+# Get personAnnualEvent
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [personAnniversary](../resources/personanniversary.md) object in a user's [profile](../resources/profile.md).
+Retrieve the properties and relationships of a [personAnnualEvent](../resources/personannualevent.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -50,7 +50,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and the requested [personAnniversary](../resources/personanniversary.md) object in the response body.
+If successful, this method returns a `200 OK` response code and the requested [personAnnualEvent](../resources/personannualevent.md) object in the response body.
 
 ## Examples
 
@@ -61,25 +61,25 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_personanniversary"
+  "name": "get_personannualevent"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/me/profile/anniversaries/{id}
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-personanniversary-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-personannualevent-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-personanniversary-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-personannualevent-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-personanniversary-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-personannualevent-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-personanniversary-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-personannualevent-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -93,7 +93,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.personAnniversary"
+  "@odata.type": "microsoft.graph.personAnnualEvent"
 } -->
 
 ```http
