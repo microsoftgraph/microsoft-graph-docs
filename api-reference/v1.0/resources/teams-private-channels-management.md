@@ -187,7 +187,7 @@ You can try these commands through [Graph Explorer](https://developer.microsoft.
 
     **Response**
 
-    ``Graph API
+    ```Graph API
     HTTP/1.1 200 OK
     Content-type: application/json
 
@@ -200,4 +200,4 @@ You can try these commands through [Graph Explorer](https://developer.microsoft.
       "userId": "userId-value",
       "email": "email-value"
      }
-    ``
+    ```
