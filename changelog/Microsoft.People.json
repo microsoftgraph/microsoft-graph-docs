@@ -1,0 +1,480 @@
+{
+    "changelog": [
+        {
+            "ChangeList": [
+                {
+                    "Id": "efebcce3-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "profile",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [profile](https://docs.microsoft.com/en-us/graph/api/resources/profile?view=graph-rest-beta) resource type.",
+                    "Target": "profile"
+                },
+                {
+                    "Id": "efee2f38-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "itemFacet",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [itemFacet](https://docs.microsoft.com/en-us/graph/api/resources/itemFacet?view=graph-rest-beta) resource type.",
+                    "Target": "itemFacet"
+                },
+                {
+                    "Id": "eff0910f-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "inferenceData",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [inferenceData](https://docs.microsoft.com/en-us/graph/api/resources/inferenceData?view=graph-rest-beta) resource type.",
+                    "Target": "inferenceData"
+                },
+                {
+                    "Id": "eff2f42b-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "identitySet",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [identitySet](https://docs.microsoft.com/en-us/graph/api/resources/identitySet?view=graph-rest-beta) resource type.",
+                    "Target": "identitySet"
+                },
+                {
+                    "Id": "eff55954-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "identity",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [identity](https://docs.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-beta) resource type.",
+                    "Target": "identity"
+                },
+                {
+                    "Id": "eff7b9f6-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "personDataSources",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [personDataSources](https://docs.microsoft.com/en-us/graph/api/resources/personDataSources?view=graph-rest-beta) resource type.",
+                    "Target": "personDataSources"
+                },
+                {
+                    "Id": "effa1b5e-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "personName",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [personName](https://docs.microsoft.com/en-us/graph/api/resources/personName?view=graph-rest-beta) resource type.",
+                    "Target": "personName"
+                },
+                {
+                    "Id": "effc7d7c-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "personNamePronounciation",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [personNamePronounciation](https://docs.microsoft.com/en-us/graph/api/resources/personNamePronounciation?view=graph-rest-beta) resource type.",
+                    "Target": "personNamePronounciation"
+                },
+                {
+                    "Id": "effedf43-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "itemPhone",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [itemPhone](https://docs.microsoft.com/en-us/graph/api/resources/itemPhone?view=graph-rest-beta) resource type.",
+                    "Target": "itemPhone"
+                },
+                {
+                    "Id": "f00142ba-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "educationalActivity",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [educationalActivity](https://docs.microsoft.com/en-us/graph/api/resources/educationalActivity?view=graph-rest-beta) resource type.",
+                    "Target": "educationalActivity"
+                },
+                {
+                    "Id": "f003a2d4-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "educationalActivityDetail",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [educationalActivityDetail](https://docs.microsoft.com/en-us/graph/api/resources/educationalActivityDetail?view=graph-rest-beta) resource type.",
+                    "Target": "educationalActivityDetail"
+                },
+                {
+                    "Id": "f006061f-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "institutionData",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [institutionData](https://docs.microsoft.com/en-us/graph/api/resources/institutionData?view=graph-rest-beta) resource type.",
+                    "Target": "institutionData"
+                },
+                {
+                    "Id": "f0086a06-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "itemAddress",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [itemAddress](https://docs.microsoft.com/en-us/graph/api/resources/itemAddress?view=graph-rest-beta) resource type.",
+                    "Target": "itemAddress"
+                },
+                {
+                    "Id": "f00acb14-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "physicalAddress",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [physicalAddress](https://docs.microsoft.com/en-us/graph/api/resources/physicalAddress?view=graph-rest-beta) resource type.",
+                    "Target": "physicalAddress"
+                },
+                {
+                    "Id": "f00d30fb-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "geoCoordinates",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [geoCoordinates](https://docs.microsoft.com/en-us/graph/api/resources/geoCoordinates?view=graph-rest-beta) resource type.",
+                    "Target": "geoCoordinates"
+                },
+                {
+                    "Id": "f00f90d0-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "itemEmail",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [itemEmail](https://docs.microsoft.com/en-us/graph/api/resources/itemEmail?view=graph-rest-beta) resource type.",
+                    "Target": "itemEmail"
+                },
+                {
+                    "Id": "f011f1cd-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "languageProficiency",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [languageProficiency](https://docs.microsoft.com/en-us/graph/api/resources/languageProficiency?view=graph-rest-beta) resource type.",
+                    "Target": "languageProficiency"
+                },
+                {
+                    "Id": "f0145573-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "userAccountInformation",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [userAccountInformation](https://docs.microsoft.com/en-us/graph/api/resources/userAccountInformation?view=graph-rest-beta) resource type.",
+                    "Target": "userAccountInformation"
+                },
+                {
+                    "Id": "f016b853-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "localeInfo",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [localeInfo](https://docs.microsoft.com/en-us/graph/api/resources/localeInfo?view=graph-rest-beta) resource type.",
+                    "Target": "localeInfo"
+                },
+                {
+                    "Id": "f0191966-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "personAnnualEvent",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [personAnnualEvent](https://docs.microsoft.com/en-us/graph/api/resources/personAnnualEvent?view=graph-rest-beta) resource type.",
+                    "Target": "personAnnualEvent"
+                },
+                {
+                    "Id": "f01b7aa9-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "personInterest",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [personInterest](https://docs.microsoft.com/en-us/graph/api/resources/personInterest?view=graph-rest-beta) resource type.",
+                    "Target": "personInterest"
+                },
+                {
+                    "Id": "f01dddd2-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "personAnnotation",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [personAnnotation](https://docs.microsoft.com/en-us/graph/api/resources/personAnnotation?view=graph-rest-beta) resource type.",
+                    "Target": "personAnnotation"
+                },
+                {
+                    "Id": "f022a1d2-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "personResponsibility",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [personResponsibility](https://docs.microsoft.com/en-us/graph/api/resources/personResponsibility?view=graph-rest-beta) resource type.",
+                    "Target": "personResponsibility"
+                },
+                {
+                    "Id": "f025058f-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "projectParticipation",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [projectParticipation](https://docs.microsoft.com/en-us/graph/api/resources/projectParticipation?view=graph-rest-beta) resource type.",
+                    "Target": "projectParticipation"
+                },
+                {
+                    "Id": "f02768a8-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "positionDetail",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [positionDetail](https://docs.microsoft.com/en-us/graph/api/resources/positionDetail?view=graph-rest-beta) resource type.",
+                    "Target": "positionDetail"
+                },
+                {
+                    "Id": "f029ca77-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "companyDetail",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [companyDetail](https://docs.microsoft.com/en-us/graph/api/resources/companyDetail?view=graph-rest-beta) resource type.",
+                    "Target": "companyDetail"
+                },
+                {
+                    "Id": "f02c3889-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "relatedPerson",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [relatedPerson](https://docs.microsoft.com/en-us/graph/api/resources/relatedPerson?view=graph-rest-beta) resource type.",
+                    "Target": "relatedPerson"
+                },
+                {
+                    "Id": "f02e942c-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "skillProficiency",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [skillProficiency](https://docs.microsoft.com/en-us/graph/api/resources/skillProficiency?view=graph-rest-beta) resource type.",
+                    "Target": "skillProficiency"
+                },
+                {
+                    "Id": "f030f477-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "webAccount",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [webAccount](https://docs.microsoft.com/en-us/graph/api/resources/webAccount?view=graph-rest-beta) resource type.",
+                    "Target": "webAccount"
+                },
+                {
+                    "Id": "f0335394-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "serviceInformation",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [serviceInformation](https://docs.microsoft.com/en-us/graph/api/resources/serviceInformation?view=graph-rest-beta) resource type.",
+                    "Target": "serviceInformation"
+                },
+                {
+                    "Id": "f035b5c6-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "personWebsite",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [personWebsite](https://docs.microsoft.com/en-us/graph/api/resources/personWebsite?view=graph-rest-beta) resource type.",
+                    "Target": "personWebsite"
+                },
+                {
+                    "Id": "f03818ec-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "workPosition",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [workPosition](https://docs.microsoft.com/en-us/graph/api/resources/workPosition?view=graph-rest-beta) resource type.",
+                    "Target": "workPosition"
+                },
+                {
+                    "Id": "f03a7a94-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "itemPatent",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [itemPatent](https://docs.microsoft.com/en-us/graph/api/resources/itemPatent?view=graph-rest-beta) resource type.",
+                    "Target": "itemPatent"
+                },
+                {
+                    "Id": "f03cdc49-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "itemPublication",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [itemPublication](https://docs.microsoft.com/en-us/graph/api/resources/itemPublication?view=graph-rest-beta) resource type.",
+                    "Target": "itemPublication"
+                },
+                {
+                    "Id": "f03f3e52-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "personAward",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [personAward](https://docs.microsoft.com/en-us/graph/api/resources/personAward?view=graph-rest-beta) resource type.",
+                    "Target": "personAward"
+                },
+                {
+                    "Id": "f041a990-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "personCertification",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [personCertification](https://docs.microsoft.com/en-us/graph/api/resources/personCertification?view=graph-rest-beta) resource type.",
+                    "Target": "personCertification"
+                },
+                {
+                    "Id": "f04405bd-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "personExtension",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [personExtension](https://docs.microsoft.com/en-us/graph/api/resources/personExtension?view=graph-rest-beta) resource type.",
+                    "Target": "personExtension"
+                },
+                {
+                    "Id": "f04668b6-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "regionalAndLanguageSettings",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [regionalAndLanguageSettings](https://docs.microsoft.com/en-us/graph/api/resources/regionalAndLanguageSettings?view=graph-rest-beta) resource type.",
+                    "Target": "regionalAndLanguageSettings"
+                },
+                {
+                    "Id": "f048cbaf-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "regionalFormatOverrides",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [regionalFormatOverrides](https://docs.microsoft.com/en-us/graph/api/resources/regionalFormatOverrides?view=graph-rest-beta) resource type.",
+                    "Target": "regionalFormatOverrides"
+                },
+                {
+                    "Id": "f04b2bb5-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "translationLanguageOverride",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [translationLanguageOverride](https://docs.microsoft.com/en-us/graph/api/resources/translationLanguageOverride?view=graph-rest-beta) resource type.",
+                    "Target": "translationLanguageOverride"
+                },
+                {
+                    "Id": "f04d8e31-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "translationPreferences",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [translationPreferences](https://docs.microsoft.com/en-us/graph/api/resources/translationPreferences?view=graph-rest-beta) resource type.",
+                    "Target": "translationPreferences"
+                },
+                {
+                    "Id": "f04feffd-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "organizationSettings",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [organizationSettings](https://docs.microsoft.com/en-us/graph/api/resources/organizationSettings?view=graph-rest-beta) resource type.",
+                    "Target": "organizationSettings"
+                },
+                {
+                    "Id": "f0525144-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "itemInsightsSettings",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [itemInsightsSettings](https://docs.microsoft.com/en-us/graph/api/resources/itemInsightsSettings?view=graph-rest-beta) resource type.",
+                    "Target": "itemInsightsSettings"
+                },
+                {
+                    "Id": "f054b46d-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "profileCardProperty",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [profileCardProperty](https://docs.microsoft.com/en-us/graph/api/resources/profileCardProperty?view=graph-rest-beta) resource type.",
+                    "Target": "profileCardProperty"
+                },
+                {
+                    "Id": "f0571654-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "profileCardAnnotation",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [profileCardAnnotation](https://docs.microsoft.com/en-us/graph/api/resources/profileCardAnnotation?view=graph-rest-beta) resource type.",
+                    "Target": "profileCardAnnotation"
+                },
+                {
+                    "Id": "f05979cf-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "displayNameLocalization",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [displayNameLocalization](https://docs.microsoft.com/en-us/graph/api/resources/displayNameLocalization?view=graph-rest-beta) resource type.",
+                    "Target": "displayNameLocalization"
+                },
+                {
+                    "Id": "f05bde1e-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "allowedAudiences",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **allowedAudiences** enumeration type.",
+                    "Target": "allowedAudiences"
+                },
+                {
+                    "Id": "f05e3e90-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "phoneType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **phoneType** enumeration type.",
+                    "Target": "phoneType"
+                },
+                {
+                    "Id": "f060a5c2-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "physicalAddressType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **physicalAddressType** enumeration type.",
+                    "Target": "physicalAddressType"
+                },
+                {
+                    "Id": "f06304ae-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "emailType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **emailType** enumeration type.",
+                    "Target": "emailType"
+                },
+                {
+                    "Id": "f065661b-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "languageProficiencyLevel",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **languageProficiencyLevel** enumeration type.",
+                    "Target": "languageProficiencyLevel"
+                },
+                {
+                    "Id": "f067c6d9-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "personAnnualEventType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **personAnnualEventType** enumeration type.",
+                    "Target": "personAnnualEventType"
+                },
+                {
+                    "Id": "f06a2a13-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "bodyType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **bodyType** enumeration type.",
+                    "Target": "bodyType"
+                },
+                {
+                    "Id": "f06c8c6a-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "personRelationship",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **personRelationship** enumeration type.",
+                    "Target": "personRelationship"
+                },
+                {
+                    "Id": "f06eeee6-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "skillProficiencyLevel",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **skillProficiencyLevel** enumeration type.",
+                    "Target": "skillProficiencyLevel"
+                },
+                {
+                    "Id": "f071515f-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "translationBehavior",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **translationBehavior** enumeration type.",
+                    "Target": "translationBehavior"
+                }
+            ],
+            "Id": "efe96a2a-6c4e-11eb-8401-e19c685756df",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-02-11T09:53:05.323Z",
+            "WorkloadArea": "People and workplace intelligence",
+            "SubArea": "People"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "f02044b5-6c4e-11eb-8401-e19c685756df",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "itemBody",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [itemBody](https://docs.microsoft.com/en-us/graph/api/resources/itemBody?view=graph-rest-beta) resource type.",
+                    "Target": "itemBody"
+                }
+            ],
+            "Id": "efe96a2a-6c4e-11eb-8401-e19c685756df",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-02-11T09:53:05.323Z",
+            "WorkloadArea": "Mail",
+            "SubArea": ""
+        }
+    ]
+}
