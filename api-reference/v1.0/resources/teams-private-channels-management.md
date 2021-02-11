@@ -5,7 +5,7 @@ ms.date: 02/11/2021
 title: Management of private channels in Teams
 localization_priority: Normal
 description: "The activities involved in the management of private channels in Teams and configuration of privileges for those activities"
-ms.prod: ""
+ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
 
@@ -187,7 +187,7 @@ You can try these commands through [Graph Explorer](https://developer.microsoft.
 
     **Response**
 
-    ```Graph API
+    ``Graph API
     HTTP/1.1 200 OK
     Content-type: application/json
 
@@ -200,4 +200,4 @@ You can try these commands through [Graph Explorer](https://developer.microsoft.
       "userId": "userId-value",
       "email": "email-value"
      }
-    ```9
+    ``
