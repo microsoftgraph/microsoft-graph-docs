@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) object.
+Retrieve the properties and relationships of a [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) object.
 
 ## Permissions
 
