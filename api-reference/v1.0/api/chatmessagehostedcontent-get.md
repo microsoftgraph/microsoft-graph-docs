@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{id}/channels/{id}/messages/{id}/hostedContents/{id}
+GET /teams/3ade275a-77cb-444e-904d-9cb268c24b9d/channels/19%3A7d8190d723f745c38750a6957777u8a8%40thread.skype/messages/7480208374/hostedContents/738021083
 ```
 
 ## Optional query parameters
@@ -68,7 +68,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/messages/{id}/hostedContents/{id}
+GET https://graph.microsoft.com/v1.0/teams/3ade275a-77cb-444e-904d-9cb268c24b9d/channels/19%3A7d8190d723f745c38750a6957777u8a8%40thread.skype/messages/7480208374/hostedContents/738021083
 ```
 
 #### Response
@@ -89,7 +89,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "id-value"
+  "id": "7480208374"
 }
 ```
 
@@ -103,7 +103,7 @@ Content-type: application/json
   "name": "get_chatmessagehostedcontent"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/messages/{id}/hostedContents/{id}
+GET https://graph.microsoft.com/v1.0/teams/3ade275a-77cb-444e-904d-9cb268c24b9d/channels/19%3A7d8190d723f745c38750a6957777u8a8%40thread.skype/messages/7480208374/hostedContents/738021083
 ```
 
 

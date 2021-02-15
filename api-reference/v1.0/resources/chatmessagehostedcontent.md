@@ -19,8 +19,8 @@ they are stored in SharePoint or OneDrive.
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [List chatMessageHostedContent](../api/chatmessage-list-hostedcontents.md) | [chatMessageHostedContent](chatmessagehostedcontent.md) | Retrieve the list of **chatMessageHostedContent** for a message. |
-| [Get chatMessageHostedContent](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](chatmessagehostedcontent.md) | Read the properties and relationships of a **chatMessageHostedContent** object. |
+| [List content hosted in chat message](../api/chatmessage-list-hostedcontents.md) | [chatMessageHostedContent](chatmessagehostedcontent.md) | Retrieve the collection of **chatMessageHostedContent** for a message. |
+| [Get content hosted in chat message](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](chatmessagehostedcontent.md) | Read the properties and relationships of a **chatMessageHostedContent** object. |
 
 ## Properties
 
@@ -37,7 +37,7 @@ These properties are temporary and either define behavior the service should per
 
 | Property name                     | Type   | Description
 |:----------------------------------|:-------|:--------------------------------
-| @microsoft.graph.temporaryId      | string | Represents the temporaryId for the hosted content while posting a message to refer to the hosted content in **chatMessage** resource being sent. Write-only. |
+| @microsoft.graph.temporaryId      | string | Represents the temporaryId for the hosted content while posting a message to refer to the hosted content in [chatMessage](chatmessage.md) resource being sent. Write-only. |
 
 ## Relationships
 

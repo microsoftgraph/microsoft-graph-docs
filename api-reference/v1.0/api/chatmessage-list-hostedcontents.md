@@ -1,5 +1,5 @@
 ---
-title: "List hostedContents"
+title: "List content hosted inside chat message"
 description: "Retrieve the list of chatMessageHostedContent objects from a message."
 localization_priority: Normal
 author: "clearab"
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
 
-# List hostedContents
+# List content hosted inside chat message
 
 Namespace: microsoft.graph
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{id}/channels/{id}/messages/{id}/hostedContents
+GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/hostedContents
 ```
 
 ## Optional query parameters
@@ -66,7 +66,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}/messages/{id}/hostedContents
+GET https://graph.microsoft.com/v1.0/teams/3ade275a-77cb-444e-904d-9cb268c24b9d/channels/19%3A7d8190d723f745c38750a6957777u8a8%40thread.skype/messages/1602725975403/hostedContents
 ```
 
 
@@ -91,7 +91,7 @@ Content-type: application/json
 {
   "value": [
     {
-      "id": "id-value"
+      "id": "1602725975609"
     }
   ]
 }
