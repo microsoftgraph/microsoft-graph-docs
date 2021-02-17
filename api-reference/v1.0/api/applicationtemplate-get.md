@@ -43,7 +43,7 @@ For general information, see [OData query parameters](/graph/query-parameters).
 
 | Name      |Description|
 |:----------|:----------|
-| Authorization | Bearer {code} |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -109,5 +109,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
 
