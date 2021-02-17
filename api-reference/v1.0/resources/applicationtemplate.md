@@ -27,7 +27,7 @@ Represents an application in the [Azure AD application gallery](/azure/active-di
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |categories|String collection|The list of categories for the application. Possible values: `Collaboration`, `Business Management`, `Consumer`,`Content management`, `CRM`, `Data services`, `Developer services`, `E-commerce`, `Education`, `ERP`, `Finance`, `Health`, `Human resources`, `IT infrastructure`, `Mail`, `Management`, `Marketing`, `Media`, `Productivity`, `Project management`, `Telecommunications`, `Tools, Travel`, and `Web design & hosting`.|
-|description|String|A description of the application.|
+|description|String|The description of the application.|
 |displayName|String|The name of the application.|
 |homePageUrl|String|The home page URL of the application.|
 |id|String| Unique identifier for the application. Read-only.|
