@@ -1,6 +1,6 @@
 ---
 title: "applicationTemplate resource type"
-description: "Represents an application in the Azure AD application gallery"
+description: "Represents an application in the Azure AD application gallery."
 localization_priority: Normal
 author: "luleonpla"
 ms.prod: "microsoft-identity-platform"
@@ -76,5 +76,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
 
