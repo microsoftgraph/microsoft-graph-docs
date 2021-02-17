@@ -1,6 +1,6 @@
 ---
 title: "applicationTemplate: instantiate"
-description: "Use this API to create a new applicationTemplate"
+description: "Add an instance of an application from the Azure AD application gallery."
 localization_priority: Normal
 author: "luleonpla"
 ms.prod: "microsoft-identity-platform"
