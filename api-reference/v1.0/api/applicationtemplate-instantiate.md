@@ -43,7 +43,7 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|displayName|String|Custom name of the application|
+|displayName|String| The custom name of the application.|
 
 ## Response
 
