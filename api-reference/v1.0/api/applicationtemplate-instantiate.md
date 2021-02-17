@@ -60,22 +60,20 @@ The following is an example of the request.
 > [!NOTE] 
 > You can use this API to instantiate [non-gallery apps](/azure/active-directory/manage-apps/add-non-gallery-app). Use the following ID for **applicationTemplate**: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
 
-# [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "applicationtemplate_instantiate"
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/applicationTemplates/{id}/instantiate
+POST https://graph.microsoft.com/v1.0/applicationTemplates/cd3ed3de-93ee-400b-8b19-b61ef44a0f29/instantiate
 Content-type: application/json
 
 {
   "displayName": "My custom name"
 }
 ```
----
-
 
 ### Response
 
@@ -95,52 +93,123 @@ HTTP/1.1 201 OK
 Content-type: application/json
 
 {
-   "servicePrincipal": {
-	  "accountEnabled": true,
-	  "addIns": [
-	    {
-	      "id": "id-value",
-	      "type": "type-value",
-	      "properties": [
-		{
-		  "key": "key-value",
-		  "value": "value-value"
-		}
-	      ]
-	    }
-	  ],
-	  "appDisplayName": "appDisplayName-value",
-	  "appId": "appId-value",
-	  "appOwnerOrganizationId": "appOwnerOrganizationId-value",
-	  "appRoleAssignmentRequired": true
-   },
-   "application": {
-	  "api": {
-	    "acceptedAccessTokenVersion": 1,
-	    "publishedPermissionScopes": [
-	      {
-		"adminConsentDescription": "adminConsentDescription-value",
-		"adminConsentDisplayName": "adminConsentDisplayName-value",
-		"id": "id-value",
-		"isEnabled": true,
-		"type": "type-value",
-		"userConsentDescription": "userConsentDescription-value",
-		"userConsentDisplayName": "userConsentDisplayName-value",
-		"value": "value-value"
-	      }
-	    ]
-	  },
-	  "allowPublicClient": true,
-	  "applicationAliases": [
-	    "applicationAliases-value"
-	  ],
-	  "createdDateTime": "datetime-value",
-	  "installedClients": {
-	    "redirectUrls": [
-	      "redirectUrls-value"
-	    ]
-	  }
-   }
+    "application": {
+        "id": "9bef669d-bf1e-46bf-90f7-bae587321663",
+        "appId": "ed8fa786-7e93-486e-8c16-520c8dba82e3",
+        "applicationTemplateId": "cd3ed3de-93ee-400b-8b19-b61ef44a0f29",
+        "createdDateTime": "2021-02-17T17:45:59Z",
+        "deletedDateTime": null,
+        "displayName": "My custom name",
+        "groupMembershipClaims": null,
+        "identifierUris": [],
+        "isFallbackPublicClient": false,
+        "signInAudience": "AzureADMyOrg",
+        "tags": [],
+        "tokenEncryptionKeyId": null,
+        "optionalClaims": null,
+        "verifiedPublisher": {
+            "displayName": null,
+            "verifiedPublisherId": null,
+            "addedDateTime": null
+        },
+        "addIns": [],
+        "api": {
+            "acceptMappedClaims": null,
+            "knownClientApplications": [],
+            "requestedAccessTokenVersion": null,
+            "oauth2PermissionScopes": [
+                {
+                    "adminConsentDescription": "Allow the application to access My custom name on behalf of the signed-in user.",
+                    "adminConsentDisplayName": "Access My custom name",
+                    "id": "d4a69afb-885b-46e2-8d5f-20bd734dc5bf",
+                    "isEnabled": true,
+                    "type": "User",
+                    "userConsentDescription": "Allow the application to access My custom name on your behalf.",
+                    "userConsentDisplayName": "Access My custom name",
+                    "value": "user_impersonation"
+                }
+            ],
+            "preAuthorizedApplications": []
+        },
+        "appRoles": [],
+        "info": {
+            "logoUrl": null,
+            "marketingUrl": null,
+            "privacyStatementUrl": null,
+            "supportUrl": null,
+            "termsOfServiceUrl": null
+        },
+        "keyCredentials": [],
+        "parentalControlSettings": {
+            "countriesBlockedForMinors": [],
+            "legalAgeGroupRule": "Allow"
+        },
+        "passwordCredentials": [],
+        "publicClient": {
+            "redirectUris": []
+        },
+        "requiredResourceAccess": [],
+        "web": {
+            "homePageUrl": "https://*.my.salesforce.com/*?metadata=salesforce.com|ISV9.1|primary|z",
+            "redirectUris": []
+        }
+    },
+    "servicePrincipal": {
+        "id": "b466556e-22b9-48f5-bbb2-a465a35fa7b9",
+        "deletedDateTime": null,
+        "accountEnabled": true,
+        "appId": "ed8fa786-7e93-486e-8c16-520c8dba82e3",
+        "applicationTemplateId": "cd3ed3de-93ee-400b-8b19-b61ef44a0f29",
+        "appDisplayName": "My custom name",
+        "alternativeNames": [],
+        "appOwnerOrganizationId": "5badd315-5aaa-4de7-8ac7-177019570a54",
+        "displayName": "My custom name",
+        "appRoleAssignmentRequired": true,
+        "loginUrl": null,
+        "logoutUrl": null,
+        "homepage": "https://*.my.salesforce.com/*?metadata=salesforce.com|ISV9.1|primary|z",
+        "notificationEmailAddresses": [],
+        "preferredSingleSignOnMode": null,
+        "preferredTokenSigningKeyThumbprint": null,
+        "replyUrls": [],
+        "servicePrincipalNames": [
+            "ed8fa786-7e93-486e-8c16-520c8dba82e3"
+        ],
+        "servicePrincipalType": "Application",
+        "tags": [
+            "WindowsAzureActiveDirectoryIntegratedApp"
+        ],
+        "tokenEncryptionKeyId": null,
+        "samlSingleSignOnSettings": null,
+        "verifiedPublisher": {
+            "displayName": null,
+            "verifiedPublisherId": null,
+            "addedDateTime": null
+        },
+        "addIns": [],
+        "appRoles": [],
+        "info": {
+            "logoUrl": null,
+            "marketingUrl": null,
+            "privacyStatementUrl": null,
+            "supportUrl": null,
+            "termsOfServiceUrl": null
+        },
+        "keyCredentials": [],
+        "oauth2PermissionScopes": [
+            {
+                "adminConsentDescription": "Allow the application to access My custom name on behalf of the signed-in user.",
+                "adminConsentDisplayName": "Access My custom name",
+                "id": "d4a69afb-885b-46e2-8d5f-20bd734dc5bf",
+                "isEnabled": true,
+                "type": "User",
+                "userConsentDescription": "Allow the application to access My custom name on your behalf.",
+                "userConsentDisplayName": "Access My custom name",
+                "value": "user_impersonation"
+            }
+        ],
+        "passwordCredentials": []
+    }
 }
 ```
 

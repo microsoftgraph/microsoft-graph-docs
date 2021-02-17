@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | None. |
+| Delegated (work or school account)     | None. Permissions aren't needed to make the call. |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | None. |
+| Application                            | None. Permissions aren't needed to make the call. |
 
 Additional permissions are not required to call this API, as long as your application has a valid access token to call Microsoft Graph.
 
@@ -62,7 +62,6 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_applicationtemplates"
@@ -93,14 +92,23 @@ Content-type: application/json
 {
   "value": [
     {
-      "id" : "id-value",
-      "displayName" : "displayName-value",
-      "homePageUrl" : "homePageUrl-value",
-      "supportedSingleSignOnModes" : ["supportedSingleSignOnModes-value"],
-      "logoUrl" : "logoUrl-value",
-      "categories" : ["categories-value"],
-      "publisher" : "publisher-value",
-      "description" : "description-value"
+      "id": "cd3ed3de-93ee-400b-8b19-b61ef44a0f29",
+      "displayName": "Salesforce",
+      "homePageUrl": "https://www.microsoft.com/",
+      "supportedSingleSignOnModes": [
+        "password",
+        "saml",
+        "external"
+      ],
+      "supportedProvisioningTypes": [
+        "sync"
+      ],
+      "logoUrl": "https://az495088.vo.msecnd.net/app-logo/salesforce.com_215.png",
+      "categories": [
+        "crm",
+        "topApps"
+      ],
+      "publisher": "Microsoft"
     }
   ]
 }

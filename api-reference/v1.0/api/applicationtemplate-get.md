@@ -59,17 +59,14 @@ If successful, this method returns a `200 OK` response code and the requested [a
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_applicationtemplate"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/applicationTemplates/{id}
+GET https://graph.microsoft.com/v1.0/applicationTemplates/cd3ed3de-93ee-400b-8b19-b61ef44a0f29
 ```
----
-
 
 ### Response
 
@@ -88,15 +85,24 @@ The following is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 
-{
-	"id" : "id-value",
-	"displayName" : "displayName-value",
-	"homePageUrl" : "homePageUrl-value",
-	"supportedSingleSignOnModes" : ["supportedSingleSignOnModes-value"],
-	"logoUrl" : "logoUrl-value",
-	"categories" : ["categories-value"],
-	"publisher" : "publisher-value",
-	"description" : "description-value"
+{	
+  "id": "cd3ed3de-93ee-400b-8b19-b61ef44a0f29",
+  "displayName": "Salesforce",
+  "homePageUrl": "https://www.microsoft.com/",
+  "supportedSingleSignOnModes": [
+      "password",
+      "saml",
+      "external"
+  ],
+  "supportedProvisioningTypes": [
+      "sync"
+  ],
+  "logoUrl": "https://az495088.vo.msecnd.net/app-logo/salesforce.com_215.png",
+  "categories": [
+      "crm",
+      "topApps"
+  ],
+  "publisher": "Microsoft"
 }
 ```
 
