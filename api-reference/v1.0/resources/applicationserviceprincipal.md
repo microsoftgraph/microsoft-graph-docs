@@ -3,6 +3,7 @@ title: "applicationServicePrincipal resource type"
 description: "A combination of an application and a servicePrincipal."
 localization_priority: Normal
 author: "sureshja"
+ms.author: "sureshja"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
