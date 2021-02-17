@@ -31,7 +31,7 @@ Represents an application in the [Azure AD application gallery](/azure/active-di
 |displayName|String|The name of the application.|
 |homePageUrl|String|The home page URL of the application.|
 |id|String| Unique identifier for the application. Read-only.|
-|logoUrl|String|The URL to get the logo for this application.|
+|logoUrl|String|The URL to get the logo for the application.|
 |publisher|String|The name of the publisher for the application.|
 |supportedProvisioningTypes|String collection|The list of provisioning modes supported by this application. The value must be `sync`.|
 |supportedSingleSignOnModes|String collection|The list of single sign-on modes supported by this application. Possible values: `password`, `saml`, `external`, and `oidc`.|
