@@ -50,8 +50,8 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.applicationtemplate",
-  "baseType": "",
+  "@odata.type": "microsoft.graph.applicationTemplate",
+  "baseType":  "resource",
   "keyProperty": "id"
 }-->
 
