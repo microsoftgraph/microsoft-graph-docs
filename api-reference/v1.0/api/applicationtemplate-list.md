@@ -3,7 +3,7 @@ title: "List applicationTemplates"
 description: "Retrieve a list of applicationtemplate objects."
 localization_priority: Normal
 author: "luleonpla"
-ms.author: "luleonpla"
+ms.author: "luleon"
 ms.prod: "microsoft-identity-platform"
 doc_type: "apiPageType"
 ---

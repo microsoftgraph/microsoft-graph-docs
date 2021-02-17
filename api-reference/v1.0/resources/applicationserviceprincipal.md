@@ -38,7 +38,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.applicationServicePrincipal",
+  "@odata.type": "microsoft.graph.applicationserviceprincipal",
   "baseType": "",
   "keyProperty": "id"
 }-->

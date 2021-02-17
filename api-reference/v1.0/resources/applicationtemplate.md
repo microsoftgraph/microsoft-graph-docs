@@ -3,7 +3,7 @@ title: "applicationTemplate resource type"
 description: "Represents an application in the Azure AD application gallery."
 localization_priority: Normal
 author: "luleonpla"
-ms.author: "luleonpla"
+ms.author: "luleon"
 ms.prod: "microsoft-identity-platform"
 doc_type: "resourcePageType"
 ---
@@ -50,7 +50,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.applicationTemplate",
+  "@odata.type": "microsoft.graph.applicationtemplate",
   "baseType": "",
   "keyProperty": "id"
 }-->
