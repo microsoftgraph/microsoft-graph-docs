@@ -26,7 +26,7 @@ None
 
 ## Relationships
 
-None
+None.
 
 ## JSON representation
 
@@ -58,5 +58,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
 
