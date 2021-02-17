@@ -34,7 +34,7 @@ Represents an application in the [Azure AD application gallery](/azure/active-di
 |logoUrl|String|The URL to get the logo for this application.|
 |publisher|String|The name of the publisher for this application.|
 |supportedProvisioningTypes|String collection|The list of provisioning modes supported by this application. The only valid value is `sync`.|
-|supportedSingleSignOnModes|String collection|The list of single sign-on modes supported by this application. The supported values are `password`, `saml`, `external`, and `oidc`.|
+|supportedSingleSignOnModes|String collection|The list of single sign-on modes supported by this application. Possible values: `password`, `saml`, `external`, and `oidc`.|
 
 ## Relationships
 
