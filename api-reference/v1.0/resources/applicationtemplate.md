@@ -30,7 +30,7 @@ Represents an application in the [Azure AD application gallery](/azure/active-di
 |description|String|The description of the application.|
 |displayName|String|The name of the application.|
 |homePageUrl|String|The home page URL of the application.|
-|id|String| Unique identifier for the application. Read-only.|
+|id|String| The unique identifier for the application. Read-only.|
 |logoUrl|String|The URL to get the logo for the application.|
 |publisher|String|The name of the publisher for the application.|
 |supportedProvisioningTypes|String collection|The list of provisioning modes supported by this application. The value must be `sync`.|
