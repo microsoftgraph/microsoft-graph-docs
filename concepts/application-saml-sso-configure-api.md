@@ -18,7 +18,7 @@ This article uses an AWS Azure AD application template as an example, but you ca
 
 ## Prerequisites
 
-- In this tutorial, you need a self-signed certificate that Azure AD can use to sign a SAML response. You can use your own certificate or you could use something like the following C# code to create a test certificate:
+- In this tutorial, you need a self-signed certificate that Azure AD can use to sign a SAML response. You can generate a certificate using the servicePrincipal action [addTokenSigningCertificate](graph/api/serviceprincipal-addtokensigningcertificate?view=graph-rest-beta) or you can use your own certificate. You could use something like the following C# code to create a test certificate:
 
     > **Note** This code is for learning and reference **ONLY** and should not be used as-is in production.
 
@@ -173,7 +173,7 @@ To create the application from the gallery, you first get the identifier of the 
 #### Request
 
 ```http
-GET https://graph.microsoft.com/beta/applicationTemplates?$filter=displayName eq 'Amazon Web Services (AWS)'
+GET https://graph.microsoft.com/v1.0/applicationTemplates?$filter=displayName eq 'Amazon Web Services (AWS)'
 ```
 
 #### Response
@@ -183,7 +183,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#applicationTemplates",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#applicationTemplates",
   "value": [
     {
       "id": "8b1025e4-1dd2-430b-a150-2ef79cd700f5",
@@ -216,7 +216,7 @@ Using the **id** value that you recorded for the application template, create an
 #### Request
 
 ```http
-POST https://graph.microsoft.com/beta/applicationTemplates/8b1025e4-1dd2-430b-a150-2ef79cd700f5/instantiate
+POST https://graph.microsoft.com/v1.0/applicationTemplates/8b1025e4-1dd2-430b-a150-2ef79cd700f5/instantiate
 Content-type: application/json
 
 {
@@ -234,7 +234,7 @@ HTTP/1.1 201 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.applicationServicePrincipal",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.applicationServicePrincipal",
   "application": {
     "objectId": "8f558912-0ca3-4f1e-ab6e-66ad7fa4e7bb",
     "appId": "536c33dc-dc28-42c8-ba1d-406524d83ec3",
@@ -291,7 +291,7 @@ In this tutorial, you set `saml` as the single sign-on mode in the service princ
 #### Request
 
 ```http
-PATCH https://graph.microsoft.com/beta/servicePrincipals/3161ab85-8f57-4ae0-82d3-7a1f71680b27
+PATCH https://graph.microsoft.com/v1.0/servicePrincipals/3161ab85-8f57-4ae0-82d3-7a1f71680b27
 Content-type: servicePrincipal/json
 
 {
@@ -312,7 +312,7 @@ Using the **objectId** for the application that you recorded earlier, set the id
 #### Request
 
 ```http
-PATCH https://graph.microsoft.com/beta/applications/8f558912-0ca3-4f1e-ab6e-66ad7fa4e7bb
+PATCH https://graph.microsoft.com/v1.0/applications/8f558912-0ca3-4f1e-ab6e-66ad7fa4e7bb
 Content-type: applications/json
 
 {
@@ -345,7 +345,7 @@ Use the **objectId** for the service principal that you recorded earlier.
 #### Request
 
 ```http
-PATCH https://graph.microsoft.com/beta/serviceprincipals/3161ab85-8f57-4ae0-82d3-7a1f71680b27
+PATCH https://graph.microsoft.com/v1.0/serviceprincipals/3161ab85-8f57-4ae0-82d3-7a1f71680b27
 Content-type: serviceprincipals/json
 
 {
@@ -413,7 +413,7 @@ Create the claims mapping policy and record the value of the **id** property to 
 #### Request
 
 ```http
-POST https://graph.microsoft.com/beta/policies/claimsMappingPolicies
+POST https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies
 Content-type: claimsMappingPolicies/json
 
 {
@@ -432,7 +432,7 @@ HTTP/1.1 201 OK
 Content-type: claimsMappingPolicies/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/claimsMappingPolicies/$entity",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#policies/claimsMappingPolicies/$entity",
   "id": "218e7879-5330-4ca6-8bca-ddb1f2402e73",
   "deletedDateTime": null,
   "definition": [
@@ -450,7 +450,7 @@ Use the **objectId** for the service principal that you recorded earlier to assi
 #### Request
 
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/3161ab85-8f57-4ae0-82d3-7a1f71680b27/claimsMappingPolicies/$ref
+POST https://graph.microsoft.com/v1.0/servicePrincipals/3161ab85-8f57-4ae0-82d3-7a1f71680b27/claimsMappingPolicies/$ref
 Content-type: claimsMappingPolicies/json
 
 {
@@ -466,8 +466,40 @@ HTTP/1.1 204
 
 ## Step 4: Configure a signing certificate
 
-Assign your certificate to the application. 
+Assign your certificate to the application.
 
+### Create the certificate using the addTokenSigningCertificate action
+
+#### Request
+
+```http
+PATCH https://graph.microsoft.com/beta/servicePrincipals/3161ab85-8f57-4ae0-82d3-7a1f71680b27/addTokenSigningCertificate
+Content-type: servicePrincipal/json
+
+{
+    "displayName":"CN=customDisplayName",
+    "endDateTime":"2024-01-25T00:00:00Z"
+}
+```
+
+#### Response
+
+```http
+HTTP/1.1 200
+
+{
+    "customKeyIdentifier": "8u/ZRZJ++F3yZl9PMxceUlEbmrU=",
+    "displayName": "CN=customDisplayName",
+    "endDateTime": "2024-02-18T20:32:40.8089619Z",
+    "key": "MIICujCCAaKgAwIBAgIIL4+E4Zp91wkwDQYJKoZIhvcNAQELBQAwHTEbMBkGA1UEAwwSY3VzdG9tRGlzcGxheU5hbWUyMB4XDTIxMDIxODIwMj....",
+    "startDateTime": "2021-02-18T20:22:40.8089619Z",
+    "thumbprint": "F2EFD945927EF85DF2665F4F33171E52511B9AB5",
+    "type": "AsymmetricX509Cert",
+    "usage": "Verify"
+}
+```
+
+### Import your own certificate
 #### Request
 
 In the request body, provide these values:
@@ -555,7 +587,7 @@ PATCH https://graph.microsoft.com/v1.0/servicePrincipals/3161ab85-8f57-4ae0-82d3
 Content-type: servicePrincipals/json
 
 {
-    "preferredTokenSigningKeyThumbprint": "14B73D02E5094675063DF66A42B914DAD71633D7"
+    "preferredTokenSigningKeyThumbprint": "F2EFD945927EF85DF2665F4F33171E52511B9AB5"
 }
 ```
 
@@ -685,7 +717,7 @@ Delete the application that you created.
 #### Request
 
 ```http
-DELETE https://graph.microsoft.com/beta/applications/4b01f51f-079b-4634-b767-7e19ad502cdb
+DELETE https://graph.microsoft.com/v1.0/applications/4b01f51f-079b-4634-b767-7e19ad502cdb
 ```
 
 #### Response
@@ -717,7 +749,7 @@ Delete the claims mapping policy.
 #### Request
 
 ```http
-DELETE https://graph.microsoft.com/beta/policies/claimsMappingPolicies/218e7879-5330-4ca6-8bca-ddb1f2402e73
+DELETE https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/218e7879-5330-4ca6-8bca-ddb1f2402e73
 ```
 
 #### Response
@@ -732,9 +764,10 @@ No Content - 204
 - [Customize claims emitted in tokens for a specific app in a tenant](/azure/active-directory/develop/active-directory-claims-mapping).
 - You can use the applicationTemplate API to instantiate [Non-Gallery apps](https://docs.microsoft.com/azure/active-directory/manage-apps/view-applications-portal). Use applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
 - [New-SelfSignedCertificate](/powershell/module/pkiclient/new-selfsignedcertificate?view=win10-ps)
-- [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-beta)
+- [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-1.0)
 - [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-1.0)
 - [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
 - [application](/graph/api/resources/application?view=graph-rest-1.0)
-- [claimsMappingPolicy](https://docs.microsoft.com/graph/api/resources/claimsmappingpolicy?view=graph-rest-beta)
+- [claimsMappingPolicy](https://docs.microsoft.com/graph/api/resources/claimsmappingpolicy?view=graph-rest-1.0)
 - [keyCredential](/graph/api/resources/keycredential?view=graph-rest-1.0)
+- [addTokenSigningCertificate](graph/api/serviceprincipal-addtokensigningcertificate?view=graph-rest-beta)
