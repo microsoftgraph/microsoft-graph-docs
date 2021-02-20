@@ -55,6 +55,8 @@ Represents the image resource on cloud PC.
 |:---|:---|
 |internalServerError|There was an internal server error while processing the image.|
 |sourceImageNotFound|The source image is not valid for provisioning a Windows VM with it.|
+|osVersionNotSupported| OS version is not supported.|
+|sourceImageInvalid|The source image is not valid for provisioning a windows VM with it.|
 
 ## Relationships
 
