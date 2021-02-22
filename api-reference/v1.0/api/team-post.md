@@ -201,14 +201,14 @@ Content-Type: application/json
             "tabs": [
                 {
                     "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.web')",
-                    "name": "A Pinned Website",
+                    "displayName": "A Pinned Website",
                     "configuration": {
                         "contentUrl": "https://docs.microsoft.com/microsoftteams/microsoft-teams"
                     }
                 },
                 {
                     "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.youtube')",
-                    "name": "A Pinned YouTube Video",
+                    "displayName": "A Pinned YouTube Video",
                     "configuration": {
                         "contentUrl": "https://tabs.teams.microsoft.com/Youtube/Home/YoutubeTab?videoId=X8krAMdGvCQ",
                         "websiteUrl": "https://www.youtube.com/watch?v=X8krAMdGvCQ"
