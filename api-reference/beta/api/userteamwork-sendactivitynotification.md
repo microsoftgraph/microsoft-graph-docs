@@ -80,7 +80,7 @@ Content-Type: application/json
 {
     "topic": {
         "source": "entityUrl",
-        "value": "https://graph.microsoft.com/beta/users/{userId}/teamwork/installedApps/{installationId}"
+        "value": "https://graph.microsoft.com/beta/users/{userId}/teamwork/installedApps/{teamAppId}"
     },
     "activityType": "taskCreated",
     "previewText": {
