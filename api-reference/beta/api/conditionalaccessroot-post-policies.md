@@ -571,10 +571,10 @@ Content-type: application/json
             "includeGroups": ["ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"]
         },
         "devices": {
-            "includeDeviceStates": [
+            "includeDevices": [
                 "All"
             ],
-            "excludeDeviceStates": [
+            "excludeDevices": [
                 "Compliant"
             ]
         }
@@ -639,10 +639,10 @@ Content-type: application/json
             "excludeRoles": []
         },
         "devices": {
-            "includeDeviceStates": [
+            "includeDevices": [
                 "All"
             ],
-            "excludeDeviceStates": [
+            "excludeDevices": [
                 "Compliant"
             ]
         }
