@@ -22,13 +22,25 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | OnlineMeetings.ReadWrite                    |
 | Delegated (personal Microsoft account) | Not supported.                               |
-| Application                            | Not supported.                |
+| Application                            | OnlineMeetings.ReadWrite.All*                |
+
+> [!IMPORTANT]
+> \* Administrators must create an [application access policy](/graph/concepts/cloud-communication-online-meeting-application-access-policy.md) and grant it to a user, authorizing the app configured in the policy to create or get an online meeting with external ID on behalf of that user (user ID specified in the request path).
 
 ## HTTP request
+To call **createOrGet** API with delegated token:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings/createOrGet
 ```
+
+To call **createOrGet** API with application token:
+<!-- { "blockType": "ignored" } -->
+```http
+POST /users/{userId}/onlineMeetings/createOrGet
+```
+
+> **Note:** `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). See more details in [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
 
 ## Request headers
 | Name          | Description               |

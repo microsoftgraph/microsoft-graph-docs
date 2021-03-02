@@ -21,7 +21,7 @@ A collection of users or groups enabled to use [Microsoft Authenticator authenti
 |isNumberMatchingRequired (Private Preview)|Boolean|Require the user to match the number displayed on the sign-in page to approve the MFA notification.|
 |isRegistrationRequired|Boolean|Determines whether the user is enforced to register the authentication method. *Not supported*. |
 |shownContext (Private Preview)|authenticatorAppContextType|Determines what types of context about the sign-in should be shown to the user in the body of the notification. Possible values are: `location`, `app`.|
-|targetType|authenticationMethodTargetType| Possible values are: `user`, `group`.|
+|targetType|authenticationMethodTargetType| Possible values are: `null`, `user`, `group`.|
 
 ## Relationships
 None.

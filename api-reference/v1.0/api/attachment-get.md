@@ -799,8 +799,6 @@ QkVHSU46VkNBTEVOREFSDQpNRVRIT0Q6UkVRVUVTVA0KUFJPRElEOk1pY3Jvc29mdCBFeGNoYW5n
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Error: get_and_expand_item_attachment/item:
-      Property 'item' is of type Custom but has no custom members."
   ],
   "tocPath": ""
 }-->

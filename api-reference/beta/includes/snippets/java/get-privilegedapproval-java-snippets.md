@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IPrivilegedApprovalCollectionPage privilegedApproval = graphClient.privilegedApproval()
+PrivilegedApproval privilegedApproval = graphClient.privilegedApproval("{id}")
 	.buildRequest()
 	.get();
 

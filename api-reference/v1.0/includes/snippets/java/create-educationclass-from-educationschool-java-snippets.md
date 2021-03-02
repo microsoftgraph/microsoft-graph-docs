@@ -6,8 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-graphClient.education().classes("{class-id}").teachers("{teacher-id}")
+EducationClass educationClass = new EducationClass();
+educationClass.additionalDataManager().put("@odata.id", new JsonPrimitive("https://graph.microsoft.com/v1.0/education/classes/11006"));
+
+graphClient.education().schools("{school-id}").classes().references()
 	.buildRequest()
-	.delete();
+	.post(educationClass);
 
 ```

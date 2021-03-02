@@ -86,7 +86,7 @@ Content-length: 344
   "value": [
     {
       "id": "19002",
-      "addedStudentAction": "String",
+      "addedStudentAction": "none",
       "allowLateSubmissions": true,
       "allowStudentsToAddResourcesToSubmission": true,
       "assignDateTime": "2014-02-01T00:00:00Z",
@@ -122,7 +122,7 @@ Content-length: 344
           }
       },
       "lastModifiedDateTime": "2014-02-01T00:00:00Z",
-      "notificationChannelUrl": "String",
+      "notificationChannelUrl": null,
       "status": "published"
     }
   ]

@@ -30,8 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /me/profile/accounts/{id}
-DELETE /users/{id | userPrincipalName}/profile/accounts/{id}
+DELETE /me/profile/account/{id}
+DELETE /users/{id | userPrincipalName}/profile/account/{id}
 ```
 
 ## Request headers
@@ -59,7 +59,7 @@ The following is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/me/profile/accounts/{id}
+DELETE https://graph.microsoft.com/beta/me/profile/account/{id}
 ```
 
 ### Response

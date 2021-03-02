@@ -41,7 +41,6 @@
       "breadcrumb_path": "/graph/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "author": "MSGraphDocsVteam",
-      "ms.author": "MSGraphDocsVteam",
       "uhfHeaderId": "MSDocsHeader-MSGraph",
       "ms.suite": "microsoft-graph",
       "ms.prod": "non-product-specific",

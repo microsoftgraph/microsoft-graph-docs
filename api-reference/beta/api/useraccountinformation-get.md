@@ -30,8 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /me/profile/accounts/{id}
-GET /users/{id | userPrincipalName}/profile/accounts/{id}
+GET /me/profile/account/{id}
+GET /users/{id | userPrincipalName}/profile/account/{id}
 ```
 
 ## Optional query parameters
@@ -63,7 +63,7 @@ The following is an example of the request.
 }-->
 
 ```http
-GET https://graph.microsoft.com/beta/user/profile/accounts/{id}
+GET https://graph.microsoft.com/beta/me/profile/account/{id}
 ```
 
 ### Response

@@ -6,9 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var bitlockerRecoveryKey = await graphClient.Bitlocker.RecoveryKeys["b465e4e8-e4e8-b465-e8e4-65b4e8e465b4"]
+var recoveryKeys = await graphClient.Bitlocker.RecoveryKeys
 	.Request()
-	.Select("key")
+	.Header("ocp-client-name","\"My Friendly Client\"")
+	.Header("ocp-client-version","\"1.2\"")
+	.Filter("deviceId eq '1ab40ab2-32a8-4b00-b6b5-ba724e407de9'")
 	.GetAsync();
 
 ```

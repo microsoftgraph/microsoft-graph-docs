@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/planner/plans')
+let res = await client.api('/groups/ebf3b108-5234-4e22-b93d-656d7dae5874/planner/plans')
 	.version('beta')
 	.get();
 

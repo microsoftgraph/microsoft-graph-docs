@@ -9473,6 +9473,8 @@ items:
           href: api/educationclass-post-assignments.md
         - name: Get assignment settings
           href: api/educationassignmentsettings-get.md
+        - name: Get assignment defaults
+          href: api/educationassignmentdefaults-get.md
         - name: List categories
           href: api/educationclass-list-categories.md
         - name: Create category
@@ -9542,6 +9544,13 @@ items:
           href: api/educationassignmentsettings-get.md
         - name: Update assignment settings
           href: api/educationassignmentsettings-update.md
+      - name: Assignment defaults
+        href: resources/educationassignmentdefaults.md
+        items:
+        - name: Get assignment defaults
+          href: api/educationassignmentdefaults-get.md
+        - name: Update assignment defaults
+          href: api/educationassignmentdefaults-update.md
       - name: Category
         href: resources/educationcategory.md
         items:
@@ -10343,6 +10352,17 @@ items:
               href: api/windowshelloforbusinessauthenticationmethod-get.md
             - name: Delete
               href: api/windowshelloforbusinessauthenticationmethod-delete.md
+          - name: Temporary Access Pass 
+            href: resources/temporaryaccesspassauthenticationmethod.md
+            items:
+            - name: List
+              href: api/temporaryaccesspassauthenticationmethod-list.md
+            - name: Create
+              href: api/temporaryaccesspassauthenticationmethod-post.md
+            - name: Get
+              href: api/temporaryaccesspassauthenticationmethod-get.md
+            - name: Delete
+              href: api/temporaryaccesspassauthenticationmethod-delete.md
           - name: Phone
             href: resources/phoneauthenticationmethod.md
             items:
@@ -10415,6 +10435,15 @@ items:
               href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-update.md
             - name: Delete
               href: api/passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration-delete.md
+          - name: Temporary Access Pass policy
+            href: resources/temporaryaccesspassauthenticationmethodconfiguration.md
+            items:
+            - name: Get
+              href: api/temporaryaccesspassauthenticationmethodconfiguration-get.md
+            - name: Update
+              href: api/temporaryaccesspassauthenticationmethodconfiguration-update.md
+            - name: Delete
+              href: api/temporaryaccesspassauthenticationmethodconfiguration-delete.md
           - name: Email policy
             href: resources/emailauthenticationmethodconfiguration.md
             items:

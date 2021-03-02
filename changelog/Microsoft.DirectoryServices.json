@@ -1,6 +1,32 @@
 {
   "changelog": [
     {
+      "ChangeList": [
+         {
+          "Id": "a9ef9c12-53b3-40fe-9191-a879dc4bc6a8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "temporaryAccessPassAuthenticationMethodConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [temporaryaccesspassauthenticationmethodconfiguration](https://docs.microsoft.com/en-us/graph/api/resources/temporaryaccesspassauthenticationmethodconfiguration?view=graph-rest-beta) resource and associated methods.",
+          "Target": "temporaryAccessPassAuthenticationMethodConfiguration"
+      },
+      {
+        "Id": "db3f45ee-068c-4dbd-aa53-b574dfab3b76",
+        "ApiChange": "Resource",
+        "ChangedApiName": "temporaryAccessPassAuthenticationMethod",
+        "ChangeType": "Addition",
+        "Description": "Added the [temporaryAccessPassAuthenticationMethod](https://docs.microsoft.com/en-us/graph/api/resources/temporaryAccessPassAuthenticationMethod?view=graph-rest-beta) resource and associated methods.",
+        "Target": "temporaryAccessPassAuthenticationMethod"
+      }
+       ],
+       "Id": "785f553a-e5dd-416e-91fa-14c698ab40b0",
+       "Cloud": "prd",
+       "Version": "beta",
+       "CreatedDateTime": "2021-02-16T00:00:00.428Z",
+       "WorkloadArea": "Identity and access",
+       "SubArea": "Directory management"
+     },
+    {
      "ChangeList": [
         {
       "Id": "0ab336b4-a823-4dd7-819d-72d076a8b881",
@@ -17,6 +43,88 @@
       "CreatedDateTime": "2021-02-10T18:58:47.428Z",
       "WorkloadArea": "Applications",
       "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackage",
+          "ChangeType": "Addition",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Target": "accessPackage"
+      },
+      {
+          "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Target": "accessPackageAssignment"
+      },
+      {
+          "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAssignmentPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Target": "accessPackageAssignmentPolicy"
+      },
+      {
+          "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAssignmentRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Target": "accessPackageAssignmentRequest"
+      },
+      {
+          "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAssignmentResourceRole",
+          "ChangeType": "Addition",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Target": "accessPackageAssignmentResourceRole"
+      },
+      {
+          "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageCatalog",
+          "ChangeType": "Addition",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Target": "accessPackageCatalog"
+      },
+      {
+          "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageResourceRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Target": "accessPackageResourceRequest"
+      },
+      {
+          "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "connectedOrganization",
+          "ChangeType": "Addition",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Target": "connectedOrganization"
+      },
+      {
+          "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "entitlementManagementSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Target": "entitlementManagementSettings"
+      }
+      ],
+      "Id": "157d7d86-bf1d-4658-9a13-33d1aec9da4c",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-02-12T22:00:01Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
     },
      {
       "ChangeList": [

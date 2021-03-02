@@ -39,7 +39,7 @@ configuration.scaling = PrintScaling.SHRINK_TO_FIT;
 configuration.fitPdfToPage = false;
 printJob.configuration = configuration;
 
-graphClient.print().printers("{id}").jobs()
+graphClient.print().shares("{id}").jobs()
 	.buildRequest()
 	.post(printJob);
 

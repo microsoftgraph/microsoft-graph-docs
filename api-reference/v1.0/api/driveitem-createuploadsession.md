@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Resumable file upload
 localization_priority: Priority
@@ -419,8 +418,6 @@ how errors are returned.
   "description": "Upload large files using an upload session.",
   "keywords": "upload,large file,fragment,BITS",
   "suppressions": [
-    "Warning: /api-reference/v1.0/api/driveitem-createuploadsession.md:
-      Found potential enums in resource example that weren't defined in a table:(rename,fail,replace) are in resource, but () are in table"
   ],
   "section": "documentation"
 } -->

@@ -247,6 +247,7 @@ Hence the type of the corresponding 3 properties remain as string type in the Pr
 | Relationship | Type    |Description|
 |:---------------|:--------|:----------|
 |activities|[userActivity](projectrome-activity.md) collection|The user's activities across devices. Read-only. Nullable.|
+|appRoleAssignments|[appRoleAssignment](approleassignment.md) collection|Represents the app roles a user has been granted for an application. |
 |calendar|[calendar](calendar.md)|The user's primary calendar. Read-only.|
 |calendarGroups|[calendarGroup](calendargroup.md) collection|The user's calendar groups. Read-only. Nullable.|
 |calendarView|[event](event.md) collection|The calendar view for the calendar. Read-only. Nullable.|
@@ -545,8 +546,6 @@ Here is a JSON representation of the resource
   "description": "user resource",
   "keywords": "",
   "suppressions" : [
-     "Warning: /api-reference/v1.0/resources/user.md/microsoft.graph.user:
-      Property 'createdDateTime' found in markdown table but not in resource definition."
   ],
   "section": "documentation",
   "tocPath": ""

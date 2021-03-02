@@ -41,7 +41,7 @@ In the request body, supply the values for relevant fields that should be update
 |name|string|Name of the table.|
 |showHeaders|boolean|Indicates whether the header row is visible or not. This value can be set to show or remove the header row.|
 |showTotals|boolean|Indicates whether the total row is visible or not. This value can be set to show or remove the total row.|
-|style|string|Constant value that represents the Table style. The possible values are: TableStyleLight1 thru TableStyleLight21, TableStyleMedium1 thru TableStyleMedium28, TableStyleStyleDark1 thru TableStyleStyleDark11. A custom user-defined style present in the workbook can also be specified.|
+|style|string|Constant value that represents the Table style. The possible values are: `TableStyleLight1` through `TableStyleLight21`, `TableStyleMedium1` through  `TableStyleMedium28`, `TableStyleDark1` through `TableStyleDark11`. A custom user-defined style present in the workbook can also be specified.|
 
 ## Response
 

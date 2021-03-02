@@ -1,12 +1,12 @@
 ---
-title: "Tutorial: Create an access package using Microsoft Graph APIs"
-description: "Learn how to create an access package and request access to it using Microsoft Graph APIs."
+title: "Tutorial: Manage access to resources in Active Directory entitlement management using Microsoft Graph APIs"
+description: "Learn how to manage access to resources in Active Directory (Azure AD) entitlement management using Microsoft Graph APIs."
 author: "davidmu1"
 localization_priority: Normal
 ms.prod: "microsoft-identity-platform"
 ---
 
-# Tutorial: Create an access package using Microsoft Graph APIs
+# Tutorial: Manage access to resources in Active Directory entitlement management using Microsoft Graph APIs
 
 Managing access to all the resources that employees need, such as groups, applications, and sites, is an important function for organizations. You want to grant employees the right level of access they need to be productive and remove their access when it is no longer needed. [Azure Active Directory (Azure AD) entitlement management](/azure/active-directory/governance/entitlement-management-overview) using Microsoft Graph APIs enables you to manage this type of access.
 

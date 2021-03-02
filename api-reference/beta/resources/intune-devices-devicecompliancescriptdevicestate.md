@@ -33,7 +33,7 @@ Contains properties for device run state of the device compliance script.
 |detectionState|[runState](../resources/intune-shared-runstate.md)|Detection state from the lastest device compliance script execution. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |lastStateUpdateDateTime|DateTimeOffset|The last timestamp of when the device compliance script executed|
 |expectedStateUpdateDateTime|DateTimeOffset|The next timestamp of when the device compliance script is expected to execute|
-|lastSyncDateTime|DateTimeOffset|The last time that Intune Managment Extension synced with Intune|
+|lastSyncDateTime|DateTimeOffset|The last time that Intune Management Extension synced with Intune|
 |scriptOutput|String|Output of the detection script|
 |scriptError|String|Error from the detection script|
 

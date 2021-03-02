@@ -93,9 +93,9 @@ Content-length: 1045
                   "displayName": null
               }
           },
-        "link": "https://www.microsoft.com
-        },
-        "@odata.type": "microsoft.graph.educationSubmittedSubmissionResource" 
+          "link": "https://www.microsoft.com"
+      },
+      "@odata.type": "microsoft.graph.educationSubmittedSubmissionResource" 
     }
   ]
 }

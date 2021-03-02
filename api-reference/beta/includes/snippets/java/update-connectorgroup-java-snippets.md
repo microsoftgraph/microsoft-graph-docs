@@ -7,10 +7,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ConnectorGroup connectorGroup = new ConnectorGroup();
-connectorGroup.name = "Connector Group Demo";
+connectorGroup.name = "name-value";
+connectorGroup.region = ConnectorGroupRegion.NAM;
 
-graphClient.onPremisesPublishingProfiles("applicationProxy").connectorGroups()
+graphClient.onPremisesPublishingProfiles("applicationProxy").connectorGroups("{id}")
 	.buildRequest()
-	.post(connectorGroup);
+	.patch(connectorGroup);
 
 ```

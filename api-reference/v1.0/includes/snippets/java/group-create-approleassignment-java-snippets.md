@@ -11,7 +11,7 @@ appRoleAssignment.principalId = UUID.fromString("principalId-value");
 appRoleAssignment.resourceId = UUID.fromString("resourceId-value");
 appRoleAssignment.appRoleId = UUID.fromString("appRoleId-value");
 
-graphClient.groups("{id}").appRoleAssignments()
+graphClient.servicePrincipals("{id}").appRoleAssignments()
 	.buildRequest()
 	.post(appRoleAssignment);
 

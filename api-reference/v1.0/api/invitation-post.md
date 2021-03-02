@@ -130,8 +130,6 @@ Content-length: 551
 <!-- {
   "type": "#page.annotation",
   "suppressions": [
-    "Error: create_user_from_users/invitedUser:
-      Property 'invitedUser' is of type Custom but has no custom members."
   ]
 }-->
 

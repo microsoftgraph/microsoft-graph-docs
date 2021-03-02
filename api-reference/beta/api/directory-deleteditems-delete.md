@@ -34,7 +34,7 @@ For users:
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | User.ReadWrite.All, Directory.AccessAsUser.All |
 |Delegated (personal Microsoft account) | Not supported. |
-|Application | User.ReadWrite.All |
+|Application | Not supported. |
 
 For groups:
 
@@ -42,7 +42,7 @@ For groups:
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Group.ReadWrite.All, Directory.AccessAsUser.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Group.ReadWrite.All |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

@@ -8,11 +8,12 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var connectorGroup = new ConnectorGroup
 {
-	Name = "Connector Group Demo"
+	Name = "name-value",
+	Region = ConnectorGroupRegion.Nam
 };
 
-await graphClient.OnPremisesPublishingProfiles["applicationProxy"].ConnectorGroups
+await graphClient.OnPremisesPublishingProfiles["applicationProxy"].ConnectorGroups["{id}"]
 	.Request()
-	.AddAsync(connectorGroup);
+	.UpdateAsync(connectorGroup);
 
 ```

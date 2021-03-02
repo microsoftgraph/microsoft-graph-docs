@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/planner/plans')
+let res = await client.api('/groups/{group-id}/planner/plans')
 	.get();
 
 ```

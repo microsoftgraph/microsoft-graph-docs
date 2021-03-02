@@ -14,7 +14,7 @@ const directoryObject = {
   @odata.id: "https://graph.microsoft.com/beta/directoryObjects/{id}"
 };
 
-let res = await client.api('/devices/{id}/registeredUsers/$ref')
+let res = await client.api('/devices/{id}/registeredOwners/$ref')
 	.version('beta')
 	.post(directoryObject);
 

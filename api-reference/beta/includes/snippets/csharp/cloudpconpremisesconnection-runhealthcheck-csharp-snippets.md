@@ -6,8 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.DeviceManagement.VirtualEndpoint.OnPremisesConnections["{id}"]
-	.RunHealthChecks()
+await graphClient.DeviceManagement.VirtualEndpoint.CloudPCs["{id}"]
+	.Reprovision()
 	.Request()
 	.PostAsync();
 

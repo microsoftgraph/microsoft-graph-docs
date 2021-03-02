@@ -16,7 +16,7 @@ const appRoleAssignment = {
   appRoleId: "appRoleId-value"
 };
 
-let res = await client.api('/groups/{id}/appRoleAssignments')
+let res = await client.api('/servicePrincipals/{id}/appRoleAssignments')
 	.version('beta')
 	.post(appRoleAssignment);
 

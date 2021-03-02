@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
 title: List bundles
 description: List the bundles in a user's drive
 localization_priority: Normal

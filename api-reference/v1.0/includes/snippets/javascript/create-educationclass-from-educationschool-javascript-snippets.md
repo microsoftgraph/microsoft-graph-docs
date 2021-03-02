@@ -10,7 +10,11 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/education/classes/{class-id}/teachers/{teacher-id}')
-	.delete();
+const educationClass = {
+ @odata.id:"https://graph.microsoft.com/v1.0/education/classes/11006"
+};
+
+let res = await client.api('/education/schools/{school-id}/classes/$ref')
+	.post(educationClass);
 
 ```

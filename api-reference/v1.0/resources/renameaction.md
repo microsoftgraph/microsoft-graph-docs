@@ -1,6 +1,5 @@
 ---
 author: daspek
-ms.author: dspektor
 title: renameAction resource type
 description: The renameAction object provides information about an activity that renamed an item.
 localization_priority: Normal

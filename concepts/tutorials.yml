@@ -8,7 +8,6 @@ metadata:
   description: Microsoft Graph tutorials are step-by-step training exercises that guide you through creating a basic application that accesses data via the Microsoft Graph.
   ms.topic: landing-page
   author: jasonjoh
-  ms.author: jasonjoh
   ms.date: 04/02/2020
 
 landingContent:

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IPlannerPlanCollectionPage plans = graphClient.me().planner().plans()
+IPlannerPlanCollectionPage plans = graphClient.groups("{group-id}").planner().plans()
 	.buildRequest()
 	.get();
 

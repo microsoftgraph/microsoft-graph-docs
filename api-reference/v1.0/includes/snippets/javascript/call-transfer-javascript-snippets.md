@@ -14,12 +14,13 @@ const transfer = {
   transferTarget: {
     endpointType: "default",
     identity: {
-      user: {
-        id: "550fae72-d251-43ec-868c-373732c2704f",
-        displayName: "Heidi Steen"
-      }
+        phone: {
+          @odata.type: "#microsoft.graph.identity",
+          id: "+12345678901"
+        }
     },
-    replacesCallId: "replacesCallId-value"
+    languageId: "languageId-value",
+    region: "region-value"
   },
   clientContext: "9e90d1c1-f61e-43e7-9f75-d420159aae08"
 };

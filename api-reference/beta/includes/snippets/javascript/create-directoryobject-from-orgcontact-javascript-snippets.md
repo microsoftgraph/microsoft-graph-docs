@@ -15,7 +15,7 @@ const directoryObject = {
   }
 };
 
-let res = await client.api('/contacts/{id}/memberOf')
+let res = await client.api('/contacts/{id}/directReports')
 	.version('beta')
 	.post(directoryObject);
 

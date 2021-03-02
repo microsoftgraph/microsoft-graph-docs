@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
 title: Delete bundle
 description: Delete a bundle of driveItems
 localization_priority: Normal

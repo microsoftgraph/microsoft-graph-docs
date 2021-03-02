@@ -44,7 +44,7 @@ const printJob = {
   }
 };
 
-let res = await client.api('/print/printers/{id}/jobs')
+let res = await client.api('/print/shares/{id}/jobs')
 	.version('beta')
 	.post(printJob);
 

@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 title: drive resource type
 description: drive resource representing a user's onedrive or a document library in SharePoint
 localization_priority: Priority

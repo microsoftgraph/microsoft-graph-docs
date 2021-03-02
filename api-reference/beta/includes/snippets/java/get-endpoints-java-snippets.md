@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IEndpointCollectionPage endpoints = graphClient.groups("{id}").endpoints()
+ReportRoot reportRoot = graphClient.print().reports("dailyPrintUsageSummariesByPrinter")
 	.buildRequest()
 	.get();
 

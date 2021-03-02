@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 title: permission resource type
 description: permission resource representing a sharing permission granted for a driveItem
 localization_priority: Normal

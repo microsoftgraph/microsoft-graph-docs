@@ -29,8 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /me/profile/responsibilities
-POST /users/{id | userPrincipalName}/profile/responsibilities
+POST /me/responsibilities
+POST /users/{id | userPrincipalName}/responsibilities
 ```
 
 ## Request headers
@@ -60,14 +60,13 @@ If successful, this method returns a `201 Created` response code and a [personRe
 
 ## Examples
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_personresponsibility_from_profile"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/me/profile/responsibilities
+POST https://graph.microsoft.com/beta/me/responsibilities
 Content-Type: application/json
 Content-length: 413
 
@@ -79,19 +78,6 @@ Content-length: 413
   ]
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-interests-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-interests-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-interests-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.

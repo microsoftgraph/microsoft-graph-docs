@@ -1,6 +1,5 @@
 ---
 author: daspek
-ms.author: dspektor
 title: Get item activity stats by interval
 description: Get itemAnalyticyStats for the activities that took place on this resource within the specified time interval.
 localization_priority: Normal

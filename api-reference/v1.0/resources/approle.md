@@ -4,7 +4,7 @@ description: "Represents an application role that may be requested by a client a
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "applications"
-author: "sureshja"
+author: "psignoret"
 ---
 
 # appRole resource type
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Represents an application role that can be requested by (and granted to) a client application, or that can be used to assign an application to users or groups in a specified role. 
 
-The **appRoles** property of the [application](application.md) and [servicePrincipal](serviceprincipal.md) entities are a collection of **appRole**. 
+To add, update, or remove app roles for an application, [update the application](../api/application-update.md) for the app or service. App roles on the application entity will be available in all tenants where the application is used. To define app roles that are only applicable in your tenant (for example, app roles representing custom roles in your instance of a multi-tenant application), you can also [update the service principal](../api/serviceprincipal-update.md) for the app, to add or update app roles to the **appRoles** collection.
 
 With [appRoleAssignments](approleassignment.md), app roles can be assigned to users, groups, or other applications' service principals.
 

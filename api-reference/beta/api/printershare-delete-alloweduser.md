@@ -29,7 +29,7 @@ To use the Universal Print service, the user or app's tenant must have an active
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /print/printerShare/{id}/allowedUsers/{id}/$ref
+DELETE /print/printerShares/{id}/allowedUsers/{id}/$ref
 ```
 ## Request headers
 | Name          | Description   |
@@ -51,7 +51,7 @@ The following is an example of the request.
   "name": "delete_alloweduser"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/print/printerShare/{id}/allowedUsers/{id}/$ref
+DELETE https://graph.microsoft.com/beta/print/printerShares/{id}/allowedUsers/{id}/$ref
 ```
 
 ### Response

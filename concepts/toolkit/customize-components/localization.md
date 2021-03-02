@@ -7,13 +7,13 @@ author: vogtn
 
 # Localizing the Microsoft Graph Toolkit components
 
-Localization is a important aspect of application development to support users with various language requirements globally.
+Localization is an important aspect of application development to support users with various language requirements globally.
 
 You can localize the Microsoft Graph Toolkit components to ensure that the UI reflects the target language.
 
 ## Use LocalizationHelper to add localized strings
 
-All strings in the toolkit are not localized, but you can provide your own localized strings and manage different languages through the same process you use for localizing your app. To facilitate localization, the toolkit exposes the `LocalizationHelper` static class.
+None of the strings in the toolkit are localized, but you can provide your own localized strings and manage different languages through the same process you use for localizing your app. To facilitate localization, the toolkit exposes the `LocalizationHelper` static class.
 
 The following example shows how to localize several components.
 
@@ -29,7 +29,7 @@ LocalizationHelper.strings = {
     },
     "people-picker": {
       inputPlaceholderText: "ابدأ في كتابة الاسم",
-      noResultsFound: "لم نجد أي قنوات", //collision with global defined noResultsFound will overwrite with local result
+      noResultsFound: "لم نجد أي قنوات", // will overwrite globally defined noResultsFound in people-picker component
       loadingMessage: "...جار التحميل",
     },
     "teams-channel-picker": {
@@ -62,7 +62,7 @@ LocalizationHelper.strings = {
 };
 ```
 
-When the `strings` property is assigned, all components will automatically pick up the new strings and re-render, allowing you to change strings dynamically. 
+When the `strings` property of `LocalizationHelper` is assigned, all components will automatically pick up the new strings and re-render, allowing you to change strings dynamically. 
 
 The strings can be set at a global level or per component (with the `_components:` property).
 
@@ -71,125 +71,125 @@ The strings can be set at a global level or per component (with the `_components
 ### Login
 
 ```ts
-{
-  signInLinkSubtitle: 'Sign In',
-  signOutLinkSubtitle: 'Sign Out'
+"login": {
+  signInLinkSubtitle: "Sign In",
+  signOutLinkSubtitle: "Sign Out"
 }
 ```
 
 ### People-Picker
 
 ```ts
-{
-  inputPlaceholderText: 'Start typing a name',
+"people-picker": {
+  inputPlaceholderText: "Start typing a name",
   noResultsFound: `We didn't find any matches.`,
-  loadingMessage: 'Loading...'
+  loadingMessage: "Loading..."
 }
 ```
 
 ### Teams-Channel-Picker
 
 ```ts
-{
-  inputPlaceholderText: 'Select a channel',
+"teams-channel-picker": {
+  inputPlaceholderText: "Select a channel",
   noResultsFound: `We didn't find any matches.`,
-  loadingMessage: 'Loading...'
+  loadingMessage: "Loading..."
 }
 ```
 
 ### Tasks
 
 ```ts
-{
-  removeTaskSubtitle: 'Delete Task',
-  cancelNewTaskSubtitle: 'cancel',
-  newTaskPlaceholder: 'Task...',
-  addTaskButtonSubtitle: 'Add'
+"tasks": {
+  removeTaskSubtitle: "Delete Task",
+  cancelNewTaskSubtitle: "cancel",
+  newTaskPlaceholder: "Task...",
+  addTaskButtonSubtitle: "Add"
 }
 ```
 
 ### Tasks-Base
 
 ```ts
-{
-  removeTaskSubtitle: 'Delete Task',
-  cancelNewTaskSubtitle: 'cancel',
-  newTaskPlaceholder: 'Task...',
-  addTaskButtonSubtitle: 'Add'
+"tasks-base": {
+  removeTaskSubtitle: "Delete Task",
+  cancelNewTaskSubtitle: "cancel",
+  newTaskPlaceholder: "Task...",
+  addTaskButtonSubtitle: "Add"
 }
 ```
 
 ### Todo
 
 ```ts
-{
-  removeTaskSubtitle: 'Delete Task',
-  cancelNewTaskSubtitle: 'cancel',
-  newTaskPlaceholder: 'Task...',
-  addTaskButtonSubtitle: 'Add'
+"todo": {
+  removeTaskSubtitle: "Delete Task",
+  cancelNewTaskSubtitle: "cancel",
+  newTaskPlaceholder: "Task...",
+  addTaskButtonSubtitle: "Add"
 }
 ```
 
 ### Person-Card
 
 ```ts
-{
-  sendEmailLinkSubtitle: 'Send email',
-  startChatLinkSubtitle: 'Start chat',
-  showMoreSectionButton: 'Show more'
+"person-card": {
+  sendEmailLinkSubtitle: "Send email",
+  startChatLinkSubtitle: "Start chat",
+  showMoreSectionButton: "Show more"
 }
 ```
 
 ### Person-Card-Contact
 
 ```ts
-{
-  contactSectionTitle: "Contact";
+"person-card-contact": {
+  contactSectionTitle: "Contact"
 }
 ```
 
 ### Person-Card-Organization
 
 ```ts
-{
-  reportsToSectionTitle: 'Reports to',
-  directReportsSectionTitle: 'Direct reports',
-  organizationSectionTitle: 'Organization',
-  youWorkWithSubSectionTitle: 'You work with',
-  userWorksWithSubSectionTitle: 'works with'
+"person-card-organization": {
+  reportsToSectionTitle: "Reports to",
+  directReportsSectionTitle: "Direct reports",
+  organizationSectionTitle: "Organization",
+  youWorkWithSubSectionTitle: "You work with",
+  userWorksWithSubSectionTitle: "works with"
 }
 ```
 
 ### Person-Card-Messages
 
 ```ts
-{
-  emailsSectionTitle: "Emails";
+"person-card-messages": {
+  emailsSectionTitle: "Emails"
 }
 ```
 
 ### Person-Card-Files
 
 ```ts
-{
-  filesSectionTitle: 'Files',
-  sharedTextSubtitle: 'Shared'
+"person-card-files": {
+  filesSectionTitle: "Files",
+  sharedTextSubtitle: "Shared"
 }
 ```
 
 ### Person-Card-Profile
 
 ```ts
-{
-  SkillsAndExperienceSectionTitle: 'Skills & Experience',
-  AboutCompactSectionTitle: 'About',
-  SkillsSubSectionTitle: 'Skills',
-  LanguagesSubSectionTitle: 'Languages',
-  WorkExperienceSubSectionTitle: 'Work Experience',
-  EducationSubSectionTitle: 'Education',
-  professionalInterestsSubSectionTitle: 'Professional Interests',
-  personalInterestsSubSectionTitle: 'Personal Interests',
-  birthdaySubSectionTitle: 'Birthday',
-  currentYearSubtitle: 'Current'
+"person-card-profile": {
+  SkillsAndExperienceSectionTitle: "Skills & Experience",
+  AboutCompactSectionTitle: "About",
+  SkillsSubSectionTitle: "Skills",
+  LanguagesSubSectionTitle: "Languages",
+  WorkExperienceSubSectionTitle: "Work Experience",
+  EducationSubSectionTitle: "Education",
+  professionalInterestsSubSectionTitle: "Professional Interests",
+  personalInterestsSubSectionTitle: "Personal Interests",
+  birthdaySubSectionTitle: "Birthday",
+  currentYearSubtitle: "Current"
 }
 ```

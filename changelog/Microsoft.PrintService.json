@@ -21,6 +21,24 @@
     {
       "ChangeList": [
         {
+          "Id": "3c6809b4-5b51-11eb-93a5-6e9aaa10c0ef",
+          "ApiChange": "Property",
+          "ChangedApiName": "printerDefaults",
+          "ChangeType": "Addition",
+          "Description": "Added the **inputBin** property to the [printerDefaults](https://docs.microsoft.com/en-us/graph/api/resources/printerDefaults?view=graph-rest-beta) resource.",
+          "Target": "printerDefaults"
+        }
+      ],
+      "Id": "3c65a6d7-5b51-11eb-93a5-6e9aaa10c0ef",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-02-17T18:56:42.870Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c9105e15-6dd7-482a-994c-e156afed581c",
           "ApiChange": "Resource",
           "ChangedApiName": "subscription",
@@ -76,9 +94,9 @@
       "Version": "beta",
       "CreatedDateTime": "2021-01-07T00:00:00",
       "WorkloadArea": "Devices and apps ",
-      "SubArea": "Cloud printing"
-    },  
-   {
+      "SubArea": " Cloud printing"
+    },
+    {
       "ChangeList": [
         {
           "Id": "d686e617-f373-4e2b-b26e-c71f475b05de",

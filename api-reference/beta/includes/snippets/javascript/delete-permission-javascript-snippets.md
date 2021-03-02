@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/sites/{sitesId}/permissions/{permissionId}')
+let res = await client.api('/me/drive/root/items/{item-id}/permissions/{perm-id}')
 	.version('beta')
 	.delete();
 

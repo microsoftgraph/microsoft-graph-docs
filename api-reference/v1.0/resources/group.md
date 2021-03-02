@@ -161,6 +161,7 @@ Here's what each **visibility** property value means:
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |acceptedSenders|[directoryObject](directoryobject.md) collection|The list of users or groups that are allowed to create post's or calendar events in this group. If this list is non-empty then only users or groups listed here are allowed to post.|
+|appRoleAssignments|[appRoleAssignment](approleassignment.md) collection|Represents the app roles a group has been granted for an application. |
 |calendar|[calendar](calendar.md)|The group's calendar. Read-only.|
 |calendarView|[event](event.md) collection|The calendar view for the calendar. Read-only.|
 |conversations|[conversation](conversation.md) collection|The group's conversations.|

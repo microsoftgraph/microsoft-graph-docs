@@ -83,6 +83,7 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | **Change type** | **Version**   | **Description**                          |
 |:---|:---|:---|
 | Addition | beta | Added new [Delegated permissions](./permissions-reference.md#universal-print-permissions): <br/><ul><li>PrintJob.Create</li><li>PrinterShare.ReadBasic.All</li><li>PrintConnector.Read.All</li><li>PrintConnector.ReadWrite.All</li><li>PrintSettings.Read.All</li><li>PrintSettings.ReadWrite.All</li><li>Reports.Read.All</li></ul> |
+|Addition|beta|Added the **inputBin** property to [printerDefaults](/graph/api/resources/printerDefaults?view=graph-rest-beta) resource|
 
 ### Tasks and plans
 

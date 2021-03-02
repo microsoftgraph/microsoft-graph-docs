@@ -1,6 +1,5 @@
 ---
 author: kevklam
-ms.author: kevinlam
 title: Grant permission
 description: Grant a list of users access to use the specified link
 localization_priority: Normal

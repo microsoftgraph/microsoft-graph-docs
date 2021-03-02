@@ -75,7 +75,7 @@ For both the long-running operation pattern and the regular pattern, we recommen
 
 | Code                               | Instructions
 |:-----------------------------------|:---------------------------------------------
-| **accessConflict**   | The failed request conflicts with other clients accessing the workbook (for example, another client has locked the workbook for edit). The Microsoft Graph client is not expected to resend the failed request until the conflict is resolved. An end user xN choose to manually perform the same operations with Excel Online to get more details about the conflict.
+| **accessConflict**   | The failed request conflicts with other clients accessing the workbook (for example, another client has locked the workbook for edit). The Microsoft Graph client is not expected to resend the failed request until the conflict is resolved. An end user can choose to manually perform the same operations with Excel Online to get more details about the conflict.
 | **accessDenied**   | You cannot perform the requested operation (for example, performing changes to locked cells). The Microsoft Graph client is not expected to resend the failed request.
 | **badRequestUncategorized**    | An unspecified error is found in the failed request. The Microsoft Graph client is not expected to resend the failed request.
 | **conflictUncategorized**                   | The failed request conflicts with certain server state. The Microsoft Graph client is not expected to resend the failed request until the conflict is resolved. An end user can choose to manually perform the same operations with Excel Online to get more details about the conflict.

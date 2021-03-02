@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
 title: Create bundle
 description: Create a bundle of driveItems
 localization_priority: Normal

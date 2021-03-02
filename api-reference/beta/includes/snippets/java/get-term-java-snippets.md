@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-ITermCollectionPage children = graphClient.termStore().sets("{setId}").children()
+Term term = graphClient.termStore().groups("{groupId}").sets("{setId}").terms("{termId}")
 	.buildRequest()
 	.get();
 

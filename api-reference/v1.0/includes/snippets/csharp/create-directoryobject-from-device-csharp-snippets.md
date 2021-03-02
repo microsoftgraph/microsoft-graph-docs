@@ -11,7 +11,7 @@ var directoryObject = new DirectoryObject
 	Id = "{id}"
 };
 
-await graphClient.Devices["{id}"].RegisteredUsers.References
+await graphClient.Devices["{id}"].RegisteredOwners.References
 	.Request()
 	.AddAsync(directoryObject);
 

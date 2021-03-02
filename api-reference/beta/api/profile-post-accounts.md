@@ -29,8 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /me/profile/accounts
-POST /users/{id | userPrincipalName}/profile/accounts
+POST /me/profile/account
+POST /users/{id | userPrincipalName}/profile/account
 ```
 
 ## Request headers
@@ -58,14 +58,13 @@ If successful, this method returns a `201 Created` response code and a [userAcco
 
 ## Examples
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_useraccountinformation_from_profile"
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/me/profile/accounts
+POST https://graph.microsoft.com/beta/me/profile/account
 Content-Type: application/json
 Content-length: 494
 
@@ -74,19 +73,6 @@ Content-length: 494
   "countryCode": "NO",
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-useraccountinformation-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-useraccountinformation-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-useraccountinformation-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 ### Response
 **Note:** The response object shown here might be shortened for readability.

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var directoryAudit = await graphClient.AuditLogs.DirectoryAudits["{id}"]
+var directoryAudits = await graphClient.AuditLogs.DirectoryAudits
 	.Request()
 	.GetAsync();
 

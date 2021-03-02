@@ -110,10 +110,6 @@ Content-length: 45
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Error: /api-reference/v1.0/api/table-post-rows.md/tablerowcollection_add/values:
-      Type mismatch between example and table. Parameter name: values; example type (Collection(Collection)) is a collection, while the table description type (microsoft.graph.Json) is not.",
-    "Warning: /api-reference/v1.0/api/table-post-rows.md/tablerowcollection_add/values:
-      Inconsistent types between parameter (Collection) and table (None)"
   ],
   "tocPath": ""
 }-->

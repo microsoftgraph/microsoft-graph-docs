@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var buckets = await graphClient.Planner.Buckets
+var buckets = await graphClient.Planner.Plans["{plan-id}"].Buckets
 	.Request()
 	.GetAsync();
 

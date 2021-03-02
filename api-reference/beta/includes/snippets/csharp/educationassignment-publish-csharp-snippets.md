@@ -6,9 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Education.Classes["11021"].Assignments["19002"]
-	.Publish()
+var @string = await graphClient.Education.Classes["11012"].Assignments["19002"]
+	.GetResourcesFolderUrl()
 	.Request()
-	.PostAsync();
+	.GetAsync();
 
 ```

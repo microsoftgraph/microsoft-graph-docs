@@ -3,6 +3,48 @@
     {
       "ChangeList": [
         {
+          "Id":"814b2858-6b0e-11eb-83a5-b441f1c9dab3",
+          "ApiChange":"Property",
+          "ChangedApiName":"settingUsage",
+          "ChangeType":"Addition",
+          "Description":"Added the **settingUsage** property to [deviceManagementConfigurationCategory](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementConfigurationCategory?view=graph-rest-beta) resource",
+          "Target":"deviceManagementConfigurationCategory"
+        },
+        {
+          "Id":"814d889b-6b0e-11eb-83a5-b441f1c9dab3",
+          "ApiChange":"Property",
+          "ChangedApiName":"parentCategoryId",
+          "ChangeType":"Addition",
+          "Description":"Added the **parentCategoryId** property to [deviceManagementConfigurationCategory](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementConfigurationCategory?view=graph-rest-beta) resource",
+          "Target":"deviceManagementConfigurationCategory"
+        },
+        {
+          "Id":"814fed36-6b0e-11eb-83a5-b441f1c9dab3",
+          "ApiChange":"Property",
+          "ChangedApiName":"rootCategoryId",
+          "ChangeType":"Addition",
+          "Description":"Added the **rootCategoryId** property to [deviceManagementConfigurationCategory](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementConfigurationCategory?view=graph-rest-beta) resource",
+          "Target":"deviceManagementConfigurationCategory"
+        },
+        {
+          "Id":"81524d6e-6b0e-11eb-83a5-b441f1c9dab3",
+          "ApiChange":"Property",
+          "ChangedApiName":"childCategoryIds",
+          "ChangeType":"Addition",
+          "Description":"Added the **childCategoryIds** property to [deviceManagementConfigurationCategory](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementConfigurationCategory?view=graph-rest-beta) resource",
+          "Target":"deviceManagementConfigurationCategory"
+        }
+      ],
+      "Id":"8148c18c-6b0e-11eb-83a5-b441f1c9dab3",
+      "Cloud":"prd",
+      "Version":"beta",
+      "CreatedDateTime":"2021-02-09T19:39:20.767Z",
+      "WorkloadArea":"Devices and apps",
+      "SubArea":"Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id":"9c873d83-653c-11eb-8de9-f7f8b8b7f046",
           "ApiChange":"Member",
           "ChangedApiName":"windowsAzureADJoinUsingDeviceAuth",

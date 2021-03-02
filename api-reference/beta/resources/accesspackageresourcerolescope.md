@@ -54,25 +54,24 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "createdBy": "String",
-  "createdDateTime": "String (timestamp)",
-  "id": "String (identifier)",
-  "modifiedBy": "String",
-  "modifiedDateTime": "String (timestamp)",
-  "accessPackageResourceRole": {
-    "id": "String (identifier)",
-     "displayName": "String",
-     "originSystem": "String",
-     "originId": "String"
-  },
-  "accessPackageResourceScope": {
-     "id": "String (identifier)",
-     "displayName": "String",
-     "description": "String",
-     "originId": "String (identifier)",
-     "originSystem": "String"
-  }
-
+   "createdBy":"String",
+   "createdDateTime":"String (timestamp)",
+   "id":"String (identifier)",
+   "modifiedBy":"String",
+   "modifiedDateTime":"String (timestamp)",
+   "accessPackageResourceRole":{
+      "id":"String (identifier)",
+      "displayName":"String",
+      "originSystem":"String",
+      "originId":"String"
+   },
+   "accessPackageResourceScope":{
+      "id":"String (identifier)",
+      "displayName":"String",
+      "description":"String",
+      "originId":"String (identifier)",
+      "originSystem":"String"
+   }
 }
 ```
 

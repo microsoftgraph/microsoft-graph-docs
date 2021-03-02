@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
 title: Get bundle
 description: Get a bundle of driveItems
 localization_priority: Normal

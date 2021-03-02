@@ -84,7 +84,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "id": "String (identifier)",
-  "addedStudentAction": "string",
+  "addedStudentAction": "none",
   "allowLateSubmissions": true,
   "allowStudentsToAddResourcesToSubmission": true,
   "assignDateTime": "String (timestamp)",
@@ -100,7 +100,7 @@ The following is a JSON representation of the resource.
   "instructions": {"@odata.type": "microsoft.graph.itemBody"},
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
-  "notificationChannelUrl": "string",
+  "notificationChannelUrl": null,
   "status": "string"
 }
 ```

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/deviceManagement/virtualEndpoint/onPremisesConnections/{id}/runHealthChecks')
+let res = await client.api('/deviceManagement/virtualEndpoint/cloudPCs/{id}/reprovision')
 	.version('beta')
 	.post();
 

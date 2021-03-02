@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var timeOffRequests = await graphClient.Teams["{teamId}"].Schedule.TimeOffRequests
+var timeOffRequest = await graphClient.Teams["{teamId}"].Schedule.TimeOffRequests["{timeOffRequestId}"]
 	.Request()
 	.GetAsync();
 

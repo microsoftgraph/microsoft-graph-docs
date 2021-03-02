@@ -26,6 +26,7 @@ Represents the printer's default settings. Check the printer's [capabilities](pr
 |mediaSize|String|The default media size to use. Supports standard size names for ISO and ANSI media sizes, along with any custom sizes supported by the associated printer.
 |pagesPerSheet|Int32|The default number of document pages to print on each sheet.
 |orientation|printOrientation|The default orientation to use when printing the document. Valid values are described in the following table.|
+|inputBin|String|The default input bin that serves as the paper source.|
 |outputBin|String|The default output bin to place completed prints into. See the printer's [capabilities](printercapabilities.md) for a list of supported output bins.|
 |fitPdfToPage|Boolean|The default fitPdfToPage setting. True to fit each page of a PDF document to a physical sheet of media; false to let the printer decide how to lay out impressions.|
 |multipageLayout|printMultipageLayout|The default direction to lay out pages when multiple pages are being printed per sheet. Valid values are described in the following table.|

@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Describes the status of the provisioning event and the associated errors. It is inherited from [statusBase](/graph/api/resources/statusbase?view=graph-rest-beta) and only used when status is set to 'failure'.  
+Describes the status of the provisioning event and the associated errors. It is inherited from [statusBase](/graph/api/resources/statusbase) and only used when status is set to `failure`.  
 
 ## Properties
 
@@ -21,8 +21,8 @@ Describes the status of the provisioning event and the associated errors. It is 
 |:-------------|:------------|:------------|
 |status|String|Possible values are: `success`, `failure`, `skipped`, `unknownFutureValue`. Inherited from statusBase.|
 |additionalDetails|String|Additional details in case of error.|
-|errorCategory|String|Categorizes the error code.|
-|errorCode|String|Unique error code if any occurred.|
+|errorCategory|String|Categorizes the error code. Possible values are `Failure`, `NonServiceFailure`, `Success`.|
+|errorCode|String|Unique error code if any occurred. [Learn more](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-provisioning-logs#error-codes)|
 |reason|String|Summarizes the status and describes why the status happened.|
 |recommendedAction|String|Provides the resolution for the corresponding error.|
 
