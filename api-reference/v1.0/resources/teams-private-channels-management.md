@@ -254,3 +254,7 @@ You can try these commands through [Graph Explorer](https://developer.microsoft.
       "email": "email-value"
      }
     ```
+
+## See also
+
+[Use the Microsoft Graph API to work with Microsoft Teams](https://docs.microsoft.com/graph/api/resources/teams-api-overview)
