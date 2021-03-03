@@ -13,13 +13,6 @@ doc_type: resourcePageType
 Microsoft Teams contains private channels that can be managed using Microsoft Graph APIs. For more information on the private channels, see [Teams private channels](https://docs.microsoft.com/microsoftteams/private-channels).
 
 The Microsoft Graph API methodology can be used to configure privileges that allow management of private channels.
-The following are the privileges which a Microsoft Graph API can configure:
-
-- Set whether team members can create private channels
-- Create a private channel on behalf of a team owner
-- Get a list of all private channel messages
-- Find SharePoint URLs for all private channels in a team
-- List and update roles of owners and members in a private channel
 
 ## Set whether team members can create private channels
 
@@ -30,6 +23,7 @@ As an admin, you can use Microsoft Graph API to control whether members can crea
 PATCH /teams/{team-id}​
 
 {"memberSettings": ​
+
   {​
     "allowCreatePrivateChannels": false​
   }​
@@ -46,12 +40,12 @@ POST /teams/{team-id}/channels​
 
 { "membershipType": "Private",​
 
-  "displayName": "<Channel_Name>",​
+  "displayName": "{Channel-Name}",​
 
   "members":[{    ​
            "@odata.type":"#microsoft.graph.aadUserConversationMember",​
 
-           "user@odata.bind":"https://graph.microsoft.com/beta/users('<user_id>')",​
+           "user@odata.bind":"https://graph.microsoft.com/v1.0/users('{user-id}')",​
 
            "roles":["owner"]​
             }]
@@ -82,7 +76,7 @@ You can try these commands through [Graph Explorer](https://developer.microsoft.
 
     ```HTTP
 
-    GET https://graph.microsoft.com/beta/teams/{team-id}/channels?$filter=membershipType eq 'private'
+    GET https://graph.microsoft.com/v1.0/teams/{team-id}/channels?$filter=membershipType eq 'private'
 
     ```
 
@@ -99,19 +93,19 @@ You can try these commands through [Graph Explorer](https://developer.microsoft.
     {
       "value": [
         {
-          "description": "description-value",
+          "description": "Channel for Research and Development",
 
-          "displayName": "display-name-value",
+          "displayName": "Research and Development",
 
-          "id": "channel-id",
+          "id": "19:09af4fd4b8c542669490e64b78d3806a@thread.tacv2",
 
-          "membershipType": "membership-type-value",
+          "membershipType": "private",
 
           "isFavoriteByDefault": false,
 
-          "webUrl": "webUrl-value",
+          "webUrl": " https://teams.microsoft.com/l/channel/19%3a09af4fd4b8c542669490e64b78d3806a%40thread.tacv2/Research+and+Development?groupId=6d3fc88c-5ac7-4127-8533-1b6aba62981b&tenantId=7a892c6a-818a-47bf-b106-5aec30w95v5e",
 
-          "email": "email-value"
+          "email": "547ac832.M365x189760.onmicrosoft.com@amer.teams.ms"
         }
       ]
     }
@@ -123,7 +117,7 @@ You can try these commands through [Graph Explorer](https://developer.microsoft.
 
     ```HTTP
 
-    GET https://graph.microsoft.com/beta/teams/{team-id}/channels/{channel-id}/filesFolder
+    GET https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/filesFolder
     ```
 
 ### Response
@@ -139,19 +133,19 @@ You can try these commands through [Graph Explorer](https://developer.microsoft.
     {
       "value": [
         {
-          "description": "description-value",
+          "description": "Channel for Research and Development",
 
-          "displayName": "display-name-value",
+          "displayName": "Research and Development",
 
-          "id": "channel-id",
+          "id": "19:09af4fd4b8c542669490e64b78d3806a@thread.tacv2",
 
-          "membershipType": "membership-type-value",
+          "membershipType": "private",
 
           "isFavoriteByDefault": false,
 
-          "webUrl": "webUrl-value",
+          "webUrl": " https://teams.microsoft.com/l/channel/19%3a09af4fd4b8c542669490e64b78d3806a%40thread.tacv2/Research+and+Development?groupId=6d3fc88c-5ac7-4127-8533-1b6aba62981b&tenantId=7a892c6a-818a-47bf-b106-5aec30w95v5e",
 
-          "email": "email-value"
+          "email": "547ac832.M365x189760.onmicrosoft.com@amer.teams.ms"
         }
       ]
     }
@@ -171,7 +165,7 @@ You can try these commands through [Graph Explorer](https://developer.microsoft.
 
     ```HTTP
 
-    GET https://graph.microsoft.com/beta/teams/{team-id}/channels/{channel-id}/members
+    GET https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/members
     ```
     
 ### Response
@@ -183,7 +177,7 @@ You can try these commands through [Graph Explorer](https://developer.microsoft.
     Content-length: 
 
     {
-          "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams({team-id}')/channels('{channel-id}')/members",
+          "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams({team-id}')/channels('{channel-id}')/members",
 
           "@odata.count": 2,
 
@@ -193,7 +187,7 @@ You can try these commands through [Graph Explorer](https://developer.microsoft.
 
                   "id": "id-value",
 
-                  "roles": [],
+                  "roles": ["owner", "member"],
 
                   "displayName": "display-name-value",
 
@@ -225,7 +219,7 @@ You can try these commands through [Graph Explorer](https://developer.microsoft.
 
     PATCH 
 
-    https://graph.microsoft.com/beta/teams/{team-id}/channels/{channel-id}/{member-id}
+    https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/{member-id}
       
     {
 
@@ -245,7 +239,7 @@ You can try these commands through [Graph Explorer](https://developer.microsoft.
     Content-type: application/json
 
     {
-      "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('{team-id}')/channels('{channel-id}')/members/$entity",
+      "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('{team-id}')/channels('{channel-id}')/members/$entity",
 
       "@odata.type": "#microsoft.graph.aadUserConversationMember",
 
