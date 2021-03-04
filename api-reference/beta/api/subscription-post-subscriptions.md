@@ -122,7 +122,8 @@ Content-type: application/json
    "expirationDateTime":"2016-11-20T18:23:45.9356913Z",
    "clientState": "secretClientValue",
    "latestSupportedTlsVersion": "v1_2",
-   "notificationContentType": "application/json"
+   "notificationContentType": "application/json",
+   "notificationQueryOptions": "$filter=isFetchable eq true or status eq completed"
 }
 ```
 # [C#](#tab/csharp)

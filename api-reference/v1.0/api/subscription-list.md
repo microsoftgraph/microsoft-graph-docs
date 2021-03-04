@@ -135,7 +135,9 @@ Content-length: 586
       "latestSupportedTlsVersion": "v1_2",
       "encryptionCertificate": "",
       "encryptionCertificateId": "",
-      "includeResourceData": false
+      "includeResourceData": false,
+  "notificationContentType": "application/json",
+  "notificationQueryOptions": "$filter=isFetchable eq true or status eq completed"
     }
   ]
 }
