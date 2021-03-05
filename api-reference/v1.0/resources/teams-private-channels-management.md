@@ -16,7 +16,7 @@ The Microsoft Graph API methodology can be used to configure privileges that all
 
 ## Set whether team members can create private channels
 
-As an admin, you can use Microsoft Graph API to control whether members can create private channels in specific teams. Here's an example.
+You can use Microsoft Graph API to control whether members can create private channels in specific teams. Here's an example.
 
 ```HTTP
 
@@ -32,7 +32,9 @@ PATCH /teams/{team-id}​
 
 ## Create a private channel on behalf of a team owner
 
-As an admin, you can use the Microsoft Graph API to create a private channel on behalf of a team owner. For example, you may want to do this if your organization wants to centralize creation of private channels.
+You can use the Microsoft Graph API to create a private channel on behalf of a team owner. For example, you may want to do this if your organization wants to centralize creation of private channels. 
+
+Use the following Microsoft Graph API to create a private channel on behalf of a team owner:
 
 ```HTTP
 
@@ -53,7 +55,9 @@ POST /teams/{team-id}/channels​
 
 ## Get a list of all private channel messages
 
-You may want to get a list of all messages and replies posted in a private channel for archiving and auditing purposes. Here's how to use Graph API to do this.
+You may want to get a list of all messages and replies posted in a private channel. You may want to use this list for archiving and auditing purposes. 
+
+Use the following Microsoft Graph API to retrieve the list of message and replies:
 
 ```HTTP
 
@@ -66,11 +70,11 @@ GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies/{reply-
 
 Whether you're looking to perform eDiscovery or legal hold on files in a private channel or looking to build a custom app that places files in specific private channels, you'll want a way to query the unique SharePoint site collections that are created for each private channel.
 
-As an admin, you can use Microsoft Graph APIs commands to query these URLs.
+Use Microsoft Graph APIs commands to query these URLs.
 
-You can try these commands through [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+You can try the Microsoft Graph APIs commands through [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
-1. Use the following to get the list of private channel IDs for a given team, where <team_id> is the group ID of the team. You'll need this in subsequent calls. (You can easily find the group ID in the link to the team.)
+1. Use the following command to get the list of private channel IDs for a given team, where <team_id> is the group ID of the team. You'll need this in subsequent calls. (You can easily find the group ID in the link to the team.)
 
 ### Request
 
@@ -111,7 +115,7 @@ You can try these commands through [Graph Explorer](https://developer.microsoft.
     }
     ```
 
-2. For each private channel for which you want to get the SharePoint URL, make the following request, where &lt;channel_id&gt; is the channel ID.
+2. For each private channel for which you want to get the SharePoint URL, make the following request, where &lt;channel-id&gt; is the channel ID.
 
 ### Request
 
@@ -153,13 +157,18 @@ You can try these commands through [Graph Explorer](https://developer.microsoft.
 
 ## List and update roles of owners and members in a private channel
 
-You may want to list out the owners and members of a private channel to decide whether you need to promote certain members of the private channel to an owner. This can happen when you have owners of private channels who have left the organization and the private channel requires admin help to claim ownership of the channel.
+You may want to list out the owners and members of a private channel to decide whether you need to promote certain members of the private channel to an owner. This can happen when you have owners of private channels who have left the organization and the private channel requires help to claim ownership of the channel.
 
-As an admin, you can use the Microsoft Graph API to perform these actions.
+Use the Microsoft Graph APIs commands to retrieve list of owners and members in a private channel, and to promote a member to an owner.
 
 You can try these commands through [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
-1. Use the following, where &lt;team-id&gt; is also the ID of the group associated with the team and &lt;channel-id&gt; is the channel ID.
+
+
+1. To retrieve the list of owners and members, use the following Microsoft Graph API command.
+
+> [!NOTE]
+> In the command below, &lt;team-id&gt; is also the ID of the group associated with the team and &lt;channel-id&gt; is the channel ID.
 
 ### Request
 
@@ -211,7 +220,10 @@ You can try these commands through [Graph Explorer](https://developer.microsoft.
           ]
     }
     ```    
-2. Use the following to promote the member to an owner. Note that &lt;userId&gt; and &lt;member_id&gt; aren't interchangeable.
+2. Use the following Microsoft Graph API command to promote the member to an owner. 
+
+> [!NOTE]
+> In this command, &lt;userId&gt; and &lt;member_id&gt; aren't interchangeable.
 
 ### Request
 
