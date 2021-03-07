@@ -8,6 +8,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("ConsistencyLevel", "eventual"));
+requestOptions.add(new QueryOption("$count", "true"));
 
 IUserCollectionPage users = graphClient.users()
 	.buildRequest( requestOptions )
