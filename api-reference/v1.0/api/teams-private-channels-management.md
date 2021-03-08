@@ -78,82 +78,62 @@ You can try the Microsoft Graph APIs commands through [Graph Explorer](https://d
 
 ### Request
 
-    ```HTTP
-
-    GET https://graph.microsoft.com/v1.0/teams/{team-id}/channels?$filter=membershipType eq 'private'
-
-    ```
+  ```HTTP
+    GET https://graph.microsoft.com/v1.0/teams/<team-id>/channels?$filter=membershipType eq 'private'
+  ```
 
 ### Response
 
-    ```HTTP
-
+  ```HTTP
     HTTP/1.1 200 OK
-
     Content-type: application/json
-
     Content-length:
     
     {
       "value": [
         {
           "description": "Channel for Research and Development",
-
           "displayName": "Research and Development",
-
           "id": "19:09af4fd4b8c542669490e64b78d3806a@thread.tacv2",
-
           "membershipType": "private",
-
           "isFavoriteByDefault": false,
-
-          "webUrl": " https://teams.microsoft.com/l/channel/19%3a09af4fd4b8c542669490e64b78d3806a%40thread.tacv2/Research+and+Development?groupId=6d3fc88c-5ac7-4127-8533-1b6aba62981b&tenantId=7a892c6a-818a-47bf-b106-5aec30w95v5e",
-
+          "webUrl": "https://teams.microsoft.com/l/channel/19%3a09af4fd4b8c542669490e64b78d3806a%40thread.tacv2/Research+and+Development?groupId=6d3fc88c-5ac7-4127-8533-1b6aba62981b&tenantId=7a892c6a-818a-47bf-b106-5aec30w95v5e",
           "email": "547ac832.M365x189760.onmicrosoft.com@amer.teams.ms"
         }
       ]
     }
-    ```
+  ```
+
 
 2. For each private channel for which you want to get the SharePoint URL, make the following request, where &lt;channel-id&gt; is the channel ID.
 
 ### Request
 
-    ```HTTP
-
-    GET https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/filesFolder
-    ```
+ ```HTTP
+    GET https://graph.microsoft.com/v1.0/teams/<team-id>/channels/<channel-id>/filesFolder
+ ```
 
 ### Response
 
-    ```HTTP
-
+ ```HTTP
     HTTP/1.1 200 OK
-
     Content-type: application/json
-
     Content-length:
       
     {
       "value": [
         {
           "description": "Channel for Research and Development",
-
           "displayName": "Research and Development",
-
           "id": "19:09af4fd4b8c542669490e64b78d3806a@thread.tacv2",
-
           "membershipType": "private",
-
           "isFavoriteByDefault": false,
-
-          "webUrl": " https://teams.microsoft.com/l/channel/19%3a09af4fd4b8c542669490e64b78d3806a%40thread.tacv2/Research+and+Development?groupId=6d3fc88c-5ac7-4127-8533-1b6aba62981b&tenantId=7a892c6a-818a-47bf-b106-5aec30w95v5e",
-
+          "webUrl": "https://teams.microsoft.com/l/channel/19%3a09af4fd4b8c542669490e64b78d3806a%40thread.tacv2/Research+and+Development?groupId=6d3fc88c-5ac7-4127-8533-1b6aba62981b&tenantId=7a892c6a-818a-47bf-b106-5aec30w95v5e",
           "email": "547ac832.M365x189760.onmicrosoft.com@amer.teams.ms"
         }
       ]
     }
-    ```
+ ```
 
 ## List and update roles of owners and members in a private channel
 
@@ -163,8 +143,6 @@ Use the Microsoft Graph APIs commands to retrieve list of owners and members in 
 
 You can try these commands through [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
-
-
 1. To retrieve the list of owners and members, use the following Microsoft Graph API command.
 
 > [!NOTE]
@@ -173,53 +151,38 @@ You can try these commands through [Graph Explorer](https://developer.microsoft.
 ### Request
 
     ```HTTP
-
-    GET https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/members
+    GET https://graph.microsoft.com/v1.0/teams/<team-id>/channels/<channel-id>/members
     ```
     
 ### Response
 
     ```HTTP
-
     HTTP/1.1 200 OK Content-type: application/json
-
     Content-length: 
-
     {
-          "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams({team-id}')/channels('{channel-id}')/members",
-
+          "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams({group_id}')/channels('{channel_id}')/members",
           "@odata.count": 2,
-
           "value": [
               {
                   "@odata.type": "#microsoft.graph.aadUserConversationMember",
-
                   "id": "id-value",
-
-                  "roles": ["owner", "member"],
-
+                  "roles": [],
                   "displayName": "display-name-value",
-
                   "userId": "userId-value",
-
                   "email": "email-value"
               },
               {
                   "@odata.type": "#microsoft.graph.aadUserConversationMember",
-
               "id": "id-value",
-
               "roles": ["owner"],
-
               "displayName": "display-name-value",
-
               "userId": "userId-value",
-
               "email": "email-value"
               }
           ]
     }
-    ```    
+    ```
+      
 2. Use the following Microsoft Graph API command to promote the member to an owner. 
 
 > [!NOTE]
@@ -228,41 +191,28 @@ You can try these commands through [Graph Explorer](https://developer.microsoft.
 ### Request
 
     ```HTTP
-
     PATCH 
-
-    https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/{member-id}
+    https://graph.microsoft.com/v1.0/teams/<team-id>/channels/<channel-id>/members/<id>
       
     {
-
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
-
     "roles": ["owner"]
-
     }
     ```
 
 ### Response
 
     ```HTTP
-
     HTTP/1.1 200 OK
-
     Content-type: application/json
 
     {
-      "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('{team-id}')/channels('{channel-id}')/members/$entity",
-
+      "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('{group-id}')/channels('{channel-id}')/members/$entity",
       "@odata.type": "#microsoft.graph.aadUserConversationMember",
-
       "id": "id-value",
-
       "roles": ["owner"],
-
       "displayName": "display-name-value",
-
       "userId": "userId-value",
-
       "email": "email-value"
      }
     ```
