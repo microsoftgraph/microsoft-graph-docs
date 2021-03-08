@@ -150,13 +150,13 @@ You can try these commands through [Graph Explorer](https://developer.microsoft.
 
 ### Request
 
-    ```HTTP
+  ```HTTP
     GET https://graph.microsoft.com/v1.0/teams/<team-id>/channels/<channel-id>/members
-    ```
+  ```
     
 ### Response
 
-    ```HTTP
+  ```HTTP
     HTTP/1.1 200 OK Content-type: application/json
     Content-length: 
     {
@@ -181,7 +181,7 @@ You can try these commands through [Graph Explorer](https://developer.microsoft.
               }
           ]
     }
-    ```
+  ```
       
 2. Use the following Microsoft Graph API command to promote the member to an owner. 
 
@@ -190,7 +190,7 @@ You can try these commands through [Graph Explorer](https://developer.microsoft.
 
 ### Request
 
-    ```HTTP
+  ```HTTP
     PATCH 
     https://graph.microsoft.com/v1.0/teams/<team-id>/channels/<channel-id>/members/<id>
       
@@ -198,11 +198,11 @@ You can try these commands through [Graph Explorer](https://developer.microsoft.
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
     "roles": ["owner"]
     }
-    ```
+  ```
 
 ### Response
 
-    ```HTTP
+  ```HTTP
     HTTP/1.1 200 OK
     Content-type: application/json
 
@@ -215,7 +215,7 @@ You can try these commands through [Graph Explorer](https://developer.microsoft.
       "userId": "userId-value",
       "email": "email-value"
      }
-    ```
+  ```
 
 ## See also
 
