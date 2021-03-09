@@ -5208,6 +5208,10 @@ items:
           href: api/channel-post-messagereply.md
         - name: Update message
           href: api/chatmessage-update.md
+        - name: List hosted content
+          href: api/chatmessage-list-hostedcontents.md
+        - name: Get hosted content
+          href: api/chatmessagehostedcontent-get.md
       - name: Chat
         href: resources/chat.md
         items:

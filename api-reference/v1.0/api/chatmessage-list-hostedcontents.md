@@ -1,5 +1,5 @@
 ---
-title: "List chatMessageHostedContents"
+title: "List content hosted inside chat message"
 description: "Retrieve the list of chatMessageHostedContent objects from a message."
 localization_priority: Normal
 author: "clearab"
@@ -7,11 +7,9 @@ ms.prod: "microsoft-teams"
 doc_type: "apiPageType"
 ---
 
-# List hostedContents
+# List content hosted inside chat message
 
 Namespace: microsoft.graph
-
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the list of [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) objects from a message.
 
@@ -21,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-|Delegated (work or school account)| For **user** or **chat** resource: Chat.Read, Chat.ReadWrite<br/><br/>For **channel** resource: ChannelMessage.Read.All, Group.Read.All, Group.Read.WriteAll |
+|Delegated (work or school account)| For **channel** resource: ChannelMessage.Read.All, Group.Read.All, Group.Read.WriteAll |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application| For **user** or **chat** resource: Chat.Read.All, Chat.ReadWrite.All<br/><br/>For **channel** resource: ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Application| For **channel** resource: ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 
 > **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
@@ -35,9 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /chats/{id}/messages/{id}/hostedContents
-GET /users/{id}/chats/{id}/messages/{id}/hostedContents
-GET /teams/{id}/channels/{id}/messages/{id}/hostedContents
+GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/hostedContents
 ```
 
 ## Optional query parameters
@@ -64,32 +60,14 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of the request.
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_hostedcontents"
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/chats/{id}/messages/{id}/hostedContents
+GET https://graph.microsoft.com/v1.0/teams/3ade275a-77cb-444e-904d-9cb268c24b9d/channels/19%3A7d8190d723f745c38750a6957777u8a8%40thread.skype/messages/1602725975403/hostedContents
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-hostedcontents-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-hostedcontents-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-hostedcontents-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-hostedcontents-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
 ### Response
@@ -113,7 +91,7 @@ Content-type: application/json
 {
   "value": [
     {
-      "id": "id-value"
+      "id": "1602725975609"
     }
   ]
 }
