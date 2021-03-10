@@ -160,30 +160,30 @@ You can try these commands through [Graph Explorer](https://developer.microsoft.
     HTTP/1.1 200 OK Content-type: application/json
     Content-length: 
     {
-          "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams({group_id}')/channels('{channel_id}')/members",
+          "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams({team-id}')/channels('{channel-id}')/members",
           "@odata.count": 2,
           "value": [
               {
                   "@odata.type": "#microsoft.graph.aadUserConversationMember",
-                  "id": "id-value",
-                  "roles": [],
-                  "displayName": "display-name-value",
-                  "userId": "userId-value",
-                  "email": "email-value"
+                  "id": "19:d0bba23c2fc8413991125a43a54cc30e@thread.skype",
+                  "roles": ["owner", "member"],
+                  "displayName": "Research and Development",
+                  "userId": "48d31887-5fad-4d73-a9f5-3c356e68a038",
+                  "email": "547ac832.M365x189760.onmicrosoft.com@amer.teams.ms"
               },
               {
                   "@odata.type": "#microsoft.graph.aadUserConversationMember",
-              "id": "id-value",
+              "id": "19:d0bba23c2fc8413991125a43a54cc30e@thread.skype",
               "roles": ["owner"],
-              "displayName": "display-name-value",
-              "userId": "userId-value",
-              "email": "email-value"
+              "displayName": "Research and Development",
+              "userId": "48d31887-5fad-4d73-a9f5-3c356e68a038",
+              "email": "547ac832.M365x189760.onmicrosoft.com@amer.teams.ms"
               }
           ]
     }
   ```
       
-2. Use the following Microsoft Graph API command to promote the member to an owner. 
+2. Use the following Microsoft Graph API command to promote the member to an owner.
 
 > [!NOTE]
 > In this command, &lt;userId&gt; and &lt;member_id&gt; aren't interchangeable.
@@ -207,13 +207,13 @@ You can try these commands through [Graph Explorer](https://developer.microsoft.
     Content-type: application/json
 
     {
-      "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('{group-id}')/channels('{channel-id}')/members/$entity",
+      "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('{team-id}')/channels('{channel-id}')/members/$entity",
       "@odata.type": "#microsoft.graph.aadUserConversationMember",
-      "id": "id-value",
+      "id": "19:d0bba23c2fc8413991125a43a54cc30e@thread.skype",
       "roles": ["owner"],
-      "displayName": "display-name-value",
-      "userId": "userId-value",
-      "email": "email-value"
+      "displayName": "Research and Development",
+      "userId": "48d31887-5fad-4d73-a9f5-3c356e68a038",
+      "email": "547ac832.M365x189760.onmicrosoft.com@amer.teams.ms"
      }
   ```
 
