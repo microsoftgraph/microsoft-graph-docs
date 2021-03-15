@@ -21,36 +21,7 @@ Namespace: microsoft.graph
 |notEnabled|
 |unknown|
 |unknownFutureValue|
-|reportOnlySuccess|
-|reportOnlyFailure|
-|reportOnlyNotApplied|
-|reportOnlyInterrupted|
 
-### groupType values 
-
-|Member|
-|:---|
-|unifiedGroups|
-|azureAD|
-|unknownFutureValue|
-
-### conditionalAccessStatus values
-
-|Member|
-|:---|
-|success|
-|failure|
-|notApplied|
-|unknownFutureValue|
-
-### operationResult values
-
-|Member|
-|:---|
-|success|
-|failure|
-|timeout|
-|unknownFutureValue|
 
 ### activityType values
 
