@@ -7,7 +7,7 @@ doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
 
-# site: getApplicableContentTypesForList
+# Get applicable content types for list
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
