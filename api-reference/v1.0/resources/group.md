@@ -124,6 +124,7 @@ This resource supports:
 |hideFromAddressLists |Boolean |True if the group is not displayed in certain parts of the Outlook UI: the **Address Book**, address lists for selecting message recipients, and the **Browse Groups** dialog for searching groups; otherwise, false. Default value is **false**. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`)|
 |hideFromOutlookClients |Boolean |True if the group is not displayed in Outlook clients, such as Outlook for Windows and Outlook on the web; otherwise, false. Default value is **false**. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`)|
 |id|String|The unique identifier for the group. <br><br>Returned by default. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
+|isAssignableToRole|Boolean|Indicates whether this group can be assigned to an Azure Active Directory role or not.<br><br>This property can only be set while creating the group and is immutable. Only Global Administrator and Privileged Role Administrator roles can set this property. For more information, see [Using a group to manage Azure AD role assignments](https://go.microsoft.com/fwlink/?linkid=2103037)<br><br>Returned by default.|
 |isSubscribedByMail|Boolean|Indicates whether the signed-in user is subscribed to receive email conversations. Default value is **true**. <br><br>Returned only on $select. |
 |licenseProcessingState|String|Indicates status of the group license assignment to all members of the group. Default value is **false**. Read-only. Possible values: `QueuedForProcessing`, `ProcessingInProgress`, and `ProcessingComplete`.<br><br>Returned only on $select. Read-only.|
 |mail|String|The SMTP address for the group, for example, "serviceadmins@contoso.onmicrosoft.com". <br><br>Returned by default. Read-only. Supports $filter.|
@@ -204,6 +205,7 @@ The following is a JSON representation of the resource.
     "events",
     "extensions",
     "groupLifecyclePolicies",
+    "isAssignableToRole",
     "memberOf",
     "members",
     "onenote",
@@ -336,6 +338,7 @@ The following is a JSON representation of the resource.
   "hideFromOutlookClients": false,
   "id": "string (identifier)",
   "isSubscribedByMail": true,
+  "isAssignableRole": false,
   "licenseProcessingState": "string",
   "mail": "string",
   "mailEnabled": true,
