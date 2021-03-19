@@ -11,12 +11,6 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
-### consentRequestFilterByCurrentUserOptions values 
-
-|Member|
-|:---|
-|reviewer|
-|unknownFutureValue|
 ### appliedConditionalAccessPolicyResult values 
 
 |Member|
@@ -27,10 +21,6 @@ Namespace: microsoft.graph
 |notEnabled|
 |unknown|
 |unknownFutureValue|
-|reportOnlySuccess|
-|reportOnlyFailure|
-|reportOnlyNotApplied|
-|reportOnlyInterrupted|
 
 ### groupType values 
 
