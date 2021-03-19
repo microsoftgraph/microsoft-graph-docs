@@ -42,6 +42,6 @@ var schema = new Schema
 await graphClient.External.Connections["{externalConnection-id}"].Schema
 	.Request()
 	.Header("Prefer","respond-async")
-	.AddAsync(schema);
+	.CreateAsync(schema);
 
 ```
