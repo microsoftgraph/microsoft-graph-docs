@@ -1,19 +1,20 @@
 ---
-title: "List schools"
+title: "List schools of user"
 description: "Retrieve a list of schools for a user."
 author: "mmast-msft"
+ms.author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# List schools
+# List Schools to switch an Edu User belongs
 
 Namespace: microsoft.graph
 
 Retrieve a list of schools for a user.
 
->**Note:** If the delegated token is used, members can only see information about their own schools. Use the `...beta/education/me/schools` resource in this case.
+> **Note:** If the delegated token is used, members can only see information about their own schools. Use the `...beta/education/me/schools` resource in this case.
 
 ## Permissions
 
@@ -28,9 +29,10 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /education/me/schools
-GET /education/users/{id}/schools
+GET /education/users/{educationUserId}/schools
 ```
 
 ## Optional query parameters
@@ -63,23 +65,28 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_schools"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/me/schools
 ```
 
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-schools-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-schools-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-schools-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-schools-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -89,7 +96,7 @@ GET https://graph.microsoft.com/v1.0/education/me/schools
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -97,6 +104,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.educationSchool",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

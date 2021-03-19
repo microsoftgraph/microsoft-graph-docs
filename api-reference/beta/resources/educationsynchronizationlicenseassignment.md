@@ -2,6 +2,7 @@
 title: "educationSynchronizationLicenseAssignment resource type"
 description: "Represents the license information to assign to user accounts. The resource will be used to set up license assignments when creating new user accounts."
 author: "mmast-msft"
+ms.author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
 doc_type: resourcePageType
@@ -17,10 +18,10 @@ Represents the license information to assign to user accounts. The resource will
 
 ## Properties
 
-| Property  | Type              | Description                                                                                    |
-| :-------- | :---------------- | :--------------------------------------------------------------------------------------------- |
-| appliesTo | String            | The user role type to assign to license. Possible values are: `student`, `teacher`, `faculty`. |
-| skuIds    | String collection | Represents the SKU identifiers of the licenses to assign.                                      |
+| Property  | Type              | Description                                                                        |
+| :-------- | :---------------- | :--------------------------------------------------------------------------------- |
+| appliesTo | String            | The user role type to assign to license. Possible values are: `student`, `teacher` |
+| skuIds    | String collection | Represents the SKU identifiers of the licenses to assign.                          |
 
 ## JSON representation
 
@@ -38,5 +39,3 @@ Represents the license information to assign to user accounts. The resource will
   "skuIds": ["String"]
 }
 ```
-
-

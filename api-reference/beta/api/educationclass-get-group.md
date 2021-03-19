@@ -3,6 +3,7 @@ title: "Get group"
 description: "Retrieve the Microsoft 365 **group** that corresponds to this **educationClass**."
 localization_priority: Normal
 author: "mmast-msft"
+ms.author: "mmast-msft"
 ms.prod: "education"
 doc_type: apiPageType
 ---

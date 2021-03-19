@@ -320,15 +320,13 @@ Namespace: microsoft.graph
 | lightRed   | 8
 | maxColor   | 9
 
-
 ### educationExternalSource values
 
-| Member
-|:-------------------------
-| sis
-| manual
-| unknownFutureValue
-
+| Member             |
+| :----------------- |
+| sis                |
+| manual             |
+| unknownFutureValue |
 
 ### educationGender values
 
@@ -368,12 +366,14 @@ Namespace: microsoft.graph
 | normal
 | high
 
-
 ### educationUserRole values
-| Member
-|:---------------------
-| student
-| teacher
+
+| Member             |
+| :----------------- |
+| student            |
+| teacher            |
+| none               |
+| unknownFutureValue |
 
 ### meetingMessageType values
 

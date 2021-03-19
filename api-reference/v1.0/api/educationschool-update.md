@@ -1,17 +1,18 @@
 ---
-title: "Update educationSchool properties"
-description: "Update the properties of a school object."
+title: "Update educationSchool"
+description: "Update the properties of an educationSchool object."
 author: "mmast-msft"
+ms.author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# Update educationSchool properties
+# Update a School
 
 Namespace: microsoft.graph
 
-Update the properties of a school object.
+Update the properties of an [educationSchool](../resources/educationschool.md) object.
 
 ## Permissions
 
@@ -25,55 +26,61 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-<!-- { "blockType": "ignored" } -->
+<!-- {
+  "blockType": "ignored"
+}
+-->
+
 ```http
-PATCH /education/schools/{id}
+PATCH /education/schools/{educationSchoolId}
 ```
 
 ## Request headers
 
-| Header        | Value                     |
-| :------------ | :------------------------ |
-| Authorization | Bearer {token}. Required. |
-| Content-Type  | application/json          |
+| Name          | Description                 |
+| :------------ | :-------------------------- |
+| Authorization | Bearer {token}. Required.   |
+| Content-Type  | application/json. Required. |
 
 ## Request body
 
-In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
+In the request body, supply a JSON representation of the [educationSchool](../resources/educationschool.md) object.
 
-| Property            | Type                                               | Description                        |
-| :------------------ | :------------------------------------------------- | :--------------------------------- |
-| displayName         | String                                             | Display name of the school         |
-| description         | String                                             | Description of the school          |
-| principalEmail      | String                                             | Email address of the principal     |
-| principalName       | String                                             | Name of the principal              |
-| externalPrincipalId | String                                             | Id of principal in syncing system. |
-| highestGrade        | String                                             | Highest grade taught.              |
-| lowestGrade         | String                                             | Lowest grade taught.               |
-| schoolNumber        | String                                             | School Number.                     |
-| externalId          | String                                             | Id of school in syncing system.    |
-| phone               | String                                             | Phone number of school.            |
-| address             | [physicalAddress](../resources/physicaladdress.md) | Address of the School.             |
-| createdBy           | [identitySet](../resources/identityset.md)         | Entity who created the school.     |
+The following table shows the properties that are required when you update the [educationSchool](../resources/educationschool.md).
+
+| Property             | Type                                               | Description                                                                                                                                                           |
+| :------------------- | :------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| displayName          | String                                             | Display name of the school. Inherited from [educationOrganization](../resources/educationorganization.md)                                                             |
+| description          | String                                             | Description of the school. Inherited from [educationOrganization](../resources/educationorganization.md)                                                              |
+| externalSource       | educationExternalSource                            | Source where this organization was created from. Inherited from [educationOrganization](../resources/educationorganization.md). Possible values are: `sis`, `manual`. |
+| externalSourceDetail | String                                             | The name of the external source this resources was generated from.                                                                                                    |
+| principalEmail       | String                                             | Email address of the principal.                                                                                                                                       |
+| principalName        | String                                             | Name of the principal.                                                                                                                                                |
+| externalPrincipalId  | String                                             | ID of principal in syncing system.                                                                                                                                    |
+| highestGrade         | String                                             | Highest grade taught.                                                                                                                                                 |
+| lowestGrade          | String                                             | Lowest grade taught.                                                                                                                                                  |
+| schoolNumber         | String                                             | School Number.                                                                                                                                                        |
+| externalId           | String                                             | ID of school in syncing system.                                                                                                                                       |
+| phone                | String                                             | Phone number of school.                                                                                                                                               |
+| fax                  | String                                             | Fax number of school.                                                                                                                                                 |
+| createdBy            | [identitySet](../resources/identityset.md)         | Entity who created the school.                                                                                                                                        |
+| address              | [physicalAddress](../resources/physicaladdress.md) | Address of the school.                                                                                                                                                |
 
 ## Response
 
 If successful, this method returns a `200 OK` response code and an updated [educationSchool](../resources/educationschool.md) object in the response body.
 
-## Example
+## Examples
 
-##### Request
-
-The following is an example of the request.
-
-# [HTTP](#tab/http)
+### Request
 
 <!-- {
   "blockType": "request",
   "name": "update_educationschool"
 }-->
+
 ```http
-PATCH https://graph.microsoft.com/v1.0/education/schools/{school-id}
+PATCH https://graph.microsoft.com/beta/education/schools/10002
 Content-type: application/json
 Content-length: 292
 
@@ -83,35 +90,16 @@ Content-length: 292
 }
 ```
 
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/update-educationschool-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+### Response
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/update-educationschool-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/update-educationschool-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/update-educationschool-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-##### Response
-
-The following is an example of the response.
-
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationSchool"
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -140,16 +128,3 @@ Content-length: 292
   "phone": "+1 (253) 555-0102"
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Update educationschool",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}-->
-

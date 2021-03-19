@@ -2,7 +2,8 @@
 title: "educationSchool: delta"
 description: "Get newly created or updated schools without having to perform a full read of the entire school collection."
 localization_priority: Normal
-author: "mlafleur"
+author: "mmast-msft"
+ms.author: "mmast-msft"
 ms.prod: "education"
 doc_type: apiPageType
 ---

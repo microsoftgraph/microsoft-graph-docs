@@ -2,6 +2,7 @@
 title: "Reset sync on an educationSynchronizationProfile"
 description: "Reset the sync of a specific school data synchronization profile in the tenant."
 author: "mmast-msft"
+ms.author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType

@@ -3,6 +3,7 @@ title: "Get administrativeUnit"
 description: "Retrieve the simple directory **administrativeUnit** that corresponds to this **educationSchool**."
 localization_priority: Normal
 author: "mmast-msft"
+ms.author: "mmast-msft"
 ms.prod: "education"
 doc_type: apiPageType
 ---

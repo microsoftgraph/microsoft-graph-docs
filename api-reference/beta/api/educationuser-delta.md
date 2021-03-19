@@ -2,7 +2,8 @@
 title: "educationUser: delta"
 description: "Get newly created or updated users without having to perform a full read of the entire user collection."
 localization_priority: Normal
-author: "mlafleur"
+author: "mmast-msft"
+ms.author: "mmast-msft"
 ms.prod: "education"
 doc_type: apiPageType
 ---

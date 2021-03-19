@@ -3,6 +3,7 @@ title: "educationIdentityDomain resource type"
 description: "Represents the mapping between an education user type and the domain the user's account belongs to. The domain resource is part of the identity creation configuration. "
 localization_priority: Normal
 author: "mmast-msft"
+ms.author: "mmast-msft"
 ms.prod: "education"
 doc_type: resourcePageType
 ---
@@ -17,10 +18,10 @@ Represents the mapping between an education user type and the domain the user's 
 
 ## Properties
 
-| Property  | Type   | Description                                                                                        |
-| :-------- | :----- | :------------------------------------------------------------------------------------------------- |
-| appliesTo | String | The user role type to assign to the license. Possible values are: `student`, `teacher`, `faculty`. |
-| name      | String | Represents the domain for the user account.                                                        |
+| Property  | Type   | Description                                                                             |
+| :-------- | :----- | :-------------------------------------------------------------------------------------- |
+| appliesTo | String | The user role type to assign to the license. Possible values are: `student`, `teacher`. |
+| name      | String | Represents the domain for the user account.                                             |
 
 ## JSON representation
 
@@ -38,5 +39,3 @@ Represents the mapping between an education user type and the domain the user's 
   "name": "String"
 }
 ```
-
-

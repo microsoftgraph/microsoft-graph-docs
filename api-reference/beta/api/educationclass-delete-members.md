@@ -2,6 +2,7 @@
 title: "Remove a student"
 description: "Removes an educationUser from an educationClass"
 author: "mmast-msft"
+ms.author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType

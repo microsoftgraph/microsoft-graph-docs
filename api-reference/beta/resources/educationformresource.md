@@ -2,6 +2,7 @@
 title: "educationFormResource resource type"
 description: "A subclass of educationResource. This resource is a Form."
 author: "mmast-msft"
+ms.author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
 doc_type: resourcePageType
@@ -17,7 +18,7 @@ A subclass of [educationResource](educationresource.md). This resource is a form
 
 
 ## Properties
-| Property	   | Type	|Description|
+| Property     | Type  |Description|
 |:---------------|:--------|:----------|
 |originalFormId|String|Original id of the Form.|
 |formId|String|Id of the Form.|

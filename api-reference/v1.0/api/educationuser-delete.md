@@ -1,94 +1,79 @@
 ---
 title: "Delete educationUser"
-description: "Delete a user."
+description: "Deletes an educationUser object."
 author: "mmast-msft"
+ms.author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# Delete educationUser
+# Delete an Edu User
 
 Namespace: microsoft.graph
 
-Delete a user.
-
+Deletes an [educationUser](../resources/educationuser.md) object.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) |  Not supported.  |
-|Delegated (personal Microsoft account) |  Not supported.  |
-|Application | EduRoster.ReadWrite.All |
+| Permission type                        | Permissions (from least to most privileged) |
+| :------------------------------------- | :------------------------------------------ |
+| Delegated (work or school account)     | Not supported.                              |
+| Delegated (personal Microsoft account) | Not supported.                              |
+| Application                            | EduRoster.ReadWrite.All                     |
 
 ## HTTP request
-<!-- { "blockType": "ignored" } -->
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
+
 ```http
-DELETE /education/users/{id}
+DELETE /education/me
+DELETE /education/users/{educationUserId}
 ```
+
 ## Request headers
-| Header       | Value |
-|:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+
+| Name          | Description               |
+| :------------ | :------------------------ |
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
+
 Do not supply a request body for this method.
 
-
 ## Response
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
-## Example
-##### Request
-Here is an example of the request.
+If successful, this method returns a `204 No Content` response code.
 
-# [HTTP](#tab/http)
+## Examples
+
+### Request
+
 <!-- {
   "blockType": "request",
   "name": "delete_educationuser"
-}-->
+}
+-->
+
 ```http
-DELETE https://graph.microsoft.com/v1.0/education/users/{user-id}
+DELETE https://graph.microsoft.com/v1.0/education/me
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-educationuser-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-educationuser-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+### Response
 
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-educationuser-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+**Note:** The response object shown here might be shortened for readability.
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-educationuser-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-##### Response
-The following is an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true
-} -->
+}
+-->
+
 ```http
 HTTP/1.1 204 No Content
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Delete educationUser",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}-->
-

@@ -3,6 +3,7 @@ title: "educationIdentityCreationConfiguration resource type"
 description: "Defines the settings on creation of school data profile identities. These identities include students and teachers. Based on these settings, the users will be created in the directory."
 localization_priority: Normal
 author: "mmast-msft"
+ms.author: "mmast-msft"
 ms.prod: "education"
 doc_type: resourcePageType
 ---

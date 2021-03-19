@@ -1,7 +1,8 @@
 ---
 title: "educationCourse resource type"
 description: "Represents the course information for a class."
-author: "mlafleur"
+author: "mmast-msft"
+ms.author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
 doc_type: resourcePageType

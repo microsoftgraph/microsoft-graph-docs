@@ -1,13 +1,14 @@
 ---
-title: "List schools"
+title: "List the schools a class belongs to"
 description: "Retrieve a list of schools in which the class is taught."
 author: "mmast-msft"
+ms.author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# List schools
+# List the Schools to which a Class belongs
 
 Namespace: microsoft.graph
 
@@ -26,8 +27,9 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
+
 ```http
-GET /education/classes/{id}/schools
+GET /education/classes/{educationClassId}/schools
 ```
 
 ## Optional query parameters
@@ -60,23 +62,28 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_schools"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/schools
 ```
 
 # [C#](#tab/csharp)
+
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-schools-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-schools-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+
 [!INCLUDE [sample-code](../includes/snippets/objc/get-schools-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
+
 [!INCLUDE [sample-code](../includes/snippets/java/get-schools-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
@@ -86,7 +93,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/{class-id}/schools
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -94,6 +101,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.educationSchool",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -102,10 +110,8 @@ Content-length: 892
 {
   "value": [
     {
-      "id": "10002",
       "displayName": "Fabrikam High School",
       "description": "Magnate school for the arts. Los Angeles School District",
-      "status": "String",
       "externalSource": "String",
       "principalEmail": "AmyR@fabrikam.com",
       "principalName": "Amy Roebuck",
