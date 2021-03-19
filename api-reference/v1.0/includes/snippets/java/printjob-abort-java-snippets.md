@@ -4,12 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String reason = "String";
 
 graphClient.print().printers("{printerId}").jobs("{printJobId}")
-	.abort(reason)
+	.abort(PrintJobAbortParameterSet
+		.newBuilder()
+		.withReason(reason)
+		.build())
 	.buildRequest()
 	.post();
 

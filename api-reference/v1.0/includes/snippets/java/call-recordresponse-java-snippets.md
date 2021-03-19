@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Boolean bargeInAllowed = true;
 
@@ -33,7 +33,17 @@ stopTonesList.add("1");
 stopTonesList.add("*");
 
 graphClient.communications().calls("{id}")
-	.recordResponse(promptsList,bargeInAllowed,initialSilenceTimeoutInSeconds,maxSilenceTimeoutInSeconds,maxRecordDurationInSeconds,playBeep,stopTonesList,clientContext)
+	.recordResponse(CallRecordResponseParameterSet
+		.newBuilder()
+		.withPrompts(promptsList)
+		.withBargeInAllowed(bargeInAllowed)
+		.withInitialSilenceTimeoutInSeconds(initialSilenceTimeoutInSeconds)
+		.withMaxSilenceTimeoutInSeconds(maxSilenceTimeoutInSeconds)
+		.withMaxRecordDurationInSeconds(maxRecordDurationInSeconds)
+		.withPlayBeep(playBeep)
+		.withStopTones(stopTonesList)
+		.withClientContext(clientContext)
+		.build())
 	.buildRequest()
 	.post();
 

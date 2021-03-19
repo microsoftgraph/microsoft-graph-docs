@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 AccessPackageAssignmentPolicy accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy();
 accessPackageAssignmentPolicy.accessPackageId = "b2eba9a1-b357-42ee-83a8-336522ed6cbf";
@@ -12,7 +12,7 @@ accessPackageAssignmentPolicy.displayName = "Users from connected organizations 
 accessPackageAssignmentPolicy.description = "Allow users from configured connected organizations to request and be approved by their sponsors";
 accessPackageAssignmentPolicy.canExtend = false;
 accessPackageAssignmentPolicy.durationInDays = 365;
-accessPackageAssignmentPolicy.expirationDateTime = CalendarSerializer.deserialize("null");
+accessPackageAssignmentPolicy.expirationDateTime = OffsetDateTimeSerializer.deserialize("null");
 RequestorSettings requestorSettings = new RequestorSettings();
 requestorSettings.scopeType = "AllExistingConnectedOrganizationSubjects";
 requestorSettings.acceptRequests = true;

@@ -2,7 +2,7 @@
 title: "invitation resource type"
 description: "Represents an invitation that is used to add external users to an organization."
 localization_priority: Priority
-author: "elisolMS"
+author: "Sammak"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---

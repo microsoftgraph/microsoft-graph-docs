@@ -1519,6 +1519,43 @@
       "CreatedDateTime": "2021-03-03T08:44:48.432Z",
       "WorkloadArea": "Sites and lists",
       "SubArea": ""
+    },
+    {
+    		"ChangeList": [{
+    			"Id": "7a7d0aa0-8196-11eb-9fc2-269673f51d94",
+    			"ApiChange": "Method",
+    			"ChangedApiName": "associateWithHubSites",
+    			"ChangeType": "Change",
+    			"Description": "Changed the return type for the [associateWithHubSites](https://docs.microsoft.com/en-us/graph/api/contentType-associateWithHubSites?view=graph-rest-beta) method.",
+    			"Target": "associateWithHubSites"
+    		}, {
+    			"Id": "7a7f6ce8-8196-11eb-9fc2-269673f51d94",
+    			"ApiChange": "Method",
+    			"ChangedApiName": "copyToDefaultContentLocation",
+    			"ChangeType": "Change",
+    			"Description": "Changed the return type for the [copyToDefaultContentLocation](https://docs.microsoft.com/en-us/graph/api/contentType-copyToDefaultContentLocation?view=graph-rest-beta) method.",
+    			"Target": "copyToDefaultContentLocation"
+    		}, {
+    			"Id": "7a81cfec-8196-11eb-9fc2-269673f51d94",
+    			"ApiChange": "Method",
+    			"ChangedApiName": "publish",
+    			"ChangeType": "Change",
+    			"Description": "Changed the return type for the [publish](https://docs.microsoft.com/en-us/graph/api/contentType-publish?view=graph-rest-beta) method.",
+    			"Target": "publish"
+    		}, {
+    			"Id": "7a8433f7-8196-11eb-9fc2-269673f51d94",
+    			"ApiChange": "Method",
+    			"ChangedApiName": "unpublish",
+    			"ChangeType": "Change",
+    			"Description": "Changed the return type for the [unpublish](https://docs.microsoft.com/en-us/graph/api/contentType-unpublish?view=graph-rest-beta) method.",
+    			"Target": "unpublish"
+    		}],
+    		"Id": "7a7aa807-8196-11eb-9fc2-269673f51d94",
+    		"Cloud": "prd",
+    		"Version": "beta",
+    		"CreatedDateTime": "2021-03-10T11:48:06.486Z",
+    		"WorkloadArea": "Sites and lists",
+    		"SubArea": ""
     }
   ]
 }

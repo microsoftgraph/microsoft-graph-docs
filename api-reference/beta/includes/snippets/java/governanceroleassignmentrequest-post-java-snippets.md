@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 GovernanceRoleAssignmentRequest governanceRoleAssignmentRequest = new GovernanceRoleAssignmentRequest();
 governanceRoleAssignmentRequest.roleDefinitionId = "0e88fd18-50f5-4ee1-9104-01c3ed910065";
@@ -15,8 +15,8 @@ governanceRoleAssignmentRequest.type = "AdminExtend";
 governanceRoleAssignmentRequest.reason = "extend role assignment";
 GovernanceSchedule schedule = new GovernanceSchedule();
 schedule.type = "Once";
-schedule.startDateTime = CalendarSerializer.deserialize("2018-05-12T23:53:55.327Z");
-schedule.endDateTime = CalendarSerializer.deserialize("2018-08-10T23:53:55.327Z");
+schedule.startDateTime = OffsetDateTimeSerializer.deserialize("2018-05-12T23:53:55.327Z");
+schedule.endDateTime = OffsetDateTimeSerializer.deserialize("2018-08-10T23:53:55.327Z");
 governanceRoleAssignmentRequest.schedule = schedule;
 
 graphClient.privilegedAccess("azureResources").roleAssignmentRequests()

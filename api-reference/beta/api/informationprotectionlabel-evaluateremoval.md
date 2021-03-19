@@ -3,7 +3,7 @@ title: "informationProtectionLabel: evaluateRemoval"
 description: "Evaluate which label to remove and how to remove it based on existing content info."
 localization_priority: Normal
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "apiPageType"
 ---
 

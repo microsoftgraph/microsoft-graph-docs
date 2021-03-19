@@ -45,13 +45,16 @@ In the request body, provide the `id` of a [user](../resources/user.md),  [group
 If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
 
 ## Example
-##### Request
+### Request
 Here is an example of the request.
 
+<!-- {
+  "blockType": "request",
+  "name": "post_administrativeUnits_members"
+} -->
 ```http
 POST https://graph.microsoft.com/beta/administrativeUnits/{id}/members/$ref
 Content-type: application/json
-Content-length: 109
 
 {
   "@odata.id":"https://graph.microsoft.com/beta/groups/{id}"
@@ -60,9 +63,13 @@ Content-length: 109
 ```
 In the request body, provide the `id` of the [user](../resources/user.md) or [group](../resources/group.md) object you want to add.
 
-##### Response
+### Response
 Here is an example of the response.
  
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 ```http
 HTTP/1.1 204 No Content
 ```

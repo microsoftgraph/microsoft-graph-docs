@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 AccessReview accessReview = new AccessReview();
 accessReview.displayName = "TestReview";
-accessReview.startDateTime = CalendarSerializer.deserialize("2017-02-10T00:35:53.214Z");
-accessReview.endDateTime = CalendarSerializer.deserialize("2017-03-12T00:35:53.214Z");
+accessReview.startDateTime = OffsetDateTimeSerializer.deserialize("2017-02-10T00:35:53.214Z");
+accessReview.endDateTime = OffsetDateTimeSerializer.deserialize("2017-03-12T00:35:53.214Z");
 Identity reviewedEntity = new Identity();
 reviewedEntity.id = "99025615-a0b1-47ec-9117-35377b10998b";
 accessReview.reviewedEntity = reviewedEntity;

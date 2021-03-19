@@ -84,7 +84,6 @@ This resource lets you add your own data to custom properties using [extensions]
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the device. Read-only. Nullable.|
 |registeredOwners|[directoryObject](directoryobject.md) collection| The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner. Read-only. Nullable.|
 |registeredUsers|[directoryObject](directoryobject.md) collection| Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable.|
-|extensions|[extension](extension.md) collection|The collection of open extensions defined for the device. Nullable.|
 |commands | [command](command.md) collection | Set of commands sent to this device|
 |usageRight|[usageRight](usageright.md) collection|Represents the usage rights a device has been granted. |
 

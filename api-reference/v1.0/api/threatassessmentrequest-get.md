@@ -3,7 +3,7 @@ title: "Get threatAssessmentRequest"
 description: "Retrieve the properties and relationships of a specified threatassessmentrequest object."
 localization_priority: Normal
 author: "hafen-ms"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "apiPageType"
 ---
 

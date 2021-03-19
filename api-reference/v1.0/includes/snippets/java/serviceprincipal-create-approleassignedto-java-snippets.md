@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 AppRoleAssignment appRoleAssignment = new AppRoleAssignment();
 appRoleAssignment.principalId = UUID.fromString("33ad69f9-da99-4bed-acd0-3f24235cb296");

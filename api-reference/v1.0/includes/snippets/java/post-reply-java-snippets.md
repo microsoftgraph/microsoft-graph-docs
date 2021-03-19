@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Post post = new Post();
 ItemBody body = new ItemBody();
 body.contentType = BodyType.TEXT;
 body.content = "content-value";
 post.body = body;
-post.receivedDateTime = CalendarSerializer.deserialize("datetime-value");
+post.receivedDateTime = OffsetDateTimeSerializer.deserialize("datetime-value");
 post.hasAttachments = true;
 Recipient from = new Recipient();
 EmailAddress emailAddress = new EmailAddress();
@@ -35,8 +35,8 @@ newParticipants.emailAddress = emailAddress2;
 newParticipantsList.add(newParticipants);
 post.newParticipants = newParticipantsList;
 post.conversationId = "conversationId-value";
-post.createdDateTime = CalendarSerializer.deserialize("datetime-value");
-post.lastModifiedDateTime = CalendarSerializer.deserialize("datetime-value");
+post.createdDateTime = OffsetDateTimeSerializer.deserialize("datetime-value");
+post.lastModifiedDateTime = OffsetDateTimeSerializer.deserialize("datetime-value");
 post.changeKey = "changeKey-value";
 LinkedList<String> categoriesList = new LinkedList<String>();
 categoriesList.add("categories-value");
@@ -46,7 +46,7 @@ Post inReplyTo = new Post();
 post.inReplyTo = inReplyTo;
 LinkedList<Attachment> attachmentsList = new LinkedList<Attachment>();
 FileAttachment attachments = new FileAttachment();
-attachments.lastModifiedDateTime = CalendarSerializer.deserialize("datetime-value");
+attachments.lastModifiedDateTime = OffsetDateTimeSerializer.deserialize("datetime-value");
 attachments.name = "name-value";
 attachments.contentType = "contentType-value";
 attachments.size = 99;
@@ -59,7 +59,10 @@ AttachmentCollectionPage attachmentCollectionPage = new AttachmentCollectionPage
 post.attachments = attachmentCollectionPage;
 
 graphClient.groups("{id}").threads("{id}").posts("{id}")
-	.reply(post)
+	.reply(PostReplyParameterSet
+		.newBuilder()
+		.withPost(post)
+		.build())
 	.buildRequest()
 	.post();
 

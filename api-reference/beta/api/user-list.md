@@ -43,7 +43,7 @@ This method supports the [OData query parameters](/graph/query-parameters) to he
 | Header | Value |
 |:------ |:----- |
 | Authorization | Bearer {token} (required)  |
-| ConsistencyLevel | eventual. This header and `$count` are required when using `$search`, or when using `$filter` with the `$orderby` query parameter. It uses an index that may not be up-to-date with recent changes to the object. |
+| ConsistencyLevel | eventual. This header and `$count` are required when using `$search`, or when using `$filter` with the `$orderby` query parameter, or `$filter` with the `endsWith` logical operator. It uses an index that may not be up-to-date with recent changes to the object. |
 
 ## Request body
 
@@ -493,7 +493,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users",
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users",
   "@odata.count": 1,
   "value": [
     {
@@ -601,6 +601,62 @@ Content-type: application/json
       "mailNickname":"contoso1_gmail.com#EXT#",
       "proxyAddresses":["SMTP:contoso1@gmail.com"], 
       "userPrincipalName":"contoso1_gmail.com#EXT#@microsoft.onmicrosoft.com"
+    }
+  ]
+}
+```
+
+
+### Example 11: Use $filter to get users who are assigned a specific license
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "ignored",
+  "name": "get_user_assignedLicenses"
+} -->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/users?$select=id,mail,assignedLicenses&$filter=assignedLicenses/any(u:u/skuId eq cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46)
+```
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users(id,mail,assignedLicenses)",
+  "value": [
+    {
+      "id": "cb4954e8-467f-4a6d-a8c8-28b9034fadbc",
+      "mail": "admin@contoso.com",
+      "assignedLicenses": [
+        {
+          "disabledPlans": [],
+          "skuId": "cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46"
+        }
+      ]
+    },
+    {
+      "id": "81a133c2-bdf2-4e67-8755-7264366b04ee",
+      "mail": "DebraB@contoso.com",
+      "assignedLicenses": [
+        {
+          "disabledPlans": [],
+          "skuId": "cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46"
+        }
+      ]
     }
   ]
 }

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 TeamworkActivityTopic topic = new TeamworkActivityTopic();
 topic.source = TeamworkActivityTopicSource.TEXT;
@@ -27,7 +27,16 @@ templateParameters.value = "6788662";
 templateParametersList.add(templateParameters);
 
 graphClient.chats("{chatId}")
-	.sendActivityNotification(topic,activityType,null,previewText,templateParametersList,recipient,null)
+	.sendActivityNotification(ChatSendActivityNotificationParameterSet
+		.newBuilder()
+		.withTopic(topic)
+		.withActivityType(activityType)
+		.withChainId(null)
+		.withPreviewText(previewText)
+		.withTemplateParameters(templateParametersList)
+		.withRecipient(recipient)
+		.withTeamsAppId(null)
+		.build())
 	.buildRequest()
 	.post();
 

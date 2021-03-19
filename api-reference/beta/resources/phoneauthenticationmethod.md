@@ -46,7 +46,7 @@ The SMS sign-in state property gives information about whether or not a phone nu
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|id|String| The identifier of this phone registered to this user. Read-only.|
+|id|String| The identifier of this phone registered to this user. Read-only. <br/><br/>The value of id is one of the following:<ul><li>`b6332ec1-7057-4abe-9331-3d72feddfe41` - where **phoneType** is `alternateMobile`.</li><li>`e37fc753-ff3b-4958-9484-eaa9425c82bc` - where **phoneType** is `office`.</li><li>`3179e48a-750b-4051-897c-87b9720928f7` - where **phoneType** is `mobile`.</li>|
 |phoneNumber|String|The phone number to text or call for authentication. Phone numbers use the format "+\<country code\> \<number\>x\<extension\>", with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format. |
 |phoneType|string|The type of this phone. Possible values are: `mobile`, `alternateMobile`, or `office`.|
 |smsSignInState|string|Whether a phone is ready to be used for SMS sign-in or not. Possible values are: `notSupported`, `notAllowedByPolicy`, `notEnabled`, `phoneNumberNotUnique`, `ready`, or `notConfigured`.|

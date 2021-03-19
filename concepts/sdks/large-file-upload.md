@@ -109,19 +109,6 @@ IProgressCallback<DriveItem> callback = new IProgressCallback<DriveItem>() {
             String.format("Uploaded %d bytes of %d total bytes", current, max)
         );
     }
-
-    @Override
-    public void success(final DriveItem result) {
-        System.out.println(
-            String.format("Uploaded file with ID: %s", result.id)
-        );
-    }
-
-    public void failure(final ClientException ex) {
-        System.out.println(
-            String.format("Error uploading file: %s", ex.getMessage())
-        );
-    }
 };
 
 // Create an upload session
@@ -136,8 +123,8 @@ UploadSession uploadSession = graphClient
     .buildRequest()
     .post();
 
-ChunkedUploadProvider<DriveItem> chunkedUploadProvider =
-    new ChunkedUploadProvider<DriveItem>
+LargeFileUploadTask<DriveItem> largeFileUploadTask =
+    new LargeFileUploadTask<DriveItem>
         (uploadSession, graphClient, fileStream, streamSize, DriveItem.class);
 
 // Config parameter is an array of integers
@@ -146,7 +133,7 @@ ChunkedUploadProvider<DriveItem> chunkedUploadProvider =
 int[] customConfig = { 320 * 1024 };
 
 // Do the upload
-chunkedUploadProvider.upload(callback, customConfig);
+largeFileUploadTask.upload(callback, customConfig);
 ```
 
 ---

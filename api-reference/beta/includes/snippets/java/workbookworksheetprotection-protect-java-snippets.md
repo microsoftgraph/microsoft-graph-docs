@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 WorkbookWorksheetProtectionOptions options = new WorkbookWorksheetProtectionOptions();
 options.allowFormatCells = true;
@@ -20,7 +20,10 @@ options.allowAutoFilter = true;
 options.allowPivotTables = true;
 
 graphClient.me().drive().items("{id}").workbook().worksheets("{id|name}").protection()
-	.protect(options)
+	.protect(WorkbookWorksheetProtectionProtectParameterSet
+		.newBuilder()
+		.withOptions(options)
+		.build())
 	.buildRequest()
 	.post();
 

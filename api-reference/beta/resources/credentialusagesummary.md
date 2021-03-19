@@ -25,9 +25,9 @@ Represents the current state of how many users in your organization are using se
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| authMethod | string | Represents the authentication method that the user used. Possible values are: `email`, `mobileSMS`, `mobileCall`, `officePhone`, `securityQuestion` (only used for self-service password reset), `appNotification`, `appCode`, and  `alternateMobileCall` (only supported for registration). |
+| authMethod | usageAuthMethod | Represents the authentication method that the user used. Possible values are:`email`, `mobileSMS`, `mobileCall`, `officePhone`, `securityQuestion` (only used for self-service password reset), `appNotification`, `appCode`, `alternateMobileCall` (supported only in registration), `fido`, `appPassword`, `unknownFutureValue`. |
 | failureActivityCount | Int64 | Provides the count of failed resets or registration data. |
-| feature | string | Defines the feature to report. Possible values are: `registration` and `reset`. |
+| feature | featureType | Defines the feature to report. Possible values are: `registration`, `reset`, `unknownFutureValue`. |
 | id | String | The unique identifier for the activity. Read-only. |
 | successfulActivityCount | Int64 | Provides the count of successful registrations or resets. |
 

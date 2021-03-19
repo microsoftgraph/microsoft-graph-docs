@@ -65,16 +65,16 @@ Prefer: outlook.timezone="Eastern Standard Time"
 |dueDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date in the specified time zone that the task is to be finished.|
 |hasAttachments|Boolean|Set to true if the task has attachments.|
 |id|String| Unique identifier for the task. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Read-only. |
-|importance|string|The importance of the event. Possible values are: `low`, `normal`, `high`.|
+|importance|importance|The importance of the event. Possible values are: `low`, `normal`, `high`.|
 |isReminderOn|Boolean|Set to true if an alert is set to remind the user of the task.|
 |lastModifiedDateTime|DateTimeOffset|The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |owner|String|The name of the person who created the task.|
 |parentFolderId|String|The unique identifier for the task's parent folder.|
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|The recurrence pattern for the task.|
 |reminderDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date and time for a reminder alert of the task to occur.|
-|sensitivity|string|Indicates the level of privacy for the task. Possible values are: `normal`, `personal`, `private`, `confidential`.|
+|sensitivity|sensitivity|Indicates the level of privacy for the task. Possible values are: `normal`, `personal`, `private`, `confidential`.|
 |startDateTime|[dateTimeTimeZone](datetimetimezone.md)|The date in the specified time zone when the task is to begin.|
-|status|string|Indicates the state or progress of the task. Possible values are: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
+|status|taskStatus|Indicates the state or progress of the task. Possible values are: `notStarted`, `inProgress`, `completed`, `waitingOnOthers`, `deferred`.|
 |subject|String|A brief description or title of the task.|
 
 ## Relationships

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String callbackUri = "callbackUri-value";
 
@@ -17,7 +17,13 @@ acceptedModalitiesList.add(Modality.AUDIO);
 int participantCapacity = 200;
 
 graphClient.communications().calls("{id}")
-	.answer(callbackUri,mediaConfig,acceptedModalitiesList,participantCapacity)
+	.answer(CallAnswerParameterSet
+		.newBuilder()
+		.withCallbackUri(callbackUri)
+		.withMediaConfig(mediaConfig)
+		.withAcceptedModalities(acceptedModalitiesList)
+		.withParticipantCapacity(participantCapacity)
+		.build())
 	.buildRequest()
 	.post();
 

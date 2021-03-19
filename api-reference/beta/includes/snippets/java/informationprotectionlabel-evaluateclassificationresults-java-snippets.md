@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("User-Agent", "ContosoLOBApp/1.0"));
@@ -25,7 +25,11 @@ classificationResults.confidenceLevel = 75;
 classificationResultsList.add(classificationResults);
 
 graphClient.informationProtection().policy().labels()
-	.evaluateClassificationResults(contentInfo,classificationResultsList)
+	.evaluateClassificationResults(InformationProtectionLabelEvaluateClassificationResultsParameterSet
+		.newBuilder()
+		.withContentInfo(contentInfo)
+		.withClassificationResults(classificationResultsList)
+		.build())
 	.buildRequest( requestOptions )
 	.post();
 

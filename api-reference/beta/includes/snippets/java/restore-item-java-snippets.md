@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ItemReference parentReference = new ItemReference();
 parentReference.id = "String";
@@ -12,7 +12,11 @@ parentReference.id = "String";
 String name = "String";
 
 graphClient.me().drive().items("{item-id}")
-	.restore(parentReference,name)
+	.restore(DriveItemRestoreParameterSet
+		.newBuilder()
+		.withParentReference(parentReference)
+		.withName(name)
+		.build())
 	.buildRequest()
 	.post();
 

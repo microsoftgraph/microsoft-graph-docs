@@ -4,10 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-ISiteGetApplicableContentTypesForListCollectionPage getApplicableContentTypesForList = graphClient.sites("{siteId}")
-	.getApplicableContentTypesForList("listId")
+SiteGetApplicableContentTypesForListCollectionPage getApplicableContentTypesForList = graphClient.sites("{siteId}")
+	.getApplicableContentTypesForList(SiteGetApplicableContentTypesForListParameterSet
+		.newBuilder()
+		.withListId("listId")
+		.build())
 	.buildRequest()
 	.get();
 

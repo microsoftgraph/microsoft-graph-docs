@@ -11,7 +11,7 @@ ms.prod: "sites-and-lists"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Add a copy of a [site][site] [content type][contentType] to a [list][list].
+Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
  
   
 
@@ -23,9 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type | Permissions (from least to most privileged) |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All  |
+|Delegated (work or school account) |Sites.Manage.All, Sites.FullControl.All  |
 |Delegated (personal Microsoft account) | Not supported. |
-|Application | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
+|Application | Sites.Manage.All, Sites.FullControl.All |
 
   
 
@@ -56,7 +56,7 @@ The following table shows the parameters that can be used with this action.
 
 ## Response
 
-If successful, this call returns a `204 No Content` response.
+If successful, this call returns a `201 Created` response code and a [contentType][] object in the response body.
 
 ## Example
 
@@ -100,11 +100,30 @@ Content-Type: application/json
 ### Response
 
 
-<!-- { "blockType": "response" } -->
+<!-- { "blockType": "response", "@type": "microsoft.graph.contentType", "truncated": true} -->
 
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 201 Created
 
+{
+    "id": "0x0101",
+    "description": "Create a new custom CSR JavaScript Display Template.",
+    "group": "Display Template Content Types",
+    "hidden": false,
+    "name": "JavaScript Display Template",
+    "parentId": "0x01",
+    "readOnly": false,
+    "sealed": false,
+    "base": {
+        "id": "0x01",
+        "description": "Create a new custom CSR JavaScript Display Template.",
+        "group": "Display Template Content Types",
+        "hidden": false,
+        "name": "JavaScript Display Template",
+        "readOnly": false,
+        "sealed": false
+    }
+}
 ```
 
 [site]: ../resources/site.md

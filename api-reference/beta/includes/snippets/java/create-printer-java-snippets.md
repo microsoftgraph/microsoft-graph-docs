@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String displayName = "Test Printer";
 
@@ -23,7 +23,16 @@ certificateSigningRequest.transportKey = "{sampleTransportKey}";
 
 
 graphClient.print().printers()
-	.create(displayName,manufacturer,model,physicalDeviceId,hasPhysicalDevice,certificateSigningRequest,connectorId)
+	.create(PrinterCreateParameterSet
+		.newBuilder()
+		.withDisplayName(displayName)
+		.withManufacturer(manufacturer)
+		.withModel(model)
+		.withPhysicalDeviceId(physicalDeviceId)
+		.withHasPhysicalDevice(hasPhysicalDevice)
+		.withCertificateSigningRequest(certificateSigningRequest)
+		.withConnectorId(connectorId)
+		.build())
 	.buildRequest()
 	.post();
 

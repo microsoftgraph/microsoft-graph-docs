@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Message message = new Message();
 message.subject = "Meet for lunch?";
@@ -31,7 +31,11 @@ AttachmentCollectionPage attachmentCollectionPage = new AttachmentCollectionPage
 message.attachments = attachmentCollectionPage;
 
 graphClient.me()
-	.sendMail(message,null)
+	.sendMail(UserSendMailParameterSet
+		.newBuilder()
+		.withMessage(message)
+		.withSaveToSentItems(null)
+		.build())
 	.buildRequest()
 	.post();
 

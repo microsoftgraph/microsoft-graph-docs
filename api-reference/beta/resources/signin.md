@@ -35,7 +35,7 @@ Provides details about user or application sign-in activity in your directory. Y
 |authenticationProcessingDetails|[keyValue](keyvalue.md) collection|Additional authentication processing details, such as the agent name in case of PTA/PHS or Server/farm name in case of federated authentication.|
 |authenticationRequirement | string | This holds the highest level of authentication needed through all the sign-in steps, for sign-in to succeed.|
 |clientAppUsed|String|The legacy client used for sign-in activity. For example, Browser, Exchange Active Sync,Modern clients, IMAP, MAPI, SMTP, or POP.|
-|conditionalAccessStatus|string| The status of the conditional access policy triggered. Possible values: `success`, `failure`, `notApplied`, or `unknownFutureValue`.|
+|conditionalAccessStatus|conditionalAccessStatus| The status of the conditional access policy triggered. Possible values: `success`, `failure`, `notApplied`, or `unknownFutureValue`.|
 |correlationId|String|The identifier that's sent from the client when sign-in is initiated. This is used for troubleshooting the corresponding sign-in activity when calling for support.|
 |createdDateTime|DateTimeOffset|The date and time the sign-in was initiated. The Timestamp type is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |deviceDetail|[deviceDetail](devicedetail.md)|The device information from where the sign-in occurred. Includes information such as deviceId, OS, and browser. |
@@ -43,7 +43,7 @@ Provides details about user or application sign-in activity in your directory. Y
 |ipAddress|String|The IP address of the client from where the sign-in occurred.|
 |isInteractive|Boolean|Indicates whether a sign-in is interactive or not.|
 |location|[signInLocation](signinlocation.md)|The city, state, and 2 letter country code from where the sign-in occurred.|
-|networkLocationDetails|[networkLocationDetail](networklocationdetail.md) collection|The network location details, such as IP address, location of the sign-in, the type of network used, and its names. Possible values: `Named Netowrk`, `Extranet`, `Intranet`, or `Trusted Network`.|
+|networkLocationDetails|[networkLocationDetail](networklocationdetail.md) collection|The network location details including the type of network used and its names.|
 |originalRequestId|String|The request identifier of the first request in the authentication sequence.|
 |processingTimeInMilliseconds|Int|The request processing time in milliseconds in AD STS.|
 |resourceDisplayName|String|The name of the resource that the user signed in to.|
@@ -58,7 +58,7 @@ Provides details about user or application sign-in activity in your directory. Y
 |servicePrincipalName|String|The application name used for sign-in. This field is populated when you are signing in using an application.|
 |status|[signInStatus](signinstatus.md)|The sign-in status. Includes the error code and description of the error (in case of a sign-in failure).|
 |tokenIssuerName|String|The name of the identity provider. For example, `sts.microsoft.com`.|
-|tokenIssuerType|String|The type of identity provider. Possible values: `AzureAD`, `ADFederationServices`, or `UnknownFutureValue`.|
+|tokenIssuerType|tokenIssuerType|The type of identity provider. Possible values: `AzureAD`, `ADFederationServices`, or `UnknownFutureValue`.|
 |userAgent|String|The user agent information related to sign-in.|
 |userDisplayName|String|The display name of the user.|
 |userId|String|The identifier of the user.|

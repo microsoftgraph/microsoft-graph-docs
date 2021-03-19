@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Message message = new Message();
 message.subject = "Project kickoff";
@@ -29,7 +29,11 @@ MentionCollectionPage mentionCollectionPage = new MentionCollectionPage(mentionC
 message.mentions = mentionCollectionPage;
 
 graphClient.me()
-	.sendMail(message,null)
+	.sendMail(UserSendMailParameterSet
+		.newBuilder()
+		.withMessage(message)
+		.withSaveToSentItems(null)
+		.build())
 	.buildRequest()
 	.post();
 

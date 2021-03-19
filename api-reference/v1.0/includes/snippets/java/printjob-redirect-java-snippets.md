@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String destinationPrinterId = "9a3b3956-ce5b-4d06-a605-5b0bd3e9ddea";
 
@@ -40,7 +40,11 @@ configuration.scaling = PrintScaling.SHRINK_TO_FIT;
 configuration.fitPdfToPage = false;
 
 graphClient.print().printers("{printerId}").jobs("{printJobId}")
-	.redirect(destinationPrinterId,configuration)
+	.redirect(PrintJobRedirectParameterSet
+		.newBuilder()
+		.withDestinationPrinterId(destinationPrinterId)
+		.withConfiguration(configuration)
+		.build())
 	.buildRequest()
 	.post();
 

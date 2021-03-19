@@ -41,15 +41,11 @@ Add the repository and a compile dependency for microsoft-graph to your project'
 ```Gradle
 repository {
     jcenter()
-    jcenter{
-        url 'https://oss.jfrog.org/artifactory/oss-snapshot-local'
-    }
 }
 
 dependency {
     // Include the sdk as a dependency
-    implementation 'com.microsoft.graph:microsoft-graph:2.+'
-    implementation 'com.microsoft.graph:microsoft-graph-auth:0.3.0'
+    implementation 'com.microsoft.graph:microsoft-graph:3.+'
 }
 ```
 
@@ -71,18 +67,6 @@ Add the repositories in the `profiles` element in pom.xml:
             </repository>
         </repositories>
     </profile>
-    <profile>
-       <id>allow-snapshots</id>
-          <activation><activeByDefault>true</activeByDefault></activation>
-       <repositories>
-         <repository>
-           <id>snapshots-repo</id>
-           <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-           <releases><enabled>false</enabled></releases>
-           <snapshots><enabled>true</enabled></snapshots>
-         </repository>
-       </repositories>
-     </profile>
 </profiles>
 ```
 
@@ -92,12 +76,7 @@ Add the dependency in the `dependencies` element in pom.xml:
 <dependency>
     <groupId>com.microsoft.graph</groupId>
     <artifactId>microsoft-graph</artifactId>
-    <version>[2.0,)</version>
-</dependency>
-<dependency>
-    <groupId>com.microsoft.graph</groupId>
-    <artifactId>microsoft-graph-auth</artifactId>
-    <version>0.3.0</version>
+    <version>[3.0,)</version>
 </dependency>
 ```
 

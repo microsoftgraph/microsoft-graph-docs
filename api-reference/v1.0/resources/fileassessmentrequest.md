@@ -3,7 +3,7 @@ title: "fileAssessmentRequest resource type"
 description: "Used to create and retrieve a file threat assessment."
 localization_priority: Normal
 author: "hafen-ms"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 

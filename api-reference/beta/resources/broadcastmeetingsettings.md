@@ -1,7 +1,7 @@
 ---
 title: "broadcastMeetingSettings resource type"
 description: "Settings related to a live event"
-author: "frankpeng7"
+author: "jsandoval-msft"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
@@ -25,7 +25,7 @@ Settings related to a live event.
 
 | Property                   | Type                     | Description                                                                     |
 | -------------------------- | ------------------------ | ------------------------------------------------------------------------------- |
-| allowedAudience            | broadcastMeetingAudience | Defines who can join the live event. Possible values are listed in the following table. |
+| allowedAudience            | [broadcastMeetingAudience](#broadcastmeetingaudience-values) | Defines who can join the live event. Possible values are listed in the following table. |
 | isRecordingEnabled         | Boolean                  | Indicates whether recording is enabled for this live event. Default value is `false`.          |
 | isAttendeeReportEnabled    | Boolean                  | Indicates whether attendee report is enabled for this live event. Default value is `false`.    |
 | isQuestionAndAnswerEnabled | Boolean                  | Indicates whether Q&A is enabled for this live event. Default value is `false`.                |

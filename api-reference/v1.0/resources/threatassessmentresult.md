@@ -3,7 +3,7 @@ title: "threatAssessmentResult resource type"
 description: "Represents a threat assessment result item."
 localization_priority: Normal
 author: "hafen-ms"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 

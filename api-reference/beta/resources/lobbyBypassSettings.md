@@ -1,7 +1,7 @@
 ---
 title: "lobbyBypassSettings resource type"
 description: "Specifies which participants can bypass the meeting lobby."
-author: "frankpeng7"
+author: "jsandoval-msft"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
@@ -19,7 +19,7 @@ Specifies which participants can bypass the meeting lobby.
 
 | Property              | Type    | Description                                                         | 
 | --------------------- | ------- | ------------------------------------------------------------------- | 
-| scope                 | lobbyBypassScope  | Specifies the type of participants that are automatically admitted into a meeting, bypassing the lobby. Possible values are listed in the following table. Optional.|
+| scope                 | [lobbyBypassScope](#lobbybypassscope-values)  | Specifies the type of participants that are automatically admitted into a meeting, bypassing the lobby. Possible values are listed in the following table. Optional.|
 | isDialInBypassEnabled | Boolean | Specifies whether or not to always let dial-in callers bypass the lobby. Optional. | 
 
 ### lobbyBypassScope values

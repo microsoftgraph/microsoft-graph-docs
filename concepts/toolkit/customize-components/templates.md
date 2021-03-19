@@ -98,6 +98,28 @@ The following example shows how to use the `$index` property in a data-for loop.
 </mgt-person>
 ```
 
+### {{this}}
+
+To help debug the data context, you can use `this` in your binding expressions. The simplest form is to add `{{this}}` anywhere in your template.
+
+```html
+<template data-type="event">
+  <div>
+    {{this}}
+  </div>
+</template>
+```
+
+Because you can use JavaScript in your binding expressions, you also have access to the [`console`](https://developer.mozilla.org/docs/Web/API/Console) object which allows you to use `console.log(this)` (or any other `console` API) in your templates.
+
+```html
+<template data-type="event">
+  <div>
+    {{console.log(this)}}
+  </div>
+</template>
+```
+
 ## Conditional rendering
 
 You might only want to render elements when a condition is true or false based on the data context. The `data-if` and `data-else` attributes can evaluate an expression and render only if true or false.

@@ -1,18 +1,18 @@
 ---
 author: swapnil1993
 ms.date: 08/30/2020
-title: "Create columnDefinition"
+title: "Create columnDefinition in a content type"
 description: "Add column to a content type."
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "sites-and-lists"
 ---
 
-# Create columnDefinition
+# Create columnDefinition for a content type
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-Adds existing site or list [column][columnDefinition] to a [content type][contentType].
+Add a column to a [content type][contentType] in a site or list by specifying a [columnDefinition][columnDefinition].
 
 ## Permissions
 
@@ -22,9 +22,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type | Permissions (from least to most privileged) |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
+|Delegated (work or school account) | Sites.Manage.All, Sites.FullControl.All |
 |Delegated (personal Microsoft account) | Not supported. |
-|Application | Sites.ReadWrite.All, Sites.Manage.All, Sites.FullControl.All |
+|Application | Sites.Manage.All, Sites.FullControl.All |
 
   
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /sites/{site-id}/contentTypes/{contentType-id}/columns
-POST /sites/{site-id}/lists/{list-id}//contentTypes/{contentType-id}/columns
+POST /sites/{site-id}/lists/{list-id}/contentTypes/{contentType-id}/columns
 ```
 
 ## Request body
@@ -42,7 +42,7 @@ In the request body, supply a JSON representation of the [columnDefinition][] re
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [contentType][] object in the response body.
+If successful, this method returns a `200 OK` response code and [columnDefinition][] object in the response body.
 
 ## Example
 
@@ -59,9 +59,9 @@ Content-Type: application/json
 
 ### Response
 
-The response returns a list of all columns added to a content type.
+The response returns the column added to a content type.
 
-<!-- { "blockType": "response", "@type": "microsoft.graph.columnDefinition", "truncated": true, "scopes": "sites.readwrite.all" } -->
+<!-- { "blockType": "response", "@type": "microsoft.graph.columnDefinition", "truncated": true} -->
 
   
 

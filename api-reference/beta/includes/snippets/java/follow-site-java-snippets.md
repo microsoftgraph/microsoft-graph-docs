@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Site> valueList = new LinkedList<Site>();
 Site value = new Site();
@@ -20,7 +20,10 @@ siteCollectionResponse.value = valueList;
 SiteCollectionPage siteCollectionPage = new SiteCollectionPage(siteCollectionResponse, null);
 
 graphClient.users("{user-id}").followedSites()
-	.add(valueList)
+	.add(SiteAddParameterSet
+		.newBuilder()
+		.withValue(valueList)
+		.build())
 	.buildRequest()
 	.post();
 

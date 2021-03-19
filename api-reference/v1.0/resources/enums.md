@@ -11,6 +11,163 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### appliedConditionalAccessPolicyResult values 
+
+|Member|
+|:---|
+|success|
+|failure|
+|notApplied|
+|notEnabled|
+|unknown|
+|unknownFutureValue|
+|reportOnlySuccess|
+|reportOnlyFailure|
+|reportOnlyNotApplied|
+|reportOnlyInterrupted|
+
+### groupType values 
+
+|Member|
+|:---|
+|unifiedGroups|
+|azureAD|
+|unknownFutureValue|
+
+### conditionalAccessStatus values
+
+|Member|
+|:---|
+|success|
+|failure|
+|notApplied|
+|unknownFutureValue|
+
+### operationResult values
+
+|Member|
+|:---|
+|success|
+|failure|
+|timeout|
+|unknownFutureValue|
+
+
+### tone values
+
+|Member|
+|:---|
+|tone0|
+|tone1|
+|tone2|
+|tone3|
+|tone4|
+|tone5|
+|tone6|
+|tone7|
+|tone8|
+|tone9|
+|star|
+|pound|
+|a|
+|b|
+|c|
+|d|
+|flash|
+
+### mediaState values
+
+|Member|
+|:---|
+|active|
+|inactive|
+|unknownFutureValue|
+
+### basicStatus values
+
+|Member|
+|:---|
+|active|
+|inactive|
+
+### callState values
+
+|Member|
+|:---|
+|incoming|
+|establishing|
+|ringing|
+|established|
+|hold|
+|transferring|
+|transferAccepted|
+|redirecting|
+|terminating|
+|terminated|
+
+### callType values
+
+|Member|
+|:---|
+|unknown|
+|groupCall|
+|peerToPeer|
+|unknownFutureValue|
+
+### onlineMeetingRole values
+
+|Member|
+|:---|
+|attendee|
+|presenter|
+|unknownFutureValue|
+
+### modality values 
+
+|Member|
+|:---|
+|audio|
+|video|
+|videoBasedScreenSharing|
+|data|
+|screenSharing|
+|unknownFutureValue|
+
+### callDirection values
+
+|Member|
+|:---|
+|incoming|
+|outgoing|
+
+### signInAudience values
+
+|Member|
+|:---|
+|AzureADMyOrg|
+|AzureADMultipleOrgs|
+|AzureADandPersonalMicrosoftAccount|
+|PersonalMicrosoftAccount|
+
+### groupMembershipClaims values
+
+|Member|
+|:---|
+|None|
+|SecurityGroup|
+|All|
+
+### recipientScopeType values
+
+|Member|
+|:---|
+|none|
+|internal|
+|external|
+|externalPartner|
+|externalNonPartner|
+
+
 ### activityType values
 
 |Member|
@@ -341,10 +498,10 @@ Namespace: microsoft.graph
 
 | Member
 |:-----------------
-| NotStarted
-| Running
-| Completed
-| Failed
+|NotStarted
+|Running
+|Completed
+|Failed
 
 
 ### onenotePatchActionType values

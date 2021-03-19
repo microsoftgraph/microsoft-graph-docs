@@ -11,9 +11,215 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+
+### attributeType values
+
+|Member|
+|:---|
+|String|
+|Integer|
+|Reference|
+|Binary|
+|Boolean|
+|DateTime|
+
+### mutability values
+
+|Member|
+|:---|
+|ReadWrite|
+|ReadOnly|
+|Immutable|
+|WriteOnly|
+
+### directoryDefinitionDiscoverabilities values
+
+|Member|
+|:---|
+|None|
+|AttributeNames|
+|AttributeDataTypes|
+|AttributeReadOnly|
+|ReferenceAttributes|
+|UnknownFutureValue|
+
+### connectorGroupRegion values
+
+|Member|
+|:---|
+|nam|
+|eur|
+|aus|
+|asia|
+|ind|
+|unknownFutureValue|
+
+### connectorGroupType values
+
+|Member|
+|:---|
+|applicationProxy|
+
+### onPremisesPublishingType values
+
+|Member|
+|:---|
+|applicationProxy|
+|exchangeOnline|
+|authentication|
+|provisioning|
+|intunePfx||
+|oflineDomainJoin|
+|unknownFutureValue|
+
+### agentStatus values
+
+|Member|
+|:---|
+|active|
+|inactive|
+
+### connectorStatus values
+
+|Member|
+|:---|
+|active|
+|inactive|
+
+### callType values
+
+|Member|
+|:---|
+|unknown|
+|groupCall|
+|peerToPeer|
+|unknownFutureValue|
+
+### tone values
+
+|Member|
+|:---|
+|tone0|
+|tone1|
+|tone2|
+|tone3|
+|tone4|
+|tone5|
+|tone6|
+|tone7|
+|tone8|
+|tone9|
+|star|
+|pound|
+|a|
+|b|
+|c|
+|d|
+|flash|
+
+### callState values
+
+|Member|
+|:---|
+|incoming|
+|establishing|
+|ringing|
+|established|
+|hold|
+|transferring|
+|transferAccepted|
+|redirecting|
+|terminating|
+|terminated|
+
+### routingPolicy values
+
+|Member|
+|:---|
+|none|
+|noMissedCall|
+|disableForwardingExceptPhone|
+|disableForwarding|
+|preferSkypeForBusiness|
+|unknownFutureValue|
+
+### meetingCapabilities values
+
+|Member|
+|:---|
+|questionAndAnswer|
+|unknownFutureValue|
+
+### onlineMeetingRole values
+
+|Member|
+|:---|
+|attendee|
+|presenter|
+|producer|
+|unknownFutureValue|
+
+### autoAdmittedUsersType values
+
+|Member|
+|:---|
+|everyoneInCompany|
+|everyone|
+
+### mediaState values
+
+|Member|
+|:---|
+|active|
+|inactive|
+|unknownFutureValue|
+
+### callDirection values 
+
+|Member|
+|:---|
+|incoming|
+|outgoing|
+
+### modality values 
+
+|Member|
+|:---|
+|audio|
+|video|
+|videoBasedScreenSharing|
+|data|
+|screenSharing|
+|unknownFutureValue|
+
+### kerberosSignOnMappingAttributeType values 
+
+|Member|
+|:---|
+|userPrincipalName|
+|onPremisesUserPrincipalName|
+|userPrincipalUsername|
+|onPremisesUserPrincipalUsername|
+|onPremisesSAMAccountName|
+
+### externalAuthenticationType values 
+
+|Member|
+|:---|
+|passthru|
+|aadPreAuthentication|
+
+### recipientScopeType values
+|Member|
+|:---|
+|none|
+|internal|
+|external|
+|externalPartner|
+|externalNonPartner|
+
+
 ### appliedConditionalAccessPolicyResult values 
-
-
 
 |Member|
 |:---|
@@ -30,8 +236,6 @@ Namespace: microsoft.graph
 
 ### authenticationMethodFeature values 
 
-
-
 |Member|
 |:---|
 |ssprRegistered|
@@ -41,8 +245,6 @@ Namespace: microsoft.graph
 |mfaCapable|
 
 ### authMethodsType values 
-
-
 
 |Member|
 |:---|
@@ -62,8 +264,6 @@ Namespace: microsoft.graph
 
 ### azureADLicenseType values 
 
-
-
 |Member|
 |:---|
 |none|
@@ -74,8 +274,6 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### conditionalAccessConditions values 
-
-
 
 |Member|
 |:---|
@@ -93,8 +291,6 @@ Namespace: microsoft.graph
 
 ### conditionalAccessStatus values 
 
-
-
 |Member|
 |:---|
 |success|
@@ -104,8 +300,6 @@ Namespace: microsoft.graph
 
 ### featureType values 
 
-
-
 |Member|
 |:---|
 |registration|
@@ -114,8 +308,6 @@ Namespace: microsoft.graph
 
 ### groupType values 
 
-
-
 |Member|
 |:---|
 |unifiedGroups|
@@ -123,8 +315,6 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### includedUserRoles values 
-
-
 
 |Member|
 |:---|
@@ -136,8 +326,6 @@ Namespace: microsoft.graph
 
 ### includedUserTypes values 
 
-
-
 |Member|
 |:---|
 |all|
@@ -146,8 +334,6 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### initiatorType values 
-
-
 
 |Member|
 |:---|
@@ -158,8 +344,6 @@ Namespace: microsoft.graph
 
 ### migrationStatus values 
 
-
-
 |Member|
 |:---|
 |ready|
@@ -168,8 +352,6 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### networkType values 
-
-
 
 |Member|
 |:---|
@@ -181,8 +363,6 @@ Namespace: microsoft.graph
 
 ### operationResult values 
 
-
-
 |Member|
 |:---|
 |success|
@@ -192,18 +372,16 @@ Namespace: microsoft.graph
 
 ### provisioningResult values 
 
-
-
 |Member|
 |:---|
 |success|
 |failure|
 |skipped|
+|warning|
 |unknownFutureValue|
 
+
 ### provisioningStepType values 
-
-
 
 |Member|
 |:---|
@@ -216,8 +394,6 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### registrationAuthMethod values 
-
-
 
 |Member|
 |:---|
@@ -234,8 +410,6 @@ Namespace: microsoft.graph
 
 ### registrationStatusType values 
 
-
-
 |Member|
 |:---|
 |registered|
@@ -246,8 +420,6 @@ Namespace: microsoft.graph
 
 ### requirementProvider values 
 
-
-
 |Member|
 |:---|
 |MFA|
@@ -256,11 +428,13 @@ Namespace: microsoft.graph
 
 ### riskDetail values 
 
-
-
 |Member|
 |:---|
 |none|
+|internal|
+|external|
+|externalPartner|
+|externalNonPartner|
 |adminGeneratedTemporaryPassword|
 |userPerformedSecuredPasswordChange|
 |userPerformedSecuredPasswordReset|
@@ -274,8 +448,6 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### riskEventType values 
-
-
 
 |Member|
 |:---|
@@ -297,8 +469,6 @@ Namespace: microsoft.graph
 
 ### riskLevel values 
 
-
-
 |Member|
 |:---|
 |low|
@@ -309,8 +479,6 @@ Namespace: microsoft.graph
 |unknownFutureValue|
 
 ### riskState values 
-
-
 
 |Member|
 |:---|
@@ -324,8 +492,6 @@ Namespace: microsoft.graph
 
 ### tokenIssuerType values 
 
-
-
 |Member|
 |:---|
 |AzureAD|
@@ -333,8 +499,6 @@ Namespace: microsoft.graph
 |UnknownFutureValue|
 
 ### usageAuthMethod values 
-
-
 
 |Member|
 |:---|
@@ -931,10 +1095,10 @@ Namespace: microsoft.graph
 
 | Member
 |:-----------------
-| NotStarted
-| Running
-| Completed
-| Failed
+|NotStarted
+|Running
+|Completed
+|Failed
 
 
 ### onenotePatchActionType values

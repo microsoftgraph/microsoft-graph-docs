@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ItemReference sourceFile = new ItemReference();
 SharepointIds sharepointIds = new SharepointIds();
@@ -15,7 +15,11 @@ sourceFile.sharepointIds = sharepointIds;
 String destinationFileName = "newname.txt";
 
 graphClient.sites("{id}").contentTypes("{contentTypeId}")
-	.copyToDefaultContentLocation(sourceFile,destinationFileName)
+	.copyToDefaultContentLocation(ContentTypeCopyToDefaultContentLocationParameterSet
+		.newBuilder()
+		.withSourceFile(sourceFile)
+		.withDestinationFileName(destinationFileName)
+		.build())
 	.buildRequest()
 	.post();
 

@@ -8,7 +8,6 @@ items:
       href: /graph/auth/index?context=graph/api/beta
     - name: Basics
       href: /graph/auth/auth-concepts?context=graph/api/beta
-    - name: Register your app
       href: /graph/auth-register-app-v2?context=graph/api/beta
     - name: Get access on behalf of a user
       href: /graph/auth-v2-user?context=graph/api/beta
@@ -956,6 +955,8 @@ items:
             href: api/serviceprincipal-addkey.md
           - name: Remove key
             href: api/serviceprincipal-removekey.md
+          - name: Add token signing certificate
+            href: api/serviceprincipal-addtokensigningcertificate.md
         - name: Delegated permission grants
           items:
           - name: List delegated permission grants
@@ -1851,7 +1852,7 @@ items:
             href: api/print-get-settings.md
           - name: Update
             href: api/print-update-settings.md
-      - name: Corprate management
+      - name: Corporate management
         href: resources/intune-graph-overview.md
         displayName: Intune
         items:
@@ -12524,14 +12525,11 @@ items:
       - name: Overview
         href: resources/sharepoint.md
       - name: Sites
-        href: resources/site.md
         items:
+        - name: Site
+          href: resources/site.md
         - name: Get site
           href: api/site-get.md
-        - name: Get lists
-          href: api/list-list.md
-        - name: List subsites
-          href: api/site-list-subsites.md
         - name: Get site analytics
           href: api/itemanalytics-get.md
         - name: Get activities by interval
@@ -12542,37 +12540,102 @@ items:
           href: api/site-unfollow.md
         - name: List followed sites
           href: api/sites-list-followed.md
+        - name: List columns
+          href: api/site-list-columns.md
+        - name: Create column
+          href: api/site-post-columns.md
+        - name: List content types
+          href: api/site-list-contenttypes.md
+        - name: Create content type
+          href: api/site-post-contenttypes.md
         - name: Get applicable content types for list
           href: api/site-getapplicablecontenttypesforlist.md
+        - name: Get lists
+          href: api/list-list.md
+        - name: Create list
+          href: api/list-create.md
+        - name: List subsites
+          href: api/site-list-subsites.md
         - name: Permissions
-          href: resources/permission.md
           items:
-          - name: Get site permission
-            href: api/site-get-permission.md
+          - name: Permission
+            href: resources/permission.md
           - name: List site permissions
             href: api/site-list-permissions.md 
           - name: Create site permissions
             href: api/site-post-permissions.md
+          - name: Get site permission
+            href: api/site-get-permission.md
           - name: Update site permission
             href: api/site-update-permission.md
           - name: Delete site permission
             href: api/site-delete-permission.md
       - name: Lists
-        href: resources/list.md
         items:
+        - name: List
+          href: resources/list.md
+        - name: Get lists in a site
+          href: api/list-list.md
+        - name: Create list
+          href: api/list-create.md
         - name: Get list
           href: api/list-get.md
         - name: Get items
           href: api/listitem-list.md
-        - name: Create list
-          href: api/list-create.md
-      - name: List items
-        href: resources/listitem.md
+        - name: List columns
+          href: api/list-list-columns.md
+        - name: Create column
+          href: api/list-post-columns.md
+        - name: List content types
+          href: api/list-list-contenttypes.md
+        - name: Add copy of content type
+          href: api/contenttype-addcopy.md
+      - name: Columns
         items:
-        - name: Get item
-          href: api/listitem-get.md
+        - name: Column definition
+          href: resources/columndefinition.md
+        - name: Get
+          href: api/columndefinition-get.md
+        - name: Update
+          href: api/columndefinition-update.md
+        - name: Delete
+          href: api/columndefinition-delete.md
+      - name: Content types
+        items:
+        - name: Content type
+          href: resources/contentType.md
+        - name: Get
+          href: api/contenttype-get.md
+        - name: Update
+          href: api/contenttype-update.md
+        - name: Delete
+          href: api/contenttype-delete.md
+        - name: IsPublished
+          href: api/contenttype-ispublished.md
+        - name: Publish
+          href: api/contenttype-publish.md
+        - name: Unpublish
+          href: api/contenttype-unpublish.md
+        - name: Add copy to list
+          href: api/contenttype-addcopy.md
+        - name: Associate with hub sites
+          href: api/contenttype-associatewithhubsites.md
+        - name: Copy to default content location
+          href: api/contenttype-copytodefaultcontentlocation.md
+        - name: List columns
+          href: api/contenttype-list-columns.md
+        - name: Create column
+          href: api/contenttype-post-columns.md
+      - name: List items
+        items:
+        - name: List item
+          href: resources/listitem.md
+        - name: Get items
+          href: api/listitem-list.md
         - name: Create item
           href: api/listitem-create.md
+        - name: Get item
+          href: api/listitem-get.md
         - name: Update item
           href: api/listitem-update.md
         - name: Delete item
@@ -12584,17 +12647,18 @@ items:
         - name: Get activities by interval
           href: api/itemactivity-getbyinterval.md
       - name: Pages
-        href: resources/sitepage.md
         items:
-        - name: List pages
+        - name: Site page
+          href: resources/sitepage.md
+        - name: List
           href: api/sitepage-list.md
-        - name: Get page
+        - name: Get
           href: api/sitepage-get.md
-        - name: Create page
+        - name: Create
           href: api/sitepage-create.md
-        - name: Delete page
+        - name: Delete
           href: api/sitepage-delete.md
-        - name: Publish page
+        - name: Publish
           href: api/sitepage-publish.md
       - name: Taxonomy (preview)
         displayname: Taxonomy API
@@ -12652,41 +12716,6 @@ items:
             href: api/termStore-term-list-relations.md
           - name: Create
             href: api/termStore-relation-post.md
-      - name: Content types
-        href: resources/contentType.md
-        items:
-        - name: List
-          href: api/contenttype-list.md
-        - name: Create
-          href: api/contenttype-post.md
-        - name: Get
-          href: api/contenttype-get.md
-        - name: Update
-          href: api/contenttype-update.md
-        - name: Delete
-          href: api/contenttype-delete.md
-        - name: Publish
-          href: api/contenttype-publish.md
-        - name: Unpublish
-          href: api/contenttype-unpublish.md
-        - name: IsPublished
-          href: api/contenttype-ispublished.md
-        - name: Add copy
-          href: api/contenttype-addcopy.md
-        - name: Copy to default content location
-          href: api/contenttype-copytodefaultcontentlocation.md
-        - name: Associate with hub sites
-          href: api/contenttype-associatewithhubsites.md
-        - name: List content type columns
-          href: api/contenttype-list-columns.md
-        - name: Create content type column
-          href: api/contenttype-post-columns.md
-        - name: Get content type column
-          href: api/contenttype-get-columns.md
-        - name: Update content type column
-          href: api/contenttype-update-columns.md
-        - name: Delete content type column
-          href: api/contenttype-delete-columns.md
     - name: Tasks and plans
       displayName: Planner
       items:

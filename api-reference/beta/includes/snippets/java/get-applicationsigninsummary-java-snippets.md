@@ -4,10 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IReportRootGetAzureADApplicationSignInSummaryCollectionPage getAzureADApplicationSignInSummary = graphClient.reports()
-	.getAzureADApplicationSignInSummary("D7")
+ReportRootGetAzureADApplicationSignInSummaryCollectionPage getAzureADApplicationSignInSummary = graphClient.reports()
+	.getAzureADApplicationSignInSummary(ReportRootGetAzureADApplicationSignInSummaryParameterSet
+		.newBuilder()
+		.withPeriod("D7")
+		.build())
 	.buildRequest()
 	.get();
 

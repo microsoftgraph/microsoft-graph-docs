@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 PrivilegedRoleAssignmentRequest privilegedRoleAssignmentRequest = new PrivilegedRoleAssignmentRequest();
 privilegedRoleAssignmentRequest.duration = "2";
@@ -12,7 +12,7 @@ privilegedRoleAssignmentRequest.reason = "Activate the role for business purpose
 privilegedRoleAssignmentRequest.ticketNumber = "234";
 privilegedRoleAssignmentRequest.ticketSystem = "system";
 GovernanceSchedule schedule = new GovernanceSchedule();
-schedule.startDateTime = CalendarSerializer.deserialize("2018-02-08T02:35:17.903Z");
+schedule.startDateTime = OffsetDateTimeSerializer.deserialize("2018-02-08T02:35:17.903Z");
 privilegedRoleAssignmentRequest.schedule = schedule;
 privilegedRoleAssignmentRequest.type = "UserAdd";
 privilegedRoleAssignmentRequest.assignmentState = "Active";

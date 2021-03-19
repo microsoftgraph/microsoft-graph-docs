@@ -3,7 +3,7 @@ title: "informationProtectionLabel: evaluateApplication"
 description: "Evaluate which label to apply based on existing content info and desired content state."
 localization_priority: Normal
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "apiPageType"
 ---
 

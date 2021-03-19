@@ -3,7 +3,7 @@ title: "informationProtectionLabel: listLabels"
 description: "Retrieve a list of information protection labels."
 localization_priority: Normal
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "apiPageType"
 ---
 

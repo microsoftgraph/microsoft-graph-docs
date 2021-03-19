@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 AccessPackageResourceRequest accessPackageResourceRequest = new AccessPackageResourceRequest();
 accessPackageResourceRequest.catalogId = "de9315c1-272b-4905-924b-cc112ca180c7";

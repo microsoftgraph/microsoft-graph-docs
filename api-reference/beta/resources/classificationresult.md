@@ -3,7 +3,7 @@ title: "classificationResult resource type"
 description: "Represents the result of a classification request."
 localization_priority: Normal
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 

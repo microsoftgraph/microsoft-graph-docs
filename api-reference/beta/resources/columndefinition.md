@@ -13,6 +13,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+Represents a column in a [site][], [list][] or [contentType][].
+
+## Methods
+|Method|Return type|Description|
+|:---|:---|:---|
+|[List columns in a site](../api/site-list-columns.md)|[columnDefinition](../resources/columndefinition.md) collection|Get a list of the [columnDefinition](../resources/columndefinition.md) objects and their properties in a [site](../resources/site.md).|
+|[List columns in a list](../api/list-list-columns.md)|[columnDefinition](../resources/columndefinition.md) collection|Get a list of the [columnDefinition](../resources/columndefinition.md) objects and their properties in a [list](../resources/list.md).|
+|[List columns in a content type](../api/contenttype-list-columns.md)|[columnDefinition](../resources/columndefinition.md) collection|Get a list of the [columnDefinition](../resources/columndefinition.md) objects and their properties in a [content type](../resources/contenttype.md).|
+|[Create columnDefinition for a site](../api/site-post-columns.md)|[columnDefinition](../resources/columndefinition.md)|Create a new [columnDefinition](../resources/columndefinition.md) object in a [site](../resources/site.md).|
+|[Create columnDefinition for a list](../api/list-post-columns.md)|[columnDefinition](../resources/columndefinition.md)|Create a new [columnDefinition](../resources/columndefinition.md) object in a [list](../resources/list.md).|
+|[Create columnDefinition for a content type](../api/contenttype-post-columns.md)|[columnDefinition](../resources/columndefinition.md)|Create a new [columnDefinition](../resources/columndefinition.md) object in a [content type](../resources/contenttype.md).|
+|[Get columnDefinition](../api/columndefinition-get.md)|[columnDefinition](../resources/columndefinition.md)|Read the properties and relationships of a [columnDefinition](../resources/columndefinition.md) object.|
+|[Update columnDefinition](../api/columndefinition-update.md)|[columnDefinition](../resources/columndefinition.md)|Update the properties of a [columnDefinition](../resources/columndefinition.md) object.|
+|[Delete columnDefinition](../api/columndefinition-delete.md)|None|Deletes a [columnDefinition](../resources/columndefinition.md) object.|
+
 ## JSON representation
 
 Here is a JSON representation of a columnDefinition resource.
@@ -123,13 +138,16 @@ To see them when showing **field** values on [listItems][listItem], include the 
 [calculatedColumn]: calculatedcolumn.md
 [choiceColumn]: choicecolumn.md
 [columnDefinition]: columnDefinition.md
+[contentType]: contenttype.md
 [currencyColumn]: currencycolumn.md
 [dateTimeColumn]: datetimecolumn.md
 [defaultColumnValue]: defaultcolumnvalue.md
 [geolocationColumn]: geolocationcolumn.md
+[list]: list.md
 [lookupColumn]: lookupcolumn.md
 [numberColumn]: numbercolumn.md
 [personOrGroupColumn]: personorgroupcolumn.md
+[site]: site.md
 [textColumn]: textcolumn.md
 [fieldValueSet]: fieldvalueset.md
 [fields]: fieldvalueset.md

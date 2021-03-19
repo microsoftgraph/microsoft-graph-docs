@@ -4,10 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-INotebookGetRecentNotebooksCollectionPage getRecentNotebooks = graphClient.me().onenote().notebooks()
-	.getRecentNotebooks(true)
+NotebookGetRecentNotebooksCollectionPage getRecentNotebooks = graphClient.me().onenote().notebooks()
+	.getRecentNotebooks(NotebookGetRecentNotebooksParameterSet
+		.newBuilder()
+		.withIncludePersonalNotebooks(true)
+		.build())
 	.buildRequest()
 	.get();
 

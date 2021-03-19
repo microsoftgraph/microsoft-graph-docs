@@ -5271,11 +5271,6 @@ items:
           href: api/chatmessage-list-chatmessagehostedcontents.md
         - name: Get hosted content
           href: api/chatmessagehostedcontent-get.md
-      - name: Chat
-        href: resources/chat.md
-        items:
-        - name: Get chat between user and app
-          href: api/userscopeteamsappinstallation-get-chat.md
       - name: App catalog
         items:
         - name: App in catalog
