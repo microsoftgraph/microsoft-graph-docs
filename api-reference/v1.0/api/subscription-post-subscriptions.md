@@ -2,8 +2,8 @@
 title: "Create subscription"
 description: "Subscribes a listener application to receive change notifications when data on the Microsoft Graph changes."
 localization_priority: Priority
-author: "davidmu1"
-ms.prod: ""
+author: "Jumaodhiss"
+ms.prod: "change-notifications"
 doc_type: apiPageType
 ---
 
@@ -36,6 +36,8 @@ Depending on the resource and the permission type (delegated or application) req
 |[group conversation](../resources/conversation.md) | Group.Read.All | Not supported | Not supported |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Not supported | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
+|[printer](../resources/printer.md) | Not supported | Not supported | Printer.Read.All, Printer.ReadWrite.All |
+|[printTaskDefinition](../resources/printtaskdefinition.md) | Not supported | Not supported | PrintTaskDefinition.ReadWrite.All |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
@@ -140,6 +142,8 @@ The following are valid values for the resource property of the subscription:
 |[Groups](../resources/group.md)|`groups`|
 |[List](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[Mail](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
+|[printer](../resources/printer.md) |`print/printers/{id}/jobs`|
+|[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
 |[Users](../resources/user.md)|`users`|
 |[Security alert](../resources/alert.md)|`security/alerts?$filter=status eq 'New'`|
 
@@ -169,7 +173,8 @@ Content-length: 252
   "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
   "expirationDateTime": "2016-11-20T18:23:45.9356913Z",
   "creatorId": "8ee44408-0679-472c-bc2a-692812af3437",
-  "latestSupportedTlsVersion": "v1_2"
+  "latestSupportedTlsVersion": "v1_2",
+  "notificationContentType": "application/json"
 }
 ```
 
