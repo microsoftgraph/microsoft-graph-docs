@@ -116,7 +116,6 @@ Content-Type: application/json
 }
 ```
 
-
 ## Create subscription: JobFetchable event 
 Some cloud applications need to download print jobs from Universal Print when they are ready. Because these applications running in the cloud are not behind the customer's firewall, they can use Microsoft Graph change notifications to be notified when a print job is ready to be downloaded.
 
