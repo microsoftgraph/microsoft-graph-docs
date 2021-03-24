@@ -11,12 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const contentType = {
-  hubSiteUrls: 
-    [
+   hubSiteUrls: [
       'https://graph.microsoft.com/beta/sites/id'
-      
-    ],
-    propagateToExistingLists: false
+   ],
+   propagateToExistingLists: false
 };
 
 await client.api('/sites/id/contentTypes/id/associateWithHubSites')

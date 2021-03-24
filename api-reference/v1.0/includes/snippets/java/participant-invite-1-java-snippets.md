@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<InvitationParticipantInfo> participantsList = new LinkedList<InvitationParticipantInfo>();
 InvitationParticipantInfo participants = new InvitationParticipantInfo();
@@ -21,7 +21,11 @@ participantsList.add(participants);
 String clientContext = "f2fa86af-3c51-4bc2-8fc0-475452d9764f";
 
 graphClient.communications().calls("{id}").participants()
-	.invite(participantsList,clientContext)
+	.invite(ParticipantInviteParameterSet
+		.newBuilder()
+		.withParticipants(participantsList)
+		.withClientContext(clientContext)
+		.build())
 	.buildRequest()
 	.post();
 

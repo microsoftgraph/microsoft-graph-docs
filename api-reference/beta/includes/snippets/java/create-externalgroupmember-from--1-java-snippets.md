@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ExternalGroupMember externalGroupMember = new ExternalGroupMember();
 externalGroupMember.id = "e811976d-83df-4cbd-8b9b-5215b18aa874";

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 GovernanceRoleAssignmentRequest governanceRoleAssignmentRequest = new GovernanceRoleAssignmentRequest();
 governanceRoleAssignmentRequest.roleDefinitionId = "ea48ad5e-e3b0-4d10-af54-39a45bbfe68d";
@@ -14,8 +14,8 @@ governanceRoleAssignmentRequest.assignmentState = "Eligible";
 governanceRoleAssignmentRequest.type = "AdminAdd";
 governanceRoleAssignmentRequest.reason = "Assign an eligible role";
 GovernanceSchedule schedule = new GovernanceSchedule();
-schedule.startDateTime = CalendarSerializer.deserialize("2018-05-12T23:37:43.356Z");
-schedule.endDateTime = CalendarSerializer.deserialize("2018-11-08T23:37:43.356Z");
+schedule.startDateTime = OffsetDateTimeSerializer.deserialize("2018-05-12T23:37:43.356Z");
+schedule.endDateTime = OffsetDateTimeSerializer.deserialize("2018-11-08T23:37:43.356Z");
 schedule.type = "Once";
 governanceRoleAssignmentRequest.schedule = schedule;
 

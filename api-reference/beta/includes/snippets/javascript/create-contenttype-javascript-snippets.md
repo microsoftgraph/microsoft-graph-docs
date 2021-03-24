@@ -13,7 +13,7 @@ const client = Client.init(options);
 const contentType = {
     name: 'docSet',
     description: 'custom docset',
-    parentReference: {
+    base: {
         name: 'Document Set',
         id: '0x0120D520'
     },
