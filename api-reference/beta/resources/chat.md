@@ -56,6 +56,7 @@ not all scenarios are possible. It is possible to get chat IDs with delegated pe
 | createdDateTime| dateTimeOffset|  Date and time at which the chat was created. Read-only.|
 | lastUpdatedDateTime| dateTimeOffset|  Date and time at which the chat was renamed or list of members were last changed. Read-only.|
 | chatType| [chatType](../resources/chat.md#chattype-values) | Specifies the type of chat. Possible values are:`group`, `oneOnOne` and `meeting`.|
+| permissionGrants| resourceSpecificPermissionGrant| Permissions granted to the apps in the chat.|
 
 ### chatType values 
 
