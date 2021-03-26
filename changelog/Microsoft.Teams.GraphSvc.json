@@ -73,6 +73,24 @@
       "CreatedDateTime": "2021-03-04T01:13:01.454Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "4c234186-8e87-11eb-8507-815178c7c041",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "permissionGrants",
+          "ChangeType": "Addition",
+          "Description": "Added the **permissionGrants** relationship to the [chat](https://docs.microsoft.com/en-us/graph/api/resources/chat?view=graph-rest-beta) resource.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "4c20e85f-8e87-11eb-8507-815178c7c041",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-03-26T23:02:11.388Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
     }
   ]
 }
