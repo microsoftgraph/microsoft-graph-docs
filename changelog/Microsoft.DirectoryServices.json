@@ -641,7 +641,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessPackage",
           "ChangeType": "Addition",
-          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions to accessPackage APIs.",
           "Target": "accessPackage"
         },
         {
@@ -649,7 +649,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessPackageAssignment",
           "ChangeType": "Addition",
-          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions to accessPackageAssignment APIs.",
           "Target": "accessPackageAssignment"
         },
         {
@@ -657,7 +657,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessPackageAssignmentPolicy",
           "ChangeType": "Addition",
-          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions to accessPackageAssignmentPolicy APIs.",
           "Target": "accessPackageAssignmentPolicy"
         },
         {
@@ -665,7 +665,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessPackageAssignmentRequest",
           "ChangeType": "Addition",
-          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions to accessPackageAssignmentRequest APIs.",
           "Target": "accessPackageAssignmentRequest"
         },
         {
@@ -673,7 +673,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessPackageAssignmentResourceRole",
           "ChangeType": "Addition",
-          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions to accessPackageAssignmentResourceRole APIs.",
           "Target": "accessPackageAssignmentResourceRole"
         },
         {
@@ -681,7 +681,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessPackageCatalog",
           "ChangeType": "Addition",
-          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions to accessPackageCatalog APIs.",
           "Target": "accessPackageCatalog"
         },
         {
@@ -689,7 +689,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "accessPackageResourceRequest",
           "ChangeType": "Addition",
-          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions to accessPackageResourceRequest APIs.",
           "Target": "accessPackageResourceRequest"
         },
         {
@@ -697,7 +697,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "connectedOrganization",
           "ChangeType": "Addition",
-          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions to connectedOrganization APIs.",
           "Target": "connectedOrganization"
         },
         {
@@ -705,7 +705,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "entitlementManagementSettings",
           "ChangeType": "Addition",
-          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions.",
+          "Description": "Added the **EntitlementManagement.ReadWrite.All** and **EntitlementManagement.Read.All** application permissions to entitlementManagementSettings APIs.",
           "Target": "entitlementManagementSettings"
         }
       ],
