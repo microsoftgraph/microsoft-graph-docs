@@ -1,7 +1,7 @@
 ---
-title: "Get change notifications for messages in Teams channels and chats using Microsoft Graph"
-description: "Change notifications enables you to listen to changes to messages in channel or chat"
-author: "RamjotSingh"
+title: "Get change notifications for change in creation updatation or deletion of teams or channels using Microsoft Graph"
+description: "Get change notifications for change in creation updatation or deletion of teams or channels using Microsoft Graph"
+author: "AbhishekAnand"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ms.custom: scenarios:getting-started
@@ -13,12 +13,11 @@ Change notifications enable you to subscribe to changes (create, update, and del
 
 >**Note:** The maximum time a subscription can last is 60 minutes; however, subscriptions can be renewed until the caller has permissions to access to resource.
 
-### my changes ---- START-----
 
 
 ### Subscribe to changes in any team at tenant level
 
-To get to change notifications for any change in teams' property across tenant, subscribe to `/teams`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for any change in teams' property across tenant, subscribe to `/teams`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
 #### Permissions
 
@@ -139,78 +138,41 @@ Content-Type: application/json
 }
 ```
 
-### Subscribe to changes in membership of any team across tenant
-
-To get change notifications for membership change in any team in tenant, subscribe to `teams/getAllMembers`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
-
-#### Permissions
-
-|Permission type      | Permissions (from least to most privileged)              | Supported versions |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegated (work or school account) | Not supported. | Not supported. |
-|Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | TeamMember.Read.All | beta, v1.0 |
-
-#### Example
-
-```http
-POST https://graph.microsoft.com/beta/subscriptions
-Content-Type: application/json
-
-{
-  "changeType": "created,deleted,updated",
-  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "teams/getAllChannels",
-  "includeResourceData": true,
-  "encryptionCertificate": "{base64encodedCertificate}",
-  "encryptionCertificateId": "{customId}",
-  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
-  "clientState": "{secretClientState}"
-}
-```
-
-### Subscribe to changes in any channel of a particular team
-
-
-To get change notifications for membership change in any team in tenant, subscribe to `teams/{id}/members`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
-
-#### Permissions
-
-|Permission type      | Permissions (from least to most privileged)              | Supported versions |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegated (work or school account) | Not supported. | Not supported. |
-|Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | TeamMember.Read   | beta, v1.0 |
-
-#### Example
-
-```http
-POST https://graph.microsoft.com/beta/subscriptions
-Content-Type: application/json
-
-{
-  "changeType": "created,deleted,updated",
-  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/teams/{id}/members ",
-  "includeResourceData": true,
-  "encryptionCertificate": "{base64encodedCertificate}",
-  "encryptionCertificateId": "{customId}",
-  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
-  "clientState": "{secretClientState}"
-}
-```
-
-### ---- END----
-
-
-
 ## Notification payloads
 
 Depending on your subscription, you can either get the notification with resource data, or without it. Subscribing with resource data allows you to get the message payload along with the notification, removing the need to call back and get the content.
 
 ### Notifications with resource data
 
-For notifications with resource data, the payload looks like the following. This payload is for a message sent in a chat.
+For notifications with resource data, the payload looks for any change in team's property looks like the following.
+
+```json
+{
+    "value": [{
+        "subscriptionId": "10493aa0-4d29-4df5-bc0c-ef742cc6cd7f",
+        "changeType": "created",
+        "clientState": "<<--SpecifiedClientState-->>",
+        "subscriptionExpirationDateTime": "2021-02-02T10:30:34.9097561-08:00",
+        "resource": "chats('19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_97f62344-57dc-409c-88ad-c4af14158ff5@unq.gbl.spaces')/messages('1612289765949')",
+        "resourceData": {
+            "id": "1612289765949",
+            "@odata.type": "#Microsoft.Graph.chatMessage",
+            "@odata.id": "chats('19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_97f62344-57dc-409c-88ad-c4af14158ff5@unq.gbl.spaces')/messages('1612289765949')"
+        },
+        "encryptedContent": {
+            "data": "<<--EncryptedContent-->",
+            "dataKey": "<<--EnryptedDataKeyUsedForEncryptingContent-->>",
+            "encryptionCertificateId": "<<--IdOfTheCertificateUsedForEncryptingDataKey-->>",
+            "encryptionCertificateThumbprint": "<<--ThumbprintOfTheCertificateUsedForEncryptingDataKey-->>"
+        },
+        "tenantId": "<<--TenantForWhichNotificationWasSent-->>"
+    }],
+    "validationTokens": ["<<--ValidationTokens-->>"]
+}
+```
+  
+  
+For notifications with resource data, the payload looks for any change in channel property looks like the following.
 
 ```json
 {
