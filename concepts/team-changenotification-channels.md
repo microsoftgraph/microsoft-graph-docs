@@ -48,7 +48,7 @@ Content-Type: application/json
 ### Subscribe to changes in any channel of a particular team
 
 
-To get change notifications for any change in channel's property across any channel in tenant, subscribe to `teams/{id}/channels`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get change notifications for any change in channel's property across any channel in a team, subscribe to `teams/{id}/channels`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
 #### Permissions
 
