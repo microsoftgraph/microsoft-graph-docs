@@ -1,143 +1,19 @@
 ---
-title: "Get change notifications for messages in Teams channels and chats using Microsoft Graph"
-description: "Change notifications enables you to listen to changes to messages in channel or chat"
+title: "Get change notifications for any change in Teams membership using Microsoft Graph"
+description: "Get change notifications for any change in Teams membership using Microsoft Graph"
 author: "RamjotSingh"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ms.custom: scenarios:getting-started
 ---
 
-# Get change notifications for messages in Teams channels and chats using Microsoft Graph
+# Get change notifications for change in teams membership using Microsoft Graph
 
 Change notifications enable you to subscribe to changes (create, update, and delete) to [messages](/graph/api/resources/chatMessage?preserve-view=true) in a [channel](/graph/api/resources/channel?preserve-view=true) or [chat](/graph/api/resources/chat?preserve-view=true). Change notifications provide a low latency model by allowing you to maintain a [subscription](/graph/api/resources/webhooks?preserve-view=true). You can also get the resource data in the notifications and therefore avoid calling the API to get the payload.
 
 >**Note:** The maximum time a subscription can last is 60 minutes; however, subscriptions can be renewed until the caller has permissions to access to resource.
 
-### my changes ---- START-----
 
-
-### Subscribe to changes in any team at tenant level
-
-To get to change notifications for any change in teams' property across tenant, subscribe to `/teams`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
-
-#### Permissions
-
-|Permission type      | Permissions (from least to most privileged)              | Supported versions |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegated (work or school account) | Not supported. | Not supported. |
-|Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | Team.ReadBasic.All,TeamSettings.Read.All   | beta, v1.0 |
-
-#### Example
-
-```http
-POST https://graph.microsoft.com/beta/subscriptions
-Content-Type: application/json
-
-{
-  "changeType": "created,deleted,updated",
-  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/teams",
-  "includeResourceData": true,
-  "encryptionCertificate": "{base64encodedCertificate}",
-  "encryptionCertificateId": "{customId}",
-  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
-  "clientState": "{secretClientState}"
-}
-```
-
-### Subscribe to changes in a particular team
-
-
-To get change notifications for any change in teams' property of a specific team, subscribe to `/teams/{id}`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
-
-#### Permissions
-
-|Permission type      | Permissions (from least to most privileged)              | Supported versions |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegated (work or school account) | Not supported. | Not supported. |
-|Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | Team.ReadBasic ,TeamSettings.Read    | beta, v1.0 |
-
-#### Example
-
-```http
-POST https://graph.microsoft.com/beta/subscriptions
-Content-Type: application/json
-
-{
-  "changeType": "deleted,updated",
-  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/team/{id}",
-  "includeResourceData": true,
-  "encryptionCertificate": "{base64encodedCertificate}",
-  "encryptionCertificateId": "{customId}",
-  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
-  "clientState": "{secretClientState}"
-}
-```
-
-
-### Subscribe to changes in any channel at tenant level
-
-To get change notifications for any change in channel's property across any channel in tenant, subscribe to `teams/getAllChannels`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
-
-#### Permissions
-
-|Permission type      | Permissions (from least to most privileged)              | Supported versions |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegated (work or school account) | Not supported. | Not supported. |
-|Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | Channel.ReadBasic.All ,ChannelSettings.Read.All | beta, v1.0 |
-
-#### Example
-
-```http
-POST https://graph.microsoft.com/beta/subscriptions
-Content-Type: application/json
-
-{
-  "changeType": "created,deleted,updated",
-  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "teams/getAllChannels",
-  "includeResourceData": true,
-  "encryptionCertificate": "{base64encodedCertificate}",
-  "encryptionCertificateId": "{customId}",
-  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
-  "clientState": "{secretClientState}"
-}
-```
-
-### Subscribe to changes in any channel of a particular team
-
-
-To get change notifications for any change in channel's property across any channel in tenant, subscribe to `teams/{id}/channels`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
-
-#### Permissions
-
-|Permission type      | Permissions (from least to most privileged)              | Supported versions |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegated (work or school account) | Not supported. | Not supported. |
-|Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | Channel.ReadBasic  ,ChannelSettings.Read   | beta, v1.0 |
-
-#### Example
-
-```http
-POST https://graph.microsoft.com/beta/subscriptions
-Content-Type: application/json
-
-{
-  "changeType": "created,deleted,updated",
-  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/teams/{id}/channels ",
-  "includeResourceData": true,
-  "encryptionCertificate": "{base64encodedCertificate}",
-  "encryptionCertificateId": "{customId}",
-  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
-  "clientState": "{secretClientState}"
-}
-```
 
 ### Subscribe to changes in membership of any team across tenant
 
@@ -169,7 +45,7 @@ Content-Type: application/json
 }
 ```
 
-### Subscribe to changes in any channel of a particular team
+### Subscribe to changes in membership of a particular team
 
 
 To get change notifications for membership change in any team in tenant, subscribe to `teams/{id}/members`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
@@ -200,9 +76,6 @@ Content-Type: application/json
 }
 ```
 
-### ---- END----
-
-
 
 ## Notification payloads
 
@@ -210,7 +83,7 @@ Depending on your subscription, you can either get the notification with resourc
 
 ### Notifications with resource data
 
-For notifications with resource data, the payload looks like the following. This payload is for a message sent in a chat.
+For notifications with resource data, the payload looks like the following. This payload is for a membership change in a team.
 
 ```json
 {
@@ -243,41 +116,13 @@ The decrypted notification payload looks like the following. The payload conform
 
 ```json
 {
-  "id": "1612289992105",
-  "replyToId": null,
-  "etag": "1612289992105",
-  "messageType": "message",
-  "createdDateTime": "2021-02-02T18:19:52Z",
-  "lastModifiedDateTime": "2021-02-02T18:19:52.105Z",
-  "lastEditedDateTime": null,
-  "deletedDateTime": null,
-  "subject": null,
-  "summary": null,
-  "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_97f62344-57dc-409c-88ad-c4af14158ff5@unq.gbl.spaces",
-  "importance": "normal",
-  "locale": "en-us",
-  "webUrl": null,
-  "from": {
-    "application": null,
-    "device": null,
-    "user": {
-      "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-      "displayName": "Ramjot Singh",
-      "userIdentityType": "aadUser"
-    },
-    "conversation": null
-  },
-  "body": {
-    "contentType": "text",
-    "content": "test"
-  },
-  "channelIdentity": null,
-  "attachments": [],
-  "mentions": [],
-  "policyViolation": null,
-  "reactions": [],
-  "replies": [],
-  "hostedContents": []
+  "@odata.type": "#microsoft.graph.conversationMember",
+  "id": "String (identifier)",
+  "roles": [
+    "String"
+  ],
+  "displayName": "String",
+  "visibleHistoryStartDateTime": "String (timestamp)"
 }
 ```
 
