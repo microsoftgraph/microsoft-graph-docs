@@ -1,7 +1,7 @@
 ---
 title: "Get change notifications for any change in Teams membership using Microsoft Graph"
 description: "Get change notifications for any change in Teams membership using Microsoft Graph"
-author: "RamjotSingh"
+author: "Abhishek Anand"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 ms.custom: scenarios:getting-started
@@ -36,7 +36,7 @@ Content-Type: application/json
 {
   "changeType": "created,deleted,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "teams/getAllChannels",
+  "resource": "teams/getAllMembers",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",
@@ -46,7 +46,6 @@ Content-Type: application/json
 ```
 
 ### Subscribe to changes in membership of a particular team
-
 
 To get change notifications for membership change in any team in tenant, subscribe to `teams/{id}/members`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
@@ -112,17 +111,18 @@ For notifications with resource data, the payload looks like the following. This
 
 For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](webhooks-with-resource-data.md).
 
-The decrypted notification payload looks like the following. The payload conforms to the [chatMessage](/graph/api/resources/chatMessage?preserve-view=true) schema. The payload is similar to that returned by GET operations.
+The decrypted notification payload looks like the following. The payload conforms to the [aaduserconversationmember](/graph/api/resources/aaduserconversationmember?preserve-view=true) schema. The payload is similar to that returned by GET operations.
 
 ```json
 {
-  "@odata.type": "#microsoft.graph.conversationMember",
-  "id": "String (identifier)",
-  "roles": [
-    "String"
-  ],
-  "displayName": "String",
-  "visibleHistoryStartDateTime": "String (timestamp)"
+  "@odata.type": "#microsoft.graph.aadUserConversationMember",
+  "id": "string (identifier)",
+  "displayName" : "string",
+  "visibleHistoryStartDateTime": "string (timestamp)",
+  "roles" : ["string"],
+  "userId" : "string",
+  "email" : "string",
+  "tenantId": "string"
 }
 ```
 
