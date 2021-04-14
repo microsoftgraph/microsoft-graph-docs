@@ -15,68 +15,6 @@ Change notifications enable you to subscribe to changes (create, update, and del
 
 
 
-### Subscribe to changes in any team at tenant level
-
-To get change notifications for any change in teams' property across tenant, subscribe to `/teams`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
-
-#### Permissions
-
-|Permission type      | Permissions (from least to most privileged)              | Supported versions |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegated (work or school account) | Not supported. | Not supported. |
-|Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | Team.ReadBasic.All,TeamSettings.Read.All   | beta, v1.0 |
-
-#### Example
-
-```http
-POST https://graph.microsoft.com/beta/subscriptions
-Content-Type: application/json
-
-{
-  "changeType": "created,deleted,updated",
-  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/teams",
-  "includeResourceData": true,
-  "encryptionCertificate": "{base64encodedCertificate}",
-  "encryptionCertificateId": "{customId}",
-  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
-  "clientState": "{secretClientState}"
-}
-```
-
-### Subscribe to changes in a particular team
-
-
-To get change notifications for any change in teams' property of a specific team, subscribe to `/teams/{id}`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
-
-#### Permissions
-
-|Permission type      | Permissions (from least to most privileged)              | Supported versions |
-|:--------------------|:---------------------------------------------------------|:-------------------|
-|Delegated (work or school account) | Not supported. | Not supported. |
-|Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | Team.ReadBasic ,TeamSettings.Read    | beta, v1.0 |
-
-#### Example
-
-```http
-POST https://graph.microsoft.com/beta/subscriptions
-Content-Type: application/json
-
-{
-  "changeType": "deleted,updated",
-  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/team/{id}",
-  "includeResourceData": true,
-  "encryptionCertificate": "{base64encodedCertificate}",
-  "encryptionCertificateId": "{customId}",
-  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
-  "clientState": "{secretClientState}"
-}
-```
-
-
 ### Subscribe to changes in any channel at tenant level
 
 To get change notifications for any change in channel's property across any channel in tenant, subscribe to `teams/getAllChannels`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
@@ -144,7 +82,7 @@ Depending on your subscription, you can either get the notification with resourc
 
 ### Notifications with resource data
 
-For notifications with resource data, the payload looks for any change in team's property looks like the following.
+For notifications with resource data, the payload looks like the following. This payload is for a change in channel property.
 
 ```json
 {
@@ -171,75 +109,22 @@ For notifications with resource data, the payload looks for any change in team's
 }
 ```
   
-  
-For notifications with resource data, the payload looks for any change in channel property looks like the following.
 
-```json
-{
-    "value": [{
-        "subscriptionId": "10493aa0-4d29-4df5-bc0c-ef742cc6cd7f",
-        "changeType": "created",
-        "clientState": "<<--SpecifiedClientState-->>",
-        "subscriptionExpirationDateTime": "2021-02-02T10:30:34.9097561-08:00",
-        "resource": "chats('19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_97f62344-57dc-409c-88ad-c4af14158ff5@unq.gbl.spaces')/messages('1612289765949')",
-        "resourceData": {
-            "id": "1612289765949",
-            "@odata.type": "#Microsoft.Graph.chatMessage",
-            "@odata.id": "chats('19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_97f62344-57dc-409c-88ad-c4af14158ff5@unq.gbl.spaces')/messages('1612289765949')"
-        },
-        "encryptedContent": {
-            "data": "<<--EncryptedContent-->",
-            "dataKey": "<<--EnryptedDataKeyUsedForEncryptingContent-->>",
-            "encryptionCertificateId": "<<--IdOfTheCertificateUsedForEncryptingDataKey-->>",
-            "encryptionCertificateThumbprint": "<<--ThumbprintOfTheCertificateUsedForEncryptingDataKey-->>"
-        },
-        "tenantId": "<<--TenantForWhichNotificationWasSent-->>"
-    }],
-    "validationTokens": ["<<--ValidationTokens-->>"]
-}
-```
 
 For details about how to validate tokens and decrypt the payload, see [Set up change notifications that include resource data](webhooks-with-resource-data.md).
 
-The decrypted notification payload looks like the following. The payload conforms to the [chatMessage](/graph/api/resources/chatMessage?preserve-view=true) schema. The payload is similar to that returned by GET operations.
+The decrypted notification payload looks like the following. The payload conforms to the [channel](/graph/api/resources/chatMessage?preserve-view=true) schema. The payload is similar to that returned by GET operations.
 
 ```json
 {
-  "id": "1612289992105",
-  "replyToId": null,
-  "etag": "1612289992105",
-  "messageType": "message",
-  "createdDateTime": "2021-02-02T18:19:52Z",
-  "lastModifiedDateTime": "2021-02-02T18:19:52.105Z",
-  "lastEditedDateTime": null,
-  "deletedDateTime": null,
-  "subject": null,
-  "summary": null,
-  "chatId": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_97f62344-57dc-409c-88ad-c4af14158ff5@unq.gbl.spaces",
-  "importance": "normal",
-  "locale": "en-us",
-  "webUrl": null,
-  "from": {
-    "application": null,
-    "device": null,
-    "user": {
-      "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
-      "displayName": "Ramjot Singh",
-      "userIdentityType": "aadUser"
-    },
-    "conversation": null
-  },
-  "body": {
-    "contentType": "text",
-    "content": "test"
-  },
-  "channelIdentity": null,
-  "attachments": [],
-  "mentions": [],
-  "policyViolation": null,
-  "reactions": [],
-  "replies": [],
-  "hostedContents": []
+  "description": "string",
+  "displayName": "string",
+  "id": "string (identifier)",
+  "isFavoriteByDefault": true,
+  "email": "string",
+  "webUrl": "string",
+  "membershipType": "channelMembershipType",
+  "createdDateTime": "string (timestamp)"
 }
 ```
 
