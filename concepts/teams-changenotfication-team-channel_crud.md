@@ -13,13 +13,12 @@ Change notifications enable you to subscribe to changes (create, update, and del
 
 >**Note:** The maximum time a subscription can last is 60 minutes; however, subscriptions can be renewed until the caller has permissions to access to resource.
 
-## Subscribe to changes at the tenant level
+### my changes ---- START-----
 
-To track all changes related to messages in a tenant, you can use subscriptions at a tenant level for channel and chat messages. This requires you to create two subscriptions: one to track all messages across [channels](/graph/api/resources/channel?preserve-view=true), and one to track all messages across [chats](/graph/api/resources/chat?preserve-view=true).
 
-### Subscribe to messages across channels
+### Subscribe to changes in any team at tenant level
 
-To get to change notifications for all messages and replies across channels in a tenant, subscribe to `/teams/getAllMessages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+To get to change notifications for any change in teams' property across tenant, subscribe to `/teams`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
 #### Permissions
 
@@ -27,7 +26,7 @@ To get to change notifications for all messages and replies across channels in a
 |:--------------------|:---------------------------------------------------------|:-------------------|
 |Delegated (work or school account) | Not supported. | Not supported. |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | ChannelMessage.Read.All | beta, v1.0 |
+|Application | Team.ReadBasic.All,TeamSettings.Read.All   | beta, v1.0 |
 
 #### Example
 
@@ -36,9 +35,9 @@ POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
 
 {
-  "changeType": "created,updated",
+  "changeType": "created,deleted,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/teams/getAllMessages",
+  "resource": "/teams",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",
@@ -47,9 +46,10 @@ Content-Type: application/json
 }
 ```
 
-### Subscribe to messages across chats
+### Subscribe to changes in a particular team
 
-To get change notifications for all messages across chats in a tenant, subscribe to `/chats/getAllMessages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+
+To get change notifications for any change in teams' property of a specific team, subscribe to `/teams/{id}`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
 #### Permissions
 
@@ -57,7 +57,7 @@ To get change notifications for all messages across chats in a tenant, subscribe
 |:--------------------|:---------------------------------------------------------|:-------------------|
 |Delegated (work or school account) | Not supported. | Not supported. |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | Chat.Read.All | beta, v1.0 |
+|Application | Team.ReadBasic ,TeamSettings.Read    | beta, v1.0 |
 
 #### Example
 
@@ -66,9 +66,9 @@ POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
 
 {
-  "changeType": "created,updated,deleted",
+  "changeType": "deleted,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/chats/getAllMessages",
+  "resource": "/team/{id}",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",
@@ -77,32 +77,29 @@ Content-Type: application/json
 }
 ```
 
-## Subscribe to messages in a channel
 
-To track messages and replies in a channel, you can create a change notification subscription at a channel level. To do this, subscribe to `/teams{id}/channels/{id}/messages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification in *application-only mode*.
+### Subscribe to changes in any channel at tenant level
 
-Channel-level subscriptions also support keyword-based search via the `$search` query parameter.
+To get change notifications for any change in channel's property across any channel in tenant, subscribe to `teams/getAllChannels`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
-### Permissions
+#### Permissions
 
-|Permission type      | Permissions (from least to most privileged)              |Supported in version |
-|:--------------------|:---------------------------------------------------------|:--------------------|
-|Delegated (work or school account) | ChannelMessage.Read.All | beta, v1.0 |
+|Permission type      | Permissions (from least to most privileged)              | Supported versions |
+|:--------------------|:---------------------------------------------------------|:-------------------|
+|Delegated (work or school account) | Not supported. | Not supported. |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | ChannelMessage.Read.All, ChannelMessage.Read.Group* | beta, v1.0 |
+|Application | Channel.ReadBasic.All ,ChannelSettings.Read.All | beta, v1.0 |
 
->**Note:** ChannelMessage.Read.Group is supported as part of [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
-
-### Example 1: Subscribe to all messages (and replies) in a channel
+#### Example
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
 
 {
-  "changeType": "created,updated",
+  "changeType": "created,deleted,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/teams/{id}/channels/{id}/messages",
+  "resource": "teams/getAllChannels",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",
@@ -111,86 +108,29 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Subscribe to messages (and replies) in a channel that contain certain text
+### Subscribe to changes in any channel of a particular team
 
-The following request will send messages that contain `Hello` to the subscriber.
 
-```http
-POST https://graph.microsoft.com/beta/subscriptions
-Content-Type: application/json
+To get change notifications for any change in channel's property across any channel in tenant, subscribe to `teams/{id}/channels`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
-{
-  "changeType": "created,updated",
-  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/teams/{id}/channels/{id}/messages?$search=Hello",
-  "includeResourceData": true,
-  "encryptionCertificate": "{base64encodedCertificate}",
-  "encryptionCertificateId": "{customId}",
-  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
-  "clientState": "{secretClientState}"
-}
-```
+#### Permissions
 
-### Example 3: Subscribe to messages (and replies) in a channel without resource data
-
-```http
-POST https://graph.microsoft.com/beta/subscriptions
-Content-Type: application/json
-
-{
-  "changeType": "created,updated",
-  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/teams/{id}/channels/{id}/messages",
-  "includeResourceData": false,
-  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
-  "clientState": "{secretClientState}"
-}
-```
-
-### Example 4: Subscribe to messages (and replies) in a channel that mention a specific user
-
-To get notifications only for messages where a specific user has been mentioned, you can specify the user's ID (`9a6eb4d1-826b-48b1-9627-b50836c8fee9` in this example) in the query.
-
-```http
-POST https://graph.microsoft.com/beta/subscriptions
-Content-Type: application/json
-
-{
-  "changeType": "created,updated",
-  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/teams/{id}/channels/{id}/messages?$filter=mentions/any(u: u/mentioned/user/id eq '9a6eb4d1-826b-48b1-9627-b50836c8fee9')",
-  "includeResourceData": false,
-  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
-  "clientState": "{secretClientState}"
-}
-```
-
-## Subscribe to messages in a chat
-
-To track messages in a chat, you can create a change notification subscription at a chat level. To do this, subscribe to `/chats{id}/messages`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification in *application-only mode*.
-
-Chat-level subscriptions also support keyword-based search via the `$search` query parameter.
-
-> **Note.** Subcribing to messages in a chat is currently in preview.
-
-### Permissions
-
-|Permission type      | Permissions (from least to most privileged)              | Supported in version |
-|:--------------------|:---------------------------------------------------------|:---------------------|
-|Delegated (work or school account) | Chat.Read | beta, v1.0 |
+|Permission type      | Permissions (from least to most privileged)              | Supported versions |
+|:--------------------|:---------------------------------------------------------|:-------------------|
+|Delegated (work or school account) | Not supported. | Not supported. |
 |Delegated (personal Microsoft account) | Not supported.    | Not supported. |
-|Application | Chat.Read.All | beta, v1.0 |
+|Application | Channel.ReadBasic  ,ChannelSettings.Read   | beta, v1.0 |
 
-### Example 1: Subscribe to messages in a chat
+#### Example
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
 
 {
-  "changeType": "created,updated",
+  "changeType": "created,deleted,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/chats/{id}/messages",
+  "resource": "/teams/{id}/channels ",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",
@@ -199,18 +139,28 @@ Content-Type: application/json
 }
 ```
 
-### Example 2: Subscribe to messages in a chat that contain certain text
+### Subscribe to changes in membership of any team across tenant
 
-The following request will send messages that contain `Hello` to the subscriber.
+To get change notifications for membership change in any team in tenant, subscribe to `teams/getAllMembers`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
+
+#### Permissions
+
+|Permission type      | Permissions (from least to most privileged)              | Supported versions |
+|:--------------------|:---------------------------------------------------------|:-------------------|
+|Delegated (work or school account) | Not supported. | Not supported. |
+|Delegated (personal Microsoft account) | Not supported.    | Not supported. |
+|Application | TeamMember.Read.All | beta, v1.0 |
+
+#### Example
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
 
 {
-  "changeType": "created,updated",
+  "changeType": "created,deleted,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/chats/{id}/messages?$search=Hello",
+  "resource": "teams/getAllChannels",
   "includeResourceData": true,
   "encryptionCertificate": "{base64encodedCertificate}",
   "encryptionCertificateId": "{customId}",
@@ -219,38 +169,40 @@ Content-Type: application/json
 }
 ```
 
-### Example 3: Subscribe to messages (and replies) in a chat without resource data
+### Subscribe to changes in any channel of a particular team
 
-```http
-POST https://graph.microsoft.com/beta/subscriptions
-Content-Type: application/json
-{
-  "changeType": "created,updated",
-  "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/chats/{id}/messages",
-  "includeResourceData": false,
-  "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
-  "clientState": "{secretClientState}"
-}
-```
 
-### Example 4: Subscribe to message in a chat in which a specific user is mentioned
+To get change notifications for membership change in any team in tenant, subscribe to `teams/{id}/members`. This resource supports [including resource data](webhooks-with-resource-data.md) in the notification.
 
-To get notifications only for messages in which a specific user has been mentioned, you can specify the user's ID (`9a6eb4d1-826b-48b1-9627-b50836c8fee9` in this example) in the query.
+#### Permissions
+
+|Permission type      | Permissions (from least to most privileged)              | Supported versions |
+|:--------------------|:---------------------------------------------------------|:-------------------|
+|Delegated (work or school account) | Not supported. | Not supported. |
+|Delegated (personal Microsoft account) | Not supported.    | Not supported. |
+|Application | TeamMember.Read   | beta, v1.0 |
+
+#### Example
 
 ```http
 POST https://graph.microsoft.com/beta/subscriptions
 Content-Type: application/json
 
 {
-  "changeType": "created,updated",
+  "changeType": "created,deleted,updated",
   "notificationUrl": "https://webhook.azurewebsites.net/api/resourceNotifications",
-  "resource": "/chats/{id}/messages?$filter=mentions/any(u: u/mentioned/user/id eq '9a6eb4d1-826b-48b1-9627-b50836c8fee9')",
-  "includeResourceData": false,
+  "resource": "/teams/{id}/members ",
+  "includeResourceData": true,
+  "encryptionCertificate": "{base64encodedCertificate}",
+  "encryptionCertificateId": "{customId}",
   "expirationDateTime": "2019-09-19T11:00:00.0000000Z",
   "clientState": "{secretClientState}"
 }
 ```
+
+### ---- END----
+
+
 
 ## Notification payloads
 
