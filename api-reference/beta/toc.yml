@@ -6930,14 +6930,6 @@ items:
             items:
             - name: List
               href: api/intune-devices-devicehealthscriptdevicestate-list.md
-            - name: Get
-              href: api/intune-devices-devicehealthscriptdevicestate-get.md
-            - name: Create
-              href: api/intune-devices-devicehealthscriptdevicestate-create.md
-            - name: Delete
-              href: api/intune-devices-devicehealthscriptdevicestate-delete.md
-            - name: Update
-              href: api/intune-devices-devicehealthscriptdevicestate-update.md
           - name: Device health script hourly schedule
             href: resources/intune-devices-devicehealthscripthourlyschedule.md
           - name: Device health script integer parameter
