@@ -16,9 +16,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All    |
+|Delegated (work or school account) | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.Read.All, Domain.ReadWrite.All |
+|Application | Domain.Read.All, Domain.ReadWrite.All, Directory.Read.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
