@@ -31,7 +31,7 @@ In addition, apps must be [properly registered](/azure/active-directory/active-d
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /auditLogs/signIns/{id}
+GET /auditLogs/signIns/{SignInid}
 ```
 
 ## Optional query parameters
@@ -112,7 +112,9 @@ Content-length: 211
             "createdDateTime": "2020-03-13T19:15:41.6195833Z",
             "userDisplayName": "Test contoso",
             "userPrincipalName": "testaccount1@contoso.com",
+            "alternateSignInName": "testaccount1@fabrikam.com",
             "userId": "26be570a-1111-5555-b4e2-a37c6808512d",
+            "homeTenantId": "d2e3ca7c-8f1c-4803-b226-d1cc3232d603",
             "appId": "de8bc8b5-5555-6666-a8ad-b748da725064",
             "appDisplayName": "Graph explorer",
             "authenticationRequirement": "MultifactorAuthentication",
@@ -126,6 +128,7 @@ Content-length: 211
             "tokenIssuerName": "",
             "tokenIssuerType": "AzureAD",
             "processingTimeInMilliseconds": 541,
+            "flaggedForReview": false,
             "riskDetail": "none",
             "riskLevelAggregated": "none",
             "riskLevelDuringSignIn": "none",
@@ -267,7 +270,9 @@ Content-length: 211
       "createdDateTime":"2018-11-06T18:48:33.8527147Z",
       "userDisplayName":"Jon Doe",
       "userPrincipalName":"jdoe@contoso.com",
+      "alternateSignInName": "jdoe@fabrikam.com",
       "userId":"d7cc485d-2c1b-422c-98fd-5ce52859a4a3",
+      "homeTenantId": "6fc18dc4-9bd2-4f5a-857c-215fc62966af",
       "appId":"c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
       "appDisplayName":"Azure Portal",
        "authenticationRequirement": "singleFactorAuthentication",
@@ -296,6 +301,7 @@ Content-length: 211
       "riskEventTypes":[],
       "resourceDisplayName":"windows azure service management api",
       "resourceId":"797f4846-ba00-4fd7-ba43-dac1f8f63013",
+      "flaggedForReview": false,
       "status":{},
       "deviceDetail": {
         "deviceId":null,

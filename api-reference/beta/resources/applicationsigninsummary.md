@@ -24,8 +24,8 @@ Represents an application sign-in summary.
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|appDisplayName|String|Name of the application that the user signed in to.|
-|appId|String|  ID of the application that the user signed i nto.|
+|appDisplayName|String|Name of the application that the user signed into.|
+|appId|String|  ID of the application that the user signed into.|
 |failedSignInCount|Int64|Count of failed sign-ins made by the application.|
 |successPercentage|Int32|Percentage of successful sign-ins made by the application.|
 |successfulSignInCount|Int64|Count of successful sign-ins made by the application.|
@@ -48,6 +48,7 @@ The following is a JSON representation of the resource.
 
 ```json
 {
+  "@odata.type": "#microsoft.graph.applicationSignInSummary",
   "appDisplayName": "String",
   "appId": "String (identifier)",
   "failedSignInCount": 1024,

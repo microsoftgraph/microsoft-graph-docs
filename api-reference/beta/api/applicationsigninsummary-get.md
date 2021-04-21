@@ -2,7 +2,7 @@
 title: "Get applicationSignInSummary"
 description: "Retrieve the properties and relationships of an **applicationSigninSummary** object."
 localization_priority: Normal
-author: "dhanyahk"
+author: "besiler"
 ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
@@ -37,9 +37,9 @@ GET reports/getAzureADApplicationSignInSummary(period='{period}')
 | period | Either `D7` (last seven days) or `D30` (last 30 days); other values generate errors. |
 
 ## Request headers
-| Name      |Description|
-|:----------|:----------|
-| Authorization | Bearer {code} |
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
 
 ## Request body
 Do not supply a request body for this method.
@@ -92,14 +92,20 @@ HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 157
 
+
 {
-  "appId": "appId-value",
-  "appDisplayName": "appDisplayName-value",
-  "successfulSignInCount": 99,
-  "failedSignInCount": 99,
-  "successPercentage": 99
+  "value": {
+    "@odata.type": "#Microsoft.AAD.Reporting.applicationSignInSummary",
+    "appId": "appId-value",
+    "appDisplayName": "appDisplayName-value",
+    "successfulSignInCount": 99,
+    "failedSignInCount": 99,
+    "successPercentage": 99
+  }
 }
 ```
+
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
