@@ -820,5 +820,102 @@
       "WorkloadArea": "Reports",
       "SubArea": ""
     }
+    "ChangeList": [
+      {
+          "Id": "916ccaa0-a3d8-11eb-a835-c815efda831b",
+          "ApiChange": "Property",
+          "ChangedApiName": "includeRulesSatisfied",
+          "ChangeType": "Addition",
+          "Description": "Added the **includeRulesSatisfied** property to the [appliedConditionalAccessPolicy](https://docs.microsoft.com/en-us/graph/api/resources/appliedConditionalAccessPolicy?view=graph-rest-beta) resource.",
+          "Target": "appliedConditionalAccessPolicy"
+      },
+      {
+          "Id": "916f29fb-a3d8-11eb-a835-c815efda831b",
+          "ApiChange": "Property",
+          "ChangedApiName": "excludeRulesSatisfied",
+          "ChangeType": "Addition",
+          "Description": "Added the **excludeRulesSatisfied** property to the [appliedConditionalAccessPolicy](https://docs.microsoft.com/en-us/graph/api/resources/appliedConditionalAccessPolicy?view=graph-rest-beta) resource.",
+          "Target": "appliedConditionalAccessPolicy"
+      },
+      {
+          "Id": "91718f9d-a3d8-11eb-a835-c815efda831b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sessionLifetimePolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [sessionLifetimePolicy](https://docs.microsoft.com/en-us/graph/api/resources/sessionLifetimePolicy?view=graph-rest-beta) resource type.",
+          "Target": "sessionLifetimePolicy"
+      },
+      {
+          "Id": "9173f2df-a3d8-11eb-a835-c815efda831b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conditionalAccessRuleSatisfied",
+          "ChangeType": "Addition",
+          "Description": "Added the [conditionalAccessRuleSatisfied](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessRuleSatisfied?view=graph-rest-beta) resource type.",
+          "Target": "conditionalAccessRuleSatisfied"
+      },
+      {
+          "Id": "9176515e-a3d8-11eb-a835-c815efda831b",
+          "ApiChange": "Member",
+          "ChangedApiName": "ipAddressSeenByAzureAD",
+          "ChangeType": "Addition",
+          "Description": "Added the `ipAddressSeenByAzureAD` member to the **conditionalAccessConditions** enumeration.",
+          "Target": "conditionalAccessConditions"
+      },
+      {
+          "Id": "9178b5e0-a3d8-11eb-a835-c815efda831b",
+          "ApiChange": "Member",
+          "ChangedApiName": "ipAddressSeenByResourceProvider",
+          "ChangeType": "Addition",
+          "Description": "Added the `ipAddressSeenByResourceProvider` member to the **conditionalAccessConditions** enumeration.",
+          "Target": "conditionalAccessConditions"
+      },
+      {
+          "Id": "917b1b7c-a3d8-11eb-a835-c815efda831b",
+          "ApiChange": "Member",
+          "ChangedApiName": "unknownFutureValue",
+          "ChangeType": "Addition",
+          "Description": "Added the `unknownFutureValue` member to the **conditionalAccessConditions** enumeration.",
+          "Target": "conditionalAccessConditions"
+      },
+      {
+          "Id": "917d7c3c-a3d8-11eb-a835-c815efda831b",
+          "ApiChange": "Member",
+          "ChangedApiName": "trustedNamedLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the `trustedNamedLocation` member to the **networkType** enumeration.",
+          "Target": "networkType"
+      },
+      {
+          "Id": "917fdebb-a3d8-11eb-a835-c815efda831b",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "conditionalAccessRule",
+          "ChangeType": "Addition",
+          "Description": "Added the **conditionalAccessRule** enumeration type.",
+          "Target": "conditionalAccessRule"
+      },
+      {
+          "Id": "91824034-a3d8-11eb-a835-c815efda831b",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "expirationRequirement",
+          "ChangeType": "Addition",
+          "Description": "Added the **expirationRequirement** enumeration type.",
+          "Target": "expirationRequirement"
+      },
+      {
+          "Id": "9184a315-a3d8-11eb-a835-c815efda831b",
+          "ApiChange": "Member",
+          "ChangedApiName": "unknownFutureValue",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `unknownFutureValue` member from the **networkType** enumeration.",
+          "Target": "networkType"
+      }
+  ],
+  "Id": "916a6567-a3d8-11eb-a835-c815efda831b",
+  "Cloud": "prd",
+  "Version": "beta",
+  "CreatedDateTime": "2021-04-23T02:06:51.286Z",
+  "WorkloadArea": "Reports and audit",
+  "SubArea": "Identity and access reports"
+}
   ]
 }
