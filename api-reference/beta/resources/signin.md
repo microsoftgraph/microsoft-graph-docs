@@ -34,13 +34,17 @@ Provides details about user or application sign-in activity in your directory. Y
 |authenticationMethodsUsed|String collection|The authentication methods used. Possible values: `SMS`, `Authenticator App`, `App Verification code`, `Password`, `FIDO`, `PTA`, or `PHS`.|
 |authenticationProcessingDetails|[keyValue](keyvalue.md) collection|Additional authentication processing details, such as the agent name in case of PTA/PHS or Server/farm name in case of federated authentication.|
 |authenticationRequirement | String | This holds the highest level of authentication needed through all the sign-in steps, for sign-in to succeed.|
+|authenticationRequirementPolicies|[authenticationRequirementPolicy](authenticationRequirementPolicy.md) collection|Sources of authentication requirement, such as Conditional Access, per-user MFA, Identity Protection, and Security Defaults.|
 |clientAppUsed|String|The legacy client used for sign-in activity. For example: `Browser`, `Exchange Active Sync`, `Modern clients`, `IMAP`, `MAPI`, `SMTP`, or `POP`.|
 |conditionalAccessStatus|conditionalAccessStatus| The status of the conditional access policy triggered. Possible values: `success`, `failure`, `notApplied`, or `unknownFutureValue`.|
 |correlationId|String|The identifier that's sent from the client when sign-in is initiated. This is used for troubleshooting the corresponding sign-in activity when calling for support.|
 |createdDateTime|DateTimeOffset|The date and time the sign-in was initiated. The Timestamp type is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |deviceDetail|[deviceDetail](devicedetail.md)|The device information from where the sign-in occurred. Includes information such as deviceId, OS, and browser. |
+|flaggedForReview|Boolean|Indicates whether there are user flagged sign-ins for review.|
 |id|String|The identifier representing the sign-in activity.|
+|homeTenantId|String|The tenant identifier of the user initiating the sign-in. Not applicable in Managed Identity or Service Principal sign-ins.|
 |ipAddress|String|The IP address of the client from where the sign-in occurred.|
+|ipAddressFromResourceProvider|String|IPAddress seen by the resource provider.|
 |isInteractive|Boolean|Indicates whether a sign-in is interactive or not.|
 |location|[signInLocation](signinlocation.md)|The city, state, and 2 letter country code from where the sign-in occurred.|
 |networkLocationDetails|[networkLocationDetail](networklocationdetail.md) collection|The network location details including the type of network used and its names.|
@@ -56,6 +60,8 @@ Provides details about user or application sign-in activity in your directory. Y
 |riskState|riskState|The risk state of a risky user, sign-in, or a risk event. Possible values: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, or `unknownFutureValue`.|
 |servicePrincipalId|String|The application identifier used for sign-in. This field is populated when you are signing in using an application.|
 |servicePrincipalName|String|The application name used for sign-in. This field is populated when you are signing in using an application.|
+|signInIdentifier|String|The identification used to sign in - includes UPN, but is also populated when a user signs in using other identifiers.|
+|signInIdentiferType|signInIdentiferType|Provides the type of sign-in identifier. Examples include `userPrincipalName`, `qrCode`, `phoneNumber`, `proxyAddress`.|
 |status|[signInStatus](signinstatus.md)|The sign-in status. Includes the error code and description of the error (in case of a sign-in failure).|
 |tokenIssuerName|String|The name of the identity provider. For example, `sts.microsoft.com`.|
 |tokenIssuerType|tokenIssuerType|The type of identity provider. Possible values: `AzureAD`, `ADFederationServices`, or `UnknownFutureValue`.|
@@ -63,6 +69,7 @@ Provides details about user or application sign-in activity in your directory. Y
 |userDisplayName|String|The display name of the user.|
 |userId|String|The identifier of the user.|
 |userPrincipalName|String|The UPN of the user.|
+|userType|signInUserType|Type of user. Examples include member, guest, or external.|
 
 ## Relationships
 None
@@ -110,6 +117,8 @@ Here is a JSON representation of the resource.
   "riskLevelAggregated": "string",
   "riskLevelDuringSignIn": "string",
   "riskState": "string",
+  "signInIdentifer": "String",
+  "signInIdentiferType": "String",
   "servicePrincipalId": "String",
   "servicePrincipalName": "String",
   "status": {"@odata.type": "microsoft.graph.signInStatus"},
