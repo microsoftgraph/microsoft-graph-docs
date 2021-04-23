@@ -99,6 +99,24 @@
       "CreatedDateTime": "2021-04-07T01:13:01.454Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "eedcd716-2f97-46a5-bdb6-882d5ed9bd7d",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "chats",
+          "ChangeType": "Addition",
+          "Description": "Added the **chats** relationship to [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-v1.0) resource.",
+          "Target": "user"
+        }
+      ],
+      "Id": "5592a618-24ba-4584-9900-af79dd8779fe",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-04-23T01:13:01.454Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
     }
   ]
 }
