@@ -81,42 +81,19 @@ Content-type: application/json
 Content-length: 1221
 
 {
-  "@odata.type": "#microsoft.graph.deviceHealthScript",
-  "publisher": "Publisher value",
-  "version": "Version value",
-  "displayName": "Display Name value",
-  "description": "Description value",
-  "detectionScriptContent": "ZGV0ZWN0aW9uU2NyaXB0Q29udGVudA==",
-  "remediationScriptContent": "cmVtZWRpYXRpb25TY3JpcHRDb250ZW50",
-  "runAsAccount": "user",
-  "enforceSignatureCheck": true,
-  "runAs32Bit": true,
-  "roleScopeTagIds": [
-    "Role Scope Tag Ids value"
-  ],
-  "isGlobalScript": true,
-  "highestAvailableVersion": "Highest Available Version value",
-  "detectionScriptParameters": [
-    {
-      "@odata.type": "microsoft.graph.deviceHealthScriptStringParameter",
-      "name": "Name value",
-      "description": "Description value",
-      "isRequired": true,
-      "applyDefaultValueWhenNotAssigned": true,
-      "defaultValue": "Default Value value"
-    }
-  ],
-  "remediationScriptParameters": [
-    {
-      "@odata.type": "microsoft.graph.deviceHealthScriptStringParameter",
-      "name": "Name value",
-      "description": "Description value",
-      "isRequired": true,
-      "applyDefaultValueWhenNotAssigned": true,
-      "defaultValue": "Default Value value"
-    }
-  ]
+    "displayName": "testtest",
+    "description": "",
+    "publisher": "Tenant Monkey",
+    "runAs32Bit": true,
+    "runAsAccount": "system",
+    "enforceSignatureCheck": false,
+    "detectionScriptContent": "SW1wb3J0LUNzdiBQYXJ0aXRpb25fMC5jc(truncated)",
+    "remediationScriptContent": "",
+    "roleScopeTagIds": [
+        "0"
+    ]
 }
+
 ```
 
 ### Response
