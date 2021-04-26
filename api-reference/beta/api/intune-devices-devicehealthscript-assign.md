@@ -66,25 +66,22 @@ Content-type: application/json
 Content-length: 756
 
 {
-  "deviceHealthScriptAssignments": [
-    {
-      "@odata.type": "#microsoft.graph.deviceHealthScriptAssignment",
-      "id": "c08c4eb1-4eb1-c08c-b14e-8cc0b14e8cc0",
-      "target": {
-        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
-        "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-        "deviceAndAppManagementAssignmentFilterType": "include",
-        "collectionId": "Collection Id value"
-      },
-      "runRemediationScript": true,
-      "runSchedule": {
-        "@odata.type": "microsoft.graph.deviceHealthScriptDailySchedule",
-        "interval": 8,
-        "useUtc": true,
-        "time": "11:58:36.2550000"
-      }
-    }
-  ]
+    "deviceHealthScriptAssignments": [
+        {
+            "target": {
+                "@odata.type": "#microsoft.graph.groupAssignmentTarget",
+                "groupId": "f3b47ca8-cee6-48a7-8e25-a30e589bfa22"
+            },
+            "runRemediationScript": true,
+            "runSchedule": {
+                "@odata.type": "#microsoft.graph.deviceHealthScriptRunOnceSchedule",
+                "interval": 1,
+                "date": "2021-04-30",
+                "time": "16:0:0",
+                "useUtc": false
+            }
+        }
+    ]
 }
 ```
 
