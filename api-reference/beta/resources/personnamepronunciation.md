@@ -1,6 +1,6 @@
 ---
-title: "yomiPersonName resource type"
-description: "yomiPersonName resource type"
+title: "personNamePronunciation resource type"
+description: "personNamePronunciation resource type"
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
@@ -34,7 +34,7 @@ None.
 The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.yomiPersonName"
+  "@odata.type": "microsoft.graph.personNamePronunciation"
 }
 -->
 

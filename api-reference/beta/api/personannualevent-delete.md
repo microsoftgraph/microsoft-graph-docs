@@ -1,19 +1,19 @@
 ---
-title: "Delete personAnniversary"
-description: "Delete a personAnniversary object from a user's profile."
+title: "Delete personAnnualEvent"
+description: "Delete a personAnnualEvent object from a user's profile."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"
 ---
 
-# Delete personAnniversary
+# Delete personAnnualEvent
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [personAnniversary](../resources/personanniversary.md) object from the user's [profile](../resources/profile.md).
+Delete a [personAnnualEvent](../resources/personannualevent.md) object from the user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -57,7 +57,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_personanniversary"
+  "name": "delete_personannualevent"
 }-->
 
 ```http

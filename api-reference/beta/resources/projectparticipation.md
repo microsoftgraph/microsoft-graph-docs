@@ -46,6 +46,7 @@ Inherits from [itemFacet](itemfacet.md).
 |lastModifiedDateTime|DateTimeOffset|Provides the dateTimeOffset for when the entity was created. Inherited from [itemFacet](../resources/itemfacet.md).|
 |source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
 |sponsors|[relatedPerson](../resources/relatedperson.md) collection|The Person or people who sponsored the project.    |
+|thumbnailUrl|String|Contains a link to a thumbnail image or resource for the project. |
 ## Relationships
 
 None.

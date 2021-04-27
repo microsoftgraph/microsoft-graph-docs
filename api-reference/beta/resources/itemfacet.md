@@ -16,16 +16,18 @@ Namespace: microsoft.graph
 Represents the abstract base type that all resource types in the [profile](profile.md) entityset inherit from.
 
 ## Properties
-|Property|Type|Description|
-|:---|:---|:---|
-|allowedAudiences|allowedAudiences|The audiences that are able to see the values contained within the associated entity. Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.|
-|createdBy|[identitySet](../resources/identityset.md)|Provides the identifier of the user and/or application that created the entity.|
-|createdDateTime|DateTimeOffset|Provides the dateTimeOffset for when the entity was created.|
-|id|String|Identifier used for individually addressing an entity. Inherited from [entity](../resources/entity.md)|
-|inference|[inferenceData](../resources/inferencedata.md)|Contains inference detail if the entity is inferred by the creating or modifying application.|
-|lastModifiedBy|[identitySet](../resources/identityset.md)|Provides the identifier of the user and/or application that last modified the entity.|
-|lastModifiedDateTime|DateTimeOffset|Provides the dateTimeOffset for when the entity was created.|
-|source|[personDataSource](../resources/persondatasource.md)|Where the values within an entity originated if synced from another service.|
+
+| Property             | Type                            | Description                                                                                                                                                                                    |
+|:---------------------|:--------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|allowedAudiences      |string                           | Possible values are: `me`, `family`, `contacts`, `groupMembers`, `organization`, `federatedOrganizations`, `everyone`, `unknownFutureValue`.                                                   |
+|createdBy             |[identitySet](identityset.md)    | When the entity was originally created.                                                                                                                                                        |
+|createdDateTime       |DateTimeOffset                   |The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|id                    |String                           | Read-only.                                                                                                                                                                                     |
+|inference             |[inferenceData](inferencedata.md)| Contains inference detail if the entity is inferred.                                                                                                                                           |
+|lastModifiedBy        |[identitySet](identityset.md)    | Identifier of the partner or user who last modified the entity.                                                                                                                                |
+|lastModifiedDateTime  |DateTimeOffset                   |The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|isSearchable  |boolean                   |Denotes that the entity has been marked as searchable by the Tenant Administrator or end-user. |
+
 
 ## Relationships
 None.

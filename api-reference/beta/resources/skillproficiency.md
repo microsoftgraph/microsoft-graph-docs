@@ -42,6 +42,7 @@ Inherits from [itemFacet](itemfacet.md).
 |lastModifiedDateTime|DateTimeOffset|Provides the dateTimeOffset for when the entity was created. Inherited from [itemFacet](../resources/itemfacet.md).|
 |proficiency|skillProficiencyLevel|Detail of the users proficiency with this skill. Possible values are: `elementary`, `limitedWorking`, `generalProfessional`, `advancedProfessional`, `expert`, `unknownFutureValue`.|
 |source|[personDataSource](../resources/persondatasource.md)|Where the values originated if synced from another service. Inherited from [itemFacet](../resources/itemfacet.md).|
+|thumbnailUrl|String|Contains a link to a thumbnail image or resource for the skill. |
 |webUrl|String|Contains a link to an information source about the skill. |
 
 ## Relationships

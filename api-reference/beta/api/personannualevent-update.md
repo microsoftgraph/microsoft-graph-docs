@@ -1,19 +1,19 @@
 ---
-title: "Update personAnniversary"
-description: "Update the properties of personAnniversary object."
+title: "Update personAnnualEvent"
+description: "Update the properties of personAnnualEvent object."
 localization_priority: Normal
 author: "kevinbellinger"
 ms.prod: "people"
 doc_type: "apiPageType"
 ---
 
-# Update personAnniversary
+# Update personAnnualEvent
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the properties of a [personAnniversary](../resources/personanniversary.md) object in a user's [profile](../resources/profile.md).
+Update the properties of a [personAnnualEvent](../resources/personannualevent.md) object in a user's [profile](../resources/profile.md).
 
 ## Permissions
 
@@ -21,8 +21,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.ReadWrite, User.ReadWrite.All          |
-| Delegated (personal Microsoft account) | User.ReadWrite, User.ReadWrite.All          |
+| Delegated (work or school account)     | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All        |
+| Delegated (personal Microsoft account) | User.Read, User.ReadWrite, User.ReadBasic.All, User.Read.All, User.ReadWrite.All          |
 | Application                            | User.ReadWrite.All                          |
 
 ## HTTP request
@@ -45,7 +45,7 @@ PATCH /users/{id | userPrincipalName}/profile/anniversaries/{id}
 
 In the request body, supply the values for relevant fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
-The following table shows the properties that are possible to update within an existing [personAnniversary](../resources/personanniversary.md) object in a user's [profile](../resources/profile.md).
+The following table shows the properties that are possible to update within an existing [personAnnualEvent](../resources/personannualevent.md) object in a user's [profile](../resources/profile.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
@@ -56,7 +56,7 @@ The following table shows the properties that are possible to update within an e
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and an updated [personAnniversary](../resources/personanniversary.md) object in the response body.
+If successful, this method returns a `200 OK` response code and an updated [personAnnualEvent](../resources/personannualevent.md) object in the response body.
 
 ## Examples
 
@@ -67,7 +67,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_personanniversary"
+  "name": "update_personannualevent"
 }-->
 
 ```http
@@ -105,7 +105,7 @@ The following is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.personAnniversary"
+  "@odata.type": "microsoft.graph.personAnnualEvent"
 } -->
 
 ```http
