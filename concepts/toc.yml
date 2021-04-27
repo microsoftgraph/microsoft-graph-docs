@@ -349,6 +349,8 @@ items:
                 href: search-concept-sort.md
               - name: Refine search results (preview)
                 href: search-concept-aggregation.md
+              - name: Search Display Layout
+                href: search-concept-display-layout.md
           - name: Index (preview)
             items:
               - name: Manage connections
