@@ -385,6 +385,8 @@ items:
             href: teams-configuring-builtin-tabs.md
           - name: Protected APIs
             href: teams-protected-apis.md
+          - name: Private channels management
+            href: teams-private-channels-management.md
           - name: Licenses for subscribing to chat messages
             href: teams-licenses.md
           - name: Send proactive messages with a bot
