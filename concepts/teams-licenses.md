@@ -17,4 +17,4 @@ Creating chat message subscriptions with application permissions for `/teams/get
 * Microsoft 365 Information Protection and Governance
 * Office 365 Advanced Compliance 
 
-These licenses are not required when creating subscriptions with delegated permissions, with resource-specific consent permissions, or with application permissions for specific channels and chat threads.
+These licenses are not required when creating subscriptions with delegated permissions, with resource-specific consent permissions, or with application permissions for specific channels and chat threads.[Get-LicenseReportForChangeNotificationSubscription](https://docs.microsoft.com/en-us/powershell/module/teams/get-licensereportforchangenotificationsubscription) cmdlet can be used to check whether a user has required license or not for subscription to work.
