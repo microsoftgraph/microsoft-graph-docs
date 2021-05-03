@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "4775aa6e-ef3a-48d2-a6dd-141e13ca26ef",
+          "ApiChange": "Property",
+          "ChangedApiName": "accessPackageAssignmentPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added properties to [accessPackageAssignmentPolicy](https://docs.microsoft.com/en-us/graph/api/resources/accesspackageassignmentpolicy?view=graph-rest-beta) in entitlement management.",
+          "Target": "accessPackageAssignmentPolicy"
+        }
+      ],
+      "Id": "4775aa6e-ef3a-48d2-a6dd-141e13ca26ef",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-05-03T09:02:13.750Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "dfddb103-d5a3-4ed3-b27f-b0d95945c7d2",
           "ApiChange": "Permission",
           "ChangedApiName": "accessReviews",
