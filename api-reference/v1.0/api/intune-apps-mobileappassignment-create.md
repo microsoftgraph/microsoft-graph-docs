@@ -69,7 +69,8 @@ Content-length: 273
   "@odata.type": "#microsoft.graph.mobileAppAssignment",
   "intent": "required",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget",
+    "groupId" : "string Identifier (group to be assigned from Group API)"
   },
   "settings": {
     "@odata.type": "microsoft.graph.mobileAppAssignmentSettings"
