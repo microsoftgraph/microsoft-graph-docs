@@ -100,4 +100,4 @@ If you would like to migrate to MSAL 2.0 Provider and already have an applicatio
     ```html
     <mgt-msal2-provider  client-id="" ... ></mgt-msal2-provider>
      ```
-    Refer to the [earlier sections](#initialize-in-your-html-page) to check out how you can configure the Msal 2.0 Provider
+    Refer to the [earlier sections](#initialize-in-your-html-page) to check out how you can configure the Msal 2.0 Provider.
