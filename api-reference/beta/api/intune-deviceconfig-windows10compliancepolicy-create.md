@@ -3,7 +3,7 @@ title: "Create windows10CompliancePolicy"
 description: "Create a new windows10CompliancePolicy object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -20,7 +20,7 @@ Create a new [windows10CompliancePolicy](../resources/intune-deviceconfig-window
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -86,6 +86,7 @@ The following table shows the properties that are required when you create the w
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Require Device Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |configurationManagerComplianceRequired|Boolean|Require to consider SCCM Compliance state into consideration for Intune Compliance State.|
 |tpmRequired|Boolean|Require Trusted Platform Module(TPM) to be present.|
+|deviceCompliancePolicyScript|[deviceCompliancePolicyScript](../resources/intune-deviceconfig-devicecompliancepolicyscript.md)|Not yet documented|
 
 
 
@@ -99,7 +100,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 1690
+Content-length: 1911
 
 {
   "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
@@ -146,7 +147,12 @@ Content-length: 1690
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
   "configurationManagerComplianceRequired": true,
-  "tpmRequired": true
+  "tpmRequired": true,
+  "deviceCompliancePolicyScript": {
+    "@odata.type": "microsoft.graph.deviceCompliancePolicyScript",
+    "deviceComplianceScriptId": "Device Compliance Script Id value",
+    "rulesContent": "cnVsZXNDb250ZW50"
+  }
 }
 ```
 
@@ -155,7 +161,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1862
+Content-Length: 2083
 
 {
   "@odata.type": "#microsoft.graph.windows10CompliancePolicy",
@@ -205,9 +211,15 @@ Content-Length: 1862
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "secured",
   "configurationManagerComplianceRequired": true,
-  "tpmRequired": true
+  "tpmRequired": true,
+  "deviceCompliancePolicyScript": {
+    "@odata.type": "microsoft.graph.deviceCompliancePolicyScript",
+    "deviceComplianceScriptId": "Device Compliance Script Id value",
+    "rulesContent": "cnVsZXNDb250ZW50"
+  }
 }
 ```
+
 
 
 

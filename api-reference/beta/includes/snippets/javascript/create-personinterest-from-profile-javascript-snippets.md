@@ -12,14 +12,14 @@ const client = Client.init(options);
 
 const personInterest = {
   categories: [
-    "categories-value"
+    'Sports'
   ],
-  description: "description-value",
-  displayName: "displayName-value",
-  webUrl: "webUrl-value"
+  description: 'World\'s greatest football club',
+  displayName: 'Chelsea FC',
+  webUrl: 'https://www.chelseafc.com'
 };
 
-let res = await client.api('/me/profile/interests')
+await client.api('/me/profile/interests')
 	.version('beta')
 	.post(personInterest);
 

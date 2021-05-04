@@ -3,8 +3,8 @@ title: "licenseUnitsDetail resource type"
 description: "The **prepaidUnits** property of the subscribedSku entity is of type **licenseUnitsDetail**."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "directory-management"
+author: "jpettere"
 ---
 
 # licenseUnitsDetail resource type
@@ -55,3 +55,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

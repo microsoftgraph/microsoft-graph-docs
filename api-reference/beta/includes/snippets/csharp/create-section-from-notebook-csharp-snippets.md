@@ -11,7 +11,7 @@ var onenoteSection = new OnenoteSection
 	DisplayName = "Section name"
 };
 
-await graphClient.Me.Onenote.Notebooks["{id}"].Sections
+await graphClient.Me.Onenote.Notebooks["{notebook-id}"].Sections
 	.Request()
 	.AddAsync(onenoteSection);
 

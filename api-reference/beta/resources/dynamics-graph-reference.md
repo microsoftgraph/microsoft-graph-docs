@@ -15,10 +15,13 @@ doc_type: conceptualPageType
 You can use Microsoft Graph to connect and integrate your web service or SaaS solution with Microsoft Dynamics 365 Business Central. With Microsoft Graph, you can build apps that get authorized access to and integrate seamlessly with Microsoft Dynamics 365 Business Central data.
 
 ## Authorization
-Use the Azure AD v2.0 endpoint to authenticate Dynamics 365 Business Central APIs. All APIs require the `Authorization: Bearer {access-token}` request header. For more information about authorization, see [Get access tokens to call Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/auth_overview).
+Use the Azure AD v2.0 endpoint to authenticate Dynamics 365 Business Central APIs. All APIs require the `Authorization: Bearer {access-token}` request header. For more information about authorization, see [Get access tokens to call Microsoft Graph](/graph/auth/).
 
 ## Common Dynamics 365 Business Central scenarios
 The Dynamics 365 Business Central API allows you to read and modify business data through apps that are connected and integrated through a single endpoint. Use the API to, for example, get access to [customer](../resources/dynamics-customer.md) and [vendor](../resources/dynamics-vendor.md) information, or [view overdue payments](../resources/dynamics-agedaccountspayable.md).
+
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
 ## Next steps
 The Dynamics 365 Business Central API can open up new ways for you to engage with users. To learn more, see the following:
@@ -56,7 +59,6 @@ The Dynamics 365 Business Central API can open up new ways for you to engage wit
 |shipmentMethods resource type|[shipmentMethods](../resources/dynamics-shipmentmethods.md)|
 |taxGroups resource type|[taxGroups](../resources/dynamics-taxgroups.md)|
 |taxArea resource type|[taxAreas](..resources/dynamics-taxarea.md)|
-|trial balance resource type|[trialBalance](../resources/dynamics-trialbalance.md)|
 |unitsOfMeasure resource type|[unitsOfMeasure](../resources/dynamics-unitsofmeasure.md)|
 |vendor resource type|[vendor](../resources/dynamics-vendor.md)|
 -->

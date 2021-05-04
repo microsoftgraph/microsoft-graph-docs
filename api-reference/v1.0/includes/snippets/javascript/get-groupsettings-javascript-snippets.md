@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/groupSettings')
+let groupSettings = await client.api('/groupSettings')
 	.get();
 
 ```

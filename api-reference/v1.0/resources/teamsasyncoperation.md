@@ -1,6 +1,6 @@
 ---
 title: "teamsAsyncOperation resource type"
-description: "A Microsoft Teams async operation is an operation that transcends the lifetime of a single API request. "
+description: "A Microsoft Teams async operation transcends the lifetime of a single API request. "
 author: "nkramer"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -42,7 +42,7 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "keyProperty": "id",
-  "@odata.type": "microsoft.graph.teamsasyncoperation"
+  "@odata.type": "microsoft.graph.teamsAsyncOperation"
 }-->
 
 ```json
@@ -68,3 +68,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

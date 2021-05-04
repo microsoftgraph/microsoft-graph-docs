@@ -10,12 +10,12 @@ var attachment = new ReferenceAttachment
 {
 	Name = "Personal pictures",
 	SourceUrl = "https://contoso.com/personal/mario_contoso_net/Documents/Pics",
-	ProviderType = "oneDriveConsumer",
-	Permission = "Edit",
-	IsFolder = "True"
+	ProviderType = ReferenceAttachmentProvider.OneDriveConsumer,
+	Permission = ReferenceAttachmentPermission.Edit,
+	IsFolder = true
 };
 
-await graphClient.Me.Messages["AAMkAGE1M88AADUv0uFAAA="].Attachments
+await graphClient.Me.Messages["{message-id}"].Attachments
 	.Request()
 	.AddAsync(attachment);
 

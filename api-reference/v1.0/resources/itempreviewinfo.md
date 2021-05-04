@@ -1,6 +1,5 @@
 ---
 author: kevinlam
-ms.author: kevinlam
 ms.date: 3/16/2018
 title: ItemPreviewInfo
 localization_priority: Normal
@@ -43,3 +42,4 @@ param1=value&param2=another%20value
 ```
 
 The formats of URLs and parameters should be considered opaque.
+

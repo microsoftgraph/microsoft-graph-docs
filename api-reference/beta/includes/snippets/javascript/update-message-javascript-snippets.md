@@ -11,15 +11,15 @@ const options = {
 const client = Client.init(options);
 
 const message = {
-  subject: "subject-value",
+  subject: 'subject-value',
   body: {
-    contentType: "",
-    content: "content-value"
+    contentType: '',
+    content: 'content-value'
   },
-  inferenceClassification: "other"
+  inferenceClassification: 'other'
 };
 
-let res = await client.api('/me/messages/{id}')
+await client.api('/me/messages/{id}')
 	.version('beta')
 	.update(message);
 

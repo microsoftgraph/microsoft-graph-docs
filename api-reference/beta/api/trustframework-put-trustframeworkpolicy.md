@@ -3,7 +3,7 @@ title: "Update trustFrameworkPolicy"
 description: "This operation updates an existing trustFrameworkPolicy object, or if one doesn't exist, it creates one. "
 localization_priority: Normal
 author: "Nickgmicrosoft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 # Update or create trustFrameworkPolicy
@@ -101,3 +101,5 @@ Content-Type: application/xml
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

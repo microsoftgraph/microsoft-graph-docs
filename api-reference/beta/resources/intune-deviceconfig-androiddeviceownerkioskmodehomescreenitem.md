@@ -1,0 +1,42 @@
+---
+title: "androidDeviceOwnerKioskModeHomeScreenItem resource type"
+description: "Represents an item on the Android Device Owner Managed Home Screen (application, weblink or folder"
+author: "dougeby"
+localization_priority: Normal
+ms.prod: "intune"
+doc_type: resourcePageType
+---
+
+# androidDeviceOwnerKioskModeHomeScreenItem resource type
+
+Namespace: microsoft.graph
+
+> **Important:** Microsoft Graph APIs under the /beta version are subject to change; production use is not supported.
+
+> **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
+
+Represents an item on the Android Device Owner Managed Home Screen (application, weblink or folder
+
+## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+
+## Relationships
+None
+
+## JSON Representation
+Here is a JSON representation of the resource.
+<!-- {
+  "blockType": "resource",
+  "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeHomeScreenItem"
+}
+-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.androidDeviceOwnerKioskModeHomeScreenItem"
+}
+```
+
+
+
+

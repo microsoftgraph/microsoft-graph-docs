@@ -25,7 +25,7 @@ var bookingAppointment = new BookingAppointment
 	}
 };
 
-await graphClient.BookingBusinesses["Contosolunchdelivery@M365B489948.onmicrosoft.com"].Appointments["AAMkADKnAAA="]
+await graphClient.BookingBusinesses["{bookingBusiness-id}"].Appointments["{bookingAppointment-id}"]
 	.Request()
 	.UpdateAsync(bookingAppointment);
 

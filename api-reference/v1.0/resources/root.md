@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Root
 localization_priority: Normal
@@ -38,3 +37,4 @@ The **Root** resource has no properties.
   "section": "documentation",
   "tocPath": "Facets/Root"
 } -->
+

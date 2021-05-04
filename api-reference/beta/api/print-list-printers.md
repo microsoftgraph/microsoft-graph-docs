@@ -18,11 +18,13 @@ Retrieve the list of **printers** that are registered in the tenant.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
+To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table. The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
-|Delegated (work or school account)| Users.Read.All |
+|Delegated (work or school account)| Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All |
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application|Not Supported.|
+|Application| Not Supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -70,11 +72,15 @@ GET https://graph.microsoft.com/beta/print/printers
 [!INCLUDE [sample-code](../includes/snippets/objc/get-printers-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-printers-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -91,22 +97,39 @@ Content-length: 1526
   "value": [
     {
       "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-      "name": "PrinterName",
+      "displayName": "PrinterName",
       "manufacturer": "PrinterManufacturer",
       "model": "PrinterModel",
       "isShared": true,
       "registeredDateTime": "2020-02-04T00:00:00.0000000Z",
-      "acceptingJobs": true,
+      "isAcceptingJobs": true,
       "status": {
-        "processingState": "stopped",
-        "processingStateReasons": ["disconnected"],
-        "processingStateDescription": ""
+        "state": "stopped",
+        "details": [
+          "disconnected"
+        ],
+        "description": ""
       },
       "defaults": {
-        "copiesPerJob":1,
-        "documentMimeType": "application/oxps",
-        "finishings": ["none"],
-        "mediaType": "stationery"
+        "copiesPerJob": 1,
+        "finishings": [
+          "none"
+        ],
+        "mediaColor": "Unknown",
+        "mediaType": "stationery",
+        "mediaSize": "North America Letter",
+        "pagesPerSheet": 1,
+        "orientation": "portrait",
+        "outputBin": "auto",
+        "inputBin": "auto",
+        "contentType": "application/oxps",
+        "fitPdfToPage": false,
+        "multipageLayout": null,
+        "colorMode": "color",
+        "quality": "medium",
+        "duplexMode": "oneSided",
+        "dpi": 600,
+        "scaling": null
       },
       "location": {
         "latitude": 1.1,
@@ -122,9 +145,9 @@ Content-length: 1526
         "countryOrRegion": "USA",
         "site": "Puget Sound",
         "building": "Studio E",
-        "floorNumber": 1,
+        "floor": "1",
         "floorDescription": "First Floor",
-        "roomNumber": 1234,
+        "roomName": "1234",
         "roomDescription": "First floor copy room",
         "organization": [
             "C+AI",

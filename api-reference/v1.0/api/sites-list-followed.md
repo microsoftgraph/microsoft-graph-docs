@@ -29,8 +29,14 @@ This method is accessible only through OneDrive for Business.
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /me/followedSites
+GET /me/followedSites
 ```
+Get a list of the sites followed by a target user, based on its ID.
+
+```http
+GET /users/{user-id}/followedSites
+```
+**Note:** To access another targeted user's list of followed sites, you need application permissions.
 
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query_parameters) to help customize the response.
@@ -56,17 +62,25 @@ If no sites were found, an empty collection is returned.
 
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "get-analytics" } -->
+<!-- { "blockType": "request", "name": "sites-list-followed", "scopes": "sites.readwrite.all" } -->
 
 ```msgraph-interactive
-POST /me/followedSites
+GET /me/followedSites
 ```
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-analytics-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/sites-list-followed-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-analytics-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/sites-list-followed-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/sites-list-followed-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/sites-list-followed-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -75,7 +89,7 @@ POST /me/followedSites
 ### Response
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.site)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -124,3 +138,4 @@ Content-type: application/json
   ]
 }
 -->
+

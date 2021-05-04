@@ -3,7 +3,7 @@ title: "tokenLifetimePolicy resource type"
 description: "Represents a policy that can control the lifetime of an access token issued by Azure Active Directory."
 localization_priority: Normal
 author: "lujiangfeng666"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 
 
-Represents a policy that can control the lifetime of a JWT access token, an ID token or a SAML 1.1/2.0 token issued by Azure Active Directory (Azure AD). You can set token lifetimes for all apps in your organization, for a multi-tenant (multi-organization) application, or for a specific service principal in your organization.  For more scenario details see [Configurable token lifetimes in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes).
+Represents a policy that can control the lifetime of a JWT access token, an ID token or a SAML 1.1/2.0 token issued by Azure Active Directory (Azure AD). You can set token lifetimes for all apps in your organization, for a multi-tenant (multi-organization) application, or for a specific service principal in your organization.  For more scenario details see [Configurable token lifetimes in Azure Active Directory](/azure/active-directory/develop/active-directory-configurable-token-lifetimes).
 
 >**Note:** Configuring this policy for Refresh Tokens and Session Tokens is not supported.
 
@@ -38,7 +38,7 @@ Inherits from [stsPolicy](stsPolicy.md).
 |definition|String collection| A string collection containing a JSON string that defines the rules and settings for this policy. See below for more details about the JSON schema for this property. Required.|
 |description|String| Description for this policy.|
 |displayName|String| Display name for this policy. Required.|
-|isOrganizationDefault|Boolean|If set to true, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Optional, default value is false.|
+|isOrganizationDefault|Boolean|If set to `true`, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Optional, default value is `false`.|
 
 
 ### Properties of a token lifetime policy definition
@@ -78,7 +78,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.tokenLifetimePolicy",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

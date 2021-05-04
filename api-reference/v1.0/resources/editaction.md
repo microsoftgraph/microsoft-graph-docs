@@ -1,6 +1,5 @@
 ---
 author: daspek
-ms.author: dspektor
 title: editAction resource type
 description: The EditAction object provides information about an activity that edited an item.
 localization_priority: Normal
@@ -46,3 +45,4 @@ None. This facet is a null or not-null value and contains no properties.
   "suppressions": []
 }
 -->
+

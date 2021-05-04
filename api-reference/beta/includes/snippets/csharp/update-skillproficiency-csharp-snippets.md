@@ -10,14 +10,12 @@ var skillProficiency = new SkillProficiency
 {
 	Categories = new List<String>()
 	{
-		"categories-value"
+		"Professional"
 	},
-	DisplayName = "displayName-value",
-	Proficiency = SkillProficiencyLevel.Elementary,
-	WebUrl = "webUrl-value"
+	Proficiency = SkillProficiencyLevel.AdvancedProfessional
 };
 
-await graphClient.Me.Profile.Skills["{id}"]
+await graphClient.Me.Profile.Skills["{skillProficiency-id}"]
 	.Request()
 	.UpdateAsync(skillProficiency);
 

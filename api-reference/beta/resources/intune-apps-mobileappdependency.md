@@ -3,7 +3,7 @@ title: "mobileAppDependency resource type"
 description: "Describes a dependency type between two mobile apps."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -33,10 +33,14 @@ Inherits from [mobileAppRelationship](../resources/intune-apps-mobileapprelation
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The relationship entity id. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|targetId|String|The target child mobile app's app id. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
-|targetDisplayName|String|The target child mobile app's display name. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetId|String|The target mobile app's app id. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetDisplayName|String|The target mobile app's display name. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetDisplayVersion|String|The target mobile app's display version. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetPublisher|String|The target mobile app's publisher. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md)|
+|targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|The type of relationship indicating whether the target is a parent or child. Inherited from [mobileAppRelationship](../resources/intune-apps-mobileapprelationship.md). Possible values are: `child`, `parent`.|
 |dependencyType|[mobileAppDependencyType](../resources/intune-apps-mobileappdependencytype.md)|The type of dependency relationship between the parent and child apps. Possible values are: `detect`, `autoInstall`.|
-|dependentAppCount|Int32|The total number of dependencies the child app has.|
+|dependentAppCount|Int32|The total number of apps that directly or indirectly depend on the parent app.|
+|dependsOnAppCount|Int32|The total number of apps the child app directly or indirectly depends on.|
 
 ## Relationships
 None
@@ -55,10 +59,15 @@ Here is a JSON representation of the resource.
   "id": "String (identifier)",
   "targetId": "String",
   "targetDisplayName": "String",
+  "targetDisplayVersion": "String",
+  "targetPublisher": "String",
+  "targetType": "String",
   "dependencyType": "String",
-  "dependentAppCount": 1024
+  "dependentAppCount": 1024,
+  "dependsOnAppCount": 1024
 }
 ```
+
 
 
 

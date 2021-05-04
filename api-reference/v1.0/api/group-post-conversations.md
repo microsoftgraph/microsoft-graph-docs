@@ -48,6 +48,7 @@ The response includes the IDs for the new conversation and thread, which you can
 #### Request
 The following is an example of the request.
 
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -59,27 +60,27 @@ POST https://graph.microsoft.com/v1.0/groups/29981b6a-0e57-42dc-94c9-cd24f530619
 Content-type: application/json
 
 {
-    "topic":"New locations for this quarter",
-    "threads":[
+  "topic":"New locations for this quarter",
+  "threads":[
+    {
+      "posts":[
         {
-            "posts":[
-                {
-                    "body":{
-                        "contentType":"html",
-                        "content":"What do we know so far?"
-                    },
-                    "newParticipants":[
-                        {
-                            "emailAddress":{
-                                "name":"Adele Vance",
-                                "address":"AdeleV@contoso.onmicrosoft.com"
-                            }
-                        }
-                    ]
-                }
-            ]
+          "body":{
+            "contentType":"html",
+            "content":"What do we know so far?"
+          },
+          "newParticipants":[
+            {
+              "emailAddress":{
+                "name":"Adele Vance",
+                "address":"AdeleV@contoso.onmicrosoft.com"
+              }
+            }
+          ]
         }
-    ]
+      ]
+    }
+  ]
 }
 ```
 # [C#](#tab/csharp)
@@ -103,7 +104,7 @@ Content-type: application/json
 
 #### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -115,14 +116,14 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations/$entity",
-    "id":"AAQkADDVKtMlRp4Txc6k=",
-    "threads@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations('AAQkADDVKtMlRp4Txc6k%3D')/threads",
-    "threads":[
-        {
-            "id":"AAQkADQDarUNUq0yVGnhPFzqQ=="
-        }
-    ]
+  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations/$entity",
+  "id":"AAQkADDVKtMlRp4Txc6k=",
+  "threads@odata.context":"https://graph.microsoft.com/v1.0/$metadata#groups('29981b6a-0e57-42dc-94c9-cd24f5306196')/conversations('AAQkADDVKtMlRp4Txc6k%3D')/threads",
+  "threads":[
+    {
+      "id":"AAQkADQDarUNUq0yVGnhPFzqQ=="
+    }
+  ]
 }
 ```
 
@@ -137,3 +138,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

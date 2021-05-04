@@ -2,8 +2,8 @@
 title: "userIdentity type"
 description: "Represents an Azure AD user identity for a reviewer of an access review."
 localization_priority: Normal
-author: "krbain"
-ms.prod: "microsoft-identity-platform"
+author: "jpettere"
+ms.prod: "users"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-For the Azure AD [access reviews](accessreviews-root.md), this type represents an Azure AD user identity for a creator or reviewer of an access review.  
+For the Azure AD [access reviews](accessreviews-root.md), this type represents an Azure AD user identity for a creator or reviewer of an access review.
 In the context of an Azure AD audit log, this represents the user information that initiated or was affected by an audit activity.
 
 This type inherits from [identity](identity.md) and has one additional property, the user principal name of the user.
@@ -42,11 +42,11 @@ None.
 
 ## See also
 
-| Method | Return Type Description|
-|:---------------|:--------|:----------|
-|[Get accessReview reviewers](../api/accessreview-listreviewers.md) | [userIdentity](useridentity.md) collection| Get the reviewers of an accessReview. |
-|[Add accessReview reviewer](../api/accessreview-addreviewer.md) | None. | Add a reviewer to an accessReview. |
-|[Remove accessReview reviewer](../api/accessreview-removereviewer.md) | None. |Remove a reviewer from an accessReview. |
+| Method                                                                | Return Type                                | Description                             |
+|:----------------------------------------------------------------------|:-------------------------------------------|:----------------------------------------|
+| [Get accessReview reviewers](../api/accessreview-listreviewers.md)    | [userIdentity](useridentity.md) collection | Get the reviewers of an accessReview.   |
+| [Add accessReview reviewer](../api/accessreview-addreviewer.md)       | None.                                      | Add a reviewer to an accessReview.      |
+| [Remove accessReview reviewer](../api/accessreview-removereviewer.md) | None.                                      | Remove a reviewer from an accessReview. |
 
 ## JSON representation
 
@@ -80,3 +80,5 @@ Here is a JSON representation of the type.
   "suppressions": []
 }
 -->
+
+

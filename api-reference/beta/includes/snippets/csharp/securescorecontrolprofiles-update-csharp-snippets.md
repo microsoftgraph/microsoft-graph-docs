@@ -11,7 +11,7 @@ var secureScoreControlProfile = new SecureScoreControlProfile
 	ControlStateUpdates = "controlStateUpdates-value"
 };
 
-await graphClient.Security.SecureScoreControlProfiles["AdminMFA"]
+await graphClient.Security.SecureScoreControlProfiles["{secureScoreControlProfile-id}"]
 	.Request()
 	.UpdateAsync(secureScoreControlProfile);
 

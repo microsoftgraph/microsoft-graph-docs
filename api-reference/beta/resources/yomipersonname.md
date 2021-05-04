@@ -25,35 +25,28 @@ Provides a mechanism for a user to store information about how to pronounce a na
 |maiden        |String       | Pronunciation guide for the maiden name of the user.    |
 |middle        |String       | Pronunciation guide for the middle name of the user.    |
 
+## Relationships
+
+None.
+
 ## JSON representation
 
 The following is a JSON representation of the resource.
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
+  "@odata.type": "microsoft.graph.yomiPersonName"
+}
+-->
 
-  ],
-  "@odata.type": "microsoft.graph.yomiPersonName",
-  "baseType": null
-}-->
+``` json
 
-```json
 {
   "displayName": "String",
   "first": "String",
-  "last": "String",
   "maiden": "String",
-  "middle": "String"
+  "middle": "String",
+  "last": "String"
 }
 ```
 
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "yomiPersonName resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
+

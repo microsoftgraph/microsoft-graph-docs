@@ -2,7 +2,7 @@
 title: "attachment resource type"
 description: "You can add related content to an event,"
 localization_priority: Priority
-author: "svpsiva"
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
@@ -48,7 +48,7 @@ The following are the base properties of any attachment resource. Refer to the s
 |contentType|String|The MIME type.|
 |id|String| Read-only.|
 |isInline|Boolean|`true` if the attachment is an inline attachment; otherwise, `false`.|
-|lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |name|String|The attachment's file name.|
 |size|Int32|The length of the attachment in bytes.|
 
@@ -79,7 +79,6 @@ Here is a JSON representation of the resource
   "name": "string",
   "size": 1024
 }
-
 ```
 
 
@@ -92,3 +91,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

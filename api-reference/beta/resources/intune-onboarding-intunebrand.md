@@ -3,7 +3,7 @@ title: "intuneBrand resource type"
 description: "intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -36,7 +36,9 @@ intuneBrand contains data which is used in customizing the appearance of the Com
 |onlineSupportSiteUrl|String|URL to the company/organization’s IT helpdesk site.|
 |onlineSupportSiteName|String|Display name of the company/organization’s IT helpdesk site.|
 |privacyUrl|String|URL to the company/organization’s privacy policy.|
-|customPrivacyMessage|String|Custom privacy message.|
+|customPrivacyMessage|String|The custom privacy message used to explain what the organization can’t see or do on managed devices.|
+|customCantSeePrivacyMessage|String|The custom privacy message used to explain what the organization can’t see or do on managed devices.|
+|customCanSeePrivacyMessage|String|The custom privacy message used to explain what the organization can see and do on managed devices.|
 |isRemoveDeviceDisabled|Boolean|Boolean that represents whether the adminsistrator has disabled the 'Remove Device' action on corporate owned devices.|
 |isFactoryResetDisabled|Boolean|Boolean that represents whether the adminsistrator has disabled the 'Factory Reset' action on corporate owned devices.|
 |companyPortalBlockedActions|[companyPortalBlockedAction](../resources/intune-shared-companyportalblockedaction.md) collection|Collection of blocked actions on the company portal as per platform and device ownership types.|
@@ -44,6 +46,7 @@ intuneBrand contains data which is used in customizing the appearance of the Com
 |showOfficeWebApps|Boolean|Boolean that indicates if Office WebApps will be shown in Company Portal|
 |sendDeviceOwnershipChangePushNotification|Boolean|Boolean that indicates if a push notification is sent to users when their device ownership type changes from personal to corporate|
 |enrollmentAvailability|[enrollmentAvailabilityOptions](../resources/intune-shared-enrollmentavailabilityoptions.md)|Customized device enrollment flow displayed to the end user . Possible values are: `availableWithPrompts`, `availableWithoutPrompts`, `unavailable`.|
+|disableClientTelemetry|Boolean|Applies to telemetry sent from all clients to the Intune service. When disabled, all proactive troubleshooting and issue warnings within the client are turned off, and telemetry settings appear inactive or hidden to the device user.|
 
 ## Relationships
 None
@@ -94,6 +97,8 @@ Here is a JSON representation of the resource.
   "onlineSupportSiteName": "String",
   "privacyUrl": "String",
   "customPrivacyMessage": "String",
+  "customCantSeePrivacyMessage": "String",
+  "customCanSeePrivacyMessage": "String",
   "isRemoveDeviceDisabled": true,
   "isFactoryResetDisabled": true,
   "companyPortalBlockedActions": [
@@ -107,9 +112,11 @@ Here is a JSON representation of the resource.
   "showAzureADEnterpriseApps": true,
   "showOfficeWebApps": true,
   "sendDeviceOwnershipChangePushNotification": true,
-  "enrollmentAvailability": "String"
+  "enrollmentAvailability": "String",
+  "disableClientTelemetry": true
 }
 ```
+
 
 
 

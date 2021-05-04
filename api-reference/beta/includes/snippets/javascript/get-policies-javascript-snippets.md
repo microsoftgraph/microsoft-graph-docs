@@ -10,9 +10,9 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/identity/conditionalAccess/policies')
+let policies = await client.api('/identity/conditionalAccess/policies')
 	.version('beta')
-	.filter('displayName eq 'SimplePolicy1' or displayName eq 'SimplePolicy2'')
+	.filter('displayName eq \'SimplePolicy1\' or displayName eq \'SimplePolicy2\'')
 	.get();
 
 ```

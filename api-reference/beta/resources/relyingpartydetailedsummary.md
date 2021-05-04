@@ -2,8 +2,8 @@
 title: "relyingPartyDetailedSummary resource type"
 description: "Represents a relying party in AD FS."
 localization_priority: Normal
-author: "khotz"
-ms.prod: "microsoft-identity-platform"
+author: "besiler"
+ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"
 ---
 
@@ -29,8 +29,8 @@ Represents a relying party configured with Active Directory Federation Services 
 |id|String| Read-only. Unique Identifier generated at API level.| 
 |relyingPartyId|String|This identifier is used to identify the relying party to this Federation Service. It is used when issuing claims to the relying party.|
 |serviceId|String|Uniquely identifies the Active Directory forest.|
-|migrationStatus|string| Indication of whether the application can be moved to Azure AD or require more investigation. Possible values are: `ready`, `needsReview`, `additionalStepsRequired`.|
-|migrationValidationDetails|[keyValuePair](keyvaluepair.md) collection|Specifies all the validations check done on applications configuration details to evaluate if the application is ready to be moved to Azure AD. Possible names are: `AdditionalWSFedEndpointCheckResult`,  `AllowedAuthenticationClassReferencesCheckResult`, `AlwaysRequireAuthenticationCheckResult`,   `AutoUpdateEnabledCheckResult`, `ClaimsProviderNameCheckResult`, `EncryptClaimsCheckResult`,  `EncryptedNameIdRequiredCheckResult`, `MonitoringEnabledCheckResult`,`NotBeforeSkewCheckResult`,  `RequestMFAFromClaimsProvidersCheckResult`, `SignedSamlRequestsRequiredCheckResult`, `AdditionalAuthenticationRulesCheckResult`, `TokenLifetimeCheckResult`,  `DelegationAuthorizationRulesCheckResult`, `IssuanceAuthorizationRulesCheckResult`, `IssuanceTransformRulesCheckResult`. Possible result values are `0`, `1`, or `2`. `0` when the validation check passed, `1` when the validation check failed and `2` when the validation check is a warning. |
+|migrationStatus|migrationStatus| Indication of whether the application can be moved to Azure AD or require more investigation. Possible values are: `ready`, `needsReview`, `additionalStepsRequired`, `unknownFutureValue`.|
+|migrationValidationDetails|[keyValuePair](keyvaluepair.md) collection|Specifies all the validations check done on applications configuration details to evaluate if the application is ready to be moved to Azure AD.|
 |relyingPartyName|String|Name of application or other entity on the internet that uses an identity provider to authenticate a user who wants to log in.|
 |failedSignInCount|Int64| Number of failed sign in on Active Directory Federation Service in the period specified. |
 |replyUrls|String collection|Specifies where the relying party expects to receive the token.|
@@ -53,7 +53,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.relyingPartyDetailedSummary",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
@@ -83,3 +82,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

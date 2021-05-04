@@ -41,7 +41,7 @@ In the request body, provide a JSON object that contains the parameters that you
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
-|groupId|String|The id of the group to copy to. Use only when copying to an Office 365 group.|
+|groupId|String|The id of the group to copy to. Use only when copying to a Microsoft 365 group.|
 |renameAs|String|The name of the copy. Defaults to the name of the existing item. |
 
 ## Response
@@ -109,3 +109,4 @@ HTTP/1.1 202 Accepted
   "suppressions": [
   ]
 }-->
+

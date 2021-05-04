@@ -19,7 +19,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     |  WorkforceIntegration.Read.All, WorkforceIntegration.ReadWrite.All |
+| Delegated (work or school account)     | WorkforceIntegration.Read.All, WorkforceIntegration.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/teamwork/workforceIntegrations
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -133,3 +133,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

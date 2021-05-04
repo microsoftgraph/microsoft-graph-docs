@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const changeScreenSharingRole = {
-  role: "viewer"
+  role: 'viewer'
 };
 
-let res = await client.api('/communications/calls/{id}/changeScreenSharingRole')
+await client.api('/communications/calls/{id}/changeScreenSharingRole')
 	.version('beta')
 	.post(changeScreenSharingRole);
 

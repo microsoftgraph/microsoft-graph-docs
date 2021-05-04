@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/places/bldg2@contoso.com/microsoft.graph.roomlist/rooms')
+let rooms = await client.api('/places/bldg2@contoso.com/microsoft.graph.roomlist/rooms')
 	.version('beta')
 	.get();
 

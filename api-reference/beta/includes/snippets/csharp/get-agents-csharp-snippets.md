@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var agents = await graphClient.OnPremisesPublishingProfiles["provisioning"].Agents
+var agents = await graphClient.OnPremisesPublishingProfiles["{onPremisesPublishingProfile-id}"].Agents
 	.Request()
 	.Expand("agentGroups")
 	.GetAsync();

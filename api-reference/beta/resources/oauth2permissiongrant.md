@@ -3,8 +3,8 @@ title: "oAuth2PermissionGrant resource type"
 description: "Represents the delegated permissions (OAuth 2.0 scopes) which have been granted to an application, often as a result of user or admin consent process."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+ms.prod: "identity-and-sign-in"
+author: "psignoret"
 ---
 
 # oAuth2PermissionGrant resource type
@@ -110,3 +110,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

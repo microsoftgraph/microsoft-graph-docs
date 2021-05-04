@@ -3,7 +3,7 @@ title: "List mobileAppDependencies"
 description: "List properties and relationships of the mobileAppDependency objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -20,11 +20,11 @@ List properties and relationships of the [mobileAppDependency](../resources/intu
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegated (work or school account)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Application|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 317
+Content-Length: 494
 
 {
   "value": [
@@ -69,12 +69,17 @@ Content-Length: 317
       "id": "c7f6f9ab-f9ab-c7f6-abf9-f6c7abf9f6c7",
       "targetId": "Target Id value",
       "targetDisplayName": "Target Display Name value",
+      "targetDisplayVersion": "Target Display Version value",
+      "targetPublisher": "Target Publisher value",
+      "targetType": "parent",
       "dependencyType": "autoInstall",
-      "dependentAppCount": 1
+      "dependentAppCount": 1,
+      "dependsOnAppCount": 1
     }
   ]
 }
 ```
+
 
 
 

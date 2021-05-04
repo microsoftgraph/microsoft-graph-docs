@@ -3,7 +3,7 @@ title: "application: delta"
 description: "Get created, updated, or deleted applications without performing a full read of the entire resource collection."
 localization_priority: Normal
 author: "sureshja"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: apiPageType
 ---
 
@@ -106,7 +106,7 @@ GET https://graph.microsoft.com/v1.0/applications/delta
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- { 
   "blockType": "response",
   "truncated": true,
@@ -165,3 +165,4 @@ Content-type: application/json
   ]
 }
 -->
+

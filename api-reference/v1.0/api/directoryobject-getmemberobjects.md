@@ -3,7 +3,7 @@ title: "Get member objects"
 description: " Returns all the groups and directory roles that a user, group, or directory object is a member of. This function is transitive. "
 localization_priority: Normal
 author: "keylimesoda"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -86,7 +86,7 @@ Content-type: application/json
 
 
 ##### Response
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -119,3 +119,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

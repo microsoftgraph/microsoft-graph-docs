@@ -38,9 +38,6 @@ PATCH /groups/{id}/calendar/events/{id}
 PATCH /me/calendars/{id}/events/{id}
 PATCH /users/{id | userPrincipalName}/calendars/{id}/events/{id}
 
-PATCH /me/calendargroup/calendars/{id}/events/{id}
-PATCH /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
-
 PATCH /me/calendargroups/{id}/calendars/{id}/events/{id}
 PATCH /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
 ```
@@ -56,8 +53,9 @@ In the request body, supply the values for relevant fields that should be update
 |:---------------|:--------|:----------|
 |attendees|[Attendee](../resources/attendee.md)|The collection of attendees for the event.|
 |body|[ItemBody](../resources/itembody.md)|The body of the message associated with the event.|
-|categories|String|The categories associated with the event.|
+|categories|String collection|The categories associated with the event.|
 | end|DateTimeTimeZone|The date, time, and time zone that the event ends.|
+|hideAttendees|Boolean|When set to `true`, each attendee only sees themselves in the meeting request and meeting **Tracking** list. Default is false.|
 |importance|String|The importance of the event. The possible values are: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Set to true if the event lasts all day.|
 |isOnlineMeeting|Boolean| `True` if this event has online meeting information, `false` otherwise. Default is false. Optional.|
@@ -112,7 +110,9 @@ Content-length: 285
   "reminderMinutesBeforeStart": 99,
   "isOnlineMeeting": true,
   "onlineMeetingProvider": "teamsForBusiness",
-  "isReminderOn": true
+  "isReminderOn": true,
+  "hideAttendees": false,
+  "categories": ["Red category"]
 }
 ```
 # [C#](#tab/csharp)
@@ -130,9 +130,10 @@ Content-length: 285
 ---
 
 
-### Response
+##### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -156,6 +157,7 @@ Content-length: 285
   "isOnlineMeeting": true,
   "onlineMeetingProvider": "teamsForBusiness",
   "isReminderOn": true,
+  "hideAttendees": false,
   "onlineMeeting": {
         "joinUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_NzIyNzhlMGEtM2YyZC00ZmY0LTlhNzUtZmZjNWFmZGNlNzE2%40thread.v2/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22bc55b173-cff6-457d-b7a1-64bda7d7581a%22%7d",
         "conferenceId": "177513992",
@@ -183,3 +185,4 @@ Content-length: 285
   "suppressions": [
   ]
 }-->
+

@@ -3,7 +3,7 @@ title: "Update androidDeviceOwnerGeneralDeviceConfiguration"
 description: "Update the properties of a androidDeviceOwnerGeneralDeviceConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -20,7 +20,7 @@ Update the properties of a [androidDeviceOwnerGeneralDeviceConfiguration](../res
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -72,6 +72,14 @@ The following table shows the properties that are required when you create the [
 |cellularBlockWiFiTethering|Boolean|Indicates whether or not to block Wi-Fi tethering.|
 |certificateCredentialConfigurationDisabled|Boolean|Indicates whether or not to block users from any certificate credential configuration.|
 |microsoftLauncherConfigurationEnabled|Boolean|Indicates whether or not to you want configure Microsoft Launcher.|
+|microsoftLauncherCustomWallpaperEnabled|Boolean|Indicates whether or not to configure the wallpaper on the targeted devices.|
+|microsoftLauncherCustomWallpaperImageUrl|String|Indicates the URL for the image file to use as the wallpaper on the targeted devices.|
+|microsoftLauncherCustomWallpaperAllowUserModification|Boolean|Indicates whether or not the user can modify the wallpaper to personalize their device.|
+|microsoftLauncherFeedEnabled|Boolean|Indicates whether or not you want to enable the launcher feed on the device.|
+|microsoftLauncherFeedAllowUserModification|Boolean|Indicates whether or not the user can modify the launcher feed on the device.|
+|microsoftLauncherDockPresenceConfiguration|[microsoftLauncherDockPresence](../resources/intune-deviceconfig-microsoftlauncherdockpresence.md)|Indicates whether or not you want to configure the device dock. Possible values are: `notConfigured`, `show`, `hide`, `disabled`.|
+|microsoftLauncherDockPresenceAllowUserModification|Boolean|Indicates whether or not the user can modify the device dock configuration on the device.|
+|microsoftLauncherSearchBarPlacementConfiguration|[microsoftLauncherSearchBarPlacement](../resources/intune-deviceconfig-microsoftlaunchersearchbarplacement.md)|Indicates the search bar placement configuration on the device. Possible values are: `notConfigured`, `top`, `bottom`, `hide`.|
 |enrollmentProfile|[androidDeviceOwnerEnrollmentProfileType](../resources/intune-deviceconfig-androiddeviceownerenrollmentprofiletype.md)|Indicates which enrollment profile you want to configure. Possible values are: `notConfigured`, `dedicatedDevice`, `fullyManaged`.|
 |dataRoamingBlocked|Boolean|Indicates whether or not to block a user from data roaming.|
 |dateTimeConfigurationBlocked|Boolean|Indicates whether or not to block the user from manually changing the date or time on the device|
@@ -79,6 +87,11 @@ The following table shows the properties that are required when you create the [
 |factoryResetBlocked|Boolean|Indicates whether or not the factory reset option in settings is disabled.|
 |globalProxy|[androidDeviceOwnerGlobalProxy](../resources/intune-deviceconfig-androiddeviceownerglobalproxy.md)|Proxy is set up directly with host, port and excluded hosts.|
 |googleAccountsBlocked|Boolean|Indicates whether or not google accounts will be blocked.|
+|kioskCustomizationDeviceSettingsBlocked|Boolean|Indicates whether a user can access the device's Settings app while in Kiosk Mode.|
+|kioskCustomizationPowerButtonActionsBlocked|Boolean|Whether the power menu is shown when a user long presses the Power button of a device in Kiosk Mode.|
+|kioskCustomizationStatusBar|[androidDeviceOwnerKioskCustomizationStatusBar](../resources/intune-deviceconfig-androiddeviceownerkioskcustomizationstatusbar.md)|Indicates whether system info and notifications are disabled in Kiosk Mode. Possible values are: `notConfigured`, `notificationsAndSystemInfoEnabled`, `systemInfoOnly`.|
+|kioskCustomizationSystemErrorWarnings|Boolean|Indicates whether system error dialogs for crashed or unresponsive apps are shown in Kiosk Mode.|
+|kioskCustomizationSystemNavigation|[androidDeviceOwnerKioskCustomizationSystemNavigation](../resources/intune-deviceconfig-androiddeviceownerkioskcustomizationsystemnavigation.md)|Indicates which navigation features are enabled in Kiosk Mode. Possible values are: `notConfigured`, `navigationEnabled`, `homeButtonOnly`.|
 |kioskModeScreenSaverConfigurationEnabled|Boolean|Whether or not to enable screen saver mode or not in Kiosk Mode.|
 |kioskModeScreenSaverImageUrl|String|URL for an image that will be the device's screen saver in Kiosk Mode.|
 |kioskModeScreenSaverDisplayTimeInSeconds|Int32|The number of seconds that the device will display the screen saver for in Kiosk Mode. Valid values 0 to 9999999|
@@ -93,20 +106,35 @@ The following table shows the properties that are required when you create the [
 |kioskModeWiFiConfigurationEnabled|Boolean|Whether or not to allow a user to configure Wi-Fi settings in Kiosk Mode.|
 |kioskModeFlashlightConfigurationEnabled|Boolean|Whether or not to allow a user to use the flashlight in Kiosk Mode.|
 |kioskModeMediaVolumeConfigurationEnabled|Boolean|Whether or not to allow a user to change the media volume in Kiosk Mode.|
+|kioskModeShowDeviceInfo|Boolean|Whether or not to allow a user to access basic device information.|
+|kioskModeManagedSettingsEntryDisabled|Boolean|Whether or not to display the Managed Settings entry point on the managed home screen in Kiosk Mode.|
+|kioskModeDebugMenuEasyAccessEnabled|Boolean|Whether or not to allow a user to easy access to the debug menu in Kiosk Mode.|
+|kioskModeShowAppNotificationBadge|Boolean|Whether or not to display application notification badges in Kiosk Mode.|
+|kioskModeScreenOrientation|[androidDeviceOwnerKioskModeScreenOrientation](../resources/intune-deviceconfig-androiddeviceownerkioskmodescreenorientation.md)|Screen orientation configuration for managed home screen in Kiosk Mode. Possible values are: `notConfigured`, `portrait`, `landscape`, `autoRotate`.|
+|kioskModeIconSize|[androidDeviceOwnerKioskModeIconSize](../resources/intune-deviceconfig-androiddeviceownerkioskmodeiconsize.md)|Icon size configuration for managed home screen in Kiosk Mode. Possible values are: `notConfigured`, `smallest`, `small`, `regular`, `large`, `largest`.|
+|kioskModeFolderIcon|[androidDeviceOwnerKioskModeFolderIcon](../resources/intune-deviceconfig-androiddeviceownerkioskmodefoldericon.md)|Folder icon configuration for managed home screen in Kiosk Mode. Possible values are: `notConfigured`, `darkSquare`, `darkCircle`, `lightSquare`, `lightCircle`.|
+|kioskModeWifiAllowedSsids|String collection|The restricted set of WIFI SSIDs available for the user to configure in Kiosk Mode. This collection can contain a maximum of 500 elements.|
+|kioskModeAppOrderEnabled|Boolean|Whether or not to enable app ordering in Kiosk Mode.|
+|kioskModeAppsInFolderOrderedByName|Boolean|Whether or not to alphabetize applications within a folder in Kiosk Mode.|
+|kioskModeGridHeight|Int32|Number of rows for Managed Home Screen grid with app ordering enabled in Kiosk Mode. Valid values 1 to 9999999|
+|kioskModeGridWidth|Int32|Number of columns for Managed Home Screen grid with app ordering enabled in Kiosk Mode. Valid values 1 to 9999999|
+|kioskModeLockHomeScreen|Boolean|Whether or not to lock home screen to the end user in Kiosk Mode.|
+|kioskModeManagedFolders|[androidDeviceOwnerKioskModeManagedFolder](../resources/intune-deviceconfig-androiddeviceownerkioskmodemanagedfolder.md) collection|A list of managed folders for a device in Kiosk Mode. This collection can contain a maximum of 500 elements.|
+|kioskModeAppPositions|[androidDeviceOwnerKioskModeAppPositionItem](../resources/intune-deviceconfig-androiddeviceownerkioskmodeapppositionitem.md) collection|The ordering of items on Kiosk Mode Managed Home Screen. This collection can contain a maximum of 500 elements.|
 |microphoneForceMute|Boolean|Indicates whether or not to block unmuting the microphone on the device.|
 |networkEscapeHatchAllowed|Boolean|Indicates whether or not the device will allow connecting to a temporary network connection at boot time.|
 |nfcBlockOutgoingBeam|Boolean|Indicates whether or not to block NFC outgoing beam.|
 |passwordBlockKeyguard|Boolean|Indicates whether or not the keyguard is disabled.|
 |passwordBlockKeyguardFeatures|[androidKeyguardFeature](../resources/intune-deviceconfig-androidkeyguardfeature.md) collection|List of device keyguard features to block. This collection can contain a maximum of 7 elements. Possible values are: `notConfigured`, `camera`, `notifications`, `unredactedNotifications`, `trustAgents`, `fingerprint`, `remoteInput`, `allFeatures`.|
-|passwordExpirationDays|Int32|Indicates the amount of time in seconds that a password can be set for before it expires and a new password will be required. Valid values 1 to 365|
+|passwordExpirationDays|Int32|Indicates the amount of time that a password can be set for before it expires and a new password will be required. Valid values 1 to 365|
 |passwordMinimumLength|Int32|Indicates the minimum length of the password required on the device. Valid values 4 to 16|
 |passwordMinimumLetterCharacters|Int32|Indicates the minimum number of letter characters required for device password. Valid values 1 to 16|
 |passwordMinimumLowerCaseCharacters|Int32|Indicates the minimum number of lower case characters required for device password. Valid values 1 to 16|
 |passwordMinimumNonLetterCharacters|Int32|Indicates the minimum number of non-letter characters required for device password. Valid values 1 to 16|
 |passwordMinimumNumericCharacters|Int32|Indicates the minimum number of numeric characters required for device password. Valid values 1 to 16|
 |passwordMinimumSymbolCharacters|Int32|Indicates the minimum number of symbol characters required for device password. Valid values 1 to 16|
-|passwordMinimumUpperCaseCharacters|Int32|Indicates the minimum number of upper caseletter characters required for device password. Valid values 1 to 16|
-|passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Milliseconds of inactivity before the screen times out.|
+|passwordMinimumUpperCaseCharacters|Int32|Indicates the minimum number of upper case letter characters required for device password. Valid values 1 to 16|
+|passwordMinutesOfInactivityBeforeScreenTimeout|Int32|Minutes of inactivity before the screen times out.|
 |passwordPreviousPasswordCountToBlock|Int32|Indicates the length of password history, where the user will not be able to enter a new password that is the same as any password in the history. Valid values 0 to 24|
 |passwordRequiredType|[androidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|Indicates the minimum password quality required on the device. Possible values are: `deviceDefault`, `required`, `numeric`, `numericComplex`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `customPassword`.|
 |passwordSignInFailureCountBeforeFactoryReset|Int32|Indicates the number of times a user can enter an incorrect password before the device is wiped. Valid values 4 to 11|
@@ -131,6 +159,20 @@ The following table shows the properties that are required when you create the [
 |vpnAlwaysOnPackageIdentifier|String|Android app package name for app that will handle an always-on VPN connection.|
 |wifiBlockEditConfigurations|Boolean|Indicates whether or not to block the user from editing the wifi connection settings.|
 |wifiBlockEditPolicyDefinedConfigurations|Boolean|Indicates whether or not to block the user from editing just the networks defined by the policy.|
+|personalProfileAppsAllowInstallFromUnknownSources|Boolean|Indicates whether the user can install apps from unknown sources on the personal profile.|
+|personalProfileCameraBlocked|Boolean|Indicates whether to disable the use of the camera on the personal profile.|
+|personalProfileScreenCaptureBlocked|Boolean|Indicates whether to disable the capability to take screenshots on the personal profile.|
+|workProfilePasswordExpirationDays|Int32|Indicates the number of days that a work profile password can be set before it expires and a new password will be required. Valid values 1 to 365|
+|workProfilePasswordMinimumLength|Int32|Indicates the minimum length of the work profile password. Valid values 4 to 16|
+|workProfilePasswordMinimumNumericCharacters|Int32|Indicates the minimum number of numeric characters required for the work profile password. Valid values 1 to 16|
+|workProfilePasswordMinimumNonLetterCharacters|Int32|Indicates the minimum number of non-letter characters required for the work profile password. Valid values 1 to 16|
+|workProfilePasswordMinimumLetterCharacters|Int32|Indicates the minimum number of letter characters required for the work profile password. Valid values 1 to 16|
+|workProfilePasswordMinimumLowerCaseCharacters|Int32|Indicates the minimum number of lower-case characters required for the work profile password. Valid values 1 to 16|
+|workProfilePasswordMinimumUpperCaseCharacters|Int32|Indicates the minimum number of upper-case letter characters required for the work profile password. Valid values 1 to 16|
+|workProfilePasswordMinimumSymbolCharacters|Int32|Indicates the minimum number of symbol characters required for the work profile password. Valid values 1 to 16|
+|workProfilePasswordPreviousPasswordCountToBlock|Int32|Indicates the length of the work profile password history, where the user will not be able to enter a new password that is the same as any password in the history. Valid values 0 to 24|
+|workProfilePasswordSignInFailureCountBeforeFactoryReset|Int32|Indicates the number of times a user can enter an incorrect work profile password before the device is wiped. Valid values 4 to 11|
+|workProfilePasswordRequiredType|[androidDeviceOwnerRequiredPasswordType](../resources/intune-deviceconfig-androiddeviceownerrequiredpasswordtype.md)|Indicates the minimum password quality required on the work profile password. Possible values are: `deviceDefault`, `required`, `numeric`, `numericComplex`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `customPassword`.|
 
 
 
@@ -144,7 +186,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 4467
+Content-length: 7313
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -187,6 +229,14 @@ Content-length: 4467
   "cellularBlockWiFiTethering": true,
   "certificateCredentialConfigurationDisabled": true,
   "microsoftLauncherConfigurationEnabled": true,
+  "microsoftLauncherCustomWallpaperEnabled": true,
+  "microsoftLauncherCustomWallpaperImageUrl": "https://example.com/microsoftLauncherCustomWallpaperImageUrl/",
+  "microsoftLauncherCustomWallpaperAllowUserModification": true,
+  "microsoftLauncherFeedEnabled": true,
+  "microsoftLauncherFeedAllowUserModification": true,
+  "microsoftLauncherDockPresenceConfiguration": "show",
+  "microsoftLauncherDockPresenceAllowUserModification": true,
+  "microsoftLauncherSearchBarPlacementConfiguration": "top",
   "enrollmentProfile": "dedicatedDevice",
   "dataRoamingBlocked": true,
   "dateTimeConfigurationBlocked": true,
@@ -199,6 +249,11 @@ Content-length: 4467
     "proxyAutoConfigURL": "Proxy Auto Config URL value"
   },
   "googleAccountsBlocked": true,
+  "kioskCustomizationDeviceSettingsBlocked": true,
+  "kioskCustomizationPowerButtonActionsBlocked": true,
+  "kioskCustomizationStatusBar": "notificationsAndSystemInfoEnabled",
+  "kioskCustomizationSystemErrorWarnings": true,
+  "kioskCustomizationSystemNavigation": "navigationEnabled",
   "kioskModeScreenSaverConfigurationEnabled": true,
   "kioskModeScreenSaverImageUrl": "https://example.com/kioskModeScreenSaverImageUrl/",
   "kioskModeScreenSaverDisplayTimeInSeconds": 8,
@@ -221,6 +276,46 @@ Content-length: 4467
   "kioskModeWiFiConfigurationEnabled": true,
   "kioskModeFlashlightConfigurationEnabled": true,
   "kioskModeMediaVolumeConfigurationEnabled": true,
+  "kioskModeShowDeviceInfo": true,
+  "kioskModeManagedSettingsEntryDisabled": true,
+  "kioskModeDebugMenuEasyAccessEnabled": true,
+  "kioskModeShowAppNotificationBadge": true,
+  "kioskModeScreenOrientation": "portrait",
+  "kioskModeIconSize": "smallest",
+  "kioskModeFolderIcon": "darkSquare",
+  "kioskModeWifiAllowedSsids": [
+    "Kiosk Mode Wifi Allowed Ssids value"
+  ],
+  "kioskModeAppOrderEnabled": true,
+  "kioskModeAppsInFolderOrderedByName": true,
+  "kioskModeGridHeight": 3,
+  "kioskModeGridWidth": 2,
+  "kioskModeLockHomeScreen": true,
+  "kioskModeManagedFolders": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeManagedFolder",
+      "folderName": "Folder Name value",
+      "folderIdentifier": "Folder Identifier value",
+      "items": [
+        {
+          "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeWeblink",
+          "label": "Label value",
+          "link": "Link value"
+        }
+      ]
+    }
+  ],
+  "kioskModeAppPositions": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeAppPositionItem",
+      "position": 8,
+      "item": {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeWeblink",
+        "label": "Label value",
+        "link": "Link value"
+      }
+    }
+  ],
   "microphoneForceMute": true,
   "networkEscapeHatchAllowed": true,
   "nfcBlockOutgoingBeam": true,
@@ -262,7 +357,21 @@ Content-length: 4467
   "vpnAlwaysOnLockdownMode": true,
   "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
   "wifiBlockEditConfigurations": true,
-  "wifiBlockEditPolicyDefinedConfigurations": true
+  "wifiBlockEditPolicyDefinedConfigurations": true,
+  "personalProfileAppsAllowInstallFromUnknownSources": true,
+  "personalProfileCameraBlocked": true,
+  "personalProfileScreenCaptureBlocked": true,
+  "workProfilePasswordExpirationDays": 1,
+  "workProfilePasswordMinimumLength": 0,
+  "workProfilePasswordMinimumNumericCharacters": 11,
+  "workProfilePasswordMinimumNonLetterCharacters": 13,
+  "workProfilePasswordMinimumLetterCharacters": 10,
+  "workProfilePasswordMinimumLowerCaseCharacters": 13,
+  "workProfilePasswordMinimumUpperCaseCharacters": 13,
+  "workProfilePasswordMinimumSymbolCharacters": 10,
+  "workProfilePasswordPreviousPasswordCountToBlock": 15,
+  "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
+  "workProfilePasswordRequiredType": "required"
 }
 ```
 
@@ -271,7 +380,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4639
+Content-Length: 7485
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -317,6 +426,14 @@ Content-Length: 4639
   "cellularBlockWiFiTethering": true,
   "certificateCredentialConfigurationDisabled": true,
   "microsoftLauncherConfigurationEnabled": true,
+  "microsoftLauncherCustomWallpaperEnabled": true,
+  "microsoftLauncherCustomWallpaperImageUrl": "https://example.com/microsoftLauncherCustomWallpaperImageUrl/",
+  "microsoftLauncherCustomWallpaperAllowUserModification": true,
+  "microsoftLauncherFeedEnabled": true,
+  "microsoftLauncherFeedAllowUserModification": true,
+  "microsoftLauncherDockPresenceConfiguration": "show",
+  "microsoftLauncherDockPresenceAllowUserModification": true,
+  "microsoftLauncherSearchBarPlacementConfiguration": "top",
   "enrollmentProfile": "dedicatedDevice",
   "dataRoamingBlocked": true,
   "dateTimeConfigurationBlocked": true,
@@ -329,6 +446,11 @@ Content-Length: 4639
     "proxyAutoConfigURL": "Proxy Auto Config URL value"
   },
   "googleAccountsBlocked": true,
+  "kioskCustomizationDeviceSettingsBlocked": true,
+  "kioskCustomizationPowerButtonActionsBlocked": true,
+  "kioskCustomizationStatusBar": "notificationsAndSystemInfoEnabled",
+  "kioskCustomizationSystemErrorWarnings": true,
+  "kioskCustomizationSystemNavigation": "navigationEnabled",
   "kioskModeScreenSaverConfigurationEnabled": true,
   "kioskModeScreenSaverImageUrl": "https://example.com/kioskModeScreenSaverImageUrl/",
   "kioskModeScreenSaverDisplayTimeInSeconds": 8,
@@ -351,6 +473,46 @@ Content-Length: 4639
   "kioskModeWiFiConfigurationEnabled": true,
   "kioskModeFlashlightConfigurationEnabled": true,
   "kioskModeMediaVolumeConfigurationEnabled": true,
+  "kioskModeShowDeviceInfo": true,
+  "kioskModeManagedSettingsEntryDisabled": true,
+  "kioskModeDebugMenuEasyAccessEnabled": true,
+  "kioskModeShowAppNotificationBadge": true,
+  "kioskModeScreenOrientation": "portrait",
+  "kioskModeIconSize": "smallest",
+  "kioskModeFolderIcon": "darkSquare",
+  "kioskModeWifiAllowedSsids": [
+    "Kiosk Mode Wifi Allowed Ssids value"
+  ],
+  "kioskModeAppOrderEnabled": true,
+  "kioskModeAppsInFolderOrderedByName": true,
+  "kioskModeGridHeight": 3,
+  "kioskModeGridWidth": 2,
+  "kioskModeLockHomeScreen": true,
+  "kioskModeManagedFolders": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeManagedFolder",
+      "folderName": "Folder Name value",
+      "folderIdentifier": "Folder Identifier value",
+      "items": [
+        {
+          "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeWeblink",
+          "label": "Label value",
+          "link": "Link value"
+        }
+      ]
+    }
+  ],
+  "kioskModeAppPositions": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeAppPositionItem",
+      "position": 8,
+      "item": {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeWeblink",
+        "label": "Label value",
+        "link": "Link value"
+      }
+    }
+  ],
   "microphoneForceMute": true,
   "networkEscapeHatchAllowed": true,
   "nfcBlockOutgoingBeam": true,
@@ -392,9 +554,24 @@ Content-Length: 4639
   "vpnAlwaysOnLockdownMode": true,
   "vpnAlwaysOnPackageIdentifier": "Vpn Always On Package Identifier value",
   "wifiBlockEditConfigurations": true,
-  "wifiBlockEditPolicyDefinedConfigurations": true
+  "wifiBlockEditPolicyDefinedConfigurations": true,
+  "personalProfileAppsAllowInstallFromUnknownSources": true,
+  "personalProfileCameraBlocked": true,
+  "personalProfileScreenCaptureBlocked": true,
+  "workProfilePasswordExpirationDays": 1,
+  "workProfilePasswordMinimumLength": 0,
+  "workProfilePasswordMinimumNumericCharacters": 11,
+  "workProfilePasswordMinimumNonLetterCharacters": 13,
+  "workProfilePasswordMinimumLetterCharacters": 10,
+  "workProfilePasswordMinimumLowerCaseCharacters": 13,
+  "workProfilePasswordMinimumUpperCaseCharacters": 13,
+  "workProfilePasswordMinimumSymbolCharacters": 10,
+  "workProfilePasswordPreviousPasswordCountToBlock": 15,
+  "workProfilePasswordSignInFailureCountBeforeFactoryReset": 7,
+  "workProfilePasswordRequiredType": "required"
 }
 ```
+
 
 
 

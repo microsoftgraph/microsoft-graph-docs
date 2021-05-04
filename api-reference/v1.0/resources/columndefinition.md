@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ColumnDefinition
 localization_priority: Normal
@@ -42,6 +41,7 @@ Here is a JSON representation of a ColumnDefinition resource.
   "currency": { "@odata.type": "microsoft.graph.currencyColumn" },
   "dateTime": { "@odata.type": "microsoft.graph.dateTimeColumn" },
   "defaultValue": { "@odata.type": "microsoft.graph.defaultColumnValue" },
+  "geolocation": { "@odata.type": "microsoft.graph.geolocationColumn" },
   "lookup": { "@odata.type": "microsoft.graph.lookupColumn" },
   "number": { "@odata.type": "microsoft.graph.numberColumn" },
   "personOrGroup": { "@odata.type": "microsoft.graph.personOrGroupColumn" },
@@ -78,6 +78,7 @@ These properties are mutually exclusive -- a column can only have one of them sp
 | **currency**      | [currencyColumn][]      | This column stores currency values.
 | **dateTime**      | [dateTimeColumn][]      | This column stores DateTime values.
 | **defaultValue**  | [defaultColumnValue][]  | The default value for this column.
+| **geolocation**   | [geolocationColumn][]   | This column stores a geolocation.
 | **lookup**        | [lookupColumn][]        | This column's data is looked up from another source in the site.
 | **number**        | [numberColumn][]        | This column stores number values.
 | **personOrGroup** | [personOrGroupColumn][] | This column stores Person or Group values.
@@ -99,6 +100,7 @@ To see them when showing **field** values on [listItems][listItem], include the 
 [currencyColumn]: currencycolumn.md
 [dateTimeColumn]: datetimecolumn.md
 [defaultColumnValue]: defaultcolumnvalue.md
+[geolocationColumn]: geolocationcolumn.md
 [lookupColumn]: lookupcolumn.md
 [numberColumn]: numbercolumn.md
 [personOrGroupColumn]: personorgroupcolumn.md
@@ -107,7 +109,7 @@ To see them when showing **field** values on [listItems][listItem], include the 
 [fields]: fieldvalueset.md
 [listItem]: listitem.md
 
-[SPFieldType]: https://msdn.microsoft.com/library/microsoft.sharepoint.spfieldtype.aspx
+[SPFieldType]: /previous-versions/office/sharepoint-server/ms428806(v=office.15)
 
 <!-- {
   "type": "#page.annotation",

@@ -1,6 +1,5 @@
 ---
 author: learafa
-ms.author: learafa
 title: Grant permission
 description: Grant a list of users access to use the specified link
 localization_priority: Normal
@@ -78,7 +77,7 @@ This example grants the users john@contoso.com and ryan@external.com access to a
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "permission-grant", "scopes": "files.readwrite", "target": "action" } -->
 
-```json
+```http
 POST https://graph.microsoft.com/v1.0/shares/{encoded-sharing-url}/permission/grant
 Content-type: application/json
 
@@ -117,7 +116,7 @@ Content-type: application/json
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -140,7 +139,7 @@ Content-type: application/json
 }
 ```
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 If the link is an [existing access](../resources/permission.md) link, additional permissions will be returned representing the following:
 
@@ -149,7 +148,7 @@ If the link is an [existing access](../resources/permission.md) link, additional
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -205,7 +204,7 @@ Content-type: application/json
 
 ```
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 
 
@@ -221,3 +220,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": "Sharing/Add permissions"
 } -->
+

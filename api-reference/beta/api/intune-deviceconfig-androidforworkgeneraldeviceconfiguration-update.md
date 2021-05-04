@@ -3,7 +3,7 @@ title: "Update androidForWorkGeneralDeviceConfiguration"
 description: "Update the properties of a androidForWorkGeneralDeviceConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -20,7 +20,7 @@ Update the properties of a [androidForWorkGeneralDeviceConfiguration](../resourc
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -61,7 +61,9 @@ The following table shows the properties that are required when you create the [
 |description|String|Admin provided description of the Device Configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
+|passwordBlockFaceUnlock|Boolean|Indicates whether or not to block face unlock.|
 |passwordBlockFingerprintUnlock|Boolean|Indicates whether or not to block fingerprint unlock.|
+|passwordBlockIrisUnlock|Boolean|Indicates whether or not to block iris unlock.|
 |passwordBlockTrustAgents|Boolean|Indicates whether or not to block Smart Lock and other trust agents.|
 |passwordExpirationDays|Int32|Number of days before the password expires. Valid values 1 to 365|
 |passwordMinimumLength|Int32|Minimum length of passwords. Valid values 4 to 16|
@@ -79,7 +81,9 @@ The following table shows the properties that are required when you create the [
 |workProfileBlockCrossProfileContactsSearch|Boolean|Block work profile contacts availability in personal profile.|
 |workProfileBlockCrossProfileCopyPaste|Boolean|Boolean that indicates if the setting disallow cross profile copy/paste is enabled.|
 |workProfileDefaultAppPermissionPolicy|[androidForWorkDefaultAppPermissionPolicyType](../resources/intune-deviceconfig-androidforworkdefaultapppermissionpolicytype.md)|Type of password that is required. Possible values are: `deviceDefault`, `prompt`, `autoGrant`, `autoDeny`.|
+|workProfilePasswordBlockFaceUnlock|Boolean|Indicates whether or not to block face unlock for work profile.|
 |workProfilePasswordBlockFingerprintUnlock|Boolean|Indicates whether or not to block fingerprint unlock for work profile.|
+|workProfilePasswordBlockIrisUnlock|Boolean|Indicates whether or not to block iris unlock for work profile.|
 |workProfilePasswordBlockTrustAgents|Boolean|Indicates whether or not to block Smart Lock and other trust agents for work profile.|
 |workProfilePasswordExpirationDays|Int32|Number of days before the work profile password expires. Valid values 1 to 365|
 |workProfilePasswordMinimumLength|Int32|Minimum length of work profile password. Valid values 4 to 16|
@@ -112,7 +116,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 2913
+Content-length: 3079
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkGeneralDeviceConfiguration",
@@ -144,7 +148,9 @@ Content-length: 2913
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "passwordBlockFaceUnlock": true,
   "passwordBlockFingerprintUnlock": true,
+  "passwordBlockIrisUnlock": true,
   "passwordBlockTrustAgents": true,
   "passwordExpirationDays": 6,
   "passwordMinimumLength": 5,
@@ -162,7 +168,9 @@ Content-length: 2913
   "workProfileBlockCrossProfileContactsSearch": true,
   "workProfileBlockCrossProfileCopyPaste": true,
   "workProfileDefaultAppPermissionPolicy": "prompt",
+  "workProfilePasswordBlockFaceUnlock": true,
   "workProfilePasswordBlockFingerprintUnlock": true,
+  "workProfilePasswordBlockIrisUnlock": true,
   "workProfilePasswordBlockTrustAgents": true,
   "workProfilePasswordExpirationDays": 1,
   "workProfilePasswordMinimumLength": 0,
@@ -190,7 +198,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3085
+Content-Length: 3251
 
 {
   "@odata.type": "#microsoft.graph.androidForWorkGeneralDeviceConfiguration",
@@ -225,7 +233,9 @@ Content-Length: 3085
   "description": "Description value",
   "displayName": "Display Name value",
   "version": 7,
+  "passwordBlockFaceUnlock": true,
   "passwordBlockFingerprintUnlock": true,
+  "passwordBlockIrisUnlock": true,
   "passwordBlockTrustAgents": true,
   "passwordExpirationDays": 6,
   "passwordMinimumLength": 5,
@@ -243,7 +253,9 @@ Content-Length: 3085
   "workProfileBlockCrossProfileContactsSearch": true,
   "workProfileBlockCrossProfileCopyPaste": true,
   "workProfileDefaultAppPermissionPolicy": "prompt",
+  "workProfilePasswordBlockFaceUnlock": true,
   "workProfilePasswordBlockFingerprintUnlock": true,
+  "workProfilePasswordBlockIrisUnlock": true,
   "workProfilePasswordBlockTrustAgents": true,
   "workProfilePasswordExpirationDays": 1,
   "workProfilePasswordMinimumLength": 0,
@@ -265,6 +277,7 @@ Content-Length: 3085
   "workProfileBlockPersonalAppInstallsFromUnknownSources": true
 }
 ```
+
 
 
 

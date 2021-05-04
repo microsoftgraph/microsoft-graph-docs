@@ -3,7 +3,7 @@ title: "List complianceManagementPartners"
 description: "List properties and relationships of the complianceManagementPartner objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -20,11 +20,11 @@ List properties and relationships of the [complianceManagementPartner](../resour
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1490
+Content-Length: 2510
 
 {
   "value": [
@@ -78,7 +78,10 @@ Content-Length: 1490
         {
           "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
           "target": {
-            "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+            "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+            "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+            "deviceAndAppManagementAssignmentFilterType": "include",
+            "collectionId": "Collection Id value"
           }
         }
       ],
@@ -86,7 +89,10 @@ Content-Length: 1490
         {
           "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
           "target": {
-            "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+            "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+            "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+            "deviceAndAppManagementAssignmentFilterType": "include",
+            "collectionId": "Collection Id value"
           }
         }
       ],
@@ -94,7 +100,10 @@ Content-Length: 1490
         {
           "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
           "target": {
-            "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+            "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+            "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+            "deviceAndAppManagementAssignmentFilterType": "include",
+            "collectionId": "Collection Id value"
           }
         }
       ],
@@ -102,7 +111,10 @@ Content-Length: 1490
         {
           "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
           "target": {
-            "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+            "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+            "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
+            "deviceAndAppManagementAssignmentFilterType": "include",
+            "collectionId": "Collection Id value"
           }
         }
       ]
@@ -110,6 +122,7 @@ Content-Length: 1490
   ]
 }
 ```
+
 
 
 

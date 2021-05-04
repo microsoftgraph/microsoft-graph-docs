@@ -11,12 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const languageProficiency = {
-  displayName: "displayName-value",
-  tag: "tag-value",
-  proficiency: "proficiency-value"
+  allowedAudiences: 'organization'
 };
 
-let res = await client.api('/me/profile/languages/{id}')
+await client.api('/me/profile/languages/{id}')
 	.version('beta')
 	.update(languageProficiency);
 

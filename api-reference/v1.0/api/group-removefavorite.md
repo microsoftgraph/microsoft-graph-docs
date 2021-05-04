@@ -1,6 +1,6 @@
 ---
 title: "group: removeFavorite"
-description: "Remove the group from the list of the current user's favorite groups. Supported for Office 365 Groups only."
+description: "Remove the group from the list of the current user's favorite groups. Supported for Microsoft 365 groups only."
 localization_priority: Normal
 author: "yyuank"
 ms.prod: "groups"
@@ -10,7 +10,8 @@ doc_type: apiPageType
 # group: removeFavorite
 
 Namespace: microsoft.graph
-Remove the group from the list of the current user's favorite groups. Supported for Office 365 Groups only.
+
+Remove the group from the list of the current user's favorite groups. Supported for Microsoft 365 groups only.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -89,3 +90,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

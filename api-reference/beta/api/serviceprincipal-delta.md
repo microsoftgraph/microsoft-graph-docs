@@ -3,8 +3,8 @@ title: "servicePrincipal: delta"
 description: "Get newly created, updated, or deleted service principals without having to perform a full read of the entire resource collection. See Using Delta Query for details."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+ms.prod: "applications"
+author: "sureshja"
 ---
 
 # servicePrincipal: delta
@@ -104,11 +104,15 @@ GET https://graph.microsoft.com/beta/servicePrincipals/delta
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-delta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### Response
->Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>Note: The response object shown here might be shortened for readability.
 <!-- { 
   "blockType": "response",
   "truncated": true,
@@ -159,3 +163,6 @@ Content-type: application/json
   ]
 }
 -->
+
+
+

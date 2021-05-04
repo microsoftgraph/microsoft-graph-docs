@@ -11,12 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const itemPhone = {
-  displayName: "displayName-value",
-  type: "type-value",
-  number: "number-value"
+  type: 'other'
 };
 
-let res = await client.api('/me/profile/phones/{id}')
+await client.api('/users/{userId}/profile/phones/{id}')
 	.version('beta')
 	.update(itemPhone);
 

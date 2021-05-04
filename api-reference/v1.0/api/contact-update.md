@@ -36,7 +36,7 @@ PATCH /users/{id | userPrincipalName}/contactFolders/{id}/contacts/{id}
 A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md). The 
 example below shows one level of nesting, but a contact can be located in a child of a child and so on.
 ```http
-PATCH /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
+PATCH /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
 PATCH /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 ## Request headers
@@ -131,7 +131,7 @@ Content-length: 1977
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -215,3 +215,4 @@ Content-length: 1977
   "suppressions": [
   ]
 }-->
+

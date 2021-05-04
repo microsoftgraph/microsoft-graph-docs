@@ -3,7 +3,7 @@ title: "certificateIssuanceStates enum type"
 description: "Certificate Issuance State Options."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -43,6 +43,7 @@ Certificate Issuance State Options.
 |deleted|20|Not yet documented|
 |renewalRequested|21|Not yet documented|
 |requested|22|Not yet documented|
+
 
 
 

@@ -3,7 +3,7 @@ title: "Get depEnrollmentBaseProfile"
 description: "Read properties and relationships of the depEnrollmentBaseProfile object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -20,11 +20,11 @@ Read properties and relationships of the [depEnrollmentBaseProfile](../resources
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1209
+Content-Length: 1151
 
 {
   "value": {
@@ -78,7 +78,6 @@ Content-Length: 1209
     "isDefault": true,
     "supervisedModeEnabled": true,
     "supportDepartment": "Support Department value",
-    "passCodeDisabled": true,
     "isMandatory": true,
     "locationDisabled": true,
     "supportPhoneNumber": "Support Phone Number value",
@@ -88,7 +87,6 @@ Content-Length: 1209
     "termsAndConditionsDisabled": true,
     "touchIdDisabled": true,
     "applePayDisabled": true,
-    "zoomDisabled": true,
     "siriDisabled": true,
     "diagnosticsDisabled": true,
     "displayToneSetupDisabled": true,
@@ -99,6 +97,7 @@ Content-Length: 1209
   }
 }
 ```
+
 
 
 

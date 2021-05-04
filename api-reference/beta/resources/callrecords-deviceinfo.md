@@ -2,7 +2,7 @@
 title: "deviceInfo resource type"
 description: "The deviceInfo type"
 localization_priority: Normal
-author: "stephenjust"
+author: "williamlooney"
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"
 ---
@@ -90,3 +90,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

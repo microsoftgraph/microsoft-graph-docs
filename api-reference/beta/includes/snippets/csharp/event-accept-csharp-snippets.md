@@ -10,8 +10,8 @@ var comment = "comment-value";
 
 var sendResponse = true;
 
-await graphClient.Me.Events["{id}"]
-	.Accept(sendResponse,comment)
+await graphClient.Me.Events["{event-id}"]
+	.Accept(comment,sendResponse)
 	.Request()
 	.PostAsync();
 

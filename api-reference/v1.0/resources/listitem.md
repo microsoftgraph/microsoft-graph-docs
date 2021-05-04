@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 title: listItem resource
 description: Represents an item in a sharepoint list.
 localization_priority: Priority
@@ -12,7 +11,10 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents an item in a SharePoint **[list][]**.
+Represents an item in a SharePoint [list][].
+
+All items in a SharePoint document library can be represented as a **listItem** or [driveItem][] resource.
+
 Column values in the list are available through the `fieldValueSet` dictionary.
 
 ## Methods
@@ -136,3 +138,4 @@ Here is a JSON representation of a **listItem** resource.
     "ListItem": "#"
   }
 } -->
+

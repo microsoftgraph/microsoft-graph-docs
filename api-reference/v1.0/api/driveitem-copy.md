@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Copy a file or folder
 localization_priority: Normal
@@ -118,3 +117,4 @@ The response from the API will only indicate that the copy operation was accepte
   "suppressions": [
   ]
 } -->
+

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/print/printers/{id}/jobs/{id}/documents/{id}/uploadData')
+await client.api('/print/printers/{id}/jobs/{id}/documents/{id}/uploadData')
 	.version('beta')
 	.post();
 

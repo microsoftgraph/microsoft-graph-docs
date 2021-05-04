@@ -3,7 +3,7 @@ title: "managedDevice resource type"
 description: "Devices that are managed or pre-enrolled through Intune"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -26,8 +26,10 @@ Devices that are managed or pre-enrolled through Intune
 |[enableLostMode action](../api/intune-devices-manageddevice-enablelostmode.md)|None|Enable lost mode|
 |[playLostModeSound action](../api/intune-devices-manageddevice-playlostmodesound.md)|None|Remote lock|
 |[setDeviceName action](../api/intune-devices-manageddevice-setdevicename.md)|None|Set device name of the device.|
+|[activateDeviceEsim action](../api/intune-devices-manageddevice-activatedeviceesim.md)|None|Activate eSIM on the device.|
 |[rotateFileVaultKey action](../api/intune-devices-manageddevice-rotatefilevaultkey.md)|None|Not yet documented|
 |[getFileVaultKey function](../api/intune-devices-manageddevice-getfilevaultkey.md)|String|Not yet documented|
+|[createDeviceLogCollectionRequest action](../api/intune-devices-manageddevice-createdevicelogcollectionrequest.md)|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md)|Not yet documented|
 |[retire action](../api/intune-devices-manageddevice-retire.md)|None|Retire a device|
 |[wipe action](../api/intune-devices-manageddevice-wipe.md)|None|Wipe a device|
 |[resetPasscode action](../api/intune-devices-manageddevice-resetpasscode.md)|None|Reset passcode|
@@ -66,17 +68,17 @@ Devices that are managed or pre-enrolled through Intune
 |lastSyncDateTime|DateTimeOffset|The date and time that the device last completed a successful sync with Intune. This property is read-only.|
 |chassisType|[chassisType](../resources/intune-devices-chassistype.md)|Chassis type of the device. This property is read-only. Possible values are: `unknown`, `desktop`, `laptop`, `worksWorkstation`, `enterpriseServer`, `phone`, `tablet`, `mobileOther`, `mobileUnknown`.|
 |operatingSystem|String|Operating system of the device. Windows, iOS, etc. This property is read-only.|
-|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|Platform of the device. This property is read-only. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `blackberry`, `palm`, `unknown`.|
+|deviceType|[deviceType](../resources/intune-shared-devicetype.md)|Platform of the device. This property is read-only. Possible values are: `desktop`, `windowsRT`, `winMO6`, `nokia`, `windowsPhone`, `mac`, `winCE`, `winEmbedded`, `iPhone`, `iPad`, `iPod`, `android`, `iSocConsumer`, `unix`, `macMDM`, `holoLens`, `surfaceHub`, `androidForWork`, `androidEnterprise`, `windows10x`, `androidnGMS`, `linux`, `blackberry`, `palm`, `unknown`, `cloudPC`.|
 |complianceState|[complianceState](../resources/intune-devices-compliancestate.md)|Compliance state of the device. This property is read-only. Possible values are: `unknown`, `compliant`, `noncompliant`, `conflict`, `error`, `inGracePeriod`, `configManager`.|
 |jailBroken|String|whether the device is jail broken or rooted. This property is read-only.|
-|managementAgent|[managementAgentType](../resources/intune-shared-managementagenttype.md)|Management channel of the device. Intune, EAS, etc. This property is read-only. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`, `windowsManagementCloudApi`.|
+|managementAgent|[managementAgentType](../resources/intune-shared-managementagenttype.md)|Management channel of the device. Intune, EAS, etc. This property is read-only. Possible values are: `eas`, `mdm`, `easMdm`, `intuneClient`, `easIntuneClient`, `configurationManagerClient`, `configurationManagerClientMdm`, `configurationManagerClientMdmEas`, `unknown`, `jamf`, `googleCloudDevicePolicyController`, `microsoft365ManagedMdm`, `msSense`.|
 |osVersion|String|Operating system version of the device. This property is read-only.|
 |easActivated|Boolean|Whether the device is Exchange ActiveSync activated. This property is read-only.|
 |easDeviceId|String|Exchange ActiveSync Id of the device. This property is read-only.|
 |easActivationDateTime|DateTimeOffset|Exchange ActivationSync activation time of the device. This property is read-only.|
 |aadRegistered|Boolean|Whether the device is Azure Active Directory registered. This property is read-only.|
 |azureADRegistered|Boolean|Whether the device is Azure Active Directory registered. This property is read-only.|
-|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Enrollment type of the device. This property is read-only. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`, `appleUserEnrollment`, `appleUserEnrollmentWithServiceAccount`, `azureAdJoinUsingAzureVmExtension`, `androidEnterpriseDedicatedDevice`, `androidEnterpriseFullyManaged`, `androidEnterpriseCorporateWorkProfile`.|
+|deviceEnrollmentType|[deviceEnrollmentType](../resources/intune-shared-deviceenrollmenttype.md)|Enrollment type of the device. This property is read-only. Possible values are: `unknown`, `userEnrollment`, `deviceEnrollmentManager`, `appleBulkWithUser`, `appleBulkWithoutUser`, `windowsAzureADJoin`, `windowsBulkUserless`, `windowsAutoEnrollment`, `windowsBulkAzureDomainJoin`, `windowsCoManagement`, `windowsAzureADJoinUsingDeviceAuth`, `appleUserEnrollment`, `appleUserEnrollmentWithServiceAccount`, `azureAdJoinUsingAzureVmExtension`, `androidEnterpriseDedicatedDevice`, `androidEnterpriseFullyManaged`, `androidEnterpriseCorporateWorkProfile`.|
 |lostModeState|[lostModeState](../resources/intune-devices-lostmodestate.md)|Indicates if Lost mode is enabled or disabled. This property is read-only. Possible values are: `disabled`, `enabled`.|
 |activationLockBypassCode|String|Code that allows the Activation Lock on a device to be bypassed. This property is read-only.|
 |emailAddress|String|Email(s) for the user associated with the device. This property is read-only.|
@@ -129,6 +131,8 @@ Devices that are managed or pre-enrolled through Intune
 |specificationVersion|String|Specification version. This property is read-only.|
 |joinType|[joinType](../resources/intune-devices-jointype.md)|Device join type. Possible values are: `unknown`, `azureADJoined`, `azureADRegistered`, `hybridAzureADJoined`.|
 |skuFamily|String|Device sku family|
+|skuNumber|Int32|Device sku number, see also: https://docs.microsoft.com/windows/win32/api/sysinfoapi/nf-sysinfoapi-getproductinfo. Valid values 0 to 2147483647. This property is read-only.|
+|managementFeatures|[managedDeviceManagementFeatures](../resources/intune-devices-manageddevicemanagementfeatures.md)|Device management features. Possible values are: `none`, `microsoftManagedDesktop`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -137,6 +141,7 @@ Devices that are managed or pre-enrolled through Intune
 |deviceCategory|[deviceCategory](../resources/intune-shared-devicecategory.md)|Device category|
 |windowsProtectionState|[windowsProtectionState](../resources/intune-devices-windowsprotectionstate.md)|The device protection status.|
 |users|[user](../resources/intune-shared-user.md) collection|The primary users associated with the managed device.|
+|logCollectionRequests|[deviceLogCollectionResponse](../resources/intune-devices-devicelogcollectionresponse.md) collection|List of log collection requests|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -168,6 +173,9 @@ Here is a JSON representation of the resource.
     "operatingSystemLanguage": "String",
     "isSupervised": true,
     "isEncrypted": true,
+    "batterySerialNumber": "String",
+    "batteryHealthPercentage": 1024,
+    "batteryChargeCycles": 1024,
     "isSharedDevice": true,
     "sharedDeviceCachedUsers": [
       {
@@ -185,7 +193,13 @@ Here is a JSON representation of the resource.
     "deviceGuardVirtualizationBasedSecurityState": "String",
     "deviceGuardLocalSystemAuthorityCredentialGuardState": "String",
     "osBuildNumber": "String",
-    "operatingSystemProductType": 1024
+    "operatingSystemProductType": 1024,
+    "ipAddressV4": "String",
+    "subnetAddress": "String",
+    "esimIdentifier": "String",
+    "systemManagementBIOSVersion": "String",
+    "tpmManufacturer": "String",
+    "tpmVersion": "String"
   },
   "ownerType": "String",
   "managedDeviceOwnerType": "String",
@@ -326,9 +340,12 @@ Here is a JSON representation of the resource.
   "processorArchitecture": "String",
   "specificationVersion": "String",
   "joinType": "String",
-  "skuFamily": "String"
+  "skuFamily": "String",
+  "skuNumber": 1024,
+  "managementFeatures": "String"
 }
 ```
+
 
 
 

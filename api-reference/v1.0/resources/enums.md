@@ -7,8 +7,364 @@ author: "MSGraphDocsvTeam"
 doc_type: enumPageType
 ---
 
+# Enum values
 
 Namespace: microsoft.graph
+
+### consentRequestFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|reviewer|
+|unknownFutureValue|
+### externalEmailOtpState values
+
+|Member|
+|:---|
+|default|
+|enabled|
+|disabled|
+|unknownFutureValue|
+
+### authenticatorAppContextType values
+
+|Member|
+|:---|
+|location|
+|app|
+
+### fido2RestrictionEnforcementType values
+
+|Member|
+|:---|
+|allow|
+|block|
+
+### attestationLevel values
+
+|Member|
+|:---|
+|attested|
+|notAttested|
+
+### authenticationMethodTargetType values
+
+|Member|
+|:---|
+|user|
+|group|
+
+### authenticationMethodState values
+
+|Member|
+|:---|
+|enabled|
+|disabled|
+
+### microsoftAuthenticatorAuthenticationMode values
+
+|Member|
+|:---|
+|any|
+|push|
+|deviceBasedPush|
+
+### keyStrength values
+
+|Member|
+|:---|
+|normal|
+|weak|
+|unknown|
+
+### authenticationMethodKeyStrength values
+
+|Member|
+|:---|
+|normal|
+|weak|
+|unknown|
+
+### authenticatorAppFeatureSettings values
+
+|Member|
+|:---|
+|requireNumberMatching|
+|unknownFutureValue|
+
+### allowInvitesFrom values
+
+|Member|
+|:---|
+|none|
+|adminsAndGuestInviters|
+|adminsGuestInvitersAndAllMembers|
+|everyone|
+|unknownFutureValue|
+
+### dataPolicyOperationStatus values
+
+|Member|
+|:---|
+|notStarted|
+|running|
+|complete|
+|failed|
+|unknownFutureValue|
+
+### conditionalAccessDevicePlatform values
+
+| Member       |
+|:--------------|
+|android|
+|iOS|
+|windows|
+|windowsPhone|
+|macOS|
+|all|
+|unknownFutureValue|
+
+### signinFrequencyType values
+
+| Member       |
+|:--------------|
+|days|
+|hours|
+
+### persistentBrowserSessionMode values
+
+| Member       |
+|:--------------|
+|always|
+|never|
+
+### cloudAppSecuritySessionControlType values
+
+| Member       |
+|:--------------|
+|mcasConfigured|
+|monitorOnly|
+|blockDownloads|
+|unknownFutureValue|
+
+### conditionalAccessGrantControl values
+
+| Member       |
+|:--------------|
+|block|
+|mfa|
+|compliantDevice|
+|domainJoinedDevice|
+|approvedApplication|
+|compliantApplication|
+|passwordChange|
+|unknownFutureValue|
+
+### conditionalAccessClientApp values
+
+|Member|
+|:---|
+|all|
+|browser|
+|mobileAppsAndDesktopClients|
+|exchangeActiveSync|
+|easSupported|
+|other|
+|unknownFutureValue|
+
+### conditionalAccessPolicyState values
+
+|Member|
+|:---|
+|enabled|
+|disabled|
+|enabledForReportingButNotEnforced|
+
+#### deviceProfileType values
+|Member|
+|:---|
+|RegisteredDevice|
+|SecureVM|
+|Printer|
+|Shared|
+|IoT|
+
+### appliedConditionalAccessPolicyResult values 
+
+|Member|
+|:---|
+|success|
+|failure|
+|notApplied|
+|notEnabled|
+|unknown|
+|unknownFutureValue|
+
+### groupType values 
+
+|Member|
+|:---|
+|unifiedGroups|
+|azureAD|
+|unknownFutureValue|
+
+### conditionalAccessStatus values
+
+|Member|
+|:---|
+|success|
+|failure|
+|notApplied|
+|unknownFutureValue|
+
+### operationResult values
+
+|Member|
+|:---|
+|success|
+|failure|
+|timeout|
+|unknownFutureValue|
+
+### tone values
+
+|Member|
+|:---|
+|tone0|
+|tone1|
+|tone2|
+|tone3|
+|tone4|
+|tone5|
+|tone6|
+|tone7|
+|tone8|
+|tone9|
+|star|
+|pound|
+|a|
+|b|
+|c|
+|d|
+|flash|
+
+### mediaState values
+
+|Member|
+|:---|
+|active|
+|inactive|
+|unknownFutureValue|
+
+### basicStatus values
+
+|Member|
+|:---|
+|active|
+|inactive|
+
+### callState values
+
+|Member|
+|:---|
+|incoming|
+|establishing|
+|ringing|
+|established|
+|hold|
+|transferring|
+|transferAccepted|
+|redirecting|
+|terminating|
+|terminated|
+
+### callType values
+
+|Member|
+|:---|
+|unknown|
+|groupCall|
+|peerToPeer|
+|unknownFutureValue|
+
+### onlineMeetingRole values
+
+|Member|
+|:---|
+|attendee|
+|presenter|
+|unknownFutureValue|
+
+### modality values 
+
+|Member|
+|:---|
+|audio|
+|video|
+|videoBasedScreenSharing|
+|data|
+|screenSharing|
+|unknownFutureValue|
+
+### callDirection values
+
+|Member|
+|:---|
+|incoming|
+|outgoing|
+
+### signInAudience values
+
+|Member|
+|:---|
+|AzureADMyOrg|
+|AzureADMultipleOrgs|
+|AzureADandPersonalMicrosoftAccount|
+|PersonalMicrosoftAccount|
+
+### groupMembershipClaims values
+
+|Member|
+|:---|
+|None|
+|SecurityGroup|
+|All|
+
+### recipientScopeType values
+
+|Member|
+|:---|
+|none|
+|internal|
+|external|
+|externalPartner|
+|externalNonPartner|
+
+### activityType values
+
+|Member|
+|:---|
+|signin|
+|user|
+|unknownFutureValue|
+
+### riskDetectionTimingType values
+
+|Member|
+|:---|
+|notDefined|
+|realtime|
+|nearRealtime|
+|offline|
+|unknownFutureValue|
+
+### tokenIssuerType values
+
+|Member|
+|:---|
+|AzureAD|
+|ADFederationServices|
+|UnknownFutureValue|
 
 ### attachmentType values
 
@@ -314,10 +670,10 @@ Namespace: microsoft.graph
 
 | Member
 |:-----------------
-| NotStarted
-| Running
-| Completed
-| Failed
+|NotStarted
+|Running
+|Completed
+|Failed
 
 
 ### onenotePatchActionType values
@@ -657,17 +1013,20 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### riskDetail values
 
-| Member
-|:-------------------------
-| adminGeneratedTemporaryPassword
-| userPerformedSecuredPasswordChange
-| userPerformedSecuredPasswordReset
-| adminConfirmedSigninSafe
-| aiConfirmedSigninSafe
-| userPassedMFADrivenByRiskBasedPolicy
-| adminDismissedAllRiskForUser
-| adminConfirmedSigninCompromised
-| unknownFutureValue
+|Member|
+|:---|
+|none|
+|adminGeneratedTemporaryPassword|
+|userPerformedSecuredPasswordChange|
+|userPerformedSecuredPasswordReset|
+|adminConfirmedSigninSafe|
+|aiConfirmedSigninSafe|
+|userPassedMFADrivenByRiskBasedPolicy|
+|adminDismissedAllRiskForUser|
+|adminConfirmedSigninCompromised|
+|adminConfirmedUserCompromised|
+|hidden|
+|unknownFutureValue|
 
 ### riskEventTypes values
 
@@ -835,3 +1194,212 @@ Possible values for user account types (group membership), per Windows definitio
 | junk                  | 14    | Blocked due to junk.                |
 | unknownFutureValue    | 15    | A sentinel member.                  |
 
+### chatMessagePolicyViolationDlpActionType values
+
+| Value |
+|:-----------------|
+| none |
+| NotifySender |
+| BlockAccess |
+| BlockAccessExternal |
+
+### chatMessagePolicyViolationUserActionType values
+
+| Member   | Int value |  Description |
+|:---------------|:--------|:----------|
+| None | 0 | Default value. This is the value on a message when the user has not taken an action on the message blocked by DLP. |
+| Override | 1 | Sender has overridden the message verdict and sent the message anyway.|
+| ReportFalsePositive | 2 | Sender has reported the message verdict to the admins as a false positive.|
+
+### chatMessagePolicyViolationVerdictDetailsType values
+
+| Member   | Int value |  Description |
+|:---------------|:--------|:----------|
+| None | 0 |  User is not allowed to override the message. User is not allowed to report a message as false positive if policyTip is not provided. In all other scenarios, user can report a message as false positive.|
+| AllowFalsePositiveOverride | 1 |  User is not allowed to explicitly override the block unless this is combined with `AllowOverrideWithoutJustification` or `AllowOverrideWithJustification` flags. Reporting a false positive on the violation automatically overrides the block and sends the message. |
+| AllowOverrideWithoutJustification | 2 | User is allowed to override the block and send the message. Justification text is not required. Exclusive to `AllowOverrideWithJustification`. |
+| AllowOverrideWithJustification | 4 |  User is allowed to override the block and send the message. Justification text is required. Exclusive to `AllowOverrideWithoutJustification`.|
+
+### channelMembershipType values
+
+| Member             | Value |Description|
+| :----------------- | :---- |:-----------|
+| standard           | 0     |Channel inherits the list of members of the parent team.|
+| private            | 1     |Channel can have members that are a subset of all the members on the parent team.|
+| unknownFutureValue | 2     |      |
+### wellknownListName values
+| Member
+|:----------------------
+| none
+| defaultList
+| flaggedEmails
+| unknownFutureValue
+
+### taskStatus values
+| Member
+|:----------------------
+| notStarted
+| inProgress
+| completed
+| waitingOnOthers
+| deferred
+
+### permissionClassificationType values
+
+| Member
+|:-------
+| low
+
+### permissionType values
+
+| Member
+|:-------------------------
+| application
+| delegated
+| delegatedUserConsentable
+
+### printColorMode values 
+
+|Member|
+|:---|
+|blackAndWhite|
+|grayscale|
+|color|
+|auto|
+|unknownFutureValue|
+
+### printDuplexMode values 
+
+|Member|
+|:---|
+|flipOnLongEdge|
+|flipOnShortEdge|
+|oneSided|
+|unknownFutureValue|
+
+### printerFeedOrientation values 
+
+|Member|
+|:---|
+|longEdgeFirst|
+|shortEdgeFirst|
+|unknownFutureValue|
+
+### printFinishing values 
+
+|Member|
+|:---|
+|none|
+|staple|
+|punch|
+|cover|
+|bind|
+|saddleStitch|
+|stitchEdge|
+|stapleTopLeft|
+|stapleBottomLeft|
+|stapleTopRight|
+|stapleBottomRight|
+|stitchLeftEdge|
+|stitchTopEdge|
+|stitchRightEdge|
+|stitchBottomEdge|
+|stapleDualLeft|
+|stapleDualTop|
+|stapleDualRight|
+|stapleDualBottom|
+|unknownFutureValue|
+
+### printMultipageLayout values 
+
+|Member|
+|:---|
+|clockwiseFromTopLeft|
+|counterclockwiseFromTopLeft|
+|counterclockwiseFromTopRight|
+|clockwiseFromTopRight|
+|counterclockwiseFromBottomLeft|
+|clockwiseFromBottomLeft|
+|counterclockwiseFromBottomRight|
+|clockwiseFromBottomRight|
+|unknownFutureValue|
+
+### printOrientation values 
+
+|Member|
+|:---|
+|portrait|
+|landscape|
+|reverseLandscape|
+|reversePortrait|
+|unknownFutureValue|
+
+### printQuality values 
+
+|Member|
+|:---|
+|low|
+|medium|
+|high|
+|unknownFutureValue|
+
+### printScaling values 
+
+|Member|
+|:---|
+|auto|
+|shrinkToFit|
+|fill|
+|fit|
+|none|
+|unknownFutureValue|
+
+### userFlowType values
+
+|Member
+|:----------------------
+| signUp
+| signIn
+| signUpOrSignIn
+| passwordReset
+| profileUpdate
+| resourceOwner
+| unknownFutureValue
+
+### identityUserFlowAttributeDataType values
+
+| Member                |
+|:----------------------|
+| string                |
+| boolean               |
+| int64                 |
+| stringCollection      |
+| dateTime              |
+| unknownFutureValue    |
+
+### identityUserFlowAttributeType values
+
+| Member                |
+|:----------------------|
+| builtIn               |
+| custom                |
+| required              |
+| unknownFutureValue    |
+
+### identityUserFlowAttributeInputType values
+
+| Member                |
+|:----------------------|
+| textBox               |
+| dateTimeDropDown      |
+| radioSingleSelect     |
+| dropdownSingleSelect  |
+| emailBox              |
+| checkboxMultiSelect   |
+
+### teamworkActivityTopicSource values 
+
+| Member    |
+| :-------- |
+| entityUrl |
+| text      |

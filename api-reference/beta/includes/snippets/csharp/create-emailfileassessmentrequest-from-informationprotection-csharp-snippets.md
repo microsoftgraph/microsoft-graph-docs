@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var threatAssessmentRequest = new EmailFileAssessmentRequest
+var threatAssessmentRequest = new EmailFileAssessmentRequestObject
 {
 	RecipientEmail = "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
 	ExpectedAssessment = ThreatExpectedAssessment.Block,

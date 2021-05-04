@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var supportedTimeZones = await graphClient.Me.Outlook
-	.SupportedTimeZones(microsoft.graph.timeZoneStandard'Iana')
+	.SupportedTimeZones(TimeZoneStandard.Iana)
 	.Request()
 	.GetAsync();
 

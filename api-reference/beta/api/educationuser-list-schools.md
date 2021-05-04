@@ -15,9 +15,6 @@ Namespace: microsoft.graph
 
 Retrieve a list of schools for a user.
 
->[!Note]
->If the delegated token is used, members can only see information about their own schools. Use the `...beta/education/me/schools` resource in this case.
-
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -28,8 +25,13 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                              |
 | Application                            | EduRoster.Read.All, EduRoster.ReadWrite.All |
 
+> [!NOTE]
+> When delegated permissions are used, only educationSchool resources that the authentication user is a member will be returned.
+
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /education/me/schools
 GET /education/users/{id}/schools
@@ -37,7 +39,7 @@ GET /education/users/{id}/schools
 
 ## Optional query parameters
 
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -60,23 +62,33 @@ If successful, this method returns a `200 OK` response code and a collection of 
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
-  "name": "get_schools"
+  "name": "get_schools_3"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/me/schools
 ```
+
 # [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-schools-3-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-schools-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-schools-3-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-schools-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-schools-3-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/get-schools-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-schools-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -85,7 +97,7 @@ GET https://graph.microsoft.com/beta/education/me/schools
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -93,6 +105,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.educationSchool",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json

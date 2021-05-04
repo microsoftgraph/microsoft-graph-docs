@@ -4,7 +4,7 @@ description: "Represents the name, email addresses, and their corresponding emai
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "kevinbellinger"
 ---
 
 # typedEmailAddress resource type
@@ -57,3 +57,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

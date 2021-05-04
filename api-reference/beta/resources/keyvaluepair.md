@@ -19,8 +19,8 @@ Key value pair for action parameters.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|name|String|Name for this key-value pair|
-|value|String|Value for this key-value pair|
+|name|String|Name for this key-value pair. Possible names are: `AdditionalWSFedEndpointCheckResult`,  `AllowedAuthenticationClassReferencesCheckResult`, `AlwaysRequireAuthenticationCheckResult`,   `AutoUpdateEnabledCheckResult`, `ClaimsProviderNameCheckResult`, `EncryptClaimsCheckResult`,  `EncryptedNameIdRequiredCheckResult`, `MonitoringEnabledCheckResult`,`NotBeforeSkewCheckResult`,  `RequestMFAFromClaimsProvidersCheckResult`, `SignedSamlRequestsRequiredCheckResult`, `AdditionalAuthenticationRulesCheckResult`, `TokenLifetimeCheckResult`,  `DelegationAuthorizationRulesCheckResult`, `IssuanceAuthorizationRulesCheckResult`, `IssuanceTransformRulesCheckResult`.|
+|value|String|Value for this key-value pair. Possible result values are `0` (when the validation check passed), `1` (when the validation check failed), or `2` (when the validation check is a warning).|
 
 ## JSON representation
 
@@ -51,3 +51,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

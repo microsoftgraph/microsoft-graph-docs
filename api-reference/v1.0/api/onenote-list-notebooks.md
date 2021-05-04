@@ -30,7 +30,7 @@ GET /groups/{id}/onenote/notebooks
 GET /sites/{id}/onenote/notebooks
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 The default sort order is `name asc`. 
 
@@ -95,17 +95,16 @@ Content-length: 369
   "value": [
     {
       "isDefault": true,
-      "userRole": {
-      },
-      "isShared": true,
-      "sectionsUrl": "sectionsUrl-value",
-      "sectionGroupsUrl": "sectionGroupsUrl-value",
+      "userRole":  "Owner",
+      "isShared": false,
+      "sectionsUrl": "https://graph.microsoft.com/v1.0/users/7d54cb02-aaa3-4016-9f9c-a4b49422dd9b/onenote/notebooks/1-10143016-70dc-4449-b92a-3015225f800d/sections",
+      "sectionGroupsUrl": "https://graph.microsoft.com/v1.0/users/7d54cb02-aaa3-4016-9f9c-a4b49422dd9b/onenote/notebooks/1-10143016-70dc-4449-b92a-3015225f800d/sectionGroups",
       "links": {
         "oneNoteClientUrl": {
-          "href": "href-value"
+          "href": "onenote:https://contoso-my.sharepoint.com/personal/admin_m365x841051_onmicrosoft_com/Documents/Notebooks/My%20Private%20notebook"
         },
         "oneNoteWebUrl": {
-          "href": "href-value"
+          "href": "https://contoso-my.sharepoint.com/personal/admin_m365x841051_onmicrosoft_com/Documents/Notebooks/My%20Private%20notebook"
         }
       }
     }

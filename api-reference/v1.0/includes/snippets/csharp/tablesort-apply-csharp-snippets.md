@@ -27,7 +27,7 @@ var matchCase = true;
 
 var method = "method-value";
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Tables["{id|name}"].Sort
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Sort
 	.Apply(matchCase,method,fields)
 	.Request()
 	.PostAsync();

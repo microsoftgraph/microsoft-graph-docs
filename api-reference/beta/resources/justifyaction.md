@@ -3,7 +3,7 @@ title: "justifyAction resource type"
 description: "Indicates that a justification is required for the specified operation."
 localization_priority: Normal
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 
@@ -47,3 +47,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -4,7 +4,7 @@ description: "Update the synchronization schema for a given job or template. Thi
 localization_priority: Normal
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # Update synchronizationSchema
@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegated (work or school account)     |Directory.ReadWrite.All  |
 |Delegated (personal Microsoft account) |Not supported.|
-|Application                            |Not supported.| 
+|Application                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ## HTTP Request
 <!-- { "blockType": "ignored" } -->
@@ -115,6 +115,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/update-synchronizationschema-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-synchronizationschema-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -142,3 +146,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

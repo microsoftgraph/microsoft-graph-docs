@@ -19,7 +19,7 @@ Represents the media state for a [call](call.md).
 
 | Property            | Type    | Description                                                                    |
 |:--------------------|:--------|:-------------------------------------------------------------------------------|
-| audio           | String  | The audio media state. Possible values are: `active`, `inactive`. |
+| audio           | mediaState  | The audio media state. Possible values are: `active`, `inactive`, `unknownFutureValue`. |
 
 ## JSON representation
 
@@ -47,3 +47,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

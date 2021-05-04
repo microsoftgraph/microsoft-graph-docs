@@ -15,8 +15,8 @@ Namespace: microsoft.graph
 
 Retrieve the simple directory **user** that corresponds to this **educationUser**.
 
->[!Note]
->If the delegated token is used, members can only see information about their own schools. Use the `...beta/education/me/schools` resource in this case.
+> [!NOTE]
+> If the delegated token is used, members can only see information about their own account. Use the `beta/education/me/users` resource in this case.
 
 ## Permissions
 
@@ -29,7 +29,9 @@ A combination of permissions is required to call this API. To learn more, includ
 | Application                            | EduRoster.Read.All, EduRoster.ReadWrite.All plus Directory.Read.All                                       |
 
 ## HTTP request
+
 <!-- { "blockType": "ignored" } -->
+
 ```http
 GET /education/me/user
 GET /education/users/{id}/user
@@ -56,23 +58,33 @@ If successful, this method returns a `200 OK` response code and a [user](../reso
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
-  "name": "get_educationuser"
+  "name": "get_educationuser_1"
 }-->
+
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/education/me/user
 ```
+
 # [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-educationuser-1-csharp-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-educationuser-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-educationuser-1-javascript-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/javascript/get-educationuser-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-educationuser-1-objc-snippets.md)]
 [!INCLUDE [sample-code](../includes/snippets/objc/get-educationuser-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-educationuser-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -81,8 +93,7 @@ GET https://graph.microsoft.com/beta/education/me/user
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
-
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -90,6 +101,7 @@ The following is an example of the response.
   "@odata.type": "microsoft.graph.user",
   "isCollection": false
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -125,3 +137,5 @@ Content-length: 491
   ]
 }
 -->
+
+

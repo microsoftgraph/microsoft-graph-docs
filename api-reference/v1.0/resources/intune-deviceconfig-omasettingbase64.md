@@ -3,7 +3,7 @@ title: "omaSettingBase64 resource type"
 description: "OMA Settings Base64 definition."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -24,7 +24,7 @@ Inherits from [omaSetting](../resources/intune-deviceconfig-omasetting.md)
 |displayName|String|Display Name. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |description|String|Description. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
 |omaUri|String|OMA. Inherited from [omaSetting](../resources/intune-deviceconfig-omasetting.md)|
-|fileName|String|File name associated with the Value property (*.cer | *.crt | *.p7b | *.bin).|
+|fileName|String|File name associated with the Value property (*.cer \| *.crt \| *.p7b \| *.bin).|
 |value|String|Value. (Base64 encoded string)|
 
 ## Relationships
@@ -47,6 +47,8 @@ Here is a JSON representation of the resource.
   "value": "String"
 }
 ```
+
+
 
 
 

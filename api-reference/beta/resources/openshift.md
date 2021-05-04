@@ -46,8 +46,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.openShift",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.openShift"
 }-->
 
 ```json
@@ -67,3 +66,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

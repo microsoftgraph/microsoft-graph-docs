@@ -1,9 +1,9 @@
 ---
 title: "Create User"
 description: "Use this API to create a new User."
-author: "krbain"
+author: "jpettere"
 localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 
@@ -58,7 +58,7 @@ The following table lists the properties that are required when you create a use
 Because the **user** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the user instance while creating it.
 
 >[!NOTE]
->Federated users created using this API will be forced to sign-in every 12 hours by default.  For more information on how to change this, see [Exceptions for token lifetimes](https://docs.microsoft.com/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).
+>Federated users created using this API will be forced to sign-in every 12 hours by default.  For more information on how to change this, see [Exceptions for token lifetimes](/azure/active-directory/develop/active-directory-configurable-token-lifetimes#exceptions).
 
 ## Response
 
@@ -84,12 +84,12 @@ Content-type: application/json
 
 {
   "accountEnabled": true,
-  "displayName": "displayName-value",
-  "mailNickname": "mailNickname-value",
-  "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com",
+  "displayName": "Adele Vance",
+  "mailNickname": "AdeleV",
+  "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
   "passwordProfile" : {
     "forceChangePasswordNextSignIn": true,
-    "password": "password-value"
+    "password": "xWwvJ]6NMw+bWH-d"
   }
 }
 ```
@@ -116,7 +116,7 @@ In the request body, supply a JSON representation of [user](../resources/user.md
 
 #### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -129,17 +129,17 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
-    "id": "id-value",
+    "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd",
     "businessPhones": [],
-    "displayName": "displayName-value",
-    "givenName": null,
-    "jobTitle": null,
-    "mail": null,
-    "mobilePhone": null,
-    "officeLocation": null,
-    "preferredLanguage": null,
-    "surname": null,
-    "userPrincipalName": "upn-value@tenant-value.onmicrosoft.com"
+    "displayName": "Adele Vance",
+    "givenName": "Adele",
+    "jobTitle": "Product Marketing Manager",
+    "mail": "AdeleV@contoso.onmicrosoft.com",
+    "mobilePhone": "+1 425 555 0109",
+    "officeLocation": "18/2111",
+    "preferredLanguage": "en-US",
+    "surname": "Vance",
+    "userPrincipalName": "AdeleV@contoso.onmicrosoft.com"
 }
 ```
 
@@ -183,7 +183,8 @@ Content-type: application/json
     }
   ],
   "passwordProfile" : {
-    "password": "password-value"
+    "password": "password-value",
+    "forceChangePasswordNextSignIn": false
   },
   "passwordPolicies": "DisablePasswordExpiration"
 }
@@ -207,13 +208,11 @@ Content-type: application/json
 ---
 
 
----
-
 #### Response
 
 Here is an example of the response. 
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

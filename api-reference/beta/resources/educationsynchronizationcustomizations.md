@@ -13,27 +13,31 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Contains the list of entities to sync and their [customizations](educationsynchronizationcustomization.md), if any.
+Contains the list of entities to sync and their customizations, if any.
 
-> **Note:** Customization of properties to sync does not apply to the **studentEnrollment** and **teacherRoster** entities.
+> [!NOTE]
+> Customization of properties to sync does not apply to the Student Enrollments or  Teacher Rosters.
 
 This resource is member of the following data providers:
 
-* [educationCsvDataProvider](educationcsvdataprovider.md)
-* [educationPowerSchoolDataProvider](educationpowerschooldataprovider.md)
+- [educationCsvDataProvider](educationcsvdataprovider.md)
+- [educationPowerSchoolDataProvider](educationpowerschooldataprovider.md)
 
 ## Properties
 
-| Property | Type | Description |
-|:-|:-|:-|
-| **school** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  Customization for a school entity.        |
-| **section** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  Customization for a section entity.         |
-| **student** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  Customization for a student entity.         |
-| **teacher** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  Customization for a teacher entity.         |
-| **studentEnrollment** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |  Customization for student enrollment.           |
-| **teacherRoster** | [educationSynchronizationCustomization](educationsynchronizationcustomization.md) |       Customization for a teacher roster.    |
+| Property          | Type                                    | Description                             |
+| :---------------- | :-------------------------------------- | :-------------------------------------- |
+| school            | [educationSynchronizationCustomization] | Customizations for School entities.     |
+| section           | [educationSynchronizationCustomization] | Customizations for Section entities.    |
+| student           | [educationSynchronizationCustomization] | Customizations for Student entities.    |
+| teacher           | [educationSynchronizationCustomization] | Customizations for Teacher entities.    |
+| studentEnrollment | [educationSynchronizationCustomization] | Customizations for Student Enrollments. |
+| teacherRoster     | [educationSynchronizationCustomization] | Customizations for Teacher Rosters.     |
+
+[educationsynchronizationcustomization]: educationsynchronizationcustomization.md
 
 ## JSON representation
+
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
@@ -44,11 +48,25 @@ This resource is member of the following data providers:
 
 ```json
 {
-  "school": {"@odata.type": "microsoft.graph.educationSynchronizationCustomization"},
-  "section": {"@odata.type": "microsoft.graph.educationSynchronizationCustomization"},
-  "student": {"@odata.type": "microsoft.graph.educationSynchronizationCustomization"},
-  "teacher": {"@odata.type": "microsoft.graph.educationSynchronizationCustomization"},
-  "studentEnrollment": {"@odata.type": "microsoft.graph.educationSynchronizationCustomization"},
-  "teacherRoster": {"@odata.type": "microsoft.graph.educationSynchronizationCustomization"}
+  "school": {
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
+  },
+  "section": {
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
+  },
+  "student": {
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
+  },
+  "teacher": {
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
+  },
+  "studentEnrollment": {
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
+  },
+  "teacherRoster": {
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomization"
+  }
 }
 ```
+
+

@@ -4,18 +4,23 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String callbackUri = "callbackUri-value";
 
 AppHostedMediaConfig mediaConfig = new AppHostedMediaConfig();
 mediaConfig.blob = "<Media Session Configuration Blob>";
 
-LinkedList<String> acceptedModalitiesList = new LinkedList<String>();
-acceptedModalitiesList.add("audio");
+LinkedList<Modality> acceptedModalitiesList = new LinkedList<Modality>();
+acceptedModalitiesList.add(Modality.AUDIO);
 
 graphClient.communications().calls("{id}")
-	.answer(callbackUri,mediaConfig,acceptedModalitiesList)
+	.answer(CallAnswerParameterSet
+		.newBuilder()
+		.withCallbackUri(callbackUri)
+		.withMediaConfig(mediaConfig)
+		.withAcceptedModalities(acceptedModalitiesList)
+		.build())
 	.buildRequest()
 	.post();
 

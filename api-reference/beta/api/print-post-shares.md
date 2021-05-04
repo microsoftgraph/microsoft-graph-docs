@@ -18,11 +18,11 @@ Create a new **printerShare** for the specified [printer](../resources/printer.m
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-In addition to the following permissions, the user's tenant must have an active Universal Print subscription.
+To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table. The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
-|Delegated (work or school account)| Users.Read.All |
+|Delegated (work or school account)| PrinterShare.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not Supported.|
 |Application|Not Supported.|
 
@@ -38,11 +38,15 @@ POST /print/shares
 | Content-type  | application/json. Required.|
 
 ## Request body
-In the request body, supply a JSON representation of [printerShare](../resources/printershare.md) object.
+In the request body, supply a JSON representation of the [printerShare](../resources/printershare.md) object.
 
-The printer share's **id** and **createdDateTime** properties are set automatically upon resource creation, but the share name and associated printer must be included in the request.
+The following table shows the properties that can be provided when you create the [printerShare](../resources/printershare.md).
 
-The printer reference is set by using `@odata.bind` syntax, as shown in the example.
+|Property|Type|Description|Required?|
+|:---|:---|:---|:---|
+|printer|microsoft.graph.printer|The printer that this printer share is related to. Use the `printer@odata.bind` syntax as shown in the following example.|Yes|
+|displayName|String|The name of the printer share that print clients should display. Maximum length allowed is 50 characters.|Yes|
+|allowAllUsers|Boolean|	If true, all users and groups will be granted access to this printer share. This supersedes the allow lists defined by the allowedUsers and allowedGroups navigation properties.|No|
 
 ## Response
 If successful, this method returns a `201 Created` response code and a [printerShare](../resources/printershare.md) object in the response body.
@@ -50,6 +54,8 @@ If successful, this method returns a `201 Created` response code and a [printerS
 ## Example
 ##### Request
 The following is an example of the request.
+
+# [HTTP](#tab/http)
 
 # [HTTP](#tab/http)
 <!-- {
@@ -78,11 +84,18 @@ Content-length: 114
 [!INCLUDE [sample-code](../includes/snippets/objc/create-printershare-from-print-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-printershare-from-print-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
 ---
 
 ##### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -96,7 +109,7 @@ Content-length: 233
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",
     "id": "7361c7c1-ff07-4565-9897-bef6895a7d04",
-    "name": "ShareName",
+    "displayName": "ShareName",
     "createdDateTime": "2020-02-04T00:00:00.0000000Z"
 }
 ```

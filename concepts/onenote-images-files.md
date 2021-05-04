@@ -1,6 +1,6 @@
 ---
 title: "Add images, videos, and files to OneNote pages"
-description: " Enterprise notebooks on Office 365"
+description: " Enterprise notebooks on Microsoft 365"
 author: "jewan-microsoft"
 localization_priority: Priority
 ms.prod: "onenote"
@@ -9,7 +9,7 @@ ms.prod: "onenote"
 
 # Add images, videos, and files to OneNote pages
 
-**Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Office 365
+**Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Microsoft 365
 
 You can use **img**, **object**, and **iframe** elements to add images, videos, and files to a OneNote page when you're [creating](onenote-create-page.md) or [updating](onenote-update-page.md) the page. 
 
@@ -507,5 +507,5 @@ For more information about permission scopes and how they work, see [OneNote per
 
 - [Integrate with OneNote](integrate-with-onenote.md)
 - [OneNote Developer Blog](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [OneNote development questions on Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
-- [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)  
+- [OneNote development questions on Microsoft Q&A](/answers/topics/microsoft-graph-notes.html)
+- [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)

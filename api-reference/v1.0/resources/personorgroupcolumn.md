@@ -39,7 +39,7 @@ Here is a JSON representation of a **personOrGroupColumn** resource.
 
 | DisplayAs value               | Description
 |:------------------------------|:-----------------------
-| **account**                   | The raw SharePoint encoded claim string for the person or group (eg. i:0#.f|membership|jane@contoso.com).
+| **account**                   | The raw SharePoint encoded claim string for the person or group (eg. `i:0#.f|membership|jane@contoso.com`).
 | **department**                | The person or group's department.
 | **firstName**                 | The person's first name.
 | **id**                        | The id of the person or group in the directory.
@@ -73,3 +73,4 @@ Note: Additional DisplayAs types may be returned.
   ],
   "tocPath": "Resources/PersonOrGroupColumn"
 } -->
+

@@ -14,27 +14,25 @@ const searchResponse = {
   requests: [
     {
       entityTypes: [
-        "microsoft.graph.externalItem"
+        'externalItem'
       ],
       contentSources: [
-        "/external/connections/connectionfriendlyname"
+        '/external/connections/connectionfriendlyname'
       ],
       query: {
-        query_string: {
-          query: "contoso product"
-        }
+        queryString: 'contoso product'
       },
       from: 0,
       size: 25,
-      stored_fields: [
-        "title",
-        "description"
+      fields: [
+        'title',
+        'description'
       ]
     }
   ]
 };
 
-let res = await client.api('/search/query')
+await client.api('/search/query')
 	.version('beta')
 	.post(searchResponse);
 

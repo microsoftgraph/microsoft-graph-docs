@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: FieldValueSet
 localization_priority: Normal
@@ -58,3 +57,4 @@ You may request up to 12 lookup fields in a single query, plus any number of reg
   "section": "documentation",
   "tocPath": "Resources/FieldValueSet"
 } -->
+

@@ -32,8 +32,8 @@ A logical grouping of users in a [schedule](schedule.md) (usually by role).
 | displayName   | `string`      | The display name for the `schedulingGroup`. Required. |
 | isActive 			|`bool`      | Indicates whether the `schedulingGroup` can be used when creating new entities or updating existing ones. Required. |
 | userIds 		| `collection(string)`    |  The list of user IDs that are a member of the `schedulingGroup`. Required. |
-| createdDateTime		|`DateTimeOffset`        |The time stamp in which this `schedulingGroup` was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |
-| lastModifiedDateTime		|`DateTimeOffset`        |The time stamp in which this `schedulingGroup` was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |
+| createdDateTime		|`DateTimeOffset`        |The time stamp in which this `schedulingGroup` was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
+| lastModifiedDateTime		|`DateTimeOffset`        |The time stamp in which this `schedulingGroup` was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 | lastModifiedBy		| [identitySet](identityset.md) |The identity that last updated this `schedulingGroup`.|
 
 ## JSON representation
@@ -72,3 +72,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

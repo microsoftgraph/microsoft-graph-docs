@@ -24,6 +24,9 @@ NSMutableArray *acceptedModalitiesList = [[NSMutableArray alloc] init];
 [acceptedModalitiesList addObject: @"audio"];
 payloadDictionary[@"acceptedModalities"] = acceptedModalitiesList;
 
+int32_t participantCapacity = 200;
+payloadDictionary[@"participantCapacity"] = participantCapacity;
+
 NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options:kNilOptions error:&error];
 [urlRequest setHTTPBody:data];
 

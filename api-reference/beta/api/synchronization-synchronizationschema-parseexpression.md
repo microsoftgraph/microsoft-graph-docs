@@ -4,7 +4,7 @@ description: "(../resources/synchronization_attributemappingsource.md) object. "
 localization_priority: Normal
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # synchronizationSchema: parseExpression
@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegated (work or school account)     |Directory.ReadWrite.All  |
 |Delegated (personal Microsoft account) |Not supported.|
-|Application                            |Not supported.|
+|Application                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -132,7 +132,7 @@ Content-type: application/json
 ##### Response
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -200,3 +200,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

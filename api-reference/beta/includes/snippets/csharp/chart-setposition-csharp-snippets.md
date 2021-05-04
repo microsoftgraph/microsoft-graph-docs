@@ -10,7 +10,7 @@ var startCell = "startCell-value";
 
 var endCell = "endCell-value";
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Charts["{name}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts["{workbookChart-id}"]
 	.SetPosition(startCell,endCell)
 	.Request()
 	.PostAsync();

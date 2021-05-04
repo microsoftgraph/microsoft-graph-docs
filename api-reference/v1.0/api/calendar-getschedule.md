@@ -2,7 +2,7 @@
 title: "calendar: getSchedule"
 description: "Get the free/busy availability information for a collection of users, distributions lists, or resources, for a specified time period."
 localization_priority: Priority
-author: "angelgolfer-ms"
+author: "tariq-sharif"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -97,7 +97,7 @@ Content-Type: application/json
 
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -253,3 +253,4 @@ Content-type: application/json
   "tocPath": ""
 }
 -->
+

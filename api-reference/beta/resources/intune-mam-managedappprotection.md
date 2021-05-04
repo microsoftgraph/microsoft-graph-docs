@@ -3,7 +3,7 @@ title: "managedAppProtection resource type"
 description: "Policy used to configure detailed management settings for a specified set of apps"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -59,6 +59,9 @@ Inherits from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 |printBlocked|Boolean|Indicates whether printing is allowed from managed apps.|
 |fingerprintBlocked|Boolean|Indicates whether use of the fingerprint reader is allowed in place of a pin if PinRequired is set to True.|
 |disableAppPinIfDevicePinIsSet|Boolean|Indicates whether use of the app pin is required if the device pin is set.|
+|maximumRequiredOsVersion|String|Versions bigger than the specified version will block the managed app from accessing company data.|
+|maximumWarningOsVersion|String|Versions bigger than the specified version will block the managed app from accessing company data.|
+|maximumWipeOsVersion|String|Versions bigger than the specified version will block the managed app from accessing company data.|
 |minimumRequiredOsVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |minimumWarningOsVersion|String|Versions less than the specified version will result in warning message on the managed app from accessing company data.|
 |minimumRequiredAppVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
@@ -77,6 +80,7 @@ Inherits from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 |blockDataIngestionIntoOrganizationDocuments|Boolean|Indicates whether a user can bring data into org documents.|
 |allowedDataIngestionLocations|[managedAppDataIngestionLocation](../resources/intune-mam-managedappdataingestionlocation.md) collection|Data storage locations where a user may store managed data.|
 |appActionIfUnableToAuthenticateUser|[managedAppRemediationAction](../resources/intune-mam-managedappremediationaction.md)|If set, it will specify what action to take in the case where the user is unable to checkin because their authentication token is invalid. This happens when the user is deleted or disabled in AAD. Possible values are: `block`, `wipe`, `warn`.|
+|dialerRestrictionLevel|[managedAppPhoneNumberRedirectLevel](../resources/intune-mam-managedappphonenumberredirectlevel.md)|The classes of dialer apps that are allowed to click-to-open a phone number. Possible values are: `allApps`, `managedApps`, `customApp`, `blocked`.|
 
 ## Relationships
 None
@@ -125,6 +129,9 @@ Here is a JSON representation of the resource.
   "printBlocked": true,
   "fingerprintBlocked": true,
   "disableAppPinIfDevicePinIsSet": true,
+  "maximumRequiredOsVersion": "String",
+  "maximumWarningOsVersion": "String",
+  "maximumWipeOsVersion": "String",
   "minimumRequiredOsVersion": "String",
   "minimumWarningOsVersion": "String",
   "minimumRequiredAppVersion": "String",
@@ -144,9 +151,11 @@ Here is a JSON representation of the resource.
   "allowedDataIngestionLocations": [
     "String"
   ],
-  "appActionIfUnableToAuthenticateUser": "String"
+  "appActionIfUnableToAuthenticateUser": "String",
+  "dialerRestrictionLevel": "String"
 }
 ```
+
 
 
 

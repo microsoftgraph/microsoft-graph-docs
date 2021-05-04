@@ -4,7 +4,7 @@ description: "List the synchronization templates associated with a given applica
 localization_priority: Normal
 doc_type: apiPageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # List existing synchronization templates
@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type                        | Permissions (from least to most privileged)              |
 |:--------------------------------------|:---------------------------------------------------------|
-|Delegated (work or school account)     |Directory.ReadWrite.All  |
+|Delegated (work or school account)     |Directory.Read.All  |
 |Delegated (personal Microsoft account) |Not supported.|
-|Application                            |Not supported.| 
+|Application                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All | 
 
 ### HTTP Request
 <!-- { "blockType": "ignored" } -->
@@ -70,6 +70,10 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/synchronization/temp
 [!INCLUDE [sample-code](../includes/snippets/objc/get-synchronizationtemplate-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-synchronizationtemplate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -112,3 +116,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

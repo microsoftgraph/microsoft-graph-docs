@@ -26,9 +26,12 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names/{name}/range/format/font
-PATCH /workbook/worksheets/{id|name}/range(address='<address>')/format/font
-PATCH /workbook/tables/{id|name}/columns/{id|name}/range/format/font
+PATCH /me/drive/items/{id}/workbook/names/{name}/range/format/font
+PATCH /me/drive/root:/{item-path}:/workbook/names/{name}/range/format/font
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/format/font
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/format/font
+PATCH /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format/font
+PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format/font
 ```
 ## Optional request headers
 | Name       | Description|
@@ -86,10 +89,14 @@ Content-length: 134
 [!INCLUDE [sample-code](../includes/snippets/objc/update-rangefont-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-rangefont-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -123,3 +130,5 @@ Content-length: 134
   ]
 }
 -->
+
+

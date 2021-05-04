@@ -78,6 +78,10 @@ GET https://graph.microsoft.com/beta/security/securityActions/{id}
 [!INCLUDE [sample-code](../includes/snippets/objc/get-securityaction-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-securityaction-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -86,7 +90,7 @@ GET https://graph.microsoft.com/beta/security/securityActions/{id}
 The following is an example of the response.
 
 > [!NOTE]
-> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -119,3 +123,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

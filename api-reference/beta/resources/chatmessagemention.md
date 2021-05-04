@@ -2,7 +2,7 @@
 title: "chatMessageMention resource type"
 description: "Represents a mention in a chatMessage entity. The mention can be to a user, team, bot or channel. "
 localization_priority: Normal
-author: nkramer
+author: "RamjotSingh"
 ms.prod: "microsoft-teams"
 doc_type: resourcePageType
 ---
@@ -30,7 +30,7 @@ In the **content** property, the first mention has an HTML `id` attribute of 0. 
 
 The second mention has an `id` attribute of 1, matching the **id** property of the second instance, which is 1.
 
-For a fuller context of the example, see [List channel message replies](../api/channel-list-messagereplies.md#example).
+For a fuller context of the example, see [List channel message replies](../api/chatmessage-list-replies.md#example).
 
 ## Properties
 | Property	   | Type	|Description|
@@ -46,7 +46,6 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.chatMessageMention"
 }-->
 
@@ -56,7 +55,6 @@ The following is a JSON representation of the resource.
   "mentionText": "string",
   "mentioned": {"@odata.type": "microsoft.graph.identitySet"}
  }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -71,3 +69,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

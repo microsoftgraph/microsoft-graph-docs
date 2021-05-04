@@ -4,21 +4,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-WorkforceIntegration workforceIntegrations = new WorkforceIntegration();
-workforceIntegrations.displayName = "displayName-value";
-workforceIntegrations.apiVersion = 99;
+WorkforceIntegration workforceIntegration = new WorkforceIntegration();
+workforceIntegration.displayName = "displayName-value";
+workforceIntegration.apiVersion = 99;
 WorkforceIntegrationEncryption encryption = new WorkforceIntegrationEncryption();
 encryption.protocol = WorkforceIntegrationEncryptionProtocol.SHARED_SECRET;
 encryption.secret = "secret-value";
-workforceIntegrations.encryption = encryption;
-workforceIntegrations.isActive = true;
-workforceIntegrations.url = "url-value";
-workforceIntegrations.supportedEntities = WorkforceIntegrationSupportedEntities.NONE;
+workforceIntegration.encryption = encryption;
+workforceIntegration.isActive = true;
+workforceIntegration.url = "url-value";
+workforceIntegration.supportedEntities = EnumSet.of(WorkforceIntegrationSupportedEntities.NONE);
 
-graphClient.teamwork().workforceIntegrations()
+graphClient.teamwork().workforceIntegrations("{workforceIntegrationId}")
 	.buildRequest()
-	.patch(workforceIntegrations);
+	.patch(workforceIntegration);
 
 ```

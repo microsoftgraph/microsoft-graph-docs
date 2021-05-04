@@ -11,15 +11,15 @@ const options = {
 const client = Client.init(options);
 
 const place = {
-  @odata.type: "microsoft.graph.roomlist",
-  displayName: "Building 1",
-  phone:"555-555-0100",
+  '@odata.type': 'microsoft.graph.roomList',
+  displayName: 'Building 1',
+  phone: '555-555-0100',
   address: {
-    street: "4567 Main Street",
-    city: "Buffalo",
-    state: "NY",
-    postalCode: "98052",
-    countryOrRegion: "USA"
+    street: '4567 Main Street',
+    city: 'Buffalo',
+    state: 'NY',
+    postalCode: '98052',
+    countryOrRegion: 'USA'
   },
   geoCoordinates: {
     altitude: null,
@@ -30,7 +30,7 @@ const place = {
  }
 };
 
-let res = await client.api('/places/Building1RroomList@contoso.onmicrosoft.com')
+await client.api('/places/Building1RroomList@contoso.onmicrosoft.com')
 	.update(place);
 
 ```

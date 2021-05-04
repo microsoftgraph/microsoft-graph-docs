@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/planner/all/delta')
+let delta = await client.api('/me/planner/all/delta')
 	.version('beta')
 	.get();
 

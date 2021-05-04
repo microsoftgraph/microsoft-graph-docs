@@ -3,7 +3,7 @@ title: "List organization"
 description: "Retrieve a list of organization objects."
 localization_priority: Normal
 author: "adimitui"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /organization
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -50,31 +50,31 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_organization"
+  "name": "get_organization_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/organization
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-organization-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-organization-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-organization-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-organization-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-organization-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-organization-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-organization-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-organization-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -91,19 +91,19 @@ Content-length: 500
     {
       "assignedPlans": [
         {
-          "assignedDateTime": "2016-10-19T10:37:00Z",
-          "capabilityStatus": "capabilityStatus-value",
-          "service": "service-value",
-          "servicePlanId": "servicePlanId-value"
+          "assignedDateTime": "2017-07-29T02:16:28Z",
+          "capabilityStatus": "Enabled",
+          "service": "SharePoint",
+          "servicePlanId": "5dbe027f-2339-4123-9542-606e4d348a72"
         }
       ],
       "businessPhones": [
-        "businessPhones-value"
+        "8006427676"
       ],
-      "city": "city-value",
-      "country": "country-value",
-      "countryLetterCode": "countryLetterCode-value",
-      "displayName": "displayName-value"
+      "city": "redmond",
+      "country": null,
+      "countryLetterCode": "US",
+      "displayName": "Contoso"
     }
   ]
 }

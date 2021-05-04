@@ -20,7 +20,7 @@ Feedback from a teacher to a student. This property represents both the text par
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |feedbackBy|[identitySet](identityset.md)|User who created the feedback.|
-|feedbackDateTime|DateTimeOffset|Moment in time when the feedback was given. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|feedbackDateTime|DateTimeOffset|Moment in time when the feedback was given. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |text|[itemBody](itembody.md)|Feedback.|
 
 ## JSON representation
@@ -56,3 +56,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

@@ -4,7 +4,7 @@ description: "Contains stateful information about the logged on user on this hos
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "preetikr"
 ---
 
 # logonUser resource type
@@ -20,8 +20,8 @@ Contains stateful information about the logged on user on this host
 |accountDomain|String|Domain of user account used to logon.|
 |accountName|String|Account name of user account used to logon.|
 |accountType|String|User Account type, per Windows definition. Possible values are: `unknown`, `standard`, `power`, `administrator`.|
-|firstSeenDateTime|DateTimeOffset|DateTime at which the earliest logon by this user account occurred (provider-determined period). The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
-|lastSeenDateTime|DateTimeOffset|DateTime at which the latest logon by this user account occurred. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
+|firstSeenDateTime|DateTimeOffset|DateTime at which the earliest logon by this user account occurred (provider-determined period). The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|lastSeenDateTime|DateTimeOffset|DateTime at which the latest logon by this user account occurred. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |logonId|String|User logon ID.|
 |logonTypes|String collection|Collection of the logon types observed for the logged on user from when first to last seen. Possible values are: `unknown`, `interactive`, `remoteInteractive`, `network`, `batch`, `service`.|
 
@@ -59,3 +59,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

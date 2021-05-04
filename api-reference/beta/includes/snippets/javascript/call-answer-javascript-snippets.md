@@ -11,17 +11,18 @@ const options = {
 const client = Client.init(options);
 
 const answer = {
-  callbackUri: "callbackUri-value",
+  callbackUri: 'callbackUri-value',
   mediaConfig: {
-    @odata.type: "#microsoft.graph.appHostedMediaConfig",
-    blob: "<Media Session Configuration Blob>"
+    '@odata.type': '#microsoft.graph.appHostedMediaConfig',
+    blob: '<Media Session Configuration Blob>'
   },
   acceptedModalities: [
-    "audio"
-  ]
+    'audio'
+  ],
+  participantCapacity: 200
 };
 
-let res = await client.api('/communications/calls/{id}/answer')
+await client.api('/communications/calls/{id}/answer')
 	.version('beta')
 	.post(answer);
 

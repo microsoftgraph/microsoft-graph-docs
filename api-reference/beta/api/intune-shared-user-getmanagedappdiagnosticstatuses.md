@@ -1,7 +1,7 @@
 ---
 title: "getManagedAppDiagnosticStatuses function"
 description: "Gets diagnostics validation status for a given user."
-author: "dougeby"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -73,6 +73,7 @@ Content-Length: 249
   ]
 }
 ```
+
 
 
 

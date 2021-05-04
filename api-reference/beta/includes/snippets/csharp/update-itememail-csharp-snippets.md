@@ -8,12 +8,11 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var itemEmail = new ItemEmail
 {
-	Address = "address-value",
-	DisplayName = "displayName-value",
-	Type = EmailType.Unknown
+	DisplayName = "Business Email",
+	Type = EmailType.Work
 };
 
-await graphClient.Me.Profile.Emails["{id}"]
+await graphClient.Users["{user-id}"].Profile.Emails["{itemEmail-id}"]
 	.Request()
 	.UpdateAsync(itemEmail);
 

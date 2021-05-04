@@ -4,12 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-boolean disableUserAccounts = true;
+Boolean disableUserAccounts = true;
 
 graphClient.domains("{id}")
-	.forceDelete(disableUserAccounts)
+	.forceDelete(DomainForceDeleteParameterSet
+		.newBuilder()
+		.withDisableUserAccounts(disableUserAccounts)
+		.build())
 	.buildRequest()
 	.post();
 

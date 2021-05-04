@@ -4,7 +4,7 @@ description: "Delete the definition of a schema extension."
 localization_priority: Normal
 author: "dkershaw10"
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: "extensions"
 ---
 
 # Delete schemaExtension
@@ -26,9 +26,12 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Application.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
+
+> [!NOTE]
+> Additionally for the delegated flow, the signed-in user can only delete schemaExtensions they own (where the **owner** property of the schemaExtension is the `appId` of an application the signed-in user owns).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -72,6 +75,10 @@ DELETE https://graph.microsoft.com/beta/schemaExtensions/{id}
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-schemaextension-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-schemaextension-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -102,3 +109,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

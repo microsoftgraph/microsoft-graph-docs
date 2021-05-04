@@ -1,7 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
-ms.date: 09/11/2017
 title: Get a SharePoint list
 localization_priority: Priority
 ms.prod: "sharepoint"
@@ -30,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}
-GET https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-title}
+GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-title}
 GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}?expand=columns,items(expand=fields)
 ```
 
@@ -44,25 +42,25 @@ Do not supply a request body with this method.
 
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "get-list", "scopes": "sites.read.all" } -->
+<!-- { "blockType": "request", "name": "get-list-1", "scopes": "sites.read.all" } -->
 
 ```msgraph-interactive
 GET /sites/{site-id}/lists/{list-id}
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-list-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-list-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-list-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-list-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-list-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-list-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-list-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-list-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -72,7 +70,7 @@ GET /sites/{site-id}/lists/{list-id}
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -94,25 +92,25 @@ With `select` and `expand` statements, you can retrieve list metadata, column de
 The following example shows how to get a list from a SharePoint Online list title.
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "get-list", "scopes": "sites.read.all" } -->
+<!-- { "blockType": "request", "name": "get-list-2", "scopes": "sites.read.all" } -->
 
 ```msgraph-interactive
 GET /sites/{site-id}/lists/{list-title}
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-list-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-list-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-list-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-list-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-list-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-list-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-list-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-list-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -122,7 +120,7 @@ GET /sites/{site-id}/lists/{list-title}
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -172,7 +170,7 @@ GET /sites/{site-id}/lists/{list-id}?select=id,name,lastModifiedDateTime&expand=
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "truncated": true, "scopes": "sites.read.all", "tags": "service.sharepoint" } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -232,3 +230,4 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
+

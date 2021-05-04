@@ -1,6 +1,5 @@
 ---
 author: daspek
-ms.author: dspektor
 title: createAction resource type
 description: The createAction object provides information about the creation of an item.
 localization_priority: Normal
@@ -45,3 +44,4 @@ None. This facet is a null or not-null value and contains no properties.
   "suppressions": []
 }
 -->
+

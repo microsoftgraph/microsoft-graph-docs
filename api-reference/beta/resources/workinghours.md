@@ -4,7 +4,7 @@ description: "Represents the days of the week and hours in a specific time zone 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "outlook"
-author: "angelgolfer-ms"
+author: "abheek-das"
 ---
 
 # workingHours resource type
@@ -68,3 +68,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

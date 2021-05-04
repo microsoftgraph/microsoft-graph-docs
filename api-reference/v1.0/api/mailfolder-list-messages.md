@@ -2,7 +2,7 @@
 title: "List messages"
 description: "Get all the messages in the signed-in user's mailbox, or those messages in a specified folder in the mailbox."
 localization_priority: Priority
-author: "svpsiva"
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -28,7 +28,7 @@ GET /me/mailFolders/{id}/messages
 GET /users/{id | userPrincipalName}/mailFolders/{id}/messages
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -71,7 +71,7 @@ GET https://graph.microsoft.com/v1.0/me/mailFolders/{id}/messages
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -86,15 +86,15 @@ Content-length: 317
 {
   "value": [
     {
-      "receivedDateTime": "datetime-value",
-      "sentDateTime": "datetime-value",
+      "receivedDateTime": "2018-02-13T03:53:55Z",
+      "sentDateTime": "2018-02-13T03:53:55Z",
       "hasAttachments": true,
-      "subject": "subject-value",
+      "subject": "MyAnalytics | Your past week",
       "body": {
-        "contentType": "",
-        "content": "content-value"
+        "contentType": "html",
+        "content": "<html lang=\"en\">\r\n<head></head>\r\n<body> </body>\r\n</html>\r\n"
       },
-      "bodyPreview": "bodyPreview-value"
+      "bodyPreview": "February 4-10, 2018\r\n\r\n\r\nHi Megan Bowen,\r\n\r\nWe've got your highlights from last week\r\n\r\n\r\n\r\nYour time\r\n\r\n\r\nEmail hours\r\n\r\n\r\n\r\n\r\n0 hrs\r\n\r\n\r\n\r\nMeeting hours\r\n\r\n\r\n\r\n\r\n12 hrs\r\n\r\n\r\n\r\n\r\nFocus hours\r\n\r\n\r\n\r\n\r\n30 hrs\r\n\r\n\r\n\r\n\r\n\r\nGoals keep you motivated. Set them"
     }
   ]
 }

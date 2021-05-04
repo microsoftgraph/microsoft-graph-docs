@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/outlook/taskFolders/AAMkADIyAAAAABrJAAA=')
+let outlookTaskFolder = await client.api('/me/outlook/taskFolders/AAMkADIyAAAAABrJAAA=')
 	.version('beta')
 	.get();
 

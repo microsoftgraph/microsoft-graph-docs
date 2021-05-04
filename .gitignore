@@ -7,3 +7,7 @@ nuget.exe
 apidoc.exe
 *.dll
 .vs/
+.DS_Store
+
+# Unotes related files
+.unotes/

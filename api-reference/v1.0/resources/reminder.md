@@ -2,8 +2,8 @@
 title: "reminder resource type"
 description: "A reminder for an event in a user calendar."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "harini84"
+ms.prod: "outlook"
 doc_type: resourcePageType
 ---
 
@@ -22,7 +22,7 @@ A reminder for an [event](event.md) in a user [calendar](calendar.md).
 |eventLocation|[Location](location.md)|The location of the event.|
 |eventStartTime|[DateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the event starts.|
 |eventSubject|String|The text of the event's subject line.|
-|eventWebLink|String|The URL to open the event in Outlook on the web.<br/><br/>The event will open in the browser if you are logged in to your mailbox via Outlook on the web. You will be prompted to login if you are not already logged in with the browser.<br/><br/>This URL can be accessed from within an iFrame.|
+|eventWebLink|String|The URL to open the event in Outlook on the web.<br/><br/>The event will open in the browser if you are logged in to your mailbox via Outlook on the web. You will be prompted to login if you are not already logged in with the browser.<br/><br/>This URL cannot be accessed from within an iFrame.|
 |reminderFireTime|[DateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the reminder is set to occur.|
 
 ## JSON representation
@@ -60,3 +60,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

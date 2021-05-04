@@ -10,13 +10,11 @@ const options = {
 
 const client = Client.init(options);
 
-const calendar = Content-type: application/json
-
-{
-  name: "Marketing calendar"
+const calendar = {
+  name: 'Marketing calendar'
 };
 
-let res = await client.api('/me/calendargroups/AAMkADYAAAR9NR5AAA=/calendars')
+await client.api('/me/calendargroups/AAMkADYAAAR9NR5AAA=/calendars')
 	.version('beta')
 	.post(calendar);
 

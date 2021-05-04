@@ -2,7 +2,7 @@
 title: "mailboxSettings resource type"
 description: "Settings for the primary mailbox of the signed-in user."
 localization_priority: Normal
-author: "svpsiva"
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
@@ -21,7 +21,7 @@ You can [get](../api/user-get-mailboxsettings.md) or [update](../api/user-update
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|archiveFolder|string|Folder ID of an archive folder for the user.|
+|archiveFolder|string|Folder ID of an archive folder for the user. Read only.|
 |automaticRepliesSetting|[automaticRepliesSetting](automaticrepliessetting.md)|Configuration settings to automatically notify the sender of an incoming email with a message from the signed-in user.|
 |dateFormat|string|The date format for the user's mailbox.|
 |delegateMeetingMessageDeliveryOptions|delegateMeetingMessageDeliveryOptions| If the user has a calendar delegate, this specifies whether the delegate, mailbox owner, or both receive meeting messages and meeting responses. Possible values are: `sendToDelegateAndInformationToPrincipal`, `sendToDelegateAndPrincipal`, `sendToDelegateOnly`. The default is `sendToDelegateOnly`.|
@@ -29,6 +29,7 @@ You can [get](../api/user-get-mailboxsettings.md) or [update](../api/user-update
 |timeFormat|string|The time format for the user's mailbox.|
 |timeZone|string|The default time zone for the user's mailbox.|
 |workingHours|[workingHours](workinghours.md)|The days of the week and hours in a specific time zone that the user works.|
+|userPurpose|[userPurpose](userpurpose.md)|The purpose of the mailbox. Used to differentiate a mailbox for a single user from a shared mailbox and equipment mailbox in Exchange Online. Read only.|
 
 ## JSON representation
 
@@ -51,7 +52,8 @@ Here is a JSON representation of the resource.
   "language": {"@odata.type": "microsoft.graph.localeInfo"},
   "timeFormat": "string",
   "timeZone": "string",
-  "workingHours": {"@odata.type": "microsoft.graph.workingHours"}
+  "workingHours": {"@odata.type": "microsoft.graph.workingHours"},
+  "userPurpose": {"@odata.type": "microsoft.graph.userPurpose"}
 }
 ```
 
@@ -67,3 +69,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

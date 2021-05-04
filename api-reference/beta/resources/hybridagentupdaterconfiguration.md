@@ -3,7 +3,7 @@ title: "hybridAgentUpdaterConfiguration resource type"
 description: "hybridAgentUpdaterConfiguration resource type."
 localization_priority: Normal
 author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "resourcePageType"
 ---
 
@@ -35,7 +35,7 @@ The update of the agent will follow the below priority list
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |allowUpdateConfigurationOverride|Boolean|Indicates if updater configuration will be skipped and the agent will receive an update when the next version of the agent is available.|
-|deferUpdateDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|deferUpdateDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |updateWindow|[updateWindow](updatewindow.md)||
 
 ## JSON representation
@@ -68,3 +68,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

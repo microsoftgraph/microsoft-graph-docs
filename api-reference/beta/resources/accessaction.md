@@ -5,7 +5,7 @@ ms.date: 09/12/2018
 title: AccessAction
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "sites-and-lists"
 ---
 # accessAction resource type
 
@@ -47,3 +47,5 @@ This resource type has no properties.
   "suppressions": []
 }
 -->
+
+

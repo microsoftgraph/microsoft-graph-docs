@@ -2,7 +2,7 @@
 title: "Update icon"
 description: "Update the properties of icon object."
 localization_priority: Normal
-author: ""
+author: "ruoyingl"
 ms.prod: ""
 doc_type: apiPageType
 ---
@@ -15,17 +15,19 @@ Update the properties of icon object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type      | Permissions (from least to most privileged)              | 
-|:--------------------|:---------------------------------------------------------| 
-|Delegated (work or school account) | Files.ReadWrite    | 
-|Delegated (personal Microsoft account) | Not supported.    | 
-|Application | Not supported. | 
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) | Files.ReadWrite    |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | Not supported. |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/tables/{id|name}/sort/fields/icon
-PATCH /workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
+PATCH /me/drive/items/{id}/workbook/tables/{id|name}/sort/fields/icon
+PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}/sort/fields/icon
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/sort/fields/icon
 ```
 ## Optional request headers
 | Name       | Description|
@@ -62,7 +64,7 @@ Content-length: 39
 }
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -88,3 +90,4 @@ Content-length: 39
   "section": "documentation",
   "tocPath": ""
 }-->
+

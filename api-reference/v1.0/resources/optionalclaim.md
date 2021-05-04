@@ -3,7 +3,7 @@ title: "optionalClaim resource type"
 description: "PROVIDE DESCRIPTION HERE"
 localization_priority: Normal
 author: "sureshja"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "resourcePageType"
 ---
 

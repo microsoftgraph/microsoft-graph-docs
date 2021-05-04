@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/directReports')
+let directReports = await client.api('/me/directReports')
 	.version('beta')
 	.get();
 

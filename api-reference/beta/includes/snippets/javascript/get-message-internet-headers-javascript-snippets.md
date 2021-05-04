@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/messages/AAMkAGVmMDEz/')
+let message = await client.api('/me/messages/AAMkAGVmMDEz/')
 	.version('beta')
 	.select('internetMessageHeaders')
 	.get();

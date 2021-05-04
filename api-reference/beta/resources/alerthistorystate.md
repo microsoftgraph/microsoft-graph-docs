@@ -24,7 +24,7 @@ Stores changes made to alerts.
 |comments|String collection|Comment entered by signed-in user.|
 |feedback|String| Analyst feedback on the alert in this update. Possible values are: `unknown`, `truePositive`, `falsePositive`, `benignPositive`.|
 |status|String| Alert status value (if updated). Possible values are: `unknown`, `newAlert`, `inProgress`, `resolved`, `dismissed`.|
-|updatedDateTime|DateTimeOffset| Date and time of the alert update. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|updatedDateTime|DateTimeOffset| Date and time of the alert update. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |user|String| UPN of the signed-in user that updated the alert (taken from the bearer token - if in user/delegated auth mode). |
 
 ## JSON representation
@@ -61,3 +61,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

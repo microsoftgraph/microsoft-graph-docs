@@ -66,7 +66,7 @@ The following examples show how to call this API.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "participant-invite"
+  "name": "participant-invite-1"
 }-->
 ```http
 POST https://graph.microsoft.com/v1.0/communications/calls/{id}/participants/invite
@@ -91,19 +91,19 @@ Content-Type: application/json
 }
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/participant-invite-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/participant-invite-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/participant-invite-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/participant-invite-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/participant-invite-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/participant-invite-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/participant-invite-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/participant-invite-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -111,7 +111,7 @@ Content-Type: application/json
 
 ##### Response
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -698,6 +698,191 @@ Content-Type: application/json
 
 >**Note:** With a "completed" status, you can expect to receive notifications on how your original peer-to-peer call has been terminated and deleted.
 
+### Example 4: Invite one PSTN participant to an existing group call
+
+This call requires an application instance with a PSTN number assigned. For details, see [Assign a phone number to your bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
+
+#### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "participant-invite-2"
+}-->
+```http
+POST /communications/calls/{id}/participants/invite
+Content-Type: application/json
+Content-Length: 464
+
+{
+  "participants": [
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "phone": {
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "+12345678901"
+        }
+      }
+    }
+  ],
+  "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f"
+}
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/participant-invite-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/participant-invite-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.inviteParticipantsOperation"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.inviteParticipantsOperation",
+  "id": "eec3812a-fdc3-4fb4-825c-a06c9f35414e",
+  "status": "Running",
+  "clientContext": "f2fa86af-3c51-4bc2-8fc0-475452d9764f",
+  "resultInfo": null,
+  "participants": [
+    {
+      "endpointType": null,
+      "id": null,
+      "replacesCallId": null,
+      "identity": {
+        "user": null,
+        "guest": null,
+        "encrypted": null,
+        "onPremises": null,
+        "applicationInstance": null,
+        "application": null,
+        "device": null,
+        "phone": {
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "+12345678901"
+        }
+      }
+    }
+  ]
+}
+```
+
+#### Notification - operation completed
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{ 
+   "@odata.type":"#microsoft.graph.commsNotifications",
+   "value":[ 
+      { 
+         "@odata.type":"#microsoft.graph.commsNotification",
+         "changeType":"deleted",
+         "resource":"/app/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/operations/eec3812a-fdc3-4fb4-825c-a06c9f35414e",
+         "resourceUrl":"/communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/operations/eec3812a-fdc3-4fb4-825c-a06c9f35414e",
+         "resourceData":{ 
+            "@odata.type":"#microsoft.graph.inviteParticipantsOperation",
+            "participants":[ 
+               { 
+                  "@odata.type":"#microsoft.graph.invitationParticipantInfo",
+                  "identity":{ 
+                     "@odata.type":"#microsoft.graph.identitySet",
+                     "phone": {
+                        "@odata.type": "#microsoft.graph.identity",
+                        "id": "+12345678901"
+                     }
+                  }
+               }
+            ],
+            "status":"completed",
+            "clientContext":"f2fa86af-3c51-4bc2-8fc0-475452d9764f",
+            "id":"eec3812a-fdc3-4fb4-825c-a06c9f35414e"
+         }
+      }
+   ]
+}
+```
+
+#### Notification - roster updated with participant added
+
+```http
+POST https://bot.contoso.com/api/calls
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example",
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+```json
+{
+   "@odata.type":"#microsoft.graph.commsNotifications",
+   "value":[
+      {
+         "@odata.type":"#microsoft.graph.commsNotification",
+         "changeType":"updated",
+         "resource":"/app/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants",
+         "resourceUrl":"/communications/calls/ab6233a5-20b7-4c5e-bea2-ce56c9776429/participants",
+         "resourceData":[
+            {
+               "@odata.type":"#microsoft.graph.participant",
+               "info":{
+                  "@odata.type":"#microsoft.graph.participantInfo",
+                  "identity":{
+                     "@odata.type":"#microsoft.graph.identitySet",
+                     "phone": {
+                        "@odata.type": "#microsoft.graph.identity",
+                        "id": "+12345678901"
+                     }
+                  },
+                  "endpointType":"default"
+               },
+               "mediaStreams":[
+                  {
+                     "@odata.type":"#microsoft.graph.mediaStream",
+                     "mediaType":"audio",
+                     "sourceId":"1",
+                     "direction":"sendReceive",
+                     "serverMuted":false
+                  }
+               ],
+               "isMuted":false,
+               "isInLobby":false,
+               "id":null
+            }
+         ]
+      }
+   ]
+}
+
+```
+
+>**Note:** With a `completed` status, you can expect to receive notifications about how your original peer-to-peer call has been terminated and deleted.
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!--
@@ -711,3 +896,4 @@ Content-Type: application/json
   ]
 }
 -->
+

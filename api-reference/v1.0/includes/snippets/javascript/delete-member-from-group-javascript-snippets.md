@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/groups/{id}/members/{id}/$ref')
+await client.api('/groups/{group-id}/members/{directory-object-id}/$ref')
 	.delete();
 
 ```

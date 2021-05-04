@@ -1,6 +1,6 @@
 ---
 title: "plannerPlan resource type"
-description: "The **plannerPlan** resource represents a plan in Office 365. A plan can be owned by a group and contains a collection of plannerTasks. It can also have a collection of plannerBuckets. Each plan object has a details object that can contain more information about the plan. For more information about the relationships between groups, plans, and tasks, see Planner."
+description: "The **plannerPlan** resource represents a plan in Microsoft 365. A plan can be owned by a group and contains a collection of plannerTasks. It can also have a collection of plannerBuckets. Each plan object has a details object that can contain more information about the plan. For more information about the relationships between groups, plans, and tasks, see Planner."
 localization_priority: Priority
 author: "TarkanSevilmis"
 ms.prod: "planner"
@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The **plannerPlan** resource represents a plan in Office 365. A plan can be owned by a [group](group.md) and contains a collection of [plannerTasks](plannertask.md). It can also have a collection of [plannerBuckets](plannerbucket.md). Each plan object has a [details](plannerplandetails.md) object that can contain more information about the plan. For more information about the relationships between groups, plans, and tasks, see [Planner](planner-overview.md).
+The **plannerPlan** resource represents a plan in Microsoft 365. A plan can be owned by a [group](group.md) and contains a collection of [plannerTasks](plannertask.md). It can also have a collection of [plannerBuckets](plannerbucket.md). Each plan object has a [details](plannerplandetails.md) object that can contain more information about the plan. For more information about the relationships between groups, plans, and tasks, see [Planner](planner-overview.md).
 
 ## Methods
 
@@ -25,7 +25,7 @@ The **plannerPlan** resource represents a plan in Office 365. A plan can be owne
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|createdDateTime|DateTimeOffset|Read-only. Date and time at which the plan is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|createdDateTime|DateTimeOffset|Read-only. Date and time at which the plan is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |id|String| Read-only. ID of the plan. It is 28 characters long and case-sensitive. [Format validation](planner-identifiers-disclaimer.md) is done on the service.|
 |owner|String|ID of the [Group](group.md) that owns the plan. A valid group must exist before this field can be set. After it is set, this property can’t be updated.|
 |title|String|Required. Title of the plan.|
@@ -59,7 +59,6 @@ Here is a JSON representation of the resource.
   "owner": "String",
   "title": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -71,3 +70,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

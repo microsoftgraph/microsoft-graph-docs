@@ -3,7 +3,7 @@ title: "List applicationTemplates"
 description: "Retrieve a list of applicationtemplate objects."
 localization_priority: Normal
 author: "luleonpla"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
@@ -85,6 +85,10 @@ GET https://graph.microsoft.com/beta/applicationTemplates
 [!INCLUDE [sample-code](../includes/snippets/objc/get-applicationtemplates-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-applicationtemplates-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -92,8 +96,7 @@ GET https://graph.microsoft.com/beta/applicationTemplates
 
 The following is an example of the response.
 
-> [!NOTE]
-> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -131,3 +134,6 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+
+

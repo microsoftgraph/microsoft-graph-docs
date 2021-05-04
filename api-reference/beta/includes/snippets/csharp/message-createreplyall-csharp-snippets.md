@@ -8,19 +8,19 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var message = new Message
 {
-	Attachments = new List<Attachment>()
+	Attachments = new MessageAttachmentsCollectionPage()
 	{
 		new FileAttachment
 		{
 			Name = "guidelines.txt",
-			ContentBytes = "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+			ContentBytes = Encoding.ASCII.GetBytes("bWFjIGFuZCBjaGVlc2UgdG9kYXk=")
 		}
 	}
 };
 
 var comment = "if the project gets approved, please take a look at the attached guidelines before you decide on the name.";
 
-await graphClient.Me.Messages["AAMkADA1MTAAAH5JaKAAA="]
+await graphClient.Me.Messages["{message-id}"]
 	.CreateReplyAll(message,comment)
 	.Request()
 	.PostAsync();

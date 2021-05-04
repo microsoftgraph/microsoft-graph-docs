@@ -11,7 +11,7 @@ var workbookChartSeries = new WorkbookChartSeries
 	Name = "name-value"
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Charts["{name}"].Series["{undefined}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts["{workbookChart-id}"].Series["{workbookChartSeries-id}"]
 	.Request()
 	.UpdateAsync(workbookChartSeries);
 

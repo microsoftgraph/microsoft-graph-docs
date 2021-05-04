@@ -4,7 +4,7 @@ description: "A page in a OneNote notebook."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: ""
+author: "jewan-microsoft"
 ---
 
 # onenotePage resource type
@@ -21,9 +21,9 @@ A page in a OneNote notebook.
 |content|Stream|The page's HTML content.|
 |contentUrl|String|The URL for the page's HTML content.  Read-only.|
 |createdByAppId|String|The unique identifier of the application that created the page. Read-only.|
-|createdDateTime|DateTimeOffset|The date and time when the page was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
+|createdDateTime|DateTimeOffset|The date and time when the page was created. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |id|String|The unique identifier of the page.  Read-only.|
-|lastModifiedDateTime|DateTimeOffset|The date and time when the page was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the page was last modified. The timestamp represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |level|Int32|The indentation level of the page. Read-only.|
 |links|[pageLinks](pagelinks.md)|Links for opening the page. The `oneNoteClientURL` link opens the page in the OneNote native client if it 's installed. The `oneNoteWebUrl` link opens the page in OneNote on the web. Read-only.|
 |order|Int32|The order of the page within its parent section. Read-only.|
@@ -56,7 +56,7 @@ Here is a JSON representation of the resource.
     "parentSection"
   ],
   "keyProperty": "id",
-  "baseType":"microsoft.graph.entity",  
+  "baseType":"microsoft.graph.entity",
   "@odata.type": "microsoft.graph.onenotePage"
 }-->
 
@@ -88,3 +88,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

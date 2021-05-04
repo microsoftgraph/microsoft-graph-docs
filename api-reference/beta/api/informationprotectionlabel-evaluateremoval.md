@@ -3,7 +3,7 @@ title: "informationProtectionLabel: evaluateRemoval"
 description: "Evaluate which label to remove and how to remove it based on existing content info."
 localization_priority: Normal
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "apiPageType"
 ---
 
@@ -39,7 +39,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /informationprotection/policy/labels/evaluateRemoval
+POST /informationProtection/policy/labels/evaluateRemoval
 ```
 
 ## Request headers
@@ -79,7 +79,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/informationprotection/policy/labels/evaluateRemoval
+POST https://graph.microsoft.com/beta/informationProtection/policy/labels/evaluateRemoval
 Content-type: application/json
 User-agent: ContosoLOBApp/1.0
 
@@ -148,6 +148,10 @@ User-agent: ContosoLOBApp/1.0
 [!INCLUDE [sample-code](../includes/snippets/objc/informationprotectionlabel-evaluateremoval-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/informationprotectionlabel-evaluateremoval-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -155,7 +159,7 @@ User-agent: ContosoLOBApp/1.0
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -197,3 +201,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

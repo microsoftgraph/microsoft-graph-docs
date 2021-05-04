@@ -6,12 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var delta = await graphClient.Me.ContactFolders["{id}"].Contacts
+var delta = await graphClient.Me.ContactFolders["{contactFolder-id}"].Contacts
 	.Delta()
 	.Request()
-	.Select( e => new {
-			 e.DisplayName 
-			 })
+	.Select("displayName")
 	.GetAsync();
 
 ```

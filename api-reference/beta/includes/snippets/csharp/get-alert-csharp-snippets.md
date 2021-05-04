@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var alert = await graphClient.Security.Alerts["{id}"]
+var alert = await graphClient.Security.Alerts["{alert-id}"]
 	.Request()
 	.GetAsync();
 

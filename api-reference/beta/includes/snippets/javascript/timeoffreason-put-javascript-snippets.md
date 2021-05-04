@@ -11,12 +11,12 @@ const options = {
 const client = Client.init(options);
 
 const timeOffReason = {
-  displayName: "Vacation",
-  iconType: "plane",
+  displayName: 'Vacation',
+  iconType: 'plane',
   isActive: true
 };
 
-let res = await client.api('/teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}')
+await client.api('/teams/{teamId}/schedule/timeOffReasons/{timeOffReasonId}')
 	.version('beta')
 	.put(timeOffReason);
 

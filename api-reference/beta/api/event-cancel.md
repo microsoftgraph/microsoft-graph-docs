@@ -47,9 +47,6 @@ POST /groups/{id}/calendar/events/{id}/cancel
 POST /me/calendars/{id}/events/{id}/cancel
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/cancel
 
-POST /me/calendargroup/calendars/{id}/events/{id}/cancel
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/cancel
-
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/cancel
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/cancel
 ```
@@ -100,6 +97,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/event-cancel-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/event-cancel-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -126,3 +127,5 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
+
+

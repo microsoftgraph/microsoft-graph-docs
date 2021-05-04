@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/events/{id}/dismissReminder')
+await client.api('/me/events/{id}/dismissReminder')
 	.post();
 
 ```

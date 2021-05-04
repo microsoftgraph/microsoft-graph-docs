@@ -1,59 +1,40 @@
 ---
-title: "Workbook resource type"
-description: "Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc."
+title: "workbook resource type"
+description: "The top-level object that contains related workbook objects such as worksheets, tables, and ranges."
 localization_priority: Priority
 author: "lumine2008"
 ms.prod: "excel"
 doc_type: resourcePageType
 ---
 
-# Workbook resource type
+# workbook resource type
 
 Namespace: microsoft.graph
 
-Workbook is the top level object which contains related workbook objects such as worksheets, tables, ranges, etc.
-
-## JSON representation
-
-Here is a JSON representation of the resource
-
-<!--{
-  "blockType": "resource",
-  "optionalProperties": [],
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.workbook"
-}-->
-
-```json
-{
-  "names": [{"@odata.type": "microsoft.graph.workbookNamedItem"}],
-  "tables": [{"@odata.type": "microsoft.graph.workbookTable"}],
-  "worksheets": [{"@odata.type": "microsoft.graph.workbookWorksheet"}]
-}
-```
-
-## Properties
-None
+The top-level object that contains related workbook objects such as worksheets, tables, and ranges.
 
 ## Methods
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[Create Session](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |Create a workbook session to start a persistent or non-persistent session.|
-|[Close Session](../api/workbook-closesession.md) | None |Close an existing session.|
-|[Refresh Session](../api/workbook-refreshsession.md) | None |Refresh an existing session.|
+|[Create session](../api/workbook-createsession.md) | [workbookSessionInfo](workbooksessioninfo.md) |Create a workbook session to start a persistent or non-persistent session.|
+|[Close session](../api/workbook-closesession.md) | None |Close an existing session.|
+|[Refresh session](../api/workbook-refreshsession.md) | None |Refresh an existing session.|
 
+## Properties
+None.
 
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|names|[WorkbookNamedItem](nameditem.md) collection|Represents a collection of workbook scoped named items (named ranges and constants). Read-only.|
-|tables|[WorkbookTable](table.md) collection|Represents a collection of tables associated with the workbook. Read-only.|
-|worksheets|[WorkbookWorksheet](worksheet.md) collection|Represents a collection of worksheets associated with the workbook. Read-only.|
+|names|[workbookNamedItem](nameditem.md) collection|Represents a collection of workbook scoped named items (named ranges and constants). Read-only.|
+|tables|[workbookTable](table.md) collection|Represents a collection of tables associated with the workbook. Read-only.|
+|worksheets|[workbookWorksheet](worksheet.md) collection|Represents a collection of worksheets associated with the workbook. Read-only.|
+|operations|[workbookOperation](workbookoperation.md) collection|The status of workbook operations. Getting an operation collection is not supported, but you can get the status of a long-running operation if the `Location` header is returned in the response. Read-only.|
 
 ## Functions
 
-[Excel functions](#functions): Invoke a workbook function using the syntax `POST /workbook/functions/{function-name}` and providing the function argument(s) in the body using a JSON object. The function's resulting `value` and any `error` strings are returned in the function result object. The `error` value of `null` indicates successful execution of the function. 
+[Excel functions](#functions): Invoke a workbook function using the syntax `POST /me/drive/root/workbook/functions/{function-name}` and providing the function argument(s) in the body using a JSON object. The function's resulting `value` and any `error` strings are returned in the function result object. The `error` value of `null` indicates successful execution of the function. 
 
 The complete list of supported functions are listed [here](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Refer to the function signature for specific parameter names and data types.
 
@@ -151,7 +132,22 @@ content-type: application/json;odata.metadata
   "value": 30
 }
 ```
+## JSON representation
 
+<!--{
+  "blockType": "resource",
+  "optionalProperties": [],
+  "baseType": "microsoft.graph.entity",
+  "@odata.type": "microsoft.graph.workbook"
+}-->
+
+```json
+{
+  "names": [{"@odata.type": "microsoft.graph.workbookNamedItem"}],
+  "tables": [{"@odata.type": "microsoft.graph.workbookTable"}],
+  "worksheets": [{"@odata.type": "microsoft.graph.workbookWorksheet"}]
+}
+```
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {
@@ -161,3 +157,4 @@ content-type: application/json;odata.metadata
   "section": "documentation",
   "tocPath": ""
 }-->
+

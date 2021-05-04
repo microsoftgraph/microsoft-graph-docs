@@ -24,8 +24,10 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/sort/apply
-POST /workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
+POST /me/drive/items/{id}/workbook/tables/{id|name}/sort/apply
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/sort/apply
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/sort/apply
 
 ```
 ## Request headers
@@ -120,3 +122,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

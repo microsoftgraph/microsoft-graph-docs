@@ -1,6 +1,5 @@
 ---
 author: daspek
-ms.author: dspektor
 title: shareAction resource type
 description: The shareAction object provides information about who an item was shared to in a share action.
 localization_priority: Normal
@@ -49,3 +48,4 @@ The **shareAction** resource provides information about an [activity][activity] 
   "suppressions": []
 }
 -->
+

@@ -3,7 +3,7 @@ title: "domainDnsMxRecord resource type"
 description: "Represents a MX record added to the DNS zone file of a particular domain in the tenant."
 author: "adimitui"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
@@ -66,3 +66,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

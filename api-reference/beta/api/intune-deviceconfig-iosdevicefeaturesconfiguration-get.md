@@ -3,7 +3,7 @@ title: "Get iosDeviceFeaturesConfiguration"
 description: "Read properties and relationships of the iosDeviceFeaturesConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -20,11 +20,11 @@ Read properties and relationships of the [iosDeviceFeaturesConfiguration](../res
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 7315
+Content-Length: 7435
 
 {
   "value": {
@@ -143,7 +143,8 @@ Content-Length: 7315
               {
                 "@odata.type": "microsoft.graph.iosHomeScreenApp",
                 "displayName": "Display Name value",
-                "bundleID": "Bundle ID value"
+                "bundleID": "Bundle ID value",
+                "isWebClip": true
               }
             ]
           }
@@ -166,7 +167,8 @@ Content-Length: 7315
                   {
                     "@odata.type": "microsoft.graph.iosHomeScreenApp",
                     "displayName": "Display Name value",
-                    "bundleID": "Bundle ID value"
+                    "bundleID": "Bundle ID value",
+                    "isWebClip": true
                   }
                 ]
               }
@@ -186,7 +188,8 @@ Content-Length: 7315
         "showOnLockScreen": true,
         "alertType": "banner",
         "badgesEnabled": true,
-        "soundsEnabled": true
+        "soundsEnabled": true,
+        "previewVisibility": "alwaysShow"
       }
     ],
     "singleSignOnSettings": {
@@ -276,6 +279,7 @@ Content-Length: 7315
   }
 }
 ```
+
 
 
 

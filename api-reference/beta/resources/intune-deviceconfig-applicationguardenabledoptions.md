@@ -3,7 +3,7 @@ title: "applicationGuardEnabledOptions enum type"
 description: "Possible values for ApplicationGuardEnabledOptions"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -24,6 +24,7 @@ Possible values for ApplicationGuardEnabledOptions
 |enabledForEdge|1|Enabled For Edge|
 |enabledForOffice|2|Enabled For Office|
 |enabledForEdgeAndOffice|3|Enabled For Edge And Office|
+
 
 
 

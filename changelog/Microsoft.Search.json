@@ -1,0 +1,188 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
+          "ApiChange": "Property",
+          "ChangedApiName": "state",
+          "ChangeType": "Addition",
+          "Description": "Added the **state** property to the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnection?view=graph-rest-beta) resource.",
+          "Target": "externalConnection"
+        },
+        {
+          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalGroup](https://docs.microsoft.com/en-us/graph/api/resources/externalgroup?view=graph-rest-beta) resource.",
+          "Target": "externalGroup"
+        },
+        {
+          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalGroupMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalGroupMember](https://docs.microsoft.com/en-us/graph/api/resources/externalgroupmember?view=graph-rest-beta) resource.",
+          "Target": "externalGroupMember"
+        },
+        {
+          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
+          "ApiChange": "Resource",
+          "ChangedApiName": "drive,list,listItem,site",
+          "ChangeType": "Addition",
+          "Description": "Search more types in OneDrive and SharePoint: **drive**, **list**, **listItem**, and **site**. See [more details here](https://docs.microsoft.com/en-us/graph/api/resources/search-api-overview?view=graph-rest-beta\u0026preserve-view=true#scope-search-based-on-entity-types).",
+          "Target": "more details here"
+        },
+        {
+          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
+          "ApiChange": "Property",
+          "ChangedApiName": "selected properties",
+          "ChangeType": "Addition",
+          "Description": "Identify [selected properties](https://docs.microsoft.com/en-us/graph/api/resources/search-api-overview?view=graph-rest-beta\u0026preserve-view=true#get-selected-properties) to return in search results.",
+          "Target": "selected properties"
+        },
+        {
+          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
+          "ApiChange": "Resource",
+          "ChangedApiName": "sortProperties",
+          "ChangeType": "Addition",
+          "Description": "[Sort](https://docs.microsoft.com/en-us/graph/api/resources/search-api-overview?view=graph-rest-beta\u0026preserve-view=true#sort-search-results) search results from OneDrive and SharePoint by specifying **sortProperties** in a [searchRequest](https://docs.microsoft.com/en-us/graph/api/resources/searchRequest?view=graph-rest-beta\u0026preserve-view=true) resource.",
+          "Target": "Sort,searchRequest"
+        },
+        {
+          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
+          "ApiChange": "Resource",
+          "ChangedApiName": "aggregations,aggregationFilters,searchRequest",
+          "ChangeType": "Addition",
+          "Description": "[Refine results using aggregations](https://docs.microsoft.com/en-us/graph/api/resources/search-api-overview?view=graph-rest-beta\u0026preserve-view=true#refine-results-using-aggregations) for OneDrive and SharePoint by specifying **aggregations** and **aggregationFilters** in a **searchRequest** resource.",
+          "Target": "Refine results using aggregations"
+        },
+        {
+          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
+          "ApiChange": "Resource",
+          "ChangedApiName": "more than one connection",
+          "ChangeType": "Addition",
+          "Description": "Query external data across [more than one connection](search-concept-custom-types.md).",
+          "Target": "more than one connection"
+        },
+        {
+          "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
+          "ApiChange": "Property",
+          "ChangedApiName": "more details",
+          "ChangeType": "Change",
+          "Description": "Some properties in the request and response have been renamed and are deprecated.  See [more details](https://docs.microsoft.com/en-us/graph/api/resources/search-api-overview?view=graph-rest-beta\u0026preserve-view=true#schema-change-deprecation-warning) about the deprecation.",
+          "Target": "more details"
+        }
+      ],
+      "Id": "f9a8c221-8738-4628-bd68-1984c6ad6934",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-09-01T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "76c9f541-dd4d-4ba8-bde7-4d4927798962",
+          "ApiChange": "Property",
+          "ChangedApiName": "aliases,isRefinable,labels",
+          "ChangeType": "Addition",
+          "Description": "Added the **aliases**, **isRefinable**, and **labels** properties to the [property](https://docs.microsoft.com/en-us/graph/api/resources/property?view=graph-rest-beta) entity.",
+          "Target": "property"
+        },
+        {
+          "Id": "76c9f541-dd4d-4ba8-bde7-4d4927798962",
+          "ApiChange": "Resource",
+          "ChangedApiName": "get externalItem",
+          "ChangeType": "Addition",
+          "Description": "Added the [get externalItem](https://docs.microsoft.com/en-us/graph/api/externalitem-get?view=graph-rest-beta) operation.",
+          "Target": "get externalItem"
+        }
+      ],
+      "Id": "76c9f541-dd4d-4ba8-bde7-4d4927798962",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-06-01T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "26b3eb01-e194-4147-af85-d1fcc076ac47",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalFile",
+          "ChangeType": "Change",
+          "Description": "The [externalFile](https://docs.microsoft.com/en-us/graph/api/resources/externalfile?view=graph-rest-beta) resource has been deprecated.",
+          "Target": "externalFile"
+        },
+        {
+          "Id": "26b3eb01-e194-4147-af85-d1fcc076ac47",
+          "ApiChange": "Property",
+          "ChangedApiName": "content,properties",
+          "ChangeType": "Change",
+          "Description": "The [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalfile?view=graph-rest-beta) resource now supports updating the **content** and **properties** properties.",
+          "Target": "externalItem"
+        },
+        {
+          "Id": "26b3eb01-e194-4147-af85-d1fcc076ac47",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Retry-After",
+          "ChangeType": "Change",
+          "Description": "Operations on [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalfile?view=graph-rest-beta) resources now return a **Retry-After** header when they are throttled.",
+          "Target": "externalItem"
+        }
+      ],
+      "Id": "26b3eb01-e194-4147-af85-d1fcc076ac47",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-03-01T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "428fd37c-9deb-4b89-9272-33a62471ae29",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Microsoft Search API,querying,indexing",
+          "ChangeType": "Addition",
+          "Description": "Added the [Microsoft Search API](search-concept-overview.md) that constitutes [querying](https://docs.microsoft.com/en-us/graph/api/search-query?view=graph-rest-beta) and [indexing](https://docs.microsoft.com/en-us/graph/api/resource/indexing-api-overview?view=graph-rest-beta) capabilities.",
+          "Target": "Microsoft Search API,querying,indexing"
+        },
+        {
+          "Id": "428fd37c-9deb-4b89-9272-33a62471ae29",
+          "ApiChange": "Resource",
+          "ChangedApiName": "query",
+          "ChangeType": "Addition",
+          "Description": "Added the [query](https://docs.microsoft.com/en-us/graph/api/search-query?view=graph-rest-beta) action.",
+          "Target": "query"
+        },
+        {
+          "Id": "428fd37c-9deb-4b89-9272-33a62471ae29",
+          "ApiChange": "Resource",
+          "ChangedApiName": "searchRequest,searchQuery,searchQueryString,searchResponse,searchHitsContainer,searchHit",
+          "ChangeType": "Addition",
+          "Description": "Added the [searchRequest](https://docs.microsoft.com/en-us/graph/api/resources/searchrequest?view=graph-rest-beta), [searchQuery](https://docs.microsoft.com/en-us/graph/api/resources/searchquery?view=graph-rest-beta), [searchQueryString](https://docs.microsoft.com/en-us/graph/api/resources/searchquerystring?view=graph-rest-beta),[searchResponse](https://docs.microsoft.com/en-us/graph/api/resources/searchresponse?view=graph-rest-beta), [searchHitsContainer](https://docs.microsoft.com/en-us/graph/api/resources/searchhitscontainer?view=graph-rest-beta), and [searchHit](https://docs.microsoft.com/en-us/graph/api/resources/searchhit?view=graph-rest-beta) complex types.",
+          "Target": "searchRequest,searchQuery,searchQueryString,searchResponse,searchHitsContainer,searchHit"
+        },
+        {
+          "Id": "428fd37c-9deb-4b89-9272-33a62471ae29",
+          "ApiChange": "Resource",
+          "ChangedApiName": "externalConnection,schema,externalItem,externalFile",
+          "ChangeType": "Addition",
+          "Description": "Added the [externalConnection](https://docs.microsoft.com/en-us/graph/api/resources/externalconnection?view=graph-rest-beta), [schema](https://docs.microsoft.com/en-us/graph/api/resources/schema?view=graph-rest-beta), [externalItem](https://docs.microsoft.com/en-us/graph/api/resources/externalitem?view=graph-rest-beta), and [externalFile](https://docs.microsoft.com/en-us/graph/api/resources/externalfile?view=graph-rest-beta) entities, and methods exposed by these entities.",
+          "Target": "externalConnection,schema,externalItem,externalFile"
+        }
+      ],
+      "Id": "428fd37c-9deb-4b89-9272-33a62471ae29",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2019-11-01T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    }
+  ]
+}

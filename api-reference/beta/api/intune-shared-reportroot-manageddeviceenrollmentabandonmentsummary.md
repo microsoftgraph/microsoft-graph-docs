@@ -1,7 +1,7 @@
 ---
 title: "managedDeviceEnrollmentAbandonmentSummary function"
 description: "Metadata for Enrollment abandonment summary report"
-author: "dougeby"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -79,6 +79,7 @@ Content-Length: 123
   }
 }
 ```
+
 
 
 

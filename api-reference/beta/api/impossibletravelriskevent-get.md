@@ -4,16 +4,16 @@ description: "Retrieve the properties and relationships of an impossibletravelri
 localization_priority: Normal
 doc_type: apiPageType
 author: "cloudhandler"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 ---
 
-# Get impossibleTravelRiskEvent
+# Get impossibleTravelRiskEvent (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->[!NOTE]
+>[!CAUTION]
 >The **identityRiskEvents** API is deprecated and will stop returning data on January 10, 2020. For details, see [Deprecation of the IdentityRiskEvents API](https://developer.microsoft.com/office/blogs/deprecatation-of-the-identityriskevents-api/).
 
 Retrieve the properties and relationships of an impossibletravelriskevent object.
@@ -54,7 +54,7 @@ Here is an example of the request.
 GET https://graph.microsoft.com/v1.0/impossibleTravelRiskEvents/22e65c1f-909a-42b5-c0d2-075f30e27887-0bfdc7a8-6a16-c33e-7de9-a60a28ae533b-15475553-dbc1-8879-5079-23b1edd25bab
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -99,3 +99,5 @@ Content-length: 260
   "suppressions": []
 }
 -->
+
+

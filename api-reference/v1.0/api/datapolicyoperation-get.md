@@ -3,7 +3,7 @@ title: "Get dataPolicyOperation"
 description: "Retrieve the properties of the dataPolicyOperation object."
 localization_priority: Normal
 author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/v1.0/dataPolicyOperations/{id}
 ---
 
 ##### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,3 +100,4 @@ Content-length: 212
   "suppressions": [
   ]
 }-->
+

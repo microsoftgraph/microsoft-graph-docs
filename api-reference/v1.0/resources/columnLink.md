@@ -1,6 +1,5 @@
 ---
 author: daspek
-ms.author: dspektor
 ms.date: 09/12/2017
 title: ColumnLink
 localization_priority: Normal
@@ -45,3 +44,4 @@ Here is a JSON representation of a **columnLink** resource.
   "section": "documentation",
   "tocPath": "Resources/ColumnLink"
 } -->
+

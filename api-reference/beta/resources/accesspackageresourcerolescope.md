@@ -3,7 +3,7 @@ title: "accessPackageResourceRoleScope resource type"
 description: "An access package resource role scope is a reference to both a scope within a resource, and a role in that resource."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
 
@@ -27,10 +27,10 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |createdBy|String|Read-only.|
-|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |id|String| Read-only.|
 |modifiedBy|String|Read-only.|
-|modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|modifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 
 ## Relationships
 
@@ -49,31 +49,29 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.accessPackageResourceRoleScope",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
 ```json
 {
-  "createdBy": "String",
-  "createdDateTime": "String (timestamp)",
-  "id": "String (identifier)",
-  "modifiedBy": "String",
-  "modifiedDateTime": "String (timestamp)",
-  "accessPackageResourceRole": {
-    "id": "String (identifier)",
-     "displayName": "String",
-     "originSystem": "String",
-     "originId": "String"
-  },
-  "accessPackageResourceScope": {
-     "id": "String (identifier)",
-     "displayName": "String",
-     "description": "String",
-     "originId": "String (identifier)",
-     "originSystem": "String"
-  }
-
+   "createdBy":"String",
+   "createdDateTime":"String (timestamp)",
+   "id":"String (identifier)",
+   "modifiedBy":"String",
+   "modifiedDateTime":"String (timestamp)",
+   "accessPackageResourceRole":{
+      "id":"String (identifier)",
+      "displayName":"String",
+      "originSystem":"String",
+      "originId":"String"
+   },
+   "accessPackageResourceScope":{
+      "id":"String (identifier)",
+      "displayName":"String",
+      "description":"String",
+      "originId":"String (identifier)",
+      "originSystem":"String"
+   }
 }
 ```
 
@@ -86,3 +84,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

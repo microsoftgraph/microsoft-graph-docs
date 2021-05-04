@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Subscriptions["{id}"]
+await graphClient.Subscriptions["{subscription-id}"]
 	.Request()
 	.DeleteAsync();
 

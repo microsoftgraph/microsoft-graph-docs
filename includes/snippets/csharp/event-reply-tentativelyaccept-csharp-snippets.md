@@ -11,7 +11,7 @@ var comment = "I will probably be able to make it.";
 var sendResponse = true;
 
 await graphClient.Me.Events["AAMkADADVj3fyAABZ5ieyAAA="]
-	.TentativelyAccept(null,sendResponse,comment)
+	.TentativelyAccept(comment,sendResponse)
 	.Request()
 	.PostAsync();
 

@@ -12,8 +12,8 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphContactFolder *contactFolder = [[MSGraphContactFolder alloc] init];
-[contactFolder setParentFolderId:@"parentFolderId-value"];
-[contactFolder setDisplayName:@"displayName-value"];
+[contactFolder setParentFolderId:@"AQMkADIxYjJiYgEzLTFmNjYALTRjYTMtODA1NC0wZDkxZGNmOTcxNTQALgAAA8RJzXYaLKZPlmn0ge0edZkBADa3qi2IMXRNg6RwQSHe_F8AAAIBDgAAAA=="];
+[contactFolder setDisplayName:@"Important contacts"];
 
 NSError *error;
 NSData *contactFolderData = [contactFolder getSerializedDataWithError:&error];

@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: CalculatedColumn
 localization_priority: Normal
@@ -53,3 +52,4 @@ See [Examples of common formulas in SharePoint Lists][SPFormulas] for more infor
   ],
   "tocPath": "Resources/CalculatedColumn"
 } -->
+

@@ -4,7 +4,7 @@ description: "Summarizes the results of the synchronization job run."
 localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # synchronizationTaskExecution resource type
@@ -30,8 +30,8 @@ Summarizes the results of the synchronization job run.
 |countImportedReferenceDeltas |Int64  |Count of imported delta-changes pertaining to reference changes.|
 |error                        |[synchronizationError](synchronization-synchronizationerror.md)|If an error was encountered, contains a **synchronizationError** object with details.|
 |state                        |String |Code summarizing the result of this run. Possible values are: `Succeeded`, `Failed`, `EntryLevelErrors`.|
-|timeBegan                    |DateTimeOffset|Time when this job run began. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
-|timeEnded                    |DateTimeOffset|Time when this job run ended. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
+|timeBegan                    |DateTimeOffset|Time when this job run began. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|timeEnded                    |DateTimeOffset|Time when this job run ended. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 
 ## JSON representation
 
@@ -77,3 +77,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

@@ -18,11 +18,11 @@ Retrieve a list of **printerShares**.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-In addition to the following permissions, the user's tenant must have an active Universal Print subscription.
+To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table.
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
-|Delegated (work or school account)| Users.Read.All |
+|Delegated (work or school account)| PrinterShare.ReadBasic.All, PrinterShare.Read.All, PrinterShare.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not Supported.|
 |Application|Not Supported.|
 
@@ -34,6 +34,8 @@ GET /print/shares
 
 ## Optional query parameters
 This method supports some of the OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
+To see a list of each printer share's capabilities, include the optional `$select=capabilities` query parameter.
 
 ### Exceptions
 Some operators are not supported: `$count`, `$orderby`, `$search`.
@@ -71,11 +73,15 @@ GET https://graph.microsoft.com/beta/print/shares
 [!INCLUDE [sample-code](../includes/snippets/objc/get-shares-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-shares-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -92,7 +98,7 @@ Content-length: 269
   "value": [
     {
       "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-      "name": "PrinterShareName",
+      "displayName": "PrinterShareName",
       "createdDateTime": "2020-02-04T00:00:00.0000000Z"
     }
   ]
@@ -108,3 +114,5 @@ Content-length: 269
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

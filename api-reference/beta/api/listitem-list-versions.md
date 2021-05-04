@@ -7,7 +7,7 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
-# Listing versions of a ListItem (preview)
+# List versions of a listItem
 
 Namespace: microsoft.graph
 
@@ -112,3 +112,5 @@ Content-Type: application/json
   "suppressions": []
 }
 -->
+
+

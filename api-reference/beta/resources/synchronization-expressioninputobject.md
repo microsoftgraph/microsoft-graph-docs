@@ -4,7 +4,7 @@ description: "Represents an object to be used as input test data when the synchr
 localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # expressionInputObject resource type
@@ -53,3 +53,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

@@ -11,7 +11,7 @@ String comment = "I will probably be able to make it.";
 boolean sendResponse = true;
 
 graphClient.me().events("AAMkADADVj3fyAABZ5ieyAAA=")
-	.tentativelyAccept(null,sendResponse,comment)
+	.tentativelyAccept(comment,sendResponse)
 	.buildRequest()
 	.post();
 

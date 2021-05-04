@@ -3,7 +3,7 @@ title: "groupPolicyConfiguration resource type"
 description: "The group policy configuration entity contains the configured values for one or more group policy definitions."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -65,6 +65,7 @@ Here is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

@@ -13,12 +13,12 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphUser *user = [[MSGraphUser alloc] init];
 [user setAccountEnabled: true];
-[user setDisplayName:@"displayName-value"];
-[user setMailNickname:@"mailNickname-value"];
-[user setUserPrincipalName:@"upn-value@tenant-value.onmicrosoft.com"];
+[user setDisplayName:@"Adele Vance"];
+[user setMailNickname:@"AdeleV"];
+[user setUserPrincipalName:@"AdeleV@contoso.onmicrosoft.com"];
 MSGraphPasswordProfile *passwordProfile = [[MSGraphPasswordProfile alloc] init];
 [passwordProfile setForceChangePasswordNextSignIn: true];
-[passwordProfile setPassword:@"password-value"];
+[passwordProfile setPassword:@"xWwvJ]6NMw+bWH-d"];
 [user setPasswordProfile:passwordProfile];
 
 NSError *error;

@@ -15,12 +15,12 @@ var groupSetting = new GroupSetting
 		new SettingValue
 		{
 			Name = "AllowToAddGuests",
-			Value = false
+			Value = "false"
 		}
 	}
 };
 
-await graphClient.Groups["{id}"].Settings["{id}"]
+await graphClient.Groups["{group-id}"].Settings["{groupSetting-id}"]
 	.Request()
 	.UpdateAsync(groupSetting);
 

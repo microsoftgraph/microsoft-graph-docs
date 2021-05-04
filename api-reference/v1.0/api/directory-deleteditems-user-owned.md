@@ -3,7 +3,7 @@ title: "List deleted items owned by a user"
 description: "Retrieves a list of recently deleted items owned by the specified user.  "
 author: "keylimesoda"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -21,7 +21,7 @@ This is a service action, which means it does not support pagination.  The API r
 
 One of the following permissions is required to call this API. To learn
 more, including how to choose permissions, see
-[Permissions](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
+[Permissions](/graph/permissions-reference).
 
 | Permission type | Permissions (from least to most privileged) |
 | --- | --- |
@@ -121,5 +121,3 @@ Content-length: 1249
         ]
  }
 ```
-
-

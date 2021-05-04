@@ -3,8 +3,8 @@ title: "Delete an oAuth2PermissionGrant"
 description: "Delete an oAuth2PermissionGrant, representing a delegated permission grant."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+ms.prod: "identity-and-sign-in"
+author: "psignoret"
 ---
 
 # Delete a delegated permission grant (oAuth2PermissionGrant)
@@ -81,6 +81,10 @@ DELETE https://graph.microsoft.com/beta/oauth2PermissionGrants/{id}
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-oauth2permissiongrant-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-oauth2permissiongrant-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ### Response
@@ -109,3 +113,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

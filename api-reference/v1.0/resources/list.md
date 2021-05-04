@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: List
 localization_priority: Priority
@@ -149,3 +148,4 @@ The **list** resource has the following relationships to other resources.
     "Lists": "#"
   }
 } -->
+

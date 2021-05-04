@@ -3,7 +3,7 @@ title: "applicationTemplate: instantiate"
 description: "Use this API to create a new applicationTemplate"
 localization_priority: Normal
 author: "luleonpla"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Application.ReadWrite.All, Directory.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Application.ReadWrite.All, Directory.ReadWrite.All |
+| Application                            | Application.ReadWrite.OwnedBy, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
@@ -58,6 +58,8 @@ The following example shows how to call this API.
 ### Request
 
 The following is an example of the request.
+ 
+> You can use this API to instantiate [non-gallery apps](/azure/active-directory/manage-apps/add-non-gallery-app). Use the following ID for **applicationTemplate**: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -85,6 +87,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/applicationtemplate-instantiate-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/applicationtemplate-instantiate-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -92,8 +98,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> [!NOTE]
-> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
@@ -106,51 +111,51 @@ HTTP/1.1 201 OK
 Content-type: application/json
 
 {
-   "servicePrincipal": {
-	  "accountEnabled": true,
-	  "addIns": [
-	    {
-	      "id": "id-value",
-	      "type": "type-value",
-	      "properties": [
-		{
-		  "key": "key-value",
-		  "value": "value-value"
-		}
-	      ]
-	    }
-	  ],
-	  "appDisplayName": "appDisplayName-value",
-	  "appId": "appId-value",
-	  "appOwnerOrganizationId": "appOwnerOrganizationId-value",
-	  "appRoleAssignmentRequired": true
+   "servicePrincipal":{
+      "accountEnabled":true,
+      "addIns":[
+         {
+            "id":"id-value",
+            "type":"type-value",
+            "properties":[
+               {
+                  "key":"key-value",
+                  "value":"value-value"
+               }
+            ]
+         }
+      ],
+      "appDisplayName":"appDisplayName-value",
+      "appId":"appId-value",
+      "appOwnerOrganizationId":"appOwnerOrganizationId-value",
+      "appRoleAssignmentRequired":true
    },
-   "application": {
-	  "api": {
-	    "acceptedAccessTokenVersion": 1,
-	    "publishedPermissionScopes": [
-	      {
-		"adminConsentDescription": "adminConsentDescription-value",
-		"adminConsentDisplayName": "adminConsentDisplayName-value",
-		"id": "id-value",
-		"isEnabled": true,
-		"type": "type-value",
-		"userConsentDescription": "userConsentDescription-value",
-		"userConsentDisplayName": "userConsentDisplayName-value",
-		"value": "value-value"
-	      }
-	    ]
-	  },
-	  "allowPublicClient": true,
-	  "applicationAliases": [
-	    "applicationAliases-value"
-	  ],
-	  "createdDateTime": "datetime-value",
-	  "installedClients": {
-	    "redirectUrls": [
-	      "redirectUrls-value"
-	    ]
-	  }
+   "application":{
+      "api":{
+         "acceptedAccessTokenVersion":1,
+         "publishedPermissionScopes":[
+            {
+               "adminConsentDescription":"adminConsentDescription-value",
+               "adminConsentDisplayName":"adminConsentDisplayName-value",
+               "id":"id-value",
+               "isEnabled":true,
+               "type":"type-value",
+               "userConsentDescription":"userConsentDescription-value",
+               "userConsentDisplayName":"userConsentDisplayName-value",
+               "value":"value-value"
+            }
+         ]
+      },
+      "allowPublicClient":true,
+      "applicationAliases":[
+         "applicationAliases-value"
+      ],
+      "createdDateTime":"datetime-value",
+      "installedClients":{
+         "redirectUrls":[
+            "redirectUrls-value"
+         ]
+      }
    }
 }
 ```
@@ -164,3 +169,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -2,7 +2,7 @@
 title: "session resource type"
 description: "The session type"
 localization_priority: Normal
-author: "stephenjust"
+author: "williamlooney"
 ms.prod: "cloud-communications"
 doc_type: "resourcePageType"
 ---
@@ -18,8 +18,10 @@ in the case of a Conference call.
 
 ## Methods
 
-No methods exist to directly access sessions. Please use the [Get callRecord](../api/callrecords-callrecord-get.md)
-api with `$expand=sessions` to get the sessions for a [callRecord](callrecords-callrecord.md).
+| Method       | Return Type | Description |
+|:-------------|:------------|:------------|
+| [List sessions](../api/callrecords-session-list.md) | [microsoft.graph.callRecords.session](callrecords-session.md) collection | Retrieve the list of sessions associated with a [callRecord](callrecords-callrecord.md) object.
+ |
 
 ## Properties
 
@@ -29,9 +31,9 @@ api with `$expand=sessions` to get the sessions for a [callRecord](callrecords-c
 |caller|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|Endpoint that initiated the session.|
 |callee|[microsoft.graph.callRecords.endpoint](callrecords-endpoint.md)|Endpoint that answered the session.|
 |failureInfo|[microsoft.graph.callRecords.failureInfo](callrecords-failureinfo.md)|Failure information associated with the session if the session failed.|
-|modalities|string collection|List of modalities present in the session. Possible values are: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`, `screenSharing`, `unknownFutureValue`.|
-|startDateTime|DateTimeOffset|UTC fime when the first user joined the session. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|endDateTime|DateTimeOffset|UTC time when the last user left the session. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|modalities|microsoft.graph.callRecords.modality collection|List of modalities present in the session. Possible values are: `unknown`, `audio`, `video`, `videoBasedScreenSharing`, `data`, `screenSharing`, `unknownFutureValue`.|
+|startDateTime|DateTimeOffset|UTC fime when the first user joined the session. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
+|endDateTime|DateTimeOffset|UTC time when the last user left the session. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 
 
 ## Relationships
@@ -50,7 +52,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.callRecords.session",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
@@ -75,3 +76,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

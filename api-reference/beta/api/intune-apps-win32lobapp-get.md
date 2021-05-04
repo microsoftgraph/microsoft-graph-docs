@@ -3,7 +3,7 @@ title: "Get win32LobApp"
 description: "Read properties and relationships of the win32LobApp object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -20,11 +20,11 @@ Read properties and relationships of the [win32LobApp](../resources/intune-apps-
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegated (work or school account)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Application|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3242
+Content-Length: 3841
 
 {
   "value": {
@@ -94,6 +94,8 @@ Content-Length: 3242
       "Role Scope Tag Ids value"
     ],
     "dependentAppCount": 1,
+    "supersedingAppCount": 3,
+    "supersededAppCount": 2,
     "committedContentVersion": "Committed Content Version value",
     "fileName": "File Name value",
     "size": 4,
@@ -110,7 +112,10 @@ Content-Length: 3242
       "v10_1709": true,
       "v10_1803": true,
       "v10_1809": true,
-      "v10_1903": true
+      "v10_1903": true,
+      "v10_1909": true,
+      "v10_2004": true,
+      "v10_2H20": true
     },
     "minimumFreeDiskSpaceInMB": 8,
     "minimumMemoryInMB": 1,
@@ -138,6 +143,18 @@ Content-Length: 3242
         "detectionType": "exists"
       }
     ],
+    "rules": [
+      {
+        "@odata.type": "microsoft.graph.win32LobAppRegistryRule",
+        "ruleType": "requirement",
+        "check32BitOn64System": true,
+        "keyPath": "Key Path value",
+        "valueName": "Value Name value",
+        "operationType": "exists",
+        "operator": "equal",
+        "comparisonValue": "Comparison Value value"
+      }
+    ],
     "installExperience": {
       "@odata.type": "microsoft.graph.win32LobAppInstallExperience",
       "runAsAccount": "user",
@@ -161,10 +178,12 @@ Content-Length: 3242
       "publisher": "Publisher value"
     },
     "setupFilePath": "Setup File Path value",
-    "installLanguage": "Install Language value"
+    "minimumSupportedWindowsRelease": "Minimum Supported Windows Release value",
+    "displayVersion": "Display Version value"
   }
 }
 ```
+
 
 
 

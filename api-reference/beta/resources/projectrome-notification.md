@@ -53,7 +53,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.notification",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
@@ -67,7 +66,7 @@ The following is a JSON representation of the resource.
   "displayTimeToLive": 1024,
   "expirationDateTime": "String (timestamp)",
   "priority": "string",
-  "fallbackPolicy": {"@odata.type": "microsoft.graph.fallbackpolicy"},  
+  "fallbackPolicy": {"@odata.type": "microsoft.graph.fallbackpolicy"} 
 }
 ```
 
@@ -80,3 +79,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

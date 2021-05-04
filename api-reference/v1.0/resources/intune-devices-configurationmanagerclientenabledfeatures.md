@@ -3,7 +3,7 @@ title: "configurationManagerClientEnabledFeatures resource type"
 description: "configuration Manager client enabled features"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -46,6 +46,8 @@ Here is a JSON representation of the resource.
   "windowsUpdateForBusiness": true
 }
 ```
+
+
 
 
 

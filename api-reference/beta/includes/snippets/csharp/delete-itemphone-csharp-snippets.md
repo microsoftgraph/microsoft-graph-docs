@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Me.Profile.Phones["{id}"]
+await graphClient.Users["{user-id}"].Profile.Phones["{itemPhone-id}"]
 	.Request()
 	.DeleteAsync();
 

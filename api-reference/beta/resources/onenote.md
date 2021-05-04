@@ -17,15 +17,15 @@ The entry point for OneNote resources.
 
 All calls to the OneNote service through the Microsoft Graph API use this service root URL:
 
-```
+```http
 https://graph.microsoft.com/{version}/{location}/onenote/ 
 ```
 
-The location can be user notebooks on Office 365 or consumer OneDrive, group notebooks, or SharePoint site-hosted team notebooks on Office 365. 
+The location can be user notebooks on Microsoft 365 or consumer OneDrive, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365. 
 
 **User notebooks** To access personal notebooks on consumer OneDrive or OneDrive for Business, use one of the following URLs:
 
-```
+```http
 https://graph.microsoft.com/{version}/me/onenote/{notebooks | sections | sectionGroups | pages} 
 https://graph.microsoft.com/{version}/users/{userPrincipalName}/onenote/{notebooks | sections | sectionGroups | pages} 
 https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
@@ -33,12 +33,12 @@ https://graph.microsoft.com/{version}/users/{id}/onenote/{notebooks | sections |
 
 **Group notebooks** To access notebooks that are owned by a group, use the following service root URL:
 
-```
+```http
 https://graph.microsoft.com/{version}/groups/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
 **SharePoint site notebooks** To access notebooks that are owned by a SharePoint team site, use the following service root URL:
 
-```
+```http
 https://graph.microsoft.com/{version}/sites/{id}/onenote/{notebooks | sections | sectionGroups | pages} 
 ```
 
@@ -94,3 +94,5 @@ For information about the permissions required to work with OneNote APIs, see [N
   "suppressions": []
 }
 -->
+
+

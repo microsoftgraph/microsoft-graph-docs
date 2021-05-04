@@ -40,6 +40,7 @@ var @event = new Event
 			Type = AttendeeType.Required
 		}
 	},
+	AllowNewTimeProposals = true,
 	IsOnlineMeeting = true,
 	OnlineMeetingProvider = OnlineMeetingProviderType.TeamsForBusiness
 };

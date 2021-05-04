@@ -3,7 +3,7 @@ title: "Get device"
 description: "Get the properties and relationships of a device object."
 author: "spunukol"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /devices/{id}
 ```
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 ## Request headers
 | Name       | Type | Description|
 |:-----------|:------|:----------|
@@ -46,8 +46,8 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and [device](../resources/device.md) object in the response body.
 ## Example
-##### Request
-Here is an example of the request.
+### Request
+The following example shows a request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -69,13 +69,19 @@ GET https://graph.microsoft.com/beta/devices/{id}
 [!INCLUDE [sample-code](../includes/snippets/objc/get-device-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-device-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
-> Note: The "id" in the request is the "id" property of the device, not the "deviceId" property.
+> **Note:** The `id` in the request is the **id** property of the device, not the **deviceId** property.
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+The following example shows a response for a device with no **hostNames**. 
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -91,9 +97,34 @@ Content-length: 322
   "approximateLastSignInDateTime": "2016-10-19T10:37:00Z",
   "deviceId": "deviceId-value",
   "deviceMetadata": "deviceMetadata-value",
-  "deviceVersion": 99
+  "deviceVersion": 99,
+  "hostNames": []
 }
 ```
+
+The following example shows a response for a device with **hostNames**. 
+
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.device"
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+Content-length: 322
+
+{
+  "accountEnabled": true,
+  "approximateLastSignInDateTime": "2016-10-19T10:37:00Z",
+  "deviceId": "deviceId-value",
+  "deviceMetadata": "deviceMetadata-value",
+  "deviceVersion": 99,
+  "hostnames":["hostname1.contoso.onmicrosoft.com", "hostname1"]
+}
+```
+
 
 ## See also
 

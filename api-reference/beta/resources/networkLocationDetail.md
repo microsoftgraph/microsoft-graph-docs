@@ -2,8 +2,8 @@
 title: "networkLocationDetail resource type"
 description: "Provides the name and type of network from which the user signed in."
 localization_priority: Normal
-author: "khotz"
-ms.prod: "microsoft-identity-platform"
+author: "besiler"
+ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"
 ---
 
@@ -51,3 +51,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

@@ -24,7 +24,7 @@ Programmatically, a [bookingBusiness](bookingbusiness.md) in the Bookings API in
 
 Walk through the following steps before booking customer appointments for a business the first time. Make sure you provide the appropriate [access tokens](/graph/auth-overview) for the corresponding operations.
 
-1. Make sure the business has an [Office 365 Business Premium](https://products.office.com/en-us/business/office-365-business-premium) subscription.
+1. Make sure the business has an [Microsoft 365 Business Premium](https://products.office.com/en-us/business/office-365-business-premium) subscription.
 2. Create a new **bookingBusiness** by sending a POST operation to the entity set. At minimum, you should specify a name for the new business that customers will see:
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -69,7 +69,7 @@ POST https://graph.microsoft.com/beta/bookingBusinesses/{id}/publish
 Authorization: Bearer {access token}
 ```
 
-In general, to list all the booking businesses in the Office 365 tenant:
+In general, to list all the booking businesses in the Microsoft 365 tenant:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET https://graph.microsoft.com/beta/bookingBusinesses
@@ -91,9 +91,13 @@ The following table lists the common operations for a business in the Bookings A
 | Get appointments in a date range | [bookingBusiness](bookingbusiness.md) | [List Bookings calendarView](../api/bookingbusiness-list-calendarview.md) |
 | Get currency | [bookingCurrency](bookingcurrency.md) | [Methods of bookingCurrency](bookingcurrency.md#methods) |
 
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
 
 ## See also
 
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
 - Learn how to choose [permissions](/graph/permissions-reference) in Microsoft Graph.
+
+

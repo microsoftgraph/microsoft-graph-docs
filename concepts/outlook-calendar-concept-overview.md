@@ -1,6 +1,6 @@
 ---
 title: "Outlook calendar API overview"
-description: "Outlook calendar is part of the Outlook messaging hub in Office 365 that also lets you manage emails and contacts, find information about users in an organization,"
+description: "Outlook calendar is part of the Outlook messaging hub in Microsoft 365 that also lets you manage emails and contacts, find information about users in an organization,"
 author: "angelgolfer-ms"
 localization_priority: Priority
 ms.prod: "outlook"
@@ -9,7 +9,7 @@ ms.custom: scenarios:getting-started
 
 # Outlook calendar API overview
 
-Outlook calendar is part of the Outlook messaging hub in Office 365 that also lets you manage emails and contacts, find information about users in an organization,
+Outlook calendar is part of the Outlook messaging hub in Microsoft 365 that also lets you manage emails and contacts, find information about users in an organization,
 initiate online conversations, share files, and collaborate in groups.
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/_ST4nyz4g9E]
@@ -51,7 +51,7 @@ The calendar API helps customers navigate their day and enhance productivity:
 
 - In Outlook, customers can share calendars with one another and give permissions to read, write, or delete calendar contents. Or, they can delegate a calendar to let another customer respond to meeting requests on their behalf. Programmatically, while you cannot initiate a share or delegate action on behalf of a user, you can use a set of properties to verify the sharing status and enable scenarios around shared or delegated calendars: **canEdit**, **canShare**, **canViewPrivateItems**, **isShared**, and **isSharedWithMe**.
 - The calendar API lets you get calendar items of the signed-in user, or users who have shared or delegated their calendars to the signed-in user. For example, if Garth has shared a calendar with John, or if Garth has delegated access to John, then [delegated permissions](auth/auth-concepts.md#microsoft-graph-permissions) from John would give you read access to Garth's shared calendar and contents as well.
-- Office 365 groups make it convenient for group members to collaborate and access group conversations and calendars right in Outlook. Aside from a few minor differences between group calendars and user calendars, the calendar API lets you interact with group calendars just like user calendars. See the [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) resource for more information<sup>**</sup>.
+- Microsoft 365 groups make it convenient for group members to collaborate and access group conversations and calendars right in Outlook. Aside from a few minor differences between group calendars and user calendars, the calendar API lets you interact with group calendars just like user calendars. See the [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) resource for more information<sup>**</sup>.
 
 ## Schedule smart
 

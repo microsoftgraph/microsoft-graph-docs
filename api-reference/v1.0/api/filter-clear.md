@@ -2,7 +2,7 @@
 title: "Filter: clear"
 description: "Clear the filter on the given column."
 localization_priority: Normal
-author: ""
+author: "ruoyingl"
 ms.prod: ""
 doc_type: apiPageType
 ---
@@ -24,8 +24,10 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns/{id|name}/filter/clear
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/clear
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/filter/clear
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/filter/clear
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/clear
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/clear
 
 ```
 ## Request headers
@@ -73,7 +75,7 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/tables/{id|na
 
 
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -93,3 +95,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

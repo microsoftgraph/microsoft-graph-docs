@@ -26,9 +26,12 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range/format/fill/clear
-POST /workbook/worksheets/{id|name}/range(address='<address>')/format/fill/clear
-POST /workbook/tables/{id|name}/columns/{id|name}/range/format/fill/clear
+POST /me/drive/items/{id}/workbook/names/{name}/range/format/fill/clear
+POST /me/drive/root:/{item-path}:/workbook/names/{name}/range/format/fill/clear
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/format/fill/clear
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/format/fill/clear
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/format/fill/clear
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/format/fill/clear
 
 ```
 ## Request headers
@@ -68,6 +71,10 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/
 [!INCLUDE [sample-code](../includes/snippets/objc/rangefill-clear-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/rangefill-clear-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -95,3 +102,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

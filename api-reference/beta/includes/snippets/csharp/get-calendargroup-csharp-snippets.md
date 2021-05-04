@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var calendarGroup = await graphClient.Me.CalendarGroups["{id}"]
+var calendarGroup = await graphClient.Me.CalendarGroups["{calendarGroup-id}"]
 	.Request()
 	.GetAsync();
 

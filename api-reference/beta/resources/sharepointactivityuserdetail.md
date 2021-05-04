@@ -4,7 +4,7 @@ description: "The following is a JSON representation of the resource."
 localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: resourcePageType
-author: ""
+author: "JeremyKelley"
 ---
 
 # sharePointActivityUserDetail resource type
@@ -39,17 +39,19 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "reportRefreshDate": "Date", 
-  "userPrincipalName": "String", 
-  "isDeleted": true, 
-  "deletedDate": "Date", 
-  "lastActivityDate": "Date", 
-  "viewedOrEditedFileCount": 1024, 
-  "syncedFileCount": 1024, 
-  "sharedInternallyFileCount": 1024, 
-  "sharedExternallyFileCount": 1024, 
-  "visitedPageCount": 1024, 
-  "assignedProducts": ["String"], 
+  "reportRefreshDate": "Date",
+  "userPrincipalName": "String",
+  "isDeleted": true,
+  "deletedDate": "Date",
+  "lastActivityDate": "Date",
+  "viewedOrEditedFileCount": 1024,
+  "syncedFileCount": 1024,
+  "sharedInternallyFileCount": 1024,
+  "sharedExternallyFileCount": 1024,
+  "visitedPageCount": 1024,
+  "assignedProducts": ["String"],
   "reportPeriod": "String"
 }
 ```
+
+

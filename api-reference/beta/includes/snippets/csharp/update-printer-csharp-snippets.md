@@ -17,7 +17,7 @@ var printer = new Printer
 	}
 };
 
-await graphClient.Print.Printers["{id}"]
+await graphClient.Print.Printers["{printer-id}"]
 	.Request()
 	.UpdateAsync(printer);
 

@@ -3,7 +3,7 @@ title: "List threatAssessmentRequests"
 description: "Retrieve a list of threatassessmentrequest objects."
 localization_priority: Normal
 author: "hafen-ms"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "apiPageType"
 ---
 
@@ -28,9 +28,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | ThreatAssessment.ReadWrite.All.             |
+| Delegated (work or school account)     | ThreatAssessment.ReadWrite.All             |
 | Delegated (personal Microsoft account) | Not supported.                              |
-| Application                            | ThreatAssessment.Read.All.                  |
+| Application                            | ThreatAssessment.Read.All                  |
 
 ## HTTP request
 
@@ -92,6 +92,10 @@ GET https://graph.microsoft.com/beta/informationProtection/threatAssessmentReque
 [!INCLUDE [sample-code](../includes/snippets/objc/get-threatassessmentrequests-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-threatassessmentrequests-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -99,7 +103,7 @@ GET https://graph.microsoft.com/beta/informationProtection/threatAssessmentReque
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -202,3 +206,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

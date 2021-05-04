@@ -8,7 +8,6 @@ metadata:
   description: Microsoft Graph tutorials are step-by-step training exercises that guide you through creating a basic application that accesses data via the Microsoft Graph.
   ms.topic: landing-page
   author: jasonjoh
-  ms.author: jasonjoh
   ms.date: 04/02/2020
 
 landingContent:
@@ -16,6 +15,8 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
+          - text: ASP.NET Core
+            url: /graph/tutorials/aspnet-core
           - text: ASP.NET
             url: /learn/modules/msgraph-build-aspnetmvc-apps
           - text: Node.js
@@ -52,17 +53,39 @@ landingContent:
         links:
           - text: Angular
             url: /graph/tutorials/angular
+          - text: Blazor WebAssembly
+            url: /graph/tutorials/blazor
           - text: JavaScript
             url: /graph/tutorials/javascript
           - text: React
             url: /graph/tutorials/react
-  - title: Scenarios
+  - title: Microsoft platforms
     linkLists:
       - linkListType: tutorial
         links:
-          - text: Change notifications and delta query
-            url: /learn/modules/msgraph-changenotifications-trackchanges
-          - text: Optimize data usage with query parameters
-            url: /learn/modules/optimize-data-usage
-          - text: Optimize network traffic
-            url: /learn/modules/optimize-network-traffic
+          - text: Azure Functions
+            url: /graph/tutorials/azure-functions
+          - text: Bot Framework
+            url: /graph/tutorials/bot-framework
+          - text: Office Add-in
+            url: /graph/tutorials/office-addin
+          - text: Power Automate
+            url: /graph/tutorials/power-automate
+          - text: SharePoint Framework
+            url: /graph/tutorials/spfx
+          - text: Teams
+            url: /graph/tutorials/teams
+          - text: Microsoft Graph Toolkit
+            url: /learn/modules/msgraph-toolkit-intro
+  - title: Learn modules
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Microsoft Graph Fundamentals
+            url: /learn/paths/m365-msgraph-fundamentals
+          - text: Build apps with Microsoft Graph - Associate
+            url: /learn/paths/m365-msgraph-associate
+          - text: Get started with Microsoft Graph Toolkit
+            url: /learn/modules/msgraph-toolkit-intro
+          - text: Explore Microsoft Graph scenarios for JavaScript development
+            url: /learn/paths/m365-msgraph-scenarios

@@ -1,6 +1,5 @@
 ---
 author: daspek
-ms.author: dspektor
 ms.date: 09/12/2017
 title: ContentType
 localization_priority: Normal
@@ -78,3 +77,4 @@ See [Introduction to content types and content type publishing][contentTypeIntro
   "section": "documentation",
   "tocPath": "Resources/ContentType"
 } -->
+

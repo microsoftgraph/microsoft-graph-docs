@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: TextColumn
 localization_priority: Normal
@@ -51,3 +50,4 @@ Here is a JSON representation of a **textColumn** resource.
   ],
   "tocPath": "Resources/TextColumn"
 } -->
+

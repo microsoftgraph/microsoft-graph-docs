@@ -2,7 +2,7 @@
 title: "BaseItemVersion resource type"
 description: "The **baseItemVersion** resource represents a previous version of an item or entity."
 localization_priority: Normal
-author: ""
+author: "JeremyKelley"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -50,3 +50,4 @@ The **baseItemVersion** resource represents a previous version of an item or ent
   "section": "documentation",
   "tocPath": "Facets/Version"
 } -->
+

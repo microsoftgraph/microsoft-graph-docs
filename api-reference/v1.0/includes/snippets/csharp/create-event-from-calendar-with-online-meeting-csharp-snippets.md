@@ -44,7 +44,7 @@ var @event = new Event
 	OnlineMeetingProvider = OnlineMeetingProviderType.TeamsForBusiness
 };
 
-await graphClient.Me.Calendars["AAMkAGViNDU9zAAAAAGtlAAA="].Events
+await graphClient.Me.Calendars["{calendar-id}"].Events
 	.Request()
 	.AddAsync(@event);
 

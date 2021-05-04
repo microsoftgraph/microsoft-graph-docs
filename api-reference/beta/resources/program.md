@@ -3,7 +3,7 @@ title: "program resource type"
 description: "In the Azure AD access reviews feature, a program is a container, holding program controls. A tenant can have one or more programs.  Each control links an access review to a program, to make it easier to locate related access reviews.  "
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "markwahl-msft"
 ---
 
@@ -31,9 +31,9 @@ Each tenant that has on-boarded Azure AD access reviews has one program, `Defaul
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-| `id`                        |`String`                              |  The feature-assigned identifier of the program.                    |
-| `displayName`               |`String`                              |  The name of the program.  Required on create.                  |
-| `description`               |`String`                              |  The description of the program.           |
+| id                        |String                              |  The feature-assigned identifier of the program.                    |
+| displayName               |String                              |  The name of the program.  Required on create.                  |
+| description               |String                              |  The description of the program.           |
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -72,3 +72,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

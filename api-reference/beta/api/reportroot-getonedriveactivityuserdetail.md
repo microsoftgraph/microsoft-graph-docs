@@ -3,7 +3,7 @@ title: "reportRoot: getOneDriveActivityUserDetail"
 description: "Get details about OneDrive activity by user."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Get details about OneDrive activity by user.
 
-> **Note:** For details about different report views and names, see [Office 365 Reports - OneDrive for Business activity](https://support.office.com/client/OneDrive-for-Business-user-activity-8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353).
+> **Note:** For details about different report views and names, see [Microsoft 365 reports - OneDrive for Business activity](https://support.office.com/client/OneDrive-for-Business-user-activity-8bbe4bf8-221b-46d6-99a5-2fb3c8ef9353).
 
 ## Permissions
 
@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported.                           |
 | Application                            | Reports.Read.All                         |
 
-**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For more details, see [Authorization for APIs to read Office 365 usage reports](/graph/reportroot-authorization).
+**Note**: For delegated permissions to allow apps to read service usage reports on behalf of a user, the tenant administrator must have assigned the user the appropriate Azure AD limited administrator role. For more details, see [Authorization for APIs to read Microsoft 365 usage reports](/graph/reportroot-authorization).
 
 ## HTTP request
 
@@ -156,7 +156,7 @@ GET https://graph.microsoft.com/beta/reports/getOneDriveActivityUserDetail(perio
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -183,7 +183,7 @@ Content-Length: 450
       "sharedInternallyFileCount": 0, 
       "sharedExternallyFileCount": 0, 
       "assignedProducts": [
-        "OFFICE 365 ENTERPRISE E5"
+        "Microsoft 365 ENTERPRISE E5"
       ], 
       "reportPeriod": "7"
     }
@@ -201,3 +201,5 @@ Content-Length: 450
   "suppressions": [
   ]
 }-->
+
+

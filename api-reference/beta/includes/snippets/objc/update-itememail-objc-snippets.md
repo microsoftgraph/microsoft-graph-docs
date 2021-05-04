@@ -7,14 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me/profile/emails/{id}"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/users/{userId}/profile/emails/{id}"]]];
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphItemEmail *itemEmail = [[MSGraphItemEmail alloc] init];
-[itemEmail setAddress:@"address-value"];
-[itemEmail setDisplayName:@"displayName-value"];
-[itemEmail setType: [MSGraphEmailType unknown]];
+[itemEmail setDisplayName:@"Business Email"];
+[itemEmail setType: [MSGraphEmailType work]];
 
 NSError *error;
 NSData *itemEmailData = [itemEmail getSerializedDataWithError:&error];

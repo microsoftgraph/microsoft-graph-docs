@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: DriveRecipient
 localization_priority: Normal
@@ -50,3 +49,4 @@ Only one of these values is required.
   "section": "documentation",
   "tocPath": "Resources/Recipients"
 } -->
+

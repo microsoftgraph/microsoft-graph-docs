@@ -20,15 +20,16 @@ One of the following permissions is required to call these APIs. To learn more, 
 
 | Permission type | Permissions (from least to most privileged)                  |
 | :-------------- | :----------------------------------------------------------- |
-| Delegated (work or school account)     | Presence.Read, Presence.Read.All                         |
-| Delegated (personal Microsoft account) | Not Supported.                         |
-| Application                            | Not Supported.                                  |
+| Delegated (work or school account)     | Presence.Read, Presence.Read.All      |
+| Delegated (personal Microsoft account) | Not Supported.                        |
+| Application                            | Not Supported.                        |
 
 ## HTTP Requests
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/presence
 GET /users/{id}/presence
+GET /communications/presences
 ```
 
 ## Request Headers
@@ -74,6 +75,10 @@ GET https://graph.microsoft.com/beta/me/presence
 [!INCLUDE [sample-code](../includes/snippets/objc/get-your-presence-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-your-presence-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -91,9 +96,13 @@ Content-Type: application/json
 Content-Length: 1574
 
 {  
-	"id": "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",
-	"availability": "Available",
-	"activity": "Available"
+  "id": "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",
+  "availability": "Available",
+  "activity": "Available",
+  "outOfOfficeSettings": {
+    "message": null,
+    "isOutOfOffice": false
+  }
 }
 ```
 
@@ -123,6 +132,10 @@ GET https://graph.microsoft.com/beta/users/66825e03-7ef5-42da-9069-724602c31f6b/
 [!INCLUDE [sample-code](../includes/snippets/objc/get-user-presence-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-user-presence-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -141,11 +154,74 @@ Content-Type: application/json
 Content-Length: 1574
 
 {
-	"id": "66825e03-7ef5-42da-9069-724602c31f6b",
-	"availability": "DoNotDisturb",
-	"activity": "Presenting"
+  "id": "66825e03-7ef5-42da-9069-724602c31f6b",
+  "availability": "DoNotDisturb",
+  "activity": "Presenting",
+  "outOfOfficeSettings": {
+    "message": null,
+    "isOutOfOffice": false
+  }
 }
 ```
+
+### Example 3: Get the presence information of another user
+
+The following example shows how to get the presence information for another user. This operation requires the Presence.Read.All permission.
+
+#### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get-user-presences"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/communications/presences/dc74d9bb-6afe-433d-8eaa-e39d80d3a647
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-user-presences-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-user-presences-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-user-presences-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-user-presences-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "name": "get-user-presences",
+  "@odata.type": "microsoft.graph.presence",
+  "truncated":"true"
+}-->
+
+```http
+HTTP/1.1 200 OK
+
+{
+  "id": "dc74d9bb-6afe-433d-8eaa-e39d80d3a647",
+  "availability": "Away",
+  "activity": "BeRightBack",
+  "outOfOfficeSettings": {
+    "message": null,
+    "isOutOfOffice": false
+  }
+}
+```
+
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
@@ -160,3 +236,5 @@ Content-Length: 1574
   ]
 }
 -->
+
+

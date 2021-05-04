@@ -4,7 +4,7 @@ description: "OneDrive and SharePoint can be configured to retain the history fo
 localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
-author: ""
+author: "JeremyKelley"
 ---
 
 # Listing versions of a DriveItem
@@ -35,7 +35,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /drives/{drive-id}/items/{item-id}/versions
-GET /groups/{group-id}/drive/{item-id}/versions
+GET /groups/{group-id}/drive/items/{item-id}/versions
 GET /me/drive/items/{item-id}/versions
 GET /sites/{site-id}/drive/items/{item-id}/versions
 GET /users/{user-id}/drive/items/{item-id}/versions
@@ -69,6 +69,10 @@ GET /me/drive/items/{item-id}/versions
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/get-previous-versions-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-previous-versions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -142,3 +146,5 @@ When your app retrieves the list of available versions for a file, a [DriveItemV
   ]
 }
 -->
+
+

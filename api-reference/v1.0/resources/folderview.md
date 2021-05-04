@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: FolderView
 localization_priority: Normal
@@ -94,3 +93,4 @@ The following values are defined for the **viewType** property.
   ],
   "tocPath": "Facets/FolderView"
 } -->
+

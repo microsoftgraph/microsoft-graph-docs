@@ -11,14 +11,14 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Get the properties and relationships of a [place](../resources/place.md) object specified by either its ID or email address. 
+Get the properties and relationships of a [place](../resources/place.md) object specified by either its ID or email address.
 
 The **place** object can be one of the following types:
 
 * A [room](../resources/room.md) which includes rich properties such as an email address for the room, and accessibility, capacity, and device support.
 * A [room list](../resources/roomlist.md) which includes an email address for the room list, and a navigation property to get the collection of **room** instances in that room list.
 
-Both **room** and **roomList** are derived from the [place](../resources/place.md) object. 
+Both **room** and **roomList** are derived from the [place](../resources/place.md) object.
 
 ## Permissions
 
@@ -97,7 +97,7 @@ GET https://graph.microsoft.com/v1.0/places/3162F1E1-C4C0-604B-51D8-91DA78989EB1
 
 The following is an example of the response.
 
->**Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note**: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -130,11 +130,11 @@ Content-type: application/json
     "phone": "000-000-0000",
     "nickname": "Conf Room",
     "label": "100",
-    "capacity": "50",
+    "capacity": 50,
     "building": "1",
     "floorNumber": 1,
     "isManaged": true,
-    "isWheelchairAccessible": false,
+    "isWheelChairAccessible": false,
     "bookingType": "standard",
     "tags": [
       "bean bags"
@@ -184,7 +184,7 @@ GET https://graph.microsoft.com/v1.0/places/bldg1@contoso.com
 
 The following is an example of the response.
 
->**Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note**: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -224,3 +224,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

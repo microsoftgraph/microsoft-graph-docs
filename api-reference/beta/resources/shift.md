@@ -33,8 +33,8 @@ A unit of scheduled work in a [schedule](schedule.md).
 | schedulingGroupId 		|`string`      |ID of the scheduling group the `shift` is part of. Required. |
 | sharedShift 	|[shiftItem](shiftitem.md)  |The shared version of this `shift` that is viewable by both employees and managers. Required. |
 | draftShift		|[shiftItem](shiftitem.md)        |The draft version of this `shift` that is viewable by managers. Required. |
-| createdDateTime		|`DateTimeOffset`        |The timestamp on which this `shift` was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |
-| lastModifiedDateTime		|`DateTimeOffset`        |The timestamp on which this `shift` was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |
+| createdDateTime		|`DateTimeOffset`        |The timestamp on which this `shift` was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
+| lastModifiedDateTime		|`DateTimeOffset`        |The timestamp on which this `shift` was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 | lastModifiedBy		| [identitySet](identityset.md)        |The identity that last updated this `shift`.|
 
 ## JSON representation
@@ -73,3 +73,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

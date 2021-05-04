@@ -12,7 +12,7 @@ var phoneAuthenticationMethod = new PhoneAuthenticationMethod
 	PhoneType = AuthenticationPhoneType.Mobile
 };
 
-await graphClient.Me.Authentication.PhoneMethods["3179e48a-750b-4051-897c-87b9720928f7"]
+await graphClient.Me.Authentication.PhoneMethods["{phoneAuthenticationMethod-id}"]
 	.Request()
 	.PutAsync(phoneAuthenticationMethod);
 

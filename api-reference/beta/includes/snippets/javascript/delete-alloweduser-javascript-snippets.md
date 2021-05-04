@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/print/printers/{id}/allowedUsers/{id}/$ref')
+await client.api('/print/printerShares/{id}/allowedUsers/{id}/$ref')
 	.version('beta')
 	.delete();
 

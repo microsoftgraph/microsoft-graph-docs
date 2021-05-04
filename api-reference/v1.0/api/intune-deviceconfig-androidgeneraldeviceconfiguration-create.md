@@ -3,7 +3,7 @@ title: "Create androidGeneralDeviceConfiguration"
 description: "Create a new androidGeneralDeviceConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -316,6 +316,9 @@ Content-Length: 3205
   "securityRequireVerifyApps": true
 }
 ```
+
+
+
 
 
 

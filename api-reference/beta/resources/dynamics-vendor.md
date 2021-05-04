@@ -53,6 +53,13 @@ None
 
 ## JSON representation
 
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [],
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.vendor"
+}-->
+
 Here is a JSON representation of the vendor.
 
 ```json
@@ -75,6 +82,7 @@ Here is a JSON representation of the vendor.
   "balance": "decimal",
   "lastModifiedDateTime": "datetime"
 }
-
 ```
+
+
 

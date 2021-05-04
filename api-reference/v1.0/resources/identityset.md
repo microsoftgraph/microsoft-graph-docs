@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: IdentitySet
 localization_priority: Normal
@@ -52,3 +51,4 @@ See [DriveItem](driveitem.md) for usage of **IdentitySet** resources.
   "section": "documentation",
   "tocPath": "Resources/IdentitySet"
 } -->
+

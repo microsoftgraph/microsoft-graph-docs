@@ -4,7 +4,7 @@ description: "Defines a set of clauses that an object must satisfy to be conside
 localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # filterGroup resource type
@@ -53,3 +53,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

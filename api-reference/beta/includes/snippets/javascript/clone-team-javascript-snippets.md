@@ -11,14 +11,14 @@ const options = {
 const client = Client.init(options);
 
 const clone = {
-     displayName: "Library Assist",
-     description: "Self help community for library",
-     mailNickname: "libassist",
-     partsToClone: "apps,tabs,settings,channels,members",
-     visibility: "public"
+     displayName: 'Library Assist',
+     description: 'Self help community for library',
+     mailNickname: 'libassist',
+     partsToClone: 'apps,tabs,settings,channels,members',
+     visibility: 'public'
 };
 
-let res = await client.api('/teams/{id}/clone')
+await client.api('/teams/{id}/clone')
 	.version('beta')
 	.post(clone);
 

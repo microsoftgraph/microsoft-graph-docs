@@ -3,8 +3,8 @@ title: "servicePrincipal: getMemberGroups"
 description: "Get the list of groups that this service principal is a member of.  The check is transitive."
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+ms.prod: "applications"
+author: "sureshja"
 ---
 
 # servicePrincipal: getMemberGroups
@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Directory.Read.All, Directory.ReadWrite.All |
+|Application | Application.Read.All, Directory.Read.All, Application.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -79,12 +79,16 @@ Content-length: 33
 [!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-getmembergroups-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-getmembergroups-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### Response
 Here is an example of the response. 
->Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+>Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -116,3 +120,6 @@ Content-length: 39
   ]
 }
 -->
+
+
+

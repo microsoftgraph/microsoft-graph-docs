@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var subscribedSku = await graphClient.SubscribedSkus["{id}"]
+var subscribedSku = await graphClient.SubscribedSkus["{subscribedSku-id}"]
 	.Request()
 	.GetAsync();
 

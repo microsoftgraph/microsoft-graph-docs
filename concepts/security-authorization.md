@@ -14,7 +14,7 @@ The Microsoft Graph Security API supports two types of authorization:
 
 - **Application-level authorization** - There is no signed-in user (for example, a SIEM scenario). The permissions granted to the application determine authorization. 
     >**Note:** This option can also support cases where Role-Based Access Control (RBAC) is managed by the application.
-- **User delegated authorization** - A user who is a member of the Azure AD tenant is signed in. The user must be a member of an Azure AD Limited Admin role - either Security Reader or Securty Administrator - in addition to the application having been granted the required permissions.
+- **User delegated authorization** - A user who is a member of the Azure AD tenant is signed in. The user must be a member of an Azure AD Limited Admin role - either Security Reader or Security Administrator - in addition to the application having been granted the required permissions.
 
 If you're calling the Microsoft Graph Security API from Graph Explorer:
 
@@ -93,13 +93,13 @@ Save the following information:
 - Redirect URL
 - List of required permissions
 
-\* Windows Defender Advanced Threat Protection (WDATP) requires additional [user roles](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles) than what is required by the Microsoft Graph Security API; therefore, only the users in both WDATP and Microsoft Graph Security API roles can have access to the WDATP data.  Application-only authentication is not limited by this; therefore, we recommend that you use an app-only authentication token.
+\* Windows Defender Advanced Threat Protection (WDATP) requires additional [user roles](/windows/security/threat-protection/microsoft-defender-atp/user-roles) than what is required by the Microsoft Graph Security API; therefore, only the users in both WDATP and Microsoft Graph Security API roles can have access to the WDATP data.  Application-only authentication is not limited by this; therefore, we recommend that you use an app-only authentication token.
 
 For more information, see [Register your app with the Microsoft identity platform](auth-register-app-v2.md).
 
 ## Grant permissions to an application
 
-Application registration only defines which permission the application requires - it does not grant these permissions to the application. An Azure AD tenant administrator must explicitly grant these permissions by making a call to the admin consent endpoint. For details, see [Using the admin consent endpoint](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint).
+Application registration only defines which permission the application requires - it does not grant these permissions to the application. An Azure AD tenant administrator must explicitly grant these permissions by making a call to the admin consent endpoint. For details, see [Using the admin consent endpoint](/azure/active-directory/develop/active-directory-v2-scopes#using-the-admin-consent-endpoint).
 
 To grant permissions to an application, you'll need:
 
@@ -118,7 +118,7 @@ To grant the permissions:
 
 ## Assign Azure AD roles to users
 
-After an application is granted permissions, everyone with access to the application (that is, members of the Azure AD tenant) receives the granted permissions. To further protect sensitive security data, the Microsoft Graph Security API also requires users to be assigned the Azure AD **Security Reader** role. For details, see [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) and [Assign administrator and non-administrator roles to users with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal).
+After an application is granted permissions, everyone with access to the application (that is, members of the Azure AD tenant) receives the granted permissions. To further protect sensitive security data, the Microsoft Graph Security API also requires users to be assigned the Azure AD **Security Reader** role. For details, see [Administrator role permissions in Azure Active Directory](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) and [Assign administrator and non-administrator roles to users with Azure Active Directory](/azure/active-directory/active-directory-users-assign-role-azure-portal).
 
 >**Note:** You must be a tenant admin to perform this step.
 
@@ -142,19 +142,19 @@ The following table lists resources that you can use to create an authentication
 
 |**Type of application**|**Authentication library**|
 |------------------------|----------------------------|
-|[Desktop apps - iOS](https://docs.microsoft.com/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework: Microsoft Authentication Library Preview for iOS](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
-|[Desktop apps - Android](https://docs.microsoft.com/azure/active-directory/develop/guidedsetups/active-directory-android)|[Microsoft Authentication Library (MSAL)](https://javadoc.io/doc/com.microsoft.identity.client/msal)|
-|[Desktop apps - .Net](https://docs.microsoft.com/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Microsoft Authentication Library (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
-|[Web apps - JavaScript SPA](https://docs.microsoft.com/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[Microsoft Authentication Library for JavaScript Preview](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
-|[Web apps - .NET Web Server](https://docs.microsoft.com/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection, Cookies, SystemWeb|
-|[Web apps - NodeJS Web App](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
+|[Desktop apps - iOS](/azure/active-directory/develop/guidedsetups/active-directory-ios)|[MSAL.framework: Microsoft Authentication Library Preview for iOS](https://github.com/AzureAD/microsoft-authentication-library-for-objc)|
+|[Desktop apps - Android](/azure/active-directory/develop/guidedsetups/active-directory-android)|[Microsoft Authentication Library (MSAL)](https://javadoc.io/doc/com.microsoft.identity.client/msal)|
+|[Desktop apps - .Net](/azure/active-directory/develop/guidedsetups/active-directory-windesktop)|[Microsoft Authentication Library (MSAL)](https://www.nuget.org/packages/Microsoft.Identity.Client)|
+|[Web apps - JavaScript SPA](/azure/active-directory/develop/guidedsetups/active-directory-javascriptspa)|[Microsoft Authentication Library for JavaScript Preview](https://github.com/AzureAD/microsoft-authentication-library-for-js)|
+|[Web apps - .NET Web Server](/azure/active-directory/develop/guidedsetups/active-directory-aspnetwebapp)|OpenIdConnection, Cookies, SystemWeb|
+|[Web apps - NodeJS Web App](/azure/active-directory/develop/active-directory-v2-devquickstarts-node-web)||
 
 For applications that don't use any of the existing libraries, see [Get access on behalf of a user](auth-v2-user.md).
 
 1. Get a code from Azure AD. The query to call contains parameter for Application ID, Redirect URl, and **required permissions**.
 2. Use the code to get an access token.
 
-If you use OpenId Connect library, see [Authenticate using Azure AD and OpenID Connect](https://docs.microsoft.com/azure/architecture/multitenant-identity/authenticate) and call `app.UseOpenIdConnectAuthentication()`.
+If you use OpenId Connect library, see [Authenticate using Azure AD and OpenID Connect](/azure/architecture/multitenant-identity/authenticate) and call `app.UseOpenIdConnectAuthentication()`.
 
 >**Note:** If you're requesting user delegated authentication tokens, the parameter for the library is **Requested Scopes**. Use User.Read for this parameter instead of what the registered application requires. The **Requested Scopes** parameter does NOT affect the permissions contained in the returned authentication tokens. These are determined by the permissions that the tenant admin granted the application.
 

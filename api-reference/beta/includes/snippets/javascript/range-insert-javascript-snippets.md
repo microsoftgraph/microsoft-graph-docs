@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const workbookRange = {
-  shift: "shift-value"
+  shift: 'shift-value'
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/names/{name}/range/insert')
+await client.api('/me/drive/items/{id}/workbook/names/{name}/range/insert')
 	.version('beta')
 	.post(workbookRange);
 

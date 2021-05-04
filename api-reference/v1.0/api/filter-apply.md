@@ -2,7 +2,7 @@
 title: "Filter: apply"
 description: "Apply the given filter criteria on the given column."
 localization_priority: Normal
-author: ""
+author: "ruoyingl"
 ms.prod: ""
 doc_type: apiPageType
 ---
@@ -24,8 +24,10 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/columns/{id|name}/filter/apply
-POST /workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/apply
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/filter/apply
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/filter/apply
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/apply
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/columns/{id|name}/filter/apply
 
 ```
 ## Request headers
@@ -97,7 +99,7 @@ Content-length: 321
 
 
 ##### Response
-Here is an example of the response. 
+Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -117,3 +119,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

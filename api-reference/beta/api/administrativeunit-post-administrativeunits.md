@@ -3,7 +3,7 @@ title: "Create administrativeUnit"
 description: "Use this API to create a new administrativeUnit."
 author: "anandyadavMSFT"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -79,6 +79,10 @@ Content-length: 150
 [!INCLUDE [sample-code](../includes/snippets/objc/create-administrativeunit-from-administrativeunits-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-administrativeunit-from-administrativeunits-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 In the request body, supply a JSON representation of an [administrativeUnit](../resources/administrativeunit.md) object.
@@ -86,7 +90,7 @@ In the request body, supply a JSON representation of an [administrativeUnit](../
 ### Response
 
 The following is an example of the response. 
-> Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -129,3 +133,5 @@ Content-length: 172
   ]
 }
 -->
+
+

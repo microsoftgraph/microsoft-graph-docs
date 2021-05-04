@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/groupSettingTemplates')
+let groupSettingTemplates = await client.api('/groupSettingTemplates')
 	.get();
 
 ```

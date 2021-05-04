@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
 title: album resource type
 description: Facet describing a bundle which is a photo album.
 localization_priority: Normal
@@ -39,3 +38,5 @@ To remove a custom-set cover, you can set the **coverImageItemId** property to n
 [bundle]: bundle.md
 [driveItem]: driveItem.md
 [photo]: photo.md
+
+

@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Get Special Folders
 localization_priority: Normal
@@ -165,3 +164,4 @@ error if the special folder does not already exist.
   "suppressions": [
   ]
 } -->
+

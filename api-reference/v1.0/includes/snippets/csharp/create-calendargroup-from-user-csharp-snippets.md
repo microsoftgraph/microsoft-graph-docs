@@ -8,9 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var calendarGroup = new CalendarGroup
 {
-	Name = "name-value",
-	ClassId = Guid.Parse("classId-value"),
-	ChangeKey = "changeKey-value"
+	Name = "Personal events"
 };
 
 await graphClient.Me.CalendarGroups

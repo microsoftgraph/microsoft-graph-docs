@@ -2,7 +2,7 @@
 title: "timeSlot resource type"
 description: "A time period."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "vrod9429"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
@@ -47,3 +47,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

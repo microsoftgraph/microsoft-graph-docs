@@ -3,7 +3,7 @@ title: "passwordSingleSignOnCredentialSet resource type"
 description: "Indicates a set of credentials that completely define a sign in flow for a user or group to an application."
 localization_priority: Normal
 author: "bharathramh92"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "resourcePageType"
 ---
 
@@ -51,3 +51,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: ChoiceColumn
 localization_priority: Normal
@@ -47,3 +46,4 @@ Here is a JSON representation of a **choiceColumn** resource.
   ],
   "tocPath": "Resources/ChoiceColumn"
 } -->
+

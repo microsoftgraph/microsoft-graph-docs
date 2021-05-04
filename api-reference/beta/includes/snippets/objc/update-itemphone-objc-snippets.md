@@ -7,14 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me/profile/phones/{id}"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/users/{userId}/profile/phones/{id}"]]];
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphItemPhone *itemPhone = [[MSGraphItemPhone alloc] init];
-[itemPhone setDisplayName:@"displayName-value"];
-[itemPhone setType: [MSGraphPhoneType home]];
-[itemPhone setNumber:@"number-value"];
+[itemPhone setType: [MSGraphPhoneType other]];
 
 NSError *error;
 NSData *itemPhoneData = [itemPhone getSerializedDataWithError:&error];

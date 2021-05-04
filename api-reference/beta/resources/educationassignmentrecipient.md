@@ -18,7 +18,7 @@ set the property in assignments to this value. This superclass represents who th
 assignment should be assigned to when the assignment is published.
 
 
-The [educationAssignmentClassRecipient](educationassignmentclassrecipient.md) resource is a subclass of this superclass.
+The [educationAssignmentClassRecipient](educationassignmentclassrecipient.md) and [educationAssignmentIndividualRecipient](educationassignmentindividualrecipient.md) resources are subclasses of this superclass.
 
 ## Properties
 None.
@@ -51,3 +51,5 @@ None.
   "suppressions": []
 }
 -->
+
+

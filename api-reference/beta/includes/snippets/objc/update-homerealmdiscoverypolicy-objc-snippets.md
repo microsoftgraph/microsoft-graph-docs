@@ -17,7 +17,6 @@ NSMutableArray *definitionList = [[NSMutableArray alloc] init];
 [homeRealmDiscoveryPolicy setDefinition:definitionList];
 [homeRealmDiscoveryPolicy setDisplayName:@"displayName-value"];
 [homeRealmDiscoveryPolicy setIsOrganizationDefault: true];
-[homeRealmDiscoveryPolicy setType:@"type-value"];
 
 NSError *error;
 NSData *homeRealmDiscoveryPolicyData = [homeRealmDiscoveryPolicy getSerializedDataWithError:&error];

@@ -6,14 +6,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var @event = await graphClient.Me.Events["AAMkAGI1AAAoZDOFAAA="]
+var @event = await graphClient.Me.Events["{event-id}"]
 	.Request()
 	.Header("Prefer","outlook.body-content-type=\"text\"")
-	.Select( e => new {
-			 e.Subject,
-			 e.Body,
-			 e.BodyPreview 
-			 })
+	.Select("subject,body,bodyPreview")
 	.GetAsync();
 
 ```

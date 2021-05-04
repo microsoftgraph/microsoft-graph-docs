@@ -3,7 +3,7 @@ title: "approvalSettings complex type"
 description: "Used for the requestApprovalSettings property of an access package assignment policy. Provides additional settings to select who must approve each request."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
 
@@ -34,8 +34,7 @@ The following is a JSON representation of the request approval settings property
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.approvalSettings",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.approvalSettings"
 }-->
 
 ```json
@@ -57,3 +56,5 @@ The following is a JSON representation of the request approval settings property
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

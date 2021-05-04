@@ -31,7 +31,7 @@ var orientation = "orientation-value";
 
 var method = "method-value";
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Names["{name}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Names["{workbookNamedItem-id}"]
 	.Range().Sort
 	.Apply(matchCase,hasHeaders,orientation,method,fields)
 	.Request()

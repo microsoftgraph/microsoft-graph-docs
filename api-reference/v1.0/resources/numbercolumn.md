@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: NumberColumn
 localization_priority: Normal
@@ -66,3 +65,4 @@ These properties may be updated.
   ],
   "tocPath": "Resources/NumberColumn"
 } -->
+

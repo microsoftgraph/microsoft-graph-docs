@@ -1,0 +1,21 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```javascript
+
+const options = {
+	authProvider,
+};
+
+const client = Client.init(options);
+
+const personAnnotation = {
+  allowedAudiences: 'organization'
+};
+
+await client.api('/users/{userId}/profile/notes/{id}')
+	.version('beta')
+	.update(personAnnotation);
+
+```

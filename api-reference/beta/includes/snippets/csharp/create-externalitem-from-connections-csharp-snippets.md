@@ -8,30 +8,40 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var externalItem = new ExternalItem
 {
-	Acl = new List<Acl>()
+	Acl = new List<Microsoft.Graph.ExternalConnectors.Acl>()
 	{
-		new Acl
+		new Microsoft.Graph.ExternalConnectors.Acl
 		{
-			Type = AclType.User,
-			Value = "49103559-feac-4575-8b94-254814dfca72",
-			AccessType = AccessType.Deny,
-			IdentitySource = "Azure Active Directory"
+			Type = Microsoft.Graph.ExternalConnectors.AclType.User,
+			Value = "e811976d-83df-4cbd-8b9b-5215b18aa874",
+			AccessType = Microsoft.Graph.ExternalConnectors.AccessType.Grant,
+			IdentitySource = Microsoft.Graph.ExternalConnectors.IdentitySourceType.AzureActiveDirectory
+		},
+		new Microsoft.Graph.ExternalConnectors.Acl
+		{
+			Type = Microsoft.Graph.ExternalConnectors.AclType.Group,
+			Value = "14m1b9c38qe647f6a",
+			AccessType = Microsoft.Graph.ExternalConnectors.AccessType.Deny,
+			IdentitySource = Microsoft.Graph.ExternalConnectors.IdentitySourceType.External
 		}
 	},
-	Properties = new Properties
+	Properties = new Microsoft.Graph.ExternalConnectors.Properties
 	{
-		Title = "Error in the payment gateway",
-		Priority = 1,
-		Assignee = "john@contoso.com"
+		AdditionalData = new Dictionary<string, object>()
+		{
+			{"title", "Error in the payment gateway"},
+			{"priority", "1"},
+			{"assignee", "john@contoso.com"}
+		}
 	},
-	Content = new ExternalItemContent
+	Content = new Microsoft.Graph.ExternalConnectors.ExternalItemContent
 	{
-		Value = "<h1>Error in payment gateway</h1><p>Error details...</p>",
-		Type = ExternalItemContentType.Html
+		Value = "Error in payment gateway...",
+		Type = Microsoft.Graph.ExternalConnectors.ExternalItemContentType.Text
 	}
 };
 
-await graphClient.Connections["contosohr"].Items["TSP228082938"]
+await graphClient.External.Connections["{externalConnectors.externalConnection-id}"].Items["{externalConnectors.externalItem-id}"]
 	.Request()
 	.PutAsync(externalItem);
 

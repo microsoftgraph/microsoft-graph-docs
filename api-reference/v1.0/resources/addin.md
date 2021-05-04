@@ -3,7 +3,7 @@ title: "addIn resource type"
 description: "Here is a JSON representation of the resource."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 author: "sureshja"
 ---
 
@@ -11,7 +11,7 @@ author: "sureshja"
 
 Namespace: microsoft.graph
 
-Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams [may configure addIns](/onedrive/developer/file-handlers/?view=odsp-graph-online) for its "FileHandler" functionality. This will let services like Office 365 call the application in the context of a document the user is working on.
+Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams [may configure addIns](/onedrive/developer/file-handlers/?view=odsp-graph-online) for its "FileHandler" functionality. This will let services like Microsoft 365 call the application in the context of a document the user is working on.
 
 ## Properties
 | Property	   | Type	|Description|
@@ -53,3 +53,4 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+

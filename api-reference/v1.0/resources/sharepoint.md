@@ -3,7 +3,7 @@ title: "Working with SharePoint sites in Microsoft Graph"
 description: "The SharePoint API in Microsoft Graph supports the following core scenarios:"
 localization_priority: Priority
 ms.prod: "sharepoint"
-author: ""
+author: "JeremyKelley"
 doc_type: conceptualPageType
 ---
 
@@ -118,6 +118,9 @@ A URL constructed with only the siteCollection (`SPSite`) ID will point to the r
 GET https://graph.microsoft.com/v1.0/sites/{spsite-id}
 ```
 
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
+
 [site]: site.md
 [list]: list.md
 [drive]: drive.md
@@ -131,3 +134,4 @@ GET https://graph.microsoft.com/v1.0/sites/{spsite-id}
   "tocPath": "Getting Started",
   "tocIndex": -100
 } -->
+

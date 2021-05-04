@@ -1,6 +1,6 @@
 ---
 title: "Get educationRubric attached to educationAssignment"
-description: "Get the educaitonRubric attached to an educationAssignment, if one exists."
+description: "Get the educationRubric attached to an educationAssignment, if one exists."
 localization_priority: Normal
 author: "dipakboyed"
 ms.prod: "education"
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Application                            | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 
 ## HTTP request
 
@@ -60,7 +60,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/me/assignments/{id}/rubric
+GET https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/rubric
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-rubric-csharp-snippets.md)]
@@ -74,6 +74,10 @@ GET https://graph.microsoft.com/beta/education/me/assignments/{id}/rubric
 [!INCLUDE [sample-code](../includes/snippets/objc/get-rubric-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-rubric-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -81,7 +85,7 @@ GET https://graph.microsoft.com/beta/education/me/assignments/{id}/rubric
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -193,3 +197,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

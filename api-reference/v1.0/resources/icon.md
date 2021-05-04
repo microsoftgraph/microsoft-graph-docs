@@ -2,7 +2,7 @@
 title: "Icon resource type"
 description: "Represents a cell icon."
 localization_priority: Normal
-author: ""
+author: "ruoyingl"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -60,3 +60,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

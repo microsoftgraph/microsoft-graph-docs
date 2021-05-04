@@ -14,7 +14,7 @@ const workbookSessionInfo = {
   persistChanges: true
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/createSession')
+await client.api('/me/drive/items/{id}/workbook/createSession')
 	.version('beta')
 	.post(workbookSessionInfo);
 

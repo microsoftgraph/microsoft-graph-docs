@@ -9,11 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var delta = await graphClient.Contacts
 	.Delta()
 	.Request()
-	.Select( e => new {
-			 e.DisplayName,
-			 e.JobTitle,
-			 e.Mail 
-			 })
+	.Select("displayName,jobTitle,mail")
 	.GetAsync();
 
 ```

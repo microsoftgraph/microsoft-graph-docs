@@ -31,10 +31,11 @@ None.
 |tables|[workbookTable](workbooktable.md) collection |Represents a collection of tables associated with the workbook. Read-only.|
 |worksheets|[workbookWorksheet](workbookworksheet.md) collection |Represents a collection of worksheets associated with the workbook. Read-only.|
 |workbbookApplication|[workbookApplication](workbookapplication.md) |Represents the Excel workbookApplication that manages the workbook.|
+|operations|[workbookOperation](workbookoperation.md) collection|The status of Workbook operations. Getting an operation collection is not supported, but you can get the status of a long-running operation if the `Location` header is returned in the response. Read-only. Nullable.|
 
 ## Functions
 
-[Excel functions](#functions): Invoke a workbook function using the syntax `POST /workbook/functions/{function-name}` and providing the function argument(s) in the body using a JSON object. The function's resulting `value` and any `error` strings are returned in the function result object. The `error` value of `null` indicates successful execution of the function. 
+[Excel functions](#functions): Invoke a workbook function using the syntax `POST /me/drive/root/workbook/functions/{function-name}` and providing the function argument(s) in the body using a JSON object. The function's resulting `value` and any `error` strings are returned in the function result object. The `error` value of `null` indicates successful execution of the function. 
 
 The complete list of supported functions are listed [here](https://support.office.com/en-us/article/Excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188). Refer to the function signature for specific parameter names and data types.
 
@@ -154,3 +155,5 @@ content-type: application/json;odata.metadata
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

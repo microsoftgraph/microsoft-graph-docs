@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var installedApps = await graphClient.Teams["{id}"].InstalledApps
+var teamsAppInstallation = await graphClient.Teams["{team-id}"].InstalledApps["{teamsAppInstallation-id}"]
 	.Request()
 	.Expand("teamsAppDefinition")
 	.GetAsync();

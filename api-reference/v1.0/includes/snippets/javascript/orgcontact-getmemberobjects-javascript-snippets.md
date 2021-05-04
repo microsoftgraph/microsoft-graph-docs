@@ -14,7 +14,7 @@ const string = {
   securityEnabledOnly: false
 };
 
-let res = await client.api('/contacts/{id}/getMemberObjects')
+await client.api('/contacts/{id}/getMemberObjects')
 	.post(string);
 
 ```

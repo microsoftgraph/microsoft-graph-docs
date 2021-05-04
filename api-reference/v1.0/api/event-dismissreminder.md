@@ -36,9 +36,6 @@ POST /users/{id | userPrincipalName}/calendar/events/{id}/dismissReminder
 POST /me/calendars/{id}/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/dismissReminder
 
-POST /me/calendargroup/calendars/{id}/events/{id}/dismissReminder
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/dismissReminder
-
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/dismissReminder
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/dismissReminder
 ```
@@ -117,3 +114,4 @@ HTTP/1.1 200 OK
   "suppressions": [
   ]
 }-->
+

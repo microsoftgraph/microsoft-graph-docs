@@ -83,10 +83,14 @@ Content-length: 151
 [!INCLUDE [sample-code](../includes/snippets/objc/update-grouplifecyclepolicy-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-grouplifecyclepolicy-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
-Note: The response object shown here may be truncated for brevity. 
+Note: The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -118,3 +122,5 @@ Content-length: 146
   ]
 }
 -->
+
+

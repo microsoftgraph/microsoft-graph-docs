@@ -2,8 +2,8 @@
 title: "Working with users in Microsoft Graph"
 description: "Build compelling app experiences based on users, their relationships with other users and groups, and their mail, calendar, and files."
 localization_priority: Priority
-author: "krbain"
-ms.prod: "microsoft-identity-platform"
+author: "jpettere"
+ms.prod: "users"
 doc_type: conceptualPageType
 ---
 
@@ -20,7 +20,7 @@ You can access users through Microsoft Graph in two ways:
 
 ## Authorization
 
-One of the following [permissions](https://developer.microsoft.com/graph/docs/authorization/permission_scopes) is required to access user operations. The first three permissions can be granted to an app by a user. The rest can only be granted to an app by the administrator.
+One of the following [permissions](/graph/permissions-reference) is required to access user operations. The first three permissions can be granted to an app by a user. The rest can only be granted to an app by the administrator.
 
 - User.ReadBasic.All
 - User.Read
@@ -59,3 +59,6 @@ For details and a list of all the properties, see the [user](user.md) object.
 |[`/users/{id}/drive`](../api/drive-get.md)| Gets the user's OneDrive file store. |
 |[`/users/{id}/memberOf`](../api/user-list-memberof.md)| Lists the groups that the user is a member of. |
 |[`/users/{id}/joinedTeams`](../api/user-list-joinedteams.md)| Lists the Microsoft Teams that the user is a member of. |
+
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

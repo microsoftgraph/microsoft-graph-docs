@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const message = {
-  isRead: "true",
+  isRead: true,
 };
 
-let res = await client.api('/me/messages/{id}')
+await client.api('/me/messages/{id}')
 	.update(message);
 
 ```

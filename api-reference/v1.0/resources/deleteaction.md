@@ -1,6 +1,5 @@
 ---
 author: daspek
-ms.author: dspektor
 title: deleteAction resource type
 description: The deleteAction object provides information about the deletion of an item.
 localization_priority: Normal
@@ -50,3 +49,4 @@ The presence of the **deleteAction** resource on an [**itemActivity**][activity]
   "suppressions": []
 }
 -->
+

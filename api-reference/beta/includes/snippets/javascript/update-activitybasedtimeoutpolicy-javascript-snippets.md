@@ -12,14 +12,13 @@ const client = Client.init(options);
 
 const activityBasedTimeoutPolicy = {
   definition: [
-    "definition-value"
+    'definition-value'
   ],
-  displayName: "displayName-value",
-  isOrganizationDefault: true,
-  type: "type-value"
+  displayName: 'displayName-value',
+  isOrganizationDefault: true
 };
 
-let res = await client.api('/policies/activityBasedTimeoutPolicies/{id}')
+await client.api('/policies/activityBasedTimeoutPolicies/{id}')
 	.version('beta')
 	.update(activityBasedTimeoutPolicy);
 

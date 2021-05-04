@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
 title: Delete bundle
 description: Delete a bundle of driveItems
 localization_priority: Normal
@@ -77,6 +76,10 @@ DELETE https://graph.microsoft.com/beta/drive/items/{bundle-id}
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-bundle-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-bundle-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -99,3 +102,5 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": "Bundles/Delete"
 } -->
+
+

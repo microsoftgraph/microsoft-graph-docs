@@ -12,6 +12,7 @@ const client = Client.init(options);
 
 const team = {
   memberSettings: {
+    allowCreatePrivateChannels: true,
     allowCreateUpdateChannels: true
   },
   messagingSettings: {
@@ -20,11 +21,11 @@ const team = {
   },
   funSettings: {
     allowGiphy: true,
-    giphyContentRating: "strict"
+    giphyContentRating: 'strict'
   }
 };
 
-let res = await client.api('/groups/{id}/team')
+await client.api('/groups/{id}/team')
 	.put(team);
 
 ```

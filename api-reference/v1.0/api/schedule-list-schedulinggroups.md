@@ -23,8 +23,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Schedule.Read.All, Schedule.ReadWrite.All |
 
-> **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
-
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
@@ -87,7 +85,7 @@ GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/schedulingGroups
 
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -140,3 +138,4 @@ Content-length: 401
   ]
 }
 -->
+

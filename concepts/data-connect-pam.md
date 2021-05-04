@@ -1,6 +1,6 @@
 ---
 title: "Microsoft Graph data connect integration with Privileged Access Management"
-description: "Microsoft Graph data connect relies on Privileged Access Management to allow Office 365 administrators to approve data movement requests."
+description: "Microsoft Graph data connect relies on Privileged Access Management to allow Microsoft 365 administrators to approve data movement requests."
 author: "tlenig"
 localization_priority: Priority
 ms.prod: "data-connect"
@@ -8,9 +8,9 @@ ms.prod: "data-connect"
 
 # Microsoft Graph data connect integration with Privileged Access Management
 
-Microsoft Graph data connect relies on Privileged Access Management (PAM) to allow Office 365 administrators to approve data movement requests. Data connect pipelines must be approved by a member of the data access request approver specified by the Office 365 administrator during enablement. To set up the approver group, see [Get started](data-connect-get-started.md).
+Microsoft Graph data connect relies on Privileged Access Management (PAM) to allow Microsoft 365 administrators to approve data movement requests. Data connect pipelines must be approved by a member of the data access request approver specified by the Microsoft 365 administrator during enablement. To set up the approver group, see [Get started](data-connect-get-started.md).
 
-Approval request emails will be sent to each member of the approver group to notify them when copy activities request access to extract Office 365 data. Approvers can approve or deny these requests, specify a user group that should be scrubbed out of extracted data, or revoke a previously approved request. Approvals persist for 6 months, and one approval is needed per copy activity in the Azure Data Factory pipeline. 
+Approval request emails will be sent to each member of the approver group to notify them when copy activities request access to extract Microsoft 365 data. Approvers can approve or deny these requests, specify a user group that should be scrubbed out of extracted data, or revoke a previously approved request. Approvals persist for 6 months, and one approval is needed per copy activity in the Azure Data Factory pipeline. 
 
 Every request will always include the following details about the dataset and the users about whom data is being extracted:
 
@@ -42,9 +42,9 @@ Data connect pipelines must be approved by a member of a data access request app
 
 Use the following steps to interact with a request using the Exchange Online PowerShell module:
 
-1. Install the Exchange Online Powershell module. For installation instructions, see [Connect to Exchange Online PowerShell using multi-factor authentication](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps).
+1. Install the Exchange Online Powershell module. For installation instructions, see [Connect to Exchange Online PowerShell using multi-factor authentication](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps).
 
-2. Connect to Exchange Online Powershell using multi-factor authentication (MFA). For instructions, see [Connect to Exchange Online PowerShell using multi-factor authentication](https://docs.microsoft.com/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps).
+2. Connect to Exchange Online Powershell using multi-factor authentication (MFA). For instructions, see [Connect to Exchange Online PowerShell using multi-factor authentication](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/mfa-connect-to-exchange-online-powershell?view=exchange-ps).
     >**Note**: You do not need to enable multi-factor authentication for your organization to use these steps while connecting to Exchange Online PowerShell. Connecting with MFA creates an OAuth token that is used by PAM for signing your requests.
 
 3. Sign in with your account. Note that you must be part of the configured data access approver group in order to be able to approve, deny, or revoke requests. Guest users cannot approve requests, even if they are in the approver group. 
@@ -129,7 +129,7 @@ You can also revoke requests that were previously approved. Similar to approving
 
 Use the following steps to interact with a request using the PAM web experience:
 
-1. Sign in to the Office 365 admin portal using admin credentials and go to the [Privileged Access Managment approval user experience](https://admin.microsoft.com/AdminPortal/Home#/Settings/PrivilegedAccess) page. This will show you all the access requests (pending/approved/expired/denied).
+1. Sign in to the Microsoft 365 admin portal using admin credentials and go to the [Privileged Access Managment approval user experience](https://admin.microsoft.com/AdminPortal/Home#/Settings/PrivilegedAccess) page. This will show you all the access requests (pending/approved/expired/denied).
 
 On the resulting page, select the request that you are interested in. To select deny list for privacy scrubbing, click the **DenyList** dropdown, select the group that needs to be scrubbed, and then select **Approve**.
 
@@ -139,14 +139,14 @@ To revoke a previously approved request, select the approved request that needs 
 
 Data conenct approval requests have particular characteristics that are important to be aware of:
 
-- Approval requests are based on the Azure Data Factory, pipeline and copy activity names. Every copy activity run will verify that the Office 365 admin has approved the copy activity's request to access Office data, and will validate the important parameters of the copy activity run against the parameters of the approval.
-- Under certain conditions, a new approval request will automatically be triggered. A data connect approver will have to approve the new request before the copy activity can access Office 365 data.
+- Approval requests are based on the Azure Data Factory, pipeline and copy activity names. Every copy activity run will verify that the Microsoft 365 admin has approved the copy activity's request to access Office data, and will validate the important parameters of the copy activity run against the parameters of the approval.
+- Under certain conditions, a new approval request will automatically be triggered. A data connect approver will have to approve the new request before the copy activity can access Microsoft 365 data.
 - If the parameters of the copy activity run changes, a new approval request will be triggered.
 - If the Data Factory, pipeline or copy activity names change, a new approval request will be triggered.
 - For example: A new approval will be required if the data table or set of columns that the copy activity is accessing changes.
 - Copy activities will have to be approved once every 6 months. If the original approval was approved 6 months ago, a new approval request will automatically be triggered.
-- If an Office 365 Data Access approver has denied an approval request or revoked a previously approved request, the copy activity will fail continually. You should work with the approver to understand the reason for the denial or revocation and fix the parameters of the copy activity accordingly. A new copy activity will have to deployed, or the name of the existing copy activity will have to be changed in order to trigger a new approval request for approval.
-- An approval request will expire in 24 hours unless an Office 365 data access approver acts on the request. A new request will be submitted once every 24 hours for approval. If you see your copy activity waiting for approval (in the Consent Pending stage), then work with Office 365 data access approvers to get your request approved.
+- If a Microsoft 365 Data Access approver has denied an approval request or revoked a previously approved request, the copy activity will fail continually. You should work with the approver to understand the reason for the denial or revocation and fix the parameters of the copy activity accordingly. A new copy activity will have to deployed, or the name of the existing copy activity will have to be changed in order to trigger a new approval request for approval.
+- An approval request will expire in 24 hours unless a Microsoft 365 data access approver acts on the request. A new request will be submitted once every 24 hours for approval. If you see your copy activity waiting for approval (in the Consent Pending stage), then work with Microsoft 365 data access approvers to get your request approved.
 
 ## Privacy scrubbing 
 The member of the approver group who approves the request can specify the name of one user group whose data would be scrubbed out of extracted data. The rows containing email addresses corresponding to the members of the denied group will be scrubbed out of extracted data. Groups nested within the denied group will be expanded and only users will be scrubbed out. Refer to the approving requests section of this topic for details on how to apply the deny list during approval, through either PowerShell or the PAM UX. 

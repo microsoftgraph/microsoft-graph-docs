@@ -12,7 +12,7 @@ var groupId = "groupId-value";
 
 var renameAs = "renameAs-value";
 
-await graphClient.Me.Onenote.Sections["{id}"]
+await graphClient.Me.Onenote.Sections["{onenoteSection-id}"]
 	.CopyToNotebook(id,groupId,renameAs,null,null)
 	.Request()
 	.PostAsync();

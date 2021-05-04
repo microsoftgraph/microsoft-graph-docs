@@ -4,7 +4,7 @@ description: "Represents Azure AD users who are at risk. Azure AD continually ev
 author: "cloudhandler"
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 ---
 
 # riskyUser resource type
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Represents Azure AD users who are at risk. Azure AD continually evaluates user risk based on various signals and machine learning. This API provides programmatic access to all at-risk users in your Azure AD.
 
-For more information about risk events, see [Azure Active Directory Identity Protection](https://azure.microsoft.com/documentation/articles/active-directory-identityprotection/).
+For more information about risk events, see [Azure Active Directory Identity Protection](/azure/active-directory/identity-protection/overview-identity-protection).
 
 >**Note:** Using the riskyUsers API requires an Azure AD Premium P2 license.
 
@@ -33,16 +33,15 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
-|`id`|`string`|Unique id of the user at risk|
-|`isDeleted`|`bool`|Indicates whether the user is deleted. Possible values are: `true`, `false`|
-|`isGuest`|`bool`|Indicates whether the user is a guest user. Possible values are: `true`, `false`. True if user’s identity lies outside of the tenant in consideration. This user could be a B2B or a B2C user with identity in Azure AD, MSA or 3rd party identity provider. False if user’s identity lies inside the tenant in consideration|
-|`isProcessing`|`bool`|Indicates wehther a user's risky state is being processed by the backend|
-|`riskLastUpdatedDateTime`|`datetime`|The date and time that the risky user was last updated|
-|`riskLevel`|`riskLevel`| The possible values are low, medium, high, hidden, none, unknownFutureValue.  |
-|`riskState`|`riskState`| The possible values are none, confirmedSafe, remediated, atRisk, unknownFutureValue.  |
-|`riskDetail`|`riskDetail`| The possible values are none, adminGeneratedTemporaryPassword, userPerformedSecuredPasswordChange, userPerformedSecuredPasswordReset, adminConfirmedSigninSafe, aiConfirmedSigninSafe, userPassedMFADrivenByRiskBasedPolicy, adminDismissedAllRiskForUser, adminConfirmedSigninCompromised, hidden, adminConfirmedUserCompromised, unknownFutureValue.  |
-|`userDisplayName`|`string`|Risky user display name|
-|`userPrincipalName`|`string`|Risky user principal name|
+|id|string|Unique ID of the user at risk.|
+|isDeleted|boolean|Indicates whether the user is deleted. Possible values are: `true`, `false`.|
+|isProcessing|boolean|Indicates whether a user's risky state is being processed by the backend.|
+|riskLastUpdatedDateTime|DateTimeOffset|The date and time that the risky user was last updated.  The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `2014-01-01T00:00:00Z`|
+|riskLevel|riskLevel| Level of the detected risky user. The possible values are `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.  |
+|riskState|riskState| State of the user's risk. Possible values are: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.  |
+|riskDetail|riskDetail| The possible values are `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`.  |
+|userDisplayName|string|Risky user display name.|
+|userPrincipalName|string|Risky user principal name.|
 
 ## Relationships
 
@@ -65,7 +64,6 @@ The following is a JSON representation of the resource.
 {
 "id": "string",
 "riskLastUpdatedDateTime": "dateTimeOffset",
-"isGuest": "boolean",
 "isProcessing": "boolean",
 "isDeleted": "boolean",
 "riskDetail":  "string",

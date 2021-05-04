@@ -45,7 +45,7 @@ GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md).  The 
 example below shows one level of nesting, but a contact can be located in a child of a child and so on.
 ```http
-GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
+GET /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 ## Optional query parameters
@@ -89,10 +89,14 @@ GET https://graph.microsoft.com/beta/me/contacts/AAMkAGI2THk0AAA=
 [!INCLUDE [sample-code](../includes/snippets/objc/get-contact-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-contact-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -191,3 +195,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

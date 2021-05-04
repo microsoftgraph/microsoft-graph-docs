@@ -3,7 +3,7 @@ title: "iosEasEmailProfileConfiguration resource type"
 description: "By providing configurations in this profile you can instruct the native email client on iOS devices to communicate with an Exchange server and get email, contacts, calendar, reminders, and notes. Furthermore, you can also specify how much email to sync and how often the device should sync."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -69,6 +69,7 @@ Inherits from [easEmailProfileConfigurationBase](../resources/intune-deviceconfi
 |useOAuth|Boolean|Specifies whether the connection should use OAuth for authentication.|
 |signingCertificateType|[emailCertificateType](../resources/intune-deviceconfig-emailcertificatetype.md)|Signing Certificate type for this Email profile. Possible values are: `none`, `certificate`, `derivedCredential`.|
 |encryptionCertificateType|[emailCertificateType](../resources/intune-deviceconfig-emailcertificatetype.md)|Encryption Certificate type for this Email profile. Possible values are: `none`, `certificate`, `derivedCredential`.|
+|perAppVPNProfileId|String|Profile ID of the Per-App VPN policy to be used to access emails from the native Mail client|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -152,9 +153,11 @@ Here is a JSON representation of the resource.
   "requireSsl": true,
   "useOAuth": true,
   "signingCertificateType": "String",
-  "encryptionCertificateType": "String"
+  "encryptionCertificateType": "String",
+  "perAppVPNProfileId": "String"
 }
 ```
+
 
 
 

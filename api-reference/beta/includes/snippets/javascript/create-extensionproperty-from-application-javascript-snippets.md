@@ -11,14 +11,14 @@ const options = {
 const client = Client.init(options);
 
 const extensionProperty = {
-    name: "extensionName",
-    dataType: "string",
+    name: 'extensionName',
+    dataType: 'string',
     targetObjects: [
-    	"Application"
+    	'Application'
     ]
 };
 
-let res = await client.api('/applications/{id}/extensionProperties')
+await client.api('/applications/{id}/extensionProperties')
 	.version('beta')
 	.post(extensionProperty);
 

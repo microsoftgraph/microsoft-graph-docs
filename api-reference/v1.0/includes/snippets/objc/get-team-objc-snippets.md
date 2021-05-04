@@ -7,20 +7,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/teams/{id}/installedApps"]]];
-[urlRequest setHTTPMethod:@"POST"];
-[urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
-
-MSGraphTeamsAppInstallation *teamsAppInstallation = [[MSGraphTeamsAppInstallation alloc] init];
-
-NSError *error;
-NSData *teamsAppInstallationData = [teamsAppInstallation getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:teamsAppInstallationData];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/teams/893075dd-2487-4122-925f-022c42e20265"]]];
+[urlRequest setHTTPMethod:@"GET"];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
-		//Request Completed
+		MSGraphTeam *team = [[MSGraphTeam alloc] initWithData:data error:&nserror];
 
 }];
 

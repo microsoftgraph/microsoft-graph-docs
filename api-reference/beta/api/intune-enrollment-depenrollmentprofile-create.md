@@ -3,7 +3,7 @@ title: "Create depEnrollmentProfile"
 description: "Create a new depEnrollmentProfile object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -20,7 +20,7 @@ Create a new [depEnrollmentProfile](../resources/intune-enrollment-depenrollment
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -183,6 +183,7 @@ Content-Length: 1403
   "enableSharedIPad": true
 }
 ```
+
 
 
 

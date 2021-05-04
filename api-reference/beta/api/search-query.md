@@ -1,5 +1,5 @@
 ---
-title: "search: query"
+title: "searchEntity: query"
 description: "Runs the query specified in the request body. Search results are provided in the response."
 localization_priority: Normal
 author: "nmoreau"
@@ -7,7 +7,7 @@ ms.prod: "search"
 doc_type: "apiPageType"
 ---
 
-# search: query
+# searchEntity: query
 
 Namespace: microsoft.graph
 
@@ -15,15 +15,15 @@ Namespace: microsoft.graph
 
 Runs the query specified in the request body. Search results are provided in the response.
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
+[!INCLUDE [search-api-deprecation](../../includes/search-api-deprecation.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference). 
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Mail.Read, Files.Read.All, Calendars.Read, ExternalItem.Read.All |
+| Delegated (work or school account)     | Mail.Read, Calendars.Read, Files.Read.All, Sites.Read.All, ExternalItem.Read.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -46,18 +46,13 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
-|requests|[searchRequest](../resources/searchrequest.md) collection|The search request to be sent to the query endpoint formatted in a JSON blob. It contains the type of entities expected in the response, the underlying sources, the paging parameters, the requested fields, and the actual search query.|
+|requests|[searchRequest](../resources/searchrequest.md) collection|A collection of one or more search requests each formatted in a JSON blob. Each JSON blob contains the types of resources expected in the response, the underlying sources, paging parameters, requested fields, and actual search query. <br> Be aware of [known limitations](../resources/search-api-overview.md#known-limitations) on searching specific combinations of entity types, and sorting or aggregating search results. |
+|queryAlterationOptions|[searchAlterationOptions](../resources/searchalterationoptions.md)|Query alteration options formatted in a JSON blob that contains two optional flags to for spelling correction. Optional. |
 
 ## Response
 
-If successful, this method returns `HTTP 200 OK` response code and a [searchResponse](../resources/searchresponse.md) collection object in the response body.
-
-## Common use cases
-
-- Search [mail messages](/graph/search-concept-messages)
-- Search [calendar events](/graph/search-concept-events)
-- Search [files](/graph/search-concept-files)
-- Search [custom types (Connectors)](/graph/search-concept-custom-types) data
+If successful, this method returns a `HTTP 200 OK` response code and a [searchResponse](../resources/searchresponse.md) object in the response body.
+ 
 
 ## Examples
 
@@ -79,19 +74,17 @@ Content-type: application/json
   "requests": [
     {
       "entityTypes": [
-        "microsoft.graph.externalItem"
+        "externalItem"
       ],
       "contentSources": [
         "/external/connections/connectionfriendlyname"
       ],
       "query": {
-        "query_string": {
-          "query": "contoso product"
-        }
+        "queryString": "contoso product"
       },
       "from": 0,
       "size": 25,
-      "stored_fields": [
+      "fields": [
         "title",
         "description"
       ]
@@ -111,6 +104,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/search-query-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/search-query-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -118,7 +115,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -143,11 +140,10 @@ Content-type: application/json
         {
           "hits": [
             {
-              "_id": "1",
-              "_score": 1,
-              "_sortField": "Relevance",
-              "_summary": "_summary-value",
-              "_source": "The source field will contain the underlying graph entity part of the response"
+              "hitId": "1",
+              "rank": 1,
+              "summary": "_summary-value",
+              "resource": "The source field will contain the underlying graph entity part of the response"
             }
           ],
           "total": 47,
@@ -159,6 +155,16 @@ Content-type: application/json
 }
 ```
 
+## See also
+- Search [mail messages](/graph/search-concept-messages)
+- Search [calendar events](/graph/search-concept-events)
+- Search content in SharePoint and OneDrive ([files, lists and sites](/graph/search-concept-files))
+- Search [custom types (Graph Connectors)](/graph/search-concept-custom-types) data
+- [Sort](/graph/search-concept-sort) search results
+- Use [aggregations](/graph/search-concept-aggregations) to refine search results
+- Enable [spell corrections](/graph/search-concept-speller) in search results
+
+
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {
@@ -168,3 +174,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

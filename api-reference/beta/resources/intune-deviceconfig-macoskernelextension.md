@@ -3,7 +3,7 @@ title: "macOSKernelExtension resource type"
 description: "Represents a specific macOS kernel extension. A macOS kernel extension can be described by its team identifier plus its bundle identifier."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -40,6 +40,7 @@ Here is a JSON representation of the resource.
   "bundleId": "String"
 }
 ```
+
 
 
 

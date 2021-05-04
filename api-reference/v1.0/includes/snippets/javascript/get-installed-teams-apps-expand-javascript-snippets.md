@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/teams/{id}/installedApps')
+let teamsAppInstallation = await client.api('/teams/{id}/installedApps/{id}')
 	.expand('teamsAppDefinition')
 	.get();
 

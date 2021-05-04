@@ -10,20 +10,20 @@ const options = {
 
 const client = Client.init(options);
 
-const workforceIntegrations = {
-  displayName: "displayName-value",
+const workforceIntegration = {
+  displayName: 'displayName-value',
   apiVersion: 99,
   encryption: {
-    protocol: "protocol-value",
-    secret: "secret-value"
+    protocol: 'protocol-value',
+    secret: 'secret-value'
   },
   isActive: true,
-  url: "url-value",
-  supports: "supports-value"
+  url: 'url-value',
+  supports: 'supports-value'
 };
 
-let res = await client.api('/teamwork/workforceIntegrations')
+await client.api('/teamwork/workforceIntegrations/{workforceIntegrationId}')
 	.version('beta')
-	.update(workforceIntegrations);
+	.update(workforceIntegration);
 
 ```

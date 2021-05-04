@@ -3,7 +3,7 @@ title: "Update groupPolicyPresentationDecimalTextBox"
 description: "Update the properties of a groupPolicyPresentationDecimalTextBox object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -20,7 +20,7 @@ Update the properties of a [groupPolicyPresentationDecimalTextBox](../resources/
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -105,6 +105,7 @@ Content-Length: 334
   "maxValue": 8
 }
 ```
+
 
 
 

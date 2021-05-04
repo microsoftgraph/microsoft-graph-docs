@@ -3,7 +3,7 @@ title: "List webApps"
 description: "List properties and relationships of the webApp objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -88,6 +88,9 @@ Content-Length: 934
   ]
 }
 ```
+
+
+
 
 
 

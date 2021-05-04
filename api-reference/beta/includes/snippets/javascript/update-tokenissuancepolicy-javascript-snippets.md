@@ -12,14 +12,13 @@ const client = Client.init(options);
 
 const tokenIssuancePolicy = {
   definition: [
-    "definition-value"
+    'definition-value'
   ],
-  displayName: "displayName-value",
-  isOrganizationDefault: true,
-  type: "type-value"
+  displayName: 'displayName-value',
+  isOrganizationDefault: true
 };
 
-let res = await client.api('/policies/tokenIssuancePolicies/{id}')
+await client.api('/policies/tokenIssuancePolicies/{id}')
 	.version('beta')
 	.update(tokenIssuancePolicy);
 

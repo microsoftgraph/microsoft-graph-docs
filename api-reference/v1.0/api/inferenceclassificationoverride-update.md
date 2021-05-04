@@ -2,7 +2,7 @@
 title: "Update inferenceclassificationoverride"
 description: "Change the **classifyAs** field of an override as specified. "
 localization_priority: Normal
-author: ""
+author: "abheek-das"
 ms.prod: ""
 doc_type: apiPageType
 ---
@@ -11,13 +11,13 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Change the **classifyAs** field of an override as specified. 
+Change the **classifyAs** field of an override as specified.
 
-You cannot use PATCH to change any other fields in an [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) instance. 
+You cannot use PATCH to change any other fields in an [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) instance.
 
 If an override exists for a sender and the sender changes his/her display name, you can use [POST](inferenceclassification-post-overrides.md) to force an update to the name field in the existing override.
 
-If an override exists for a sender and the sender changes his/her SMTP address, [deleting](inferenceclassificationoverride-delete.md) the existing override and [creating](inferenceclassification-post-overrides.md) a new one with 
+If an override exists for a sender and the sender changes his/her SMTP address, [deleting](inferenceclassificationoverride-delete.md) the existing override and [creating](inferenceclassification-post-overrides.md) a new one with
 the new SMTP address is the only way to "update" the override for this sender.
 
 ## Permissions
@@ -89,7 +89,7 @@ Content-type: application/json
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -120,3 +120,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

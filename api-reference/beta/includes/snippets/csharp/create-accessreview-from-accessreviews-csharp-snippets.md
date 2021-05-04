@@ -18,7 +18,7 @@ var accessReview = new AccessReview
 	ReviewerType = "delegated",
 	BusinessFlowTemplateId = "6e4f3d20-c5c3-407f-9695-8460952bcc68",
 	Description = "Sample description",
-	Reviewers = new List<AccessReviewReviewer>()
+	Reviewers = new AccessReviewReviewersCollectionPage()
 	{
 		new AccessReviewReviewer
 		{

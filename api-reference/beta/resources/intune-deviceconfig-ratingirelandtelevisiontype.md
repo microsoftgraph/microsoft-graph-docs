@@ -3,7 +3,7 @@ title: "ratingIrelandTelevisionType enum type"
 description: "TV content rating labels in Ireland"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -27,6 +27,7 @@ TV content rating labels in Ireland
 |youngAdults|4|The YA classification is suitable for teenage audience|
 |parentalSupervision|5|The PS classification invites parents and guardians to consider restriction children’s access|
 |mature|6|The MA classification is suitable for adults|
+
 
 
 

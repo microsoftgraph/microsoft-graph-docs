@@ -3,7 +3,7 @@ title: "Delete orgContact"
 description: "Delete orgContact."
 localization_priority: Normal
 author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -65,6 +65,10 @@ DELETE https://graph.microsoft.com/beta/contacts/{id}
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-orgcontact-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-orgcontact-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
@@ -90,3 +94,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

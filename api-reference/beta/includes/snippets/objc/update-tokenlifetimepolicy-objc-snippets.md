@@ -17,7 +17,6 @@ NSMutableArray *definitionList = [[NSMutableArray alloc] init];
 [tokenLifetimePolicy setDefinition:definitionList];
 [tokenLifetimePolicy setDisplayName:@"displayName-value"];
 [tokenLifetimePolicy setIsOrganizationDefault: true];
-[tokenLifetimePolicy setType:@"type-value"];
 
 NSError *error;
 NSData *tokenLifetimePolicyData = [tokenLifetimePolicy getSerializedDataWithError:&error];

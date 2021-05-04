@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/calendar')
+await client.api('/me/calendar')
 	.version('beta')
 	.delete();
 

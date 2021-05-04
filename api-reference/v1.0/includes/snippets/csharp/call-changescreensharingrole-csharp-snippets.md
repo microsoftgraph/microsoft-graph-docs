@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var role = ScreenSharingRole.Viewer;
 
-await graphClient.Communications.Calls["{id}"]
+await graphClient.Communications.Calls["{call-id}"]
 	.ChangeScreenSharingRole(role)
 	.Request()
 	.PostAsync();

@@ -3,7 +3,7 @@ title: "microsoftStoreForBusinessContainedApp resource type"
 description: "A class that represents a contained app of a MicrosoftStoreForBusinessApp."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -53,6 +53,7 @@ Here is a JSON representation of the resource.
   "appUserModelId": "String"
 }
 ```
+
 
 
 

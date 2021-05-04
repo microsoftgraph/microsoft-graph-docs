@@ -28,13 +28,12 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /education/me/assignments/
 GET /education/users/{id}/assignments
 ```
 
 ## Optional query parameters
 
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 ## Request headers
 
@@ -59,14 +58,14 @@ The following is an example of the request.
   "name": "get_assignments"
 }-->
 ```http 
-GET https://graph.microsoft.com/beta/education/me/assignments
+GET https://graph.microsoft.com/beta/education/classes/{id}/assignments
 ```
 
 ##### Response
 
 The following is an example of the response. 
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 
 <!-- {

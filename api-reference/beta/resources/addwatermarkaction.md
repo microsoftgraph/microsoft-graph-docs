@@ -3,7 +3,7 @@ title: "addWatermarkAction resource type"
 description: "Represents an action that specifies the details on the content watermark to be added to the information, if applicable."
 localization_priority: Normal
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 
@@ -59,3 +59,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

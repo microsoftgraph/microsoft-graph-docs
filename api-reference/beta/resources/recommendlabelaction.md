@@ -3,7 +3,7 @@ title: "recommendLabelAction resource type"
 description: "Represents a label that should be recommended to the user for application to the file based on sensitive information types."
 localization_priority: Normal
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 
@@ -55,3 +55,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

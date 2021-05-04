@@ -19,17 +19,21 @@ Derived from [educationSynchronizationDataProvider](educationsynchronizationdata
 
 ## Properties
 
-| Property | Type | Description |
-|:-|:-|:-|
-| **connectionUrl** | String | The connection URL to the PowerSchool instance. |
-| **clientId** | String |  The client ID used to connect to PowerSchool. |
-| **clientSecret** | String |  The client secret to authenticate the connection to the PowerSchool instance. |
-| **schoolsIds** | String collection |  The list of schools to sync. |
-| **schoolYear** | String |  The school year to sync. |
-| **allowTeachersInMultipleSchools** | Boolean |  Indicates whether the source has multiple identifiers for a single student or teacher. |
-| **customizations** | [educationSynchronizationCustomizations](educationsynchronizationcustomizations.md) | Optional customization to be applied to the synchronization profile.|
+| Property                       | Type                                     | Description                                                                            |
+| :----------------------------- | :--------------------------------------- | :------------------------------------------------------------------------------------- |
+| allowTeachersInMultipleSchools | Boolean                                  | Indicates whether the source has multiple identifiers for a single student or teacher. |
+| clientId                       | String                                   | The client ID used to connect to PowerSchool.                                          |
+| clientSecret                   | String                                   | The client secret to authenticate the connection to the PowerSchool instance.          |
+| connectionUrl                  | String                                   | The connection URL to the PowerSchool instance.                                        |
+| schoolsIds                     | String collection                        | The list of schools to sync.                                                           |
+| schoolYear                     | String                                   | The school year to sync.                                                               |
+| customizations                 | [educationSynchronizationCustomizations] | Optional customization to be applied to the synchronization profile.                   |
+
+[educationsynchronizationconnectionsettings]: educationsynchronizationconnectionsettings.md
+[educationsynchronizationcustomizations]: educationsynchronizationcustomizations.md
 
 ## JSON representation
+
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
@@ -47,6 +51,10 @@ Derived from [educationSynchronizationDataProvider](educationsynchronizationdata
   "schoolsIds": ["String"],
   "schoolYear": "String",
   "allowTeachersInMultipleSchools": "Boolean",
-  "customizations": {"@odata.type": "microsoft.graph.educationSynchronizationCustomizations"}
+  "customizations": {
+    "@odata.type": "microsoft.graph.educationSynchronizationCustomizations"
+  }
 }
 ```
+
+

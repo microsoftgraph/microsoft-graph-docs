@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: Delete an entry from a SharePoint list
 localization_priority: Normal
@@ -93,3 +92,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 } -->
+

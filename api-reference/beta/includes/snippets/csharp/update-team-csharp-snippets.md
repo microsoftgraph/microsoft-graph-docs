@@ -8,6 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var team = new Team
 {
+	IsMembershipLimitedToOwners = true,
 	MemberSettings = new TeamMemberSettings
 	{
 		AllowCreateUpdateChannels = true
@@ -28,7 +29,7 @@ var team = new Team
 	}
 };
 
-await graphClient.Teams["{id}"]
+await graphClient.Teams["{team-id}"]
 	.Request()
 	.UpdateAsync(team);
 

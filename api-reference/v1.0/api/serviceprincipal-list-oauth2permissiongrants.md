@@ -3,8 +3,8 @@ title: "List oauth2PermissionGrants"
 description: "Retrieve a list of oAuth2PermissionGrant objects, representing delegated permission grants."
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+ms.prod: "applications"
+author: "sureshja"
 ---
 
 # List oauth2PermissionGrants
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals/{id}/oauth2PermissionGran
 
 Here is an example of the response. 
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -129,3 +129,4 @@ Content-Length: 253
   ]
 }
 -->
+

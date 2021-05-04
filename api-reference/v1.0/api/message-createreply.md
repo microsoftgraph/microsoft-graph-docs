@@ -2,7 +2,7 @@
 title: "message: createReply"
 description: "Create a draft of the reply to the specified message. You can then update the draft to add reply content to the **body** or change other message properties, or, simply send the draft."
 localization_priority: Normal
-author: "svpsiva"
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -75,7 +75,7 @@ POST https://graph.microsoft.com/v1.0/me/messages/{id}/createReply
 
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -110,3 +110,4 @@ Content-length: 248
   "suppressions": [
   ]
 }-->
+

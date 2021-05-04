@@ -11,7 +11,7 @@ var servicePrincipal = new ServicePrincipal
 	AppRoleAssignmentRequired = true
 };
 
-await graphClient.ServicePrincipals["{id}"]
+await graphClient.ServicePrincipals["{servicePrincipal-id}"]
 	.Request()
 	.UpdateAsync(servicePrincipal);
 

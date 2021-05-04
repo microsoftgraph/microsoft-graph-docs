@@ -3,7 +3,7 @@ title: "Apply accessReview"
 description: "In the Azure AD access reviews feature, apply the decisions of a completed accessReview.  The target object can be either a one-time access review, or an instance of a recurring access review.  "
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -49,12 +49,8 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `204, No Content` response code. It does not return anything in the response body.
 
-## See also
-
-- [How to complete an access review](https://docs.microsoft.com/azure/active-directory/active-directory-azure-ad-controls-complete-access-review)
-
 ## Example
-##### Request
+### Request
 
 # [HTTP](#tab/http)
 <!-- {
@@ -76,10 +72,14 @@ POST https://graph.microsoft.com/beta/accessReviews/2975E9B5-44CE-4E71-93D3-30F0
 [!INCLUDE [sample-code](../includes/snippets/objc/apply-accessreview-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/apply-accessreview-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+### Response
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -101,3 +101,7 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+## See also
+
+- [How to complete an access review](/azure/active-directory/active-directory-azure-ad-controls-complete-access-review)

@@ -3,7 +3,7 @@ title: "office365ActivationsUserCounts resource type"
 description: "The following is a JSON representation of the resource."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: resourcePageType
 ---
 
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 | Property                 | Type   | Description                              |
 | :----------------------- | :----- | ---------------------------------------- |
 | reportRefreshDate        | Date   | The latest date of the content.          |
-| productType              | String | The product type such as "Office 365 ProPlus", "Project Client", or "Visio Pro for Office 365". |
+| productType              | String | The product type such as "Microsoft 365 ProPlus" or "Project Client". |
 | assigned                 | Int64  | The number of users have been assigned for the product license. |
 | activated                | Int64  | The number of users who have activated the product. |
 | sharedComputerActivation | Int64  | The number of users who have used the product on a shared computer. |
@@ -39,3 +39,5 @@ The following is a JSON representation of the resource.
   "sharedComputerActivation": 1024
 }
 ```
+
+

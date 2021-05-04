@@ -10,7 +10,7 @@ var sourceData = "sourceData-value";
 
 var seriesBy = "seriesBy-value";
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Charts["{name}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts["{workbookChart-id}"]
 	.SetData(seriesBy,sourceData)
 	.Request()
 	.PostAsync();

@@ -1,5 +1,5 @@
 ---
-title: "Create team"
+title: "Create team from group"
 description: "Create a new team under a group."
 author: "nkramer"
 localization_priority: Priority
@@ -7,7 +7,7 @@ ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
 
-# Create team
+# Create team from group
 
 Namespace: microsoft.graph
 
@@ -72,6 +72,7 @@ Content-type: application/json
 
 {  
   "memberSettings": {
+    "allowCreatePrivateChannels": true,
     "allowCreateUpdateChannels": true
   },
   "messagingSettings": {
@@ -107,7 +108,7 @@ Content-type: application/json
 
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -160,3 +161,4 @@ Content-length: 401
 ## See also
 
 - [Creating a group with a team](/graph/teams-create-group-and-team)
+

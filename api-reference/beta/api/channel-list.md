@@ -21,16 +21,18 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
+|Delegated (work or school account) | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, ChannelSettings.Read.Group ([RSC](https://aka.ms/teams-rsc)), ChannelSettings.Edit.Group ([RSC](https://aka.ms/teams-rsc)), Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All    |
+|Application | ChannelSettings.Read.Group*, ChannelSettings.ReadWrite.Group*, Channel.ReadBasic.All, ChannelSettings.Read.All, ChannelSettings.ReadWrite.All, Group.Read.All, Group.ReadWrite.All, Directory.Read.All, Directory.ReadWrite.All |
+
+> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /teams/{id}/channels
+GET /teams/{team-id}/channels
 ```
 
 ## Optional query parameters
@@ -58,13 +60,14 @@ If successful, this method returns a `200 OK` response code and collection of [C
 
 The following example shows a request to list all channels.
 
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_channels"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams/{id}/channels
+GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/channels
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-channels-csharp-snippets.md)]
@@ -78,13 +81,18 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels
 [!INCLUDE [sample-code](../includes/snippets/objc/list-channels-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-channels-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
+
 
 #### Response
 
 The following is the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -100,13 +108,11 @@ Content-length: 262
 {
   "value": [
     {
-      "description": "description-value",
-      "displayName": "display-name-value",
-      "id": "id-value",
-      "membershipType": "membership-type-value",
-      "isFavoriteByDefault": false,
-      "webUrl": "webUrl-value",
-      "email": "email-value"
+      "id": "19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2",
+      "createdDateTime": "2020-05-27T19:22:25.692Z",
+      "displayName": "General",
+      "description": "AutoTestTeam_20210311_150740.2550_fim3udfdjen9",
+      "membershipType": "standard"
     }
   ]
 }
@@ -119,13 +125,14 @@ Content-length: 262
 The following example shows a request to list all private channels.
 
 
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_private_channels"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams/{id}/channels?$filter=membershipType eq 'private'
+GET https://graph.microsoft.com/beta/teams/64c323f2-226a-4e64-8ba4-3e6e3f7b9330/channels?$filter=membershipType eq 'private'
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/list-private-channels-csharp-snippets.md)]
@@ -139,14 +146,19 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels?$filter=membershipType 
 [!INCLUDE [sample-code](../includes/snippets/objc/list-private-channels-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-private-channels-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
+
 
 
 #### Response
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -162,13 +174,11 @@ Content-length: 262
 {
   "value": [
     {
-      "description": "description-value",
-      "displayName": "display-name-value",
-      "id": "id-value",
-      "membershipType": "membership-type-value",
-      "isFavoriteByDefault": false,
-      "webUrl": "webUrl-value",
-      "email": "email-value"
+      "id": "19:982abbfca323a582f0a6d00ae2deca@thread.tacv2",
+      "createdDateTime": "2020-05-27T19:22:25.692Z",
+      "displayName": "General",
+      "description": "test private team",
+      "membershipType": "private"
     }
   ]
 }
@@ -187,3 +197,5 @@ Content-length: 262
   ]
 }
 -->
+
+

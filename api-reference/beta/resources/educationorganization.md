@@ -13,18 +13,19 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Abstract entity used to model the commonality between different organization types within the education sector.  
+Abstract entity used to model the commonality between different organization types within the education sector.
 
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|description|String| Organization description.|
-|displayName|String| Organization display name.|
-|externalSource|string| Source where this organization was created from. Possible values are: `sis`, `manual`, `unknownFutureValue`.|
+
+| Property       | Type   | Description                                                                       |
+| :------------- | :----- | :-------------------------------------------------------------------------------- |
+| description    | String | Organization description.                                                         |
+| displayName    | String | Organization display name.                                                        |
+| externalSource | String | Where this user was created from. Possible values are: `sis`, `lms`, or `manual`. |
 
 ## Relationships
-None.
 
+None.
 
 ## JSON representation
 
@@ -44,7 +45,6 @@ The following is a JSON representation of the resource.
   "displayName": "String",
   "externalSource": "string"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -59,3 +59,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

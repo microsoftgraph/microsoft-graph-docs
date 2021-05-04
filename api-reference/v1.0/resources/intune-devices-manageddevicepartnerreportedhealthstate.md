@@ -3,7 +3,7 @@ title: "managedDevicePartnerReportedHealthState enum type"
 description: "Available health states for the Device Health API"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -28,6 +28,8 @@ Available health states for the Device Health API
 |unresponsive|7|Device is considered unresponsive by the mobile threat defense partner. The device health is not known.|
 |compromised|8|Device is considered compromised by the Threat Defense partner. This means the device has an active Threat or Risk which cannot be easily remediated by the end user and the user should contact their IT Admin.|
 |misconfigured|9|Device is considered misconfigured with the Threat Defense partner. This means the device is missing a required profile or configuration for the Threat Defense Partner to function properly and is thus threat or risk analysis is not able to complete.|
+
+
 
 
 

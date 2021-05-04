@@ -2,8 +2,8 @@
 title: "List relyingPartyDetailedSummary"
 description: "Retrieve a list of relyingPartyDetailedSummary objects."
 localization_priority: Normal
-author: "khotz"
-ms.prod: "microsoft-identity-platform"
+author: "besiler"
+ms.prod: "identity-and-access-reports"
 doc_type: "apiPageType"
 ---
 
@@ -89,6 +89,10 @@ GET https://graph.microsoft.com/beta/reports/getRelyingPartyDetailedSummary(peri
 [!INCLUDE [sample-code](../includes/snippets/objc/get-relyingpartydetailedsummary-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-relyingpartydetailedsummary-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -96,7 +100,7 @@ GET https://graph.microsoft.com/beta/reports/getRelyingPartyDetailedSummary(peri
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -140,3 +144,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

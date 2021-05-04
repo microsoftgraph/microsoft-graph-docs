@@ -3,7 +3,7 @@ title: "List provisioningObjectSummary"
 description: "Get all provisioning events that occurred in your tenant."
 localization_priority: Normal
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 doc_type: "apiPageType"
 ---
 
@@ -112,6 +112,10 @@ GET https://graph.microsoft.com/beta/auditLogs/provisioning
 [!INCLUDE [sample-code](../includes/snippets/objc/list-provisioningobjectsummary-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-provisioningobjectsummary-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -119,7 +123,7 @@ GET https://graph.microsoft.com/beta/auditLogs/provisioning
 
 The following is an example of the response for a successful event.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -260,6 +264,10 @@ GET https://graph.microsoft.com/beta/auditLogs/provisioning
 [!INCLUDE [sample-code](../includes/snippets/objc/list-provisioningobjectsummary-error-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-provisioningobjectsummary-error-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -267,7 +275,7 @@ GET https://graph.microsoft.com/beta/auditLogs/provisioning
 
 The following is an example of the response for a failed provisioning event.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -407,3 +415,5 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

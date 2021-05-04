@@ -4,7 +4,7 @@ description: "A contact, event, or message that's attached to another event,"
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "outlook"
-author: "svpsiva"
+author: "abheek-das"
 ---
 
 # itemAttachment resource type
@@ -12,6 +12,8 @@ author: "svpsiva"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [outlooktask-deprecate-sharedfeature](../../includes/outlooktask-deprecate-sharedfeature.md)]
 
 A contact, event, or message that's attached to a user [event](../resources/event.md),
 [message](../resources/message.md), [Outlook task](../resources/outlooktask.md), or [post](../resources/post.md).  
@@ -77,3 +79,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

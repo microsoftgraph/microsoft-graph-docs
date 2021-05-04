@@ -3,7 +3,7 @@ title: "authenticationMethod resource type"
 description: "Represents an authentication method registered to a user."
 localization_priority: Normal
 author: "mmcla"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an authentication method registered to a user. An [authentication method](https://docs.microsoft.com/azure/active-directory/authentication/concept-authentication-methods) is something used by a user to authenticate or otherwise prove their identity to the system. Some examples include password, phone (usable via SMS or voice call), FIDO2 security keys, and more. Currently, password and phone methods are implemented.
+Represents an authentication method registered to a user. An [authentication method](/azure/active-directory/authentication/concept-authentication-methods) is something used by a user to authenticate or otherwise prove their identity to the system. Some examples include password, phone (usable via SMS or voice call), FIDO2 security keys, and more.
 
 ## Methods
 
@@ -42,7 +42,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.authenticationMethod",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

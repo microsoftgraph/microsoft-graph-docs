@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/accessReviews/2975E9B5-44CE-4E71-93D3-30F03B5AA992/')
+await client.api('/accessReviews/2975E9B5-44CE-4E71-93D3-30F03B5AA992/')
 	.version('beta')
 	.delete();
 

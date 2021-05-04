@@ -3,7 +3,7 @@ title: "Get managedDeviceOverview"
 description: "Read properties and relationships of the managedDeviceOverview object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -20,11 +20,11 @@ Read properties and relationships of the [managedDeviceOverview](../resources/in
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Delegated (work or school account)|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Application|DeviceManagementManagedDevices.Read.All, DeviceManagementManagedDevices.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1320
+Content-Length: 1487
 
 {
   "value": {
@@ -84,7 +84,11 @@ Content-Length: 1320
       "androidDeviceAdminCount": 7,
       "androidFullyManagedCount": 8,
       "androidWorkProfileCount": 7,
-      "configMgrDeviceCount": 4
+      "androidCorporateWorkProfileCount": 0,
+      "configMgrDeviceCount": 4,
+      "aospUserlessCount": 1,
+      "aospUserAssociatedCount": 7,
+      "linuxCount": 10
     },
     "deviceExchangeAccessStateSummary": {
       "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
@@ -107,6 +111,7 @@ Content-Length: 1320
   }
 }
 ```
+
 
 
 

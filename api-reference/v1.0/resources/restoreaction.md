@@ -1,6 +1,5 @@
 ---
 author: daspek
-ms.author: dspektor
 title: restoreAction resource type
 description: The RestoreAction object provides information about an activity that restored an item.
 localization_priority: Normal
@@ -46,3 +45,4 @@ None. This facet is a null or not-null value and contains no properties.
   "suppressions": []
 }
 -->
+

@@ -26,8 +26,10 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/tables/{id|name}/Range
-GET /workbook/worksheets/{id|name}/tables/{id|name}/Range
+GET /me/drive/items/{id}/workbook/tables/{id|name}/Range
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/Range
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/Range
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/Range
 
 ```
 ## Request headers
@@ -67,13 +69,17 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|nam
 [!INCLUDE [sample-code](../includes/snippets/objc/table-range-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/table-range-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### Response
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -107,3 +113,5 @@ Content-length: 169
   ]
 }
 -->
+
+

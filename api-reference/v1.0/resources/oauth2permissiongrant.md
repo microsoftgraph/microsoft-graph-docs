@@ -3,8 +3,8 @@ title: "oAuth2PermissionGrant resource type"
 description: "Represents the delegated permissions (OAuth 2.0 scopes) which have been granted to an application, often as a result of user or admin consent process."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+ms.prod: "identity-and-sign-in"
+author: "psignoret"
 ---
 
 # oAuth2PermissionGrant resource type
@@ -26,6 +26,7 @@ Delegated permissions are sometimes referred to as "OAuth 2.0 scopes" or "scopes
 | [Create oAuth2PermissionGrant](../api/oauth2permissiongrant-post.md) | [oAuth2PermissionGrant](oauth2permissiongrant.md) | Create a delegated permission grant. |
 | [Update oAuth2PermissionGrant](../api/oauth2permissiongrant-update.md) | None | Update oAuth2PermissionGrant object. |
 | [Delete oAuth2PermissionGrant](../api/oauth2permissiongrant-delete.md) | None  | Delete a delegated permission grant. |
+|[Get delta](../api/oauth2permissiongrant-delta.md)|[oAuth2PermissionGrant](oauth2permissiongrant.md)|Get newly created, updated, or deleted **oauth2permissiongrant** objects without performing a full read of the entire resource collection.|
 
 ## Properties
 
@@ -41,6 +42,8 @@ Delegated permissions are sometimes referred to as "OAuth 2.0 scopes" or "scopes
 ## Relationships
 
 None.
+
+This resource supports using [delta query](/graph/delta-query-overview) to track incremental additions, deletions, and updates, by providing a [delta](../api/oauth2permissiongrant-delta.md) function.
 
 ## JSON representation
 
@@ -78,3 +81,4 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+

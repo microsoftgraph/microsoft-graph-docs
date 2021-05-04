@@ -10,12 +10,16 @@ var plannerAssignedToTaskBoardTaskFormat = new PlannerAssignedToTaskBoardTaskFor
 {
 	OrderHintsByAssignee = new PlannerOrderHintsByAssignee
 	{
-		Aaa27244-1db4-476a-a5cb-004607466324 = "8566473P 957764Jk!"
+		AdditionalData = new Dictionary<string, object>()
+		{
+			{"aaa27244-1db4-476a-a5cb-004607466324", "8566473P 957764Jk!"}
+		}
 	}
 };
 
-await graphClient.Planner.Tasks["01gzSlKkIUSUl6DF_EilrmQAKDhh"].AssignedToTaskBoardFormat
+await graphClient.Planner.Tasks["{plannerTask-id}"].AssignedToTaskBoardFormat
 	.Request()
+	.Header("Prefer","return=representation")
 	.Header("If-Match","W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 	.UpdateAsync(plannerAssignedToTaskBoardTaskFormat);
 

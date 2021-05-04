@@ -4,11 +4,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Message message = new Message();
-message.receivedDateTime = "datetime-value";
-message.sentDateTime = "datetime-value";
+message.receivedDateTime = OffsetDateTimeSerializer.deserialize("datetime-value");
+message.sentDateTime = OffsetDateTimeSerializer.deserialize("datetime-value");
 message.hasAttachments = true;
 message.subject = "subject-value";
 ItemBody body = new ItemBody();

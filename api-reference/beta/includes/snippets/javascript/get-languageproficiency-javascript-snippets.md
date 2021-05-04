@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/profile/languages/{id}')
+let languageProficiency = await client.api('/me/profile/languages/{id}')
 	.version('beta')
 	.get();
 

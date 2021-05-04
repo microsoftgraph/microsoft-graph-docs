@@ -3,7 +3,7 @@ title: "List governanceRoleAssignmentRequests"
 description: "Retrieve a collection of governanceRoleAssignmentRequests. "
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "shauliu"
 ---
 
@@ -16,13 +16,31 @@ Namespace: microsoft.graph
 Retrieve a collection of [governanceRoleAssignmentRequests](../resources/governanceroleassignmentrequest.md). 
 
 ## Permissions
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference#privileged-access-permissions).
 
-|Permission type      | Permissions              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources  |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | PrivilegedAccess.Read.AzureResources |
+### Azure resources
+
+| Permission type | Permissions |
+|:--------------- |:----------- |
+| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureResources |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application | PrivilegedAccess.Read.AzureResources |
+
+### Azure AD
+
+| Permission type | Permissions |
+|:--------------- |:----------- |
+| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureAD |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application | PrivilegedAccess.Read.AzureAD |
+
+### Groups
+
+|Permission type | Permissions |
+|:-------------- |:----------- |
+| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureADGroups |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application | PrivilegedAccess.Read.AzureADGroups |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -76,7 +94,7 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignm
 ##### Response
 Here is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -172,3 +190,5 @@ Content-length: 279
   "suppressions": []
 }
 -->
+
+

@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Permission
 localization_priority: Priority
@@ -80,12 +79,11 @@ Permissions with an [**invitation**][SharingInvitation] facet represent permissi
 
 ### Roles property values
 
-| Role        | Details                                                                        |
-|:------------|:-------------------------------------------------------------------------------|
-| `read`      | Provides the ability to read the metadata and contents of the item.            |
-| `write`     | Provides the ability to read and modify the metadata and contents of the item. |
-| `sp.owner`  | For SharePoint and OneDrive for Business this represents the owner role.       |
-| `sp.member` | For SharePoint and OneDrive for Business this represents the member role.      |
+| Value              | Description                                                                        |
+|:------------------|:-------------------------------------------------------------------------------|
+| read            | Provides the ability to read the metadata and contents of the item.            |
+| write           | Provides the ability to read and modify the metadata and contents of the item. |
+| sp.full control | For SharePoint and OneDrive for Business this represents the owner role.       |
 
 ## Sharing links
 The most common type of permissions are sharing links.
@@ -255,3 +253,4 @@ OneDrive for Business and SharePoint document libraries do not return the **inhe
   "section": "documentation",
   "tocPath": "Resources/Permission"
 } -->
+

@@ -21,7 +21,7 @@ Specify your user selection in the SourceDataSet of the Azure Data Factory copy 
 
 To specify a predicate to run on the entire tenant, add a new field **userScopeFilterUri** under **typeProperties** and set this to the predicate. The predicate format should match the query format of Microsoft Graph APIs. For example, if you want to limit the selection to users who work in the Finance department, you can use `https://graph.microsoft.com/v1.0/users?$filter=Department eq 'Finance'`. If you want to limit the selection to one user, you can use `https://graph.microsoft.com/v1.0/users?$filter=mail eq 'contosouser1@contoso.com'`.
 
-Your query will only return users within the Office 365 organization that you're querying. Guest users and non-user mailboxes will not be returned.
+Your query will only return users within the Microsoft 365 organization that you're querying. Guest users and non-user mailboxes will not be returned.
 
 ## Filtering 
 
@@ -39,6 +39,5 @@ The following datasets require a filter to be provided on one of the correspondi
 
 ## Next Steps 
 
-For more information about how to modify the user selected for extractoin and filtering in data connect pipelines, see the [Azure Data Factory Office 365 connector documentation](https://docs.microsoft.com/azure/data-factory/connector-office-365).  
+For more information about how to modify the user selected for extractoin and filtering in data connect pipelines, see the [Azure Data Factory Office 365 connector documentation](/azure/data-factory/connector-office-365).  
 
-  

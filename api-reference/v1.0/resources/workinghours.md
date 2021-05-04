@@ -2,7 +2,7 @@
 title: "workingHours resource type"
 description: "Represents the days of the week and hours in a specific time zone that the user works."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
@@ -67,3 +67,4 @@ Here is a JSON representation of the resource.
   ],
   "tocPath": ""
 }-->
+

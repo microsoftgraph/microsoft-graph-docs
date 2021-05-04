@@ -1,6 +1,5 @@
 ---
 author: daspek
-ms.author: dspektor
 ms.date: 09/10/2017
 title: File Activities
 description: "List the recent activities that took place on an item or under a hierarchy."
@@ -64,6 +63,10 @@ GET https://graph.microsoft.com/beta/me/drive/activities
 [!INCLUDE [sample-code](../includes/snippets/objc/list-activities-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-activities-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -71,7 +74,7 @@ GET https://graph.microsoft.com/beta/me/drive/activities
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.itemActivity)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -175,3 +178,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

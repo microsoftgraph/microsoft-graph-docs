@@ -14,7 +14,7 @@ nature of the activity (**activityDomain**). The action takes into account the a
 times that are appropriate for the participants and type of activity. For instance, suggestions for a work-related activity always occur 
 during the work hours of the organizer and attendees, and suggestions where required attendees are available are ordered higher up in the suggested list.
 
-In Office 365, work hours and time zones are configurable per mailbox. The **findMeetingTimes** action handles time zone variations among the organizer 
+In Microsoft 365, work hours and time zones are configurable per mailbox. The **findMeetingTimes** action handles time zone variations among the organizer 
 and attendees. By default, **findMeetingTimes** returns suggestions in UTC. You can use the following request header to have **findMeetingTimes** return suggestions 
 expressed in a specific time zone.
 ```
@@ -27,7 +27,7 @@ only if that minimum attendee availability is met.
 If **findMeetingTimes** cannot suggest any meeting times, it indicates a specific reason (**emptySuggestionsReason**), such as the organizer or a required attendee not available.
 Based on this value, you can better adjust the parameters and call **findMeetingTimes** again.
 
->**Note** The **findMeetingTimes** action is currently available to Office 365 work or school mailboxes, but not personal, outlook.com mailboxes.
+>**Note** The **findMeetingTimes** action is currently available to Microsoft 365 work or school mailboxes, but not personal, outlook.com mailboxes.
 
 ## Example
 

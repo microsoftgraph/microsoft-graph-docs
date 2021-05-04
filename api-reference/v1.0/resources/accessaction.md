@@ -1,6 +1,5 @@
 ---
 author: daspek
-ms.author: dspektor
 title: accessAction resource type
 description: The accessAction object provides information about accesses of an item.
 localization_priority: Normal
@@ -45,3 +44,4 @@ This resource type has no properties.
   "suppressions": []
 }
 -->
+

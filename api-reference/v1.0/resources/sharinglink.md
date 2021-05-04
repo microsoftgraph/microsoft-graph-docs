@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharingLink
 localization_priority: Normal
@@ -83,3 +82,4 @@ This table defines the possible values for the **type** property:
   ],
   "tocPath": "Facets/SharingLink"
 } -->
+

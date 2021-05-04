@@ -3,7 +3,7 @@ title: "List depMacOSEnrollmentProfiles"
 description: "List properties and relationships of the depMacOSEnrollmentProfile objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -20,11 +20,11 @@ List properties and relationships of the [depMacOSEnrollmentProfile](../resource
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1478
+Content-Length: 1522
 
 {
   "value": [
@@ -76,7 +76,6 @@ Content-Length: 1478
       "isDefault": true,
       "supervisedModeEnabled": true,
       "supportDepartment": "Support Department value",
-      "passCodeDisabled": true,
       "isMandatory": true,
       "locationDisabled": true,
       "supportPhoneNumber": "Support Phone Number value",
@@ -86,7 +85,6 @@ Content-Length: 1478
       "termsAndConditionsDisabled": true,
       "touchIdDisabled": true,
       "applePayDisabled": true,
-      "zoomDisabled": true,
       "siriDisabled": true,
       "diagnosticsDisabled": true,
       "displayToneSetupDisabled": true,
@@ -97,12 +95,16 @@ Content-Length: 1478
       "registrationDisabled": true,
       "fileVaultDisabled": true,
       "iCloudDiagnosticsDisabled": true,
+      "passCodeDisabled": true,
+      "zoomDisabled": true,
       "iCloudStorageDisabled": true,
-      "chooseYourLockScreenDisabled": true
+      "chooseYourLockScreenDisabled": true,
+      "accessibilityScreenDisabled": true
     }
   ]
 }
 ```
+
 
 
 

@@ -12,13 +12,13 @@ const client = Client.init(options);
 
 const tokenIssuancePolicy = {
   definition: [
-    "definition-value"
+    'definition-value'
   ],
-  displayName: "displayName-value",
+  displayName: 'displayName-value',
   isOrganizationDefault: true
 };
 
-let res = await client.api('/policies/tokenIssuancePolicies')
+await client.api('/policies/tokenIssuancePolicies')
 	.post(tokenIssuancePolicy);
 
 ```

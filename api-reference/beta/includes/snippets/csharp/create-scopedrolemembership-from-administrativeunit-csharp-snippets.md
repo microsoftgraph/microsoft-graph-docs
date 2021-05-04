@@ -15,7 +15,7 @@ var scopedRoleMembership = new ScopedRoleMembership
 	}
 };
 
-await graphClient.AdministrativeUnits["{id}"].ScopedRoleMembers
+await graphClient.AdministrativeUnits["{administrativeUnit-id}"].ScopedRoleMembers
 	.Request()
 	.AddAsync(scopedRoleMembership);
 

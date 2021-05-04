@@ -14,9 +14,9 @@ Namespace: microsoft.graph
 Check for membership in the specified list of groups. Returns from the list those groups of which
 the specified group has a direct or transitive membership.
 
-You can check up to a maximum of 20 groups per request. This function supports Office 365 and other
-types of groups provisioned in Azure AD. Note that Office 365 Groups cannot contain groups. So membership
-in an Office 365 Group is always direct.
+You can check up to a maximum of 20 groups per request. This function supports Microsoft 365 and other
+types of groups provisioned in Azure AD. Note that Microsoft 365 groups cannot contain groups. So membership
+in a Microsoft 365 group is always direct.
 
 ## Permissions
 
@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 | :------------------------------------- | :------------------------------------------------------------------------------------------ |
 | Delegated (work or school account)     | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All |
 | Delegated (personal Microsoft account) | Not supported.                                                                              |
-| Application                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All. Directory.ReadWrite.All                               |
+| Application                            | GroupMember.Read.All, Group.Read.All, Directory.Read.All, Directory.ReadWrite.All                               |
 
 
 
@@ -103,7 +103,7 @@ Content-length: 44
 
 ##### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -136,3 +136,4 @@ Content-length: 39
   "suppressions": [
   ]
 }-->
+

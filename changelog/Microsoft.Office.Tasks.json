@@ -1,0 +1,788 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerPlan"
+        },
+        {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerTask"
+        },
+        {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerPlanDetails"
+        },
+        {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerTaskDetails"
+        },
+        {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerBucket"
+        },
+        {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerAssignedToTaskBoardTaskFormat"
+        },
+        {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerBucketTaskBoardTaskFormat"
+        },
+        {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerProgressTaskBoardTaskFormat"
+        },        
+        {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
+          "Target": "plannerPlan"
+        },        
+        {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
+          "Target": "plannerTask"
+        },        
+        {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
+          "Target": "plannerPlanDetails"
+        },        
+        {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
+          "Target": "plannerTaskDetails"
+        },        
+        {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
+          "Target": "plannerBucket"
+        },        
+        {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
+          "Target": "plannerAssignedToTaskBoardTaskFormat"
+        },        
+        {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
+          "Target": "plannerBucketTaskBoardTaskFormat"
+        },        
+        {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
+          "Target": "plannerProgressTaskBoardTaskFormat"
+        }
+      ],
+      "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-03-30T00:00:00",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerPlan"
+        },
+        {
+          "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerTask"
+        },
+        {
+          "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerPlanDetails"
+        },
+        {
+          "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerTaskDetails"
+        },
+        {
+          "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerBucket"
+        },
+        {
+          "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerAssignedToTaskBoardTaskFormat"
+        },
+        {
+          "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerBucketTaskBoardTaskFormat"
+        },
+        {
+          "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerProgressTaskBoardTaskFormat"
+        },        
+        {
+          "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
+          "Target": "plannerPlan"
+        },        
+        {
+          "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
+          "Target": "plannerTask"
+        },        
+        {
+          "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
+          "Target": "plannerPlanDetails"
+        },        
+        {
+          "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
+          "Target": "plannerTaskDetails"
+        },        
+        {
+          "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
+          "Target": "plannerBucket"
+        },        
+        {
+          "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
+          "Target": "plannerAssignedToTaskBoardTaskFormat"
+        },        
+        {
+          "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
+          "Target": "plannerBucketTaskBoardTaskFormat"
+        },        
+        {
+          "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
+          "Target": "plannerProgressTaskBoardTaskFormat"
+        }
+      ],
+      "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-03-30T00:00:00",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    { 
+      "ChangeList": [
+        {
+          "Id": "9d024c18-5aa0-11eb-93a5-6e9aaa10c0ef",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "rosterPlans",
+          "ChangeType": "Addition",
+          "Description": "Added the **rosterPlans** relationship to the [plannerUser](https://docs.microsoft.com/en-us/graph/api/resources/plannerUser?view=graph-rest-beta) resource.",
+          "Target": "plannerUser"
+        },
+        {
+          "Id": "9d04ac10-5aa0-11eb-93a5-6e9aaa10c0ef",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "rosters",
+          "ChangeType": "Addition",
+          "Description": "Added the **rosters** relationship to the [planner](https://docs.microsoft.com/en-us/graph/api/resources/planner?view=graph-rest-beta) resource.",
+          "Target": "planner"
+        },
+        {
+          "Id": "9d070d7e-5aa0-11eb-93a5-6e9aaa10c0ef",
+          "ApiChange": "Property",
+          "ChangedApiName": "isCreationContext",
+          "ChangeType": "Addition",
+          "Description": "Added the **isCreationContext** property to the [plannerPlanContext](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanContext?view=graph-rest-beta) resource.",
+          "Target": "plannerPlanContext"
+        },
+        {
+          "Id": "9d096f1c-5aa0-11eb-93a5-6e9aaa10c0ef",
+          "ApiChange": "Property",
+          "ChangedApiName": "customLinkText",
+          "ChangeType": "Addition",
+          "Description": "Added the **customLinkText** property to the [plannerPlanContextDetails](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanContextDetails?view=graph-rest-beta) resource.",
+          "Target": "plannerPlanContextDetails"
+        },
+        {
+          "Id": "9d0bd14e-5aa0-11eb-93a5-6e9aaa10c0ef",
+          "ApiChange": "Property",
+          "ChangedApiName": "displayLinkType",
+          "ChangeType": "Addition",
+          "Description": "Added the **displayLinkType** property to the [plannerPlanContextDetails](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanContextDetails?view=graph-rest-beta) resource.",
+          "Target": "plannerPlanContextDetails"
+        },
+        {
+          "Id": "9d0e338b-5aa0-11eb-93a5-6e9aaa10c0ef",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerRoster",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerRoster](https://docs.microsoft.com/en-us/graph/api/resources/plannerRoster?view=graph-rest-beta) resource type.",
+          "Target": "plannerRoster"
+        },
+        {
+          "Id": "9d109617-5aa0-11eb-93a5-6e9aaa10c0ef",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerRosterMember",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerRosterMember](https://docs.microsoft.com/en-us/graph/api/resources/plannerRosterMember?view=graph-rest-beta) resource type.",
+          "Target": "plannerRosterMember"
+        },
+        {
+          "Id": "9d12fa1f-5aa0-11eb-93a5-6e9aaa10c0ef",
+          "ApiChange": "Member",
+          "ChangedApiName": "roster",
+          "ChangeType": "Addition",
+          "Description": "Added the `roster` member to the **plannerContainerType** enumeration.",
+          "Target": "plannerContainerType"
+        },
+        {
+          "Id": "9d155be2-5aa0-11eb-93a5-6e9aaa10c0ef",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "plannerPlanContextType",
+          "ChangeType": "Addition",
+          "Description": "Added the **plannerPlanContextType** enumeration type.",
+          "Target": "plannerPlanContextType"
+        }
+      ],
+      "Id": "9cffe61e-5aa0-11eb-93a5-6e9aaa10c0ef",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-02-09T21:52:24.021Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a4350937-340e-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "Property",
+          "ChangedApiName": "creationSource",
+          "ChangeType": "Addition",
+          "Description": "Added the **creationSource** property to the [plannerTask](https://docs.microsoft.com/en-us/graph/api/resources/plannerTask?view=graph-rest-beta) resource.",
+          "Target": "plannerTask"
+        },
+        {
+          "Id": "a4376b5e-340e-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "Property",
+          "ChangedApiName": "container",
+          "ChangeType": "Addition",
+          "Description": "Added the **container** property to the [plannerPlan](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlan?view=graph-rest-beta) resource.",
+          "Target": "plannerPlan"
+        },
+        {
+          "Id": "a439cfbe-340e-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerPlanContainer",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerPlanContainer](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlanContainer?view=graph-rest-beta) resource,",
+          "Target": "plannerPlanContainer"
+        },
+        {
+          "Id": "a43c357f-340e-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerTaskCreation",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerTaskCreation](https://docs.microsoft.com/en-us/graph/api/resources/plannerTaskCreation?view=graph-rest-beta) resource.",
+          "Target": "plannerTaskCreation"
+        },
+        {
+          "Id": "a43e93b1-340e-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerTeamsPublicationInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [plannerTeamsPublicationInfo](https://docs.microsoft.com/en-us/graph/api/resources/plannerTeamsPublicationInfo?view=graph-rest-beta) resource.",
+          "Target": "plannerTeamsPublicationInfo"
+        },
+        {
+          "Id": "a440f891-340e-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "plannerContainerType",
+          "ChangeType": "Addition",
+          "Description": "Added the **plannerContainerType** enumeration type.",
+          "Target": "plannerContainerType"
+        },
+        {
+          "Id": "a440f891-340e-11eb-9836-6aeb5ee7dda6",
+          "ApiChange": "Property",
+          "ChangedApiName": "owner",
+          "ChangeType": "Change",
+          "Description": "Deprecated the **owner** property on the [plannerPlan](https://docs.microsoft.com/en-us/graph/api/resources/plannerPlan?view=graph-rest-beta) resource.",
+          "Target": "plannerPlan"
+        }
+      ],
+      "Id": "a432a5b2-340e-11eb-9836-6aeb5ee7dda6",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-01-13T19:51:45.390Z",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3a22446c-e65a-43dc-aca4-999146a95ca8",
+          "ApiChange": "Resource",
+          "ChangedApiName": "todoTask,todoTaskList,linkedResource",
+          "ChangeType": "Addition",
+          "Description": "Introduced the To Do API. Added the [todoTask](https://docs.microsoft.com/en-us/graph/api/resources/todotask?view=graph-rest-beta), [todoTaskList](https://docs.microsoft.com/en-us/graph/api/resources/todotasklist?view=graph-rest-beta), and [linkedResource](https://docs.microsoft.com/en-us/graph/api/resources/linkedresource?view=graph-rest-beta) resources, and CRUD operations.",
+          "Target": "todoTask,todoTaskList,linkedResource"
+        },
+        {
+          "Id": "3a22446c-e65a-43dc-aca4-999146a95ca8",
+          "ApiChange": "method",
+          "ChangedApiName": "outlookTask,outlookTaskFolder,outlookTaskGroup",
+          "ChangeType": "Change",
+          "Description": "Deprecated the Outlook tasks API, including [outlookTask](https://docs.microsoft.com/en-us/graph/api/resources/outlooktask?view=graph-rest-beta), [outlookTaskFolder](https://docs.microsoft.com/en-us/graph/api/resources/outlooktaskfolder?view=graph-rest-beta), [outlookTaskGroup](https://docs.microsoft.com/en-us/graph/api/resources/outlooktaskgroup?view=graph-rest-beta), and related operations and methods.",
+          "Target": "outlookTask,outlookTaskFolder,outlookTaskGroup"
+        }
+      ],
+      "Id": "3a22446c-e65a-43dc-aca4-999146a95ca8",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-08-01T00:00:00",
+      "WorkloadArea": "To-do tasks",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d09e8b60-aacb-45e7-9691-253940c1b408",
+          "ApiChange": "Property",
+          "ChangedApiName": "priority",
+          "ChangeType": "Addition",
+          "Description": "Added the **priority** property to the [plannerTask](https://docs.microsoft.com/en-us/graph/api/resources/plannertask?view=graph-rest-beta) entity.",
+          "Target": "plannerTask"
+        }
+      ],
+      "Id": "d09e8b60-aacb-45e7-9691-253940c1b408",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2019-08-01T00:00:00",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a760876c-d24c-46c8-9842-37295b5b7216",
+          "ApiChange": "Resource",
+          "ChangedApiName": "plannerPlanContext,plannerPlanContextDetails,plannerPlanContextCollection,plannerPlanContextDetailsCollection,plannerFavoritePlanReference,plannerRecentPlanReference,plannerFavoritePlanReferenceCollection,plannerRecentPlanReferenceCollection",
+          "ChangeType": "Addition",
+          "Description": "Added new complex types:, [plannerPlanContext](https://docs.microsoft.com/en-us/graph/api/resources/plannerplancontext?view=graph-rest-beta), [plannerPlanContextDetails](https://docs.microsoft.com/en-us/graph/api/resources/plannerplancontextdetails?view=graph-rest-beta), [plannerPlanContextCollection](https://docs.microsoft.com/en-us/graph/api/resources/plannerplancontextcollection?view=graph-rest-beta), [plannerPlanContextDetailsCollection](https://docs.microsoft.com/en-us/graph/api/resources/plannerplancontextdetailscollection?view=graph-rest-beta), [plannerFavoritePlanReference](https://docs.microsoft.com/en-us/graph/api/resources/plannerfavoriteplanreference?view=graph-rest-beta), [plannerRecentPlanReference](https://docs.microsoft.com/en-us/graph/api/resources/plannerrecentplanreference?view=graph-rest-beta), [plannerFavoritePlanReferenceCollection](https://docs.microsoft.com/en-us/graph/api/resources/plannerfavoriteplanreferencecollection?view=graph-rest-beta), [plannerRecentPlanReferenceCollection](https://docs.microsoft.com/en-us/graph/api/resources/plannerrecentplanreferencecollection?view=graph-rest-beta)",
+          "Target": "plannerPlanContext,plannerPlanContextDetails,plannerPlanContextCollection,plannerPlanContextDetailsCollection,plannerFavoritePlanReference,plannerRecentPlanReference,plannerFavoritePlanReferenceCollection,plannerRecentPlanReferenceCollection"
+        },
+        {
+          "Id": "a760876c-d24c-46c8-9842-37295b5b7216",
+          "ApiChange": "Property",
+          "ChangedApiName": "favoritePlanReferences,recentPlanReferences",
+          "ChangeType": "Addition",
+          "Description": "Added **favoritePlanReferences** and **recentPlanReferences** properties to [plannerUser](https://docs.microsoft.com/en-us/graph/api/resources/planneruser?view=graph-rest-beta) entity.",
+          "Target": "plannerUser"
+        },
+        {
+          "Id": "a760876c-d24c-46c8-9842-37295b5b7216",
+          "ApiChange": "Property",
+          "ChangedApiName": "favoritePlans,recentPlans",
+          "ChangeType": "Addition",
+          "Description": "Added **favoritePlans** and **recentPlans** navigation properties to [plannerUser](https://docs.microsoft.com/en-us/graph/api/resources/planneruser?view=graph-rest-beta) entity.",
+          "Target": "plannerUser"
+        },
+        {
+          "Id": "a760876c-d24c-46c8-9842-37295b5b7216",
+          "ApiChange": "Property",
+          "ChangedApiName": "contexts",
+          "ChangeType": "Addition",
+          "Description": "Added **contexts** property to [plannerPlan](https://docs.microsoft.com/en-us/graph/api/resources/plannerplan?view=graph-rest-beta) entity.",
+          "Target": "plannerPlan"
+        },
+        {
+          "Id": "a760876c-d24c-46c8-9842-37295b5b7216",
+          "ApiChange": "Property",
+          "ChangedApiName": "contextDetails",
+          "ChangeType": "Addition",
+          "Description": "Added **contextDetails** property to [plannerPlanDetails](https://docs.microsoft.com/en-us/graph/api/resources/plannerplandetails?view=graph-rest-beta) entity.",
+          "Target": "plannerPlanDetails"
+        },
+        {
+          "Id": "a760876c-d24c-46c8-9842-37295b5b7216",
+          "ApiChange": "Resource",
+          "ChangedApiName": "delta query",
+          "ChangeType": "Addition",
+          "Description": "Added Planner [delta query](https://docs.microsoft.com/en-us/graph/api/planneruser-list-delta?view=graph-rest-beta)",
+          "Target": "delta query"
+        }
+      ],
+      "Id": "a760876c-d24c-46c8-9842-37295b5b7216",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2018-02-01T00:00:00",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "46f0da80-1dbc-4931-8d66-f8c1a1b6d6b2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "task,plan,bucket,taskDetails,planDetails,taskBoardTaskFormat,planTaskBoard",
+          "ChangeType": "Deletion",
+          "Description": "Removed the following entities:, **task**, **plan**, **bucket**, **taskDetails**, **planDetails**, **taskBoardTaskFormat**, **planTaskBoard**",
+          "Target": ""
+        }
+      ],
+      "Id": "46f0da80-1dbc-4931-8d66-f8c1a1b6d6b2",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2017-05-01T00:00:00",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "97c3d22e-a50e-4f31-946b-239acfafb174",
+          "ApiChange": "Property",
+          "ChangedApiName": "outlook",
+          "ChangeType": "Addition",
+          "Description": "New **outlook** navigation property added to [user](https://docs.microsoft.com/en-us/graph/api/resources/user?view=graph-rest-beta), to access Outlook tasks.",
+          "Target": "user"
+        },
+        {
+          "Id": "97c3d22e-a50e-4f31-946b-239acfafb174",
+          "ApiChange": "Resource",
+          "ChangedApiName": "outlookuser,outlookTaskGroup,outlookTaskFolder,outlookTask",
+          "ChangeType": "Addition",
+          "Description": "New entities - [outlookuser](https://docs.microsoft.com/en-us/graph/api/resources/outlookuser?view=graph-rest-beta), [outlookTaskGroup](https://docs.microsoft.com/en-us/graph/api/resources/outlooktaskgroup?view=graph-rest-beta), [outlookTaskFolder](https://docs.microsoft.com/en-us/graph/api/resources/outlooktaskfolder?view=graph-rest-beta), and [outlookTask](https://docs.microsoft.com/en-us/graph/api/resources/outlooktask?view=graph-rest-beta) - and their methods support organizing and accessing Outlook tasks.",
+          "Target": "outlookuser,outlookTaskGroup,outlookTaskFolder,outlookTask"
+        },
+        {
+          "Id": "97c3d22e-a50e-4f31-946b-239acfafb174",
+          "ApiChange": "Resource",
+          "ChangedApiName": "attachment,fileAttachment,itemAttachment,referenceAttachment",
+          "ChangeType": "Addition",
+          "Description": "Outlook tasks support attachments ([attachment](https://docs.microsoft.com/en-us/graph/api/resources/attachment?view=graph-rest-beta), [fileAttachment](https://docs.microsoft.com/en-us/graph/api/resources/fileattachment?view=graph-rest-beta), [itemAttachment](https://docs.microsoft.com/en-us/graph/api/resources/itemattachment?view=graph-rest-beta), and [referenceAttachment](https://docs.microsoft.com/en-us/graph/api/resources/referenceattachment?view=graph-rest-beta) resources).",
+          "Target": "attachment,fileAttachment,itemAttachment,referenceAttachment"
+        },
+        {
+          "Id": "97c3d22e-a50e-4f31-946b-239acfafb174",
+          "ApiChange": "Property",
+          "ChangedApiName": "extended properties,singleValueLegacyExtendedProperty,multiValueLegacyExtendedProperty",
+          "ChangeType": "Addition",
+          "Description": "Outlook tasks support [extended properties](https://docs.microsoft.com/en-us/graph/api/resources/extended-properties-overview?view=graph-rest-beta) ([singleValueLegacyExtendedProperty](https://docs.microsoft.com/en-us/graph/api/resources/singlevaluelegacyextendedproperty?view=graph-rest-beta) and [multiValueLegacyExtendedProperty](https://docs.microsoft.com/en-us/graph/api/resources/multivaluelegacyextendedproperty?view=graph-rest-beta) resources).",
+          "Target": "extended properties,singleValueLegacyExtendedProperty,multiValueLegacyExtendedProperty"
+        }
+      ],
+      "Id": "97c3d22e-a50e-4f31-946b-239acfafb174",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2017-05-01T00:00:00",
+      "WorkloadArea": "To-do tasks",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "30092d1a-95ae-4207-b2a6-59245ab06159",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Planner API,plannerPlan,plannerTask,plannerPlanDetails,plannerTaskDetails,plannerBucket,plannerAssignedToTaskBoardTaskFormat,plannerBucketTaskBoardTaskFormat,plannerProgressTaskBoardTaskFormat",
+          "ChangeType": "Addition",
+          "Description": "Added [Planner API](https://docs.microsoft.com/en-us/graph/api/resources/planner-overview?view=graph-rest-1.0).\u003Cbr /\u003ENew resources:\u003Cbr /\u003E[plannerPlan](https://docs.microsoft.com/en-us/graph/api/resources/plannerplan?view=graph-rest-1.0) \u003Cbr /\u003E[plannerTask](https://docs.microsoft.com/en-us/graph/api/resources/plannertask?view=graph-rest-1.0) \u003Cbr /\u003E[plannerPlanDetails](https://docs.microsoft.com/en-us/graph/api/resources/plannerplandetails?view=graph-rest-1.0) \u003Cbr /\u003E[plannerTaskDetails](https://docs.microsoft.com/en-us/graph/api/resources/plannertaskdetails?view=graph-rest-1.0) \u003Cbr /\u003E[plannerBucket](https://docs.microsoft.com/en-us/graph/api/resources/plannerbucket?view=graph-rest-1.0) \u003Cbr /\u003E[plannerAssignedToTaskBoardTaskFormat](https://docs.microsoft.com/en-us/graph/api/resources/plannerassignedtotaskboardtaskformat?view=graph-rest-1.0) \u003Cbr /\u003E[plannerBucketTaskBoardTaskFormat](https://docs.microsoft.com/en-us/graph/api/resources/plannerbuckettaskboardtaskformat?view=graph-rest-1.0) \u003Cbr /\u003E[plannerProgressTaskBoardTaskFormat](https://docs.microsoft.com/en-us/graph/api/resources/plannerprogresstaskboardtaskformat?view=graph-rest-1.0)",
+          "Target": "Planner API,plannerPlan,plannerTask,plannerPlanDetails,plannerTaskDetails,plannerBucket,plannerAssignedToTaskBoardTaskFormat,plannerBucketTaskBoardTaskFormat,plannerProgressTaskBoardTaskFormat"
+        }
+      ],
+      "Id": "30092d1a-95ae-4207-b2a6-59245ab06159",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2017-05-01T00:00:00",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "b5842b87-9a53-423a-b3a2-215bb3585996",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Planner API,plannerPlan,plannerTask,plannerPlanDetails,plannerTaskDetails,plannerBucket,plannerAssignedToTaskBoardTaskFormat,plannerBucketTaskBoardTaskFormat,plannerProgressTaskBoardTaskFormat",
+          "ChangeType": "Addition",
+          "Description": "Added new [Planner API](https://docs.microsoft.com/en-us/graph/api/resources/planner-overview?view=graph-rest-beta).\u003Cbr /\u003ENew resources:\u003Cbr /\u003E[plannerPlan](https://docs.microsoft.com/en-us/graph/api/resources/plannerplan?view=graph-rest-beta) \u003Cbr /\u003E[plannerTask](https://docs.microsoft.com/en-us/graph/api/resources/plannertask?view=graph-rest-beta) \u003Cbr /\u003E[plannerPlanDetails](https://docs.microsoft.com/en-us/graph/api/resources/plannerplandetails?view=graph-rest-beta) \u003Cbr /\u003E[plannerTaskDetails](https://docs.microsoft.com/en-us/graph/api/resources/plannertaskdetails?view=graph-rest-beta) \u003Cbr /\u003E[plannerBucket](https://docs.microsoft.com/en-us/graph/api/resources/plannerbucket?view=graph-rest-beta) \u003Cbr /\u003E[plannerAssignedToTaskBoardTaskFormat](https://docs.microsoft.com/en-us/graph/api/resources/plannerassignedtotaskboardtaskformat?view=graph-rest-beta) \u003Cbr /\u003E[plannerBucketTaskBoardTaskFormat](https://docs.microsoft.com/en-us/graph/api/resources/plannerbuckettaskboardtaskformat?view=graph-rest-beta) \u003Cbr /\u003E[plannerProgressTaskBoardTaskFormat](https://docs.microsoft.com/en-us/graph/api/resources/plannerprogresstaskboardtaskformat?view=graph-rest-beta)",
+          "Target": "Planner API,plannerPlan,plannerTask,plannerPlanDetails,plannerTaskDetails,plannerBucket,plannerAssignedToTaskBoardTaskFormat,plannerBucketTaskBoardTaskFormat,plannerProgressTaskBoardTaskFormat"
+        }
+      ],
+      "Id": "b5842b87-9a53-423a-b3a2-215bb3585996",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2017-04-01T00:00:00",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    {
+	  "ChangeList":[
+        {
+          "Id":"7f24040c-6b0c-11eb-83a5-b441f1c9dab3",
+		  "ApiChange":"Property",
+		  "ChangedApiName":"category7",
+		  "ChangeType":"Addition",
+		  "Description":"Added the **category7** property to [plannerCategoryDescriptions](https://docs.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+		  "Target":"plannerCategoryDescriptions"
+        },
+        {
+          "Id":"7f2666c5-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange":"Property",
+          "ChangedApiName":"category8",
+          "ChangeType":"Addition",
+          "Description":"Added the **category8** property to [plannerCategoryDescriptions](https://docs.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target":"plannerCategoryDescriptions"
+        },
+        {
+          "Id":"7f28cbc3-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange":"Property",
+          "ChangedApiName":"category9",
+          "ChangeType":"Addition",
+          "Description":"Added the **category9** property to [plannerCategoryDescriptions](https://docs.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target":"plannerCategoryDescriptions"
+        },
+        {
+          "Id":"7f2c3ba1-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange":"Property",
+          "ChangedApiName":"category10",
+          "ChangeType":"Addition",
+          "Description":"Added the **category10** property to [plannerCategoryDescriptions](https://docs.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target":"plannerCategoryDescriptions"
+        },
+        {
+          "Id":"7f2e93ed-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange":"Property",
+          "ChangedApiName":"category11",
+          "ChangeType":"Addition",
+          "Description":"Added the **category11** property to [plannerCategoryDescriptions](https://docs.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target":"plannerCategoryDescriptions"
+        },
+        {
+          "Id":"7f30f7d2-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange":"Property",
+          "ChangedApiName":"category12",
+          "ChangeType":"Addition",
+          "Description":"Added the **category12** property to [plannerCategoryDescriptions](https://docs.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target":"plannerCategoryDescriptions"
+        },
+        {
+          "Id":"7f335ac0-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange":"Property",
+          "ChangedApiName":"category13",
+          "ChangeType":"Addition",
+          "Description":"Added the **category13** property to [plannerCategoryDescriptions](https://docs.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target":"plannerCategoryDescriptions"
+        },
+        {
+          "Id":"7f35bdbc-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange":"Property",
+          "ChangedApiName":"category14",
+          "ChangeType":"Addition",
+          "Description":"Added the **category14** property to [plannerCategoryDescriptions](https://docs.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target":"plannerCategoryDescriptions"
+        },
+        {
+          "Id":"7f382054-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange":"Property",
+          "ChangedApiName":"category15",
+          "ChangeType":"Addition",
+          "Description":"Added the **category15** property to [plannerCategoryDescriptions](https://docs.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target":"plannerCategoryDescriptions"
+        },
+        {
+          "Id":"7f3a80b0-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange":"Property",
+          "ChangedApiName":"category16",
+          "ChangeType":"Addition",
+          "Description":"Added the **category16** property to [plannerCategoryDescriptions](https://docs.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target":"plannerCategoryDescriptions"
+        },
+        {
+          "Id":"7f3ce3db-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange":"Property",
+          "ChangedApiName":"category17",
+          "ChangeType":"Addition",
+          "Description":"Added the **category17** property to [plannerCategoryDescriptions](https://docs.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target":"plannerCategoryDescriptions"
+        },
+        {
+          "Id":"7f3f4972-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange":"Property",
+          "ChangedApiName":"category18",
+          "ChangeType":"Addition",
+          "Description":"Added the **category18** property to [plannerCategoryDescriptions](https://docs.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target":"plannerCategoryDescriptions"
+        },
+        {
+          "Id":"7f41a8ba-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange":"Property",
+          "ChangedApiName":"category19",
+          "ChangeType":"Addition",
+          "Description":"Added the **category19** property to [plannerCategoryDescriptions](https://docs.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target":"plannerCategoryDescriptions"
+        },
+        {
+          "Id":"7f440af3-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange":"Property",
+          "ChangedApiName":"category20",
+          "ChangeType":"Addition",
+          "Description":"Added the **category20** property to [plannerCategoryDescriptions](https://docs.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target":"plannerCategoryDescriptions"
+        },
+        {
+          "Id":"7f466dd7-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange":"Property",
+          "ChangedApiName":"category21",
+          "ChangeType":"Addition",
+          "Description":"Added the **category21** property to [plannerCategoryDescriptions](https://docs.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target":"plannerCategoryDescriptions"
+        },
+        {
+          "Id":"7f48cfc5-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange":"Property",
+          "ChangedApiName":"category22",
+          "ChangeType":"Addition",
+          "Description":"Added the **category22** property to [plannerCategoryDescriptions](https://docs.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target":"plannerCategoryDescriptions"
+        },
+        {
+          "Id":"7f4b33b7-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange":"Property",
+          "ChangedApiName":"category23",
+          "ChangeType":"Addition",
+          "Description":"Added the **category23** property to [plannerCategoryDescriptions](https://docs.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target":"plannerCategoryDescriptions"
+        },
+        {
+          "Id":"7f4d9595-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange":"Property",
+          "ChangedApiName":"category24",
+          "ChangeType":"Addition",
+          "Description":"Added the **category24** property to [plannerCategoryDescriptions](https://docs.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target":"plannerCategoryDescriptions"
+        },
+        {
+          "Id":"7f4ff7be-6b0c-11eb-83a5-b441f1c9dab3",
+          "ApiChange":"Property",
+          "ChangedApiName":"category25",
+          "ChangeType":"Addition",
+          "Description":"Added the **category25** property to [plannerCategoryDescriptions](https://docs.microsoft.com/en-us/graph/api/resources/plannerCategoryDescriptions?view=graph-rest-beta) resource",
+          "Target":"plannerCategoryDescriptions"
+        }
+      ],
+      "Id":"7f21a1fd-6b0c-11eb-83a5-b441f1c9dab3",
+      "Cloud":"prd",
+      "Version":"beta",
+      "CreatedDateTime":"2021-02-10T19:24:58.162Z",
+      "WorkloadArea":"Tasks and plans",
+      "SubArea":""
+    }
+  ]
+}

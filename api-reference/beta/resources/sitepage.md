@@ -20,7 +20,7 @@ It contains the title, layout, and a collection of [webPart][]s.
 ## Tasks on a page
 
 The following tasks are available for **sitePage** resources.
-All examples below are relative to a [site][], eg: `https://graph.microsoft.com/{api-version}/sites/{site-id}`.
+All examples are relative to a [site][]; for example, `https://graph.microsoft.com/{api-version}/sites/{site-id}`.
 
 | Common task                     | HTTP method
 |:--------------------------------|:------------------------------
@@ -94,7 +94,7 @@ The **sitePage** resource has the following content fields.
 
 ## Authoring Metadata
 
-The **sitePage** resource has the following authoring-related metadata. The publishingState property will reflect the page authoring state like checked out or published.
+The **sitePage** resource has the following authoring-related metadata. The **publishingState** property will reflect the page authoring state like checked out or published.
 
 | Property name          | Type                   | Description
 |:-----------------------|:-----------------------|:---------------------------
@@ -152,3 +152,5 @@ TODO:
     * Add the URL to the underlying list item resource in the API
 * PATCH for list item patches /item/{item-id}/fields.
 -->
+
+

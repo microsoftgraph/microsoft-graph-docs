@@ -3,8 +3,8 @@ title: "Delete an oAuth2PermissionGrant"
 description: "Delete an oAuth2PermissionGrant, representing a delegated permission grant."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+ms.prod: "identity-and-sign-in"
+author: "psignoret"
 ---
 
 # Delete a delegated permission grant (oAuth2PermissionGrant)
@@ -109,3 +109,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+

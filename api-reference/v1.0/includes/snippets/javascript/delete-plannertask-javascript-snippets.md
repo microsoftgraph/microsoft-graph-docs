@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/planner/tasks/{id}')
+await client.api('/planner/tasks/{id}')
 	.delete();
 
 ```

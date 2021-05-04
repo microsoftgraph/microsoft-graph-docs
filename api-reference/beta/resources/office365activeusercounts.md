@@ -3,7 +3,7 @@ title: "office365ActiveUserCounts resource type"
 description: "The following is a JSON representation of the resource."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: resourcePageType
 ---
 
@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 | Property          | Type   | Description                              |
 | :---------------- | :----- | ---------------------------------------- |
 | reportRefreshDate | Date   | The latest date of the content.          |
-| office365         | Int64  | The number of active users in Office 365. This number includes all the active users in Exchange, OneDrive, SharePoint, Skype For Business, Yammer, and Microsoft Teams. You can find the definition of active user for each product in the respective property description. |
+| office365         | Int64  | The number of active users in Microsoft 365. This number includes all the active users in Exchange, OneDrive, SharePoint, Skype For Business, Yammer, and Microsoft Teams. You can find the definition of active user for each product in the respective property description. |
 | exchange          | Int64  | The number of active users in Exchange. Any user who can read and send email is considered an active user. |
 | oneDrive          | Int64  | The number of active users in OneDrive. Any user who viewed or edited files, shared files internally or externally, or synced files is considered an active user. |
 | sharePoint        | Int64  | The number of active users in SharePoint. Any user who viewed or edited files, shared files internally or externally, synced files, or viewed SharePoint pages is considered an active user. |
@@ -49,3 +49,5 @@ The following is a JSON representation of the resource.
   "reportPeriod": "String"
 }
 ```
+
+

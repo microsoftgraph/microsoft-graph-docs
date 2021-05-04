@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.PrivilegedRoles["{id}"]
+await graphClient.PrivilegedRoles["{privilegedRole-id}"]
 	.SelfDeactivate()
 	.Request()
 	.PostAsync();

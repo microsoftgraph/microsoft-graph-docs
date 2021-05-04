@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Me.Events["{id}"].Attachments["{id}"]
+await graphClient.Me.Events["{event-id}"].Attachments["{attachment-id}"]
 	.Request()
 	.DeleteAsync();
 

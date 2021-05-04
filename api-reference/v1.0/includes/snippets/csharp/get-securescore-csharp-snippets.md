@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var secureScore = await graphClient.Security.SecureScores["{id}"]
+var secureScore = await graphClient.Security.SecureScores["{secureScore-id}"]
 	.Request()
 	.GetAsync();
 

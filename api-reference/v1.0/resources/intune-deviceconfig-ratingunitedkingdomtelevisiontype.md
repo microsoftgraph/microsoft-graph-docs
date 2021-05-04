@@ -3,7 +3,7 @@ title: "ratingUnitedKingdomTelevisionType enum type"
 description: "TV content rating labels in United Kingdom"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -21,6 +21,8 @@ TV content rating labels in United Kingdom
 |allAllowed|0|Default value, allow all TV shows content|
 |allBlocked|1|Do not allow any TV shows content|
 |caution|2|Allowing TV contents with a warning message|
+
+
 
 
 

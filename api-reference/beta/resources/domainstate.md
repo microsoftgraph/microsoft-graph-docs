@@ -3,7 +3,7 @@ title: "domainState resource type"
 description: "Represents the status of asynchronous operations scheduled on a domain."
 author: "adimitui"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
@@ -55,3 +55,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

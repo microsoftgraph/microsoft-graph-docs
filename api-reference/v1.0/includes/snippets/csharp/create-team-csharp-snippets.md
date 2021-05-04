@@ -10,6 +10,7 @@ var team = new Team
 {
 	MemberSettings = new TeamMemberSettings
 	{
+		AllowCreatePrivateChannels = true,
 		AllowCreateUpdateChannels = true
 	},
 	MessagingSettings = new TeamMessagingSettings
@@ -24,7 +25,7 @@ var team = new Team
 	}
 };
 
-await graphClient.Groups["{id}"].Team
+await graphClient.Groups["{group-id}"].Team
 	.Request()
 	.PutAsync(team);
 

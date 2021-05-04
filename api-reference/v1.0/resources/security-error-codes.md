@@ -34,10 +34,12 @@ If a data provider returns 2xx or 404, it’s not shown in the warning header be
 
 A user asks for `security/alerts/{alert_id}`.
 
-    Provider 1: 404 (provider does not have a record of this alert ID)
-    Provider 2: 504 (provider timed out)
-    Provider 3: 200 (success)
-    Provider 4: 403 (customer has not licensed this provider)
+```
+Provider 1: 404 (provider does not have a record of this alert ID)
+Provider 2: 504 (provider timed out)
+Provider 3: 200 (success)
+Provider 4: 403 (customer has not licensed this provider)
+```
 
 Because both 404 and 200 are expected conditions, the warning header contains the following:
 
@@ -57,3 +59,4 @@ A workaaround for this limit is to use the `$filter` OData query parameter with 
 ## See also
 
 If you’re having trouble with authorization, see [Authorization and the Microsoft Graph Security API](/graph/security-authorization).
+

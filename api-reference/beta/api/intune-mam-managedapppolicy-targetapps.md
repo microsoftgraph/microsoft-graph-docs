@@ -3,7 +3,7 @@ title: "targetApps action"
 description: "Not yet documented"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -20,7 +20,7 @@ Not yet documented
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -65,15 +65,15 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceAppManagement/managedAppPolicies/{managedAppPolicyId}/targetApps
 
 Content-type: application/json
-Content-length: 335
+Content-length: 336
 
 {
   "apps": [
     {
       "@odata.type": "#microsoft.graph.managedMobileApp",
       "mobileAppIdentifier": {
-        "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
-        "packageId": "Package Id value"
+        "@odata.type": "microsoft.graph.windowsAppIdentifier",
+        "windowsAppId": "Windows App Id value"
       },
       "id": "0a129715-9715-0a12-1597-120a1597120a",
       "version": "Version value"
@@ -87,6 +87,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

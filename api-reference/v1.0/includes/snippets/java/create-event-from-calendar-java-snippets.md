@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Event event = new Event();
 event.subject = "Let's go for lunch";
@@ -32,6 +32,7 @@ attendees.emailAddress = emailAddress;
 attendees.type = AttendeeType.REQUIRED;
 attendeesList.add(attendees);
 event.attendees = attendeesList;
+event.transactionId = "7E163156-7762-4BEB-A1C6-729EA81755A7";
 
 graphClient.me().calendars("AAMkAGViNDU7zAAAAAGtlAAA=").events()
 	.buildRequest()

@@ -3,7 +3,7 @@ title: "List messages"
 description: "Get the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders). "
 localization_priority: Normal
 doc_type: apiPageType
-author: "svpsiva"
+author: "abheek-das"
 ms.prod: "outlook"
 ---
 
@@ -15,13 +15,17 @@ Namespace: microsoft.graph
 
 Get the messages in the signed-in user's mailbox (including the Deleted Items and Clutter folders). 
 
-Depending on the page size and mailbox data, getting messages from a mailbox can incur multiple requests. The default page size is 10 messages. To get the next page of messages, simply apply the entire URL returned in `@odata.nextLink` to the next get-messages request. This URL includes any query parameters you may have specified in the initial request. 
+Depending on the page size and mailbox data, getting messages from a mailbox can incur multiple requests. The default page size is 10 messages. Use `$top` to customize the page size, within the range of 1 and 1000.
+
+To improve the operation response time, use `$select` to specify the exact properties you need; see [example 1](#example-1-list-all-messages) below. Fine-tune the values for `$select` and `$top`, especially when you must use a larger page size, as returning a page with hundreds of messages each with a full response payload may trigger the [gateway timeout](/graph/errors#http-status-codes) (HTTP 504).
+
+To get the next page of messages, simply apply the entire URL returned in `@odata.nextLink` to the next get-messages request. This URL includes any query parameters you may have specified in the initial request. 
 
 Do not try to extract the `$skip` value from the `@odata.nextLink` URL to manipulate responses. This API uses the `$skip` value to keep count of all the items it has gone through in the user's mailbox to return a page of message-type items. It's therefore possible that even in the initial response, the `$skip` value is larger than the page size. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
 
 You can filter on the messages and get only those that include a [mention](../resources/mention.md) of the signed-in user. See an [example](#request-2) below. 
 By default, the `GET /me/messages` operation does not return the **mentions** property. Use the `$expand` query parameter 
-to [find details of each mention in a message](../api/message-get.md#example-2).
+to [find details of each mention in a message](../api/message-get.md#example-2-get-all-mentions-in-a-specific-message).
 
 There are two scenarios where an app can get messages in another user's mail folder:
 
@@ -66,7 +70,7 @@ GET /users/{id | userPrincipalName}/messages?$filter=mentionsPreview/isMentioned
 ```
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response.
+This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
 You can use the `$filter` query parameter on the **mentionsPreview** property to get those messages that mention the signed-in user.
 
@@ -95,8 +99,9 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and collection of [message](../resources/message.md) objects in the response body.
 
-## Example
-##### Request 1
+## Examples
+### Example 1: List all messages
+#### Request
 The first example gets the default, top 10 messages in the signed-in user's mailbox. It uses `$select` to return a subset of the properties of each message in the response. 
 
 # [HTTP](#tab/http)
@@ -119,9 +124,13 @@ GET https://graph.microsoft.com/beta/me/messages?$select=sender,subject
 [!INCLUDE [sample-code](../includes/snippets/objc/get-messages-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-messages-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response 1
+#### Response
 Here is an example of the response. To get the next page of messages, apply the URL returned in `@odata.nextLink` to a subsequent GET request.
 
 <!-- {
@@ -135,106 +144,26 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f')/messages(sender,subject)",
-    "@odata.nextLink": "https://graph.microsoft.com/beta/me/messages?$select=sender%2csubject&$skip=14",
-    "value": [
-        {
-            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAwR4Hg\"",
-            "id": "AAMkAGUAAAwTW09AAA=",
-            "subject": "You have late tasks!",
-            "sender": {
-                "emailAddress": {
-                    "name": "Microsoft Planner",
-                    "address": "noreply@Planner.Office365.com"
-                }
-            }
-        },
-        {
-            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4D1e\"",
-            "id": "AAMkAGUAAAq5QKlAAA=",
-            "subject": "You have late tasks!",
-            "sender": {
-                "emailAddress": {
-                    "name": "Microsoft Planner",
-                    "address": "noreply@Planner.Office365.com"
-                }
-            }
-        },
-        {
-            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4D0v\"",
-            "id": "AAMkAGUAAAq5QKkAAA=",
-            "subject": "Your Azure AD Identity Protection Weekly Digest",
-            "sender": {
-                "emailAddress": {
-                    "name": "Microsoft Azure",
-                    "address": "azure-noreply@microsoft.com"
-                }
-            }
-        },
-        {
-            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4DsN\"",
-            "id": "AAMkAGUAAAq5QKjAAA=",
-            "subject": "Use attached file",
-            "sender": {
-                "emailAddress": {
-                    "name": "Megan Bowen",
-                    "address": "MeganB@contoso.OnMicrosoft.com"
-                }
-            }
-        },
-        {
-            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dq9\"",
-            "id": "AAMkAGUAAAq5QKiAAA=",
-            "subject": "Original invitation",
-            "sender": {
-                "emailAddress": {
-                    "name": "Megan Bowen",
-                    "address": "MeganB@contoso.OnMicrosoft.com"
-                }
-            }
-        },
-        {
-            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dq1\"",
-            "id": "AAMkAGUAAAq5QKhAAA=",
-            "subject": "Koala image",
-            "sender": {
-                "emailAddress": {
-                    "name": "Megan Bowen",
-                    "address": "MeganB@contoso.OnMicrosoft.com"
-                }
-            }
-        },
-        {
-            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dqp\"",
-            "id": "AAMkAGUAAAq5QKgAAA=",
-            "subject": "Sales invoice template",
-            "sender": {
-                "emailAddress": {
-                    "name": "Megan Bowen",
-                    "address": "MeganB@contoso.OnMicrosoft.com"
-                }
-            }
-        },
-        {
-            "@odata.type": "#microsoft.graph.eventMessageRequest",
-            "@odata.etag": "W/\"CwAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dfa\"",
-            "id": "AAMkAGUAAAq5T8tAAA=",
-            "subject": "Review strategy for Q3",
-            "sender": {
-                "emailAddress": {
-                    "name": "Megan Bowen",
-                    "address": "MeganB@contoso.OnMicrosoft.com"
-                }
-            }
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f')/messages(sender,subject)",
+  "value": [
+    {
+      "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAwR4Hg\"",
+      "id": "AAMkAGUAAAwTW09AAA=",
+      "subject": "You have late tasks!",
+      "sender": {
+        "emailAddress": {
+          "name": "Microsoft Planner",
+          "address": "noreply@Planner.Office365.com"
         }
-    ]
+      }
+    }
+  ]
 }
 ```
 
-
-##### Request 2
-The next example filters all messages in the signed-in user's mailbox for those that mention the user. It also uses `$select` 
-to return a subset of the properties of each message in the response. 
+### Example 2: Use $filter to get all messages satisfying a specific condition
+#### Request
+The next example filters all messages in the signed-in user's mailbox for those that mention the user. It also uses `$select` to return a subset of the properties of each message in the response. 
 
 The example also incorporates URL encoding for the space characters in the query parameter string.
 
@@ -258,10 +187,14 @@ GET https://graph.microsoft.com/beta/me/messages?$filter=MentionsPreview/IsMenti
 [!INCLUDE [sample-code](../includes/snippets/objc/get-messages-with-mentions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-messages-with-mentions-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response 2
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+#### Response
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -284,24 +217,8 @@ Content-length: 987
       "subject":"Re: Start planning soon",
       "sender":{
         "emailAddress":{
-          "name":"Randi Welch",
-          "address":"randiw@contoso.onmicrosoft.com"
-        }
-      },
-      "mentionsPreview":{
-        "isMentioned":true
-      }
-    },
-    {
-      "@odata.id":"https://graph.microsoft.com/beta/Users('266efe5a-0fd7-4edd-877b-b2d1e561f193@ae01a323-3934-4475-a32d-af1274312bb0')/Messages('AQMkADJmMTUAAAjwVAAAA')",
-      "@odata.etag":"W/\"CQAAABYAAAAPFhK2FclcRbABBJhCde8iAAAAAEGj\"",
-      "id":"AQMkADJmMTUAAAjwVAAAA",
-      "receivedDateTime":"2016-07-21T07:40:20Z",
-      "subject":"Re: Start planning soon",
-      "sender":{
-        "emailAddress":{
-          "name":"Randi Welch",
-          "address":"randiw@contoso.onmicrosoft.com"
+          "name":"Adele Vance",
+          "address":"AdeleV@contoso.com"
         }
       },
       "mentionsPreview":{
@@ -312,7 +229,8 @@ Content-length: 987
 }
 ```
 
-##### Request 3
+### Example 3: Use prefer header to get the message body and uniqueBody is text format
+#### Request
 The third example shows how to use a `Prefer: outlook.body-content-type="text"` header to get the **body** and **uniqueBody** properties of each message in text format.
 
 # [HTTP](#tab/http)
@@ -336,9 +254,13 @@ Prefer: outlook.body-content-type="text"
 [!INCLUDE [sample-code](../includes/snippets/objc/get-messages-in-text-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-messages-in-text-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response 3
+#### Response
 Here is an example of the response. 
 
 <!--
@@ -351,58 +273,30 @@ Note: The response includes a `Preference-Applied: outlook.body-content-type` he
   "@odata.type": "microsoft.graph.message",
   "isCollection": true
 } -->
+
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 2704
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/messages(subject,body,bodyPreview,uniqueBody)",
-    "value":[
-        {
-            "@odata.type":"#microsoft.graph.eventMessageRequest",
-            "@odata.etag":"W/\"CwAAABYAAABmWdbhEgBXTophjCWt81m9AAAoZYj5\"",
-            "id":"AAMkAGIAAAoZCfIAAA=",
-            "subject":"Orientation ",
-            "bodyPreview":"Dana, this is the time you selected for our orientation. Please bring the notes I sent you.",
-            "body":{
-                "contentType":"text",
-                "content":"Dana, this is the time you selected for our orientation. Please bring the notes I sent you.\r\n"
-            },
-            "uniqueBody":{
-                "contentType":"text",
-                "content":"Dana, this is the time you selected for our orientation. Please bring the notes I sent you.\r\n"
-            }
-        },
-        {
-            "@odata.etag":"W/\"CQAAABYAAABmWdbhEgBXTophjCWt81m9AAAoZYj4\"",
-            "id":"AAMkAGIAAAoZCfHAAA=",
-            "subject":"Welcome to our group!",
-            "bodyPreview":"Welcome to our group, Dana! Hope you will enjoy working with us !\r\n\r\nWould you like to choose a day for our orientation from the available times below:\r\n\r\n\r\nDate\r\n        Time\r\n\r\nApril 14, 2017\r\n        1-3pm\r\n\r\nApril 21, 2017\r\n        10-12noon\r\n\r\n\r\n\r\nTh",
-            "body":{
-                "contentType":"text",
-                "content":"Welcome to our group, Dana! Hope you will enjoy working with us [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] !\r\n\r\nWould you like to choose a day for our orientation from the available times below:\r\n\r\n\r\nDate\r\n        Time\r\n\r\nApril 14, 2017\r\n        1-3pm\r\n\r\nApril 21, 2017\r\n        10-12noon\r\n\r\n\r\n\r\nThanks!\r\n\r\n"
-            },
-            "uniqueBody":{
-                "contentType":"text",
-                "content":"Welcome to our group, Dana! Hope you will enjoy working with us [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] [\ud83d\ude0a] !\r\nWould you like to choose a day for our orientation from the available times below:\r\n\r\nDate\r\n        Time\r\n\r\nApril 14, 2017\r\n        1-3pm\r\n\r\nApril 21, 2017\r\n        10-12noon\r\n\r\n\r\nThanks!\r\n"
-            }
-        },
-        {
-            "@odata.etag":"W/\"CQAAABYAAABmWdbhEgBXTophjCWt81m9AAAAAAjr\"",
-            "id":"AQMkAGIAAAIJTQAAAA==",
-            "subject":"Welcome aboard!",
-            "bodyPreview":"Welcome to the Support group!",
-            "body":{
-                "contentType":"text",
-                "content":"Welcome to the Support group!\r\n"
-            },
-            "uniqueBody":{
-                "contentType":"text",
-                "content":"Welcome to the Support group!\r\n"
-            }
-        }
-    ]
+  "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/messages(subject,body,bodyPreview,uniqueBody)",
+  "value":[
+    {
+      "@odata.type":"#microsoft.graph.eventMessageRequest",
+      "@odata.etag":"W/\"CwAAABYAAABmWdbhEgBXTophjCWt81m9AAAoZYj5\"",
+      "id":"AAMkAGIAAAoZCfIAAA=",
+      "subject":"Orientation ",
+      "bodyPreview":"Dana, this is the time you selected for our orientation. Please bring the notes I sent you.",
+      "body":{
+        "contentType":"text",
+        "content":"Dana, this is the time you selected for our orientation. Please bring the notes I sent you.\r\n"
+      },
+      "uniqueBody":{
+        "contentType":"text",
+        "content":"Dana, this is the time you selected for our orientation. Please bring the notes I sent you.\r\n"
+      }
+    }
+  ]
 }
 ```
 

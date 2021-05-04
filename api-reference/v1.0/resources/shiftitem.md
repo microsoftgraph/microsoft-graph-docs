@@ -18,8 +18,8 @@ Represents a version of a [shift](shift.md).
 |------------------------------|-------------------------|---------------------------------------------------------------------------------------------|
 | notes               | string                  | The shift notes for the `shiftItem`.      |
 | displayName               | string                  | The shift label of the `shiftItem`. |
-| startDateTime               | DateTimeOffset                  | The start date and time for the `shiftItem`. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Required. |
-| endDateTime               | DateTimeOffset                 | The end date and time for the `shiftItem`. Required. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |
+| startDateTime               | DateTimeOffset                  | The start date and time for the `shiftItem`. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Required. |
+| endDateTime               | DateTimeOffset                 | The end date and time for the `shiftItem`. Required. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 | theme | scheduleEntityTheme   |  Supported colors: white; blue; green; purple; pink; yellow; gray; darkBlue; darkGreen; darkPurple; darkPink; darkYellow. |
 | activities 	| [shiftActivity](shiftactivity.md) collection   | An incremental part of a shift which can cover details of when and where an employee is during their shift. For example, an assignment or a scheduled break or lunch. Required. |
 
@@ -56,3 +56,4 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+

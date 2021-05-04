@@ -1,6 +1,5 @@
 ---
 author: daspek
-ms.author: dspektor
 ms.date: 09/12/2017
 title: ContentTypeInfo
 localization_priority: Normal
@@ -22,7 +21,8 @@ Here is a JSON representation of a **contentTypeInfo** resource.
 
 ```json
 {
-  "id": "string"
+  "id": "string",
+  "name": "string"
 }
 ```
 
@@ -31,6 +31,7 @@ Here is a JSON representation of a **contentTypeInfo** resource.
 | Property name     | Type    | Description
 |:------------------|:--------|:----------------------------------------------------
 | **id**            | string  | The id of the content type.
+| **name**       | string  | The name of the content type.
 
 <!-- {
   "type": "#page.annotation",
@@ -39,3 +40,4 @@ Here is a JSON representation of a **contentTypeInfo** resource.
   "section": "documentation",
   "tocPath": "Resources/ContentTypeInfo"
 } -->
+

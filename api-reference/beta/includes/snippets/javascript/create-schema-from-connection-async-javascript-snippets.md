@@ -11,29 +11,33 @@ const options = {
 const client = Client.init(options);
 
 const schema = {
-  baseType: "microsoft.graph.externalItem",
+  baseType: 'microsoft.graph.externalItem',
   properties: [
     {
-      name: "title",
-      type: "String",
-      isSearchable: "true",
-      isRetrievable: "true"
+      name: 'ticketTitle',
+      type: 'String',
+      isSearchable: 'true',
+      isRetrievable: 'true',
+      labels: [
+        'title'
+      ]
     },
     {
-      name: "priority",
-      type: "String",
-      isQueryable: "true",
-      isRetrievable: "true"
+      name: 'priority',
+      type: 'String',
+      isQueryable: 'true',
+      isRetrievable: 'true',
+      isSearchable: 'false'
     },
     {
-      name: "assignee",
-      type: "String",
-      isRetrievable: "true"
+      name: 'assignee',
+      type: 'String',
+      isRetrievable: 'true'
     }
   ]
 };
 
-let res = await client.api('/connections/contosohr/schema')
+await client.api('/external/connections/contosohr/schema')
 	.version('beta')
 	.post(schema);
 

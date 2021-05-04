@@ -3,7 +3,7 @@ title: "certificateBasedAuthConfiguration resource type"
 description: "Represents a collection of certificate authorities."
 localization_priority: Normal
 author: "adimitui"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -20,7 +20,7 @@ Configuring this feature eliminates the need to enter a username and password co
 
 Certificate-based authentication configuration is provided through a collection of certificate authorities. The certificate authorities are used to establish a trusted certificate chain which enables clients to be authenticated by Azure Active Directory with a client certificate.
 
-Learn more about [certificate-based authentication in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started).
+Learn more about [certificate-based authentication in Azure Active Directory](/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started).
 
 ## Methods
 
@@ -32,7 +32,7 @@ Learn more about [certificate-based authentication in Azure Active Directory](ht
 | [Delete certificateBasedAuthConfiguration](../api/certificatebasedauthconfiguration-delete.md) | None | Delete a **certificateBasedAuthConfiguration** object. |
 
 >[!NOTE]
->Updating **cerficateBasedAuthConfiguration** is not supported. To change a **cerficateBasedAuthConfiguration**, first delete and then create a new **cerficateBasedAuthConfiguration**.
+>Updating **certificateBasedAuthConfiguration** is not supported. To change a **certificateBasedAuthConfiguration**, first delete and then create a new **certificateBasedAuthConfiguration**.
 
 ## Properties
 
@@ -43,7 +43,7 @@ Learn more about [certificate-based authentication in Azure Active Directory](ht
 
 ## Relationships
 
-None
+None,
 
 ## JSON representation
 
@@ -55,7 +55,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.certificateBasedAuthConfiguration",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

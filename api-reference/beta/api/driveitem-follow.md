@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 POST /drives/{drive-id}/items/{item-id}/follow
-POST /groups/{group-id/drive/items/{item-id}/follow
+POST /groups/{group-id}/drive/items/{item-id}/follow
 POST /me/drive/items/{item-id}/follow
 POST /sites/{site-id}/drive/items/{item-id}/follow
 POST /users/{user-id}/drive/items/{item-id}/follow
@@ -69,6 +69,10 @@ POST /me/drive/items/{item-id}/follow
 [!INCLUDE [sample-code](../includes/snippets/objc/follow-item-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/follow-item-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -97,3 +101,5 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-12-12T10:40:59Z"
 }
 ```
+
+

@@ -3,7 +3,7 @@ title: "Create program"
 description: "In the Azure AD access reviews feature, create a new program object."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "markwahl-msft"
 ---
 
@@ -80,11 +80,15 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-program-from-programs-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-program-from-programs-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ##### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -121,3 +125,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

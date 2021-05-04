@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: CurrencyColumn
 localization_priority: Normal
@@ -39,3 +38,4 @@ Here is a JSON representation of a **currencyColumn** resource.
   "section": "documentation",
   "tocPath": "Resources/CurrencyColumn"
 } -->
+

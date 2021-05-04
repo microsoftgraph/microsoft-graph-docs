@@ -2,7 +2,7 @@
 title: "mailTips resource type"
 description: "Informative messages about a recipient, that are displayed to users while they are composing a message. For example, an out-of-office message "
 localization_priority: Normal
-author: "svpsiva"
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
@@ -30,17 +30,6 @@ as an automatic reply for a message recipient.
 | recipientScope | recipientScopeType | The scope of the recipient. Possible values are: `none`, `internal`, `external`, `externalPartner`, `externalNonParther`. For example, an administrator can set another organization to be its "partner". The scope is useful if an administrator wants certain mailtips to be accessible to certain scopes. It's also useful to senders to inform them that their message may leave the organization, helping them make the correct decisions about wording, tone and content.|
 | recipientSuggestions | [recipient](../resources/recipient.md) collection | Recipients suggested based on previous contexts where they appear in the same message. |
 | totalMemberCount | Int32 | The number of members if the recipient is a distribution list. |
-
-### recipientScopeType values
-
-| Value
-|:-------------------------
-| none
-| internal
-| external
-| externalPartner
-| externalNonPartner
-
 
 ## JSON representation
 
@@ -92,3 +81,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

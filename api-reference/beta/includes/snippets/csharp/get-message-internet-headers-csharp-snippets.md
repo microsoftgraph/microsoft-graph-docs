@@ -6,11 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var message = await graphClient.Me.Messages["AAMkAGVmMDEz"]
+var message = await graphClient.Me.Messages["{message-id}"]
 	.Request()
-	.Select( e => new {
-			 e.InternetMessageHeaders 
-			 })
+	.Select("internetMessageHeaders")
 	.GetAsync();
 
 ```

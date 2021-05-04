@@ -53,7 +53,7 @@ If successful, this method returns ```204 No Content``` response code. It does n
 
 Here is an example of the request.
 
-```json
+```http
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/paymentTerms/{id}
 ```
 
@@ -61,6 +61,8 @@ DELETE https://graph.microsoft.com/beta/financials/companies/{id}/paymentTerms/{
 
 Here is an example of the response. 
 
-```json
+```http
 HTTP/1.1 204 No Content
 ```
+
+

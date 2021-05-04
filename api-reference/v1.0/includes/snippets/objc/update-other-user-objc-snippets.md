@@ -13,9 +13,9 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphUser *user = [[MSGraphUser alloc] init];
 NSMutableArray *businessPhonesList = [[NSMutableArray alloc] init];
-[businessPhonesList addObject: @"businessPhones-value"];
+[businessPhonesList addObject: @"+1 425 555 0109"];
 [user setBusinessPhones:businessPhonesList];
-[user setOfficeLocation:@"city-value"];
+[user setOfficeLocation:@"18/2111"];
 
 NSError *error;
 NSData *userData = [user getSerializedDataWithError:&error];

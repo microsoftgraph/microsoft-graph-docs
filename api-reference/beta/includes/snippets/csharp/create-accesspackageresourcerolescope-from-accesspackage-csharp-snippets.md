@@ -28,7 +28,7 @@ var accessPackageResourceRoleScope = new AccessPackageResourceRoleScope
 	}
 };
 
-await graphClient.IdentityGovernance.EntitlementManagement.AccessPackages["{id}"].AccessPackageResourceRoleScopes
+await graphClient.IdentityGovernance.EntitlementManagement.AccessPackages["{accessPackage-id}"].AccessPackageResourceRoleScopes
 	.Request()
 	.AddAsync(accessPackageResourceRoleScope);
 

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/mailFolders/AAMkAGVmMDEzM')
+let mailFolder = await client.api('/me/mailFolders/AAMkAGVmMDEzM')
 	.version('beta')
 	.get();
 

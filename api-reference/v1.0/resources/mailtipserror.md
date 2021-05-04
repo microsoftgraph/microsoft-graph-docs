@@ -2,7 +2,7 @@
 title: "mailTipsError resource type"
 description: "An error that occurs during an action."
 localization_priority: Normal
-author: "svpsiva"
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
@@ -48,3 +48,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

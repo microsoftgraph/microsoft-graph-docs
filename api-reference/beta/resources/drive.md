@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 title: drive resource type
 description: drive resource representing a user's onedrive or a document library in SharePoint
 localization_priority: Priority
@@ -13,7 +12,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The drive resource is the top level object representing a user's OneDrive or a document library in SharePoint.
+The drive resource is the top-level object representing a user's OneDrive or a document library in SharePoint.
 
 OneDrive users will always have at least one drive available, their default drive.
 Users without a OneDrive license may not have a default drive available.
@@ -148,3 +147,5 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
   "suppressions": []
 }
 -->
+
+

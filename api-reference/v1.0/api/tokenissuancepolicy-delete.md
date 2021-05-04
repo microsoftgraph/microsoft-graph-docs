@@ -3,7 +3,7 @@ title: "Delete tokenIssuancePolicy"
 description: "Delete tokenIssuancePolicy."
 localization_priority: Normal
 author: "luleonpla"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -104,3 +104,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

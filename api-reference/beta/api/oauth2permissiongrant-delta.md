@@ -3,7 +3,7 @@ title: "oauth2permissiongrant: delta"
 description: "Get newly created, updated, or deleted oauth2permissiongrants without performing a full read of the entire resource collection."
 localization_priority: Normal
 author: "psignoret"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -32,7 +32,7 @@ To begin tracking changes, you make a request including the delta function on th
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /oauth2permissiongrants/delta
+GET /oauth2PermissionGrants/delta
 ```
 
 ## Query parameters
@@ -85,7 +85,7 @@ For details, see [Using delta query](/graph/delta-query-overview). For example r
   "name": "oauth2permissiongrant_delta"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/oauth2permissiongrants/delta
+GET https://graph.microsoft.com/beta/oauth2PermissionGrants/delta
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/oauth2permissiongrant-delta-csharp-snippets.md)]
@@ -99,11 +99,15 @@ GET https://graph.microsoft.com/beta/oauth2permissiongrants/delta
 [!INCLUDE [sample-code](../includes/snippets/objc/oauth2permissiongrant-delta-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/oauth2permissiongrant-delta-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- { 
   "blockType": "response",
   "truncated": true,
@@ -145,3 +149,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

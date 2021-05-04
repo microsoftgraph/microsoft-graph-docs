@@ -3,7 +3,7 @@ title: "Create androidCompliancePolicy"
 description: "Create a new androidCompliancePolicy object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -20,7 +20,7 @@ Create a new [androidCompliancePolicy](../resources/intune-deviceconfig-androidc
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -58,6 +58,7 @@ The following table shows the properties that are required when you create the a
 |passwordRequired|Boolean|Require a password to unlock device.|
 |passwordMinimumLength|Int32|Minimum password length. Valid values 4 to 16|
 |passwordRequiredType|[androidRequiredPasswordType](../resources/intune-deviceconfig-androidrequiredpasswordtype.md)|Type of characters in password. Possible values are: `deviceDefault`, `alphabetic`, `alphanumeric`, `alphanumericWithSymbols`, `lowSecurityBiometric`, `numeric`, `numericComplex`, `any`.|
+|requiredPasswordComplexity|[androidRequiredPasswordComplexity](../resources/intune-deviceconfig-androidrequiredpasswordcomplexity.md)|Indicates the required password complexity on Android. One of: NONE, LOW, MEDIUM, HIGH. This is a new API targeted to Android 11+. Possible values are: `none`, `low`, `medium`, `high`.|
 |passwordMinutesOfInactivityBeforeLock|Int32|Minutes of inactivity before a password is required.|
 |passwordExpirationDays|Int32|Number of days before the password expires. Valid values 1 to 365|
 |passwordPreviousPasswordBlockCount|Int32|Number of previous passwords to block. Valid values 1 to 24|
@@ -94,7 +95,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceCompliancePolicies
 Content-type: application/json
-Content-length: 1710
+Content-length: 1750
 
 {
   "@odata.type": "#microsoft.graph.androidCompliancePolicy",
@@ -107,6 +108,7 @@ Content-length: 1710
   "passwordRequired": true,
   "passwordMinimumLength": 5,
   "passwordRequiredType": "alphabetic",
+  "requiredPasswordComplexity": "low",
   "passwordMinutesOfInactivityBeforeLock": 5,
   "passwordExpirationDays": 6,
   "passwordPreviousPasswordBlockCount": 2,
@@ -146,7 +148,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1882
+Content-Length: 1922
 
 {
   "@odata.type": "#microsoft.graph.androidCompliancePolicy",
@@ -162,6 +164,7 @@ Content-Length: 1882
   "passwordRequired": true,
   "passwordMinimumLength": 5,
   "passwordRequiredType": "alphabetic",
+  "requiredPasswordComplexity": "low",
   "passwordMinutesOfInactivityBeforeLock": 5,
   "passwordExpirationDays": 6,
   "passwordPreviousPasswordBlockCount": 2,
@@ -195,6 +198,7 @@ Content-Length: 1882
   ]
 }
 ```
+
 
 
 

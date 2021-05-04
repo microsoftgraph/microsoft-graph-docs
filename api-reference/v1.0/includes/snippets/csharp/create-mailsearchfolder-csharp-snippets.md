@@ -6,12 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var mailFolder = new MailFolder
+var mailFolder = new MailSearchFolder
 {
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"@odata.type","microsoft.graph.mailSearchFolder"}
-	},
 	DisplayName = "Weekly digests",
 	IncludeNestedFolders = true,
 	SourceFolderIds = new List<String>()
@@ -21,7 +17,7 @@ var mailFolder = new MailFolder
 	FilterQuery = "contains(subject, 'weekly digest')"
 };
 
-await graphClient.Me.MailFolders["AQMkADYAAAIBDAAAAA=="].ChildFolders
+await graphClient.Me.MailFolders["{mailFolder-id}"].ChildFolders
 	.Request()
 	.AddAsync(mailFolder);
 

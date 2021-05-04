@@ -3,7 +3,7 @@ title: "Get windows10VpnConfiguration"
 description: "Read properties and relationships of the windows10VpnConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -20,11 +20,11 @@ Read properties and relationships of the [windows10VpnConfiguration](../resource
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4629
+Content-Length: 4950
 
 {
   "value": {
@@ -207,10 +207,20 @@ Content-Length: 4629
     ],
     "trustedNetworkDomains": [
       "Trusted Network Domains value"
-    ]
+    ],
+    "cryptographySuite": {
+      "@odata.type": "microsoft.graph.cryptographySuite",
+      "encryptionMethod": "des",
+      "integrityCheckMethod": "sha1_96",
+      "dhGroup": "group2",
+      "cipherTransformConstants": "des",
+      "authenticationTransformConstants": "sha1_96",
+      "pfsGroup": "pfs2"
+    }
   }
 }
 ```
+
 
 
 

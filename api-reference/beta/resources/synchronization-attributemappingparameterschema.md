@@ -4,7 +4,7 @@ description: "Describes a single parameter used in an attributeMappingFunctionSc
 localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # attributeMappingParameterSchema resource type
@@ -58,3 +58,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

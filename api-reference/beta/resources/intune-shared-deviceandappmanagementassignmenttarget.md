@@ -3,7 +3,7 @@ title: "deviceAndAppManagementAssignmentTarget resource type"
 description: "Base type for assignment targets."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -20,6 +20,8 @@ Base type for assignment targets.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|deviceAndAppManagementAssignmentFilterId|String|The Id of the filter for the target assignment.|
+|deviceAndAppManagementAssignmentFilterType|[deviceAndAppManagementAssignmentFilterType](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|The type of filter of the target assignment i.e. Exclude or Include. Possible values are: `none`, `include`, `exclude`.|
 
 ## Relationships
 None
@@ -33,9 +35,12 @@ Here is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.deviceAndAppManagementAssignmentTarget"
+  "@odata.type": "#microsoft.graph.deviceAndAppManagementAssignmentTarget",
+  "deviceAndAppManagementAssignmentFilterId": "String",
+  "deviceAndAppManagementAssignmentFilterType": "String"
 }
 ```
+
 
 
 

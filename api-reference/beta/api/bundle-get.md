@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
 title: Get bundle
 description: Get a bundle of driveItems
 localization_priority: Normal
@@ -81,6 +80,10 @@ GET https://graph.microsoft.com/beta/drive/bundles/{bundle-id}
 [!INCLUDE [sample-code](../includes/snippets/objc/get-bundle-metadata-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-bundle-metadata-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -88,7 +91,7 @@ GET https://graph.microsoft.com/beta/drive/bundles/{bundle-id}
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -110,7 +113,7 @@ Content-type: application/json
 }
 ```
 
-The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+The response object shown here might be shortened for readability.
 
 ### Example 2: Get a bundle and its children in a single call
 
@@ -137,6 +140,10 @@ GET https://graph.microsoft.com/beta/drive/items/{bundle-id}?expand=children
 [!INCLUDE [sample-code](../includes/snippets/objc/get-bundle-and-children-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-bundle-and-children-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -150,7 +157,7 @@ used to request the next page of children in the bundle.
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -165,7 +172,7 @@ Content-Type: application/json
 }
 ```
 
-The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+The response object shown here might be shortened for readability.
 
 
 [bundle]: ../resources/bundle.md
@@ -181,3 +188,5 @@ The response object shown here might be shortened for readability. All the prope
   "section": "documentation",
   "tocPath": "Bundles/Get Bundle Metadata"
 } -->
+
+

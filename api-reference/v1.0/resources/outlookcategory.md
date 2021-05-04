@@ -2,7 +2,7 @@
 title: "outlookCategory resource type"
 description: "Represents a category by which a user can group Outlook items such as messages and events. The user defines categories in a master list, and can apply one or more of these user-defined"
 localization_priority: Normal
-author: "svpsiva"
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
@@ -101,9 +101,8 @@ Here is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-      "Warning: /api-reference/v1.0/resources/outlookcategory.md:
-      Failed to parse any rows out of table with headers: |Pre-set constant|Color mapped to in Outlook|"
   ],
   "tocPath": ""
 }-->
  
+

@@ -12,14 +12,13 @@ const client = Client.init(options);
 
 const personWebsite = {
   categories: [
-    "categories-value"
+    'football'
   ],
-  description: "description-value",
-  displayName: "displayName-value",
-  webUrl: "webUrl-value"
+  displayName: 'Lyn Damer',
+  webUrl: 'www.lyndamer.no'
 };
 
-let res = await client.api('/me/profile/websites')
+await client.api('/me/profile/websites')
 	.version('beta')
 	.post(personWebsite);
 

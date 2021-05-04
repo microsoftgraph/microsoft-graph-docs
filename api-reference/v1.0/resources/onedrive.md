@@ -3,14 +3,14 @@ title: "Working with files in Microsoft Graph"
 description: "You can use Microsoft Graph to create an app that connects with files across OneDrive, OneDrive for Business, and SharePoint document libraries."
 localization_priority: Priority
 ms.prod: "sharepoint"
-author: ""
+author: "jewan-microsoft"
 doc_type: conceptualPageType
 ---
 
 # Working with files in Microsoft Graph
 
 You can use Microsoft Graph to create an app that connects with files across OneDrive, OneDrive for Business, and SharePoint document libraries.
-With Microsoft Graph, you can build a variety of experiences with files stored in Office 365, from simply storing user documents to complex file-sharing scenarios.
+With Microsoft Graph, you can build a variety of experiences with files stored in Microsoft 365, from simply storing user documents to complex file-sharing scenarios.
 
 Microsoft Graph exposes two resource types for working with files:
 
@@ -87,7 +87,7 @@ This table provides an example of different ways to use the colon character to a
 The [Drive resource](drive.md) is the top-level object within a user's OneDrive or a [SharePoint][] document library.
 Nearly all files operations will start by addressing a specific drive resource.
 
-A drive resource can be addressed either by the drive's unique ID or by the default drive for a [User](user.md), [Group](group.md), or organization. 
+A drive resource can be addressed either by the drive's unique ID or by the default drive for a [User](user.md), [Group](group.md), or organization.
 
 ## DriveItem resource
 
@@ -103,7 +103,7 @@ DriveItems with a **folder** facet act as containers of items, and have a **chil
 OneDrive personal users can add one or more shared items from another drive to their own OneDrive.
 These shared items appear as a **DriveItem** in the **children** collection with a [remoteItem](remoteitem.md) facet.
 
-For more information about working with shared folders and remote items, see [Remote items and shared folders](remoteitem.md).   
+For more information about working with shared folders and remote items, see [Remote items and shared folders](remoteitem.md).
 
 ## Sharing and permissions
 
@@ -112,5 +112,9 @@ Microsoft Graph allows your app to create [sharing links](../api/driveitem-creat
 
 Microsoft Graph also provides a way for your app to [access shared content](../api/shares-get.md) directly from a sharing link.
 
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
+
 [SharePoint]: sharepoint.md
 [site]: site.md
+

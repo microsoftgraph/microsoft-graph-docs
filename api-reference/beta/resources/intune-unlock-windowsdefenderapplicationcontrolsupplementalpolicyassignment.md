@@ -3,7 +3,7 @@ title: "windowsDefenderApplicationControlSupplementalPolicyAssignment resource t
 description: "A class containing the properties used for assignment of a WindowsDefenderApplicationControl supplemental policy to a group."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -48,10 +48,13 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.windowsDefenderApplicationControlSupplementalPolicyAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget",
+    "deviceAndAppManagementAssignmentFilterId": "String",
+    "deviceAndAppManagementAssignmentFilterType": "String"
   }
 }
 ```
+
 
 
 

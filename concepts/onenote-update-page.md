@@ -1,6 +1,6 @@
 ---
 title: "Update OneNote page content"
-description: " Enterprise notebooks on Office 365"
+description: " Enterprise notebooks on Microsoft 365"
 author: "jewan-microsoft"
 localization_priority: Normal
 ms.prod: "onenote"
@@ -8,7 +8,7 @@ ms.prod: "onenote"
 
 # Update OneNote page content
 
-**Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Office 365
+**Applies to** Consumer notebooks on OneDrive | Enterprise notebooks on Microsoft 365
 
 
 To update the content of a OneNote page, you send a PATCH request to the page's *content* endpoint:
@@ -372,7 +372,7 @@ The following examples show complete PATCH requests.
 
 The following example shows a PATCH request that uses the **application/json** content type. You can use this format when your content doesn't contain binary data.
 
-```json
+```http
 PATCH https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages/{page-id}/content
 
 Content-Type: application/json
@@ -399,7 +399,7 @@ Authorization: Bearer {token}
 
 The following example shows a multipart PATCH request that includes binary data. Multipart requests require a "Commands" part that specifies the **application/json** content type and contains the array of JSON change objects. Other data parts can contain binary data. Part names typically are strings appended with the current time in milliseconds or a random GUID.
 
-```json
+```http
 PATCH https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages/{page-id}/content
 
 Content-Type: multipart/form-data; boundary=PartBoundary123
@@ -460,7 +460,7 @@ The OneNote service root URL uses the following format for all calls to the OneN
 
 The `version` segment in the URL represents the version of Microsoft Graph that you want to use. `v1.0` is for stable production code. `beta` is to try out a feature that's in development. Features and functionality in beta may change, so you shouldn't use it in your production code.
 
-`me` is for OneNote content that the current user can access (owned and shared). `users/{id}` is for OneNote content that the specified user (in the URL) has shared with the current user. Use the [Azure AD Graph API](https://msdn.microsoft.com/library/azure/ad/graph/api/api-catalog).
+`me` is for OneNote content that the current user can access (owned and shared). `users/{id}` is for OneNote content that the specified user (in the URL) has shared with the current user. Use the [Azure AD Graph API](/previous-versions/azure/ad/graph/api/api-catalog).
 
 
 > **Note:**
@@ -487,5 +487,5 @@ For more information about permission scopes and how they work, see [OneNote per
 - [Add images and files](onenote-images-files.md)
 - [Integrate with OneNote](integrate-with-onenote.md)
 - [OneNote Developer Blog](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [OneNote development questions on Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
-- [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)  
+- [OneNote development questions on Microsoft Q&A](/answers/topics/microsoft-graph-notes.html)
+- [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)

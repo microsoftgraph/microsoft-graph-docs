@@ -3,7 +3,7 @@ title: "Get iosEasEmailProfileConfiguration"
 description: "Read properties and relationships of the iosEasEmailProfileConfiguration object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -20,11 +20,11 @@ Read properties and relationships of the [iosEasEmailProfileConfiguration](../re
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -65,7 +65,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2438
+Content-Length: 2496
 
 {
   "value": {
@@ -126,10 +126,12 @@ Content-Length: 2438
     "requireSsl": true,
     "useOAuth": true,
     "signingCertificateType": "certificate",
-    "encryptionCertificateType": "certificate"
+    "encryptionCertificateType": "certificate",
+    "perAppVPNProfileId": "Per App VPNProfile Id value"
   }
 }
 ```
+
 
 
 

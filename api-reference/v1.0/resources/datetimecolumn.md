@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: DateTimeColumn
 localization_priority: Normal
@@ -57,3 +56,4 @@ Here is a JSON representation of a **dateTimeColumn** resource.
   ],
   "tocPath": "Resources/DateTimeColumn"
 } -->
+

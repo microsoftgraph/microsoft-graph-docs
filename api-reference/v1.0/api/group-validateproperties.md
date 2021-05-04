@@ -1,6 +1,6 @@
 ---
 title: "group: validateProperties"
-description: "Validate that an Office 365 group's display name or mail nickname complies with naming policies."
+description: "Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies."
 localization_priority: Normal
 author: "yyuank"
 ms.prod: "groups"
@@ -11,7 +11,7 @@ doc_type: "apiPageType"
 
 Namespace: microsoft.graph
 
-Validate that an Office 365 group's display name or mail nickname complies with naming policies.  Clients can use this API to determine whether a display name or mail nickname is valid before trying to [update](group-update.md) an Office 365 group. To validate the properties before creating a group, use the [directoryobject:validateProperties](directoryobject-validateproperties.md) function.
+Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.  Clients can use this API to determine whether a display name or mail nickname is valid before trying to [update](group-update.md) a Microsoft 365 group. To validate the properties before creating a group, use the [directoryobject:validateProperties](directoryobject-validateproperties.md) function.
 
 The following policy validations are performed for the display name and mail nickname properties:
 1. Validate the prefix and suffix naming policy
@@ -161,3 +161,4 @@ Content-length: 223
   "suppressions": [
   ]
 }-->
+

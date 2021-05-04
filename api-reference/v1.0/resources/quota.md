@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Quota
 localization_priority: Normal
@@ -30,6 +29,9 @@ Here is a JSON representation of the resource.
   "deleted": 1024,
   "remaining": 1024,
   "state": "normal | nearing | critical | exceeded",
+  "storagePlanInformation": {
+    "upgradeAvailable": true
+  },
   "total": 1024,
   "used": 1024
 }
@@ -44,6 +46,7 @@ Here is a JSON representation of the resource.
 | remaining     | Int64  | Total space remaining before reaching the quota limit, in bytes. Read-only. |
 | deleted       | Int64  | Total space consumed by files in the recycle bin, in bytes. Read-only.      |
 | state         | string | Enumeration value that indicates the state of the storage space. Read-only. |
+| storagePlanInformation  | [storagePlanInformation](storageplaninformation.md) | Information about the drive's storage quota plans. Only in Personal OneDrive.|
 
 ## State Enumeration
 
@@ -65,3 +68,4 @@ Here is a JSON representation of the resource.
   ],
   "tocPath": "Facets/Quota"
 } -->
+

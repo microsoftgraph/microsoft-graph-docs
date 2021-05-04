@@ -3,7 +3,7 @@ title: "List androidLobApps"
 description: "List properties and relationships of the androidLobApp objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -20,11 +20,11 @@ List properties and relationships of the [androidLobApp](../resources/intune-app
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegated (work or school account)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Application|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1818
+Content-Length: 1931
 
 {
   "value": [
@@ -90,6 +90,8 @@ Content-Length: 1818
         "Role Scope Tag Ids value"
       ],
       "dependentAppCount": 1,
+      "supersedingAppCount": 3,
+      "supersededAppCount": 2,
       "committedContentVersion": "Committed Content Version value",
       "fileName": "File Name value",
       "size": 4,
@@ -110,7 +112,9 @@ Content-Length: 1818
         "v7_1": true,
         "v8_0": true,
         "v8_1": true,
-        "v9_0": true
+        "v9_0": true,
+        "v10_0": true,
+        "v11_0": true
       },
       "versionName": "Version Name value",
       "versionCode": "Version Code value",
@@ -119,6 +123,7 @@ Content-Length: 1818
   ]
 }
 ```
+
 
 
 

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/policies/tokenIssuancePolicies/{id}')
+let tokenIssuancePolicy = await client.api('/policies/tokenIssuancePolicies/{id}')
 	.version('beta')
 	.get();
 

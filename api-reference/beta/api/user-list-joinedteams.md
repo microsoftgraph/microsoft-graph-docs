@@ -38,7 +38,7 @@ GET /users/{id}/joinedTeams
 ```
 
 ## Optional query parameters
-The [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) are not currently supported.
+The [OData Query Parameters](/graph/query-parameters) are not currently supported.
 
 ## Request headers
 | Header       | Value |
@@ -54,7 +54,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [team](../resources/team.md) objects in the response body.
 
 ## Example
-##### Request
+### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -77,10 +77,14 @@ GET https://graph.microsoft.com/beta/me/joinedTeams
 [!INCLUDE [sample-code](../includes/snippets/objc/get-joinedteams-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-joinedteams-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -90,12 +94,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [
     {
-      "id": "id-value"
+      "id": "31aa74dd-dd65-43ac-8c4e-0ec1ae5a8ee1"
     }
   ]
 }

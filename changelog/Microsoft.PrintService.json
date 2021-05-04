@@ -1,0 +1,902 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "4479ad3e-1fa7-4ed2-aa24-8fbf0b2b8aca",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printJob",
+          "ChangeType": "Addition",
+          "Description": "Added [update](/graph/api/printjob-update?view=graph-rest-beta\u0026preserve-view=true) support to the [printJob](/graph/api/resources/printjob?view=graph-rest-beta\u0026preserve-view=true) resource.",
+          "Target": "printJob"
+        }
+      ],
+      "Id": "4479ad3e-1fa7-4ed2-aa24-8fbf0b2b8aca",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-03-05T00:00:00",
+      "WorkloadArea": "Devices and apps ",
+      "SubArea": " Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8a2e05f4-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printerBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [printerBase](https://docs.microsoft.com/en-us/graph/api/resources/printerBase?view=graph-rest-1.0) resource type.",
+          "Target": "printerBase"
+        },
+        {
+          "Id": "8a306ba0-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printer",
+          "ChangeType": "Addition",
+          "Description": "Added the [printer](https://docs.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-1.0) resource type.",
+          "Target": "printer"
+        },
+        {
+          "Id": "8a32cabc-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printerDefaults",
+          "ChangeType": "Addition",
+          "Description": "Added the [printerDefaults](https://docs.microsoft.com/en-us/graph/api/resources/printerDefaults?view=graph-rest-1.0) resource type.",
+          "Target": "printerDefaults"
+        },
+        {
+          "Id": "8a352d2a-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printerStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [printerStatus](https://docs.microsoft.com/en-us/graph/api/resources/printerStatus?view=graph-rest-1.0) resource type.",
+          "Target": "printerStatus"
+        },
+        {
+          "Id": "8a378fdd-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printerCapabilities",
+          "ChangeType": "Addition",
+          "Description": "Added the [printerCapabilities](https://docs.microsoft.com/en-us/graph/api/resources/printerCapabilities?view=graph-rest-1.0) resource type.",
+          "Target": "printerCapabilities"
+        },
+        {
+          "Id": "8a39f288-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "integerRange",
+          "ChangeType": "Addition",
+          "Description": "Added the [integerRange](https://docs.microsoft.com/en-us/graph/api/resources/integerRange?view=graph-rest-1.0) resource type.",
+          "Target": "integerRange"
+        },
+        {
+          "Id": "8a3c54bc-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printCertificateSigningRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the [printCertificateSigningRequest](https://docs.microsoft.com/en-us/graph/api/resources/printCertificateSigningRequest?view=graph-rest-1.0) resource type.",
+          "Target": "printCertificateSigningRequest"
+        },
+        {
+          "Id": "8a3eb90b-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printerLocation",
+          "ChangeType": "Addition",
+          "Description": "Added the [printerLocation](https://docs.microsoft.com/en-us/graph/api/resources/printerLocation?view=graph-rest-1.0) resource type.",
+          "Target": "printerLocation"
+        },
+        {
+          "Id": "8a414833-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printConnector",
+          "ChangeType": "Addition",
+          "Description": "Added the [printConnector](https://docs.microsoft.com/en-us/graph/api/resources/printConnector?view=graph-rest-1.0) resource type.",
+          "Target": "printConnector"
+        },
+        {
+          "Id": "8a43adf5-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printDocument",
+          "ChangeType": "Addition",
+          "Description": "Added the [printDocument](https://docs.microsoft.com/en-us/graph/api/resources/printDocument?view=graph-rest-1.0) resource type.",
+          "Target": "printDocument"
+        },
+        {
+          "Id": "8a46102e-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printJobConfiguration",
+          "ChangeType": "Addition",
+          "Description": "Added the [printJobConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/printJobConfiguration?view=graph-rest-1.0) resource type.",
+          "Target": "printJobConfiguration"
+        },
+        {
+          "Id": "8a48744a-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printMargin",
+          "ChangeType": "Addition",
+          "Description": "Added the [printMargin](https://docs.microsoft.com/en-us/graph/api/resources/printMargin?view=graph-rest-1.0) resource type.",
+          "Target": "printMargin"
+        },
+        {
+          "Id": "8a4ad3f5-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printDocumentUploadProperties",
+          "ChangeType": "Addition",
+          "Description": "Added the [printDocumentUploadProperties](https://docs.microsoft.com/en-us/graph/api/resources/printDocumentUploadProperties?view=graph-rest-1.0) resource type.",
+          "Target": "printDocumentUploadProperties"
+        },
+        {
+          "Id": "8a4fadb9-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printJob",
+          "ChangeType": "Addition",
+          "Description": "Added the [printJob](https://docs.microsoft.com/en-us/graph/api/resources/printJob?view=graph-rest-1.0) resource type.",
+          "Target": "printJob"
+        },
+        {
+          "Id": "8a521010-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printJobStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [printJobStatus](https://docs.microsoft.com/en-us/graph/api/resources/printJobStatus?view=graph-rest-1.0) resource type.",
+          "Target": "printJobStatus"
+        },
+        {
+          "Id": "8a5475e3-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printService",
+          "ChangeType": "Addition",
+          "Description": "Added the [printService](https://docs.microsoft.com/en-us/graph/api/resources/printService?view=graph-rest-1.0) resource type.",
+          "Target": "printService"
+        },
+        {
+          "Id": "8a56d3aa-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printServiceEndpoint",
+          "ChangeType": "Addition",
+          "Description": "Added the [printServiceEndpoint](https://docs.microsoft.com/en-us/graph/api/resources/printServiceEndpoint?view=graph-rest-1.0) resource type.",
+          "Target": "printServiceEndpoint"
+        },
+        {
+          "Id": "8a593767-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printerShare",
+          "ChangeType": "Addition",
+          "Description": "Added the [printerShare](https://docs.microsoft.com/en-us/graph/api/resources/printerShare?view=graph-rest-1.0) resource type.",
+          "Target": "printerShare"
+        },
+        {
+          "Id": "8a5b99ba-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [printOperation](https://docs.microsoft.com/en-us/graph/api/resources/printOperation?view=graph-rest-1.0) resource type.",
+          "Target": "printOperation"
+        },
+        {
+          "Id": "8a5dfb74-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printerCreateOperation",
+          "ChangeType": "Addition",
+          "Description": "Added the [printerCreateOperation](https://docs.microsoft.com/en-us/graph/api/resources/printerCreateOperation?view=graph-rest-1.0) resource type.",
+          "Target": "printerCreateOperation"
+        },
+        {
+          "Id": "8a605e04-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printOperationStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [printOperationStatus](https://docs.microsoft.com/en-us/graph/api/resources/printOperationStatus?view=graph-rest-1.0) resource type.",
+          "Target": "printOperationStatus"
+        },
+        {
+          "Id": "8a65218c-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printUsageByUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [printUsageByUser](https://docs.microsoft.com/en-us/graph/api/resources/printUsageByUser?view=graph-rest-1.0) resource type.",
+          "Target": "printUsageByUser"
+        },
+        {
+          "Id": "8a6784d5-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printUsageByPrinter",
+          "ChangeType": "Addition",
+          "Description": "Added the [printUsageByPrinter](https://docs.microsoft.com/en-us/graph/api/resources/printUsageByPrinter?view=graph-rest-1.0) resource type.",
+          "Target": "printUsageByPrinter"
+        },
+        {
+          "Id": "8a69ef8f-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "archivedPrintJob",
+          "ChangeType": "Addition",
+          "Description": "Added the [archivedPrintJob](https://docs.microsoft.com/en-us/graph/api/resources/archivedPrintJob?view=graph-rest-1.0) resource type.",
+          "Target": "archivedPrintJob"
+        },
+        {
+          "Id": "8a6c49a3-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printTaskDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the [printTaskDefinition](https://docs.microsoft.com/en-us/graph/api/resources/printTaskDefinition?view=graph-rest-1.0) resource type.",
+          "Target": "printTaskDefinition"
+        },
+        {
+          "Id": "8a6eb70c-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printTask",
+          "ChangeType": "Addition",
+          "Description": "Added the [printTask](https://docs.microsoft.com/en-us/graph/api/resources/printTask?view=graph-rest-1.0) resource type.",
+          "Target": "printTask"
+        },
+        {
+          "Id": "8a71117b-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printTaskStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the [printTaskStatus](https://docs.microsoft.com/en-us/graph/api/resources/printTaskStatus?view=graph-rest-1.0) resource type.",
+          "Target": "printTaskStatus"
+        },
+        {
+          "Id": "8a737216-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printTaskTrigger",
+          "ChangeType": "Addition",
+          "Description": "Added the [printTaskTrigger](https://docs.microsoft.com/en-us/graph/api/resources/printTaskTrigger?view=graph-rest-1.0) resource type.",
+          "Target": "printTaskTrigger"
+        },
+        {
+          "Id": "8a75d3d6-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "print",
+          "ChangeType": "Addition",
+          "Description": "Added the [print](https://docs.microsoft.com/en-us/graph/api/resources/print?view=graph-rest-1.0) resource type.",
+          "Target": "print"
+        },
+        {
+          "Id": "8a783364-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [printSettings](https://docs.microsoft.com/en-us/graph/api/resources/printSettings?view=graph-rest-1.0) resource type.",
+          "Target": "printSettings"
+        },
+        {
+          "Id": "8a7a97b1-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "printColorMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **printColorMode** enumeration type.",
+          "Target": "printColorMode"
+        },
+        {
+          "Id": "8a7d014c-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "printDuplexMode",
+          "ChangeType": "Addition",
+          "Description": "Added the **printDuplexMode** enumeration type.",
+          "Target": "printDuplexMode"
+        },
+        {
+          "Id": "8a7f5d12-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "printMultipageLayout",
+          "ChangeType": "Addition",
+          "Description": "Added the **printMultipageLayout** enumeration type.",
+          "Target": "printMultipageLayout"
+        },
+        {
+          "Id": "8a81beb4-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "printScaling",
+          "ChangeType": "Addition",
+          "Description": "Added the **printScaling** enumeration type.",
+          "Target": "printScaling"
+        },
+        {
+          "Id": "8a8421d7-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "printOrientation",
+          "ChangeType": "Addition",
+          "Description": "Added the **printOrientation** enumeration type.",
+          "Target": "printOrientation"
+        },
+        {
+          "Id": "8a86836c-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "printQuality",
+          "ChangeType": "Addition",
+          "Description": "Added the **printQuality** enumeration type.",
+          "Target": "printQuality"
+        },
+        {
+          "Id": "8a88e6cc-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "printerFeedOrientation",
+          "ChangeType": "Addition",
+          "Description": "Added the **printerFeedOrientation** enumeration type.",
+          "Target": "printerFeedOrientation"
+        },
+        {
+          "Id": "8a8b481b-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "printFinishing",
+          "ChangeType": "Addition",
+          "Description": "Added the **printFinishing** enumeration type.",
+          "Target": "printFinishing"
+        },
+        {
+          "Id": "8a8dae55-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "printerProcessingState",
+          "ChangeType": "Addition",
+          "Description": "Added the **printerProcessingState** enumeration type.",
+          "Target": "printerProcessingState"
+        },
+        {
+          "Id": "8a900dd8-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "printerProcessingStateDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the **printerProcessingStateDetail** enumeration type.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "8a9272f0-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "printJobStateDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the **printJobStateDetail** enumeration type.",
+          "Target": "printJobStateDetail"
+        },
+        {
+          "Id": "8a94d274-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "printJobProcessingState",
+          "ChangeType": "Addition",
+          "Description": "Added the **printJobProcessingState** enumeration type.",
+          "Target": "printJobProcessingState"
+        },
+        {
+          "Id": "8a999682-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "printOperationProcessingState",
+          "ChangeType": "Addition",
+          "Description": "Added the **printOperationProcessingState** enumeration type.",
+          "Target": "printOperationProcessingState"
+        },
+        {
+          "Id": "8a9bfa80-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "printTaskProcessingState",
+          "ChangeType": "Addition",
+          "Description": "Added the **printTaskProcessingState** enumeration type.",
+          "Target": "printTaskProcessingState"
+        },
+        {
+          "Id": "8a9e5b7e-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "printEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the **printEvent** enumeration type.",
+          "Target": "printEvent"
+        },
+        {
+          "Id": "8aa0c439-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Method",
+          "ChangedApiName": "restoreFactoryDefaults",
+          "ChangeType": "Addition",
+          "Description": "Added the [restoreFactoryDefaults](https://docs.microsoft.com/en-us/graph/api/printer-restoreFactoryDefaults?view=graph-rest-1.0) method to the [printer](https://docs.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-1.0) resource.",
+          "Target": "printer"
+        },
+        {
+          "Id": "8aa320fb-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Method",
+          "ChangedApiName": "create",
+          "ChangeType": "Addition",
+          "Description": "Added the [create](https://docs.microsoft.com/en-us/graph/api/printer-create?view=graph-rest-1.0) method to the [printer](https://docs.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-1.0) resource.",
+          "Target": "printer"
+        },
+        {
+          "Id": "8aa582eb-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Method",
+          "ChangedApiName": "createUploadSession",
+          "ChangeType": "Addition",
+          "Description": "Added the [createUploadSession](https://docs.microsoft.com/en-us/graph/api/printDocument-createUploadSession?view=graph-rest-1.0) method to the [printDocument](https://docs.microsoft.com/en-us/graph/api/resources/printDocument?view=graph-rest-1.0) resource.",
+          "Target": "printDocument"
+        },
+        {
+          "Id": "8aa7e52a-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Method",
+          "ChangedApiName": "cancel",
+          "ChangeType": "Addition",
+          "Description": "Added the [cancel](https://docs.microsoft.com/en-us/graph/api/printJob-cancel?view=graph-rest-1.0) method to the [printJob](https://docs.microsoft.com/en-us/graph/api/resources/printJob?view=graph-rest-1.0) resource.",
+          "Target": "printJob"
+        },
+        {
+          "Id": "8aaa5fc1-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Method",
+          "ChangedApiName": "abort",
+          "ChangeType": "Addition",
+          "Description": "Added the [abort](https://docs.microsoft.com/en-us/graph/api/printJob-abort?view=graph-rest-1.0) method to the [printJob](https://docs.microsoft.com/en-us/graph/api/resources/printJob?view=graph-rest-1.0) resource.",
+          "Target": "printJob"
+        },
+        {
+          "Id": "8aacaa5e-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Method",
+          "ChangedApiName": "start",
+          "ChangeType": "Addition",
+          "Description": "Added the [start](https://docs.microsoft.com/en-us/graph/api/printJob-start?view=graph-rest-1.0) method to the [printJob](https://docs.microsoft.com/en-us/graph/api/resources/printJob?view=graph-rest-1.0) resource.",
+          "Target": "printJob"
+        },
+        {
+          "Id": "8aaf0cc8-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Method",
+          "ChangedApiName": "redirect",
+          "ChangeType": "Addition",
+          "Description": "Added the [redirect](https://docs.microsoft.com/en-us/graph/api/printJob-redirect?view=graph-rest-1.0) method to the [printJob](https://docs.microsoft.com/en-us/graph/api/resources/printJob?view=graph-rest-1.0) resource.",
+          "Target": "printJob"
+        },
+        {
+          "Id": "8ab16e62-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Method",
+          "ChangedApiName": "getUserArchivedPrintJobs",
+          "ChangeType": "Addition",
+          "Description": "Added the [getUserArchivedPrintJobs](https://docs.microsoft.com/en-us/graph/api/reportRoot-getUserArchivedPrintJobs?view=graph-rest-1.0) method to the reportRoot resource.",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "8ab3d157-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Method",
+          "ChangedApiName": "getGroupArchivedPrintJobs",
+          "ChangeType": "Addition",
+          "Description": "Added the [getGroupArchivedPrintJobs](https://docs.microsoft.com/en-us/graph/api/reportRoot-getGroupArchivedPrintJobs?view=graph-rest-1.0) method to the reportRoot resource.",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "8ab634b0-659c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Method",
+          "ChangedApiName": "getPrinterArchivedPrintJobs",
+          "ChangeType": "Addition",
+          "Description": "Added the [getPrinterArchivedPrintJobs](https://docs.microsoft.com/en-us/graph/api/reportRoot-getPrinterArchivedPrintJobs?view=graph-rest-1.0) method to the reportRoot resource.",
+          "Target": "reportRoot"
+        }
+      ],
+      "Id": "8a26dfec-659c-11eb-8de9-f7f8b8b7f046",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-03-05T21:20:57.203Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "330349f4-de5b-4bb0-92de-0a0a1453d23a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Printer",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastSeenDateTime** property to the [printer](https://docs.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-beta) resource.",
+          "Target": "printer"
+        }
+      ],
+      "Id": "330349f4-de5b-4bb0-92de-0a0a1453d23a",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-03-03T00:00:00",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "118e092d-5c9b-4d50-928f-12aaa33abaf6",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Printer",
+          "ChangeType": "Change",
+          "Description": "Added application permissions to the [printer](https://docs.microsoft.com/en-us/graph/api/resources/printerlocation?view=graph-rest-beta) resource.",
+          "Target": "printer"
+        }
+      ],
+      "Id": "118e092d-5c9b-4d50-928f-12aaa33abaf6",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-01-27T00:00:00",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3c6809b4-5b51-11eb-93a5-6e9aaa10c0ef",
+          "ApiChange": "Property",
+          "ChangedApiName": "printerDefaults",
+          "ChangeType": "Addition",
+          "Description": "Added the **inputBin** property to the [printerDefaults](https://docs.microsoft.com/en-us/graph/api/resources/printerDefaults?view=graph-rest-beta) resource.",
+          "Target": "printerDefaults"
+        }
+      ],
+      "Id": "3c65a6d7-5b51-11eb-93a5-6e9aaa10c0ef",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-02-17T18:56:42.870Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c9105e15-6dd7-482a-994c-e156afed581c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "subscription",
+          "ChangeType": "Addition",
+          "Description": "Add **printer** to the resources that support change notifications.",
+          "Target": "printer"
+        }
+      ],
+      "Id": "c9105e15-6dd7-482a-994c-e156afed581c",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-01-21T00:00:00",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "bb46f739-3c69-46ab-a3e1-75cd4e9aae46",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printJob",
+          "ChangeType": "Addition",
+          "Description": "Added new PrintJob.Create [delegated permission](https://docs.microsoft.com/en-us/graph/permissions-reference#universal-print-permissions).",
+          "Target": "printJob"
+        },
+        {
+          "Id": "bb46f739-3c69-46ab-a3e1-75cd4e9aae46",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printerShare",
+          "ChangeType": "Addition",
+          "Description": "Added new PrinterShare.ReadBasic.All [delegated permission](https://docs.microsoft.com/en-us/graph/permissions-reference#universal-print-permissions).",
+          "Target": "printerShare"
+        },
+        {
+          "Id": "0ec62390-2472-42a1-9298-2f36275c58bf",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printConnector",
+          "ChangeType": "Addition",
+          "Description": "Added new PrintConnector.Read.All [delegated permission](https://docs.microsoft.com/en-us/graph/permissions-reference#universal-print-permissions).",
+          "Target": "printConnector"
+        },
+        {
+          "Id": "0ec62390-2472-42a1-9298-2f36275c58bf",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printSetting",
+          "ChangeType": "Addition",
+          "Description": "Added new PrintSettings.Read.All and PrintSettings.ReadWrite.All [delegated permissions](https://docs.microsoft.com/en-us/graph/permissions-reference#universal-print-permissions).",
+          "Target": "printSetting"
+        }
+      ],
+      "Id": "bb46f739-3c69-46ab-a3e1-75cd4e9aae46",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-01-07T00:00:00",
+      "WorkloadArea": "Devices and apps ",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d686e617-f373-4e2b-b26e-c71f475b05de",
+          "ApiChange": "Property",
+          "ChangedApiName": "floorNumber,floor",
+          "ChangeType": "Change",
+          "Description": "Changed **floorNumber** (Edm.Int) property on [printerLocation](https://docs.microsoft.com/en-us/graph/api/resources/printerlocation?view=graph-rest-beta) resource to **floor** (Edm.String).",
+          "Target": "printerLocation"
+        },
+        {
+          "Id": "d686e617-f373-4e2b-b26e-c71f475b05de",
+          "ApiChange": "Property",
+          "ChangedApiName": "roomNumber,roomName",
+          "ChangeType": "Change",
+          "Description": "Changed **roomNumber** (Edm.Int) property on [printerLocation](https://docs.microsoft.com/en-us/graph/api/resources/printerlocation?view=graph-rest-beta) resource to **roomName** (Edm.String).",
+          "Target": "printerLocation"
+        }
+      ],
+      "Id": "d686e617-f373-4e2b-b26e-c71f475b05de",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-10T00:00:00",
+      "WorkloadArea": "Devices and apps ",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2241d4d1-9372-4ce3-9888-61cf63abea21",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printJob",
+          "ChangeType": "Addition",
+          "Description": "Added the [update configuration](https://docs.microsoft.com/en-us/graph/api/printjob-update-configuration?view=graph-rest-beta) method to the [printJob](https://docs.microsoft.com/en-us/graph/api/resources/printjob?view=graph-rest-beta) resource.",
+          "Target": "printJob"
+        }
+      ],
+      "Id": "2241d4d1-9372-4ce3-9888-61cf63abea21",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-16T00:00:00",
+      "WorkloadArea": "Devices and apps ",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c6857dac-2cec-457f-a760-5dac6397e554",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printerShare",
+          "ChangeType": "Change",
+          "Description": "Changed type of allowedUsers relationship on [printerShare](https://docs.microsoft.com/en-us/graph/api/resources/printershare?view=graph-rest-beta) resource.",
+          "Target": "printerShare"
+        },
+        {
+          "Id": "c6857dac-2cec-457f-a760-5dac6397e554",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printerShare",
+          "ChangeType": "Change",
+          "Description": "Changed type of allowedGroups relationship on [printerShare](https://docs.microsoft.com/en-us/graph/api/resources/printershare?view=graph-rest-beta) resource.",
+          "Target": "printerShare"
+        }
+      ],
+      "Id": "c6857dac-2cec-457f-a760-5dac6397e554",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-10T00:00:00",
+      "WorkloadArea": "Devices and apps ",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "outputAreaAlmostFull",
+          "ChangeType": "Addition",
+          "Description": "Added the `outputAreaAlmostFull` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "none",
+          "ChangeType": "Addition",
+          "Description": "Added the `none` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "movingToPaused",
+          "ChangeType": "Addition",
+          "Description": "Added the `movingToPaused` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "shutdown",
+          "ChangeType": "Addition",
+          "Description": "Added the `shutdown` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "connectingToDevice",
+          "ChangeType": "Addition",
+          "Description": "Added the `connectingToDevice` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "timedOut",
+          "ChangeType": "Addition",
+          "Description": "Added the `timedOut` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "stopping",
+          "ChangeType": "Addition",
+          "Description": "Added the `stopping` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "stoppedPartially",
+          "ChangeType": "Addition",
+          "Description": "Added the `stoppedPartially` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "tonerLow",
+          "ChangeType": "Addition",
+          "Description": "Added the `tonerLow` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "tonerEmpty",
+          "ChangeType": "Addition",
+          "Description": "Added the `tonerEmpty` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "spoolAreaFull",
+          "ChangeType": "Addition",
+          "Description": "Added the `spoolAreaFull` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "doorOpen",
+          "ChangeType": "Addition",
+          "Description": "Added the `doorOpen` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "opticalPhotoConductorNearEndOfLife",
+          "ChangeType": "Addition",
+          "Description": "Added the `opticalPhotoConductorNearEndOfLife` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "opticalPhotoConductorLifeOver",
+          "ChangeType": "Addition",
+          "Description": "Added the `opticalPhotoConductorLifeOver` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "developerLow",
+          "ChangeType": "Addition",
+          "Description": "Added the `developerLow` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "developerEmpty",
+          "ChangeType": "Addition",
+          "Description": "Added the `developerEmpty` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "interpreterResourceUnavailable",
+          "ChangeType": "Addition",
+          "Description": "Added the `interpreterResourceUnavailable` member to the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "disconnected",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `disconnected` member from the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "queueFull",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `queueFull` member from the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "outputAlmostFull",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `outputAlmostFull` member from the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        },
+        {
+          "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+          "ApiChange": "Member",
+          "ChangedApiName": "unknownFutureValue",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `unknownFutureValue` member from the **printerProcessingStateDetail** enumeration.",
+          "Target": "printerProcessingStateDetail"
+        }
+      ],
+      "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-01-21T00:00:00",
+      "WorkloadArea": "Devices and apps ",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "76cd4ab2-7d93-48a2-844d-f991b9c239e4",
+          "ApiChange": "Property",
+          "ChangedApiName": "printer",
+          "ChangeType": "Addition",
+          "Description": "Added the **hasPhysicalDevice** property to the [printer](https://docs.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-beta) resource.",
+          "Target": "printer"
+        },
+        {
+          "Id": "76cd4ab2-7d93-48a2-844d-f991b9c239e4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "abort,printJob",
+          "ChangeType": "Addition",
+          "Description": "Added the [abort](https://docs.microsoft.com/en-us/graph/api/printjob-abort?view=graph-rest-beta) action to the [printJob](https://docs.microsoft.com/en-us/graph/api/resources/printjob?view=graph-rest-beta) resource.",
+          "Target": "abort,printJob"
+        },
+        {
+          "Id": "76cd4ab2-7d93-48a2-844d-f991b9c239e4",
+          "ApiChange": "Property",
+          "ChangedApiName": "redirect",
+          "ChangeType": "Addition",
+          "Description": "Added the configuration property to the [redirect](https://docs.microsoft.com/en-us/graph/api/printjob-redirect?view=graph-rest-beta) action on the [printJob](https://docs.microsoft.com/en-us/graph/api/resources/printjob?view=graph-rest-beta) resource.",
+          "Target": "redirect"
+        }
+      ],
+      "Id": "76cd4ab2-7d93-48a2-844d-f991b9c239e4",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-02T00:00:00",
+      "WorkloadArea": "Devices and apps ",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3a4e1e60-0477-4cda-9665-3a880ab0e927",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Get printUsageSummaryByPrinter,getPrinterArchivedPrintJobs,List dailyPrintUsageSummariesByPrinter,List monthlyPrintUsageSummariesByPrinter,Get printUsageSummaryByUser,getUserArchivedPrintJobs,getGroupArchivedPrintJobs,List dailyPrintUsageSummariesByUser,List monthlyPrintUsageSummariesByUser",
+          "ChangeType": "Change",
+          "Description": "Added new permission requirements to: [Get printUsageSummaryByPrinter](https://docs.microsoft.com/en-us/graph/api/printusagesummarybyprinter-get?view=graph-rest-beta), [getPrinterArchivedPrintJobs](https://docs.microsoft.com/en-us/graph/api/reports-getprinterarchivedprintjobs?view=graph-rest-beta), [List dailyPrintUsageSummariesByPrinter](https://docs.microsoft.com/en-us/graph/api/reportroot-list-dailyprintusagesummariesbyprinter?view=graph-rest-beta), [List monthlyPrintUsageSummariesByPrinter](https://docs.microsoft.com/en-us/graph/api/reportroot-list-monthlyprintusagesummariesbyprinter?view=graph-rest-beta), [Get printUsageSummaryByUser](https://docs.microsoft.com/en-us/graph/api/printusagesummarybyuser-get?view=graph-rest-beta), [getUserArchivedPrintJobs](https://docs.microsoft.com/en-us/graph/api/reports-getuserarchivedprintjobs?view=graph-rest-beta), [getGroupArchivedPrintJobs](https://docs.microsoft.com/en-us/graph/api/reports-getgrouparchivedprintjobs?view=graph-rest-beta), [List dailyPrintUsageSummariesByUser](https://docs.microsoft.com/en-us/graph/api/reportroot-list-dailyprintusagesummariesbyuser?view=graph-rest-beta), [List monthlyPrintUsageSummariesByUser](https://docs.microsoft.com/en-us/graph/api/reportroot-list-monthlyprintusagesummariesbyuser?view=graph-rest-beta)",
+          "Target": "Get printUsageSummaryByPrinter,getPrinterArchivedPrintJobs,List dailyPrintUsageSummariesByPrinter,List monthlyPrintUsageSummariesByPrinter,Get printUsageSummaryByUser,getUserArchivedPrintJobs,getGroupArchivedPrintJobs,List dailyPrintUsageSummariesByUser,List monthlyPrintUsageSummariesByUser"
+        },
+        {
+          "Id": "3a4e1e60-0477-4cda-9665-3a880ab0e927",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedUsers",
+          "ChangeType": "Change",
+          "Description": "Removed the **allowedUsers** property on the [printer](https://docs.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-beta) resource.",
+          "Target": "printer"
+        },
+        {
+          "Id": "3a4e1e60-0477-4cda-9665-3a880ab0e927",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedGroups",
+          "ChangeType": "Change",
+          "Description": "Removed the **allowedGroups** property on the [printer](https://docs.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-beta) resource.",
+          "Target": "printer"
+        }
+      ],
+      "Id": "3a4e1e60-0477-4cda-9665-3a880ab0e927",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-10-16T00:00:00",
+      "WorkloadArea": "Devices and apps ",
+      "SubArea": "Cloud printing"
+    }
+  ]
+}

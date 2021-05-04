@@ -3,7 +3,7 @@ title: "timeSlot resource type"
 description: "A time period."
 localization_priority: Normal
 doc_type: resourcePageType
-author: "angelgolfer-ms"
+author: "vrod9429"
 ms.prod: "outlook"
 ---
 
@@ -52,3 +52,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

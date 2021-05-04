@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Shared
 localization_priority: Normal
@@ -67,3 +66,4 @@ For more information about the facets on a **driveItem**, see [**driveItem**](dr
   ],
   "tocPath": "Facets/Shared"
 } -->
+

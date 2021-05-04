@@ -3,8 +3,8 @@ title: "provisionedPlan resource type"
 description: "The **provisionedPlans** property of the user entity and the organization entity is a collection of **provisionedPlan**."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: ""
+ms.prod: "directory-management"
+author: "Jumaodhiss"
 ---
 
 # provisionedPlan resource type
@@ -56,3 +56,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

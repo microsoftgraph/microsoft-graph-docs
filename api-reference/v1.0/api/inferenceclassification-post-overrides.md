@@ -2,7 +2,7 @@
 title: "Create inferenceClassificationOverride"
 description: "Create an override for a sender identified by an SMTP address. Future messages from that SMTP address will be consistently classified "
 localization_priority: Normal
-author: ""
+author: "abheek-das"
 ms.prod: ""
 doc_type: apiPageType
 ---
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Create an override for a sender identified by an SMTP address. Future messages from that SMTP address will be consistently classified 
+Create an override for a sender identified by an SMTP address. Future messages from that SMTP address will be consistently classified
 as specified in the override.
 
 **Note**
@@ -89,7 +89,7 @@ Content-type: application/json
 
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -120,3 +120,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

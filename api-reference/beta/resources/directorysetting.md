@@ -3,7 +3,7 @@ title: "directorySetting resource type"
 description: "Directory settings can be created based on the available directorySettingTemplates, and changed from their preset defaults."
 localization_priority: Normal
 author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
@@ -73,3 +73,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

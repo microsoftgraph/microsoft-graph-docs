@@ -2,7 +2,7 @@
 title: "Delete inferenceClassificationOverride"
 description: "Delete an override specified by its ID."
 localization_priority: Normal
-author: ""
+author: "abheek-das"
 ms.prod: ""
 doc_type: apiPageType
 ---
@@ -71,7 +71,7 @@ DELETE https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides/98f
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -91,3 +91,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

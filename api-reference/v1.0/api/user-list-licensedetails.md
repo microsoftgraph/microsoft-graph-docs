@@ -1,7 +1,7 @@
 ---
 title: "List licenseDetails"
 description: "Retrieve a list of licenseDetails objects."
-author: "krbain"
+author: "jpettere"
 localization_priority: Normal
 ms.prod: "users"
 doc_type: apiPageType
@@ -29,7 +29,7 @@ GET /me/licenseDetails
 GET /users/{id}/licenseDetails
 ```
 ## Optional query parameters
-This method does **not** support [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters).
+This method supports the `$select` query parameter. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 | Name      |Description|
@@ -73,7 +73,7 @@ GET https://graph.microsoft.com/v1.0/me/licenseDetails
 ---
 
 ##### Response
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -115,3 +115,4 @@ Content-length: 389
   "suppressions": [
   ]
 }-->
+

@@ -1,6 +1,5 @@
 ---
 author: daspek
-ms.author: dspektor
 title: itemActivityStat resource type
 description: The ItemActivityStat object provides information about activities that took place on an item.
 localization_priority: Normal
@@ -72,3 +71,4 @@ The **itemActivityStat** resource provides information about activities that too
   "suppressions": []
 }
 -->
+

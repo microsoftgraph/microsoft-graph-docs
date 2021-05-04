@@ -3,7 +3,7 @@ title: "accessPackageSubject resource type"
 description: "In Azure AD entitlement management, a subject of an access package assignment."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
 
@@ -40,7 +40,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.accessPackageSubject",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
@@ -64,3 +63,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

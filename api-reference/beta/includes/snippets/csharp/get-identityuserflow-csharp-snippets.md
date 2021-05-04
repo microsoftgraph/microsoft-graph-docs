@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var identityUserFlow = await graphClient.Identity.UserFlows["B2C_1_Pol1"]
+var identityUserFlow = await graphClient.Identity.UserFlows["{identityUserFlow-id}"]
 	.Request()
 	.GetAsync();
 

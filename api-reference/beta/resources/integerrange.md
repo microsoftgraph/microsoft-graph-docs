@@ -18,8 +18,8 @@ Represents an inclusive range of integers described by two Int64 boundaries.
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|minimum|Int64|The inclusive lower bound of the integer range.|
-|maximum|Int64|The inclusive upper bound of the integer range.|
+|start|Int64|The inclusive lower bound of the integer range.|
+|end|Int64|The inclusive upper bound of the integer range.|
 
 ## JSON representation
 
@@ -35,8 +35,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-    "minimum": 12345,
-    "maximum": 12345
+    "start": 12345,
+    "end": 12345
 }
 ```
 
@@ -49,3 +49,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

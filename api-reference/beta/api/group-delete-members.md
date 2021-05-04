@@ -1,6 +1,6 @@
 ---
 title: "Remove member"
-description: "Use this API to remove a member from an Office 365 group, a security group, or a mail-enabled security group through the **members** navigation property. You can remove users or other groups."
+description: "Use this API to remove a member from a Microsoft 365 group, a security group, or a mail-enabled security group through the **members** navigation property. You can remove users or other groups."
 localization_priority: Normal
 author: "yyuank"
 ms.prod: "groups"
@@ -51,7 +51,7 @@ The following is an example of the request.
   "name": "delete_member_from_group"
 }-->
 ```http
-DELETE https://graph.microsoft.com/beta/groups/{id}/members/{id}/$ref
+DELETE https://graph.microsoft.com/beta/groups/{group-id}/members/{directory-object-id}/$ref
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-member-from-group-csharp-snippets.md)]
@@ -65,13 +65,17 @@ DELETE https://graph.microsoft.com/beta/groups/{id}/members/{id}/$ref
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-member-from-group-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-member-from-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
-In the request, specify the `id` of the directory object you want to remove after the $ref segment.
+In the request, specify the identifier of the group and the identifier of the directory object you want to remove.
 
 #### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -94,3 +98,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

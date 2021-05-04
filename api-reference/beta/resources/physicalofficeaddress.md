@@ -3,7 +3,7 @@ title: "physicalOfficeAddress resource type"
 description: "Represents the business address of a resource such as a contact or event."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 author: "dkershaw10"
 ---
 
@@ -57,3 +57,5 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

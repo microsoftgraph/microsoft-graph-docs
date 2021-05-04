@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SiteCollection
 localization_priority: Normal
@@ -55,3 +54,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": "Facets/SiteCollection"
 }-->
+

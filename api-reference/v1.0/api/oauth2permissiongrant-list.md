@@ -3,8 +3,8 @@ title: "List oAuth2PermissionGrants"
 description: "Retrieve a list of oauth2PermissionGrant objects, representing delegated permission grants."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
-author: "davidmu1"
+ms.prod: "identity-and-sign-in"
+author: "psignoret"
 ---
 
 # List oauth2PermissionGrants
@@ -12,6 +12,9 @@ author: "davidmu1"
 Namespace: microsoft.graph
 
 Retrieve a list of [oAuth2PermissionGrant](../resources/oauth2permissiongrant.md) objects, representing delegated permissions which have been granted for client applications to access APIs on behalf of signed-in users.
+
+> [!NOTE]
+> This request might have replication delays for delegated permission grants that were recently created, updated, or deleted. This delay will be minimized if a filter on `clientId` is specified.
 
 ## Permissions
 
@@ -37,9 +40,9 @@ This method supports the [OData query parameters](/graph/query_parameters) to he
 
 ## Request headers
 
-| Name | Description |
-|:----------|:----------|
-| Authorization  | string  | Bearer {token}. Required. |
+| Name          | Description               |
+|:--------------|:--------------------------|
+| Authorization | Bearer {token}. Required. |
 
 ## Request body
 
@@ -84,7 +87,7 @@ GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants
 
 ### Response
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -125,3 +128,4 @@ Content-Length: 259
   ]
 }
 -->
+

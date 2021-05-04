@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Domains["contoso.com"]
+await graphClient.Domains["{domain-id}"]
 	.Request()
 	.DeleteAsync();
 

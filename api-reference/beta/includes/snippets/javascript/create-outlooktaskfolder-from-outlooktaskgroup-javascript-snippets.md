@@ -10,12 +10,12 @@ const options = {
 
 const client = Client.init(options);
 
-const taskfolders = {
-  name: "Cooking"
+const outlookTaskFolder = {
+  name: 'Cooking'
 };
 
-let res = await client.api('/me/taskgroups/AAMkADIyAAAhrbe-AAA'/taskfolders')
+await client.api('/me/outlook/taskgroups/AAMkADIyAAAhrbe-AAA=/taskfolders')
 	.version('beta')
-	.post(taskfolders);
+	.post(outlookTaskFolder);
 
 ```

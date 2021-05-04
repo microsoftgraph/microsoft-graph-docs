@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: List Files Shared With Me
 localization_priority: Priority
@@ -109,6 +108,10 @@ To access the shared DriveItem resource, you will need to make a request using t
 GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
 ```
 
+By default, **sharedWithMe** return items shared within your own tenant. To include items shared from external tenants, append `?allowexternal=true` to the GET request.
+
+
+
 <!-- {
   "type": "#page.annotation",
   "description": "List the items shared with the owner of a drive.",
@@ -118,3 +121,4 @@ GET /drives/{remoteItem-driveId}/items/{remoteItem-id}
   "suppressions": [
   ]
 } -->
+

@@ -3,7 +3,7 @@ title: "webApplication resource type"
 description: "Specifies settings for a web application."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 author: "sureshja"
 ---
 
@@ -56,3 +56,4 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+

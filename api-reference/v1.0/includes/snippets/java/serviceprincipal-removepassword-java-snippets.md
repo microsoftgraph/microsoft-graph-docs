@@ -4,12 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-String keyId = "f0b0b335-1d71-4883-8f98-567911bfdca6";
+UUID keyId = UUID.fromString("f0b0b335-1d71-4883-8f98-567911bfdca6");
 
 graphClient.servicePrincipals("{id}")
-	.removePassword(keyId)
+	.removePassword(ServicePrincipalRemovePasswordParameterSet
+		.newBuilder()
+		.withKeyId(keyId)
+		.build())
 	.buildRequest()
 	.post();
 

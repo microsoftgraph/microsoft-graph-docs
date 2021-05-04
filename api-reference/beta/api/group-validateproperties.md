@@ -1,6 +1,6 @@
 ---
 title: "group: validateProperties"
-description: "Validate if an Office 365 group's display name or mail nickname complies with naming policies."
+description: "Validate if a Microsoft 365 group's display name or mail nickname complies with naming policies."
 localization_priority: Normal
 author: "yyuank"
 ms.prod: "groups"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Validate if an Office 365 group's display name or mail nickname complies with naming policies. Clients can use the API to determine if a display name or mail nickname is valid before trying to **update** an Office 365 group. For validating properties before creating a group, use the [validateProperties function](directoryobject-validateproperties.md) for directory objects.
+Validate if a Microsoft 365 group's display name or mail nickname complies with naming policies. Clients can use the API to determine if a display name or mail nickname is valid before trying to **update** a Microsoft 365 group. For validating properties before creating a group, use the [validateProperties function](directoryobject-validateproperties.md) for directory objects.
 
 The following validations are performed for the display name and mail nickname properties: 
 1. Validate the prefix and suffix naming policy
@@ -93,6 +93,10 @@ Content-length: 132
 [!INCLUDE [sample-code](../includes/snippets/objc/group-validateproperties-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/group-validateproperties-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -155,3 +159,5 @@ Content-length: 223
   "suppressions": [
   ]
 }-->
+
+

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/security/secureScoreControlProfiles/{id}')
+let secureScoreControlProfile = await client.api('/security/secureScoreControlProfiles/{id}')
 	.get();
 
 ```

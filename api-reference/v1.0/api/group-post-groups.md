@@ -13,14 +13,14 @@ Namespace: microsoft.graph
 
 Create a new group as specified in the request body. You can create the following types of groups:
 
-* Office 365 group (unified group)
+* Microsoft 365 group (unified group)
 * Security group
 
 This operation returns by default only a subset of the properties for each group. These default properties are noted in the [Properties](../resources/group.md#properties) section.
 
 To get properties that are _not_ returned by default, do a [GET operation](group-get.md) and specify the properties in a `$select` OData query option.
 
-> **Note**: Although Microsoft Teams is built on Office 365 groups, you can't currently create a team via this API. You can use the other group APIs to manage a team that has been created in the Microsoft Teams UI.
+> **Note**: Although Microsoft Teams is built on Microsoft 365 groups, you can't currently create a team via this API. You can use the other group APIs to manage a team that has been created in the Microsoft Teams UI.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -51,11 +51,11 @@ The following table shows the properties of the [group](../resources/group.md) r
 | displayName | string | The name to display in the address book for the group. Maximum length: 256 characters. Required. |
 | description | string | A description for the group. Max. length: 1024 characters. Optional. |
 | mailEnabled | boolean | Set to **true** for mail-enabled groups. Required. |
-| mailNickname | string | The mail alias for the group. Max. length: 64 characters. Required. |
-| securityEnabled | boolean | Set to **true** for security-enabled groups, including Office 365 groups. Required. |
+| mailNickname | string | The mail alias for the group. Max. length: 64 characters. These characters cannot be used in the mailNickName: `@()\[]";:.<>,SPACE`. Required. |
+| securityEnabled | boolean | Set to **true** for security-enabled groups, including Microsoft 365 groups. Required. |
 | owners | string collection | This property represents the owners for the group at creation time. Optional. |
 | members | string collection | This property represents the members for the group at creation time. Optional. |
-|visibility|String|Specifies the visibility of an Office 365 group. Possible values are: `Private`, `Public`, `HiddenMembership`, or empty (which is interpreted as `Public`).|
+|visibility|String|Specifies the visibility of a Microsoft 365 group. Possible values are: `Private`, `Public`, `HiddenMembership`, or empty (which is interpreted as `Public`).|
 
 > **Note:** Groups created using the Microsoft Azure portal always have **securityEnabled** initially set to `true`.
 
@@ -63,7 +63,7 @@ Specify other writable properties as necessary for your group. For more informat
 
 >**Note:** Creating a group using the Group.Create application permission without specifying owners will create the group anonymously and the group will not be modifiable. You can use the `POST` operation and add owners to the group while creating it to specify owners who can modify the group.
 
-> Creating an Office 365 group programmatically with an app-only context and without specifying owners will create the group anonymously. Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.  
+> Creating a Microsoft 365 group programmatically with an app-only context and without specifying owners will create the group anonymously. Doing so can result in the associated SharePoint Online site not being created automatically until further manual action is taken.  
 
 
 ### groupTypes options
@@ -72,7 +72,7 @@ Use the **groupTypes** property to control the type of group and its membership,
 
 | Type of group | Assigned membership | Dynamic membership |
 |:--------------|:------------------------|:---------------|
-| Office 365 (aka unified group)| `["Unified"]` | `["Unified","DynamicMembership"]`
+| Microsoft 365 (aka unified group)| `["Unified"]` | `["Unified","DynamicMembership"]`
 | Dynamic | `[]` (_null_) | `["DynamicMembership"]`|
 
 ## Response
@@ -80,9 +80,9 @@ If successful, this method returns a `201 Created` response code and a [group](.
 
 ## Examples
 
-### Example 1: Create an Office 365 group
+### Example 1: Create a Microsoft 365 group
 
-The following example creates an Office 365 group.
+The following example creates a Microsoft 365 group.
 
 #### Request
 
@@ -174,7 +174,7 @@ Content-type: application/json
 
 ### Example 2: Create a group with owners and members
 
-The following example creates an Office 365 group with an owner and members specified. Note that a maximum of 20 relationships, such as owners and members, can be added as part of group creation. You can subsequently add more members by using the [add member](group-post-members.md) API or JSON batching.
+The following example creates a Security group with an owner and members specified. Note that a maximum of 20 relationships, such as owners and members, can be added as part of group creation. You can subsequently add more members by using the [add member](group-post-members.md) API or JSON batching.
 
 #### Request
 
@@ -192,11 +192,10 @@ Content-Type: application/json
   "description": "Group with designated owner and members",
   "displayName": "Operations group",
   "groupTypes": [
-    "Unified"
   ],
-  "mailEnabled": true,
+  "mailEnabled": false,
   "mailNickname": "operations2019",
-  "securityEnabled": false,
+  "securityEnabled": true,
   "owners@odata.bind": [
     "https://graph.microsoft.com/v1.0/users/26be1845-4119-4801-a799-aea79d09f1a2"
   ],
@@ -283,3 +282,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

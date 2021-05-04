@@ -1,8 +1,10 @@
-```typescript
-    // GET https://graph.microsoft.com/v1.0/me/messages?$expand=attachments
+<!-- markdownlint-disable MD041 -->
 
-    let messageId = "<guid>";
-    let message = await client.api("/me/messages/${messageId}")
-        .expand("attachments")
-        .get();  
+```typescript
+// GET https://graph.microsoft.com/v1.0/me/messages?$expand=attachments
+
+let messageId = 'AQMkAGUy..';
+let message = await client.api(`/me/messages/${messageId}`)
+  .expand('attachments')
+  .get();
 ```

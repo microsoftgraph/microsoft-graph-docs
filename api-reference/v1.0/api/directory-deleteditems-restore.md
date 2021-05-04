@@ -3,7 +3,7 @@ title: "Restore deleted item"
 description: "Restores a recently deleted item from deleted items. "
 author: "keylimesoda"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Restores a recently deleted item from [deleted items](../resources/directory.md). 
 
-Currently, deleted items functionality is only supported for the [application](../resources/application.md), [group](../resources/group.md) and [user](../resources/user.md) resources. If an item was accidentally deleted, you can fully restore the item.
+Currently, restore deleted items functionality is only supported for the [application](../resources/application.md), [group](../resources/group.md) and [user](../resources/user.md) resources. If an item was accidentally deleted, you can fully restore the item. This is not applicable to Security groups, which are deleted permanently.
 
 A recently deleted item will remain available for up to 30 days. After 30 days, the item is permanently deleted.
 
@@ -95,7 +95,7 @@ POST https://graph.microsoft.com/v1.0/directory/deletedItems/{object-id}/restore
 ---
 
 ### Response
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -130,3 +130,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

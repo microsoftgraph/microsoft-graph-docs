@@ -13,11 +13,10 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphPersonWebsite *personWebsite = [[MSGraphPersonWebsite alloc] init];
 NSMutableArray *categoriesList = [[NSMutableArray alloc] init];
-[categoriesList addObject: @"categories-value"];
+[categoriesList addObject: @"football"];
 [personWebsite setCategories:categoriesList];
-[personWebsite setDescription:@"description-value"];
-[personWebsite setDisplayName:@"displayName-value"];
-[personWebsite setWebUrl:@"webUrl-value"];
+[personWebsite setDisplayName:@"Lyn Damer"];
+[personWebsite setWebUrl:@"www.lyndamer.no"];
 
 NSError *error;
 NSData *personWebsiteData = [personWebsite getSerializedDataWithError:&error];

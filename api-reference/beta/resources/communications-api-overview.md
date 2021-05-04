@@ -50,8 +50,13 @@ The following table lists some of the common uses for the communications API.
 | presence | [presence properties](/graph/api/resources/presence#properties) |
 | callRecord | [callRecord properties](/graph/api/resources/callrecords-callrecord#properties) |
 
+## What's new
+Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.
+
 ## See also
 
 - [Communications API samples](https://github.com/microsoftgraph/microsoft-graph-comms-samples/)
 - [Communication Signaling SDK](https://www.nuget.org/packages/Microsoft.Graph.Communications.Calls/1.0.0-prerelease.494)
 - [Communication Media SDK](https://www.nuget.org/packages/Microsoft.Graph.Communications.Calls.Media/1.0.0-prerelease.494)
+
+

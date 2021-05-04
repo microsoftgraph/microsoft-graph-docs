@@ -3,7 +3,7 @@ title: "extensionProperty resource type"
 description: "Represents a directory extension"
 localization_priority: Normal
 author: "keylimesoda"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: "resourcePageType"
 ---
 
@@ -13,12 +13,12 @@ Namespace: microsoft.graph
 
 Represents a directory extension that can be used to add a custom property to directory objects without requiring an external data store. For example, if an organization has a line of business (LOB) application that requires a Skype ID for each user in the directory, Microsoft Graph can be used to register a new property named skypeId on the directory’s User object, and then write a value to the new property for a specific user.
 
-Extensions can be added to [user](user.md), [group](group.md), [organization](organization.md), [device](device.md), [application](application.md) resources.
+Extensions can be added to [user](user.md), [group](group.md), [organization](organization.md), [device](device.md), [application](application.md) resources. Only 100 extension values, across *all* types and *all* applications, can be written to any single Azure AD resource.
 
 > [!IMPORTANT]
 > Azure AD schema extensions described here are available in Microsoft Graph for backwards compatibility reasons only.
 > It allows you to use Microsoft Graph to continue to manage extension properties added through Azure AD Graph or 
-> [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-azure-ad-connect).
+> [Azure AD Connect](/azure/active-directory/hybrid/whatis-azure-ad-connect).
 > For new custom extensions, we recommend that you use Microsoft Graph schema extensions for [adding custom data to resources](/graph/extensibility-overview).
 
 ## Methods
@@ -53,7 +53,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.extensionProperty",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

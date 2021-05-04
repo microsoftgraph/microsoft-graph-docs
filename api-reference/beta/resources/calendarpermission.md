@@ -40,7 +40,7 @@ Once a sharee or delegate has been set up for a calendar, you can [update](../ap
 
 ### calendarRoleType values
 
-| Values        | Description |
+| Member        | Description |
 |:--------------|:------------|
 | none | Calendar is not shared with the user. |
 | freeBusyRead | User is a sharee who can view free/busy status of the owner on the calendar. |
@@ -82,3 +82,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

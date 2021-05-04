@@ -13,14 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Information about a participant in a meeting.
+Contains information about a participant in a meeting.
 
 ## Properties
 
-| Property       | Type                          | Description                              |
-|:---------------|:------------------------------|:-----------------------------------------|
-| identity       | [identitySet](identityset.md) | Identity information of the participant. |
-| upn            | String                        | User principal name of the participant.  |
+| Property | Type                          | Description                                                                        |
+| :------- | :---------------------------- | :--------------------------------------------------------------------------------- |
+| identity | [identitySet](identityset.md) | Identity information of the participant.                                           |
+| upn      | String                        | User principal name of the participant.                                            |
+| role     | onlineMeetingRole             | Specifies the participant's role in the meeting.  Possible values are `attendee`, `presenter`, `producer`, and `unknownFutureValue`.|
 
 ## JSON representation
 
@@ -36,7 +37,8 @@ The following is a JSON representation of the resource.
 ```json
 {
   "identity": {"@odata.type": "#microsoft.graph.identitySet"},
-  "upn": "String"
+  "upn": "String",
+  "role": "String"
 }
 ```
 
@@ -52,3 +54,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

@@ -42,11 +42,23 @@ GET /security/alerts?$filter={property} eq '{property-value}'&{property} eq '{pr
 This method supports the following [OData query parameters](/graph/query-parameters) to help customize the response:
 
 - `$count`
-- `$filter`
 - `$orderby`
 - `$select`
 - `$skip`
-- `$top` will return the aggregated top results from each security API provider.
+- `$top` - Returns the aggregated top results from each security API provider.
+- `$filter`
+
+The following table lists the `$filter` keywords by each vendor name.
+
+| Vendor name      |$filter keyword|
+|:----------|:----------|
+| Azure Advanced Threat Protection | Azure Advanced Threat Protection | 
+| Azure Security Center | ASC |
+| Microsoft Cloud App Security | MCAS |
+| Azure Active Directory Identity Protection | IPC |
+| Azure Sentinel | Azure Sentinel |
+| Microsoft Defender Advanced Threat Protection | Microsoft Defender ATP |
+| Office 365 |  Not currently supported. |
 
 To return an alternative property set, use the OData `$select` query parameter to specify the set of **alert** properties that you want.  For example, to return the **assignedTo**, **category**, and **severity** properties, add the following to your query: `$select=assignedTo,category,severity`.
 
@@ -93,6 +105,10 @@ GET https://graph.microsoft.com/beta/security/alerts
 [!INCLUDE [sample-code](../includes/snippets/objc/get-alerts-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-alerts-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -100,7 +116,7 @@ GET https://graph.microsoft.com/beta/security/alerts
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -139,3 +155,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

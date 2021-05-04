@@ -11,7 +11,7 @@ var passwordCredential = new PasswordCredential
 	DisplayName = "Password friendly name"
 };
 
-await graphClient.ServicePrincipals["{id}"]
+await graphClient.ServicePrincipals["{servicePrincipal-id}"]
 	.AddPassword(passwordCredential)
 	.Request()
 	.PostAsync();

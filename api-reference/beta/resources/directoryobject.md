@@ -3,7 +3,7 @@ title: "directoryObject resource type"
 description: "Represents an Azure Active Directory object. The **directoryObject** type is the base type for many other directory entity types."
 localization_priority: Priority
 author: "keylimesoda"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
@@ -29,14 +29,14 @@ This resource supports:
 |[getMemberGroups](../api/directoryobject-getmembergroups.md)|String collection|Return all the groups that the user, group, or directory object is a member of. The check is transitive.|
 |[getMemberObjects](../api/directoryobject-getmemberobjects.md)|String collection| Return all of the groups and directory roles that the user, group, or directory object is a member of. The check is transitive. |
 |[getByIds](../api/directoryobject-getbyids.md) | [directoryObject](directoryobject.md) collection | Get a set of directory objects based on a set of supplied ids. |
-|[validateProperties](../api/directoryobject-validateproperties.md)|Json| Validate an Office 365 group's display name or mail nickname complies with naming policies. |
+|[validateProperties](../api/directoryobject-validateproperties.md)|Json| Validate a Microsoft 365 group's display name or mail nickname complies with naming policies. |
 |[delta](../api/directoryobject-delta.md)|[directoryObject](directoryobject.md) collection| Get incremental changes for directory objects. Supports filtering by derrived type. |
 
 ## Properties
 
 | Property   | Type |Description|
 |:---------------|:--------|:----------|
-|id|String|A Guid that is the unique identifier for the object; for example, 12345678-9abc-def0-1234-56789abcde12. Key. Not nullable. Read-only.|
+|id|String|The unique identifier for the object. For example, 12345678-9abc-def0-1234-56789abcde. The value of the **id** property is often but not exclusively in the form of a GUID; treat it as an opaque identifier and do not rely on it being a GUID. Key. Not nullable. Read-only.|
 
 ## Relationships
 
@@ -75,3 +75,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

@@ -3,7 +3,7 @@ title: "windows10CompliancePolicy resource type"
 description: "This class contains compliance settings for Windows 10."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -70,6 +70,7 @@ Inherits from [deviceCompliancePolicy](../resources/intune-shared-devicecomplian
 |deviceThreatProtectionRequiredSecurityLevel|[deviceThreatProtectionLevel](../resources/intune-deviceconfig-devicethreatprotectionlevel.md)|Require Device Threat Protection minimum risk level to report noncompliance. Possible values are: `unavailable`, `secured`, `low`, `medium`, `high`, `notSet`.|
 |configurationManagerComplianceRequired|Boolean|Require to consider SCCM Compliance state into consideration for Intune Compliance State.|
 |tpmRequired|Boolean|Require Trusted Platform Module(TPM) to be present.|
+|deviceCompliancePolicyScript|[deviceCompliancePolicyScript](../resources/intune-deviceconfig-devicecompliancepolicyscript.md)|Not yet documented|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -139,9 +140,15 @@ Here is a JSON representation of the resource.
   "deviceThreatProtectionEnabled": true,
   "deviceThreatProtectionRequiredSecurityLevel": "String",
   "configurationManagerComplianceRequired": true,
-  "tpmRequired": true
+  "tpmRequired": true,
+  "deviceCompliancePolicyScript": {
+    "@odata.type": "microsoft.graph.deviceCompliancePolicyScript",
+    "deviceComplianceScriptId": "String",
+    "rulesContent": "binary"
+  }
 }
 ```
+
 
 
 

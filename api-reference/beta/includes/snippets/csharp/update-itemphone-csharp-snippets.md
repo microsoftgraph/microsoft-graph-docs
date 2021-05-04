@@ -8,12 +8,10 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var itemPhone = new ItemPhone
 {
-	DisplayName = "displayName-value",
-	Type = PhoneType.Home,
-	Number = "number-value"
+	Type = PhoneType.Other
 };
 
-await graphClient.Me.Profile.Phones["{id}"]
+await graphClient.Users["{user-id}"].Profile.Phones["{itemPhone-id}"]
 	.Request()
 	.UpdateAsync(itemPhone);
 

@@ -59,13 +59,15 @@ GET https://graph.microsoft.com/v1.0/reports
 ```
 
 <!--{"blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.reportRoot"}-->
-```json
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
 }
 ```
+
+
 
 
 

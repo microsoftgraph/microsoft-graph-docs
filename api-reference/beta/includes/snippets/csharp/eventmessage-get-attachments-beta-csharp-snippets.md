@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var attachments = await graphClient.Me.Messages["{id}"].Attachments
+var attachments = await graphClient.Me.Messages["{message-id}"].Attachments
 	.Request()
 	.GetAsync();
 

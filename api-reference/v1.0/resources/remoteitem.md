@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: RemoteItem
 localization_priority: Normal
@@ -87,3 +86,4 @@ For more information about the facets on a **driveItem**, see [driveItem](drivei
   "section": "documentation",
   "tocPath": "Facets/RemoteItem"
 } -->
+

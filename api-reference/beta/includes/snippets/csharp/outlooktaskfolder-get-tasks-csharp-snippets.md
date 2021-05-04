@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var tasks = await graphClient.Me.Outlook.TaskFolders["AAMkADIyAAAhrbPWAAA="].Tasks
+var tasks = await graphClient.Me.Outlook.TaskFolders["{outlookTaskFolder-id}"].Tasks
 	.Request()
 	.GetAsync();
 

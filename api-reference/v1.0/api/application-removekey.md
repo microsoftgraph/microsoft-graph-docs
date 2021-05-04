@@ -2,8 +2,8 @@
 title: "application: removeKey"
 description: "Remove a key credential from an application"
 localization_priority: Normal
-author: "davidmu1"
-ms.prod: "microsoft-identity-platform"
+author: "sureshja"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
@@ -123,3 +123,4 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+

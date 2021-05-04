@@ -2,7 +2,7 @@
 title: "user: delta"
 description: "Get newly created, updated, or deleted users without having to perform a full read of the entire user collection."
 localization_priority: Priority
-author: "krbain"
+author: "jpettere"
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -136,7 +136,7 @@ GET https://graph.microsoft.com/v1.0/users/delta
 
 The following is an example of the response when using `deltaLink` obtained from the query initialization.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -155,18 +155,18 @@ Content-type: application/json
   "value": [
     {
       "businessPhones": [
-          "businessPhones-value"
+          "+1 425 555 0109"
       ],
-      "displayName": "displayName-value",
-      "givenName": "givenName-value",
-      "jobTitle": "jobTitle-value",
-      "mail": "mail-value",
-      "mobilePhone": "mobilePhone-value",
-      "officeLocation": "officeLocation-value",
-      "preferredLanguage": "preferredLanguage-value",
-      "surname": "surname-value",
-      "userPrincipalName": "userPrincipalName-value",
-      "id": "id-value"
+      "displayName": "Adele Vance",
+      "givenName": "Adele",
+      "jobTitle": "Retail Manager",
+      "mail": "AdeleV@contoso.onmicrosoft.com",
+      "mobilePhone": "+1 425 555 0109",
+      "officeLocation": "18/2111",
+      "preferredLanguage": "en-US",
+      "surname": "Vance",
+      "userPrincipalName": "AdeleV@contoso.onmicrosoft.com",
+      "id": "87d349ed-44d7-43e1-9a83-5f2406dee5bd"
     }
   ]
 }
@@ -225,9 +225,9 @@ Content-type: application/json
   "@odata.nextLink":"https://graph.microsoft.com/v1.0/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
   "value": [
     {
-      "displayName": "displayName-value",
-      "jobTitle": "jobTitle-value",
-      "mobilePhone": null
+      "displayName": "Adele Vance",
+      "jobTitle": "Retail Manager",
+      "mobilePhone": "+1 425 555 0109"
     }
   ]
 }
@@ -288,8 +288,8 @@ Content-type: application/json
   "@odata.nextLink":"https://graph.microsoft.com/v1.0/users/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
   "value": [
     {
-      "displayName": "displayName-value",
-      "jobTitle": null
+      "displayName": "Vance Adele",
+      "jobTitle": "Product Marketing Manager"
     }
   ]
 }
@@ -310,3 +310,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

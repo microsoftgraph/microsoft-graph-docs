@@ -3,7 +3,7 @@ title: "deviceManagementExportJob resource type"
 description: "Entity representing a job to export a report"
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -35,6 +35,7 @@ Entity representing a job to export a report
 |select|String collection|Columns selected from the report|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Format of the exported report. Possible values are: `csv`, `pdf`.|
 |snapshotId|String|A snapshot is an identifiable subset of the dataset represented by the ReportName. A sessionId or CachedReportConfiguration id can be used here. If a sessionId is specified, Filter, Select, and OrderBy are applied to the data represented by the sessionId. Filter, Select, and OrderBy cannot be specified together with a CachedReportConfiguration id.|
+|localizationType|[deviceManagementExportJobLocalizationType](../resources/intune-reporting-devicemanagementexportjoblocalizationtype.md)|Configures how the requested export job is localized. Possible values are: `localizedValuesAsAdditionalColumn`, `replaceLocalizableValues`.|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status of the export job. Possible values are: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
 |url|String|Temporary location of the exported report|
 |requestDateTime|DateTimeOffset|Time that the exported report was requested|
@@ -62,12 +63,14 @@ Here is a JSON representation of the resource.
   ],
   "format": "String",
   "snapshotId": "String",
+  "localizationType": "String",
   "status": "String",
   "url": "String",
   "requestDateTime": "String (timestamp)",
   "expirationDateTime": "String (timestamp)"
 }
 ```
+
 
 
 

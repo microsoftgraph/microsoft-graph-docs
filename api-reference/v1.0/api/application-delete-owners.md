@@ -3,7 +3,7 @@ title: "Remove owner"
 description: "Remove an owner from an application."
 author: "sureshja"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: apiPageType
 ---
 
@@ -78,7 +78,7 @@ DELETE https://graph.microsoft.com/v1.0/applications/{id}/owners/{id}/$ref
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -102,3 +102,4 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+

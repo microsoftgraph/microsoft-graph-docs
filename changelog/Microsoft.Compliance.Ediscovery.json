@@ -1,0 +1,530 @@
+{
+	"changelog": [
+		{
+			"ChangeList": [
+				{
+					"Id": "43fe0f3f-3358-11eb-9836-6aeb5ee7dda6",
+					"ApiChange": "Resource",
+					"ChangedApiName": "case",
+					"ChangeType": "Addition",
+					"Description": "Added the [case](https://docs.microsoft.com/en-us/graph/api/resources/case?view=graph-rest-beta) resource type.",
+					"Target": "case"
+				},
+				{
+					"Id": "44007372-3358-11eb-9836-6aeb5ee7dda6",
+					"ApiChange": "Resource",
+					"ChangedApiName": "legalHold",
+					"ChangeType": "Addition",
+					"Description": "Added the [legalHold](https://docs.microsoft.com/en-us/graph/api/resources/legalHold?view=graph-rest-beta) resource type.",
+					"Target": "legalHold"
+				},
+				{
+					"Id": "4402d88b-3358-11eb-9836-6aeb5ee7dda6",
+					"ApiChange": "Resource",
+					"ChangedApiName": "caseOperation",
+					"ChangeType": "Addition",
+					"Description": "Added the [caseOperation](https://docs.microsoft.com/en-us/graph/api/resources/caseOperation?view=graph-rest-beta) resource type.",
+					"Target": "caseOperation"
+				},
+				{
+					"Id": "440538e4-3358-11eb-9836-6aeb5ee7dda6",
+					"ApiChange": "Resource",
+					"ChangedApiName": "caseExportOperation",
+					"ChangeType": "Addition",
+					"Description": "Added the [caseExportOperation](https://docs.microsoft.com/en-us/graph/api/resources/caseExportOperation?view=graph-rest-beta) resource type.",
+					"Target": "caseExportOperation"
+				},
+				{
+					"Id": "440b4ef1-3358-11eb-9836-6aeb5ee7dda6",
+					"ApiChange": "Enum type",
+					"ChangedApiName": "legalHoldStatus",
+					"ChangeType": "Addition",
+					"Description": "Added the **legalHoldStatus** enumeration type.",
+					"Target": "legalHoldStatus"
+				},
+				{
+					"Id": "440db33b-3358-11eb-9836-6aeb5ee7dda6",
+					"ApiChange": "Enum type",
+					"ChangedApiName": "exportOptions",
+					"ChangeType": "Addition",
+					"Description": "Added the **exportOptions** enumeration type.",
+					"Target": "exportOptions"
+				},
+				{
+					"Id": "4410156f-3358-11eb-9836-6aeb5ee7dda6",
+					"ApiChange": "Enum type",
+					"ChangedApiName": "exportFileStructure",
+					"ChangeType": "Addition",
+					"Description": "Added the **exportFileStructure** enumeration type.",
+					"Target": "exportFileStructure"
+				},
+				{
+					"Id": "4412778e-3358-11eb-9836-6aeb5ee7dda6",
+					"ApiChange": "Method",
+					"ChangedApiName": "close",
+					"ChangeType": "Addition",
+					"Description": "Added the [close](https://docs.microsoft.com/en-us/graph/api/case-close?view=graph-rest-beta) method to the [case](https://docs.microsoft.com/en-us/graph/api/resources/case?view=graph-rest-beta) resource.",
+					"Target": "case"
+				},
+				{
+					"Id": "4414da4c-3358-11eb-9836-6aeb5ee7dda6",
+					"ApiChange": "Method",
+					"ChangedApiName": "reopen",
+					"ChangeType": "Addition",
+					"Description": "Added the [reopen](https://docs.microsoft.com/en-us/graph/api/case-reopen?view=graph-rest-beta) method to the [case](https://docs.microsoft.com/en-us/graph/api/resources/case?view=graph-rest-beta) resource.",
+					"Target": "case"
+				},
+				{
+					"Id": "44173b9a-3358-11eb-9836-6aeb5ee7dda6",
+					"ApiChange": "Method",
+					"ChangedApiName": "export",
+					"ChangeType": "Addition",
+					"Description": "Added the [export](https://docs.microsoft.com/en-us/graph/api/reviewSet-export?view=graph-rest-beta) method to the [reviewSet](https://docs.microsoft.com/en-us/graph/api/resources/reviewSet?view=graph-rest-beta) resource.",
+					"Target": "reviewSet"
+				},
+				{
+					"Id": "44199feb-3358-11eb-9836-6aeb5ee7dda6",
+					"ApiChange": "Method",
+					"ChangedApiName": "getDownloadUrl",
+					"ChangeType": "Addition",
+					"Description": "Added the [getDownloadUrl](https://docs.microsoft.com/en-us/graph/api/caseExportOperation-getDownloadUrl?view=graph-rest-beta) method to the [caseExportOperation](https://docs.microsoft.com/en-us/graph/api/resources/caseExportOperation?view=graph-rest-beta) resource.",
+					"Target": "caseExportOperation"
+				},
+				{
+					"Id": "441c007a-3358-11eb-9836-6aeb5ee7dda6",
+					"ApiChange": "Relationship",
+					"ChangedApiName": "cases",
+					"ChangeType": "Deletion",
+					"Description": "Removed the **cases** relationship from [ediscovery](https://docs.microsoft.com/en-us/graph/api/resources/ediscovery?view=graph-rest-beta) resource.",
+					"Target": "ediscovery"
+				},
+				{
+					"Id": "441e636d-3358-11eb-9836-6aeb5ee7dda6",
+					"ApiChange": "Resource",
+					"ChangedApiName": "ediscoveryCase",
+					"ChangeType": "Deletion",
+					"Description": "Removed the **ediscoveryCase** resource type.",
+					"Target": "ediscoveryCase"
+				},
+				{
+					"Id": "4423284c-3358-11eb-9836-6aeb5ee7dda6",
+					"ApiChange": "Parameter",
+					"ChangedApiName": "bindingParameter",
+					"ChangeType": "Change",
+					"Description": "Changed the type of the **bindingParameter** parameter in the [close](https://docs.microsoft.com/en-us/graph/api/ediscoveryCase-close?view=graph-rest-beta) method.",
+					"Target": "close"
+				},
+				{
+					"Id": "44258b33-3358-11eb-9836-6aeb5ee7dda6",
+					"ApiChange": "Parameter",
+					"ChangedApiName": "bindingParameter",
+					"ChangeType": "Change",
+					"Description": "Changed the type of the **bindingParameter** parameter in the [reopen](https://docs.microsoft.com/en-us/graph/api/ediscoveryCase-reopen?view=graph-rest-beta) method.",
+					"Target": "reopen"
+				},
+				{
+					"Id": "7c43819e-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Relationship",
+					"ChangedApiName": "tags",
+					"ChangeType": "Addition",
+					"Description": "Added the **tags** relationship to [case](https://docs.microsoft.com/en-us/graph/api/resources/case?view=graph-rest-beta) resource.",
+					"Target": "case"
+				},
+				{
+					"Id": "7c45e3cf-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Relationship",
+					"ChangedApiName": "sourceCollections",
+					"ChangeType": "Addition",
+					"Description": "Added the **sourceCollections** relationship to [case](https://docs.microsoft.com/en-us/graph/api/resources/case?view=graph-rest-beta) resource.",
+					"Target": "case"
+				},
+				{
+					"Id": "7c4845d9-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Resource",
+					"ChangedApiName": "sourceCollection",
+					"ChangeType": "Addition",
+					"Description": "Added the [sourceCollection](https://docs.microsoft.com/en-us/graph/api/resources/sourceCollection?view=graph-rest-beta) resource type.",
+					"Target": "sourceCollection"
+				},
+				{
+					"Id": "7c4aaa0c-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Resource",
+					"ChangedApiName": "tag",
+					"ChangeType": "Addition",
+					"Description": "Added the [tag](https://docs.microsoft.com/en-us/graph/api/resources/tag?view=graph-rest-beta) resource type.",
+					"Target": "tag"
+				},
+				{
+					"Id": "7c4d09b3-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Resource",
+					"ChangedApiName": "tagOperation",
+					"ChangeType": "Addition",
+					"Description": "Added the [tagOperation](https://docs.microsoft.com/en-us/graph/api/resources/tagOperation?view=graph-rest-beta) resource type.",
+					"Target": "tagOperation"
+				},
+				{
+					"Id": "7c4f6f69-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Resource",
+					"ChangedApiName": "estimateStatisticsOperation",
+					"ChangeType": "Addition",
+					"Description": "Added the [estimateStatisticsOperation](https://docs.microsoft.com/en-us/graph/api/resources/estimateStatisticsOperation?view=graph-rest-beta) resource type.",
+					"Target": "estimateStatisticsOperation"
+				},
+				{
+					"Id": "7c51ced7-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Resource",
+					"ChangedApiName": "addToReviewSetOperation",
+					"ChangeType": "Addition",
+					"Description": "Added the [addToReviewSetOperation](https://docs.microsoft.com/en-us/graph/api/resources/addToReviewSetOperation?view=graph-rest-beta) resource type.",
+					"Target": "addToReviewSetOperation"
+				},
+				{
+					"Id": "7c543116-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Member",
+					"ChangedApiName": "applyTags",
+					"ChangeType": "Addition",
+					"Description": "Added the `applyTags` member to the **caseAction** enumeration.",
+					"Target": "caseAction"
+				},
+				{
+					"Id": "7c5692f5-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Member",
+					"ChangedApiName": "estimateStatistics",
+					"ChangeType": "Addition",
+					"Description": "Added the `estimateStatistics` member to the **caseAction** enumeration.",
+					"Target": "caseAction"
+				},
+				{
+					"Id": "7c58fa39-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Member",
+					"ChangedApiName": "addToReviewSet",
+					"ChangeType": "Addition",
+					"Description": "Added the `addToReviewSet` member to the **caseAction** enumeration.",
+					"Target": "caseAction"
+				},
+				{
+					"Id": "7c5b591e-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Member",
+					"ChangedApiName": "unknownFutureValue",
+					"ChangeType": "Addition",
+					"Description": "Added the `unknownFutureValue` member to the **caseAction** enumeration.",
+					"Target": "caseAction"
+				},
+				{
+					"Id": "7c5dbba1-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Enum type",
+					"ChangedApiName": "childSelectability",
+					"ChangeType": "Addition",
+					"Description": "Added the **childSelectability** enumeration type.",
+					"Target": "childSelectability"
+				},
+				{
+					"Id": "7c601fe8-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Enum type",
+					"ChangedApiName": "tenantSources",
+					"ChangeType": "Addition",
+					"Description": "Added the **tenantSources** enumeration type.",
+					"Target": "tenantSources"
+				},
+				{
+					"Id": "7c62816f-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Enum type",
+					"ChangedApiName": "dataCollectionScope",
+					"ChangeType": "Addition",
+					"Description": "Added the **dataCollectionScope** enumeration type.",
+					"Target": "dataCollectionScope"
+				},
+				{
+					"Id": "7c64e6b4-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Method",
+					"ChangedApiName": "applyTags",
+					"ChangeType": "Addition",
+					"Description": "Added the [applyTags](https://docs.microsoft.com/en-us/graph/api/reviewSetQuery-applyTags?view=graph-rest-beta) method to the [reviewSetQuery](https://docs.microsoft.com/en-us/graph/api/resources/reviewSetQuery?view=graph-rest-beta) resource.",
+					"Target": "reviewSetQuery"
+				},
+				{
+					"Id": "7c6745eb-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Method",
+					"ChangedApiName": "estimateStatistics",
+					"ChangeType": "Addition",
+					"Description": "Added the [estimateStatistics](https://docs.microsoft.com/en-us/graph/api/sourceCollection-estimateStatistics?view=graph-rest-beta) method to the [sourceCollection](https://docs.microsoft.com/en-us/graph/api/resources/sourceCollection?view=graph-rest-beta) resource.",
+					"Target": "sourceCollection"
+				},
+				{
+					"Id": "7c69a97c-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Method",
+					"ChangedApiName": "addToReviewSet",
+					"ChangeType": "Addition",
+					"Description": "Added the [addToReviewSet](https://docs.microsoft.com/en-us/graph/api/reviewSet-addToReviewSet?view=graph-rest-beta) method to the [reviewSet](https://docs.microsoft.com/en-us/graph/api/resources/reviewSet?view=graph-rest-beta) resource.",
+					"Target": "reviewSet"
+				},
+				{
+					"Id": "7c6c0c57-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Method",
+					"ChangedApiName": "asHierarchy",
+					"ChangeType": "Addition",
+					"Description": "Added the [asHierarchy](https://docs.microsoft.com/en-us/graph/api/tag-asHierarchy?view=graph-rest-beta) method to the [tag](https://docs.microsoft.com/en-us/graph/api/resources/tag?view=graph-rest-beta) resource.",
+					"Target": "tag"
+				},
+				{
+					"Id": "7c6e6d68-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Member",
+					"ChangedApiName": "tag",
+					"ChangeType": "Deletion",
+					"Description": "Removed the `tag` member from the **caseAction** enumeration.",
+					"Target": "caseAction"
+				},
+				{
+					"Id": "7c70d2ca-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Member",
+					"ChangedApiName": "search",
+					"ChangeType": "Deletion",
+					"Description": "Removed the `search` member from the **caseAction** enumeration.",
+					"Target": "caseAction"
+				},
+				{
+					"Id": "7c733572-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Member",
+					"ChangedApiName": "addDataToReviewSet",
+					"ChangeType": "Deletion",
+					"Description": "Removed the `addDataToReviewSet` member from the **caseAction** enumeration.",
+					"Target": "caseAction"
+				},
+				{
+					"Id": "7c733572-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Resource",
+					"ChangedApiName": "case",
+					"ChangeType": "Change",
+					"Description": "Moved the `case` resource from the microsoft.graph namespace to the microsoft.graph.ediscovery subnamespace.",
+					"Target": "case"
+				},
+				{
+					"Id": "7c733572-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Resource",
+					"ChangedApiName": "Custodian",
+					"ChangeType": "Change",
+					"Description": "Moved the `Custodian` resource from the microsoft.graph namespace to the microsoft.graph.ediscovery subnamespace.",
+					"Target": "Custodian"
+				},
+				{
+					"Id": "7c733572-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Resource",
+					"ChangedApiName": "datasource",
+					"ChangeType": "Change",
+					"Description": "Moved the `datasource` resource from the microsoft.graph namespace to the microsoft.graph.ediscovery subnamespace.",
+					"Target": "datasource"
+				},
+				{
+					"Id": "7c733572-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Resource",
+					"ChangedApiName": "reviewSet",
+					"ChangeType": "Change",
+					"Description": "Moved the `reviewSet` resource from the microsoft.graph namespace to the microsoft.graph.ediscovery subnamespace.",
+					"Target": "reviewSet"
+				},
+				{
+					"Id": "7c733572-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Resource",
+					"ChangedApiName": "reviewSetQuery",
+					"ChangeType": "Change",
+					"Description": "Moved the `reviewSetQuery` resource from the microsoft.graph namespace to the microsoft.graph.ediscovery subnamespace.",
+					"Target": "reviewSetQuery"
+				},
+				{
+					"Id": "7c733572-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Resource",
+					"ChangedApiName": "siteSource",
+					"ChangeType": "Change",
+					"Description": "Moved the `siteSource` resource from the microsoft.graph namespace to the microsoft.graph.ediscovery subnamespace.",
+					"Target": "siteSource"
+				},
+				{
+					"Id": "7c733572-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Resource",
+					"ChangedApiName": "unifiedGroupSource",
+					"ChangeType": "Change",
+					"Description": "Moved the `unifiedGroupSource` resource from the microsoft.graph namespace to the microsoft.graph.ediscovery subnamespace.",
+					"Target": "unifiedGroupSource"
+				},
+				{
+					"Id": "7c733572-5104-11eb-ae35-ed470c456b69",
+					"ApiChange": "Resource",
+					"ChangedApiName": "userSource",
+					"ChangeType": "Change",
+					"Description": "Moved the `userSource` resource from the microsoft.graph namespace to the microsoft.graph.ediscovery subnamespace.",
+					"Target": "userSource"
+				}
+			],
+			"Id": "89624bf8-6a24-410b-b240-cedf730b8c59",
+			"Cloud": "prd",
+			"Version": "beta",
+			"CreatedDateTime": "2021-02-22T19:07:19.242Z",
+			"WorkloadArea": "Compliance",
+			"SubArea": "eDiscovery"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "7830257c-17be-11eb-baa1-5b13c31fb2cd",
+					"ApiChange": "Relationship",
+					"ChangedApiName": "custodians",
+					"ChangeType": "Addition",
+					"Description": "Added the **custodians** relationship to [ediscoveryCase](https://docs.microsoft.com/graph/api/resources/ediscoveryCase?view=graph-rest-beta) resource.",
+					"Target": "ediscoveryCase"
+				},
+				{
+					"Id": "783286cc-17be-11eb-baa1-5b13c31fb2cd",
+					"ApiChange": "Resource",
+					"ChangedApiName": "custodian",
+					"ChangeType": "Addition",
+					"Description": "Added the [custodian](https://docs.microsoft.com/graph/api/resources/custodian?view=graph-rest-beta) resource type.",
+					"Target": "custodian"
+				},
+				{
+					"Id": "783ac40d-17be-11eb-baa1-5b13c31fb2cd",
+					"ApiChange": "Resource",
+					"ChangedApiName": "unifiedGroupSource",
+					"ChangeType": "Addition",
+					"Description": "Added the [unifiedGroupSource](https://docs.microsoft.com/graph/api/resources/unifiedGroupSource?view=graph-rest-beta) resource type.",
+					"Target": "unifiedGroupSource"
+				},
+				{
+					"Id": "783d27dc-17be-11eb-baa1-5b13c31fb2cd",
+					"ApiChange": "Resource",
+					"ChangedApiName": "siteSource",
+					"ChangeType": "Addition",
+					"Description": "Added the [siteSource](https://docs.microsoft.com/graph/api/resources/siteSource?view=graph-rest-beta) resource type.",
+					"Target": "siteSource"
+				},
+				{
+					"Id": "783f8b3b-17be-11eb-baa1-5b13c31fb2cd",
+					"ApiChange": "Resource",
+					"ChangedApiName": "userSource",
+					"ChangeType": "Addition",
+					"Description": "Added the [userSource](https://docs.microsoft.com/graph/api/resources/userSource?view=graph-rest-beta) resource type.",
+					"Target": "userSource"
+				},
+				{
+					"Id": "7842c333-17be-11eb-baa1-5b13c31fb2cd",
+					"ApiChange": "Enum type",
+					"ChangedApiName": "custodianStatus",
+					"ChangeType": "Addition",
+					"Description": "Added the **custodianStatus** enumeration type to [custodian](https://docs.microsoft.com/graph/api/resources/custodian?view=graph-rest-beta).",
+					"Target": "custodianStatus"
+				},
+				{
+					"Id": "78452752-17be-11eb-baa1-5b13c31fb2cd",
+					"ApiChange": "Enum type",
+					"ChangedApiName": "sourceType",
+					"ChangeType": "Addition",
+					"Description": "Added the **sourceType** enumeration type to [userSource](https://docs.microsoft.com/graph/api/resources/usersource?view=graph-rest-beta) and [unifiedGroupSource](https://docs.microsoft.com/graph/api/resources/unifiedgroupsource?view=graph-rest-beta).",
+					"Target": "sourceType"
+				},
+				{
+					"Id": "784c4f76-17be-11eb-baa1-5b13c31fb2cd",
+					"ApiChange": "Method",
+					"ChangedApiName": "release",
+					"ChangeType": "Addition",
+					"Description": "Added the [release](https://docs.microsoft.com/graph/api/custodian-release?view=graph-rest-beta) method to the [custodian](https://docs.microsoft.com/graph/api/resources/custodian?view=graph-rest-beta) resource.",
+					"Target": "custodian"
+				},
+				{
+					"Id": "784eb056-17be-11eb-baa1-5b13c31fb2cd",
+					"ApiChange": "Method",
+					"ChangedApiName": "activate",
+					"ChangeType": "Addition",
+					"Description": "Added the [activate](https://docs.microsoft.com/graph/api/custodian-activate?view=graph-rest-beta) method to the [custodian](https://docs.microsoft.com/graph/api/resources/custodian?view=graph-rest-beta) resource.",
+					"Target": "custodian"
+				}
+			],
+			"Id": "782dc913-17be-11eb-baa1-5b13c31fb2cd",
+			"Cloud": "prd",
+			"Version": "beta",
+			"CreatedDateTime": "2020-12-07T19:07:19.242Z",
+			"WorkloadArea": "Compliance",
+			"SubArea": "eDiscovery"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "74276ccf-708f-11eb-8401-e19c685756df",
+					"ApiChange": "Resource",
+					"ChangedApiName": "noncustodialDataSource",
+					"ChangeType": "Addition",
+					"Description": "Added the [noncustodialDataSource](https://docs.microsoft.com/graph/api/resources/ediscovery-noncustodialDataSource?view=graph-rest-beta) resource type.",
+					"Target": "noncustodialDataSource"
+				},
+				{
+					"Id": "74276ccf-708f-11eb-8401-e19c685756df",
+					"ApiChange": "Enum type",
+					"ChangedApiName": "dataCollectionScope",
+					"ChangeType": "Addition",
+					"Description": "Added the **dataCollectionScope** enumeration type.",
+					"Target": "dataCollectionScope"
+				},
+				{
+					"Id": "74276ccf-708f-11eb-8401-e19c685756df",
+					"ApiChange": "Enum type",
+					"ChangedApiName": "tenantSources",
+					"ChangeType": "Deletion",
+					"Description": "Removed the **tenantSources** enumeration type.",
+					"Target": "tenantSources"
+				},
+				{
+					"Id": "74276ccf-708f-11eb-8401-e19c685756df",
+					"ApiChange": "Method",
+					"ChangedApiName": "resetToDefault",
+					"ChangeType": "Addition",
+					"Description": "Added the [resetToDefault](https://docs.microsoft.com/graph/api/ediscovery-settings-resetToDefault?view=graph-rest-beta) method to the [settings](https://docs.microsoft.com/graph/api/resources/settings?view=graph-rest-beta) resource.",
+					"Target": "settings"
+				},
+				{
+					"Id": "74276ccf-708f-11eb-8401-e19c685756df",
+					"ApiChange": "Resource",
+					"ChangedApiName": "settings",
+					"ChangeType": "Addition",
+					"Description": "Added the [settings](https://docs.microsoft.com/graph/api/resources/ediscovery-settings?view=graph-rest-beta) resource type.",
+					"Target": "settings"
+				},
+				{
+					"Id": "74276ccf-708f-11eb-8401-e19c685756df",
+					"ApiChange": "Resource",
+					"ChangedApiName": "ocrSettings",
+					"ChangeType": "Addition",
+					"Description": "Added the [ocrSettings](https://docs.microsoft.com/graph/api/resources/ediscovery-ocrSettings?view=graph-rest-beta) resource type.",
+					"Target": "ocrSettings"
+				},
+				{
+					"Id": "74276ccf-708f-11eb-8401-e19c685756df",
+					"ApiChange": "Resource",
+					"ChangedApiName": "redundancyDetectionSettings",
+					"ChangeType": "Addition",
+					"Description": "Added the [redundancyDetectionSettings](https://docs.microsoft.com/graph/api/resources/ediscovery-redundancyDetectionSettings?view=graph-rest-beta) resource type.",
+					"Target": "redundancyDetectionSettings"
+				},
+				{
+					"Id": "74276ccf-708f-11eb-8401-e19c685756df",
+					"ApiChange": "Resource",
+					"ChangedApiName": "topicModelingSettings",
+					"ChangeType": "Addition",
+					"Description": "Added the [topicModelingSettings](https://docs.microsoft.com/graph/api/resources/ediscovery-topicModelingSettings?view=graph-rest-beta) resource type.",
+					"Target": "topicModelingSettings"
+				},
+				{
+					"Id": "74276ccf-708f-11eb-8401-e19c685756df",
+					"ApiChange": "Relationship",
+					"ChangedApiName": "noncustodialSources",
+					"ChangeType": "Change",
+					"Description": "Changed the **noncustodialSources** relationship data type from the [sourceCollection](https://docs.microsoft.com/en-us/graph/api/resources/sourceCollection?view=graph-rest-beta) resource from **microsoft.graph.ediscovery.dataSource** to **microsoft.graph.ediscovery.noncustodialDataSource**.",
+					"Target": "sourceCollection"
+				}
+			],
+			"Id": "74276ccf-708f-11eb-8401-e19c685756df",
+			"Cloud": "prd",
+			"Version": "beta",
+			"CreatedDateTime": "2021-04-28T19:00:00.000Z",
+			"WorkloadArea": "Compliance",
+			"SubArea": "eDiscovery"
+		}
+	]
+}

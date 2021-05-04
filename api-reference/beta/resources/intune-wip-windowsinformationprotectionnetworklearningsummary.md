@@ -3,7 +3,7 @@ title: "windowsInformationProtectionNetworkLearningSummary resource type"
 description: "Windows Information Protection Network learning Summary entity."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -52,6 +52,7 @@ Here is a JSON representation of the resource.
   "deviceCount": 1024
 }
 ```
+
 
 
 

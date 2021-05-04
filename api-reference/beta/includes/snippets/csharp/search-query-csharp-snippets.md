@@ -6,13 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var requests = new List<SearchRequest>()
+var requests = new List<SearchRequestObject>()
 {
-	new SearchRequest
+	new SearchRequestObject
 	{
 		EntityTypes = new List<EntityType>()
 		{
-			EntityType.Event
+			EntityType.ExternalItem
 		},
 		ContentSources = new List<String>()
 		{
@@ -20,14 +20,11 @@ var requests = new List<SearchRequest>()
 		},
 		Query = new SearchQuery
 		{
-			Query_string = new SearchQueryString
-			{
-				Query = "contoso product"
-			}
+			QueryString = "contoso product"
 		},
 		From = 0,
 		Size = 25,
-		Stored_fields = new List<String>()
+		Fields = new List<String>()
 		{
 			"title",
 			"description"
@@ -36,7 +33,7 @@ var requests = new List<SearchRequest>()
 };
 
 await graphClient.Search
-	.Query(requests)
+	.Query(requests,null)
 	.Request()
 	.PostAsync();
 

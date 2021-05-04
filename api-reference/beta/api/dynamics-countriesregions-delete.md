@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|Financials.ReadWrite.All|
 
 ## HTTP request
-```
+```http
 DELETE /financials/companies/{id}/countriesRegions/{id}
 ```
 ## Optional query parameters
@@ -51,7 +51,7 @@ If successful, this method returns ```204 No Content``` response code. It does n
 
 Here is an example of the request.
 
-```json
+```http
 DELETE https://graph.microsoft.com/beta/financials/companies/{id}/countriesRegions/{id}
 ```
 
@@ -59,6 +59,8 @@ DELETE https://graph.microsoft.com/beta/financials/companies/{id}/countriesRegio
 
 Here is an example of the response. 
 
-```json
+```http
 HTTP/1.1 204 No Content
 ```
+
+

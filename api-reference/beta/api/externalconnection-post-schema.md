@@ -73,7 +73,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/connections/contosohr/schema
+POST https://graph.microsoft.com/beta/external/connections/contosohr/schema
 Content-type: application/json
 Prefer: respond-async
 
@@ -81,16 +81,20 @@ Prefer: respond-async
   "baseType": "microsoft.graph.externalItem",
   "properties": [
     {
-      "name": "title",
+      "name": "ticketTitle",
       "type": "String",
       "isSearchable": "true",
-      "isRetrievable": "true"
+      "isRetrievable": "true",
+      "labels": [
+        "title"
+      ]
     },
     {
       "name": "priority",
       "type": "String",
       "isQueryable": "true",
-      "isRetrievable": "true"
+      "isRetrievable": "true",
+      "isSearchable": "false"
     },
     {
       "name": "assignee",
@@ -110,6 +114,10 @@ Prefer: respond-async
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/create-schema-from-connection-async-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-schema-from-connection-async-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -139,3 +147,5 @@ Location: https://graph.microsoft.com/beta/external/connections/contosohr/operat
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

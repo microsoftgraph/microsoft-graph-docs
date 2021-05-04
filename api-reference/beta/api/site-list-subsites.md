@@ -33,6 +33,10 @@ One of the following permissions is required to call this API. To learn more, in
 GET /sites/{site-id}/sites
 ```
 
+## Example
+
+### Request
+
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "list-subsites", "scopes": "service.sharepoint sites.read.all" } -->
 
@@ -51,14 +55,18 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/sites
 [!INCLUDE [sample-code](../includes/snippets/objc/list-subsites-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-subsites-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
-## Response
+### Response
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -95,3 +103,5 @@ Content-type: application/json
   ]
 }
 -->
+
+

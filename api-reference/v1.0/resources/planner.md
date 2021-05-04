@@ -59,7 +59,7 @@ GET https://graph.microsoft.com/v1.0/planner
   "truncated": true,
   "@odata.type": "microsoft.graph.planner"
 }-->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -76,3 +76,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
+

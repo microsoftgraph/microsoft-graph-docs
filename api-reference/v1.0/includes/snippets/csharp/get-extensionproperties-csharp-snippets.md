@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var extensionProperties = await graphClient.Applications["{id}"].ExtensionProperties
+var extensionProperties = await graphClient.Applications["{application-id}"].ExtensionProperties
 	.Request()
 	.GetAsync();
 

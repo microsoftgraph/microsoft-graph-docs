@@ -3,7 +3,7 @@ title: "domainDnsUnavailableRecord resource type"
 description: "Indicates that serviceConfigurationRecords cannot be generated."
 localization_priority: Normal
 author: "adimitui"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
@@ -64,3 +64,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

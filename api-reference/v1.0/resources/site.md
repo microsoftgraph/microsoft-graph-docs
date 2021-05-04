@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 title: site resource
 description: The site resource provides metadata and relationships for a Sharepoint site. 
 localization_priority: Priority
@@ -28,6 +27,11 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Follow site][]          | collection of site | Follow a user's site or multiple sites.
 | [Unfollow site][]        | collection of site | Follow a user's site or multiple sites.
 | [List followed sites][]  | collection of site | List the sites that have been followed by the signed in user.
+| [Get permission][]             | GET /sites/{site-id}/permissions/{permission-id}
+| [List permissions][]           | GET /sites/{site-id}/permissions
+| [Create permissions][]         | POST /sites/{site-id}/permissions
+| [Delete permission][]         | DELETE /sites/{site-id}/permissions/{permission-id}
+| [Update permission][]         | PATCH /sites/{site-id}/permissions/{permission-id}
 
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md
@@ -40,6 +44,11 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 [Follow site]: ../api/site-follow.md
 [Unfollow site]: ../api/site-unfollow.md
 [List followed sites]: ../api/sites-list-followed.md
+[Get permission]: ../api/site-get-permission.md
+[List permissions]: ../api/site-list-permissions.md
+[Create permissions]: ../api/site-post-permissions.md
+[Delete permission]: ../api/site-delete-permission.md
+[Update permission]: ../api/site-update-permission.md
 
 ## Properties
 
@@ -79,6 +88,7 @@ The `root` identifier always references the root site for a given target, as fol
 | **drives**        | Collection([drive][])            | The collection of drives (document libraries) under this site.
 | **items**         | Collection([baseItem][])         | Used to address any item contained in this site. This collection cannot be enumerated.
 | **lists**         | Collection([list][])             | The collection of lists under this site.
+| **permissions**   | Collection([permission][])         | The permissions associated with the site. Nullable.
 | **sites**         | Collection([site][])             | The collection of the sub-sites under this site.
 | **onenote**       | [onenote][]                      | Calls the OneNote service for notebook related operations.
 
@@ -89,6 +99,7 @@ The `root` identifier always references the root site for a given target, as fol
 [identitySet]: identityset.md
 [itemAnalytics]: itemanalytics.md
 [list]: list.md
+[permission]: permission.md
 [site]: site.md
 [onenote]: onenote.md
 
@@ -106,6 +117,7 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
     "siteCollection",
     "drive",
     "drives",
+    "permissions",
     "sites"
   ],
   "keyProperty": "id",
@@ -128,6 +140,7 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
   "drives": [ { "@odata.type": "microsoft.graph.drive" }],
   "items": [ { "@odata.type": "microsoft.graph.baseItem" }],
   "lists": [ { "@odata.type": "microsoft.graph.list" }],
+  "permissions": [ { "@odata.type": "microsoft.graph.permission" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "onenote": { "@odata.type": "microsoft.graph.onenote"},

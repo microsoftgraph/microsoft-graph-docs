@@ -20,11 +20,11 @@ const team = {
   },
   funSettings: {
     allowGiphy: true,
-    giphyContentRating: "strict"
+    giphyContentRating: 'strict'
   }
 };
 
-let res = await client.api('/teams/{id}')
+await client.api('/teams/{id}')
 	.update(team);
 
 ```

@@ -8,14 +8,14 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var contentInfo = new ContentInfo
 {
-	AdditionalData = new Dictionary<string, object>()
-	{
-		{"state@odata.type","#microsoft.graph.contentState"},
-		{"format@odata.type","#microsoft.graph.contentFormat"}
-	},
 	Format = ContentFormat.Default,
 	Identifier = null,
-	State = ContentState.Rest
+	State = ContentState.Rest,
+	AdditionalData = new Dictionary<string, object>()
+	{
+		{"format@odata.type", "#microsoft.graph.contentFormat"},
+		{"state@odata.type", "#microsoft.graph.contentState"}
+	}
 };
 
 var classificationResults = new List<ClassificationResult>()
@@ -28,7 +28,7 @@ var classificationResults = new List<ClassificationResult>()
 	}
 };
 
-await graphClient.Informationprotection.Policy.Labels
+await graphClient.InformationProtection.Policy.Labels
 	.EvaluateClassificationResults(contentInfo,classificationResults)
 	.Request()
 	.Header("User-Agent","ContosoLOBApp/1.0")

@@ -3,7 +3,7 @@ title: "riskyUserHistoryItem resource type"
 description: "Represents the risk history of Azure AD users"
 author: "cloudhandler"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -59,3 +59,5 @@ Represents the risk history of an Azure AD user as determined by Azure AD Identi
   ]
 }
 -->
+
+

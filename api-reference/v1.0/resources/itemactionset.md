@@ -1,6 +1,5 @@
 ---
 author: daspek
-ms.author: dspektor
 title: ItemActionSet resource type
 description: The itemActionSet object provides information about the actions that took place as part of an activity on an item.
 localization_priority: Normal
@@ -81,3 +80,4 @@ The following actions are currently available. Because new actions might be adde
   "suppressions": []
 }
 -->
+

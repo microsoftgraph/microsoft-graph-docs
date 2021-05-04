@@ -5,13 +5,13 @@ ms.date: 09/10/2017
 title: ItemReference
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: "sharepoint"
 ---
 # ItemReference resource type
 
 Namespace: microsoft.graph
 
-The **ItemReference** resource provides information necessary to address a [DriveItem](driveitem.md) via the API.
+The **ItemReference** resource provides information necessary to address a [driveItem](driveitem.md) via the API.
 
 ## JSON representation
 
@@ -31,7 +31,8 @@ Here is a JSON representation of the resource
   "name": "string",
   "path": "string",
   "shareId": "string",
-  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" }
+  "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
+  "siteId": "string"
 }
 ```
 
@@ -46,10 +47,12 @@ Here is a JSON representation of the resource
 | path          | String            | Path that can be used to navigate to the item. Read-only.
 | shareId       | String            | A unique identifier for a shared resource that can be accessed via the [Shares][] API.
 | sharepointIds | [sharepointIds][] | Returns identifiers useful for SharePoint REST compatibility. Read-only.
+| siteId        | String            | For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource. The value is the same as the id property of that [site][] resource. It is an [opaque string that consists of three identifiers](/graph/api/resources/site?view=graph-rest-beta&preserve-view=true#id-property) of the site. <br>For OneDrive, this property is not populated.
 
 [drive]: ../resources/drive.md
 [sharepointIds]: ../resources/sharepointids.md
 [Shares]: ../api/shares-get.md
+[site]: ../resources/site.md
 
 ## Remarks
 
@@ -71,3 +74,5 @@ To retrieve the human-readable path for a breadcrumb, you can safely ignore ever
   "section": "documentation",
   "tocPath": "Resources/ItemReference"
 } -->
+
+

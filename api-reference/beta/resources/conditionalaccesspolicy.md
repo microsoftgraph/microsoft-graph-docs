@@ -3,7 +3,7 @@ title: "conditionalAccessPolicy resource type"
 description: "Represents an Azure Active Directory conditional access policy. Conditional access policies are custom rules that define an access scenario."
 localization_priority: Normal
 author: "videor"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an Azure Active Directory conditional access policy. Conditional access policies are custom rules that define an access scenario. For more information, see the [Conditional access documentation](https://docs.microsoft.com/azure/active-directory/conditional-access/).
+Represents an Azure Active Directory conditional access policy. Conditional access policies are custom rules that define an access scenario. For more information, see the [Conditional access documentation](/azure/active-directory/conditional-access/).
 
 ## Methods
 
@@ -30,14 +30,14 @@ Represents an Azure Active Directory conditional access policy. Conditional acce
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |conditions|[conditionalAccessConditionSet](conditionalaccessconditionset.md)| Specifies the rules that must be met for the policy to apply. Required. |
-|createdDateTime|DateTimeOffset| The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Readonly. |
+|createdDateTime|DateTimeOffset| The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Readonly. |
 |description|String| Not used. |
 |displayName|String| Specifies a display name for the conditionalAccessPolicy object. |
 |grantControls|[conditionalAccessGrantControls](conditionalaccessgrantcontrols.md)| Specifies the grant controls that must be fulfilled to pass the policy. |
 |id|String| Specifies the identifier of a conditionalAccessPolicy object. Read-only.|
-|modifiedDateTime| DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Readonly. |
+|modifiedDateTime| DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Readonly. |
 |sessionControls|[conditionalAccessSessionControls](conditionalaccesssessioncontrols.md)| Specifies the session controls that are enforced after sign-in. |
-|state|string| Specifies the state of the conditionalAccessPolicy object. Possible values are: `enabled`, `disabled`, `enabledForReportingButNotEnforced`. Required. |
+|state|conditionalAccessPolicyState| Specifies the state of the conditionalAccessPolicy object. Possible values are: `enabled`, `disabled`, `enabledForReportingButNotEnforced`. Required. |
 
 ## Relationships
 
@@ -56,7 +56,6 @@ The following is a JSON representation of the resource.
     "grantControls"
   ],
   "@odata.type": "microsoft.graph.conditionalAccessPolicy",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

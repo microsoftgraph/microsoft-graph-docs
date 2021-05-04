@@ -1,9 +1,9 @@
 ---
 title: "mobileAppRelationship resource type"
-description: "Describes the relationship for a child mobile app to its parent mobile app."
+description: "Describes a relationship between two mobile apps."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-Describes the relationship for a child mobile app to its parent mobile app.
+Describes a relationship between two mobile apps.
 
 ## Methods
 |Method|Return Type|Description|
@@ -27,8 +27,11 @@ Describes the relationship for a child mobile app to its parent mobile app.
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The relationship entity id.|
-|targetId|String|The target child mobile app's app id.|
-|targetDisplayName|String|The target child mobile app's display name.|
+|targetId|String|The target mobile app's app id.|
+|targetDisplayName|String|The target mobile app's display name.|
+|targetDisplayVersion|String|The target mobile app's display version.|
+|targetPublisher|String|The target mobile app's publisher.|
+|targetType|[mobileAppRelationshipType](../resources/intune-apps-mobileapprelationshiptype.md)|The type of relationship indicating whether the target is a parent or child. Possible values are: `child`, `parent`.|
 
 ## Relationships
 None
@@ -46,9 +49,13 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.mobileAppRelationship",
   "id": "String (identifier)",
   "targetId": "String",
-  "targetDisplayName": "String"
+  "targetDisplayName": "String",
+  "targetDisplayVersion": "String",
+  "targetPublisher": "String",
+  "targetType": "String"
 }
 ```
+
 
 
 

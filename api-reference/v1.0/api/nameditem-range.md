@@ -2,7 +2,7 @@
 title: "NamedItem: Range"
 description: "Returns the range object that is associated with the name. Throws an exception if the named item's type is not a range."
 localization_priority: Normal
-author: ""
+author: "ruoyingl"
 ms.prod: ""
 doc_type: apiPageType
 ---
@@ -24,7 +24,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range
+GET /me/drive/items/{id}/workbook/names/{name}/range
+GET /me/drive/root:/{item-path}:/workbook/names/{name}/range
 
 ```
 ## Request headers
@@ -50,8 +51,8 @@ Here is an example of the request.
   "idempotent": true,
   "name": "nameditem_range"
 }-->
-```http
-POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/range
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/nameditem-range-csharp-snippets.md)]
@@ -73,7 +74,7 @@ POST https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/names/{name}/
 
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -105,3 +106,4 @@ Content-length: 169
   "suppressions": [
   ]
 }-->
+

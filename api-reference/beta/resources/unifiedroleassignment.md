@@ -3,7 +3,7 @@ title: "unifiedRoleAssignment resource type"
 description: "A role assignment is the link between a role definition and a principal at a particular scope for the purpose of granting access."
 localization_priority: Normal
 author: "abhijeetsinha"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: "resourcePageType"
 ---
 
@@ -54,7 +54,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.unifiedRoleAssignment",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
@@ -82,3 +81,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

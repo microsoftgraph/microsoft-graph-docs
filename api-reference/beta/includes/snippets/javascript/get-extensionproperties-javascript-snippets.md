@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/applications/{id}/extensionProperties')
+let extensionProperties = await client.api('/applications/{id}/extensionProperties')
 	.version('beta')
 	.get();
 

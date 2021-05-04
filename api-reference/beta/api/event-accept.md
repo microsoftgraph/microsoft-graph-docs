@@ -36,9 +36,6 @@ POST /users/{id | userPrincipalName}/calendar/events/{id}/accept
 POST /me/calendars/{id}/events/{id}/accept
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/accept
 
-POST /me/calendargroup/calendars/{id}/events/{id}/accept
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/accept
-
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/accept
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/accept
 ```
@@ -92,6 +89,10 @@ Content-length: 56
 [!INCLUDE [sample-code](../includes/snippets/objc/event-accept-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/event-accept-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -118,3 +119,5 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
+
+

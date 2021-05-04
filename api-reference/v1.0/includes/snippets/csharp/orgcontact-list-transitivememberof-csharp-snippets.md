@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var transitiveMemberOf = await graphClient.Me.TransitiveMemberOf
+var transitiveMemberOf = await graphClient.Contacts["{orgContact-id}"].TransitiveMemberOf
 	.Request()
 	.GetAsync();
 

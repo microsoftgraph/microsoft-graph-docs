@@ -12,7 +12,7 @@ var groupIds = new List<String>()
 	"groupId-value2"
 };
 
-await graphClient.Contacts["{id}"]
+await graphClient.Contacts["{orgContact-id}"]
 	.CheckMemberGroups(groupIds)
 	.Request()
 	.PostAsync();

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 WorkforceIntegration workforceIntegration = new WorkforceIntegration();
 workforceIntegration.displayName = "displayName-value";
@@ -15,7 +15,7 @@ encryption.secret = "secret-value";
 workforceIntegration.encryption = encryption;
 workforceIntegration.isActive = true;
 workforceIntegration.url = "url-value";
-workforceIntegration.supportedEntities = WorkforceIntegrationSupportedEntities.NONE;
+workforceIntegration.supportedEntities = EnumSet.of(WorkforceIntegrationSupportedEntities.NONE);
 
 graphClient.teamwork().workforceIntegrations()
 	.buildRequest()

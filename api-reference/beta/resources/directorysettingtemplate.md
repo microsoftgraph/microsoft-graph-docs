@@ -3,7 +3,7 @@ title: "directorySettingTemplate resource type"
 description: "Directory setting templates represent system-defined settings available to the tenant."
 localization_priority: Normal
 author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
@@ -70,3 +70,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

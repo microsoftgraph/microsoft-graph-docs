@@ -3,7 +3,7 @@ title: "Delete domain"
 description: "Deletes a domain from a tenant."
 author: "adimitui"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -85,7 +85,7 @@ DELETE https://graph.microsoft.com/v1.0/domains/contoso.com
 
 ##### Response
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -105,3 +105,4 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
+

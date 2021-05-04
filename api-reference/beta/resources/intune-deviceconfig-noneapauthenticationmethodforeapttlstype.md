@@ -3,7 +3,7 @@ title: "nonEapAuthenticationMethodForEapTtlsType enum type"
 description: "Non-EAP methods for authentication."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: enumPageType
 ---
 
@@ -24,6 +24,7 @@ Non-EAP methods for authentication.
 |challengeHandshakeAuthenticationProtocol|1|Challenge Handshake Authentication Protocol (CHAP).|
 |microsoftChap|2| Microsoft CHAP (MS-CHAP).|
 |microsoftChapVersionTwo|3|Microsoft CHAP Version 2 (MS-CHAP v2).|
+
 
 
 

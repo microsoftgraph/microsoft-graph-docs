@@ -31,7 +31,7 @@ Getting the list of `bookingBusinesses` fails with the following error code when
 
 As a workaround, you can limit the set of businesses returned by the request by including a `query` parameter, for example:
 
-```
+```http
 GET https://graph.microsoft.com/beta/bookingBusinesses?query=Fabrikam
 ```
 ## Calendars
@@ -74,17 +74,17 @@ GET /me/calendars/{id}/events
 Currently, there is partial support for a calendar based on an Internet Calendar Subscription (ICS):
 
 * You can add an ICS-based calendar to a user mailbox through the user interface, but not through the Microsoft Graph API.
-* [Listing the user's calendars](/graph/api/user-list-calendars?view=graph-rest-1.0) lets you get the **name**, **color** and **id** properties of each [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store or access the ICS URL in the calendar resource.
-* You can also [list the events](/graph/api/calendar-list-events?view=graph-rest-1.0) of an ICS-based calendar.
+* [Listing the user's calendars](/graph/api/user-list-calendars) lets you get the **name**, **color** and **id** properties of each [calendar](/graph/api/resources/calendar) in the user's default calendar group, or a specified calendar group, including any ICS-based calendars. You cannot store or access the ICS URL in the calendar resource.
+* You can also [list the events](/graph/api/calendar-list-events) of an ICS-based calendar.
 
 ### Attaching large files to events
-An app with delegated permissions returns `HTTP 403 Forbidden` when attempting to [attach large files](outlook-large-attachments.md) to an Outlook message or event that is in a shared or delegated mailbox. With delegated permissions, [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) succeeds only if the message or event is in the signed-in user's mailbox.
+An app with delegated permissions returns `HTTP 403 Forbidden` when attempting to [attach large files](outlook-large-attachments.md) to an Outlook message or event that is in a shared or delegated mailbox. With delegated permissions, [createUploadSession](/graph/api/attachment-createuploadsession) succeeds only if the message or event is in the signed-in user's mailbox.
 
 ### onlineMeetingUrl property support for Microsoft Teams
 
-Currently, the **onlineMeetingUrl** property of a Skype meeting [event](/graph/api/resources/event?view=graph-rest-1.0) would indicate the online meeting URL. However, that property for a Microsoft Teams meeting event is set to null.
+Currently, the **onlineMeetingUrl** property of a Skype meeting [event](/graph/api/resources/event) would indicate the online meeting URL. However, that property for a Microsoft Teams meeting event is set to null.
 
-The beta version offers a workaround, where you can use the **onlineMeetingProvider** property of an [event](/graph/api/resources/event?view=graph-rest-beta) to verify if the provider is Microsoft Teams. Through the **onlineMeeting** property of the **event**, you can access the **joinUrl**.
+The beta version offers a workaround, where you can use the **onlineMeetingProvider** property of an [event](/graph/api/resources/event?view=graph-rest-beta&preserve-view=true) to verify if the provider is Microsoft Teams. Through the **onlineMeeting** property of the **event**, you can access the **joinUrl**.
 
 ## Change notifications
 
@@ -140,7 +140,7 @@ Only personal contacts are currently supported. Organizational contacts are not 
 
 In the `/v1.0` version, `GET /me/contactFolders` does not include the user's default contacts folder.
 
-A fix will be made available. Meanwhile, you can use the following [list contacts](/graph/api/user-list-contacts?view=graph-rest-1.0) query and the **parentFolderId** property
+A fix will be made available. Meanwhile, you can use the following [list contacts](/graph/api/user-list-contacts) query and the **parentFolderId** property
 as a workaround to get the folder ID of the default contacts folder:
 
 ```http
@@ -149,16 +149,16 @@ GET https://graph.microsoft.com/v1.0/me/contacts?$top=1&$select=parentFolderId
 
 In the above query:
 
-1. `/me/contacts?$top=1` gets the properties of a [contact](/graph/api/resources/contact?view=graph-rest-1.0) in the default contacts folder.
+1. `/me/contacts?$top=1` gets the properties of a [contact](/graph/api/resources/contact) in the default contacts folder.
 2. Appending `&$select=parentFolderId` returns only the contact's **parentFolderId** property, which is the ID of the default contacts folder.
 
 
 ### Accessing contacts via a contact folder in beta
 
-In the `/beta` version, there is currently an issue that prevents accessing a [contact](/graph/api/resources/contact?view=graph-rest-beta)
+In the `/beta` version, there is currently an issue that prevents accessing a [contact](/graph/api/resources/contact?view=graph-rest-beta&preserve-view=true)
 by specifying its parent folder in the REST request URL, as shown in the 2 scenarios below.
 
-* Accessing a contact from a top level [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-beta) of the user's.
+* Accessing a contact from a top level [contactFolder](/graph/api/resources/contactfolder?view=graph-rest-beta&preserve-view=true) of the user's.
 
 ```http
 GET /me/contactfolders/{id}/contacts/{id}
@@ -168,11 +168,11 @@ GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 * Accessing a contact contained in a child folder of a **contactFolder**.  The example below shows one level of nesting, but a contact can be located in a child of a child and so on.
 
 ```http
-GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
+GET /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 
-As an alternative, you can simply [get](/graph/api/contact-get?view=graph-rest-beta) the contact by specifying its ID as shown below,
+As an alternative, you can simply [get](/graph/api/contact-get?view=graph-rest-beta&preserve-view=true) the contact by specifying its ID as shown below,
 since GET /contacts in the `/beta` version applies to all the contacts in the user's mailbox:
 
 ```http
@@ -184,6 +184,12 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 * OData context is sometimes returned incorrectly when tracking changes to relationships.
 * Schema extensions (legacy) are not returned with $select statement, but are returned without $select.
 * Clients cannot track changes to open extensions or registered schema extensions.
+
+## Devices and apps | Device updates (Windows updates)
+
+### Making a request for the first time
+
+When you make a call to the Windows updates API for the first time, you might receive a `401 Unauthorized` response. The error occurs in cases when an application's service principal does not yet exist in your tenant and requires time to complete provisioning. Please try again after about 24 hours.
 
 ## Extensions
 
@@ -203,6 +209,10 @@ You must first create the resource instance and then do a `PATCH` to that instan
 ### Limit of 100 schema extension property values allowed per resource instance
 
 Directory resources, such as **device**, **group** and **user**, currently limit the total number of schema extension property values that can be set on a resource instance, to 100.
+
+### Updating a schemaExtension definition using Microsoft Graph Explorer
+
+When using `PATCH` to update a schemaExtension using Graph Explorer, you must specify the **owner** property and set it to its current `appid` value (which will need to be an `appId` of an application that you own). This is also the case for any client application whose `appId` is not the same as the **owner**.
 
 ### Filtering on schema extension properties not supported on all entity types
 
@@ -227,18 +237,19 @@ Examples of group features that support delegated and app-only permissions:
 
 * Creating and deleting groups
 * Getting and updating group properties pertaining to group administration or management
-* Group [directory settings](/graph/api/resources/directoryobject?view=graph-rest-1.0), type, and synchronization
+* Group [directory settings](/graph/api/resources/directoryobject), type, and synchronization
 * Group owners and membership
+* Getting group conversations and threads
 
 Examples of group features that support only delegated permissions:
 
-* Group conversations, events, photo
+* Group events, photo
 * External senders, accepted or rejected senders, group subscription
 * User favorites and unseen count
 
 ### Policy
 
-Using Microsoft Graph to create and name an Office 365 group bypasses any Office 365 group policies that are configured through Outlook Web App.
+Using Microsoft Graph to create and name a Microsoft 365 group bypasses any Microsoft 365 group policies that are configured through Outlook on the web.
 
 ### Setting the allowExternalSenders property
 
@@ -250,7 +261,7 @@ For known issues using delta query, see the [delta query section](#delta-query) 
 
 ## Identity and access | Application and service principal APIs
 
-There are changes to the [application](/graph/api/resources/application?view=graph-rest-beta) and [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta) entities currently in development. The following is a summary of current limitations and in-development API features.
+There are changes to the [application](/graph/api/resources/application?view=graph-rest-beta&preserve-view=true) and [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true) entities currently in development. The following is a summary of current limitations and in-development API features.
 
 Current limitations:
 
@@ -312,12 +323,12 @@ As JSON batching matures, these limitations will be removed.
 ## Mail (Outlook)
 
 ### Attaching large files to messages
-An app with delegated permissions returns `HTTP 403 Forbidden` when attempting to [attach large files](outlook-large-attachments.md) to an Outlook message or event that is in a shared or delegated mailbox. With delegated permissions, [createUploadSession](/graph/api/attachment-createuploadsession?view=graph-rest-1.0) succeeds only if the message or event is in the signed-in user's mailbox.
+An app with delegated permissions returns `HTTP 403 Forbidden` when attempting to [attach large files](outlook-large-attachments.md) to an Outlook message or event that is in a shared or delegated mailbox. With delegated permissions, [createUploadSession](/graph/api/attachment-createuploadsession) succeeds only if the message or event is in the signed-in user's mailbox.
 
 ### The comment parameter for creating a draft
 
-The **comment** parameter for creating a reply or forward draft ([createReply](/graph/api/message-createreply?view=graph-rest-1.0),
-[createReplyAll](/graph/api/message-createreplyall?view=graph-rest-1.0), [createForward](/graph/api/message-createforward?view=graph-rest-1.0))
+The **comment** parameter for creating a reply or forward draft ([createReply](/graph/api/message-createreply),
+[createReplyAll](/graph/api/message-createreplyall), [createForward](/graph/api/message-createforward))
 does not become part of the body of the resultant message draft.
 
 ### GET messages returns chats in Microsoft Teams
@@ -329,38 +340,36 @@ In both the v1 and beta endpoints, the response of `GET /users/id/messages` incl
 ### GET /teams is not supported
 
 To get a list of teams, see [list all teams](teams-list-all-teams.md) and 
-[list your teams](/graph/api/user-list-joinedteams?view=graph-rest-1.0).
+[list your teams](/graph/api/user-list-joinedteams).
 
-### POST /teams is only available in beta
-To creat teams in v1.0, see [create team](/graph/api/team-put-teams?view=graph-rest-1.0).
+### Unable to filter team members by roles
+The filter query to get members of a team based on their roles `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner')` might not work. The server might respond with a `BAD REQUEST`.
 
-### Missing teams in list all teams
-
-Some teams that were created in the past but haven't been used recently by a Microsoft Teams user aren't listed by
-[list all teams](teams-list-all-teams.md).
-New teams will be listed.
-Certain old teams don't have a **resourceProvisioningOptions** property that contains "Team",
-which is set on newly created teams and teams that are visited in Microsoft Teams.
-In the future, we will set **resourceProvisioningOptions** on existing teams that have not been opened in Microsoft Teams.
+### Missing properties for chat members
+In certain instances, the `tenantId` / `email` / `displayName` property for the individual members of a chat might not be populated on a `GET /chats/chat-id/members` or `GET /chats/chat-id/members/membership-id` request.
 
 ## Users
 
+### Use the dollar ($) symbol in the userPrincipalName
+
+Microsoft Graph allows the **userPrincipalName** to begin with a dollar (`$`) character. However, when querying users by userPrincipalName, the request URL `/users/$x@y.com` fails. This is because this request URL violates the OData URL conventions which expects only system query options to be prefixed with a `$` character. As a workaround, remove the slash (/) after `/users` and enclose the **userPrincipalName** in parentheses and single quotes as follows: `/users('$x@y.com')`.
+
 ### No instant access after creation
 
-Users can be created immediately through a POST on the user entity. An Office 365 license must first be assigned to a user, in order to get access to Office 365 services. Even then, due to the distributed nature of the service, it might take 15 minutes before files, messages and events entities are available for use for this user, through the Microsoft Graph API. During this time, apps will receive a 404 HTTP error response.
+Users can be created immediately through a POST on the user entity. A Microsoft 365 license must first be assigned to a user, in order to get access to Microsoft 365 services. Even then, due to the distributed nature of the service, it might take 15 minutes before files, messages and events entities are available for use for this user, through the Microsoft Graph API. During this time, apps will receive a 404 HTTP error response.
 
 ### Photo restrictions
 
-Reading and updating a user's profile photo is only possible if the user has a mailbox. Additionally, any photos that *may* have been previously stored using the **thumbnailPhoto** property (using the Office 365 unified API preview, or the Azure AD Graph, or through AD Connect synchronization) are no longer accessible through the Microsoft Graph **photo** property of the [user](/graph/api/resources/user?view=graph-rest-1.0) resource.
+Reading and updating a user's profile photo is only possible if the user has a mailbox. Additionally, any photos that *may* have been previously stored using the **thumbnailPhoto** property (using the Azure AD Graph or through AD Connect synchronization) are no longer accessible through the Microsoft Graph **photo** property of the [user](/graph/api/resources/user) resource.
 Failure to read or update a photo, in this case, would result in the following error:
 
 ```javascript
-	{
-	  "error": {
-	    "code": "ErrorNonExistentMailbox",
-	    "message": "The SMTP address has no mailbox associated with it."
-	  }
-	}
+{
+  "error": {
+    "code": "ErrorNonExistentMailbox",
+    "message": "The SMTP address has no mailbox associated with it."
+  }
+}
 ```
 
 ### Using delta query
@@ -369,16 +378,16 @@ For known issues using delta query, see the [delta query section](#delta-query) 
 
 ### Revoke sign-in sessions returns wrong HTTP code
 
-The [user: revokeSignInSessions API](/graph/api/user-revokesigninsessions?view=graph-rest-1.0) should return a `204 No content` response for successful revocations, and an HTTP error code (4xx or 5xx) if anything goes wrong with the request.  However, due to a service issue, this API returns a `200 OK` and a Boolean parameter that is always true.  Until this is fixed, developers are simply advised to treat any 2xx return code as success for this API.
+The [user: revokeSignInSessions API](/graph/api/user-revokesigninsessions) should return a `204 No content` response for successful revocations, and an HTTP error code (4xx or 5xx) if anything goes wrong with the request.  However, due to a service issue, this API returns a `200 OK` and a Boolean parameter that is always true.  Until this is fixed, developers are simply advised to treat any 2xx return code as success for this API.
 
 ### Incomplete objects when using getByIds request
 
-Requesting objects using [Get directory objects from a list of IDs](/graph/api/directoryobject-getbyids?view=graph-rest-1.0) should return full objects. However, currently [user](/graph/api/resources/user?view=graph-rest-1.0) objects on the v1.0 endpoint are returned with a limited set of properties. As a temporary workaround, when you use the operation in combination with the `$select` query option, more complete [user](/graph/api/resources/user?view=graph-rest-1.0) objects will be returned. This behavior is not in accordance with the OData specifications. Because this behavior might be updated in the future, use this workaround only when you provide `$select=` with all the properties you are interested in, and only if future breaking changes to this workaround are acceptable.
+Requesting objects using [Get directory objects from a list of IDs](/graph/api/directoryobject-getbyids) should return full objects. However, currently [user](/graph/api/resources/user) objects on the v1.0 endpoint are returned with a limited set of properties. As a temporary workaround, when you use the operation in combination with the `$select` query option, more complete [user](/graph/api/resources/user) objects will be returned. This behavior is not in accordance with the OData specifications. Because this behavior might be updated in the future, use this workaround only when you provide `$select=` with all the properties you are interested in, and only if future breaking changes to this workaround are acceptable.
 
 ## Query parameter limitations
 
 * Multiple namespaces are not supported.
-* GETs on `$ref` and casting is not supported on users, groups, devices, service principals and applications.
+* GETs on `$ref` and casting are not supported on users, groups, devices, service principals and applications.
 * `@odata.bind` is not supported.  This means that developers won’t be able to properly set the **acceptedSenders** or **rejectedSenders** navigation property on a group.
 * `@odata.id` is not present on non-containment navigations (like messages) when using minimal metadata.
 * `$expand`:
@@ -395,4 +404,4 @@ Requesting objects using [Get directory objects from a list of IDs](/graph/api/d
 
 ## Functionality available only in Office 365 REST or Azure AD Graph APIs
 
-Some functionality is not yet available in Microsoft Graph. If you don't see the functionality you're looking for, you can use the endpoint-specific [Office 365 REST APIs](https://docs.microsoft.com/previous-versions/office/office-365-api/). For Azure Active Directory, see [Migrate Azure AD Graph apps to Microsoft Graph](https://docs.microsoft.com/graph/migrate-azure-ad-graph-overview). 
+Some functionality is not yet available in Microsoft Graph. If you don't see the functionality you're looking for, you can use the endpoint-specific [Office 365 REST APIs](/previous-versions/office/office-365-api/). For Azure Active Directory, see [Migrate Azure AD Graph apps to Microsoft Graph](./migrate-azure-ad-graph-planning-checklist.md).

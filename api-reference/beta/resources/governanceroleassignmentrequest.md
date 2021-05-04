@@ -1,9 +1,9 @@
 ---
 title: "governanceRoleAssignmentRequest resource type"
-description: "Represents the request for role assignment operations in Privilegd Identity Management."
+description: "Represents the request for role assignment operations in Priviledged Identity Management."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "shauliu"
 ---
 
@@ -34,13 +34,25 @@ Represents the request for role assignment operations in Privilegd Identity Mana
 |resourceId                 |String         |Required. The id of the resource which the role assignment request is associated with.|
 |roleDefinitionId           |String         |Required. The id of the role definition which the role assignment request is associated with.|
 |subjectId                  |String         |Required. The id of the subject which the role assignment request is associated with.|
-|type                       |String         |Required. Representing the type of the operation on the role assignment. The value can be <ul><li>`AdminAdd`: Administrators assign users/groups to roles;</li><li>`UserAdd`: Users activate eligible assignments;</li><li> `AdminUpdate`: Administrators change existing role assignments</li><li>`AdminRemove`: Administrators remove users/groups from roles;<li>`UserRemove`: Users deactivate active assignments;<li>`UserExtend`: Users request to extend their expiring assignments;</li><li>`AdminExtend`: Administrators extend expiring assignments.</li><li>`UserRenew`: Users request to renew their expired assignments;</li><li>`AdminRenew`: Administrators extend expiring assignments.</li></ul>|
-|assignmentState|String  |Required. The state of the assignment. The value can be <ul><li> `Eligible` for eligible assignment</li><li> `Active` - if it is directly assigned `Active` by administrators, or activated on an eligible assignment by the users.</li></ul>|
-|requestedDateTime          |DateTimeOffset |Read-only. The request create time. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|type                       |String        |Required. Representing the type of the operation on the role assignment. The possible values are: `AdminAdd` , `UserAdd` , `AdminUpdate` , `AdminRemove` , `UserRemove` , `UserExtend` , `AdminExtend` , `UserRenew` , `AdminRenew`.|
+|assignmentState|String  |Required. The state of the assignment. The possible values are: `Eligible` (for eligible assignment),  `Active` (if it is directly assigned), `Active` (by administrators, or activated on an eligible assignment by the users).|
+|requestedDateTime          |DateTimeOffset |Read-only. The request create time. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |schedule                   |[governanceSchedule](governanceschedule.md)|The schedule object of the role assignment request.|
 |reason                     |String         |A message provided by users and administrators when create the request about why it is needed.|
 |status                     |[governanceRoleAssignmentRequestStatus](governanceroleassignmentrequeststatus.md)         |The status of the role assignment request.|
 |linkedEligibleRoleAssignmentId|String        |If this is a request for role activation, it represents the id of the `eligible assignment` being referred; Otherwise, the value is `null`. |
+
+|Member|Description|
+|:---|:---|
+|AdminAdd|Administrators assign users/groups to roles.|
+|UserAdd|Users activate eligible assignments.|
+|AdminUpdate|Administrators change existing role assignments.|
+|AdminRemove|Administrators remove users/groups from roles.|
+|UserRemove|Users deactivate active assignments.|
+|UserExtend|Users request to extend their expiring assignments.|
+|AdminExtend|Administrators extend expiring assignments.|
+|UserRenew|Users request to renew their expired assignments.|
+|AdminRenew|Administrators extend expiring assignments.|
 
 
 
@@ -93,3 +105,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

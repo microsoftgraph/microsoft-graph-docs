@@ -3,7 +3,7 @@ title: "Force domain deletion"
 description: "Deletes a domain using an asynchronous long-running operation."
 author: "adimitui"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -12,6 +12,8 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Deletes a domain using an asynchronous long-running operation.
+
+Prior to calling [forceDelete](domain-forcedelete.md), you must update or remove any references to **Exchange** as the provisioning service.
 
 The following actions are performed as part of this operation:
 
@@ -128,3 +130,4 @@ HTTP/1.1 204 OK
   "suppressions": [
   ]
 }-->
+

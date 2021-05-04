@@ -17,7 +17,7 @@ var schedulingGroup = new SchedulingGroup
 	}
 };
 
-await graphClient.Teams["{teamId}"].Schedule.SchedulingGroups["{schedulingGroupId}"]
+await graphClient.Teams["{team-id}"].Schedule.SchedulingGroups["{schedulingGroup-id}"]
 	.Request()
 	.Header("Prefer","return=representation")
 	.PutAsync(schedulingGroup);

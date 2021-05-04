@@ -20,7 +20,7 @@ A single DTMF event.
 | Property       | Type    | Description|
 |:---------------|:--------|:----------|
 | sequenceId | Int64 | An incremental identifier used for ordering DTMF events. |
-| tone | String | Possible values are: `tone0`, `tone1`, `tone2`, `tone3`, `tone4`, `tone5`, `tone6`, `tone7`, `tone8`, `tone9`, `star`, `pound`, `a`, `b`, `c`, `d`, `flash`. |
+| tone | tone | Possible values are: `tone0`, `tone1`, `tone2`, `tone3`, `tone4`, `tone5`, `tone6`, `tone7`, `tone8`, `tone9`, `star`, `pound`, `a`, `b`, `c`, `d`, `flash`. |
 
 ## JSON representation
 
@@ -52,3 +52,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

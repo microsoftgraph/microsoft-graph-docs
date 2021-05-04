@@ -11,7 +11,7 @@ var workbookChartGridlines = new WorkbookChartGridlines
 	Visible = true
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Charts["{name}"].Axes.ValueAxis.MinorGridlines
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts["{workbookChart-id}"].Axes.ValueAxis.MinorGridlines
 	.Request()
 	.UpdateAsync(workbookChartGridlines);
 

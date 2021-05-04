@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/devices/{id}/transitiveMemberOf')
+let transitiveMemberOf = await client.api('/devices/{id}/transitiveMemberOf')
 	.get();
 
 ```

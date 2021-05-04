@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: BooleanColumn
 localization_priority: Normal
@@ -35,3 +34,4 @@ The **booleanColumn** resource contains no properties.
   "section": "documentation",
   "tocPath": "Resources/BooleanColumn"
 } -->
+

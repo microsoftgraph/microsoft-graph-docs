@@ -11,17 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const webAccount = {
-  description: "description-value",
-  userId: "userId-value",
-  service: {
-    name: "name-value",
-    webUrl: "webUrl-value"
-  },
-  statusMessage: "statusMessage-value",
-  webUrl: "webUrl-value"
+  webUrl: 'https://github.com/innocenty.popov'
 };
 
-let res = await client.api('/me/profile/webAccounts/{id}')
+await client.api('/me/profile/webAccounts/{id}')
 	.version('beta')
 	.update(webAccount);
 

@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
 title: bundle resource type
 description: Facet describing a driveItem that is a logical grouping of other driveItems
 localization_priority: Normal
@@ -60,3 +59,5 @@ Note that the `bundle` resource type itself is not an entity of its own, and is 
 [bundle-remove-item]: ../api/bundle-removeItem.md
 [bundle-update]: ../api/bundle-update.md
 [bundle-delete]: ../api/bundle-delete.md
+
+

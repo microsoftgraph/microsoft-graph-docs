@@ -3,7 +3,7 @@ title: "Request differences between Azure AD Graph and Microsoft Graph"
 description: "Describes how Microsoft Graph requests differ from Azure AD requests, which helps migrate apps to the newer service.."
 author: "dkershaw10"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # Request differences between Azure AD Graph and Microsoft Graph
@@ -18,7 +18,7 @@ Use the [Graph Explorer](https://aka.ms/ge) to try these request patterns agains
 
 The following table highlights the main request differences between the two APIs:
 
-|| Azure AD Graph | Microsoft Graph |
+|Request details| Azure AD Graph | Microsoft Graph |
 |---|---|---|
 |Request syntax| `https://graph.windows.net/{tenant_id}/` <br> `{resource}?{version}&query-parameters` | `https://graph.microsoft.com/`<br>`{version}/{resource}?query-parameters`|
 |Service&nbsp;endpoints:||
@@ -38,26 +38,29 @@ Suppose you want a list of all users with names beginning with "Dan".
 
 In Azure AD Graph, you might use this request:
 
-`https://graph.windows.net/contoso.com/users?$filter=startswith(givenName,'Dan')&api-version=1.6`
+`GET https://graph.windows.net/contoso.com/users?$filter=startswith(givenName,'Dan')&api-version=1.6` or
+
+`GET https://graph.windows.net/myOrganization/users?$filter=startswith(givenName,'Dan')&api-version=1.6`
+
 
 This request:
 
-- Targets version 1.6 of Azure AD Graph.  
-- Specifies `contoso.com` as the tenant ID.  
-- Calls the users resource.  
-- Uses the `$filter` query parameter to limit the response to given names that begin with `Dan`.  
+- Targets version 1.6 of Azure AD Graph.
+- Specifies `contoso.com` as the tenant ID. The alternative shows the use of an alias `myOrganization` based on the tenant ID in the access token.
+- Calls the users resource.
+- Uses the `$filter` query parameter to limit the response to given names that begin with `Dan`.
 
 Results include users with names like Daniel, Danforth, Danielle, Danerys, and so on.
 
 A similar request for Microsoft Graph would be:
 
-`https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName,'Dan')`
+`GET https://graph.microsoft.com/v1.0/users?$filter=startswith(givenName,'Dan')`
 
 Here:
 
-- The version is `v1.0`.  
-- The tenant ID is inferred from the access token (not shown).  
-- The resource and `$filter` query parameter are the same as the Azure AD query.  
+- The version is `v1.0`.
+- The tenant ID is inferred from the access token (not shown).
+- The resource and `$filter` query parameter are the same as the Azure AD query.
 
 > **NOTE**: If you're using the Azure AD Graph .NET client library, see [.NET client libraries](migrate-azure-ad-graph-client-libraries.md) for more specific strategies and assistance to move to the Microsoft Graph .NET client library.
 
@@ -93,12 +96,12 @@ The response for this request would include the address properties.  It also inc
 To learn more about:
 
 - Default properties on user, see [users](/graph/api/resources/users?view=graph-rest-1.0)
-- The `$select` parameter and other supported ODATA query parameters, see [Use query parameters to customize responses](/graph/query-parameters).
-- This and other recommended optimizations, see [Best practices](/graph/best-practices-concept).
+- The `$select` parameter and other supported ODATA query parameters, see [Use query parameters to customize responses](./query-parameters.md).
+- This and other recommended optimizations, see [Best practices](./best-practices-concept.md).
 
 ## Relationships and navigation properties
 
-Relationships (or navigation properties) are a key concept in Azure AD Graph and Microsoft Graph, creating a network of related resources. For example, the **manager** and **directReports** properties extend the user resource to provide organizational hierarchy.  
+Relationships (or navigation properties) are a key concept in Azure AD Graph and Microsoft Graph, creating a network of related resources. For example, the **manager** and **directReports** properties extend the user resource to provide organizational hierarchy.
 
 Relationships also define memberships, such as the groups a user belongs to, the members belonging to a group or a directory role, and so on.
 
@@ -118,5 +121,4 @@ When migrating your apps to Microsoft Graph, look for requests that use `$link` 
 ## Next Steps
 
 - Learn about [service feature differences](migrate-azure-ad-graph-feature-differences.md) between Azure AD Graph and Microsoft Graph.
-- Explore [Microsoft Graph](/graph/overview) concepts and practices.
-- Use [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.
+- Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again.

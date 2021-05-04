@@ -3,7 +3,7 @@ title: "macOSMinimumOperatingSystem resource type"
 description: "The minimum operating system required for a MacOS app."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -29,6 +29,7 @@ The minimum operating system required for a MacOS app.
 |v10_13|Boolean|Mac OS 10.13 or later.|
 |v10_14|Boolean|Mac OS 10.14 or later.|
 |v10_15|Boolean|Mac OS 10.15 or later.|
+|v11_0|Boolean|Mac OS 11.0 or later.|
 
 ## Relationships
 None
@@ -51,9 +52,11 @@ Here is a JSON representation of the resource.
   "v10_12": true,
   "v10_13": true,
   "v10_14": true,
-  "v10_15": true
+  "v10_15": true,
+  "v11_0": true
 }
 ```
+
 
 
 

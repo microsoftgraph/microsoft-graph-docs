@@ -2,7 +2,7 @@
 title: "responseStatus resource type"
 description: "The response status of a meeting request."
 localization_priority: Normal
-author: ""
+author: "harini84"
 ms.prod: ""
 doc_type: resourcePageType
 ---
@@ -18,7 +18,7 @@ The response status of a meeting request.
 | Property | Type           | Description |
 |:---------|:---------------|:------------|
 | response | responseType   | The response type. The possible values are: `None`, `Organizer`, `TentativelyAccepted`, `Accepted`, `Declined`, `NotResponded`.
-| time     | DateTimeOffset | The date and time that the response was returned. It uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`
+| time     | DateTimeOffset | The date and time that the response was returned. It uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`
 
 ## JSON representation
 
@@ -48,3 +48,4 @@ Here is a JSON representation of the resource
   "section": "documentation",
   "tocPath": ""
 }-->
+

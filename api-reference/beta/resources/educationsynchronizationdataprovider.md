@@ -13,17 +13,23 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the source SIS schema. This allows the system to know how to map the incoming data to the Azure Active Directory (Azure AD) schema.
+Represents the data provider to use as the synchronization source for a [educationSynchronizationProfile].
 
-> **Note:** This complex type is abstract. Refer to the specific types of data providers listed.
+> [!NOTE]
+> This complex type is abstract. Refer to the specific types of data providers listed.
 
-## Derived types
-| Type | Description |
-|:-|:-|:-|
-| [educationcsvdataprovider](educationcsvdataprovider.md) | Used with CSV files as the input source. |
-| [educationpowerschooldataprovider](educationpowerschooldataprovider.md) | Used with PowerSchool as the input source. |
-| [educationonerosterapidataprovider](educationonerosterapidataprovider.md) | Used with OneRoster API as the input source. |
+## Providers
 
-## Properties
+| Data Provider                                                             | Description                                                                                        |
+| :------------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------- |
+| [educationCsvDataProvider]                                                | CSV files uploaded to the Profile's [SAS URL](../api/educationsynchronizationprofile-uploadurl.md) |
+| [educationOneRosterApiDataProvider](educationonerosterapidataprovider.md) | OneRoster v1.1 API                                                                                 |
+| [educationPowerSchoolDataProvider]                                        | PowerSchool API                                                                                    |
 
-No properties are exposed by this type.
+[educationsynchronizationprofile]: educationsynchronizationprofile.md
+[educationcsvdataprovider]: educationCsvDataProvider.md
+[educationsynchronizationdataprovider]: educationSynchronizationDataProvider.md
+[educationpowerschooldataprovider]: educationPowerSchoolDataProvider.md
+[educationcsvdataprovider]: educationCsvDataProvider.md
+
+

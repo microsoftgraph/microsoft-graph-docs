@@ -1,7 +1,7 @@
 ---
 title: "messageRuleActions resource type"
 description: "Represents the set of actions that are available to a rule."
-author: "svpsiva"
+author: "abheek-das"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: resourcePageType
@@ -65,3 +65,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

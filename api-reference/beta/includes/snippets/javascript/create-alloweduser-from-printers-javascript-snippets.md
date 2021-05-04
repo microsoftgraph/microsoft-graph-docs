@@ -10,12 +10,12 @@ const options = {
 
 const client = Client.init(options);
 
-const printUserIdentity = {
-  @odata.id: "https://graph.microsoft.com/beta/users/{id}"
+const user = {
+  '@odata.id': 'https://graph.microsoft.com/beta/users/{id}'
 };
 
-let res = await client.api('/print/shares/{id}/allowedUsers/$ref')
+await client.api('/print/shares/{id}/allowedUsers/$ref')
 	.version('beta')
-	.post(printUserIdentity);
+	.post(user);
 
 ```

@@ -68,6 +68,7 @@ MSGraphLocation *locations = [[MSGraphLocation alloc] init];
 [locations setDisplayName:@"Home Office"];
 [locationsList addObject: locations];
 [event setLocations:locationsList];
+[event setAllowNewTimeProposals: true];
 
 NSError *error;
 NSData *eventData = [event getSerializedDataWithError:&error];

@@ -1,22 +1,26 @@
 ---
-title: "Use Outlook to organize and attend meetings online"
-description: "In Outlook, a meeting organizer can allow invitees to propose alternative meeting times."
-author: "angelgolfer-ms"
+title: "Enable an event as an online meeting in an Outlook calendar"
+description: "In an organization that supports online meeting providers, administrators can set up Outlook calendars to support meetings that use these providers."
+author: "juforan"
 localization_priority: Priority
 ms.prod: "outlook"
 ---
 
-# Use Outlook to organize or attend meetings online
+# Enable an event as an online meeting in an Outlook calendar 
+
+Use the Outlook calendar API to organize an event where meeting invitees can click a join URL, and attend the meeting online in Microsoft Teams or Skype.
 
 In an organization that supports online meeting providers, administrators can set up Outlook calendars to support meetings that use these providers, with one of these providers being the default provider. You can [create](#create-and-enable-a-meeting-online) or [update](#update-a-meeting-to-enable-it-online) an [event](/graph/api/resources/event) in Outlook and allow attendees to join the meeting online using a supported provider. You can conveniently [get the online meeting information](#get-information-to-join-meeting-online) of the **event**, including the URL to join the meeting. 
+
+> **Note** The calendar API lets you conveniently set up an online meeting in an Outlook calendar where attendees can click to join the meeting and continue their experience in Teams or Skype. For a more customized, richer integration with Teams or Skype, use the cloud communications API. See [Choose an API in Microsoft Graph to create and join online meetings](choose-online-meeting-api.md) for more information.
 
 ## Calendars and online meeting providers
 
 An organization that supports any of the following online meeting providers can set up Outlook calendars and enable organizing meetings online:
 
-- Microsoft Teams, acquired as part of an Office 365 business or enterprise suite
+- Microsoft Teams, acquired as part of a Microsoft 365 business or enterprise suite
 - Skype
-- Skype for Business
+- Skype for Business (which is being [superceded by Microsoft Teams](https://www.microsoft.com/microsoft-365/previous-versions/skype-for-business-online))
 
 Look for the **allowedOnlineMeetingProviders** and **defaultOnlineMeetingProvider** properties to verify if an Outlook [calendar](/graph/api/resources/calendar) supports any online meeting providers. The following example shows the signed-in user's default calendar supports two providers, Microsoft Teams and Skype for Business, and uses Microsoft Teams as the default online meeting provider. 
 
@@ -467,7 +471,9 @@ Content-type: application/json
 
 
 ## See also
-- For information on Microsoft Teams interoperability with Office 365, see [coexistence and upgrade settings](https://docs.microsoft.com/microsoftteams/setting-your-coexistence-and-upgrade-settings).
+- For information on Microsoft Teams interoperability with Microsoft 365, see:
+  - [How Exchange and Microsoft Teams interact](/microsoftteams/exchange-teams-interact)
+  - [Setting your coexistence and upgrade settings](/microsoftteams/setting-your-coexistence-and-upgrade-settings)
 - [Choose an API in Microsoft Graph to create and join online meetings](choose-online-meeting-api.md)
 - [Finding possible meeting times on the Outlook calendar](findmeetingtimes-example.md)
 - [Getting the free/busy schedule for users and resources](outlook-get-free-busy-schedule.md)

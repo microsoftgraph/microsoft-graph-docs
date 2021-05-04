@@ -1,9 +1,9 @@
 ---
 title: "targetedManagedAppConfiguration resource type"
 description: "Configuration used to deliver a set of custom settings as-is to all users in the targeted security group"
-author: "dougeby"
+author: "rolyon"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -87,6 +87,7 @@ Here is a JSON representation of the resource.
   "isAssigned": true
 }
 ```
+
 
 
 

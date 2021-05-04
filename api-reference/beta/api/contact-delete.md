@@ -38,7 +38,7 @@ DELETE /users/{id | userPrincipalName}/contactFolders/{id}/contacts/{id}
 A [contact](../resources/contact.md) contained in a child folder of a [contactFolder](../resources/mailfolder.md).  The 
 example below shows one level of nesting, but a contact can be located in a child of a child and so on.
 ```http
-DELETE /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
+DELETE /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
 DELETE /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 ## Request headers
@@ -77,10 +77,14 @@ DELETE https://graph.microsoft.com/beta/me/contacts/{id}
 [!INCLUDE [sample-code](../includes/snippets/objc/delete-contact-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-contact-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -102,3 +106,5 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
+
+

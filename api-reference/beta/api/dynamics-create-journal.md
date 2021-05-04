@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-```
+```http
 POST /financials/companies/{id}/journals/{id}
 ```
 
@@ -53,11 +53,10 @@ If successful, this method returns ```201 Created``` response code and a **journ
 
 Here is an example of a request.
 
-```json
+```http
 POST https://graph.microsoft.com/beta/financials/companies/{id}/journals
 Content-type: application/json
 
-```json
 {
   "code": "DEFAULT"
 }
@@ -65,7 +64,7 @@ Content-type: application/json
 
 **Response**
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 
@@ -76,4 +75,6 @@ Content-type: application/json
   "lastModifiedDateTime": "2017-05-17T11:30:01.313Z"
 }
 ```
+
+
 

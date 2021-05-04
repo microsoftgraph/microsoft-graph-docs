@@ -3,7 +3,7 @@ title: "Get dataSharingConsent"
 description: "Read properties and relationships of the dataSharingConsent object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -20,7 +20,7 @@ Read properties and relationships of the [dataSharingConsent](../resources/intun
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -78,6 +78,7 @@ Content-Length: 417
   }
 }
 ```
+
 
 
 

@@ -3,7 +3,7 @@ title: "unsupportedDeviceConfiguration resource type"
 description: "UnsupportedDeviceConfiguration is used when an entity cannot be mapped to another model-compliant subtype of deviceConfiguration."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -109,6 +109,7 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
+
 
 
 

@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: BaseItem
 localization_priority: Normal
@@ -87,3 +86,4 @@ The `baseItem` type is not expected to be used directly.
   "section": "documentation",
   "tocPath": "Resources/BaseItem"
 } -->
+

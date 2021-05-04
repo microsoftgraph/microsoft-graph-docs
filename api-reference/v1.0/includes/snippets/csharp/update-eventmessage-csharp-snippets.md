@@ -11,7 +11,7 @@ var message = new Message
 	IsRead = true
 };
 
-await graphClient.Me.Messages["{id}"]
+await graphClient.Me.Messages["{message-id}"]
 	.Request()
 	.UpdateAsync(message);
 

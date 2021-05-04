@@ -57,6 +57,10 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 [!INCLUDE [sample-code](../includes/snippets/objc/enum-lists-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/enum-lists-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -64,7 +68,7 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/lists
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "isCollection": true, "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -112,3 +116,5 @@ To list them, include `system` in your `$select` statement.
   ]
 }
 -->
+
+

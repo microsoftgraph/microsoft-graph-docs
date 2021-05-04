@@ -3,7 +3,7 @@ title: "Get recent user activities"
 description: " API. The service will query for the most recent historyItems, and then pull those related activities. Activities will be sorted according to the most recent **lastModified** on the **historyItem**. This means that activities without **historyItems** will not be included in the response. The UserActivity.ReadWrite.CreatedByApp permission will also apply extra filtering to the response, so that only activities created by your application are returned. This server-side filtering might result in empty pages if the user is particularly active and other applications have created more recent activities. To get your application's activities, use the **nextLink** property to paginate."
 localization_priority: Normal
 ms.prod: "project-rome"
-author: ""
+author: "ailae"
 doc_type: apiPageType
 ---
 
@@ -33,7 +33,7 @@ GET /me/activities/recent
 
 ## Optional query parameters
 
-This method supports some [OData Query Parameters](https://developer.microsoft.com/graph/docs/concepts/query_parameters) to help customize the response. The following query parameters are supported:
+This method supports some [OData Query Parameters](/graph/query-parameters) to help customize the response. The following query parameters are supported:
 
 - $expand for the **historyItems** navigation property.
 - $top to limit the maximum number of items across pages.
@@ -166,18 +166,6 @@ Content-Type: application/json
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Error: get_recent_activities/container/contentInfo:
-      Property 'contentInfo' is of type Custom but has no custom members.",
-
-    "Warning: get_recent_activities/container/visualElements/content/$schema:
-      Undocumented property '$schema' [String] was not expected on resource microsoft.graph.Json.",
-
-    "Warning: get_recent_activities/container/visualElements/content/body:
-      Undocumented property 'body' [Collection(Object)] was not expected on resource microsoft.graph.Json.",
-
-    "Warning: get_recent_activities/container/visualElements/content/type:
-      Undocumented property 'type' [String] was not expected on resource microsoft.graph.Json."
-
   ],
   "tocPath": ""
 }-->

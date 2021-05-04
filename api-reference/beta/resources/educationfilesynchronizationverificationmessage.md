@@ -17,11 +17,11 @@ Represents an error returned to the client in response to a request to [start sy
 
 ## Properties
 
-| Property | Type | Description |
-|:-|:-|:-|
-| **type** | string | Type of the message. Possible values are: `error`, `warning`, `information`. | 
-| **filename** | string | Source file that contains the error. |
-| **description** | string | Detailed information about the message type. |
+| Property    | Type   | Description                                                                  |
+| :---------- | :----- | :--------------------------------------------------------------------------- |
+| type        | string | Type of the message. Possible values are: `error`, `warning`, `information`. |
+| filename    | string | Source file that contains the error.                                         |
+| description | string | Detailed information about the message type.                                 |
 
 ## JSON representation
 
@@ -35,8 +35,10 @@ Represents an error returned to the client in response to a request to [start sy
 
 ```json
 {
-    "type": "String",
-    "fileName": "String",
-    "description": "String"
+  "type": "String",
+  "fileName": "String",
+  "description": "String"
 }
 ```
+
+

@@ -22,15 +22,15 @@ In addition to the following permissions, the user's tenant must have an active 
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
-|Delegated (work or school account)| Users.Read.All |
+|Delegated (work or school account)| Reports.Read.All |
 |Delegated (personal Microsoft account)|Not Supported.|
 |Application|Not Supported.|
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /print/reports/getUserArchivedPrintJobs
-GET /reports/getUserArchivedPrintJobs
+GET /print/reports/getUserArchivedPrintJobs(userId=userId-value,startDateTime=startDateTime-value,endDateTime=endDateTime-value)
+GET /reports/getUserArchivedPrintJobs(userId=userId-value,startDateTime=startDateTime-value,endDateTime=endDateTime-value)
 ```
 ## Request headers
 | Name          | Description   |
@@ -39,11 +39,11 @@ GET /reports/getUserArchivedPrintJobs
 
 ## Function Parameters
 
-|Parameter|Type|Required?|Description|
-|-|-|-|-|-|
-|`userId`|`Edm.String`|Yes|The ID of the user to return data for.|
-|`periodStart`|`Edm.DateTimeOffset`|No|The start date (inclusive) for the time period to include data from.|
-|`periodEnd`|`Edm.DateTimeOffset`|No|The end date (inclusive) for the time period to include data from.|
+| Parameter     | Type                 | Required? | Description                                                          |
+|---------------|----------------------|-----------|----------------------------------------------------------------------|
+| `userId`      | `Edm.String`         | Yes       | The ID of the user to return data for.                               |
+| `startDateTime` | `Edm.DateTimeOffset` | No        | The start date (inclusive) for the time period to include data from. |
+| `endDateTime`   | `Edm.DateTimeOffset` | No        | The end date (inclusive) for the time period to include data from.   |
 
 ## Response
 If successful, this method returns a `200 OK` response code and a collection of [archivedPrintJob](../resources/archivedprintjob.md) objects in the response body.
@@ -57,12 +57,12 @@ The following is an example of the request.
   "name": "reports-getuserarchivedprintjobs"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/print/reports/getUserArchivedPrintJobs(userId={id},periodStart=<timestamp>,periodEnd=<timestamp>)
+GET https://graph.microsoft.com/beta/print/reports/getUserArchivedPrintJobs(userId='{id}',startDateTime={timestamp},endDateTime={timestamp})
 ```
 
 ##### Response
-The following is an example of the response. 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+The following is an example of the response.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -96,3 +96,4 @@ Content-length: 236
   "section": "documentation",
   "tocPath": ""
 }-->
+

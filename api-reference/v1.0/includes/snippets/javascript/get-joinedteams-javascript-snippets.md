@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/joinedTeams')
+let joinedTeams = await client.api('/me/joinedTeams')
 	.get();
 
 ```

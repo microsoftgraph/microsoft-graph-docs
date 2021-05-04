@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: SharePointIds
 localization_priority: Normal
@@ -66,3 +65,4 @@ For more information about the facets on a **driveItem**, see [**driveItem**](dr
   "section": "documentation",
   "tocPath": "Facets/SharepointIds"
 } -->
+

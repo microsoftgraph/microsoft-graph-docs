@@ -4,7 +4,7 @@ description: "Describes a reference to another object defined in the same direct
 localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # referencedObject resource type
@@ -55,3 +55,5 @@ The following is a JSON representation of the resource.
 }
 -->
             
+
+

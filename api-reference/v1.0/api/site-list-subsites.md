@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: List the subsites for a SharePoint site
 localization_priority: Priority
@@ -58,7 +57,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/sites
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -93,3 +92,4 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
+

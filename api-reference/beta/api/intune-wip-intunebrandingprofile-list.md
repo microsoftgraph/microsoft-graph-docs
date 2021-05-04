@@ -3,7 +3,7 @@ title: "List intuneBrandingProfiles"
 description: "List properties and relationships of the intuneBrandingProfile objects."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -20,11 +20,11 @@ List properties and relationships of the [intuneBrandingProfile](../resources/in
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegated (work or school account)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Application|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 2221
+Content-Length: 2416
 
 {
   "value": [
@@ -104,6 +104,8 @@ Content-Length: 2221
       "onlineSupportSiteName": "Online Support Site Name value",
       "privacyUrl": "https://example.com/privacyUrl/",
       "customPrivacyMessage": "Custom Privacy Message value",
+      "customCanSeePrivacyMessage": "Custom Can See Privacy Message value",
+      "customCantSeePrivacyMessage": "Custom Cant See Privacy Message value",
       "isRemoveDeviceDisabled": true,
       "isFactoryResetDisabled": true,
       "companyPortalBlockedActions": [
@@ -118,6 +120,7 @@ Content-Length: 2221
       "showOfficeWebApps": true,
       "sendDeviceOwnershipChangePushNotification": true,
       "enrollmentAvailability": "availableWithoutPrompts",
+      "disableClientTelemetry": true,
       "roleScopeTagIds": [
         "Role Scope Tag Ids value"
       ]
@@ -125,6 +128,7 @@ Content-Length: 2221
   ]
 }
 ```
+
 
 
 

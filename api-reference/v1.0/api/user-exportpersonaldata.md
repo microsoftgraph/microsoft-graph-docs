@@ -2,7 +2,7 @@
 title: "user: exportPersonalData"
 description: "Submits a data policy operation request, made by a Company Administrator to export an organizational user's data."
 localization_priority: Normal
-author: "krbain"
+author: "jpettere"
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -114,3 +114,4 @@ HTTP/1.1 202 Accepted
   "suppressions": [
   ]
 }-->
+

@@ -1,7 +1,7 @@
 ---
 title: "Get incremental changes for groups"
 description: "Delta query lets you query for additions, deletions, or updates to groups, by way of a series of delta function calls. Delta query enables you discover changes to groups"
-author: "baywet"
+author: "davidmu1"
 localization_priority: Priority
 ms.custom: graphiamtop20
 ---

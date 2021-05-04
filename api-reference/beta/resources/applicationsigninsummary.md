@@ -2,8 +2,8 @@
 title: "applicationSignInDetailedSummary resource type"
 description: "Represents an application sign-in summary."
 localization_priority: Normal
-author: "kholtz"
-ms.prod: "microsoft-identity-platform"
+author: "besiler"
+ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"
 ---
 
@@ -66,3 +66,5 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
+

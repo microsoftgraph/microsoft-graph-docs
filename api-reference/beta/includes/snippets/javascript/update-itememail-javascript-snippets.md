@@ -11,12 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const itemEmail = {
-  address: "address-value",
-  displayName: "displayName-value",
-  type: "type-value"
+  displayName: 'Business Email',
+  type: 'work'
 };
 
-let res = await client.api('/me/profile/emails/{id}')
+await client.api('/users/{userId}/profile/emails/{id}')
 	.version('beta')
 	.update(itemEmail);
 

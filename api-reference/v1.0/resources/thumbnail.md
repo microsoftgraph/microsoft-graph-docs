@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Thumbnail
 localization_priority: Normal
@@ -58,3 +57,4 @@ Here is a JSON representation of the **thumbnail** resource.
   "section": "documentation",
   "tocPath": "Resources/Thumbnail"
 } -->
+

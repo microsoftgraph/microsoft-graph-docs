@@ -1,7 +1,7 @@
 ---
 title: "message: copy"
 description: "Copy a message to a folder."
-author: "svpsiva"
+author: "abheek-das"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -98,7 +98,7 @@ Content-length: 44
 
 Here is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -134,3 +134,4 @@ Content-length: 248
   "suppressions": [
   ]
 }-->
+

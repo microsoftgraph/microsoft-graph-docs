@@ -3,7 +3,7 @@ title: "Cancel privilegedRoleAssignmentRequest"
 description: "Cancel a privilegedRoleAssignmentRequest."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "shauliu"
 ---
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /privilegedRoleAssignmentRequests({requestid})/cancel
+POST /privilegedRoleAssignmentRequests/{requestid}/cancel
 ```
 
 ## Request headers
@@ -74,6 +74,10 @@ POST https://graph.microsoft.com/beta/privilegedRoleAssignmentRequests/7c53453e-
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/cancel-privilegedroleassignmentrequests-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/cancel-privilegedroleassignmentrequests-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -126,3 +130,5 @@ Content-length: 304
   ]
 }
 -->
+
+

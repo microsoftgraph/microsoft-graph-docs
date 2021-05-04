@@ -3,7 +3,7 @@ title: "policyBase resource type"
 description: "Represents an abstract base type for policy types to inherit from."
 localization_priority: Normal
 author: "lujiangfeng666"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -39,7 +39,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.policyBase",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

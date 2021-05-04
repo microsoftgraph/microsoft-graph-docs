@@ -1,0 +1,306 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "31591e8c-641d-455a-bdea-5b111f39b085",
+          "ApiChange": "Resource",
+          "ChangedApiName": "profile,addresses,anniversaries,awards,certifications,notes,patents,publications",
+          "ChangeType": "Addition",
+          "Description": "Added the following new relationships to the [profile](https://docs.microsoft.com/en-us/graph/api/resources/profile?view=graph-rest-beta) API with associated entities and methods: \u003Cul\u003E\u003Cli\u003E[addresses](https://docs.microsoft.com/en-us/graph/api/resources/itemAddress?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[anniversaries](https://docs.microsoft.com/en-us/graph/api/resources/personAnniversary?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[awards](https://docs.microsoft.com/en-us/graph/api/resources/personAward?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[certifications](https://docs.microsoft.com/en-us/graph/api/resources/personCertification?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[notes](https://docs.microsoft.com/en-us/graph/api/resources/personAnnotation?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[patents](https://docs.microsoft.com/en-us/graph/api/resources/itemPatent?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[publications](https://docs.microsoft.com/en-us/graph/api/resources/itemPublication?view=graph-rest-beta)\u003C/li\u003E\u003C/ul\u003E",
+          "Target": "profile,addresses,anniversaries,awards,certifications,notes,patents,publications"
+        }
+      ],
+      "Id": "31591e8c-641d-455a-bdea-5b111f39b085",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-08-01T00:00:00",
+      "WorkloadArea": "People and workplace intelligence ",
+      "SubArea": "Profile"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8c224202-825a-4190-9b47-ff758248262d",
+          "ApiChange": "Property",
+          "ChangedApiName": "itemInsights,organizationSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **itemInsights** navigation property to the **organizationSettings** entity.",
+          "Target": ""
+        },
+        {
+          "Id": "8c224202-825a-4190-9b47-ff758248262d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "itemInsightsSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **itemInsightsSettings** entity and the following operations: ,  [Get itemInsightSettings](https://docs.microsoft.com/en-us/graph/api/iteminsightssettings-get?view=graph-rest-beta) ,  [Update itemInsightSettings](https://docs.microsoft.com/en-us/graph/api/iteminsightssettings-update?view=graph-rest-beta)",
+          "Target": "Get itemInsightSettings,Update itemInsightSettings"
+        }
+      ],
+      "Id": "8c224202-825a-4190-9b47-ff758248262d",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-07-01T00:00:00",
+      "WorkloadArea": "People and workplace intelligence ",
+      "SubArea": "Insights"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a9247538-0fcc-463f-8439-cf5a7e86dd19",
+          "ApiChange": "Property",
+          "ChangedApiName": "profileCardProperties",
+          "ChangeType": "Addition",
+          "Description": "Added the **profileCardProperties** navigation property to the [organizationSettings](https://docs.microsoft.com/en-us/graph/api/resources/organizationsettings?view=graph-rest-beta) entity.",
+          "Target": "organizationSettings"
+        },
+        {
+          "Id": "a9247538-0fcc-463f-8439-cf5a7e86dd19",
+          "ApiChange": "Resource",
+          "ChangedApiName": "profileCardProperty",
+          "ChangeType": "Addition",
+          "Description": "Added the **profileCardProperty** entity and the following operations: ,  [List](https://docs.microsoft.com/en-us/graph/api/organizationsettings-list-profilecardproperties) ,  [Create](https://docs.microsoft.com/en-us/graph/api/organizationsettings-post-profilecardproperties) ,  [Get](https://docs.microsoft.com/en-us/graph/api/profilecardproperty-get?view=graph-rest-beta) ,  [Update](https://docs.microsoft.com/en-us/graph/api/profilecardproperty-update?view=graph-rest-beta) ,  [Delete](https://docs.microsoft.com/en-us/graph/api/profilecardproperty-delete).",
+          "Target": "List,Create,Get,Update,Delete"
+        }
+      ],
+      "Id": "a9247538-0fcc-463f-8439-cf5a7e86dd19",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-07-01T00:00:00",
+      "WorkloadArea": "People and workplace intelligence ",
+      "SubArea": "Profile"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "99f277e8-b0bb-4193-8248-095bb0842f78",
+          "ApiChange": "Resource",
+          "ChangedApiName": "officeGraphInsights,trending,usedInsight,sharedInsight,Why integrate with document-based insights?",
+          "ChangeType": "Addition",
+          "Description": "Insights API is available in v1.0. This includes the [officeGraphInsights](https://docs.microsoft.com/en-us/graph/api/resources/officegraphinsights?view=graph-rest-1.0), [trending](https://docs.microsoft.com/en-us/graph/api/resources/insights-trending?view=graph-rest-1.0), [usedInsight](https://docs.microsoft.com/en-us/graph/api/resources/insights-used?view=graph-rest-1.0), and [sharedInsight](https://docs.microsoft.com/en-us/graph/api/resources/insights-shared?view=graph-rest-1.0) resources, and related types and methods. See [Why integrate with document-based insights?](social-intel-concept-overview.md#why-integrate-with-document-based-insights) for more information.",
+          "Target": "officeGraphInsights,trending,usedInsight,sharedInsight,Why integrate with document-based insights?"
+        }
+      ],
+      "Id": "99f277e8-b0bb-4193-8248-095bb0842f78",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2019-12-01T00:00:00",
+      "WorkloadArea": "People and workplace intelligence ",
+      "SubArea": "Insights"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8010b2c9-d937-436f-84b1-74b9a5eb67cf",
+          "ApiChange": "method",
+          "ChangedApiName": "profile API",
+          "ChangeType": "Addition",
+          "Description": "Added the [profile API](https://docs.microsoft.com/en-us/graph/api/resources/profile?view=graph-rest-beta) and associated methods.",
+          "Target": "profile API"
+        }
+      ],
+      "Id": "8010b2c9-d937-436f-84b1-74b9a5eb67cf",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2019-11-01T00:00:00",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "82f7015c-fd60-442f-8d1c-7affba36df0c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "analytics API",
+          "ChangeType": "Addition",
+          "Description": "Introduced the new workplace intelligence [analytics API](https://docs.microsoft.com/en-us/graph/api/resources/useranalytics?view=graph-rest-beta) that enables you to get analytics about how users spend their time on various activities during and outside of working hours, including calls, chats (instant messages), emails, focus work, and meetings.",
+          "Target": "analytics API"
+        },
+        {
+          "Id": "82f7015c-fd60-442f-8d1c-7affba36df0c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "settings API,analytics API",
+          "ChangeType": "Addition",
+          "Description": "Introduced the new workplace intelligence [settings API](https://docs.microsoft.com/en-us/graph/api/resources/settings?view=graph-rest-beta) that represents the current required settings for a user to use the [analytics API](https://docs.microsoft.com/en-us/graph/api/resources/useranalytics?view=graph-rest-beta).",
+          "Target": "settings API,analytics API"
+        },
+        {
+          "Id": "82f7015c-fd60-442f-8d1c-7affba36df0c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "activityStatistics,callActivityStatistics,chatActivityStatistics,emailActivityStatistics,focusActivityStatistics,meetingActivityStatistics",
+          "ChangeType": "Addition",
+          "Description": "Introduced the new [activityStatistics](https://docs.microsoft.com/en-us/graph/api/resources/activitystatistics?view=graph-rest-beta) resource type and the following new resource types that are derived from it: [callActivityStatistics](https://docs.microsoft.com/en-us/graph/api/resources/callactivitystatistics?view=graph-rest-beta), [chatActivityStatistics](https://docs.microsoft.com/en-us/graph/api/resources/chatactivitystatistics?view=graph-rest-beta),[emailActivityStatistics](https://docs.microsoft.com/en-us/graph/api/resources/emailactivitystatistics?view=graph-rest-beta), [focusActivityStatistics](https://docs.microsoft.com/en-us/graph/api/resources/focusactivitystatistics?view=graph-rest-beta), and [meetingActivityStatistics](https://docs.microsoft.com/en-us/graph/api/resources/meetingactivitystatistics?view=graph-rest-beta).",
+          "Target": "activityStatistics,callActivityStatistics,chatActivityStatistics,emailActivityStatistics,focusActivityStatistics,meetingActivityStatistics"
+        }
+      ],
+      "Id": "82f7015c-fd60-442f-8d1c-7affba36df0c",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2019-08-01T00:00:00",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "45a46158-d7bc-42b2-bcfd-6aa75db1d410",
+          "ApiChange": "Resource",
+          "ChangedApiName": "settings,Get,Update",
+          "ChangeType": "Addition",
+          "Description": "Added the [settings](https://docs.microsoft.com/en-us/graph/api/resources/user-settings?view=graph-rest-beta) entity and the following CRUD methods: \u003Cbr\u003E [Get](https://docs.microsoft.com/en-us/graph/api/user-get-settings?view=graph-rest-beta) \u003Cbr\u003E [Update](https://docs.microsoft.com/en-us/graph/api/user-update-settings?view=graph-rest-beta)",
+          "Target": "settings,Get,Update"
+        }
+      ],
+      "Id": "45a46158-d7bc-42b2-bcfd-6aa75db1d410",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2018-05-01T00:00:00",
+      "WorkloadArea": "People and workplace intelligence ",
+      "SubArea": "Insights"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "05d556a5-95e7-4cc5-8f25-54b0362d9c98",
+          "ApiChange": "Resource",
+          "ChangedApiName": "People APIs,Get relevant information about people",
+          "ChangeType": "Addition",
+          "Description": "Added the [People APIs](https://docs.microsoft.com/en-us/graph/api/resources/person?view=graph-rest-1.0) to v1.0. For details about the People API, see [Get relevant information about people](people-example.md).",
+          "Target": "People APIs,Get relevant information about people"
+        },
+        {
+          "Id": "05d556a5-95e7-4cc5-8f25-54b0362d9c98",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Permissions",
+          "ChangeType": "Addition",
+          "Description": "Added People.Read.All permission. To learn more, please see [Permissions](permissions-reference.md).",
+          "Target": "Permissions"
+        },
+        {
+          "Id": "05d556a5-95e7-4cc5-8f25-54b0362d9c98",
+          "ApiChange": "Resource",
+          "ChangedApiName": "personType",
+          "ChangeType": "Addition",
+          "Description": "Added the [personType](https://docs.microsoft.com/en-us/graph/api/resources/persontype?view=graph-rest-1.0) resource.",
+          "Target": "personType"
+        },
+        {
+          "Id": "05d556a5-95e7-4cc5-8f25-54b0362d9c98",
+          "ApiChange": "Resource",
+          "ChangedApiName": "rankedEmailAddress",
+          "ChangeType": "Change",
+          "Description": "The [scoredEmailAddress](https://docs.microsoft.com/en-us/graph/api/resources/scoredemailaddress?view=graph-rest-1.0) resource replaced the **rankedEmailAddress** resource.",
+          "Target": "scoredEmailAddress"
+        },
+        {
+          "Id": "05d556a5-95e7-4cc5-8f25-54b0362d9c98",
+          "ApiChange": "Property",
+          "ChangedApiName": "scoredEmailAddresses,emailAddresses,jobTitle,title,sources,mailboxType,personType,sources,mailboxType,imAddress",
+          "ChangeType": "Change",
+          "Description": "The [person](https://docs.microsoft.com/en-us/graph/api/resources/person?view=graph-rest-1.0) resource was updated as follows:\u003Cul\u003E\u003Cli\u003EThe **scoredEmailAddresses** property (a collection of [scoredEmailAddress](https://docs.microsoft.com/en-us/graph/api/resources/scoredemailaddress?view=graph-rest-1.0) type) replaced the **emailAddresses** property\u003C/li\u003E\u003Cli\u003EThe **jobTitle** property replaced the **title** property\u003C/li\u003E\u003Cli\u003ERemoved **sources** and **mailboxType** properties\u003C/li\u003E\u003Cli\u003EThe **personType** property is now of [personType](https://docs.microsoft.com/en-us/graph/api/resources/persontype?view=graph-rest-1.0) type instead of string type and replaces functionality of the previous **sources** and **mailboxType** properties\u003C/li\u003E\u003Cli\u003EAdded **imAddress** property\u003C/li\u003E\u003C/ul\u003E",
+          "Target": "person,scoredEmailAddress,personType"
+        },
+        {
+          "Id": "05d556a5-95e7-4cc5-8f25-54b0362d9c98",
+          "ApiChange": "Resource",
+          "ChangedApiName": "personDataSource",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **personDataSource** resource.",
+          "Target": ""
+        }
+      ],
+      "Id": "05d556a5-95e7-4cc5-8f25-54b0362d9c98",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2017-08-01T00:00:00",
+      "WorkloadArea": "People and workplace intelligence ",
+      "SubArea": "People"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "df864cd6-a5ae-4969-8529-9e61cfeb9f81",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Shared API,sharingDetail,insightIdentity",
+          "ChangeType": "Addition",
+          "Description": "Added [Shared API](https://docs.microsoft.com/en-us/graph/api/resources/insights-shared?view=graph-rest-beta).\u003Cbr /\u003ENew resources:\u003Cbr /\u003E[sharingDetail](https://docs.microsoft.com/en-us/graph/api/resources/insights-sharingdetail?view=graph-rest-beta) \u003Cbr /\u003E[insightIdentity](https://docs.microsoft.com/en-us/graph/api/resources/insights-insightidentity?view=graph-rest-beta) \u003Cbr /\u003E",
+          "Target": "Shared API,sharingDetail,insightIdentity"
+        },
+        {
+          "Id": "df864cd6-a5ae-4969-8529-9e61cfeb9f81",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Used API,usageDetails",
+          "ChangeType": "Addition",
+          "Description": "Added [Used API](https://docs.microsoft.com/en-us/graph/api/resources/insights-used?view=graph-rest-beta).\u003Cbr /\u003ENew resources:\u003Cbr /\u003E[usageDetails](https://docs.microsoft.com/en-us/graph/api/resources/insights-usagedetails?view=graph-rest-beta) \u003Cbr /\u003E",
+          "Target": "Used API,usageDetails"
+        },
+        {
+          "Id": "df864cd6-a5ae-4969-8529-9e61cfeb9f81",
+          "ApiChange": "Property",
+          "ChangedApiName": "Type",
+          "ChangeType": "Change",
+          "Description": "New **Type** property in the:\u003Cbr /\u003E[resourceVisualization](https://docs.microsoft.com/en-us/graph/api/resources/insights-resourcevisualization?view=graph-rest-beta) resource. \u003Cbr /\u003E",
+          "Target": "resourceVisualization"
+        },
+        {
+          "Id": "df864cd6-a5ae-4969-8529-9e61cfeb9f81",
+          "ApiChange": "Resource",
+          "ChangedApiName": "workingWith,trendingAround",
+          "ChangeType": "Deletion",
+          "Description": "Removed the following entities:, **workingWith**, **trendingAround**, ",
+          "Target": ""
+        }
+      ],
+      "Id": "df864cd6-a5ae-4969-8529-9e61cfeb9f81",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2017-05-01T00:00:00",
+      "WorkloadArea": "People and workplace intelligence ",
+      "SubArea": "Insights"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "52a2d5fe-1db2-46ff-af8b-2dd5179fb20b",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Upcoming changes to Contacts and People APIs",
+          "ChangeType": "Change",
+          "Description": "Property _WebSite_ is renamed to _Websites_. For details, see [Upcoming changes to Contacts and People APIs](https://developer.microsoft.com/office/blogs/upcoming-changes-to-contacts-and-people-apis/).",
+          "Target": "Upcoming changes to Contacts and People APIs"
+        }
+      ],
+      "Id": "52a2d5fe-1db2-46ff-af8b-2dd5179fb20b",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2016-08-01T00:00:00",
+      "WorkloadArea": "People and workplace intelligence ",
+      "SubArea": "People"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "bdae8773-190a-4645-a342-7da30a4b0012",
+          "ApiChange": "Property",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added new properties _birthday_, _personNotes_, _isFavorite_, _phones_, _permission_, _postalAddresses_,_websites_,_yomiCompany_, _department_, _profession_, _mailboxType_ and _personType_.",
+          "Target": ""
+        },
+        {
+          "Id": "bdae8773-190a-4645-a342-7da30a4b0012",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added new enum types _physicalAddressType_, _webSite_, _phone_ and _webSiteType_.",
+          "Target": ""
+        }
+      ],
+      "Id": "bdae8773-190a-4645-a342-7da30a4b0012",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2016-03-01T00:00:00",
+      "WorkloadArea": "People and workplace intelligence ",
+      "SubArea": "People"
+    }
+  ]
+}

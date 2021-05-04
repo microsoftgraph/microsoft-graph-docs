@@ -11,6 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const team = {
+ isMembershipLimitedToOwners: true,
   memberSettings: {
     allowCreateUpdateChannels: true
   },
@@ -20,14 +21,14 @@ const team = {
   },
   funSettings: {
     allowGiphy: true,
-    giphyContentRating: "strict"
+    giphyContentRating: 'strict'
   },
   discoverySettings: {
     showInTeamsSearchAndSuggestions: true
   }
 };
 
-let res = await client.api('/teams/{id}')
+await client.api('/teams/{id}')
 	.version('beta')
 	.update(team);
 

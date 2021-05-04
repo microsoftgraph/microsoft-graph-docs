@@ -2,7 +2,7 @@
 title: "List overrides"
 description: "Get the overrides that a user has set up to always classify messages from certain senders in specific ways."
 localization_priority: Normal
-author: ""
+author: "abheek-das"
 ms.prod: ""
 doc_type: apiPageType
 ---
@@ -73,7 +73,7 @@ GET https://graph.microsoft.com/v1.0/me/inferenceClassification/overrides
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -117,3 +117,4 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+

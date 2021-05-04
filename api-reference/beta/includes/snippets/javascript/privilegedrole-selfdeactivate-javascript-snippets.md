@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/privilegedRoles/{id}/selfDeactivate')
+await client.api('/privilegedRoles/{id}/selfDeactivate')
 	.version('beta')
 	.post();
 

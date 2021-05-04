@@ -10,11 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-const teamsAppInstallation = {
-   teamsApp@odata.bind:"https://graph.microsoft.com/v1.0/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
-};
-
-let res = await client.api('/teams/{id}/installedApps')
-	.post(teamsAppInstallation);
+let team = await client.api('/teams/893075dd-2487-4122-925f-022c42e20265')
+	.get();
 
 ```

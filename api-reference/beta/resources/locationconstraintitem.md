@@ -2,7 +2,7 @@
 title: "locationConstraintItem resource type"
 description: "The conditions stated by a client for the location of a meeting."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "vrod9429"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---
@@ -68,3 +68,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

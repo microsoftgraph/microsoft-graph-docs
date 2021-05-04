@@ -1,7 +1,7 @@
 ---
 title: "wipeManagedAppRegistrationByDeviceTag action"
 description: "Issues a wipe operation on an app registration with specified device tag."
-author: "dougeby"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -83,6 +83,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 204 No Content
 ```
+
 
 
 

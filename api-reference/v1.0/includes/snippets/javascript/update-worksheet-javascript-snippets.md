@@ -12,11 +12,11 @@ const client = Client.init(options);
 
 const workbookWorksheet = {
   position: 99,
-  name: "name-value",
-  visibility: "visibility-value"
+  name: 'name-value',
+  visibility: 'visibility-value'
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}')
+await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}')
 	.update(workbookWorksheet);
 
 ```

@@ -11,15 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const personName = {
-  displayName: "displayName-value",
-  first: "first-value",
-  initials: "initials-value",
-  last: "last-value",
-  languageTag: "languageTag-value",
-  maiden: "maiden-value"
+  nickname: 'Kesha'
 };
 
-let res = await client.api('/me/profile/names/{id}')
+await client.api('/me/profile/names/{id}')
 	.version('beta')
 	.update(personName);
 

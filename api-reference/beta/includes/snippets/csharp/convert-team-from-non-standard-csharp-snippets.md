@@ -8,12 +8,12 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var team = new Team
 {
+	DisplayName = "My Class Team",
+	Description = "My Class Team’s Description",
 	AdditionalData = new Dictionary<string, object>()
 	{
-		{"template@odata.bind","https://graph.microsoft.com/beta/teamsTemplates('educationClass')"}
-	},
-	DisplayName = "My Class Team",
-	Description = "My Class Team’s Description"
+		{"template@odata.bind", "https://graph.microsoft.com/beta/teamsTemplates('educationClass')"}
+	}
 };
 
 await graphClient.Teams

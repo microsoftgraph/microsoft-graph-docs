@@ -53,8 +53,6 @@ The deviceManagement resource represents a container whose contents vary accordi
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|**Auditing**|
-|auditEvents|[auditEvent](../resources/intune-auditing-auditevent.md) collection|The Audit Events|
 |**Corporate terms and conditions**|
 |termsAndConditions|[termsAndConditions](../resources/intune-companyterms-termsandconditions.md) collection|The terms and conditions associated with device management of the company.|
 |**Device configuration**|
@@ -71,9 +69,6 @@ The deviceManagement resource represents a container whose contents vary accordi
 |detectedApps|[detectedApp](../resources/intune-devices-detectedapp.md) collection|The list of detected apps associated with a device.|
 |managedDeviceOverview|[managedDeviceOverview](../resources/intune-devices-manageddeviceoverview.md)|Device overview|
 |managedDevices|[managedDevice](../resources/intune-devices-manageddevice.md) collection|The list of managed devices.|
-|**Enrollment**|
-|importedWindowsAutopilotDeviceIdentities|[importedWindowsAutopilotDeviceIdentity](../resources/intune-enrollment-importedwindowsautopilotdeviceidentity.md) collection|Collection of imported Windows autopilot devices.|
-|importedWindowsAutopilotDeviceIdentityUploads|[importedWindowsAutopilotDeviceIdentityUpload](../resources/intune-enrollment-importedwindowsautopilotdeviceidentityupload.md) collection|Collection of Windows autopilot devices upload.|
 |**Notifications**|
 |notificationMessageTemplates|[notificationMessageTemplate](../resources/intune-notification-notificationmessagetemplate.md) collection|The Notification Message Templates.|
 |**Onboarding**|
@@ -81,6 +76,7 @@ The deviceManagement resource represents a container whose contents vary accordi
 |deviceCategories|[deviceCategory](../resources/intune-shared-devicecategory.md) collection|The list of device categories with the tenant.|
 |deviceEnrollmentConfigurations|[deviceEnrollmentConfiguration](../resources/intune-onboarding-deviceenrollmentconfiguration.md) collection|The list of device enrollment configurations|
 |deviceManagementPartners|[deviceManagementPartner](../resources/intune-onboarding-devicemanagementpartner.md) collection|The list of Device Management Partners configured by the tenant.|
+|complianceManagementPartners|[complianceManagementPartner](../resources/intune-onboarding-compliancemanagementpartner.md) collection|The list of Compliance Management Partners configured by the tenant.|
 |exchangeConnectors|[deviceManagementExchangeConnector](../resources/intune-onboarding-devicemanagementexchangeconnector.md) collection|The list of Exchange Connectors configured by the tenant.|
 |mobileThreatDefenseConnectors|[mobileThreatDefenseConnector](../resources/intune-onboarding-mobilethreatdefenseconnector.md) collection|The list of Mobile threat Defense connectors configured by the tenant.|
 |**RBAC**|
@@ -116,6 +112,8 @@ Here is a JSON representation of the resource.
   "settings": {"@odata.type": "microsoft.graph.deviceManagementSettings"}
 }
 ```
+
+
 
 
 

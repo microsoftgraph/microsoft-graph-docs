@@ -1,14 +1,14 @@
 ---
 title: "Use REST APIs to access mailboxes in Exchange hybrid deployments (preview)"
-description: "Microsoft Graph has always provided access to customer mailboxes in the cloud on Exchange Online as part of Office 365."
+description: "Microsoft Graph has always provided access to customer mailboxes in the cloud on Exchange Online as part of Microsoft 365."
 localization_priority: Priority
 ---
 
 # Use REST APIs to access mailboxes in Exchange hybrid deployments (preview)
 
-Microsoft Graph has always provided access to customer mailboxes in the cloud on Exchange Online as part of Office 365.
+Microsoft Graph has always provided access to customer mailboxes in the cloud on Exchange Online as part of Microsoft 365.
 Exchange 2016 Cumulative Update 3 (CU3), released in September 2016 for Exchange on-premises servers, adds support for 
-REST API integration with Office 365. If your app uses v1.0 of the 
+REST API integration with Microsoft 365. If your app uses v1.0 of the 
 [Mail](/graph/api/resources/message?view=graph-rest-1.0), 
 [Calendar](/graph/api/resources/calendar?view=graph-rest-1.0), or 
 [Contacts](/graph/api/resources/contact?view=graph-rest-1.0) API, you will now also find a seamless 
@@ -53,6 +53,6 @@ be aware of the following deployment requirements:
 
 IT administrators can find more information in the following resources:
 
-- [Exchange Server Hybrid Deployments](https://technet.microsoft.com/library/jj200581(v=exchg.150).aspx)
+- [Exchange Server Hybrid Deployments](/exchange/exchange-hybrid)
 - [September 2016 Cumulative Update Release](https://blogs.technet.microsoft.com/exchange/2016/09/20/released-september-2016-quarterly-exchange-updates/) 
 - [On-Premises Architectural Requirements for the REST API](https://blogs.technet.microsoft.com/exchange/2016/09/26/on-premises-architectural-requirements-for-the-rest-api/)

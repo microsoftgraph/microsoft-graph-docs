@@ -17,7 +17,6 @@ NSMutableArray *definitionList = [[NSMutableArray alloc] init];
 [claimsMappingPolicy setDefinition:definitionList];
 [claimsMappingPolicy setDisplayName:@"displayName-value"];
 [claimsMappingPolicy setIsOrganizationDefault: true];
-[claimsMappingPolicy setType:@"type-value"];
 
 NSError *error;
 NSData *claimsMappingPolicyData = [claimsMappingPolicy getSerializedDataWithError:&error];

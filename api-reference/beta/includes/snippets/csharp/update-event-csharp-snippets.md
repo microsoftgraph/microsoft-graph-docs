@@ -20,10 +20,15 @@ var @event = new Event
 	ReminderMinutesBeforeStart = 99,
 	IsOnlineMeeting = true,
 	OnlineMeetingProvider = OnlineMeetingProviderType.TeamsForBusiness,
-	IsReminderOn = true
+	IsReminderOn = true,
+	HideAttendees = false,
+	Categories = new List<String>()
+	{
+		"Red category"
+	}
 };
 
-await graphClient.Me.Events["{id}"]
+await graphClient.Me.Events["{event-id}"]
 	.Request()
 	.UpdateAsync(@event);
 

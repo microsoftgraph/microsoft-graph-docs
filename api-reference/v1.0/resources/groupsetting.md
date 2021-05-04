@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 Group settings control behaviors such as blocked word lists for group display names or whether guest users are allowed to be group owners.
 
-Group settings can be created based on the available [groupSettingTemplates](groupsettingtemplate.md), and changed from their preset defaults. These settings govern group behaviors at a tenant-wide level or to a specific group. When the same setting is defined at both the tenant-wide and to a specific group, the group-level setting overrides the tenant-wide setting.  For example, the tenant-wide setting may allow guests to be invited by existing members of groups, but an individual group setting can override and not allow guests to be invited by members of the group. Group settings only govern Office 365 groups behavior.
+Group settings can be created based on the available [groupSettingTemplates](groupsettingtemplate.md), and changed from their preset defaults. These settings govern group behaviors at a tenant-wide level or to a specific group. When the same setting is defined at both the tenant-wide and to a specific group, the group-level setting overrides the tenant-wide setting.  For example, the tenant-wide setting may allow guests to be invited by existing members of groups, but an individual group setting can override and not allow guests to be invited by members of the group. Group settings only govern Microsoft 365 groups behavior.
 
 ## Methods
 
@@ -58,7 +58,6 @@ Here is a JSON representation of the resource.
   "templateId": "String",
   "values": [{"@odata.type": "microsoft.graph.settingValue"}]
 }
-
 ```
 
 
@@ -71,3 +70,4 @@ Here is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

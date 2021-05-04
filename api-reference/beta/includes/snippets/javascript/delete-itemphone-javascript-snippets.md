@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/profile/phones/{id}')
+await client.api('/users/{userId}/profile/phones/{itemPhoneId}')
 	.version('beta')
 	.delete();
 

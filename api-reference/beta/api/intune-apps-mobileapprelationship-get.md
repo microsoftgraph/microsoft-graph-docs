@@ -3,7 +3,7 @@ title: "Get mobileAppRelationship"
 description: "Read properties and relationships of the mobileAppRelationship object."
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: apiPageType
 ---
 
@@ -20,11 +20,11 @@ Read properties and relationships of the [mobileAppRelationship](../resources/in
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegated (work or school account)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Application|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -63,17 +63,21 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 226
+Content-Length: 366
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.mobileAppRelationship",
     "id": "7b4b5b14-5b14-7b4b-145b-4b7b145b4b7b",
     "targetId": "Target Id value",
-    "targetDisplayName": "Target Display Name value"
+    "targetDisplayName": "Target Display Name value",
+    "targetDisplayVersion": "Target Display Version value",
+    "targetPublisher": "Target Publisher value",
+    "targetType": "parent"
   }
 }
 ```
+
 
 
 

@@ -3,7 +3,7 @@ title: "windows10DeviceFirmwareConfigurationInterface resource type"
 description: "Graph properties for Device Firmware Configuration Interface "
 author: "dougeby"
 localization_priority: Normal
-ms.prod: "Intune"
+ms.prod: "intune"
 doc_type: resourcePageType
 ---
 
@@ -50,6 +50,8 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |radios|[enablement](../resources/intune-shared-enablement.md)|Defines whether built-in radios e.g. WIFI, NFC, Bluetooth, are enabled. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |bootFromExternalMedia|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to boot from external media. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 |bootFromBuiltInNetworkAdapters|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to boot from built-in network adapters. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|windowsPlatformBinaryTable|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Windows Platform Binary Table. Possible values are: `notConfigured`, `enabled`, `disabled`.|
+|simultaneousMultiThreading|[enablement](../resources/intune-shared-enablement.md)|Defines whether a user is allowed to enable Simultaneous MultiThreading. Possible values are: `notConfigured`, `enabled`, `disabled`.|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -110,9 +112,12 @@ Here is a JSON representation of the resource.
   "microphonesAndSpeakers": "String",
   "radios": "String",
   "bootFromExternalMedia": "String",
-  "bootFromBuiltInNetworkAdapters": "String"
+  "bootFromBuiltInNetworkAdapters": "String",
+  "windowsPlatformBinaryTable": "String",
+  "simultaneousMultiThreading": "String"
 }
 ```
+
 
 
 

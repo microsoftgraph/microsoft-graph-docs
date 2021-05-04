@@ -3,7 +3,7 @@ title: "applyLabelAction resource type"
 description: "Represents a set of actions that should be taken to apply or update a label."
 localization_priority: Normal
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 
@@ -54,3 +54,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+

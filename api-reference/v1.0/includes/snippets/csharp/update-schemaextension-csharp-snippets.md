@@ -23,7 +23,7 @@ var schemaExtension = new SchemaExtension
 	}
 };
 
-await graphClient.SchemaExtensions["{id}"]
+await graphClient.SchemaExtensions["{schemaExtension-id}"]
 	.Request()
 	.UpdateAsync(schemaExtension);
 

@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 title: Get listItem
 description: Returns the metadata for an item in a SharePoint list.
 localization_priority: Priority
@@ -24,7 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | Sites.Read.All, Sites.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Sites.Read.All, Sites.ReadWrite.All |
+|Application | Sites.Read.All, Sites.ReadWrite.All, Sites.Manage.All |
+
+> **Note**: The application permission Sites.Manage.All is required if the SharePoint list has content approval settings turned on. Otherwise, Microsoft Graph won't retrieve  list items that have an approval status other than Approved.
 
 ## HTTP request
 
@@ -91,7 +92,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -115,3 +116,4 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
+

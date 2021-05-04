@@ -11,11 +11,12 @@ const options = {
 const client = Client.init(options);
 
 const identityUserFlow = {
-  userFlowType: "signUpOrSignIn",
+  id: 'Pol1',
+  userFlowType: 'signUpOrSignIn',
   userFlowTypeVersion: 1
 };
 
-let res = await client.api('/identity/userFlows')
+await client.api('/identity/userFlows')
 	.version('beta')
 	.post(identityUserFlow);
 

@@ -15,7 +15,7 @@ const workbookChart = {
   left: 99
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}')
+await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}')
 	.update(workbookChart);
 
 ```

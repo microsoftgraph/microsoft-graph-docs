@@ -26,8 +26,10 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/tables/{id|name}/reapplyFilters
-POST /workbook/worksheets/{id|name}/tables/{id|name}/reapplyFilters
+POST /me/drive/items/{id}/workbook/tables/{id|name}/reapplyFilters
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/reapplyFilters
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/tables/{id|name}/reapplyFilters
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/tables/{id|name}/reapplyFilters
 
 ```
 ## Request headers
@@ -67,6 +69,10 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/tables/{id|na
 [!INCLUDE [sample-code](../includes/snippets/objc/table-reapplyfilters-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/table-reapplyfilters-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -94,3 +100,5 @@ HTTP/1.1 200 OK
   ]
 }
 -->
+
+

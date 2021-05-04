@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Retrieve thumbnails for a file or folder
 localization_priority: Normal
@@ -54,6 +53,9 @@ GET /users/{user-id}/drive/items/{item-id}/thumbnails
 ## Optional query parameters
 
 This method supports the `$select` [OData puery parameter](/graph/query-parameters) to customize the response.
+
+Additionally, this method supports retrieving the thumbnail with the original orientation EXIF value and without the applied rotation by appending the `originalOrientation=true` query parameter.
+This is currently only supported on OneDrive Personal.
 
 ## Response
 
@@ -387,16 +389,7 @@ how errors are returned.
   "keywords": "thumbnail,content,download,sizes",
   "section": "documentation",
   "suppressions": [
-    "Warning: /api-reference/v1.0/api/driveitem-list-thumbnails.md:
-      Unable to map some markdown elements into schema.
-         Unmapped methods:
-      enum-item-thumbnails, get-one-thumbnail, get-thumbnail-content, get-thumbnail-while-listing, get-thumbnail-custom-size
-         Unmapped tables:
-      Permissions - AuthScopes, Path parameters - PathParameters, Size options - Unknown, Examples of custom identifiers - Unknown",
-    "Warning: Couldn't serialize request for path /me/drive/items/{var}/thumbnails/{var}/{var}/content into EDMX: System.InvalidOperationException: Uri path requires navigating into unknown object hierarchy: missing property '{var}' on 'thumbnailSet'. Possible issues:
-         1) Doc bug where '{var}' isn't defined on the resource.         2) Doc bug where '{var}' is an example key and should instead be replaced with a placeholder like {item-id} or declared in the sampleKeys annotation.       3) Doc bug where 'thumbnailSet' is supposed to be an entity type, but is being treated as a complex because it (and its ancestors) are missing the keyProperty annotation
-     at ApiDocs.Publishing.CSDL.CsdlWriter.ParseRequestTargetType(String requestPath, MethodCollection requestMethodCollection, EntityFramework edmx, IssueLogger issues) in D:/src/mds2/ApiDocs.Publishing/CSDL/CsdlWriter.cs:line 1145
-     at ApiDocs.Publishing.CSDL.CsdlWriter.ProcessRestRequestPaths(EntityFramework edmx, String[] baseUrlsToRemove, IssueLogger issues) in D:/src/mds2/ApiDocs.Publishing/CSDL/CsdlWriter.cs:line 821"
   ],
   "tocPath": "Items/Thumbnails"
 } -->
+

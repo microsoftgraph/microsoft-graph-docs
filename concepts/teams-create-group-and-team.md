@@ -13,9 +13,9 @@ You can use the Microsoft Teams API in Microsoft Graph to create teams in multip
 
 ## Initial team creation
 
-All teams are backed by Office 365 groups. The quickest way to get your team up and running when you create new teams via Microsoft Graph is to set up a new Office 365 group, all owners and members, and convert that into a team.
+All teams are backed by Microsoft 365 groups. The quickest way to get your team up and running when you create new teams via Microsoft Graph is to set up a new Microsoft 365 group, all owners and members, and convert that into a team.
 
-1. Create an [Office 365 group](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) using the [create group](/graph/api/group-post-groups?view=graph-rest-1.0) operation. You can specify owners and members. Make sure that you have the right owners for the newly created group, as described in Step 2.
+1. Create an [Microsoft 365 group](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2) using the [create group](/graph/api/group-post-groups?view=graph-rest-1.0) operation. You can specify owners and members. Make sure that you have the right owners for the newly created group, as described in Step 2.
 
     In order to create a team for this group, you need to set the following property values, as shown:
 
@@ -96,7 +96,7 @@ All teams are backed by Office 365 groups. The quickest way to get your team up 
 
 To add members after a team is created, you use the [add member](/graph/api/group-post-members?view=graph-rest-1.0) operation. We recommend adding a 1 second delay between add operations. Note the following with respect to membership changes:
 
-1. Membership changes made to Office 365 groups sync to Teams via a background sync mechanism that typically takes 24 hours (or more in some cases).
+1. Membership changes made to Microsoft 365 groups sync to Teams via a background sync mechanism that typically takes 24 hours (or more in some cases).
 
 2. The background process is triggered only if one or more users in the team (owner or member) is active in the Teams desktop client. Launching the Teams application and/or having it running constitutes activity — a user does not need to visit the team that is being modified specifically.
 
@@ -108,7 +108,7 @@ After you create a team, you can use the following checklist to verify that the 
 
 ### Validate team creation
 
-1. Verify that the Office 365 group backing the team is created via the Azure AD or Microsoft 365 admin centers.
+1. Verify that the Microsoft 365 group backing the team is created via the Azure AD or Microsoft 365 admin centers.
 
 2. Verify that the team creation succeeded via the Teams admin portal.
 
@@ -123,17 +123,3 @@ After you create a team, you can use the following checklist to verify that the 
 1. Verify that newly members show up in the group via the Azure AD or Microsoft 365 admin center.
 
 2. Verify that newly added members can see the team after signing into the Teams desktop or web client.
-
-
-
-## How Office 365 group membership changes are synchronized to Microsoft Teams
-
-Membership changes made to an Office 365 group backing a team via the Microsoft Graph API or through the admin portal (outside of the Teams client) have to sync to the Teams service in order for newly added users to be able to see and participate in the team. Changes made directly to the group membership are synchronized to the Teams service via a background process. This background process runs in the Teams service and is triggered by user activity in Teams desktop and web clients.
-
-For the process to get triggered, a current owner or member of that team (someone who can see the team in the Teams client) must have the Teams desktop (ideally) or web client open. Mobile clients do not trigger this sync.
-
-The current SLA for synchronizing membership changes made to groups to Teams is up to 24 hours after the sync is triggered by client activity. It can take longer under certain circumstances (due to service load, for example).
-
-
-![Process for roster sync.](images/teams-roster-sync.png)
-

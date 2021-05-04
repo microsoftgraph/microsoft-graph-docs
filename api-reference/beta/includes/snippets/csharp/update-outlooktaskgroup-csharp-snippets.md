@@ -11,7 +11,7 @@ var outlookTaskGroup = new OutlookTaskGroup
 	Name = "Personal Tasks"
 };
 
-await graphClient.Me.Outlook.TaskGroups["AAMkADIyAAAhrbe-AAA="]
+await graphClient.Me.Outlook.TaskGroups["{outlookTaskGroup-id}"]
 	.Request()
 	.UpdateAsync(outlookTaskGroup);
 

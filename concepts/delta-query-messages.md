@@ -1,7 +1,7 @@
 ---
 title: "Get incremental changes to messages in a folder"
 description: "Delta query lets you query for additions, deletions, or updates to messages in a folder, by way of a series of"
-author: "baywet"
+author: "davidmu1"
 localization_priority: Priority
 ms.custom: graphiamtop20
 ---
@@ -144,7 +144,7 @@ The `nextLink` URL indicates there are more messages in the folder to get.
       "@odata.type": "#microsoft.graph.message",
       "@odata.etag": "W/\"CQAAABYAAAARn2vdzPFjSbaPPxzjlzOTAAASsKZz\"",
       "subject": "Holiday hours update",
-      "isRead": "false",
+      "isRead": false,
       "sender": {
         "emailAddress": {
           "name": "Dana Swope",
@@ -157,7 +157,7 @@ The `nextLink` URL indicates there are more messages in the folder to get.
       "@odata.type": "#microsoft.graph.message",
       "@odata.etag": "W/\"CQAAABYAAAARn2vdzPFjSbaPPxzjlzOTAAAEfYB/\"",
       "subject": "Holiday promotion sale",
-      "isRead": "true",
+      "isRead": true,
       "sender": {
         "emailAddress": {
           "name": "Samantha Booth",

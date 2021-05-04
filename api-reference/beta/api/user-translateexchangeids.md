@@ -1,7 +1,7 @@
 ---
 title: "user: translateExchangeIds"
 description: "Translate identifiers of Outlook-related resources between formats."
-author: "svpsiva"
+author: "abheek-das"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -50,7 +50,7 @@ POST /users/{id|userPrincipalName}/translateExchangeIds
 
 ### exchangeIdFormat values
 
-| Values | Description |
+| Member | Description |
 |:-------|:------------|
 | entryId | The binary entry ID format used by MAPI clients. |
 | ewsId | The ID format used by Exchange Web Services clients. |
@@ -108,6 +108,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/user-translateexchangeids-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/user-translateexchangeids-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -148,3 +152,5 @@ Content-type: application/json
   "suppressions": [
   ]
 }-->
+
+

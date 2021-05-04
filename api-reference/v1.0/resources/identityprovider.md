@@ -3,21 +3,21 @@ title: "identityProvider resource type"
 description: "Represents an Azure Active Directory (Azure AD) identity provider."
 localization_priority: Priority
 author: "Nickgmicrosoft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 # identityProvider resource type
 
 Namespace: microsoft.graph
 
-Represents an Azure Active Directory (Azure AD) identity provider. The identity provider can be Microsoft, Google, Facebook, Amazon,  LinkedIn, or Twitter. The following Identity Providers are in Preview: Weibo, QQ, WeChat, GitHub and any OpenID Connect supported providers. 
+Represents an Azure Active Directory (Azure AD) identity provider. The identity provider can be **Microsoft**, **Google**, **Facebook**, **Amazon**,  **LinkedIn**, or **Twitter**. The following Identity Providers are in Preview: **Weibo**, **QQ**, **WeChat**, **GitHub** and any OpenID Connect supported providers. 
 
 Configuring an identity provider in your Azure AD B2C tenant enables users to:
 
 * Sign up and sign in using a social account in a consumer application. For example, an application can use Azure AD B2C to allow users to sign up for the service using a Facebook account.
 * Link an existing local account to a social account in a consumer application. For example, a user has created a username and password (local account) in the application. The user later decides to link the existing local account to their Facebook account so they can sign in using Facebook.
 
-Configuring an identity provider in your Azure AD tenant enables future B2B guest scenarios. For example, an organization has resources in Office 365 that need to be shared with a Gmail user. The Gmail user will use their Google account credentials to authenticate and access the documents.
+Configuring an identity provider in your Azure AD tenant enables future B2B guest scenarios. For example, an organization has resources in Microsoft 365 that need to be shared with a Gmail user. The Gmail user will use their Google account credentials to authenticate and access the documents.
 
 ## Methods
 
@@ -31,13 +31,13 @@ Configuring an identity provider in your Azure AD tenant enables future B2B gues
 
 ## Properties
 
-|Property|Type|Required|Nullable|Description|
-|:---------------|:--------|:--------|:--------|:----------|
-|clientId|String|Yes|No|The client ID for the application. This is the client ID obtained when registering the application with the identity provider.|
-|clientSecret|String|Yes|No|The client secret for the application. This is the client secret obtained when registering the application with the identity provider. This is write-only. A read operation will return "\*\*\*\*".|
-|id|String|No|No|The ID of the identity provider.|
-|name|String|No|No|The display name of the identity provider.|
-|type|String|Yes|No|The identity provider type. It must be one of the following values for B2C scenarios: <ul><li/>Microsoft<li/>Google<li/>Amazon<li/>LinkedIn<li/>Facebook<li/>GitHub<li/>Twitter<li/>Weibo<li/>QQ<li/>WeChat</ul>For B2B scenarios, the value must be Google or Facebook.|
+|Property|Type|Description|
+|:---------------|:--------|:--------|
+|clientId|String|The client ID for the application. This is the client ID obtained when registering the application with the identity provider. Required. Not nullable.|
+|clientSecret|String|The client secret for the application. This is the client secret obtained when registering the application with the identity provider. This is write-only. A read operation will return `****`.  Required. Not nullable.|
+|id|String|The ID of the identity provider.|
+|name|String|The display name of the identity provider. Not nullable.|
+|type|String|The identity provider type is a required field. For B2B scenario: `Google`, `Facebook`. For B2C scenario: `Microsoft`, `Google`, `Amazon`, `LinkedIn`, `Facebook`, `GitHub`, `Twitter`, `Weibo`, `QQ`, `WeChat`, `OpenIDConnect`. Not nullable.|
 
 ### Where to get the client ID and secret
 
@@ -49,7 +49,7 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.IdentityProvider"
+  "@odata.type": "microsoft.graph.identityProvider"
 } -->
 
 ```json
@@ -61,3 +61,4 @@ The following is a JSON representation of the resource.
     "clientSecret": "String"
 }
 ```
+

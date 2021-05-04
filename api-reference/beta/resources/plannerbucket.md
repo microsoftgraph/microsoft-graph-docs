@@ -1,6 +1,6 @@
 ---
 title: "plannerBucket resource type"
-description: ") for tasks in a plan in Office 365. It is contained in a plannerPlan and can have a collection of plannerTasks."
+description: ") for tasks in a plan in Microsoft 365. It is contained in a plannerPlan and can have a collection of plannerTasks."
 author: "TarkanSevilmis"
 localization_priority: Normal
 ms.prod: "planner"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-The **plannerBucket** resource represents a bucket (or "custom column") for tasks in a plan in Office 365. It is contained in a [plannerPlan](plannerplan.md) and can have a collection of [plannerTasks](plannertask.md).
+The **plannerBucket** resource represents a bucket (or "custom column") for tasks in a plan in Microsoft 365. It is contained in a [plannerPlan](plannerplan.md) and can have a collection of [plannerTasks](plannertask.md).
 
 
 
@@ -75,3 +75,5 @@ Here is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

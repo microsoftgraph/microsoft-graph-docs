@@ -24,9 +24,12 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /workbook/names/{name}/range
-PATCH /workbook/worksheets/{id|name}/range(address='<address>')
-PATCH /workbook/tables/{id|name}/columns/{id|name}/range
+PATCH /me/drive/items/{id}/workbook/names/{name}/range
+PATCH /me/drive/root:/{item-path}:/workbook/names/{name}/range
+PATCH /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')
+PATCH /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')
+PATCH /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range
+PATCH /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range
 ```
 ## Optional request headers
 | Name       | Description|
@@ -78,7 +81,7 @@ Content-length: 169
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -107,14 +110,7 @@ Content-length: 169
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Warning: /api-reference/v1.0/api/range-update.md/update_range/numberFormat:
-      Inconsistent types between parameter (Collection) and table (None)",
-    "Warning: /api-reference/v1.0/api/range-update.md/update_range/values:
-      Inconsistent types between parameter (Collection) and table (None)",
-    "Error: /api-reference/v1.0/api/range-update.md/update_range/numberFormat:
-      Type mismatch between example and table. Parameter name: numberFormat; example type (Collection(Collection)) is a collection, while the table description type (microsoft.graph.Json) is not.",
-    "Error: /api-reference/v1.0/api/range-update.md/update_range/values:
-      Type mismatch between example and table. Parameter name: values; example type (Collection(Collection)) is a collection, while the table description type (microsoft.graph.Json) is not."
   ],
   "tocPath": ""
 }-->
+

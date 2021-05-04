@@ -10,8 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/servicePrincipals/{id}/transitiveMemberOf')
-	.version('beta')
+let transitiveMemberOf = await client.api('/servicePrincipals/{id}/transitiveMemberOf')
 	.get();
 
 ```

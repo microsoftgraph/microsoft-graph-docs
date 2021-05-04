@@ -1,6 +1,5 @@
 ---
 author: daspek
-ms.author: dspektor
 title: itemActivityTimeSet resource type
 description: The itemActionSet object provides information about an activity that took place on an item.
 localization_priority: Normal
@@ -56,3 +55,4 @@ At a later time when the user re-connects to the cloud and the changes get uploa
   "suppressions": []
 }
 -->
+

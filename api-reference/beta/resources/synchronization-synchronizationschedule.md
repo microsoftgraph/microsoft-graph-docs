@@ -4,7 +4,7 @@ description: "Defines the schedule used to run a synchronizationJob."
 localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # synchronizationSchedule resource type
@@ -18,7 +18,7 @@ Defines the schedule used to run a [synchronizationJob](synchronization-synchron
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|expiration|DateTimeOffset|Date and time when this job will expire. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
+|expiration|DateTimeOffset|Date and time when this job will expire. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |interval|Duration|The interval between synchronization iterations.|
 |state|String| Possible values are: `Active`, `Disabled`.|
 
@@ -55,3 +55,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+

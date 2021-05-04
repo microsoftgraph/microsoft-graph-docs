@@ -14,7 +14,7 @@ var driveItem = new DriveItem
 	},
 	AdditionalData = new Dictionary<string, object>()
 	{
-		{"@microsoft.graph.conflictBehavior","rename"}
+		{"@microsoft.graph.conflictBehavior", "rename"}
 	}
 };
 

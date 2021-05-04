@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var sharedDriveItem = await graphClient.Shares["{shareIdOrEncodedSharingUrl}"]
+var sharedDriveItem = await graphClient.Shares["{sharedDriveItem-id}"]
 	.Request()
 	.GetAsync();
 

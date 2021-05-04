@@ -2,8 +2,8 @@
 title: "privacyProfile resource type"
 description: "Represents a company's privacy profile, which includes a privacy statement URL and a contact person for questions regarding the privacy statement."
 localization_priority: Normal
-author: ""
-ms.prod: ""
+author: "Jumaodhiss"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
@@ -37,3 +37,4 @@ Here is a JSON representation of the resource
   "statementUrl": "string"
 }
 ```
+

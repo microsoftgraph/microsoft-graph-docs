@@ -2,12 +2,12 @@
 title: "Integrate your iOS app with the client-side SDK for user notifications"
 description: "Integrate your iOS app with user notifications client SDK."
 localization_priority: Priority
-ms.prod: "Microsoft Graph notifications"
+ms.prod: "notifications"
 ---
 
 # Integrate your iOS app with the client-side SDK for user notifications
 
-After you [register your app](notifications-integration-app-registration.md) in the Azure Portal and onboard your [cross-device experiences](notifications-integration-cross-device-experiences-onboarding.md) in the Partner Dev Center, the next step is to integrate your client app with the client-side SDK foriOS apps.  
+After you [register your app](notifications-integration-app-registration.md) in the Azure Portal and onboard your [cross-device experiences](notifications-integration-cross-device-experiences-onboarding.md) in the Partner Dev Center, the next step is to integrate your client app with the client-side SDK for iOS apps.  
 
 With the client-side SDK, your app can perform the necessary registration steps to start receiving notifications published from your app server targeted at the user who is currently signed in. The SDK then manages the notifications on the client side, including receiving new incoming notifications, managing the state of notifications to achieve scenarios like universal dismiss, and retrieving full notification history. 
 
@@ -85,7 +85,7 @@ target 'iOSSample' do
 
 The client-side SDK is built on top of an infrastructure called Connected Device Platform. Before any feature can be used, the platform must be initialized within your app. The initialization steps should occur in your **AppDelegate** method, because they are required before the notification scenarios can take place.
 
-You must construct and initialize the platform by instantiating the [**MCDConnectedDevicesPlatform**](https://docs.microsoft.com/windows/project-rome/objectivec-api/connecteddevices/mcdconnecteddevicesplatform) class. efore doing that, make sure to hook up event handlers, as shown, because after platform is started, the events might begin to fire.  
+You must construct and initialize the platform by instantiating the [**MCDConnectedDevicesPlatform**](/windows/project-rome/objectivec-api/connecteddevices/mcdconnecteddevicesplatform) class. efore doing that, make sure to hook up event handlers, as shown, because after platform is started, the events might begin to fire.  
 
 ```ObjectiveC
 MCDConnectedDevicesPlatform* platform = [MCDConnectedDevicesPlatform new];
@@ -246,6 +246,6 @@ A notification is removed from the user notification store only if it is expired
 
 ## See also
 
-- [API reference](https://docs.microsoft.com/windows/project-rome/notifications/api-reference-for-ios/) for the full set of APIs related to notification features in the SDK. 
+- [API reference](/windows/project-rome/notifications/api-reference-for-ios/) for the full set of APIs related to notification features in the SDK. 
 - [Client-side sample](https://github.com/Microsoft/project-rome/tree/master/iOS/samples/GraphNotifications) for Android apps.
-- [App server sample](notifications-integrating-app-server.md) for publishing notifications. 
+- [App server sample](notifications-integrating-app-server.md) for publishing notifications.

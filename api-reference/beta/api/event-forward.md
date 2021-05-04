@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 This action allows the organizer or attendee of a meeting [event](../resources/event.md) to forward the 
 meeting request to a new recipient. 
 
-If the meeting event is forwarded from an attendee's Office 365 mailbox to another recipient, this action 
+If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action 
 also sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's 
 copy of the meeting event. This convenience is not available when forwarding from an Outlook.com account.
 
@@ -43,9 +43,6 @@ POST /groups/{id}/calendar/events/{id}/forward
 
 POST /me/calendars/{id}/events/{id}/forward
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/forward
-
-POST /me/calendargroup/calendars/{id}/events/{id}/forward
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/forward
 
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/forward
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/forward
@@ -108,6 +105,10 @@ Content-length: 56
 [!INCLUDE [sample-code](../includes/snippets/objc/event-forward-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/event-forward-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -134,3 +135,5 @@ HTTP/1.1 202 Accepted
   ]
 }
 -->
+
+

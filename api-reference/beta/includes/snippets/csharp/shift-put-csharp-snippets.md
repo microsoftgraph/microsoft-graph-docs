@@ -17,11 +17,14 @@ var shift = new Shift
 	{
 		Application = null,
 		Device = null,
-		Conversation = null,
 		User = new Identity
 		{
 			Id = "366c0b19-49b1-41b5-a03f-9f3887bd0ed8",
 			DisplayName = "John Doe"
+		},
+		AdditionalData = new Dictionary<string, object>()
+		{
+			{"conversation", "null"}
 		}
 	},
 	SharedShift = new ShiftItem
@@ -64,7 +67,7 @@ var shift = new Shift
 	}
 };
 
-await graphClient.Teams["{teamId}"].Schedule.Shifts["{shiftId}"]
+await graphClient.Teams["{team-id}"].Schedule.Shifts["{shift-id}"]
 	.Request()
 	.Header("Prefer","return=representation")
 	.PutAsync(shift);

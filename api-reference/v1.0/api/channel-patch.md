@@ -1,7 +1,7 @@
 ---
 title: "Patch channel"
 description: "Update the properties of the specified channel."
-author: "clearab"
+author: "anandjo"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -21,26 +21,29 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | ChannelSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | ChannelSettings.Edit.Group ([RSC](https://aka.ms/teams-rsc)), ChannelSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+|Application | ChannelSettings.ReadWrite.Group*, ChannelSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
+
+> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /teams/{id}/channels/{id}
+PATCH /teams/{team-id}/channels/{channel-id}
 ```
 
 ## Request headers
-
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Required.  |
 
 ## Request body
 
 In the request body, supply a JSON representation of [channel](../resources/channel.md) object.
+
+> **Note:** You cannot update the `membershipType` value for an existing channel.
 
 ## Response
 
@@ -52,14 +55,14 @@ If successful, this method returns a `204 No Content` response code.
 
 Here is an example of the request.
 
-# [HTTP](#tab/http)
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "patch_channel"
 }-->
 ```http
-PATCH https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
+PATCH https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2
 ```
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/patch-channel-objc-snippets.md)]
@@ -67,28 +70,23 @@ PATCH https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
 
 ---
 
+
 ### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.channel"
 } -->
 ```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 201
-
-{
-    "description": "description-value",
-    "displayName": "display-name-value",
-}
+HTTP/1.1 204 No Content
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
-<!-- {
+<!--
+{
   "type": "#page.annotation",
   "description": "Patch channel",
   "keywords": "",
@@ -96,4 +94,5 @@ Content-length: 201
   "tocPath": "",
   "suppressions": [
   ]
-}-->
+}
+-->

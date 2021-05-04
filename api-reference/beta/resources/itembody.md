@@ -19,7 +19,7 @@ Represents properties of the body of an item, such as a message, event or group 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |content|String|The content of the item.|
-|contentType|String|The type of the content. Possible values are `text` and `html`.|
+|contentType|bodyType|The type of the content. Possible values are `text` and `html`.|
 
 ## JSON representation
 
@@ -38,7 +38,6 @@ Here is a JSON representation of the resource
   "content": "string",
   "contentType": "String"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
@@ -53,3 +52,5 @@ Here is a JSON representation of the resource
   "suppressions": []
 }
 -->
+
+

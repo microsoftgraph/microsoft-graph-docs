@@ -4,7 +4,7 @@ description: "Represents the current status of the synchronizationJob."
 localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # synchronizationStatus resource type
@@ -27,8 +27,8 @@ Represents the current status of the [synchronizationJob](synchronization-synchr
 |lastSuccessfulExecutionWithExports|[synchronizationTaskExecution](synchronization-synchronizationtaskexecution.md)|Details of the last execution of the job, which exported objects into the target directory.|
 |progress|[synchronizationProgress](synchronization-synchronizationprogress.md) collection|Details of the progress of a job toward completion.|
 |quarantine|[synchronizationQuarantine](synchronization-quarantine.md)|If job is in quarantine, quarantine details.|
-|steadyStateFirstAchievedTime|DateTimeOffset|The time when steady state (no more changes to the process) was first achieved. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
-|steadyStateLastAchievedTime|DateTimeOffset|The time when steady state (no more changes to the process) was last achieved. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
+|steadyStateFirstAchievedTime|DateTimeOffset|The time when steady state (no more changes to the process) was first achieved. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|steadyStateLastAchievedTime|DateTimeOffset|The time when steady state (no more changes to the process) was last achieved. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |synchronizedEntryCountByType|[stringKeyLongValuePair](synchronization-stringkeylongvaluepair.md) collection|Count of synchronized objects, listed by object type.|
 |troubleshootingUrl|String|In the event of an error, the URL with the troubleshooting steps for the issue.|
 
@@ -84,3 +84,5 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
+
