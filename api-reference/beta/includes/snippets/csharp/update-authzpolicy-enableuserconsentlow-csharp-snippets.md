@@ -14,7 +14,7 @@ var authorizationPolicy = new AuthorizationPolicy
 	}
 };
 
-await graphClient.Policies.AuthorizationPolicy["authorizationPolicy"]
+await graphClient.Policies.AuthorizationPolicy["{authorizationPolicy-id}"]
 	.Request()
 	.UpdateAsync(authorizationPolicy);
 

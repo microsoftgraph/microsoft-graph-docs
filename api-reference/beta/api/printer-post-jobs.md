@@ -3,7 +3,7 @@ title: Create printJob for a printer
 description: Create a new printJob for a printer. 
 author: braedenp-msft
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
@@ -22,7 +22,7 @@ In addition to the following permissions, the user or app's tenant must have an 
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
-|Delegated (work or school account)| PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
+|Delegated (work or school account)| PrintJob.Create, PrintJob.ReadWriteBasic, PrintJob.ReadWrite, PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not Supported.|
 |Application| Not Supported. |
 
@@ -52,7 +52,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_printjob"
+  "name": "create_printjob_1"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/print/printers/{id}/jobs
@@ -93,19 +93,19 @@ Content-type: application/json
 }
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-printjob-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-printjob-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-printjob-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-printjob-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-printjob-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-printjob-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-printjob-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-printjob-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -115,7 +115,7 @@ Content-type: application/json
 
 ### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

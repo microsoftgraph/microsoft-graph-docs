@@ -80,7 +80,7 @@ var bookingService = new BookingService
 	}
 };
 
-await graphClient.BookingBusinesses["Contosolunchdelivery@M365B489948.onmicrosoft.com"].Services
+await graphClient.BookingBusinesses["{bookingBusiness-id}"].Services
 	.Request()
 	.AddAsync(bookingService);
 

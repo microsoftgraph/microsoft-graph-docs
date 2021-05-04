@@ -34,9 +34,6 @@ POST /users/{id | userPrincipalName}/calendar/events/{id}/snoozeReminder
 POST /me/calendars/{id}/events/{id}/snoozeReminder
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/snoozeReminder
 
-POST /me/calendargroup/calendars/{id}/events/{id}/snoozeReminder
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/snoozeReminder
-
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/snoozeReminder
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/snoozeReminder
 ```

@@ -3,7 +3,7 @@ title: "riskyUser resource type"
 description: "risky users item"
 author: "cloudhandler"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -32,10 +32,10 @@ For more information about risk events, see [Azure Active Directory Identity Pro
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Unique ID of the user at risk.|
-|isDeleted|Boolean|Indicates whether the user is deleted. Possible values are: `true`, `false`|
-|isProcessing|Boolean|Indicates wehther a user's risky state is being processed by the backend|
+|isDeleted|Boolean|Indicates whether the user is deleted. Possible values are: `true`, `false`.|
+|isProcessing|Boolean|Indicates whether a user's risky state is being processed by the backend.|
 |riskDetail|riskDetail|Details of the detected risk. Possible values are: `none`, `adminGeneratedTemporaryPassword`, `userPerformedSecuredPasswordChange`, `userPerformedSecuredPasswordReset`, `adminConfirmedSigninSafe`, `aiConfirmedSigninSafe`, `userPassedMFADrivenByRiskBasedPolicy`, `adminDismissedAllRiskForUser`, `adminConfirmedSigninCompromised`, `hidden`, `adminConfirmedUserCompromised`, `unknownFutureValue`.|
-|riskLastUpdatedDateTime|DateTimeOffset|The date and time that the risky user was last updated.|
+|riskLastUpdatedDateTime|DateTimeOffset|The date and time that the risky user was last updated.  The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `2014-01-01T00:00:00Z`|
 |riskLevel|riskLevel|Level of the detected risky user. Possible values are: `low`, `medium`, `high`, `hidden`, `none`, `unknownFutureValue`.|
 |riskState|riskState|State of the user's risk. Possible values are: `none`, `confirmedSafe`, `remediated`, `dismissed`, `atRisk`, `confirmedCompromised`, `unknownFutureValue`.|
 |userDisplayName|String|Risky user display name.|

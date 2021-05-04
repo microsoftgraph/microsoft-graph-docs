@@ -31,7 +31,7 @@ var organization = new Organization
 	}
 };
 
-await graphClient.Organization["{id}"]
+await graphClient.Organization["{organization-id}"]
 	.Request()
 	.UpdateAsync(organization);
 

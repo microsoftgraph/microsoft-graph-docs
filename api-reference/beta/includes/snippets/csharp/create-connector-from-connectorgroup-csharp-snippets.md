@@ -14,7 +14,7 @@ var connector = new Connector
 	}
 };
 
-await graphClient.OnPremisesPublishingProfiles["applicationProxy"].ConnectorGroups["{id}"].Members.References
+await graphClient.OnPremisesPublishingProfiles["{onPremisesPublishingProfile-id}"].ConnectorGroups["{connectorGroup-id}"].Members.References
 	.Request()
 	.AddAsync(connector);
 

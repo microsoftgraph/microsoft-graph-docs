@@ -14,7 +14,7 @@ var homeRealmDiscoveryPolicy = new HomeRealmDiscoveryPolicy
 	}
 };
 
-await graphClient.ServicePrincipals["{id}"].HomeRealmDiscoveryPolicies.References
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].HomeRealmDiscoveryPolicies.References
 	.Request()
 	.AddAsync(homeRealmDiscoveryPolicy);
 

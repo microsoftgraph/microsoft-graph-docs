@@ -4,7 +4,7 @@ description: "Defines what objects will be synchronized and how they will be syn
 localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # synchronizationSchema resource type

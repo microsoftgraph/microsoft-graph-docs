@@ -3,7 +3,7 @@ title: "synchronizationJob: provisionOnDemand"
 description: "Select a user and provision the account on-demand."
 author: "ArvindHarinder1"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: apiPageType
 ---
 
@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegated (work or school account)     |Directory.ReadWrite.All  |
 |Delegated (personal Microsoft account) |Not supported. |
-|Application                            |Not supported. |
+|Application                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All |
 
 ## HTTP request
 
@@ -65,7 +65,6 @@ If successful, this method returns a `200 OK` response code and a stringKeyStrin
 -->
 ``` http
 POST https://graph.microsoft.com/beta/servicePrincipals/{servicePrincipalsId}/synchronization/jobs/{synchronizationJobId}/provisionOnDemand
-
 Content-Type: application/json
 Content-length: 122
 
@@ -81,6 +80,18 @@ Content-length: 122
 ```
 # [JavaScript](#tab/javascript)
 [!INCLUDE [sample-code](../includes/snippets/javascript/synchronizationjob-provisionondemand-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/synchronizationjob-provisionondemand-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/synchronizationjob-provisionondemand-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/synchronizationjob-provisionondemand-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

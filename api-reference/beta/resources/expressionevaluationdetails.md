@@ -3,7 +3,7 @@ title: "expressionEvaluationDetails resource type"
 description: "Represents the expression details, result, and property details."
 localization_priority: Normal
 author: "yyuank"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "groups"
 doc_type: "resourcePageType"
 ---
 

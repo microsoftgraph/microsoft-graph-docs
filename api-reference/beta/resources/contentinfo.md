@@ -3,7 +3,7 @@ title: "contentInfo resource type"
 description: "Represents the current state of some information that is to be labeled."
 localization_priority: Normal
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 

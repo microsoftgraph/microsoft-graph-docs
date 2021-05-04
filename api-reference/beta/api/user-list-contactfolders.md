@@ -45,7 +45,7 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and collection of [ContactFolder](../resources/contactfolder.md) objects in the response body.
 ## Example
-##### Request
+### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -74,8 +74,8 @@ GET https://graph.microsoft.com/beta/me/contactFolders
 
 ---
 
-##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+### Response
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -85,15 +85,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 145
 
 {
   "value": [
     {
-      "parentFolderId": "parentFolderId-value",
-      "displayName": "displayName-value",
-      "wellKnownName": "wellKnownName-value",
-      "id": "id-value"
+      "parentFolderId": "AQMkADIxYjJiYgEzLTFmNjYALTRjYTMtODA1NC0wZDkxZGNmOTcxNTQALgAAA8RJzXYaLKZPlmn0ge0edZkBADa3qi2IMXRNg6RwQSHe_F8AAAIBCAAAAA==",
+      "displayName": "Contacts",
+      "id": "AQMkADIxYjJiYgEzLTFmNjYALTRjYTMtODA1NC0wZDkxZGNmOTcxNTQALgAAA8RJzXYaLKZPlmn0ge0edZkBADa3qi2IMXRNg6RwQSHe_F8AAAIBDgAAAA==",
+      "wellKnownName": "contacts"
     }
   ]
 }

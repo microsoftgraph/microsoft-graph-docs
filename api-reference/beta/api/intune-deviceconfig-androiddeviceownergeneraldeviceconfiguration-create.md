@@ -20,7 +20,7 @@ Create a new [androidDeviceOwnerGeneralDeviceConfiguration](../resources/intune-
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -113,6 +113,13 @@ The following table shows the properties that are required when you create the a
 |kioskModeIconSize|[androidDeviceOwnerKioskModeIconSize](../resources/intune-deviceconfig-androiddeviceownerkioskmodeiconsize.md)|Icon size configuration for managed home screen in Kiosk Mode. Possible values are: `notConfigured`, `smallest`, `small`, `regular`, `large`, `largest`.|
 |kioskModeFolderIcon|[androidDeviceOwnerKioskModeFolderIcon](../resources/intune-deviceconfig-androiddeviceownerkioskmodefoldericon.md)|Folder icon configuration for managed home screen in Kiosk Mode. Possible values are: `notConfigured`, `darkSquare`, `darkCircle`, `lightSquare`, `lightCircle`.|
 |kioskModeWifiAllowedSsids|String collection|The restricted set of WIFI SSIDs available for the user to configure in Kiosk Mode. This collection can contain a maximum of 500 elements.|
+|kioskModeAppOrderEnabled|Boolean|Whether or not to enable app ordering in Kiosk Mode.|
+|kioskModeAppsInFolderOrderedByName|Boolean|Whether or not to alphabetize applications within a folder in Kiosk Mode.|
+|kioskModeGridHeight|Int32|Number of rows for Managed Home Screen grid with app ordering enabled in Kiosk Mode. Valid values 1 to 9999999|
+|kioskModeGridWidth|Int32|Number of columns for Managed Home Screen grid with app ordering enabled in Kiosk Mode. Valid values 1 to 9999999|
+|kioskModeLockHomeScreen|Boolean|Whether or not to lock home screen to the end user in Kiosk Mode.|
+|kioskModeManagedFolders|[androidDeviceOwnerKioskModeManagedFolder](../resources/intune-deviceconfig-androiddeviceownerkioskmodemanagedfolder.md) collection|A list of managed folders for a device in Kiosk Mode. This collection can contain a maximum of 500 elements.|
+|kioskModeAppPositions|[androidDeviceOwnerKioskModeAppPositionItem](../resources/intune-deviceconfig-androiddeviceownerkioskmodeapppositionitem.md) collection|The ordering of items on Kiosk Mode Managed Home Screen. This collection can contain a maximum of 500 elements.|
 |microphoneForceMute|Boolean|Indicates whether or not to block unmuting the microphone on the device.|
 |networkEscapeHatchAllowed|Boolean|Indicates whether or not the device will allow connecting to a temporary network connection at boot time.|
 |nfcBlockOutgoingBeam|Boolean|Indicates whether or not to block NFC outgoing beam.|
@@ -178,7 +185,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 6387
+Content-length: 7313
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -278,6 +285,36 @@ Content-length: 6387
   "kioskModeWifiAllowedSsids": [
     "Kiosk Mode Wifi Allowed Ssids value"
   ],
+  "kioskModeAppOrderEnabled": true,
+  "kioskModeAppsInFolderOrderedByName": true,
+  "kioskModeGridHeight": 3,
+  "kioskModeGridWidth": 2,
+  "kioskModeLockHomeScreen": true,
+  "kioskModeManagedFolders": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeManagedFolder",
+      "folderName": "Folder Name value",
+      "folderIdentifier": "Folder Identifier value",
+      "items": [
+        {
+          "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeWeblink",
+          "label": "Label value",
+          "link": "Link value"
+        }
+      ]
+    }
+  ],
+  "kioskModeAppPositions": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeAppPositionItem",
+      "position": 8,
+      "item": {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeWeblink",
+        "label": "Label value",
+        "link": "Link value"
+      }
+    }
+  ],
   "microphoneForceMute": true,
   "networkEscapeHatchAllowed": true,
   "nfcBlockOutgoingBeam": true,
@@ -342,7 +379,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 6559
+Content-Length: 7485
 
 {
   "@odata.type": "#microsoft.graph.androidDeviceOwnerGeneralDeviceConfiguration",
@@ -444,6 +481,36 @@ Content-Length: 6559
   "kioskModeFolderIcon": "darkSquare",
   "kioskModeWifiAllowedSsids": [
     "Kiosk Mode Wifi Allowed Ssids value"
+  ],
+  "kioskModeAppOrderEnabled": true,
+  "kioskModeAppsInFolderOrderedByName": true,
+  "kioskModeGridHeight": 3,
+  "kioskModeGridWidth": 2,
+  "kioskModeLockHomeScreen": true,
+  "kioskModeManagedFolders": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeManagedFolder",
+      "folderName": "Folder Name value",
+      "folderIdentifier": "Folder Identifier value",
+      "items": [
+        {
+          "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeWeblink",
+          "label": "Label value",
+          "link": "Link value"
+        }
+      ]
+    }
+  ],
+  "kioskModeAppPositions": [
+    {
+      "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeAppPositionItem",
+      "position": 8,
+      "item": {
+        "@odata.type": "microsoft.graph.androidDeviceOwnerKioskModeWeblink",
+        "label": "Label value",
+        "link": "Link value"
+      }
+    }
   ],
   "microphoneForceMute": true,
   "networkEscapeHatchAllowed": true,

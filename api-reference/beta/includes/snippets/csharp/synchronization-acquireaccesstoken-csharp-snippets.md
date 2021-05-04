@@ -13,7 +13,7 @@ var credentials = new List<SynchronizationSecretKeyStringValuePair>()
 	}
 };
 
-await graphClient.Applications["{applicationsId}"].Synchronization
+await graphClient.Applications["{application-id}"].Synchronization
 	.AcquireAccessToken(credentials)
 	.Request()
 	.PostAsync();

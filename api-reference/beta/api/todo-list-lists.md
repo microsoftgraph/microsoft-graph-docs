@@ -15,7 +15,7 @@ Get a list of the [todoTaskList](../resources/todotasklist.md) objects and their
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|Tasks.ReadWrite|
 |Delegated (personal Microsoft account)|Tasks.ReadWrite|
@@ -54,26 +54,26 @@ If successful, this method returns a `200 OK` response code and a collection of 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_todotasklist"
+  "name": "get_todotasklist_1"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/me/todo/lists
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-todotasklist-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-todotasklist-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-todotasklist-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-todotasklist-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-todotasklist-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-todotasklist-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-todotasklist-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-todotasklist-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

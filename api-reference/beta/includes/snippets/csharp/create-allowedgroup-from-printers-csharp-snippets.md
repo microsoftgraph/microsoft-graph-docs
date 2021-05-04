@@ -14,7 +14,7 @@ var group = new Group
 	}
 };
 
-await graphClient.Print.Shares["{id}"].AllowedGroups.References
+await graphClient.Print.Shares["{printerShare-id}"].AllowedGroups.References
 	.Request()
 	.AddAsync(group);
 

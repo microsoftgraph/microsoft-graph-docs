@@ -2,7 +2,7 @@
 title: "List directReports"
 description: "Get a user's direct reports."
 localization_priority: Priority
-author: "krbain"
+author: "jpettere"
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/v1.0/me/directReports
 ### Response
 Here is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -88,12 +88,11 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [
     {
-      "id": "id-value"
+      "id": "a97733ce-92a4-4e7e-8d45-8e1f3e6a69d8"
     }
   ]
 }

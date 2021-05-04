@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/authentication/passwordMethods')
+let passwordMethods = await client.api('/me/authentication/passwordMethods')
 	.version('beta')
 	.get();
 

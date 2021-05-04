@@ -11,7 +11,7 @@ var personName = new PersonName
 	Nickname = "Kesha"
 };
 
-await graphClient.Me.Profile.Names["{id}"]
+await graphClient.Me.Profile.Names["{personName-id}"]
 	.Request()
 	.UpdateAsync(personName);
 

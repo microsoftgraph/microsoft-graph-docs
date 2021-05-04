@@ -24,12 +24,12 @@ The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Devic
 |[Get windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-get.md)|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|Read properties and relationships of the [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) object.|
 |[Create windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-create.md)|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|Create a new [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) object.|
 |[Delete windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-delete.md)|None|Deletes a [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md).|
-|[Update windowsAutopilotDeviceIdentity](../api/intune-enrollment-windowsautopilotdeviceidentity-update.md)|[windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md)|Update the properties of a [windowsAutopilotDeviceIdentity](../resources/intune-enrollment-windowsautopilotdeviceidentity.md) object.|
 |[assignUserToDevice action](../api/intune-enrollment-windowsautopilotdeviceidentity-assignusertodevice.md)|None|Assigns user to Autopilot devices.|
 |[unassignUserFromDevice action](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignuserfromdevice.md)|None|Unassigns the user from an Autopilot device.|
 |[updateDeviceProperties action](../api/intune-enrollment-windowsautopilotdeviceidentity-updatedeviceproperties.md)|None|Updates properties on Autopilot devices.|
 |[assignResourceAccountToDevice action](../api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice.md)|None|Assigns resource account to Autopilot devices.|
 |[unassignResourceAccountFromDevice action](../api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice.md)|None|Unassigns the resource account from an Autopilot device.|
+|[deleteDevices action](../api/intune-enrollment-windowsautopilotdeviceidentity-deletedevices.md)|[deletedWindowsAutopilotDeviceState](../resources/intune-enrollment-deletedwindowsautopilotdevicestate.md) collection|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -38,7 +38,6 @@ The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Devic
 |deploymentProfileAssignmentStatus|[windowsAutopilotProfileAssignmentStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentstatus.md)|Profile assignment status of the Windows autopilot device. Possible values are: `unknown`, `assignedInSync`, `assignedOutOfSync`, `assignedUnkownSyncState`, `notAssigned`, `pending`, `failed`.|
 |deploymentProfileAssignmentDetailedStatus|[windowsAutopilotProfileAssignmentDetailedStatus](../resources/intune-enrollment-windowsautopilotprofileassignmentdetailedstatus.md)|Profile assignment detailed status of the Windows autopilot device. Possible values are: `none`, `hardwareRequirementsNotMet`, `surfaceHubProfileNotSupported`, `holoLensProfileNotSupported`, `windowsPcProfileNotSupported`.|
 |deploymentProfileAssignedDateTime|DateTimeOffset|Profile set time of the Windows autopilot device.|
-|orderIdentifier|String|Order Identifier of the Windows autopilot device - Deprecated|
 |groupTag|String|Group Tag of the Windows autopilot device.|
 |purchaseOrderIdentifier|String|Purchase Order Identifier of the Windows autopilot device.|
 |serialNumber|String|Serial number of the Windows autopilot device.|
@@ -52,7 +51,8 @@ The windowsAutopilotDeviceIdentity resource represents a Windows Autopilot Devic
 |resourceName|String|Resource Name.|
 |skuNumber|String|SKU Number|
 |systemFamily|String|System Family|
-|azureActiveDirectoryDeviceId|String|AAD Device ID|
+|azureActiveDirectoryDeviceId|String|AAD Device ID - to be deprecated|
+|azureAdDeviceId|String|AAD Device ID|
 |managedDeviceId|String|Managed Device ID|
 |displayName|String|Display Name|
 
@@ -77,7 +77,6 @@ Here is a JSON representation of the resource.
   "deploymentProfileAssignmentStatus": "String",
   "deploymentProfileAssignmentDetailedStatus": "String",
   "deploymentProfileAssignedDateTime": "String (timestamp)",
-  "orderIdentifier": "String",
   "groupTag": "String",
   "purchaseOrderIdentifier": "String",
   "serialNumber": "String",
@@ -92,6 +91,7 @@ Here is a JSON representation of the resource.
   "skuNumber": "String",
   "systemFamily": "String",
   "azureActiveDirectoryDeviceId": "String",
+  "azureAdDeviceId": "String",
   "managedDeviceId": "String",
   "displayName": "String"
 }

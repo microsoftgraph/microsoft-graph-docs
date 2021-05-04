@@ -11,22 +11,23 @@ const options = {
 const client = Client.init(options);
 
 const event = {
-  originalStartTimeZone: "originalStartTimeZone-value",
-  originalEndTimeZone: "originalEndTimeZone-value",
+  originalStartTimeZone: 'originalStartTimeZone-value',
+  originalEndTimeZone: 'originalEndTimeZone-value',
   responseStatus: {
-    response: "",
-    time: "2016-10-19T10:37:00Z"
+    response: '',
+    time: '2016-10-19T10:37:00Z'
   },
   recurrence: null,
-  uid: "iCalUId-value",
+  uid: 'iCalUId-value',
   reminderMinutesBeforeStart: 99,
   isOnlineMeeting: true,
-  onlineMeetingProvider: "teamsForBusiness",
+  onlineMeetingProvider: 'teamsForBusiness',
   isReminderOn: true,
-  categories: ["Red category"]
+  hideAttendees: false,
+  categories: ['Red category']
 };
 
-let res = await client.api('/me/events/{id}')
+await client.api('/me/events/{id}')
 	.version('beta')
 	.update(event);
 

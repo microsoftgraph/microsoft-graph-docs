@@ -3,7 +3,7 @@ title: "Get emailAuthenticationMethod"
 description: "Read the properties and relationships of an emailAuthenticationMethod object."
 author: "mmcla"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -17,11 +17,11 @@ Retrieve a user's single [email Authentication Method](../resources/emailauthent
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions acting on self (from most to least privileged)|Permissions acting on others (from least to most privileged)|
+|Permission type|Permissions acting on self (from least to most privileged)|Permissions acting on others (from least to most privileged)|
 |:---|:---|:--|
-|Delegated (work or school account)|UserAuthenticationMethod.Read, UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All|UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All
-|Delegated (personal Microsoft account)|Not supported.|Not supported.
-|Application|Not supported.|Not supported.
+| Delegated (work or school account)     | UserAuthenticationMethod.Read, UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. | Not supported. |
+| Application                            | Not applicable. | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 
 For delegated scenarios where an admin is acting on another user, the admin needs one of the following [roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 
@@ -60,26 +60,26 @@ If successful, this method returns a `200 OK` response code and the requested [e
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_emailauthenticationmethod"
+  "name": "get_emailauthenticationmethod_1"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/me/authentication/emailMethods/3ddfcfc8-9383-446f-83cc-3ab9be4be18f
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-emailauthenticationmethod-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-emailauthenticationmethod-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-emailauthenticationmethod-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-emailauthenticationmethod-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-emailauthenticationmethod-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-emailauthenticationmethod-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-emailauthenticationmethod-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-emailauthenticationmethod-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

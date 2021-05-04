@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/subscribedSkus')
+let subscribedSkus = await client.api('/subscribedSkus')
 	.version('beta')
 	.get();
 

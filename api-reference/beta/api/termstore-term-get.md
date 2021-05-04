@@ -17,7 +17,7 @@ Read the properties and relationships of a [term](../resources/termstore-term.md
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account) | TermStore.Read.All, TermStore.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
@@ -57,26 +57,26 @@ If successful, this method returns a `200 OK` response code and a [term](../reso
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_term"
+  "name": "get_term_1"
 } -->
 
 ``` http
 GET https://graph.microsoft.com/beta/termStore/groups/{groupId}/sets/{setId}/terms/{termId}
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-term-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-term-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-term-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-term-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-term-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-term-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-term-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-term-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

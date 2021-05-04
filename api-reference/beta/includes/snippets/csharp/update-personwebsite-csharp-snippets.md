@@ -11,7 +11,7 @@ var personWebsite = new PersonWebsite
 	Description = "Lyn Damer play in the Women's 1st Division (Toppserien) in Norway"
 };
 
-await graphClient.Me.Profile.Websites["{id}"]
+await graphClient.Me.Profile.Websites["{personWebsite-id}"]
 	.Request()
 	.UpdateAsync(personWebsite);
 

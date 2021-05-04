@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/drive/bundles/{bundle-id}/children/{item-id}')
+await client.api('/drive/bundles/{bundle-id}/children/{item-id}')
 	.version('beta')
 	.delete();
 

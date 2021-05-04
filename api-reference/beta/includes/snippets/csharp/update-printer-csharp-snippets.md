@@ -11,13 +11,13 @@ var printer = new Printer
 	Name = "PrinterName",
 	Location = new PrinterLocation
 	{
-		Latitude = 1.1f,
-		Longitude = 2.2f,
+		Latitude = 1.1,
+		Longitude = 2.2,
 		AltitudeInMeters = 3
 	}
 };
 
-await graphClient.Print.Printers["{id}"]
+await graphClient.Print.Printers["{printer-id}"]
 	.Request()
 	.UpdateAsync(printer);
 

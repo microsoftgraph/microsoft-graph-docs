@@ -3,7 +3,7 @@ title: "autoReviewSettings resource type"
 description: "Specifies the behavior for when an access review completes."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 

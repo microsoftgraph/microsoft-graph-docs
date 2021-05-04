@@ -26,7 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/application
+GET /me/drive/items/{id}/workbook/application
+GET /me/drive/root:/{item-path}:/workbook/application
 ```
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
@@ -75,7 +76,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/application
 ### Response
 Here is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

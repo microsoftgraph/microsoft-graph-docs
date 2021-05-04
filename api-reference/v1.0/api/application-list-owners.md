@@ -3,7 +3,7 @@ title: "List owners"
 description: "Retrieve a list of owners (directoryObject objects) for an application."
 author: "sureshja"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: apiPageType
 ---
 

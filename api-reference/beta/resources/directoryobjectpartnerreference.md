@@ -3,7 +3,7 @@ title: "directoryObjectPartnerReference resource type"
 description: "Represents a reference to a directory object in a partner tenant. Inherits from directoryObject."
 author: "keylimesoda"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 

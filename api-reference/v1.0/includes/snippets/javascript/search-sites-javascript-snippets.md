@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/sites?search=%7Bquery%7D')
+let sites = await client.api('/sites?search=%7Bquery%7D')
 	.get();
 
 ```

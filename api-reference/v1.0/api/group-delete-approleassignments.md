@@ -3,7 +3,7 @@ title: "Delete an appRoleAssignment from a group"
 description: "Delete an appRoleAssignment that has been granted to a group."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "groups"
 author: "psignoret"
 ---
 
@@ -11,7 +11,7 @@ author: "psignoret"
 
 Namespace: microsoft.graph
 
-Deletes an [appRoleAssignment](../resources/approleassignment.md) which a group has been granted.
+Deletes an [appRoleAssignment](../resources/approleassignment.md) that a group has been granted.
 
 ## Permissions
 

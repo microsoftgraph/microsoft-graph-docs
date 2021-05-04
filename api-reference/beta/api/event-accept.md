@@ -36,9 +36,6 @@ POST /users/{id | userPrincipalName}/calendar/events/{id}/accept
 POST /me/calendars/{id}/events/{id}/accept
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/accept
 
-POST /me/calendargroup/calendars/{id}/events/{id}/accept
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/accept
-
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/accept
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/accept
 ```

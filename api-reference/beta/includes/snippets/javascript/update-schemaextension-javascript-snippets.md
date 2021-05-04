@@ -13,17 +13,17 @@ const client = Client.init(options);
 const schemaExtension = {
   properties: [
     {
-      name:"new-name-value",
-      type:"new-type-value"
+      name: 'new-name-value',
+      type: 'new-type-value'
     },
     {
-      name:"additional-name-value",
-      type:"additional-type-value"
+      name: 'additional-name-value',
+      type: 'additional-type-value'
     }
   ]
 };
 
-let res = await client.api('/schemaExtensions/{id}')
+await client.api('/schemaExtensions/{id}')
 	.version('beta')
 	.update(schemaExtension);
 

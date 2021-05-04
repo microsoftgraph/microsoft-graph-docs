@@ -1,7 +1,7 @@
 ---
 title: "Update windowsUpdateState"
 description: "Update the properties of a windowsUpdateState object."
-author: "dougeby"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType

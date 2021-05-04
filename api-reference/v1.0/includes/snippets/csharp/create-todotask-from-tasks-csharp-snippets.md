@@ -9,7 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var todoTask = new TodoTask
 {
 	Title = "A new task",
-	LinkedResources = (ITodoTaskLinkedResourcesCollectionPage)new List<LinkedResource>()
+	LinkedResources = new TodoTaskLinkedResourcesCollectionPage()
 	{
 		new LinkedResource
 		{
@@ -20,7 +20,7 @@ var todoTask = new TodoTask
 	}
 };
 
-await graphClient.Me.Todo.Lists["AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtM"].Tasks
+await graphClient.Me.Todo.Lists["{todoTaskList-id}"].Tasks
 	.Request()
 	.AddAsync(todoTask);
 

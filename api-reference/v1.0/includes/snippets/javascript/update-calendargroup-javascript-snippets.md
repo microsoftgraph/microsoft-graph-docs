@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const calendarGroup = {
-  name: "name-value"
+  name: 'name-value'
 };
 
-let res = await client.api('/me/calendarGroups/{id}')
+await client.api('/me/calendarGroups/{id}')
 	.update(calendarGroup);
 
 ```

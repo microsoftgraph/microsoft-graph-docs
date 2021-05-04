@@ -20,7 +20,7 @@ Update the properties of a [mobileAppAssignment](../resources/intune-apps-mobile
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -67,7 +67,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}/assignments/{mobileAppAssignmentId}
 Content-type: application/json
-Content-length: 591
+Content-length: 617
 
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignment",
@@ -80,7 +80,8 @@ Content-length: 591
   "settings": {
     "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
     "vpnConfigurationId": "Vpn Configuration Id value",
-    "uninstallOnDeviceRemoval": true
+    "uninstallOnDeviceRemoval": true,
+    "isRemovable": true
   },
   "source": "policySets",
   "sourceId": "Source Id value"
@@ -92,7 +93,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 640
+Content-Length: 666
 
 {
   "@odata.type": "#microsoft.graph.mobileAppAssignment",
@@ -106,7 +107,8 @@ Content-Length: 640
   "settings": {
     "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
     "vpnConfigurationId": "Vpn Configuration Id value",
-    "uninstallOnDeviceRemoval": true
+    "uninstallOnDeviceRemoval": true,
+    "isRemovable": true
   },
   "source": "policySets",
   "sourceId": "Source Id value"

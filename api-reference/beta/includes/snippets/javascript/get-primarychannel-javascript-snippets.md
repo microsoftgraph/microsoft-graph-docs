@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/teams/{id}/primaryChannel')
+let channel = await client.api('/teams/{id}/primaryChannel')
 	.version('beta')
 	.get();
 

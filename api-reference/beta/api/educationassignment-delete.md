@@ -57,26 +57,26 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_educationassignment"
+  "name": "delete_educationassignment_1"
 }-->
 
 ```http
 DELETE https://graph.microsoft.com/beta/education/classes/11014/assignments/19002
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-educationassignment-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-educationassignment-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-educationassignment-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-educationassignment-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-educationassignment-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-educationassignment-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-educationassignment-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/delete-educationassignment-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

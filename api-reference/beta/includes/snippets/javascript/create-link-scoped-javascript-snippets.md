@@ -11,11 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const permission = {
-  type: "edit",
-  scope: "organization"
+  type: 'edit',
+  scope: 'organization'
 };
 
-let res = await client.api('/me/drive/items/{item-id}/createLink')
+await client.api('/me/drive/items/{item-id}/createLink')
 	.version('beta')
 	.post(permission);
 

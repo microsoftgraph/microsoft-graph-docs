@@ -3,7 +3,7 @@ title: "namedLocation resource type"
 description: "This is the base class that represents an Azure Active Directory named location. Named locations are custom rules that define network locations which can then be used in a Conditional Access policy."
 localization_priority: Normal
 author: "videor"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -27,10 +27,10 @@ This is the base class that represents an Azure Active Directory named location.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|createdDateTime|DateTimeOffset|The Timestamp type represents creation date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
+|createdDateTime|DateTimeOffset|The Timestamp type represents creation date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |displayName|String|Human-readable name of the location.|
 |id|String|Identifier of a namedLocation object. Read-only.|
-|modifiedDateTime|DateTimeOffset|The Timestamp type represents last modified date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
+|modifiedDateTime|DateTimeOffset|The Timestamp type represents last modified date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 
 ## Relationships
 
@@ -46,7 +46,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.namedLocation",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

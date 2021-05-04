@@ -3,7 +3,7 @@ title: "List accessReviewScheduleDefinitions"
 description: "Retrieve accessReviewScheduleDefinition objects."
 localization_priority: Normal
 author: "isabelleatmsft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 ---
 
 ### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -105,7 +105,7 @@ Content-type: application/json
             "createdBy": {
                 "id": "957f1027-c0ee-460d-9269-b8828e59e0fe",
                 "displayName": "MOD Administrator",
-                "userPrincipalName": "admin@microsoft.com"
+                "userPrincipalName": "admin@contoso.com"
             },
             "scope": {
                 "query": "/groups/119cc181-22f0-4e18-8537-264e7524ee0b/transitiveMembers",

@@ -1,7 +1,7 @@
 ---
 title: "List users"
 description: "Retrieve a list of user objects."
-author: "krbain"
+author: "jpettere"
 localization_priority: Priority
 ms.prod: "users"
 doc_type: apiPageType
@@ -44,7 +44,7 @@ Certain properties cannot be returned within a user collection. The following pr
 | Header        | Value                      |
 |:--------------|:---------------------------|
 | Authorization | Bearer {token} (required)  |
-| ConsistencyLevel | eventual. This header and `$count` are required when using `$search`, or when using `$filter` with the `$orderby` query parameter. It uses an index that may not be up-to-date with recent changes to the object. |
+| ConsistencyLevel | eventual. This header and `$count` are required when using `$search`, or when using `$filter` with the `$orderby` query parameter, or `$filter` with the `endsWith` logical operator. It uses an index that may not be up-to-date with recent changes to the object. |
 
 ## Request body
 
@@ -66,25 +66,25 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_users"
+  "name": "get_users_2"
 } -->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-users-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-users-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-users-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-users-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-users-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-users-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-users-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-users-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/v1.0/users
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -160,7 +160,7 @@ GET https://graph.microsoft.com/v1.0/users?$select=displayName,id&$filter=identi
 
 The following is an example of the response. 
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -180,198 +180,7 @@ Content-type: application/json
   ]
 }
 ```
-
-### Example 3: Get users including their last sign-in time
-
-#### Request
-
-The following is an example of the request.
-
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_signin_last_time"
-} -->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users?$select=displayName,userPrincipalName,signInActivity
-```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-last-time-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-signin-last-time-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-signin-last-time-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-signin-last-time-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### Response
-
-The following is an example of the response.
-
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user",
-  "isCollection": true
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(displayName,userPrincipalName,signInActivity)",
-  "value": [
-    {
-      "displayName": "Adele Vance",
-      "userPrincipalName": "AdeleV@contoso.com",
-      "signInActivity": {
-        "lastSignInDateTime": "2017-09-04T15:35:02Z",
-        "lastSignInRequestId": "c7df2760-2c81-4ef7-b578-5b5392b571df"
-      }
-    },
-    {
-      "displayName": "Alex Wilber",
-      "userPrincipalName": "AlexW@contoso.com",
-      "signInActivity": {
-        "lastSignInDateTime": "2017-07-29T02:16:18Z",
-        "lastSignInRequestId": "90d8b3f8-712e-4f7b-aa1e-62e7ae6cbe96"
-      }
-    }
-  ]
-}
-```
-
-### Example 4: List the last sign-in time of users with a specific display name
-
-#### Request
-
-The following is an example of the request.
-
-
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_signin_last_time_filter"
-} -->
-```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'Eric')&$select=displayName,signInActivity
-```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-signin-last-time-filter-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-signin-last-time-filter-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-signin-last-time-filter-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-signin-last-time-filter-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-#### Response
-
-The following is an example of the response. 
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user",
-  "isCollection": true
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "@odata.context": "https://graph.microsoft.com/v1.0/users?$filter=startswith(displayName,'Eric')&$select=displayName,signInActivity",
-  "value": [
-    {
-      "displayName": "Eric Solomon",
-      "signInActivity": {
-        "lastSignInDateTime": "2017-09-04T15:35:02Z",
-        "lastSignInRequestId": "c7df2760-2c81-4ef7-b578-5b5392b571df"
-      }
-    }
-  ]
-}
-```
-
-### Example 5: List the last sign-in time of users in a specific time range
-
-#### Request
-
-The following is an example of the request.
-
-<!-- {
-  "blockType": "ignored",
-  "name": "get_signin_last_time_range"
-} -->
-```http
-GET https://graph.microsoft.com/v1.0/users?filter=signInActivity/lastSignInDateTime le 2019-06-01T00:00:00Z
-```
-
-#### Response
-
-The following is an example of the response. 
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user",
-  "isCollection": true
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-
-{
-  "@odata.context": "https://graph.microsoft.com/v1.0/users?filter=signInActivity/lastSignInDateTime le 2019-06-01T00:00:00Z",
-  "value": [
-    {
-      "displayName": "Adele Vance",
-      "userPrincipalName": "AdeleV@contoso.com",
-      "signInActivity": {
-        "lastSignInDateTime": "2019-05-04T15:35:02Z",
-        "lastSignInRequestId": "c7df2760-2c81-4ef7-b578-5b5392b571df"
-      }
-    },
-    {
-      "displayName": "Alex Wilber",
-      "userPrincipalName": "AlexW@contoso.com",
-      "signInActivity": {
-        "lastSignInDateTime": "2019-04-29T02:16:18Z",
-        "lastSignInRequestId": "90d8b3f8-712e-4f7b-aa1e-62e7ae6cbe96"
-      }
-    }
-  ]
-}
-```
-
-### Example 6: Get only a count of users
+### Example 3: Get only a count of users
 
 #### Request
 
@@ -396,11 +205,11 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
+
+893
 ```
 
-`893`
-
-### Example 7: Use $filter and $top to get one user with a display name that starts with 'a' including a count of returned objects
+### Example 4: Use $filter and $top to get one user with a display name that starts with 'a' including a count of returned objects
 
 #### Request
 
@@ -419,7 +228,7 @@ ConsistencyLevel: eventual
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -447,7 +256,74 @@ Content-type: application/json
 }
 ```
 
-### Example 8: Use $search to get users with display names that contain the letters 'wa' including a count of returned objects
+### Example 5: Use $filter to get all users with a mail that ends with 'a@contoso.com', including a count of returned objects, with the results ordered by userPrincipalName
+
+#### Request
+
+The following is an example of the request.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_a_count_endsWith"
+} -->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?$filter=endswith(mail,'a@contoso.com')&$orderby=userPrincipalName&$count=true
+ConsistencyLevel: eventual
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-a-count-endswith-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-a-count-endswith-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-a-count-endswith-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-a-count-endswith-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users",
+  "@odata.count": 1,
+  "value": [
+    {
+      "displayName": "Grady Archie",
+      "givenName": "Grady",
+      "jobTitle": "Designer",
+      "mail": "GradyA@contoso.com",
+      "userPrincipalName": "GradyA@contoso.com",
+      "id": "e8b753b5-4117-464e-9a08-713e1ff266b3"
+      }
+    ]
+}
+```
+
+### Example 6: Use $search to get users with display names that contain the letters 'wa' including a count of returned objects
 
 #### Request
 
@@ -466,7 +342,7 @@ ConsistencyLevel: eventual
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -493,7 +369,7 @@ Content-type: application/json
 }
 ```
 
-### Example 9: Use $search to get users with display names that contain the letters 'wa' or the letters 'to' including a count of returned objects
+### Example 7: Use $search to get users with display names that contain the letters 'wa' or the letters 'to' including a count of returned objects
 
 #### Request
 
@@ -512,7 +388,7 @@ ConsistencyLevel: eventual
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -545,6 +421,62 @@ Content-type: application/json
   ]
 }
 ```
+
+### Example 8: Use $filter to get users who are assigned a specific license
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "ignored",
+  "name": "get_user_assignedLicenses"
+} -->
+```msgraph-interactive
+GET https://graph.microsoft.com/v1.0/users?$select=id,mail,assignedLicenses&$filter=assignedLicenses/any(u:u/skuId eq cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46)
+```
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users(id,mail,assignedLicenses)",
+  "value": [
+    {
+      "id": "cb4954e8-467f-4a6d-a8c8-28b9034fadbc",
+      "mail": "admin@contoso.com",
+      "assignedLicenses": [
+        {
+          "disabledPlans": [],
+          "skuId": "cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46"
+        }
+      ]
+    },
+    {
+      "id": "81a133c2-bdf2-4e67-8755-7264366b04ee",
+      "mail": "DebraB@contoso.com",
+      "assignedLicenses": [
+        {
+          "disabledPlans": [],
+          "skuId": "cbdc14ab-d96c-4c30-b9f4-6ada7cdc1d46"
+        }
+      ]
+    }
+  ]
+}
+```
+
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
 <!-- {

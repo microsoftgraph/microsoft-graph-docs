@@ -48,8 +48,8 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.managedMobileApp",
   "mobileAppIdentifier": {
-    "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
-    "packageId": "String"
+    "@odata.type": "microsoft.graph.windowsAppIdentifier",
+    "windowsAppId": "String"
   },
   "id": "String (identifier)",
   "version": "String"

@@ -1,5 +1,137 @@
 {
-  "changelog": [
+  "changelog": [    
+    {
+      "ChangeList": [
+        {
+          "Id": "58585680-2aae-4690-a3f0-7828dc866c20",
+          "ApiChange": "Property",
+          "ChangedApiName": "hideAttendees",
+          "ChangeType": "Addition",
+          "Description": "Added the **hideAttendees** property to the [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-beta) entity.",
+          "Target": "event"
+        }
+      ],
+      "Id": "58585680-2aae-4690-a3f0-7828dc866c20",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-09T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "7cb824eb-562c-4e5d-bbad-655310bf25e0",
+          "ApiChange": "Property",
+          "ChangedApiName": "hideAttendees",
+          "ChangeType": "Addition",
+          "Description": "Added the **hideAttendees** property to the [event](https://docs.microsoft.com/en-us/graph/api/resources/event?view=graph-rest-1.0) entity.",
+          "Target": "event"
+        }
+      ],
+      "Id": "7cb824eb-562c-4e5d-bbad-655310bf25e0",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-12-17T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
+          "ApiChange": "Property",
+          "ChangedApiName": "isDefaultCalendar",
+          "ChangeType": "Addition",
+          "Description": "Added the **isDefaultCalendar** property to the [calendar](/graph/api/resources/calendar?view=graph-rest-1.0) entity.",
+          "Target": "Calendar"
+        }
+      ],
+      "Id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-09-01T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
+          "ApiChange": "Property",
+          "ChangedApiName": "hexColor",
+          "ChangeType": "Addition",
+          "Description": "Added the **hexColor** property to the [calendar](https://docs.microsoft.com/en-us/graph/api/resources/calendar) entity.",
+          "Target": "calendar"
+        },
+        {
+          "Id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
+          "ApiChange": "Property",
+          "ChangedApiName": "isDraft",
+          "ChangeType": "Addition",
+          "Description": "Added the **isDraft** property to the [event](https://docs.microsoft.com/en-us/graph/api/resources/event) entity.",
+          "Target": "event"
+        }        
+      ],
+      "Id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-12-18T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
+          "ApiChange": "Method",
+          "ChangedApiName": "cancel",
+          "ChangeType": "Addition",
+          "Description": "Added the [cancel](https://docs.microsoft.com/en-us/graph/api/event-cancel) method to manage [event](https://docs.microsoft.com/en-us/graph/api/resources/event) resources in a calendar.",
+          "Target": "event"
+        },
+        {
+          "Id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
+          "ApiChange": "Method",
+          "ChangedApiName": "forward",
+          "ChangeType": "Addition",
+          "Description": "Added the [forward](https://docs.microsoft.com/en-us/graph/api/event-forward) method to manage [event](https://docs.microsoft.com/en-us/graph/api/resources/event) resources in a calendar.",
+          "Target": "event"
+        }
+      ],
+      "Id": "8fcb5dbc-d5aa-4681-8e31-b001d5168d79",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2020-12-19T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ce3c6f2b-b3e3-4efe-aa1a-046ed1b62e3c",
+          "ApiChange": "Property",
+          "ChangedApiName": "isHidden",
+          "ChangeType": "Addition",
+          "Description": "Added the **isHidden** property to [mailFolder](https://docs.microsoft.com/en-us/graph/api/resources/mailfolder?view=graph-rest-beta) entity.",
+          "Target": "mailFolder"
+        },
+        {
+          "Id": "ce3c6f2b-b3e3-4efe-aa1a-046ed1b62e3c",
+          "ApiChange": "Method",
+          "ChangedApiName": "includeHiddenFolders",
+          "ChangeType": "Addition",
+          "Description": "Added the support of the optional `includeHiddenFolders` query parameter to the [list mailFolders](https://docs.microsoft.com/en-us/graph/api/user-list-mailfolders?view=graph-rest-beta) operation.",
+          "Target": "mailFolder"
+        }
+      ],
+      "Id": "ce3c6f2b-b3e3-4efe-aa1a-046ed1b62e3c",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-12-08T00:00:00.000Z",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
     {
       "ChangeList": [
         {
@@ -282,7 +414,7 @@
       "Version": "beta",
       "CreatedDateTime": "2019-11-01T00:00:00",
       "WorkloadArea": "Calendar ",
-      "SubArea": " Place"
+      "SubArea": "Place"
     },
     {
       "ChangeList": [
@@ -430,7 +562,7 @@
       "Version": "beta",
       "CreatedDateTime": "2019-07-01T00:00:00",
       "WorkloadArea": "Calendar ",
-      "SubArea": " Place"
+      "SubArea": "Place"
     },
     {
       "ChangeList": [

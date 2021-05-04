@@ -3,7 +3,7 @@ title: "Update application"
 description: "Update the properties of an application object."
 author: "sureshja"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: apiPageType
 ---
 
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  Application.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
+|Delegated (personal Microsoft account) | Application.ReadWrite.All |
 |Application | Application.ReadWrite.OwnedBy, Application.ReadWrite.All |
 
 ## HTTP request

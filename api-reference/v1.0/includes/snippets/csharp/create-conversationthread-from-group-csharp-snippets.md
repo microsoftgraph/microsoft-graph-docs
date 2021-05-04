@@ -9,7 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var conversationThread = new ConversationThread
 {
 	Topic = "New Conversation Thread Topic",
-	Posts = (IConversationThreadPostsCollectionPage)new List<Post>()
+	Posts = new ConversationThreadPostsCollectionPage()
 	{
 		new Post
 		{
@@ -33,7 +33,7 @@ var conversationThread = new ConversationThread
 	}
 };
 
-await graphClient.Groups["{id}"].Threads
+await graphClient.Groups["{group-id}"].Threads
 	.Request()
 	.AddAsync(conversationThread);
 

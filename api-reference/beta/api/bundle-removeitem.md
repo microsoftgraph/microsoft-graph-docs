@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
 title: Remove item from bundle
 description: Remove item from a bundle of driveItems
 localization_priority: Normal

@@ -3,7 +3,7 @@ title: "directoryObject: getByIds"
 description: "Returns the directory objects specified in a list of IDs."
 author: "keylimesoda"
 localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -103,7 +103,7 @@ Content-type: application/json
 
 ### Response
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

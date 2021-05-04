@@ -11,7 +11,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphCustodian *custodian = [[MSGraphCustodian alloc] init];
+MSGraphEdiscoveryCustodian *custodian = [[MSGraphEdiscoveryCustodian alloc] init];
 [custodian setEmail:@"AdeleV@contoso.com"];
 [custodian setApplyHoldToSources:@"true"];
 

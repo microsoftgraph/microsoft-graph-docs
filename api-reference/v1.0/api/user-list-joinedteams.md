@@ -82,7 +82,7 @@ GET https://graph.microsoft.com/v1.0/me/joinedTeams
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -92,12 +92,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 55
 
 {
   "value": [
     {
-      "id": "id-value"
+      "id": "31aa74dd-dd65-43ac-8c4e-0ec1ae5a8ee1"
     }
   ]
 }

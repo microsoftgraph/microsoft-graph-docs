@@ -12,7 +12,7 @@ var attachment = new FileAttachment
 	ContentBytes = Encoding.ASCII.GetBytes("bWFjIGFuZCBjaGVlc2UgdG9kYXk=")
 };
 
-await graphClient.Me.Events["AAMkAGI1AAAt9AHjAAA="].Attachments
+await graphClient.Me.Events["{event-id}"].Attachments
 	.Request()
 	.AddAsync(attachment);
 

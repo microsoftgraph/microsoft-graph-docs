@@ -1,7 +1,7 @@
 ---
 title: "message: forward"
 description: "Forward a message. The message is saved in the Sent Items folder."
-author: "svpsiva"
+author: "abheek-das"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType

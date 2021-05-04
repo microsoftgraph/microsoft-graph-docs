@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/connections/contosohr/operations/3ed1595a-4bae-43c2-acda-ef973e581323')
+let connectionOperation = await client.api('/connections/contosohr/operations/3ed1595a-4bae-43c2-acda-ef973e581323')
 	.version('beta')
 	.get();
 

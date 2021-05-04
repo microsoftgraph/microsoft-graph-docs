@@ -62,9 +62,6 @@ GET /groups/{id}/calendar/events/{id}
 GET /me/calendars/{id}/events/{id}
 GET /users/{id | userPrincipalName}/calendars/{id}/events/{id}
 
-GET /me/calendargroup/calendars/{id}/events/{id}
-GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
-
 GET /me/calendargroups/{id}/calendars/{id}/events/{id}
 GET /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
 ```
@@ -101,7 +98,7 @@ The request does not specify any `Prefer: outlook.body-content-type` header to i
   "name": "get_event"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/me/events/AAMkAGIAAAoZDOFAAA=/?$select=subject,body,bodyPreview,organizer,attendees,start,end,location 
+GET https://graph.microsoft.com/beta/me/events/AAMkAGIAAAoZDOFAAA=/?$select=subject,body,bodyPreview,organizer,attendees,start,end,location,hideAttendees 
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 # [C#](#tab/csharp)
@@ -137,7 +134,7 @@ Preference-Applied: outlook.timezone="Pacific Standard Time"
 Content-length: 1928
 
 {
-    "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events(subject,body,bodyPreview,organizer,attendees,start,end,location)/$entity",
+    "@odata.context":"https://graph.microsoft.com/beta/$metadata#users('cd209b0b-3f83-4c35-82d2-d88a61820480')/events(subject,body,bodyPreview,organizer,attendees,start,end,location,hideAttendees)/$entity",
     "@odata.etag":"W/\"ZlnW4RIAV06KYYwlrfNZvQAAKGWwbw==\"",
     "id":"AAMkAGIAAAoZDOFAAA=",
     "subject":"Orientation ",
@@ -201,6 +198,7 @@ Content-length: 1928
             }
         }
     ],
+    "hideAttendees": false,
     "organizer":{
         "emailAddress":{
             "name":"Samantha Booth",

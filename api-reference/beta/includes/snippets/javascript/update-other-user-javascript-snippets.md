@@ -12,12 +12,12 @@ const client = Client.init(options);
 
 const user = {
   businessPhones: [
-    "+1 425 555 0109"
+    '+1 425 555 0109'
   ],
-  officeLocation: "18/2111"
+  officeLocation: '18/2111'
 };
 
-let res = await client.api('/users/{id}')
+await client.api('/users/{id}')
 	.version('beta')
 	.update(user);
 

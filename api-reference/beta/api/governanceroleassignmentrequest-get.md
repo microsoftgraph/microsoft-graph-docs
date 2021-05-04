@@ -3,7 +3,7 @@ title: "Get governanceRoleAssignmentRequest"
 description: "Get a governanceRoleAssignmentRequest. "
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "shauliu"
 ---
 

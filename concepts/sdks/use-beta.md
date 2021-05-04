@@ -16,7 +16,7 @@ Many of the Microsoft Graph SDKs use the [v1.0](/graph/api/overview?view=graph-r
 In order to call the beta API, you must install the [Microsoft.Graph.Beta](https://www.nuget.org/packages/Microsoft.Graph.Beta) package. Usage is the same as the `Microsoft.Graph` package.
 
 ```csharp
-using Microsoft.Graph.Beta;
+using Microsoft.Graph;
 
 // Create a new instance of GraphServiceClient.
 GraphServiceClient graphClient = new GraphServiceClient(...);
@@ -52,10 +52,10 @@ The [Microsoft Graph JavaScript Client Library](https://github.com/microsoftgrap
 In order to call the beta API, you must install the [Microsoft Graph Beta Java SDK](https://github.com/microsoftgraph/msgraph-beta-sdk-java). Usage is the same as the non-beta SDK.
 
 ```Java
-IGraphServiceClient graphClient = GraphServiceClient
-				.builder()
-				.authenticationProvider(authProvider)
-				.buildClient();
+GraphServiceClient graphClient = GraphServiceClient
+    .builder()
+    .authenticationProvider(authProvider)
+    .buildClient();
 ```
 
 # [Objective-C](#tab/Objective-C)

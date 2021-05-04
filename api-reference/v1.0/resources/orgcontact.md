@@ -3,7 +3,7 @@ title: "orgContact resource type"
 description: "Represents an organizational contact"
 localization_priority: Normal
 author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
@@ -44,7 +44,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | jobTitle                     | String                                                                   | Job title for this organizational contact.                                                                                                                                                                                                                                                 |
 | mail                         | String                                                                   | The SMTP address for the contact, for example, "jeff@contoso.onmicrosoft.com".                                                                                                                                                                                                             |
 | mailNickname                 | String                                                                   | Email alias (portion of email address pre-pending the @ symbol) for this organizational contact.                                                                                                                                                                                           |
-| onPremisesLastSyncDateTime   | DateTimeOffset                                                           | Date and time when this organizational contact was last synchronized from on-premises AD. This date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.                            |
+| onPremisesLastSyncDateTime   | DateTimeOffset                                                           | Date and time when this organizational contact was last synchronized from on-premises AD. This date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.                            |
 | onPremisesProvisioningErrors | [onPremisesProvisioningError](onpremisesprovisioningerror.md) collection | List of any synchronization provisioning errors for this organizational contact.                                                                                                                                                                                                           |
 | onPremisesSyncEnabled        | Boolean                                                                  | **true** if this object is synced from an on-premises directory; **false** if this object was originally synced from an on-premises directory but is no longer synced and now mastered in Exchange; **null** if this object has never been synced from an on-premises directory (default). |
 | phones                       | [phone](phone.md) collection                                             | List of phones for this organizational contact. Phone types can be mobile, business, and businessFax. Only one of each type can ever be present in the collection.                                                                                                                         |

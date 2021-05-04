@@ -3,7 +3,7 @@ title: "Remove directory role member"
 description: "Remove a member from a directoryRole."
 author: "abhijeetsinha"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 

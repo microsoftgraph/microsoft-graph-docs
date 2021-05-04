@@ -193,6 +193,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |defenderExploitProtectionXml|Binary|Xml content containing information regarding exploit protection details.|
 |defenderExploitProtectionXmlFileName|String|Name of the file from which DefenderExploitProtectionXml was obtained.|
 |defenderSecurityCenterBlockExploitProtectionOverride|Boolean|Indicates whether or not to block user from overriding Exploit Protection settings.|
+|defenderBlockPersistenceThroughWmiType|[defenderAttackSurfaceType](../resources/intune-deviceconfig-defenderattacksurfacetype.md)|Value indicating the behavior of Block persistence through WMI event subscription. Possible values are: `userDefined`, `block`, `auditMode`, `warn`, `disable`.|
 |appLockerApplicationControl|[appLockerApplicationControlType](../resources/intune-deviceconfig-applockerapplicationcontroltype.md)|Enables the Admin to choose what types of app to allow on devices. Possible values are: `notConfigured`, `enforceComponentsAndStoreApps`, `auditComponentsAndStoreApps`, `enforceComponentsStoreAppsAndSmartlocker`, `auditComponentsStoreAppsAndSmartlocker`.|
 |deviceGuardLocalSystemAuthorityCredentialGuardSettings|[deviceGuardLocalSystemAuthorityCredentialGuardType](../resources/intune-deviceconfig-deviceguardlocalsystemauthoritycredentialguardtype.md)|Turn on Credential Guard when Platform Security Level with Secure Boot and Virtualization Based Security are both enabled. Possible values are: `notConfigured`, `enableWithUEFILock`, `enableWithoutUEFILock`, `disable`.|
 |deviceGuardEnableVirtualizationBasedSecurity|Boolean|Turns On Virtualization Based Security(VBS).|
@@ -214,6 +215,8 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |applicationGuardAllowPrintToNetworkPrinters|Boolean|Allow printing to Network Printers from Container|
 |applicationGuardAllowVirtualGPU|Boolean|Allow application guard to use virtual GPU|
 |applicationGuardAllowFileSaveOnHost|Boolean|Allow users to download files from Edge in the application guard container and save them on the host file system|
+|applicationGuardAllowCameraMicrophoneRedirection|Boolean|Gets or sets whether applications inside Microsoft Defender Application Guard can access the device’s camera and microphone.|
+|applicationGuardCertificateThumbprints|String collection|Allows certain device level Root Certificates to be shared with the Microsoft Defender Application Guard container.|
 |bitLockerAllowStandardUserEncryption|Boolean|Allows the admin to allow standard users to enable encrpytion during Azure AD Join.|
 |bitLockerDisableWarningForOtherDiskEncryption|Boolean|Allows the Admin to disable the warning prompt for other disk encryption on the user machines.|
 |bitLockerEnableStorageCardEncryptionOnMobile|Boolean|Allows the admin to require encryption to be turned on using BitLocker. This policy is valid only for a mobile SKU.|
@@ -898,6 +901,7 @@ Here is a JSON representation of the resource.
   "defenderExploitProtectionXml": "binary",
   "defenderExploitProtectionXmlFileName": "String",
   "defenderSecurityCenterBlockExploitProtectionOverride": true,
+  "defenderBlockPersistenceThroughWmiType": "String",
   "appLockerApplicationControl": "String",
   "deviceGuardLocalSystemAuthorityCredentialGuardSettings": "String",
   "deviceGuardEnableVirtualizationBasedSecurity": true,
@@ -919,6 +923,10 @@ Here is a JSON representation of the resource.
   "applicationGuardAllowPrintToNetworkPrinters": true,
   "applicationGuardAllowVirtualGPU": true,
   "applicationGuardAllowFileSaveOnHost": true,
+  "applicationGuardAllowCameraMicrophoneRedirection": true,
+  "applicationGuardCertificateThumbprints": [
+    "String"
+  ],
   "bitLockerAllowStandardUserEncryption": true,
   "bitLockerDisableWarningForOtherDiskEncryption": true,
   "bitLockerEnableStorageCardEncryptionOnMobile": true,

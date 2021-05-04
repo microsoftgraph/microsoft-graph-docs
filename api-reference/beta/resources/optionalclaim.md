@@ -3,7 +3,7 @@ title: "optionalClaim resource type"
 description: "Contains an optional claim associated with an application."
 localization_priority: Normal
 author: "sureshja"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "resourcePageType"
 ---
 

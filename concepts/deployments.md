@@ -86,7 +86,8 @@ The following Microsoft Graph features are generally available on the `/v1.0` en
 | Delta query | ✔ | ✔ | ➖ |
 | Directory schema extensions | ✔ | ✔ | ➖ |
 | Open type extensions | ✔ | ➖ | ➖ |
-
+| Search (Microsoft Search) | ➖ | ➖ | ➖ |
+ 
 The following Microsoft Graph features are available in preview (on the `/beta` endpoint) in Microsoft Cloud China and Microsoft Cloud Germany (V1.0 endpoints for these features are available in Microsoft Cloud for US Government only):
 
 * Organizational contacts

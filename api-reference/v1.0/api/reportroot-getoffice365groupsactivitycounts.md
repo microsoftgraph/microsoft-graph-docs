@@ -3,7 +3,7 @@ title: "reportRoot: getOffice365GroupsActivityCounts"
 description: "Get the number of group activities across group workloads."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 

@@ -2,7 +2,7 @@
 title: "List channel messages"
 description: "Retrieve the list of messages (without the replies) in a channel of a team. To get the replies for a message, call the list message replies or the get message reply API. "
 localization_priority: Priority
-author: "nkramer"
+author: "RamjotSingh"
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve the list of [messages](../resources/chatmessage.md) (without the replies) in a [channel](../resources/channel.md) of a [team](../resources/team.md). 
 
-To get the replies for a message, call the [list message replies](channel-list-messagereplies.md) or the [get message reply](channel-get-messagereply.md) API. 
+To get the replies for a message, call the [list message replies](chatmessage-list-replies.md) or the [get message reply](chatmessage-get.md) API. 
 
 > **Note**: This API supports subscribing to changes (create, update, and delete) using [change notifications](../resources/webhooks.md). This allows callers to subscribe and get changes in real time. For details, see [Get notifications for messages](/graph/teams-changenotifications-chatmessage).
 
@@ -38,15 +38,15 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /teams/{id}/channels/{id}/messages
+GET /teams/{team-id}/channels/{channel-id}/messages
 ```
 
 ## Optional query parameters
 
-You can use the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response. 
+You can use the [$top](/graph/query-parameters#top-parameter) query parameter to control the number of items per response. Maximum allowed value for `$top` is 50.
 The other [OData query parameters](/graph/query-parameters) are not currently supported.
 
-> **Note:** [GET /teams/{id}/channels/{id}/messages/delta](chatmessage-delta.md) supports filtering by date, which provides similar data to GET /teams/{id}/channels/{id}/messages.
+> **Note:** [GET /teams/{team-id}/channels/{channel-id}/messages/delta](chatmessage-delta.md) supports filtering by date, which provides similar data to    GET /teams/{team-id}/channels/{channel-id}/messages .
 
 ## Request headers
 
@@ -66,39 +66,39 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ### Request
 
-Here is an example of the request.
+The following is an example of the request.
+
 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "sampleKeys": ["303d2c1c-f1c5-40ce-b68e-544343d7f42b", "19:fec4b0f2825d4c8c82abc09027a64184@thread.skype"],
-  "name": "get_channel_messages"
+  "name": "get_listchannelmessages_1"
 }-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams/303d2c1c-f1c5-40ce-b68e-544343d7f42b/channels/19:fec4b0f2825d4c8c82abc09027a64184@thread.skype/messages
+```
+GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-channel-messages-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-listchannelmessages-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-channel-messages-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-listchannelmessages-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-channel-messages-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-listchannelmessages-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-channel-messages-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-listchannelmessages-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
-### Response
-Here is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+### Response
+The following is an example of the request. `nextLink` in the response can be used to get the next page of messages.
+
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -110,49 +110,56 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('303d2c1c-f1c5-40ce-b68e-544343d7f42b')/channels('19%3Afec4b0f2825d4c8c82abc09027a64184%40thread.skype')/messages",
-    "@odata.count": 3,
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('fbe2bf47-16c8-47cf-b4a5-4b9b187c508b')/channels('19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2')/messages",
+    "@odata.count": 2,
+    "@odata.nextLink": "https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages?$skiptoken=%5b%7B%22token%22%3a%22%2bRID%3a~vpsQAJ9uAC047gwAAACcBQ%3d%3d%23RT%3a1%23TRC%3a20%23RTD%3aAyAER1ygxSHVHGAn2S99BTI6OzViOjZnOGU5ZWM1ZDVmOGdiZjk2OGNkZmNmMTczNGY3QXVpc2ZiZS91YmR3MzwyNzIyNDY2OTU0NTg6AA%3d%3d%23ISV%3a2%23IEO%3a65551%23QCF%3a3%23FPC%3aAggEAAAAcBYAABUFAADQKgAABAAAAHAWAAACALu4GwAAAHAWAAACAPSTMwAAAHAWAACaAFWa84BXgQKAEIAMgBaAE4AUgAuAAoAIwAIgACAAAiAACAABACCAAAEVgBSAI4AYgA%2bAGQAEEAAQAAEABACAAAIEEBBAACAYgB%2bAH4AbgBqACoAHwAICCBAEEIAAAgEQAACAIoAZgB2ADoAMgAKAPoAZgB2AJoAXgBIAgiAAQUqLF4AJgALACARAgBCACoAfgB6AIwABgYCQAAFXAAAAcBYAAAYA%2f50ZgGeEXwAAAHAWAAAEAPaBS4V7AAAAcBYAAAIA1aSJAAAAcBYAAAIAtLmbAAAAcBYAAAIAqKXdAAAAcBYAAAQAppUugOMAAABwFgAABADQoAWA6wAAAHAWAAAEABGl94M5AAAA0CoAAAYA6pF7iYOBaQIAANAqAAAcAEUPAMAAMAACAQCBAHQAADDAgCAAQgByAQAzUJDRBAAA0CoAAAQAETwKAA4FAADQKgAAAgBekRUFAADQKgAAHAB2pQCABYAMgJeAH4ATgAGAvIIIgASABIAFgCWA%22%2c%22range%22%3a%7B%22min%22%3a%2205C1D79B33ADE4%22%2c%22max%22%3a%2205C1D7A52F89EC%22%7D%7D%5d",
     "value": [
         {
-            "id": "1555375673184",
+            "id": "1616965872395",
             "replyToId": null,
-            "etag": "1555375673184",
+            "etag": "1616965872395",
             "messageType": "message",
-            "createdDateTime": "2019-04-16T00:47:53.184Z",
-            "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+            "createdDateTime": "2021-03-28T21:11:12.395Z",
+            "lastModifiedDateTime": "2021-03-28T21:11:12.395Z",
             "lastEditedDateTime": null,
             "deletedDateTime": null,
-            "subject": "",
+            "subject": null,
             "summary": null,
+            "chatId": null,
             "importance": "normal",
             "locale": "en-us",
+            "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616965872395?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616965872395&parentMessageId=1616965872395",
             "policyViolation": null,
             "from": {
                 "application": null,
                 "device": null,
                 "conversation": null,
                 "user": {
-                    "id": "bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f",
-                    "displayName": "Adele Vance",
+                    "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+                    "displayName": "Robin Kline",
                     "userIdentityType": "aadUser"
                 }
             },
             "body": {
                 "contentType": "html",
-                "content": "<div><div>Nice to join this team. <at id=\"0\">Megan Bowen</at>, have we got the March report ready please?</div>\n</div>"
+                "content": "Hello World <at id=\"0\">Jane Smith</at>"
+            },
+            "channelIdentity": {
+                "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
+                "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
             },
             "attachments": [],
             "mentions": [
                 {
                     "id": 0,
-                    "mentionText": "Megan Bowen",
+                    "mentionText": "Jane Smith",
                     "mentioned": {
                         "application": null,
                         "device": null,
                         "conversation": null,
                         "user": {
-                            "id": "5d8d505c-864f-4804-88c7-4583c966cde8",
-                            "displayName": "Megan Bowen",
+                            "id": "ef1c916a-3135-4417-ba27-8eb7bd084193",
+                            "displayName": "Jane Smith",
                             "userIdentityType": "aadUser"
                         }
                     }
@@ -161,94 +168,38 @@ Content-type: application/json
             "reactions": []
         },
         {
-            "id": "1548100551644",
+            "id": "1616963377068",
             "replyToId": null,
-            "etag": "1548100551893",
+            "etag": "1616963377068",
             "messageType": "message",
-            "createdDateTime": "2019-01-21T19:55:51.644Z",
-            "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
+            "createdDateTime": "2021-03-28T20:29:37.068Z",
+            "lastModifiedDateTime": "2021-03-28T20:29:37.068Z",
             "lastEditedDateTime": null,
             "deletedDateTime": null,
             "subject": "",
             "summary": null,
+            "chatId": null,
             "importance": "normal",
             "locale": "en-us",
+            "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616963377068?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616963377068&parentMessageId=1616963377068",
             "policyViolation": null,
             "from": {
                 "application": null,
                 "device": null,
                 "conversation": null,
                 "user": {
-                    "id": "c651e5be-7631-42ad-99c6-12c59def11fb",
-                    "displayName": "Miriam Graham",
+                    "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+                    "displayName": "Robin Kline",
                     "userIdentityType": "aadUser"
                 }
             },
             "body": {
                 "contentType": "html",
-                "content": "<div>I've added an Excel tab to the channel containing the P&amp;L Summary. \r\n<div style=\"display:inline\"><at id=\"0\">Isaiah Langer</at></div> and team, please review the Sale Summary tab in particular, and make any necessary updates.</div>"
+                "content": "<div><div><div><span><img height=\"145\" src=\"https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/1616963377068/hostedContents/aWQ9eF8wLXd1cy1kMS02YmI3Nzk3ZGU2MmRjODdjODA4YmQ1ZmI0OWM4NjI2ZCx0eXBlPTEsdXJsPWh0dHBzOi8vdXMtYXBpLmFzbS5za3lwZS5jb20vdjEvb2JqZWN0cy8wLXd1cy1kMS02YmI3Nzk3ZGU2MmRjODdjODA4YmQ1ZmI0OWM4NjI2ZC92aWV3cy9pbWdv/$value\" width=\"131\" style=\"vertical-align:bottom; width:131px; height:145px\"></span><div>&nbsp;</div></div><div><div><span><img height=\"65\" src=\"https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages/1616963377068/hostedContents/aWQ9eF8wLXd1cy1kNi0xMzY3OTE4MzVlODIxOGZlMmUwZWEwYTA1ODAxNjRiNCx0eXBlPTEsdXJsPWh0dHBzOi8vdXMtYXBpLmFzbS5za3lwZS5jb20vdjEvb2JqZWN0cy8wLXd1cy1kNi0xMzY3OTE4MzVlODIxOGZlMmUwZWEwYTA1ODAxNjRiNC92aWV3cy9pbWdv/$value\" width=\"79\" style=\"vertical-align:bottom; width:79px; height:65px\"></span></div></div></div></div>"
             },
-            "attachments": [],
-            "mentions": [
-                {
-                    "id": 0,
-                    "mentionText": "Isaiah Langer",
-                    "mentioned": {
-                        "application": null,
-                        "device": null,
-                        "conversation": null,
-                        "user": {
-                            "id": "b525e831-bd00-45e5-860c-a4329ef5f5d8",
-                            "displayName": "Isaiah Langer",
-                            "userIdentityType": "aadUser"
-                        }
-                    }
-                }
-            ],
-            "reactions": [
-                {
-                    "reactionType": "like",
-                    "createdDateTime": "2019-01-21T19:55:51.893Z",
-                    "user": {
-                        "application": null,
-                        "device": null,
-                        "conversation": null,
-                        "user": {
-                            "id": "e1ecb745-c10f-40af-a9d4-cab946c80ac7",
-                            "displayName": null,
-                            "userIdentityType": "aadUser"
-                        }
-                    }
-                }
-            ]
-        },
-        {
-            "id": "1548100547534",
-            "replyToId": null,
-            "etag": "1548100547534",
-            "messageType": "message",
-            "createdDateTime": "2019-01-21T19:55:47.534Z",
-            "lastModifiedDateTime": "2019-05-04T19:58:15.511Z",
-            "lastEditedDateTime": null,
-            "deletedDateTime": null,
-            "subject": "",
-            "summary": null,
-            "importance": "high",
-            "locale": "en-us",
-            "policyViolation": null,
-            "from": {
-                "application": null,
-                "device": null,
-                "conversation": null,
-                "user": {
-                    "id": "bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f",
-                    "displayName": "Adele Vance",
-                    "userIdentityType": "aadUser"
-                }
-            },
-            "body": {
-                "contentType": "html",
-                "content": "<div>Just a reminder to everyone to please update your monthly reports by this Friday!</div>"
+            "channelIdentity": {
+                "teamId": "fbe2bf47-16c8-47cf-b4a5-4b9b187c508b",
+                "channelId": "19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2"
             },
             "attachments": [],
             "mentions": [],

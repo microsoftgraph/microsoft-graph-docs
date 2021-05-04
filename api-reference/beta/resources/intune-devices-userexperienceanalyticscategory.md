@@ -28,6 +28,7 @@ The user experience analytics category entity contains the scores and insights f
 |:---|:---|:---|
 |id|String|The unique identifier of the user experience analytics category.|
 |overallScore|Int32|The overall score of the user experience analytics category.|
+|totalDevices|Int32|The total device count of the user experience analytics category.|
 |insights|[userExperienceAnalyticsInsight](../resources/intune-devices-userexperienceanalyticsinsight.md) collection|The insights for the user experience analytics category.|
 |state|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The current health state of the user experience analytics category. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
@@ -49,6 +50,7 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsCategory",
   "id": "String (identifier)",
   "overallScore": 1024,
+  "totalDevices": 1024,
   "insights": [
     {
       "@odata.type": "microsoft.graph.userExperienceAnalyticsInsight",

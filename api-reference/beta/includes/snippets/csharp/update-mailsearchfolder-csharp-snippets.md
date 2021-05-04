@@ -11,7 +11,7 @@ var mailFolder = new MailSearchFolder
 	FilterQuery = "contains(subject, 'Analytics')"
 };
 
-await graphClient.Me.MailFolders["AAMkAGVmMDEzM"]
+await graphClient.Me.MailFolders["{mailFolder-id}"]
 	.Request()
 	.UpdateAsync(mailFolder);
 

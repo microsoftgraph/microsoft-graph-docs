@@ -13,7 +13,7 @@ var delegatedPermissionClassification = new DelegatedPermissionClassification
 	Classification = PermissionClassificationType.Low
 };
 
-await graphClient.ServicePrincipals["{id}"].DelegatedPermissionClassifications
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].DelegatedPermissionClassifications
 	.Request()
 	.AddAsync(delegatedPermissionClassification);
 

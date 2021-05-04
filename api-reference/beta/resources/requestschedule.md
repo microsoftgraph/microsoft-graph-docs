@@ -3,7 +3,7 @@ title: "requestSchedule resource type"
 description: "An request schedule can be included in an access package assignment request and is present in an access package assignment."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
 
@@ -19,7 +19,7 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|startDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
+|startDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |expiration|[expirationPattern](expirationpattern.md)|When the access should expire.|
 |recurrence|[patternedRecurrence](patternedrecurrence.md)|For recurring access. Not used at present.|
 
@@ -32,8 +32,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.requestSchedule",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.requestSchedule"
 }-->
 
 ```json

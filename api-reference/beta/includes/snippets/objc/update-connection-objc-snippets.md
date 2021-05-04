@@ -11,7 +11,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphExternalConnection *externalConnection = [[MSGraphExternalConnection alloc] init];
+MSGraphExternalConnectorsExternalConnection *externalConnection = [[MSGraphExternalConnectorsExternalConnection alloc] init];
 [externalConnection setName:@"Contoso HR Service Tickets"];
 [externalConnection setDescription:@"Connection to index HR service tickets"];
 

@@ -11,15 +11,15 @@ const options = {
 const client = Client.init(options);
 
 const personName = {
-  displayName: "Innocenty Popov",
-  first: "Innocenty",
-  initials: "IP",
-  last: "Popov",
-  languageTag: "en-US",
+  displayName: 'Innocenty Popov',
+  first: 'Innocenty',
+  initials: 'IP',
+  last: 'Popov',
+  languageTag: 'en-US',
   maiden: null
 };
 
-let res = await client.api('/me/profile/names')
+await client.api('/me/profile/names')
 	.version('beta')
 	.post(personName);
 

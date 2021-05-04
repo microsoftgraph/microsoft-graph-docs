@@ -11,15 +11,15 @@ const options = {
 const client = Client.init(options);
 
 const attachment = {
-  @odata.type: "microsoft.graph.fileAttachment",
-  name: "name-value",
-  contentType: "contentType-value",
+  '@odata.type': 'microsoft.graph.fileAttachment',
+  name: 'name-value',
+  contentType: 'contentType-value',
   isInline: false,
-  contentLocation: "contentLocation-value",
-  contentBytes: "base64-contentBytes-value"
+  contentLocation: 'contentLocation-value',
+  contentBytes: 'base64-contentBytes-value'
 };
 
-let res = await client.api('/me/messages/{id}/attachments')
+await client.api('/me/messages/{id}/attachments')
 	.post(attachment);
 
 ```

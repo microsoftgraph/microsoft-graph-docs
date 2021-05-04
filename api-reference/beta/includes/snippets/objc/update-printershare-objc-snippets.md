@@ -12,7 +12,8 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphPrinterShare *printerShare = [[MSGraphPrinterShare alloc] init];
-[printerShare setName:@"ShareName"];
+[printerShare setDisplayName:@"ShareName"];
+[printerShare setAllowAllUsers: true];
 
 NSError *error;
 NSData *printerShareData = [printerShare getSerializedDataWithError:&error];

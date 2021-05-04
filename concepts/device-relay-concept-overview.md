@@ -3,7 +3,7 @@ title: "Device relay API in Microsoft Graph (preview)"
 description: "Today, people interact with multiple devices on a daily basis. Users often start productivity tasks and entertainment activities on one device and continue them on another. To meet your customers' needs, your apps need to seamlessly span devices and platforms. "
 localization_priority: Normal
 author: "davidmu1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "cross-device-experiences"
 ---
 
 # Device relay API in Microsoft Graph (preview)
@@ -36,4 +36,4 @@ Add additional controlling abilities to your app. For example, provide remote co
 
 - [Cross-device experiences in Microsoft Graph](cross-device-concept-overview.md)
 - [Learn more about the device relay API](/graph/api/resources/project-rome-overview?view=graph-rest-beta)
-- [Learn more about Project Rome](https://aka.ms/projectrome)
+- [Learn more about Project Rome](/windows/project-rome/)

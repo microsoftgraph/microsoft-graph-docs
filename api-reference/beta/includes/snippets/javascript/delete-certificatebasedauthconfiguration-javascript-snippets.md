@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/organization/{id}/certificateBasedAuthConfiguration/{id}')
+await client.api('/organization/{id}/certificateBasedAuthConfiguration/{id}')
 	.version('beta')
 	.delete();
 

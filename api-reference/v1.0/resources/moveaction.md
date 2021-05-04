@@ -1,6 +1,5 @@
 ---
 author: daspek
-ms.author: dspektor
 title: moveAction resource type
 description: The MoveAction object provides information about an activity that moved an item.
 localization_priority: Normal

@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const store = {
-  defaultLanguageTag: "en-US"
+  defaultLanguageTag: 'en-US'
 };
 
-let res = await client.api('/termStore')
+await client.api('/termStore')
 	.version('beta')
 	.update(store);
 

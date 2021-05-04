@@ -2,8 +2,8 @@
 title: "verifiedDomain resource type"
 description: "Specifies a domain for a tenant. The **verifiedDomains** property of the organization entity is a collection of **VerifiedDomain**."
 localization_priority: Normal
-author: "davidmu1"
-ms.prod: ""
+author: "Jumaodhiss"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 

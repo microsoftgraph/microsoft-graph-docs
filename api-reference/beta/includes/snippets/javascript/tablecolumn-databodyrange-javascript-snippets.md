@@ -10,8 +10,8 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/DataBodyRange')
+let workbookRange = await client.api('/me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/DataBodyRange')
 	.version('beta')
-	.post();
+	.get();
 
 ```

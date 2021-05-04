@@ -27,6 +27,7 @@ Represents a defined collection of Azure resource information that can be used t
 |[Update cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-update.md)|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md)|Update the properties of a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object.|
 |[Delete cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-delete.md)|None|Delete a [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) object. You can’t delete an connection that’s in use.|
 |[RunHealthChecks of cloudPcOnPremisesConnection](../api/cloudpconpremisesconnection-runhealthcheck.md)|None|Run health checks on the [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).|
+|[updateAdDomainPassword](../api/cloudpconpremisesconnection-updateaddomainpassword.md)|None|Update AD domain password for a successful [cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md).|
 
 ## Properties
 
@@ -37,15 +38,25 @@ Represents a defined collection of Azure resource information that can be used t
 |subscriptionId|String|The ID of the target Azure subscription that’s associated with your tenant.|
 |subscriptionName|String|The name of the target Azure subscription. Read-only.|
 |adDomainName|String|The fully qualified domain name (FQDN) of the Active Directory domain you want to join.|
-|adDomainUsername|String|The username of an Active Directory account (user or service account) that has permissions to create computer objects in Active Directory. Required format: contoso@microsoft.com.|
+|adDomainUsername|String|The username of an Active Directory account (user or service account) that has permissions to create computer objects in Active Directory. Required format: admin@contoso.com.|
 |adDomainPassword|String|The password associated with adDomainUsername.|
 |organizationalUnit|String|The organizational unit (OU) in which the computer account is created. If left null, the OU that’s configured as the default (a well-known computer object container) in your Active Directory domain (OU) is used. Optional.|
 |resourceGroupId|String|The ID of the target resource group. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}".|
 |virtualNetworkId|String|The ID of the target virtual network. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}".|
 |subnetId|String|The ID of the target subnet. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkId}/subnets/{subnetName}".|
-|healthCheckStatus|cloudPcOnPremisesConnectionStatus|The status of the most recent health check done on the on-premises connection. For example, if status is "passed", the on-premises connection has passed all checks run by the service. Read-only. Possible values are: `Pending`, `Running`, `Passed`, `Failed`, `UnknownFutureValue`.|
-|healthCheckStatusDetails|[cloudPcOnPremisesConnectionStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md)|The details of the connection's health checks and the corresponding results. Returned only on `$select`. See an [example](../api/cloudpconpremisesconnection-get.md) of getting the healthCheckStatusDetails property.Read-only.|
-|inUse|Boolean|When true, the on-premises connection is in use. When false, the connection is not in use. You cannot delete a connection that’s in use. Read-only.|
+|healthCheckStatus|[cloudPcOnPremisesConnectionStatus](#cloudpconpremisesconnectionstatus-values)|The status of the most recent health check done on the on-premises connection. For example, if status is "passed", the on-premises connection has passed all checks run by the service. Possible values are: `pending`, `running`, `passed`, `failed`, `unknownFutureValue`. Read-only.|
+|healthCheckStatusDetails|[cloudPcOnPremisesConnectionStatusDetails](../resources/cloudpconpremisesconnectionstatusdetails.md)|The details of the connection's health checks and the corresponding results. Returned only on `$select`.For an example that shows how to get the **inUse** property, see [Example 2: Get the selected properties of an on-premises connection, including healthCheckStatusDetails](../api/cloudpconpremisesconnection-get.md). Read-only.|
+|inUse|Boolean|When `true`, the on-premises connection is in use. When `false`, the connection is not in use. You cannot delete a connection that’s in use. Returned only on `$select`. For an example that shows how to get the **inUse** property, see [Example 2: Get the selected properties of an on-premises connection, including healthCheckStatusDetails](../api/cloudpconpremisesconnection-get.md). Read-only.|
+
+### cloudPcOnPremisesConnectionStatus values
+
+|Member|Description|
+|:---|:---|
+|pending|Created and waiting for health checks.
+|running|Health checks are running.|
+|passed|Health checks passed.|
+|failed|Health checks failed.|
+|unknownFutureValue|Unknown future status (reserved, not used right now).|
 
 ## Relationships
 

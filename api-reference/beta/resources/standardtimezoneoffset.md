@@ -4,7 +4,7 @@ description: "Specifies when a time zone switches from daylight saving time to s
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: "svpsiva"
+author: "abheek-das"
 ---
 
 # standardTimeZoneOffset resource type

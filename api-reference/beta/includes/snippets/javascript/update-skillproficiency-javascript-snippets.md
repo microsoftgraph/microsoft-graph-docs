@@ -12,12 +12,12 @@ const client = Client.init(options);
 
 const skillProficiency = {
   categories: [
-    "Professional"
+    'Professional'
   ],
-  proficiency: "advancedProfessional"
+  proficiency: 'advancedProfessional'
 };
 
-let res = await client.api('/me/profile/skills/{id}')
+await client.api('/me/profile/skills/{id}')
 	.version('beta')
 	.update(skillProficiency);
 

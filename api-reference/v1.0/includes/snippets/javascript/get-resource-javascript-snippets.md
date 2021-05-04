@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/onenote/resources/{id}/content')
+let stream = await client.api('/me/onenote/resources/{id}/content')
 	.get();
 
 ```

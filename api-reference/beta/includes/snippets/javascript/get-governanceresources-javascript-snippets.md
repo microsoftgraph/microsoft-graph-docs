@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/privilegedAccess/azureResources/resources')
+let resources = await client.api('/privilegedAccess/azureResources/resources')
 	.version('beta')
 	.get();
 

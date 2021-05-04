@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const itemEmail = {
-  address: "Innocenty.Popov@adventureworks.com",
+  address: 'Innocenty.Popov@adventureworks.com',
 };
 
-let res = await client.api('/me/profile/emails')
+await client.api('/me/profile/emails')
 	.version('beta')
 	.post(itemEmail);
 

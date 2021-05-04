@@ -4,10 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IUserFindRoomsCollectionPage findRooms = graphClient.me()
-	.findRooms("Building2Rooms@contoso.onmicrosoft.com")
+UserFindRoomsCollectionPage findRooms = graphClient.me()
+	.findRooms(UserFindRoomsParameterSet
+		.newBuilder()
+		.withRoomList("Building2Rooms@contoso.onmicrosoft.com")
+		.build())
 	.buildRequest()
 	.get();
 

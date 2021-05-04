@@ -1,6 +1,6 @@
 ---
 title: "post resource type"
-description: "Represents an individual post item within a converstaionThread entity."
+description: "Represents an individual post item within a conversationThread entity."
 author: "dkershaw10"
 localization_priority: Normal
 ms.prod: "groups"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents an individual post item within a [converstaionThread](conversationthread.md) entity.
+Represents an individual post item within a [conversationThread](conversationthread.md) entity.
 
 Even though you cannot explicitly create a post, doing any of the following would create a post:
 
@@ -69,14 +69,14 @@ Here is a JSON representation of the resource
 |changeKey|String|Identifies the version of the post. Every time the post is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.|
 |conversationId|String|Unique ID of the conversation. Read-only.|
 |conversationThreadId|String|Unique ID of the conversation thread. Read-only.|
-|createdDateTime|DateTimeOffset|Specifies when the post was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|createdDateTime|DateTimeOffset|Specifies when the post was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |from|[recipient](recipient.md)|Used in delegate access scenarios. Indicates who posted the message on behalf of another user. This is a default property.|
 |hasAttachments|Boolean|Indicates whether the post has at least one attachment. This is a default property.|
 |id|String| Read-only.|
-|importance | String | The importance of a group post: `low`, `normal`, `high`. |
-|lastModifiedDateTime|DateTimeOffset|Specifies when the post was last modified. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|importance | importance| The importance of a group post: `low`, `normal`, `high`. |
+|lastModifiedDateTime|DateTimeOffset|Specifies when the post was last modified. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |newParticipants|[recipient](recipient.md) collection|Conversation participants that were added to the thread as part of this post.|
-|receivedDateTime|DateTimeOffset|Specifies when the post was received. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|receivedDateTime|DateTimeOffset|Specifies when the post was received. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |sender|[recipient](recipient.md)|Contains the address of the sender. The value of Sender is assumed to be the address of the authenticated user in the case when Sender is not specified. This is a default property.|
 
 ## Relationships

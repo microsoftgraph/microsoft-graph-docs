@@ -1,7 +1,7 @@
 ---
 title: "Get mailFolder"
 description: "Retrieve the properties and relationships of a message folder object."
-author: "svpsiva"
+author: "abheek-das"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -101,7 +101,7 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -120,7 +120,8 @@ Content-type: application/json
   "childFolderCount": 2,
   "unreadItemCount": 59,
   "totalItemCount": 60,
-  "wellKnownName": "inbox"
+  "wellKnownName": "inbox",
+  "isHidden": false
 }
 ```
 
@@ -164,7 +165,7 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzN
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -185,6 +186,7 @@ Content-type: application/json
   "unreadItemCount": 6,
   "totalItemCount": 6,
   "wellKnownName": null,
+  "isHidden": false,
   "isSupported": true,
   "includeNestedFolders": true,
   "sourceFolderIds": [

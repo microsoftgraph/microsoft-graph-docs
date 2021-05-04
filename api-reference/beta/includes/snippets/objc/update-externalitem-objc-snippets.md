@@ -11,13 +11,13 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphExternalItem *externalItem = [[MSGraphExternalItem alloc] init];
+MSGraphExternalConnectorsExternalItem *externalItem = [[MSGraphExternalConnectorsExternalItem alloc] init];
 NSMutableArray *aclList = [[NSMutableArray alloc] init];
-MSGraphAcl *acl = [[MSGraphAcl alloc] init];
-[acl setType: [MSGraphAclType everyone]];
+MSGraphExternalConnectorsAcl *acl = [[MSGraphExternalConnectorsAcl alloc] init];
+[acl setType: [MSGraphExternalConnectorsAclType everyone]];
 [acl setValue:@"67a141d8-cf4e-4528-ba07-bed21bfacd2d"];
-[acl setAccessType: [MSGraphAccessType grant]];
-[acl setIdentitySource:@"azureActiveDirectory"];
+[acl setAccessType: [MSGraphExternalConnectorsAccessType grant]];
+[acl setIdentitySource: [MSGraphExternalConnectorsIdentitySourceType azureActiveDirectory]];
 [aclList addObject: acl];
 [externalItem setAcl:aclList];
 

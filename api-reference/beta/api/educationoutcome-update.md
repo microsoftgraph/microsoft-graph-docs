@@ -66,7 +66,7 @@ The following is an example of the request for updating a feedback outcome.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/education/me/assignments/{id}/submissions/{id}/outcomes/{id}
+PATCH https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 Content-type: application/json
 
 {
@@ -102,7 +102,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -150,7 +150,7 @@ The following is an example of the request for updating a points outcome.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/education/me/assignments/{id}/submissions/{id}/outcomes/{id}
+PATCH https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 Content-type: application/json
 
 {
@@ -184,7 +184,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -229,7 +229,7 @@ The following is an example of the request for updating a rubric outcome.
 }-->
 
 ```http
-PATCH https://graph.microsoft.com/beta/education/me/assignments/{id}/submissions/{id}/outcomes/{id}
+PATCH https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}
 Content-type: application/json
 
 {
@@ -285,7 +285,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

@@ -3,7 +3,7 @@ title: "optionalClaims type"
 description: "Declares the optional claims requested by an application."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 author: "sureshja"
 ---
 

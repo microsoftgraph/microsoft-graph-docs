@@ -2,8 +2,8 @@
 title: "Delete organizationalBrandingProperties"
 description: "Delete organizationalBrandingProperties."
 localization_priority: Normal
-author: "kexia"
-ms.prod: "microsoft-identity-platform"
+author: "almars"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -54,26 +54,26 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete_organizationalbrandingproperties"
+  "name": "delete_organizationalbrandingproperties_1"
 }-->
 
 ```http
 DELETE https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-organizationalbrandingproperties-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-organizationalbrandingproperties-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-organizationalbrandingproperties-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-organizationalbrandingproperties-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-organizationalbrandingproperties-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-organizationalbrandingproperties-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-organizationalbrandingproperties-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/delete-organizationalbrandingproperties-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

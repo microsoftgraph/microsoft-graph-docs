@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/administrativeUnits/{id}/scopedRoleMembers/{id}')
+await client.api('/administrativeUnits/{id}/scopedRoleMembers/{id}')
 	.version('beta')
 	.delete();
 

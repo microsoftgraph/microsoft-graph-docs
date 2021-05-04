@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/profile/certifications/{id}')
+let personCertification = await client.api('/me/profile/certifications/{id}')
 	.version('beta')
 	.get();
 

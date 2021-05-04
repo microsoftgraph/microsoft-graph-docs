@@ -14,7 +14,7 @@ const workPosition = {
   isCurrent: true
 };
 
-let res = await client.api('/me/profile/positions/{id}')
+await client.api('/me/profile/positions/{id}')
 	.version('beta')
 	.update(workPosition);
 

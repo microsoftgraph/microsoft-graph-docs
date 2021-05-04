@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/beta/print/printers/c05f3726-0d4b-4aa1-8fe9-2eb9
 
 #### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -103,9 +103,14 @@ Content-length: 408
   "createdDateTime": "2020-02-04T00:00:00.0000000Z",
   "createdBy": {},
   "status": {
-    "processingState": "completed",
-    "processingStateDescription": "The print job has completed successfully and no further processing will take place."
-  }
+    "state": "completed",
+    "description": "The print job has completed successfully and no further processing will take place.",
+    "details": [      
+    ]
+  },
+  "redirectedTo": null,
+  "redirectedFrom": null,
+  "isFetchable": false
 }
 ```
 
@@ -124,7 +129,7 @@ GET https://graph.microsoft.com/beta/print/printers/c05f3726-0d4b-4aa1-8fe9-2eb9
 
 #### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -145,8 +150,15 @@ Content-length: 774
     "userPrincipalName": ""
   },
   "status": {
-    "processingState": "pendingHeld",
-    "processingStateDescription": "The job is not a candidate for processing yet."
+    "state": "completed",
+    "description": "The print job has completed successfully and no further processing will take place.",
+    "details": [      
+    ]
+  },
+  "redirectedTo": null,
+  "redirectedFrom": null,
+  "isFetchable": false,
+  "configuration": {    
   },
   "tasks": [
     {
@@ -196,7 +208,7 @@ GET https://graph.microsoft.com/beta/print/printers/86b6d420-7e6b-4797-a05c-af4e
 
 #### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -219,8 +231,15 @@ Content-length: 1688
     "oDataType": null
   },
   "status": {
-  "processingState": "aborted",
-  "processingStateDescription": "The print job has been aborted by a user or the printer and no further processing will take place."
+  "state": "completed",
+    "description": "The print job has completed successfully and no further processing will take place.",
+    "details": [      
+    ]
+  },
+  "redirectedTo": null,
+  "redirectedFrom": null,
+  "isFetchable": false,
+  "configuration": {    
   },
   "documents@odata.context": "https://graph.microsoft.com/beta/$metadata#print/printers('86b6d420-7e6b-4797-a05c-af4e56cd81bd')/jobs('31216')/documents",
   "documents": [
@@ -228,28 +247,7 @@ Content-length: 1688
       "id": "ca96c367-c3ad-478a-bbce-fbd1cd856e73",
       "displayName": "",
       "contentType": "application/oxps",
-      "size": 276604,
-      "configuration": {
-        "quality": "medium",
-        "dpi": 300,
-        "feedDirection": null,
-        "orientation": "landscape",
-        "duplexMode": "oneSided",
-        "copies": 2,
-        "colorMode": "color",
-        "inputBin": null,
-        "outputBin": null,
-        "mediaSize": null,
-        "mediaType": null,
-        "finishings": [],
-        "pagesPerSheet": null,
-        "multipageLayout": "clockwiseFromTopLeft",
-        "collate": true,
-        "scaling": null,
-        "fitPdfToPage": null,
-        "margin": null,
-        "pageRanges": []
-      }
+      "size": 276604
     }
   ]
 }

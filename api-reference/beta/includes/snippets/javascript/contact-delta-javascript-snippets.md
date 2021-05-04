@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/contactFolders/{id}/contacts/delta')
+let delta = await client.api('/me/contactFolders/{id}/contacts/delta')
 	.version('beta')
 	.select('displayName')
 	.get();

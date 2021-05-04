@@ -11,19 +11,19 @@ const options = {
 const client = Client.init(options);
 
 const itemAddress = {
-  displayName: "Home",
+  displayName: 'Home',
   detail: {
-    type: "home",
+    type: 'home',
     postOfficeBox: null,
-    street: "221B Baker Street",
-    city: "London",
+    street: '221B Baker Street',
+    city: 'London',
     state: null,
-    countryOrRegion: "United Kingdom",
-    postalCode: "E14 3TD"
+    countryOrRegion: 'United Kingdom',
+    postalCode: 'E14 3TD'
   }
 };
 
-let res = await client.api('/me/profile/addresses')
+await client.api('/me/profile/addresses')
 	.version('beta')
 	.post(itemAddress);
 

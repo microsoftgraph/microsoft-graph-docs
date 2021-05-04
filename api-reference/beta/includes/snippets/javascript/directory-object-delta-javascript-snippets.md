@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/directoryObjects/delta')
+let directoryObject = await client.api('/directoryObjects/delta')
 	.version('beta')
 	.get();
 

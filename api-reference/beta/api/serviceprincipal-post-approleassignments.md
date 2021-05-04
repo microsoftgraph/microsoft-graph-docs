@@ -3,8 +3,8 @@ title: "Grant an appRoleAssignment to a service principal"
 description: "Grant an app role assignment to a service principal."
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
-author: "sureshja"
+ms.prod: "applications"
+author: "psignoret"
 ---
 
 # Grant an appRoleAssignment to a service principal
@@ -68,46 +68,45 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "group_create_approleassignment"
+  "name": "serviceprincipal_create_approleassignment"
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignments
+POST https://graph.microsoft.com/beta/servicePrincipals/9028d19c-26a9-4809-8e3f-20ff73e2d75e/appRoleAssignments
 Content-Type: application/json
-Content-Length: 110
 
 {
-  "principalId": "principalId-value",
-  "resourceId": "resourceId-value",
-  "appRoleId": "appRoleId-value"
+  "principalId": "9028d19c-26a9-4809-8e3f-20ff73e2d75e",
+  "resourceId": "8fce32da-1246-437b-99cd-76d1d4677bd5",
+  "appRoleId": "498476ce-e0fe-48b0-b801-37ba7e2685c6"
 }
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/group-create-approleassignment-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-create-approleassignment-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/group-create-approleassignment-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/serviceprincipal-create-approleassignment-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/group-create-approleassignment-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/serviceprincipal-create-approleassignment-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/group-create-approleassignment-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/serviceprincipal-create-approleassignment-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-In this example, `{id}` and `{principalId-value}` would both be the `id` of the assigned client service principal, and `{resourceId}` would be the `id` of the resource service principal (the API).
+In this example, note that the value used as the service principal **id** in the request URL (`9028d19c-26a9-4809-8e3f-20ff73e2d75e`) is the same as the **principalId** property in the body. The **resourceId** value is the **id** of the resource service principal (the API).
 
 ### Response
 
 Here is an example of the response. 
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -116,18 +115,19 @@ Here is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 253
 
 {
-  "id": "id-value",
-  "creationTimestamp": "2016-10-19T10:37:00Z",
-  "principalType": "principalType-value",
-  "principalId": "principalId-value",
-  "principalDisplayName": "principalDisplayName-value",
-  "resourceId": "resourceId-value",
-  "resourceDisplayName": "resourceDisplayName-value"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#appRoleAssignments/$entity",
+  "id": "2jLOj0YSe0OZzXbR1Gd71fDqFUrPM1xIgUfvWBHJ9n0",
+  "creationTimestamp": "2021-02-15T16:39:38.2975029Z",
+  "appRoleId": "498476ce-e0fe-48b0-b801-37ba7e2685c6",
+  "principalDisplayName": "Fabrikam App",
+  "principalId": "9028d19c-26a9-4809-8e3f-20ff73e2d75e",
+  "principalType": "ServicePrincipal",
+  "resourceDisplayName": "Microsoft Graph",
+  "resourceId": "8fce32da-1246-437b-99cd-76d1d4677bd5"
 }
 ```
 

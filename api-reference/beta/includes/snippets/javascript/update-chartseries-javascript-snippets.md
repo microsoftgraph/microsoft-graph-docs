@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const workbookChartSeries = {
-  name: "name-value"
+  name: 'name-value'
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{undefined}')
+await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/series/{undefined}')
 	.version('beta')
 	.update(workbookChartSeries);
 

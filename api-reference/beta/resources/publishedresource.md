@@ -3,7 +3,7 @@ title: "publishedResource resource type"
 description: "publishedResource resource type."
 localization_priority: Normal
 author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "resourcePageType"
 ---
 
@@ -33,7 +33,7 @@ Represents on-premises published resource. A tenant administrator can publish va
 |:-------------|:------------|:------------|
 |displayName|String| Display Name of the publishedResource.|
 |id|String| The object id of the publishedResource. Read-only.|
-|publishingType|string| Possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
+|publishingType|String| Possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
 |resourceName|String|Name of the publishedResource.|
 
 ## Relationships
@@ -52,7 +52,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.publishedResource",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

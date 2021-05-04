@@ -3,7 +3,7 @@ title: "Yammer device usage reports"
 description: "The device usage reports for Yammer give you information about which devices your users utilize to engage on Yammer. You can view the number of users by device type over a selected time period and view details by user."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: conceptualPageType
 ---
 

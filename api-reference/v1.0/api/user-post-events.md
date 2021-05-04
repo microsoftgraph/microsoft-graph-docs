@@ -148,7 +148,7 @@ Content-type: application/json
 In the request body, supply a JSON representation of [event](../resources/event.md) object.
 #### Response
 Here is an example of the response, which shows the **start** and **end** properties use the time zone specified in the `Prefer: outlook.timezone` header. 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user",
@@ -176,12 +176,14 @@ Content-length: 2197
     "reminderMinutesBeforeStart":15,
     "isReminderOn":true,
     "hasAttachments":false,
+    "hideAttendees": false,
     "subject":"Let's go brunch",
     "bodyPreview":"Does noon work for you?",
     "importance":"normal",
     "sensitivity":"normal",
     "isAllDay":false,
     "isCancelled":false,
+    "isDraft": false,
     "isOrganizer":true,
     "responseRequested":true,
     "seriesMasterId":null,
@@ -346,7 +348,7 @@ Content-length: 1390
 #### Response
 The following example response shows the created event that specifies information for the 3 locations for the meeting. Because of the 
 `Prefer: outlook.timezone="Pacific Standard Time"` request header, the **start** and **end** properties are expressed in PST.
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user_multiple_locations",
@@ -374,12 +376,14 @@ Content-length: 2985
   "reminderMinutesBeforeStart":15,
   "isReminderOn":true,
   "hasAttachments":false,
+  "hideAttendees": false,
   "subject":"Plan summer company picnic",
   "bodyPreview":"Let's kick-start this event planning!",
   "importance":"normal",
   "sensitivity":"normal",
   "isAllDay":false,
   "isCancelled":false,
+  "isDraft": false,
   "isOrganizer":true,
   "responseRequested":true,
   "seriesMasterId":null,
@@ -553,7 +557,7 @@ Content-type: application/json
 In the request body, supply a JSON representation of [event](../resources/event.md) object.
 #### Response
 Here is an example of the response. 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "create_event_recurring",
@@ -580,12 +584,14 @@ Content-type: application/json
     "reminderMinutesBeforeStart":15,
     "isReminderOn":true,
     "hasAttachments":false,
+    "hideAttendees": false,
     "subject":"Let's go for lunch",
     "bodyPreview":"Does late morning work for you?",
     "importance":"normal",
     "sensitivity":"normal",
     "isAllDay":false,
     "isCancelled":false,
+    "isDraft": false,
     "isOrganizer":true,
     "responseRequested":true,
     "seriesMasterId":null,
@@ -737,7 +743,7 @@ Content-type: application/json
 In the request body, supply a JSON representation of [event](../resources/event.md) object.
 #### Response
 Here is an example of the response, which shows the **start** and **end** properties use the time zone specified in the `Prefer: outlook.timezone` header.
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "create_event_from_user_with_online_meeting",
@@ -763,12 +769,14 @@ Content-type: application/json
     "reminderMinutesBeforeStart":15,
     "isReminderOn":true,
     "hasAttachments":false,
+    "hideAttendees": false,
     "subject":"Let's go brunch",
     "bodyPreview":"Does noon work for you?",
     "importance":"normal",
     "sensitivity":"normal",
     "isAllDay":false,
     "isCancelled":false,
+    "isDraft": false,
     "isOrganizer":true,
     "responseRequested":true,
     "seriesMasterId":null,

@@ -1,0 +1,34 @@
+{
+    "changelog": [{
+            "ChangeList": [{
+                    "Id": "b2904ecf-8c86-11eb-a57c-31dcdef91872",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "operator",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **operator** property to the [pstnCallLogRow](https://docs.microsoft.com/en-us/graph/api/resources/callrecords-pstnCallLogRow?view=graph-rest-beta) resource.",
+                    "Target": "pstnCallLogRow"
+                }, {
+                    "Id": "b292b35f-8c86-11eb-a57c-31dcdef91872",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "callDurationSource",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **callDurationSource** property to the [pstnCallLogRow](https://docs.microsoft.com/en-us/graph/api/resources/callrecords-pstnCallLogRow?view=graph-rest-beta) resource.",
+                    "Target": "pstnCallLogRow"
+                }, {
+                    "Id": "b2951789-8c86-11eb-a57c-31dcdef91872",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "pstnCallDurationSource",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **pstnCallDurationSource** enumeration type, to define the supported sources for call duration data in the **callDurationSource** property. When a third-party telecommunications operator is used via the Operator Connect Program, they may provide their own call duration data.",
+                    "Target": "pstnCallDurationSource"
+                }
+            ],
+            "Id": "b28df105-8c86-11eb-a57c-31dcdef91872",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-04-09T09:52:51.408Z",
+            "WorkloadArea": "Cloud communications",
+            "SubArea": "Call records"
+        }
+    ]
+}

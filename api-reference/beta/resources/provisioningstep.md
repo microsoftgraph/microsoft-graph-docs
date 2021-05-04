@@ -3,7 +3,7 @@ title: "provisioningStep resource type"
 description: "Describes the steps taken to perform an action. "
 localization_priority: Normal
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"
 ---
 
@@ -22,8 +22,8 @@ Describes the steps taken to perform an action.
 |description|String|Summary of what occurred during the step.|
 |details|[detailsInfo](detailsinfo.md)|Details of what occurred during the step.|
 |name|String|Name of the step.|
-|provisioningStepType|String| Type of step. Possible values are: `import`, `scoping`, `matching`, `processing`, `referenceResolution`, `export`, `unknownFutureValue`.|
-|status|String| Status of the step. Possible values are: `success`, `warning`,  `failure`, `skipped`, `unknownFutureValue`.|
+|provisioningStepType|provisioningStepType| Type of step. Possible values are: `import`, `scoping`, `matching`, `processing`, `referenceResolution`, `export`, `unknownFutureValue`.|
+|status|provisioningResult| Status of the step. Possible values are: `success`, `warning`,  `failure`, `skipped`, `unknownFutureValue`.|
 
 ## JSON representation
 

@@ -3,7 +3,7 @@ title: "reportRoot: getMailboxUsageMailboxCounts"
 description: "Get the total number of user mailboxes in your organization and how many are active each day of the reporting period. A mailbox is considered active if the user sent or read any email."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -144,7 +144,7 @@ GET https://graph.microsoft.com/beta/reports/getMailboxUsageMailboxCounts(period
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

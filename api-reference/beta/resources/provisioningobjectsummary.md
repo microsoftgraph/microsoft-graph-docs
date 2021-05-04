@@ -3,7 +3,7 @@ title: "provisioningObjectSummary resource type"
 description: "Represents an action performed by the Azure AD Provisioning service and its associated properties."
 localization_priority: Normal
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"
 ---
 
@@ -27,7 +27,7 @@ Represents an action performed by the Azure AD Provisioning service and its asso
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |action|String|Indicates the activity name or the operation name (for example, Create user, Add member to group). For a list of activities logged, refer to Azure AD activity list.|
-|activityDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|activityDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |changeId|String|Unique ID of this change in this cycle.|
 |cycleId|String|Unique ID per job iteration.|
 |durationInMilliseconds|Int32|Indicates how long this provisioning action took to finish. Measured in milliseconds.|
@@ -58,7 +58,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.provisioningObjectSummary",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

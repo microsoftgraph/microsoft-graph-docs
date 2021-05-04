@@ -51,25 +51,25 @@ The following example shows the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "delete-call"
+  "name": "delete-call-1"
 }-->
 ```http
 DELETE https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-b240-bd8beae78896
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/delete-call-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-call-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/delete-call-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-call-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/delete-call-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-call-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/delete-call-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/delete-call-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -77,7 +77,7 @@ DELETE https://graph.microsoft.com/beta/communications/calls/57dab8b1-894c-409a-
 
 ##### Response
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

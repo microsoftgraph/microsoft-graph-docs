@@ -12,7 +12,7 @@ var workbookTableRow = new WorkbookTableRow
 	Values = "values-value"
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Tables["{id|name}"].Rows["{index}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Rows["{workbookTableRow-id}"]
 	.Request()
 	.UpdateAsync(workbookTableRow);
 

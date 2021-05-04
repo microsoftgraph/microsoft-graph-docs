@@ -3,7 +3,7 @@ title: "List excludes collection of permissionGrantPolicy"
 description: "Retrieve a list of the condition sets which describe conditions under which a permission grant event is excluded in a permission grant policy."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 author: "psignoret"
 ---
 
@@ -89,7 +89,7 @@ GET https://graph.microsoft.com/beta/policies/permissionGrantPolicies/microsoft-
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

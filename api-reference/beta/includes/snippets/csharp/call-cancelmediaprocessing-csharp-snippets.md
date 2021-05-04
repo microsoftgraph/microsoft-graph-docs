@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var clientContext = "clientContext-value";
 
-await graphClient.Communications.Calls["{id}"]
+await graphClient.Communications.Calls["{call-id}"]
 	.CancelMediaProcessing(clientContext)
 	.Request()
 	.PostAsync();

@@ -3,7 +3,7 @@ title: "conditionalAccessDevices resource type"
 description: "Represents devices in the policy scope."
 localization_priority: Normal
 author: "videor"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -19,8 +19,10 @@ Represents devices in the policy scope.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| includeDeviceStates | String collection | States in the scope of the policy. `All` is the only allowed value. |
-| excludeDeviceStates | String collection | States excluded from the scope of the policy. Possible values: `Compliant`, `DomainJoined`. |
+| includeDevices | String collection | States in the scope of the policy. `All` is the only allowed value. |
+| excludeDevices | String collection | States excluded from the scope of the policy. Possible values: `Compliant`, `DomainJoined`. |
+| includeDeviceStates (deprecated)| String collection | States in the scope of the policy. `All` is the only allowed value. |
+| excludeDeviceStates (deprecated)| String collection | States excluded from the scope of the policy. Possible values: `Compliant`, `DomainJoined`. |
 
 ## Relationships
 
@@ -33,8 +35,8 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "includeDeviceStates",
-    "excludeDeviceStates"
+    "includeDevices",
+    "excludeDevices"
   ],
   "@odata.type": "microsoft.graph.conditionalAccessDevices",
   "baseType": null
@@ -42,8 +44,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "includeDeviceStates": [ "String" ],
-  "excludeDeviceStates": [ "String" ]
+  "includeDevices": [ "String" ],
+  "excludeDevices": [ "String" ]
 }
 ```
 
@@ -51,7 +53,7 @@ The following is a JSON representation of the resource.
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "conditionalAccessDeviceStates resource",
+  "description": "conditionalAccessDevices resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

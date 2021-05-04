@@ -15,7 +15,7 @@ var attachment = new ReferenceAttachment
 	IsFolder = true
 };
 
-await graphClient.Me.Messages["AAMkAGE1M88AADUv0uFAAA="].Attachments
+await graphClient.Me.Messages["{message-id}"].Attachments
 	.Request()
 	.AddAsync(attachment);
 

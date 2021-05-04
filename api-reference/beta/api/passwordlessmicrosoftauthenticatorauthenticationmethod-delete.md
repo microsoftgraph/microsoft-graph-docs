@@ -3,32 +3,41 @@ title: "Delete passwordlessMicrosoftAuthenticatorAuthenticationMethod"
 description: "Deletes a passwordlessMicrosoftAuthenticatorAuthenticationMethod object."
 author: "mmcla"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
-# Delete passwordlessMicrosoftAuthenticatorAuthenticationMethod
+# Delete passwordlessMicrosoftAuthenticatorAuthenticationMethod (deprecated)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Deletes a user's [Microsoft Authenticator Passwordless Phone Sign-in method](../resources/passwordlessmicrosoftauthenticatorauthenticationmethod.md) object.
 
-> [!NOTE]
-> Substantial schema changes are planned for APIs that manage the Microsoft Authenticator app while the APIs are in Mirosoft Graph beta. Because the calling patterns will change, we recommend that you do not take a production dependency on these APIs.
-
+> [!CAUTION]
+> The Microsoft Authenticator Passwordless Phone Sign-in method API is deprecated and will stop returning results on December 31, 2020. Please use the new [Microsoft Authenticator Authentication Method](../resources/microsoftAuthenticatorAuthenticationMethod.md).
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions acting on self (from most to least privileged)|Permissions acting on others (from least to most privileged)|
-|:---|:---|:--|
-|Delegated (work or school account)|Not supported.|UserAuthenticationMethod.ReadWrite.All
-|Delegated (personal Microsoft account)|Not supported.|Not supported.
-|Application|Not supported.|Not supported.
+### Permissions acting on self
 
-For delegated scenarios where an admin is acting on another user, the admin needs one of the following [roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
+|Permission type      | Permissions (from least to most privileged)              |
+|:---------------------------------------|:-------------------------|
+| Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Not supported. |
 
+### Permissions acting on other users
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:---------------------------------------|:-------------------------|
+| Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | UserAuthenticationMethod.ReadWrite.All |
+
+For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 * Global admin
 * Privileged authentication admin
 * Authentication admin

@@ -11,12 +11,12 @@ const options = {
 const client = Client.init(options);
 
 const accessPackageAssignmentPolicy = {
-  accessPackageId: "56ff43fd-6b05-48df-9634-956a777fce6d",
-  displayName: "direct",
-  description: "direct assignments by administrator",
+  accessPackageId: '56ff43fd-6b05-48df-9634-956a777fce6d',
+  displayName: 'direct',
+  description: 'direct assignments by administrator',
   accessReviewSettings: null,
   requestorSettings: {
-    scopeType: "NoSubjects",
+    scopeType: 'NoSubjects',
     acceptRequests: true,
     allowedRequestors: []
   },
@@ -24,12 +24,12 @@ const accessPackageAssignmentPolicy = {
     isApprovalRequired: false,
     isApprovalRequiredForExtension: false,
     isRequestorJustificationRequired: false,
-    approvalMode: "NoApproval",
+    approvalMode: 'NoApproval',
     approvalStages: []
   }
 };
 
-let res = await client.api('/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies')
+await client.api('/identityGovernance/entitlementManagement/accessPackageAssignmentPolicies')
 	.version('beta')
 	.post(accessPackageAssignmentPolicy);
 

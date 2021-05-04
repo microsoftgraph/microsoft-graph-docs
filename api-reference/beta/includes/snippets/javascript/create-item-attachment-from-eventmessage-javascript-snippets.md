@@ -11,12 +11,14 @@ const options = {
 const client = Client.init(options);
 
 const attachment = {
-  @odata.type: "#Microsoft.OutlookServices.ItemAttachment",
-  name: "name-value",
-  item: "message or event entity"
+  '@odata.type': '#Microsoft.OutlookServices.ItemAttachment',
+  name: 'name-value',
+  item: {
+    '@odata.type': 'microsoft.graph.message'
+  }
 };
 
-let res = await client.api('/me/events/{id}/attachments')
+await client.api('/me/events/{id}/attachments')
 	.version('beta')
 	.post(attachment);
 

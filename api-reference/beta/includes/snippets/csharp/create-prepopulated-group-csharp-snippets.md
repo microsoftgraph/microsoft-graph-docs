@@ -12,11 +12,10 @@ var group = new Group
 	DisplayName = "Operations group",
 	GroupTypes = new List<String>()
 	{
-		"Unified"
 	},
-	MailEnabled = true,
+	MailEnabled = false,
 	MailNickname = "operations2019",
-	SecurityEnabled = false,
+	SecurityEnabled = true,
 	AdditionalData = new Dictionary<string, object>()
 	{
 		{"owners@odata.bind", "[\"https://graph.microsoft.com/beta/users/26be1845-4119-4801-a799-aea79d09f1a2\"]"},

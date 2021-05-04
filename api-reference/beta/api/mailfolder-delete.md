@@ -1,7 +1,7 @@
 ---
 title: "Delete mailFolder"
 description: "Delete the specified mailFolder or mailSearchFolder."
-author: "svpsiva"
+author: "abheek-das"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType

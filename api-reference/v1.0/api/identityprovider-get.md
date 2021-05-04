@@ -3,7 +3,7 @@ title: "Get identityProvider"
 description: "Retrieve the properties of an existing identityProvider"
 localization_priority: Priority
 author: "Nickgmicrosoft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/v1.0/identityProviders/Amazon-OAuth
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.IdentityProvider"
+  "@odata.type": "microsoft.graph.identityProvider"
 } -->
 ```http
 HTTP/1.1 200 OK

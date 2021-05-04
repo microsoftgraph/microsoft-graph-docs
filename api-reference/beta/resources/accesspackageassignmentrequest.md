@@ -3,7 +3,7 @@ title: "accessPackageAssignmentRequest resource type"
 description: "An access package assignment request is created by a user who wants to obtain an access package assignment."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
 
@@ -27,8 +27,8 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|completedDate|DateTimeOffset|The date of the end of processing, either successful or failure, of a request. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
-|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Read-only.|
+|completedDate|DateTimeOffset|The date of the end of processing, either successful or failure, of a request. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
+|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only.|
 |id|String| Read-only.|
 |isValidationOnly|Boolean|True if the request is not to be processed for assignment.|
 |justification|String|The requestor's supplied justification.|
@@ -37,6 +37,7 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |requestType|String|One of `UserAdd`, `UserRemove`, `AdminAdd`, `AdminRemove` or `SystemRemove`. A request from the user themselves would have requestType of `UserAdd` or `UserRemove`. Read-only.|
 |schedule|[requestSchedule](requestschedule.md)| The range of dates that access is to be assigned to the requestor. Read-only.|
 |accessPackageAssignment|[accessPackageAssignment](accesspackageassignment.md)| For a requestType of `UserAdd` or `AdminAdd`, this is an access package assignment requested to be created.  For a requestType of `UserRemove`, `AdminRemove` or `SystemRemove`, this has the `id` property of an existing assignment to be removed.|
+|answers|[accessPackageAnswer](accesspackageanswer.md) collection|Answers provided by the requestor to [accessPackageQuestions](accesspackagequestion.md) asked of them at the time of request.|
 
 ## Relationships
 
@@ -54,20 +55,36 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.accessPackageAssignmentRequest",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
 ```json
 {
-  "createdDateTime": "2020-02-12T22:06:58.303Z",
-  "completedDate": "2020-02-12T22:14:28.19Z",
-  "id": "1244d439-5baa-4b9a-be5f-e8fdef5a998b",
-  "requestType": "UserAdd",
-  "requestState": "Delivered",
-  "requestStatus": "FulfilledNotificationTriggered",
-  "isValidationOnly": false,
-  "justification": ""
+    "createdDateTime": "string",
+    "completedDate": "string",
+    "id": "string",
+    "requestType": "string",
+    "requestState": "string",
+    "requestStatus": "string",
+    "isValidationOnly": false,
+    "justification": "string",
+    "answers": [{
+        "@odata.type": "#microsoft.graph.accessPackageAnswerString",
+        "value": "string",
+        "answeredQuestion": {
+            "id": "string",
+            "text": {
+                "defaultText": "string",
+                "localizedTexts": [{
+                    "text": "string",
+                    "languageCode": "string"
+                }]
+            },
+            "isRequired": true,
+            "@odata.type": "#microsoft.graph.accessPackageTextInputQuestion",
+            "isSingleLineQuestion": true
+        }
+    }]
 }
 ```
 
@@ -80,5 +97,4 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

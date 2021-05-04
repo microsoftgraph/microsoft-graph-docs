@@ -24,7 +24,8 @@ Inherits from [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreen
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Name of the app Inherited from [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|
-|bundleID|String|BundleID of app|
+|bundleID|String|BundleID of the app if isWebClip is false or the URL of a web clip if isWebClip is true.|
+|isWebClip|Boolean|When true, the bundle ID will be handled as a URL for a web clip.|
 
 ## Relationships
 None
@@ -40,7 +41,8 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.iosHomeScreenApp",
   "displayName": "String",
-  "bundleID": "String"
+  "bundleID": "String",
+  "isWebClip": true
 }
 ```
 

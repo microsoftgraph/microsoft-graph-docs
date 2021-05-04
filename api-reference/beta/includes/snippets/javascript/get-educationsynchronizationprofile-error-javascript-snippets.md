@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/education/synchronizationProfiles/{id}/errors')
+let errors = await client.api('/education/synchronizationProfiles/{id}/errors')
 	.version('beta')
 	.get();
 

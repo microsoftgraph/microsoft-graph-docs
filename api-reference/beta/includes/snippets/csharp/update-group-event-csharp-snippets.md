@@ -20,7 +20,7 @@ var @event = new Event
 	IsReminderOn = true
 };
 
-await graphClient.Groups["{id}"].Events["{id}"]
+await graphClient.Groups["{group-id}"].Events["{event-id}"]
 	.Request()
 	.UpdateAsync(@event);
 

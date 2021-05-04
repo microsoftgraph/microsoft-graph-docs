@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/users/{id | userPrincipalName}/authentication/passwordMethods/{id}/resetPassword')
+await client.api('/users/{id | userPrincipalName}/authentication/passwordMethods/{id}/resetPassword')
 	.version('beta')
 	.post();
 

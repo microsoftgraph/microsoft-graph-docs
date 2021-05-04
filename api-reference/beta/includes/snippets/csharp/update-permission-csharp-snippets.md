@@ -14,7 +14,7 @@ var permission = new Permission
 	}
 };
 
-await graphClient.Me.Drive.Items["{item-id}"].Permissions["{perm-id}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"].Permissions["{permission-id}"]
 	.Request()
 	.UpdateAsync(permission);
 

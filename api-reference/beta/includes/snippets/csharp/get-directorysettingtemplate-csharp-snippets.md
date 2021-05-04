@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var directorySettingTemplate = await graphClient.DirectorySettingTemplates["{id}"]
+var directorySettingTemplate = await graphClient.DirectorySettingTemplates["{directorySettingTemplate-id}"]
 	.Request()
 	.GetAsync();
 

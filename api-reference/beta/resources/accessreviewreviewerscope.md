@@ -3,7 +3,7 @@ title: "accessReviewReviewerScope resource type"
 description: "Represents who will review an access review."
 author: "isabelleatmsft"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -13,8 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
+
 The accessReviewReviewerScope defines who will review instances of an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). This is expressed as an OData query, which allows reviewers to be specified both as a static list of users (i.e., specific users, group owners, group members) or dynamically (i.e., the case where every user is reviewed by their manager). To create a self-review (where users review their own access), do not provide reviewers on [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) creation.
 
+Inherits from [accessReviewScope](../resources/accessreviewscope.md).
 
 ## Properties
 | Property | Type | Description |
@@ -30,6 +33,8 @@ The accessReviewReviewerScope defines who will review instances of an [accessRev
 | Group owner as reviewer | /groups/{group id}/owners |MicrosoftGraph||
 | Specific user as reviewer | /users/{user id} |MicrosoftGraph||
 | Manager of user being reviewed as reviewer | ./manager | MicrosoftGraph |decisions|
+| Self Review | Empty list(No reviewers) | MicrosoftGraph  |
+
 
 ## Relationships
 None.

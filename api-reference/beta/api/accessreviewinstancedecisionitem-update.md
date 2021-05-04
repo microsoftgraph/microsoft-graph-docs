@@ -3,7 +3,7 @@ title: "Update accessReviewInstanceDecisionItem"
 description: "Update an existing accessReviewInstanceDecisionItem object that calling user is the reviewer of."
 localization_priority: Normal
 author: "isabelleatmsft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -54,17 +54,20 @@ If successful, this method returns a `204, NoContent` response code and no respo
 This is an example of approving access for a user represented by an `accessReviewInstanceDecisionItem`.
 
 
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_accessReviewInstanceDecisionItem"
 }-->
-```http
-PATCH https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-67f3-4d4c-b946-6989e050be19/decisions/654b34e7-b48f-4772-a2d4-08f1d0dd014c
+``` http
+PATCH https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-67f3-4d4c-b946-6989e050be19/decisions/12348410-67f3-4d4c-b946-6989e050be19
+Content-Type: application/json
+Content-length: 730
 
 {
   "decision": "Approve",
-  "justification": "I trust this person"
+  "justification": "This person is still on my team",
 }
 ```
 # [C#](#tab/csharp)
@@ -88,11 +91,13 @@ PATCH https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-
 
 ---
 
+
 ### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": false
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItem"
 } -->
 ```http
 HTTP/1.1 204 Accepted

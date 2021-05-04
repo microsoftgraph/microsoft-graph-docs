@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/authentication/phoneMethods')
+let phoneMethods = await client.api('/me/authentication/phoneMethods')
 	.version('beta')
 	.get();
 

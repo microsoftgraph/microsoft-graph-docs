@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/deviceManagement/virtualEndpoint/deviceImages/getSourceImages')
+let getSourceImages = await client.api('/deviceManagement/virtualEndpoint/deviceImages/getSourceImages')
 	.version('beta')
 	.get();
 

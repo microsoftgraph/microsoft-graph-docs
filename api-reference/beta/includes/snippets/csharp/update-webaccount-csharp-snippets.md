@@ -11,7 +11,7 @@ var webAccount = new WebAccount
 	WebUrl = "https://github.com/innocenty.popov"
 };
 
-await graphClient.Me.Profile.WebAccounts["{id}"]
+await graphClient.Me.Profile.WebAccounts["{webAccount-id}"]
 	.Request()
 	.UpdateAsync(webAccount);
 

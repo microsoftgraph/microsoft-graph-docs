@@ -13,7 +13,7 @@ var synchronizationTemplate = new SynchronizationTemplate
 	FactoryTag = "CustomSCIM"
 };
 
-await graphClient.Applications["{id}"].Synchronization.Templates["{templateId}"]
+await graphClient.Applications["{application-id}"].Synchronization.Templates["{synchronizationTemplate-id}"]
 	.Request()
 	.Header("Authorization","Bearer <token>")
 	.PutAsync(synchronizationTemplate);

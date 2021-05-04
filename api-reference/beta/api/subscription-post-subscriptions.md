@@ -2,9 +2,9 @@
 title: "Create subscription"
 description: "Subscribes a listener application to receive change notifications when data on a Microsoft Graph resource changes."
 localization_priority: Normal
-author: "davidmu1"
+author: "Jumaodhiss"
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: "change-notifications"
 ---
 
 # Create subscription
@@ -15,11 +15,13 @@ Namespace: microsoft.graph
 
 Subscribes a listener application to receive change notifications when the requested type of changes occur to the specified resource in Microsoft Graph.
 
+See the table in the [Permissions](#permissions) section for the list of resources that support subscribing to change notifications.
+
 ## Permissions
 
 Creating a subscription requires read permission to the resource. For example, to get change notifications on messages, your app needs the Mail.Read permission. 
 
- Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
@@ -37,6 +39,7 @@ Creating a subscription requires read permission to the resource. For example, t
 |[list](../resources/list.md) | Sites.ReadWrite.All | Not supported | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
 |[presence](../resources/presence.md) | Presence.Read.All | Not supported | Not supported |
+|[printer](../resources/printer.md) | Not supported | Not supported | Printer.Read.All, Printer.ReadWrite.All |
 |[printTaskDefinition](../resources/printtaskdefinition.md) | Not supported | Not supported | PrintTaskDefinition.ReadWrite.All |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
 |[todoTask](../resources/todotask.md) | Tasks.ReadWrite | Tasks.ReadWrite | Not supported |
@@ -44,17 +47,7 @@ Creating a subscription requires read permission to the resource. For example, t
 
 > **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
-### chatMessage
-
-**chatMessage** subscriptions with delegated permissions do not support resource data (**includeResourceData** must be `false`), and do not require [encryption](/graph/webhooks-with-resource-data).
-
-**chatMessage** subscriptions with application permissions include resource data, and require [encryption](/graph/webhooks-with-resource-data). Subscription creation will fail if [encryptionCertificate](../resources/subscription.md) is not specified. Before creating a **chatMessage** subscription, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis). 
-
-> **Note:** `/teams/getAllMessages` and `/chats/getAllMessages` are available to users that have the 
-[required licenses](https://aka.ms/teams-changenotification-licenses).
-
-> **Note:** `/chats/getAllMessages` only returns messages from chats owned by the tenant. 
-If a chat thread is initiated by a user outside the tenant, that chat thread is not owned by the tenant, and does not create change notifications.
+[!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
 
 ### driveItem
 
@@ -161,6 +154,7 @@ The following are valid values for the resource property.
 |[List](../resources/list.md)|`sites/{site-id}/lists/{list-id}`|
 |[Mail](../resources/message.md)|`me/mailfolders('inbox')/messages`, `me/messages`|
 |[Presence](../resources/presence.md)| `/communications/presences/{id}` (single user), `/communications/presences?$filter=id in ({id},{id}…)` (multiple users)|
+|[printer](../resources/printer.md) |`print/printers/{id}/jobs`|
 |[PrintTaskDefinition](../resources/printtaskdefinition.md)|`print/taskDefinitions/{id}/tasks`|
 |[Users](../resources/user.md)|`users`|
 |[todoTask](../resources/todotask.md) | `/me/todo/lists/{todoTaskListId}/tasks`
@@ -172,7 +166,7 @@ The following are valid values for the resource property.
 
 The following example shows the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -194,7 +188,8 @@ Content-length: 252
   "notificationUrl": "https://webhook.azurewebsites.net/api/send/myNotifyClient",
   "expirationDateTime": "2016-11-20T18:23:45.9356913Z",
   "creatorId": "8ee44408-0679-472c-bc2a-692812af3437",
-  "latestSupportedTlsVersion": "v1_2"
+  "latestSupportedTlsVersion": "v1_2",
+  "notificationContentType": "application/json"
 }
 ```
 

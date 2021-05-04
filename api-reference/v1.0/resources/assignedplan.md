@@ -2,8 +2,8 @@
 title: "assignedPlan resource type"
 description: "The **assignedPlans** property of both the user entity and the organization entity is a collection of **assignedPlan**."
 localization_priority: Normal
-author: "krbain"
-ms.prod: "microsoft-identity-platform"
+author: "jpettere"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
@@ -18,8 +18,8 @@ The **assignedPlans** property of both the [user](user.md) entity and the [organ
 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|assignedDateTime|DateTimeOffset|The date and time at which the plan was assigned; for example: 2013-01-02T19:32:30Z. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
-|capabilityStatus|[capabilityStatus](#capabilitystatus-values)|Condition of the capability assignment. The possible values are `Enabled`, `Warning`, `Suspended`, `Deleted`, `LockedOut`.|
+|assignedDateTime|DateTimeOffset|The date and time at which the plan was assigned. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+|capabilityStatus|String|Condition of the capability assignment. The possible values are `Enabled`, `Warning`, `Suspended`, `Deleted`, `LockedOut`. See [a detailed description](#capabilitystatus-values) of each value.|
 |service|String|The name of the service; for example, “Exchange”.|
 |servicePlanId|Guid|A GUID that identifies the service plan.|
 

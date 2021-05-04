@@ -3,7 +3,7 @@ title: "onPremisesAgentGroup resource type"
 description: "onPremisesAgentGroup resource type."
 localization_priority: Normal
 author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "resourcePageType"
 ---
 
@@ -32,7 +32,7 @@ Represents on-premises agents group. Agent groups enable a tenant admin to assig
 |displayName|String|Display name of the **onPremisesAgentGroup**.|
 |id|String| The object ID of the **onPremisesAgentGroup**. Read-only.|
 |isDefault|Boolean|Indicates if the **onPremisesAgentGroup** is the default agent group. Only a single agent group can be the default **onPremisesAgentGroup** and is set by the system.|
-|publishingType|string| Possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
+|publishingType|String| Possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
 
 ## Relationships
 
@@ -51,7 +51,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.onPremisesAgentGroup",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
@@ -73,5 +72,6 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

@@ -3,7 +3,7 @@ title: "continuousAccessEvaluationPolicy resource type"
 description: "Continuous Access Evaluation (CAE) helps in managing authentication sessions in real time. CAE allows customers to handle access to resources by supporting instant revocation events."
 author: "jerrysai"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -25,9 +25,9 @@ Continuous Access Evaluation (CAE) manages authentication sessions in real time.
 |Property|Type|Description|
 |:---|:---|:---|
 |description|String|Continuous access evaluation automatically blocks access to resources and applications in near real time when a user's access is removed or a client IP address changes. Read-only.|
-|displayName|String| The value is always 'Continuous Access Evaluation'. Read-only.|
+|displayName|String| The value is always `Continuous Access Evaluation`. Read-only.|
 |groups|String collection|The collection of group identifiers in scope for evaluation. All groups are in scope when the collection is empty.|
-|id|String|Specifies the identifier of a continuousAccessEvaluationPolicy object. Read-only.|
+|id|String|Specifies the identifier of a [continuousAccessEvaluationPolicy](#continuousaccessevaluationpolicy-resource-type) object. Read-only.|
 |isEnabled|Boolean| `true` to indicate whether continuous access evaluation should be performed; otherwise `false`. |
 |users|String collection|The collection of user identifiers in scope for evaluation. All users are in scope when the collection is empty.|
 

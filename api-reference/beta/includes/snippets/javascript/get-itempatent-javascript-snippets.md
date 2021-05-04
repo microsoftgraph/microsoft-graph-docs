@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/profile/patents/{id}')
+let itemPatent = await client.api('/me/profile/patents/{id}')
 	.version('beta')
 	.get();
 

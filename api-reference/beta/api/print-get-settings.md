@@ -22,7 +22,7 @@ To use the Universal Print service, the user or app's tenant must have an active
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
-|Delegated (work or school account)| User.Read |
+|Delegated (work or school account)| PrintSettings.Read.All, PrintSettings.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not Supported.|
 |Application|Not Supported.|
 
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/beta/print/settings
 
 ##### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

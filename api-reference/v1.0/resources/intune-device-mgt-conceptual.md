@@ -15,10 +15,6 @@ Namespace: microsoft.graph
 
 - [Action state](intune-devices-actionstate.md)
 - [Apple push notification certificate](intune-devices-applepushnotificationcertificate.md)
-- [Audit actor](intune-auditing-auditactor.md)
-- [Audit event](intune-auditing-auditevent.md)
-- [Audit property](intune-auditing-auditproperty.md)
-- [Audit resource](intune-auditing-auditresource.md)
 - [Compliance state](intune-devices-compliancestate.md)
 - [Configuration manager client enabled features](intune-devices-configurationmanagerclientenabledfeatures.md)
 - [Delete user from shared Apple device action result](intune-devices-deleteuserfromsharedappledeviceactionresult.md)

@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const contactFolder = {
-  displayName: "displayName-value"
+  displayName: 'Family'
 };
 
-let res = await client.api('/me/contactFolders/{id}/childFolders')
+await client.api('/me/contactFolders/{id}/childFolders')
 	.version('beta')
 	.post(contactFolder);
 

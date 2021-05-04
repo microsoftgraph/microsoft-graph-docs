@@ -3,7 +3,7 @@ title: "SharePoint activity reports"
 description: "You can use the SharePoint activity reports to get the activity of every user licensed to use SharePoint by looking at their interaction with files. You can also look at the level of collaboration going on based on the number of files shared."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: conceptualPageType
 ---
 

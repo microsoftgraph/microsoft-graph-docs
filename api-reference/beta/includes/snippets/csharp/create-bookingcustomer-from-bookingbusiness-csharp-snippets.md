@@ -12,7 +12,7 @@ var bookingCustomer = new BookingCustomer
 	EmailAddress = "jonis@relecloud.com"
 };
 
-await graphClient.BookingBusinesses["Contosolunchdelivery@M365B489948.onmicrosoft.com"].Customers
+await graphClient.BookingBusinesses["{bookingBusiness-id}"].Customers
 	.Request()
 	.AddAsync(bookingCustomer);
 

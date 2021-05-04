@@ -3,7 +3,7 @@ title: "phoneAuthenticationMethod: enableSmsSignIn"
 description: "Enable SMS sign-in for a mobile phone."
 localization_priority: Normal
 author: "mmcla"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -23,14 +23,23 @@ Enable SMS sign-in for an existing `mobile` phone number. To be successfully ena
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-| Permission type                        | Permissions acting on self (from least to most privileged) | Permissions acting on others (from least to most privileged)|
-|:---------------------------------------|:-------------------------|:-----------------|
-| Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite, UserAuthenticationMethod.ReadWrite.All | UserAuthenticationMethod.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. | Not supported. |
-| Application                            | Not supported. | Not supported. |
+### Permissions acting on self
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:---------------------------------------|:-------------------------|
+| Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | Not supported. |
+
+### Permissions acting on other users
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:---------------------------------------|:-------------------------|
+| Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. |
+| Application                            | UserAuthenticationMethod.ReadWrite.All |
 
 For delegated scenarios where an admin is acting on another user, the admin needs [one of the following roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
-
 * Global admin
 * Privileged authentication admin
 * Authentication admin
@@ -43,6 +52,7 @@ For delegated scenarios where an admin is acting on another user, the admin need
 POST /me/authentication/phoneMethods/{id}/enableSmsSignIn
 POST /users/{id | userPrincipalName}/authentication/phoneMethods/{id}/enableSmsSignIn
 ```
+The value of `id` for the `mobile` phoneType is `3179e48a-750b-4051-897c-87b9720928f7`.
 
 ## Request headers
 

@@ -3,7 +3,7 @@ title: "List devices"
 description: "Retrieve a list of devices registered in the directory. "
 author: "spunukol"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -89,7 +89,7 @@ GET https://graph.microsoft.com/beta/devices
 #### Response
 
 Here is an example of the response.
-> Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+> Note: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -166,7 +166,7 @@ ConsistencyLevel: eventual
 #### Response
 
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -189,7 +189,18 @@ Content-type: application/json
       "displayName":"a_device_1",
       "Manufacturer":"Google",
       "Model":"Pixel 3a",
-      "operatingSystemVersion":"10.0"
+      "operatingSystemVersion":"10.0",
+      "hostNames":[]
+    },
+    {
+      "accountEnabled":true,
+      "deviceId":"00000000-0000-0000-0000-000000000001",
+      "deviceVersion":1,
+      "displayName":"a_device_1",
+      "Manufacturer":"Microsoft",
+      "Model":"Surface",
+      "operatingSystemVersion":"windows10EnterpriseN",
+      "hostNames":["device_1.contoso.onmicrosoft.com", "device_1"]
     }
   ]
 }
@@ -213,7 +224,7 @@ ConsistencyLevel: eventual
 #### Response
 
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -236,7 +247,8 @@ Content-type: application/json
       "displayName":"contoso_Android",
       "Manufacturer":"Google",
       "Model":"Pixel 3a",
-      "operatingSystemVersion":"10.0"
+      "operatingSystemVersion":"10.0",
+      "hostNames":[]
     }
   ]
 }

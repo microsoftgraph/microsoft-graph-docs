@@ -3,7 +3,7 @@ title: "Create connectorGroup"
 description: "Use this API to create a new connectorGroup."
 localization_priority: Normal
 author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
@@ -81,7 +81,7 @@ Content-length: 99
 
 In the request body, supply a JSON representation of [connectorGroup](../resources/connectorgroup.md) object.
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -113,5 +113,6 @@ Content-length: 119
   "suppressions": []
 }
 -->
+
 
 

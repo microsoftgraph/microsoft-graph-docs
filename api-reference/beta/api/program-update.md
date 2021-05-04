@@ -3,7 +3,7 @@ title: "Update program"
 description: "In the Azure AD access reviews feature, update an existing program object."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "markwahl-msft"
 ---
 
@@ -28,7 +28,7 @@ The signed in user must also be in a directory role that permits them to update 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /programs('{programId}')
+PATCH /programs/{programId}
 ```
 ## Request headers
 | Name         | Type        | Description |
@@ -87,7 +87,7 @@ Content-type: application/json
 
 
 ##### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

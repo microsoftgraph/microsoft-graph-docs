@@ -3,7 +3,7 @@ title: printTaskDefinition resource type
 description: Represents a task that can be triggered when various events occur within Universal Print.
 author: braedenp-msft
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: resourcePageType
 ---
 
@@ -17,6 +17,9 @@ Represents an abstract definition for a task that can be triggered when various 
 
 For details about how to use this resource to add pull printing support to Universal Print, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 
+This resource supports:
+* [Subscribing to change notifications](/graph/universal-print-webhook-notifications).
+
 ## Methods
 
 | Method       | Return Type | Description |
@@ -27,7 +30,7 @@ For details about how to use this resource to add pull printing support to Unive
 | [Delete](../api/print-delete-taskdefinition.md) | None | Delete a printTaskDefinition. |
 | [List tasks](../api/printtaskdefinition-list-tasks.md) | [printTask](printtask.md) | Get a list of tasks that have been created based on this definition. The list includes currently running tasks and recently completed tasks. |
 | [Get task](../api/printtask-get.md) | [printTask](printtask.md) | Gets a task that has been created based on this definition. |
-| [Update task](../api/printtaskdefinition-update-task.md) | None | Update a task that has been created based on this definition. **Applications that register task triggers are responsible for updating task status when processing is finished, unless the related printJob has been redirected to another printer.** Failure to report completion will result in the related print job being blocked from printing and eventually deleted. |
+| [Update task](../api/printtaskdefinition-update-task.md) | [printTask](printtask.md) | Update a task that has been created based on this definition. **Applications that register task triggers are responsible for updating task status when processing is finished, unless the related printJob has been redirected to another printer.** Failure to report completion will result in the related print job being blocked from printing and eventually deleted. |
 
 ## Properties
 | Property     | Type        | Description |

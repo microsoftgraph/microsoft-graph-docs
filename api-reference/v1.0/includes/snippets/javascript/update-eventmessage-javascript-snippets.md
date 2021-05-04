@@ -14,7 +14,7 @@ const message = {
   isRead: true,
 };
 
-let res = await client.api('/me/messages/{id}')
+await client.api('/me/messages/{id}')
 	.update(message);
 
 ```

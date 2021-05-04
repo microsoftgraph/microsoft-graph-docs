@@ -12,7 +12,7 @@ var queryOptions = new List<QueryOption>()
 	new QueryOption("endDateTime", "2019-04-30T09:00:00.0000000")
 };
 
-var instances = await graphClient.Me.Events["AAMkAGUzYRgWAAA="].Instances
+var instances = await graphClient.Me.Events["{event-id}"].Instances
 	.Request( queryOptions )
 	.Select("subject,bodyPreview,seriesMasterId,type,recurrence,start,end")
 	.GetAsync();

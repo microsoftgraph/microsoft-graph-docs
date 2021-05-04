@@ -10,14 +10,11 @@ const options = {
 
 const client = Client.init(options);
 
-const connectorGroup = Content-type: application/json
-Content-length: 99
-
-{
-  @odata.id: "https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}"
+const connectorGroup = {
+  '@odata.id': 'https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationProxy/connectorGroups/{id}'
 };
 
-let res = await client.api('/onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf/$ref')
+await client.api('/onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf/$ref')
 	.version('beta')
 	.post(connectorGroup);
 

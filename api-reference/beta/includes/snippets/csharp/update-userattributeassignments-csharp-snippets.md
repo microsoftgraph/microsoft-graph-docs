@@ -11,7 +11,7 @@ var identityUserFlowAttributeAssignment = new IdentityUserFlowAttributeAssignmen
 	UserInputType = IdentityUserFlowAttributeInputType.TextBox
 };
 
-await graphClient.Identity.B2cUserFlows["{b2cIdentityUserFlowId}"].UserAttributeAssignments["{id}"]
+await graphClient.Identity.B2cUserFlows["{b2cIdentityUserFlow-id}"].UserAttributeAssignments["{identityUserFlowAttributeAssignment-id}"]
 	.Request()
 	.UpdateAsync(identityUserFlowAttributeAssignment);
 

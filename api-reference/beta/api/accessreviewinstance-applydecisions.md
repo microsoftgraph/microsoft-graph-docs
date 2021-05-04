@@ -3,7 +3,7 @@ title: "accessReviewInstance: applyDecisions"
 description: "Apply decisions on an accessReviewInstance."
 author: "isabelleatmsft"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 

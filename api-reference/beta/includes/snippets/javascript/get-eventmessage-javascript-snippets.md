@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/messages/AAMkADYAAAImV_lAAA=')
+let message = await client.api('/me/messages/AAMkADYAAAImV_lAAA=')
 	.version('beta')
 	.get();
 

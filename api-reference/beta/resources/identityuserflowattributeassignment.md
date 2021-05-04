@@ -3,7 +3,7 @@ title: "identityUserFlowAttributeAssignment resource type"
 description: "identityUserFlowAttributeAssignments are used to collect specific identityUserFlowAttributes within a user flow."
 author: "jkdouglas"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -47,7 +47,6 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.identityUserFlowAttributeAssignment",
-  "baseType": "",
   "openType": false
 }
 -->

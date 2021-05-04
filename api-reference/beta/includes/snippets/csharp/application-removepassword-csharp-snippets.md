@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var keyId = Guid.Parse("f0b0b335-1d71-4883-8f98-567911bfdca6");
 
-await graphClient.Applications["{id}"]
+await graphClient.Applications["{application-id}"]
 	.RemovePassword(keyId)
 	.Request()
 	.PostAsync();

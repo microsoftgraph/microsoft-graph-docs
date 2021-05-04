@@ -3,7 +3,7 @@ title: "Update accessPackageCatalog"
 description: "Update the properties of an accessPackageCatalog object."
 author: "markwahl-msft"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -18,11 +18,11 @@ Update an existing [accessPackageCatalog](../resources/accesspackagecatalog.md) 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)     | EntitlementManagement.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Not supported. |
+|Application                            | EntitlementManagement.ReadWrite.All |
 
 ## HTTP request
 <!-- {

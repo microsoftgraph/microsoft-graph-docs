@@ -24,7 +24,7 @@ var profileCardProperty = new ProfileCardProperty
 	}
 };
 
-await graphClient.Organization["{organizationId}"].Settings.ProfileCardProperties["CustomAttribute1"]
+await graphClient.Organization["{organization-id}"].Settings.ProfileCardProperties["{profileCardProperty-id}"]
 	.Request()
 	.UpdateAsync(profileCardProperty);
 

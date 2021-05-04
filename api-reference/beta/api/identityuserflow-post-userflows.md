@@ -3,7 +3,7 @@ title: "Create userFlow"
 description: "Use this API to create a new userFlow."
 localization_priority: Normal
 author: "Nickgmicrosoft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -65,6 +65,7 @@ POST https://graph.microsoft.com/beta/identity/userFlows
 Content-type: application/json
 
 {
+  "id": "Pol1",
   "userFlowType": "signUpOrSignIn",
   "userFlowTypeVersion": 1
 }
@@ -92,7 +93,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

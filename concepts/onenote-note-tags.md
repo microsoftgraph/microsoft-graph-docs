@@ -73,7 +73,7 @@ Here's a simple to-do list with the first item completed.
 
 Note that the `<p>` tags above each include a `data-id` attribute. This makes it easier to update the check box note tags. For example, the following request marks the spring planting to-do item as completed.
 
-```json
+```http
 PATCH https://graph.microsoft.com/v1.0/me/onenote/notebooks/pages/{page-id}/content
 
 Content-Type: application/json
@@ -360,8 +360,5 @@ For more information about permission scopes and how they work, see [OneNote per
 - [Update OneNote page content](onenote-update-page.md)
 - [Integrate with OneNote](integrate-with-onenote.md)
 - [OneNote Developer Blog](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [OneNote development questions on Stack Overflow](https://go.microsoft.com/fwlink/?LinkID=390182)
+- [OneNote development questions on Microsoft Q&A](/answers/topics/microsoft-graph-notes.html)
 - [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)
-
-
-

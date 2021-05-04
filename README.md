@@ -8,7 +8,7 @@ Your feedback is important to us.
 
 - To let us know about any questions or issues you find in the documentation, [submit an issue](https://github.com/microsoftgraph/microsoft-graph-docs/issues) in this repository.
 - We also encourage you to fork, make the fix, and do a pull request of your proposed changes. See [CONTRIBUTING.md](CONTRIBUTING.md) for contributing guidelines.
-- To let us know about your programming experience, what you would like to see in future versions, code samples, and so on, enter your suggestions and ideas at [Office Developer Platform UserVoice](https://officespdev.uservoice.com/forums/224641-feature-requests-and-feedback?category_id=101632).
+- To let us know about your programming experience, what you would like to see in future versions, code samples, and so on, enter your suggestions and ideas at [Microsoft 365 Developer Platform Tech Community](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
 
 ## Code of conduct
 

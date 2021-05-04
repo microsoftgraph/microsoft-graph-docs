@@ -38,9 +38,6 @@ DELETE /groups/{id}/calendar/events/{id}/
 DELETE /me/calendars/{id}/events/{id}
 DELETE /users/{id | userPrincipalName}/calendars/{id}/events/{id}
 
-DELETE /me/calendargroup/calendars/{id}/events/{id}
-DELETE /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}
-
 DELETE /me/calendargroups/{id}/calendars/{id}/events/{id}
 DELETE /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}
 ```

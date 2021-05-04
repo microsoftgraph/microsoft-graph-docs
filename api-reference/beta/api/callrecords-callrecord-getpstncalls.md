@@ -19,7 +19,7 @@ Get log of PSTN calls as a collection of [pstnCallLogRow](../resources/callrecor
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Not supported. |
 | Delegated (personal Microsoft account) | Not supported. |
@@ -112,7 +112,9 @@ HTTP/1.1 200 OK
             "destinationName": "United States",
             "conferenceId": null,
             "licenseCapability": "MCOPSTNU",
-            "inventoryType": "Subscriber"
+            "inventoryType": "Subscriber",
+			"operator": "Microsoft",
+			"callDurationSource": "microsoft"
         }],
     "@odata.nextLink": "https://graph.microsoft.com/beta/communications/callRecords/getPstnCalls(from=2019-11-01,to=2019-12-01)?$skip=1000"
 }

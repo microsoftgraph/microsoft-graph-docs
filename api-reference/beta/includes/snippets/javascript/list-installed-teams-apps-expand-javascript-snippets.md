@@ -10,9 +10,9 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/teams/6903fa93-605b-43ef-920e-77c4729f8258/installedApps')
+let installedApps = await client.api('/teams/6903fa93-605b-43ef-920e-77c4729f8258/installedApps')
 	.version('beta')
-	.expand('teamsAppDefinition')
+	.expand('teamsAppDefinition($expand=bot)')
 	.get();
 
 ```

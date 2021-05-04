@@ -3,7 +3,7 @@ title: "accessReviewScheduleSettings resource type"
 description: "In the Azure AD access reviews feature, the `accessReviewScheduleSettings` represents the settings associated with an access review series."
 author: "isabelleatmsft"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -12,6 +12,8 @@ doc_type: resourcePageType
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
 The **accessReviewScheduleSettings** defines the settings of an [accessReviewScheduleDefinition](accessreviewscheduledefinition.md). 
 
@@ -24,7 +26,7 @@ The **accessReviewScheduleSettings** defines the settings of an [accessReviewSch
 | defaultDecisionEnabled|Boolean | Flag to indicate whether default decision is enabled/disabled when reviewers do not respond. |
 | defaultDecision|String | Decision chosen if `defaultDecisionEnabled` is enabled. Can be one of "Approve", "Deny", or "Recommendation". |
 | instanceDurationInDays|Int32 | Duration of each recurrence of review (`accessReviewInstance`) in number of days. |
-| recurrence|[patternedRecurrence](../resources/patternedrecurrence.md) | Detailed settings for recurrence. Using standard Outlook recurrence object.  |
+| recurrence|[patternedRecurrence](../resources/patternedrecurrence.md) | Detailed settings for recurrence. Using standard Outlook recurrence object. Note that dayOfMonth is not supported - use property startDate on recurrenceRange to determine the day the review will start on. |
 | autoApplyDecisionsEnabled|Boolean | Flag to indicate whether auto-apply feature is enabled. |
 | applyActions|[accessReviewApplyAction](../resources/accessreviewapplyaction.md) collection | Optional field. Describes the  actions to take once a review is complete. There are two types that are currently supported: `removeAccessApplyAction` (default) and `disableAndDeleteUserApplyAction`. Field only needs to be specified in the case of `disableAndDeleteUserApplyAction`. See [accessReviewApplyAction](accessreviewapplyaction.md). |
 | recommendationsEnabled|Boolean | Flag to indicate whether decision recommendations are enabled/disabled. |

@@ -14,7 +14,7 @@ var user = new User
 	}
 };
 
-await graphClient.Print.Shares["{id}"].AllowedUsers.References
+await graphClient.Print.Shares["{printerShare-id}"].AllowedUsers.References
 	.Request()
 	.AddAsync(user);
 

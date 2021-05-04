@@ -2,7 +2,7 @@
 title: "Create MailFolder"
 description: "Use this API to create a new mail folder in the root folder of the user's mailbox."
 localization_priority: Normal
-author: "svpsiva"
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -83,7 +83,7 @@ Content-length: 159
 
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

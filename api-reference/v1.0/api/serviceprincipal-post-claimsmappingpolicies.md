@@ -3,7 +3,7 @@ title: "Assign claimsMappingPolicy"
 description: "Assign a claimsMappingPolicy to a servicePrincipal."
 localization_priority: Normal
 author: "paulgarn"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 

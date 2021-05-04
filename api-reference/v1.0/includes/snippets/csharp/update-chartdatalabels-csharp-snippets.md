@@ -15,7 +15,7 @@ var workbookChartDataLabels = new WorkbookChartDataLabels
 	ShowLegendKey = true
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Charts["{name}"].DataLabels
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts["{workbookChart-id}"].DataLabels
 	.Request()
 	.UpdateAsync(workbookChartDataLabels);
 

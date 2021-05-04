@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const set = {
-  description: "mySet"
+  description: 'mySet'
 };
 
-let res = await client.api('/termStore/sets/{setId}')
+await client.api('/termStore/sets/{setId}')
 	.version('beta')
 	.update(set);
 

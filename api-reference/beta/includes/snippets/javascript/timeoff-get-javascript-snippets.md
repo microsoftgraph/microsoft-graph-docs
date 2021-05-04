@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/teams/{teamId}/schedule/timesOff/{timeOffId}')
+let timeOff = await client.api('/teams/{teamId}/schedule/timesOff/{timeOffId}')
 	.version('beta')
 	.get();
 

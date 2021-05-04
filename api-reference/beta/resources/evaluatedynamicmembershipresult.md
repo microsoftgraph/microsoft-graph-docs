@@ -3,7 +3,7 @@ title: "evaluateDynamicMembershipResult resource type"
 description: "Represents the result of membership evaluation."
 localization_priority: Normal
 author: "yyuank"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "groups"
 doc_type: "resourcePageType"
 ---
 

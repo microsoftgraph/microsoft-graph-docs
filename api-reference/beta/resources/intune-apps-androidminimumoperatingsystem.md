@@ -34,6 +34,8 @@ Contains properties for the minimum operating system required for an Android mob
 |v8_0|Boolean|Version 8.0 or later.|
 |v8_1|Boolean|Version 8.1 or later.|
 |v9_0|Boolean|Version 9.0 or later.|
+|v10_0|Boolean|Version 10.0 or later.|
+|v11_0|Boolean|Version 11.0 or later.|
 
 ## Relationships
 None
@@ -61,7 +63,9 @@ Here is a JSON representation of the resource.
   "v7_1": true,
   "v8_0": true,
   "v8_1": true,
-  "v9_0": true
+  "v9_0": true,
+  "v10_0": true,
+  "v11_0": true
 }
 ```
 

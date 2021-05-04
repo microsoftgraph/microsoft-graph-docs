@@ -3,7 +3,7 @@ title: "reportRoot: getEmailActivityUserCounts"
 description: "Enables you to understand trends on the number of unique users who are performing email activities like send, read, and receive."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -147,7 +147,7 @@ GET https://graph.microsoft.com/beta/reports/getEmailActivityUserCounts(period='
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

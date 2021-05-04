@@ -15,7 +15,7 @@ var attachment = new ReferenceAttachment
 	IsFolder = true
 };
 
-await graphClient.Me.Events["AAMkAGE1M88AADUv0uAAAG="].Attachments
+await graphClient.Me.Events["{event-id}"].Attachments
 	.Request()
 	.AddAsync(attachment);
 

@@ -3,7 +3,7 @@ title: "List signIns"
 description: "Describes the list method of the signIn resource (entity) from the Microsoft Graph API."
 localization_priority: Normal
 author: "besiler"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 
@@ -64,11 +64,10 @@ This method supports the following OData query parameters to help customize the 
 |deviceDetail/browser| eq, startswith|
 |deviceDetail/operatingSystem| eq, startswith|
 |correlationId| eq|
-|isRisky| eq|
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and collection of [signIn](../resources/signin.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and collection of [signIn](../resources/signin.md) objects in the response body. The collection of objects is listed in descending order based on **createdDateTime**.
 
 ## Example
 
@@ -107,7 +106,7 @@ GET https://graph.microsoft.com/v1.0/auditLogs/signIns
 ### Response
 
 Here is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

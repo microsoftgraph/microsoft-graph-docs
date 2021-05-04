@@ -27,6 +27,7 @@ An app can also subscribe to change notifications that include resource data, to
 
 Using the Microsoft Graph API, an app can subscribe to changes on the following resources:
 
+- Cloud printing [printer][]
 - Cloud printing [printTaskDefinition][]
 - Content within the hierarchy of _any folder_ [driveItem][] on a user's personal OneDrive
 - Content within the hierarchy of the _root folder_ [driveItem][] on OneDrive for Business
@@ -92,9 +93,11 @@ When subscribing to Outlook resources such as **messages**, **events** or **cont
 
 `/users/sh.o'neal@contoso.com/messages`
 
-Use: 
+Use:
 
 `/users/{guid-user-id}/messages`
+
+A maximum of 1000 active subscriptions per mailbox for all applications is allowed.
 
 ### Teams resource limitations
 
@@ -300,6 +303,7 @@ The following table lists the latency to expect between an event happening in th
 |[list][] | Less than 1 minute | 5 minutes |
 |[message][] | Unknown | Unknown |
 |[presence][] (preview) | Less than 10 seconds | 1 minute |
+|[printer][] | Less than 1 minute | 5 minutes |
 |[printTaskDefinition][] | Less than 1 minute | 5 minutes |
 |[todoTask][] | Less than 2 minutes | 15 minutes |
 |[user][] | Less than 2 minutes | 15 minutes |
@@ -314,7 +318,7 @@ The following table lists the latency to expect between an event happening in th
 - [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta) resource type
 - [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta) resource type
 - [Change notifications and change tracking tutorial](/learn/modules/msgraph-changenotifications-trackchanges)
-- [Lifecycle notifications](/graph/webhooks-lifecycle)
+- [Lifecycle notifications](./webhooks-lifecycle.md)
 
 [contact]: /graph/api/resources/contact?view=graph-rest-1.0
 [conversation]: /graph/api/resources/conversation?view=graph-rest-1.0
@@ -328,5 +332,6 @@ The following table lists the latency to expect between an event happening in th
 [presence]: /graph/api/resources/presence
 [chatMessage]: /graph/api/resources/chatmessage
 [list]: /graph/api/resources/list
+[printer]: /graph/api/resources/printer
 [printTaskDefinition]: /graph/api/resources/printtaskdefinition
 [todoTask]: /graph/api/resources/todotask

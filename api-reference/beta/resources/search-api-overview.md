@@ -34,7 +34,8 @@ Search requests run on behalf of the user. Search results are scoped to enforce 
 |[Use KQL in query terms](#keyword-query-language-kql-support) | **query** |
 |[Sort search results](#sort-search-results)| **sort** |
 |[Refine results using aggregations](#refine-results-using-aggregations)| **aggregations** |
-|[Search across Graph connectors](/graph/search-concept-custom-types)| **contentSources** |
+|[Search custom types imported using connectors](/graph/search-concept-custom-types)| **contentSources** |
+|[Request spelling correction](#request-spelling-correction)| **queryAlterationOptions** |
 
 ## Scope search based on entity types
 
@@ -138,6 +139,14 @@ Aggregations are currently supported for any refinable property on the following
 
 See [refine search results](/graph/search-concept-aggregation) for examples that show using aggregation to enhance and narrow down search results.
 
+## Request spelling correction
+
+Spelling correction is a popular way to handle mismatches between typos in a user query and the correct words in matched contents. When typos are detected in the original user query, you can get the search result either for the original user query or the corrected alternate query. You can also get the spelling correction information for typos in the **queryAlterationResponse** property of the [searchresponse](searchresponse.md). 
+
+In the request body of the [query](/graph/api/search-query?view=graph-rest-beta&preserve-view=true) method, specify the **queryAlterationOptions** that should be applied to the query for spelling corrections. The description of **queryAlterationOptions** is defined in the [searchAlterationOptions](./searchalterationoptions.md).
+
+For examples that show how to use spelling corrections, see [Request spelling correction](/graph/search-concept-speller).
+
 ## Error handling
 
 The search API returns error responses as defined by [OData error object definition](http://docs.oasis-open.org/odata/odata-json-format/v4.01/cs01/odata-json-format-v4.01-cs01.html#sec_ErrorResponse), each of which is a JSON object containing a code and a message.
@@ -159,9 +168,11 @@ Any combinations involving **message**, **event**, SharePoint and OneDrive types
 
 - The search API does not support aggregations for **message**, **event**, **site** or **drive**.
 
+- Customizations in SharePoint search, such as a custom search schema or result sources, can interfere with the operation of the Microsoft Search API.
+
 ## Schema change deprecation warning
 
-**In the beta version**, properties used in a search request and response have been renamed or removed. In most cases, the original properties are being deprecated and replaced by the current properties, as listed in the table below.
+**In the beta version**, properties used in a search request and response have been renamed or removed. In most cases, the original properties are being deprecated and replaced by the current properties, as listed in the following table.
 
 Start updating any existing apps to use current property and type names, and to get current property names in the response.
 For backward compatibility, the original properties and types are accessible and functional until **December 31, 2020**, after which they will be removed.
@@ -177,18 +188,18 @@ For backward compatibility, the original properties and types are accessible and
 | [searchHit](./searchhit.md)        | Rename property | **_source** | **resource** |
 | [searchHit](./searchhit.md)        | Rename property | **_summary**  | **summary**  |
 
-## Search samples
+## See also
 
 - Learn more about a few key use cases:
   - [Search Outlook messages](/graph/search-concept-messages)
   - [Search calendar events](/graph/search-concept-events)
   - [Search content in Sharepoint and OneDrive](/graph/search-concept-files)
-  - [Search external content](/graph/search-concept-custom-types)
+  - [Search custom types imported using connectors](/graph/search-concept-custom-types)
   - [Sort search results](/graph/search-concept-sort)
   - [Refine search results](/graph/search-concept-aggregation)
+  - [Request spelling correction](/graph/search-concept-speller)
 
 - Explore the search APIs in  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-
 
 ## What's new
 

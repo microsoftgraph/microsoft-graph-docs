@@ -3,7 +3,7 @@ title: "List registeredUsers"
 description: "Retrieve a list of users that are registered users of the device."
 author: "spunukol"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/devices/{id}/registeredUsers
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -3,7 +3,7 @@ title: "List oauth2PermissionGrants"
 description: "Retrieve a list of oAuth2PermissionGrant objects, representing delegated permission grants."
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 author: "psignoret"
 ---
 
@@ -17,6 +17,9 @@ Retrieve a list of [oAuth2PermissionGrant](../resources/oAuth2PermissionGrant.md
 
 > [!NOTE]
 > Querying the delegated permission grants for a user will only return delegated permissions grants that are specifically for the given user. Delegated permissions granted on behalf of all users in the organization are _not_ included in the response.
+
+> [!NOTE]
+> This request might have replication delays for delegated permission grants that were recently created, updated, or deleted.
 
 ## Permissions
 
@@ -69,7 +72,7 @@ Here is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/users/{id}/oauth2PermissionGrants
+GET https://graph.microsoft.com/beta/users/7d54cb02-aaa3-4016-9f9c-a4b49422dd9b/oauth2PermissionGrants
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-user-oauth2permissiongrants-csharp-snippets.md)]
@@ -94,7 +97,7 @@ GET https://graph.microsoft.com/beta/users/{id}/oauth2PermissionGrants
 
 Here is an example of the response. 
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -106,19 +109,18 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 253
 
 {
   "value": [
     {
-      "id": "id-value",
-      "clientId": "clientId-value",
-      "consentType": "consentType-value",
-      "principalId": "principalId-value",
-      "resourceId": "resourceId-value",
-      "scope": "scope-value",
-      "startTime": "datetime-value",
-      "expiryTime": "datetime-value"
+      "clientId": "85477313-ea43-4c7d-b8a4-54fed35d0b60",
+      "consentType": "Principal",
+      "expiryTime": "2021-09-19T07:06:52.6843299Z",
+      "id": "E3NHhUPqfUy4pFT-010LYFo5-ycA-_5Fhl7nHbaJ7qACy1R9o6oWQJ-cpLSUIt2b",
+      "principalId": "7d54cb02-aaa3-4016-9f9c-a4b49422dd9b",
+      "resourceId": "27fb395a-fb00-45fe-865e-e71db689eea0",
+      "scope": " Contacts.ReadWrite openid profile",
+      "startTime": "0001-01-01T00:00:00Z"
     }
   ]
 }

@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const printer = {
-  name: "PrinterName",
+  name: 'PrinterName',
   location: {
     latitude: 1.1,
     longitude: 2.2,
@@ -19,7 +19,7 @@ const printer = {
   }
 };
 
-let res = await client.api('/print/printers/{id}')
+await client.api('/print/printers/{id}')
 	.version('beta')
 	.update(printer);
 

@@ -16,11 +16,13 @@ Namespace: microsoft.graph
 Create an open extension ([openTypeExtension](../resources/opentypeextension.md) object) and add custom properties
 in a new or existing instance of a supported resource.
 
+The table in the [Permissions](#permissions) section lists the resources that support open extensions.
+
 > **Note:** If you're creating open extensions on Outlook resources, see **Outlook-specific considerations** in [openTypeExtension resource type](../resources/opentypeextension.md#outlook-specific-considerations).
 
 ## Permissions
 
-Depending on the resource you're creating the extension in and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Depending on the resource you're creating the extension in and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
@@ -198,7 +200,7 @@ and the following for the new extension:
 - The default property **extensionName** specified in the request.
 - The custom data specified in the request stored as 3 custom properties.
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -558,7 +560,7 @@ Content-type: application/json
 Here is the response from the fifth example which contains the new conversation and a thread ID. This new thread contains an automatically
 created post, which in turn contains the new extension.
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 
 To get the new extension, first [get all the posts](../api/conversationthread-list-posts.md) in this
 thread, and initially there should be only one. Then apply the post ID and the extension name `Com.Contoso.Benefits` to

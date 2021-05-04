@@ -3,7 +3,7 @@ title: "patternedRecurrence resource type"
 description: "The recurrence pattern and range."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: "governance"
 author: "harini84"
 ---
 

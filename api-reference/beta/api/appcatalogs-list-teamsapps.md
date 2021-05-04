@@ -266,19 +266,19 @@ The following example lists applications with a given ID, and expands **appDefin
 GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$filter=id eq '876df28f-2e78-423b-94a5-44181bd0e225'&$expand=appDefinitions
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-expand-appdefinitions-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-with-filter-expand-appdefinitions-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-teamsapp-expand-appdefinitions-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-teamsapp-with-filter-expand-appdefinitions-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-teamsapp-expand-appdefinitions-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/list-teamsapp-with-filter-expand-appdefinitions-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-teamsapp-expand-appdefinitions-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-teamsapp-with-filter-expand-appdefinitions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -329,14 +329,34 @@ The following example lists only those apps in the catalog that contain a bot.
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_teamsapp_with_bots"
 }-->
 
-```http
+```msgraph-interactive
 GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$expand=appDefinitions($expand=bot)&$filter=appDefinitions/any(a:a/bot ne null)
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-with-bots-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-teamsapp-with-bots-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-teamsapp-with-bots-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-teamsapp-with-bots-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 #### Response
@@ -425,6 +445,77 @@ Content-Type: application/json
                     "bot": {
                         "id": "da7d471b-de7d-4152-8556-1cdf7a564f6c"
                     }
+                }
+            ]
+        }
+    ]
+}
+```
+
+### Example 6: List the details of apps filtered by app installation scope
+
+The following example lists only those apps that can be installed in the personal scope of a user.
+
+#### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "list_teamsapp_in_personal_scope"
+}-->
+
+```msgraph-interactive
+GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$expand=appDefinitions($select=id,displayName,allowedInstallationScopes)&$filter=appDefinitions/any(a:a/allowedInstallationScopes has 'personal')
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-in-personal-scope-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-teamsapp-in-personal-scope-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-teamsapp-in-personal-scope-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-teamsapp-in-personal-scope-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+---
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "name": "list_teamsapp_in_personal_scope",
+  "@odata.type": "microsoft.graph.teamsApp",
+  "truncated": true,
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps(appDefinitions(id,displayName,allowedInstallationScopes))",
+    "value": [
+        {
+            "id": "5a542e1c-5f8c-4793-8b0c-6082464b2378",
+            "externalId": "4b3ec336-b998-4623-9e25-d4182fb82159",
+            "displayName": "Carriage",
+            "distributionMethod": "organization",
+            "appDefinitions@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('5a542e1c-5f8c-4793-8b0c-6082464b2378')/appDefinitions(id,displayName,allowedInstallationScopes)",
+            "appDefinitions": [
+                {
+                    "id": "MWE1NDJlMWMtNWY4Yy00NzkzLThiMGMtNjA4MjQ2NGIyMzc4IyMxLjAuMCMjUHVibGlzaGVk",
+                    "displayName": "Carriage",
+                    "allowedInstallationScopes": "personal"
                 }
             ]
         }

@@ -12,7 +12,7 @@ var educationSchool = new EducationSchool
 	Description = "Magnate school for the arts. Los Angeles School District"
 };
 
-await graphClient.Education.Schools["10002"]
+await graphClient.Education.Schools["{educationSchool-id}"]
 	.Request()
 	.UpdateAsync(educationSchool);
 

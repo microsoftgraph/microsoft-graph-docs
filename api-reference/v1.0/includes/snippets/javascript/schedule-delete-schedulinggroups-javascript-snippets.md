@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}')
+await client.api('/teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}')
 	.delete();
 
 ```

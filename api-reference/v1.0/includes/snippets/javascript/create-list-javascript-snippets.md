@@ -11,23 +11,23 @@ const options = {
 const client = Client.init(options);
 
 const list = {
-  displayName: "Books",
+  displayName: 'Books',
   columns: [
     {
-      name: "Author",
+      name: 'Author',
       text: { }
     },
     {
-      name: "PageCount",
+      name: 'PageCount',
       number: { }
     }
   ],
   list: {
-    template: "genericList"
+    template: 'genericList'
   }
 };
 
-let res = await client.api('/sites/{site-id}/lists')
+await client.api('/sites/{site-id}/lists')
 	.post(list);
 
 ```

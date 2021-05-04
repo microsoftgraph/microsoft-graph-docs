@@ -1,7 +1,7 @@
 ---
 title: "Create onlineMeeting"
 description: "Create an online meeting on behalf of a user specified in the request body."
-author: "ananmishr"
+author: "jsandoval-msft"
 localization_priority: Priority
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -15,7 +15,8 @@ Namespace: microsoft.graph
 
 Create an online meeting on behalf of a user by using the object ID (OID) in the user token (delegated permission) or request path (application permission).
 
-> **Note**: The meeting does not show up on the user's calendar.
+> [!TIP]
+> The meeting does not show up on the user's calendar.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -24,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 | :------------------------------------- | :---------------------------------------------------- |
 | Delegated (work or school account)     | OnlineMeetings.ReadWrite                              |
 | Delegated (personal Microsoft account) | Not supported.                                        |
-| Application                            | OnlineMeetings.Read.All, OnlineMeetings.ReadWrite.All* |
+| Application                            | OnlineMeetings.ReadWrite.All*                         |
 
 > [!IMPORTANT]
 > \* Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user, authorizing the app configured in the policy to create an online meeting on behalf of that user (user ID specified in the request path).
@@ -43,7 +44,8 @@ Request when using an application token:
 POST /users/{userId}/onlineMeetings
 ```
 
-> **Note:** `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). See more details in [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
+> [!NOTE]
+> `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). See more details in [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
 
 ## Request headers
 
@@ -131,7 +133,7 @@ Content-Type: application/json
   "creationDateTime": "2019-07-11T02:17:17.6491364Z",
   "startDateTime": "2019-07-11T02:17:17.6491364Z",
   "endDateTime": "2019-07-11T02:47:17.651138Z",
-  "id": "550fae72-d251-43ec-868c-373732c2704f_19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
+  "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy",
   "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22550fae72-d251-43ec-868c-373732c2704f%22%7d",
   "participants": {
     "organizer": {
@@ -207,7 +209,7 @@ Content-Type: application/json
   "creationDateTime": "2019-07-11T02:17:17.6491364Z",
   "startDateTime": "2019-07-11T02:17:17.6491364Z",
   "endDateTime": "2019-07-11T02:47:17.651138Z",
-  "id": "550fae72-d251-43ec-868c-373732c2704f_19%3A3b52398f3c524556894b776357c1dd79%40thread.skype",
+  "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy",
   "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22550fae72-d251-43ec-868c-373732c2704f%22%7d",
   "participants": {
     "organizer": {
@@ -223,6 +225,102 @@ Content-Type: application/json
     }
   },
   "subject": "User meeting in Microsoft Teams channel."
+}
+```
+
+### Example 3: Create a live event with a user token
+
+> [!IMPORTANT]
+> Creating live events with the **broadcastSettings** property has some limitations. For details, see [broadcastMeetingSettings](../resources/broadcastmeetingsettings.md).
+
+#### Request
+
+```http
+POST https://graph.microsoft.com/beta/me/onlineMeetings
+Content-Type: application/json
+
+{
+  "subject":"User Token Live Event",
+  "startDateTime":"2020-12-02T14:30:34.2444915+00:00",
+  "endDateTime":"2020-12-02T15:00:34.2464912+00:00",
+  "isBroadcast": true,
+  "broadcastSettings": {
+    "allowedAudience": "everyone",
+    "isRecordingEnabled": true,
+    "isAttendeeReportEnabled": true
+  }
+}
+```
+
+#### Response
+
+> **Note:** The response object shown here has been shortened for readability. All the properties will be returned from an actual call.
+
+```json
+{
+  "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2",
+  "creationDateTime": "2020-12-02T14:30:34.2444915Z",
+  "startDateTime": "2020-09-29T22:35:31.389759Z",
+  "endDateTime": "2020-12-02T15:00:34.2464912Z",
+  "joinWebUrl": "(redacted)",
+  "subject": "User Token Live Event",
+  "autoAdmittedUsers": "EveryoneInCompany",
+  "isEntryExitAnnounced": true,
+  "allowedPresenters": "organization",
+  "videoTeleconferenceId": "(redacted)",
+  "participants": {
+    "organizer": {
+      "upn": "(redacted)",
+      "role": "producer",
+      "identity": {
+        "user": {
+          "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+          "displayName": null,
+          "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+          "identityProvider": "AAD"
+        }
+      }
+    },
+    "attendees": [
+      {
+        "upn": "(redacted)",
+        "role": "producer",
+        "identity": {
+          "user": {
+            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+            "displayName": null,
+            "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+            "identityProvider": "AAD"
+          }
+        }
+      }
+    ],
+    "producers": [
+      {
+        "upn": "(redacted)",
+        "role": "producer",
+        "identity": {
+          "user": {
+            "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622",
+            "displayName": null,
+            "tenantId": "909c6581-5130-43e9-88f3-fcb3582cde38",
+            "identityProvider": "AAD"
+          }
+        }
+      }
+    ],
+    "contributors": []
+  },
+  "lobbyBypassSettings": {
+    "scope": "organization",
+    "isDialInBypassEnabled": false
+  },
+  "isBroadcast": true,
+  "broadcastSettings": {
+    "allowedAudience": "organization",
+    "isRecordingEnabled": true,
+    "isAttendeeReportEnabled": true
+  }
 }
 ```
 

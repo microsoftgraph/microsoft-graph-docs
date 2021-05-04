@@ -3,7 +3,7 @@ title: "printJob: abort"
 description: Abort a print job.
 author: nilakhan
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
 ---
 
@@ -15,16 +15,18 @@ Namespace: microsoft.graph
 
 Abort a print job. Only applications using application permissions can abort a print job.
 
+Aborting a print job will only succeed if there is a [printTask](../resources/printTask.md) in a `processing` state on the associated print job, started by a trigger that the requesting app created. For details about how to register a task trigger, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-In addition to the following permissions, the app's tenant must have an active Universal Print subscription and have a permission that grants [Get printer](printer-get.md) access.
+In addition to the following permissions, the app's tenant must have an active Universal Print subscription and have either the Printer.Read.All or Printer.ReadWrite.All application permission.
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
 |Delegated (work or school account)| Not Supported |
 |Delegated (personal Microsoft account)|Not Supported.|
-|Application| PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All |
+|Application| PrintJob.ReadWriteBasic.All, PrintJob.ReadWrite.All, PrintJob.Manage.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

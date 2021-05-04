@@ -14,7 +14,7 @@ const forceDelete = {
   disableUserAccounts: true
 };
 
-let res = await client.api('/domains/contoso.com/forceDelete')
+await client.api('/domains/contoso.com/forceDelete')
 	.version('beta')
 	.post(forceDelete);
 

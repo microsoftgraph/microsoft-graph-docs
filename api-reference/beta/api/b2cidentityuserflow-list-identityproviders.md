@@ -4,7 +4,7 @@ description: "List all identityProviders in a b2cIdentityUserFlow."
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 ---
 
 # List all identityProviders in a b2cIdentityUserFlow
@@ -35,7 +35,7 @@ The work or school account needs to belong to one of the following roles:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /b2cUserFlows/{id}/identityProviders
+GET /identity/b2cUserFlows/{id}/identityProviders
 ```
 
 ## Request headers

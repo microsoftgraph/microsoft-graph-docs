@@ -19,7 +19,7 @@ const workbookChartAxis = {
   }
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis')
+await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueaxis')
 	.version('beta')
 	.update(workbookChartAxis);
 

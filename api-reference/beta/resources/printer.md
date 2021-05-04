@@ -3,7 +3,7 @@ title: printer resource type
 description: Represents a physical printer device that has been registered with the Universal Print service. Printer resources can be used to manage print jobs, printer settings, printer metadata and registration status.
 author: braedenp-msft
 localization_priority: Normal
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: resourcePageType
 ---
 
@@ -14,6 +14,9 @@ Namespace: microsoft.graph
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Represents a printer device that has been registered with the Universal Print service. Printer resources can be used to manage print jobs, printer settings, printer metadata and registration status.
+
+This resource supports:
+* [Subscribing to change notifications](/graph/universal-print-webhook-notifications).
 
 ## Methods
 
@@ -34,7 +37,7 @@ Represents a printer device that has been registered with the Universal Print se
 ## Properties
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|id|String|The document's identifier. Read-only.|
+|id|String|The printer's identifier. Read-only.|
 |displayName|String|The name of the printer.|
 |manufacturer|String|The manufacturer reported by the printer.|
 |model|String|The model name reported by the printer.|
@@ -45,7 +48,8 @@ Represents a printer device that has been registered with the Universal Print se
 |isAcceptingJobs|Boolean|Whether the printer is currently accepting new print jobs.|
 |location|[printerLocation](printerlocation.md)|The physical and/or organizational location of the printer.|
 |defaults|[printerDefaults](printerdefaults.md)|The printer's default print settings.|
-|capabilities|[printerCapabilities](printercapabilities.md)|The capabilities of the printer associated with this printer share.|
+|capabilities|[printerCapabilities](printercapabilities.md)|The capabilities of the printer.|
+|lastSeenDateTime|DateTimeOffset|The most recent dateTimeOffset when a printer interacted with Universal Print. Read-only.|
 
 ## Relationships
 | Relationship | Type        | Description |
@@ -82,7 +86,8 @@ The following is a JSON representation of the resource.
   "location": {"@odata.type": "microsoft.graph.printerLocation"},
   "status": {"@odata.type": "microsoft.graph.printerStatus"},
   "defaults": {"@odata.type": "microsoft.graph.printerDefaults"},
-  "capabilities": {"@odata.type": "microsoft.graph.printerCapabilities"}
+  "capabilities": {"@odata.type": "microsoft.graph.printerCapabilities"},
+  "lastSeenDateTime": "String (timestamp)"
 }
 ```
 

@@ -114,7 +114,7 @@ These examples will cover a workflow of an incoming call notification and how th
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request", 
-  "name": "call-redirect"
+  "name": "call-redirect-1"
 } -->
 ``` http
 POST https://graph.microsoft.com/v1.0/communications/calls/491f0b00-ffff-4bc9-a43e-b226498ec22a/redirect
@@ -146,11 +146,11 @@ Content-Type: application/json
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/call-redirect-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/call-redirect-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/call-redirect-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/call-redirect-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -168,7 +168,7 @@ HTTP/1.1 202 Accepted
 
 <!-- {
   "blockType": "example", 
-  "name": "call-redirect"
+  "name": "call-redirect-2"
 } -->
 ``` http
 POST https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039
@@ -389,6 +389,180 @@ Content-Type: application/json
         ],
         "myParticipantId": "f540f1b6-994b-4866-be95-8aad34c4f4dc",
         "id": "481f0b00-ffff-4ca1-8c67-a5f1e31e8e82"
+      }
+    }
+  ]
+}
+```
+
+### Example 3: Forward a call to a PSTN number
+
+This call requires an application instance with a PSTN number assigned. For details, see [Assign a phone number to your bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
+
+#### Notification - incoming
+<!-- {
+  "blockType": "example", 
+  "@odata.type": "microsoft.graph.commsNotifications"
+}-->
+``` json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "created",
+      "resourceUrl": "/communications/calls/491f0b00-ffff-4bc9-a43e-b226498ec22a",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "incoming",
+        "direction": "incoming",
+        "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039",
+        "source": {
+          "@odata.type": "#microsoft.graph.participantInfo",
+          "identity": {
+            "@odata.type": "#microsoft.graph.identitySet",
+            "user": {
+              "@odata.type": "#microsoft.graph.identity",
+              "id": "8d1e6ab6-26c5-4e22-a1bc-06ea7343958e",
+              "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f"
+            }
+          },
+          "region": "amer",
+        },
+        "targets": [
+          {
+            "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+            "identity": {
+              "@odata.type": "#microsoft.graph.identitySet",
+              "applicationInstance": {
+                "@odata.type": "#microsoft.graph.identity",
+                "displayName": "PstnAppInstance",
+                "id": "7629bdce-046c-4903-86b4-a8f718277e1a",
+                "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f"
+              }
+            },
+            "endpointType": "default",
+            "id": "c339cede-4bd6-4f20-ab9f-3a13e65f6d00",
+            "region": "amer",
+            "languageId": null
+          }
+        ],
+        "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f",
+        "myParticipantId": "c339cede-4bd6-4f20-ab9f-3a13e65f6d00",
+        "id": "491f0b00-ffff-4bc9-a43e-b226498ec22a"
+      }
+    }
+  ]
+}
+```
+
+#### Request
+
+<!-- {
+  "blockType": "request", 
+  "name": "call-redirect"
+} -->
+``` http
+POST https://graph.microsoft.com/v1.0/communications/calls/491f0b00-ffff-4bc9-a43e-b226498ec22a/redirect
+Content-Type: application/json
+
+{
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "phone": {
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "+12345678901"
+        }
+      }
+    }
+  ],
+  "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039"
+}
+```
+#### Response
+
+<!-- {
+  "blockType": "response", 
+  "@odata.type": "microsoft.graph.None"
+} -->
+```http
+HTTP/1.1 202 Accepted
+```
+#### Notification - terminated
+
+<!-- {
+  "blockType": "example", 
+  "name": "call-redirect"
+} -->
+``` http
+POST https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039
+Content-Type: application/json
+```
+
+<!-- {
+  "blockType": "example", 
+  "@odata.type": "microsoft.graph.commsNotifications"
+} -->
+``` json
+{
+  "@odata.type": "#microsoft.graph.commsNotifications",
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.commsNotification",
+      "changeType": "deleted",
+      "resourceUrl": "/communications/calls/491f0b00-ffff-4bc9-a43e-b226498ec22a",
+      "resourceData": {
+        "@odata.type": "#microsoft.graph.call",
+        "state": "terminated",
+        "direction": "incoming",
+        "callbackUri": "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039",
+        "source": {
+          "@odata.type": "#microsoft.graph.participantInfo",
+          "identity": {
+            "@odata.type": "#microsoft.graph.identitySet",
+            "user": {
+              "@odata.type": "#microsoft.graph.identity",
+              "id": "8d1e6ab6-26c5-4e22-a1bc-06ea7343958e",
+              "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f"
+            }
+          },
+          "region": "amer",
+        },
+        "targets": [
+          {
+            "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+            "identity": {
+              "@odata.type": "#microsoft.graph.identitySet",
+              "applicationInstance": {
+                "@odata.type": "#microsoft.graph.identity",
+                "displayName": "PstnAppInstance",
+                "id": "7629bdce-046c-4903-86b4-a8f718277e1a",
+                "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f"
+              }
+            },
+            "endpointType": "default",
+            "id": "c339cede-4bd6-4f20-ab9f-3a13e65f6d00",
+            "region": "amer",
+            "languageId": null
+          }
+        ],
+        "answeredBy": {
+          "@odata.type": "#microsoft.graph.participantInfo",
+          "identity": {
+            "@odata.type": "#microsoft.graph.identitySet",
+            "encrypted": {
+              "@odata.type": "#microsoft.graph.identity",
+              "id": "1xt4uextl99sdzwdxuvdxrvgrv8gehcq7jdgf9yhzeto"
+            }
+          },
+          "endpointType": "default"
+        },
+        "tenantId": "632899f8-2ea1-4604-8413-27bd2892079f",
+        "myParticipantId": "c339cede-4bd6-4f20-ab9f-3a13e65f6d00",
+        "id": "491f0b00-ffff-4bc9-a43e-b226498ec22a"
       }
     }
   ]

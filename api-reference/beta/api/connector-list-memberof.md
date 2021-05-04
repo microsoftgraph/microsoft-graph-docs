@@ -3,7 +3,7 @@ title: "List memberOf"
 description: "Retrieve the connectorgroup the connector is a member of."
 localization_priority: Normal
 author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
@@ -75,7 +75,7 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationPro
 
 
 ##### Response
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -112,3 +112,4 @@ Content-length: 164
   "suppressions": []
 }
 -->
+

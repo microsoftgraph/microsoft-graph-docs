@@ -19,7 +19,7 @@ In Microsoft Teams, team owners can turn on moderation for a channel to control 
 - Use a channel for discussions in a class team where only the teacher can start new discussions.
 - Use a channel for livesite issues where new posts can be started by connectors.
 
-By default, moderation is `OFF`, which means that the usual channel settings apply to team owners and team members, with additional control to allow only team members or everyone including guests to start a new channel post. Setting channel moderation to `ON` allows only moderators to start new posts, with additonal control for team members.
+By default, moderation is `OFF`, which means that the usual channel settings apply to team owners and team members, with additional control to allow only team members or everyone including guests to start a new channel post. Setting channel moderation to `ON` allows only moderators to start new posts, with additional control for team members.
 
 To support channel moderation settings via Microsoft Graph APIs:
 
@@ -50,3 +50,7 @@ The following is a JSON representation of the resource.
   "allowNewMessageFromConnectors": "Boolean"
 }
 ```
+
+## See also
+
+- To modify moderation settings of a channel, see example 2 in [Update channel](../api/channel-patch.md).

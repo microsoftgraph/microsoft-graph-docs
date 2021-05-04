@@ -16,7 +16,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-08-01T00:00:00",
       "WorkloadArea": "People and workplace intelligence ",
-      "SubArea": " Profile"
+      "SubArea": "Profile"
     },
     {
       "ChangeList": [
@@ -42,7 +42,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-07-01T00:00:00",
       "WorkloadArea": "People and workplace intelligence ",
-      "SubArea": " Insights"
+      "SubArea": "Insights"
     },
     {
       "ChangeList": [
@@ -68,7 +68,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-07-01T00:00:00",
       "WorkloadArea": "People and workplace intelligence ",
-      "SubArea": " Profile"
+      "SubArea": "Profile"
     },
     {
       "ChangeList": [
@@ -86,7 +86,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2019-12-01T00:00:00",
       "WorkloadArea": "People and workplace intelligence ",
-      "SubArea": " Insights"
+      "SubArea": "Insights"
     },
     {
       "ChangeList": [
@@ -156,7 +156,7 @@
       "Version": "beta",
       "CreatedDateTime": "2018-05-01T00:00:00",
       "WorkloadArea": "People and workplace intelligence ",
-      "SubArea": " Insights"
+      "SubArea": "Insights"
     },
     {
       "ChangeList": [
@@ -214,7 +214,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2017-08-01T00:00:00",
       "WorkloadArea": "People and workplace intelligence ",
-      "SubArea": " People"
+      "SubArea": "People"
     },
     {
       "ChangeList": [
@@ -256,7 +256,7 @@
       "Version": "beta",
       "CreatedDateTime": "2017-05-01T00:00:00",
       "WorkloadArea": "People and workplace intelligence ",
-      "SubArea": " Insights"
+      "SubArea": "Insights"
     },
     {
       "ChangeList": [
@@ -274,7 +274,7 @@
       "Version": "beta",
       "CreatedDateTime": "2016-08-01T00:00:00",
       "WorkloadArea": "People and workplace intelligence ",
-      "SubArea": " People"
+      "SubArea": "People"
     },
     {
       "ChangeList": [
@@ -300,7 +300,7 @@
       "Version": "beta",
       "CreatedDateTime": "2016-03-01T00:00:00",
       "WorkloadArea": "People and workplace intelligence ",
-      "SubArea": " People"
+      "SubArea": "People"
     }
   ]
 }

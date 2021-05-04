@@ -23,7 +23,7 @@ Open extensions are supported by the following resources in the corresponding ve
 
 |Resource |Version |
 |:---------------|:-------|
-| [Administrative unit](/graph/api/resources/administrativeunit?view=graph-rest-beta)  | Preview only |
+| [Administrative unit](/graph/api/resources/administrativeunit?view=graph-rest-beta)  | GA |
 | [Calendar event](event.md) | GA |
 | Group [calendar event](event.md) | GA |
 | Group conversation thread [post](post.md) | GA |
@@ -33,8 +33,8 @@ Open extensions are supported by the following resources in the corresponding ve
 | [organization](organization.md) | GA |
 | [Personal contact](contact.md) | GA |
 | [user](user.md) | GA |
-| [Task](todotask.md)  | GA ||
-| [Task list](todotasklist.md)  | GA ||
+| [Task](todotask.md)  | GA |
+| [Task list](todotasklist.md)  | GA |
 
 ## Outlook-specific considerations
 

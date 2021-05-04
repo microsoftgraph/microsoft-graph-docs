@@ -30,7 +30,7 @@ var attachment = new ItemAttachment
 	}
 };
 
-await graphClient.Me.Messages["AAMkpsDRVK"].Attachments
+await graphClient.Me.Messages["{message-id}"].Attachments
 	.Request()
 	.AddAsync(attachment);
 

@@ -3,7 +3,7 @@ title: "verifiedCustomDomainCertificatesMetadata resource type"
 description: "Represents the custom cerificate metadata for an on-premises application published via Application Proxy."
 localization_priority: Normal
 author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "resourcePageType"
 ---
 
@@ -19,8 +19,8 @@ Represents the custom domain certificate metadata for the [onPremisesPublishing]
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|expiryDate|DateTimeOffset| The expiry date of the custom domain certificate. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. |
-|issueDate|DateTimeOffset| The issue date of the custom domain. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. |
+|expiryDate|DateTimeOffset| The expiry date of the custom domain certificate. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
+|issueDate|DateTimeOffset| The issue date of the custom domain. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 |issuerName|String| The issuer name of the custom domain certificate. |
 |subjectName|String| The subject name of the custom domain certificate. |
 |thumbprint|String| The thumbprint associated with the custom domain certificate. |

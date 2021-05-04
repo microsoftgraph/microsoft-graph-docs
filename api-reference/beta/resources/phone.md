@@ -3,8 +3,8 @@ title: "phone resource type"
 description: "Represents a phone number."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: "davidmu1"
+ms.prod: "directory-management"
+author: "Jumaodhiss"
 ---
 
 # phone resource type

@@ -42,7 +42,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.workbookOperation",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

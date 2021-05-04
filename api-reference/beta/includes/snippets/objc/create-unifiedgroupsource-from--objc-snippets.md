@@ -7,12 +7,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationProvider:authenticationProvider];
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
-NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/compliance/ediscovery/cases/{ediscoveryCaseId}/custodians/{custodianId}/unifiedGroupSources"]]];
+NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/compliance/ediscovery/cases/{caseId}/custodians/{custodianId}/unifiedGroupSources"]]];
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphUnifiedGroupSource *unifiedGroupSource = [[MSGraphUnifiedGroupSource alloc] init];
-[unifiedGroupSource setIncludedSources: [MSGraphSourceType mailbox]];
+MSGraphEdiscoveryUnifiedGroupSource *unifiedGroupSource = [[MSGraphEdiscoveryUnifiedGroupSource alloc] init];
+[unifiedGroupSource setIncludedSources: [MSGraphEdiscoverySourceType mailbox]];
 
 NSError *error;
 NSData *unifiedGroupSourceData = [unifiedGroupSource getSerializedDataWithError:&error];

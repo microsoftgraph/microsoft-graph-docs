@@ -61,25 +61,25 @@ The following is an example of a GET request.
 <!-- {
   "blockType": "request",
   "sampleKeys": ["45b7d2e7-b882-4a80-ba97-10b7a63b8fa4"],
-  "name": "get_group"
+  "name": "get_group_1"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/groups/45b7d2e7-b882-4a80-ba97-10b7a63b8fa4
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-group-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-group-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-group-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-group-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-group-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-group-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-group-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-group-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -93,7 +93,7 @@ The following is an example of the response. It includes only the default proper
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.group",
-  "name": "get_group"
+  "name": "get_group_1"
 } -->
 ```http
 HTTP/1.1 200 OK
@@ -194,7 +194,47 @@ Content-type: application/json
     "unseenCount": 0
 }
 ```
+### Example 3: Read a specific dynamic group
 
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "ignored",
+  "sampleKeys": ["1cdf9c18-a7dc-46b1-b47f-094d5656376d"],
+  "name": "get_dynamic_group"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/groups/1cdf9c18-a7dc-46b1-b47f-094d5656376d?$select=id,membershipRule,membershipRuleProcessingState,membershipRuleProcessingStatus
+```
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#groups(id,membershipRule,membershipRuleProcessingState,membershipRuleProcessingStatus)/$entity",
+  "id": "1cdf9c18-a7dc-46b1-b47f-094d5656376d",
+  "membershipRule": "accountEnabled eq true",
+  "membershipRuleProcessingState": "On",
+  "membershipRuleProcessingStatus": {
+    "status" : "NotStarted",
+    "lastMembershipUpdated"  : null,
+    "errorMessage" : null
+  }
+}
+```
 
 ## See also
 

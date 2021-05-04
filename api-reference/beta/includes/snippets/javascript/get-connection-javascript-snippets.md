@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/connections/contosohr')
+let externalConnection = await client.api('/connections/contosohr')
 	.version('beta')
 	.get();
 

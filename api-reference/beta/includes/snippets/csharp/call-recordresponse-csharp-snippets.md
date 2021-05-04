@@ -37,7 +37,7 @@ var stopTones = new List<String>()
 	"*"
 };
 
-await graphClient.Communications.Calls["{id}"]
+await graphClient.Communications.Calls["{call-id}"]
 	.RecordResponse(prompts,bargeInAllowed,initialSilenceTimeoutInSeconds,maxSilenceTimeoutInSeconds,maxRecordDurationInSeconds,playBeep,null,stopTones,clientContext)
 	.Request()
 	.PostAsync();

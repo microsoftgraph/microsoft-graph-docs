@@ -17,7 +17,7 @@ Create a new [chat](../resources/chat.md) object.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|Chat.Create, Chat.ReadWrite|
 |Delegated (personal Microsoft account) | Not supported. |
@@ -46,8 +46,8 @@ The following table lists the properties that are required to create a chat obje
 
 |Property|Type|Description|
 |:---|:---|:---|
-|topic|(Optional) String|The title of the chat. The chat title can be provided only if the chat is of 'group' type.|
-|chatType|[chatType](../resources/chat.md#chattype-values)| Specifies the type of chat. Possible values are:`group` and `oneOnOne`. |
+|topic|(Optional) String|The title of the chat. The chat title can be provided only if the chat is of `group` type.|
+|chatType|[chatType](../resources/chat.md#chattype-values)| Specifies the type of chat. Possible values are: `group` and `oneOnOne`. |
 |members|[conversationMember](../resources/conversationmember.md) collection|List of conversation members that should be added. Every single user, including the user initiating the create request, who will participate in the chat must be specified in this list.|
 
 ## Response
@@ -59,6 +59,8 @@ If successful, this method returns a 201 Created response code and the newly cre
 ### Example 1: Create a one-on-one chat
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_chat_oneOnOne"
@@ -84,6 +86,24 @@ Content-Type: application/json
   ]
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-chat-oneonone-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-chat-oneonone-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-chat-oneonone-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-chat-oneonone-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ---
 
 #### Response
@@ -111,6 +131,8 @@ Content-Type: application/json
 ### Example 2: Create a group chat
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "create_chat_group"
@@ -142,6 +164,24 @@ Content-Type: application/json
   ]
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-chat-group-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-chat-group-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-chat-group-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-chat-group-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ---
 
 #### Response

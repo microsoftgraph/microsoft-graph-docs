@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var itemPatent = await graphClient.Me.Profile.Patents["{id}"]
+var itemPatent = await graphClient.Me.Profile.Patents["{itemPatent-id}"]
 	.Request()
 	.GetAsync();
 

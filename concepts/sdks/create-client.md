@@ -43,28 +43,33 @@ const authProvider = new MSALAuthenticationProvider(userAgentApplication, graphS
 # [Java](#tab/Java)
 
 ```java
-ClientCredentialProvider authProvider = new ClientCredentialProvider(CLIENT_ID, SCOPES, CLIENT_SECRET, TENANT_GUID, NationalCloud.Global);
+final ClientSecretCredential clientSecretCredential = new ClientSecretCredentialBuilder()
+        .clientId(CLIENT_ID)
+        .clientSecret(CLIENT_SECRET)
+        .tenantId(TENANT_GUID)
+        .build();
 
-IGraphServiceClient graphClient = GraphServiceClient
+final TokenCredentialAuthProvider tokenCredAuthProvider = new TokenCredentialAuthProvider(SCOPES, clientSecretCredential);
+
+final GraphServiceClient graphClient = GraphServiceClient
 				.builder()
-				.authenticationProvider(authProvider)
+				.authenticationProvider(tokenCredAuthProvider)
 				.buildClient();
 ```
 
 # [Android](#tab/Android)
 
 ```java
-PublicClientApplication publicClientApplication = new PublicClientApplication(getApplicationContext(), "INSERT-CLIENT-APP-ID");
+final InteractiveBrowserCredential interactiveBrowserCredential = new InteractiveBrowserCredentialBuilder()
+                .clientId(CLIENT_ID)
+                .redirectUrl("http://localhost:8765")
+                .build();
 
-MSALAuthenticationProvider msalAuthenticationProvider = new MSALAuthenticationProvider(
-    getActivity(),
-    getApplication(),
-    publicClientApplication,
-    scopes);
+final TokenCredentialAuthProvider tokenCredAuthProvider = new TokenCredentialAuthProvider(SCOPES, interactiveBrowserCredential);
 
-IGraphServiceClient graphClient = GraphServiceClient
+GraphServiceClient graphClient = GraphServiceClient
 				.builder()
-				.authenticationProvider(authProvider)
+				.authenticationProvider(tokenCredAuthProvider)
 				.buildClient();
 ```
 

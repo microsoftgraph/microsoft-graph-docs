@@ -3,7 +3,7 @@ title: "List userCredentialUsageDetails"
 description: "Get a list of userCredentialUsageDetails objects for a given tenant."
 localization_priority: Normal
 author: "besiler"
-ms.prod: "reports"
+ms.prod: "identity-and-access-reports"
 doc_type: "apiPageType"
 ---
 

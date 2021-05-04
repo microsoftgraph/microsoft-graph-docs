@@ -10,7 +10,7 @@ var team = new Team
 {
 	DisplayName = "My Class Team",
 	Description = "My Class Team’s Description",
-	Channels = (ITeamChannelsCollectionPage)new List<Channel>()
+	Channels = new TeamChannelsCollectionPage()
 	{
 		new Channel
 		{
@@ -31,7 +31,7 @@ var team = new Team
 		AllowCreateUpdateRemoveTabs = false,
 		AllowCreateUpdateRemoveConnectors = false
 	},
-	InstalledApps = (ITeamInstalledAppsCollectionPage)new List<TeamsAppInstallation>()
+	InstalledApps = new TeamInstalledAppsCollectionPage()
 	{
 		new TeamsAppInstallation
 		{

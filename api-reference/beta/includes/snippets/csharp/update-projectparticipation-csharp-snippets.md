@@ -16,7 +16,7 @@ var projectParticipation = new ProjectParticipation
 	}
 };
 
-await graphClient.Me.Profile.Projects["{id}"]
+await graphClient.Me.Profile.Projects["{projectParticipation-id}"]
 	.Request()
 	.UpdateAsync(projectParticipation);
 

@@ -19,7 +19,7 @@ var orgContact = new OrgContact
 	}
 };
 
-await graphClient.Contacts["{id}"]
+await graphClient.Contacts["{orgContact-id}"]
 	.Request()
 	.UpdateAsync(orgContact);
 

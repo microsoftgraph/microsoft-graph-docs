@@ -1,9 +1,9 @@
 ---
-title: "kerberosSignOnSettings resource type"
+title: "onPremisesPublishingSingleSignOn resource type"
 description: "Represents the single-sign on settings for an on-premises application published via Application Proxy."
 localization_priority: Normal
 author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "resourcePageType"
 ---
 
@@ -24,7 +24,7 @@ If you are configuring password-based single-sign this must be set using [create
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |kerberosSignOnSettings| [kerberosSignOnSettings](kerberossignonsettings.md)| The Kerberos Constrained Delegation settings for applications that use Integrated Window Authentication. |
-|singleSignOnMode|String| The preferred single-sign on mode for the application. Possible values are: `none`, `onPremisesKerberos`, `headerBased`.|
+|singleSignOnMode|singleSignOnMode| The preferred single-sign on mode for the application. Possible values are: `none`, `onPremisesKerberos`, `aadHeaderBased`,`pingHeaderBased`. |
 
 ## JSON representation
 

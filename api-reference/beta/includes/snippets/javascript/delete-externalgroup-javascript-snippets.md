@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/external/connections/contosohr/groups/31bea3d537902000')
+await client.api('/external/connections/contosohr/groups/31bea3d537902000')
 	.version('beta')
 	.delete();
 

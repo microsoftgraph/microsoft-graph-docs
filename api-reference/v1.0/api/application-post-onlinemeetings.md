@@ -1,7 +1,7 @@
 ---
 title: "Create onlineMeeting"
 description: "Create an online meeting on behalf of a user specified in the request body."
-author: "ananmishr"
+author: "jsandoval-msft"
 localization_priority: Priority
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -13,7 +13,8 @@ Namespace: microsoft.graph
 
 Create an online meeting on behalf of a user by using the object ID (OID) in the user token.
 
-> **Note**: The meeting does not show up on the user's calendar.
+> [!NOTE]
+> The meeting does not show up on the user's calendar.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -22,13 +23,27 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | OnlineMeetings.ReadWrite                    |
 | Delegated (personal Microsoft account) | Not Supported                               |
-| Application                            | Not Supported                |
+| Application                            | OnlineMeetings.ReadWrite.All*               |
+
+> [!IMPORTANT]
+> \* Administrators must create an [application access policy](/graph/cloud-communication-online-meeting-application-access-policy) and grant it to a user, authorizing the app configured in the policy to create an online meeting on behalf of that user (user ID specified in the request path).
 
 ## HTTP request
+
+Request when using a delegated token:
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /me/onlineMeetings
 ```
+
+Request when using an application token:
+<!-- { "blockType": "ignored" } -->
+```http
+POST /users/{userId}/onlineMeetings
+```
+
+> [!NOTE]
+> `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). See more details in [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
 
 ## Request headers
 | Name          | Description               |
@@ -86,7 +101,8 @@ Content-Type: application/json
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability. 
+
+> **Note:** The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
@@ -115,7 +131,7 @@ Content-Type: application/json
   "creationDateTime": "2019-07-11T02:17:17.6491364Z",
   "startDateTime": "2019-07-11T02:17:17.6491364Z",
   "endDateTime": "2019-07-11T02:47:17.651138Z",
-  "id": "550fae72-d251-43ec-868c-373732c2704f_19:meeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz@thread.skype",
+  "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy",
   "joinWebUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2IzYzczNTItYmY3OC00MDlmLWJjMzUtYmFiMjNlOTY4MGEz%40thread.skype/0?context=%7b%22Tid%22%3a%2272f988bf-86f1-41af-91ab-2d7cd011db47%22%2c%22Oid%22%3a%22550fae72-d251-43ec-868c-373732c2704f%22%7d",
   "participants": {
     "organizer": {
@@ -131,7 +147,8 @@ Content-Type: application/json
   "subject": "User Token Meeting"
 }
 ```
->**Note:** If 'Accept-Language: ja' is specified to indicate Japanese, for example, the response will include the following.
+> [!NOTE]
+> If 'Accept-Language: ja' is specified to indicate Japanese, for example, the response will include the following.
 
 ```json
     "joinInformation": {

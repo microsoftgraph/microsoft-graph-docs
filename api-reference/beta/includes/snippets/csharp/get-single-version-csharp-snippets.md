@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var driveItemVersion = await graphClient.Me.Drive.Items["{item-id}"].Versions["{version-id}"]
+var driveItemVersion = await graphClient.Me.Drive.Items["{driveItem-id}"].Versions["{driveItemVersion-id}"]
 	.Request()
 	.GetAsync();
 

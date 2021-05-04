@@ -1,7 +1,7 @@
 ---
 title: "Get shared or delegated Outlook calendar and its events"
 description: "In Outlook, a calendar owner can share a calendar with other users and let them view or modify events in that calendar; the calendar can be a custom calendar or the primary calendar. The owner can also grant a delegate to act on their behalf, to receive or respond to meeting requests, or create or change items in the primary calendar of the email account."
-author: "angelgolfer-ms"
+author: "juforan"
 localization_priority: Priority
 ms.prod: "outlook"
 ---

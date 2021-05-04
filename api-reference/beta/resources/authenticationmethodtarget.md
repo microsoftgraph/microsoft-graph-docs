@@ -3,7 +3,7 @@ title: "authenticationMethodTarget resource type"
 description: "A collection of users or groups enabled to use an authentication method as part of an authentication method policy."
 author: "mmcla"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 

@@ -44,7 +44,6 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.externalGroup",
-  "baseType": "",
   "openType": false
 }
 -->

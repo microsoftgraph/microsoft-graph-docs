@@ -3,7 +3,7 @@ title: "certificateBasedAuthConfiguration resource type"
 description: "Represents a collection of certificate authorities."
 localization_priority: Normal
 author: "adimitui"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -55,7 +55,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.certificateBasedAuthConfiguration",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

@@ -1,7 +1,7 @@
 ---
 title: "List childFolders"
 description: "Get the folder collection under the specified folder. You can use the `.../me/MailFolders` shortcut to get the top-level "
-author: "svpsiva"
+author: "abheek-das"
 localization_priority: Normal
 ms.prod: "outlook"
 doc_type: apiPageType
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/childFolders
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -181,7 +181,7 @@ GET https://graph.microsoft.com/beta/me/mailFolders/searchfolders/childFolders
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

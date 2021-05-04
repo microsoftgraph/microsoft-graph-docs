@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var namedLocation = await graphClient.Identity.ConditionalAccess.NamedLocations["0854951d-5fc0-4eb1-b392-9b2c9d7949c2"]
+var namedLocation = await graphClient.Identity.ConditionalAccess.NamedLocations["{namedLocation-id}"]
 	.Request()
 	.GetAsync();
 

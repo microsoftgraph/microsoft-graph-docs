@@ -11,7 +11,7 @@ var directoryObject = new DirectoryObject
 	Id = "{id}"
 };
 
-await graphClient.Applications["{id}"].Owners.References
+await graphClient.Applications["{application-id}"].Owners.References
 	.Request()
 	.AddAsync(directoryObject);
 

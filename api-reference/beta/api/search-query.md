@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Mail.Read, Mail.ReadWrite, Calendars.Read, Calendars.ReadWrite, Files.Read.All, Files.ReadWrite.All, Sites.Read.All, Sites.ReadWrite.All, ExternalItem.Read.All |
+| Delegated (work or school account)     | Mail.Read, Calendars.Read, Files.Read.All, Sites.Read.All, ExternalItem.Read.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | Not supported. |
 
@@ -47,10 +47,11 @@ In the request body, provide a JSON object with the following parameters.
 | Parameter    | Type        | Description |
 |:-------------|:------------|:------------|
 |requests|[searchRequest](../resources/searchrequest.md) collection|A collection of one or more search requests each formatted in a JSON blob. Each JSON blob contains the types of resources expected in the response, the underlying sources, paging parameters, requested fields, and actual search query. <br> Be aware of [known limitations](../resources/search-api-overview.md#known-limitations) on searching specific combinations of entity types, and sorting or aggregating search results. |
+|queryAlterationOptions|[searchAlterationOptions](../resources/searchalterationoptions.md)|Query alteration options formatted in a JSON blob that contains two optional flags to for spelling correction. Optional. |
 
 ## Response
 
-If successful, this method returns `HTTP 200 OK` response code and a [searchResponse](../resources/searchresponse.md) collection object in the response body.
+If successful, this method returns a `HTTP 200 OK` response code and a [searchResponse](../resources/searchresponse.md) object in the response body.
  
 
 ## Examples
@@ -114,7 +115,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -161,6 +162,7 @@ Content-type: application/json
 - Search [custom types (Graph Connectors)](/graph/search-concept-custom-types) data
 - [Sort](/graph/search-concept-sort) search results
 - Use [aggregations](/graph/search-concept-aggregations) to refine search results
+- Enable [spell corrections](/graph/search-concept-speller) in search results
 
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

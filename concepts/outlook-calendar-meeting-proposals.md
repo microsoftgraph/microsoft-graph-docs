@@ -1,7 +1,7 @@
 ---
 title: "Propose new meeting times in Outlook"
 description: "In Outlook, a meeting organizer can allow invitees to propose alternative meeting times."
-author: "angelgolfer-ms"
+author: "harini84"
 localization_priority: Priority
 ms.prod: "outlook"
 ---

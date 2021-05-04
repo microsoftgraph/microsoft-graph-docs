@@ -11,7 +11,7 @@ In this guide you'll use the Microsoft Graph PowerShell SDK to perform some basi
 
 ## API version
 
-By default, the SDK uses the [Microsoft Graph REST API v1.0](/graph/api/overview?view=graph-rest-1.0). You can change this by using the `Select-MgProfile` command.
+By default, the SDK uses the [Microsoft Graph REST API v1.0](/graph/api/overview?view=graph-rest-1.0&preserve-view=true). You can change this by using the `Select-MgProfile` command.
 
 ```powershell
 Select-MgProfile -Name "beta"
@@ -27,10 +27,10 @@ For details on using app-only access for unattended scenarios, see [Use app-only
 
 Each API in the Microsoft Graph is protected by one or more permission scopes. The user logging in must consent to one of the required scopes for the APIs you plan to use. In this example, we'll use the following APIs.
 
-- [List users](/graph/api/user-list?view=graph-rest-1.0) to find the user ID of the logged-in user
-- [List joinedTeams](/graph/api/user-list-joinedteams?view=graph-rest-1.0) to get the Teams the user is a member of.
-- [List channels](/graph/api/channel-list?view=graph-rest-1.0) to get the channels in a Team.
-- [Send message](/graph/api/channel-post-messages?view=graph-rest-1.0) to send a message to a Team channel.
+- [List users](/graph/api/user-list?view=graph-rest-1.0&preserve-view=true) to find the user ID of the logged-in user
+- [List joinedTeams](/graph/api/user-list-joinedteams?view=graph-rest-1.0&preserve-view=true) to get the Teams the user is a member of.
+- [List channels](/graph/api/channel-list?view=graph-rest-1.0&preserve-view=true) to get the channels in a Team.
+- [Send message](/graph/api/channel-post-messages?view=graph-rest-1.0&preserve-view=true) to send a message to a Team channel.
 
 The `User.Read.All` permission scope will enable the first two calls, and the `Group.ReadWrite.All` scope will enable the rest. These permissions require an admin account.
 
@@ -118,10 +118,18 @@ Now that you have both the Team ID and the channel ID, you can post a message to
 New-MgTeamChannelMessage -TeamId $team.Id -ChannelId $channel.Id -Body @{ Content="Hello World" }
 ```
 
-This command differs from the previous commands you used. Instead of just querying data, it's actually creating something. In Microsoft Graph, this translates to an HTTP `POST`, and it requires an object in the body of that post. In this case, the object is a [chatMessage](/graph/resources/chatmessage?view=graph-rest-1.0). Note that the `-Body` parameter to the command maps to the `body` property on `chatMessage`. Other properties are mapped in a similar way, so you can change the message you send. For example, to send an urgent message use the following command.
+This command differs from the previous commands you used. Instead of just querying data, it's actually creating something. In Microsoft Graph, this translates to an HTTP `POST`, and it requires an object in the body of that post. In this case, the object is a [chatMessage](/graph/resources/chatmessage?view=graph-rest-1.0&preserve-view=true). Note that the `-Body` parameter to the command maps to the `body` property on `chatMessage`. Other properties are mapped in a similar way, so you can change the message you send. For example, to send an urgent message use the following command.
 
 ```powershell
 New-MgTeamChannelMessage -TeamId $team.Id -ChannelId $channel.Id -Body @{ Content="Hello World" } -Importance "urgent"
+```
+
+### Sign out
+
+Use the `Disconnect-MgGraph` command to sign out.
+
+```powershell
+Disconnect-MgGraph
 ```
 
 ## Next steps

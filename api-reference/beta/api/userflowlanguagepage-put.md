@@ -3,7 +3,7 @@ title: "Update userFlowLanguagePage"
 description: "Update the values in an userFlowLanguagePage object."
 author: "jkdouglas"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -63,6 +63,8 @@ If successful, this method returns a `204 No Content` response code.
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_overridespages"
@@ -85,6 +87,12 @@ Content-Type: application/json
     ]
 }
 ```
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-overridespages-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 

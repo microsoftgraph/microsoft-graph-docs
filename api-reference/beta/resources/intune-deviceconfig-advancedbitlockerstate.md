@@ -22,7 +22,7 @@ Advanced BitLocker State
 |:---|:---|:---|
 |success|0|Advanced BitLocker State Success|
 |noUserConsent|1|User never gave consent for Encryption|
-|osVolumeUnprotected|2|Unprotected OS Volume was detected|
+|osVolumeUnprotected|2|Un-protected OS Volume was detected|
 |osVolumeTpmRequired|4|TPM not used for protection of OS volume, but is required by policy|
 |osVolumeTpmOnlyRequired|8|TPM only protection not used for OS volume, but is required by policy|
 |osVolumeTpmPinRequired|16|TPM+PIN protection not used for OS volume, but is required by policy|

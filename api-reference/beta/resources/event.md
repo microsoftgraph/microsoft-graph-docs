@@ -61,6 +61,7 @@ Here is a JSON representation of the resource
   "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
   "exceptionOccurrences":["string"],
   "hasAttachments": true,
+  "hideAttendees": false,
   "uid": "string",
   "id": "string (identifier)",
   "importance": "String",
@@ -100,7 +101,6 @@ Here is a JSON representation of the resource
   "singleValueExtendedProperties": [ { "@odata.type": "microsoft.graph.singleValueLegacyExtendedProperty" }],
   "multiValueExtendedProperties": [ { "@odata.type": "microsoft.graph.multiValueLegacyExtendedProperty" }]
 }
-
 ```
 ## Properties
 | Property	   | Type	|Description|
@@ -112,10 +112,11 @@ Here is a JSON representation of the resource
 |cancelledOccurrences|String collection|Contains **occurrenceId** property values of cancelled instances in a recurring series, if the event is the series master. Instances in a recurring series that are cancelled are called cancelledOccurences.<br><br>Returned only on $select in a [Get](../api/event-get.md) operation which specifies the id of a series master event (that is, the seriesMasterId property value).|
 |categories|String collection|The categories associated with the event. Each category corresponds to the **displayName** property of an [outlookCategory](outlookcategory.md) defined for the user.|
 |changeKey|String|Identifies the version of the event object. Every time the event is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.|
-|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |end|[DateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the event ends. By default, the end time is in UTC.|
 |exceptionOccurrences|String collection|Contains the **id** property values of the event instances that are exceptions in a recurring series.<br>Exceptions can differ from other occurrences in a recurring series, such as the subject, start or end times, or attendees. Exceptions do not include cancelled occurrences.<br><br>Returned only on $select and $expand in a [GET](../api/event-get.md) operation which specifies the id of a series master event (that is, the seriesMasterId property value).|
 |hasAttachments|Boolean|Set to true if the event has attachments.|
+|hideAttendees|Boolean|When set to `true`, each attendee only sees themselves in the meeting request and meeting **Tracking** list. Default is false.|
 |id|String| Unique identifier for the event. [!INCLUDE [outlook-beta-id](../../includes/outlook-beta-id.md)] Read-only. |
 |importance|String|The importance of the event. Possible values are: `low`, `normal`, `high`.|
 |isAllDay|Boolean|Set to true if the event lasts all day. If true, regardless of whether it's a single-day or multi-day event, start and end time must be set to midnight and be in the same time zone.|
@@ -124,7 +125,7 @@ Here is a JSON representation of the resource
 |isOnlineMeeting|Boolean| `True` if this event has online meeting information (that is, **onlineMeeting** points to an [onlineMeetingInfo](onlinemeetinginfo.md) resource), `false` otherwise. Default is `false` (**onlineMeeting** is `null`). Optional. <br> After you set **isOnlineMeeting** to `true`, Microsoft Graph initializes **onlineMeeting**. Subsequently Outlook ignores any further changes to **isOnlineMeeting**, and the meeting remains available online. |
 |isOrganizer|Boolean|Set to true if the calendar owner (specified by the **owner** property of the [calendar](calendar.md)) is the organizer of the event (specified by the **organizer** property of the **event**). This also applies if a delegate organized the event on behalf of the owner.|
 |isReminderOn|Boolean|Set to true if an alert is set to remind the user of the event.|
-|lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |location|[Location](location.md)|The location of the event.|
 |locations|[Location](location.md) collection|The locations where the event is held or attended from. The **location** and **locations** properties always correspond with each other. If you update the **location** property, any prior locations in the **locations** collection would be removed and replaced by the new **location** value. |
 |occurrenceId|String|An identifier for an occurrence in a recurring event series. Null if the event is not part of a recurring series.<br><br>The format of the property value is OID.{seriesMasterId-value}.{occurrence-start-date}. The time zone for {occurrence-start-date} is the recurrenceTimeZone property defined for the corresponding [recurrenceRange](recurrencerange.md).<br><br>This property can identify any occurrence in a recurring series, including an occurrence that has been modified or cancelled. You can use this property to perform all operations supported by occurrences in the recurring series.|
@@ -133,7 +134,7 @@ Here is a JSON representation of the resource
 |onlineMeetingUrl|String|A URL for an online meeting. The property is set only when an organizer specifies in Outlook that an event is an online meeting such as Skype. Read-only.<br>To access the URL to join an online meeting, use **joinUrl** which is exposed via the **onlineMeeting** property of the **event**. The **onlineMeetingUrl** property will be deprecated in the future. |
 |organizer|[Recipient](recipient.md)|The organizer of the event.|
 |originalEndTimeZone|String|The end time zone that was set when the event was created. A value of `tzone://Microsoft/Custom` indicates that a legacy custom time zone was set in desktop Outlook.|
-|originalStart|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|originalStart|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |originalStartTimeZone|String|The start time zone that was set when the event was created. A value of `tzone://Microsoft/Custom` indicates that a legacy custom time zone was set in desktop Outlook.|
 |recurrence|[PatternedRecurrence](patternedrecurrence.md)|The recurrence pattern for the event.|
 |reminderMinutesBeforeStart|Int32|The number of minutes before the event start time that the reminder alert occurs.|
@@ -186,12 +187,12 @@ Here is a JSON representation of the resource
 |[Get event](../api/event-get.md) | [event](event.md) |Read properties and relationships of event object.|
 |[Update](../api/event-update.md) | [event](event.md)	|Update event object. |
 |[Delete](../api/event-delete.md) | None |Delete event object. |
+|[delta](../api/event-delta.md)|[event](event.md) collection|Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events) of the user's primary calendar.|
+|[forward](../api/event-forward.md)|None|Lets the organizer or attendee of a meeting event forward the meeting request to a new recipient.|
 |[cancel](../api/event-cancel.md) | None | Send cancellation message from the organizer to all the attendees and cancel the specified meeting. |
 |[accept](../api/event-accept.md)|None|Accept the specified event in a user calendar.|
 |[tentativelyAccept](../api/event-tentativelyaccept.md)|None|Tentatively accept the specified event in a user calendar.|
 |[decline](../api/event-decline.md)|None|Decline invitation to the specified event in a user calendar.|
-|[forward](../api/event-forward.md)|None|Lets the organizer or attendee of a meeting event forward the meeting request to a new recipient.|
-|[delta](../api/event-delta.md)|[event](event.md) collection|Get a set of events that have been added, deleted, or updated in a **calendarView** (a range of events) of the user's primary calendar.|
 |[dismissReminder](../api/event-dismissreminder.md)|None|Dismiss the reminder for the specified event in a user calendar.|
 |[snoozeReminder](../api/event-snoozereminder.md)|None|Postpone a reminder for the specified event in a user calendar until a new time.|
 |[List instances](../api/event-list-instances.md) |[Event](event.md) collection| Get a Event object collection.|

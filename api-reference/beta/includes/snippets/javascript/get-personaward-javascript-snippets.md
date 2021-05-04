@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/profile/awards/{id}')
+let personAward = await client.api('/me/profile/awards/{id}')
 	.version('beta')
 	.get();
 

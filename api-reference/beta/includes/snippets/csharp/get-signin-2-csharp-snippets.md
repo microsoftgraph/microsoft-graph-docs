@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var signIn = await graphClient.AuditLogs.SignIns["{id}"]
+var signIn = await graphClient.AuditLogs.SignIns["{signIn-id}"]
 	.Request()
 	.GetAsync();
 

@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const teamsAppInstallation = {
-teamsApp@odata.bind:"https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
+'teamsApp@odata.bind':'https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a'
 };
 
-let res = await client.api('/chats/19:ea28e88c00e94c7786b065394a61f296@thread.v2/installedApps')
+await client.api('/chats/19:ea28e88c00e94c7786b065394a61f296@thread.v2/installedApps')
 	.version('beta')
 	.post(teamsAppInstallation);
 

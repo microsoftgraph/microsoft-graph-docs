@@ -3,7 +3,7 @@ title: "Remove homeRealmDiscoveryPolicy"
 description: "Remove a homeRealmDiscoveryPolicy from a servicePrincipal."
 localization_priority: Normal
 author: "sureshja"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
@@ -103,5 +103,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

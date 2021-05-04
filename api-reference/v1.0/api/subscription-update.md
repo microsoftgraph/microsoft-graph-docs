@@ -2,8 +2,8 @@
 title: "Update subscription"
 description: "Renew a subscription by extending its expiry time."
 localization_priority: Normal
-author: "davidmu1"
-ms.prod: ""
+author: "Jumaodhiss"
+ms.prod: "change-notifications"
 doc_type: apiPageType
 ---
 
@@ -13,16 +13,18 @@ Namespace: microsoft.graph
 
 Renew a subscription by extending its expiry time.
 
+The table in the [Permissions](#permissions) section lists the resources that support subscribing to change notifications.
+
 Subscriptions expire after a length of time that varies by resource type. In order to avoid missing change notifications, an app should renew its subscriptions well in advance of their expiry date. See [subscription](../resources/subscription.md) for maximum length of a subscription for each resource type.
 
 ## Permissions
 
-Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Depending on the resource and the permission type (delegated or application) requested, the permission specified in the following table is the least privileged required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference).
 
 | Supported resource | Delegated (work or school account) | Delegated (personal Microsoft account) | Application |
 |:-----|:-----|:-----|:-----|
 |[callRecord](../resources/callrecords-callrecord.md) | Not supported | Not supported | CallRecords.Read.All  |
-|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | Not supported | Not supported |  ChannelMessage.Read.Group*, ChannelMessage.Read.All  |
+|[chatMessage](../resources/chatmessage.md) (/teams/{id}/channels/{id}/messages) | ChannelMessage.Read.All | Not supported |  ChannelMessage.Read.Group*, ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/teams/getAllMessages -- all channel messages in organization) | Not supported | Not supported | ChannelMessage.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/{id}/messages) | Not supported | Not supported | Chat.Read.All  |
 |[chatMessage](../resources/chatmessage.md) (/chats/getAllMessages -- all chat messages in organization) | Not supported | Not supported | Chat.Read.All  |
@@ -34,17 +36,14 @@ Depending on the resource and the permission type (delegated or application) req
 |[group conversation](../resources/conversation.md) | Group.Read.All | Not supported | Not supported |
 |[list](../resources/list.md) | Sites.ReadWrite.All | Not supported | Sites.ReadWrite.All |
 |[message](../resources/message.md) | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read | Mail.ReadBasic, Mail.Read |
+|[printer](../resources/printer.md) | Not supported | Not supported | Printer.Read.All, Printer.ReadWrite.All |
+|[printTaskDefinition](../resources/printtaskdefinition.md) | Not supported | Not supported | PrintTaskDefinition.ReadWrite.All |
 |[security alert](../resources/alert.md) | SecurityEvents.ReadWrite.All | Not supported | SecurityEvents.ReadWrite.All |
 |[user](../resources/user.md) | User.Read.All | User.Read.All | User.Read.All |
 
 > **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
-### chatMessage
-
-**chatMessage** subscriptions with application permissions include resource data, and require [encryption](/graph/webhooks-with-resource-data). Subscription creation will fail if [encryptionCertificate](../resources/subscription.md) is not specified. Before creating a **chatMessage** subscription, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis). 
-
-> **Note:** `/teams/getAllMessages` and `/chats/getAllMessages` are available to users that have the 
-[required licenses](https://aka.ms/teams-changenotification-licenses).
+[!INCLUDE [teams-subscription-notes](../../includes/teams-subscription-notes.md)]
 
 ### driveItem
 
@@ -126,7 +125,7 @@ Content-type: application/json
 Here is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": false,
+  "truncated": true,
   "@odata.type": "microsoft.graph.subscription"
 } -->
 
@@ -148,7 +147,8 @@ Content-length: 252
   "latestSupportedTlsVersion": "v1_2",
   "encryptionCertificate": "",
   "encryptionCertificateId": "",
-  "includeResourceData": false
+  "includeResourceData": false,
+  "notificationContentType": "application/json"
 }
 ```
 

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/users/{idOrUserPrincipalName}/drive')
+let drive = await client.api('/users/{idOrUserPrincipalName}/drive')
 	.version('beta')
 	.get();
 

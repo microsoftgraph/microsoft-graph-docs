@@ -3,7 +3,7 @@ title: "Working with Azure Active Directory resources in Microsoft Graph"
 description: "With Microsoft Graph, you can access Azure Active Directory (Azure AD) resources to enable scenarios like managing administrator (directory) roles, inviting external users to an organization, and, if you are a Cloud Solution Provider (CSP), managing your customer's data. Microsoft Graph also provides methods that apps can use to, for example, discover information about users' transitive group and role memberships. "
 localization_priority: Priority
 author: "dkershaw10"
-ms.prod: ""
+ms.prod: "identity-and-access"
 doc_type: conceptualPageType
 ---
 
@@ -42,6 +42,9 @@ The following table lists some common use cases for Azure AD resources.
 | Get information about an organization, such as its business address, technical and notification contacts, the service plans that it's subscribed to, and the domains associated with it. | [organization](../resources/organization.md) | N/A |
 | Get information about the service SKUs that a company is subscribed to. | [subscribedSku](../resources/subscribedsku.md) | N/A |
 | Invite external (guest) users to an organization. | [invitation](../resources/invitation.md) | [What is Azure AD B2B collaboration?](/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b) |
+| Manage branding for the sign-in experience of an organization. | [organizationalbranding](../resources/organizationalbrandingproperties.md) | [Add branding to your organization's Azure Active Directory sign-in page](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)|
+| **Consent requests** | | |
+| Manage the consent request workflow for users attempting to access apps that require admin authorization.  | [Consent requests API](../resources/consentrequests-root.md) |[Configure the admin consent workflow](/azure/active-directory/manage-apps/configure-admin-consent-workflow) |
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

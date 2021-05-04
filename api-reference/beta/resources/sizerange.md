@@ -4,7 +4,7 @@ description: "Specifies the maximum and minimum sizes (in kilobytes) that an inc
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: "svpsiva"
+author: "abheek-das"
 ---
 
 # sizeRange resource type

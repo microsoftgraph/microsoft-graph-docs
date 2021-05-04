@@ -51,26 +51,26 @@ If successful, this method returns a `200 OK` response code and a [call](../reso
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get-call"
+  "name": "get-call-1"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/communications/calls/{id}
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-call-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-call-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-call-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-call-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-call-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-call-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-call-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-call-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/v1.0/communications/calls/{id}
 
 ##### Response
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -156,25 +156,25 @@ Content-Type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get-call"
+  "name": "get-call-2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/communications/calls/2f1a1100-b174-40a0-aba7-0b405e01ed92
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-call-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-call-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-call-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-call-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-call-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-call-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-call-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-call-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

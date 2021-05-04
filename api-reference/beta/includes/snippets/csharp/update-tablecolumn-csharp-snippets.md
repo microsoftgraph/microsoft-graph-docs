@@ -13,7 +13,7 @@ var workbookTableColumn = new WorkbookTableColumn
 	Values = "values-value"
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Tables["{id|name}"].Columns["{id|name}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Columns["{workbookTableColumn-id}"]
 	.Request()
 	.UpdateAsync(workbookTableColumn);
 

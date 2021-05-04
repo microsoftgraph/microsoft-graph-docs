@@ -23,8 +23,9 @@ var plannerPlanDetails = new PlannerPlanDetails
 	}
 };
 
-await graphClient.Planner.Plans["xqQg5FS2LkCp935s-FIFm2QAFkHM"].Details
+await graphClient.Planner.Plans["{plannerPlan-id}"].Details
 	.Request()
+	.Header("Prefer","return=representation")
 	.Header("If-Match","W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 	.UpdateAsync(plannerPlanDetails);
 

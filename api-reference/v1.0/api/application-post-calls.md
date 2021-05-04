@@ -58,7 +58,7 @@ The following example shows the request which makes a peer-to-peer call between 
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create-call-service-hosted-media",
+  "name": "create-call-service-hosted-media-1",
   "@odata.type": "microsoft.graph.call"
 }-->
 ```http
@@ -90,19 +90,19 @@ Content-Type: application/json
 }
 ```
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-call-service-hosted-media-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-call-service-hosted-media-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-call-service-hosted-media-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-call-service-hosted-media-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-call-service-hosted-media-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-call-service-hosted-media-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-call-service-hosted-media-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-call-service-hosted-media-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -327,7 +327,7 @@ Content-Type: application/json
 
 ##### Response
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -893,6 +893,312 @@ Content-Type: application/json
     },
     "allowConversationWithoutHost": true
   }
+}
+```
+
+### Example 7: Create peer-to-peer PSTN call with service hosted media
+
+> **Note:** This call requires the Calls.Initiate.All permission.
+
+This call requires an application instance with a PSTN number assigned. For details, see [Assign a phone number to your bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
+
+#### Request
+The following example shows the request to make a peer-to-peer call between the bot and a PSTN number. In this example, the media is hosted by the service. The values of authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID must be replaced with actual values to make the example work.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create-call-service-hosted-media-2",
+  "@odata.type": "microsoft.graph.call"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/communications/calls
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "applicationInstance": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "3d913abb-aec0-4964-8fa6-3c6850c4f278"
+      },
+    },
+    "countryCode": null,
+    "endpointType": null,
+    "region": null,
+    "languageId": null
+  },
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "phone": {
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "+12345678901"
+        }
+      }
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig"
+  }
+}
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-call-service-hosted-media-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-call-service-hosted-media-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+> **Note:** The response object shown here might be shortened for readability. 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.call"
+} -->
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/v1.0/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "state": "establishing",
+  "direction": "outgoing",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "callChainId": "d8217646-3110-40b1-bae6-e9ac6c3a9f74",
+  "callRoutes": [],
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "applicationInstance": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "3d913abb-aec0-4964-8fa6-3c6850c4f278"
+      },
+    },
+    "countryCode": null,
+    "endpointType": null,
+    "region": null,
+    "languageId": null
+  },
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "phone": {
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "+12345678901"
+        }
+      },
+      "endpointType": null,
+      "region": null,
+      "replacesCallId": null,
+      "languageId": null
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+  "activeModalities": [],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.serviceHostedMediaConfig",
+    "preFetchMedia": [
+     {
+       "uri": "https://cdn.contoso.com/beep.wav",
+       "resourceId": "f8971b04-b53e-418c-9222-c82ce681a582"
+     },
+     {
+       "uri": "https://cdn.contoso.com/cool.wav",
+       "resourceId": "86dc814b-c172-4428-9112-60f8ecae1edb"
+     }
+    ],
+  },
+  "routingPolicies": [],
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+  "myParticipantId": "499ff390-7a72-40e8-83a0-8fac6295ae7e",
+  "id": "2e1a0b00-2db4-4022-9570-243709c565ab",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#app/calls/$entity",
+  "subject": null,
+  "terminationReason": null,
+  "ringingTimeoutInSeconds": null,
+  "mediaState": null,
+  "resultInfo": null,
+  "answeredBy": null,
+  "chatInfo": null,
+  "meetingInfo": null,
+  "transcription": null,
+  "meetingCapability": null,
+  "toneInfo": null
+}
+```
+
+### Example 8: Create peer-to-peer PSTN call with application hosted media
+
+> **Note**: This example requires Calls.Initiate.All and Calls.AccessMedia.All permissions.
+
+This call requires an application instance with a PSTN number assigned. For details, see [Assign a phone number to your bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
+
+#### Request
+The following example shows a request to make a peer-to-peer call between the bot and a PSTN number. In this example, the media is hosted locally by the application. Replace the values for authorization token, callback URL, application ID, application name, user ID, user name, and tenant ID to make the example work.
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "create-call-service-hosted-media-3",
+  "@odata.type": "microsoft.graph.call"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/communications/calls
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "applicationInstance": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "3d913abb-aec0-4964-8fa6-3c6850c4f278"
+      },
+    },
+    "countryCode": null,
+    "endpointType": null,
+    "region": null,
+    "languageId": null
+  },
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "phone": {
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "+12345678901"
+        }
+      }
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.appHostedMediaConfig",
+    "blob": "<Media Session Configuration>"
+  }
+}
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-call-service-hosted-media-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-call-service-hosted-media-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+#### Response
+
+> **Note:** The response object shown here might be shortened for readability. 
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.call"
+} -->
+```http
+HTTP/1.1 201 Created
+Location: https://graph.microsoft.com/v1.0/communications/calls/2e1a0b00-2db4-4022-9570-243709c565ab
+Content-Type: application/json
+
+{
+  "@odata.type": "#microsoft.graph.call",
+  "state": "establishing",
+  "direction": "outgoing",
+  "callbackUri": "https://bot.contoso.com/callback",
+  "callChainId": "d8217646-3110-40b1-bae6-e9ac6c3a9f74",
+  "callRoutes": [],
+  "source": {
+    "@odata.type": "#microsoft.graph.participantInfo",
+    "identity": {
+      "@odata.type": "#microsoft.graph.identitySet",
+      "applicationInstance": {
+        "@odata.type": "#microsoft.graph.identity",
+        "displayName": "Calling Bot",
+        "id": "3d913abb-aec0-4964-8fa6-3c6850c4f278"
+      },
+    },
+    "countryCode": null,
+    "endpointType": null,
+    "region": null,
+    "languageId": null
+  },
+  "targets": [
+    {
+      "@odata.type": "#microsoft.graph.invitationParticipantInfo",
+      "identity": {
+        "@odata.type": "#microsoft.graph.identitySet",
+        "phone": {
+          "@odata.type": "#microsoft.graph.identity",
+          "id": "+12345678901"
+        }
+      },
+      "endpointType": null,
+      "region": null,
+      "replacesCallId": null,
+      "languageId": null
+    }
+  ],
+  "requestedModalities": [
+    "audio"
+  ],
+  "activeModalities": [],
+  "mediaConfig": {
+    "@odata.type": "#microsoft.graph.appHostedMediaConfig",
+    "blob": "<Media Session Configuration>",
+  },
+  "routingPolicies": [],
+  "tenantId": "aa67bd4c-8475-432d-bd41-39f255720e0a",
+  "myParticipantId": "499ff390-7a72-40e8-83a0-8fac6295ae7e",
+  "id": "2e1a0b00-2db4-4022-9570-243709c565ab",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#app/calls/$entity",
+  "subject": null,
+  "terminationReason": null,
+  "ringingTimeoutInSeconds": null,
+  "mediaState": null,
+  "resultInfo": null,
+  "answeredBy": null,
+  "chatInfo": null,
+  "meetingInfo": null,
+  "transcription": null,
+  "meetingCapability": null,
+  "toneInfo": null
 }
 ```
 

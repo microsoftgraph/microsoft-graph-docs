@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/identity/continuousAccessEvaluationPolicy')
+let continuousAccessEvaluationPolicy = await client.api('/identity/continuousAccessEvaluationPolicy')
 	.version('beta')
 	.get();
 

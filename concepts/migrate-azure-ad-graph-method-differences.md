@@ -3,7 +3,7 @@ title: "Method differences between Azure AD and Microsoft Graph"
 description: "Describes method differences between Azure Active Directory (Azure AD) Graph API and Microsoft Graph API (REST)."
 author: "dkershaw10"
 localization_priority: Normal
-ms.prod: "azure-active-directory"
+ms.prod: "applications"
 ---
 
 # Method differences between Azure AD and Microsoft Graph

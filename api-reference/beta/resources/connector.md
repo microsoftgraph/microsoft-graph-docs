@@ -3,7 +3,7 @@ title: "connector resource type"
 description: "Represents an Application Proxy connector."
 author: "japere"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: resourcePageType
 ---
 
@@ -31,7 +31,7 @@ Connectors are lightweight agents that sit on-premises and facilitate the outbou
 |externalIp|String| The external IP address as detected by the the connector server. Read-only. |
 |id|String| Unique identifier of the connector. Read-only. |
 |machineName|String| The machine name the connector is installed and running on. |
-|status|string| Indicates the status of the connector. Possible values are: `active`, `inactive`. Read-only. |
+|status|connectorStatus| Indicates the status of the connector. Possible values are: `active`, `inactive`. Read-only. |
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -73,5 +73,6 @@ The following is a JSON representation of the resource.
   "suppressions": []
 }
 -->
+
 
 

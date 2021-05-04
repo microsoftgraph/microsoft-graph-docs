@@ -73,7 +73,8 @@ Here is a JSON representation of the resource.
   "settings": {
     "@odata.type": "microsoft.graph.iosLobAppAssignmentSettings",
     "vpnConfigurationId": "String",
-    "uninstallOnDeviceRemoval": true
+    "uninstallOnDeviceRemoval": true,
+    "isRemovable": true
   }
 }
 ```

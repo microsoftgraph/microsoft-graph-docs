@@ -143,4 +143,4 @@ To ensure reliability and facilitate support for your application:
 - Open connections to all advertised DNS answers.
 - Generate a unique GUID and send it on each Microsoft Graph REST request. This will help Microsoft investigate any errors more easily if you need to report an issue with Microsoft Graph.
   - On every request to Microsoft Graph, generate a unique GUID, send it in the `client-request-id` HTTP request header, and also log it in your application's logs.
-  - Always log the `request-id`, `timestamp` and `x-ms-ags-diagnostic` from the HTTP response headers. These, together with the `client-request-id`, are required when reporting issues in [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-graph) or to Microsoft Support.
+  - Always log the `request-id`, `timestamp` and `x-ms-ags-diagnostic` from the HTTP response headers. These, together with the `client-request-id`, are required when reporting issues in [Microsoft Q&A](/answers/products/m365#microsoft-graph) or to Microsoft Support.

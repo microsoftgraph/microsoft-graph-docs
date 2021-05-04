@@ -55,9 +55,9 @@ var post = new Post
 	InReplyTo = new Post
 	{
 	},
-	Attachments = (IPostAttachmentsCollectionPage)new List<Attachment>()
+	Attachments = new PostAttachmentsCollectionPage()
 	{
-		new Attachment
+		new FileAttachment
 		{
 			LastModifiedDateTime = DateTimeOffset.Parse("2016-10-19T10:37:00Z"),
 			Name = "name-value",
@@ -69,7 +69,7 @@ var post = new Post
 	}
 };
 
-await graphClient.Groups["{id}"].Threads["{id}"].Posts["{id}"]
+await graphClient.Groups["{group-id}"].Threads["{conversationThread-id}"].Posts["{post-id}"]
 	.Reply(post)
 	.Request()
 	.PostAsync();

@@ -53,7 +53,7 @@ The following table shows the properties that are required when you create the i
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-deviceconfig-deviceconfiguration.md)|
 |payloadName|String|Name that is displayed to the user.|
-|payloadFileName|String|Payload file name (*.mobileconfig | *.xml).|
+|payloadFileName|String|Payload file name (*.mobileconfig \| *.xml).|
 |payload|Binary|Payload. (UTF8 encoded byte array)|
 
 

@@ -14,12 +14,12 @@ const certificateBasedAuthConfiguration = {
   certificateAuthorities: [
     {
       isRootAuthority: true,
-      certificate: "Binary"
+      certificate: 'Binary'
     }
   ]
 };
 
-let res = await client.api('/organization/{id}/certificateBasedAuthConfiguration')
+await client.api('/organization/{id}/certificateBasedAuthConfiguration')
 	.version('beta')
 	.post(certificateBasedAuthConfiguration);
 

@@ -1,7 +1,7 @@
 ---
 title: "List apps in chat"
 description: "List the apps installed in a chat."
-author: "nkramer"
+author: "subray"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -135,7 +135,7 @@ In the following example, if an instance of an installed app has a [bot](../reso
 }
 -->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/chats/19%3Ad65713bc498c4a428c71ef9353e6ce20%40thread.v2/installedApps?$expand=teamsAppDefinition($expand=bot)
 ```
 

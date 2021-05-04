@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET workbook/comments/{id}
+GET /me/drive/items/{id}/workbook/comments/{id}
 ```
 
 ## Request headers
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/v1.0/drive/items/{id}/workbook/comments/{id}
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

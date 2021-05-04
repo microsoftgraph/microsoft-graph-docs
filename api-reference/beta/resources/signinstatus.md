@@ -3,13 +3,16 @@ title: "signInStatus resource type"
 description: "Provides the sign-in status (Success or Failure) of the sign-in"
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: "identity-and-access-reports"
 author: "SarahBar"
 ---
 
 # signInStatus resource type
 
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Provides the sign-in status (Success or Failure) of the sign-in
 
 

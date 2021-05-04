@@ -4,7 +4,7 @@ description: "Contains information about a license assigned to a user."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: "krbain"
+author: "jpettere"
 ---
 
 # licenseDetails resource type

@@ -3,7 +3,7 @@ title: "entitlementManagementSettings resource type"
 description: "Represents tenant-wide settings for Azure AD entitlement management."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
 
@@ -27,7 +27,7 @@ Represents settings that control the behavior of [Azure AD entitlement managemen
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |externalUserLifecycleAction|String|One of `None`, `BlockSignIn`, or `BlockSignInAndDelete`. |
-|daysUntilExternalUserDeletedAfterBlocked|Int64|If `externalUserLifecycleAction` is `BlockSignInAndDelete`, the number of days after an external user is blocked from sign in before their account is deleted.|
+|daysUntilExternalUserDeletedAfterBlocked|Int64|If **externalUserLifecycleAction** is `BlockSignInAndDelete`, the number of days after an external user is blocked from sign in before their account is deleted.|
 
 ## Relationships
 
@@ -43,7 +43,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.entitlementManagementSettings",
-  "baseType": "",
   "keyProperty": ""
 }-->
 

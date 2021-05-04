@@ -2,7 +2,7 @@
 title: "timeZoneBase resource type"
 description: "The basic representation of a time zone."
 localization_priority: Normal
-author: "svpsiva"
+author: "abheek-das"
 ms.prod: ""
 doc_type: resourcePageType
 ---

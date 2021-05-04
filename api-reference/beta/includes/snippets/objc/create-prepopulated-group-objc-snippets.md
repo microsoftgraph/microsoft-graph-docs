@@ -15,11 +15,10 @@ MSGraphGroup *group = [[MSGraphGroup alloc] init];
 [group setDescription:@"Group with designated owner and members"];
 [group setDisplayName:@"Operations group"];
 NSMutableArray *groupTypesList = [[NSMutableArray alloc] init];
-[groupTypesList addObject: @"Unified"];
 [group setGroupTypes:groupTypesList];
-[group setMailEnabled: true];
+[group setMailEnabled: false];
 [group setMailNickname:@"operations2019"];
-[group setSecurityEnabled: false];
+[group setSecurityEnabled: true];
 
 NSError *error;
 NSData *groupData = [group getSerializedDataWithError:&error];

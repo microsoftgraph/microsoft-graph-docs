@@ -20,11 +20,11 @@ Create a new [deviceManagementConfigurationPolicyAssignment](../resources/intune
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -63,14 +63,15 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/assignments
 Content-type: application/json
-Content-length: 340
+Content-length: 404
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicyAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-    "deviceAndAppManagementAssignmentFilterType": "include"
+    "deviceAndAppManagementAssignmentFilterType": "include",
+    "collectionId": "Collection Id value"
   }
 }
 ```
@@ -80,15 +81,16 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 389
+Content-Length: 453
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicyAssignment",
   "id": "1f069921-9921-1f06-2199-061f2199061f",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "Device And App Management Assignment Filter Id value",
-    "deviceAndAppManagementAssignmentFilterType": "include"
+    "deviceAndAppManagementAssignmentFilterType": "include",
+    "collectionId": "Collection Id value"
   }
 }
 ```

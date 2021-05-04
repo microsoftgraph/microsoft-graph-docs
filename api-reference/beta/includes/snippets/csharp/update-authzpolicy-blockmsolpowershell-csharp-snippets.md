@@ -11,7 +11,7 @@ var authorizationPolicy = new AuthorizationPolicy
 	BlockMsolPowerShell = true
 };
 
-await graphClient.Policies.AuthorizationPolicy["authorizationPolicy"]
+await graphClient.Policies.AuthorizationPolicy["{authorizationPolicy-id}"]
 	.Request()
 	.UpdateAsync(authorizationPolicy);
 

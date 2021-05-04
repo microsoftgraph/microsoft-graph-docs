@@ -1,7 +1,7 @@
 ---
 title: "Update user"
 description: "Update the properties of a user object."
-author: "dougeby"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType

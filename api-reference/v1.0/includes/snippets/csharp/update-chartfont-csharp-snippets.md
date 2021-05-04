@@ -16,7 +16,7 @@ var workbookChartFont = new WorkbookChartFont
 	Underline = "underline-value"
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Charts["{name}"].Axes.ValueAxis.Format.Font
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts["{workbookChart-id}"].Axes.ValueAxis.Format.Font
 	.Request()
 	.UpdateAsync(workbookChartFont);
 

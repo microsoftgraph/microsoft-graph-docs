@@ -58,7 +58,7 @@ The following is an example of the request to post a credit rubric (a rubric wit
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_educationrubric_from_educationuser"
+  "name": "create_educationrubric_from_educationuser_1"
 }-->
 
 ```http
@@ -132,19 +132,19 @@ Content-type: application/json
 }
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-educationrubric-from-educationuser-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-educationrubric-from-educationuser-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-educationrubric-from-educationuser-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-educationrubric-from-educationuser-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-educationrubric-from-educationuser-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-educationrubric-from-educationuser-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-educationrubric-from-educationuser-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/create-educationrubric-from-educationuser-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -155,7 +155,7 @@ Content-type: application/json
 The following is an example of the response.
 
 > [!NOTE]
-> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -242,9 +242,11 @@ Content-type: application/json
 ### Example 2: Posting a Points Rubric
 
 The following is an example of the request to post a rubric with points.
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_educationrubric_from_educationuser"
+  "name": "create_educationrubric_from_educationuser_2"
 }-->
 
 ```http
@@ -330,13 +332,31 @@ Content-type: application/json
     }
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-educationrubric-from-educationuser-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-educationrubric-from-educationuser-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-educationrubric-from-educationuser-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-educationrubric-from-educationuser-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
 The following is an example of the response.
 
 > [!NOTE]
-> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

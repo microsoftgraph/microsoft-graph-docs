@@ -260,7 +260,7 @@ Content-type: application/json
 }
 ```
 
-For more details about errors, see [Error codes](/concepts/workbook-error-codes.md)
+For more details about errors, see [Error codes](workbook-error-codes.md#error-code).
 
 ### Acquire session information
 

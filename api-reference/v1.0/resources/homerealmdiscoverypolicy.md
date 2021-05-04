@@ -3,7 +3,7 @@ title: "homeRealmDiscoveryPolicy resource type"
 description: "Represents a policy to control Azure Active Directory authentication behavior for federated users."
 localization_priority: Normal
 author: "hpsin"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -75,7 +75,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.homeRealmDiscoveryPolicy",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

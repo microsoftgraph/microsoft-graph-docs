@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var verificationDnsRecords = await graphClient.Domains["contoso.com"].VerificationDnsRecords
+var verificationDnsRecords = await graphClient.Domains["{domain-id}"].VerificationDnsRecords
 	.Request()
 	.GetAsync();
 

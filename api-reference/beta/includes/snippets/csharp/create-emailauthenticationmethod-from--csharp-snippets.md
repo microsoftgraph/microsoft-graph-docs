@@ -11,7 +11,7 @@ var emailAuthenticationMethod = new EmailAuthenticationMethod
 	EmailAddress = "kim@contoso.com"
 };
 
-await graphClient.Users["kim@contoso.com"].Authentication.EmailMethods
+await graphClient.Users["{user-id}"].Authentication.EmailMethods
 	.Request()
 	.AddAsync(emailAuthenticationMethod);
 

@@ -11,14 +11,14 @@ const options = {
 const client = Client.init(options);
 
 const privilegedApproval = {
-  userId: "userId-value",
-  roleId: "roleId-value",
-  approvalType: "approvalType-value",
-  approvalState: "approvalState-value",
-  approvalDuration: "datetime-value"
+  userId: 'userId-value',
+  roleId: 'roleId-value',
+  approvalType: 'approvalType-value',
+  approvalState: 'approvalState-value',
+  approvalDuration: 'datetime-value'
 };
 
-let res = await client.api('/privilegedApproval')
+await client.api('/privilegedApproval')
 	.version('beta')
 	.post(privilegedApproval);
 

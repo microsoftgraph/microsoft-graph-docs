@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const educationRubric = {
-  @odata.id: "https://graph.microsoft.com/v1.0/education/me/rubrics/{id}"
+  '@odata.id': 'https://graph.microsoft.com/v1.0/education/me/rubrics/{id}'
 };
 
-let res = await client.api('/education/classes/{id}/assignments/{id}/rubric/$ref')
+await client.api('/education/classes/{id}/assignments/{id}/rubric/$ref')
 	.version('beta')
 	.put(educationRubric);
 

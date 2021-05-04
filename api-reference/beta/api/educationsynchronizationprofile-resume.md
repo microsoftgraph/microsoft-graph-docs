@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /synchronizationProfiles/{id}/resume
+POST /education/synchronizationProfiles/{id}/resume
 ```
 
 ## Request headers

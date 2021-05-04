@@ -11,11 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const educationSchool = {
-  displayName: "Fabrikam Arts High School",
-  description: "Magnate school for the arts. Los Angeles School District"
+  displayName: 'Fabrikam Arts High School',
+  description: 'Magnate school for the arts. Los Angeles School District'
 };
 
-let res = await client.api('/education/schools/10002')
+await client.api('/education/schools/10002')
 	.version('beta')
 	.update(educationSchool);
 

@@ -3,7 +3,7 @@ title: "List riskyUsers"
 description: "Get a list of the riskyUser objects and their properties."
 author: "cloudhandler"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -15,7 +15,7 @@ Get a list of the [riskyUser](../resources/riskyuser.md) objects and their prope
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions_reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account) | IdentityRiskyUser.Read.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_riskyuser"
+  "name": "get_riskyuser_2"
 }
 -->
 ``` http

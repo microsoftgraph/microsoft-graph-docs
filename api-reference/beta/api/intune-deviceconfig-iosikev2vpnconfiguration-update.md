@@ -20,7 +20,7 @@ Update the properties of a [iosikEv2VpnConfiguration](../resources/intune-device
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -62,7 +62,7 @@ The following table shows the properties that are required when you create the [
 |displayName|String|Admin provided name of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |version|Int32|Version of the device configuration. Inherited from [deviceConfiguration](../resources/intune-shared-deviceconfiguration.md)|
 |connectionName|String|Connection name displayed to the user. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
-|connectionType|[appleVpnConnectionType](../resources/intune-deviceconfig-applevpnconnectiontype.md)|Connection type. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md). Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `customVpn`, `ciscoIPSec`, `citrix`, `ciscoAnyConnectV2`, `paloAltoGlobalProtect`, `zscalerPrivateAccess`, `f5Access2018`, `citrixSso`, `paloAltoGlobalProtectV2`, `ikEv2`, `alwaysOn`, `microsoftTunnel`, `netMotionMobility`.|
+|connectionType|[appleVpnConnectionType](../resources/intune-deviceconfig-applevpnconnectiontype.md)|Connection type. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md). Possible values are: `ciscoAnyConnect`, `pulseSecure`, `f5EdgeClient`, `dellSonicWallMobileConnect`, `checkPointCapsuleVpn`, `customVpn`, `ciscoIPSec`, `citrix`, `ciscoAnyConnectV2`, `paloAltoGlobalProtect`, `zscalerPrivateAccess`, `f5Access2018`, `citrixSso`, `paloAltoGlobalProtectV2`, `ikEv2`, `alwaysOn`, `microsoftTunnel`, `netMotionMobility`, `microsoftProtect`.|
 |loginGroupOrDomain|String|Login group or domain when connection type is set to Dell SonicWALL Mobile Connection. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |role|String|Role when connection type is set to Pulse Secure. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |realm|String|Realm when connection type is set to Pulse Secure. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
@@ -76,8 +76,11 @@ The following table shows the properties that are required when you create the [
 |safariDomains|String collection|Safari domains when this VPN per App setting is enabled. In addition to the apps associated with this VPN, Safari domains specified here will also be able to trigger this VPN connection. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |onDemandRules|[vpnOnDemandRule](../resources/intune-deviceconfig-vpnondemandrule.md) collection|On-Demand Rules. This collection can contain a maximum of 500 elements. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |providerType|[vpnProviderType](../resources/intune-deviceconfig-vpnprovidertype.md)|Provider type for per-app VPN. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md). Possible values are: `notConfigured`, `appProxy`, `packetTunnel`.|
+|associatedDomains|String collection|Associated Domains Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |excludedDomains|String collection|Domains that are accessed through the public internet instead of through VPN, even when per-app VPN is activated Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |disableOnDemandUserOverride|Boolean|Toggle to prevent user from disabling automatic VPN in the Settings app Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
+|disconnectOnIdle|Boolean|Whether to disconnect after on-demand connection idles Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
+|disconnectOnIdleTimerInSeconds|Int32|The length of time in seconds to wait before disconnecting an on-demand connection. Valid values 0 to 65535 Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |proxyServer|[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|Proxy Server. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |optInToDeviceIdSharing|Boolean|Opt-In to sharing the device's Id to third-party vpn clients for use during network access control validation. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |userDomain|String|Zscaler only. Enter a static domain to pre-populate the login field with in the Zscaler app. If this is left empty, the user's Azure Active Directory domain will be used instead. Inherited from [iosVpnConfiguration](../resources/intune-deviceconfig-iosvpnconfiguration.md)|
@@ -108,7 +111,7 @@ The following table shows the properties that are required when you create the [
 |allowDefaultChildSecurityAssociationParameters|Boolean|Allows the use of child security association parameters by setting all parameters to the device's default unless explicitly specified.|
 |alwaysOnConfiguration|[appleVpnAlwaysOnConfiguration](../resources/intune-deviceconfig-applevpnalwaysonconfiguration.md)|AlwaysOn Configuration|
 |enableAlwaysOnConfiguration|Boolean|Determines if Always on VPN is enabled|
-|mtuSizeInBytes|Int32|Maximum transmission unit. Valid values 1 to 65536|
+|mtuSizeInBytes|Int32|Maximum transmission unit. Valid values 1280 to 1400|
 
 
 
@@ -122,7 +125,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 5428
+Content-length: 5562
 
 {
   "@odata.type": "#microsoft.graph.iosikEv2VpnConfiguration",
@@ -205,10 +208,15 @@ Content-length: 5428
     }
   ],
   "providerType": "appProxy",
+  "associatedDomains": [
+    "Associated Domains value"
+  ],
   "excludedDomains": [
     "Excluded Domains value"
   ],
   "disableOnDemandUserOverride": true,
+  "disconnectOnIdle": true,
+  "disconnectOnIdleTimerInSeconds": 14,
   "proxyServer": {
     "@odata.type": "microsoft.graph.vpnProxyServer",
     "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
@@ -292,7 +300,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 5600
+Content-Length: 5734
 
 {
   "@odata.type": "#microsoft.graph.iosikEv2VpnConfiguration",
@@ -378,10 +386,15 @@ Content-Length: 5600
     }
   ],
   "providerType": "appProxy",
+  "associatedDomains": [
+    "Associated Domains value"
+  ],
   "excludedDomains": [
     "Excluded Domains value"
   ],
   "disableOnDemandUserOverride": true,
+  "disconnectOnIdle": true,
+  "disconnectOnIdleTimerInSeconds": 14,
   "proxyServer": {
     "@odata.type": "microsoft.graph.vpnProxyServer",
     "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",

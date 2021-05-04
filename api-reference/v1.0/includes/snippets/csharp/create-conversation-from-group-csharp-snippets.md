@@ -9,11 +9,11 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var conversation = new Conversation
 {
 	Topic = "New locations for this quarter",
-	Threads = (IConversationThreadsCollectionPage)new List<ConversationThread>()
+	Threads = new ConversationThreadsCollectionPage()
 	{
 		new ConversationThread
 		{
-			Posts = (IConversationThreadPostsCollectionPage)new List<Post>()
+			Posts = new ConversationThreadPostsCollectionPage()
 			{
 				new Post
 				{
@@ -39,7 +39,7 @@ var conversation = new Conversation
 	}
 };
 
-await graphClient.Groups["29981b6a-0e57-42dc-94c9-cd24f5306196"].Conversations
+await graphClient.Groups["{group-id}"].Conversations
 	.Request()
 	.AddAsync(conversation);
 

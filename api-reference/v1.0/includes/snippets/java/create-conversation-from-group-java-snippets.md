@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Conversation conversation = new Conversation();
 conversation.topic = "New locations for this quarter";
@@ -25,9 +25,15 @@ newParticipants.emailAddress = emailAddress;
 newParticipantsList.add(newParticipants);
 posts.newParticipants = newParticipantsList;
 postsList.add(posts);
-threads.posts = postsList;
+PostCollectionResponse postCollectionResponse = new PostCollectionResponse();
+postCollectionResponse.value = postsList;
+PostCollectionPage postCollectionPage = new PostCollectionPage(postCollectionResponse, null);
+threads.posts = postCollectionPage;
 threadsList.add(threads);
-conversation.threads = threadsList;
+ConversationThreadCollectionResponse conversationThreadCollectionResponse = new ConversationThreadCollectionResponse();
+conversationThreadCollectionResponse.value = threadsList;
+ConversationThreadCollectionPage conversationThreadCollectionPage = new ConversationThreadCollectionPage(conversationThreadCollectionResponse, null);
+conversation.threads = conversationThreadCollectionPage;
 
 graphClient.groups("29981b6a-0e57-42dc-94c9-cd24f5306196").conversations()
 	.buildRequest()

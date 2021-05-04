@@ -43,6 +43,7 @@ The components are also available as [React components](./get-started/mgt-react.
 |Providers|Description|
 |---------|-----------|
 |[Msal](./providers/msal.md)|Uses MSAL.js to sign in users and acquire tokens to use with Microsoft Graph.|
+|[Electron](./providers/electron.md)|Authenticates and provides Microsoft Graph access to components inside of Electron apps|
 |[SharePoint](./providers/sharepoint.md)|Authenticates and provides Microsoft Graph access to components inside of SharePoint web parts.|
 |[Teams](./providers/teams.md)|Authenticates and provides Microsoft Graph access to components inside of Microsoft Teams tabs.|
 |[Proxy](./providers/proxy.md)|Allows the use of backend authentication by routing all calls to Microsoft Graph through your backend.|
@@ -72,7 +73,12 @@ The Microsoft Graph Toolkit makes integrating common experiences powered by Micr
 
 ## Who should use it?
 
-The Microsoft Graph Toolkit is great for developers of all experience levels looking to develop a web application, Microsoft Teams tab, or SharePoint web part that connects to and accesses data from Microsoft Graph.
+The Microsoft Graph Toolkit is great for developers of all experience levels looking to develop an app that connects to and accesses data from Microsoft Graph, such as a:
+- Web app
+- Microsoft Teams tab
+- Progressive Web App (PWA)
+- Electron app
+- SharePoint web part
 
 ## Where can I use it?
 

@@ -1,6 +1,120 @@
 {
   "changelog": [
     {
+         "ChangeList":[
+            {
+               "Id":"c5972090-4edc-11eb-ae35-ed470c456b69",
+               "ApiChange":"Relationship",
+               "ChangedApiName":"authenticationMethods",
+               "ChangeType":"Addition",
+               "Description":"Added the **authenticationMethods** relationship to [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource.",
+               "Target":"reportRoot"
+            },
+            {
+               "Id":"c5998244-4edc-11eb-ae35-ed470c456b69",
+               "ApiChange":"Resource",
+               "ChangedApiName":"userRegistrationFeatureSummary",
+               "ChangeType":"Addition",
+               "Description":"Added the [userRegistrationFeatureSummary](https://docs.microsoft.com/en-us/graph/api/resources/userRegistrationFeatureSummary?view=graph-rest-beta) resource type.",
+               "Target":"userRegistrationFeatureSummary"
+            },
+            {
+               "Id":"c59be365-4edc-11eb-ae35-ed470c456b69",
+               "ApiChange":"Resource",
+               "ChangedApiName":"userRegistrationFeatureCount",
+               "ChangeType":"Addition",
+               "Description":"Added the [userRegistrationFeatureCount](https://docs.microsoft.com/en-us/graph/api/resources/userRegistrationFeatureCount?view=graph-rest-beta) resource type.",
+               "Target":"userRegistrationFeatureCount"
+            },
+            {
+               "Id":"c59e4577-4edc-11eb-ae35-ed470c456b69",
+               "ApiChange":"Resource",
+               "ChangedApiName":"userRegistrationMethodSummary",
+               "ChangeType":"Addition",
+               "Description":"Added the [userRegistrationMethodSummary](https://docs.microsoft.com/en-us/graph/api/resources/userRegistrationMethodSummary?view=graph-rest-beta) resource type.",
+               "Target":"userRegistrationMethodSummary"
+            },
+            {
+               "Id":"c5a0a6f0-4edc-11eb-ae35-ed470c456b69",
+               "ApiChange":"Resource",
+               "ChangedApiName":"userRegistrationMethodCount",
+               "ChangeType":"Addition",
+               "Description":"Added the [userRegistrationMethodCount](https://docs.microsoft.com/en-us/graph/api/resources/userRegistrationMethodCount?view=graph-rest-beta) resource type.",
+               "Target":"userRegistrationMethodCount"
+            },
+            {
+               "Id":"c5a3116b-4edc-11eb-ae35-ed470c456b69",
+               "ApiChange":"Resource",
+               "ChangedApiName":"authenticationMethodsRoot",
+               "ChangeType":"Addition",
+               "Description":"Added the [authenticationMethodsRoot](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodsRoot?view=graph-rest-beta) resource type.",
+               "Target":"authenticationMethodsRoot"
+            },
+            {
+               "Id":"c5a56d43-4edc-11eb-ae35-ed470c456b69",
+               "ApiChange":"Enum type",
+               "ChangedApiName":"authenticationMethodFeature",
+               "ChangeType":"Addition",
+               "Description":"Added the **authenticationMethodFeature** enumeration type.",
+               "Target":"authenticationMethodFeature"
+            },
+            {
+               "Id":"c5a7cfc6-4edc-11eb-ae35-ed470c456b69",
+               "ApiChange":"Enum type",
+               "ChangedApiName":"includedUserTypes",
+               "ChangeType":"Addition",
+               "Description":"Added the **includedUserTypes** enumeration type.",
+               "Target":"includedUserTypes"
+            },
+            {
+               "Id":"c5aa312c-4edc-11eb-ae35-ed470c456b69",
+               "ApiChange":"Enum type",
+               "ChangedApiName":"includedUserRoles",
+               "ChangeType":"Addition",
+               "Description":"Added the **includedUserRoles** enumeration type.",
+               "Target":"includedUserRoles"
+            },
+            {
+               "Id":"c5ac940d-4edc-11eb-ae35-ed470c456b69",
+               "ApiChange":"Method",
+               "ChangedApiName":"usersRegisteredByFeature",
+               "ChangeType":"Addition",
+               "Description":"Added the [usersRegisteredByFeature](https://docs.microsoft.com/en-us/graph/api/authenticationMethodsRoot-usersRegisteredByFeature?view=graph-rest-beta) method to the [authenticationMethodsRoot](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodsRoot?view=graph-rest-beta) resource.",
+               "Target":"authenticationMethodsRoot"
+            },
+            {
+               "Id":"c5aef5d3-4edc-11eb-ae35-ed470c456b69",
+               "ApiChange":"Method",
+               "ChangedApiName":"usersRegisteredByMethod",
+               "ChangeType":"Addition",
+               "Description":"Added the [usersRegisteredByMethod](https://docs.microsoft.com/en-us/graph/api/authenticationMethodsRoot-usersRegisteredByMethod?view=graph-rest-beta) method to the [authenticationMethodsRoot](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodsRoot?view=graph-rest-beta) resource.",
+               "Target":"authenticationMethodsRoot"
+            },
+            {
+               "Id":"c5b1577e-4edc-11eb-ae35-ed470c456b69",
+               "ApiChange":"Member",
+               "ChangedApiName":"warning",
+               "ChangeType":"Deletion",
+               "Description":"Removed the `warning` member from the **provisioningResult** enumeration.",
+               "Target":"provisioningResult"
+            },
+            {
+               "Id":"c5b3bbb2-4edc-11eb-ae35-ed470c456b69",
+               "ApiChange":"Member",
+               "ChangedApiName":"unknownFutureValue",
+               "ChangeType":"Deletion",
+               "Description":"Removed the `unknownFutureValue` member from the **provisioningResult** enumeration.",
+               "Target":"provisioningResult"
+            }
+         ],
+         "Id":"c594c664-4edc-11eb-ae35-ed470c456b69",
+         "Cloud":"prd",
+         "Version":"beta",
+         "CreatedDateTime":"2021-01-04T22:32:47.956Z",
+         "WorkloadArea":"Reports",
+         "SubArea":"Identity and access reports"
+    },
+    {
       "ChangeList": [
         {
           "Id": "15159f16-343c-45d6-861f-105ebf2d5982",
@@ -50,7 +164,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-08-01T00:00:00",
       "WorkloadArea": "Reports ",
-      "SubArea": " Microsoft 365 usage reports"
+      "SubArea": "Microsoft 365 usage reports"
     },
     {
       "ChangeList": [
@@ -68,7 +182,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-04-01T00:00:00",
       "WorkloadArea": "Reports ",
-      "SubArea": " Identity and access reports"
+      "SubArea": "Identity and access reports"
     },
     {
       "ChangeList": [
@@ -102,7 +216,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-04-01T00:00:00",
       "WorkloadArea": "Reports ",
-      "SubArea": " Microsoft 365 usage reports"
+      "SubArea": "Microsoft 365 usage reports"
     },
     {
       "ChangeList": [
@@ -120,7 +234,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-03-01T00:00:00",
       "WorkloadArea": "Reports ",
-      "SubArea": " Microsoft 365 usage reports"
+      "SubArea": "Microsoft 365 usage reports"
     },
     {
       "ChangeList": [
@@ -138,7 +252,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2020-03-01T00:00:00",
       "WorkloadArea": "Reports ",
-      "SubArea": " Microsoft 365 usage reports"
+      "SubArea": "Microsoft 365 usage reports"
     },
     {
       "ChangeList": [
@@ -156,7 +270,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2019-12-01T00:00:00",
       "WorkloadArea": "Reports ",
-      "SubArea": " Microsoft 365 usage reports"
+      "SubArea": "Microsoft 365 usage reports"
     },
     {
       "ChangeList": [
@@ -258,7 +372,7 @@
       "Version": "beta",
       "CreatedDateTime": "2019-06-01T00:00:00",
       "WorkloadArea": "Reports ",
-      "SubArea": " Identity and access reports"
+      "SubArea": "Identity and access reports"
     },
     {
       "ChangeList": [
@@ -284,7 +398,7 @@
       "Version": "beta",
       "CreatedDateTime": "2019-05-01T00:00:00",
       "WorkloadArea": "Reports ",
-      "SubArea": " Microsoft 365 usage reports"
+      "SubArea": "Microsoft 365 usage reports"
     },
     {
       "ChangeList": [

@@ -3,7 +3,7 @@ title: "List accessReviewInstanceDecisionItem pending approval"
 description: "Retrieve accessReviewInstanceDecisionItem objects pending approval by the calling user."
 localization_priority: Normal
 author: "isabelleatmsft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/70a68410-67
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -117,7 +117,7 @@ Content-type: application/json
                 "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemUserTarget",
                 "userId": "7eae986b-d425-48b2-adf2-3c777f6256f3",
                 "userDisplayName": "Adele Vance",
-                "userPrincipalName": "AdeleV@microsoft.com"
+                "userPrincipalName": "AdeleV@contoso.com"
             }
         },
         {
@@ -143,7 +143,7 @@ Content-type: application/json
                 "@odata.type": "#microsoft.graph.accessReviewInstanceDecisionItemUserTarget",
                 "userId": "957f1027-c0ee-460d-9269-b8828e59e0fe",
                 "userDisplayName": "MOD Administrator",
-                "userPrincipalName": "admin@microsoft.com"
+                "userPrincipalName": "admin@contoso.com"
             }
         }
     ]

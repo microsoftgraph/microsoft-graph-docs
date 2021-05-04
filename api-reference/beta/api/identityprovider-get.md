@@ -4,14 +4,15 @@ description: "Retrieve the properties and relationships of an identityProvider o
 localization_priority: Normal
 doc_type: apiPageType
 author: "namkedia"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 ---
 
-# Get identityProvider
+# Get identityProvider (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Retrieve the properties and relationships of an [identityProvider](../resources/identityprovider.md).
 
@@ -26,6 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
 The work or school account needs to belong to one of the following roles:
+
 * Global administrator
 * External Identity Provider administrator
 
@@ -36,6 +38,7 @@ The work or school account needs to belong to one of the following roles:
 ```http
 GET /identityProviders/{id}
 ```
+
 ## Request headers
 
 |Name|Description|
@@ -62,7 +65,7 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_identityprovider"
+  "name": "get_identityprovider_1"
 }
 -->
 
@@ -70,19 +73,19 @@ The following is an example of the request.
 GET https://graph.microsoft.com/beta/identityProviders/{id}
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-identityprovider-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-identityprovider-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-identityprovider-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-identityprovider-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-identityprovider-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-identityprovider-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-identityprovider-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-identityprovider-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -110,21 +113,42 @@ Content-type: application/json
     "clientSecret": "*****"
 }
 ```
+
 ### Example 2: Retrieve a specific openIDConnectProvider (only for Azure AD B2C)
 
 #### Request
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_identityprovider"
+  "name": "get_identityprovider_2"
 }
 -->
 
 ``` http
 GET https://graph.microsoft.com/beta/identityProviders/{id}
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-identityprovider-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-identityprovider-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-identityprovider-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-identityprovider-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 
@@ -160,5 +184,3 @@ Content-type: application/json
   "scope": "openid"
 }
 ```
-
-

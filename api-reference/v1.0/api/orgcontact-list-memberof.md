@@ -3,7 +3,7 @@ title: "List memberOf"
 description: "List the groups that this organizaitonal contact is a member of."
 localization_priority: Normal
 author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/contacts/{id}/memberOf
 
 ##### Response
 The following is an example of the response.
->**Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note**: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

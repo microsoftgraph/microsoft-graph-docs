@@ -4,7 +4,7 @@ description: "Classification of a user's messages to enable focus on those that 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: "svpsiva"
+author: "abheek-das"
 ---
 
 # inferenceClassification resource type

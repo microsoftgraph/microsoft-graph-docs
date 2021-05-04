@@ -4,7 +4,7 @@ description: "Focused Inbox allows you to view important messages in the `Focuse
 localization_priority: Normal
 doc_type: conceptualPageType
 ms.prod: ""
-author: "svpsiva"
+author: "abheek-das"
 ---
 
 # Manage Focused Inbox

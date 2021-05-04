@@ -30,7 +30,7 @@ var mediaConfig = new ServiceHostedMediaConfig
 	}
 };
 
-await graphClient.Communications.Calls["57DAB8B1894C409AB240BD8BEAE78896"]
+await graphClient.Communications.Calls["{call-id}"]
 	.Answer(callbackUri,mediaConfig,acceptedModalities)
 	.Request()
 	.PostAsync();

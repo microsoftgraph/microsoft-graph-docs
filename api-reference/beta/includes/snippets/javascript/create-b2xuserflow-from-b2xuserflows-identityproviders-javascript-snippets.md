@@ -11,19 +11,19 @@ const options = {
 const client = Client.init(options);
 
 const b2xIdentityUserFlow = {
-    id: "Partner",
-    userFlowType: "signUpOrSignIn",
+    id: 'Partner',
+    userFlowType: 'signUpOrSignIn',
     userFlowTypeVersion: 1,
     identityProviders: [
         {
-            id: "Facebook-OAuth",
-            type: "Facebook",
-            name: "Facebook"
+            id: 'Facebook-OAuth',
+            type: 'Facebook',
+            name: 'Facebook'
         }
     ]
 };
 
-let res = await client.api('/identity/b2xUserFlows')
+await client.api('/identity/b2xUserFlows')
 	.version('beta')
 	.post(b2xIdentityUserFlow);
 

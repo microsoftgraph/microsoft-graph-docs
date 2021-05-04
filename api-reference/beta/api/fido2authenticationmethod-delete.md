@@ -3,7 +3,7 @@ title: "Delete fido2AuthenticationMethod"
 description: "Deletes a fido2AuthenticationMethod object."
 author: "mmcla"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -17,11 +17,11 @@ Deletes a user's [FIDO2 Security Key Authentication Method](../resources/fido2au
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions acting on self (from most to least privileged)|Permissions acting on others (from least to most privileged)|
+|Permission type|Permissions acting on self (from least to most privileged)|Permissions acting on others (from least to most privileged)|
 |:---|:---|:--|
-|Delegated (work or school account)|Not supported.|UserAuthenticationMethod.ReadWrite.All
-|Delegated (personal Microsoft account)|Not supported.|Not supported.
-|Application|Not supported.|Not supported.
+| Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite | UserAuthenticationMethod.ReadWrite.All |
+| Delegated (personal Microsoft account) | Not supported. | Not supported. |
+| Application                            | Not applicable. | UserAuthenticationMethod.ReadWrite.All |
 
 For delegated scenarios where an admin is acting on another user, the admin needs one of the following [roles](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles):
 

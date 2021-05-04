@@ -14,7 +14,7 @@ const string = {
   securityEnabledOnly: false
 };
 
-let res = await client.api('/groups/{id}/getMemberGroups')
+await client.api('/groups/{id}/getMemberGroups')
 	.post(string);
 
 ```

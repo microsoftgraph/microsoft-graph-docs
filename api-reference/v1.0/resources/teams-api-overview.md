@@ -23,10 +23,11 @@ Microsoft Teams is a chat-based workspace in Microsoft 365 that provides built-i
 |[teamsTab](../resources/teamstab.md) |[List](../api/channel-list-tabs.md), [create](../api/channel-post-tabs.md), [read](../api/channel-get-tabs.md), [update](../api/channel-patch-tabs.md), [delete](../api/channel-delete-tabs.md) |
 |[teamsApp](../resources/teamsapp.md)|[List](../api/appcatalogs-list-teamsapps.md), [publish](../api/teamsapp-publish.md), [update](../api/teamsapp-update.md), [remove](../api/teamsapp-delete.md)|
 |[teamsAppInstallation](../resources/teamsappinstallation.md)| [List](../api/team-list-installedapps.md), [install](../api/team-post-installedapps.md), [upgrade](../api/team-delete-installedapps.md), [remove](../api/team-delete-installedapps.md) |
-|[chatMessage](../resources/chatmessage.md)| [send](../api/channel-post-message.md) |
+|[chatMessage](../resources/chatmessage.md)| [list in channel](../api/channel-list-messages.md), [list in chat](../api/chat-list-messages.md), [send](../api/chatmessage-post.md), [read in channel](../api/chatmessage-get.md), [read in chat](../api/chatmessage-get.md)|
 |[call](../resources/call.md)| [Answer](../api/call-answer.md), [reject](../api/call-reject.md), [redirect](../api/call-redirect.md), [mute](../api/call-mute.md), [unmute](../api/call-unmute.md), [change screen sharing role](../api/call-changescreensharingrole.md), [list participants](../api/call-list-participants.md), [invite participants](../api/participant-invite.md) |
 |[schedule](../resources/schedule.md)| [Create or replace](../api/team-put-schedule.md), [get](../api/schedule-get.md), [share](../api/schedule-share.md) |
 |[schedulingGroup](../resources/schedulinggroup.md)| [Create](../api/schedule-post-schedulinggroups.md), [List](../api/schedule-list-schedulinggroups.md), [Get](../api/schedulinggroup-get.md), [Replace](../api/schedulinggroup-put.md), [Delete](../api/schedulinggroup-delete.md) |
+|activityFeedNotification| [Send notification to user in scope of a chat](../api/chat-sendactivitynotification.md), [Send notification to user in scope of a team](../api/team-sendactivitynotification.md), [Send notification to user in personal scope](../api/userteamwork-sendactivitynotification.md)|
 |[shift](../resources/shift.md)| [Create](../api/schedule-post-shifts.md), [List](../api/schedule-list-shifts.md), [Get](../api/shift-get.md), [Replace](../api/shift-put.md), [Delete](../api/shift-delete.md) |
 |[timeOff](../resources/timeoff.md)| [Create](../api/schedule-post-timesoff.md), [List](../api/schedule-list-timesoff.md), [Get](../api/timeoff-get.md), [Replace](../api/timeoff-put.md), [Delete](../api/timeoff-delete.md) |
 |[timeOffReason](../resources/timeoffreason.md)| [Create](../api/schedule-post-timeoffreasons.md), [List](../api/schedule-list-timeoffreasons.md), [Get](../api/timeoffreason-get.md), [Replace](../api/timeoffreason-put.md), [Delete](../api/timeoffreason-delete.md) |
@@ -43,7 +44,7 @@ can also come into play.
 
 Files inside channels are stored in SharePoint; [SharePoint online limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits) apply.
 
-See also [throttling limits for Microsoft Teams services](/graph/throttling).
+See also [throttling limits for Microsoft Teams services](/graph/throttling#microsoft-teams-service-limits).
 
 ## Teams and groups
 
@@ -112,7 +113,7 @@ If your app polls to see whether a resource has changed, you can only do that on
 If you need to hear about changes more frequently than that, you should [create a subscription](../api/subscription-post-subscriptions.md) to that resource and receive change notifications (webhooks). 
 If you don't find support for the type of subscription you need, we encourage you to provide feedback via [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359626). 
 
-When polling for new messages, you must specify a date range where supported. For details, see [get channel messages delta](/graph/api/chatmessage-delta?view=graph-rest-beta&preserve-view=true).
+When polling for new messages, you must specify a date range where supported. For details, see [get channel messages delta](../api/chatmessage-delta.md).
 
 Polling is doing a GET operation on a resource over and over again to see if that resource has changed. 
 You're allowed to GET the same resource multiple times a day, as long as it's not polling. 

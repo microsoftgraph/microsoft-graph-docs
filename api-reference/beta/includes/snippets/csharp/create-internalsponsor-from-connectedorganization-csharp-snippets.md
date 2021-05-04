@@ -11,7 +11,7 @@ var directoryObject = new DirectoryObject
 	Id = "{id}"
 };
 
-await graphClient.IdentityGovernance.EntitlementManagement.ConnectedOrganizations["{id}"].InternalSponsors.References
+await graphClient.IdentityGovernance.EntitlementManagement.ConnectedOrganizations["{connectedOrganization-id}"].InternalSponsors.References
 	.Request()
 	.AddAsync(directoryObject);
 

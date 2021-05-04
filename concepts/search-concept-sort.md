@@ -6,7 +6,7 @@ localization_priority: Normal
 ms.prod: "search"
 ---
 
-# "Use the Microsoft Search API to sort search results (preview)
+# Use the Microsoft Search API to sort search results (preview)
 
 You can use the Microsoft Search API in Microsoft Graph to sort search results. To sort the results, specify the **sortProperties** property in a [searchRequest](/graph/api/resources/searchrequest?view=graph-rest-beta&preserve-view=true) object and identify a resource property in **entityTypes** to sort matches by, in ascending or descending order.
 

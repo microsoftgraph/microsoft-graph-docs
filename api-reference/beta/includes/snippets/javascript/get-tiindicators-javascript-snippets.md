@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/security/tiIndicators')
+let tiIndicators = await client.api('/security/tiIndicators')
 	.version('beta')
 	.get();
 

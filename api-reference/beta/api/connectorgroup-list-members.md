@@ -3,7 +3,7 @@ title: "List members"
 description: "Retrieve a list of connector objects associated with a connectorGroup."
 localization_priority: Normal
 author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/beta/onPremisesPublishingProfiles/applicationPro
 ---
 
 ##### Response
-The following is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -112,3 +112,4 @@ Content-length: 169
   "suppressions": []
 }
 -->
+

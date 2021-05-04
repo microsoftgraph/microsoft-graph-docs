@@ -3,7 +3,7 @@ title: "applicationTemplate resource type"
 description: "Represents an application in the Azure AD application gallery"
 localization_priority: Normal
 author: "luleonpla"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "resourcePageType"
 ---
 
@@ -28,7 +28,7 @@ Represents an application in the [Azure AD application gallery](/azure/active-di
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|categories|String collection|The list of categories for the application. Supported values can be: `Collaboration`, `Business Management`, `Consumer`,`Content management`, `CRM`, `Data services`, `Developer services`, `E-commerce`, `Education`, `ERP`, `Finance`, `Health`, `Human resources`, `IT infrastructure`, `Mail`, `Management`, `Marketing`, `Media`, `Productivity`, `Project management`, `Telecommunications`, `Tools, Travel`, and `Web design & hosting`.|
+|categories|String collection|The list of categories for the application. Supported values can be: `Collaboration`, `Business Management`, `Consumer`, `Content management`, `CRM`, `Data services`, `Developer services`, `E-commerce`, `Education`, `ERP`, `Finance`, `Health`, `Human resources`, `IT infrastructure`, `Mail`, `Management`, `Marketing`, `Media`, `Productivity`, `Project management`, `Telecommunications`, `Tools`, `Travel`, and `Web design & hosting`.|
 |description|String|A description of the application.|
 |displayName|String|The name of the application.|
 |homePageUrl|String|The home page URL of the application.|
@@ -36,7 +36,7 @@ Represents an application in the [Azure AD application gallery](/azure/active-di
 |logoUrl|String|The URL to get the logo for this application.|
 |publisher|String|The name of the publisher for this application.|
 |supportedProvisioningTypes|String collection|The list of provisioning modes supported by this application. The only valid value is `sync`.|
-|supportedSingleSignOnModes|String collection|The list of single sign-on modes supported by this application. The supported values are `password`, `saml`, `external`, and `oidc`.|
+|supportedSingleSignOnModes|String collection|The list of single sign-on modes supported by this application. The supported values are `oidc`, `password`, `saml`, and `notSupported`.|
 
 ## Relationships
 
@@ -52,7 +52,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.applicationTemplate",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
@@ -78,5 +77,6 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

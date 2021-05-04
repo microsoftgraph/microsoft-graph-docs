@@ -33,9 +33,6 @@ A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../
 ```http
 POST /me/calendars/{id}/events
 POST /users/{id | userPrincipalName}/calendars/{id}/events
-
-POST /me/calendarGroup/calendars/{id}/events
-POST /users/{id | userPrincipalName}/calendarGroup/calendars/{id}/events
 ```
 A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).
 ```http
@@ -147,12 +144,14 @@ Content-type: application/json
     "reminderMinutesBeforeStart": 15,
     "isReminderOn": true,
     "hasAttachments": false,
+    "hideAttendees": false,
     "subject": "Let's go for lunch",
     "bodyPreview": "Does mid month work for you?",
     "importance": "normal",
     "sensitivity": "normal",
     "isAllDay": false,
     "isCancelled": false,
+    "isDraft": false,
     "isOrganizer": true,
     "responseRequested": true,
     "seriesMasterId": null,
@@ -308,12 +307,14 @@ Content-type: application/json
     "reminderMinutesBeforeStart": 15,
     "isReminderOn": true,
     "hasAttachments": false,
+    "hideAttendees": false,
     "subject": "Let's go for lunch",
     "bodyPreview": "Does next month work for you?",
     "importance": "normal",
     "sensitivity": "normal",
     "isAllDay": false,
     "isCancelled": false,
+    "isDraft": false,
     "isOrganizer": true,
     "responseRequested": true,
     "seriesMasterId": null,

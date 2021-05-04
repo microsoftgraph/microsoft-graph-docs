@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of an identityUserFlowAt
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 ---
 
 # Get identityUserFlowAttribute

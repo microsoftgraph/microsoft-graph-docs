@@ -44,8 +44,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.swapShiftsChangeRequest",
-  "baseType": ""
+  "@odata.type": "microsoft.graph.swapShiftsChangeRequest"
 }-->
 
 ```json

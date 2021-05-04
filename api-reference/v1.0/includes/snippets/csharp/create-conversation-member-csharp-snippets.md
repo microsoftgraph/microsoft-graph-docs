@@ -17,7 +17,7 @@ var conversationMember = new AadUserConversationMember
 	}
 };
 
-await graphClient.Teams["{id}"].Channels["{id}"].Members
+await graphClient.Teams["{team-id}"].Channels["{channel-id}"].Members
 	.Request()
 	.AddAsync(conversationMember);
 

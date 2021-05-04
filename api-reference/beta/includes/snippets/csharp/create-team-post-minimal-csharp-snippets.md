@@ -10,7 +10,7 @@ var team = new Team
 {
 	DisplayName = "My Sample Team",
 	Description = "My Sample Team’s Description",
-	Members = (ITeamMembersCollectionPage)new List<ConversationMember>()
+	Members = new TeamMembersCollectionPage()
 	{
 		new AadUserConversationMember
 		{

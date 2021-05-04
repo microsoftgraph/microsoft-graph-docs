@@ -3,7 +3,7 @@ title: "Update a connectedOrganization object"
 description: "Update a connectedOrganization object."
 author: "markwahl-msft"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -18,11 +18,11 @@ Update a [connectedOrganization](../resources/connectedorganization.md) object t
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)     | EntitlementManagement.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Not supported. |
+|Application                            | EntitlementManagement.ReadWrite.All |
 
 ## HTTP request
 
@@ -43,7 +43,7 @@ PATCH /identityGovernance/entitlementManagement/connectedOrganizations/{id}
 ## Request body
 In the request body, supply a JSON representation of the [connectedOrganization](../resources/connectedorganization.md) object.
 
-The following table shows the properties that are required when you update the [connectedOrganization](../resources/connectedorganization.md).
+The following table shows the properties that can be supplied when you update the [connectedOrganization](../resources/connectedorganization.md).
 
 |Property|Type|Description|
 |:---|:---|:---|

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Me.Onenote.Pages["{id}"]
+await graphClient.Me.Onenote.Pages["{onenotePage-id}"]
 	.Request()
 	.DeleteAsync();
 

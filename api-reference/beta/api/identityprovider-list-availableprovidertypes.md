@@ -4,14 +4,14 @@ description: "Retrieve all available identity provider types in the directory."
 localization_priority: Normal
 doc_type: apiPageType
 author: "namkedia"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 ---
 
-# List availableProviderTypes
-
+# List availableProviderTypes (deprecated)
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Retrieves all identity provider types available in a directory.
 
@@ -26,8 +26,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
 
 The work or school account needs to belong to one of the following roles:
-* Global administrator
-* External Identity Provider administrator
+
+* Global Administrator
+* External Identity Provider Administrator
 
 ## HTTP request
 
@@ -55,8 +56,6 @@ If successful, this function returns a `200 OK` response code and a String colle
 ### Request
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "identityprovider_availableprovidertypes"
@@ -66,6 +65,11 @@ The following is an example of the request.
 ``` http
 GET https://graph.microsoft.com/beta/identityProviders/availableProviderTypes
 ```
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/identityprovider-availableprovidertypes-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/identityprovider-availableprovidertypes-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -78,12 +82,7 @@ GET https://graph.microsoft.com/beta/identityProviders/availableProviderTypes
 [!INCLUDE [sample-code](../includes/snippets/objc/identityprovider-availableprovidertypes-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/identityprovider-availableprovidertypes-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
-
 
 ### Response
 
@@ -118,5 +117,3 @@ Content-Type: application/json
   ]
 }
 ```
-
-

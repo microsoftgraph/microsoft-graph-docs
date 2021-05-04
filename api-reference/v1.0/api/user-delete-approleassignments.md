@@ -3,8 +3,8 @@ title: "Delete an appRoleAssignment granted to a user"
 description: "Delete an appRoleAssignment that has been granted to a user."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
-author: "krbain"
+ms.prod: "users"
+author: "psignoret"
 ---
 
 # Delete an appRoleAssignment granted to a user

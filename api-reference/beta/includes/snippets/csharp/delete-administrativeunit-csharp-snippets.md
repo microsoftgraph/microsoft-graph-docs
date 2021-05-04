@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.AdministrativeUnits["{id}"]
+await graphClient.AdministrativeUnits["{administrativeUnit-id}"]
 	.Request()
 	.DeleteAsync();
 

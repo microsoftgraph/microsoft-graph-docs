@@ -3,7 +3,7 @@ title: "identitySecurityDefaultsEnforcementPolicy resource type"
 description: "Represents the Azure Active Directory security defaults policy. Security defaults contain preconfigured security settings that protect against common attacks."
 localization_priority: Normal
 author: "rohinigoyal1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -29,7 +29,7 @@ Inherits from [policyBase](../resources/policybase.md).
 |description|String|Description for this policy. Read-only.|
 |displayName|String|Display name for this policy. Read-only.|
 |id|String|Identifier for this policy. Read-only.|
-|isEnabled|Boolean|If set to true, Azure Active Directory security defaults is enabled for the tenant.|
+|isEnabled|Boolean|If set to `true`, Azure Active Directory security defaults is enabled for the tenant.|
 
 ## Relationships
 
@@ -45,7 +45,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.identitySecurityDefaultsEnforcementPolicy",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

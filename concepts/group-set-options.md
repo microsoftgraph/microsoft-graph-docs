@@ -16,7 +16,7 @@ The **group** resource exposes two properties, **resourceBehaviorOptions** and *
 > [!NOTE]
 > The **resourceBehaviorOptions** and **resourceProvisioningOptions** properties are currently available in only the Microsoft Graph beta endpoint. Do not use them in production apps, as they are subject to change without notice.
 
-**resourceBehaviorOptions** is a string collection that specifies group behaviors for a Microsoft 365 group. These bahaviors can be set only on [group creation](/graph/api/group-post-groups?view=graph-rest-beta) (`POST`).
+**resourceBehaviorOptions** is a string collection that specifies group behaviors for a Microsoft 365 group. These behaviors can be set only on [group creation](/graph/api/group-post-groups?view=graph-rest-beta) (`POST`).
 
 | Supported values for resourceBehaviorOptions   |Description|Default if not set|
 |:---------------|:--------|:-----------|

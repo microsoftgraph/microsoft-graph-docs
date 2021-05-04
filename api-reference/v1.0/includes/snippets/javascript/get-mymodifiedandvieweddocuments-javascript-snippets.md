@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/insights/used')
+let used = await client.api('/me/insights/used')
 	.orderby('LastUsed/LastAccessedDateTime desc')
 	.get();
 

@@ -3,7 +3,7 @@ title: "Update publishedResource"
 description: "Update the properties of a [publishedResource](../resources/publishedresource.md) object."
 localization_priority: Normal
 author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 
@@ -95,7 +95,7 @@ PATCH https://graph.microsoft.com/beta/onPremisesPublishingProfiles/provisioning
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -116,5 +116,6 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

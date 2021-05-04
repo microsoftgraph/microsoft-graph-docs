@@ -4,7 +4,7 @@ description: "Represents a single secret value."
 localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # synchronizationSecretKeyStringValuePair resource type

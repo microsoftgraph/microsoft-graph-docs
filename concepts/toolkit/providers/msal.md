@@ -67,9 +67,9 @@ interface MsalConfig {
 
 #### Pass an existing `UserAgentApplication` in the `userAgentApplication` property.
 
-Use this when your app uses MSAL functionality beyond what's exposed by the `MsalProvider` and other Microsoft Graph Toolkit features. This is particularly appropriate if a framework automatically instantiates and exposes a `UserAgentApplication` for you; for example, when using [msal-angular](https://docs.microsoft.com/azure/active-directory/develop/tutorial-v2-angular).
+Use this when your app uses MSAL functionality beyond what's exposed by the `MsalProvider` and other Microsoft Graph Toolkit features. This is particularly appropriate if a framework automatically instantiates and exposes a `UserAgentApplication` for you; for example, when using [msal-angular](/azure/active-directory/develop/tutorial-v2-angular).
 
-Be sure to understand opportunities for collisions when using this option. By its very nature, there is a risk that the `MsalProvider` can change the state of a session, for example by having the user sign in or consent to additional scopes. Make sure that your app and other frameworks respond gracefully to these changes in state, or consider using a [custom provider](/graph/toolkit/providers/custom) instead.
+Be sure to understand opportunities for collisions when using this option. By its very nature, there is a risk that the `MsalProvider` can change the state of a session, for example by having the user sign in or consent to additional scopes. Make sure that your app and other frameworks respond gracefully to these changes in state, or consider using a [custom provider](./custom.md) instead.
 
 ```ts
 interface MsalConfig {

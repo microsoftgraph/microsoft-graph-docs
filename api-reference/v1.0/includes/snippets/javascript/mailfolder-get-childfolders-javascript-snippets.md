@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/mailFolders/{id}/childFolders')
+let childFolders = await client.api('/me/mailFolders/{id}/childFolders')
 	.get();
 
 ```
