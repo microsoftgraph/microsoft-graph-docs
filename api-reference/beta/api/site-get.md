@@ -102,7 +102,7 @@ Content-type: application/json
   "webUrl": "https://contoso.sharepoint.com/teams/1drvteam",
   "root": "",
   "description": "",
-  "siteCollection": @{hostname=https://contoso.sharepoint.com}
+  "siteCollection": "https://contoso.sharepoint.com"
 }
 ```
 
