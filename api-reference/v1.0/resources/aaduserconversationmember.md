@@ -28,6 +28,10 @@ This type inherits from [conversationMember](conversationmember.md).
 |[Get channel member](../api/channel-get-members.md) | [conversationMember](conversationmember.md) collection | Get a member in a channel.|
 |[Update channel member's role](../api/channel-update-members.md) | [conversationMember](conversationmember.md) | Update the properties of a member of the channel. Only supported for channel with membershipType of `private`.|
 |[Remove channel member](../api/channel-delete-members.md) | None | Delete a member from a channel. Only supported for `channelType` of `private`.|
+|[List chat members](../api/chat-list-members.md) | [conversationMember](conversationmember.md) collection | Get the list of all members in a chat.|
+|[Add chat member](../api/chat-post-members.md) | Location header | Add a member to a chat.| 
+|[Get chat member](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Get a member in a chat.|
+|[Remove chat member](../api/chat-delete-members.md) | None | Remove a member from a chat.| 
 
 ## Properties
 
@@ -38,6 +42,8 @@ This type inherits from [conversationMember](conversationmember.md).
 |roles| string collection | The roles for that user. |
 |userId| string | The guid of the user. |
 |email| string  | The email address of the user. |
+|tenantId| string  | TenantId which the Azure AD user belongs to. |
+|visibleHistoryStartDateTime| DateTimeOffset  | The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.|
 
 ## JSON representation
 
@@ -45,17 +51,22 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "baseType": "microsoft.graph.entity",
-  "@odata.type": "microsoft.graph.aadUserConversationMember"
-}-->
-
-```json
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.aadUserConversationMember",
+  "baseType": "microsoft.graph.conversationMember",
+  "openType": false
+}
+-->
+``` json
 {
+  "@odata.type": "#microsoft.graph.aadUserConversationMember",
   "id": "string (identifier)",
   "displayName" : "string",
+  "visibleHistoryStartDateTime": "string (timestamp)",
   "roles" : ["string"],
   "userId" : "string",
-  "email" : "string"
+  "email" : "string",
+  "tenantId": "string"
 }
 ```
 

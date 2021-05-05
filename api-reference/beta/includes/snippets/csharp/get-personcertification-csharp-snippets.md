@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var personCertification = await graphClient.Me.Profile.Certifications["{id}"]
+var personCertification = await graphClient.Me.Profile.Certifications["{personCertification-id}"]
 	.Request()
 	.GetAsync();
 

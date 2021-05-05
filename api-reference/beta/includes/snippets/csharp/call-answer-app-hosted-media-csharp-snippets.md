@@ -18,7 +18,7 @@ var mediaConfig = new AppHostedMediaConfig
 	Blob = "<Media Session Configuration Blob>"
 };
 
-await graphClient.Communications.Calls["57DAB8B1894C409AB240BD8BEAE78896"]
+await graphClient.Communications.Calls["{call-id}"]
 	.Answer(callbackUri,mediaConfig,acceptedModalities,null)
 	.Request()
 	.PostAsync();

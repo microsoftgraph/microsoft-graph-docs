@@ -3,7 +3,7 @@ title: "programControl resource type"
 description: "In the Azure AD access reviews feature, the program control object represents a control, linking an access review to a program."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "markwahl-msft"
 ---
 

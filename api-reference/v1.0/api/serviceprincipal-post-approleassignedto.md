@@ -1,16 +1,15 @@
 ---
-title: "Grant an appRoleAssignment to a service principal"
-description: "Grant an app role assignment to a service principal."
+title: "Grant an appRoleAssignment for a service principal"
+description: "Grant an app role assignment for a service principal."
 localization_priority: Priority
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
-author: "sureshja"
+ms.prod: "applications"
+author: "psignoret"
 ---
 
 # Grant an appRoleAssignment for a service principal
 
 Namespace: microsoft.graph
-
 
 Assign an app role for a resource service principal, to a user, group, or client service principal.
 
@@ -28,9 +27,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | AppRoleAssignment.ReadWrite.All,Directory.AccessAsUser.All    |
+|Delegated (work or school account) | AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | AppRoleAssignment.ReadWrite.All, |
+|Application | AppRoleAssignment.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
@@ -68,14 +67,13 @@ Here is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/servicePrincipals/{id}/appRoleAssignedTo
+POST https://graph.microsoft.com/v1.0/servicePrincipals/9028d19c-26a9-4809-8e3f-20ff73e2d75e/appRoleAssignedTo
 Content-Type: application/json
-Content-Length: 110
 
 {
-  "principalId": "principalId-value",
-  "resourceId": "resourceId-value",
-  "appRoleId": "appRoleId-value"
+  "principalId": "33ad69f9-da99-4bed-acd0-3f24235cb296",
+  "resourceId": "9028d19c-26a9-4809-8e3f-20ff73e2d75e",
+  "appRoleId": "ef7437e6-4f94-4a0a-a110-a439eb2aa8f7"
 }
 ```
 # [C#](#tab/csharp)
@@ -103,7 +101,7 @@ In this example, `{id}` and `{resourceId-value}` would both be the `id` of the r
 
 Here is an example of the response. 
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -112,18 +110,20 @@ Here is an example of the response.
 } -->
 
 ```http
-HTTP/1.1 200 OK
+HTTP/1.1 201 Created
 Content-type: application/json
-Content-length: 253
 
 {
-  "id": "id-value",
-  "creationTimestamp": "2016-10-19T10:37:00Z",
-  "principalType": "principalType-value",
-  "principalId": "principalId-value",
-  "principalDisplayName": "principalDisplayName-value",
-  "resourceId": "resourceId-value",
-  "resourceDisplayName": "resourceDisplayName-value"
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#servicePrincipals('9028d19c-26a9-4809-8e3f-20ff73e2d75e')/appRoleAssignedTo/$entity",
+  "id": "-WmtM5na7Uus0D8kI1yylpU9Mdo0Pb9OoBJvd3T5eKc",
+  "deletedDateTime": null,
+  "appRoleId": "ef7437e6-4f94-4a0a-a110-a439eb2aa8f7",
+  "createdDateTime": "2021-02-15T16:14:59.8643039Z",
+  "principalDisplayName": "Parents of Contoso",
+  "principalId": "33ad69f9-da99-4bed-acd0-3f24235cb296",
+  "principalType": "Group",
+  "resourceDisplayName": "Fabrikam App",
+  "resourceId": "9028d19c-26a9-4809-8e3f-20ff73e2d75e"
 }
 ```
 

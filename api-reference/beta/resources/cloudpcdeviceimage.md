@@ -38,8 +38,25 @@ Represents the image resource on cloud PC.
 |osBuildNumber|String|The image's OS build version. For example: 1909.|
 |operatingSystem|String|The image's operating system. For example: Windows 10 Enterprise.|
 |lastModifiedDateTime|DateTimeOffset|The data and time that the image was last modified. The time is shown in ISO 8601 format and  Coordinated Universal Time (UTC) time. For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.|
-|status|cloudPcDeviceImageStatus|The status of the image on cloud PC. Possible status include upload pending, failed to upload, or ready to use. Possible values are: `pending`, `ready`, `failed`.|
-|statusDetails|cloudPcDeviceImageStatusDetails|The details of the image's status, which indicates why the upload failed, if applicable. Possible values are: `internalServerError`, `sourceImageNotFound`.|
+|status|cloudPcDeviceImageStatus|The status of the image on cloud PC. Possible values are: `pending`, `ready`, `failed`.|
+|statusDetails|cloudPcDeviceImageStatusDetails|The details of the image's status, which indicates why the upload failed, if applicable. Possible values are: `internalServerError`, `sourceImageNotFound`, `osVersionNotSupported`, and `sourceImageInvalid`.|
+
+### cloudPcDeviceImageStatus values
+
+|Member|Description|
+|:---|:---|
+|pending|The image upload is in progress.|
+|ready|The image is ready for use on Cloud PCs.|
+|failed|The image couldn’t be uploaded. |
+
+### cloudPcDeviceImageStatusDetails values
+
+|Member|Description|
+|:---|:---|
+|internalServerError|There was an internal server error while processing the image.|
+|sourceImageNotFound|Source image is inaccessible or not found.|
+|osVersionNotSupported| OS version is not supported.|
+|sourceImageInvalid|The source image is not valid for provisioning a Windows VM with it.|
 
 ## Relationships
 

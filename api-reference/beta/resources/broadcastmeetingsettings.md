@@ -1,7 +1,7 @@
 ---
 title: "broadcastMeetingSettings resource type"
 description: "Settings related to a live event"
-author: "frankpeng7"
+author: "jsandoval-msft"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType
@@ -15,17 +15,17 @@ Namespace: microsoft.graph
 
 Settings related to a live event.
 
-> [!IMPORTANT]
+> [!CAUTION]
 > This API does not validate live event settings that are managed by [policy](/microsoftteams/teams-live-events/set-teams-live-events-policies-using-powershell).
-> For example, if an admin sets a live event policy using `Set-CsTeamsMeetingBroadcastPolicy -Identity Global -BroadcastAttendeeVisibility EveryoneInCompany`, 
+> For example, if an admin sets a live event policy using `Set-CsTeamsMeetingBroadcastPolicy -Identity Global -BroadcastAttendeeVisibility EveryoneInCompany`,
 > users will be prevented from setting live event permissions to `public` in their Teams client, but will be able to create a live event via Microsoft Graph
-> by setting **allowedAudience** to `everyone`. 
+> by setting **allowedAudience** to `everyone`.
 
 ## Properties
 
 | Property                   | Type                     | Description                                                                     |
 | -------------------------- | ------------------------ | ------------------------------------------------------------------------------- |
-| allowedAudience            | broadcastMeetingAudience | Defines who can join the live event. Possible values are listed in the following table. |
+| allowedAudience            | [broadcastMeetingAudience](#broadcastmeetingaudience-values) | Defines who can join the live event. Possible values are listed in the following table. |
 | isRecordingEnabled         | Boolean                  | Indicates whether recording is enabled for this live event. Default value is `false`.          |
 | isAttendeeReportEnabled    | Boolean                  | Indicates whether attendee report is enabled for this live event. Default value is `false`.    |
 | isQuestionAndAnswerEnabled | Boolean                  | Indicates whether Q&A is enabled for this live event. Default value is `false`.                |

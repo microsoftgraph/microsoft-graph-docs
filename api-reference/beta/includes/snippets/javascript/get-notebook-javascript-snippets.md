@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/onenote/notebooks/{id}')
+let notebook = await client.api('/me/onenote/notebooks/{id}')
 	.version('beta')
 	.get();
 

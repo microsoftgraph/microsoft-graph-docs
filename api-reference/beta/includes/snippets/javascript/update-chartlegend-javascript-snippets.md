@@ -12,11 +12,11 @@ const client = Client.init(options);
 
 const workbookChartLegend = {
   visible: true,
-  position: "position-value",
+  position: 'position-value',
   overlay: true
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/legend')
+await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/legend')
 	.version('beta')
 	.update(workbookChartLegend);
 

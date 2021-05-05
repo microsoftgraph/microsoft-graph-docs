@@ -9,7 +9,9 @@ ms.custom: scenarios:getting-started
 
 # Upload documents using the Microsoft Graph Universal Print API
 
-To print a document using the Universal Print API in Microsoft Graph, you [create a print job](/graph/api/printershare-post-jobs?view=graph-rest-beta), upload a document, and then [start the print job](/graph/api/printjob-start?view=graph-rest-beta). This article describes how to upload a document, which starts with [creating an upload session](/graph/api/printdocument-createuploadsession?view=graph-rest-beta).
+[!INCLUDE [cloudprinting-pricing-disclaimer](../api-reference/includes/cloudprinting-pricing-disclaimer.md)]
+
+To print a document using the Universal Print API in Microsoft Graph, you [create a print job](/graph/api/printershare-post-jobs), upload a document, and then [start the print job](/graph/api/printjob-start). This article describes how to upload a document, which starts with [creating an upload session](/graph/api/printdocument-createuploadsession).
 
 To upload a file, or a portion of a file, your app makes a PUT request to the **uploadUrl** value received in the **createUploadSession** response.
 You can upload the entire file, or split the file into multiple byte ranges, as long as the maximum bytes in any given request is less than 10 MB.
@@ -37,7 +39,10 @@ Content-Range: bytes=0-72796/4533322
 Content-Length: 72797
 
 <bytes 0-72796 of the file>
+
 ```
+
+Here, 0 and 72796 are the start and end indexes of the file segment and 4533322 is the size of document.
 ### HTTP response
 
 When the request is complete, the server will respond with `202 Accepted` if there are more byte ranges that need to be uploaded.

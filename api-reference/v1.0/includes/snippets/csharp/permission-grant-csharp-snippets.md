@@ -23,7 +23,7 @@ var roles = new List<String>()
 	"read"
 };
 
-await graphClient.Shares["{encoded-sharing-url}"].Permission
+await graphClient.Shares["{sharedDriveItem-id}"].Permission
 	.Grant(roles,recipients)
 	.Request()
 	.PostAsync();

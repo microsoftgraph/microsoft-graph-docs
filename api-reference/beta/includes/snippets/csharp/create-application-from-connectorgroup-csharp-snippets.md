@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Applications["{id}"].ConnectorGroup.Reference
+await graphClient.Applications["{application-id}"].ConnectorGroup.Reference
 	.Request()
 	.PutAsync("{id}");
 

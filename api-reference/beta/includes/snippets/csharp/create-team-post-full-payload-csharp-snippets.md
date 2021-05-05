@@ -11,7 +11,7 @@ var team = new Team
 	Visibility = TeamVisibilityType.Private,
 	DisplayName = "Sample Engineering Team",
 	Description = "This is a sample engineering team, used to showcase the range of properties supported by this API",
-	Channels = (ITeamChannelsCollectionPage)new List<Channel>()
+	Channels = new TeamChannelsCollectionPage()
 	{
 		new Channel
 		{
@@ -24,11 +24,11 @@ var team = new Team
 			DisplayName = "Training 🏋️",
 			IsFavoriteByDefault = true,
 			Description = "This is a sample training channel, that is favorited by default, and contains an example of pinned website and YouTube tabs.",
-			Tabs = (IChannelTabsCollectionPage)new List<TeamsTab>()
+			Tabs = new ChannelTabsCollectionPage()
 			{
 				new TeamsTab
 				{
-					Name = "A Pinned Website",
+					DisplayName = "A Pinned Website",
 					Configuration = new TeamsTabConfiguration
 					{
 						ContentUrl = "https://docs.microsoft.com/microsoftteams/microsoft-teams"
@@ -40,7 +40,7 @@ var team = new Team
 				},
 				new TeamsTab
 				{
-					Name = "A Pinned YouTube Video",
+					DisplayName = "A Pinned YouTube Video",
 					Configuration = new TeamsTabConfiguration
 					{
 						ContentUrl = "https://tabs.teams.microsoft.com/Youtube/Home/YoutubeTab?videoId=X8krAMdGvCQ",
@@ -97,7 +97,7 @@ var team = new Team
 	{
 		ShowInTeamsSearchAndSuggestions = true
 	},
-	InstalledApps = (ITeamInstalledAppsCollectionPage)new List<TeamsAppInstallation>()
+	InstalledApps = new TeamInstalledAppsCollectionPage()
 	{
 		new TeamsAppInstallation
 		{

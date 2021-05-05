@@ -9,7 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var list = new List
 {
 	DisplayName = "Books",
-	Columns = (IListColumnsCollectionPage)new List<ColumnDefinition>()
+	Columns = new ListColumnsCollectionPage()
 	{
 		new ColumnDefinition
 		{

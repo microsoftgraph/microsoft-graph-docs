@@ -12,14 +12,13 @@ const client = Client.init(options);
 
 const homeRealmDiscoveryPolicy = {
   definition: [
-    "definition-value"
+    'definition-value'
   ],
-  displayName: "displayName-value",
-  isOrganizationDefault: true,
-  type: "type-value"
+  displayName: 'displayName-value',
+  isOrganizationDefault: true
 };
 
-let res = await client.api('/policies/homeRealmDiscoveryPolicies/{id}')
+await client.api('/policies/homeRealmDiscoveryPolicies/{id}')
 	.version('beta')
 	.update(homeRealmDiscoveryPolicy);
 

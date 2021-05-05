@@ -4,14 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Event event = new Event();
 event.originalStartTimeZone = "originalStartTimeZone-value";
 event.originalEndTimeZone = "originalEndTimeZone-value";
 ResponseStatus responseStatus = new ResponseStatus();
 responseStatus.response = ResponseType.NONE;
-responseStatus.time = CalendarSerializer.deserialize("datetime-value");
+responseStatus.time = OffsetDateTimeSerializer.deserialize("datetime-value");
 event.responseStatus = responseStatus;
 event.recurrence = null;
 event.iCalUId = "iCalUId-value";

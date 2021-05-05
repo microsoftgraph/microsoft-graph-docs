@@ -36,9 +36,9 @@ Here is a JSON representation of a **personOrGroupColumn** resource.
 | **displayAs**              | string  | How to display the information about the person or group chosen. See below.
 | **chooseFromType**         | string  | Whether to allow selection of people only, or people and groups. Must be one of `peopleAndGroups` or `peopleOnly`.
 
-## DisplayAs values
+## displayAs values
 
-| DisplayAs value               | Description                                                                                                 |
+| Value               | Description                                                                                                 |
 |:------------------------------|:------------------------------------------------------------------------------------------------------------|
 | **account**                   | The raw SharePoint encoded claim string for the person or group (eg. `i:0#.f|membership|jane@contoso.com`). |
 | **department**                | The person or group's department.                                                                           |

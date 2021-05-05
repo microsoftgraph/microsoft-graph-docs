@@ -42,7 +42,7 @@ A [teamsApp](teamsapp.md) installed in a [team](team.md), a [chat](chat.md), or 
 
 | Property            | Type     | Description |
 |:------------------- |:-------- |:----------- |
-| id                  | string   | A unique ID (not the team's ap ID). |
+| id                  | string   | A unique ID (not the team's app ID). |
 
 ## Relationships
 

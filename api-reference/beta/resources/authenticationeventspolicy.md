@@ -3,7 +3,7 @@ title: "authenticationEventsPolicy resource type"
 description: "Authentication events are used to invoke user flows at specific points in the authentication flow."
 author: "jkdouglas"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 
@@ -41,7 +41,6 @@ The following is a JSON representation of the resource.
   "blockType": "resource",
   "keyProperty": "id",
   "@odata.type": "microsoft.graph.authenticationEventsPolicy",
-  "baseType": "",
   "openType": false
 }
 -->

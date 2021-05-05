@@ -18,7 +18,7 @@ var educationOutcome = new EducationFeedbackOutcome
 	}
 };
 
-await graphClient.Education.Me.Assignments["{id}"].Submissions["{id}"].Outcomes["{id}"]
+await graphClient.Education.Me.Assignments["{educationAssignment-id}"].Submissions["{educationSubmission-id}"].Outcomes["{educationOutcome-id}"]
 	.Request()
 	.UpdateAsync(educationOutcome);
 

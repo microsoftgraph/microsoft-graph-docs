@@ -19,7 +19,7 @@ var term = new Microsoft.Graph.TermStore.Term
 	}
 };
 
-await graphClient.TermStore.Sets["{setId}"].Terms["{termId}"]
+await graphClient.TermStore.Sets["{termStore.set-id}"].Terms["{termStore.term-id}"]
 	.Request()
 	.UpdateAsync(term);
 

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/trustFramework/keySets/{id}')
+let trustFrameworkKeySet = await client.api('/trustFramework/keySets/{id}')
 	.version('beta')
 	.get();
 

@@ -11,8 +11,6 @@ doc_type: conceptualPageType
 
 Connections from external services to the Microsoft Search service are represented by the [externalConnection](/graph/api/resources/externalconnection?view=graph-rest-beta&preserve-view=true) resource in Microsoft Graph.
 
-[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
-
 The Microsoft Graph connectors platform offers a simple way to add your external data into the Microsoft Graph. A connection is a logical container for your external data that an administrator can manage as a single unit.
 
 Once a connection has been created, you can add your content from any external data source such as an on-premises content source or an external SaaS service. You can only view and manage the connections you created or were explicitly [authorized](/graph/api/external-post-connections?view=graph-rest-beta&preserve-view=true) to manage. A search admin can view and manage all the connections in the tenant from the Modern Admin Center.
@@ -80,7 +78,7 @@ You can [delete a connection](/graph/api/externalconnection-delete?view=graph-re
 
 ## Next steps
 
-- [Register the connection schema](/graph/search-index-manage-schema)
+- [Register the connection schema](./search-index-manage-schema.md)
 - [Review the Graph Connectors API reference](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
 - [Overview for Microsoft Graph Connectors](/microsoftsearch/connectors-overview)
 - Download the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub

@@ -13,11 +13,10 @@ var homeRealmDiscoveryPolicy = new HomeRealmDiscoveryPolicy
 		"definition-value"
 	},
 	DisplayName = "displayName-value",
-	IsOrganizationDefault = true,
-	Type = "type-value"
+	IsOrganizationDefault = true
 };
 
-await graphClient.Policies.HomeRealmDiscoveryPolicies["{id}"]
+await graphClient.Policies.HomeRealmDiscoveryPolicies["{homeRealmDiscoveryPolicy-id}"]
 	.Request()
 	.UpdateAsync(homeRealmDiscoveryPolicy);
 

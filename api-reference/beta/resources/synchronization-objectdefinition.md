@@ -4,7 +4,7 @@ description: "Describes an object and its attributes."
 localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # objectDefinition resource type

@@ -28,7 +28,6 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /education/me/assignments/
 GET /education/users/{id}/assignments
 ```
 
@@ -59,14 +58,14 @@ The following is an example of the request.
   "name": "get_assignments"
 }-->
 ```http 
-GET https://graph.microsoft.com/beta/education/me/assignments
+GET https://graph.microsoft.com/beta/education/classes/{id}/assignments
 ```
 
 ##### Response
 
 The following is an example of the response. 
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 
 <!-- {

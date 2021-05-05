@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const emailAuthenticationMethod = {
-  emailAddress: "kim@contoso.com"
+  emailAddress: 'kim@contoso.com'
 };
 
-let res = await client.api('/users/kim@contoso.com/authentication/emailMethods')
+await client.api('/users/kim@contoso.com/authentication/emailMethods')
 	.version('beta')
 	.post(emailAuthenticationMethod);
 

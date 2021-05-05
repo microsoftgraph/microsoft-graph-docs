@@ -15,7 +15,7 @@ var workbookRangeBorder = new WorkbookRangeBorder
 	Weight = "weight-value"
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Names["{name}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Names["{workbookNamedItem-id}"]
 	.Range().Format.Borders
 	.Request()
 	.AddAsync(workbookRangeBorder);

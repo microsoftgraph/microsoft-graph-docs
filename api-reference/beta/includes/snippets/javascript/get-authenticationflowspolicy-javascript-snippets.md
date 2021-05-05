@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/policies/authenticationFlowsPolicy')
+let authenticationFlowsPolicy = await client.api('/policies/authenticationFlowsPolicy')
 	.version('beta')
 	.get();
 

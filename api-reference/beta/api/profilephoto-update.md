@@ -49,7 +49,7 @@ To update the photo for a team:
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PUT /groups/{teamId}/photo/$value`
+PUT /groups/{teamId}/photo/$value
 ```
 
 ## Request headers

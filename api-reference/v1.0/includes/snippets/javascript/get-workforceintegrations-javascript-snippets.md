@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/teamwork/workforceIntegrations')
+let workforceIntegrations = await client.api('/teamwork/workforceIntegrations')
 	.get();
 
 ```

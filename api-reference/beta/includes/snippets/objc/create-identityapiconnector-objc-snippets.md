@@ -13,10 +13,10 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphIdentityApiConnector *identityApiConnector = [[MSGraphIdentityApiConnector alloc] init];
 [identityApiConnector setDisplayName:@"Test API"];
-[identityApiConnector setTargetUrl:@"https://someapi.com/api"];
+[identityApiConnector setTargetUrl:@"https://someotherapi.com/api"];
 MSGraphApiAuthenticationConfigurationBase *authenticationConfiguration = [[MSGraphApiAuthenticationConfigurationBase alloc] init];
-[authenticationConfiguration setUsername:@"<USERNAME>"];
-[authenticationConfiguration setPassword:@"<PASSWORD>"];
+[authenticationConfiguration setPkcs12Value:@"eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA"];
+[authenticationConfiguration setPassword:@"<password>"];
 [identityApiConnector setAuthenticationConfiguration:authenticationConfiguration];
 
 NSError *error;

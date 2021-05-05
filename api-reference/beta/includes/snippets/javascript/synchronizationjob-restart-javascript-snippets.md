@@ -12,11 +12,11 @@ const client = Client.init(options);
 
 const restart = {
    criteria: {
-       resetScope: "Watermark, Escrows, QuarantineState"
+       resetScope: 'Watermark, Escrows, QuarantineState'
    }
 };
 
-let res = await client.api('/servicePrincipals/{id}/synchronization/jobs/{jobId}/restart')
+await client.api('/servicePrincipals/{id}/synchronization/jobs/{jobId}/restart')
 	.version('beta')
 	.post(restart);
 

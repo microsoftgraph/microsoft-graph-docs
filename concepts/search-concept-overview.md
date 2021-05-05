@@ -11,7 +11,6 @@ scenarios: "getting-started"
 
 Microsoft Search is an enterprise search engine that delivers productivity gains and relevant search results for your organization. It harnesses the collective knowledge and productivity of an organization, and surfaces relevant content to keep end users up to date. Microsoft Search is available in various experiences including Office, SharePoint, Delve, Windows, and Bing. You can use the Microsoft Search API in Microsoft Graph to extend Microsoft Search to your apps.
 
-[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 <!-- markdownlint-disable MD026 -->
 ## Why use the Microsoft Search API?
@@ -64,4 +63,4 @@ Looking for the API reference for this service?
 
 ## See also
 
-- Engage with the community on [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-graph-search) or on GitHub
+- Engage with the community on [Microsoft Q&A](/answers/products/m365#microsoft-graph)  or on GitHub

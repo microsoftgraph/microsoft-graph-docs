@@ -22,7 +22,7 @@ For details about how to use this resource to add pull printing support to Unive
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [List](../api/printer-list-tasktriggers.md) | [printTaskTrigger](printtasktrigger.md) collection | Get a list of printTaskTriggers associated with a particular [printer](printer.md). |
-| [Get](../api/printtasktrigger-get.md) | [printTaskTrigger](printtasktrigger.md) | Get the printTaskTrigger associated with a particular [printTask](printtask.md). |
+| [Get](../api/printtasktrigger-get.md) | [printTaskTrigger](printtasktrigger.md) | Get a particular printTaskTrigger associated with a particular [printer](printer.md).|
 
 
 ## Properties

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var externalConnection = new ExternalConnection
+var externalConnection = new Microsoft.Graph.ExternalConnectors.ExternalConnection
 {
 	Id = "contosohr",
 	Name = "Contoso HR",

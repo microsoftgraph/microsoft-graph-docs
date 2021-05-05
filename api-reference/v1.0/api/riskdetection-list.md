@@ -3,7 +3,7 @@ title: "List riskDetections"
 description: "Get a list of the riskDetection objects and their properties."
 author: "cloudhandler"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -54,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_riskdetection"
+  "name": "get_riskdetection_2"
 }
 -->
 ``` http

@@ -3,7 +3,7 @@ title: "Update countryNamedlocation"
 description: "Update the properties of a countryNamedLocation object."
 localization_priority: Normal
 author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 

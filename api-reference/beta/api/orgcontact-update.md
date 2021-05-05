@@ -3,7 +3,7 @@ title: "Update orgcontact"
 description: "Update the properties of orgcontact object."
 localization_priority: Normal
 author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 

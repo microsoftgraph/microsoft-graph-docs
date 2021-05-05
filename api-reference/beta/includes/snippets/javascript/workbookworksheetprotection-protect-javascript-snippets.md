@@ -26,7 +26,7 @@ const protect = {
   }
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/protection/protect')
+await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/protection/protect')
 	.version('beta')
 	.post(protect);
 

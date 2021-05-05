@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and an updated **jou
 **Request**
 
 Here is an example of the request.
-```json
+```http
 PATCH https://graph.microsoft.com/beta/financials/companies/{id}/journals/{id}/journalLines/{id}
 Content-type: application/json
 
@@ -64,7 +64,7 @@ Content-type: application/json
 
 **Response**
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

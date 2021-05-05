@@ -18,7 +18,7 @@ var directorySetting = new DirectorySetting
 	}
 };
 
-await graphClient.Settings["{id}"]
+await graphClient.Settings["{directorySetting-id}"]
 	.Request()
 	.UpdateAsync(directorySetting);
 

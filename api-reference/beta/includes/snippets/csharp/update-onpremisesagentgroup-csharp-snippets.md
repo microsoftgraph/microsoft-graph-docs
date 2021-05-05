@@ -11,7 +11,7 @@ var onPremisesAgentGroup = new OnPremisesAgentGroup
 	DisplayName = "Group New Name"
 };
 
-await graphClient.OnPremisesPublishingProfiles["provisioning"].AgentGroups["8832388F-3814-4952-B288-FFB62081FE25"]
+await graphClient.OnPremisesPublishingProfiles["{onPremisesPublishingProfile-id}"].AgentGroups["{onPremisesAgentGroup-id}"]
 	.Request()
 	.UpdateAsync(onPremisesAgentGroup);
 

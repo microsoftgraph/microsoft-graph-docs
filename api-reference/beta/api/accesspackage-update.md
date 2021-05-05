@@ -3,7 +3,7 @@ title: "Update accessPackage"
 description: "Update the properties of an accessPackage object."
 author: "markwahl-msft"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -18,11 +18,11 @@ Update an existing [accessPackage](../resources/accesspackage.md) object to chan
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference.md).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)     | EntitlementManagement.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported. |
-|Application                            | Not supported. |
+|Application                            | EntitlementManagement.ReadWrite.All |
 
 ## HTTP request
 <!-- {
@@ -100,7 +100,6 @@ Content-length: 38
 ``` http
 HTTP/1.1 204 No Content
 Content-Type: application/json
-
 ```
 
 <!--

@@ -11,11 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const accept = {
-  comment: "comment-value",
+  comment: 'comment-value',
   sendResponse: true
 };
 
-let res = await client.api('/me/events/{id}/accept')
+await client.api('/me/events/{id}/accept')
 	.post(accept);
 
 ```

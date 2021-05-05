@@ -3,7 +3,7 @@ title: "privilegedRole: selfDeactivate"
 description: "Deactivate the role that is assigned to the requestor."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "shauliu"
 ---
 
@@ -78,7 +78,7 @@ POST https://graph.microsoft.com/beta/privilegedRoles/{id}/selfDeactivate
 
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

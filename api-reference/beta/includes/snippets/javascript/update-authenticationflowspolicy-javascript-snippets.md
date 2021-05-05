@@ -16,7 +16,7 @@ const authenticationFlowsPolicy = {
   }
 };
 
-let res = await client.api('/policies/authenticationFlowsPolicy')
+await client.api('/policies/authenticationFlowsPolicy')
 	.version('beta')
 	.update(authenticationFlowsPolicy);
 

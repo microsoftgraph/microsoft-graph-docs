@@ -16,7 +16,7 @@ var contact = new Contact
 	Initials = "initials-value"
 };
 
-await graphClient.Me.ContactFolders["{id}"].Contacts
+await graphClient.Me.ContactFolders["{contactFolder-id}"].Contacts
 	.Request()
 	.AddAsync(contact);
 

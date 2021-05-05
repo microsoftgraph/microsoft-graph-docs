@@ -13,7 +13,7 @@ var connectedOrganization = new ConnectedOrganization
 	State = ConnectedOrganizationState.Configured
 };
 
-await graphClient.IdentityGovernance.EntitlementManagement.ConnectedOrganizations["{id}"]
+await graphClient.IdentityGovernance.EntitlementManagement.ConnectedOrganizations["{connectedOrganization-id}"]
 	.Request()
 	.UpdateAsync(connectedOrganization);
 

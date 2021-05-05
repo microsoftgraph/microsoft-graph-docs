@@ -18,7 +18,9 @@ Add a member to a Microsoft 365 group or security group through the **members** 
 You can add users, service principals or other groups. 
 
 > [!Important]
-> You can only add users to security and Microsoft 365 groups managed through the cloud.
+> + You can only add users to security and Microsoft 365 groups managed through the cloud.
+> + You cannot add security groups to Microsoft 365 groups.
+> + You cannot add Microsoft 365 groups to security groups or other Microsoft 365 groups.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -86,7 +88,7 @@ In the request body, supply a JSON representation of the `id` of the [directoryO
 
 ### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
 <!-- {
   "blockType": "response",
   "truncated": true,

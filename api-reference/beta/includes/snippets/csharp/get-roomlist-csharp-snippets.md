@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var place = await graphClient.Places["bldg1@contoso.com"]
+var place = await graphClient.Places["{place-id}"]
 	.Request()
 	.GetAsync();
 

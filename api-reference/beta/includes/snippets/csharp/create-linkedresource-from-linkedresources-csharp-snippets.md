@@ -14,7 +14,7 @@ var linkedResource = new LinkedResource
 	ExternalId = "dk9cddce2-dce2-f9dd-e2dc-cdf9e2dccdf9"
 };
 
-await graphClient.Me.Todo.Lists["dfsdc-f9dfdfs-dcsda9"].Tasks["e2dc-f9cce2-dce29"].LinkedResources
+await graphClient.Me.Todo.Lists["{todoTaskList-id}"].Tasks["{todoTask-id}"].LinkedResources
 	.Request()
 	.AddAsync(linkedResource);
 

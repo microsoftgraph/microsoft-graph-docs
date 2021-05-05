@@ -15,7 +15,7 @@ var post = new Post
 	}
 };
 
-await graphClient.Groups["{id}"].Threads["{id}"]
+await graphClient.Groups["{group-id}"].Threads["{conversationThread-id}"]
 	.Reply(post)
 	.Request()
 	.PostAsync();

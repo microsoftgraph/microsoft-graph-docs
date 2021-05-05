@@ -15,7 +15,7 @@ const workbookFormatProtection = {
   formulaHidden: true
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/names/{name}/range/format/protection')
+await client.api('/me/drive/items/{id}/workbook/names/{name}/range/format/protection')
 	.update(workbookFormatProtection);
 
 ```

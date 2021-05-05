@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/security/securityActions')
+let securityActions = await client.api('/security/securityActions')
 	.version('beta')
 	.get();
 

@@ -14,7 +14,7 @@ const workbookRangeBorder = {
   index: 1
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/names/{name}/range/format/borders/itemAt')
+await client.api('/me/drive/items/{id}/workbook/names/{name}/range/format/borders/itemAt')
 	.post(workbookRangeBorder);
 
 ```

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/users/delta')
+let delta = await client.api('/users/delta')
 	.select('displayName,jobTitle,mobilePhone')
 	.get();
 

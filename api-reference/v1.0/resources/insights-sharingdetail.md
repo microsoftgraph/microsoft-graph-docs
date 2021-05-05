@@ -28,7 +28,7 @@ Here is a JSON representation of the resource
   "sharingSubject": "string",
   "sharingType": "string",
   "sharedBy": "insightIdentity",
-  "resourceReference": "resourceReference"
+  "sharingReference": "resourceReference"
 }
 ```
 

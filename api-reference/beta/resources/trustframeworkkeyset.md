@@ -3,7 +3,7 @@ title: "trustFrameworkKeySet resource type"
 description: "Represents a trust framework keyset/policy keys."
 localization_priority: Normal
 author: "Nickgmicrosoft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -51,7 +51,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.trustFrameworkKeySet",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

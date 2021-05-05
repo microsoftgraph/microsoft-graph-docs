@@ -11,20 +11,20 @@ const options = {
 const client = Client.init(options);
 
 const b2xIdentityUserFlow = {
-    id: "UserFlowWithAPIConnector",
-    userFlowType: "signUpOrSignIn",
+    id: 'UserFlowWithAPIConnector',
+    userFlowType: 'signUpOrSignIn',
     userFlowTypeVersion: 1,
-    apiConnectorConfiguration:{
-        postFederationSignup:{
-            @odata.id: "https://graph.microsoft.com/beta/identity/apiConnectors/{id}"
+    apiConnectorConfiguration: {
+        postFederationSignup: {
+            '@odata.id': '{apiConnectorId}'
         },
-        postAttributeCollection:{
-            @odata.id: "https://graph.microsoft.com/beta/identity/apiConnectors/{id}"
+        postAttributeCollection: {
+            '@odata.id': '{apiConnectorId}'
         }
     }
 };
 
-let res = await client.api('/identity/b2xUserFlows')
+await client.api('/identity/b2xUserFlows')
 	.version('beta')
 	.post(b2xIdentityUserFlow);
 

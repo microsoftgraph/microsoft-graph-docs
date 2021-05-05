@@ -4,7 +4,7 @@ description: "A key-value pair that represents an Internet message header, as de
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: "svpsiva"
+author: "abheek-das"
 ---
 
 # internetMessageHeader resource type

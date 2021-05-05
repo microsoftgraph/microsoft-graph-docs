@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var dataPolicyOperation = await graphClient.DataPolicyOperations["{id}"]
+var dataPolicyOperation = await graphClient.DataPolicyOperations["{dataPolicyOperation-id}"]
 	.Request()
 	.GetAsync();
 

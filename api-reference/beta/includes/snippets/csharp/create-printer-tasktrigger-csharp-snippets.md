@@ -15,7 +15,7 @@ var printTaskTrigger = new PrintTaskTrigger
 	}
 };
 
-await graphClient.Print.Printers["ae63f617-4856-4b45-8ea9-69dfbeea230e"].TaskTriggers
+await graphClient.Print.Printers["{printer-id}"].TaskTriggers
 	.Request()
 	.AddAsync(printTaskTrigger);
 

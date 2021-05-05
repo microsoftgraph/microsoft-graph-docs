@@ -12,17 +12,17 @@ const client = Client.init(options);
 
 const skillProficiency = {
   categories: [
-    "Professional"
+    'Professional'
   ],
-  allowedAudiences: "organization",
-  displayName: "API Design",
-  proficiency: "generalProfessional",
+  allowedAudiences: 'organization',
+  displayName: 'API Design',
+  proficiency: 'generalProfessional',
   collaborationTags: [
-    "ableToMentor"
+    'ableToMentor'
   ]
 };
 
-let res = await client.api('/me/profile/skills')
+await client.api('/me/profile/skills')
 	.version('beta')
 	.post(skillProficiency);
 

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/education/synchronizationProfiles/{id}')
+await client.api('/education/synchronizationProfiles/{id}')
 	.version('beta')
 	.delete();
 

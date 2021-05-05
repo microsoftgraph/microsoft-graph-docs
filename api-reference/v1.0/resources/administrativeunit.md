@@ -3,7 +3,7 @@ title: "administrativeUnit resource type"
 description: "An administrative unit provides a conceptual container for User and Group directory objects."
 localization_priority: Normal
 author: "anandyadavMSFT"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
@@ -43,11 +43,12 @@ This topic provides descriptions of the declared properties and navigation prope
 |description|string|An optional description for the administrative unit.|
 |displayName|string|Display name for the administrative unit.|
 |id|string|Unique identifier for the administrative unit. Read-only.|
-|visibility|string|Controls whether the administrative unit and its members are hidden or public. Can be set to `HiddenMembership` or `Public`. If not set, default behavior is Public. When set to HiddenMembership, only members of the administrative unit can list other members of the adminstrative unit.|
+|visibility|string|Controls whether the administrative unit and its members are hidden or public. Can be set to `HiddenMembership` or `Public`. If not set, default behavior is `Public`. When set to `HiddenMembership`, only members of the administrative unit can list other members of the administrative unit.|
 
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
+|extensions|[extension](extension.md) collection|The collection of open extensions defined for this Administrative Unit. Nullable.|
 |members|[directoryObject](directoryobject.md) collection|Users and groups that are members of this Adminsitrative Unit. HTTP Methods: GET (list members), POST (add members), DELETE (remove members).|
 |scopedRoleMembers|[scopedRoleMembership](scopedrolemembership.md) collection| Scoped-role members of this Administrative Unit.  HTTP Methods: GET (list scopedRoleMemberships), POST (add scopedRoleMembership), DELETE (remove scopedRoleMembership). |
 

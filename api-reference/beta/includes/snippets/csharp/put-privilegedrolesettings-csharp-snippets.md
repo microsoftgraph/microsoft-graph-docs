@@ -25,7 +25,7 @@ var privilegedRoleSettings = new PrivilegedRoleSettings
 	}
 };
 
-await graphClient.PrivilegedRoles["{id}"].Settings
+await graphClient.PrivilegedRoles["{privilegedRole-id}"].Settings
 	.Request()
 	.PutAsync(privilegedRoleSettings);
 

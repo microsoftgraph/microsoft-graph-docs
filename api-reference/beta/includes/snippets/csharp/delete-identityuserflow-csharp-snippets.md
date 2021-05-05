@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Identity.UserFlows["{id}"]
+await graphClient.Identity.UserFlows["{identityUserFlow-id}"]
 	.Request()
 	.DeleteAsync();
 

@@ -22,7 +22,7 @@ var prompts = new List<Prompt>()
 
 var loop = false;
 
-await graphClient.Communications.Calls["57dab8b1-894c-409a-b240-bd8beae78896"]
+await graphClient.Communications.Calls["{call-id}"]
 	.PlayPrompt(prompts,loop,clientContext)
 	.Request()
 	.PostAsync();

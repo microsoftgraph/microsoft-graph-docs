@@ -3,7 +3,7 @@ title: "List onSignUpStart listeners"
 description: "Get the collection of authenticationListener resources supported by the onSignupStart event."
 author: "jkdouglas"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -21,11 +21,11 @@ When an [invokeUserFlowListener](../resources/invokeuserflowlistener.md) is assi
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Policy.ReadWrite.ApplicationConfiguration, Policy.Read.All|
+|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Policy.ReadWrite.ApplicationConfiguration, Policy.Read.All|
+|Application|Policy.Read.All, Policy.ReadWrite.ApplicationConfiguration|
 
 ## HTTP request
 

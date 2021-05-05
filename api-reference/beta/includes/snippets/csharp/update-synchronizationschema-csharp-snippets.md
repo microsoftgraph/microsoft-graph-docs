@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var synchronizationSchema = new SynchronizationSchema
 {
-	Directories = (ISynchronizationSchemaDirectoriesCollectionPage)new List<DirectoryDefinition>()
+	Directories = new SynchronizationSchemaDirectoriesCollectionPage()
 	{
 		new DirectoryDefinition
 		{
@@ -63,7 +63,7 @@ var synchronizationSchema = new SynchronizationSchema
 	}
 };
 
-await graphClient.ServicePrincipals["{id}"].Synchronization.Jobs["{jobId}"].Schema
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization.Jobs["{synchronizationJob-id}"].Schema
 	.Request()
 	.PutAsync(synchronizationSchema);
 

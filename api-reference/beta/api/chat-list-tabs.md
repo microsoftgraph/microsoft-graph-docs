@@ -1,7 +1,7 @@
 ---
 title: "List tabs in chat"
 description: "Retrieve the list of tabs in the specified chat. "
-author: "nkramer"
+author: "subray"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -28,6 +28,10 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ```http
 GET /chats/{chat-id}/tabs
 ```

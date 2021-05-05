@@ -23,6 +23,7 @@ Users can see these apps in the Microsoft Teams Store, and these apps can be ins
 |[Upload app to catalog](../api/teamsapp-publish.md) | [teamsApp](teamsapp.md) | Upload an app to your organization's app catalog.|
 |[Update app in catalog](../api/teamsapp-update.md) | [teamsApp](teamsapp.md) | Update an app in your organization's app catalog.|
 |[Delete app from catalog](../api/teamsapp-delete.md) | None | Remove an app from your organization's app catalog.|
+|[Get bot associated with app in catalog](../api/teamworkbot-get.md) | [teamworkbot](teamworkbot.md) | Get the bot associated with the Teams app.|
 
 ## Properties
 

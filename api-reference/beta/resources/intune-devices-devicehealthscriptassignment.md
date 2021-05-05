@@ -32,7 +32,6 @@ Contains properties used to assign a device management script to a group.
 |id|String|Key of the device health script assignment entity. This property is read-only.|
 |target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The Azure Active Directory group we are targeting the script to|
 |runRemediationScript|Boolean|Determine whether we want to run detection script only or run both detection script and remediation script|
-|runSchedule|[deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)|Script run schedule for the target group|
 
 ## Relationships
 None
@@ -50,17 +49,12 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.deviceHealthScriptAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.allDevicesAssignmentTarget",
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
     "deviceAndAppManagementAssignmentFilterId": "String",
-    "deviceAndAppManagementAssignmentFilterType": "String"
+    "deviceAndAppManagementAssignmentFilterType": "String",
+    "collectionId": "String"
   },
-  "runRemediationScript": true,
-  "runSchedule": {
-    "@odata.type": "microsoft.graph.deviceHealthScriptDailySchedule",
-    "interval": 1024,
-    "useUtc": true,
-    "time": "String (time of day)"
-  }
+  "runRemediationScript": true
 }
 ```
 

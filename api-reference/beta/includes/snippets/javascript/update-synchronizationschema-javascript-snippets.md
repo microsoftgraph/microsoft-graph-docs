@@ -13,36 +13,36 @@ const client = Client.init(options);
 const synchronizationSchema = {
     directories: [
         {
-            name: "Azure Active Directory",
+            name: 'Azure Active Directory',
             objects: [
                 {
-                    name: "User",
+                    name: 'User',
                     attributes: [
                         {
-                            name: "userPrincipalName",
-                            type: "string"
+                            name: 'userPrincipalName',
+                            type: 'string'
                         }
                     ]
                 },
             ]
         },
         {
-            name: "Salesforce",
+            name: 'Salesforce',
         }
     ],
-    synchronizationRules:[
+    synchronizationRules: [
         {
-            name: "USER_TO_USER",
-            sourceDirectoryName: "Azure Active Directory",
-            targetDirectoryName: "Salesforce",
+            name: 'USER_TO_USER',
+            sourceDirectoryName: 'Azure Active Directory',
+            targetDirectoryName: 'Salesforce',
             objectMappings: [
                 {
-                    sourceObjectName: "User",
-                    targetObjectName: "User",
+                    sourceObjectName: 'User',
+                    targetObjectName: 'User',
                     attributeMappings: [
                         {
                             source: {},
-                            targetAttributeName: "userName"
+                            targetAttributeName: 'userName'
                         },
                     ]
                 },
@@ -51,7 +51,7 @@ const synchronizationSchema = {
     ]
 };
 
-let res = await client.api('/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema')
+await client.api('/servicePrincipals/{id}/synchronization/jobs/{jobId}/schema')
 	.version('beta')
 	.put(synchronizationSchema);
 

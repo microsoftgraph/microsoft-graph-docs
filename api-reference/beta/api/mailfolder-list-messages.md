@@ -2,7 +2,7 @@
 title: "List messages"
 description: "List all the messages in the signed-in user's mailbox, or those messages in a specified folder in the mailbox or drive."
 localization_priority: Normal
-author: "svpsiva"
+author: "abheek-das"
 ms.prod: "outlook"
 doc_type: apiPageType
 ---
@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/messages
 
 #### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -124,20 +124,20 @@ Content-length: 317
       "sender": {
           "emailAddress": {
               "name": "MyAnalytics",
-              "address": "no-reply@microsoft.com"
+              "address": "no-reply@contoso.com"
           }
       },
       "from": {
           "emailAddress": {
               "name": "MyAnalytics",
-              "address": "no-reply@microsoft.com"
+              "address": "no-reply@contoso.com"
           }
       },
       "toRecipients": [
           {
               "emailAddress": {
                   "name": "Megan Bowen",
-                  "address": "MeganB@M365x214355.onmicrosoft.com"
+                  "address": "MeganB@contoso.com"
               }
           }
       ],

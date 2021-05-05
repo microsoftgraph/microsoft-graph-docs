@@ -17,7 +17,7 @@ Remove a [conversationMember](../resources/conversationmember.md) from a [chat](
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)| ChatMember.ReadWrite.All |
 |Delegated (personal Microsoft account) | Not supported.    |
@@ -48,10 +48,6 @@ If successful, this method returns a `204 No Content` response code.
 ## Examples
 
 ### Request
-
-> [!NOTE]
-> There are some known issues with this functionality. For details, see [known issues](/graph/known-issues#unable-to-remove-members-from-chat).
-
 
 # [HTTP](#tab/http)
 <!-- {

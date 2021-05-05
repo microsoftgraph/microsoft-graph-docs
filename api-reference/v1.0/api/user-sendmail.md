@@ -1,7 +1,7 @@
 ---
 title: "Send mail"
 description: "Send the message specified in the request body. The message is saved in the Sent Items folder by default."
-author: "svpsiva"
+author: "abheek-das"
 localization_priority: Priority
 ms.prod: "outlook"
 doc_type: apiPageType

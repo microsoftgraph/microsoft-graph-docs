@@ -3,7 +3,7 @@ title: "b2cAuthenticationMethodsPolicy resource type"
 description: "Represents a local account authentication method registered to a user configured in an Azure Active Directory (Azure AD) B2C tenant."
 localization_priority: Priority
 author: "namkedia"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -31,6 +31,7 @@ The local accounts in Azure AD B2C do not follow the settings or paradigms from 
 |id|String|The id of the B2C authentication methods policy. This is a read only property and the key.|
 |isEmailPasswordAuthenticationEnabled|Boolean|The tenant admin can configure local accounts using email if the email and password authentication method is enabled.|
 |isUserNameAuthenticationEnabled|Boolean|The tenant admin can configure local accounts using username if the username and password authentication method is enabled.|
+|isPhoneOneTimePasswordAuthenticationEnabled|Boolean|The tenant admin can configure local accounts using phone number if the phone number and one-time password authentication method is enabled.|
 
 ## Relationships
 
@@ -46,7 +47,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.b2cAuthenticationMethodsPolicy",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
@@ -54,7 +54,8 @@ The following is a JSON representation of the resource.
 {
     "id": "b2CAuthenticationMethodsPolicy",
     "isEmailPasswordAuthenticationEnabled": true,
-    "isUserNameAuthenticationEnabled": false
+    "isUserNameAuthenticationEnabled": false,
+    "isPhoneOneTimePasswordAuthenticationEnabled": true
 }
 ```
 

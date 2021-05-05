@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 WorkbookRangeFormat workbookRangeFormat = new WorkbookRangeFormat();
 workbookRangeFormat.columnWidth = 135d;
@@ -14,7 +14,10 @@ workbookRangeFormat.rowHeight = 49d;
 workbookRangeFormat.wrapText = false;
 
 graphClient.me().drive().items("{id}").workbook().worksheets("Sheet1")
-	.range("$C$1").format()
+	.range(WorkbookWorksheetRangeParameterSet
+		.newBuilder()
+		.withAddress("$C$1")
+		.build()).format()
 	.buildRequest()
 	.patch(workbookRangeFormat);
 

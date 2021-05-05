@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 const stream = The contents of the file goes here.;
 
-let res = await client.api('/me/drive/items/{item-id}/content')
+await client.api('/me/drive/items/{item-id}/content')
 	.put(stream);
 
 ```

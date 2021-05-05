@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var personAward = await graphClient.Me.Profile.Awards["{id}"]
+var personAward = await graphClient.Me.Profile.Awards["{personAward-id}"]
 	.Request()
 	.GetAsync();
 

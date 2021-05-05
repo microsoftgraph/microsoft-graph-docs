@@ -16,7 +16,7 @@ const authorizationPolicy = {
    }
 };
 
-let res = await client.api('/policies/authorizationPolicy')
+await client.api('/policies/authorizationPolicy')
 	.update(authorizationPolicy);
 
 ```

@@ -3,7 +3,7 @@ title: "reportRoot: getSharePointActivityPages"
 description: "Get the number of unique pages visited by users."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 

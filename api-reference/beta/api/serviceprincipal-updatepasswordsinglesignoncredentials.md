@@ -3,7 +3,7 @@ title: "servicePrincipal: updatePasswordSingleSignOnCredentials"
 description: "Update single sign-on credentials using a password for a user or group."
 localization_priority: Normal
 author: "sureshja"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "apiPageType"
 ---
 

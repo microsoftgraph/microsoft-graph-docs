@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var passwordAuthenticationMethod = await graphClient.Me.Authentication.PasswordMethods["{id}"]
+var passwordAuthenticationMethod = await graphClient.Me.Authentication.PasswordMethods["{passwordAuthenticationMethod-id}"]
 	.Request()
 	.GetAsync();
 

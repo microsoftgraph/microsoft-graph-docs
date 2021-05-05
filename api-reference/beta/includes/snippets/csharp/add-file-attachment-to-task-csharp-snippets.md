@@ -12,7 +12,7 @@ var attachment = new FileAttachment
 	ContentBytes = Encoding.ASCII.GetBytes("bWFjIGFuZCBjaGVlc2UgdG9kYXk=")
 };
 
-await graphClient.Me.Outlook.Tasks["AAMkADAAAANXbdnAAA="].Attachments
+await graphClient.Me.Outlook.Tasks["{outlookTask-id}"].Attachments
 	.Request()
 	.AddAsync(attachment);
 

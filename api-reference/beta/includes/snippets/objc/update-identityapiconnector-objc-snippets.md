@@ -12,11 +12,9 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphIdentityApiConnector *identityApiConnector = [[MSGraphIdentityApiConnector alloc] init];
-[identityApiConnector setDisplayName:@"New Test API"];
-[identityApiConnector setTargetUrl:@"https://otherapi.com/api/endpoint"];
 MSGraphApiAuthenticationConfigurationBase *authenticationConfiguration = [[MSGraphApiAuthenticationConfigurationBase alloc] init];
-[authenticationConfiguration setUsername:@"<NEW_USERNAME>"];
-[authenticationConfiguration setPassword:@"<NEW_PASSWORD>"];
+[authenticationConfiguration setPkcs12Value:@"eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA"];
+[authenticationConfiguration setPassword:@"secret"];
 [identityApiConnector setAuthenticationConfiguration:authenticationConfiguration];
 
 NSError *error;

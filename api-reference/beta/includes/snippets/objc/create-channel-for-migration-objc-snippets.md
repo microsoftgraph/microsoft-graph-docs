@@ -13,9 +13,8 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphChannel *channel = [[MSGraphChannel alloc] init];
 [channel set@microsoft.graph.channelCreationMode:@"migration"];
-[channel setDisplayName:@"Architecture Discussion"];
-[channel setDescription:@"This channel is where we debate all future architecture plans"];
-[channel setMembershipType: [MSGraphChannelMembershipType standard]];
+[channel setDisplayName:@"Import_150958_99z"];
+[channel setDescription:@"Import_150958_99z"];
 [channel setCreatedDateTime: "2020-03-14T11:22:17.067Z"];
 
 NSError *error;

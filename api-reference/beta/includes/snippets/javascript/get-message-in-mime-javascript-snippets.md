@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/messages/4aade2547798441eab5188a7a2436bc1/$value')
+let stream = await client.api('/me/messages/4aade2547798441eab5188a7a2436bc1/$value')
 	.version('beta')
 	.get();
 

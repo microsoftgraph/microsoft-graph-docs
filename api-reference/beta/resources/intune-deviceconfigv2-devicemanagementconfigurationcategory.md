@@ -36,6 +36,10 @@ Device Management Configuration Policy
 |displayName|String|Display name of the item|
 |platforms|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Platforms types, which settings in the category have. Possible values are: `none`, `macOS`, `windows10X`, `windows10`.|
 |technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Technologies types, which settings in the category have. Possible values are: `none`, `mdm`, `windows10XManagement`, `configManager`.|
+|settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Indicates that the category contains settings that are used for Compliance or Configuration. Possible values are: `none`, `configuration`.|
+|parentCategoryId|String|Parent id of the category.|
+|rootCategoryId|String|Root id of the category.|
+|childCategoryIds|String collection|List of child ids of the category.|
 
 ## Relationships
 None
@@ -57,7 +61,13 @@ Here is a JSON representation of the resource.
   "name": "String",
   "displayName": "String",
   "platforms": "String",
-  "technologies": "String"
+  "technologies": "String",
+  "settingUsage": "String",
+  "parentCategoryId": "String",
+  "rootCategoryId": "String",
+  "childCategoryIds": [
+    "String"
+  ]
 }
 ```
 

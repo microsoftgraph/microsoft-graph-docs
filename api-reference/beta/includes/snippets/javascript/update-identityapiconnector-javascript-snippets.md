@@ -11,16 +11,14 @@ const options = {
 const client = Client.init(options);
 
 const identityApiConnector = {
-  displayName: "New Test API",
-  targetUrl: "https://otherapi.com/api/endpoint",
   authenticationConfiguration: {
-    @odata.type: "microsoft.graph.basicAuthentication",
-    username:"<NEW_USERNAME>", 
-    password:"<NEW_PASSWORD>"
+    '@odata.type': '#microsoft.graph.pkcs12Certificate',
+    pkcs12Value: 'eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA',
+    password: 'secret'
   }
 };
 
-let res = await client.api('/identity/apiConnectors/{identityApiConnectorId}')
+await client.api('/identity/apiConnectors/{identityApiConnectorId}')
 	.version('beta')
 	.update(identityApiConnector);
 

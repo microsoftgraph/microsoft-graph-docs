@@ -12,7 +12,7 @@ var workbookFormatProtection = new WorkbookFormatProtection
 	FormulaHidden = true
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Names["{name}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Names["{workbookNamedItem-id}"]
 	.Range().Format.Protection
 	.Request()
 	.UpdateAsync(workbookFormatProtection);

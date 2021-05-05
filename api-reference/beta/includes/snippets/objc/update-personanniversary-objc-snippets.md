@@ -11,12 +11,12 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"PATCH"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphPersonAnniversary *personAnniversary = [[MSGraphPersonAnniversary alloc] init];
-[personAnniversary setAllowedAudiences: [MSGraphAllowedAudiences contacts]];
+MSGraphPersonAnnualEvent *personAnnualEvent = [[MSGraphPersonAnnualEvent alloc] init];
+[personAnnualEvent setAllowedAudiences: [MSGraphAllowedAudiences contacts]];
 
 NSError *error;
-NSData *personAnniversaryData = [personAnniversary getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:personAnniversaryData];
+NSData *personAnnualEventData = [personAnnualEvent getSerializedDataWithError:&error];
+[urlRequest setHTTPBody:personAnnualEventData];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {

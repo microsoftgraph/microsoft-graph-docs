@@ -3,11 +3,11 @@ title: "passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget resource ty
 description: "A collection of users or groups enabled to use Microsoft Authenticator Passwordless Phone Sign-in authentication methods policy."
 author: "mmcla"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
-# passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget resource type
+# passwordlessMicrosoftAuthenticatorAuthenticationMethodTarget resource type (deprecated)
 
 Namespace: microsoft.graph
 
@@ -15,8 +15,8 @@ Namespace: microsoft.graph
 
 A collection of users or groups enabled to use Microsoft Authenticator Passwordless Phone Sign-in authentication methods policy](../resources/passwordlessMicrosoftAuthenticatorAuthenticationMethodConfiguration.md) in Azure AD.
 
-> [!NOTE]
-> Substantial schema changes are planned for APIs that manage the Microsoft Authenticator app while the APIs are in Mirosoft Graph beta. Because the calling patterns will change, we recommend that you do not take a production dependency on these APIs.
+> [!CAUTION]
+> The Microsoft Authenticator Passwordless Phone Sign-in authentication method policy API is deprecated and stopped returning results on December 31, 2020. Please use the new [Microsoft Authenticator authentication method policy](../resources/microsoftAuthenticatorAuthenticationMethodConfiguration.md).
 
 ## Properties
 |Property|Type|Description|

@@ -3,7 +3,7 @@ title: "accessPackageQuestion resource type"
 description: "The complex type for questions configured on an access package assignment policy."
 author: "markwahl-msft"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "tokenLifetimePolicy resource type"
 description: "Represents a policy that can control the lifetime of an access token issued by Azure Active Directory."
 localization_priority: Normal
 author: "lujiangfeng666"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -38,7 +38,7 @@ Inherits from [stsPolicy](stsPolicy.md).
 |definition|String collection| A string collection containing a JSON string that defines the rules and settings for this policy. See below for more details about the JSON schema for this property. Required.|
 |description|String| Description for this policy.|
 |displayName|String| Display name for this policy. Required.|
-|isOrganizationDefault|Boolean|If set to true, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Optional, default value is false.|
+|isOrganizationDefault|Boolean|If set to `true`, activates this policy. There can be many policies for the same policy type, but only one can be activated as the organization default. Optional, default value is `false`.|
 
 
 ### Properties of a token lifetime policy definition
@@ -78,7 +78,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.tokenLifetimePolicy",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

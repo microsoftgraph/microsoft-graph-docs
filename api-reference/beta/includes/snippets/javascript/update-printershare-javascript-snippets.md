@@ -11,11 +11,12 @@ const options = {
 const client = Client.init(options);
 
 const printerShare = {
-  name: "ShareName",
-  printer@odata.bind: "https://graph.microsoft.com/beta/print/printers/{id}"
+  displayName: 'ShareName',
+  allowAllUsers: true,
+  'printer@odata.bind': 'https://graph.microsoft.com/beta/print/printers/{id}'
 };
 
-let res = await client.api('/print/shares/{id}')
+await client.api('/print/shares/{id}')
 	.version('beta')
 	.update(printerShare);
 

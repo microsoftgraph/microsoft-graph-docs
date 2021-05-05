@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var workPosition = await graphClient.Me.Profile.Positions["{id}"]
+var workPosition = await graphClient.Me.Profile.Positions["{workPosition-id}"]
 	.Request()
 	.GetAsync();
 

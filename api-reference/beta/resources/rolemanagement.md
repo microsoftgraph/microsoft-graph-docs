@@ -3,7 +3,7 @@ title: "roleManagement resource type"
 description: "RBAC role management resource"
 localization_priority: Normal
 author: "abhijeetsinha"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: "resourcePageType"
 ---
 

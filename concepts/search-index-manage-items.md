@@ -11,8 +11,6 @@ doc_type: conceptualPageType
 
 Items added by your application to the Microsoft Search service are represented by the [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) resource in Microsoft Graph.
 
-[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
-
 Once you have created a connection, you can add your content. Each item from your data source must be represented as an [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) in Microsoft Graph with a unique item id. This id is used to create, update or delete the item from Microsoft Graph. You can use the primary key from your data source as the itemId or derive it from one or more fields. An [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) has three key components: access control list, properties, and content.
 
 ## Access control list
@@ -29,7 +27,7 @@ External groups can consist of another external group, Azure Active Directory us
 
 ## Properties
 
-The properties component is used to add item metadata that is useful in Microsoft Graph experiences. You must [register the schema](/graph/search-index-manage-schema) for the connection before adding items into it and convert datatypes into [supported datatypes](/graph/api/resources/property?view=graph-rest-beta&preserve-view=true).
+The properties component is used to add item metadata that is useful in Microsoft Graph experiences. You must [register the schema](./search-index-manage-schema.md) for the connection before adding items into it and convert datatypes into [supported datatypes](/graph/api/resources/property?view=graph-rest-beta&preserve-view=true).
 
 ![An example property component](./images/search-index-manage-items-1.png)
 
@@ -37,7 +35,7 @@ The properties component is used to add item metadata that is useful in Microsof
 
 The content component is used to add the bulk of the item that needs to be full text indexed. Examples include ticket description, parsed text from a file body, or a wiki page body.
 
-Content is one of the key fields influencing [relevance](/graph/search-index-manage-schema.md/#relevance) across Microsoft experiences. We support content of the type `text` and `HTML`. If your data source has binary files, you can parse them to text before adding them to Microsoft Graph.
+Content is one of the key fields influencing [relevance](./search-index-manage-schema.md#relevance) across Microsoft experiences. We support content of the type `text` and `HTML`. If your data source has binary files, you can parse them to text before adding them to Microsoft Graph.
 
 ![An example content component](./images/search-index-manage-items-2.png)
 

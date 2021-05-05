@@ -12,14 +12,14 @@ const client = Client.init(options);
 
 const workbookRangeFont = {
   bold: true,
-  color: "color-value",
+  color: 'color-value',
   italic: true,
-  name: "name-value",
+  name: 'name-value',
   size: 99,
-  underline: "underline-value"
+  underline: 'underline-value'
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/names/{name}/range/format/font')
+await client.api('/me/drive/items/{id}/workbook/names/{name}/range/format/font')
 	.update(workbookRangeFont);
 
 ```

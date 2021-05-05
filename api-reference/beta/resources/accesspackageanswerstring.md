@@ -3,7 +3,7 @@ title: "accessPackageAnswerString resource type"
 description: "A string answer to an accessPackageTextInputQuestion"
 author: "markwahl-msft"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 

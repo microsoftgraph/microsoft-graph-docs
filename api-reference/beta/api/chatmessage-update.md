@@ -1,7 +1,7 @@
 ---
 title: "Update chatMessage"
 description: "Update the policyViolation property of a chatMessage."
-author: "clearab"
+author: "RamjotSingh"
 doc_type: apiPageType
 localization_priority: Normal 
 ms.prod: "microsoft-teams"
@@ -27,8 +27,9 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /teams/(team-id)/channels/{channel-id}/chatMessages/{message-id}
-PATCH /users/(user-id)/chats/{chatThread-id}/chatMessages/{message-id}
+PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}
+PATCH /teams/(team-id)/channels/{channel-id}/messages/{message-id}/replies/{reply-id}
+PATCH /chats/{chatThread-id}/messages/{message-id}
 ```
 
 ## Request headers
@@ -62,7 +63,6 @@ The following is an example of the request to update the **policyViolation** pro
 ```http
 PATCH https://graph.microsoft.com/beta/teams/e1234567-e123-4276-55555-6232b0e3a89a/channels/a7654321-e321-0000-0000-123b0e3a00a/messages/19%3Aa21b0b0c05194ebc9e30000000000f61%40thread.skype
 Content-Type: application/json
-Content-Length: 248
 
 {
   "policyViolation": {

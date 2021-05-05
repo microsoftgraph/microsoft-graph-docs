@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/policies/permissionGrantPolicies/microsoft-user-default-low')
+let permissionGrantPolicy = await client.api('/policies/permissionGrantPolicies/microsoft-user-default-low')
 	.get();
 
 ```

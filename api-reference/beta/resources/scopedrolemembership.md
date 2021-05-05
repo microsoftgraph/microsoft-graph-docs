@@ -3,7 +3,7 @@ title: "scopedRoleMembership resource type"
 description: "A scoped-role membership describes a user's membership of a directory role, that is further scoped to an Administrative Unit (AU).  This provides a mechanism to allow a tenant-wide company adminsistrator to delegate administrative privileges to a user to manage users and groups in a subset of the organization (the subset being defined by an AU)."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
+ms.prod: "directory-management"
 author: "abhijeetsinha"
 ---
 

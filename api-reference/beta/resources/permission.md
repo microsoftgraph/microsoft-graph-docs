@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 title: permission resource type
 description: permission resource representing a sharing permission granted for a driveItem
 localization_priority: Normal
@@ -73,7 +72,7 @@ Here is a JSON representation of the resource.
 
 ### Roles property values
 
-| Role              | Details                                                                        |
+| Value              | Description                                                                        |
 |:------------------|:-------------------------------------------------------------------------------|
 | read            | Provides the ability to read the metadata and contents of the item.            |
 | write           | Provides the ability to read and modify the metadata and contents of the item. |

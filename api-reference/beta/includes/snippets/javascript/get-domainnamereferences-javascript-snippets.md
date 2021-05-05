@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/domains/contoso.com/domainNameReferences')
+let domainNameReferences = await client.api('/domains/contoso.com/domainNameReferences')
 	.version('beta')
 	.get();
 

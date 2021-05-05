@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var destinationId = "deleteditems";
 
-await graphClient.Me.Messages["AAMkADhAAATs28OAAA="]
+await graphClient.Me.Messages["{message-id}"]
 	.Move(destinationId)
 	.Request()
 	.PostAsync();

@@ -11,18 +11,18 @@ const options = {
 const client = Client.init(options);
 
 const channel = {
-    displayName: "TestChannelModeration",
-    description: "Test channel moderation.",
-    membershipType: "standard",
+    displayName: 'TestChannelModeration',
+    description: 'Test channel moderation.',
+    membershipType: 'standard',
     moderationSettings: {
-        userNewMessageRestriction: "everyoneExceptGuests",
-        replyRestriction: "everyone",
+        userNewMessageRestriction: 'everyoneExceptGuests',
+        replyRestriction: 'everyone',
         allowNewMessageFromBots: true,
         allowNewMessageFromConnectors: true
     }
 };
 
-let res = await client.api('/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels')
+await client.api('/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels')
 	.version('beta')
 	.post(channel);
 

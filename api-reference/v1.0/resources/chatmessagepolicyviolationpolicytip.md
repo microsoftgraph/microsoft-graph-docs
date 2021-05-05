@@ -1,7 +1,7 @@
 ---
 title: "chatMessagePolicyViolationPolicyTip resource type"
 description: "Represents properties of a policy tip on a chatMessagePolicyViolation object. Policy tips provide the sender with information about the policy violation."
-author: "laujan"
+author: "RamjotSingh"
 doc_type: resourcePageType
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -31,7 +31,6 @@ The following is a JSON representation of the resource.
   ],
   "@odata.type": "microsoft.graph.chatMessagePolicyViolationPolicyTip"
 }-->
-
 ```json
 {
   "complianceUrl": "string",

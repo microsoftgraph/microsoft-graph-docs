@@ -69,7 +69,7 @@ GET /sites/{site-id}/pages/{page-id}
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -81,16 +81,16 @@ Content-type: application/json
     "webUrl": "https://www.contoso.com/sites/Engineering/SitePages/Events.aspx",
     "createdBy": {
         "user": {
-            "email": "rahmit@microsoft.com",
+            "email": "AdeleV@contoso.com",
             "id": "1b37d2e1-5000-4648-b431-7dfa509b5660",
-            "displayName": "Rahul Mittal (ODSP)"
+            "displayName": "Adele Vance (Marketing Manager)"
         }
     },
     "lastModifiedBy": {
         "user": {
-            "email": "rahmit@microsoft.com",
+            "email": "AdeleV@contoso.com",
             "id": "1b37d2e1-5000-4648-b431-7dfa509b5660",
-            "displayName": "Rahul Mittal (ODSP)"
+            "displayName": "Adele Vance (Marketing Manager)"
         }
     },
     "parentReference": {

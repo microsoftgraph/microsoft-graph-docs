@@ -34,7 +34,7 @@ Represents a column in a table.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|id|int|Returns a unique key that identifies the column within the table. Read-only.|
+|id|string|Returns a unique key that identifies the column within the table. Read-only.|
 |index|int|Returns the index number of the column within the columns collection of the table. Zero-indexed. Read-only.|
 |name|string|Returns the name of the table column.|
 |values|Json|Represents the raw values of the specified range. The data returned could be of type string, number, or a boolean. Cell that contain an error will return the error string.|
@@ -60,7 +60,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "id": 1024,
+  "id": "1024",
   "index": 1024,
   "name": "string",
   "values": "json"

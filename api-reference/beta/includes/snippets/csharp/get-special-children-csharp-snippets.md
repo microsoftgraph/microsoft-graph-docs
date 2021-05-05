@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var children = await graphClient.Me.Drive.Special["{name}"].Children
+var children = await graphClient.Me.Drive.Special["{driveItem-id}"].Children
 	.Request()
 	.GetAsync();
 

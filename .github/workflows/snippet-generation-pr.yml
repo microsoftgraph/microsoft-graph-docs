@@ -19,6 +19,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      with:
+        fetch-depth: 10 # number of commits to fetch so that we can query history
 
     # Create a pull request [0]
     - name: Create PR using the GitHub REST API via hub
@@ -29,10 +31,16 @@ jobs:
         MESSAGE_BODY: "Scheduled snippets update"
         REVIEWERS: andrueastman
         ASSIGNEDTO: andrueastman
-        BASE: master
+        BASE: main
       run: |
-        curl -fsSL https://github.com/github/hub/raw/master/script/get | bash -s 2.14.1
-        bin/hub pull-request -b "$BASE" -h "$GITHUB_REF" -m "$MESSAGE_TITLE" -m "$MESSAGE_BODY" -r "$REVIEWERS" -a "$ASSIGNEDTO"
+        git fetch origin main
+        commitCount=`git rev-list origin/main.. --count`
+        if [ $commitCount == 1 ]; then
+          curl -fsSL https://github.com/github/hub/raw/master/script/get | bash -s 2.14.1
+          bin/hub pull-request -b "$BASE" -h "$GITHUB_REF" -m "$MESSAGE_TITLE" -m "$MESSAGE_BODY" -r "$REVIEWERS" -a "$ASSIGNEDTO"
+        else
+          echo "this is a subsequent commit to the snippets branch, so ignoring PR generation request.."
+        fi
 
 # References
 # [0] https://hub.github.com/hub-pull-request.1.html

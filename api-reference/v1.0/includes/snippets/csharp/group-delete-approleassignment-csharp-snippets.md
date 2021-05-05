@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Groups["{id}"].AppRoleAssignments["{id}"]
+await graphClient.Groups["{group-id}"].AppRoleAssignments["{appRoleAssignment-id}"]
 	.Request()
 	.DeleteAsync();
 

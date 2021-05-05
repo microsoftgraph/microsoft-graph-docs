@@ -8,5 +8,3 @@ If you have service issues and want to raise a support request, and if one of th
 - You are an administrator of a Microsoft 365 tenant - raise a new service request using the **Support** menu in the **[Microsoft 365 Admin Center](https://admin.microsoft.com)**.
 
 If you would like to ask a question about Microsoft Graph, please visit [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoft-graph) and ask your questions there using the `[microsoft-graph]` tag. 
-
-If you have suggestions or feedback on Microsoft Graph, please submit this at [Microsoft Graph Uservoice](https://microsoftgraph.uservoice.com/).

@@ -17,7 +17,7 @@ var message = new Message
 	InferenceClassification = InferenceClassificationType.Other
 };
 
-await graphClient.Me.Messages["{id}"]
+await graphClient.Me.Messages["{message-id}"]
 	.Request()
 	.UpdateAsync(message);
 

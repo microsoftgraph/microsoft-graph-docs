@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/outlook/supportedLanguages')
+let supportedLanguages = await client.api('/me/outlook/supportedLanguages')
 	.get();
 
 ```

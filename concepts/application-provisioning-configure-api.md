@@ -4,7 +4,7 @@ description: Learn how to save time by using the Microsoft Graph APIs to automat
 author: kenwith
 ms.topic: conceptual
 localization_priority: Normal
-ms.prod: microsoft-identity-platform
+ms.prod: applications
 ---
 
 # Configure provisioning using Microsoft Graph APIs

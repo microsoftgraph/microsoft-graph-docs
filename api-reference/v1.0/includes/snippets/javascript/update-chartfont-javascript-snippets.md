@@ -12,14 +12,14 @@ const client = Client.init(options);
 
 const workbookChartFont = {
   bold: true,
-  color: "color-value",
+  color: 'color-value',
   italic: true,
-  name: "name-value",
+  name: 'name-value',
   size: 99,
-  underline: "underline-value"
+  underline: 'underline-value'
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/format/font')
+await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/valueAxis/format/font')
 	.update(workbookChartFont);
 
 ```

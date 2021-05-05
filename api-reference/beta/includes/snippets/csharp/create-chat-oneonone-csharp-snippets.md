@@ -9,7 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var chat = new Chat
 {
 	ChatType = ChatType.OneOnOne,
-	Members = (IChatMembersCollectionPage)new List<ConversationMember>()
+	Members = new ChatMembersCollectionPage()
 	{
 		new AadUserConversationMember
 		{

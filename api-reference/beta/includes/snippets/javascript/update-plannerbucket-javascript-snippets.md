@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const plannerBucket = {
-  name: "Development"
+  name: 'Development'
 };
 
-let res = await client.api('/planner/buckets/hsOf2dhOJkqyYYZEtdzDe2QAIUCR')
+await client.api('/planner/buckets/hsOf2dhOJkqyYYZEtdzDe2QAIUCR')
 	.version('beta')
 	.update(plannerBucket);
 

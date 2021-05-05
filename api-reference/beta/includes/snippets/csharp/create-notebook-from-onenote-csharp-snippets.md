@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var notebook = new Notebook
 {
-	DisplayName = "Notebook name"
+	DisplayName = "My Private notebook"
 };
 
 await graphClient.Me.Onenote.Notebooks

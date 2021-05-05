@@ -41,6 +41,15 @@ MSGraphRegionalFormatOverrides *regionalFormatOverrides = [[MSGraphRegionalForma
 [regionalFormatOverrides setLongTimeFormat:@"h:mm:ss tt"];
 [regionalFormatOverrides setTimeZone:@"Pacific Standard Time"];
 [regionalAndLanguageSettings setRegionalFormatOverrides:regionalFormatOverrides];
+MSGraphTranslationPreferences *translationPreferences = [[MSGraphTranslationPreferences alloc] init];
+[translationPreferences setTranslationBehavior: [MSGraphTranslationBehavior Yes]];
+NSMutableArray *languageOverridesList = [[NSMutableArray alloc] init];
+MSGraphTranslationLanguageOverride *languageOverrides = [[MSGraphTranslationLanguageOverride alloc] init];
+[languageOverrides setLanguageTag:@"fr"];
+[languageOverrides setTranslationBehavior: [MSGraphTranslationBehavior Yes]];
+[languageOverridesList addObject: languageOverrides];
+[translationPreferences setLanguageOverrides:languageOverridesList];
+[regionalAndLanguageSettings setTranslationPreferences:translationPreferences];
 
 NSError *error;
 NSData *regionalAndLanguageSettingsData = [regionalAndLanguageSettings getSerializedDataWithError:&error];

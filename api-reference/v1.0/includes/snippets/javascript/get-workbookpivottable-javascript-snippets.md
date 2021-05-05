@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/drive/root/workbook/worksheets/{id}/pivotTables/{id}')
+let workbookPivotTable = await client.api('/me/drive/root/workbook/worksheets/{id}/pivotTables/{id}')
 	.get();
 
 ```

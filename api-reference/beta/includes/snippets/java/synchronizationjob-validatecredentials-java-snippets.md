@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<SynchronizationSecretKeyStringValuePair> credentialsList = new LinkedList<SynchronizationSecretKeyStringValuePair>();
 SynchronizationSecretKeyStringValuePair credentials = new SynchronizationSecretKeyStringValuePair();
@@ -19,7 +19,13 @@ credentials1.value = "password-value";
 credentialsList.add(credentials1);
 
 graphClient.servicePrincipals("{id}").synchronization().jobs("{id}")
-	.validateCredentials(null,null,null,credentialsList)
+	.validateCredentials(SynchronizationJobValidateCredentialsParameterSet
+		.newBuilder()
+		.withApplicationIdentifier(null)
+		.withTemplateId(null)
+		.withUseSavedCredentials(null)
+		.withCredentials(credentialsList)
+		.build())
 	.buildRequest()
 	.post();
 

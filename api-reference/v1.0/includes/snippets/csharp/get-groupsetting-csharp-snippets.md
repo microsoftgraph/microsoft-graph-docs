@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var groupSetting = await graphClient.GroupSettings["{id}"]
+var groupSetting = await graphClient.GroupSettings["{groupSetting-id}"]
 	.Request()
 	.GetAsync();
 

@@ -56,7 +56,7 @@ Here is a JSON representation of the resource.
 
 ```json
 {
-  "id": 1024,
+  "id": "1024",
   "index": 1024,
   "name": "string",
   "values": "json"

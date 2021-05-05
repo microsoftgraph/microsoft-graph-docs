@@ -3,7 +3,7 @@ title: "Users you can reach with Microsoft Graph"
 description: "Microsoft offers services and solutions that expand modern work and modern life. "
 author: "dkershaw10"
 localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # Users you can reach with Microsoft Graph

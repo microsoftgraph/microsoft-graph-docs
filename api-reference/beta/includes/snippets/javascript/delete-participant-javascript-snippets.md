@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/communications/calls/{id}/participants/{id}')
+await client.api('/communications/calls/{id}/participants/{id}')
 	.version('beta')
 	.delete();
 

@@ -13,7 +13,7 @@ var workbookChartAxis = new WorkbookChartAxis
 	Minimum = JToken.Parse("{}")
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Charts["{name}"].Axes.ValueAxis
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts["{workbookChart-id}"].Axes.ValueAxis
 	.Request()
 	.UpdateAsync(workbookChartAxis);
 

@@ -16,7 +16,7 @@
       "Version": "beta",
       "CreatedDateTime": "2020-07-01T00:00:00",
       "WorkloadArea": "Compliance ",
-      "SubArea": " eDiscovery"
+      "SubArea": "eDiscovery"
     },
     {
       "ChangeList": [
@@ -34,7 +34,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2020-07-01T00:00:00",
       "WorkloadArea": "Extensions ",
-      "SubArea": " Schema extensions"
+      "SubArea": "Schema extensions"
     },
     {
       "ChangeList": [
@@ -452,7 +452,7 @@
       "Version": "beta",
       "CreatedDateTime": "2017-05-01T00:00:00",
       "WorkloadArea": "Extensions ",
-      "SubArea": " Open extensions"
+      "SubArea": "Open extensions"
     },
     {
       "ChangeList": [
@@ -486,7 +486,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2017-05-01T00:00:00",
       "WorkloadArea": "Extensions ",
-      "SubArea": " Open extensions"
+      "SubArea": "Open extensions"
     },
     {
       "ChangeList": [
@@ -536,7 +536,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2017-05-01T00:00:00",
       "WorkloadArea": "Extensions ",
-      "SubArea": " Schema extensions"
+      "SubArea": "Schema extensions"
     },
     {
       "ChangeList": [
@@ -580,7 +580,7 @@
       "Version": "beta",
       "CreatedDateTime": "2017-03-01T00:00:00",
       "WorkloadArea": "Extensions ",
-      "SubArea": " Schema extensions"
+      "SubArea": "Schema extensions"
     },
     {
       "ChangeList": [
@@ -598,7 +598,7 @@
       "Version": "beta",
       "CreatedDateTime": "2017-03-01T00:00:00",
       "WorkloadArea": "Extensions ",
-      "SubArea": " Open extensions"
+      "SubArea": "Open extensions"
     },
     {
       "ChangeList": [
@@ -616,7 +616,7 @@
       "Version": "v1.0",
       "CreatedDateTime": "2017-03-01T00:00:00",
       "WorkloadArea": "Extensions ",
-      "SubArea": " Open extensions"
+      "SubArea": "Open extensions"
     },
     {
       "ChangeList": [

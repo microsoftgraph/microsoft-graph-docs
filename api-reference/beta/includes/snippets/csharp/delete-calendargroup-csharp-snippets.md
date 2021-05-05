@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Me.CalendarGroups["{id}"]
+await graphClient.Me.CalendarGroups["{calendarGroup-id}"]
 	.Request()
 	.DeleteAsync();
 

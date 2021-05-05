@@ -26,7 +26,7 @@ The **plannerPlanDetails** resource represents the additional information about 
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|categoryDescriptions|[plannerCategoryDescriptions](plannercategorydescriptions.md)|An object that specifies the descriptions of the six categories that can be associated with tasks in the plan|
+|categoryDescriptions|[plannerCategoryDescriptions](plannercategorydescriptions.md)|An object that specifies the descriptions of the 25 categories that can be associated with tasks in the plan|
 |id|String| Read-only. The ID of the plan details. It is 28 characters long and case-sensitive. [Format validation](tasks-identifiers-disclaimer.md) is done on the service.|
 |sharedWith|[plannerUserIds](planneruserids.md)|The set of user IDs that this plan is shared with. If you are using Microsoft 365 groups, use the groups API to manage group membership to share the [group's](group.md) plan. You can also add existing members of the group to this collection, although it is not required in order for them to access the plan owned by the group. |
 |contextDetails|[plannerPlanContextDetailsCollection](plannerplancontextdetailscollection.md)|Read-only. A collection of additional information associated with [plannerPlanContext](plannerplancontext.md) entries that are defined for the [plannerPlan](plannerplan.md) container. |

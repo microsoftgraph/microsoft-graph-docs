@@ -11,7 +11,6 @@ doc_type: conceptualPageType
 
 The connection [schema](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true) determines how your content will be used in various Microsoft Graph experiences. Schema is a flat list of all the properties that you plan to add to the connection along with their attributes, labels, and aliases. You must register the schema before adding items into the connection.
 
-[!INCLUDE [search-api-preview-signup](../includes/search-api-preview-signup.md)]
 
 ## Example schema
 
@@ -143,7 +142,7 @@ Aliases are friendly names for properties that you assign. These will be used in
 
 ## Next steps
 
-- [Add items to the connection](/graph/search-index-manage-items)
+- [Add items to the connection](./search-index-manage-items.md)
 - [Review the Microsoft Graph connectors API reference](/graph/api/resources/indexing-api-overview?view=graph-rest-beta&preserve-view=true)
 - [Search custom types (externalItem)](search-concept-custom-types.md)
 - Download the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub

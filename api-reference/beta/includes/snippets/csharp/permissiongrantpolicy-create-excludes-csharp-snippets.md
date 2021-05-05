@@ -12,7 +12,7 @@ var permissionGrantConditionSet = new PermissionGrantConditionSet
 	ResourceApplication = "00000003-0000-0000-c000-000000000000"
 };
 
-await graphClient.Policies.PermissionGrantPolicies["my-custom-consent-policy"].Excludes
+await graphClient.Policies.PermissionGrantPolicies["{permissionGrantPolicy-id}"].Excludes
 	.Request()
 	.AddAsync(permissionGrantConditionSet);
 

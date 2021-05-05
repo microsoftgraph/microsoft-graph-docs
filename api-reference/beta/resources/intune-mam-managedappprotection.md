@@ -59,6 +59,9 @@ Inherits from [managedAppPolicy](../resources/intune-mam-managedapppolicy.md)
 |printBlocked|Boolean|Indicates whether printing is allowed from managed apps.|
 |fingerprintBlocked|Boolean|Indicates whether use of the fingerprint reader is allowed in place of a pin if PinRequired is set to True.|
 |disableAppPinIfDevicePinIsSet|Boolean|Indicates whether use of the app pin is required if the device pin is set.|
+|maximumRequiredOsVersion|String|Versions bigger than the specified version will block the managed app from accessing company data.|
+|maximumWarningOsVersion|String|Versions bigger than the specified version will block the managed app from accessing company data.|
+|maximumWipeOsVersion|String|Versions bigger than the specified version will block the managed app from accessing company data.|
 |minimumRequiredOsVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
 |minimumWarningOsVersion|String|Versions less than the specified version will result in warning message on the managed app from accessing company data.|
 |minimumRequiredAppVersion|String|Versions less than the specified version will block the managed app from accessing company data.|
@@ -126,6 +129,9 @@ Here is a JSON representation of the resource.
   "printBlocked": true,
   "fingerprintBlocked": true,
   "disableAppPinIfDevicePinIsSet": true,
+  "maximumRequiredOsVersion": "String",
+  "maximumWarningOsVersion": "String",
+  "maximumWipeOsVersion": "String",
   "minimumRequiredOsVersion": "String",
   "minimumWarningOsVersion": "String",
   "minimumRequiredAppVersion": "String",

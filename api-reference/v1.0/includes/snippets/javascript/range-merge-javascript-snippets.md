@@ -14,7 +14,7 @@ const merge = {
   across: true
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/names/{name}/range/merge')
+await client.api('/me/drive/items/{id}/workbook/names/{name}/range/merge')
 	.post(merge);
 
 ```

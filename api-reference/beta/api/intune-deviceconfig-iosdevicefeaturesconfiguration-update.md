@@ -20,7 +20,7 @@ Update the properties of a [iosDeviceFeaturesConfiguration](../resources/intune-
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -86,7 +86,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 6758
+Content-length: 6830
 
 {
   "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
@@ -160,7 +160,8 @@ Content-length: 6758
             {
               "@odata.type": "microsoft.graph.iosHomeScreenApp",
               "displayName": "Display Name value",
-              "bundleID": "Bundle ID value"
+              "bundleID": "Bundle ID value",
+              "isWebClip": true
             }
           ]
         }
@@ -183,7 +184,8 @@ Content-length: 6758
                 {
                   "@odata.type": "microsoft.graph.iosHomeScreenApp",
                   "displayName": "Display Name value",
-                  "bundleID": "Bundle ID value"
+                  "bundleID": "Bundle ID value",
+                  "isWebClip": true
                 }
               ]
             }
@@ -299,7 +301,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 6930
+Content-Length: 7002
 
 {
   "@odata.type": "#microsoft.graph.iosDeviceFeaturesConfiguration",
@@ -376,7 +378,8 @@ Content-Length: 6930
             {
               "@odata.type": "microsoft.graph.iosHomeScreenApp",
               "displayName": "Display Name value",
-              "bundleID": "Bundle ID value"
+              "bundleID": "Bundle ID value",
+              "isWebClip": true
             }
           ]
         }
@@ -399,7 +402,8 @@ Content-Length: 6930
                 {
                   "@odata.type": "microsoft.graph.iosHomeScreenApp",
                   "displayName": "Display Name value",
-                  "bundleID": "Bundle ID value"
+                  "bundleID": "Bundle ID value",
+                  "isWebClip": true
                 }
               ]
             }

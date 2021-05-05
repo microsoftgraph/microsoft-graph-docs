@@ -11,7 +11,7 @@ var todoTaskList = new TodoTaskList
 	DisplayName = "Vacation Plan"
 };
 
-await graphClient.Me.Todo.Lists["AAMkADIyAAAhrbPWAAA="]
+await graphClient.Me.Todo.Lists["{todoTaskList-id}"]
 	.Request()
 	.UpdateAsync(todoTaskList);
 

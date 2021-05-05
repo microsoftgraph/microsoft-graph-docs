@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/reports/getM365AppUserCounts(period='D7')/content')
+let stream = await client.api('/reports/getM365AppUserCounts(period='D7')/content')
 	.version('beta')
 	.get();
 

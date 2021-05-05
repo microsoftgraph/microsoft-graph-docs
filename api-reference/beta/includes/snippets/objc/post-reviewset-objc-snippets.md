@@ -11,7 +11,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphReviewSet *reviewSet = [[MSGraphReviewSet alloc] init];
+MSGraphEdiscoveryReviewSet *reviewSet = [[MSGraphEdiscoveryReviewSet alloc] init];
 [reviewSet setDisplayName:@"My Reviewset 3"];
 
 NSError *error;

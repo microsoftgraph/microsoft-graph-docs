@@ -195,7 +195,7 @@ The following example creates a security group with an owner and members specifi
 The following is an example of the request.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "create_prepopulated_group"
 }-->
 ``` http

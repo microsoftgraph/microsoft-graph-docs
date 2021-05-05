@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var transitiveMemberOf = await graphClient.Devices["{id}"].TransitiveMemberOf
+var transitiveMemberOf = await graphClient.Devices["{device-id}"].TransitiveMemberOf
 	.Request()
 	.GetAsync();
 

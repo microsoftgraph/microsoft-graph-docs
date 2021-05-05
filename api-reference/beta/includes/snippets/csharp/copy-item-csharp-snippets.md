@@ -14,7 +14,7 @@ var parentReference = new ItemReference
 
 var name = "contoso plan (copy).txt";
 
-await graphClient.Me.Drive.Items["{item-id}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"]
 	.Copy(name,parentReference)
 	.Request()
 	.PostAsync();

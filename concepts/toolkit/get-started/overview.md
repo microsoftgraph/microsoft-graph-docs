@@ -13,6 +13,8 @@ You can watch this short video to see how quick and easy it is to get started wi
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/oZCGb2MMxa0]
 
+For a step-by-step tutorial, see the [Get started with Microsot Graph Toolkit module](/learn/modules/msgraph-toolkit-intro/). 
+
 ## Set up your Microsoft 365 tenant
 In order to develop with the Toolkit, you need access to a Microsoft 365 tenant. If you don't have one, you can get a free Microsoft 365 developer subscription by [joining the Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program). For details about how to configure your subscription, see [Set up a Microsoft 365 developer subscription](/office/developer-program/microsoft-365-developer-program-get-started).
 

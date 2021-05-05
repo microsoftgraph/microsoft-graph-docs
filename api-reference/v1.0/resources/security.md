@@ -60,7 +60,7 @@ GET https://graph.microsoft.com/v1.0/security
   "truncated": true,
   "@odata.type": "microsoft.graph.security"
 }-->
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

@@ -11,7 +11,7 @@ var identityProvider = new IdentityProvider
 	ResponseType = OpenIdConnectResponseTypes.Id_token
 };
 
-await graphClient.IdentityProviders["OIDC-V1-MyTest-085a8a0c-58cb-4b6d-8e07-1328ea404e1a"]
+await graphClient.IdentityProviders["{identityProvider-id}"]
 	.Request()
 	.UpdateAsync(identityProvider);
 

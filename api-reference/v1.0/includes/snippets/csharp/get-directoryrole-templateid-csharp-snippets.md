@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var directoryRole = await graphClient.DirectoryRoles["roleTemplateId=4a5d8f65-41da-4de4-8968-e035b65339cf"]
+var directoryRole = await graphClient.DirectoryRoles["{directoryRole-id}"]
 	.Request()
 	.GetAsync();
 

@@ -11,7 +11,7 @@ var outlookTaskFolder = new OutlookTaskFolder
 	Name = "Charity work"
 };
 
-await graphClient.Me.Outlook.TaskFolders["AAMkADIyAAAhrbPWAAA="]
+await graphClient.Me.Outlook.TaskFolders["{outlookTaskFolder-id}"]
 	.Request()
 	.UpdateAsync(outlookTaskFolder);
 

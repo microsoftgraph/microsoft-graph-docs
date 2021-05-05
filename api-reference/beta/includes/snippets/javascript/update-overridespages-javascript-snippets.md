@@ -13,16 +13,16 @@ const client = Client.init(options);
 const stream = {
   LocalizedStrings: [
         {
-            ElementType: "UxElement",
+            ElementType: 'UxElement',
             ElementId: null,
-            StringId: "alert_message",
+            StringId: 'alert_message',
             Override: true,
-            Value: "Are you sure that you want to cancel your selection?"
+            Value: 'Are you sure that you want to cancel your selection?'
         }
     ]
 };
 
-let res = await client.api('/identity/b2cUserFlows/B2C_1_Customer/languages/en/overridesPages/phonefactor/$value')
+await client.api('/identity/b2cUserFlows/B2C_1_Customer/languages/en/overridesPages/phonefactor/$value')
 	.version('beta')
 	.put(stream);
 

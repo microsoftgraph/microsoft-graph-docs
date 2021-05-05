@@ -3,7 +3,7 @@ title: "Create authenticationListener"
 description: "Create a new authenticationListener object for the onSignUpStart event."
 author: "jkdouglas"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -19,7 +19,7 @@ Create a new authenticationListener object for the onSignUpStart event.
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|Policy.ReadWrite.ApplicationConfiguration|
 |Delegated (personal Microsoft account)|Not supported.|

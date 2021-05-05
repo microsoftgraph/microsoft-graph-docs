@@ -11,12 +11,12 @@ const options = {
 const client = Client.init(options);
 
 const authorizationPolicy = {
-   permissionGrantPolicyIdsAssignedToDefaultUserRole:[
+   permissionGrantPolicyIdsAssignedToDefaultUserRole: [
    
    ]
 };
 
-let res = await client.api('/policies/authorizationPolicy/authorizationPolicy')
+await client.api('/policies/authorizationPolicy/authorizationPolicy')
 	.version('beta')
 	.update(authorizationPolicy);
 

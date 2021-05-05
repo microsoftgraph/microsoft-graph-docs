@@ -11,18 +11,18 @@ const options = {
 const client = Client.init(options);
 
 const accessReviewScheduleDefinition = {
-  displayName: "Test create",
-  descriptionForAdmins: "New scheduled access review",
-  descriptionForReviewers: "If you have any questions, contact jerry@contoso.com",
+  displayName: 'Test create',
+  descriptionForAdmins: 'New scheduled access review',
+  descriptionForReviewers: 'If you have any questions, contact jerry@contoso.com',
   scope: {
-    query: "/groups/b7a059cb-038a-4802-8fc9-b9d1ed0c4444/transitiveMembers",
-    queryType: "MicrosoftGraph"
+    query: '/groups/b7a059cb-038a-4802-8fc9-b9d1ed0c4444/transitiveMembers',
+    queryType: 'MicrosoftGraph'
   },
   reviewers: [
     {
-      query: "/users/7eae4444-d425-48b2-adf2-3c777f6256f3",
-      queryType: "MicrosoftGraph",
-      queryRoot: "decisions"
+      query: '/users/7eae4444-d425-48b2-adf2-3c777f6256f3',
+      queryType: 'MicrosoftGraph',
+      queryRoot: 'decisions'
     }
   ],
   settings: {
@@ -30,24 +30,24 @@ const accessReviewScheduleDefinition = {
     reminderNotificationsEnabled: true,
     justificationRequiredOnApproval: true,
     defaultDecisionEnabled: false,
-    defaultDecision: "None",
+    defaultDecision: 'None',
     instanceDurationInDays: 1,
     autoApplyDecisionsEnabled: false,
     recommendationsEnabled: true,
     recurrence: {
       pattern: {
-        type: "weekly",
+        type: 'weekly',
         interval: 1
       },
       range: {
-        type: "noEnd",
-        startDate: "2020-09-08T12:02:30.667Z"
+        type: 'noEnd',
+        startDate: '2020-09-08T12:02:30.667Z'
       }
     }
   }
 };
 
-let res = await client.api('/identityGovernance/accessReviews/definitions')
+await client.api('/identityGovernance/accessReviews/definitions')
 	.version('beta')
 	.post(accessReviewScheduleDefinition);
 

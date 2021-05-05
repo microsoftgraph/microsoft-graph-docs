@@ -11,12 +11,12 @@ const options = {
 const client = Client.init(options);
 
 const authorizationPolicy = {
-   enabledPreviewFeatures:[
-      "assignGroupsToRoles"
+   enabledPreviewFeatures: [
+      'assignGroupsToRoles'
    ]
 };
 
-let res = await client.api('/policies/authorizationPolicy/authorizationPolicy')
+await client.api('/policies/authorizationPolicy/authorizationPolicy')
 	.version('beta')
 	.update(authorizationPolicy);
 

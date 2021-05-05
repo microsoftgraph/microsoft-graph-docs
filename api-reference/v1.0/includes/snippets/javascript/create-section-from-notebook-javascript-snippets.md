@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const onenoteSection = {
-  displayName: "Section name"
+  displayName: 'Section name'
 };
 
-let res = await client.api('/me/onenote/notebooks/{id}/sections')
+await client.api('/me/onenote/notebooks/{id}/sections')
 	.post(onenoteSection);
 
 ```

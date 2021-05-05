@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/groups/{id}/endpoints/{id}')
+let endpoint = await client.api('/groups/{id}/endpoints/{id}')
 	.version('beta')
 	.get();
 

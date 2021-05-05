@@ -3,7 +3,7 @@ title: "reportRoot: getYammerActivityCounts"
 description: "Get the trends on the amount of Yammer activity in your organization by how many messages were posted, read, and liked."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 
@@ -145,7 +145,7 @@ GET https://graph.microsoft.com/beta/reports/getYammerActivityCounts(period='D7'
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

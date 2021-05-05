@@ -15,7 +15,7 @@ var workbookNamedItem = new WorkbookNamedItem
 	Visible = true
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Names["{name}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Names["{workbookNamedItem-id}"]
 	.Request()
 	.UpdateAsync(workbookNamedItem);
 

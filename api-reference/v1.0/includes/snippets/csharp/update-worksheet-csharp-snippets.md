@@ -13,7 +13,7 @@ var workbookWorksheet = new WorkbookWorksheet
 	Visibility = "visibility-value"
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"]
 	.Request()
 	.UpdateAsync(workbookWorksheet);
 

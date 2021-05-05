@@ -3,7 +3,7 @@ title: "Get governanceRoleSetting"
 description: "Retrieve the properties and relationships of a governanceRoleSetting."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "shauliu"
 ---
 
@@ -108,7 +108,7 @@ Content-length: 370
     "roleDefinitionId": "5b8bea96-e9f6-4c63-a8e9-fb092c79f0a1",
     "isDefault": false,
     "lastUpdatedDateTime": "2018-03-26T21:21:43.113Z",
-    "lastUpdatedBy": "Vishal Seri",
+    "lastUpdatedBy": "Alex Wilber",
     "adminEligibleSettings": [
         {
             "ruleIdentifier": "ExpirationRule",
@@ -145,7 +145,7 @@ Content-length: 370
         },
         {
             "ruleIdentifier": "ApprovalRule",
-            "setting": "{\"Enabled\":true,\"Approvers\":[{\"Id\":\"20083cf1-b8d8-43be-9d37-96adfb09e619\",\"Type\":\"User\",\"DisplayName\":\"Vishal Seri\",\"Email\":\"viseri@fimdev.net\"},{\"Id\":\"d158e1b0-5080-4088-a1e7-9ca54f39eb53\",\"Type\":\"User\",\"DisplayName\":\"viseri\",\"Email\":\"viseri@microsoft.com\"}],\"BusinessFlowId\":\"8df9e93a-6ba9-4453-af43-07cb95435032\"}"
+            "setting": "{\"Enabled\":true,\"Approvers\":[{\"Id\":\"20083cf1-b8d8-43be-9d37-96adfb09e619\",\"Type\":\"User\",\"DisplayName\":\"Alex Wilber\",\"Email\":\"AlexW@contoso.com\"},{\"Id\":\"d158e1b0-5080-4088-a1e7-9ca54f39eb53\",\"Type\":\"User\",\"DisplayName\":\"Alex Wilber\",\"Email\":\"AlexW@contoso.com\"}],\"BusinessFlowId\":\"8df9e93a-6ba9-4453-af43-07cb95435032\"}"
         }
     ]
 }

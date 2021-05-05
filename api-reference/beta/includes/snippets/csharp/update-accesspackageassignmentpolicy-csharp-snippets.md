@@ -129,7 +129,7 @@ var accessPackageAssignmentPolicy = new AccessPackageAssignmentPolicy
 	}
 };
 
-await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageAssignmentPolicies["b2eba9a1-b357-42ee-83a8-336522ed6cbf"]
+await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageAssignmentPolicies["{accessPackageAssignmentPolicy-id}"]
 	.Request()
 	.PutAsync(accessPackageAssignmentPolicy);
 

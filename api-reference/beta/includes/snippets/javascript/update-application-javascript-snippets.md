@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const application = {
-  displayName: "New display name"
+  displayName: 'New display name'
 };
 
-let res = await client.api('/applications/{id}')
+await client.api('/applications/{id}')
 	.version('beta')
 	.update(application);
 

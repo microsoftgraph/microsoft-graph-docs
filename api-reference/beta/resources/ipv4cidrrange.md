@@ -3,7 +3,7 @@ title: "iPv4CidrRange resource type"
 description: "Represents an IPv4 range using the CIDR notation."
 localization_priority: Normal
 author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 

@@ -3,7 +3,7 @@ title: "accessPackageTextInputQuestion resource type"
 description: "Child of accessPackageQuestion that has text input as the question's answer format."
 author: "markwahl-msft"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 

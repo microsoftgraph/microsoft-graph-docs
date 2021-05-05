@@ -2,7 +2,7 @@
 title: "People-Picker component"
 description: "You can use the mgt-people-picker web component to search for a specified number of people and render the list of results via Microsoft Graph."
 localization_priority: Normal
-author: vogtn
+author: elisenyang
 ---
 
 # People-Picker component in the Microsoft Graph Toolkit
@@ -33,6 +33,7 @@ By default, the `mgt-people-picker` component fetches people from the `/me/peopl
 | placeholder   | placeholder    | The default text that appears to explain how to use the component. Default value is `Start typing a name`.
 | default-selected-user-ids | defaultSelectedUserIds | When provided a string of comma-separated Microsoft Graph user IDs, the component renders the respective users as selected upon initialization.
 | selection-mode | selectionMode | Used to indicate whether to allow selecting multiple items (users or groups) or just a single item. Available options are: `single`, `multiple`. Default value is `multiple`.
+| disabled | disabled | Sets whether the people picker is disabled. When disabled, the user is not able to search or select people.
 
 The following is a `show-max` example.
 
@@ -60,7 +61,7 @@ You can populate selected people data by doing one of the following:
      >**Note:** If no user is found for an `id`, no data will be rendered for that `id`.
 
     ```javascript
-    // id = Mirosoft graph User "id"
+    // id = Microsoft graph User "id"
     document.querySelector('mgt-people-picker').selectUsersById(["id","id"])
     ```
 
@@ -133,7 +134,7 @@ This component uses the following Microsoft Graph APIs and permissions.
 | [/me/people](/graph/api/user-list-people)                    | People.Read        |
 | [/users](/graph/api/user-list)  | User.ReadBasic.All |
 | [/groups](/group-list)  | Group.Read.All |
-| [/groups/\${groupId}/members](/graph/api/group-list-members) | User.ReadBasic.All        |
+| [/groups/\${groupId}/members](/graph/api/group-list-members) | GroupMember.Read.All        |
 | [/users/${userPrincipleName} ](/graph/api/user-get)  | User.Read |
 
 ## Authentication

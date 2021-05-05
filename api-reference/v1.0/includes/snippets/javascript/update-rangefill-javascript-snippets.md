@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const workbookRangeFill = {
-  color: "color-value"
+  color: 'color-value'
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/names/{name}/range/format/fill')
+await client.api('/me/drive/items/{id}/workbook/names/{name}/range/format/fill')
 	.update(workbookRangeFill);
 
 ```

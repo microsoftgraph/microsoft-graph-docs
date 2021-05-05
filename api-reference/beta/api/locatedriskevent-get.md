@@ -3,8 +3,8 @@ title: "Get locatedRiskEvent"
 description: "Retrieve the properties and relationships of a locatedriskevent object."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
-author: "davidmu1"
+ms.prod: "identity-and-access"
+author: "cloudhandler"
 ---
 
 # Get locatedRiskEvent
@@ -52,7 +52,7 @@ Here is an example of the request.
 GET https://graph.microsoft.com/v1.0/locatedRiskEvents/27b91217-a6ca-edff-da2b-c46feaf0228f-a6653179-3c7b-4e99-bb4c-dddeb18adfc1-42445d4d-fe22-9840-cf9d-72f6ce8cd056
 ```
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

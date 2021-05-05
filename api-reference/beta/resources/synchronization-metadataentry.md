@@ -4,7 +4,7 @@ description: "Metadata for the given object."
 localization_priority: Normal
 doc_type: resourcePageType
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # metadataEntry resource type

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/deviceManagement/virtualEndpoint/provisioningPolicies')
+let provisioningPolicies = await client.api('/deviceManagement/virtualEndpoint/provisioningPolicies')
 	.version('beta')
 	.get();
 

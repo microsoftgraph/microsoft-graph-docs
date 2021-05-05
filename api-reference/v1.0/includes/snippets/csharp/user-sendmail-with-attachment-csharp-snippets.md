@@ -24,7 +24,7 @@ var message = new Message
 			}
 		}
 	},
-	Attachments = (IMessageAttachmentsCollectionPage)new List<Attachment>()
+	Attachments = new MessageAttachmentsCollectionPage()
 	{
 		new FileAttachment
 		{

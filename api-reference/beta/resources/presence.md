@@ -11,6 +11,8 @@ ms.prod: "cloud-communications"
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Contains information about a user's presence, including their availability and user activity.
 
 > **Note:** This resource is currently only supported for Microsoft Teams users.

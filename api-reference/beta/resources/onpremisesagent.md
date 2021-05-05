@@ -3,7 +3,7 @@ title: "onPremisesAgent resource type"
 description: "onPremisesAgent resource type."
 localization_priority: Normal
 author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: "resourcePageType"
 ---
 
@@ -31,8 +31,8 @@ Represents on-premises agent. On-premises agents installed by a tenant administr
 |externalIp|String|The external IP address as detected by the service for the agent machine. Read-only|
 |id|String| The object id of the onPremisesAgent. Read-only.|
 |machineName|String|The name of the machine that the aggent is running on. Read-only|
-|status|string| Possible values are: `active`, `inactive`.|
-|publishingType|string| Possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
+|status|agentStatus| Possible values are: `active`, `inactive`.|
+|publishingType|String| Possible values are: `applicationProxy`, `exchangeOnline`, `authentication`, `provisioning`, `adAdministration`.|
 
 ## Relationships
 
@@ -50,7 +50,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.onPremisesAgent",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 
@@ -73,5 +72,6 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
+
 
 

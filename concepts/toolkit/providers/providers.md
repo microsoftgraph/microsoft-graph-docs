@@ -18,6 +18,7 @@ The Toolkit includes the following providers.
 |Providers|Description|
 |---------|-----------|
 |[Msal](./msal.md)|Uses MSAL.js to sign in users and acquire tokens to use with Microsoft Graph in a web application.|
+|[Electron](./electron.md)|Authenticates and provides Microsoft Graph access to components inside of Electron apps.|
 |[SharePoint](./sharepoint.md)|Authenticates and provides Microsoft Graph access to components inside of SharePoint web parts.|
 |[Teams](./teams.md)|Authenticates and provides Microsoft Graph access to components inside  Microsoft Teams tabs.|
 |[Proxy](./proxy.md)|Allows the use of backend authentication by routing all calls to Microsoft Graph through your backend.|
@@ -124,7 +125,7 @@ import { Providers, ProviderState } from "@microsoft/mgt";
 //assuming a provider has already been initialized
 
 if (Providers.globalProvider.state === ProviderState.SignedIn) {
-  const token = Providers.globalProvider.getAccessToken({scopes: ['User.Read']})
+  const token = await Providers.globalProvider.getAccessToken({scopes: ['User.Read']})
 }
 ```
 

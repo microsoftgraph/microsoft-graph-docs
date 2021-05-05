@@ -3,7 +3,7 @@ title: "Cancel privilegedRoleAssignmentRequest"
 description: "Cancel a privilegedRoleAssignmentRequest."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "shauliu"
 ---
 
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 ### HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /privilegedRoleAssignmentRequests({requestid})/cancel
+POST /privilegedRoleAssignmentRequests/{requestid}/cancel
 ```
 
 ## Request headers

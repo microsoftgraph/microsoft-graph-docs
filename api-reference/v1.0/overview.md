@@ -41,7 +41,7 @@ A number of these services are designed to enable rich scenarios around a [user]
 ## Other API versions
 
 There are currently 2 versions of Microsoft Graph REST APIs - v1.0 and beta.
-If you're interested in new or enhanced APIs that are still in preview status, see [Microsoft Graph beta endpoint reference](/graph/api/overview?toc=./ref/toc.json&view=graph-rest-beta). Be aware that APIs in preview status are subject to change, and may break existing scenarios without notice. Don't take a production dependency on APIs in the beta endpoint.
+If you're interested in new or enhanced APIs that are still in preview status, see [Microsoft Graph beta endpoint reference](/graph/api/overview?view=graph-rest-beta&preserve-view=true). Be aware that APIs in preview status are subject to change, and may break existing scenarios without notice. Don't take a production dependency on APIs in the beta endpoint.
 
 Find more information about [versioning and support](/graph/versioning-and-support).
 

@@ -14,7 +14,7 @@ const workbookChart = {
   index: 8
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/itemAt')
+await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/itemAt')
 	.post(workbookChart);
 
 ```

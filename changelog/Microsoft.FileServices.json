@@ -3,6 +3,42 @@
     {
       "ChangeList": [
         {
+          "Id": "aa7c9c04-2a12-458f-9bd5-a46c3b2fccd4",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "permissions",
+          "ChangeType": "Addition",
+          "Description": "Added the **permissions** relationship to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-1.0) resource.",
+          "Target": "site"
+        }
+      ],
+      "Id": "aa7c9c04-2a12-458f-9bd5-a46c3b2fccd4",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-02-05T01:49:05.616Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d6b5ef23-6041-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "permissions",
+          "ChangeType": "Addition",
+          "Description": "Added the **permissions** relationship to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "site"
+        }
+      ],
+      "Id": "d6b38e82-6041-11eb-8de9-f7f8b8b7f046",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-01-27T01:49:05.616Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "d0ae3ac8-8d01-4235-b584-66a251ba1605",
           "ApiChange": "Resource",
           "ChangedApiName": "revokeGrants,permission",
@@ -1215,6 +1251,311 @@
       "CreatedDateTime": "2016-02-01T00:00:00",
       "WorkloadArea": "Files",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [{
+        "Id": "3b921ce4-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Property",
+        "ChangedApiName": "validation",
+        "ChangeType": "Addition",
+        "Description": "Added the **validation** property to [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-beta) resource",
+        "Target": "columnDefinition"
+      }, {
+        "Id": "3b947f84-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Property",
+        "ChangedApiName": "contentApprovalStatus",
+        "ChangeType": "Addition",
+        "Description": "Added the **contentApprovalStatus** property to [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-beta) resource",
+        "Target": "columnDefinition"
+      }, {
+        "Id": "3b96e0ff-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Property",
+        "ChangedApiName": "hyperlinkOrPicture",
+        "ChangeType": "Addition",
+        "Description": "Added the **hyperlinkOrPicture** property to [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-beta) resource",
+        "Target": "columnDefinition"
+      }, {
+        "Id": "3b9943d2-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Property",
+        "ChangedApiName": "isDeletable",
+        "ChangeType": "Addition",
+        "Description": "Added the **isDeletable** property to [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-beta) resource",
+        "Target": "columnDefinition"
+      }, {
+        "Id": "3b9ba4e5-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Property",
+        "ChangedApiName": "isReorderable",
+        "ChangeType": "Addition",
+        "Description": "Added the **isReorderable** property to [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-beta) resource",
+        "Target": "columnDefinition"
+      }, {
+        "Id": "3b9e08b8-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Property",
+        "ChangedApiName": "isSealed",
+        "ChangeType": "Addition",
+        "Description": "Added the **isSealed** property to [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-beta) resource",
+        "Target": "columnDefinition"
+      }, {
+        "Id": "3ba06d0a-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Property",
+        "ChangedApiName": "propagateChanges",
+        "ChangeType": "Addition",
+        "Description": "Added the **propagateChanges** property to [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-beta) resource",
+        "Target": "columnDefinition"
+      }, {
+        "Id": "3ba2ce53-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Property",
+        "ChangedApiName": "term",
+        "ChangeType": "Addition",
+        "Description": "Added the **term** property to [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-beta) resource",
+        "Target": "columnDefinition"
+      }, {
+        "Id": "3ba52efc-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Property",
+        "ChangedApiName": "thumbnail",
+        "ChangeType": "Addition",
+        "Description": "Added the **thumbnail** property to [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-beta) resource",
+        "Target": "columnDefinition"
+      }, {
+        "Id": "3ba79387-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Property",
+        "ChangedApiName": "type",
+        "ChangeType": "Addition",
+        "Description": "Added the **type** property to [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-beta) resource",
+        "Target": "columnDefinition"
+      }, {
+        "Id": "3ba9f3c8-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Relationship",
+        "ChangedApiName": "sourceColumn",
+        "ChangeType": "Addition",
+        "Description": "Added the **sourceColumn** relationship to [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-beta) resource",
+        "Target": "columnDefinition"
+      }, {
+        "Id": "3bac5752-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Property",
+        "ChangedApiName": "associatedHubsUrls",
+        "ChangeType": "Addition",
+        "Description": "Added the **associatedHubsUrls** property to [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
+        "Target": "contentType"
+      }, {
+        "Id": "3baeba51-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Property",
+        "ChangedApiName": "documentSet",
+        "ChangeType": "Addition",
+        "Description": "Added the **documentSet** property to [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
+        "Target": "contentType"
+      }, {
+        "Id": "3bb11bbd-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Property",
+        "ChangedApiName": "documentTemplate",
+        "ChangeType": "Addition",
+        "Description": "Added the **documentTemplate** property to [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
+        "Target": "contentType"
+      }, {
+        "Id": "3bb37e68-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Property",
+        "ChangedApiName": "isBuiltIn",
+        "ChangeType": "Addition",
+        "Description": "Added the **isBuiltIn** property to [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
+        "Target": "contentType"
+      }, {
+        "Id": "3bb5e085-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Property",
+        "ChangedApiName": "propagateChanges",
+        "ChangeType": "Addition",
+        "Description": "Added the **propagateChanges** property to [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
+        "Target": "contentType"
+      }, {
+        "Id": "3bb844a3-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Relationship",
+        "ChangedApiName": "base",
+        "ChangeType": "Addition",
+        "Description": "Added the **base** relationship to [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
+        "Target": "contentType"
+      }, {
+        "Id": "3bbaa58e-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Relationship",
+        "ChangedApiName": "baseTypes",
+        "ChangeType": "Addition",
+        "Description": "Added the **baseTypes** relationship to [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
+        "Target": "contentType"
+      }, {
+        "Id": "3bbd0822-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Relationship",
+        "ChangedApiName": "columnPositions",
+        "ChangeType": "Addition",
+        "Description": "Added the **columnPositions** relationship to [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
+        "Target": "contentType"
+      }, {
+        "Id": "3bbf6ac4-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Relationship",
+        "ChangedApiName": "columns",
+        "ChangeType": "Addition",
+        "Description": "Added the **columns** relationship to [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
+        "Target": "contentType"
+      }, {
+        "Id": "3bc1cb23-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Relationship",
+        "ChangedApiName": "externalColumns",
+        "ChangeType": "Addition",
+        "Description": "Added the **externalColumns** relationship to [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource",
+        "Target": "site"
+      }, {
+        "Id": "3bc42f02-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Resource",
+        "ChangedApiName": "columnValidation",
+        "ChangeType": "Addition",
+        "Description": "Added the [columnValidation](https://docs.microsoft.com/en-us/graph/api/resources/columnValidation?view=graph-rest-beta) resource type",
+        "Target": "columnValidation"
+      }, {
+        "Id": "3bc690a5-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Resource",
+        "ChangedApiName": "contentApprovalStatusColumn",
+        "ChangeType": "Addition",
+        "Description": "Added the [contentApprovalStatusColumn](https://docs.microsoft.com/en-us/graph/api/resources/contentApprovalStatusColumn?view=graph-rest-beta) resource type",
+        "Target": "contentApprovalStatusColumn"
+      }, {
+        "Id": "3bc8f384-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Resource",
+        "ChangedApiName": "displayNameLocalization",
+        "ChangeType": "Addition",
+        "Description": "Added the [displayNameLocalization](https://docs.microsoft.com/en-us/graph/api/resources/displayNameLocalization?view=graph-rest-beta) resource type",
+        "Target": "displayNameLocalization"
+      }, {
+        "Id": "3bcb5608-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Resource",
+        "ChangedApiName": "documentSet",
+        "ChangeType": "Addition",
+        "Description": "Added the [documentSet](https://docs.microsoft.com/en-us/graph/api/resources/documentSet?view=graph-rest-beta) resource type",
+        "Target": "documentSet"
+      }, {
+        "Id": "3bcdb7c2-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Resource",
+        "ChangedApiName": "documentSetContent",
+        "ChangeType": "Addition",
+        "Description": "Added the [documentSetContent](https://docs.microsoft.com/en-us/graph/api/resources/documentSetContent?view=graph-rest-beta) resource type",
+        "Target": "documentSetContent"
+      }, {
+        "Id": "3bd01a73-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Resource",
+        "ChangedApiName": "hyperlinkOrPictureColumn",
+        "ChangeType": "Addition",
+        "Description": "Added the [hyperlinkOrPictureColumn](https://docs.microsoft.com/en-us/graph/api/resources/hyperlinkOrPictureColumn?view=graph-rest-beta) resource type",
+        "Target": "hyperlinkOrPictureColumn"
+      }, {
+        "Id": "3bd27d21-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Resource",
+        "ChangedApiName": "termColumn",
+        "ChangeType": "Addition",
+        "Description": "Added the [termColumn](https://docs.microsoft.com/en-us/graph/api/resources/termColumn?view=graph-rest-beta) resource type",
+        "Target": "termColumn"
+      }, {
+        "Id": "3bd4dfb4-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Resource",
+        "ChangedApiName": "thumbnailColumn",
+        "ChangeType": "Addition",
+        "Description": "Added the [thumbnailColumn](https://docs.microsoft.com/en-us/graph/api/resources/thumbnailColumn?view=graph-rest-beta) resource type",
+        "Target": "thumbnailColumn"
+      }, {
+        "Id": "3bd74177-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Enum type",
+        "ChangedApiName": "columnTypes",
+        "ChangeType": "Addition",
+        "Description": "Added the **columnTypes** enumeration type",
+        "Target": "columnTypes"
+      }, {
+        "Id": "3bd9a452-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Method",
+        "ChangedApiName": "addCopy",
+        "ChangeType": "Addition",
+        "Description": "Added the [addCopy](https://docs.microsoft.com/en-us/graph/api/contentType-addCopy?view=graph-rest-beta) method to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
+        "Target": "contentType"
+      }, {
+        "Id": "3bdc0649-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Method",
+        "ChangedApiName": "associateWithHubSites",
+        "ChangeType": "Addition",
+        "Description": "Added the [associateWithHubSites](https://docs.microsoft.com/en-us/graph/api/contentType-associateWithHubSites?view=graph-rest-beta) method to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
+        "Target": "contentType"
+      }, {
+        "Id": "3bde6804-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Method",
+        "ChangedApiName": "copyToDefaultContentLocation",
+        "ChangeType": "Addition",
+        "Description": "Added the [copyToDefaultContentLocation](https://docs.microsoft.com/en-us/graph/api/contentType-copyToDefaultContentLocation?view=graph-rest-beta) method to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
+        "Target": "contentType"
+      }, {
+        "Id": "3be0c9bf-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Method",
+        "ChangedApiName": "publish",
+        "ChangeType": "Addition",
+        "Description": "Added the [publish](https://docs.microsoft.com/en-us/graph/api/contentType-publish?view=graph-rest-beta) method to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
+        "Target": "contentType"
+      }, {
+        "Id": "3be32e41-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Method",
+        "ChangedApiName": "unpublish",
+        "ChangeType": "Addition",
+        "Description": "Added the [unpublish](https://docs.microsoft.com/en-us/graph/api/contentType-unpublish?view=graph-rest-beta) method to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
+        "Target": "contentType"
+      }, {
+        "Id": "3be58f88-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Method",
+        "ChangedApiName": "getApplicableContentTypesForList",
+        "ChangeType": "Addition",
+        "Description": "Added the [getApplicableContentTypesForList](https://docs.microsoft.com/en-us/graph/api/site-getApplicableContentTypesForList?view=graph-rest-beta) method to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource",
+        "Target": "site"
+      }, {
+        "Id": "3be7f374-6b7c-11eb-83a5-b441f1c9dab3",
+        "ApiChange": "Method",
+        "ChangedApiName": "isPublished",
+        "ChangeType": "Addition",
+        "Description": "Added the [isPublished](https://docs.microsoft.com/en-us/graph/api/contentType-isPublished?view=graph-rest-beta) method to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-beta) resource",
+        "Target": "contentType"
+      }],
+      "Id": "3b8fbbdf-6b7c-11eb-83a5-b441f1c9dab3",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-03-03T08:44:48.432Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
+    },
+    {
+    		"ChangeList": [{
+    			"Id": "7a7d0aa0-8196-11eb-9fc2-269673f51d94",
+    			"ApiChange": "Method",
+    			"ChangedApiName": "associateWithHubSites",
+    			"ChangeType": "Change",
+    			"Description": "Changed the return type for the [associateWithHubSites](https://docs.microsoft.com/en-us/graph/api/contentType-associateWithHubSites?view=graph-rest-beta) method.",
+    			"Target": "associateWithHubSites"
+    		}, {
+    			"Id": "7a7f6ce8-8196-11eb-9fc2-269673f51d94",
+    			"ApiChange": "Method",
+    			"ChangedApiName": "copyToDefaultContentLocation",
+    			"ChangeType": "Change",
+    			"Description": "Changed the return type for the [copyToDefaultContentLocation](https://docs.microsoft.com/en-us/graph/api/contentType-copyToDefaultContentLocation?view=graph-rest-beta) method.",
+    			"Target": "copyToDefaultContentLocation"
+    		}, {
+    			"Id": "7a81cfec-8196-11eb-9fc2-269673f51d94",
+    			"ApiChange": "Method",
+    			"ChangedApiName": "publish",
+    			"ChangeType": "Change",
+    			"Description": "Changed the return type for the [publish](https://docs.microsoft.com/en-us/graph/api/contentType-publish?view=graph-rest-beta) method.",
+    			"Target": "publish"
+    		}, {
+    			"Id": "7a8433f7-8196-11eb-9fc2-269673f51d94",
+    			"ApiChange": "Method",
+    			"ChangedApiName": "unpublish",
+    			"ChangeType": "Change",
+    			"Description": "Changed the return type for the [unpublish](https://docs.microsoft.com/en-us/graph/api/contentType-unpublish?view=graph-rest-beta) method.",
+    			"Target": "unpublish"
+    		}],
+    		"Id": "7a7aa807-8196-11eb-9fc2-269673f51d94",
+    		"Cloud": "prd",
+    		"Version": "beta",
+    		"CreatedDateTime": "2021-03-10T11:48:06.486Z",
+    		"WorkloadArea": "Sites and lists",
+    		"SubArea": ""
     }
   ]
 }

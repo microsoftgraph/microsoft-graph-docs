@@ -11,7 +11,7 @@ var identityProvider = new IdentityProvider
 	ClientSecret = "1111111111111"
 };
 
-await graphClient.IdentityProviders["Amazon-OAuth"]
+await graphClient.IdentityProviders["{identityProvider-id}"]
 	.Request()
 	.UpdateAsync(identityProvider);
 

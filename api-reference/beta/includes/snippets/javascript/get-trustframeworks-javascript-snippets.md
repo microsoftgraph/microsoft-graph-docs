@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/trustFramework/policies')
+let policies = await client.api('/trustFramework/policies')
 	.version('beta')
 	.get();
 

@@ -6,12 +6,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var custodian = new Custodian
+var custodian = new Microsoft.Graph.Ediscovery.Custodian
 {
 	ApplyHoldToSources = false
 };
 
-await graphClient.Compliance.Ediscovery.Cases["2192ca408ea2410eba3bec8ae873be6b"].Custodians["45454331323337443946343043464239"]
+await graphClient.Compliance.Ediscovery.Cases["{ediscovery.case-id}"].Custodians["{ediscovery.custodian-id}"]
 	.Request()
 	.UpdateAsync(custodian);
 

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Channel channel = new Channel();
 channel.displayName = "UpdateChannelModeration";
@@ -16,7 +16,7 @@ moderationSettings.allowNewMessageFromBots = true;
 moderationSettings.allowNewMessageFromConnectors = true;
 channel.moderationSettings = moderationSettings;
 
-graphClient.teams("{team-id}").channels("{channel-id}")
+graphClient.teams("893075dd-2487-4122-925f-022c42e20265").channels("19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2")
 	.buildRequest()
 	.patch(channel);
 

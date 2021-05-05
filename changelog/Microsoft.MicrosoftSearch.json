@@ -73,6 +73,112 @@
             "CreatedDateTime": "2020-11-12T19:20:54.087Z",
             "WorkloadArea": "Search",
             "SubArea": ""
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "90839e99-a779-11eb-a835-c815efda831b",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "queryAlterationResponse",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **queryAlterationResponse** property to the [searchResponse](https://docs.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
+                    "Target": "searchResponse"
+                },
+                {
+                    "Id": "908600f4-a779-11eb-a835-c815efda831b",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "value",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **value** property to the [searchResponse](https://docs.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
+                    "Target": "searchResponse"
+                },
+                {
+                    "Id": "9088645a-a779-11eb-a835-c815efda831b",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "searchAlterationOptions",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [searchAlterationOptions](https://docs.microsoft.com/en-us/graph/api/resources/searchAlterationOptions?view=graph-rest-beta) resource type.",
+                    "Target": "searchAlterationOptions"
+                },
+                {
+                    "Id": "908ac5ba-a779-11eb-a835-c815efda831b",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "searchResultSet",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [searchResultSet](https://docs.microsoft.com/en-us/graph/api/resources/searchResultSet?view=graph-rest-beta) resource type.",
+                    "Target": "searchResultSet"
+                },
+                {
+                    "Id": "908d291d-a779-11eb-a835-c815efda831b",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "alterationResponse",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [alterationResponse](https://docs.microsoft.com/en-us/graph/api/resources/alterationResponse?view=graph-rest-beta) resource type.",
+                    "Target": "alterationResponse"
+                },
+                {
+                    "Id": "908f8b1b-a779-11eb-a835-c815efda831b",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "searchAlteration",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [searchAlteration](https://docs.microsoft.com/en-us/graph/api/resources/searchAlteration?view=graph-rest-beta) resource type.",
+                    "Target": "searchAlteration"
+                },
+                {
+                    "Id": "9091ee4e-a779-11eb-a835-c815efda831b",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "alteredQueryToken",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [alteredQueryToken](https://docs.microsoft.com/en-us/graph/api/resources/alteredQueryToken?view=graph-rest-beta) resource type.",
+                    "Target": "alteredQueryToken"
+                },
+                {
+                    "Id": "9094536b-a779-11eb-a835-c815efda831b",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "searchAlterationType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **searchAlterationType** enumeration type.",
+                    "Target": "searchAlterationType"
+                },
+                {
+                    "Id": "9096b4de-a779-11eb-a835-c815efda831b",
+                    "ApiChange": "Parameter",
+                    "ChangedApiName": "queryAlterationOptions",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **queryAlterationOptions** parameter to the [query](https://docs.microsoft.com/en-us/graph/api/searchEntity-query?view=graph-rest-beta) method.",
+                    "Target": "query"
+                },
+                {
+                    "Id": "909915c1-a779-11eb-a835-c815efda831b",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "searchTerms",
+                    "ChangeType": "Deletion",
+                    "Description": "Removed the **searchTerms** property from the [searchResponse](https://docs.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
+                    "Target": "searchResponse"
+                },
+                {
+                    "Id": "909b77d1-a779-11eb-a835-c815efda831b",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "hitsContainers",
+                    "ChangeType": "Deletion",
+                    "Description": "Removed the **hitsContainers** property from the [searchResponse](https://docs.microsoft.com/en-us/graph/api/resources/searchResponse?view=graph-rest-beta) resource.",
+                    "Target": "searchResponse"
+                },
+                {
+                    "Id": "909ddbf4-a779-11eb-a835-c815efda831b",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "query",
+                    "ChangeType": "Change",
+                    "Description": "Changed the return type for the [query](https://docs.microsoft.com/en-us/graph/api/searchEntity-query?view=graph-rest-beta) method.",
+                    "Target": "query"
+                }
+            ],
+            "Id": "90813f52-a779-11eb-a835-c815efda831b",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-04-27T16:56:52.220Z",
+            "WorkloadArea": "Search",
+            "SubArea": ""
         }
     ]
 }

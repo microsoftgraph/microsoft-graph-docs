@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/drive/activities')
+let activities = await client.api('/me/drive/activities')
 	.version('beta')
 	.get();
 

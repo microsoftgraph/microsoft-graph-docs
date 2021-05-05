@@ -3,7 +3,7 @@ title: "initiator resource type"
 description: "Describes who or what initiated the provisioning event."
 localization_priority: Normal
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"
 ---
 
@@ -21,7 +21,7 @@ Describes who or what initiated the provisioning event.
 |:-------------|:------------|:------------|
 |displayName|String|Name of the person or service that initiated the provisioning event.|
 |id|String|Uniquely identifies the person or service that initiated the provisioning event.|
-|initiatorType|String| Type of initiator. Possible values are: `user`, `app`, `system`, `unknownFutureValue`.|
+|initiatorType|String| Type of initiator. Possible values are: `user`, `application`, `system`, `unknownFutureValue`.|
 
 ## JSON representation
 

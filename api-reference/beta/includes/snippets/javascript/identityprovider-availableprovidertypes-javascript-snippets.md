@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/identityProviders/availableProviderTypes')
+let availableProviderTypes = await client.api('/identityProviders/availableProviderTypes')
 	.version('beta')
 	.get();
 

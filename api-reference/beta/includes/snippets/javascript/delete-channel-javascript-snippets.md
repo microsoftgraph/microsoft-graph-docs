@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/teams/{id}/channels/{id}')
+await client.api('/teams/{id}/channels/{id}')
 	.version('beta')
 	.delete();
 

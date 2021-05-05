@@ -50,7 +50,7 @@ Automatically create teams for classes at the beginning of the school year, and 
 
 ### Create teams linked to your app
 
-Let customers to create new [teams](/graph/api/resources/team?view=graph-rest-1.0) and [channels](/graph/api/resources/channel?view=graph-rest-1.0). 
+Let customers create new [teams](/graph/api/resources/team?view=graph-rest-1.0) and [channels](/graph/api/resources/channel?view=graph-rest-1.0). 
 [Install](/graph/api/teamsappinstallation-add?view=graph-rest-1.0) your 
 [Teams app](/microsoftteams/platform/#pivot=home&panel=home-all) in the new teams. 
 [Pin your app to a tab](/graph/api/teamstab-add?view=graph-rest-1.0) in the new channel. 

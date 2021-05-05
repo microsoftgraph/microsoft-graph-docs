@@ -3,7 +3,7 @@ title: "signIn resource type"
 description: "Details user and application sign-in activity for a tenant (directory)."
 author: "besiler"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
@@ -26,10 +26,10 @@ Details user and application sign-in activity for a tenant (directory). You must
 |appDisplayName|String|App name displayed in the Azure Portal.|
 |appId|String|Unique GUID representing the app ID in the Azure Active Directory.|
 |appliedConditionalAccessPolicy|[appliedConditionalAccessPolicy](appliedconditionalaccesspolicy.md) collection|Provides a list of conditional access policies that are triggered by the corresponding sign-in activity.|
-|clientAppUsed|String|Identifies the legacy client used for sign-in activity.  Includes Browser, Exchange Active Sync, modern clients, IMAP, MAPI, SMTP, and POP.|
-|conditionalAccessStatus|string| Reports status of an activated conditional access policy. Possible values are: `success`, `failure`, `notApplied`, and `unknownFutureValue`.|
+|clientAppUsed|String|Identifies the legacy client used for sign-in activity.  Includes `Browser`, `Exchange Active Sync`, `modern clients`, `IMAP`, `MAPI`, `SMTP`, and `POP`.|
+|conditionalAccessStatus|conditionalAccessStatus| Reports status of an activated conditional access policy. Possible values are: `success`, `failure`, `notApplied`, and `unknownFutureValue`.|
 |correlationId|String|The request ID sent from the client when the sign-in is initiated; used to troubleshoot sign-in activity.|
-|createdDateTime|DateTimeOffset|Date and time (UTC) the sign-in was initiated. Example: midnight on Jan 1, 2014 is reported as `'2014-01-01T00:00:00Z'`.|
+|createdDateTime|DateTimeOffset|Date and time (UTC) the sign-in was initiated. Example: midnight on Jan 1, 2014 is reported as `2014-01-01T00:00:00Z`.|
 |deviceDetail|[deviceDetail](devicedetail.md)|Device information from where the sign-in occurred; includes device ID, operating system, and browser. |
 |id|String|Unique ID representing the sign-in activity.|
 |ipAddress|String|IP address of the client used to sign in.|

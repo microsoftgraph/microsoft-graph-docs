@@ -10,7 +10,7 @@ var chat = new Chat
 {
 	ChatType = ChatType.Group,
 	Topic = "Group chat title",
-	Members = (IChatMembersCollectionPage)new List<ConversationMember>()
+	Members = new ChatMembersCollectionPage()
 	{
 		new AadUserConversationMember
 		{

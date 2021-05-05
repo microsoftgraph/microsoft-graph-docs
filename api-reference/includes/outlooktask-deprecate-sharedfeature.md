@@ -2,7 +2,6 @@
 author: angelgolfer-ms
 ms.topic: include
 ms.date: 08/19/2020
-ms.author: angelgolfer-ms
 ---
 
 <!-- markdownlint-disable MD041-->

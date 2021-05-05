@@ -6,40 +6,40 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var schema = new Schema
+var schema = new Microsoft.Graph.ExternalConnectors.Schema
 {
 	BaseType = "microsoft.graph.externalItem",
-	Properties = new List<Property>()
+	Properties = new List<Microsoft.Graph.ExternalConnectors.Property>()
 	{
-		new Property
+		new Microsoft.Graph.ExternalConnectors.Property
 		{
 			Name = "ticketTitle",
-			Type = PropertyType.String,
+			Type = Microsoft.Graph.ExternalConnectors.PropertyType.String,
 			IsSearchable = true,
 			IsRetrievable = true,
-			Labels = new List<Label>()
+			Labels = new List<Microsoft.Graph.ExternalConnectors.Label>()
 			{
-				Label.Title
+				Microsoft.Graph.ExternalConnectors.Label.Title
 			}
 		},
-		new Property
+		new Microsoft.Graph.ExternalConnectors.Property
 		{
 			Name = "priority",
-			Type = PropertyType.String,
+			Type = Microsoft.Graph.ExternalConnectors.PropertyType.String,
 			IsQueryable = true,
 			IsRetrievable = true,
 			IsSearchable = false
 		},
-		new Property
+		new Microsoft.Graph.ExternalConnectors.Property
 		{
 			Name = "assignee",
-			Type = PropertyType.String,
+			Type = Microsoft.Graph.ExternalConnectors.PropertyType.String,
 			IsRetrievable = true
 		}
 	}
 };
 
-await graphClient.External.Connections["contosohr"].Schema
+await graphClient.External.Connections["{externalConnectors.externalConnection-id}"].Schema
 	.Request()
 	.Header("Prefer","respond-async")
 	.AddAsync(schema);

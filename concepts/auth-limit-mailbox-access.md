@@ -1,9 +1,9 @@
 ---
 title: "Scoping application permissions to specific Exchange Online mailboxes"
 description: "To scope an app's application permissions to specific Exchange Online mailboxes, you will need to create application access policies."
-author: "svpsiva"
+author: "abheek-das"
 localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ---
 
 # Scoping application permissions to specific Exchange Online mailboxes 

@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var team = new Team
 {
-	Channels = (ITeamChannelsCollectionPage)new List<Channel>()
+	Channels = new TeamChannelsCollectionPage()
 	{
 		new Channel
 		{
@@ -29,7 +29,7 @@ var team = new Team
 		AllowCreateUpdateRemoveTabs = false,
 		AllowCreateUpdateRemoveConnectors = false
 	},
-	InstalledApps = (ITeamInstalledAppsCollectionPage)new List<TeamsAppInstallation>()
+	InstalledApps = new TeamInstalledAppsCollectionPage()
 	{
 		new TeamsAppInstallation
 		{
@@ -49,7 +49,7 @@ var team = new Team
 	AdditionalData = new Dictionary<string, object>()
 	{
 		{"template@odata.bind", "https://graph.microsoft.com/beta/teamsTemplates('standard')"},
-		{"group@odata.bind", "https://graph.microsoft.com/v1.0/groups('groupId')"}
+		{"group@odata.bind", "https://graph.microsoft.com/beta/groups('dbd8de4f-5d47-48da-87f1-594bed003375')"}
 	}
 };
 

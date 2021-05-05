@@ -3,7 +3,7 @@ title: "persistentBrowserSessionControl resource type"
 description: "Session control to define whether to persist cookies or not."
 localization_priority: Normal
 author: "videor"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -18,7 +18,7 @@ Session control to define whether to persist cookies or not. Inherits from [Cond
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |isEnabled     |Boolean      | Specifies whether the session control is enabled. |
-|mode|String| Possible values are: `always`, `never`.|
+|mode|persistentBrowserSessionMode| Possible values are: `always`, `never`.|
 
 ## Relationships
 

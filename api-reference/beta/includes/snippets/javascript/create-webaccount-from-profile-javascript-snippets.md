@@ -11,15 +11,15 @@ const options = {
 const client = Client.init(options);
 
 const webAccount = {
-  description: "My Github contributions!",
-  userId: "innocenty.popov",
+  description: 'My Github contributions!',
+  userId: 'innocenty.popov',
   service: {
-    name: "GitHub",
-    webUrl: "https://github.com"
+    name: 'GitHub',
+    webUrl: 'https://github.com'
   }
 };
 
-let res = await client.api('/me/profile/webAccounts')
+await client.api('/me/profile/webAccounts')
 	.version('beta')
 	.post(webAccount);
 

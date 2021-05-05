@@ -4,7 +4,7 @@ description: "The basic representation of a time zone."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""
-author: "svpsiva"
+author: "abheek-das"
 ---
 
 # timeZoneBase resource type

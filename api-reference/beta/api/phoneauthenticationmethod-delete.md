@@ -3,7 +3,7 @@ title: "Delete phoneAuthenticationMethod"
 description: "Delete a user's phone authentication method."
 localization_priority: Normal
 author: "mmcla"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -36,7 +36,7 @@ One of the following permissions is required to call this API. To learn more, in
 ### Permissions acting on other users
 
 |Permission type      | Permissions (from least to most privileged)              |
-|:---------------------------------------|:-------------------------|:-----------------|
+|:---------------------------------------|:-------------------------|
 | Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | UserAuthenticationMethod.ReadWrite.All |
@@ -54,6 +54,10 @@ For delegated scenarios where an admin is acting on another user, the admin need
 DELETE /me/authentication/phoneMethods/{id}
 DELETE /users/{id | userPrincipalName}/authentication/phoneMethods/{id}
 ```
+The value of `id` corresponding to the phoneType to delete is one of the following:
++ `b6332ec1-7057-4abe-9331-3d72feddfe41` to delete the `alternateMobile` **phoneType**.
++ `e37fc753-ff3b-4958-9484-eaa9425c82bc` to delete the `office` **phoneType**.
++ `3179e48a-750b-4051-897c-87b9720928f7` to delete the `mobile` **phoneType**.
 
 ## Request headers
 

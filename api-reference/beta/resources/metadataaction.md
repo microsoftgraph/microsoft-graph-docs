@@ -3,7 +3,7 @@ title: "metadataAction resource type"
 description: "Represents the metadata to be written or removed from a file."
 localization_priority: Normal
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 

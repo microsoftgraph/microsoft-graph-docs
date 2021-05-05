@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<ConversationMember> valuesList = new LinkedList<ConversationMember>();
 AadUserConversationMember values = new AadUserConversationMember();
@@ -25,7 +25,10 @@ conversationMemberCollectionResponse.value = valuesList;
 ConversationMemberCollectionPage conversationMemberCollectionPage = new ConversationMemberCollectionPage(conversationMemberCollectionResponse, null);
 
 graphClient.teams("e4183b04-c9a2-417c-bde4-70e3ee46a6dc").members()
-	.add(valuesList)
+	.add(ConversationMemberAddParameterSet
+		.newBuilder()
+		.withValues(valuesList)
+		.build())
 	.buildRequest()
 	.post();
 

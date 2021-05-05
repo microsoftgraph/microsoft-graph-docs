@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const identityApiConnector = {
-    @odata.id: "https://graph.microsoft.com/beta/identity/apiConnectors/{id}"   
+    '@odata.id': 'https://graph.microsoft.com/beta/identity/apiConnectors/{id}'   
 };
 
-let res = await client.api('/identity/b2xUserFlows/B2X_1_testuserflow/apiConnectorConfiguration/postAttributeCollection/$ref')
+await client.api('/identity/b2xUserFlows/B2X_1_testuserflow/apiConnectorConfiguration/postAttributeCollection/$ref')
 	.version('beta')
 	.put(identityApiConnector);
 

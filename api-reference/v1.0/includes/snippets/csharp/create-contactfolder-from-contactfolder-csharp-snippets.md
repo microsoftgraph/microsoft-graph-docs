@@ -8,10 +8,10 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var contactFolder = new ContactFolder
 {
-	DisplayName = "displayName-value"
+	DisplayName = "Family"
 };
 
-await graphClient.Me.ContactFolders["{id}"].ChildFolders
+await graphClient.Me.ContactFolders["{contactFolder-id}"].ChildFolders
 	.Request()
 	.AddAsync(contactFolder);
 

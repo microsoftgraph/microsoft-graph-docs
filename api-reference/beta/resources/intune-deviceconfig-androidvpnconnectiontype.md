@@ -28,6 +28,7 @@ Android VPN connection type.
 |citrix|5|Citrix|
 |microsoftTunnel|7|Microsoft Tunnel.|
 |netMotionMobility|8|NetMotion Mobility.|
+|microsoftProtect|9|Microsoft Protect.|
 
 
 

@@ -11,18 +11,18 @@ const options = {
 const client = Client.init(options);
 
 const message = {
-  receivedDateTime: "datetime-value",
-  sentDateTime: "datetime-value",
+  receivedDateTime: 'datetime-value',
+  sentDateTime: 'datetime-value',
   hasAttachments: true,
-  subject: "subject-value",
+  subject: 'subject-value',
   body: {
-    contentType: "",
-    content: "content-value"
+    contentType: '',
+    content: 'content-value'
   },
-  bodyPreview: "bodyPreview-value"
+  bodyPreview: 'bodyPreview-value'
 };
 
-let res = await client.api('/me/mailFolders/{id}/messages')
+await client.api('/me/mailFolders/{id}/messages')
 	.post(message);
 
 ```

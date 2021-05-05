@@ -22,7 +22,7 @@ To follow the steps in this article, you'll need a Microsoft 365 development env
 Create a new React app by running the following command. This will create a new React app using TypeScript, which will help you write more robust code and avoid runtime errors.
 
 ```cmd
-npx create-react-app my-m365-app --template typescript
+npx create-react-app my-m365-app --template typescript --use-npm
 ```
 
 Change the working directory to the newly created app.

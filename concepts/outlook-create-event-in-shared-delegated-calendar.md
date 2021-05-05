@@ -1,7 +1,7 @@
 ---
 title: "Create Outlook events in a shared or delegated calendar"
 description: "In Outlook, customers can share a calendar with other users and let them view or modify events in that calendar. Customers can also grant a delegate to act on their  behalf, to receive or respond to meeting requests, or create or change items in the calendar."
-author: "angelgolfer-ms"
+author: "juforan"
 localization_priority: Priority
 ms.prod: "outlook"
 ---
@@ -12,7 +12,7 @@ In Outlook, customers can share a calendar with other users and let them view, c
 
 Programmatically, Microsoft Graph supports reading or writing events in calendars that have been shared by other users, as well as reading the shared calendars, and updating the calendar name for sharees. The support also applies to calendars that have been delegated. The rest of this article walks through creating a meeting event in a shared or delegated calendar. For getting events, refer to [Get Outlook events in a shared or delegated calendar](outlook-get-shared-events-calendars.md).
 
-The walkthrough below uses the example scenario where Alex has delegated his primary calendar to Adele in Outlook, and kept the default Outlook mailbox setting to direct meeting requests and responses to only delegates. (This setting corresponds to the **delegateMeetingMessageDeliveryOptions** property of Alex' [mailboxSettings](/graph/api/resources/mailboxsettings?view=graph-rest-1.0) set as the default value `sendToDelegateOnly`.) 
+The walkthrough below uses the example scenario where Alex has delegated his primary calendar to Adele in Outlook, and kept the default Outlook mailbox setting to direct meeting requests and responses to only delegates. (This setting corresponds to the **delegateMeetingMessageDeliveryOptions** property of Alex' [mailboxSettings](/graph/api/resources/mailboxsettings) set as the default value `sendToDelegateOnly`.) 
 
 The walkthrough describes a few subsequent steps:
 1. [Adele gets the calendar that Alex has delegated to her](#step-1-adele-gets-the-delegated-calendar).
@@ -32,6 +32,9 @@ If Alex has shared and not delegated his calendar with Adele:
 
 Signed in as Adele, get the calendars she has access to and identify the one Alex has delegated to her, so to use it in the next step to create an event in that calendar. 
 
+**Microsoft Graph permissions**
+
+Use the least privileged delegated permission, `Calendars.Read.Shared`. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -115,7 +118,11 @@ Content-type: application/json
 
 ## Step 2: Adele creates and sends an invitation on Alex' behalf
 
-Signed in as Adele, use the calendar ID obtained from step 1 to create an [event](/graph/api/resources/event?view=graph-rest-1.0) in the delegated calendar and send it to Christie and Megan, on Alex' behalf:
+Signed in as Adele, use the calendar ID obtained from step 1 to create an [event](/graph/api/resources/event) in the delegated calendar and send it to Christie and Megan, on Alex' behalf.
+
+**Microsoft Graph permissions**
+
+Use the least privileged delegated permission, `Calendars.ReadWrite.Shared`. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
 
 <!-- {
   "blockType": "request",
@@ -164,7 +171,7 @@ Content-type: application/json
 }
 ```
 
-Notice a successful response includes HTTP 201 and the following [event](/graph/api/resources/event?view=graph-rest-1.0) properties:
+Notice a successful response includes HTTP 201 and the following [event](/graph/api/resources/event) properties:
 
 - **isOrganizer** is set to true. In general, this property is true if the calendar owner (Alex) is the organizer of the meeting. This also applies if a delegate (Adele) organized the meeting on behalf of the owner.
 - The **attendees** collection specifies Megan and Christie.
@@ -275,9 +282,13 @@ Content-type: application/json
 
 ## Step 3: Christie receives meeting request and inspects the associated event in her calendar
 
-Upon delivering the meeting request, Outlook automatically creates a tentative [event](/graph/api/resources/event?view=graph-rest-1.0) in Christie's calendar.
+Upon delivering the meeting request, Outlook automatically creates a tentative [event](/graph/api/resources/event) in Christie's calendar.
 
-Signed in as Christie, get the [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0) and **event** that are associated with the meeting request from step 2:
+Signed in as Christie, get the [eventMessage](/graph/api/resources/eventmessage) and **event** that are associated with the meeting request from step 2.
+
+**Microsoft Graph permissions**
+
+Use the least privileged delegated permisson, `Mail.Read` and `Calendar.Read.Shared`. For more information, see [mail permissions](permissions-reference.md#mail-permissions) and [calendar permissions](permissions-reference.md#calendars-permissions).
 
 
 # [HTTP](#tab/http)
@@ -308,14 +319,14 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADADVj3fyAABZ5hYdAAA=?$expa
 ---
 
 
-Notice a successful response includes the response code HTTP 200 and the following [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0) properties:
+Notice a successful response includes the response code HTTP 200 and the following [eventMessage](/graph/api/resources/eventmessage) properties:
 
 - **meetingMessageType** specifies this message is `meetingRequest`.
 - **sender** is Adele.
 - **from** is Alex.
 - **toRecipients** include Megan and Christie.
 
-And the following [event](/graph/api/resources/event?view=graph-rest-1.0) properties:
+And the following [event](/graph/api/resources/event) properties:
 
 - **attendees** include Alex, Megan, and Christie.
 - **organizer** is Alex.
@@ -502,6 +513,9 @@ Content-type: application/json
 
 Signed in as Christie, reply to the **event** as tentative, and include a reply message in the response:
 
+**Microsoft Graph permissions**
+
+Use the least privileged delegated permission, `Calendars.ReadWrite.Shared`. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
 
 # [HTTP](#tab/http)
 <!-- {
@@ -552,7 +566,11 @@ HTTP/1.1 202 Accepted
 
 Because Adele is a delegate of Alex' primary calendar, Adele receives all meeting responses for that calendar on Alex' behalf.
 
-Signed in as Adele, get the [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0) that represents the response from Christie in step 4:
+Signed in as Adele, get the [eventMessage](/graph/api/resources/eventmessage) that represents the response from Christie in step 4.
+
+**Microsoft Graph permissions**
+
+Use the least privileged delegated permission, `Mail.Read.Shared`. For more information, see [mail permissions](permissions-reference.md#mail-permissions).
 
 
 # [HTTP](#tab/http)
@@ -583,7 +601,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkADI4oeRpAABf0HJUAAA=
 ---
 
 
-Notice a successful response includes the response code HTTP 200 and the following [eventMessage](/graph/api/resources/eventmessage?view=graph-rest-1.0) properties:
+Notice a successful response includes the response code HTTP 200 and the following [eventMessage](/graph/api/resources/eventmessage) properties:
 
 - **meetingMessageType** is `meetingTenativelyAccepted`.
 - **from** is Christie.
@@ -660,9 +678,13 @@ Content-type: application/json
 
 ## Step 6: Alex accesses responses as part of the event
 
-Because Alex kept the default to have Outlook direct all meeting requests and responses to only delegates, Alex does not receive Christie's response from step 4. He can however get the response through the [event](/graph/api/resources/event?view=graph-rest-1.0) in his primary calendar.
+Because Alex kept the default to have Outlook direct all meeting requests and responses to only delegates, Alex does not receive Christie's response from step 4. He can however get the response through the [event](/graph/api/resources/event) in his primary calendar.
 
-Signed in as Alex, get the [event](/graph/api/resources/event?view=graph-rest-1.0) that Adele created in step 2 and get responses from the **attendees** property:
+Signed in as Alex, get the [event](/graph/api/resources/event) that Adele created in step 2 and get responses from the **attendees** property.
+
+**Microsoft Graph permissions**
+
+Use the least privileged delegated permission, `Calendars.Read`. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
 
 
 # [HTTP](#tab/http)
@@ -693,7 +715,7 @@ GET https://graph.microsoft.com/v1.0/me/calendar/events/AAMkADJXJGu0AABf02qwAAA=
 ---
 
 
-Notice a successful response includes the response code HTTP 200 and the following [event](/graph/api/resources/event?view=graph-rest-1.0) properties:
+Notice a successful response includes the response code HTTP 200 and the following [event](/graph/api/resources/event) properties:
 
 - **isOrganizer** is true.
 - **attendees** include only Megan and Christie.
@@ -812,4 +834,4 @@ Find out more about:
 - [Get Outlook events in a shared or delegated calendar](outlook-get-shared-events-calendars.md)
 - [Share or delegate a calendar in Outlook (preview)](outlook-share-or-delegate-calendar.md)
 - [Why integrate with Outlook calendar](outlook-calendar-concept-overview.md)
-- The [calendar API](/graph/api/resources/calendar?view=graph-rest-1.0) in Microsoft Graph v1.0.
+- The [calendar API](/graph/api/resources/calendar) in Microsoft Graph v1.0.

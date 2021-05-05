@@ -12,7 +12,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphNotebook *notebook = [[MSGraphNotebook alloc] init];
-[notebook setDisplayName:@"Notebook name"];
+[notebook setDisplayName:@"My Private notebook"];
 
 NSError *error;
 NSData *notebookData = [notebook getSerializedDataWithError:&error];

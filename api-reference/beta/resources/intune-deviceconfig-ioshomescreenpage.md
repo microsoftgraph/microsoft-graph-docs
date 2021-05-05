@@ -1,6 +1,6 @@
 ---
 title: "iosHomeScreenPage resource type"
-description: "A page containing apps and folders on the Home Screen"
+description: "A page containing apps, folders, and web clips on the Home Screen."
 author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
@@ -15,13 +15,13 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-A page containing apps and folders on the Home Screen
+A page containing apps, folders, and web clips on the Home Screen.
 
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Name of the page|
-|icons|[iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md) collection|A list of apps and folders to appear on a page. This collection can contain a maximum of 500 elements.|
+|icons|[iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md) collection|A list of apps, folders, and web clips to appear on a page. This collection can contain a maximum of 500 elements.|
 
 ## Relationships
 None
@@ -49,7 +49,8 @@ Here is a JSON representation of the resource.
             {
               "@odata.type": "microsoft.graph.iosHomeScreenApp",
               "displayName": "String",
-              "bundleID": "String"
+              "bundleID": "String",
+              "isWebClip": true
             }
           ]
         }

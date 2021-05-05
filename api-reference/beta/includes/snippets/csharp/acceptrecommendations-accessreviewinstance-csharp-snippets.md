@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Me.PendingAccessReviewInstances["70a68410-67f3-4d4c-b946-6989e050be19"]
+await graphClient.Me.PendingAccessReviewInstances["{accessReviewInstance-id}"]
 	.AcceptRecommendations()
 	.Request()
 	.PostAsync();

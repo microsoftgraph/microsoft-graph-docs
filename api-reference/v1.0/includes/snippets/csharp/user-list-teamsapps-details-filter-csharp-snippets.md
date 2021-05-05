@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var installedApps = await graphClient.Users["97a5a533-833d-494b-b543-c0afe026cb96"].Teamwork.InstalledApps
+var installedApps = await graphClient.Users["{user-id}"].Teamwork.InstalledApps
 	.Request()
 	.Filter("teamsApp/externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'")
 	.Expand("teamsAppDefinition")

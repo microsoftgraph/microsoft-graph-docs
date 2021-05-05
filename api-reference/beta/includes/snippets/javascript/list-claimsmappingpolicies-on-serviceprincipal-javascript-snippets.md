@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/servicePrincipals/{id}/claimsMappingPolicies')
+let claimsMappingPolicies = await client.api('/servicePrincipals/{id}/claimsMappingPolicies')
 	.version('beta')
 	.get();
 

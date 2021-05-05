@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Policies.PermissionGrantPolicies["my-custom-consent-policy"]
+await graphClient.Policies.PermissionGrantPolicies["{permissionGrantPolicy-id}"]
 	.Request()
 	.DeleteAsync();
 

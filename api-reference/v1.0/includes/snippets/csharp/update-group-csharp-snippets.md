@@ -19,7 +19,7 @@ var group = new Group
 	MailNickname = "mailNickname-value"
 };
 
-await graphClient.Groups["{id}"]
+await graphClient.Groups["{group-id}"]
 	.Request()
 	.UpdateAsync(group);
 

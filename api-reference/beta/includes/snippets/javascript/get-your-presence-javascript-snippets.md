@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/presence')
+let presence = await client.api('/me/presence')
 	.version('beta')
 	.get();
 

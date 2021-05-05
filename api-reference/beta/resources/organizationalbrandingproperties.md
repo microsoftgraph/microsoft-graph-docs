@@ -3,7 +3,7 @@ title: "organizationalBrandingProperties resource type"
 description: "Contains details of the organization's branding."
 localization_priority: Normal
 author: "kexia"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -57,7 +57,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.organizationalBrandingProperties",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

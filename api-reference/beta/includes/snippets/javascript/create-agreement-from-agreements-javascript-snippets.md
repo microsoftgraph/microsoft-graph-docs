@@ -11,21 +11,21 @@ const options = {
 const client = Client.init(options);
 
 const agreement = {
-  displayName: "MSGraph Sample",
+  displayName: 'MSGraph Sample',
   isViewingBeforeAcceptanceRequired: true,
   files: [
     {
-      fileName: "TOU.pdf",
-      language: "en",
+      fileName: 'TOU.pdf',
+      language: 'en',
       isDefault: true,
       fileData: {
-        data: "SGVsbG8gd29ybGQ="
+        data: 'SGVsbG8gd29ybGQ='
       }
     }
   ]
 };
 
-let res = await client.api('/agreements')
+await client.api('/identityGovernance/termsOfUse/agreements')
 	.version('beta')
 	.post(agreement);
 

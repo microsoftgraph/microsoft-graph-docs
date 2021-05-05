@@ -11,14 +11,14 @@ const options = {
 const client = Client.init(options);
 
 const workbookChartDataLabels = {
-  position: "position-value",
+  position: 'position-value',
   showValue: true,
   showSeriesName: true,
   showCategoryName: true,
   showLegendKey: true
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/dataLabels')
+await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/dataLabels')
 	.update(workbookChartDataLabels);
 
 ```

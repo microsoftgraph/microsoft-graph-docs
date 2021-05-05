@@ -20,7 +20,7 @@ Update the properties of a [androidLobApp](../resources/intune-apps-androidlobap
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -92,7 +92,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/{mobileAppId}
 Content-type: application/json
-Content-length: 1470
+Content-length: 1510
 
 {
   "@odata.type": "#microsoft.graph.androidLobApp",
@@ -139,7 +139,9 @@ Content-length: 1470
     "v7_1": true,
     "v8_0": true,
     "v8_1": true,
-    "v9_0": true
+    "v9_0": true,
+    "v10_0": true,
+    "v11_0": true
   },
   "versionName": "Version Name value",
   "versionCode": "Version Code value",
@@ -152,7 +154,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1642
+Content-Length: 1682
 
 {
   "@odata.type": "#microsoft.graph.androidLobApp",
@@ -202,7 +204,9 @@ Content-Length: 1642
     "v7_1": true,
     "v8_0": true,
     "v8_1": true,
-    "v9_0": true
+    "v9_0": true,
+    "v10_0": true,
+    "v11_0": true
   },
   "versionName": "Version Name value",
   "versionCode": "Version Code value",

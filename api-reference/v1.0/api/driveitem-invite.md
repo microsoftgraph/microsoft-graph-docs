@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Send an invite to access an item
 localization_priority: Normal
@@ -79,7 +78,7 @@ If successful, this method returns `200 OK` response code and [permission](../re
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "send-sharing-invite", "scopes": "files.readwrite", "target": "action" } -->
 
-```json
+```http
 POST /me/drive/items/{item-id}/invite
 Content-type: application/json
 
@@ -122,7 +121,7 @@ Here is an example of the response.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

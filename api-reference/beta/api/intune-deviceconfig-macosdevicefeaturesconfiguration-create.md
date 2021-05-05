@@ -20,7 +20,7 @@ Create a new [macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -31,14 +31,12 @@ One of the following permissions is required to call this API. To learn more, in
   "blockType": "ignored"
 }
 -->
-
-```http
+``` http
 POST /deviceManagement/deviceConfigurations
 POST /deviceManagement/deviceConfigurations/{deviceConfigurationId}/microsoft.graph.windowsDomainJoinConfiguration/networkAccessConfigurations
 ```
 
 ## Request headers
-
 |Header|Value|
 |:---|:---|
 |Authorization|Bearer &lt;token&gt; Required.|
@@ -105,6 +103,8 @@ The following table shows the properties that are required when you create the m
 |contentCachingKeepAwake|Boolean|Prevent the device from sleeping if content caching is enabled.|
 |contentCachingPort|Int32|Sets the port used for content caching. If the value is 0, a random available port will be selected. Valid values 0 to 65535|
 
+
+
 ## Response
 If successful, this method returns a `201 Created` response code and a [macOSDeviceFeaturesConfiguration](../resources/intune-deviceconfig-macosdevicefeaturesconfiguration.md) object in the response body.
 
@@ -112,8 +112,7 @@ If successful, this method returns a `201 Created` response code and a [macOSDev
 
 ### Request
 Here is an example of the request.
-
-```http
+``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
 Content-length: 5662
@@ -294,8 +293,7 @@ Content-length: 5662
 
 ### Response
 Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
-
-```http
+``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
 Content-Length: 5834
@@ -476,3 +474,7 @@ Content-Length: 5834
   "contentCachingPort": 2
 }
 ```
+
+
+
+

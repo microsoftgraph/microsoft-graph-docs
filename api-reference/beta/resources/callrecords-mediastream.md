@@ -30,7 +30,7 @@ Represents information about a media stream between two endpoints in a call.
 |averageVideoFrameLossPercentage|Double|Average percentage of video frames lost as displayed to the user.|
 |averageVideoFrameRate|Double|Average frames per second received for a video stream, computed over the duration of the session.|
 |averageVideoPacketLossRate|Double|Average fraction of packets lost, as specified in [RFC 3550][], computed over the duration of the session.|
-|endDateTime|DateTimeOffset|UTC time when the stream ended. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|endDateTime|DateTimeOffset|UTC time when the stream ended. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |lowFrameRateRatio|Double|Fraction of the call where frame rate is less than 7.5 frames per second.|
 |lowVideoProcessingCapabilityRatio|Double|Fraction of the call that the client is running less than 70% expected video processing capability.|
 |maxAudioNetworkJitter|Duration|Maximum of audio network jitter computed over each of the 20 second windows during the session, denoted in [ISO 8601][] format. For example, 1 second is denoted as `'PT1S'`, where 'P' is the duration designator, 'T' is the time designator, and 'S' is the second designator.|
@@ -40,7 +40,7 @@ Represents information about a media stream between two endpoints in a call.
 |maxRoundTripTime|Duration|Maximum network propagation round-trip time computed as specified in [RFC 3550][], denoted in [ISO 8601][] format. For example, 1 second is denoted as `'PT1S'`, where 'P' is the duration designator, 'T' is the time designator, and 'S' is the second designator.|
 |packetUtilization|Int64|Packet count for the stream.|
 |postForwardErrorCorrectionPacketLossRate|Double|Packet loss rate after FEC has been applied aggregated across all video streams and codecs.|
-|startDateTime|DateTimeOffset|UTC time when the stream started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|startDateTime|DateTimeOffset|UTC time when the stream started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |streamDirection|microsoft.graph.callRecords.mediaStreamDirection|Indicates the direction of the media stream. Possible values are: `callerToCallee`, `calleeToCaller`.|
 |streamId|String|Unique identifier for the stream.|
 |wasMediaBypassed|Boolean|True if the media stream bypassed the Mediation Server and went straight between client and PSTN Gateway/PBX, false otherwise.|

@@ -3,7 +3,7 @@ title: "Feature differences between Azure AD Graph and Microsoft Graph"
 description: "Describes feature differences between Azure Active Directory (Azure AD) API and Microsoft Graph API, in order to help you migrate apps quickly and easily."
 author: "dkershaw10"
 localization_priority: Normal
-ms.prod: "azure-active-directory"
+ms.prod: "applications"
 ---
 
 # Feature differences between Azure AD Graph and Microsoft Graph

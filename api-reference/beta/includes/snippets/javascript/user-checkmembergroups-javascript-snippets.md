@@ -12,11 +12,11 @@ const client = Client.init(options);
 
 const string = {
   groupIds: [
-    "groupIds-value"
+    'groupIds-value'
   ]
 };
 
-let res = await client.api('/me/checkMemberGroups')
+await client.api('/me/checkMemberGroups')
 	.version('beta')
 	.post(string);
 

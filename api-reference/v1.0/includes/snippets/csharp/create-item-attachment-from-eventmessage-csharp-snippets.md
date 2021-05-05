@@ -9,10 +9,12 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var attachment = new ItemAttachment
 {
 	Name = "name-value",
-	Item = "message or event entity"
+	Item = new Message
+	{
+	}
 };
 
-await graphClient.Me.Events["{id}"].Attachments
+await graphClient.Me.Events["{event-id}"].Attachments
 	.Request()
 	.AddAsync(attachment);
 

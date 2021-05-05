@@ -11,7 +11,7 @@ var channel = new Channel
 	MembershipType = ChannelMembershipType.Private,
 	DisplayName = "My First Private Channel",
 	Description = "This is my first private channels",
-	Members = (IChannelMembersCollectionPage)new List<ConversationMember>()
+	Members = new ChannelMembersCollectionPage()
 	{
 		new AadUserConversationMember
 		{
@@ -27,7 +27,7 @@ var channel = new Channel
 	}
 };
 
-await graphClient.Teams["57fb72d0-d811-46f4-8947-305e6072eaa5"].Channels
+await graphClient.Teams["{team-id}"].Channels
 	.Request()
 	.AddAsync(channel);
 

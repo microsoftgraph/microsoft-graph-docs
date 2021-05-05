@@ -1,6 +1,6 @@
 ---
 title: "Endpoint resource type"
-description: "Endpoints represent URLs for resources associated with an entity.  For example, when a new Microsoft 365 group is created, additional resources are also created as part of the Microsoft 365 group. These include things like a group mailbox for conversations and a group OneDrive folder for documents and files. Further information about these Microsoft 365 group resources, including their associated resource URLs can now be read using the *endpoints* navigation on the group resource-type. This allows applications to understand these resources, and even embed the resource URL experiences in their own experiences. "
+description: "Endpoints represent URLs for resources associated with an entity."
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: ""

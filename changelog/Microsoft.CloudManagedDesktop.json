@@ -3,6 +3,48 @@
         {
             "ChangeList": [
                 {
+                    "Id": "2a611d0f-e9d5-4f52-bd55-364c83ad8eef",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "cloudPcDeviceImageStatusDetails",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `osVersionNotSupported` member to the **cloudPcDeviceImageStatusDetails** enumeration.",
+                    "Target": "cloudPcDeviceImageStatusDetails"
+                },
+                {
+                    "Id": "fa87b45b-599b-4cda-9b5f-a155abcec68c",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "cloudPcDeviceImageStatusDetails",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `sourceImageInvalid` member to the **cloudPcDeviceImageStatusDetails** enumeration.",
+                    "Target": "cloudPcDeviceImageStatusDetails"
+                }
+            ],
+            "Id": "1c0ba039-8ca5-49d6-b72d-6da4ed946ef6s",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-03-18T15:13:07.177Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [{
+                "Id": "db18fa68-57bd-4326-84cb-ac217c065b91",
+                "ApiChange": "Property",
+                "ChangedApiName": "inUse",
+                "ChangeType": "Deletion",
+                "Description": "Changed the **inUse** property to be returned only on `select` and not by default.",
+                "Target": "virtualEndpoint"
+            }],
+            "Id": "db18fa68-57bd-4326-84cb-ac217c065b91",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-02-08T15:13:07.177Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"   
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "39c5bed3-40f5-11eb-ae35-ed470c456b69",
                     "ApiChange": "Member",
                     "ChangedApiName": "resourceAvailabilityCheckSubscriptionDisabled",

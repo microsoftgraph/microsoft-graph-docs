@@ -11,12 +11,12 @@ const options = {
 const client = Client.init(options);
 
 const directoryRole = {
-  description: "description-value",
-  displayName: "displayName-value",
-  roleTemplateId: "roleTemplateId-value"
+  description: 'description-value',
+  displayName: 'displayName-value',
+  roleTemplateId: 'roleTemplateId-value'
 };
 
-let res = await client.api('/directoryRoles')
+await client.api('/directoryRoles')
 	.version('beta')
 	.post(directoryRole);
 

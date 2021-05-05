@@ -15,7 +15,7 @@ var newAssignmentOrder = new AssignmentOrder
 	}
 };
 
-await graphClient.Identity.B2cUserFlows["{id}"].UserAttributeAssignments
+await graphClient.Identity.B2cUserFlows["{b2cIdentityUserFlow-id}"].UserAttributeAssignments
 	.SetOrder(newAssignmentOrder)
 	.Request()
 	.PostAsync();

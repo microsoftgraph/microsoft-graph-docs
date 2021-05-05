@@ -11,16 +11,16 @@ const options = {
 const client = Client.init(options);
 
 const term = {
-  "labels" : [
+  labels: [
       {
-          "name" : "changedLabel",
-          "languageTag" : "en-US",
-          "isDefault" : true
+          name: 'changedLabel',
+          languageTag: 'en-US',
+          isDefault: true
       }
   ]
 };
 
-let res = await client.api('/termStore/sets/{setId}/terms/{termId}')
+await client.api('/termStore/sets/{setId}/terms/{termId}')
 	.version('beta')
 	.update(term);
 

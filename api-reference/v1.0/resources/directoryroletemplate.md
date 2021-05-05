@@ -3,7 +3,7 @@ title: "directoryRoleTemplate resource type"
 description: "Represents a directory role template."
 localization_priority: Normal
 author: "abhijeetsinha"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 

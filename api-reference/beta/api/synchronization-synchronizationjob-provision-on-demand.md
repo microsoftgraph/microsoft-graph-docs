@@ -3,7 +3,7 @@ title: "synchronizationJob: provisionOnDemand"
 description: "Select a user and provision the account on-demand."
 author: "ArvindHarinder1"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: apiPageType
 ---
 
@@ -20,7 +20,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------------------------|:---------------------------------------------------------|
 |Delegated (work or school account)     |Directory.ReadWrite.All  |
 |Delegated (personal Microsoft account) |Not supported. |
-|Application                            |Not supported. |
+|Application                            |Application.ReadWrite.OwnedBy, Directory.ReadWrite.All |
 
 ## HTTP request
 

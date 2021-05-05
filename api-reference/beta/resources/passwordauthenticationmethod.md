@@ -3,7 +3,7 @@ title: "passwordAuthenticationMethod resource type"
 description: "A representation of a password registered to a user."
 localization_priority: Normal
 author: "mmcla"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
 
@@ -27,7 +27,7 @@ A representation of a user's password. For security, the password itself will ne
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|creationDateTime|DateTimeOffset|The date and time when this password was last updated. This property is currently not populated. Read-only. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|creationDateTime|DateTimeOffset|The date and time when this password was last updated. This property is currently not populated. Read-only. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |id|String| The identifier of this password registered to this user. Read-only.|
 |password|String|For security, the password is always returned as null from a LIST or GET operation.|
 
@@ -45,7 +45,6 @@ The following is a JSON representation of the resource.
 
   ],
   "@odata.type": "microsoft.graph.passwordAuthenticationMethod",
-  "baseType": "",
   "keyProperty": "id"
 }-->
 

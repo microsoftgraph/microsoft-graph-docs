@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const authorizationPolicy = {
-  allowEmailVerifiedUsersToJoinOrganization:false
+  allowEmailVerifiedUsersToJoinOrganization: false
 };
 
-let res = await client.api('/policies/authorizationPolicy')
+await client.api('/policies/authorizationPolicy')
 	.update(authorizationPolicy);
 
 ```

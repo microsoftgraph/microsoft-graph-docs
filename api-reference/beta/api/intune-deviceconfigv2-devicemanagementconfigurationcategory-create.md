@@ -20,11 +20,11 @@ Create a new [deviceManagementConfigurationCategory](../resources/intune-devicec
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -55,6 +55,10 @@ The following table shows the properties that are required when you create the d
 |displayName|String|Display name of the item|
 |platforms|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Platforms types, which settings in the category have. Possible values are: `none`, `macOS`, `windows10X`, `windows10`.|
 |technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Technologies types, which settings in the category have. Possible values are: `none`, `mdm`, `windows10XManagement`, `configManager`.|
+|settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Indicates that the category contains settings that are used for Compliance or Configuration. Possible values are: `none`, `configuration`.|
+|parentCategoryId|String|Parent id of the category.|
+|rootCategoryId|String|Root id of the category.|
+|childCategoryIds|String collection|List of child ids of the category.|
 
 
 
@@ -68,7 +72,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/configurationCategories
 Content-type: application/json
-Content-length: 268
+Content-length: 465
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationCategory",
@@ -77,7 +81,13 @@ Content-length: 268
   "name": "Name value",
   "displayName": "Display Name value",
   "platforms": "macOS",
-  "technologies": "mdm"
+  "technologies": "mdm",
+  "settingUsage": "configuration",
+  "parentCategoryId": "Parent Category Id value",
+  "rootCategoryId": "Root Category Id value",
+  "childCategoryIds": [
+    "Child Category Ids value"
+  ]
 }
 ```
 
@@ -86,7 +96,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 317
+Content-Length: 514
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationCategory",
@@ -96,7 +106,13 @@ Content-Length: 317
   "name": "Name value",
   "displayName": "Display Name value",
   "platforms": "macOS",
-  "technologies": "mdm"
+  "technologies": "mdm",
+  "settingUsage": "configuration",
+  "parentCategoryId": "Parent Category Id value",
+  "rootCategoryId": "Root Category Id value",
+  "childCategoryIds": [
+    "Child Category Ids value"
+  ]
 }
 ```
 

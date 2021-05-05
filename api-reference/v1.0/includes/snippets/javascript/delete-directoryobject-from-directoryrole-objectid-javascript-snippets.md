@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/directoryRoles/{role-objectId}/members/{user-id}/$ref')
+await client.api('/directoryRoles/{role-objectId}/members/{user-id}/$ref')
 	.delete();
 
 ```

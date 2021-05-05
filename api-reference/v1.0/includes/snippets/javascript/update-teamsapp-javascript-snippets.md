@@ -10,9 +10,9 @@ const options = {
 
 const client = Client.init(options);
 
-const teamsApp = [Zip file containing a Teams app package];
+const teamsAppDefinition = [Zip file containing a Teams app package];
 
-let res = await client.api('/appCatalogs/teamsApps/06805b9e-77e3-4b93-ac81-525eb87513b8')
-	.put(teamsApp);
+await client.api('/appCatalogs/teamsApps/e3e29acb-8c79-412b-b746-e6c39ff4cd22/appDefinitions?requiresReview=true')
+	.post(teamsAppDefinition);
 
 ```

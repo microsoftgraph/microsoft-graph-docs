@@ -17,7 +17,7 @@ items:
           - name: What's new highlights
             href: whats-new-overview.md
           - name: API changelog
-            href: changelog.md
+            href: https://developer.microsoft.com/graph/changelog
       - name: Users you can reach
         items:
           - name: Overview
@@ -184,8 +184,7 @@ items:
       - name: Devices and apps
         expanded: true
         items:
-          - name: Cloud printing (preview)
-            expanded: true
+          - name: Cloud printing
             items:
               - name: Overview
                 href: universal-print-concept-overview.md
@@ -193,9 +192,31 @@ items:
               - name: Upload data to upload session
                 href: upload-data-to-upload-session.md
                 displayName: Universal Print Job Submission
+              - name: Change notifications
+                href: universal-print-webhook-notifications.md
+                displayName: Universal Print Webhook Notifications
           - name: Corporate management
             href: intune-concept-overview.md
             displayName: Intune
+          - name: Device updates (preview)
+            displayName: Windows updates
+            items:
+              - name: Overview
+                href: windowsupdates-concept-overview.md
+              - name: Software updates
+                href: windowsupdates-software-updates.md
+              - name: Deployments
+                href: windowsupdates-deployments.md
+              - name: Enroll in management
+                href: windowsupdates-enroll.md
+              - name: Deploy a feature update
+                href: windowsupdates-deploy-update.md
+              - name: Deploy an expedited update
+                href: windowsupdates-deploy-expedited-update.md
+              - name: Schedule a deployment
+                href: windowsupdates-schedule-deployment.md
+              - name: Manage monitoring rules
+                href: windowsupdates-manage-monitoring-rules.md
       - name: Education
         items:
           - name: Overview
@@ -221,8 +242,16 @@ items:
                 href: tutorial-riskdetection-api.md
           - name: Governance
             items:
-              - name: Create an access package
+              - name: Manage access to resources
                 href: tutorial-access-package-api.md
+              - name: Review access to your resources
+                items:
+                  - name: Overview of the access reviews API
+                    href: accessreviews-overview.md
+                  - name: Review access to a security group
+                    href: tutorial-accessreviews-securitygroup.md
+                  - name: Review access to a Microsoft 365 group
+                    href: tutorial-accessreviews-M365group.md
       - name: Mail
         displayName: Outlook, Outlook mail
         items:
@@ -339,6 +368,8 @@ items:
                 href: search-concept-sort.md
               - name: Refine search results (preview)
                 href: search-concept-aggregation.md
+              - name: Request spelling correction (preview)
+                href: search-concept-speller.md
           - name: Index (preview)
             items:
               - name: Manage connections
@@ -451,7 +482,7 @@ items:
           - name: Throttling
             href: throttling.md
           - name: Change notifications
-            displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
+            displayName: Webhooks, cloud printing, Unviersal Print, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
             items:
               - name: Overview
                 href: webhooks.md
@@ -461,10 +492,12 @@ items:
                 href: webhooks-lifecycle.md
               - name: Notifications with resource data
                 href: webhooks-with-resource-data.md
-              - name: Get notifications delivered different ways (preview)
+              - name: Get notifications delivered different ways
                 href: change-notifications-delivery.md
               - name: Get change notifications for chat and channel messages
                 href: teams-changenotifications-chatmessage.md
+              - name: Change notifications for cloud printing
+                href: universal-print-webhook-notifications.md
           - name: Change tracking
             displayName: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
             items:
@@ -487,6 +520,12 @@ items:
                 href: extensibility-open-users.md
               - name: Use schema extensions (example)
                 href: extensibility-schema-groups.md
+          - name: Use Graph Explorer
+            items:
+            - name: Get started
+              href: graph-explorer/graph-explorer-overview.md
+            - name: Work with Graph Explorer
+              href: graph-explorer/graph-explorer-features.md
           - name: Use Postman
             href: use-postman.md
       - name: Migrate
@@ -579,6 +618,8 @@ items:
                 href: toolkit/get-started/build-a-sharepoint-web-part.md
               - name: Build a Microsoft Teams tab
                 href: toolkit/get-started/build-a-microsoft-teams-tab.md
+              - name: Build an Electron app
+                href: toolkit/get-started/build-an-electron-app.md
           - name: Providers
             items:
               - name: Using the providers
@@ -589,6 +630,8 @@ items:
                 href: toolkit/providers/sharepoint.md
               - name: Microsoft Teams provider
                 href: toolkit/providers/teams.md
+              - name: Electron provider
+                href: toolkit/providers/electron.md
               - name: Proxy provider
                 href: toolkit/providers/proxy.md
               - name: Custom provider
@@ -639,6 +682,6 @@ items:
           - name: Errors
             href: errors.md
       - name: v1.0 reference
-        href: /graph/api/overview?view=graph-rest-1.0
+        href: /graph/api/overview?view=graph-rest-1.0&preserve-view=true
       - name: Beta reference
-        href: /graph/api/overview?view=graph-rest-beta
+        href: /graph/api/overview?view=graph-rest-beta&preserve-view=true

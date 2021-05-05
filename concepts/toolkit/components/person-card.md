@@ -58,7 +58,7 @@ Sections are loaded by default, but they can be disabled globally via the `MgtPe
 | files | `boolean` - Indicates whether the person card files section is shown. Default value is `true`.  |
 | profile | `boolean` - Indicates whether the person card profile section is shown. Default value is `true`.  |
 
-To disable a section, simply set the property to `false` in your app initialization code:.
+To disable a section, simply set the property to `false` in your app initialization code:
 ```ts
 import { MgtPersonCard } from `@microsoft/mgt`;
 
@@ -72,10 +72,10 @@ The Person-Card component allows the user to contact the target person, includin
 If the Person-Card component is unable to detect the Teams lib, the component will attempt to open the Teams web client instead.
 
 ```ts
-import * as MicrosoftTeams from "@microsoft/teams-js/dist/MicrosoftTeams";
+import * as microsoftTeams from "@microsoft/teams-js";
 import {TeamsHelper} from '@microsoft/mgt';
 
-TeamsHelper.microsoftTeamsLib = MicrosoftTeams;
+TeamsHelper.microsoftTeamsLib = microsoftTeams;
 ```
 
 For more information about the `TeamsProvider` provider, see [Microsoft Teams provider](../providers/teams.md).
@@ -89,8 +89,8 @@ By default, the `mgt-person` component will pass the person details to the `mgt-
 | person-details | MicrosoftGraph.User <br> MicrosoftGraph.Person <br> MicrosoftGraph.Contact | Person object as defined by Microsoft Graph, containing details related to the user. |
 | person-image   | string                    | Image uri related to the person displayed in the card.                                   |
 | inherit-details   | None.                  | Allows person-card to walk parent tree for `mgt-person` component to use the same `person-details` and `person-image` data.                      |
-| user-id | string | Allows developers to supply user-id to retrive data shown on person-card component |
-| person-query | string | Allows developers to supply person-query to retrive data shown on person-card component |
+| user-id | string | Allows developers to supply user-id to retrieve data shown on person-card component |
+| person-query | string | Allows developers to supply person-query to retrieve data shown on person-card component |
 
 
 ## Templates

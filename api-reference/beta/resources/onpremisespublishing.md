@@ -3,7 +3,7 @@ title: "onPremisesPublishing resource type"
 description: "Represents an Application Proxy onPremisesPublishing object."
 localization_priority: Normal
 author: "japere"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 doc_type: resourcePageType
 ---
 
@@ -28,7 +28,7 @@ For a tutorial about configuring Application Proxy, see [Automate the configurat
 |alternateUrl|String| If you are configuring a traffic manager in front of multiple App Proxy applications, the alternateUrl is the user-friendly URL that will point to the traffic manager. |
 |applicationServerTimeout|String| The duration the connector will wait for a response from the backend application before closing the connection. Possible values are `default`, `long`. When set to default, the backend application timeout has a length of 85 seconds. When set to long, the backend timeout is increased to 180 seconds. Use `long` if your server takes more than 85 seconds to respond to requests or if you are unable to access the application and the error status is "Backend Timeout". Default value is `default`. |
 |applicationType|String| Indicates if this application is an Application Proxy configured application. This is pre-set by the system. Read-only. |
-|externalAuthenticationType|String| Details the pre-authentication setting for the application. Pre-authentication enforces that users must authenticate before accessing the app. Passthru does not require authentication. Possible values are: `passthru`, `aadPreAuthentication`. |
+|externalAuthenticationType|externalAuthenticationType| Details the pre-authentication setting for the application. Pre-authentication enforces that users must authenticate before accessing the app. Passthru does not require authentication. Possible values are: `passthru`, `aadPreAuthentication`. |
 |externalUrl|String| The published external url for the application. For example, https://intranet-contoso.msappproxy.net/.  |
 |internalUrl|String| The internal url of the application. For example, https://intranet/. |
 |isHttpOnlyCookieEnabled|Boolean| Indicates if the HTTPOnly cookie flag should be set in the HTTP response headers. Set this value to `true` to have Application Proxy cookies include the HTTPOnly flag in the HTTP response headers. If using Remote Desktop Services, set this value to False. Default value is `false`. |

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Drive.Items["{bundle-id}"]
+await graphClient.Drive.Items["{driveItem-id}"]
 	.Request()
 	.DeleteAsync();
 

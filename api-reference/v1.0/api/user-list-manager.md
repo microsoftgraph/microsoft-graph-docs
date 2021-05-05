@@ -2,7 +2,7 @@
 title: "List manager"
 description: "Get user's manager. Returns the user or contact assigned as the user's manager."
 localization_priority: Priority
-author: "krbain"
+author: "jpettere"
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -43,16 +43,12 @@ GET /users/{id | userPrincipalName}/?$expand=manager($levels=n)
 
 ## Optional query parameters
 
-This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.  
+This method supports the `$select` and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.  
 
-If your request includes the `$expand=manager($levels=n)` parameter to get the manager's chain, you must also include the following:
-
-- `$count=true` query string parameter
-- `ConsistencyLevel=eventual` request header
-
->**Note:** the `n` value of `$levels` can be `max` (to return all managers) or a number between 1 and 1000.  
-> When the `$level` parameter is not specified, only the immediate manager is returned.  
-> You can specify `$select` inside `$expand` to select the individual manager's properties: `$expand=manager($levels=max;$select=id,displayName)`
+>**Note:** 
+> + The `n` value of `$levels` can be `max` (to return all managers) or a number between 1 and 1000.  
+> + When the `$levels` parameter is not specified, only the immediate manager is returned.  
+> + You can specify `$select` inside `$expand` to select the individual manager's properties. The `$levels` parameter is required: `$expand=manager($levels=max;$select=id,displayName)`
 
 ## Request headers
 
@@ -80,25 +76,25 @@ The following example shows a request to get the manager.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_manager"
+  "name": "get_manager_2"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/users/{id|userPrincipalName}/manager
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-manager-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-manager-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-manager-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-manager-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-manager-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-manager-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-manager-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-manager-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -118,7 +114,7 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "id": "<user-id>",
+  "id": "7d54cb02-aaa3-4016-9f9c-a4b49422dd9b",
   "displayName": "Sara Davis",
   "jobTitle": "Finance VP",
   "mail": "SaraD@contoso.onmicrosoft.com",
@@ -157,20 +153,20 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-    "id": "<user1-id>",
-    "displayName": "Individual Contributor",
+  "id": "a97733ce-92a4-4e7e-8d45-8e1f3e6a69d8",
+  "displayName": "Individual Contributor",
+  "manager": {
+    "id": "7d54cb02-aaa3-4016-9f9c-a4b49422dd9b",
+    "displayName": "Alex Wilber",
     "manager": {
-        "id": "<manager1-id>",
-        "displayName": "Manager 1",
-        "manager": {
-            "id": "<manager2-id>",
-            "displayName": "Manager 2",
-            "manager": {
-                "id": "<manager3-id>",
-                "displayName": "Manager 3"
-            }
-        }
+      "id": "343a3f95-377c-47a9-b697-480487bfcdf7",
+      "displayName": "Bianca Pisani",
+      "manager": {
+        "id": "8e07b731-5ba7-4081-b482-15e6eca35c45",
+        "displayName": "Patti Fernandez"
+      }
     }
+  }
 }
 ```
 

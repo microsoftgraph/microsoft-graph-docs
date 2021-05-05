@@ -3,7 +3,7 @@ title: "reportRoot: getEmailAppUsageVersionsUserCounts"
 description: "Get the count of unique users by Outlook desktop version."
 localization_priority: Normal
 ms.prod: "reports"
-author: "pranoychaudhuri"
+author: "sarahwxy"
 doc_type: apiPageType
 ---
 

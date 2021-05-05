@@ -11,12 +11,12 @@ const options = {
 const client = Client.init(options);
 
 const administrativeUnit = {
-    displayName: "Seattle District Technical Schools",
-    description: "Seattle district technical schools administration",
-    visibility: "HiddenMembership"
+    displayName: 'Seattle District Technical Schools',
+    description: 'Seattle district technical schools administration',
+    visibility: 'HiddenMembership'
 };
 
-let res = await client.api('/directory/administrativeUnits')
+await client.api('/directory/administrativeUnits')
 	.post(administrativeUnit);
 
 ```

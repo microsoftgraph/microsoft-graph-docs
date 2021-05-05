@@ -11,14 +11,14 @@ const options = {
 const client = Client.init(options);
 
 const projectParticipation = {
-  allowedAudiences: "organization",
+  allowedAudiences: 'organization',
   client: {
-    department: "Corporate Marketing",
-    webUrl: "https://www.contoso.com"
+    department: 'Corporate Marketing',
+    webUrl: 'https://www.contoso.com'
   }
 };
 
-let res = await client.api('/me/profile/projects/{id}')
+await client.api('/me/profile/projects/{id}')
 	.version('beta')
 	.update(projectParticipation);
 

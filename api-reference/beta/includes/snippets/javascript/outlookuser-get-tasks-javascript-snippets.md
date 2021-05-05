@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/outlook/tasks')
+let tasks = await client.api('/me/outlook/tasks')
 	.version('beta')
 	.get();
 

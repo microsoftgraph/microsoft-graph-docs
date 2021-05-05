@@ -11,7 +11,7 @@ var calendar = new Calendar
 	Name = "Marketing calendar"
 };
 
-await graphClient.Me.CalendarGroups["AAMkADYAAAR9NR5AAA="].Calendars
+await graphClient.Me.CalendarGroups["{calendarGroup-id}"].Calendars
 	.Request()
 	.AddAsync(calendar);
 

@@ -147,6 +147,13 @@ Namespace: microsoft.graph.callRecords
 | wifi80211ax
 | unknownFutureValue
 
+### pstnCallDurationSource values 
+
+|Member|
+|:---|
+|microsoft|
+|operator|
+
 <!--
 {
   "type": "#page.annotation",

@@ -1,7 +1,7 @@
 ---
 title: "chats: getAllMessages"
 description: "Get messages from all chats that a user is a participant in."
-author: "laujan"
+author: "RamjotSingh"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType

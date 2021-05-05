@@ -14,7 +14,7 @@ var teamsAppInstallation = new TeamsAppInstallation
 	}
 };
 
-await graphClient.Chats["19:ea28e88c00e94c7786b065394a61f296@thread.v2"].InstalledApps
+await graphClient.Chats["{chat-id}"].InstalledApps
 	.Request()
 	.AddAsync(teamsAppInstallation);
 
