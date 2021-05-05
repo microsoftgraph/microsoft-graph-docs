@@ -11227,6 +11227,17 @@ items:
               href: api/accessreviewpolicy-get.md
             - name: Update
               href: api/accessreviewpolicy-update.md
+          - name: Access review history definition
+            href: resources/accessreviewhistorydefinition.md
+            items:
+            - name: Get
+              href: api/accessreviewhistorydefinition-get.md
+            - name: List
+              href: api/accessreviewhistorydefinition-list.md
+            - name: Create
+              href: api/accessreviewhistorydefinition-create.md
+            - name: Generate download URI
+              href: api/accessreviewhistorydefinition-generatedownloaduri.md
         - name: Access reviews (legacy)
           href: resources/accessreviews-root.md
           items:

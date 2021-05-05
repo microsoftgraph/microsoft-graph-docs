@@ -32,6 +32,20 @@ For a summary of the value of these API changes, as well as recent tools, compon
 | Addition | beta | Added the **uniqueName** property to the [application](https://docs.microsoft.com/en-us/graph/api/resources/application?view=graph-rest-beta) resource.|
 
 
+### Education
+
+| **Change type** | **Version** | **Description**                                                                                                                                                                                                                             |
+| :-------------- | :---------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Addition        | v1.0        | Added the [educationOnPremisesInfo](https://docs.microsoft.com/en-us/graph/api/resources/educationOnPremisesInfo?view=graph-rest-1.0) resource.                                                                                             |
+| Addition        | v1.0        | Added the **grade** property to [educationUser](https://docs.microsoft.com/en-us/graph/api/resources/educationUser?view=graph-rest-1.0) resource.                                                                                           |
+| Addition        | v1.0        | Added the **externalSourceDetail** property to [educationUser](https://docs.microsoft.com/en-us/graph/api/resources/educationUser?view=graph-rest-1.0) resource.                                                                            |
+| Addition        | v1.0        | Added the [educationTerm](https://docs.microsoft.com/en-us/graph/api/resources/educationTerm?view=graph-rest-1.0) resource type.                                                                                                            |
+| Addition        | v1.0        | Added the **taughtClasses** relationship to the [educationUser](https://docs.microsoft.com/en-us/graph/api/resources/educationUser?view=graph-rest-1.0) resource type.                                                                      |
+| Addition        | v1.0        | Added the **externalSourceDetail** property to the [educationSchool](https://docs.microsoft.com/en-us/graph/api/resources/educationSchool?view=graph-rest-1.0) resource.                                                                    |
+| Addition        | v1.0        | Added the [delta](https://docs.microsoft.com/en-us/graph/api/educationClass-delta?view=graph-rest-1.0) method to the [educationClass](https://docs.microsoft.com/en-us/graph/api/resources/educationClass?view=graph-rest-1.0) resource.    |
+| Addition        | v1.0        | Added the [delta](https://docs.microsoft.com/en-us/graph/api/educationSchool-delta?view=graph-rest-1.0) method to the [educationSchool](https://docs.microsoft.com/en-us/graph/api/resources/educationSchool?view=graph-rest-1.0) resource. |
+| Addition        | v1.0        | Added the [delta](https://docs.microsoft.com/en-us/graph/api/educationUser-delta?view=graph-rest-1.0) method to the [educationUser](https://docs.microsoft.com/en-us/graph/api/resources/educationUser?view=graph-rest-1.0) resource.       |## March 2021
+
 ## February 2021
 
 ### Cloud communications
@@ -58,6 +72,21 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added the [plannerRosterMember](/graph/api/resources/plannerRosterMember?view=graph-rest-beta) resource type|
 |Addition|beta|Added the `roster` member to the **plannerContainerType** enumeration|
 |Addition|beta|Added the **plannerPlanContextType** enumeration type|
+### Education
+
+| **Change type** | **Version** | **Description**                                                                                                                       |
+| :-------------- | :---------- | :------------------------------------------------------------------------------------------------------------------------------------ |
+| Change          | v1.0        | The [educationTeacher](/graph/api/resources/educationteacher) `externalId` property is now returned when using delegated permissions. |
+| Change          | v1.0        | The [educationStudent](/graph/api/resources/educationstudent) `externalId` property is now returned when using delegated permissions. |
+| Addition        | v1.0        | Added `faculty` to the list of possible values for `primaryRole`                                                                      |
+| Addition        | v1.0        | Added `lms` to the list of possible values for `educationExternalSource`.                                                             |
+| Addition        | v1.0        | Added [delta](./delta-query-overview.md) support to [educationClass](/graph/api/resources/educationClass).                            |
+| Addition        | v1.0        | Added new properties `grade`, `course`, and `externalSourceDetail` to [educationClass](/graph/api/resources/educationClass).          |
+| Addition        | v1.0        | Added [delta](./delta-query-overview.md) support to [educationUser](/graph/api/resources/educationUser).                              |
+| Addition        | v1.0        | Added new property `externalSourceDetail` property to [educationUser](/graph/api/resources/educationUser).                            |
+| Addition        | v1.0        | Added new relationship `taughtClasses` to [educationUser](/graph/api/resources/educationUser).                                        |
+| Addition        | v1.0        | Added [delta](./delta-query-overview.md) support to [educationSchool](/graph/api/resources/educationSchool).                          |
+| Addition        | v1.0        | Added new property `externalSourceDetail` property to [educationSchool](/graph/api/resources/educationSchool).                        |
 
 ### Identity and access | Devices
 
@@ -2637,7 +2666,6 @@ Debut of the places API which provides rich details for locations in apps.
 | Change type | Version | Description                                                                                                                                                      |
 | :---------- | :------ | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Addition    | beta    | Added taughtClasses to [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta&preserve-view=true).                                                                  |
-| Addition    | beta    | Added [educationCourse](/graph/api/resources/educationCourse?view=graph-rest-beta&preserve-view=true) to [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta&preserve-view=true). |
 | Addition    | beta    | Added [delta](./delta-query-overview.md) support to [educationUser](/graph/api/resources/educationUser?view=graph-rest-beta&preserve-view=true).                                   |
 | Addition    | beta    | Added [delta](./delta-query-overview.md) to [educationSchool](/graph/api/resources/educationSchool?view=graph-rest-beta&preserve-view=true).                                       |
 | Addition    | beta    | Added [delta](./delta-query-overview.md) to [educationClass](/graph/api/resources/educationClass?view=graph-rest-beta&preserve-view=true).                                         |

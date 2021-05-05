@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "07927310-e5b8-44a4-851b-15cef00478fa",
+          "ApiChange": "Resource",
+          "ChangedApiName": "Printer",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastSeenDateTime** property to the [printer](https://docs.microsoft.com/en-us/graph/api/resources/printer?view=graph-rest-1.0) resource.",
+          "Target": "printer"
+        }
+      ],
+      "Id": "07927310-e5b8-44a4-851b-15cef00478fa",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-05-04T00:00:00",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "4479ad3e-1fa7-4ed2-aa24-8fbf0b2b8aca",
           "ApiChange": "Resource",
           "ChangedApiName": "printJob",

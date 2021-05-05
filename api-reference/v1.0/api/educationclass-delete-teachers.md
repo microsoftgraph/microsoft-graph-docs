@@ -1,5 +1,5 @@
 ---
-title: "Remove teacher"
+title: "Remove teacher from educationClass "
 description: "Remove a teacher from a class."
 author: "mmast-msft"
 localization_priority: Normal
@@ -7,11 +7,10 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# Remove teacher
-
+# Remove teacher from educationClass
 Namespace: microsoft.graph
 
-Remove a teacher from a class.
+Remove teacher from an [educationClass](../resources/educationclass.md).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -90,4 +89,3 @@ HTTP/1.1 204 No Content
   "section": "documentation",
   "tocPath": ""
 }-->
-

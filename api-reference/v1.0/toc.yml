@@ -3691,15 +3691,17 @@ items:
         href: resources/educationschool.md
         items:
         - name: List schools
-          href: api/educationroot-list-schools.md
+          href: api/educationschool-list.md
         - name: Create school
-          href: api/educationroot-post-schools.md
+          href: api/educationschool-post.md
         - name: Get school
           href: api/educationschool-get.md
         - name: Update school
           href: api/educationschool-update.md
         - name: Delete school
           href: api/educationschool-delete.md
+        - name: Get changes to schools
+          href: api/educationschool-delta.md
         - name: List classes
           href: api/educationschool-list-classes.md
         - name: Create class
@@ -3715,18 +3717,18 @@ items:
       - name: Classes
         href: resources/educationclass.md
         items:
-        - name: List schools
-          href: api/educationclass-list-schools.md
         - name: List classes
-          href: api/educationroot-list-classes.md
+          href: api/educationclass-list.md
         - name: Create class
-          href: api/educationroot-post-classes.md
+          href: api/educationclass-post.md
         - name: Get class
           href: api/educationclass-get.md
         - name: Update class
           href: api/educationclass-update.md
         - name: Delete class
           href: api/educationclass-delete.md
+        - name: Get changes to classes
+          href: api/educationclass-delta.md
         - name: List teachers
           href: api/educationclass-list-teachers.md
         - name: Add teacher
@@ -3742,14 +3744,20 @@ items:
       - name: Users
         href: resources/educationuser.md
         items:
-        - name: List schools
-          href: api/educationuser-list-schools.md
-        - name: List classes
-          href: api/educationuser-list-classes.md
+        - name: List users
+          href: api/educationuser-list.md
+        - name: Create user
+          href: api/educationuser-post.md
         - name: Get user
           href: api/educationuser-get.md
         - name: Delete user
           href: api/educationuser-delete.md
+        - name: Get changes to users
+          href: api/educationuser-delta.md
+        - name: List classes
+          href: api/educationuser-list-classes.md
+        - name: List taught classes
+          href: api/educationuser-list-taughtclasses.md
     - name: Extensions
       items:
       - name: Open extensions

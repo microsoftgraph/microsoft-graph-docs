@@ -1,5 +1,5 @@
 ---
-title: "provisioningSystemDetails resource type"
+title: "provisioningSystem resource type"
 description: "Represents the system that a user was provisioned to or from."
 localization_priority: Normal
 author: "ArvindHarinder1"
@@ -7,7 +7,7 @@ ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"
 ---
 
-# provisioningSystemDetails resource type
+# provisioningSystem resource type
 
 Namespace: microsoft.graph
 
@@ -32,7 +32,7 @@ The following is a JSON representation of the resource.
   "optionalProperties": [
 
   ],
-  "@odata.type": "microsoft.graph.provisioningSystemDetails",
+  "@odata.type": "microsoft.graph.provisioningSystem",
   "baseType": null
 }-->
 
@@ -48,7 +48,7 @@ The following is a JSON representation of the resource.
 2019-02-04 14:57:30 UTC -->
 <!-- {
   "type": "#page.annotation",
-  "description": "provisioningSystemDetails resource",
+  "description": "provisioningSystem resource",
   "keywords": "",
   "section": "documentation",
   "tocPath": ""

@@ -1,7 +1,7 @@
 ---
 title: "educationOrganization resource type"
 description: "Abstract entity used to model the commonality between different organization types within the education sector."
-author: "mmast-msft"
+author: "mlafleur"
 localization_priority: Normal
 ms.prod: "education"
 doc_type: resourcePageType
@@ -13,16 +13,21 @@ Namespace: microsoft.graph
 
 Abstract entity used to model the commonality between different organization types within the education sector.
 
+Inherits from [entity](../resources/entity.md).
+
 ## Properties
-| Property	   | Type	|Description|
-|:---------------|:--------|:----------|
-|description|String| Organization description.|
-|displayName|String| Organization display name.|
-|externalSource|educationExternalSource| Source where this organization was created from. The possible values are: `sis`, `manual`, `unknownFutureValue`.|
+
+| Property             | Type                    | Description                                                                            |
+| :------------------- | :---------------------- | :------------------------------------------------------------------------------------- |
+| description          | String                  | Organization description.                                                              |
+| displayName          | String                  | Organization display name.                                                             |
+| externalSource       | educationExternalSource | Source where this organization was created from. Possible values are: `sis`, `manual`. |
+| externalSourceDetail | String                  | The name of the external source this resources was generated from.                     |
+| id                   | String                  | Object identifier. Inherited from [entity](../resources/entity.md)                     |
 
 ## Relationships
-None.
 
+None.
 
 ## JSON representation
 
@@ -30,30 +35,20 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "abstract": true,
+  "keyProperty": "id",
+  "@odata.type": "microsoft.graph.educationOrganization",
   "baseType": "microsoft.graph.entity",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.educationOrganization"
-}-->
+  "openType": false
+}
+-->
 
 ```json
 {
-  "description": "String",
+  "@odata.type": "#microsoft.graph.educationOrganization",
+  "id": "String (identifier)",
   "displayName": "String",
-  "externalSource": "string"
+  "description": "String",
+  "externalSource": "String",
+  "externalSourceDetail": "String"
 }
-
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "educationOrganization resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
-

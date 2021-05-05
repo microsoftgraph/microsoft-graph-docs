@@ -1,5 +1,5 @@
 ---
-title: "List classes"
+title: "List classes of an educationUser"
 description: "Retrieve a list of class objects. Note that if the delegated token is used, members can only see information about their own classes. "
 localization_priority: Normal
 author: "mmast-msft"
@@ -7,11 +7,11 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# List classes
+# List classes of an educationUser
 
 Namespace: microsoft.graph
 
-Retrieve a list of class objects. Note that if the delegated token is used, members can only see information about their own classes. 
+Get the [educationClass](../resources/educationclass.md) resources an [educationUser](../resources/educationuser.md) is a member of.
 
 <!-- Please verify the revision to the delegated token text. -->
 
@@ -23,6 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) |  EduRoster.ReadBasic  |
 |Delegated (personal Microsoft account) |  Not supported.  |
 |Application | EduRoster.Read.All, EduRoster.ReadWrite.All | 
+
+> [!NOTE]
+> Note that if the delegated token is used, members can only see information about their own classes.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

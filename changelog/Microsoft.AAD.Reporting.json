@@ -1,5 +1,151 @@
 {
   "changelog": [
+      {
+        "ChangeList": [
+            {
+                "Id": "f4efe15e-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Property",
+                "ChangedApiName": "provisioningAction",
+                "ChangeType": "Addition",
+                "Description": "Added the **provisioningAction** property to the [provisioningObjectSummary](https://docs.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-beta) resource.",
+                "Target": "provisioningObjectSummary"
+            },
+            {
+                "Id": "f4f2438e-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Property",
+                "ChangedApiName": "provisioningStatusInfo",
+                "ChangeType": "Addition",
+                "Description": "Added the **provisioningStatusInfo** property to the [provisioningObjectSummary](https://docs.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-beta) resource.",
+                "Target": "provisioningObjectSummary"
+            },
+            {
+                "Id": "f4f4a5df-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Resource",
+                "ChangedApiName": "provisioningSystem",
+                "ChangeType": "Addition",
+                "Description": "Added the [provisioningSystem](https://docs.microsoft.com/en-us/graph/api/resources/provisioningSystem?view=graph-rest-beta) resource type. Replaces the provisioningSystemDetails type. No schema change.",
+                "Target": "provisioningSystem"
+            },
+            {
+                "Id": "f4f70881-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Resource",
+                "ChangedApiName": "provisioningStatusInfo",
+                "ChangeType": "Addition",
+                "Description": "Added the [provisioningStatusInfo](https://docs.microsoft.com/en-us/graph/api/resources/provisioningStatusInfo?view=graph-rest-beta) resource type.",
+                "Target": "provisioningStatusInfo"
+            },
+            {
+                "Id": "f4f96caa-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Resource",
+                "ChangedApiName": "provisioningErrorInfo",
+                "ChangeType": "Addition",
+                "Description": "Added the [provisioningErrorInfo](https://docs.microsoft.com/en-us/graph/api/resources/provisioningErrorInfo?view=graph-rest-beta) resource type.",
+                "Target": "provisioningErrorInfo"
+            },
+            {
+                "Id": "f4fbccdf-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Member",
+                "ChangedApiName": "application",
+                "ChangeType": "Addition",
+                "Description": "Added the `application` member to the **initiatorType** enumeration.",
+                "Target": "initiatorType"
+            },
+            {
+                "Id": "f4fe2f87-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Enum type",
+                "ChangedApiName": "provisioningStatusErrorCategory",
+                "ChangeType": "Addition",
+                "Description": "Added the **provisioningStatusErrorCategory** enumeration type.",
+                "Target": "provisioningStatusErrorCategory"
+            },
+            {
+                "Id": "f501456d-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Enum type",
+                "ChangedApiName": "provisioningAction",
+                "ChangeType": "Addition",
+                "Description": "Added the **provisioningAction** enumeration type.",
+                "Target": "provisioningAction"
+            },
+            {
+                "Id": "f503a958-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Property",
+                "ChangedApiName": "sourceSystem",
+                "ChangeType": "Change",
+                "Description": "Changed the type of the **sourceSystem** property in the [provisioningObjectSummary](https://docs.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-beta) resource.",
+                "Target": "provisioningObjectSummary"
+            },
+            {
+                "Id": "f5060b75-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Property",
+                "ChangedApiName": "targetSystem",
+                "ChangeType": "Change",
+                "Description": "Changed the type of the **targetSystem** property in the [provisioningObjectSummary](https://docs.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-beta) resource.",
+                "Target": "provisioningObjectSummary"
+            },
+            {
+                "Id": "f5086e9a-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Resource",
+                "ChangedApiName": "provisioningSystemDetails",
+                "ChangeType": "Deletion",
+                "Description": "Removed the **provisioningSystemDetails** resource type.",
+                "Target": "provisioningSystemDetails"
+            },
+            {
+                "Id": "f50ad269-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Property",
+                "ChangedApiName": "errorCategory",
+                "ChangeType": "Change",
+                "Description": "Changed the type of the **errorCategory** property in the [statusDetails](https://docs.microsoft.com/en-us/graph/api/resources/statusDetails?view=graph-rest-beta) resource.",
+                "Target": "statusDetails"
+            },
+            {
+                "Id": "f50d32fb-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Member",
+                "ChangedApiName": "app",
+                "ChangeType": "Deletion",
+                "Description": "Replaced the `app` member to `application` member to the **initiatorType** enumeration.",
+                "Target": "initiatorType"
+            },
+            {
+                "Id": "f50d32fb-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Property",
+                "ChangedApiName": "statusInfo",
+                "ChangeType": "Change",
+                "Description": "Deprecated the **statusInfo** property from [provisioningObjectSummary](https://docs.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-beta).",
+                "Target": "provisioningObjectSummary"
+            },
+            {
+                "Id": "f50d32fb-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Property",
+                "ChangedApiName": "action",
+                "ChangeType": "Change",
+                "Description": "Deprecated the **action** property from [provisioningObjectSummary](https://docs.microsoft.com/en-us/graph/api/resources/provisioningObjectSummary?view=graph-rest-beta).",
+                "Target": "provisioningObjectSummary"
+            },
+            {
+                "Id": "f50d32fb-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Resource",
+                "ChangedApiName": "statusDetails",
+                "ChangeType": "Change",
+                "Description": "Deprecated the [statusDetails](https://docs.microsoft.com/en-us/graph/api/resources/statusDetails?view=graph-rest-beta) resource. This is to be replaced by the [provisioningStatusInfo](https://docs.microsoft.com/en-us/graph/api/resources/provisioningStatusInfo?view=graph-rest-beta) resource type.",
+                "Target": "statusDetails"
+            },
+            {
+                "Id": "f50d32fb-9779-11eb-8cb0-33bc249d550e",
+                "ApiChange": "Resource",
+                "ChangedApiName": "statusBase",
+                "ChangeType": "Change",
+                "Description": "Deprecated the [statusBase](https://docs.microsoft.com/en-us/graph/api/resources/statusDetails?view=graph-rest-beta) resource. This is to be replaced by the [provisioningStatusInfo](https://docs.microsoft.com/en-us/graph/api/resources/provisioningStatusInfo?view=graph-rest-beta) resource type.",
+                "Target": "statusBase"
+            }
+        ],
+        "Id": "f50d32fb-9779-11eb-8cb0-33bc249d550e",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2021-05-04T08:19:22.097Z",
+        "WorkloadArea": "Reports and audit",
+        "SubArea": "Identity and access reports"
+    },
     {
          "ChangeList":[
             {
