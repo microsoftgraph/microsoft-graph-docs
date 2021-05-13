@@ -12,6 +12,13 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 > [!IMPORTANT]
 > Features, including APIs and tools, in _preview_ status may change without notice, and some may never be promoted to generally available (GA) status. Do not use preview features in production apps.
 
+## May 2021: New in preview only
+
+### Education
+- Teacher can now select to add assignment on teachers and students calendars when publishing the assignment, teachers can control the assignment calendar behavior by using the **addToCalendarAction** property of the [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) resource.
+- Teacher can now also select a default calendars behavior when publishing assignments in the future, teachers can control the assignment default calendar behavior by using the **addToCalendarAction** property of the [educationAssignmentDefaults](/graph/api/resources/educationAssignmentDefaults?view=graph-rest-beta&preserve-view=true) resource.
+- Graph users (Teacher) can now trigger the assignment level resources folder creation before uploading assignment resources on OneDrive, teachers can trigger the assignment resources folder creation by using the **SetUpResourcesFolder** function on the [educationAssignment](/graph/api/resources/educationAssignment-SetupResourcesFolder?view=graph-rest-beta&preserve-view=true) resource. The save is made available on educationAssignment through the property **resourcesFolderUrl**
+- Graph users (Students) can now trigger the submission level resources folder creation before uploading a OneDrive resource for a given submission, student can trigger the submission resources folder creation by using the **SetUpResourcesFolder** function on the [educationSubmission](/graph/api/resources/educationSubmission-SetupResourcesFolder?view=graph-rest-beta&preserve-view=true) resource. The save is made available on educationAssignment through the property **resourcesFolderUrl**
 ## April 2021: New and generally available
 
 ### Identity and access | Identity and sign-in

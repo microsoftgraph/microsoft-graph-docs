@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/beta/education/classes/11014/assignments/19002
 ##### Response
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -91,6 +91,7 @@ Content-length: 279
 {
   "id": "19002",
   "addedStudentAction": "none",
+  "addToCalendarAction": "none",
   "allowLateSubmissions": true,
   "allowStudentsToAddResourcesToSubmission": true,
   "assignDateTime": "String (timestamp)",
@@ -107,6 +108,7 @@ Content-length: 279
   "createdDateTime": "2014-01-01T00:00:00Z",
   "displayName": "Mid term exam",
   "dueDateTime": "2014-01-11T00:00:00Z",
+  "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!0sGAoOieeE6iSj1WXCV-nYYTuh2luKRDvUVGQBLOmvYpRzc5ARnCRorRht6P3MhU/items/01N74NOEZL7P3VK22SQFDKBZ3PHVPKDVAQ",
   "grading": {
       "@odata.type": "microsoft.graph.educationAssignmentPointsGradeType",
       "maxPoints": 100

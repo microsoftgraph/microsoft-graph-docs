@@ -71,6 +71,7 @@ Content-length: 181
 
 {
   "addedStudentAction": "assignIfOpen",
+  "addToCalendarAction": "studentsAndTeamOwners",
   "notificationChannelUrl": "https://graph.microsoft.com/beta/teams('id')/channels('id')"
 }
 ```
@@ -108,6 +109,7 @@ Content-Type: application/json
 
 {
   "addedStudentAction": "assignIfOpen",
+  "addToCalendarAction": "studentsAndTeamOwners",
   "dueTime": "23:59:00",
   "notificationChannelUrl": "https://graph.microsoft.com/beta/teams('id')/channels('id')"
 }
