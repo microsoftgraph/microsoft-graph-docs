@@ -3,7 +3,7 @@ title: "provisioningErrorInfo resource type"
 description: "Describes the status of the provisioning event and the associated errors."
 localization_priority: Normal
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"
 ---
 
@@ -20,7 +20,7 @@ Describes the status of the provisioning event and the associated errors.
 |:-------------|:------------|:------------|
 |additionalDetails|String|Additional details in case of error.|
 |errorCategory|provisioningStatusErrorCategory|Categorizes the error code. Possible values are `failure`, `nonServiceFailure`, `success`, `unknownFutureValue`|
-|errorCode|String|Unique error code if any occurred. [Learn more](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-provisioning-logs#error-codes)|
+|errorCode|String|Unique error code if any occurred. [Learn more](/azure/active-directory/reports-monitoring/concept-provisioning-logs#error-codes)|
 |reason|String|Summarizes the status and describes why the status happened.|
 |recommendedAction|String|Provides the resolution for the corresponding error.|
 

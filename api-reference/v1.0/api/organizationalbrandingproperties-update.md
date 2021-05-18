@@ -120,7 +120,6 @@ The following request updates the banner logo for the default branding.
 The following is an example of the request.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_organizationalbrandingproperties_2"

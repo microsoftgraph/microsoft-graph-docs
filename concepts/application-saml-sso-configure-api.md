@@ -695,10 +695,10 @@ No Content - 204
 - For AWS, you can [enable user provisioning](/azure/active-directory/app-provisioning/application-provisioning-configure-api) to fetch all the roles from that AWS account. For more information, see [Configure the role claim issued in the SAML token](/azure/active-directory/develop/active-directory-enterprise-app-role-management).
 - [Customize claims emitted in tokens for a specific app in a tenant](/azure/active-directory/develop/active-directory-claims-mapping).
 - You can use the applicationTemplate API to instantiate [Non-Gallery apps](/azure/active-directory/manage-apps/view-applications-portal). Use applicationTemplateId `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
-- [applicationTemplate](/graph/api/resources/applicationtemplate?view=graph-rest-1.0)
-- [appRoleAssignment](/graph/api/resources/approleassignment?view=graph-rest-1.0)
-- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-1.0)
-- [application](/graph/api/resources/application?view=graph-rest-1.0)
-- [claimsMappingPolicy](https://docs.microsoft.com/graph/api/resources/claimsmappingpolicy?view=graph-rest-1.0)
-- [keyCredential](/graph/api/resources/keycredential?view=graph-rest-1.0)
-- [addTokenSigningCertificate](/graph/api/serviceprincipal-addtokensigningcertificate?view=graph-rest-beta)
+- [applicationTemplate](/graph/api/resources/applicationtemplate)
+- [appRoleAssignment](/graph/api/resources/approleassignment)
+- [servicePrincipal](/graph/api/resources/serviceprincipal)
+- [application](/graph/api/resources/application)
+- [claimsMappingPolicy](/graph/api/resources/claimsmappingpolicy)
+- [keyCredential](/graph/api/resources/keycredential)
+- [addTokenSigningCertificate](/graph/api/serviceprincipal-addtokensigningcertificate?view=graph-rest-beta&preserve-view=true)

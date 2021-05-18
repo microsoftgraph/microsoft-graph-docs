@@ -18,7 +18,7 @@ The following Azure policies are supported for an Azure managed application buil
 
 When you select any of the policies during Azure marketplace publishing, the policy compliance status will be checked and enforced for all installations of your application. All selected policies that are compliant will be shown to the data approvers as part of the data request. Any policy compliance violation would cause the pipeline run to fail and stop the data extraction.
 
-If you would like to request support for additional policies , let us know on [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581).
+If you would like to request support for additional policies , let us know on the [Microsoft 365 Developer Platform ideas forum](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
 
 ## Licensing
 
@@ -31,4 +31,4 @@ While this new billing capability is in preview, the rate is $0.375 for 1,000 Mi
 Objects for directory objects will not be charged, including: BasicDataSet_v0.User, BasicDataSet_v0.MailboxSettings, BasicDataSet_v0.Manager, and BasicDataSet_v0.DirectReport.
 
 ## Next Steps
-If you would like to request support for additional policies or datasets, let us know on [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests?category_id=359581). To learn more about Workplace Analytics, including how to purchase, visit the [Workplace Analytics product page](https://products.office.com/business/workplace-analytics).
+If you would like to request support for additional policies or datasets, let us know on the [Microsoft 365 Developer Platform ideas forum](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph). To learn more about Workplace Analytics, including how to purchase, visit the [Workplace Analytics product page](https://products.office.com/business/workplace-analytics).

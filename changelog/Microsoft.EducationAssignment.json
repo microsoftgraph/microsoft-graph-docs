@@ -7,7 +7,7 @@
           "ApiChange": "Method",
           "ChangedApiName": "setUpResourcesFolder",
           "ChangeType": "Addition",
-          "Description": "Added the **setUpResourcesFolder** method to the [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationsubmission?view=graph-rest-beta) resource.",
+          "Description": "Added the [setUpResourcesFolder](https://docs.microsoft.com/en-us/graph/api/educationsubmission-setupresourcesfolder?view=graph-rest-beta) method to the [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationsubmission?view=graph-rest-beta) resource.",
           "Target": "educationSubmission"
         }
       ],

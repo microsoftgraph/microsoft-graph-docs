@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "3dc87842-0acd-4b98-89b3-a798f6bbc044",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conditionalaccesspolicy",
+          "ChangeType": "Change",
+          "Description": "Added [includeAuthenticationContextClassReferences] property to the [conditionalAccessApplications](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccessapplications?view=graph-rest-beta) property, to manage configured authentication context in policy.",
+          "Target": "Conditional Access"
+        },
+        {
+          "Id": "3dc87842-0acd-4b98-89b3-a798f6bbc044",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationcontextclassreference",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationContextClassReference](https://docs.microsoft.com/en-us/graph/api/resources/authenticationcontextclassreference?view=graph-rest-beta) resource and associated methods.",
+          "Target": "authenticationcontextclassreference"
+        }
+      ],
+      "Id": "3dc87842-0acd-4b98-89b3-a798f6bbc044",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-05-10T00:00:00",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c3d570f0-e2f4-449c-851e-ad0f0c0d5557",
           "ApiChange": "Property",
           "ChangedApiName": "authorizationPolicy",
@@ -6364,14 +6390,6 @@
     {
 
     "ChangeList": [
-      {
-      "Id":"f32565c5-5076-11eb-ae35-ed470c456b69",
-      "ApiChange":"Relationship",
-      "ChangedApiName":"approval",
-      "ChangeType":"Addition",
-      "Description":"Added the **approval** relationship to [accessPackageAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-beta) resource",
-      "Target":"accessPackageAssignmentRequest"
-    },
       {"Id":"f327cb08-5076-11eb-ae35-ed470c456b69",
         "ApiChange":"Method",
         "ChangedApiName":"FilterByCurrentUser",

@@ -3,7 +3,7 @@ title: "unifiedRoleEligibilityScheduleRequest resource type"
 description: "Represents the request for eligible role assignment operations through Azure AD Privileged Identity Management."
 author: "shauliu"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -36,7 +36,7 @@ Administrators can use `unifiedRoleEligibilityScheduleRequest` to create and/or 
 |appScopeId|String|Id of the app specific scope when the assignment scope is app specific. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. Use "/" for tenant-wide scope. App scopes are scopes that are defined and understood by this application only.|
 |directoryScopeId|String|Id of the directory object representing the scope of the assignment. The scope of an assignment determines the set of resources for which the principal has been granted access. Directory scopes are shared scopes stored in the directory that are understood by multiple applications. App scopes are scopes that are defined and understood by this application only.|
 |id|String|The unique identifier for the unifiedRoleEligibilityScheduleRequest.|
-|isValidationOnly|Boolean|Boolean|A boolean that determines whether the call is a validation or an actual call. Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.|
+|isValidationOnly|Boolean|A boolean that determines whether the call is a validation or an actual call. Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.|
 |justification|String|A message provided by users and administrators when create the request about why it is needed.|
 |principalId|String| Objectid of the principal to which the assignment is being granted to.|
 |roleDefinitionId|String|ID of the unifiedRoleDefinition the assignment is for. Read only.|

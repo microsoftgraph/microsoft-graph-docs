@@ -9740,7 +9740,7 @@ items:
       - name: Submission
         href: resources/educationsubmission.md
         items:
-        - name: List submission resource
+        - name: List submission resources
           href: api/educationsubmission-list-resources.md
         - name: Add submission resource
           href: api/educationsubmission-post-resources.md
@@ -10403,6 +10403,33 @@ items:
               href: api/subscribedsku-list.md
             - name: Get subscribedSku
               href: api/subscribedsku-get.md
+        - name: Mobility management policy (Preview)
+          href: resources/mobilitymanagementpolicy.md
+          items:
+          - name: List mobile device management policies
+            href: api/mobiledevicemanagementpolicies-list.md
+          - name: Get
+            href: api/mobiledevicemanagementpolicies-get.md
+          - name: Update
+            href: api/mobiledevicemanagementpolicies-update.md
+          - name: List included groups
+            href: api/mobiledevicemanagementpolicies-list-includedgroups.md
+          - name: Add included groups
+            href: api/mobiledevicemanagementpolicies-post-includedgroups.md
+          - name: Remove included groups
+            href: api/mobiledevicemanagementpolicies-delete-includedgroups.md
+          - name: List mobile app management policies
+            href: api/mobileappmanagementpolicies-list.md
+          - name: Get
+            href: api/mobileappmanagementpolicies-get.md
+          - name: Update
+            href: api/mobileappmanagementpolicies-update.md
+          - name: List included groups
+            href: api/mobileappmanagementpolicies-list-includedgroups.md
+          - name: Add included groups
+            href: api/mobileappmanagementpolicies-post-includedgroups.md
+          - name: Remove included groups
+            href: api/mobileappmanagementpolicies-delete-includedgroups.md
         - name: Role management
           href: resources/rolemanagement.md
           items:
@@ -10712,11 +10739,13 @@ items:
             href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
           - name: Delete
             href: api/certificatebasedauthconfiguration-delete.md
-        - name: Conditional access
+        - name: Conditional Access
           items:
+          - name: Conditional Access
+            href: resources/conditionalaccessroot.md
           - name: Policies
             items:
-            - name: Conditional access policy
+            - name: Conditional Access policy
               href: resources/conditionalaccesspolicy.md
             - name: List
               href: api/conditionalaccessroot-list-policies.md
@@ -10768,6 +10797,18 @@ items:
                   href: api/ipnamedlocation-update.md
                 - name: Delete
                   href: api/ipnamedlocation-delete.md
+          - name: Authentication context class references
+            items:
+            - name: Authentication context class references
+              href: resources/authenticationcontextclassreference.md
+            - name: List
+              href: api/conditionalaccessroot-list-authenticationcontextclassreferences.md
+            - name: Create
+              href: api/conditionalaccessroot-post-authenticationcontextclassreferences.md
+            - name: Get
+              href: api/authenticationcontextclassreference-get.md
+            - name: Update
+              href: api/authenticationcontextclassreference-update.md
         - name: Data policy operation
           href: resources/datapolicyoperation.md
           items:

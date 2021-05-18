@@ -79,7 +79,7 @@ The following is an example of the response.
 >**Notes:** 
 >The response object shown here might be shortened for readability. 
 >
->The **resourcesFolderUrl** property will be `null` if [educationSubmission: setUpResourcesFolder](educationsubmission-setupResourcesFolder.md) has not been called on this [educationSubmission](../resources/educationsubmission.md) resource yet.
+>If [setUpResourcesFolder](educationsubmission-setupResourcesFolder.md) has not been called on this [educationSubmission](../resources/educationsubmission.md) resource yet, the **resourcesFolderUrl** property is `null`.
 
 <!-- {
   "blockType": "response",

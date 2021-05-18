@@ -2162,6 +2162,14 @@ Possible values for user account types (group membership), per Windows definitio
 |other|
 |unknownFutureValue|
 
+### policyScope values
+
+|Member|
+|:---|
+|none|
+|all|
+|selected|
+
 ### teamsAppInstallationScope values
 
 |Member    |Value    |Description |
@@ -2215,4 +2223,3 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |principal|
 |unknownFutureValue|
-

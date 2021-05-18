@@ -79,7 +79,7 @@
                     "ApiChange": "Permission",
                     "ChangedApiName": "CloudPC.ReadWrite.All",
                     "ChangeType": "Addition",
-                    "Description": "Added support for the application permission of `CloudPC.ReadWrite.All` to the [reprovison](https://docs.microsoft.com/en-us/graph/api/cloudPc-reprovison?view=graph-rest-beta) method of [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta)",
+                    "Description": "Added support for the application permission of `CloudPC.ReadWrite.All` to the [reprovision](https://docs.microsoft.com/en-us/graph/api/cloudPc-reprovision?view=graph-rest-beta) method of [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta)",
                     "Target": "cloudPc-reprovison"
                 },
                 {
