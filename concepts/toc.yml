@@ -26,8 +26,6 @@ items:
             href: deployments.md
           - name: Hybrid deployments (preview)
             href: hybrid-rest-support.md
-      - name: Microsoft Graph data connect
-        href: data-connect-overview.md
       - name: Tutorials
         items:
           - name: Overview
@@ -173,14 +171,14 @@ items:
             href: data-connect-get-started.md
           - name: Datasets, regions, and sinks
             href: data-connect-datasets.md
-          - name: Policies and licensing
+          - name: Policies and billing
             href: data-connect-policies.md
           - name: User selection and filtering
             href: data-connect-filtering.md
           - name: Integrate with PAM
             href: data-connect-pam.md
-          - name: Tips
-            href: data-connect-tips.md
+          - name: Frequently asked questions
+            href: data-connect-faq.md
       - name: Devices and apps
         expanded: true
         items:
