@@ -45,7 +45,7 @@ GET /deviceManagement/depOnboardingSettings/{depOnboardingSettingId}/enrollmentP
 Do not supply a request body for this method.
 
 ## Response
-If successful, this function returns a `200 OK` response code and a String in the response body.
+If successful, this function returns a `200 OK` response code and a String in the response body. This string is a Base64 encoded blob, and it must be converted back into a bytestream and saved as a `.mobileconfig` file before it can be used to enroll devices.
 
 ## Example
 
