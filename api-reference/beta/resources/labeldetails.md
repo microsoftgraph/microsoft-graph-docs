@@ -13,19 +13,21 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the label details of an information protection label. **labelDetails** provides information about a single information protection label. Can be returned by [evaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md), [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md), and [extractLabel](../api/informationprotectionlabel-extractLabel.md)
+Represents the label details of an information protection label. **labelDetails** provides information about a single information protection label. Inherits from
+the [parentLabelDetails](parentlabeldetails.md). Can be returned by [evaluateRemoval](../api/informationprotectionlabel-evaluateremoval.md), [evaluateApplication](../api/informationprotectionlabel-evaluateapplication.md), and [extractLabel](../api/informationprotectionlabel-extractLabel.md)
 
 ## Properties
 
-| Property    | Type    | Description                                                                                                  |
-| :---------- | :------ | :----------------------------------------------------------------------------------------------------------- |
-| color       | String  | The color that the user interface should display for the label, if configured.                               |
-| description | String  | The admin-defined description for the label.                                                                 |
-| id          | String  | The label ID is a globally unique identifier (GUID).                                                          |
-| isActive    | Boolean | Indicates whether the label is active or not. Active labels should be hidden or disabled in user interfaces. |
-| name        | String  | The plaintext name of the label.                                                                             |
-| sensitivity | Int32   | The sensitivity value of the label, where lower is less sensitive.                                           |
-| tooltip     | String  | The tooltip that should be displayed for the label in a user interface.                                      |
+| Property    | Type                                         | Description                                                                                                  |
+| :---------- | :------------------------------------------- | :----------------------------------------------------------------------------------------------------------- |
+| color       | String                                       | The color that the user interface should display for the label, if configured.                               |
+| description | String                                       | The admin-defined description for the label.                                                                 |
+| id          | String                                       | The label ID is a globally unique identifier (GUID).                                                         |
+| isActive    | Boolean                                      | Indicates whether the label is active or not. Active labels should be hidden or disabled in user interfaces. |
+| name        | String                                       | The plaintext name of the label.                                                                             |
+| sensitivity | Int32                                        | The sensitivity value of the label, where lower is less sensitive.                                           |
+| tooltip     | String                                       | The tooltip that should be displayed for the label in a user interface.                                      |
+| parent      | microsoft.informationProtection.parentLabelDetails | The parent label associated with a child label.                                                              |
 
 ## JSON representation
 

@@ -120,7 +120,8 @@ User-agent: ContosoLOBApp/1.0
           "color": "",
           "sensitivity": 1,
           "tooltip": "Data classified as Contoso General.",
-          "isActive": true
+          "isActive": true,
+          "parent": null
       },
       {
           "id": "4662f9a3-dd50-4a20-b984-a7be82e0e79c",
@@ -129,7 +130,8 @@ User-agent: ContosoLOBApp/1.0
           "color": "",
           "sensitivity": 2,
           "tooltip": "Data classificed as Contoso Confidential.",
-          "isActive": true
+          "isActive": true,
+          "parent": null
       },
       {
           "id": "4b18e8bb-b4a5-4695-85d0-8ae23ef27892",
@@ -138,8 +140,28 @@ User-agent: ContosoLOBApp/1.0
           "color": "",
           "sensitivity": 3,
           "tooltip": "Data classified as Contoso Highly Confidential.",
-          "isActive": true
-      }
+          "isActive": true,
+          "parent": null
+      },
+      {
+            "id": "a20cbae4-0c05-448c-b342-cb6c618d0957",
+            "name": "Contoso Full Time Employees",
+            "description": "Consult Contoso data labeling policy for more details.",
+            "color": "",
+            "sensitivity": 4,
+            "tooltip": "Data classified as Contoso Highly Confidential for Contoso Full Time Employees",
+            "isActive": true,
+            "parent": {
+                "id": "4b18e8bb-b4a5-4695-85d0-8ae23ef27892",
+                "name": "Highly Confidential",
+                "description": "Consult Contoso data labeling policy for more details.",
+                "color": "",
+                "sensitivity": 3,
+                "tooltip": "Data classified as Contoso Highly Confidential.",
+                "isActive": true,
+                "parent": null
+            }
+        }
   ]
 }
 ```
