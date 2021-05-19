@@ -601,7 +601,7 @@ Namespace: microsoft.graph
 |assignIfOpen|
 |unknownFutureValue|
 
-### educationAddToCalendarAction values
+### educationAddToCalendarOptions values
 |Member|
 |:---|
 |none|

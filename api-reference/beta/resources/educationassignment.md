@@ -42,7 +42,7 @@ The assignment APIs are exposed in the class namespace.
 |:---------------|:--------|:----------|
 |id|String| Read-only.|
 |addedStudentAction|String|Optional field to control the assignment behavior for students who are added after the assignment is published. If not specified, defaults to `none` value. Currently supports only two values: `none` or `assignIfOpen`.|
-|addToCalendarAction| microsoft.education.assignments.api.educationAddToCalendarAction|Optional field to control the assignment behavior for adding assignment to students and teacher(s) calendar when the assignment is published. If not specified, defaults to `none` value. Currently supports only these values: `none` or `studentsAndPublisher`, and `studentsAndTeamOwners`.|
+|addToCalendarAction| microsoft.education.assignments.api.educationAddToCalendarOptions|Optional field to control the assignment behavior for adding assignment to students and teacher(s) calendar when the assignment is published. If not specified, defaults to `none` value. Currently supports only these values: `none` or `studentsAndPublisher`, and `studentsAndTeamOwners`.|
 |allowLateSubmissions|Boolean| Identifies whether students can submit after the due date. If this property is not specified during create, it defaults to true. |
 |allowStudentsToAddResourcesToSubmission|Boolean| Identifies whether students can add their own resources to a submission or if they can only modify resources added by the teacher. |
 |assignDateTime|DateTimeOffset|The date when the assignment should become active.  If in the future, the assignment is not shown to the student until this date.  The **Timestamp** type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
@@ -88,7 +88,7 @@ The following is a JSON representation of the resource.
 {
   "id": "String (identifier)",
   "addedStudentAction": "string",
-  "addToCalendarAction": "microsoft.education.assignments.api.educationAddToCalendarAction",
+  "addToCalendarAction": "microsoft.education.assignments.api.educationAddToCalendarOptions",
   "allowLateSubmissions": true,
   "allowStudentsToAddResourcesToSubmission": true,
   "assignDateTime": "String (timestamp)",

@@ -77,10 +77,10 @@
         {
           "Id": "2003c52e-807a-4186-9b49-60c573095461",
           "ApiChange": "Enum type",
-          "ChangedApiName": "educationAddToCalendarAction",
+          "ChangedApiName": "educationAddToCalendarOptions",
           "ChangeType": "Addition",
-          "Description": "Added the **educationAddToCalendarAction** enumeration type",
-          "Target": "educationAddToCalendarAction"
+          "Description": "Added the **educationAddToCalendarOptions** enumeration type",
+          "Target": "educationAddToCalendarOptions"
         }
       ],
       "Id": "2003c52e-807a-4186-9b49-60c573095461",
