@@ -79,6 +79,8 @@ The following table shows the properties that are required when you create the [
 |associatedDomains|String collection|Associated Domains Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |excludedDomains|String collection|Domains that are accessed through the public internet instead of through VPN, even when per-app VPN is activated Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |disableOnDemandUserOverride|Boolean|Toggle to prevent user from disabling automatic VPN in the Settings app Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
+|disconnectOnIdle|Boolean|Whether to disconnect after on-demand connection idles Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
+|disconnectOnIdleTimerInSeconds|Int32|The length of time in seconds to wait before disconnecting an on-demand connection. Valid values 0 to 65535 Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |proxyServer|[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|Proxy Server. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |optInToDeviceIdSharing|Boolean|Opt-In to sharing the device's Id to third-party vpn clients for use during network access control validation. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |userDomain|String|Zscaler only. Enter a static domain to pre-populate the login field with in the Zscaler app. If this is left empty, the user's Azure Active Directory domain will be used instead.|
@@ -100,7 +102,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations/{deviceConfigurationId}
 Content-type: application/json
-Content-length: 3298
+Content-length: 3368
 
 {
   "@odata.type": "#microsoft.graph.iosVpnConfiguration",
@@ -190,6 +192,8 @@ Content-length: 3298
     "Excluded Domains value"
   ],
   "disableOnDemandUserOverride": true,
+  "disconnectOnIdle": true,
+  "disconnectOnIdleTimerInSeconds": 14,
   "proxyServer": {
     "@odata.type": "microsoft.graph.vpnProxyServer",
     "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",
@@ -221,7 +225,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 3470
+Content-Length: 3540
 
 {
   "@odata.type": "#microsoft.graph.iosVpnConfiguration",
@@ -314,6 +318,8 @@ Content-Length: 3470
     "Excluded Domains value"
   ],
   "disableOnDemandUserOverride": true,
+  "disconnectOnIdle": true,
+  "disconnectOnIdleTimerInSeconds": 14,
   "proxyServer": {
     "@odata.type": "microsoft.graph.vpnProxyServer",
     "automaticConfigurationScriptUrl": "https://example.com/automaticConfigurationScriptUrl/",

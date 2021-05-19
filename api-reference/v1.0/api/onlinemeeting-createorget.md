@@ -40,7 +40,8 @@ To call **createOrGet** API with application token:
 POST /users/{userId}/onlineMeetings/createOrGet
 ```
 
-> **Note:** `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). See more details in [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
+> [!NOTE]
+> `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). See more details in [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
 
 ## Request headers
 | Name          | Description               |

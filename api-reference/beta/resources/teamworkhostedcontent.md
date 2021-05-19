@@ -15,6 +15,12 @@ Namespace: microsoft.graph
 
 Represents rich content like images and code snippets in Microsoft Teams. For rich content in [channel and chat messages](chatMessage.md), see [chatMessageHostedContent](chatMessageHostedContent.md).
 
+## Methods
+
+| Method                                            | Return Type                                       | Description                                                    | 
+| :------------------------------------------------ | :------------------------------------------------ | :------------------------------------------------------------- |
+| [Get app icon bytes](../api/teamsappicon-get.md)     | [teamworkHostedContent](teamworkhostedcontent.md)                   | Get the bytes of the hosted content backing a Teams app icon. |
+
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|

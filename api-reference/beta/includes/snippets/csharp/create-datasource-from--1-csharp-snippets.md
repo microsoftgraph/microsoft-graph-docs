@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var dataSource = new UserSource
+var dataSource = new Microsoft.Graph.Ediscovery.UserSource
 {
 	Email = "badguy@contoso.com"
 };

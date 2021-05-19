@@ -50,7 +50,7 @@ The following table shows the properties that are required when you create the [
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the device health script assignment entity. This property is read-only.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-devices-deviceandappmanagementassignmenttarget.md)|The Azure Active Directory group we are targeting the script to|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The Azure Active Directory group we are targeting the script to|
 |runRemediationScript|Boolean|Determine whether we want to run detection script only or run both detection script and remediation script|
 |runSchedule|[deviceHealthScriptRunSchedule](../resources/intune-devices-devicehealthscriptrunschedule.md)|Script run schedule for the target group|
 

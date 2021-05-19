@@ -16,6 +16,8 @@ Create an upload session that allows an app to iteratively upload ranges of a bi
 
 As part of the response, this action returns an upload URL that can be used in subsequent sequential `PUT` queries. Request headers for each `PUT` operation can be used to specify the exact range of bytes to be uploaded. This allows transfer to be resumed, in case the network connection is dropped during upload. 
 
+>**Note**: Creating an upload session using application permissions will only succeed if there is a [printTask](../resources/printTask.md) in a `processing` state on the associated print job, started by a trigger that the requesting app created. For details about how to register a task trigger, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -41,7 +43,7 @@ To create an upload session using **printer**:
 POST /print/printers/{id}/jobs/{id}/documents/{id}/createUploadSession
 ```
 
-To create an upload session using **printerShare**: 
+To create an upload session using **printerShare** (supported with delegated permissions only): 
 
 <!-- { "blockType": "ignored" } -->
 ```http
@@ -80,8 +82,11 @@ If successful, this method returns a `200 OK` response code and a new [uploadSes
 The following example shows how to create an upload session that you can use in subsequent file upload operations to the specified printDocument.
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "request"
+  "blockType": "request",
+  "name": "printdocument_createuploadsession"
 }
 -->
 ``` http
@@ -97,6 +102,24 @@ Content-length: 96
   }
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/printdocument-createuploadsession-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/printdocument-createuploadsession-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/printdocument-createuploadsession-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/printdocument-createuploadsession-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

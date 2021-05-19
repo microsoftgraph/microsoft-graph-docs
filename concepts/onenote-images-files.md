@@ -507,5 +507,5 @@ For more information about permission scopes and how they work, see [OneNote per
 
 - [Integrate with OneNote](integrate-with-onenote.md)
 - [OneNote Developer Blog](https://go.microsoft.com/fwlink/?LinkID=390183)
-- [OneNote development questions on Microsoft Q&A](https://docs.microsoft.com/answers/topics/microsoft-graph-notes.html)
-- [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)  
+- [OneNote development questions on Microsoft Q&A](/answers/topics/microsoft-graph-notes.html)
+- [OneNote GitHub repos](https://go.microsoft.com/fwlink/?LinkID=390178)

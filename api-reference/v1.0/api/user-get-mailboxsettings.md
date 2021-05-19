@@ -111,7 +111,7 @@ GET https://graph.microsoft.com/v1.0/me/mailboxSettings
 
 #### Response
 The response includes all the mailbox settings of the signed-in user.
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -195,7 +195,7 @@ GET https://graph.microsoft.com/v1.0/me/mailboxSettings/automaticRepliesSetting
 
 #### Response
 The response includes only the automatic replies settings.
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -255,7 +255,7 @@ GET https://graph.microsoft.com/v1.0/me/mailboxSettings/workingHours
 
 #### Response
 The response includes only the working hours settings. Notice that the user's work hours are in a [custom time zone](../resources/customtimezone.md).
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "get_mailboxsettings_3",

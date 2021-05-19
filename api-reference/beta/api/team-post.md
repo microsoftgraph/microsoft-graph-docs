@@ -594,7 +594,7 @@ Content-Length: 0
 
 The following example shows how to create a team for imported messages.
 
->**Note:** In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data imported.|
+>**Note:** In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data imported.
 
 >**Note:** Teams created in migration mode only support the `standard` template.
 

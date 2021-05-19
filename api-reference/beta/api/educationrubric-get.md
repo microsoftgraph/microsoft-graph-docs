@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties and relationships of an [educationRubric](../resources/educationrubric.md) object.
 
-Note that when getting the rubric of an assignment (`GET /education/me/assignments/{id}/rubric`), what is returned is an immutable copy of the original rubric that exists under `/education/users/{id}/rubrics`. The copy is associated with that specific assignment.
+Note that when getting the rubric of an assignment (`GET /education/classes/{id}/assignments/{id}/rubric`), what is returned is an immutable copy of the original rubric that exists under `/education/users/{id}/rubrics`. The copy is associated with that specific assignment.
 
 ## Permissions
 
@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Application                            | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite |
 
 ## HTTP request
 
@@ -88,7 +88,7 @@ GET https://graph.microsoft.com/beta/education/me/rubrics/{id}
 The following is an example of the response.
 
 > [!NOTE]
-> The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

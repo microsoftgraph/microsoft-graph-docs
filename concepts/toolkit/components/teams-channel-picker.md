@@ -109,6 +109,10 @@ This component uses the following Microsoft Graph APIs and permissions.
 
 The control uses the global authentication provider described in the [authentication documentation](../providers/providers.md).
 
+## Cache
+
+The `mgt-teams-channel-picker` component doesn't cache any data.
+
 ## Extend for more control
 
 For more complex scenarios or a truly custom UX, this component exposes several `protected render*` methods for override in component extensions:

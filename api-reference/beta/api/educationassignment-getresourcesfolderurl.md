@@ -1,5 +1,5 @@
 ---
-title: "educationAssignment: getResourcesFolderUrl"
+title: "educationAssignment: getResourcesFolderUrl (deprecated)"
 description: "This function returns the OneDrive URL where all file-based resources (Word, Excel, and so on) should be uploaded.  "
 localization_priority: Normal
 author: "dipakboyed"
@@ -7,11 +7,12 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# educationAssignment: getResourcesFolderUrl
+# educationAssignment: getResourcesFolderUrl (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+ [!CAUTION] The getResourcesFolderUrl API is deprecated and will stop returning data on May 31, 2021. Please use the new property `resourcesFolderUrl` exposed on [educationAssignment](../resources/educationassignment.md) entity to fetch this info. 
 
 This function returns the OneDrive URL where all file-based resources (Word, Excel, and so on) should be uploaded.  
 Note that files must be located in this folder in order to be added as resources. Only a teacher in the class can determine what files to upload. 

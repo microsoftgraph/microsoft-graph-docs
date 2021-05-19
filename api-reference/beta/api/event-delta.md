@@ -271,7 +271,7 @@ getting all the changes for that round.
 
 The response below shows a _skipToken_ in an _\@odata.nextLink_ response header.
 
-Note: The response object shown here may be truncated for brevity. 
+Note: The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "name": "event_delta_calendarview",

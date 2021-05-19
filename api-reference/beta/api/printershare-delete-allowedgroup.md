@@ -74,7 +74,7 @@ DELETE https://graph.microsoft.com/beta/print/shares/{id}/allowedGroups/{id}/$re
 
 ##### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

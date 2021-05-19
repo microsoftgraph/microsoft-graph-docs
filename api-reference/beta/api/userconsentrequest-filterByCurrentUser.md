@@ -1,18 +1,18 @@
 ---
-title: "userConsentRequests: filterByCurrentUser"
-description: "Retrieve userConsentRequests for which the current user is the reviewer."
+title: "userConsentRequest: filterByCurrentUser"
+description: "Retrieve userConsentRequest objects for which the current user is the reviewer."
 author: "psignoret"
 localization_priority: Normal
 ms.prod: "governance"
 doc_type: apiPageType
 ---
 
-# userConsentRequests: filterByCurrentUser
+# userConsentRequest: filterByCurrentUser
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the [userConsentRequests](../resources/userconsentrequest.md) for an appConsentRequest for which the current user is the reviewer and the status of the userConsentRequest is `InProgress`.
+Retrieve a collection of [userConsentRequest](../resources/userconsentrequest.md) objects for accessing a specified app, for which the current user is the reviewer.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -39,7 +39,7 @@ The following table shows the parameters that can be used with this function.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|on|consentRequestFilterByCurrentUserOptions|Filter to query userConsentRequests for an appConsentRequest for which the current user is a reviewer. Allowed value is `reviewer`. Required.|
+|on|consentRequestFilterByCurrentUserOptions|Filter to query userConsentRequest objects for an appConsentRequest object for which the current user is a reviewer. Allowed value is `reviewer`. Required.|
 
 ## Optional query parameters
 This function supports the `$filter` OData query parameter to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
@@ -56,9 +56,11 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a collection of [userConsentRequest](../resources/userconsentrequest.md) objects in the response body.
 
-## Example: List all userConsentRequests for which the current user is the reviewer and the status is Completed
+## Example
 
 ### Request
+
+In this request, you list all **userConsentRequest** objects for which the current user is the reviewer and the status is `Completed`.
 
 # [HTTP](#tab/http)
 <!-- {

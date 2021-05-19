@@ -100,7 +100,8 @@ Content-type: application/json
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#b2cAuthenticationMethodsPolicy",
     "id": "b2CAuthenticationMethodsPolicy",
     "isEmailPasswordAuthenticationEnabled": true,
-    "isUserNameAuthenticationEnabled": false
+    "isUserNameAuthenticationEnabled": false,
+    "isPhoneOneTimePasswordAuthenticationEnabled": true
 }
 ```
 

@@ -53,7 +53,7 @@ The following table shows the parameters that can be used with this action.
 
 
 ## Response
-If successful, this action returns a `200 OK` response code and a iQueryable_1OfDeviceManagementResourceAccessProfileBase in the response body.
+If successful, this action returns a `200 OK` response code and a [iQueryable_1OfDeviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-iqueryable_1ofdevicemanagementresourceaccessprofilebase.md) in the response body.
 
 ## Example
 

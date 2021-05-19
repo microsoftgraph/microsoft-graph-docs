@@ -50,6 +50,7 @@ The following table shows the properties that are required when you update the [
 |:-------------|:------------|:------------|
 |isEmailPasswordAuthenticationEnabled|Boolean|The tenant admin can configure local accounts using email if the email and password authentication method is enabled.|
 |isUserNameAuthenticationEnabled|Boolean|The tenant admin can configure local accounts using username if the username and password authentication method is enabled.|
+|isPhoneOneTimePasswordAuthenticationEnabled|Boolean|The tenant admin can configure local accounts using phone number if the phone number and one-time password authentication method is enabled.|
 
 ## Response
 
@@ -73,7 +74,8 @@ PATCH https://graph.microsoft.com/beta/policies/b2cAuthenticationMethodsPolicy
 
 {
     "isEmailPasswordAuthenticationEnabled": false,
-    "isUserNameAuthenticationEnabled": true
+    "isUserNameAuthenticationEnabled": true,
+    "isPhoneOneTimePasswordAuthenticationEnabled": true
 }
 ```
 # [C#](#tab/csharp)

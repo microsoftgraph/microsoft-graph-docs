@@ -93,7 +93,7 @@ GET https://graph.microsoft.com/beta/devices/{id}/transitiveMemberOf
 
 #### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -171,7 +171,7 @@ ConsistencyLevel: eventual
 #### Response
 
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -213,7 +213,7 @@ ConsistencyLevel: eventual
 #### Response
 
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

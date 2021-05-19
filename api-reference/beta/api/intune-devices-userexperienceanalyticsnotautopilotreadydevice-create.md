@@ -56,7 +56,7 @@ The following table shows the properties that are required when you create the u
 |managedBy|String|The intune device's managed by.|
 |autoPilotRegistered|Boolean|The intune device's autopilotRegistered.|
 |autoPilotProfileAssigned|Boolean|The intune device's autopilotProfileAssigned.|
-|azureAdRegistered|[azureAdRegisteredState](../resources/intune-devices-azureadregisteredstate.md)|The intune device's azureAdRegistered. Possible values are: `no`, `yes`, `unknown`.|
+|azureAdRegistered|Boolean|The intune device's azureAdRegistered.|
 |azureAdJoinType|String|The intune device's azure Ad joinType.|
 
 
@@ -71,7 +71,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsNotAutopilotReadyDevice
 Content-type: application/json
-Content-length: 422
+Content-length: 421
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsNotAutopilotReadyDevice",
@@ -82,7 +82,7 @@ Content-length: 422
   "managedBy": "Managed By value",
   "autoPilotRegistered": true,
   "autoPilotProfileAssigned": true,
-  "azureAdRegistered": "yes",
+  "azureAdRegistered": true,
   "azureAdJoinType": "Azure Ad Join Type value"
 }
 ```
@@ -92,7 +92,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 471
+Content-Length: 470
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsNotAutopilotReadyDevice",
@@ -104,7 +104,7 @@ Content-Length: 471
   "managedBy": "Managed By value",
   "autoPilotRegistered": true,
   "autoPilotProfileAssigned": true,
-  "azureAdRegistered": "yes",
+  "azureAdRegistered": true,
   "azureAdJoinType": "Azure Ad Join Type value"
 }
 ```

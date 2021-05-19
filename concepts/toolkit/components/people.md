@@ -99,6 +99,18 @@ When using the default templates, additional APIs and permissions are required. 
 
 The control uses the global authentication provider described in the [authentication documentation](../providers/providers.md).
 
+## Cache
+
+|Object store|Cached data|Remarks|
+|---------|-----------|-------|
+|`people`|Information about people matching the query|Used when `resource` specified|
+|`users`|Information about users matching the query|Used when `groupId`, `userIds`, `peopleQueries` or no properties specified|
+|`presence`|Presence for the specified set of people|Used when `showPresence` set to `true`|
+
+> [!NOTE]
+> By default, the `mgt-people` component uses the [`mgt-person`](./person.md) component to display information about people. The `mgt-person` component automatically downloads and caches the photo for each person.
+
+See [Caching](../customize-components/cache.md) for more details on how to configure the cache.
 ## Extend for more control
 
 For more complex scenarios or a truly custom UX, this component exposes several `protected render*` methods for override in component extensions.

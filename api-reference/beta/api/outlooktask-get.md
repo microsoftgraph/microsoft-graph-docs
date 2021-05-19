@@ -100,7 +100,7 @@ GET https://graph.microsoft.com/beta/me/outlook/tasks/AAMkADA1MTrgAAA=
 
 Here is an example of the response. By default, the date-time properties in the response are in UTC.
 
-> **Note:** The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -185,7 +185,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 Here is an example of the response. The date-time properties in the response are returned in the specified Pacific Standard Time.
 
-> **Note:** The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

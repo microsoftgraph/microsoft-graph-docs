@@ -13,7 +13,8 @@ Namespace: microsoft.graph
 
 Create an online meeting on behalf of a user by using the object ID (OID) in the user token.
 
-> **Note**: The meeting does not show up on the user's calendar.
+> [!NOTE]
+> The meeting does not show up on the user's calendar.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -41,7 +42,8 @@ Request when using an application token:
 POST /users/{userId}/onlineMeetings
 ```
 
-> **Note:** `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). See more details in [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
+> [!NOTE]
+> `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). See more details in [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
 
 ## Request headers
 | Name          | Description               |
@@ -99,7 +101,8 @@ Content-Type: application/json
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability. 
+
+> **Note:** The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",
@@ -144,7 +147,8 @@ Content-Type: application/json
   "subject": "User Token Meeting"
 }
 ```
->**Note:** If 'Accept-Language: ja' is specified to indicate Japanese, for example, the response will include the following.
+> [!NOTE]
+> If 'Accept-Language: ja' is specified to indicate Japanese, for example, the response will include the following.
 
 ```json
     "joinInformation": {

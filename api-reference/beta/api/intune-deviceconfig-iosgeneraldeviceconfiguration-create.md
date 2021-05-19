@@ -238,6 +238,7 @@ The following table shows the properties that are required when you create the i
 |sharedDeviceBlockTemporarySessions|Boolean|Indicates whether or not to block temporary sessions on Shared iPads (iOS 13.4 or later).|
 |appClipsBlocked|Boolean|Prevents a user from adding any App Clips and removes any existing App Clips on the device.|
 |applePersonalizedAdsBlocked|Boolean|Limits Apple personalized advertising when true. Available in iOS 14 and later.|
+|nfcBlocked|Boolean|Disable NFC to prevent devices from pairing with other NFC-enabled devices. Available for iOS/iPadOS devices running 14.2 and later.|
 |kioskModeAppType|[iosKioskModeAppType](../resources/intune-deviceconfig-ioskioskmodeapptype.md)|Type of app to run in kiosk mode. Possible values are: `notConfigured`, `appStoreApp`, `managedApp`, `builtInApp`.|
 
 
@@ -252,7 +253,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 10633
+Content-length: 10656
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -543,6 +544,7 @@ Content-length: 10633
   "sharedDeviceBlockTemporarySessions": true,
   "appClipsBlocked": true,
   "applePersonalizedAdsBlocked": true,
+  "nfcBlocked": true,
   "kioskModeAppType": "appStoreApp"
 }
 ```
@@ -552,7 +554,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 10805
+Content-Length: 10828
 
 {
   "@odata.type": "#microsoft.graph.iosGeneralDeviceConfiguration",
@@ -846,6 +848,7 @@ Content-Length: 10805
   "sharedDeviceBlockTemporarySessions": true,
   "appClipsBlocked": true,
   "applePersonalizedAdsBlocked": true,
+  "nfcBlocked": true,
   "kioskModeAppType": "appStoreApp"
 }
 ```

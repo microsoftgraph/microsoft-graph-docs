@@ -40,35 +40,18 @@ Add the repository and a compile dependency for microsoft-graph to your project'
 
 ```Gradle
 repository {
-    jcenter()
+    mavenCentral()
 }
 
 dependency {
     // Include the sdk as a dependency
     implementation 'com.microsoft.graph:microsoft-graph:3.+'
+    // Include Azure identity for authentication
+    implementation 'com.azure:azure-identity:1.+'
 }
 ```
 
 ### Install the Microsoft Graph Java SDK via Maven
-
-Add the repositories in the `profiles` element in pom.xml:
-
-```xml
-<profiles>
-    <profile>
-        <repositories>
-            <repository>
-                <snapshots>
-                    <enabled>false</enabled>
-                </snapshots>
-                <id>bintray-microsoftgraph-Maven</id>
-                <name>bintray</name>
-                <url>https://dl.bintray.com/microsoftgraph/Maven</url>
-            </repository>
-        </repositories>
-    </profile>
-</profiles>
-```
 
 Add the dependency in the `dependencies` element in pom.xml:
 
@@ -76,7 +59,12 @@ Add the dependency in the `dependencies` element in pom.xml:
 <dependency>
     <groupId>com.microsoft.graph</groupId>
     <artifactId>microsoft-graph</artifactId>
-    <version>[3.0,)</version>
+    <version>[3.3,)</version>
+</dependency>
+<dependency>
+    <groupId>com.azure</groupId>
+    <artifactId>azure-identity</artifactId>
+    <version>[1.2,)</version>
 </dependency>
 ```
 

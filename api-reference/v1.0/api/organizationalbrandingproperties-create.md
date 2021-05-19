@@ -31,8 +31,8 @@ The `id` property is ignored on PUT/PATCH to the /branding singleton. If **Conte
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PUT /organization/{id}/branding
-PATCH /organization/{id}/branding
+PUT /organization/{tenant id}/branding
+PATCH /organization/{tenant id}/branding
 ```
 
 ## Request headers

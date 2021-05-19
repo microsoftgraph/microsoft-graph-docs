@@ -21,7 +21,7 @@ Device action result
 |Property|Type|Description|
 |:---|:---|:---|
 |actionName|String|Action name|
-|actionState|[actionState](../resources/intune-devices-actionstate.md)|State of the action. Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
+|actionState|[actionState](../resources/intune-shared-actionstate.md)|State of the action. Possible values are: `none`, `pending`, `canceled`, `active`, `done`, `failed`, `notSupported`.|
 |startDateTime|DateTimeOffset|Time the action was initiated|
 |lastUpdatedDateTime|DateTimeOffset|Time the action state was last updated|
 

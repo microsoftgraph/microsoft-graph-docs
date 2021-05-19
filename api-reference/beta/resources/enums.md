@@ -813,6 +813,13 @@ Namespace: microsoft.graph
 |listItem|
 |drive|
 
+### searchAlterationType values
+
+| Member | Description |
+|:---------------|:----------|
+|suggestion|Get search results for original user query and the suggested spelling correction information for typos in the query.|
+|modification|Get search results for corrected alterate query and the spelling correction information for typos.|
+
 ### bucketAggregationSortProperty values
 
 |Member|
@@ -2155,6 +2162,14 @@ Possible values for user account types (group membership), per Windows definitio
 |other|
 |unknownFutureValue|
 
+### policyScope values
+
+|Member|
+|:---|
+|none|
+|all|
+|selected|
+
 ### teamsAppInstallationScope values
 
 |Member    |Value    |Description |
@@ -2162,3 +2177,49 @@ Possible values for user account types (group membership), per Windows definitio
 |team      |0        |Indicates that the Teams app can be installed within a team and is authorized to access that team's data.|
 |groupChat |1        |Indicates that the Teams app can be installed within a group chat and is authorized to access that group chat's data.|
 |personal  |2        |Indicates that the Teams app can be installed in the personal scope of a user and is authorized to access that user's data.|
+
+### roleAssignmentScheduleRequestFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|principal|
+|createdBy|
+|approver|
+|unknownFutureValue|
+
+### roleAssignmentScheduleFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### roleAssignmentScheduleInstanceFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### roleEligibilityScheduleRequestFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|principal|
+|createdBy|
+|approver|
+|unknownFutureValue|
+
+### roleEligibilityScheduleFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|
+
+### roleEligibilityScheduleInstanceFilterByCurrentUserOptions values 
+
+|Member|
+|:---|
+|principal|
+|unknownFutureValue|

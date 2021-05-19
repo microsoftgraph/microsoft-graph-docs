@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps
 #### Response
 
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "user_list_teamsApps_2",
@@ -134,7 +134,7 @@ GET https://graph.microsoft.com/beta/users/{id}/teamwork/installedApps?$expand=t
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "user_list_teamsApps_details_2",
@@ -219,7 +219,7 @@ GET https://graph.microsoft.com/beta/users/97a5a533-833d-494b-b543-c0afe026cb96/
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "user_list_teamsApps_details_filter",

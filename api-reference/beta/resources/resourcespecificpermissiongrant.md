@@ -31,7 +31,7 @@ A resourceSpecificPermissionGrant declares the permission that has been granted 
 | clientId        | string        | ID of the Azure AD app that has been granted access. Read-only.                            |
 | clientAppId     | string        | ID of the service principal of the Azure AD app that has been granted access. Read-only.   |
 | resourceAppId   | string        | ID of the Azure AD app that is hosting the resource. Read-only.                        |
-| permissionType  | string        | The type of permission. Possible values are: `Application`,`Delegated`. Read-only. |
+| permissionType  | string        | The type of permission. Possible values are: `Application`, `Delegated`. Read-only. |
 | permission      | string        | The name of the permission. Read-only.                                                |
 
 ## JSON representation

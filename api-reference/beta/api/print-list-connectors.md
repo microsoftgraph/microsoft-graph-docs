@@ -79,7 +79,7 @@ GET https://graph.microsoft.com/beta/print/connectors
 
 ### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -96,7 +96,7 @@ Content-length: 1289
   "value": [
     {
       "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-      "name": "Connector1",
+      "displayName": "Connector1",
       "fullyQualifiedDomainName": "connector1@redmond.corp.microsoft.com",
       "operatingSystem": "Microsoft Windows 10 Enterprise Insider Preview | 10.0.19555",
       "appVersion": "0.19.7338.23496",
@@ -118,9 +118,9 @@ Content-length: 1289
         "countryOrRegion": "USA",
         "site": "Puget Sound",
         "building": "Studio E",
-        "floorNumber": 1,
+        "floor": "1",
         "floorDescription": "First Floor",
-        "roomNumber": 1234,
+        "roomName": "1234",
         "roomDescription": "First floor copy room",
         "organization": [
             "C+AI",

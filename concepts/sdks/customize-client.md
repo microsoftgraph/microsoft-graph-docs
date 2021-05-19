@@ -113,7 +113,6 @@ final OkHttpClient httpClient = HttpClients.createDefault(authenticationProvider
 
 final GraphServiceClient graphServiceClient = GraphServiceClient
                 .builder()
-                .authenticationProvider(authenticationProvider)
                 .httpClient(httpClient)
                 .buildClient();
 ```

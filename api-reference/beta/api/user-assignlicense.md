@@ -112,7 +112,7 @@ Content-length: 185
 ```
 
 ##### Response
-In both examples, the response is the updated user object. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+In both examples, the response is the updated user object. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

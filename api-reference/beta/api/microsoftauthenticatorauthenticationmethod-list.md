@@ -10,6 +10,8 @@ doc_type: apiPageType
 # List microsoftAuthenticatorAuthenticationMethods
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 Get a list of the [microsoftAuthenticatorAuthenticationMethod](../resources/microsoftauthenticatorauthenticationmethod.md) objects and their properties.
 
 ## Permissions

@@ -1,7 +1,7 @@
 ---
 title: "Update windowsUpdateState"
 description: "Update the properties of a windowsUpdateState object."
-author: "dougeby"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -57,7 +57,7 @@ The following table shows the properties that are required when you create the [
 |userId|String|The id of the user.|
 |deviceDisplayName|String|Device display name.|
 |userPrincipalName|String|User principal name.|
-|status|[windowsUpdateStatus](../resources/intune-shared-windowsupdatestatus.md)|Windows udpate status. Possible values are: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
+|status|[windowsUpdateStatus](../resources/intune-deviceconfig-windowsupdatestatus.md)|Windows udpate status. Possible values are: `upToDate`, `pendingInstallation`, `pendingReboot`, `failed`.|
 |qualityUpdateVersion|String|The Quality Update Version of the device.|
 |featureUpdateVersion|String|The current feature update version of the device.|
 |lastScanDateTime|DateTimeOffset|The date time that the Windows Update Agent did a successful scan.|

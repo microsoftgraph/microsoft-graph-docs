@@ -178,3 +178,17 @@ const neededScopes = MgtPersonCard.getScopes();
 ## Authentication
 
 The Person-Card control uses the global authentication provider described in the [authentication documentation](../providers/providers.md). 
+
+## Cache
+
+> [!IMPORTANT]
+> The `mgt-person-card` component retrieves the basic person data from the parent `mgt-person` component without calling Microsoft Graph. When `mgt-person-card` is used separately, it will retrieve the necessary data itself and cache it. The data displayed in card's sections is retrieved separately and is not cached.
+
+|Object store|Cached data|Remarks|
+|---------|-----------|-------|
+|`people`|Person's information|Used when `personQuery` is specified and its value is different than `me`|
+|`photos`|Person's photo|
+|`presence`|Person's presence|Used, when `showPresence` is set to `true`|
+|`users`|Person's user information|Used when `userId` is specified or the `personQuery` is set to `me`|
+
+See [Caching](../customize-components/cache.md) for more details on how to configure the cache.

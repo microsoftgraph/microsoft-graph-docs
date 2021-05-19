@@ -135,3 +135,7 @@ This control uses the following Microsoft Graph APIs and permissions.
 ## Authentication
 
 The tasks component uses the global authentication provider described in the [authentication documentation](../providers/providers.md).
+
+## Cache
+
+The `mgt-todo` component doesn't cache any data.

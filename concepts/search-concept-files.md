@@ -1,5 +1,4 @@
 ---
-ms.author: "yiwenwang"
 title: "Use the Microsoft Search API in Microsoft Graph to search files"
 description: "You can use the Microsoft Search API to search files stored in OneDrive or SharePoint."
 author: "nmoreau"

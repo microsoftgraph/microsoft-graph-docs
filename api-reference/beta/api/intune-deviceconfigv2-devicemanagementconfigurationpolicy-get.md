@@ -33,6 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 GET /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}
+GET /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySettingId}/referencingConfigurationPolicies/{deviceManagementConfigurationPolicyId}
 ```
 
 ## Optional query parameters
@@ -63,7 +64,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 565
+Content-Length: 918
 
 {
   "value": {
@@ -80,7 +81,14 @@ Content-Length: 565
     "roleScopeTagIds": [
       "Role Scope Tag Ids value"
     ],
-    "isAssigned": true
+    "isAssigned": true,
+    "templateReference": {
+      "@odata.type": "microsoft.graph.deviceManagementConfigurationPolicyTemplateReference",
+      "templateId": "Template Id value",
+      "templateFamily": "endpointSecurityAntivirus",
+      "templateDisplayName": "Template Display Name value",
+      "templateDisplayVersion": "Template Display Version value"
+    }
   }
 }
 ```

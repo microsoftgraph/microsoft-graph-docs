@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/users/cdb555e3-b33e-4fd5-a427-17fadacbdfa7/
 
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

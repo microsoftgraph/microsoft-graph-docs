@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1408
+Content-Length: 1475
 
 {
   "value": [
@@ -90,6 +90,7 @@ Content-Length: 1408
       "systemIntegrityProtectionEnabled": true,
       "deviceThreatProtectionEnabled": true,
       "deviceThreatProtectionRequiredSecurityLevel": "secured",
+      "advancedThreatProtectionRequiredSecurityLevel": "secured",
       "storageRequireEncryption": true,
       "gatekeeperAllowedAppSource": "macAppStore",
       "firewallEnabled": true,

@@ -67,7 +67,7 @@ GET https://graph.microsoft.com/beta/dataPolicyOperations/{id}
 ---
 
 ##### Response
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

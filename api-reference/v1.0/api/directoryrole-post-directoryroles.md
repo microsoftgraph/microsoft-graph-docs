@@ -84,7 +84,7 @@ Content-type: application/json
 
 In the request body, supply a JSON representation of [directoryRole](../resources/directoryrole.md) object.
 ##### Response
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

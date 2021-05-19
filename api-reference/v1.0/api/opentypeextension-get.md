@@ -308,7 +308,7 @@ GET https://graph.microsoft.com/v1.0/me/messages/AAMkAGE1M2IyNGNmLTI5MTktNDUyZi1
 
 #### Response 3
 
-And here is the response from the third example. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+And here is the response from the third example. Note: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -472,7 +472,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Extensions/any(f:f/id%2
 In this response for the fifth example, there is only one message in the user's mailbox that has an extension with its **id** equal to
 `Com.Contoso.Referral`.
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

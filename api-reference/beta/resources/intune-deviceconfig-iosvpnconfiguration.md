@@ -61,6 +61,8 @@ Inherits from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnc
 |associatedDomains|String collection|Associated Domains Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |excludedDomains|String collection|Domains that are accessed through the public internet instead of through VPN, even when per-app VPN is activated Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |disableOnDemandUserOverride|Boolean|Toggle to prevent user from disabling automatic VPN in the Settings app Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
+|disconnectOnIdle|Boolean|Whether to disconnect after on-demand connection idles Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
+|disconnectOnIdleTimerInSeconds|Int32|The length of time in seconds to wait before disconnecting an on-demand connection. Valid values 0 to 65535 Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |proxyServer|[vpnProxyServer](../resources/intune-deviceconfig-vpnproxyserver.md)|Proxy Server. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |optInToDeviceIdSharing|Boolean|Opt-In to sharing the device's Id to third-party vpn clients for use during network access control validation. Inherited from [appleVpnConfiguration](../resources/intune-deviceconfig-applevpnconfiguration.md)|
 |userDomain|String|Zscaler only. Enter a static domain to pre-populate the login field with in the Zscaler app. If this is left empty, the user's Azure Active Directory domain will be used instead.|
@@ -183,6 +185,8 @@ Here is a JSON representation of the resource.
     "String"
   ],
   "disableOnDemandUserOverride": true,
+  "disconnectOnIdle": true,
+  "disconnectOnIdleTimerInSeconds": 1024,
   "proxyServer": {
     "@odata.type": "microsoft.graph.vpnProxyServer",
     "automaticConfigurationScriptUrl": "String",

@@ -27,7 +27,7 @@ POST to branding/localizations to create a new localization. The id specified in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /organization/{id}/branding/localizations
+POST /organization/{tenant id}/branding/localizations
 ```
 
 ## Request headers

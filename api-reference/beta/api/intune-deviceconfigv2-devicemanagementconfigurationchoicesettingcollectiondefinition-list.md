@@ -32,6 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+GET /deviceManagement/reusableSettings
 GET /deviceManagement/configurationSettings
 GET /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings/{deviceManagementConfigurationSettingId}/settingDefinitions
 ```
@@ -53,7 +54,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 Here is an example of the request.
 ``` http
-GET https://graph.microsoft.com/beta/deviceManagement/configurationSettings
+GET https://graph.microsoft.com/beta/deviceManagement/reusableSettings
 ```
 
 ### Response
@@ -61,7 +62,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 10776
+Content-Length: 11016
 
 {
   "value": [
@@ -93,6 +94,12 @@ Content-Length: 10776
       "settingUsage": "configuration",
       "uxBehavior": "dropdown",
       "visibility": "settingsCatalog",
+      "referredSettingInformationList": [
+        {
+          "@odata.type": "microsoft.graph.deviceManagementConfigurationReferredSettingInformation",
+          "settingDefinitionId": "Setting Definition Id value"
+        }
+      ],
       "id": "eb03fdca-fdca-eb03-cafd-03ebcafd03eb",
       "description": "Description value",
       "helpText": "Help Text value",

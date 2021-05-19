@@ -30,12 +30,14 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /roleManagement/directory/roleAssignments
+GET /roleManagement/directory/roleAssignments?$filter=principalId eq '{principal id}'
+
+GET /roleManagement/directory/roleAssignments?$filter=roleDefinitionId eq '{roleDefinition id}'
 ```
 
-## Optional query parameters
+## Query parameters
 
-This operation requires the `$filter` query parameter. You can filter on the `roleDefinitionId` or `principalId` properties. The `roleDefinitionId` property can be either a role object ID or a role template object ID. For general information, see [OData query parameters](/graph/query-parameters).
+This operation requires the `$filter` query parameter. You can filter on the `roleDefinitionId` or `principalId` properties. The `roleDefinitionId` property can be either a role object ID or a role template object ID. The `$expand` query parameter is also supported on **principal**. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 
@@ -53,7 +55,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ## Examples
 
-### Example 1: Request using a filter on role definition ID
+### Example 1: Request using $filter on role definition ID and expand principal
 
 #### Request
 

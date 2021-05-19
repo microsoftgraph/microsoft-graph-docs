@@ -61,6 +61,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | addIns | [addIn](addin.md) collection| Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams [may set the addIns property](/onedrive/developer/file-handlers/?view=odsp-graph-online) for its "FileHandler" functionality. This will let services like Office 365 call the application in the context of a document the user is working on. |
 | api | [apiApplication](apiapplication.md) | Specifies settings for an application that implements a web API. |
 | appId | String | The unique identifier for the application that is assigned to an application by Azure AD. Not nullable. Read-only. |
+| applicationTemplateId | String | Unique identifier of the applicationTemplate. |
 | appRoles | [appRole](approle.md) collection | The collection of roles assigned to the application. With [app role assignments](approleassignment.md), these roles can be assigned to users, groups, or service principals associated with other applications. Not nullable. |
 | createdDateTime | DateTimeOffset | The date and time the application was registered. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
 | deletedDateTime | DateTimeOffset | The date and time the application was deleted. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. |
@@ -69,10 +70,12 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | id | String | The unique identifier for the application. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only. |
 | identifierUris | String collection | The URIs that identify the application within its Azure AD tenant, or within a verified custom domain if the application is multi-tenant. For more information see [Application Objects and Service Principal Objects](/azure/active-directory/develop/app-objects-and-service-principals). The `any` operator is required for filter expressions on multi-valued properties. Not nullable. |
 | info | [informationalUrl](informationalurl.md) | Basic profile information of the application such as  app's marketing, support, terms of service and privacy statement URLs. The terms of service and privacy statement are surfaced to users through the user consent experience. For more info, see How to: [Add Terms of service and privacy statement for registered Azure AD apps](/azure/active-directory/develop/howto-add-terms-of-service-privacy-statement). |
+| isDeviceOnlyAuthSupported | Boolean | Specifies whether this application supports device authentication without a user. The default is `false`.  |
 | isFallbackPublicClient | Boolean | Specifies the fallback application type as public client, such as an installed application running on a mobile device. The default value is `false` which means the fallback application type is confidential client such as a web app. There are certain scenarios where Azure AD cannot determine the client application type. For example, the [ROPC](https://tools.ietf.org/html/rfc6749#section-4.3) flow where it is configured without specifying a redirect URI. In those cases Azure AD interprets the application type based on the value of this property.|
 | keyCredentials | [keyCredential](keycredential.md) collection | The collection of key credentials associated with the application. Not nullable. |
 | logo | Stream | The main logo for the application. Not nullable. |
 | notes | String | Notes relevant for the management of the application. |
+| oauth2RequiredPostResponse | Boolean | Specifies whether, as part of OAuth 2.0 token requests, Azure AD allows POST requests, as opposed to GET requests. The default is `false`, which specifies that only GET requests are allowed. |
 | optionalClaims | [optionalClaims](optionalclaims.md) | Application developers can configure optional claims in their Azure AD applications to specify the claims that are sent to their application by the Microsoft security token service. For more information, see [How to: Provide optional claims to your app](/azure/active-directory/develop/active-directory-optional-claims).|
 | parentalControlSettings | [parentalControlSettings](parentalcontrolsettings.md) |Specifies parental control settings for an application. |
 | passwordCredentials | [passwordCredential](passwordcredential.md) collection|The collection of password credentials associated with the application. Not nullable.|
@@ -80,6 +83,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 | publisherDomain | String | The verified publisher domain for the application. Read-only. For more information, see [How to: Configure an application's publisher domain](/azure/active-directory/develop/howto-configure-publisher-domain).|
 | requiredResourceAccess |[requiredResourceAccess](requiredresourceaccess.md) collection|Specifies the resources that the application needs to access. This property also specifies the set of OAuth permission scopes and application roles that it needs for each of those resources. This configuration of access to the required resources drives the consent experience. Not nullable.|
 | signInAudience | String | Specifies the Microsoft accounts that are supported for the current application. Supported values are: `AzureADMyOrg`, `AzureADMultipleOrgs`, `AzureADandPersonalMicrosoftAccount`, `PersonalMicrosoftAccount`. See more in the [table below](#signinaudience-values). |
+| spa                     | [spaApplication](../resources/spaapplication.md)                            | Specifies settings for a single-page application, including sign out URLs and redirect URIs for authorization codes and access tokens. |
 | tags |String collection| Custom strings that can be used to categorize and identify the application. Not nullable.|
 | tokenEncryptionKeyId |String|Specifies the keyId of a public key from the keyCredentials collection. When configured, Azure AD encrypts all the tokens it emits by using the key this property points to. The application code that receives the encrypted token must use the matching private key to decrypt the token before it can be used for the signed-in user.|
 | verifiedPublisher          | [verifiedPublisher](verifiedPublisher.md)                            | Specifies the verified publisher of the application.|
@@ -121,6 +125,7 @@ The following is a JSON representation of the resource.
   "addIns": [{"@odata.type": "microsoft.graph.addIn"}],
   "api": {"@odata.type": "microsoft.graph.apiApplication"},
   "appId": "String",
+  "applicationTemplateId": "String",
   "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
   "createdDateTime": "String (timestamp)",
   "deletedDateTime": "String (timestamp)",
@@ -129,10 +134,12 @@ The following is a JSON representation of the resource.
   "id": "String (identifier)",
   "identifierUris": ["String"],
   "info": {"@odata.type": "microsoft.graph.informationalUrl"},
+  "isDeviceOnlyAuthSupported": false,
   "isFallbackPublicClient": false,
   "keyCredentials": [{"@odata.type": "microsoft.graph.keyCredential"}],
   "logo": "Stream",
   "notes": "String",
+  "oauth2RequiredPostResponse": false,
   "optionalClaims": {"@odata.type": "microsoft.graph.optionalClaims"},
   "parentalControlSettings": {"@odata.type": "microsoft.graph.parentalControlSettings"},
   "passwordCredentials": [{"@odata.type": "microsoft.graph.passwordCredential"}],
@@ -140,6 +147,7 @@ The following is a JSON representation of the resource.
   "publisherDomain": "String",
   "requiredResourceAccess": [{"@odata.type": "microsoft.graph.requiredResourceAccess"}],
   "signInAudience": "String",
+  "spa": {"@odata.type": "microsoft.graph.spaApplication"},
   "tags": ["String"],
   "tokenEncryptionKeyId": "String",
   "verifiedPublisher": {"@odata.type": "microsoft.graph.verifiedPublisher"},

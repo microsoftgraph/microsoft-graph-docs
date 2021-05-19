@@ -49,7 +49,7 @@ The following is a JSON representation of the resource.
 
 <!-- {
   "blockType": "resource",
-  "@odata.type": "microsoft.graph.IdentityProvider"
+  "@odata.type": "microsoft.graph.identityProvider"
 } -->
 
 ```json

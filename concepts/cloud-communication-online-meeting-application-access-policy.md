@@ -41,8 +41,7 @@ To configure an application access policy and allow applications to access onlin
    Grant-CsApplicationAccessPolicy -PolicyName Test-policy -Identity "ddb80e06-92f3-4978-bc22-a0eee85e6a9e"
    ```
 
-> **Note** 
-> 
+> [!NOTE]
 > - _Identity_ refers to the policy name when creating the policy, but the user ID when granting the policy.
 > - Changes to application access policies can take up to 30 minutes to take effect in Microsoft Graph REST API calls.
 

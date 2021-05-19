@@ -8,7 +8,8 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var printerShare = new PrinterShare
 {
-	Name = "ShareName",
+	DisplayName = "ShareName",
+	AllowAllUsers = true,
 	AdditionalData = new Dictionary<string, object>()
 	{
 		{"printer@odata.bind", "https://graph.microsoft.com/beta/print/printers/{id}"}

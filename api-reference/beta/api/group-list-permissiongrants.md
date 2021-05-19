@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-List all [resource-specific permission grants](../resources/resourcespecificpermissiongrant.md) on the [group](../resources/group.md). This is a list of Azure AD apps that have access to the chat along with the kind of access that each app has.
+List all [resource-specific permission grants](../resources/resourcespecificpermissiongrant.md) on the [group](../resources/group.md). This is a list of Azure AD apps that have access to the group along with the kind of access that each app has.
 
 ## Permissions
 

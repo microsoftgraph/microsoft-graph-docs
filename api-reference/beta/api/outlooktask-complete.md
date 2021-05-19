@@ -99,7 +99,7 @@ Prefer: outlook.timezone="Pacific Standard Time"
 
 Here is an example of the response. The **completedDateTime** and other date-related properties in the response are expressed in PST.
 
-> **Note:** The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

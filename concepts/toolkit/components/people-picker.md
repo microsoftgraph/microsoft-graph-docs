@@ -141,6 +141,15 @@ This component uses the following Microsoft Graph APIs and permissions.
 
 The control uses the global authentication provider described in the [authentication documentation](../providers/providers.md).
 
+## Cache
+
+|Object store|Cached data|Remarks|
+|---------|-----------|-------|
+|`groups`|List of groups|Used when `type` is set to `PersonType.group`|
+|`people`|List of people|Used when `type` is set to `PersonType.person` or `PersonType.any`|
+|`users`|List of users|Used when `groupId` specified|
+
+See [Caching](../customize-components/cache.md) for more details on how to configure the cache.
 ## Extend for more control
 
 For more complex scenarios or a truly custom UX, this component exposes several `protected render*` methods for override in component extensions.

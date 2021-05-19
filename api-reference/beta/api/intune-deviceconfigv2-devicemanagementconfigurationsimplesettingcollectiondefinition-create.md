@@ -24,7 +24,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -32,6 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
+POST /deviceManagement/reusableSettings
 POST /deviceManagement/configurationSettings
 POST /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}/settings/{deviceManagementConfigurationSettingId}/settingDefinitions
 ```
@@ -61,6 +62,7 @@ The following table shows the properties that are required when you create the d
 |settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Setting type, for example, configuration and compliance Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md). Possible values are: `none`, `configuration`.|
 |uxBehavior|[deviceManagementConfigurationControlType](../resources/intune-deviceconfigv2-devicemanagementconfigurationcontroltype.md)|Setting control type representation in the UX Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md). Possible values are: `default`, `dropdown`, `smallTextBox`, `largeTextBox`, `toggle`, `multiheaderGrid`, `contextPane`.|
 |visibility|[deviceManagementConfigurationSettingVisibility](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvisibility.md)|Setting visibility scope to UX Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md). Possible values are: `none`, `settingsCatalog`, `template`.|
+|referredSettingInformationList|[deviceManagementConfigurationReferredSettingInformation](../resources/intune-deviceconfigv2-devicemanagementconfigurationreferredsettinginformation.md) collection|List of referred setting information. Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|
 |id|String|Identifier for item Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|
 |description|String|Description of the item Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|
 |helpText|String|Help text of the item Inherited from [deviceManagementConfigurationSettingDefinition](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingdefinition.md)|
@@ -84,9 +86,9 @@ If successful, this method returns a `201 Created` response code and a [deviceMa
 ### Request
 Here is an example of the request.
 ``` http
-POST https://graph.microsoft.com/beta/deviceManagement/configurationSettings
+POST https://graph.microsoft.com/beta/deviceManagement/reusableSettings
 Content-type: application/json
-Content-length: 9248
+Content-length: 9464
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionDefinition",
@@ -116,6 +118,12 @@ Content-length: 9248
   "settingUsage": "configuration",
   "uxBehavior": "dropdown",
   "visibility": "settingsCatalog",
+  "referredSettingInformationList": [
+    {
+      "@odata.type": "microsoft.graph.deviceManagementConfigurationReferredSettingInformation",
+      "settingDefinitionId": "Setting Definition Id value"
+    }
+  ],
   "description": "Description value",
   "helpText": "Help Text value",
   "name": "Name value",
@@ -262,7 +270,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 9297
+Content-Length: 9513
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingCollectionDefinition",
@@ -292,6 +300,12 @@ Content-Length: 9297
   "settingUsage": "configuration",
   "uxBehavior": "dropdown",
   "visibility": "settingsCatalog",
+  "referredSettingInformationList": [
+    {
+      "@odata.type": "microsoft.graph.deviceManagementConfigurationReferredSettingInformation",
+      "settingDefinitionId": "Setting Definition Id value"
+    }
+  ],
   "id": "cb4abda1-bda1-cb4a-a1bd-4acba1bd4acb",
   "description": "Description value",
   "helpText": "Help Text value",

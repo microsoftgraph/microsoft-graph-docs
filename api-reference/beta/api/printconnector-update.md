@@ -55,6 +55,8 @@ If successful, this method returns a `200 OK` response code and an updated [prin
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_connector"
@@ -65,7 +67,7 @@ Content-type: application/json
 Content-length: 300
 
 {
-  "name": "ConnectorName",
+  "displayName": "ConnectorName",
   "fullyQualifiedDomainName": "CONNECTOR-MACHINE",
   "operatingSystem": "Microsoft Windows 10 Enterprise Insider Preview | 10.0.19555",
   "appVersion": "0.19.7338.23496",
@@ -94,9 +96,12 @@ Content-length: 300
 
 ---
 
+
+---
+
 ##### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -110,7 +115,7 @@ Content-length: 406
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/connectors/$entity",
   "id": "9953d245-3f6e-418c-a438-67f50e69a430",
-  "name": "ConnectorName",
+  "displayName": "ConnectorName",
   "fullyQualifiedDomainName": "CONNECTOR-MACHINE",
   "operatingSystem": "Microsoft Windows 10 Enterprise Insider Preview | 10.0.19555",
   "appVersion": "0.19.7338.23496",
@@ -129,9 +134,9 @@ Content-length: 406
     "countryOrRegion": "USA",
     "site": "Puget Sound",
     "building": "Studio E",
-    "floorNumber": 1,
+    "floor": "1",
     "floorDescription": "First Floor",
-    "roomNumber": 1234,
+    "roomName": "1234",
     "roomDescription": "First floor copy room",
     "organization": [
         "C+AI",

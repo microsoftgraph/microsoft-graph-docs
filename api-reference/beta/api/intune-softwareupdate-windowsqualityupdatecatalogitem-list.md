@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 382
+Content-Length: 446
 
 {
   "value": [
@@ -69,6 +69,7 @@ Content-Length: 382
       "id": "8eb831ba-31ba-8eb8-ba31-b88eba31b88e",
       "displayName": "Display Name value",
       "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
+      "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00",
       "kbArticleId": "Kb Article Id value",
       "classification": "security",
       "isExpeditable": true

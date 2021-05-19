@@ -28,7 +28,7 @@ const educationSchool = {
     street: '12345 Main St.'
   },
   externalId: '10002',
-  phone: '+1 (253) 555-0102',
+  phone: '+1 (253) 555-0102'
 };
 
 await client.api('/education/schools')

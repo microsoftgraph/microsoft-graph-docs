@@ -41,7 +41,7 @@ This method supports some of the OData query parameters to help customize the re
 * This method supports filtering print jobs by the user who created them. Use `$filter=createdBy/userPrincipalName eq '{upn}'`, where **{upn}** is the [user principal name](/azure/active-directory/hybrid/plan-connect-userprincipalname#what-is-userprincipalname) of the associated user.
 
 ### Exceptions
-Some operators are not supported: `$count`, `$search`, `$filter`.
+Some operators are not supported: `$count`, `$search`.
 
 ## Request headers
 | Name      |Description|
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/beta/print/printers/{id}/jobs
 
 ### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

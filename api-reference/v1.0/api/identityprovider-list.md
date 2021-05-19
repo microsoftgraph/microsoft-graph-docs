@@ -85,7 +85,7 @@ GET https://graph.microsoft.com/v1.0/identityProviders
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.IdentityProvider",
+  "@odata.type": "microsoft.graph.identityProvider",
   "isCollection": true
 } -->
 ```http

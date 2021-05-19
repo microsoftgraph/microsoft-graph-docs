@@ -198,6 +198,25 @@ items:
           - name: Corporate management
             href: intune-concept-overview.md
             displayName: Intune
+          - name: Device updates (preview)
+            displayName: Windows updates
+            items:
+              - name: Overview
+                href: windowsupdates-concept-overview.md
+              - name: Software updates
+                href: windowsupdates-software-updates.md
+              - name: Deployments
+                href: windowsupdates-deployments.md
+              - name: Enroll in management
+                href: windowsupdates-enroll.md
+              - name: Deploy a feature update
+                href: windowsupdates-deploy-update.md
+              - name: Deploy an expedited update
+                href: windowsupdates-deploy-expedited-update.md
+              - name: Schedule a deployment
+                href: windowsupdates-schedule-deployment.md
+              - name: Manage monitoring rules
+                href: windowsupdates-manage-monitoring-rules.md
       - name: Education
         items:
           - name: Overview
@@ -225,6 +244,14 @@ items:
             items:
               - name: Manage access to resources
                 href: tutorial-access-package-api.md
+              - name: Review access to your resources
+                items:
+                  - name: Overview of the access reviews API
+                    href: accessreviews-overview.md
+                  - name: Review access to a security group
+                    href: tutorial-accessreviews-securitygroup.md
+                  - name: Review access to a Microsoft 365 group
+                    href: tutorial-accessreviews-M365group.md
       - name: Mail
         displayName: Outlook, Outlook mail
         items:
@@ -341,6 +368,8 @@ items:
                 href: search-concept-sort.md
               - name: Refine search results (preview)
                 href: search-concept-aggregation.md
+              - name: Request spelling correction (preview)
+                href: search-concept-speller.md
           - name: Index (preview)
             items:
               - name: Manage connections

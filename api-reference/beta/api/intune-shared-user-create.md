@@ -1,7 +1,7 @@
 ---
 title: "Create user"
 description: "Create a new user object."
-author: "dougeby"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType

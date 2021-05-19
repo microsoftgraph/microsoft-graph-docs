@@ -137,7 +137,7 @@ GET https://graph.microsoft.com/beta/directoryObjects/delta
 
 The following is an example of the response when using `deltaLink` obtained from the query initialization. No `isOf` filter has been used, so all types derived from directoryObject are returned.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

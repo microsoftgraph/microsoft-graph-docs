@@ -512,6 +512,8 @@ items:
           href: api/group-list-owners.md
         - name: List photos
           href: api/group-list-photos.md
+        - name: List permission grants
+          href: api/group-list-permissiongrants.md
         - name: Remove favorite
           href: api/group-removefavorite.md
         - name: Remove member
@@ -3689,15 +3691,17 @@ items:
         href: resources/educationschool.md
         items:
         - name: List schools
-          href: api/educationroot-list-schools.md
+          href: api/educationschool-list.md
         - name: Create school
-          href: api/educationroot-post-schools.md
+          href: api/educationschool-post.md
         - name: Get school
           href: api/educationschool-get.md
         - name: Update school
           href: api/educationschool-update.md
         - name: Delete school
           href: api/educationschool-delete.md
+        - name: Get changes to schools
+          href: api/educationschool-delta.md
         - name: List classes
           href: api/educationschool-list-classes.md
         - name: Create class
@@ -3713,18 +3717,18 @@ items:
       - name: Classes
         href: resources/educationclass.md
         items:
-        - name: List schools
-          href: api/educationclass-list-schools.md
         - name: List classes
-          href: api/educationroot-list-classes.md
+          href: api/educationclass-list.md
         - name: Create class
-          href: api/educationroot-post-classes.md
+          href: api/educationclass-post.md
         - name: Get class
           href: api/educationclass-get.md
         - name: Update class
           href: api/educationclass-update.md
         - name: Delete class
           href: api/educationclass-delete.md
+        - name: Get changes to classes
+          href: api/educationclass-delta.md
         - name: List teachers
           href: api/educationclass-list-teachers.md
         - name: Add teacher
@@ -3740,14 +3744,20 @@ items:
       - name: Users
         href: resources/educationuser.md
         items:
-        - name: List schools
-          href: api/educationuser-list-schools.md
-        - name: List classes
-          href: api/educationuser-list-classes.md
+        - name: List users
+          href: api/educationuser-list.md
+        - name: Create user
+          href: api/educationuser-post.md
         - name: Get user
           href: api/educationuser-get.md
         - name: Delete user
           href: api/educationuser-delete.md
+        - name: Get changes to users
+          href: api/educationuser-delta.md
+        - name: List classes
+          href: api/educationuser-list-classes.md
+        - name: List taught classes
+          href: api/educationuser-list-taughtclasses.md
     - name: Extensions
       items:
       - name: Open extensions
@@ -4054,6 +4064,14 @@ items:
               href: api/subscribedsku-get.md
       - name: Identity and sign-in
         items:
+        - name: Authentication flows policy
+          items:
+          - name: Authentication flows policy
+            href: resources/authenticationflowspolicy.md
+          - name: Get
+            href: api/authenticationflowspolicy-get.md
+          - name: Update
+            href: api/authenticationflowspolicy-update.md
         - name: Authentication methods
           items:
           - name: Overview
@@ -4243,6 +4261,8 @@ items:
             href: api/identityprovider-update.md
           - name: Delete identity provider
             href: api/identityprovider-delete.md
+          - name: List available provider types
+            href: api/identityprovider-list-availableprovidertypes.md
         - name: Invitation manager
           href: resources/invitation.md
           items:
@@ -4374,6 +4394,94 @@ items:
               href: api/identitysecuritydefaultsenforcementpolicy-get.md
             - name: Update
               href: api/identitysecuritydefaultsenforcementpolicy-update.md
+        - name: User flows
+          items:  
+          - name: Self-service sign up user flows
+            items:
+             - name: Self-service sign up user flow
+               href: resources/b2xidentityuserflow.md
+             - name: List
+               href: api/identitycontainer-list-b2xuserflows.md
+             - name: Create
+               href: api/identitycontainer-post-b2xuserflows.md
+             - name: Get
+               href: api/b2xidentityuserflow-get.md
+             - name: Delete
+               href: api/b2xidentityuserflow-delete.md
+             - name: List identity providers
+               href: api/b2xidentityuserflow-list-identityproviders.md
+             - name: Add identity provider
+               href: api/b2xidentityuserflow-post-identityproviders.md
+             - name: Remove identity provider
+               href: api/b2xidentityuserflow-delete-identityproviders.md
+             - name: List user attribute assignments
+               href: api/b2xidentityuserflow-list-userattributeassignments.md
+             - name: Create user attribute assignment
+               href: api/b2xidentityuserflow-post-userattributeassignments.md
+             - name: List languages
+               href: api/b2xidentityuserflow-list-languages.md
+             - name: Get API connectors configuration
+               href: api/b2xidentityuserflow-get-apiConnectorConfiguration.md
+             - name: Configure an API connector
+               href: api/b2xidentityuserflow-put-apiConnectorConfiguration.md
+          - name: User flow attributes
+            items:
+             - name: User flow attribute
+               href: resources/identityuserflowattribute.md
+             - name: List
+               href: api/identityuserflowattribute-list.md
+             - name: Create
+               href: api/identityuserflowattribute-post.md
+             - name: Get
+               href: api/identityuserflowattribute-get.md
+             - name: Update
+               href: api/identityuserflowattribute-update.md
+             - name: Delete
+               href: api/identityuserflowattribute-delete.md
+          - name: User flow attribute assignment
+            items:
+             - name: User flow attribute assignment
+               href: resources/identityuserflowattributeassignment.md
+             - name: Get
+               href: api/identityuserflowattributeassignment-get.md
+             - name: Update
+               href: api/identityuserflowattributeassignment-update.md
+             - name: Delete
+               href: api/identityuserflowattributeassignment-delete.md
+          - name: User flow language configuration
+            items:
+             - name: User flow language configuration
+               href: resources/userflowlanguageconfiguration.md
+             - name: Get
+               href: api/userflowlanguageconfiguration-get.md
+             - name: List default pages
+               href: api/userflowlanguageconfiguration-list-defaultpages.md
+             - name: List overrides pages
+               href: api/userflowlanguageconfiguration-list-overridespages.md
+             - name: User flow language page
+               href: resources/userflowlanguagepage.md
+             - name: Get 
+               href: api/userflowlanguagepage-get.md
+             - name: Update 
+               href: api/userflowlanguagepage-put.md
+             - name: Delete 
+               href: api/userflowlanguagepage-delete.md
+          - name: API connectors
+            items:
+            - name: API connector
+              href: resources/identityapiconnector.md
+            - name: List
+              href: api/identityapiconnector-list.md
+            - name: Create
+              href: api/identityapiconnector-create.md
+            - name: Get
+              href: api/identityapiconnector-get.md
+            - name: Update
+              href: api/identityapiconnector-update.md
+            - name: Upload a client certificate
+              href: api/identityapiconnector-uploadclientcertificate.md
+            - name: Delete
+              href: api/identityapiconnector-delete.md    
       - name: Governance
         items:
           - name: Consent requests
@@ -4810,6 +4918,11 @@ items:
             href: api/signin-list.md
           - name: Get sign-in
             href: api/signin-get.md
+        - name: Provisioning
+          href: resources/provisioningobjectsummary.md
+          items:
+          - name: List provisioning
+            href: api/provisioningobjectsummary-list.md
       - name: Microsoft 365 usage reports
         items:
         - name: Overview
@@ -5393,7 +5506,7 @@ items:
           href: api/chatmessage-list-hostedcontents.md
         - name: Get hosted content
           href: api/chatmessagehostedcontent-get.md
-      - name: App catalog
+      - name: App
         items:
         - name: App in catalog
           href: resources/teamsapp.md
@@ -5405,7 +5518,7 @@ items:
           href: api/teamsapp-update.md
         - name: Delete app from catalog
           href: api/teamsapp-delete.md
-      - name: App
+      - name: App installation
         items:
         - name: Installed app
           href: resources/teamsappinstallation.md
@@ -5825,10 +5938,14 @@ items:
           href: api/table-list-rows.md
         - name: Create row
           href: api/table-post-rows.md
+        - name: Delete row
+          href: api/tablerow-delete.md
         - name: List columns
           href: api/table-list-columns.md
         - name: Create column
           href: api/table-post-columns.md
+        - name: Delete column
+          href: api/tablecolumn-delete.md
         - name: Get range
           href: api/table-range.md
       - name: Chart

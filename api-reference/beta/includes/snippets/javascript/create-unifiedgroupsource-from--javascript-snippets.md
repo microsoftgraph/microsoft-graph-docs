@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const unifiedGroupSource = {
-  'group@odata.bind': '/groups/000044f9-47c8-4a87-bccf-291fbf006a54',
+  'group@odata.bind': 'https://graph.microsoft.com/v1.0/groups/b96f95c5-b1b3-4142-b039-8ac79e7d2c84',
   includedSources: 'mailbox, site'
 };
 

@@ -7,9 +7,12 @@ author: adchau
 
 # Microsoft Graph Toolkit caching
 
-The Microsoft Graph Toolkit supports caching of select Microsoft Graph API calls. Currently, calls to the users, person, contact, and photo endpoints are cached by default in three IndexedDB stores.
+The Microsoft Graph Toolkit supports caching of select Microsoft Graph API calls. Calls are being cached per entity, such as people, contact, photo. This allows one component to retrieve the data and other components to reuse it without calling Microsoft Graph.
 
-You can view the cache on the developer panel. On the **Application** tab, in the **Storage** pane, go to the **IndexedDB** tab.
+> [!TIP]
+> For more information about which entities are cached by each component, see the component's documentation.
+
+Databases created by mgt for caching are prefixed with `mgt-`. The data for each entity is stored in a separate object store. To inspect the cache, use the **Application** tab in the developer panel (F12 tools) - under the **Storage** section, click on the **IndexedDB** tab. 
 
 ![devtools indexedDB](../images/indexedDBpanel.png)
 
@@ -41,6 +44,10 @@ let config = {
     invalidationPeriod: number,
     isEnabled: boolean
   },
+  response: {
+    invalidationPeriod: number,
+    isEnabled: boolean
+  }
 };
 ```
 

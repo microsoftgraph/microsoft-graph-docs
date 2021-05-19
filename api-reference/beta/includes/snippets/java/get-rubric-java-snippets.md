@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-EducationRubric educationRubric = graphClient.education().me().assignments("{id}").rubric()
+EducationRubric educationRubric = graphClient.education().classes("{id}").assignments("{id}").rubric()
 	.buildRequest()
 	.get();
 

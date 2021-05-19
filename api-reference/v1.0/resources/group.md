@@ -110,7 +110,7 @@ This resource supports:
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |allowExternalSenders|Boolean| Indicates if people external to the organization can send messages to the group. Default value is `false`. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`). |
-|assignedLabels|[assignedLabel](assignedlabel.md) collection|The list of sensitivity label pairs (label ID, label name) associated with an Microsoft 365 group. <br><br>Returned only on `$select`. Read-only.|
+|assignedLabels|[assignedLabel](assignedlabel.md) collection|The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group. <br><br>Returned only on `$select`. Read-only.|
 |assignedLicenses|[assignedLicense](assignedlicense.md) collection|The licenses that are assigned to the group. <br><br>Returned only on `$select`. Read-only.|
 |autoSubscribeNewMembers|Boolean|Indicates if new members added to the group will be auto-subscribed to receive email notifications. You can set this property in a PATCH request for the group; do not set it in the initial POST request that creates the group. Default value is `false`. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`).|
 |classification|String|Describes a classification for the group (such as low, medium or high business impact). Valid values for this property are defined by creating a ClassificationList [setting](groupsetting.md) value, based on the [template definition](groupsettingtemplate.md).<br><br>Returned by default.|
@@ -134,14 +134,14 @@ This resource supports:
 |onPremisesSecurityIdentifier|String|Contains the on-premises security identifier (SID) for the group that was synchronized from on-premises to the cloud. <br><br>Returned by default. Read-only. |
 |onPremisesSyncEnabled|Boolean|`true` if this group is synced from an on-premises directory; `false` if this group was originally synced from an on-premises directory but is no longer synced; **null** if this object has never been synced from an on-premises directory (default). <br><br>Returned by default. Read-only. Supports `$filter`.|
 |preferredDataLocation|String|The preferred data location for the group. For more information, see  [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). <br><br>Returned by default.|
-|preferredLanguage|String|The preferred language for an Microsoft 365 group. Should follow ISO 639-1 Code; for example "en-US". <br><br>Returned by default. |
+|preferredLanguage|String|The preferred language for a Microsoft 365 group. Should follow ISO 639-1 Code; for example "en-US". <br><br>Returned by default. |
 |proxyAddresses|String collection| Email addresses for the group that direct to the same group mailbox. For example: `["SMTP: bob@contoso.com", "smtp: bob@sales.contoso.com"]`. The **any** operator is required to filter expressions on multi-valued properties. <br><br>Returned by default. Read-only. Not nullable. Supports `$filter`. |
 |renewedDateTime|DateTimeOffset| Timestamp of when the group was last renewed. This cannot be modified directly and is only updated via the [renew service action](../api/group-renew.md). The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. <br><br>Returned by default. Read-only.|
 |resourceBehaviorOptions|String collection|Specifies the group behaviors that can be set for a Microsoft 365 group during creation. This can be set only as part of creation (POST). Possible values are `AllowOnlyMembersToPost`, `HideGroupInOutlook`, `SubscribeNewGroupMembers`, `WelcomeEmailDisabled`. For more information, see [Set Microsoft 365 group behaviors and provisioning options](/graph/group-set-options).|
 |resourceProvisioningOptions|String collection|Specifies the group resources that are provisioned as part of Microsoft 365 group creation, that are not normally part of default group creation. Possible value is `Team`. For more information, see [Set Microsoft 365 group behaviors and provisioning options](/graph/group-set-options).|
 |securityEnabled|Boolean|Specifies whether the group is a security group. <br><br>Returned by default. Supports `$filter`.|
 |securityIdentifier|String|Security identifier of the group, used in Windows scenarios. <br><br>Returned by default.|
-|theme|string|Specifies an Microsoft 365 group's color theme. Possible values are `Teal`, `Purple`, `Green`, `Blue`, `Pink`, `Orange` or `Red`. <br><br>Returned by default. |
+|theme|string|Specifies a Microsoft 365 group's color theme. Possible values are `Teal`, `Purple`, `Green`, `Blue`, `Pink`, `Orange` or `Red`. <br><br>Returned by default. |
 |unseenCount|Int32|Count of conversations that have received new posts since the signed-in user last visited the group. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`). |
 |visibility|String| Specifies the group join policy and group content visibility for groups. Possible values are: `Private`, `Public`, or `Hiddenmembership`. `Hiddenmembership` can be set only for Microsoft 365 groups, when the groups are created. It can't be updated later. Other values of visibility can be updated after group creation.<br> If visibility value is not specified during group creation on Microsoft Graph, a security group is created as `Private` by default and Microsoft 365 group is `Public`. See [group visibility options](#group-visibility-options) to learn more. <br><br>Returned by default.|
 
@@ -174,6 +174,7 @@ This resource supports:
 |membersWithLicenseErrors|[User](user.md) collection|A list of group members with license errors from this group-based license assignment. Read-only.|
 |onenote|[Onenote](onenote.md)| Read-only.|
 |owners|[directoryObject](directoryobject.md) collection|The owners of the group. The owners are a set of non-admin users who are allowed to modify this object. Limited to 100 owners. HTTP Methods: GET (supported for all groups), POST (supported for Microsoft 365 groups, security groups and mail-enabled security groups), DELETE (supported for Microsoft 365 groups and security groups). Nullable.|
+|permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)|The permission that has been granted for a group to a specific application.|
 |photo|[profilePhoto](profilephoto.md)| The group's profile photo |
 |photos|[profilePhoto](profilephoto.md) collection| The profile photos owned by the group. Read-only. Nullable.|
 |planner|[plannerGroup](plannergroup.md)| Entry-point to Planner resource that might exist for a Unified Group.|

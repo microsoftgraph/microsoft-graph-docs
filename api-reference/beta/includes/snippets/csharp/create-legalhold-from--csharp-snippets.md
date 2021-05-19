@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var legalHold = new LegalHold
+var legalHold = new Microsoft.Graph.Ediscovery.LegalHold
 {
 	Description = "String",
 	CreatedBy = new IdentitySet

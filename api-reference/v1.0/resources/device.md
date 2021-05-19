@@ -64,8 +64,8 @@ This resource lets you add your own data to custom properties using [extensions]
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
 |extensions|[extension](extension.md) collection|The collection of open extensions defined for the device. Read-only. Nullable.|
-|memberOf|[directoryObject](directoryobject.md) collection|Groups that this device is a member of. HTTP Methods: GET (supported for all groups). Read-only. Nullable.|
-|[List transitive memberOf](../api/device-list-transitivememberof.md) |[directoryObject](directoryobject.md) collection| List the groups that the device is a member of. This operation is transitive. |
+|memberOf|[directoryObject](directoryobject.md) collection|Groups that this device is a member of. Read-only. Nullable.|
+|transitiveMemberOf |[directoryObject](directoryobject.md) collection| Groups that the device is a member of. This operation is transitive. |
 |registeredOwners|[directoryObject](directoryobject.md) collection|The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner. Read-only. Nullable. |
 |registeredUsers|[directoryObject](directoryobject.md) collection|Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable.|
 

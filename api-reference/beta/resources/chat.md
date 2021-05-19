@@ -21,6 +21,7 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 
 |  Method       |  Return Type  | Description| 
 |:---------------|:--------|:----------|
+| **Chat management** |||
 |[List chats](../api/chat-list.md) | [chat](chat.md) collection | Get the list of chats a user is part of.| 
 |[Create chat](../api/chat-post.md) | [chat](chat.md) | Create a new chat.| 
 |[Get chat](../api/chat-get.md) | [chat](chat.md) | Read properties and relationships of the chat.| 
@@ -29,21 +30,24 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 |[Add chat member](../api/chat-post-members.md) | Location header | Add a user to the chat.| 
 |[Get chat member](../api/chat-get-members.md) | [conversationMember](conversationmember.md) | Get a single user in the chat.| 
 |[Remove chat member](../api/chat-delete-members.md)|None|Remove a user from the chat.|
+|[Get chat between user and app](../api/userscopeteamsappinstallation-get-chat.md) | [chat](chat.md)| Get one-on-one chat between user and the app |
+| **Messages** |||
 |[List messages in chat](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | Get messages in a chat. | 
 |[Get message in chat](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Get a single message in a chat. | 
-|[Get chat between user and app](../api/userscopeteamsappinstallation-get-chat.md) | [chat](chat.md)| Get one-on-one chat between user and the app |
 |[Get messages across all chats for user](../api/chats-getallmessages.md)| [chat](chat.md) collection| Get messages from all chats that a user is a participant in. |
+| **Apps** |||
 |[List apps in chat](../api/chat-list-installedapps.md) |[teamsAppInstallation](teamsappinstallation.md) collection | List apps installed in a chat (and associated meeting).|
 |[Get app in chat](../api/chat-get-installedapps.md) | [teamsAppInstallation](teamsappinstallation.md) | Get a specific app installed in a chat (and associated meeting).|
 |[Add app in chat](../api/chat-post-installedapps.md) | | Add (install) an app in a chat (and associated meeting).|
 |[Upgrade app in chat](../api/chat-teamsappinstallation-upgrade.md) | None | Update to the latest version of the app installed in chat (and associated meeting).|
 |[Uninstall app from chat](../api/chat-delete-installedapps.md) | None | Remove (uninstall) app from a chat (and associated meeting).|
+|[List permission grants](../api/chat-list-permissiongrants.md) | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | List permissions that have been granted to the apps in this chat.|
+| **Tabs** |||
 |[List tabs in chat](../api/chat-list-tabs.md) | [teamsTab](teamstab.md) | List tabs pinned to a chat (and associated meeting).|
 |[Get tab in chat](../api/chat-get-tabs.md) | [teamsTab](teamstab.md) | Get a specific tab pinned to a chat (and associated meeting).|
 |[Add tab to chat](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | Add (pin) a tab to a chat (and associated meeting).|
 |[Update tab in chat](../api/chat-patch-tabs.md) | [teamsTab](teamstab.md) | Update the properties of a tab in a chat (and associated meeting).|
 |[Remove tab from chat](../api/chat-delete-tabs.md) | None | Remove (unpin) a tab from a chat (and associated meeting).|
-|[List permission grants](../api/chat-list-permissiongrants.md) | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | List permissions that have been granted to the apps in this chat.|
 
 >**Note:** When using application permissions, be sure you know how you're going to get the chat ID. Because listing chats with application permissions is not supported, 
 not all scenarios are possible. It is possible to get chat IDs with delegated permissions, and from [change notifications for /chats/getAllMessages](../api/subscription-post-subscriptions.md) with application permissions.

@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/compliance/ediscovery/cases/47746044-fd0b-4
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

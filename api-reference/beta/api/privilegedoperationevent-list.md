@@ -61,7 +61,7 @@ The following example shows a request to get the audit events for the role assig
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Assign'
 ```
 ##### Response
-The following example shows the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -121,7 +121,7 @@ The following example shows a request to get the audit events for the operations
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Activate'
 ```
 ##### Response
-The following example shows the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -182,7 +182,7 @@ The following example shows a request to get the audit events for role assignmen
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=requestType%20eq%20'Deactivate'
 ```
 ##### Response
-The following example shows the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -225,7 +225,7 @@ The following example shows a request to get the audit events created in a time 
 GET https://graph.microsoft.com/beta/privilegedOperationEvents?$filter=(creationDateTime%20ge%202017-06-25T07:00:00Z)%20and%20(creationDateTime%20le%202017-07-25T17:30:17Z)&$count=true&$orderby=creationDateTime%20desc
 ```
 ##### Response
-The following example shows the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The following example shows the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

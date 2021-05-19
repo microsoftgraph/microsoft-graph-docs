@@ -7,11 +7,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 IdentityApiConnector identityApiConnector = new IdentityApiConnector();
-identityApiConnector.displayName = "New Test API";
-identityApiConnector.targetUrl = "https://otherapi.com/api/endpoint";
-BasicAuthentication authenticationConfiguration = new BasicAuthentication();
-authenticationConfiguration.username = "<NEW_USERNAME>";
-authenticationConfiguration.password = "<NEW_PASSWORD>";
+Pkcs12Certificate authenticationConfiguration = new Pkcs12Certificate();
+authenticationConfiguration.pkcs12Value = "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA";
+authenticationConfiguration.password = "secret";
 identityApiConnector.authenticationConfiguration = authenticationConfiguration;
 
 graphClient.identity().apiConnectors("{identityApiConnectorId}")

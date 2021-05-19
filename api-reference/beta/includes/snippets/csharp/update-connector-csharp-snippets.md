@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var printConnector = new PrintConnector
 {
-	Name = "ConnectorName",
+	DisplayName = "ConnectorName",
 	FullyQualifiedDomainName = "CONNECTOR-MACHINE",
 	OperatingSystem = "Microsoft Windows 10 Enterprise Insider Preview | 10.0.19555",
 	AppVersion = "0.19.7338.23496",

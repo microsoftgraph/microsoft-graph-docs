@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve [userConsentRequest](../resources/userconsentrequest.md) objects and their properties.
+Retrieve a collection of [userConsentRequest](../resources/userconsentrequest.md) objects and their properties.
 
 ## Permissions
 

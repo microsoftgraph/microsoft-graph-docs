@@ -61,7 +61,7 @@ The following table shows the properties that are required when you create the [
 |bestPracticesHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The current health state of the user experience analytics 'BestPractices' category. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 |workFromAnywhereHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The current health state of the user experience analytics 'WorkFromAnywhere' category. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 |appHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The current health state of the user experience analytics 'BestPractices' category. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
-|resourcePerformanceState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The current health state of the user experience analytics 'ResourcePerformance' category. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
+|resourcePerformanceHealthState|[userExperienceAnalyticsHealthState](../resources/intune-devices-userexperienceanalyticshealthstate.md)|The current health state of the user experience analytics 'ResourcePerformance' category. Possible values are: `unknown`, `insufficientData`, `needsAttention`, `meetingGoals`.|
 
 
 
@@ -75,7 +75,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsOverview
 Content-type: application/json
-Content-length: 999
+Content-length: 1005
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
@@ -104,7 +104,7 @@ Content-length: 999
   "bestPracticesHealthState": "insufficientData",
   "workFromAnywhereHealthState": "insufficientData",
   "appHealthState": "insufficientData",
-  "resourcePerformanceState": "insufficientData"
+  "resourcePerformanceHealthState": "insufficientData"
 }
 ```
 
@@ -113,7 +113,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1048
+Content-Length: 1054
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsOverview",
@@ -143,7 +143,7 @@ Content-Length: 1048
   "bestPracticesHealthState": "insufficientData",
   "workFromAnywhereHealthState": "insufficientData",
   "appHealthState": "insufficientData",
-  "resourcePerformanceState": "insufficientData"
+  "resourcePerformanceHealthState": "insufficientData"
 }
 ```
 

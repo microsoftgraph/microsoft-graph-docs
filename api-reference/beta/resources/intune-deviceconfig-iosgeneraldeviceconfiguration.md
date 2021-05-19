@@ -221,6 +221,7 @@ Inherits from [deviceConfiguration](../resources/intune-shared-deviceconfigurati
 |sharedDeviceBlockTemporarySessions|Boolean|Indicates whether or not to block temporary sessions on Shared iPads (iOS 13.4 or later).|
 |appClipsBlocked|Boolean|Prevents a user from adding any App Clips and removes any existing App Clips on the device.|
 |applePersonalizedAdsBlocked|Boolean|Limits Apple personalized advertising when true. Available in iOS 14 and later.|
+|nfcBlocked|Boolean|Disable NFC to prevent devices from pairing with other NFC-enabled devices. Available for iOS/iPadOS devices running 14.2 and later.|
 |kioskModeAppType|[iosKioskModeAppType](../resources/intune-deviceconfig-ioskioskmodeapptype.md)|Type of app to run in kiosk mode. Possible values are: `notConfigured`, `appStoreApp`, `managedApp`, `builtInApp`.|
 
 ## Relationships
@@ -535,6 +536,7 @@ Here is a JSON representation of the resource.
   "sharedDeviceBlockTemporarySessions": true,
   "appClipsBlocked": true,
   "applePersonalizedAdsBlocked": true,
+  "nfcBlocked": true,
   "kioskModeAppType": "String"
 }
 ```

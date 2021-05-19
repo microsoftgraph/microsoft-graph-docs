@@ -28,7 +28,7 @@ Together, the Microsoft Graph API, connectors (preview), and data connect power 
 
 Microsoft Graph exposes REST APIs and client libraries to access data on the following Microsoft cloud services:
 
-- Microsoft 365 services: Delve, Microsoft 365 compliance eDiscovery, Excel, Microsoft Bookings, Microsoft Search, Microsoft Teams, OneDrive, OneNote, Outlook/Exchange, Planner, SharePoint, Workplace Analytics.
+- Microsoft 365 core services: Bookings, Calendar, Delve, Excel, Microsoft 365 compliance eDiscovery, Microsoft Search, OneDrive, OneNote, Outlook/Exchange, People (Outlook contacts), Planner, SharePoint, Teams, To Do, Workplace Analytics.
 - Enterprise Mobility and Security services: Advanced Threat Analytics, Advanced Threat Protection, Azure Active Directory, Identity Manager, and Intune.
 - Windows 10 services: activities, devices, notifications, Universal Print.
 - Dynamics 365 Business Central.

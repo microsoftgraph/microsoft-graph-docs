@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/print/printers
 
 ##### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -97,22 +97,39 @@ Content-length: 1526
   "value": [
     {
       "id": "016b5565-3bbf-4067-b9ff-4d68167eb1a6",
-      "name": "PrinterName",
+      "displayName": "PrinterName",
       "manufacturer": "PrinterManufacturer",
       "model": "PrinterModel",
       "isShared": true,
       "registeredDateTime": "2020-02-04T00:00:00.0000000Z",
-      "acceptingJobs": true,
+      "isAcceptingJobs": true,
       "status": {
-        "processingState": "stopped",
-        "processingStateReasons": ["disconnected"],
-        "processingStateDescription": ""
+        "state": "stopped",
+        "details": [
+          "disconnected"
+        ],
+        "description": ""
       },
       "defaults": {
-        "copiesPerJob":1,
-        "documentMimeType": "application/oxps",
-        "finishings": ["none"],
-        "mediaType": "stationery"
+        "copiesPerJob": 1,
+        "finishings": [
+          "none"
+        ],
+        "mediaColor": "Unknown",
+        "mediaType": "stationery",
+        "mediaSize": "North America Letter",
+        "pagesPerSheet": 1,
+        "orientation": "portrait",
+        "outputBin": "auto",
+        "inputBin": "auto",
+        "contentType": "application/oxps",
+        "fitPdfToPage": false,
+        "multipageLayout": null,
+        "colorMode": "color",
+        "quality": "medium",
+        "duplexMode": "oneSided",
+        "dpi": 600,
+        "scaling": null
       },
       "location": {
         "latitude": 1.1,
@@ -128,9 +145,9 @@ Content-length: 1526
         "countryOrRegion": "USA",
         "site": "Puget Sound",
         "building": "Studio E",
-        "floorNumber": 1,
+        "floor": "1",
         "floorDescription": "First Floor",
-        "roomNumber": 1234,
+        "roomName": "1234",
         "roomDescription": "First floor copy room",
         "organization": [
             "C+AI",

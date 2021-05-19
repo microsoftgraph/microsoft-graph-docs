@@ -1,6 +1,6 @@
 ---
 title: "userConsentRequest: filterByCurrentUser"
-description: "Retrieve userConsentRequests for which the current user is the reviewer."
+description: "Retrieve userConsentRequest objects for which the current user is the reviewer."
 author: "psignoret"
 localization_priority: Normal
 ms.prod: "governance"
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve the [userConsentRequests](../resources/userconsentrequest.md) for an appConsentRequest for which the current user is the reviewer and the status of the userConsentRequest is `InProgress`.
+Retrieve a collection of [userConsentRequest](../resources/userconsentrequest.md) objects for accessing a specified app, for which the current user is the reviewer.
 
 ## Permissions
 
@@ -40,7 +40,7 @@ The following table shows the parameters that can be used with this function.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|on|consentRequestFilterByCurrentUserOptions|Filter to query userConsentRequests for an appConsentRequest for which the current user is a reviewer. Allowed value is `reviewer`. Required.|
+|on|consentRequestFilterByCurrentUserOptions|Filter to query userConsentRequest objects for an appConsentRequest object for which the current user is a reviewer. Allowed value is `reviewer`. Required.|
 
 ## Optional query parameters
 
@@ -58,12 +58,13 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a [userConsentRequest](../resources/userconsentrequest.md) collection in the response body.
+If successful, this function returns a `200 OK` response code and a collection of [userConsentRequest](../resources/userconsentrequest.md) objects in the response body.
 
-## Examples
+## Example
 
 ### Request
 
+In this request, you list all **userConsentRequest** objects for which the current user is the reviewer and the status is `Completed`.
 
 # [HTTP](#tab/http)
 <!-- {

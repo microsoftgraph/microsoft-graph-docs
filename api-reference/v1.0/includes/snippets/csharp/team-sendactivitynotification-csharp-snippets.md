@@ -20,6 +20,11 @@ var previewText = new ItemBody
 	Content = "New deployment requires your approval"
 };
 
+var recipient = new AadUserNotificationRecipient
+{
+	UserId = "569363e2-4e49-4661-87f2-16f245c5d66a"
+};
+
 var templateParameters = new List<KeyValuePair>()
 {
 	new KeyValuePair
@@ -29,8 +34,8 @@ var templateParameters = new List<KeyValuePair>()
 	}
 };
 
-await graphClient.Users["{user-id}"].Teamwork
-	.SendActivityNotification(topic,activityType,null,previewText,templateParameters)
+await graphClient.Teams["{team-id}"]
+	.SendActivityNotification(topic,activityType,null,previewText,templateParameters,recipient)
 	.Request()
 	.PostAsync();
 

@@ -11,7 +11,13 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
+
 Retrieve a [conversationMember](../resources/conversationmember.md) from a [chat](../resources/chat.md).
+
+> [!NOTE]
+> The membership IDs returned by the server must be treated as opaque strings. The client should not try to parse or make any assumptions about these resource IDs.
+>
+> The membership results could map to users from different tenants, as indicated in the response, in the future. The client should not assume that all members are from the current tenant only.
 
 ## Permissions
 
@@ -21,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 |---------|-------------|
 |Delegated (work or school account)| ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application| Not supported. |
+|Application| ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All. |
 
 > **Note**: Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc).
 
@@ -53,9 +59,6 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and a [conversationMember](../resources/conversationmember.md) object in the response body.
 
-> [!NOTE]
-> There are some known issues with this functionality. For details, see [known issues](/graph/known-issues#missing-properties-for-chat-members).
-
 ## Example
 
 ### Request
@@ -63,61 +66,62 @@ If successful, this method returns a `200 OK` response code and a [conversationM
 Here is an example of the request.
 
 
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_conversation_member_1"
+  "name": "get_conversation_member"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/chats/19:cf66807577b149cca1b7af0c32eec122@thread.v2/members/141c574c-dd90-4131-b173-baf4bb0e894e
+GET https://graph.microsoft.com/v1.0/chats/19:b8577894a63548969c5c92bb9c80c5e1@thread.v2/members/MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiODU3Nzg5NGE2MzU0ODk2OWM1YzkyYmI5YzgwYzVlMUB0aHJlYWQudjIjIzJjOGQyYjVjLTE4NDktNDA2Ni1iNTdkLWU3YTBlOWU0NGVjOA==
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-conversation-member-1-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-conversation-member-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-conversation-member-1-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-conversation-member-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-conversation-member-1-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-conversation-member-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-conversation-member-1-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-conversation-member-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
-
 
 
 ### Response
 
 Here is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 <!-- 
 {
- "blockType": "response",
+  "blockType": "response",
   "truncated": true,
-  "name": "get_conversation_member_1",
+  "name": "get_conversation_member",
   "@odata.type": "microsoft.graph.conversationMember"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 201
 
 {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#chats('19%3Ab8577894a63548969c5c92bb9c80c5e1%40thread.v2')/members/$entity",
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
-    "id": "07ad17ad-ada5-4f1f-a650-7a963886a8a7",
-    "roles": [ "owner" ],
-    "displayName": "Minna Pham",
-    "userId": "07ad17ad-ada5-4f1f-a650-7a963886a8a7",
-    "email": null,
-    "tenantId": "6e5147da-6a35-4275-b3f3-fc069456b6eb",
-    "visibleHistoryStartDateTime": "2019-04-18T23:51:43.255Z"
+    "id": "MCMjMjQzMmI1N2ItMGFiZC00M2RiLWFhN2ItMTZlYWRkMTE1ZDM0IyMxOTpiODU3Nzg5NGE2MzU0ODk2OWM1YzkyYmI5YzgwYzVlMUB0aHJlYWQudjIjIzJjOGQyYjVjLTE4NDktNDA2Ni1iNTdkLWU3YTBlOWU0NGVjOA==",
+    "roles": [
+        "owner"
+    ],
+    "displayName": "John Doe",
+    "visibleHistoryStartDateTime": "0001-01-01T00:00:00Z",
+    "userId": "2c8d2b5c-1849-4066-b57d-e7a0e9e44ec8",
+    "email": "johndoe@contoso.onmicrosoft.com",
+    "tenantId": "b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
 }
 ```
 

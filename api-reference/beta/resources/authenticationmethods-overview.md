@@ -39,6 +39,14 @@ The authentication method APIs are used to manage a user's authentication method
 |[windowsHelloForBusinessAuthenticationMethod](windowsHelloForBusinessAuthenticationMethod.md)|Windows Hello for Business is a passwordless sign-in method on Windows devices.|See devices where a user has enabled Windows Hello for Business sign-in. Delete a Windows Hello for Business credential.|
 |[temporaryaccesspassauthenticationmethod](temporaryaccesspassauthenticationmethod.md)|Temporary Access Pass is a time-limited passcode that serves as a strong credential and allows onboarding of passwordless credentials. | Set a new Temporary Access Pass on a user.|
 
+The following authentication methods are not yet supported in Microsoft Graph beta.
+
+|Authentication method       | Description |Examples     |
+|:---------------------------|:------------|:------------|
+|Hardware token | Allow users to perform multifactor authentication using a physical device that provides a one-time code. | Get a hardware token assigned to a user.|
+|Software token | Allow users to perform multifactor authentication using an application that supporters the OATH specification and provides a one-time code. | Get and delete a software token assigned to a user.|
+|Security questions and answers | Allow users to validate their identity when performing a self-service password reset. |Delete a security question a user registered.|
+|Default method | Represents the method the user has selected as default for performing multi-factor authentication.| Change a user's default MFA method.|
 
 ## Next steps
 

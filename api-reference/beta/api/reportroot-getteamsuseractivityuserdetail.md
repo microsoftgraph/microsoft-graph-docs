@@ -75,7 +75,22 @@ The CSV file has the following headers for columns.
 - Private Chat Message Count
 - Call Count
 - Meeting Count
+- Meetings Organized Count
+- Meetings Attended Count
+- Ad Hoc Meetings Organized Count
+- Ad Hoc Meetings Attended Count
+- Scheduled One-time Meetings Organized Count
+- Scheduled One-time Meetings Attended Count
+- Scheduled Recurring Meetings Organized Count
+- Scheduled Recurring Meetings Attended Count
+- Audio Duration
+- Video Duration
+- Screen Share Duration
+- Audio Duration In Seconds
+- Video Duration In Seconds
+- Screen Share Duration In Seconds
 - Has Other Action
+- Is Licensed
 - Report Period
 
 ### JSON
@@ -129,7 +144,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Has Other Action,Report Period
+Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Assigned Products,Team Chat Message Count,Private Chat Message Count,Call Count,Meeting Count,Meetings Organized Count,Meetings Attended Count,Ad Hoc Meetings Organized Count,Ad Hoc Meetings Attended Count,Scheduled One-time Meetings Organized Count,Scheduled One-time Meetings Attended Count,Scheduled Recurring Meetings Organized Count,Scheduled Recurring Meetings Attended Count,Audio Duration,Video Duration,Screen Share Duration,Audio Duration In Seconds,Video Duration In Seconds,Screen Share Duration In Seconds,Has Other Action,Is Licensed,Report Period
 ```
 
 ### JSON
@@ -155,7 +170,7 @@ GET https://graph.microsoft.com/beta/reports/getTeamsUserActivityUserDetail(peri
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -174,6 +189,7 @@ Content-Length: 452
     {
       "reportRefreshDate": "2017-09-01", 
       "userPrincipalName": "userPrincipalName-value", 
+      "isLicensed": true, 
       "lastActivityDate": "2017-09-01", 
       "isDeleted": false, 
       "deletedDate": null, 
@@ -184,6 +200,17 @@ Content-Length: 452
       "privateChatMessageCount": 49, 
       "callCount": 2, 
       "meetingCount": 0, 
+      "meetingsOrganizedCount": 0, 
+      "meetingsAttendedCount": 0, 
+      "adHocMeetingsOrganizedCount": 0, 
+      "adHocMeetingsAttendedCount": 0, 
+      "scheduledOneTimeMeetingsOrganizedCount": 0, 
+      "scheduledOneTimeMeetingsAttendedCount": 0, 
+      "scheduledRecurringMeetingsOrganizedCount": 0, 
+      "scheduledRecurringMeetingsAttendedCount": 0, 
+      "audioDuration": 00:00:00, 
+      "videoDuration": 00:00:00, 
+      "screenShareDuration": 00:00:00, 
       "hasOtherAction": true, 
       "reportPeriod": "7"
     }

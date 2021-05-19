@@ -12,7 +12,8 @@ const client = Client.init(options);
 
 const b2cAuthenticationMethodsPolicy = {
     isEmailPasswordAuthenticationEnabled: false,
-    isUserNameAuthenticationEnabled: true
+    isUserNameAuthenticationEnabled: true,
+    isPhoneOneTimePasswordAuthenticationEnabled: true
 };
 
 await client.api('/policies/b2cAuthenticationMethodsPolicy')

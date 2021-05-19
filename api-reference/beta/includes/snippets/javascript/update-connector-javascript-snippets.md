@@ -11,7 +11,7 @@ const options = {
 const client = Client.init(options);
 
 const printConnector = {
-  name: 'ConnectorName',
+  displayName: 'ConnectorName',
   fullyQualifiedDomainName: 'CONNECTOR-MACHINE',
   operatingSystem: 'Microsoft Windows 10 Enterprise Insider Preview | 10.0.19555',
   appVersion: '0.19.7338.23496',

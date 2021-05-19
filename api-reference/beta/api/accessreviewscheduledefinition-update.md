@@ -133,7 +133,7 @@ PUT https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 
 ### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

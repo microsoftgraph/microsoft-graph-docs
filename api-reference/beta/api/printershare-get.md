@@ -29,8 +29,8 @@ In addition to the following permissions, the user or app's tenant must have an 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /print/shares/{id}
-GET /print/printers/{id}/share
+GET /print/shares/{printerShareId}
+GET /print/printers/{printerId}/shares/{printerShareId}
 ```
 
 ## Optional query parameters
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/beta/print/shares/{id}
 
 ### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -107,7 +107,7 @@ Content-length: 225
 ```
 
 The following is an example of the response, when using $select=id,displayName,capabilities
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

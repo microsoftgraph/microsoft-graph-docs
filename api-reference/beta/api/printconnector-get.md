@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/beta/print/connectors/{id}
 
 ##### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -109,9 +109,9 @@ Content-length: 1097
     "countryOrRegion": "USA",
     "site": "Puget Sound",
     "building": "Studio E",
-    "floorNumber": 1,
+    "floor": "1",
     "floorDescription": "First Floor",
-    "roomNumber": 1234,
+    "roomName": "1234",
     "roomDescription": "First floor copy room",
     "organization": [
         "C+AI",

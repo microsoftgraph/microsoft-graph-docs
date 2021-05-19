@@ -83,7 +83,7 @@ Content-length: 491
     "@odata.type": "#microsoft.graph.emailAuthenticationMethodConfiguration",
     "id": "Email",
     "state": "enabled",
-    "allowExternalIdToUseEmailOtp": "True"
+    "allowExternalIdToUseEmailOtp": "enabled"
   }
 }
 ```

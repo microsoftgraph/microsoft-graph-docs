@@ -2,7 +2,6 @@
 author: namkedia
 ms.topic: include
 ms.date: 02/23/2021
-ms.author: namkedia
 ---
 
 <!-- markdownlint-disable MD041-->

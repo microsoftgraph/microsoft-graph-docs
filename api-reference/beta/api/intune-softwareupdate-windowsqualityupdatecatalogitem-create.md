@@ -51,6 +51,7 @@ The following table shows the properties that are required when you create the w
 |id|String|The catalog item id. Inherited from [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |displayName|String|The display name for the catalog item. Inherited from [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |releaseDateTime|DateTimeOffset|The date the catalog item was released Inherited from [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
+|endOfSupportDate|DateTimeOffset|The last supported date for a catalog item Inherited from [windowsUpdateCatalogItem](../resources/intune-softwareupdate-windowsupdatecatalogitem.md)|
 |kbArticleId|String|Knowledge base article id|
 |classification|[windowsQualityUpdateClassification](../resources/intune-softwareupdate-windowsqualityupdateclassification.md)|Classification of the quality update. Possible values are: `all`, `security`, `nonSecurity`.|
 |isExpeditable|Boolean|Flag indicating if update qualifies for expedite|
@@ -67,12 +68,13 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/windowsUpdateCatalogItems
 Content-type: application/json
-Content-length: 272
+Content-length: 332
 
 {
   "@odata.type": "#microsoft.graph.windowsQualityUpdateCatalogItem",
   "displayName": "Display Name value",
   "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
+  "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00",
   "kbArticleId": "Kb Article Id value",
   "classification": "security",
   "isExpeditable": true
@@ -84,13 +86,14 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 321
+Content-Length: 381
 
 {
   "@odata.type": "#microsoft.graph.windowsQualityUpdateCatalogItem",
   "id": "8eb831ba-31ba-8eb8-ba31-b88eba31b88e",
   "displayName": "Display Name value",
   "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
+  "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00",
   "kbArticleId": "Kb Article Id value",
   "classification": "security",
   "isExpeditable": true

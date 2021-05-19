@@ -19,12 +19,14 @@ For example, you can:
 - Get details of an onlineMeeting using [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [meeting ID](#example-2-retrieve-an-online-meeting-by-meeting-id), or [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
 - Use the `/attendeeReport` path to get an attendee report of a live event, as shown in [example 4](#example-4-retrieve-the-attendee-report-of-a-live-event).
 - Use the `/recording` and `/alternativeRecording` paths to get the recordings of a live event, as shown in [example 5](#example-5-retrieve-the-recording-of-a-live-event).
+- Use the `/meetingAttendanceReport` path to get the attendance report for a scheduled meeting, as shown in [example 6](#example-6-retrieve-the-attendance-report-of-a-meeting).
 
->**Notes:** 
->- Currently, attendee reports and recordings are available only to live events.
->- Only the event organizer can access attendee reports and recordings.
->- Attendee reports and recordings are only available when the live event has concluded.
->- The download link in the `302 Found` [response](#example-4-retrieve-the-attendee-report-of-a-live-event) expires in **60** seconds.
+> [!NOTE]
+>- Meeting attendance reports are available for meetings other than live events, and are only available when the meeting has concluded.
+>- Only the meeting organizer can access meeting attendance reports.
+>- Recordings and attendee reports are only available for live events, and are only available when the live event has concluded.
+>- Only the live event organizer can access attendee reports and recordings.
+>- The download links for the live event attendee report and recordings expire in 60 seconds.
 
 ## Permissions
 
@@ -79,7 +81,13 @@ GET /users/{userId}/onlineMeetings/{meetingId}/recording
 GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 ```
 
->**Notes:**
+To get the attendance report of a meeting with delegated permission:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
+```
+
+> [!NOTE]
 >- The `/app` path is deprecated. Going forward, use the `/communications` path.
 >- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
 >- `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
@@ -141,7 +149,7 @@ GET https://graph.microsoft.com/beta/communications/onlineMeetings/?$filter=Vide
 
 #### Response
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -209,7 +217,9 @@ Content-Length: 1574
     "isDialInBypassEnabled": true
   },
   "isEntryExitAnnounced": true,
-  "allowedPresenters": "everyone"
+  "allowedPresenters": "everyone",
+  "allowMeetingChat": "enabled",
+  "allowTeamworkReactions": true
 }
 ```
 >**Note:** If 'Accept-Language: ja' is specified to indicate Japanese, for example, the response will include the following.
@@ -255,6 +265,8 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
     "autoAdmittedUsers": "EveryoneInCompany",
     "isEntryExitAnnounced": true,
     "allowedPresenters": "everyone",
+    "allowMeetingChat": "enabled",
+    "allowTeamworkReactions": true,
     "videoTeleconferenceId": "(redacted)",
     "participants": {
         "organizer": {
@@ -314,6 +326,8 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
             "autoAdmittedUsers": "EveryoneInCompany",
             "isEntryExitAnnounced": true,
             "allowedPresenters": "everyone",
+            "allowMeetingChat": "enabled",
+            "allowTeamworkReactions": true,
             "videoTeleconferenceId": "(redacted)",
             "participants": {
                 "organizer": {
@@ -439,3 +453,105 @@ Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-51
   ]
 }
 -->
+
+### Example 6: Retrieve the attendance report of a meeting
+The following example shows a request to get a meeting attendance report.
+
+#### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["dc74d9bb-6afe-433d-8eaa-e39d80d3a647", "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy"],
+  "name": "get-meetingAttendanceReport"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/meetingAttendanceReport
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-meetingattendancereport-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-meetingattendancereport-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-meetingattendancereport-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-meetingattendancereport-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+---
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.meetingAttendanceReport"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 1876
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('dc74d9bb-6afe-433d-8eaa-e39d80d3a647')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy')/meetingAttendanceReport/$entity",
+    "attendanceRecords": [
+        {
+            "emailAddress": "email address",
+            "totalAttendanceInSeconds": 1558,
+            "role": "Organizer",
+            "identity": {
+                "id": "dc74d9bb-6afe-433d-8eaa-e39d80d3a647",
+                "displayName": "(redacted)",
+                "tenantId": null
+            },
+            "attendanceIntervals": [
+                {
+                    "joinDateTime": "2021-03-16T18:59:46.598956Z",
+                    "leaveDateTime": "2021-03-16T19:25:45.4473057Z",
+                    "durationInSeconds": 1558
+                }
+            ]
+        },
+        {
+            "emailAddress": "email address",
+            "totalAttendanceInSeconds": 1152,
+            "role": "Presenter",
+            "identity": {
+                "id": "(redacted)",
+                "displayName": "(redacted)",
+                "tenantId": null
+            },
+            "attendanceIntervals": [
+                {
+                    "joinDateTime": "2021-03-16T18:59:52.2782182Z",
+                    "leaveDateTime": "2021-03-16T19:06:47.7218491Z",
+                    "durationInSeconds": 415
+                },
+                {
+                    "joinDateTime": "2021-03-16T19:09:23.9834702Z",
+                    "leaveDateTime": "2021-03-16T19:16:31.1381195Z",
+                    "durationInSeconds": 427
+                },
+                {
+                    "joinDateTime": "2021-03-16T19:20:27.7094382Z",
+                    "leaveDateTime": "2021-03-16T19:25:37.7121956Z",
+                    "durationInSeconds": 310
+                }
+            ]
+        }
+    ]
+}
+
+```

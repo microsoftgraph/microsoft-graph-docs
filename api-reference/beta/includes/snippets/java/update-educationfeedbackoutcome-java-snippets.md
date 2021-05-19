@@ -14,7 +14,7 @@ text.contentType = BodyType.TEXT;
 feedback.text = text;
 educationOutcome.feedback = feedback;
 
-graphClient.education().me().assignments("{id}").submissions("{id}").outcomes("{id}")
+graphClient.education().classes("{id}").assignments("{id}").submissions("{id}").outcomes("{id}")
 	.buildRequest()
 	.patch(educationOutcome);
 

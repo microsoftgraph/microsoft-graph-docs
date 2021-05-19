@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 |---------|-------------|
 |Delegated (work or school account)| ChatMember.Read, ChatMember.ReadWrite, Chat.ReadBasic, Chat.Read, Chat.ReadWrite |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application| Not supported. |
+|Application| ChatMember.Read.All, ChatMember.ReadWrite.All, Chat.ReadBasic.All, Chat.Read.All, Chat.ReadWrite.All. |
 
 > [!NOTE]
 > Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
@@ -55,9 +55,6 @@ Do not supply a request body for this method.
 ## Response
 
 If successful, this method returns a `200 OK` response code and a list of [conversationMember](../resources/conversationmember.md) objects in the response body.
-
-> [!NOTE]
-> There are some known issues with this functionality. For details, see [known issues](/graph/known-issues#missing-properties-for-chat-members).
 
 ## Example
 
@@ -93,12 +90,11 @@ GET https://graph.microsoft.com/v1.0/me/chats/19:8b081ef6-4792-4def-b2c9-c363a1b
 ---
 
 
-
 ### Response
 
 Here is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -107,7 +103,6 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 201
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')/chats('19%3A8b081ef6-4792-4def-b2c9-c363a1bf41d5_5031bb31-22c0-4f6f-9f73-91d34ab2b32d%40unq.gbl.spaces')/members",
@@ -116,7 +111,9 @@ Content-length: 201
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
             "id": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-            "roles": [ "owner" ],
+            "roles": [
+                "owner"
+            ],
             "displayName": "John Doe",
             "userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
             "email": null,
@@ -126,7 +123,9 @@ Content-length: 201
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
             "id": "2de87aaf-844d-4def-9dee-2c317f0be1b3",
-            "roles": [ "owner" ],
+            "roles": [
+                "owner"
+            ],
             "displayName": "Bart Hogan",
             "userId": "2de87aaf-844d-4def-9dee-2c317f0be1b3",
             "email": null,
@@ -136,7 +135,9 @@ Content-length: 201
         {
             "@odata.type": "#microsoft.graph.aadUserConversationMember",
             "id": "07ad17ad-ada5-4f1f-a650-7a963886a8a7",
-            "roles": [ "owner" ],
+            "roles": [
+                "owner"
+            ],
             "displayName": "Minna Pham",
             "userId": "07ad17ad-ada5-4f1f-a650-7a963886a8a7",
             "email": null,

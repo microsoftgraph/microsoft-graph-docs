@@ -27,7 +27,7 @@ In [userConsentRequests](../resources/userconsentrequest.md), the approval objec
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|The identifier of the approval object.|
+|id|String|The identifier of the approval object.  In entitlement management, it is the same identifier as the identifier of the [access package assignment request](accesspackageassignmentrequest.md).|
 |steps|[approvalStep](../resources/approvalstep.md) collection|Used to represent the decision associated with a single step in the approval process configured in [approvalStage](../resources/approvalstage.md).|
 
 ## Relationships

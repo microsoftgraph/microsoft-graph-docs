@@ -7,7 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 PrinterShare printerShare = new PrinterShare();
-printerShare.name = "ShareName";
+printerShare.displayName = "ShareName";
+printerShare.allowAllUsers = true;
 printerShare.additionalDataManager().put("printer@odata.bind", new JsonPrimitive("https://graph.microsoft.com/beta/print/printers/{id}"));
 
 graphClient.print().shares("{id}")

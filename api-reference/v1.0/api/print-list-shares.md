@@ -21,7 +21,7 @@ To use the Universal Print service, the user or app's tenant must have an active
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
-|Delegated (work or school account)| PrinterShare.Read.All, PrinterShare.ReadWrite.All |
+|Delegated (work or school account)| PrinterShare.ReadBasic.All, PrinterShare.Read.All, PrinterShare.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not Supported.|
 |Application|Not Supported.|
 

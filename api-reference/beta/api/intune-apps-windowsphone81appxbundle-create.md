@@ -93,7 +93,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceAppManagement/mobileApps
 Content-type: application/json
-Content-length: 2468
+Content-length: 2518
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81AppXBundle",
@@ -139,7 +139,8 @@ Content-length: 2468
     "v10_1809": true,
     "v10_1903": true,
     "v10_1909": true,
-    "v10_2004": true
+    "v10_2004": true,
+    "v10_2H20": true
   },
   "phoneProductIdentifier": "Phone Product Identifier value",
   "phonePublisherId": "Phone Publisher Id value",
@@ -165,7 +166,8 @@ Content-length: 2468
         "v10_1809": true,
         "v10_1903": true,
         "v10_1909": true,
-        "v10_2004": true
+        "v10_2004": true,
+        "v10_2H20": true
       }
     }
   ]
@@ -177,7 +179,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 2640
+Content-Length: 2690
 
 {
   "@odata.type": "#microsoft.graph.windowsPhone81AppXBundle",
@@ -226,7 +228,8 @@ Content-Length: 2640
     "v10_1809": true,
     "v10_1903": true,
     "v10_1909": true,
-    "v10_2004": true
+    "v10_2004": true,
+    "v10_2H20": true
   },
   "phoneProductIdentifier": "Phone Product Identifier value",
   "phonePublisherId": "Phone Publisher Id value",
@@ -252,7 +255,8 @@ Content-Length: 2640
         "v10_1809": true,
         "v10_1903": true,
         "v10_1909": true,
-        "v10_2004": true
+        "v10_2004": true,
+        "v10_2H20": true
       }
     }
   ]

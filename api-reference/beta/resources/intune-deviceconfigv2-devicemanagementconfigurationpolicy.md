@@ -26,6 +26,7 @@ Device Management Configuration Policy
 |[Delete deviceManagementConfigurationPolicy](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-delete.md)|None|Deletes a [deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md).|
 |[Update deviceManagementConfigurationPolicy](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-update.md)|[deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md)|Update the properties of a [deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md) object.|
 |[assign action](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-assign.md)|[deviceManagementConfigurationPolicyAssignment](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicyassignment.md) collection|Not yet documented|
+|[createCopy action](../api/intune-deviceconfigv2-devicemanagementconfigurationpolicy-createcopy.md)|[deviceManagementConfigurationPolicy](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicy.md)|Not yet documented|
 
 ## Properties
 |Property|Type|Description|
@@ -41,6 +42,7 @@ Device Management Configuration Policy
 |creationSource|String|Policy creation source|
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
 |isAssigned|Boolean|Policy assignment status. This property is read-only.|
+|templateReference|[deviceManagementConfigurationPolicyTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicytemplatereference.md)|Template reference information|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -71,7 +73,14 @@ Here is a JSON representation of the resource.
   "roleScopeTagIds": [
     "String"
   ],
-  "isAssigned": true
+  "isAssigned": true,
+  "templateReference": {
+    "@odata.type": "microsoft.graph.deviceManagementConfigurationPolicyTemplateReference",
+    "templateId": "String",
+    "templateFamily": "String",
+    "templateDisplayName": "String",
+    "templateDisplayVersion": "String"
+  }
 }
 ```
 

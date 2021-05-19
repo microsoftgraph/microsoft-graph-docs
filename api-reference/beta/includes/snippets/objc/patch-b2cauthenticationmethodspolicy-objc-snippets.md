@@ -13,6 +13,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSGraphB2cAuthenticationMethodsPolicy *b2cAuthenticationMethodsPolicy = [[MSGraphB2cAuthenticationMethodsPolicy alloc] init];
 [b2cAuthenticationMethodsPolicy setIsEmailPasswordAuthenticationEnabled: false];
 [b2cAuthenticationMethodsPolicy setIsUserNameAuthenticationEnabled: true];
+[b2cAuthenticationMethodsPolicy setIsPhoneOneTimePasswordAuthenticationEnabled: true];
 
 NSError *error;
 NSData *b2cAuthenticationMethodsPolicyData = [b2cAuthenticationMethodsPolicy getSerializedDataWithError:&error];

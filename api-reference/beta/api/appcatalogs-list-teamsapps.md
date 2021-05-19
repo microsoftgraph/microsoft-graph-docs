@@ -458,6 +458,8 @@ The following example lists only those apps that can be installed in the persona
 
 #### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "list_teamsapp_in_personal_scope"
@@ -466,6 +468,24 @@ The following example lists only those apps that can be installed in the persona
 ```msgraph-interactive
 GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$expand=appDefinitions($select=id,displayName,allowedInstallationScopes)&$filter=appDefinitions/any(a:a/allowedInstallationScopes has 'personal')
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-in-personal-scope-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-teamsapp-in-personal-scope-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-teamsapp-in-personal-scope-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-teamsapp-in-personal-scope-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 ---
 
 #### Response

@@ -29,7 +29,7 @@ Authentication providers implement the code required to acquire a token using th
 | [Mobile app that calls web APIs](/azure/active-directory/develop/scenario-mobile-acquire-token) | | | |
 | | Interactive | Delegated Consumer/Org | [Interactive Provider](#InteractiveProvider) |
 
-> Note: Java and android developers need to add the [azure-identity](https://docs.microsoft.com/java/api/overview/azure/identity-readme?view=azure-java-stable) library in order to get access to the different credentials types.
+> Note: Java and android developers need to add the [azure-identity](/java/api/overview/azure/identity-readme?view=azure-java-stable) library in order to get access to the different credentials types.
 
 ## <a name="AuthCodeProvider" ></a>Authorization code provider
 
@@ -82,11 +82,11 @@ Not applicable.
 
 # [PHP](#tab/PHP)
 
-Not yet available. Please support or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+Not yet available. Please support or open a [Microsoft Graph feature request](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) if this is important to you.
 
 # [Ruby](#tab/Ruby)
 
-Not available, yet. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+Not available, yet. Please vote for or open a [Microsoft Graph feature request](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) if this is important to you.
 
 ---
 
@@ -140,11 +140,11 @@ Not applicable.
 
 # [PHP](#tab/PHP)
 
-Not available, yet. Please support or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+Not available, yet. Please support or open a [Microsoft Graph feature request](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) if this is important to you.
 
 # [Ruby](#tab/Ruby)
 
-Not available, yet. Please support or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+Not available, yet. Please support or open a [Microsoft Graph feature request](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) if this is important to you.
 
 ---
 
@@ -170,7 +170,7 @@ Authorization code, client credential, and on-behalf-of OAuth flows require that
 
 # [Java](#tab/Java)
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+Not yet available. Please vote for or open a [Microsoft Graph feature request](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) if this is important to you.
 
 # [Android](#tab/Android)
 
@@ -182,11 +182,11 @@ Not applicable.
 
 # [PHP](#tab/PHP)
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+Not yet available. Please vote for or open a [Microsoft Graph feature request](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) if this is important to you.
 
 # [Ruby](#tab/Ruby)
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+Not yet available. Please vote for or open a [Microsoft Graph feature request](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) if this is important to you.
 
 ---
 
@@ -260,7 +260,7 @@ DeviceCodeProvider authProvider = new DeviceCodeProvider(publicClientApplication
 
 # [Javascript](#tab/Javascript)
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+Not yet available. Please vote for or open a [Microsoft Graph feature request](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) if this is important to you.
 
 # [Java](#tab/Java)
 
@@ -293,11 +293,11 @@ Not applicable.
 
 # [PHP](#tab/PHP)
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+Not yet available. Please vote for or open a [Microsoft Graph feature request](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) if this is important to you.
 
 # [Ruby](#tab/Ruby)
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+Not yet available. Please vote for or open a [Microsoft Graph feature request](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) if this is important to you.
 
 ---
 
@@ -358,7 +358,7 @@ InteractiveAuthenticationProvider authProvider = new InteractiveAuthenticationPr
 
 # [Javascript](#tab/Javascript)
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+Not yet available. Please vote for or open a [Microsoft Graph feature request](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) if this is important to you.
 
 # [Java](#tab/Java)
 
@@ -444,7 +444,7 @@ User me = await graphClient.Me.Request()
 
 # [Javascript](#tab/Javascript)
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+Not yet available. Please vote for or open a [Microsoft Graph feature request](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) if this is important to you.
 
 # [Java](#tab/Java)
 
@@ -476,15 +476,16 @@ Not applicable.
 
 # [PHP](#tab/PHP)
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+Not yet available. Please vote for or open a [Microsoft Graph feature request](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) if this is important to you.
 
 # [Ruby](#tab/Ruby)
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+Not yet available. Please vote for or open a [Microsoft Graph feature request](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) if this is important to you.
 
 ---
 
 ## Next steps
 
+* For code samples that show you how to use the Microsoft identity platform to secure different application types, see [Microsoft identity platform code samples (v2.0 endpoint)](/azure/active-directory/develop/sample-v2-code).
 * Authentication providers require an client ID. You'll want to [register your application](https://portal.azure.com/) after you set up your authentication provider.
-* Let us know if a required OAuth flow isn't currently supported by voting for or opening a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests).
+* Let us know if a required OAuth flow isn't currently supported by voting for or opening a [Microsoft Graph feature request](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).

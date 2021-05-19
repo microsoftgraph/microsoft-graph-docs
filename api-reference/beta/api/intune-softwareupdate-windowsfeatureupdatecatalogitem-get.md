@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 281
+Content-Length: 343
 
 {
   "value": {
@@ -71,6 +71,7 @@ Content-Length: 281
     "id": "cbd85729-5729-cbd8-2957-d8cb2957d8cb",
     "displayName": "Display Name value",
     "releaseDateTime": "2017-01-01T00:01:34.7470482-08:00",
+    "endOfSupportDate": "2017-01-01T00:02:08.3437725-08:00",
     "version": "Version value"
   }
 }

@@ -28,38 +28,38 @@ This is step 4 of the [process to migrate apps](migrate-azure-ad-graph-planning-
     Microsoft Graph supports many new Azure AD datasets and features that are not available in Azure AD Graph, including: 
 
     - [Microsoft 365 group management](./office365-groups-concept-overview.md)
-    - [External user invitations](/graph/api/resources/invitation?view=graph-rest-1.0)
-    - The ability to [restore users and Microsoft 365 groups](/graph/api/resources/directory?view=graph-rest-1.0) after they've been deleted
-    - [Webhook notifications on users and groups](./webhooks.md?toc=.%252fref%252ftoc.json&view=graph-rest-1.0)
+    - [External user invitations](/graph/api/resources/invitation)
+    - The ability to [restore users and Microsoft 365 groups](/graph/api/resources/directory) after they've been deleted
+    - [Webhook notifications on users and groups](./webhooks.md?toc=.%252fref%252ftoc.json)
     - Identity governance features such as:
-      - [Privileged identity management](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta) (PIM) to elevate users to privileged roles only when needed and for a limited time period
-      - [Access reviews](/graph/api/resources/accessreviews-root?view=graph-rest-beta) for one-time or recurring access reviews for attestation of user's access rights
-      - [Terms-of-use](/graph/api/resources/accessreviews-root?view=graph-rest-beta) to enable organizations to present information for legal or compliance requirements, like disclaimer notices
+      - [Privileged identity management](/graph/api/resources/privilegedidentitymanagement-root?view=graph-rest-beta&preserve-view=true) (PIM) to elevate users to privileged roles only when needed and for a limited time period
+      - [Access reviews](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) for one-time or recurring access reviews for attestation of user's access rights
+      - [Terms-of-use](/graph/api/resources/agreement) to enable organizations to present information for legal or compliance requirements, like disclaimer notices
     - Security features such as:
-      - [Identity risk events](/graph/api/resources/identityriskevent?view=graph-rest-1.0)
-      - [Risky users](/graph/api/resources/riskyuser?view=graph-rest-1.0)
-    - [Client libraries and samples](./index.yml) available on many more platforms and languages. The Microsoft Graph SDKs provide a discoverable interface to easily access your data while transparently handling token acquisition, retry handling due to errors and throttling, secure redirect handling and model serialization and deserialization.
+      - [Identity risk events](/graph/api/resources/riskdetection)
+      - [Risky users](/graph/api/resources/riskyuser)
+    - [Client libraries and samples](/graph/sdks/sdks-overview) available on many more platforms and languages. The Microsoft Graph SDKs provide a discoverable interface to easily access your data while transparently handling token acquisition, retry handling due to errors and throttling, secure redirect handling and model serialization and deserialization.
 
     Microsoft Graph offers access to many more services than just Azure Active Directory. It's the [API gateway to Microsoft 365 services too](./index.yml).
     Check for new datasets and capabilities regularly.  
 
-    - Take a look at [what you can do with Microsoft Graph](/graph/examples)
-    - Explore the [Microsoft Graph blog](/graph/blogs) for the latest news about Microsoft Graph and some great learning series.
-    - The [changelog](/greaph/changelog) summarizes service and document updates. Following these updates will help you track new APIs introduced to /beta (preview) and those promoted to v1.0 (GA).  These new APIs can provide new ways for you to add more value and new experiences to your apps.  
+    - Take a look at [what you can do with Microsoft Graph](https://developer.microsoft.com/graph/examples)
+    - Explore the [Microsoft Graph blog](https://developer.microsoft.com/graph/blogs) for the latest news about Microsoft Graph and some great learning series.
+    - The [changelog](/graph/changelog) summarizes service and document updates. Following these updates will help you track new APIs introduced to /beta (preview) and those promoted to v1.0 (GA).  These new APIs can provide new ways for you to add more value and new experiences to your apps.  
 
 ## See also
 
 If you run into problems or need help during the migration process, you can:
 
 - Review the [checklist](migrate-azure-ad-graph-planning-checklist.md) again
-- Post questions to [Microsoft Q&A](https://docs.microsoft.com/answers/topics/microsoft-graph-applications.html) 
+- Post questions to [Microsoft Q&A](/answers/topics/microsoft-graph-applications.html) 
 - Review Microsoft Graph samples to contrast and compare with your existing application code:
   - **Apps that use the REST API**: explore [quick starts and samples](https://developer.microsoft.com/graph/get-started), choosing your platform of choice and run through the quick start or search for an appropriate sample
   - **App that use the .NET client library**: review [console-csharp-snippets-sample](https://github.com/microsoftgraph/console-csharp-snippets-sample) and/or [dotnetcore-console-sample](https://github.com/microsoftgraph/dotnetcore-console-sample)
 
 ## Next Steps
 
-- Use [quick starts and samples](/graph/get-started) to come up to speed quickly.
-- Leverage [client libraries and SDKs](https://developer.microsoft.com/graph/get-started) to develop custom applications 
+- Use [quick starts and samples](https://developer.microsoft.com/graph/get-started) to come up to speed quickly.
+- Leverage [client libraries and SDKs](/graph/sdks/sdks-overview) to develop custom applications 
 - Explore [Microsoft Graph](./overview.md) concepts and practices.
 - Use [Graph Explorer](https://aka.ms/ge) to experiment with Microsoft Graph.

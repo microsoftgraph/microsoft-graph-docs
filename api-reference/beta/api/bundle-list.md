@@ -119,7 +119,7 @@ Content-type: application/json
 }
 ```
 
-The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+The response object shown here might be shortened for readability.
 
 
 ### Example 2: List all photo albums in a drive
@@ -193,7 +193,7 @@ Content-type: application/json
 }
 ```
 
-The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+The response object shown here might be shortened for readability.
 
 
 [bundle]: ../resources/bundle.md

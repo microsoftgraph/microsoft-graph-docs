@@ -2,7 +2,6 @@
 title: "relatedContact resource type"
 description: "Contact record related to an educationUser that provides information for guardians, aides, doctors, and so on."
 author: "mmast-msft"
-ms.author: "mmast-msft"
 localization_priority: Normal
 ms.prod: "education"
 doc_type: resourcePageType

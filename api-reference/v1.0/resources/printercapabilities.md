@@ -29,8 +29,8 @@ Represents the capabilities reported by a printer/printerShare.
 |copiesPerJob|[integerRange](integerrange.md)|The range of copies per job supported by the printer.|
 |finishings|[printFinishing](enums.md#printfinishing-values) collection|Finishing processes the printer supports for a printed document.|
 |mediaColors|String collection|The media (i.e., paper) colors supported by the printer.|
-|mediaTypes|String collection|The media types supported by the printer. Valid values are described in the following table.|
-|mediaSizes|String collection|The media sizes supported by the printer. Supports standard size names for ISO and ANSI media sizes, along with any custom sizes supported by the associated printer.|
+|mediaTypes|String collection|The media types supported by the printer.|
+|mediaSizes|String collection|The media sizes supported by the printer. Supports standard size names for ISO and ANSI media sizes. Valid values are in the following [table](#mediasizes-values).|
 |pagesPerSheet|Int32 collection|Supported number of Input Pages to impose upon a single Impression.|
 |orientations|[printOrientation](enums.md#printorientation-values) collection|The print orientations supported by the printer. Valid values are described in the following table.|
 |inputBins|String collection|Supported input bins for the printer.|
@@ -44,6 +44,31 @@ Represents the capabilities reported by a printer/printerShare.
 |leftMargins|Int32 collection|A list of supported left margins(in microns) for the printer.|
 |collation|Boolean|True if the printer supports collating when printing muliple copies of a multi-page document; false otherwise.|
 |scalings|[printScaling](enums.md#printscaling-values) collection|Supported print scalings.|
+
+### mediaSizes values
+
+|Value|
+|:---|
+|A3|
+|A4|
+|A5|
+|A6|
+|JIS B4|
+|JIS B5|
+|JPN Hagaki|
+|North America 5x7in|
+|North America Executive|
+|North America Goverment Letter|
+|North America Index 3x5in|
+|North America Index 4x8in|
+|North America Index 5x8in|
+|North America Invoice|
+|North America Ledger|
+|North America Legal|
+|North America Letter|
+|Photo l 3.5x5in|
+|Business Card|
+|Photo|
 
 ## Relationships
 None.

@@ -81,6 +81,6 @@ GET https://graph.microsoft.com/beta/print/printers/fcb0bc53-a446-41d0-bfc3-5c56
   "truncated": true
 } -->
 ```http
-HTTP/1.1 302 Accepted
+HTTP/1.1 302 Found
 Location: https://print.print.microsoft.com/downloads/bd260b1a-044e-4ca6-afa9-17d9a587d254?tempauthtoken={accesstoken}
 ```

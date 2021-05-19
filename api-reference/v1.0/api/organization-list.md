@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/v1.0/organization
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -91,19 +91,19 @@ Content-length: 500
     {
       "assignedPlans": [
         {
-          "assignedDateTime": "2016-10-19T10:37:00Z",
-          "capabilityStatus": "capabilityStatus-value",
-          "service": "service-value",
-          "servicePlanId": "servicePlanId-value"
+          "assignedDateTime": "2017-07-29T02:16:28Z",
+          "capabilityStatus": "Enabled",
+          "service": "SharePoint",
+          "servicePlanId": "5dbe027f-2339-4123-9542-606e4d348a72"
         }
       ],
       "businessPhones": [
-        "businessPhones-value"
+        "8006427676"
       ],
-      "city": "city-value",
-      "country": "country-value",
-      "countryLetterCode": "countryLetterCode-value",
-      "displayName": "displayName-value"
+      "city": "redmond",
+      "country": null,
+      "countryLetterCode": "US",
+      "displayName": "Contoso"
     }
   ]
 }

@@ -26,7 +26,7 @@ Before you can take advantage of change notifications via Microsoft Graph, you m
 Universal Print currently supports notifications for two scenarios related to print jobs:
 
 * PrintTask is triggered (JobStarted): An application can subscribe to receive notifications when their printTask(hook) is triggered.
-For details about how to trigger a task, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing). Currently, a printTask can be triggered only for a JobStarted event. A JobStarted event is raised when a print job has been successfully created, its payload has been uploaded, and job processing has started.  
+For details about how to trigger a task, see [Extending Universal Print to support pull printing](./universal-print-concept-overview.md#extending-universal-print-to-support-pull-printing). Currently, a printTask can be triggered only for a JobStarted event. A JobStarted event is raised when a print job has been successfully created, its payload has been uploaded, and job processing has started.  
 
 * JobFetchable: After the job has started, third-party print applications or Universal Print might do some processing (like converting XPS payload to PDF for a PDF printer). After processing is complete and the payload is ready to be downloaded by a printer, a JobFetchable event is raised for the corresponding print job.
 
@@ -35,7 +35,7 @@ For details about how to trigger a task, see [Extending Universal Print to suppo
 
 ### Create an application to listen to notifications
 
-For information about how to listen for Microsoft Graph notifications, see [Use change notifications and track changes with Microsoft Graph](https://docs.microsoft.com/learn/modules/msgraph-changenotifications-trackchanges/) and [Set up notifications for changes in user data – Code Samples](/graph/webhooks#code-samples).
+For information about how to listen for Microsoft Graph notifications, see [Use change notifications and track changes with Microsoft Graph](/learn/modules/msgraph-changenotifications-trackchanges/) and [Set up notifications for changes in user data – Code Samples](./webhooks.md#code-samples).
 
 
 ### Scopes
@@ -46,12 +46,12 @@ To subscribe to notifications for print jobs, applications must have the followi
 
 * For JobFetchable event, the permissions listed in [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-v1.0&tabs=http).
 
-Applications must [generate and use the Azure AD security token](/graph/auth-v2-service?context=graph%2Fapi%2F1.0&view=graph-rest-1.0) in the Microsoft Graph API request header. The security token contains the claims as per the scopes approved for the customer’s Azure AD tenant by its administrator.  
+Applications must [generate and use the Azure AD security token](/graph/auth-v2-service?context=graph%2Fapi%2F1.0) in the Microsoft Graph API request header. The security token contains the claims as per the scopes approved for the customer’s Azure AD tenant by its administrator.  
 
 
 ## Create subscription: printTask triggered (JobStarted) event 
 
-Some applications monitor print queues for incoming jobs and want to be notified as soon as there is a valid job in the queue. After theyt're notified, they can collect the relevant job metadata or even perform modifications in the print job – including aborting the job or redirecting the job from the current print queue to another queue after modifying the job attributes accordingly. 
+Some applications monitor print queues for incoming jobs and want to be notified as soon as there is a valid job in the queue. After they're notified, they can collect the relevant job metadata or even perform modifications in the print job – including aborting the job or redirecting the job from the current print queue to another queue after modifying the job attributes accordingly. 
 
 Before creating a notification for a **printTask**-triggered event, ensure that application has created the following: 
 
@@ -190,10 +190,10 @@ Applications can [get](/graph/api/subscription-get?view=graph-rest-v1.0&tabs=htt
 ## FAQs
 ### How does Microsoft Graph validate notification URLs?
 Microsoft Graph validates the notification endpoint provided in the **notificationUrl** property of the subscription request before creating the subscription.
-For details, see [Notification endpoint validation](/graph/webhooks#notification-endpoint-validation).
+For details, see [Notification endpoint validation](./webhooks.md#notification-endpoint-validation).
 
 ### What are applications expected to do after receiving a change notification?
-Applications should process and acknowledge every change notification they receive. For details, see [Processing the change notification](/graph/webhooks#processing-the-change-notification).
+Applications should process and acknowledge every change notification they receive. For details, see [Processing the change notification](./webhooks.md#processing-the-change-notification).
 
 ### How can I get a list of active subscriptions?
 For details about how to retrieve a list of webhook subscriptions, see [List subscriptions](/graph/api/subscription-list?view=graph-rest-v1.0&tabs=http).

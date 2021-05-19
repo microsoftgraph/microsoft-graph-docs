@@ -2,7 +2,6 @@
 title: "List temporaryAccessPassAuthenticationMethods"
 description: "Get a list of the temporaryAccessPassAuthenticationMethod objects and their properties."
 author: "inbarckMS"
-ms.author: inbarc
 localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

@@ -42,7 +42,7 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |[Update message in chat](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Update the **policyViolation** property of a chat message.|
 |**Hosted content**| | |
 |[List all hosted content](../api/chatmessage-list-hostedcontents.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) collection| Get all hosted contents associated with a message.|
-|[Get hosted content](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) | Get hosted content (and it's bytes) for a message.|
+|[Get hosted content](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) | Get hosted content (and its bytes) for a message.|
 
 
 ## Properties
@@ -53,7 +53,7 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |replyToId| string | Read-only. ID of the parent chat message or root chat message of the thread. (Only applies to chat messages in channels, not chats.) |
 |from|[identitySet](identityset.md)| Read only. Details of the sender of the chat message.|
 |etag| string | Read-only. Version number of the chat message. |
-|messageType|string|The type of chat message. The possible values are: `message`.|
+|messageType|string|The type of chat message. The possible value is: `message`.|
 |createdDateTime|dateTimeOffset|Timestamp of when the chat message was created.|
 |lastModifiedDateTime|dateTimeOffset|Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed. |
 |lastEditedDateTime|dateTimeOffset|Read only. Timestamp when edits to the chat message were made. Triggers an "Edited" flag in the Teams UI. If no edits are made the value is `null`.|
@@ -75,7 +75,7 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 | Relationship   | Type    | Description |
 |:---------------|:--------|:----------|
 |replies|[chatMessage](chatmessage.md)| Replies for a specified message. |
-|hostedContents|[chatMessageHostedContent](chatmessagehostedcontent.md)| Content in a message hosted by Microsoft Teams e.g. images, code snippets etc. |
+|hostedContents|[chatMessageHostedContent](chatmessagehostedcontent.md)| Content in a message hosted by Microsoft Teams e.g., images, code snippets etc. |
 
 ## JSON representation
 

@@ -51,9 +51,9 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
+|dataSourceScopes|microsoft.graph.ediscovery.dataSourceScopes|When specified, the collection will span across a service for an entire workload. Possible values are: `none`,`allTenantMailboxes`,`allTenantSites`,`allCaseCustodians`,`allCaseNoncustodialDataSources`. **Note:** Either one custodian or specifying dataSourceScope is required when creating a source collection.|
 |displayName|String|The display name of the **sourceCollection**|
 |custodianSources|[microsoft.graph.ediscovery.dataSource](../resources/ediscovery-datasource.md) collection|The custodian sources to include in this search. You can get the URL from from custodian [siteSources](../api/ediscovery-custodian-list-sitesources.md), [unifiedGroupSources](../api/ediscovery-custodian-list-unifiedgroupsources.md), or [userSources](../api/ediscovery-custodian-list-usersources.md) plus the ID of the source. **Note:** Either one custodian or specifying tenant source is required when creating a source collection. |
-|tenantSources|microsoft.graph.ediscovery.tenantSources|When specified, the collection will span across a service for an entire workload. Possible values are: `allMailboxes`, `allSites`. **Note:** Either one custodian or specifying tenant source is required when creating a source collection.|
 
 ## Response
 
@@ -105,7 +105,7 @@ Content-length: 272
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -122,7 +122,7 @@ Content-Type: application/json
     "description": null,
     "lastModifiedDateTime": "2021-01-12T18:09:03.7378679Z",
     "contentQuery": "subject:'Quarterly Financials'",
-    "tenantSources": "none",
+    "dataSourceScopes": "none",
     "id": "1a9b4145d8f84e39bc45a7f68c5c5119",
     "displayName": "Quarterly Financials search",
     "createdDateTime": "2021-01-12T18:09:03.417009Z",

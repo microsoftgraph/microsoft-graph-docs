@@ -43,11 +43,13 @@ PATCH /print/shares/{id}
 ## Request body
 In the request body, supply the values for relevant [printerShare](../resources/printershare.md) fields that should be updated. Existing properties that are not included in the request body will maintain their previous values or be recalculated based on changes to other property values. For best performance, don't include existing values that haven't changed.
 
+Following properties can be updated: 
+
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|printer|String|The printer that this printer share is related to. Use the `printer@odata.bind` syntax as shown in the following example to update which printer this printer share is associated with.|
-
->**Note:** Updating the printer share name is not supported.
+|printer|microsoft.graph.printer|The printer that this printer share is related to. Use the `printer@odata.bind` syntax as shown in the following example to update which printer this printer share is associated with.|
+|displayName|String|The name of the printer share that print clients should display.|
+|allowAllUsers|Boolean|	If true, all users and groups will be granted access to this printer share. This supersedes the allow lists defined by the allowedUsers and allowedGroups navigation properties.|
 
 ## Response
 If successful, this method returns a `200 OK` response code and an updated [printerShare](../resources/printershare.md) object in the response body.
@@ -66,7 +68,8 @@ Content-type: application/json
 Content-length: 109
 
 {
-  "name": "ShareName",
+  "displayName": "ShareName",
+  "allowAllUsers": true,
   "printer@odata.bind": "https://graph.microsoft.com/beta/print/printers/{id}"
 }
 ```
@@ -90,7 +93,7 @@ Content-length: 109
 
 ##### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -104,8 +107,15 @@ Content-length: 225
 {
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/shares/$entity",
   "id": "d837c17b-3296-4384-a053-828d56e10f50",
-  "name": "ShareName",
-  "createdDateTime": "2020-02-04T00:00:00.0000000Z"
+  "displayName": "ShareName",
+  "createdDateTime": "2020-02-04T00:00:00.0000000Z",
+  "isAcceptingJobs": true,
+  "allowAllUsers": true,
+  "status": {
+    "state": "stopped",
+    "details": ["disconnected"],
+    "description": ""
+  }
 }
 ```
 

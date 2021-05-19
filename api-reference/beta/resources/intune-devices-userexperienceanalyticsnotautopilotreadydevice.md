@@ -37,7 +37,7 @@ The user experience analytics Device not windows autopilot ready.
 |managedBy|String|The intune device's managed by.|
 |autoPilotRegistered|Boolean|The intune device's autopilotRegistered.|
 |autoPilotProfileAssigned|Boolean|The intune device's autopilotProfileAssigned.|
-|azureAdRegistered|[azureAdRegisteredState](../resources/intune-devices-azureadregisteredstate.md)|The intune device's azureAdRegistered. Possible values are: `no`, `yes`, `unknown`.|
+|azureAdRegistered|Boolean|The intune device's azureAdRegistered.|
 |azureAdJoinType|String|The intune device's azure Ad joinType.|
 
 ## Relationships
@@ -62,7 +62,7 @@ Here is a JSON representation of the resource.
   "managedBy": "String",
   "autoPilotRegistered": true,
   "autoPilotProfileAssigned": true,
-  "azureAdRegistered": "String",
+  "azureAdRegistered": true,
   "azureAdJoinType": "String"
 }
 ```

@@ -19,7 +19,7 @@ The following are limitations of feature rollout:
 - The **appliesTo** field only supports groups.
 - Dynamic groups and nested groups are not supported.
 
-The following are pre-requisites for each of the features that are currently suported for rollout using this rollout policy.
+The following are pre-requisites for each of the features that are currently supported for rollout using this rollout policy.
 
 ### Passthrough Authentication
 

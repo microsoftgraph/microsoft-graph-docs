@@ -1,7 +1,7 @@
 ---
 title: "Update deviceManagementDerivedCredentialSettings"
 description: "Update the properties of a deviceManagementDerivedCredentialSettings object."
-author: "dougeby"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType
@@ -61,8 +61,8 @@ The following table shows the properties that are required when you create the [
 |**RA Policy**|
 |helpUrl|String|The URL that will be accessible to end users as they retrieve a derived credential using the Company Portal.|
 |displayName|String|The display name for the profile.|
-|issuer|[deviceManagementDerivedCredentialIssuer](../resources/intune-shared-devicemanagementderivedcredentialissuer.md)|The derived credential provider to use. Possible values are: `intercede`, `entrustDatacard`, `purebred`.|
-|notificationType|[deviceManagementDerivedCredentialNotificationType](../resources/intune-shared-devicemanagementderivedcredentialnotificationtype.md)|The methods used to inform the end user to open Company Portal to deliver Wi-Fi, VPN, or email profiles that use certificates to the device. Possible values are: `none`, `companyPortal`, `email`.|
+|issuer|[deviceManagementDerivedCredentialIssuer](../resources/intune-rapolicy-devicemanagementderivedcredentialissuer.md)|The derived credential provider to use. Possible values are: `intercede`, `entrustDatacard`, `purebred`.|
+|notificationType|[deviceManagementDerivedCredentialNotificationType](../resources/intune-rapolicy-devicemanagementderivedcredentialnotificationtype.md)|The methods used to inform the end user to open Company Portal to deliver Wi-Fi, VPN, or email profiles that use certificates to the device. Possible values are: `none`, `companyPortal`, `email`.|
 
 
 ## Response

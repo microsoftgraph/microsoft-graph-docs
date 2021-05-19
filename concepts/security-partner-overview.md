@@ -116,7 +116,7 @@ Provider scenarios are widely varied. A curated onboarding process begins with i
 ### Help and support
 
 - If you have questions on application or service or product integrations with the Microsoft Graph Security API, reach out to the [Using Microsoft Security Graph API tech community](https://techcommunity.microsoft.com/t5/Using-Microsoft-Graph-Security/bd-p/SecurityGraphAPI)
-- Follow discussions on [Microsoft Q&A](https://docs.microsoft.com/answers/topics/microsoft-graph-security.html)  with the tag: microsoft-graph-security.
+- Follow discussions on [Microsoft Q&A](/answers/topics/microsoft-graph-security.html)  with the tag: microsoft-graph-security.
 - If you find bugs in the samples or documentation requests or bugs file issues in the respective [sample repository](https://github.com/microsoftgraph/security-api-solutions/blob/master/sample-repos.md).
 - If you have new sample requests or issues that is not scoped to a single sample, [file issues](https://github.com/microsoftgraph/security-api-solutions/issues/new) in the [Microsoft Graph Security Solutions repository](https://github.com/microsoftgraph/security-api-solutions).
 

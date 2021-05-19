@@ -21,9 +21,9 @@ Represents the printer's default settings. Check the printer's [capabilities](pr
 |copiesPerJob|Int32|The default number of copies printed per job.|
 |contentType|String|The default content (MIME) type to use when processing documents.|
 |finishings|[printFinishing](enums.md#printfinishing-values) collection|The default set of finishings to apply to print jobs. Valid values are described in the following table.|
-|mediaColor|String|The default media (such as paper) color to print the document on.
-|mediaType|String|The default media (such as paper) type to print the document on. Valid values are described in the following table.|
-|mediaSize|String|The default media size to use. Supports standard size names for ISO and ANSI media sizes, along with any custom sizes supported by the associated printer.
+|mediaColor|String|The default media (such as paper) color to print the document on.|
+|mediaType|String|The default media (such as paper) type to print the document on.|
+|mediaSize|String|The default media size to use. Supports standard size names for ISO and ANSI media sizes. Valid values are listed in the [printerCapabilities](printercapabilities.md#mediasizes-values) topic.|
 |pagesPerSheet|Int32|The default number of document pages to print on each sheet.
 |orientation|[printOrientation](enums.md#printorientation-values)|The default orientation to use when printing the document. Valid values are described in the following table.|
 |outputBin|String|The default output bin to place completed prints into. See the printer's [capabilities](printercapabilities.md) for a list of supported output bins.|

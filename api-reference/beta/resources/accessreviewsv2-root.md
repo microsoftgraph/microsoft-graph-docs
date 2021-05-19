@@ -55,7 +55,7 @@ The following table lists the methods that you can use to interact with access r
 
 ## Role and application permission authorization checks
 
-The following directory roles are required for a calling user to manage access reviews. Note that only access reviews on groups are supported currently through Microsoft Graph APIs.
+The following directory roles are required for a calling user to manage access reviews. 
 
 | Operation | Application permissions | Required directory role of the calling user |
 |:------------------|:------------|:--------------------------------------------|

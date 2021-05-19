@@ -6,11 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IdentityProvider identityProviders = new IdentityProvider();
-identityProviders.additionalDataManager().put("@odata.id", new JsonPrimitive("https://graph.microsoft.com/beta/identityProviders/{id}"));
+IdentityProvider identityProvider = new IdentityProvider();
+identityProvider.additionalDataManager().put("@odata.id", new JsonPrimitive("https://graph.microsoft.com/beta/identityProviders/{id}"));
 
 graphClient.identity().b2xUserFlows("{id}").identityProviders().references()
 	.buildRequest()
-	.patch(identityProviders);
+	.post(identityProvider);
 
 ```

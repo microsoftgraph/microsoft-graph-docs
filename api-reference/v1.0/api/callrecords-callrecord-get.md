@@ -95,7 +95,7 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -183,7 +183,7 @@ GET https://graph.microsoft.com/v1.0/communications/callRecords/{id}?$expand=ses
 
 The following is an example of the response. If the sessions list is truncated, a `sessions@odata.nextLink` value will be provided to retrieve the next page of sessions.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

@@ -100,7 +100,7 @@ In the request body, supply a JSON representation of [outlookTask](../resources/
 The POST method ignores the time portion in the request body and assumes the time to be always midnight in the specified time zone (PST). 
 Then, by default, the POST method converts and shows all the date-related properties in UTC in the response.
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -35,7 +35,7 @@ The work or school account needs to belong to one of the following roles:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /identity/b2xUserFlows/{id}/identityProviders/$ref
+POST /identity/b2xUserFlows/{id}/identityProviders/$ref
 ```
 
 ## Request headers
@@ -68,7 +68,7 @@ The following is an example of the request.
 -->
 
 ``` http
-PATCH https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/identityProviders/$ref
+POST https://graph.microsoft.com/beta/identity/b2xUserFlows/{id}/identityProviders/$ref
 Content-type: application/json
 Content-length: 30
 

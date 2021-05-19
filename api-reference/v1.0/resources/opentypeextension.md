@@ -23,7 +23,7 @@ Open extensions are supported by the following resources in the corresponding ve
 
 |Resource |Version |
 |:---------------|:-------|
-| [Administrative unit](/graph/api/resources/administrativeunit?view=graph-rest-beta)  | GA |
+| [Administrative unit](/graph/api/resources/administrativeunit)  | GA |
 | [Calendar event](event.md) | GA |
 | Group [calendar event](event.md) | GA |
 | Group conversation thread [post](post.md) | GA |
@@ -48,10 +48,9 @@ Apply the following guidelines when you create open extensions on Outlook resour
 ### Use open extensions (for Outlook resources) or extended properties
 
 Open extensions are the recommended solution for most scenarios involving storing and accessing custom data. If, however,
-you need to access custom data for Outlook MAPI properties that are not already exposed through the
-[Microsoft Graph API metadata](../index.md), you can use
+you need to access custom data for Outlook MAPI properties that are not already exposed through the [Microsoft Graph API metadata](/graph/traverse-the-graph#microsoft-graph-api-metadata), you can use
 [extended properties and its REST API](extended-properties-overview.md). You can verify which properties the metadata
-exposes at [https://graph.microsoft.com/v1.0/$metadata](https://graph.microsoft.com/v1.0/$metadata).
+exposes at https://graph.microsoft.com/v1.0/$metadata.
 
 ## JSON representation
 

@@ -35,7 +35,7 @@ The assignment APIs are exposed in the class namespace.
 |[Attach rubric](../api/educationassignment-put-rubric.md)|None|Attach an existing **educationRubric** to this assignment.|
 |[Remove rubric](../api/educationassignment-delete-rubric.md)|None|Detach the **educationRubric** from this assignment.|
 |[Publish](../api/educationassignment-publish.md)|[educationAssignment](educationassignment.md)|Change the state of an **educationAssignment** object from draft to published.|
-|[Get resource folder URL](../api/educationassignment-getresourcesfolderurl.md)| string| The OneDrive folder into which file-based resources should be placed to be part of an assignment resource. Files must be located in this folder to be added as a resource.|
+|[Get resource folder URL (deprecated)](../api/educationassignment-getresourcesfolderurl.md)| string| The OneDrive folder into which file-based resources should be placed to be part of an assignment resource. Files must be located in this folder to be added as a resource.|
 
 ## Properties
 | Property	   | Type	|Description|
@@ -59,6 +59,8 @@ The assignment APIs are exposed in the class namespace.
 |lastModifiedDateTime|DateTimeOffset|Moment when the assignment was last modified.  The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |notificationChannelUrl|String|Optional field to specify the URL of the [channel](channel.md) to post the assignment publish notification. If not specified or null, defaults to the `General` channel. This field only applies to assignments where the **assignTo** value is [educationAssignmentClassRecipient](educationassignmentclassrecipient.md). Updating the **notificationChannelUrl** is not allowed after the assignment has been published.|
 |status|string| Status of the **Assignment**.  You can not PATCH this value.  Possible values are: `draft`, `scheduled`, `published`, `assigned`.|
+|webUrl|string| The deep link URL for the given assignment.|
+|resourcesFolderUrl|string| Folder URL where all the file resources for this assignment are stored.|
 
 ## Relationships
 | Relationship | Type	|Description|
@@ -100,8 +102,10 @@ The following is a JSON representation of the resource.
   "instructions": {"@odata.type": "microsoft.graph.itemBody"},
   "lastModifiedBy": {"@odata.type": "microsoft.graph.identitySet"},
   "lastModifiedDateTime": "String (timestamp)",
-  "notificationChannelUrl": null,
-  "status": "string"
+  "notificationChannelUrl": "string",
+  "status": "string",
+  "webUrl": "string",
+  "resourcesFolderUrl": "string"
 }
 ```
 

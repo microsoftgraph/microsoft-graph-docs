@@ -185,6 +185,12 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 * Schema extensions (legacy) are not returned with $select statement, but are returned without $select.
 * Clients cannot track changes to open extensions or registered schema extensions.
 
+## Devices and apps | Device updates (Windows updates)
+
+### Making a request for the first time
+
+When you make a call to the Windows updates API for the first time, you might receive a `401 Unauthorized` response. The error occurs in cases when an application's service principal does not yet exist in your tenant and requires time to complete provisioning. Please try again after about 24 hours.
+
 ## Extensions
 
 ### Change tracking is not supported
@@ -343,6 +349,10 @@ The filter query to get members of a team based on their roles `GET /teams/team-
 In certain instances, the `tenantId` / `email` / `displayName` property for the individual members of a chat might not be populated on a `GET /chats/chat-id/members` or `GET /chats/chat-id/members/membership-id` request.
 
 ## Users
+
+### Use the dollar ($) symbol in the userPrincipalName
+
+Microsoft Graph allows the **userPrincipalName** to begin with a dollar (`$`) character. However, when querying users by userPrincipalName, the request URL `/users/$x@y.com` fails. This is because this request URL violates the OData URL conventions which expects only system query options to be prefixed with a `$` character. As a workaround, remove the slash (/) after `/users` and enclose the **userPrincipalName** in parentheses and single quotes as follows: `/users('$x@y.com')`.
 
 ### No instant access after creation
 

@@ -76,7 +76,7 @@ Content-Type: application/json
 Content-length: 219
 
 {
-  "group@odata.bind": "/groups/000044f9-47c8-4a87-bccf-291fbf006a54",
+  "group@odata.bind": "https://graph.microsoft.com/v1.0/groups/b96f95c5-b1b3-4142-b039-8ac79e7d2c84",
   "includedSources":  "mailbox, site"
 }
 ```
@@ -101,7 +101,7 @@ Content-length: 219
 
 ### Response
 
-**Note:** The response object shown here might be shortened for readability.
+> **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -114,16 +114,17 @@ HTTP/1.1 201 Created
 Content-Type: application/json
 
 {
-  "group@odata.bind": "/groups/000044f9-47c8-4a87-bccf-291fbf006a54",
-  "includedSources":  "mailbox, site",
-  "id": "14202dd90a1f4ccc84929586326c7104",
-  "displayName": "SFA Videos",
-  "createdDateTime": "2020-03-13T22:38:00.8985662Z",
-  "createdBy": {
-      "user": {
-          "id": "efee1b77-fb3b-4f65-99d6-274c11914d12",
-          "displayName": "Megan Bowen"
-      }
-  }
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#compliance/ediscovery/cases('f4c0e095-d140-4392-bfe7-4e0ae637c566')/custodians('46363131333630303541423141324436')/unifiedGroupSources/$entity",
+    "@odata.id": "https://graph.microsoft.com/v1.0/groups/b96f95c5-b1b3-4142-b039-8ac79e7d2c84",
+    "displayName": "SFA Videos",
+    "createdDateTime": "2021-03-31T21:22:57.0108027Z",
+    "id": "33434233-3030-3739-3043-393039324633",
+    "includedSources": "mailbox,site",
+    "createdBy": {
+        "user": {
+            "id": "c1db6f13-332a-4d84-b111-914383ff9fc9",
+            "displayName": null
+        }
+    }
 }
 ```

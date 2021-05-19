@@ -74,7 +74,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1280
+Content-length: 1348
 
 {
   "@odata.type": "#microsoft.graph.androidWorkProfileCustomConfiguration",
@@ -112,6 +112,7 @@ Content-length: 1280
       "displayName": "Display Name value",
       "description": "Description value",
       "omaUri": "Oma Uri value",
+      "secretReferenceValueId": "Secret Reference Value Id value",
       "isEncrypted": true
     }
   ]
@@ -123,7 +124,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1452
+Content-Length: 1520
 
 {
   "@odata.type": "#microsoft.graph.androidWorkProfileCustomConfiguration",
@@ -164,6 +165,7 @@ Content-Length: 1452
       "displayName": "Display Name value",
       "description": "Description value",
       "omaUri": "Oma Uri value",
+      "secretReferenceValueId": "Secret Reference Value Id value",
       "isEncrypted": true
     }
   ]

@@ -2,7 +2,6 @@
 title: "Update temporaryAccessPassAuthenticationMethodConfiguration"
 description: "Update the properties of a temporaryAccessPassAuthenticationMethodConfiguration object."
 author: "inbarckms"
-ms.author: inbarc
 localization_priority: Normal
 ms.prod: "identity-and-sign-in"
 doc_type: apiPageType

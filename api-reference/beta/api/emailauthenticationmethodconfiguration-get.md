@@ -103,19 +103,19 @@ Content-Type: application/json
 Content-length: 491
 
 {
-  "value": {
-    "@odata.type": "#microsoft.graph.emailAuthenticationMethodConfiguration",
-    "id": "Email",
-    "state": "enabled",
-    "allowExternalIdToUseEmailOtp": "True",
-    "includeTargets":[
-        {
-          "targetType":"group",
-          "id":"all_users",
-          "isRegistrationRequired":false,
-        }
-    ]
-  }
+   "value":{
+      "@odata.type":"#microsoft.graph.emailAuthenticationMethodConfiguration",
+      "id":"Email",
+      "state":"enabled",
+      "allowExternalIdToUseEmailOtp":"enabled",
+      "includeTargets":[
+         {
+            "targetType":"group",
+            "id":"all_users",
+            "isRegistrationRequired":false
+         }
+      ]
+   }
 }
 ```
 

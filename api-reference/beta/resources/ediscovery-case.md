@@ -26,14 +26,23 @@ In the context of eDiscovery, contains custodians, holds, collections, review se
 | [Delete case](../api/ediscovery-case-delete.md) | None | Delete a **case** object. |
 | [Close case](../api/ediscovery-case-close.md)        | None                                              | Close an eDiscovery case. For details, see [Close a case](/microsoft-365/compliance/close-or-delete-case#close-a-case). |
 | [Reopen case](../api/ediscovery-case-reopen.md)      | None                                              | Reopen an eDiscovery case that was closed. For details, see [Reopen a closed case](/microsoft-365/compliance/close-or-delete-case#reopen-a-closed-case).|
+| Custodians |
 | [List custodians](../api/ediscovery-case-list-custodians.md)   | [microsoft.graph.ediscovery.custodian](../resources/ediscovery-custodian.md) collection |Get a list of the [custodian](../resources/ediscovery-custodian.md) objects and their properties.|
 | [Create custodian](../api/ediscovery-case-post-custodians.md)  | [microsoft.graph.ediscovery.custodian](../resources/ediscovery-custodian.md)           |Create a new [custodian](../resources/ediscovery-custodian.md) object. After the custodian object is created, you will need to create the custodian's [userSource](../resources/ediscovery-usersource.md) to reference their mailbox and OneDrive for Business site.|
-| [List reviewSets](../api/ediscovery-case-list-reviewsets.md)   | [microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md) collection | Get the list of [reviewSets](../resources/ediscovery-reviewset.md) from a **case** object.|
-| [Create reviewSet](../api/ediscovery-case-post-reviewsets.md)  | [microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md)           | Create a new [reviewSet](../resources/ediscovery-reviewset.md) object. The request body contains the display name of the review set, which is the only writable property.|
+| Legal holds |
 | [List legalHolds](../api/ediscovery-case-list-legalholds.md)   | [microsoft.graph.ediscovery.legalHold](../resources/ediscovery-legalhold.md) collection | Get the [legalHolds](../resources/ediscovery-legalhold.md) that are applied to a case.|
 | [Create legalHold](../api/ediscovery-case-post-legalholds.md)  | [microsoft.graph.ediscovery.legalHold](../resources/ediscovery-legalhold.md)           | Create a new [legalHold](../resources/ediscovery-legalhold.md) object.|
+| Review sets |
+| [List reviewSets](../api/ediscovery-case-list-reviewsets.md)   | [microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md) collection | Get the list of [reviewSets](../resources/ediscovery-reviewset.md) from a **case** object.|
+| [Create reviewSet](../api/ediscovery-case-post-reviewsets.md)  | [microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md)           | Create a new [reviewSet](../resources/ediscovery-reviewset.md) object. The request body contains the display name of the review set, which is the only writable property.|
+| Case settings |
+| [Get settings](../api/ediscovery-settings-get.md)|[microsoft.graph.ediscovery.settings](../resources/ediscovery-settings.md)|Read the properties and relationships of a [microsoft.graph.ediscovery.settings](../resources/ediscovery-settings.md) object. |
+| [Update settings](../api/ediscovery-settings-update.md)|[microsoft.graph.ediscovery.settings](../resources/ediscovery-settings.md)|Update the properties of a [microsoft.graph.ediscovery.settings](../resources/ediscovery-settings.md) object. |
+| [resetToDefault](../api/ediscovery-settings-resettodefault.md)|None|Reset all settings to the default values. |
+| Source collections |
 | [List sourceCollections](../api/ediscovery-case-list-sourcecollections.md)|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md) collection|Get the [sourceCollection](../resources/ediscovery-sourcecollection.md) from a **case** object.|
 | [Create sourceCollection](../api/ediscovery-case-post-sourcecollections.md)|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md)|Create a new **sourceCollection** object.|
+| Tags |
 | [List tags](../api/ediscovery-case-list-tags.md)|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) collection|Retrieve a list of [tag](../resources/ediscovery-tag.md) objects from an eDiscovery case.|
 | [Create tag](../api/ediscovery-case-post-tags.md)|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md)|Create a new tag for the specified case. The tags are used in review sets while reviewing content.|
 
@@ -68,10 +77,12 @@ In the context of eDiscovery, contains custodians, holds, collections, review se
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|Custodians|[microsoft.graph.ediscovery.custodian](../resources/ediscovery-custodian.md) collection| Returns a list of case **custodian** objects for this **case**.  Nullable.|
-|Legal holds|[microsoft.graph.ediscovery.legalHold](../resources/ediscovery-legalhold.md) collection| Returns a list of case **legalHold** objects for this **case**.  Nullable. |
-|Operations|[microsoft.graph.ediscovery.caseOperation](../resources/ediscovery-caseoperation.md) collection| Returns a list of case **operation** objects for this **case**. Nullable. |
-|Review sets|[microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md) collection| Returns a list of **reviewSet** objects in the case. Read-only. Nullable. |
+|custodians|[microsoft.graph.ediscovery.custodian](../resources/ediscovery-custodian.md) collection| Returns a list of case **custodian** objects for this **case**.  Nullable.|
+|legalHolds|[microsoft.graph.ediscovery.legalHold](../resources/ediscovery-legalhold.md) collection| Returns a list of case **legalHold** objects for this **case**.  Nullable. |
+|noncustodialDataSources|[microsoft.graph.ediscovery.noncustodialDataSource](../resources/ediscovery-noncustodialdatasource.md) collection| Returns a list of case **noncustodialDataSource** objects for this **case**.  Nullable. |
+|operations|[microsoft.graph.ediscovery.caseOperation](../resources/ediscovery-caseoperation.md) collection| Returns a list of case **operation** objects for this **case**. Nullable. |
+|reviewSets|[microsoft.graph.ediscovery.reviewSet](../resources/ediscovery-reviewset.md) collection| Returns a list of **reviewSet** objects in the case. Read-only. Nullable. |
+|Settings|[microsoft.graph.ediscovery.settings](../resources/ediscovery-settings.md) collection| Returns a list of **settings** objects in the case. Read-only. Nullable. |
 |sourceCollections|[microsoft.graph.ediscovery.sourceCollection](../resources/ediscovery-sourcecollection.md) collection|Returns a list of **sourceCollection** objects associated with this case.|
 |tags|[microsoft.graph.ediscovery.tag](../resources/ediscovery-tag.md) collection|Returns a list of **tag** objects associated to this case.|
 

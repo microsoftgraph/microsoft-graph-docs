@@ -443,6 +443,88 @@
 			"CreatedDateTime": "2020-12-07T19:07:19.242Z",
 			"WorkloadArea": "Compliance",
 			"SubArea": "eDiscovery"
+		},
+		{
+			"ChangeList": [
+				{
+					"Id": "74276ccf-708f-11eb-8401-e19c685756df",
+					"ApiChange": "Resource",
+					"ChangedApiName": "noncustodialDataSource",
+					"ChangeType": "Addition",
+					"Description": "Added the [noncustodialDataSource](https://docs.microsoft.com/graph/api/resources/ediscovery-noncustodialDataSource?view=graph-rest-beta) resource type.",
+					"Target": "noncustodialDataSource"
+				},
+				{
+					"Id": "74276ccf-708f-11eb-8401-e19c685756df",
+					"ApiChange": "Enum type",
+					"ChangedApiName": "dataCollectionScope",
+					"ChangeType": "Addition",
+					"Description": "Added the **dataCollectionScope** enumeration type.",
+					"Target": "dataCollectionScope"
+				},
+				{
+					"Id": "74276ccf-708f-11eb-8401-e19c685756df",
+					"ApiChange": "Enum type",
+					"ChangedApiName": "tenantSources",
+					"ChangeType": "Deletion",
+					"Description": "Removed the **tenantSources** enumeration type.",
+					"Target": "tenantSources"
+				},
+				{
+					"Id": "74276ccf-708f-11eb-8401-e19c685756df",
+					"ApiChange": "Method",
+					"ChangedApiName": "resetToDefault",
+					"ChangeType": "Addition",
+					"Description": "Added the [resetToDefault](https://docs.microsoft.com/graph/api/ediscovery-settings-resetToDefault?view=graph-rest-beta) method to the [settings](https://docs.microsoft.com/graph/api/resources/settings?view=graph-rest-beta) resource.",
+					"Target": "settings"
+				},
+				{
+					"Id": "74276ccf-708f-11eb-8401-e19c685756df",
+					"ApiChange": "Resource",
+					"ChangedApiName": "settings",
+					"ChangeType": "Addition",
+					"Description": "Added the [settings](https://docs.microsoft.com/graph/api/resources/ediscovery-settings?view=graph-rest-beta) resource type.",
+					"Target": "settings"
+				},
+				{
+					"Id": "74276ccf-708f-11eb-8401-e19c685756df",
+					"ApiChange": "Resource",
+					"ChangedApiName": "ocrSettings",
+					"ChangeType": "Addition",
+					"Description": "Added the [ocrSettings](https://docs.microsoft.com/graph/api/resources/ediscovery-ocrSettings?view=graph-rest-beta) resource type.",
+					"Target": "ocrSettings"
+				},
+				{
+					"Id": "74276ccf-708f-11eb-8401-e19c685756df",
+					"ApiChange": "Resource",
+					"ChangedApiName": "redundancyDetectionSettings",
+					"ChangeType": "Addition",
+					"Description": "Added the [redundancyDetectionSettings](https://docs.microsoft.com/graph/api/resources/ediscovery-redundancyDetectionSettings?view=graph-rest-beta) resource type.",
+					"Target": "redundancyDetectionSettings"
+				},
+				{
+					"Id": "74276ccf-708f-11eb-8401-e19c685756df",
+					"ApiChange": "Resource",
+					"ChangedApiName": "topicModelingSettings",
+					"ChangeType": "Addition",
+					"Description": "Added the [topicModelingSettings](https://docs.microsoft.com/graph/api/resources/ediscovery-topicModelingSettings?view=graph-rest-beta) resource type.",
+					"Target": "topicModelingSettings"
+				},
+				{
+					"Id": "74276ccf-708f-11eb-8401-e19c685756df",
+					"ApiChange": "Relationship",
+					"ChangedApiName": "noncustodialSources",
+					"ChangeType": "Change",
+					"Description": "Changed the **noncustodialSources** relationship data type from the [sourceCollection](https://docs.microsoft.com/en-us/graph/api/resources/sourceCollection?view=graph-rest-beta) resource from **microsoft.graph.ediscovery.dataSource** to **microsoft.graph.ediscovery.noncustodialDataSource**.",
+					"Target": "sourceCollection"
+				}
+			],
+			"Id": "74276ccf-708f-11eb-8401-e19c685756df",
+			"Cloud": "prd",
+			"Version": "beta",
+			"CreatedDateTime": "2021-04-28T19:00:00.000Z",
+			"WorkloadArea": "Compliance",
+			"SubArea": "eDiscovery"
 		}
 	]
 }

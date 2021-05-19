@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 548
+Content-Length: 547
 
 {
   "value": [
@@ -74,7 +74,7 @@ Content-Length: 548
       "managedBy": "Managed By value",
       "autoPilotRegistered": true,
       "autoPilotProfileAssigned": true,
-      "azureAdRegistered": "yes",
+      "azureAdRegistered": true,
       "azureAdJoinType": "Azure Ad Join Type value"
     }
   ]

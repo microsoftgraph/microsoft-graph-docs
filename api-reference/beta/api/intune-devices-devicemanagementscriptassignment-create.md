@@ -51,7 +51,7 @@ The following table shows the properties that are required when you create the d
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|Key of the device management script group assignment entity. This property is read-only.|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-devices-deviceandappmanagementassignmenttarget.md)|The Id of the Azure Active Directory group we are targeting the script to.|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|The Id of the Azure Active Directory group we are targeting the script to.|
 
 
 

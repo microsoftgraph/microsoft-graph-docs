@@ -14,6 +14,8 @@ Namespace: microsoft.graph
 
 Redirect a [print job](../resources/printjob.md) to a different [printer](../resources/printer.md).
 
+Redirecting a print job will only succeed if there is a [printTask](../resources/printTask.md) in a `processing` state on the associated print job, started by a trigger that the requesting app created. 
+
 For details about how to use this API to add pull printing support to Universal Print, see [Extending Universal Print to support pull printing](/graph/universal-print-concept-overview#extending-universal-print-to-support-pull-printing).
 
 ## Permissions

@@ -34,9 +34,8 @@ The following is a JSON representation of the resource.
 
 ```json
 {
-  "channelId": "string",
-  "teamId": "string",
-  
+   "channelId":"string",
+   "teamId":"string"
 }
 ```
 
