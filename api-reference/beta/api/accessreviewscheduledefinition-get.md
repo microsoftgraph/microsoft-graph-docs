@@ -88,16 +88,7 @@ Content-type: application/json
 {
     "id": "60860cdd-fb4d-4054-91ba-f7544443baa6",
     "displayName": "Test world",
-    "createdDateTime": "2020-09-14T20:03:36.7391027Z",
-    "lastModifiedDateTime": "2020-09-14T20:04:28Z",
     "status": "InProgress",
-    "descriptionForAdmins": "",
-    "descriptionForReviewers": "",
-    "createdBy": {
-        "id": "957f1027-c0ee-460d-4444-b8828e59e0fe",
-        "displayName": "MOD Administrator",
-        "userPrincipalName": "admin@contoso.com"
-    },
     "scope": {
         "query": "/groups/b7a059cb-038a-4802-8fc9-b944440cf11f/transitiveMembers",
         "queryType": "MicrosoftGraph"
@@ -140,7 +131,7 @@ Content-type: application/json
 
 ## See also
 
-- [Create accessReviewScheduleDefinition](accessreviewscheduledefinition-create.md)
+- [Create accessReviewScheduleDefinition](accessreviewscheduledefinition-post.md)
 - [List accessReviewScheduleDefinition](accessreviewscheduledefinition-list.md)
 - [List accessReviewInstance](accessreviewinstance-list.md)
 

@@ -37,10 +37,10 @@ Next, install the `mgt-react` npm package, which contains the Microsoft Graph To
 npm i @microsoft/mgt-react
 ```
 
-Install the `mgt-msal-provider` and `mgt-element` npm package as well, which contains the MSAL auth provider.
+Install the `mgt-msal2-provider` and `mgt-element` npm package as well, which contains the MSAL 2.0 auth provider.
 
 ```cmd
-npm i @microsoft/mgt-element @microsoft/mgt-msal-provider
+npm i @microsoft/mgt-element @microsoft/mgt-msal2-provider
 ```
 
 Confirm that you can run the app.
@@ -67,17 +67,20 @@ Now that you have registered your application with Azure Active Directory (Azure
 
 Next, configure the authentication provider that the Microsoft Graph Toolkit should use. In this case, you'll use MSAL, which is a good default for building standalone applications. If you use any of the extensibility points in Microsoft 365, like Teams or SharePoint, you will use [other providers](../providers/providers.md).
 
+>[!NOTE] 
+>If you are currently using MSAL Provider and would like to update to the MSAL 2 Provider, follow the steps in the [MSAL 2 provider](../providers/msal2.md#migrating-from-msal-provider-to-msal-2-provider) article.
+
 1. In the code editor, open the **src/index.** file, and to the list of imports, add:
 
     ```tsx
     import { Providers } from '@microsoft/mgt-element';
-    import { MsalProvider } from '@microsoft/mgt-msal-provider';
+    import { Msal2Provider } from '@microsoft/mgt-msal2-provider';
     ```
 
 1. After the last `import` statement, initialize the Microsoft Graph Toolkit with MSAL provider.
 
     ```tsx
-    Providers.globalProvider = new MsalProvider({
+    Providers.globalProvider = new Msal2Provider({
       clientId: 'REPLACE_WITH_CLIENTID'
     });
     ```
@@ -94,9 +97,9 @@ With these changes, the **src/index.tsx** file will look like the following.
   import * as serviceWorker from './serviceWorker';
 
   import { Providers } from '@microsoft/mgt-element';
-  import { MsalProvider } from '@microsoft/mgt-msal-provider';
+  import { Msal2Provider } from '@microsoft/mgt-msal2-provider';
   
-  Providers.globalProvider = new MsalProvider({
+  Providers.globalProvider = new Msal2Provider({
     clientId: 'REPLACE_WITH_CLIENTID'
   });
   
@@ -174,8 +177,8 @@ Before you can load data from Microsoft 365, you need to specify the list of per
 1. In the code editor, open the **src/index.tsx** file, and update the provider initialization code.
 
     ```tsx
-    Providers.globalProvider = new MsalProvider({
-      clientId: 'd7cb93c9-9097-4e38-8f06-7c0088ac3318',
+    Providers.globalProvider = new Msal2Provider({
+      clientId: 'REPLACE_WITH_CLIENTID',
       scopes: ['calendars.read', 'user.read', 'openid', 'profile', 'people.read', 'user.readbasic.all']
     });
     ```

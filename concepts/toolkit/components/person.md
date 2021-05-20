@@ -45,6 +45,9 @@ You can use three properties to set the person details. Use only one of the foll
 
   If no image is provided, one will be fetched (if available).
 
+* By default, the person component will only request the standard Microsoft Graph user set of [properties](/graph/api/user-get?&tabs=http#optional-query-parameters). In order to request additional properties, declare them as any part of the `line(x)Property`. 
+
+
 ## Properties
 
 You can use several properties to customize the component.
@@ -74,6 +77,7 @@ mgt-person {
   --avatar-size: 48px;
   --avatar-border: 0;
   --avatar-border-radius: 50%;
+  --avatar-cursor: default;
   
   --initials-color: white;
   --initials-background-color: magenta;
@@ -121,7 +125,7 @@ The `mgt-person` component supports several [templates](../customize-components/
 | --------- | ------------ | ----------- |
 | loading | none | The template to render while the component is in a loading state. |
 | no-data | none | The template to render when no person image or data is available. | 
-| default | person: The person details object <br> `personImage`: The URL of the image | The default template replaces the entire component with your own. |
+| default | person: The person details object <br> `personImage`: The URL of the image <br> `personPresence`: The presence details object for person  | The default template replaces the entire component with your own. |
 | person-card | person: The person details object <br> `personImage`: The URL of the image | The template to update the mgt-person-card displayed on hover or click. |
 | line1 | person: The person details object | The template for the first line of person metadata. |
 | line2 | person: The person details object | The template for the second line of person metadata. |

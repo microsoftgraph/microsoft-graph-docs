@@ -32,6 +32,9 @@ By default, the `mgt-people` component fetches events from the `/me/people` endp
 | people-queries | peopleQueries | Given an array of person queries (names, upns, emails), the component will render these users. |
 | person-card | personCard | An enumeration to determine user action necessary to activate flyout panel - `hover` or `click`. Default value is `none`. |
 | show-presence | showPresence | A boolean to determine whether to show person presence badge on person image. |
+| resource | resource | The resource to get from Microsoft Graph (for example, `/me/people`). |
+| scopes | scopes | Optional array of strings if using the property or a comma delimited scope if using the attribute. The component will use these scopes (with a supported provider) to ensure that the user has consented to the right permission. |
+| version | version | Optional API version to use when making the GET request. Default is `v1.0`.  |
 
 
 The following example sets the maximum number of people to show.

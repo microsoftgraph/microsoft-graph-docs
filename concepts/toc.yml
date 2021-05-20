@@ -534,6 +534,8 @@ items:
           - name: Azure AD Graph
             displayName: Migration, Azure AD Graph
             items:
+              - name: Overview
+                href: migrate-azure-ad-graph-overview.md
               - name: Checklist to migrate apps
                 href: migrate-azure-ad-graph-planning-checklist.md
               - name: "1: Review differences"
@@ -604,6 +606,8 @@ items:
                 href: toolkit/get-started/overview.md
               - name: Toolkit for React
                 href: toolkit/get-started/mgt-react.md
+              - name: Toolkit for SPFx
+                href: toolkit/get-started/mgt-spfx.md
           - name: Build your first app
             items:
               - name: Register an Azure Active Directory app
@@ -626,6 +630,8 @@ items:
                 href: toolkit/providers/providers.md
               - name: MSAL provider
                 href: toolkit/providers/msal.md
+              - name: MSAL 2 provider
+                href: toolkit/providers/msal2.md
               - name: SharePoint provider
                 href: toolkit/providers/sharepoint.md
               - name: Microsoft Teams provider
@@ -658,6 +664,10 @@ items:
                 href: toolkit/components/tasks.md
               - name: To-do tasks
                 href: toolkit/components/todo.md
+              - name: File
+                href: toolkit/components/file.md
+              - name: File list
+                href: toolkit/components/file-list.md
           - name: Customize components
             items:
               - name: Styling components
