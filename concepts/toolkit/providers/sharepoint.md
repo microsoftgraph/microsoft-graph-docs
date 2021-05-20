@@ -17,11 +17,11 @@ Initialize the provider inside the `onInit()` method of your web part.
 
 ```ts
 // import the providers at the top of the page
-import {Providers, SharePointProvider} from '@microsoft/mgt';
+import {Providers, SharePointProvider} from '@microsoft/mgt-spfx';
 
 // add the onInit() method if not already there in your web part class
 protected async onInit() {
-    Providers.globalProvider = new SharePointProvider(this.context);
+  Providers.globalProvider = new SharePointProvider(this.context);
 }
 ```
 
@@ -29,13 +29,13 @@ Now you can add any component in your `render()` method and it will use the Shar
 
 ```ts
 public render(): void {
-    this.domElement.innerHTML = `
-      <mgt-agenda></mgt-agenda>
-      `;
-  }
+  this.domElement.innerHTML = `
+    <mgt-agenda></mgt-agenda>
+    `;
+}
 ```
 
->**Note:** The Microsoft Graph Toolkit requires Typescript 3.x. Make sure you're using a supported version of Typescript by [installing the right compiler](https://github.com/SharePoint/sp-dev-docs/wiki/SharePoint-Framework-v1.8-release-notes#support-for-typescript-27-29-and-3x).
+>**Note:** The Microsoft Graph Toolkit requires Typescript 3.7 or newer. Make sure you're using a supported version of Typescript by [installing the right compiler](https://github.com/SharePoint/sp-dev-docs/wiki/SharePoint-Framework-v1.8-release-notes#support-for-typescript-27-29-and-3x).
 
 ## Sample
 

@@ -43,6 +43,7 @@ The components are also available as [React components](./get-started/mgt-react.
 |Providers|Description|
 |---------|-----------|
 |[Msal](./providers/msal.md)|Uses MSAL.js to sign in users and acquire tokens to use with Microsoft Graph.|
+|[Msal 2.0](./providers/msal2.md)| Uses msal-browser to sign in users and acquire tokens to use with Microsoft Graph.|
 |[Electron](./providers/electron.md)|Authenticates and provides Microsoft Graph access to components inside of Electron apps|
 |[SharePoint](./providers/sharepoint.md)|Authenticates and provides Microsoft Graph access to components inside of SharePoint web parts.|
 |[Teams](./providers/teams.md)|Authenticates and provides Microsoft Graph access to components inside of Microsoft Teams tabs.|

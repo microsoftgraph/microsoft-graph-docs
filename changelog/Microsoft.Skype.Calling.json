@@ -1,6 +1,24 @@
 {
   "changelog": [
     {
+      "ChangeList": [
+        {
+          "Id": "3a4fca5c-53f1-4302-90a0-172e13a760c8",
+          "ApiChange": "Method",
+          "ChangedApiName": "GET",
+          "ChangeType": "change",
+          "Description": "Added **joinWebUrl** filter to the GET method of the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "3a4fca5c-53f1-4302-90a0-172e13a760c8",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-05-14T00:00:00",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": ""
+    },
+    {
         "ChangeList": [
           {
             "Id": "3f2925a1-bd98-48d2-9380-9e24798f2946",

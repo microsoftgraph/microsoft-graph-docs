@@ -1000,6 +1000,11 @@ Adding PSTN and direct routing call reports to Microsoft Graph (beta).
 
 ## June 2020
 
+### Security | Information protection labeling
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the **parent** property to [informationProtectionLabel](graph/api/resources/informationprotectionlabel?view=graph-rest-beta) entity. |
+
 ### Calendar
 | **Change type** | **Version**   | **Description**                          |
 | :-------------- | :------------ | :--------------------------------------- |

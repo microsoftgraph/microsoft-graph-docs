@@ -30,7 +30,7 @@ To use the Toolkit via mgt-loader, add the reference in a script to your code:
 ```html
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
 
-<mgt-msal-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal-provider>
+<mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal2-provider>
 <mgt-login></mgt-login>
 ```
 # [npm](#tab/npm)
@@ -70,7 +70,11 @@ Providers are available via a single package and can be installed as needed. The
 
 - <b>@micosoft/mgt-msal-provider</b>
 
-    [`@micosoft/mgt-msal-provider`](../providers/msal.md) contains the `MsalProvider` and `mgt-msal-provider` component. The msal provider leverages msal.js for authenticating in web apps and PWAs.
+    [`@micosoft/mgt-msal-provider`](../providers/msal.md) contains the `MsalProvider` and `mgt-msal-provider` component. The MSAL provider uses msal.js for authenticating in web apps and Progressive Web Apps (PWAs).
+
+- <b>@micosoft/mgt-msal2-provider</b>
+
+    [`@micosoft/mgt-msal2-provider`](../providers/msal2.md) contains the `Msal2Provider` and `mgt-msal2-provider` component. The MSAL provider uses msal-browser for authenticating in web apps and PWAs.
 
 -  <b>@microsoft/mgt-teams-provider</b>
 
@@ -91,6 +95,10 @@ The `@microsoft/mgt` is the main package that includes all above packages and re
 <b>@microsoft/mgt-react</b>
 
 The [`@microsoft/mgt-react`](./mgt-react.md) package contains all auto-generated React components and takes dependency on the `@microsoft/mgt` package.
+
+<b>@microsoft/mgt-spfx</b>
+
+The [`@microsoft/mgt-spfx`](./mgt-spfx.md) package contains a SharePoint Framework library that's required to use Microsoft Graph Toolkit in SharePoint Framework solutions.
 
 ## Polyfills
 

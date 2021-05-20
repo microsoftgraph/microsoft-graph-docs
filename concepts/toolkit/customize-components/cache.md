@@ -47,6 +47,14 @@ let config = {
   response: {
     invalidationPeriod: number,
     isEnabled: boolean
+  },
+  files: {
+    invalidationPeriod: number,
+    isEnabled: boolean
+  },
+  fileLists: {
+    invalidationPeriod: number,
+    isEnabled: boolean
   }
 };
 ```
@@ -65,7 +73,7 @@ CacheService.config.users.isEnabled = false;
 ```
 Disabling the cache does **not** clear the cache.
 
-Changing the invalditation period is similar:
+Changing the invalidation period is similar:
 
 ```JavaScript
 import { CacheService } from '@microsoft/mgt';
