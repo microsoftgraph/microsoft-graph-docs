@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var authenticationMethodConfiguration = new EmailAuthenticationMethodConfiguration
 {
-	AllowExternalIdToUseEmailOtp = ExternalEmailOtpState.Default
+	AllowExternalIdToUseEmailOtp = ExternalEmailOtpState.Disabled
 };
 
 await graphClient.Policies.AuthenticationMethodsPolicy.AuthenticationMethodConfigurations["{authenticationMethodConfiguration-id}"]

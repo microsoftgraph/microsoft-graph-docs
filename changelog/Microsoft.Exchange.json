@@ -1,5 +1,49 @@
 {
-  "changelog": [    
+  "changelog": [  
+    {
+      "ChangeList": [
+        {
+          "Id": "d9464d8d-7f78-4719-8841-9bf28318f4b1",
+          "ApiChange": "Resources",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Adding the capability to [send a message in MIME format](https://docs.microsoft.com/en-us/graph/outlook-send-mime-message).",
+          "Target": "message"
+        }
+      ],
+      "Id": "d9464d8d-7f78-4719-8841-9bf28318f4b1",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-05-24T00:00:00",
+      "WorkloadArea": "Mail",
+      "SubArea": "Message"
+    },  
+    {
+      "ChangeList": [
+        {
+          "Id": "01de55de-6145-44c7-a959-6e30062cb300",
+          "ApiChange": "Property",
+          "ChangedApiName": "isHidden",
+          "ChangeType": "Addition",
+          "Description": "Added the **isHidden** property to [mailFolder](https://docs.microsoft.com/en-us/graph/api/resources/mailfolder?view=graph-rest-v1.0) entity.",
+          "Target": "mailFolder"
+        },
+        {
+          "Id": "01de55de-6145-44c7-a959-6e30062cb300",
+          "ApiChange": "Method",
+          "ChangedApiName": "includeHiddenFolders",
+          "ChangeType": "Addition",
+          "Description": "Added the support of the optional `includeHiddenFolders` query parameter to the [list mailFolders](https://docs.microsoft.com/en-us/graph/api/user-list-mailfolders?view=graph-rest-v1.0) operation.",
+          "Target": "mailFolder"
+        }
+      ],
+      "Id": "01de55de-6145-44c7-a959-6e30062cb300",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-05-12T00:00:00.000Z",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
     {
       "ChangeList": [
         {

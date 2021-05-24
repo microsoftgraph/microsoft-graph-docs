@@ -123,8 +123,6 @@ Content-Type: application/json
 The following is an example of the request.
 
 # [HTTP](#tab/http)
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "identityprovider_availableprovidertypes_b2c"

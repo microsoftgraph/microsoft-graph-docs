@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 Get the folder collection under the specified folder. You can use the `.../me/mailFolders` shortcut to get the top-level
 folder collection and navigate to another folder.
 
+By default, this operation does not return hidden folders. Use a query parameter _includeHiddenFolders_ to include them in the response.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -28,6 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+To get all the child folders under the specified folder, excluding those that are hidden:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -35,7 +38,15 @@ GET /me/mailFolders/{id}/childFolders
 GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders
 ```
 
+To include _hidden_ child folders in the response:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/mailFolders/{id}/childFolders?includeHiddenFolders=true
+GET /users/{id | userPrincipalName}/mailFolders/{id}/childFolders?includeHiddenFolders=true
+```
+
 ## Optional query parameters
+To return a list of all childFolders including those that are hidden (their **isHidden** property is true), in the request URL, specify the `includeHiddenFolders` query parameter as `true`, as shown in the [HTTP request](#http-request) section.
 
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
 
@@ -118,7 +129,8 @@ Content-type: application/json
       "childFolderCount": 0,
       "unreadItemCount": 2,
       "totalItemCount": 2,
-      "wellKnownName": null
+      "wellKnownName": null,
+      "isHidden": false
     },
     {
       "id": "AAMkAGVmMDEzB",
@@ -127,7 +139,8 @@ Content-type: application/json
       "childFolderCount": 0,
       "unreadItemCount": 5,
       "totalItemCount": 5,
-      "wellKnownName": null
+      "wellKnownName": null,
+      "isHidden": false
     },
     {
       "id": "AAMkAGVmMDEzMA",
@@ -136,7 +149,8 @@ Content-type: application/json
       "childFolderCount": 4,
       "unreadItemCount": 0,
       "totalItemCount": 0,
-      "wellKnownName": "searchfolders"
+      "wellKnownName": "searchfolders",
+      "isHidden": false
     }
   ]
 }
@@ -204,6 +218,7 @@ Content-type: application/json
       "childFolderCount": 0,
       "unreadItemCount": 6,
       "totalItemCount": 6,
+      "isHidden": false,
       "wellKnownName": null,
       "isSupported": true,
       "filterQuery": "contains(subject, 'MyAnalytics')"
@@ -216,9 +231,81 @@ Content-type: application/json
       "childFolderCount": 0,
       "unreadItemCount": 2,
       "totalItemCount": 4,
+      "isHidden": false,
       "wellKnownName": null,
       "isSupported": true,
       "filterQuery": "contains(subject, 'ACTION REQUIRED')"
+    }
+  ]
+}
+```
+
+### Example 3: Include hidden child folders under a specified mail folder
+
+The next example uses the `includeHiddenFolders` query parameter to get a list of child folders under a specified mail folder including hidden mail folders. The response includes the "Clutters" folder that has the **isHidden** set to true.
+
+#### Request
+
+The following is an example of the request.
+
+
+<!-- {
+  "blockType": "request",
+  "name": "mailfolder_get_hiddenchildfolders"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/me/mailFolders/AAMkAGVmMDEzM/childFolders?includeHiddenFolders=true
+```
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.mailFolder",
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "value": [
+    {
+      "id": "AAMkAGVmMDEzA",
+      "displayName": "Internal Screens",
+      "parentFolderId": "AAMkAGVmMDEzM",
+      "childFolderCount": 0,
+      "unreadItemCount": 2,
+      "totalItemCount": 2,
+      "wellKnownName": null,
+      "isHidden": false
+    },
+    {
+      "id": "AAMkAGVmMDEzB",
+      "displayName": "Clutters",
+      "parentFolderId": "AAMkAGVmMDEzM",
+      "childFolderCount": 0,
+      "unreadItemCount": 5,
+      "totalItemCount": 5,
+      "wellKnownName": null,
+      "isHidden": true
+    },
+    {
+      "id": "AAMkAGVmMDEzMA",
+      "displayName": "Finder",
+      "parentFolderId": "AAMkAGVmMDEzM",
+      "childFolderCount": 4,
+      "unreadItemCount": 0,
+      "totalItemCount": 0,
+      "wellKnownName": "searchfolders",
+      "isHidden": false
     }
   ]
 }

@@ -26,8 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /organization/{id}/branding/{property name}
-PUT /organization/{id}/branding/{property name}
+PATCH /organization/{tenant id}/branding/{property name}
+PUT /organization/{tenant id}/branding/{property name}
 ```
 
 ## Request headers
@@ -120,7 +120,6 @@ The following request updates the banner logo for the default branding.
 The following is an example of the request.
 
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "update_organizationalbrandingproperties_2"

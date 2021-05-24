@@ -46,6 +46,8 @@ repository {
 dependency {
     // Include the sdk as a dependency
     implementation 'com.microsoft.graph:microsoft-graph:3.+'
+    // Include Azure identity for authentication
+    implementation 'com.azure:azure-identity:1.+'
 }
 ```
 
@@ -58,6 +60,11 @@ Add the dependency in the `dependencies` element in pom.xml:
     <groupId>com.microsoft.graph</groupId>
     <artifactId>microsoft-graph</artifactId>
     <version>[3.3,)</version>
+</dependency>
+<dependency>
+    <groupId>com.azure</groupId>
+    <artifactId>azure-identity</artifactId>
+    <version>[1.2,)</version>
 </dependency>
 ```
 

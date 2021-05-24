@@ -131,7 +131,7 @@ This resource supports:
 |aboutMe|String|A freeform text entry field for the user to describe themselves.|
 |accountEnabled|Boolean| **true** if the account is enabled; otherwise, **false**. This property is required when a user is created. Supports `$filter`.    |
 |ageGroup|[ageGroup](#agegroup-values)|Sets the age group of the user. Allowed values: `null`, `minor`, `notAdult` and `adult`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information. |
-|assignedLicenses|[assignedLicense](assignedlicense.md) collection|The licenses that are assigned to the user. Returned only on `$select`. Not nullable. Supports `$filter`.           |
+|assignedLicenses|[assignedLicense](assignedlicense.md) collection|The licenses that are assigned to the user, including inherited (group-based) licenses. Returned only on `$select`. Not nullable. Supports `$filter`.           |
 |assignedPlans|[assignedPlan](assignedplan.md) collection|The plans that are assigned to the user. Read-only. Not nullable. |
 |birthday|DateTimeOffset|The birthday of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |businessPhones|String collection|The telephone numbers for the user. NOTE: Although this is a string collection, only one number can be set for this property. <br><br>Read-only for users synced from on-premises directory. Returned by default.|
@@ -139,7 +139,7 @@ This resource supports:
 |companyName | String | The company name which the user is associated. This property can be useful for describing the company that an external user comes from. The maximum length of the company name is 64 characters.<br><br>Returned only on `$select`.|
 |consentProvidedForMinor|[consentProvidedForMinor](#consentprovidedforminor-values)|Sets whether consent has been obtained for minors. Allowed values: `null`, `granted`, `denied` and `notRequired`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information.|
 |country|String|The country/region in which the user is located; for example, "US" or "UK". Maximum length is 128 characters. Supports `$filter`.|
-|createdDateTime | DateTimeOffset |The created date of the user object. Supports `$filter` with the `eq`, `lt`, and `ge` operators.|
+|createdDateTime | DateTimeOffset |The created date of the user object. Supports `$filter` with the `eq`, `ne`, `le`, and `ge` operators.|
 |creationType|String|Indicates whether the user account was created as a regular school or work account (`null`), an external account (`Invitation`), a local account for an Azure Active Directory B2C tenant (`LocalAccount`) or self-service sign-up using email verification (`EmailVerified`). Read-only.|
 |deletedDateTime| DateTimeOffset | The date and time the user was deleted. <br><br>Returned only on `$select`. |
 |department|String|The name for the department in which the user works. Maximum length is 64 characters. Supports `$filter`.|
@@ -158,7 +158,7 @@ This resource supports:
 |imAddresses|String collection|The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only.|
 |interests|String collection|A list for the user to describe their interests.|
 |isResourceAccount|Boolean| Do not use – reserved for future use.|
-|jobTitle|String|The user's job title. Maximum length is 128 characters. Returned by default. Supports `$filter`.|
+|jobTitle|String|The user's job title. Maximum length is 128 characters. Returned by default. Supports `$filter` (`eq` and `startsWith` operators).|
 |lastPasswordChangeDateTime| DateTimeOffset | The time when this Azure AD user last changed their password. The date and time information uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |legalAgeGroupClassification|[legalAgeGroupClassification](#legalagegroupclassification-values)| Used by enterprise applications to determine the legal age group of the user. This property is read-only and calculated based on **ageGroup** and **consentProvidedForMinor** properties. Allowed values: `null`, `minorWithOutParentalConsent`, `minorWithParentalConsent`, `minorNoParentalConsentRequired`, `notAdult` and `adult`. Refer to the [legal age group property definitions](#legal-age-group-property-definitions) for further information.|
 |licenseAssignmentStates|[licenseAssignmentState](licenseassignmentstate.md) collection|State of license assignments for this user. Read-only.|

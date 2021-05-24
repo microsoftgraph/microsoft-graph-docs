@@ -53,6 +53,7 @@ The Microsoft Graph API also provides methods and actions that support common us
 | Let user view more important messages first | [inferenceClassificationOverride](../resources/inferenceclassificationoverride.md) | [Focused Inbox](../resources/manage-focused-inbox.md) |
 | Query for messages and get them in a search folder  | [mailSearchFolder](../resources/mailsearchfolder.md) | [Methods of mailSearchFolder](../resources/mailsearchfolder.md#methods) |
 | Get the MIME content of a message or message attachment | [message](../resources/message.md) | [Get MIME content](/graph/outlook-get-mime-message) |
+| Send messages with MIME content | [message](../resources/message.md) | [Send MIME content](/graph/outlook-send-mime-message) |
 | Add, get, or delete attachments of a message | [attachment](../resources/attachment.md), <br> [fileAttachment](../resources/fileattachment.md), <br> [itemAttachment](../resources/itemattachment.md), <br> [referenceAttachment](../resources/referenceattachment.md), <br> [message](../resources/message.md) | [Methods of attachment](../resources/attachment.md#methods) |
 | Get language and time zone choices for a user | [localeInfo](localeinfo.md), <br> [timeZoneInformation](timezoneinformation.md) | [supportedLanguages](../api/outlookuser-supportedlanguages.md), <br> [supportedTimeZones](../api/outlookuser-supportedtimezones.md) |
 | Get or update a user's automatic reply, locale, time zone, or working hours | [mailboxSettings](../resources/mailboxsettings.md), <br> [automaticRepliesSetting](../resources/automaticrepliessetting.md), <br> [localeInfo](../resources/localeinfo.md), <br> [workingHours](../resources/workinghours.md) | [Get user's mailbox settings](../api/user-get-mailboxsettings.md), <br> [Update user's mailbox settings](../api/user-update-mailboxsettings.md) |
@@ -71,6 +72,7 @@ The Microsoft Graph API also provides methods and actions that support common us
 | Add custom app data as Internet message headers of a message | [message](../resources/message.md) | Add custom data to the **internetMessageHeaders** collection of the message. |
 | Add custom app data to a message by using extensions | [openTypeExtension](../resources/opentypeextension.md), <br>[schemaExtension](../resources/schemaextension.md) | [Add custom data to resources using extensions](/graph/extensibility-overview) |
 | Access custom data for under-exposed Outlook MAPI properties | [singleValueLegacyExtendedProperty](../resources/singlevaluelegacyextendedproperty.md), <br> [multiValueLegacyExtendedProperty](../resources/multivaluelegacyextendedproperty.md) | [Outlook extended properties overview](../resources/extended-properties-overview.md) |
+
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

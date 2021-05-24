@@ -11,6 +11,8 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
 A representation of the Microsoft Authenticator app registered to a user. Microsoft Authenticator is an authentication method.
 
 Inherits from [authenticationMethod](../resources/authenticationmethod.md).

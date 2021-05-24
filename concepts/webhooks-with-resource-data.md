@@ -12,7 +12,7 @@ Microsoft Graph allows apps to subscribe to change notifications for resources v
 
 Including resource data as part of change notifications requires you to implement the following additional logic to satisfy data access and security requirements: 
 
-- [Handle](webhooks-outlook-authz.md#responding-to-reauthorizationrequired-notifications) special subscription lifecycle notifications (preview) to maintain an uninterrupted flow of data. Microsoft Graph sends lifecycle notifications from time to time to require an app to re-authorize, to make sure access issues have not unexpectedly cropped up for including resource data in change notifications.
+- [Handle](webhooks-lifecycle.md#responding-to-reauthorizationrequired-notifications)) special subscription lifecycle notifications (preview) to maintain an uninterrupted flow of data. Microsoft Graph sends lifecycle notifications from time to time to require an app to re-authorize, to make sure access issues have not unexpectedly cropped up for including resource data in change notifications.
 - [Validate](#validating-the-authenticity-of-notifications) the authenticity of change notifications as having originated from Microsoft Graph.
 - [Provide](#decrypting-resource-data-from-change-notifications) a public encryption key and use a private key to decrypt resource data received through change notifications.
 
@@ -27,7 +27,7 @@ In general, this type of change notifications include the following resource dat
 
 ## Supported resources
 
-Currently, the Microsoft Teams [chatMessage](/graph/api/resources/chatmessage?view=graph-rest-beta) as well as the Microsoft Teams [presence](/graph/api/resources/presence?view=graph-rest-beta) (preview) resources supports change notifications that include resource data. Specifically, you can set up a subscription that applies to one of the following:
+Currently, the Microsoft Teams [chatMessage](/graph/api/resources/chatmessage) as well as the Microsoft Teams [presence](/graph/api/resources/presence) (preview) resources supports change notifications that include resource data. Specifically, you can set up a subscription that applies to one of the following:
 
 - New or changed messages in a specific Teams channel: `/teams/{id}/channels/{id}/messages`
 - New or changed messages in all Teams channels: `/teams/getAllMessages`
@@ -37,7 +37,7 @@ Currently, the Microsoft Teams [chatMessage](/graph/api/resources/chatmessage?vi
 
 The **chatMessage** and the **presence** (preview) resources support including all the properties of a changed instance in a change notification. They do not support returning only selective properties of the instance. 
 
-This article walks through an example that shows you how to subscribe to change notifications for messages in a Teams channel, with each change notification including the full resource data of the changed **chatMessage** instance. For more details about **chatMessage**-based subscriptions, see [Get change notifications for chat and channel messages](teams-changenotifications-chatmessage).
+This article walks through an example that shows you how to subscribe to change notifications for messages in a Teams channel, with each change notification including the full resource data of the changed **chatMessage** instance. For more details about **chatMessage**-based subscriptions, see [Get change notifications for chat and channel messages](teams-changenotifications-chatmessage.md).
 
 ## Creating a subscription
 
@@ -358,7 +358,7 @@ To minimize the risk of a private key becoming compromised, periodically change 
 2. Update existing subscriptions with the new certificate key.
 
     - Do this as part of regular subscription renewal. 
-    - Or, enumerate all subscriptions and provide the key. Use the [PATCH operation on the subscription](/graph/api/subscription-update?view=graph-rest-1.0) and update the **encryptionCertificate** and **encryptionCertificateId** properties.
+    - Or, enumerate all subscriptions and provide the key. Use the [PATCH operation on the subscription](/graph/api/subscription-update) and update the **encryptionCertificate** and **encryptionCertificateId** properties.
 
 3. Keep in mind the following:
     - For a period of time, the old certificate may still be used for encryption. Your app must have access to both old and new certificates to be able to decrypt content.
@@ -575,7 +575,7 @@ decryptedPayload += decipher.final('utf8');
 ## See also
 
 - [Set up notifications for changes in user data](webhooks.md)
-- [Subscription resource type](/graph/api/resources/subscription?view=graph-rest-beta)
-- [Get subscription](/graph/api/subscription-get?view=graph-rest-1.0)
-- [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
-- [Update subscription](/graph/api/subscription-update?view=graph-rest-1.0)
+- [Subscription resource type](/graph/api/resources/subscription)
+- [Get subscription](/graph/api/subscription-get)
+- [Create subscription](/graph/api/subscription-post-subscriptions)
+- [Update subscription](/graph/api/subscription-update)

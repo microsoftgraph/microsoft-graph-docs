@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /organization/{id}/branding/{property name}
+GET /organization/{tenant id}/branding/{property name}
 ```
 
 ## Request headers

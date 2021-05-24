@@ -1,8 +1,92 @@
 {
-  "changelog": [
+  "changelog": [    
+     {
+      "ChangeList": [
+	{
+	  "Id": "837e4ca0-5c4e-4d56-bdff-01ff7376c219",
+          "ApiChange": "Method",
+          "ChangedApiName": "setUpResourcesFolder",
+          "ChangeType": "Addition",
+          "Description": "Added the [setUpResourcesFolder](https://docs.microsoft.com/en-us/graph/api/educationassignment-setupresourcesfolder?view=graph-rest-beta) method to the [educationAssignment](https://docs.microsoft.com/en-us/graph/api/resources/educationassignment?view=graph-rest-beta) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "837e4ca0-5c4e-4d56-bdff-01ff7376c219",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationMakeCodeResource",
+          "ChangeType": "Change",
+          "Description": "Removed the **educationMakeCodeResource** resource type effective May 17, 2021. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://developer.microsoft.com/en-us/graph/blogs/breaking-changes-to-the-microsoft-graph-assignments-api-beta/).",
+          "Target": "educationMakeCodeResource"
+        },
+        {
+          "Id": "837e4ca0-5c4e-4d56-bdff-01ff7376c219",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationOneNoteResource",
+          "ChangeType": "Change",
+          "Description": "Removed the **educationOneNoteResource** resource type effective May 17, 2021. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://developer.microsoft.com/en-us/graph/blogs/breaking-changes-to-the-microsoft-graph-assignments-api-beta/).",
+          "Target": "educationOneNoteResource"
+        },
+        {
+          "Id": "837e4ca0-5c4e-4d56-bdff-01ff7376c219",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationFormResource",
+          "ChangeType": "Change",
+          "Description": "Removed the **educationFormResource** resource type effective May 17, 2021. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://developer.microsoft.com/en-us/graph/blogs/breaking-changes-to-the-microsoft-graph-assignments-api-beta/).",
+          "Target": "educationFormResource"
+        },
+        {
+          "Id": "837e4ca0-5c4e-4d56-bdff-01ff7376c219",
+          "ApiChange": "Property",
+          "ChangedApiName": "releasedBy",
+          "ChangeType": "Change",
+          "Description": "Removed the **releasedBy** property from the [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-beta) resource effective May 17, 2021. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://developer.microsoft.com/en-us/graph/blogs/breaking-changes-to-the-microsoft-graph-assignments-api-beta/).",
+          "Target": "educationSubmission"
+        },
+        {
+          "Id": "837e4ca0-5c4e-4d56-bdff-01ff7376c219",
+          "ApiChange": "Property",
+          "ChangedApiName": "releasedDateTime",
+          "ChangeType": "Change",
+          "Description": "Removed the **releasedDateTime** property from the [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-beta) resource effective May 17, 2021. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://developer.microsoft.com/en-us/graph/blogs/breaking-changes-to-the-microsoft-graph-assignments-api-beta/).",
+          "Target": "educationSubmission"
+        },
+        {
+          "Id": "837e4ca0-5c4e-4d56-bdff-01ff7376c219",
+          "ApiChange": "Method",
+          "ChangedApiName": "getResourcesFolderUrl",
+          "ChangeType": "Change",
+          "Description": "Removed the [getResourcesFolderUrl](https://docs.microsoft.com/en-us/graph/api/educationassignment-getresourcesfolderurl?view=graph-rest-beta) method and replaced with new property `resourcesFolderUrl` exposed on [educationAssignment](https://docs.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-beta) resource. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://developer.microsoft.com/en-us/graph/blogs/breaking-changes-to-the-microsoft-graph-assignments-api-beta/).",
+          "Target": "getResourcesFolderUrl"
+        }
+      ],
+      "Id": "837e4ca0-5c4e-4d56-bdff-01ff7376c219",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-05-21T23:46:18.701Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
     {
       "ChangeList": [
-         {
+        {
+          "Id": "3d69383f-3ca5-45bd-bbaf-e2310e2dec25",
+          "ApiChange": "Method",
+          "ChangedApiName": "setUpResourcesFolder",
+          "ChangeType": "Addition",
+          "Description": "Added the [setUpResourcesFolder](https://docs.microsoft.com/en-us/graph/api/educationsubmission-setupresourcesfolder?view=graph-rest-beta) method to the [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationsubmission?view=graph-rest-beta) resource.",
+          "Target": "educationSubmission"
+        }
+      ],
+      "Id": "3d69383f-3ca5-45bd-bbaf-e2310e2dec25",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-05-12T18:46:18.701Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "55c6e37b-93d5-4684-9145-5d36f338faf3",
           "ApiChange": "Permission",
           "ChangedApiName": "educationAssignment",

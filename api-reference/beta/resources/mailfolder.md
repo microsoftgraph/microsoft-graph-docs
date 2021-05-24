@@ -54,9 +54,11 @@ Well-known names work regardless of the locale of the user's mailbox, so the abo
 
 | Method | Return Type | Description |
 |:-------|:------------|:------------|
+|[List mailFolders](../api/user-list-mailfolders.md) | [mailFolder](mailfolder.md) collection|Get all the mail folders in the specified user's mailbox, including any mail search folders.|
 |[Get mailFolder](../api/mailfolder-get.md) | [mailFolder](mailfolder.md) |Read properties and relationships of mailFolder object.|
-|[Create MailFolder](../api/mailfolder-post-childfolders.md) |[mailFolder](mailfolder.md)| Create a new mailFolder under the current one by posting to the childFolders collection.|
+|[Create mailFolder](../api/user-post-mailfolders.md) |[mailFolder](mailfolder.md)| Create a new mail folder in the root folder of the user's mailbox.|
 |[List childFolders](../api/mailfolder-list-childfolders.md) |[mailFolder](mailfolder.md) collection| Get the folder collection under the specified folder. You can use the `.../me/MailFolders` shortcut to get the top-level folder collection and navigate to another folder.|
+|[Create childFolder](../api/mailfolder-post-childfolders.md) |[mailFolder](mailfolder.md)| Create a new mailFolder under the current one by posting to the childFolders collection.|
 |[Create Message](../api/mailfolder-post-messages.md) |[message](message.md)| Create a new message in the current mailFolder by posting to the messages collection.|
 |[List messages](../api/mailfolder-list-messages.md) |[message](message.md) collection| Get all the messages in the signed-in user's mailbox, or those messages in a specified folder in the mailbox.|
 |[Update](../api/mailfolder-update.md) | [mailFolder](mailfolder.md)|Update the specified mailFolder object. |

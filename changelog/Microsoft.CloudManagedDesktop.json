@@ -3,6 +3,130 @@
         {
             "ChangeList": [
                 {
+                    "Id": "2e5005d4-d706-4600-a8c2-05d2f90b8b9f",
+                    "ApiChange": "Permission",
+                    "ChangedApiName": "CloudPC.Read.All",
+                    "ChangeType": "Addition",
+                    "Description": "Added support for the application permission of `CloudPC.Read.All` to the read operations of the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+                    "Target": "cloudPc"
+                },
+                {
+                    "Id": "2e5005d4-d706-4600-a8c2-05d2f90b8b9f",
+                    "ApiChange": "Permission",
+                    "ChangedApiName": "CloudPC.Read.All",
+                    "ChangeType": "Addition",
+                    "Description": "Added support for the application permission of `CloudPC.Read.All` to the read operations of the [cloudPCDeviceImage](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta) resource.",
+                    "Target": "cloudpcdeviceimage"
+                },
+                {
+                    "Id": "2e5005d4-d706-4600-a8c2-05d2f90b8b9f",
+                    "ApiChange": "Permission",
+                    "ChangedApiName": "CloudPC.Read.All",
+                    "ChangeType": "Addition",
+                    "Description": "Added support for the application permission of `CloudPC.Read.All` to the read operations of the [cloudPcOnPremisesConnection](https://docs.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta) resource.",
+                    "Target": "cloudpconpremisesconnection"
+                },
+                {
+                    "Id": "2e5005d4-d706-4600-a8c2-05d2f90b8b9f",
+                    "ApiChange": "Permission",
+                    "ChangedApiName": "CloudPC.Read.All",
+                    "ChangeType": "Addition",
+                    "Description": "Added support for the application permission of `CloudPC.Read.All` to the read operations of the [cloudPcProvisioningPolicy](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
+                    "Target": "cloudpcprovisioningpolicy"
+                },
+                {
+                    "Id": "2e5005d4-d706-4600-a8c2-05d2f90b8b9f",
+                    "ApiChange": "Permission",
+                    "ChangedApiName": "CloudPC.Read.All",
+                    "ChangeType": "Addition",
+                    "Description": "Added support for the application permission of `CloudPC.Read.All` to the [getSourceImages](https://docs.microsoft.com/en-us/graph/api/cloudpcdeviceimage-getsourceimages?view=graph-rest-beta) method of [cloudPCDeviceImage](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta). ",
+                    "Target": "cloudpcdeviceimage-getsourceimages"
+                },
+                {
+                    "Id": "2e5005d4-d706-4600-a8c2-05d2f90b8b9f",
+                    "ApiChange": "Permission",
+                    "ChangedApiName": "CloudPC.ReadWrite.All",
+                    "ChangeType": "Addition",
+                    "Description": "Added support for the application permission of `CloudPC.ReadWrite.All` to the read and write operations of the [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta) resource.",
+                    "Target": "cloudpc"
+                },
+                {
+                    "Id": "2e5005d4-d706-4600-a8c2-05d2f90b8b9f",
+                    "ApiChange": "Permission",
+                    "ChangedApiName": "CloudPC.ReadWrite.All",
+                    "ChangeType": "Addition",
+                    "Description": "Added support for the application permission of `CloudPC.ReadWrite.All` to the read and write operations of the [cloudPCDeviceImage](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcDeviceImage"
+                },
+                {
+                    "Id": "2e5005d4-d706-4600-a8c2-05d2f90b8b9f",
+                    "ApiChange": "Permission",
+                    "ChangedApiName": "CloudPC.ReadWrite.All",
+                    "ChangeType": "Addition",
+                    "Description": "Added support for the application permission of `CloudPC.ReadWrite.All` to the read and write operations of the [cloudPcOnPremisesConnection](https://docs.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta) resource.",
+                    "Target": "cloudpconpremisesconnection"
+                },
+                {
+                    "Id": "2e5005d4-d706-4600-a8c2-05d2f90b8b9f",
+                    "ApiChange": "Permission",
+                    "ChangedApiName": "CloudPC.ReadWrite.All",
+                    "ChangeType": "Addition",
+                    "Description": "Added support for the application permission of `CloudPC.ReadWrite.All` to the read and write operations of the [cloudPcProvisioningPolicy](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta) resource.",
+                    "Target": "cloudpcprovisioningpolicy"
+                },
+                {
+                    "Id": "2e5005d4-d706-4600-a8c2-05d2f90b8b9f",
+                    "ApiChange": "Permission",
+                    "ChangedApiName": "CloudPC.ReadWrite.All",
+                    "ChangeType": "Addition",
+                    "Description": "Added support for the application permission of `CloudPC.ReadWrite.All` to the [reprovision](https://docs.microsoft.com/en-us/graph/api/cloudPc-reprovision?view=graph-rest-beta) method of [cloudPC](https://docs.microsoft.com/en-us/graph/api/resources/cloudpc?view=graph-rest-beta)",
+                    "Target": "cloudPc-reprovison"
+                },
+                {
+                    "Id": "2e5005d4-d706-4600-a8c2-05d2f90b8b9f",
+                    "ApiChange": "Permission",
+                    "ChangedApiName": "CloudPC.ReadWrite.All",
+                    "ChangeType": "Addition",
+                    "Description": "Added support for the application permission of `CloudPC.ReadWrite.All` to the [updateAdDomainPassword](https://docs.microsoft.com/en-us/graph/api/cloudpconpremisesconnection-updateaddomainpassword?view=graph-rest-beta) method of [cloudPcOnPremisesConnection](https://docs.microsoft.com/en-us/graph/api/resources/cloudpconpremisesconnection?view=graph-rest-beta)",
+                    "Target": "cloudpconpremisesconnection-updateaddomainpassword"
+                },
+                {
+                    "Id": "2e5005d4-d706-4600-a8c2-05d2f90b8b9f",
+                    "ApiChange": "Permission",
+                    "ChangedApiName": "CloudPC.ReadWrite.All",
+                    "ChangeType": "Addition",
+                    "Description": "Added support for the application permission of `CloudPC.ReadWrite.All` to the method of [assign](https://docs.microsoft.com/en-us/graph/api/cloudpcprovisioningpolicy-assign?view=graph-rest-beta) method of [cloudPcProvisioningPolicy](https://docs.microsoft.com/en-us/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta)",
+                    "Target": "cloudpcprovisioningpolicy-assign"
+                }
+            ],
+            "Id": "2e5005d4-d706-4600-a8c2-05d2f90b8b9f",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-05-10T15:13:07.177Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "98da5315-2d5c-457c-a761-28df4b737c2b",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "resourceAvailabilityCheckUnsupportedVNetRegion",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `resourceAvailabilityCheckUnsupportedVNetRegion` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                }
+            ],
+            "Id": "98da5315-2d5c-457c-a761-28df4b737c2b",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-05-05T15:52:07.177Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {  
+            "ChangeList": [
+                {
                     "Id": "354f1cbe-9671-4608-8027-eb7dce79a0b7",
                     "ApiChange": "Member",
                     "ChangedApiName": "adJoinCheckAccessDenied",

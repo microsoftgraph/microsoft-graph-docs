@@ -26,6 +26,19 @@ The authentication method APIs are used to manage a user's authentication method
 |[microsoftAuthenticatorAuthenticationMethod](microsoftauthenticatorauthenticationmethod.md)|Microsoft Authenticator can be used by a user to sign-in or perform multi-factor authentication to Azure AD|Delete a Microsoft Authenticator authentication method.|
 |[windowsHelloForBusinessAuthenticationMethod](windowsHelloForBusinessAuthenticationMethod.md)|Windows Hello for Business is a passwordless sign-in method on Windows devices.|See devices where a user has enabled Windows Hello for Business sign-in. Delete a Windows Hello for Business credential.|
 
+The following authentication methods are not yet supported in Microsoft Graph v1.0.
+
+|Authentication method       | Description |Examples     |
+|:---------------------------|:------------|:------------|
+|Password | A password is currently the default primary authentication method in Azure AD.|Reset a user's password.|
+|phoneAuthenticationMethod (not yet supported) |A phone can be used by a user to authenticate using [SMS or voice calls](/azure/active-directory/authentication/concept-authentication-methods#phone-options) (as allowed by policy).|See a user's authentication phone numbers. Add, update, or remove a phone number to a user. Enable or disable a primary mobile phone for SMS sign-in.|
+|Email |An email address can be user by a user as part of the Self-Service Password Reset (SSPR) process.|See a user's authentication email address. Add, update, or remove an email address to a user.|
+|Temporary Access Pass |Temporary Access Pass is a time-limited passcode that serves as a strong credential and allows onboarding of passwordless credentials. | Set a new Temporary Access Pass on a user.|
+|Hardware token | Allow users to perform multifactor authentication using a physical device that provides a one-time code. | Get a hardware token assigned to a user.|
+|Software token | Allow users to perform multifactor authentication using an application that supporters the OATH specification and provides a one-time code. | Get and delete a software token assigned to a user.|
+|Security questions and answers | Allow users to validate their identity when performing a self-service password reset. |Delete a security question a user registered.|
+|Default method | Represents the method the user has selected as default for performing multi-factor authentication.| Change a user's default MFA method.|
+
 ## Next steps
 
 * Review the authentication method types and their various methods.

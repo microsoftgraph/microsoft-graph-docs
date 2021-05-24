@@ -11,7 +11,7 @@ This topic describes how to get started with the Microsoft Graph Toolkit in a we
 
 Getting started with the Microsoft Graph Toolkit involves the following steps:
 1. Add Microsoft Graph Toolkit to your project.
-2. Initialize the MSAL Provider.
+2. Initialize the MSAL 2.0 Provider.
 3. Add components.
 4. Test your application.
 
@@ -33,29 +33,27 @@ npm install @microsoft/mgt
 
 ---
 
+## Initialize the MSAL 2.0 Provider
+The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). The [MSAL 2.0 Provider](../providers/msal2.md) uses msal-browser to sign in users and acquire tokens. You can initialize this provider in your HTML or JavaScript.
 
-> **Note**: If you're targeting a browser such as IE11 that does not support web components natively, you might need to [include polyfills](./overview.md#polyfills).
-
-## Initialize the MSAL Provider
-The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). The [MSAL Provider](../providers/msal.md) uses MSAL.js to sign in users and acquire tokens. You can initialize the MSAL provider in your HTML or JavaScript.
-
-If you would like to use your own backend authentication, use the [Proxy Provider](../providers/proxy.md) in place of the MSAL provider.
+> **Note**: If you are currently using MSAL Provider and would like to update to MSAL 2.0 Provider, follow the steps listed [here](../providers/msal2.md#migrating-from-msal-provider-to-msal-2-provider).
+If you would like to use your own backend authentication, use the [Proxy Provider](../providers/proxy.md) in place of the MSAL 2.0 provider.
 
 You can choose to initialize the provider in either your HTML or your JavaScript code. 
 
 # [html](#tab/HTML)
-Add the `mgt-msal-provider` component to your HTML page and set the `client-id` to your application client-id.
+Add the `mgt-msal2-provider` component to your HTML page and set the `client-id` to your application client-id.
 
 ```html
-<mgt-msal-provider client-id="<YOUR_CLIENT_ID"></mgt-msal-provider>
+<mgt-msal2-provider client-id="<YOUR_CLIENT_ID"></mgt-msal2-provider>
 ```
 # [js](#tab/JavaScript)
 To initialize the MSAL provider in your JavaScript, add the following code to your application:
 
 ```js
-import {Providers, MsalProvider} from '@microsoft/mgt'
+import {Providers, Msal2Provider} from '@microsoft/mgt'
 
-Providers.globalProvider = new MsalProvider({
+Providers.globalProvider = new Msal2Provider({
     clientId: "<YOUR_CLIENT_ID>"
 })
 ```
@@ -63,40 +61,39 @@ Providers.globalProvider = new MsalProvider({
 ---
 
 
-The client ID is the only property required to initialize the provider, but you can set additional options. For the full list, see [Msal Provider](../providers/msal.md).
+The client ID is the only property required to initialize the provider, but you can set additional options. For the full list, see [Msal 2.0 Provider](../providers/msal2.md).
 
 ### Creating an app/client ID
 In order to get a client ID, you need to [register your application](./add-aad-app-registration.md) in Azure AD. 
->**Note**: MSAL only supports the Implicit Flow for OAuth. Make sure to enable Implicit Flow in your application in the Azure Portal (it is not enabled by default). Under **Authentication**, find the **Implicit grant** section and select the checkboxes for **Access tokens** and **ID tokens**. 
 
 ## Add components
-After you initialize the MSAL provider, you can start using any of the Toolkit components.
+After you initialize the MSAL 2.0 provider, you can start using any of the Toolkit components.
 
 # [html](#tab/HTML)
 The following is a full working example using mgt-loader, the MSAL Provider initialized in HTML, and the Login component:
 
 ```html
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
-<mgt-msal-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal-provider>
+<mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal2-provider>
 <mgt-login></mgt-login>
 ```
 
-This is an example using the ES6 modules, the MSAL Provider initialized in HTML, and the Login component:
+This is an example using the ES6 modules, the MSAL 2.0 Provider initialized in HTML, and the Login component:
 
 ```html
 <script type="module" src="node_modules/@microsoft/mgt/dist/es6/index.js"></script>
 
-<mgt-msal-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal-provider>
+<mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal2-provider>
 
 <mgt-login></mgt-login>
 ```
 # [js](#tab/JavaScript)
-This is an example using the ES6 modules, the MSAL Provider initialized in JavaScript, and the Login component:
+This is an example using the ES6 modules, the MSAL 2.0 Provider initialized in JavaScript, and the Login component:
 
 ```js
-import {Providers, MsalProvider} from '@microsoft/mgt'
+import {Providers, Msal2Provider} from '@microsoft/mgt'
 
-Providers.globalProvider = new MsalProvider({
+Providers.globalProvider = new Msal2Provider({
     clientId: "<YOUR_CLIENT_ID>"
 })
 

@@ -10,7 +10,7 @@ String displayName = "CN=customDisplayName";
 
 OffsetDateTime endDateTime = OffsetDateTimeSerializer.deserialize("01/25/2024 00:00:00");
 
-graphClient.servicePrincipals("7c8d4399-b4bf-413a-8b6a-c577790cae7d")
+graphClient.servicePrincipals("004375c5-6e2e-4dec-95e3-626838cb9f80")
 	.addTokenSigningCertificate(ServicePrincipalAddTokenSigningCertificateParameterSet
 		.newBuilder()
 		.withDisplayName(displayName)

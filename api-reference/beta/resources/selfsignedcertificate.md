@@ -42,10 +42,10 @@ Here is a JSON representation of the resource
 
 ```json
 {
-    "customKeyIdentifier": "binary",
+    "customKeyIdentifier": "string (binary)",
     "displayName": "string",
     "endDateTime": "string (timestamp)",
-    "key": "binary",
+    "key": "string (binary)",
     "keyId": "guid",
     "startDateTime": "String (timestamp)",
     "type": "string",

@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
-# accessReview resource type
+# accessReview resource type (deprecated)
 
 Namespace: microsoft.graph
 

@@ -9689,8 +9689,8 @@ items:
           href: api/educationassignment-publish.md
         - name: List submissions for assignment
           href: api/educationassignment-list-submissions.md
-        - name: Get resource folder URL (deprecated)
-          href: api/educationassignment-getresourcesfolderurl.md
+        - name: Set up assignment resources folder
+          href: api/educationassignment-setupresourcesfolder.md
         - name: Get rubric attached to assignment
           href: api/educationassignment-get-rubric.md
         - name: List categories
@@ -9740,7 +9740,7 @@ items:
       - name: Submission
         href: resources/educationsubmission.md
         items:
-        - name: List submission resource
+        - name: List submission resources
           href: api/educationsubmission-list-resources.md
         - name: Add submission resource
           href: api/educationsubmission-post-resources.md
@@ -9750,6 +9750,8 @@ items:
           href: api/educationsubmissionresource-delete.md
         - name: Get submission
           href: api/educationsubmission-get.md
+        - name: Set up submission resources folder
+          href: api/educationsubmission-setupresourcesfolder.md
         - name: Submit submission
           href: api/educationsubmission-submit.md
         - name: Unsubmit submission
@@ -10401,6 +10403,33 @@ items:
               href: api/subscribedsku-list.md
             - name: Get subscribedSku
               href: api/subscribedsku-get.md
+        - name: Mobility management policy (Preview)
+          href: resources/mobilitymanagementpolicy.md
+          items:
+          - name: List mobile device management policies
+            href: api/mobiledevicemanagementpolicies-list.md
+          - name: Get
+            href: api/mobiledevicemanagementpolicies-get.md
+          - name: Update
+            href: api/mobiledevicemanagementpolicies-update.md
+          - name: List included groups
+            href: api/mobiledevicemanagementpolicies-list-includedgroups.md
+          - name: Add included groups
+            href: api/mobiledevicemanagementpolicies-post-includedgroups.md
+          - name: Remove included groups
+            href: api/mobiledevicemanagementpolicies-delete-includedgroups.md
+          - name: List mobile app management policies
+            href: api/mobileappmanagementpolicies-list.md
+          - name: Get
+            href: api/mobileappmanagementpolicies-get.md
+          - name: Update
+            href: api/mobileappmanagementpolicies-update.md
+          - name: List included groups
+            href: api/mobileappmanagementpolicies-list-includedgroups.md
+          - name: Add included groups
+            href: api/mobileappmanagementpolicies-post-includedgroups.md
+          - name: Remove included groups
+            href: api/mobileappmanagementpolicies-delete-includedgroups.md
         - name: Role management
           href: resources/rolemanagement.md
           items:
@@ -10441,6 +10470,72 @@ items:
               href: api/unifiedroleassignmentmultiple-update.md
             - name: Delete
               href: api/unifiedroleassignmentmultiple-delete.md
+          - name: Role assignment request
+            href: resources/unifiedroleassignmentschedulerequest.md
+            items:
+            - name: List
+              href: api/unifiedroleassignmentschedulerequest-list.md
+            - name: Get
+              href: api/unifiedroleassignmentschedulerequest-get.md
+            - name: Create
+              href: api/unifiedroleassignmentschedulerequest-post-unifiedroleassignmentschedulerequests.md
+            - name: Update
+              href: api/unifiedroleassignmentschedulerequest-update.md
+            - name: Cancel
+              href: api/unifiedroleassignmentschedulerequest-cancel.md
+            - name: Filter by current user
+              href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
+          - name: Role eligibility request
+            href: resources/unifiedroleeligibilityschedulerequest.md
+            items:
+            - name: List
+              href: api/unifiedroleeligibilityschedulerequest-list.md
+            - name: Get
+              href: api/unifiedroleeligibilityschedulerequest-get.md
+            - name: Create
+              href: api/unifiedroleeligibilityschedulerequest-post-unifiedroleeligibilityschedulerequests.md
+            - name: Update
+              href: api/unifiedroleeligibilityschedulerequest-update.md
+            - name: Cancel
+              href: api/unifiedroleeligibilityschedulerequest-cancel.md
+            - name: Filter by current user
+              href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
+          - name: Role assignment schedule
+            href: resources/unifiedRoleAssignmentSchedule.md
+            items:
+            - name: List
+              href: api/unifiedroleassignmentschedule-list.md
+            - name: Get
+              href: api/unifiedroleassignmentschedule-get.md
+            - name: Filter by current user
+              href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
+          - name: Role eligibility schedule
+            href: resources/unifiedRoleEligibilitySchedule.md
+            items:
+            - name: List
+              href: api/unifiedRoleEligibilitySchedule-list.md
+            - name: Get
+              href: api/unifiedRoleEligibilitySchedule-get.md
+            - name: Filter by current user
+              href: api/unifiedRoleEligibilitySchedule-filterbycurrentuser.md
+          - name: Role assignment instance
+            href: resources/unifiedRoleAssignmentScheduleInstance.md
+            items:
+            - name: List
+              href: api/unifiedRoleAssignmentScheduleInstance-list.md
+            - name: Get
+              href: api/unifiedRoleAssignmentScheduleInstance-get.md
+            - name: Filter by current user
+              href: api/unifiedRoleAssignmentScheduleInstance-filterbycurrentuser.md
+          - name: Role eligibility instance
+            href: resources/unifiedRoleEligibilityScheduleInstance.md
+            items:
+            - name: List
+              href: api/unifiedRoleEligibilityScheduleInstance-list.md
+            - name: Get
+              href: api/unifiedRoleEligibilityScheduleInstance-get.md
+            - name: Filter by current user
+              href: api/unifiedRoleEligibilityScheduleInstance-filterbycurrentuser.md
       - name: Identity and sign-in
         items:
         - name: Authentication events policy
@@ -10475,8 +10570,11 @@ items:
             - name: Update
               href: api/authenticationflowspolicy-update.md
         - name: Authentication methods
-          href: resources/authenticationmethods-overview.md
           items:
+          - name: Overview
+            href: resources/authenticationmethods-overview.md
+          - name: List all methods
+            href: api/authentication-list-methods.md
           - name: FIDO2 security keys
             href: resources/fido2authenticationmethod.md
             items:
@@ -10641,11 +10739,13 @@ items:
             href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
           - name: Delete
             href: api/certificatebasedauthconfiguration-delete.md
-        - name: Conditional access
+        - name: Conditional Access
           items:
+          - name: Conditional Access
+            href: resources/conditionalaccessroot.md
           - name: Policies
             items:
-            - name: Conditional access policy
+            - name: Conditional Access policy
               href: resources/conditionalaccesspolicy.md
             - name: List
               href: api/conditionalaccessroot-list-policies.md
@@ -10697,6 +10797,18 @@ items:
                   href: api/ipnamedlocation-update.md
                 - name: Delete
                   href: api/ipnamedlocation-delete.md
+          - name: Authentication context class references
+            items:
+            - name: Authentication context class references
+              href: resources/authenticationcontextclassreference.md
+            - name: List
+              href: api/conditionalaccessroot-list-authenticationcontextclassreferences.md
+            - name: Create
+              href: api/conditionalaccessroot-post-authenticationcontextclassreferences.md
+            - name: Get
+              href: api/authenticationcontextclassreference-get.md
+            - name: Update
+              href: api/authenticationcontextclassreference-update.md
         - name: Data policy operation
           href: resources/datapolicyoperation.md
           items:
@@ -10960,6 +11072,33 @@ items:
                   href: api/permissiongrantpolicy-post-excludes.md
                 - name: Delete from excludes
                   href: api/permissiongrantpolicy-delete-excludes.md
+          - name: Role management policy
+            href: resources/unifiedRoleManagementPolicy.md
+            items:
+            - name: List
+              href: api/unifiedrolemanagementpolicy-list.md
+            - name: Get
+              href: api/unifiedrolemanagementpolicy-get.md
+            - name: List effective rules
+              href: api/unifiedrolemanagementpolicy-list-effectiverules.md
+            - name: List rules
+              href: api/unifiedrolemanagementpolicy-list-rules.md
+          - name: Role management policy assignment
+            href: resources/unifiedRoleManagementPolicyAssignment.md
+            items:
+            - name: List
+              href: api/unifiedRoleManagementPolicyAssignment-list.md
+            - name: Get
+              href: api/unifiedRoleManagementPolicyAssignment-get.md
+          - name: Role management policy rule
+            href: resources/unifiedRoleManagementPolicyRule.md
+            items:
+            - name: List
+              href: api/unifiedRoleManagementPolicyRule-list.md
+            - name: Get
+              href: api/unifiedRoleManagementPolicyRule-get.md
+            - name: Update
+              href: api/unifiedRoleManagementPolicyRule-update.md
           - name: Token issuance policy
             href: resources/tokenissuancepolicy.md
             items:
@@ -11187,7 +11326,7 @@ items:
             - name: Get
               href: api/accessreviewscheduledefinition-get.md
             - name: Create
-              href: api/accessreviewscheduledefinition-create.md
+              href: api/accessreviewscheduledefinition-post.md
             - name: Delete
               href: api/accessreviewscheduledefinition-delete.md 
             - name: Update
@@ -11235,10 +11374,10 @@ items:
             - name: List
               href: api/accessreviewhistorydefinition-list.md
             - name: Create
-              href: api/accessreviewhistorydefinition-create.md
+              href: api/accessreviewhistorydefinition-post.md
             - name: Generate download URI
               href: api/accessreviewhistorydefinition-generatedownloaduri.md
-        - name: Access reviews (legacy)
+        - name: Access reviews (deprecated)
           href: resources/accessreviews-root.md
           items:
           - name: Access review
@@ -11346,11 +11485,15 @@ items:
               href: api/accesspackage-update.md
             - name: Delete
               href: api/accesspackage-delete.md
+            - name: Filter by current user
+              href: api/accesspackage-filterbycurrentuser.md
           - name: Access package assignment
             href: resources/accesspackageassignment.md
             items:
             - name: List
               href: api/accesspackageassignment-list.md
+            - name: Filter by current user
+              href: api/accesspackageassignment-filterbycurrentuser.md
           - name: Access package assignment approval
             href: resources/approval.md
             items:
@@ -11386,6 +11529,10 @@ items:
               href: api/accesspackageassignmentrequest-post.md
             - name: Get
               href: api/accesspackageassignmentrequest-get.md
+            - name: Filter by current user
+              href: api/accesspackageassignmentrequest-filterbycurrentuser.md
+            - name: Cancel
+              href: api/accesspackageassignmentrequest-cancel.md
           - name: Access package assignment resource role
             href: resources/accesspackageassignmentresourcerole.md
             items:
@@ -11706,22 +11853,22 @@ items:
           href: api/mailfolder-update.md
         - name: Delete mail folder
           href: api/mailfolder-delete.md
-        - name: Get folder delta
-          href: api/mailfolder-delta.md
         - name: Copy mail folder
           href: api/mailfolder-copy.md
-        - name: Move mail folder
-          href: api/mailfolder-move.md
-        - name: List messages in folder
-          href: api/mailfolder-list-messages.md
+        - name: Create child folder
+          href: api/mailfolder-post-childfolders.md
         - name: Create message in folder
-          href: api/mailfolder-post-messages.md
+          href: api/mailfolder-post-messages.md          
+        - name: Get folder delta
+          href: api/mailfolder-delta.md
         - name: Get message delta
           href: api/message-delta.md
         - name: List child folders
           href: api/mailfolder-list-childfolders.md
-        - name: Create mail child folder
-          href: api/mailfolder-post-childfolders.md
+        - name: List messages in folder
+          href: api/mailfolder-list-messages.md
+        - name: Move mail folder
+          href: api/mailfolder-move.md
       - name: Mail search folder
         href: resources/mailsearchfolder.md
         items:

@@ -85,7 +85,7 @@ landingContent:
             url: /learn/paths/m365-msgraph-fundamentals
           - text: Build apps with Microsoft Graph - Associate
             url: /learn/paths/m365-msgraph-associate
-          - text: Get started with Microsoft Graph Toolkit
-            url: /learn/modules/msgraph-toolkit-intro
+          - text: Develop apps with the Microsoft Graph Toolkit
+            url: /learn/paths/m365-msgraph-toolkit
           - text: Explore Microsoft Graph scenarios for JavaScript development
             url: /learn/paths/m365-msgraph-scenarios

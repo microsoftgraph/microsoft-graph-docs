@@ -1,6 +1,6 @@
 ---
 title: "Get educationAssignment"
-description: " teachers can see all assignments in a class."
+description: "Get the properties and relationships of an assignment."
 author: "dipakboyed"
 localization_priority: Normal
 ms.prod: "education"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties and relationships of an assignment. Students can only see assignments assigned to them; teachers and applications with application permissions can see all assignments in a class.
+Get the properties and relationships of an assignment. 
+
+Students can only see assignments assigned to them; teachers and applications with application permissions can see all assignments in a class.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -107,6 +109,7 @@ Content-length: 279
   "createdDateTime": "2014-01-01T00:00:00Z",
   "displayName": "Mid term exam",
   "dueDateTime": "2014-01-11T00:00:00Z",
+  "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!0sGAoOieeE6iSj1WXCV-nYYTuh2luKRDvUVGQBLOmvYpRzc5ARnCRorRht6P3MhU/items/01N74NOEZL7P3VK22SQFDKBZ3PHVPKDVAQ",
   "grading": {
       "@odata.type": "microsoft.graph.educationAssignmentPointsGradeType",
       "maxPoints": 100

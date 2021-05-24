@@ -28,8 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /organization/{id}/branding
-PUT /organization/{id}/branding
+PATCH /organization/{tenant id}/branding
+PUT /organization/{tenant id}/branding
 ```
 
 ## Request headers

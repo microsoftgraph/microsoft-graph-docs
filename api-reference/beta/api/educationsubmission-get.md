@@ -44,7 +44,7 @@ Do not supply a request body for this method.
 ## Response
 If successful, this method returns a `200 OK` response code and an [educationSubmission](../resources/educationsubmission.md) object in the response body.
 ## Example
-##### Request
+### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
@@ -73,10 +73,13 @@ GET https://graph.microsoft.com/beta/education/classes/11010/assignments/19002/s
 
 ---
 
-##### Response
+### Response
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability.
+>**Notes:** 
+>The response object shown here might be shortened for readability. 
+>
+>If [setUpResourcesFolder](educationsubmission-setupResourcesFolder.md) has not been called on this [educationSubmission](../resources/educationsubmission.md) resource yet, the **resourcesFolderUrl** property is `null`.
 
 <!-- {
   "blockType": "response",
