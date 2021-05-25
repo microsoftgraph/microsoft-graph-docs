@@ -99,6 +99,23 @@ items:
             href: application-proxy-configure-api.md
           - name: Configure provisioning
             href: application-provisioning-configure-api.md
+      - name: Accessing data at scale
+        displayName: Microsoft Graph Data Connect
+        items:
+          - name: Overview of Data Connect
+            href: data-connect-concept-overview.md
+          - name: Build your first Data Connect application
+            href: data-connect-quickstart.yml
+          - name: Datasets, regions, and sinks
+            href: data-connect-datasets.md
+          - name: Policies and billing
+            href: data-connect-policies.md
+          - name: User selection and filtering
+            href: data-connect-filtering.md
+          - name: Integrate with PAM
+            href: data-connect-pam.md
+          - name: Frequently asked questions
+            href: data-connect-faq.md
       - name: Calendar
         displayName: Outlook
         items:
@@ -162,23 +179,6 @@ items:
       - name: Customer booking (preview)
         href: booking-concept-overview.md
         displayName: Bookings, Microsoft Bookings
-      - name: Data access at scale
-        displayName: Microsoft Graph Data Connect
-        items:
-          - name: Data Connect overview
-            href: data-connect-concept-overview.md
-          #- name: Build your first Data Connect application
-           # href: data-connect-quickstart.yml
-          - name: Datasets, regions, and sinks
-            href: data-connect-datasets.md
-          - name: Policies and billing
-            href: data-connect-policies.md
-          - name: User selection and filtering
-            href: data-connect-filtering.md
-          - name: Integrate with PAM
-            href: data-connect-pam.md
-          - name: Frequently asked questions
-            href: data-connect-faq.md
       - name: Devices and apps
         expanded: true
         items:

@@ -17,7 +17,9 @@ Microsoft Graph Data Connect uses Azure Data Factory to copy Microsoft 365 data 
 
 You can use Data Connect to enable machine learning scenarios for your organization. In these scenarios, you can create applications that provide valuable information to your stakeholders, train machine learning models, and even perform forecasting based on large amounts of acquired data.
 
-<iframe class="video-iframe" style="width: 960px; height: 540px;" frameborder="0" allowfullscreen="true" src="https://www.microsoft.com/en-us/videoplayer/embed/RWEJsy?autoplay=false"> </iframe>
+<!--<iframe class="video-iframe" style="width: 960px; height: 540px;" frameborder="0" allowfullscreen="true" src="https://www.microsoft.com/en-us/videoplayer/embed/RWEJsy?autoplay=false"> </iframe>-->
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWEJsy?autoplay=false]
 
 You can take advantage of Microsoft Graph Data Connect if you agree to the [Microsoft APIs Terms of Use](/legal/microsoft-apis/terms-of-use?context=/graph/context) and the [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/p/?LinkId=123161) and are:
 
@@ -30,7 +32,7 @@ Rich applications require access to large amounts of data, often from many users
 
 ## Granular data consent
 
-In the traditional Microsoft Graph consent model, an administrator or user can only grant or deny an application’s request to access specific, predefined sets of entities. For example, a request for Mail.Read includes read access to a fixed set of entities that support Outlook mail, including entire [message](/graph/api/resources/message?view=graph-rest-1.0) instances with all the relevant properties. Microsoft Graph Data Connect enables more granular consent, allowing applications to request access to specific properties in an entity or filter the data in those properties. Administrators must give explicit approval before Microsoft Graph data can be accessed. The request must specify the level of access requested, data policy enforcement, the reason for the request, and the schema of the data requested. As a result, applications can only use data that is essential to their function, and any unrelated content is excluded. For example, an app might consume email metadata but exclude body content and attachments.
+In the traditional Microsoft Graph consent model, an administrator or user can only grant or deny an application’s request to access specific, predefined sets of entities. For example, a request for Mail.Read includes read access to a fixed set of entities that support Outlook mail, including entire [message](/graph/api/resources/message) instances with all the relevant properties. Microsoft Graph Data Connect enables more granular consent, allowing applications to request access to specific properties in an entity or filter the data in those properties. Administrators must give explicit approval before Microsoft Graph data can be accessed. The request must specify the level of access requested, data policy enforcement, the reason for the request, and the schema of the data requested. As a result, applications can only use data that is essential to their function, and any unrelated content is excluded. For example, an app might consume email metadata but exclude body content and attachments.
 
 ## Data security and governance
 
