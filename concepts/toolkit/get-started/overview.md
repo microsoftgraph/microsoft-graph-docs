@@ -100,12 +100,6 @@ The [`@microsoft/mgt-react`](./mgt-react.md) package contains all auto-generated
 
 The [`@microsoft/mgt-spfx`](./mgt-spfx.md) package contains a SharePoint Framework library that's required to use Microsoft Graph Toolkit in SharePoint Framework solutions.
 
-## Polyfills
-
-If you're using the ES6 modules from the npm package and you're [targeting a browser such as IE11](https://caniuse.com/#search=components) that does not support web components natively, you will need to include polyfills in your project, as they are not automatically included. Polyfills help to fill in missing browser capabilities in browsers that are still in the process of updating to support Web Component standards. For instructions and to learn more, see [polyfills documentation](https://www.webcomponents.org/polyfills). 
-
-The polyfills are already included if you're using the Toolkit via the mgt-loader script.
-
 ## Next Steps
 You're now ready to start developing with the Microsoft Graph Toolkit! The following guides are available to help you get started:
 

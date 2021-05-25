@@ -30,8 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/{id}/assignments/{id}/submissions/{id}/setUpResourcesFolder
-
 ```
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|

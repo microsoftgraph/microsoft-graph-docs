@@ -35,7 +35,7 @@ The assignment APIs are exposed in the class namespace.
 |[Attach rubric](../api/educationassignment-put-rubric.md)|None|Attach an existing **educationRubric** to this assignment.|
 |[Remove rubric](../api/educationassignment-delete-rubric.md)|None|Detach the **educationRubric** from this assignment.|
 |[Publish](../api/educationassignment-publish.md)|[educationAssignment](educationassignment.md)|Change the state of an **educationAssignment** object from draft to published.|
-|[Get resource folder URL (deprecated)](../api/educationassignment-getresourcesfolderurl.md)| string| The OneDrive folder into which file-based resources should be placed to be part of an assignment resource. Files must be located in this folder to be added as a resource.|
+|[Set up assignment resources folder](../api/educationassignment-setupresourcesfolder.md)| string| Create a SharePoint folder (under pre-defined location) to upload files as assignment resources|
 
 ## Properties
 | Property	   | Type	|Description|

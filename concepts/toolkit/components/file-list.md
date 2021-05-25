@@ -66,6 +66,11 @@ The following example changes the behavior of the component to fetch file list b
 <mgt-file-list insight-type="shared"></mgt-file-list>
 ```
 
+## Methods
+| Method | Description |
+| --- | --- |
+| reload(clearCache = false) | Call the method to reload the component with potential new data based on its properties. Pass `true` to clear the cache before reloading. |
+
 ## CSS custom properties
 
 The `mgt-file-list` component defines the following CSS custom properties.

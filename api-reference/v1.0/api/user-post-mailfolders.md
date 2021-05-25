@@ -12,6 +12,9 @@ doc_type: apiPageType
 Namespace: microsoft.graph
 
 Use this API to create a new mail folder in the root folder of the user's mailbox.
+
+If you intend a new folder to be hidden, you must set the **isHidden** property to `true` on creation.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -34,19 +37,20 @@ POST /users/{id | userPrincipalName}/mailFolders
 | Content-Type  | application/json  |
 
 ## Request body
-In the request body, provide a JSON object with the following parameters. **displayName** is the only writable property for a 
-[MailFolder](../resources/mailfolder.md) object.
+In the request body, provide a JSON object with the following parameters. **displayName** and **isHidden** are the only writable property for a 
+[mailFolder](../resources/mailfolder.md) object.
 
 | Parameter	   | Type	|Description|
 |:---------------|:--------|:----------|
 |displayName|String|The display name of the new folder.|
+|isHidden|Boolean|Indicates whether the new folder is hidden. The default value is `false`. Setting the property is optional. Once set, you cannot update this property. See more information in [Hidden mail folders](../resources/mailfolder.md#hidden-mail-folders)|
 
 ## Response
 
-If successful, this method returns `201 Created` response code and a [MailFolder](../resources/mailfolder.md) object in the response body.
+If successful, this method returns `201 Created` response code and a [mailFolder](../resources/mailfolder.md) object in the response body.
 
 ## Example
-##### Request
+### Request
 Here is an example of the request.
 
 # [HTTP](#tab/http)
@@ -60,7 +64,8 @@ Content-type: application/json
 Content-length: 159
 
 {
-  "displayName": "Clutter"
+  "displayName": "Clutter",
+  "isHidden": true
 }
 ```
 # [C#](#tab/csharp)
@@ -82,8 +87,10 @@ Content-length: 159
 ---
 
 
-##### Response
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+### Response
+Here is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -100,7 +107,8 @@ Content-length: 179
   "childFolderCount": 99,
   "unreadItemCount": 99,
   "totalItemCount": 99,
-  "id": "hN2Y5OGRhNGYwODEALgAAA0DAKbvJvFhJgcT3lZpkhNQBAA1"
+  "id": "hN2Y5OGRhNGYwODEALgAAA0DAKbvJvFhJgcT3lZpkhNQBAA1",
+  "isHidden": true
 }
 ```
 

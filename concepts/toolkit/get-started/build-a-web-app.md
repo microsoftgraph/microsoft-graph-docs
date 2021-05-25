@@ -33,9 +33,6 @@ npm install @microsoft/mgt
 
 ---
 
-
-> **Note**: If you're targeting a browser such as IE11 that does not support web components natively, you might need to [include polyfills](./overview.md#polyfills).
-
 ## Initialize the MSAL 2.0 Provider
 The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). The [MSAL 2.0 Provider](../providers/msal2.md) uses msal-browser to sign in users and acquire tokens. You can initialize this provider in your HTML or JavaScript.
 

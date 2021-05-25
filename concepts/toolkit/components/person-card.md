@@ -15,9 +15,9 @@ For more information about the `mgt-person` component, see [mgt-person](./person
 
 The following example shows the use of the `mgt-person-card` component with a `mgt-person` component. Hover over the person to see the Person Card and use the code editor to see how [properties](#properties) change the behavior of the component.
   
-<iframe src="https://mgt.dev/iframe.html?id=components-mgt-person-card--person-card-hover&source=docs" height="400"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-person-card--person-card&source=docs" height="400"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-person-card--person-card-hover&source=docs)
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-person-card--person-card&source=docs)
 
 
 ## Global component configuration
@@ -123,6 +123,14 @@ For example, you can use a template to customize the component attached to the `
     </mgt-person>
 
 ```
+
+## Events
+
+The following events are fired from the component.
+
+| Event | Description |
+| --- | --- |
+| `expanded` | The user has opened the expanded details section of the card. |
 
 ## CSS custom properties
 

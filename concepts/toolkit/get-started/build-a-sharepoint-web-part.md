@@ -66,6 +66,9 @@ public render(): void {
 }
 ```
 
+>[!NOTE]
+> If you're building a web part using React, see the [@microsoft/mgt-spfx docs](./mgt-spfx.md#react) to learn how to use `@microsoft/mgt-react`.
+
 ## Configure permissions
 
 To call Microsoft Graph from your SharePoint Framework application, you need to request the needed permissions in your solution package and a Microsoft 365 tenant administrator needs to approve the requested permissions.
