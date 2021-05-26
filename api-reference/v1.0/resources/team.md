@@ -50,7 +50,7 @@ For more information about working with groups and members in teams, see [Use th
 | Property | Type | Description |
 |:---------------|:--------|:----------|
 |displayName|string| The name of the team. |
-|description|string| An optional description for the team. |
+|description|string| An optional description for the team. Maximum length: 1024 characters. |
 |classification|string| An optional label. Typically describes the data or business sensitivity of the team. Must match one of a pre-configured set in the tenant's directory. |
 |specialization|[teamSpecialization](teamspecialization.md)| Optional. Indicates whether the team is intended for a particular use case.  Each team specialization has access to unique behaviors and experiences targeted to its use case. |
 |visibility|[teamVisibilityType](teamvisibilitytype.md)| The visibility of the group and team. Defaults to Public. |
