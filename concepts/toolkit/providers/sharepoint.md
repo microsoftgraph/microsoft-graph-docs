@@ -13,15 +13,15 @@ To learn more about authentication providers, see [Providers](./providers.md).
 
 ## Get started
 
-Initialize the provider inside the `onInit()` method of your web part.
+Initialize the provider inside the `onInit()` method of your web part. This example uses the [`@microsoft/mgt-spfx` package](../get-started/mgt-spfx.md).
 
 ```ts
 // import the providers at the top of the page
-import {Providers, SharePointProvider} from '@microsoft/mgt';
+import {Providers, SharePointProvider} from '@microsoft/mgt-spfx';
 
 // add the onInit() method if not already there in your web part class
 protected async onInit() {
-    Providers.globalProvider = new SharePointProvider(this.context);
+  Providers.globalProvider = new SharePointProvider(this.context);
 }
 ```
 
@@ -29,19 +29,17 @@ Now you can add any component in your `render()` method and it will use the Shar
 
 ```ts
 public render(): void {
-    this.domElement.innerHTML = `
-      <mgt-agenda></mgt-agenda>
-      `;
-  }
+  this.domElement.innerHTML = `
+    <mgt-agenda></mgt-agenda>
+    `;
+}
 ```
 
->**Note:** The Microsoft Graph Toolkit requires Typescript 3.x. Make sure you're using a supported version of Typescript by [installing the right compiler](https://github.com/SharePoint/sp-dev-docs/wiki/SharePoint-Framework-v1.8-release-notes#support-for-typescript-27-29-and-3x).
+>**Note:** The Microsoft Graph Toolkit requires Typescript 3.7 or newer. Make sure you're using a supported version of Typescript by [installing the right compiler](https://github.com/SharePoint/sp-dev-docs/wiki/SharePoint-Framework-v1.8-release-notes#support-for-typescript-27-29-and-3x).
 
 ## Sample
 
 For details about how to initialize the SharePoint provider, see the [Build a SharePoint web part](../get-started/build-a-sharepoint-web-part.md) getting started guide.
-
-For a pre-built example that shows you how to use the various components in your SharePoint web parts, see the [SharePoint web part sample](https://github.com/microsoftgraph/microsoft-graph-toolkit/tree/master/samples/sp-webpart) in the Microsoft Graph Toolkit repository.
 
 ## Test in the workbench
 
@@ -55,9 +53,3 @@ In short, it's important to add the right permission to your `package-solution.j
 >The [Build a SharePoint web part](../get-started/build-a-sharepoint-web-part.md#configure-permissions) getting started guide provides step-by-step instructions for configuring and approving permissions.
 
 >**Note:** if you're not sure what permissions to add, the documentation for each component includes all the permissions it needs.
-
-## Polyfills
-
-If you plan to support IE11 in your SPFx webparts, you must use polyfills.
-
-To learn more, see [Getting started with Microsoft Graph Toolkit](../get-started/overview.md#polyfills).

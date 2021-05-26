@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<SearchRequest> requestsList = new LinkedList<SearchRequest>();
 SearchRequest requests = new SearchRequest();
@@ -27,7 +27,11 @@ requests.fields = fieldsList;
 requestsList.add(requests);
 
 graphClient.search()
-	.query(requestsList)
+	.query(SearchEntityQueryParameterSet
+		.newBuilder()
+		.withRequests(requestsList)
+		.withQueryAlterationOptions(null)
+		.build())
 	.buildRequest()
 	.post();
 

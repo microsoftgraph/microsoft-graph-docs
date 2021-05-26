@@ -1,7 +1,7 @@
 ---
 title: "onlineMeeting resource type"
 description: "Contains information about a meeting."
-author: "ananmishr"
+author: "jsandoval-msft"
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "cloud-communications"
@@ -19,27 +19,28 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | :----------------------------------------------------------------- | :-------------------------------- | :----------------------------------------------------------------------------------------------------------- |
 | [Create onlineMeeting](../api/application-post-onlineMeetings.md)  | [onlineMeeting](onlinemeeting.md) | Create an online meeting.                                                                                    |
 | [Get onlineMeeting](../api/onlinemeeting-get.md)                   | [onlineMeeting](onlinemeeting.md) | Read the properties and relationships of an **onlineMeeting** object.                                        |
-| [Delete onlineMeeting](../api/onlinemeeting-delete.md)             | None                              | Delete an online meeting.                                                                                    |
-| [Create or get onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Create an online meeting with a custom, external ID. If the meeting already exists, retrieve its properties. |
+| [Update](../api/onlinemeeting-update.md)                           | [onlineMeeting](onlinemeeting.md) | Update the properties of an **onlineMeeting** object. |
+| [Delete onlineMeeting](../api/onlinemeeting-delete.md)             | None                              | Delete an **onlineMeeting** object.                                                                                    |
+| [Create or get onlineMeeting](../api/onlinemeeting-createorget.md) | [onlineMeeting](onlinemeeting.md) | Create an **onlineMeeting** object with a custom, external ID. If the meeting already exists, retrieve its properties. |
 
 ## Properties
 
 | Property              | Type                                          | Description                                                                                                                |
 | :-------------------- | :-------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
+| allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)                       | Specifies who can be a presenter in a meeting. Possible values are listed in the following table.                          |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for an online meeting. Read-only.                                                   |
 | chatInfo              | [chatInfo](chatinfo.md)                       | The chat information associated with this online meeting.                                                                  |
 | creationDateTime      | DateTime                                      | The meeting creation time in UTC. Read-only.                                                                               |
-| startDateTime         | DateTime                                      | The meeting start time in UTC.                                                                                             |
 | endDateTime           | DateTime                                      | The meeting end time in UTC.                                                                                               |
 | id                    | String                                        | The default ID associated with the online meeting. Read-only.                                                              |
+| isEntryExitAnnounced  | Boolean                                       | Whether or not to announce when callers join or leave.                                                                     |
+| joinInformation       | [itemBody](itembody.md)                       | The join information in the language and locale variant specified in the `Accept-Language` request HTTP header. Read-only. |
 | joinWebUrl            | String                                        | The join URL of the online meeting. Read-only.                                                                             |
+| lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting   lobby.                                                               |
 | participants          | [meetingParticipants](meetingparticipants.md) | The participants associated with the online meeting.  This includes the organizer and the attendees.                       |
+| startDateTime         | DateTime                                      | The meeting start time in UTC.                                                                                             |
 | subject               | String                                        | The subject of the online meeting.                                                                                         |
 | videoTeleconferenceId | String                                        | The video teleconferencing ID. Read-only.                                                                                  |
-| joinInformation       | [itemBody](itembody.md)                       | The join information in the language and locale variant specified in the `Accept-Language` request HTTP header. Read-only. |
-| isEntryExitAnnounced  | Boolean                                       | Whether or not to announce when callers join or leave.                                                                     |
-| lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting   lobby.                                                               |
-| allowedPresenters     | onlineMeetingPresenters                       | Specifies who can be a presenter in a meeting. Possible values are listed in the following table.                          |
 
 ### onlineMeetingPresenters values
 
@@ -62,18 +63,18 @@ Contains information about a meeting, including the URL used to join a meeting, 
 }-->
 ```json
 {
-  "audioConferencing": {"@odata.type": "#microsoft.graph.audioConferencing"},
-  "chatInfo": {"@odata.type": "#microsoft.graph.chatInfo"},
+  "audioConferencing": {"@odata.type": "microsoft.graph.audioConferencing"},
+  "chatInfo": {"@odata.type": "microsoft.graph.chatInfo"},
   "creationDateTime": "String (timestamp)",
   "endDateTime": "String (timestamp)",
   "id": "String (identifier)",
   "joinWebUrl": "String",
-  "participants": {"@odata.type": "#microsoft.graph.meetingParticipants"},
+  "participants": {"@odata.type": "microsoft.graph.meetingParticipants"},
   "startDateTime": "String (timestamp)",
   "subject": "String",
   "videoTeleconferenceId": "String",
   "isEntryExitAnnounced": "Boolean",
-  "lobbyBypassSettings": {"@odata.type": "#microsoft.graph.lobbyBypassSettings"},
+  "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
   "allowedPresenters": "String"
 }
 ```

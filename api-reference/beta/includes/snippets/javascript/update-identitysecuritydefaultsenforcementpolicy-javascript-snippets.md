@@ -14,7 +14,7 @@ const identitySecurityDefaultsEnforcementPolicy = {
   isEnabled: false
 };
 
-let res = await client.api('/policies/identitySecurityDefaultsEnforcementPolicy')
+await client.api('/policies/identitySecurityDefaultsEnforcementPolicy')
 	.version('beta')
 	.update(identitySecurityDefaultsEnforcementPolicy);
 

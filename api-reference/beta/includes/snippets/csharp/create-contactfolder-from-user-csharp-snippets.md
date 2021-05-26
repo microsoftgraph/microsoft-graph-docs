@@ -8,8 +8,8 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var contactFolder = new ContactFolder
 {
-	ParentFolderId = "parentFolderId-value",
-	DisplayName = "displayName-value"
+	ParentFolderId = "AQMkADIxYjJiYgEzLTFmNjYALTRjYTMtODA1NC0wZDkxZGNmOTcxNTQALgAAA8RJzXYaLKZPlmn0ge0edZkBADa3qi2IMXRNg6RwQSHe_F8AAAIBDgAAAA==",
+	DisplayName = "Important contacts"
 };
 
 await graphClient.Me.ContactFolders

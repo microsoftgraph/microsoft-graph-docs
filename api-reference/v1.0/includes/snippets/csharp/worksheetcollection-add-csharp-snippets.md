@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var name = "name-value";
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets
 	.Add(name)
 	.Request()
 	.PostAsync();

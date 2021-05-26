@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 07/07/2020
 title: Search for files
 localization_priority: Priority

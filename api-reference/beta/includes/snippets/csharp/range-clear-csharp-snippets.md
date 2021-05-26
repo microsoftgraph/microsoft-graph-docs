@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var applyTo = "applyTo-value";
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Names["{name}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Names["{workbookNamedItem-id}"]
 	.Range()
 	.Clear(applyTo)
 	.Request()

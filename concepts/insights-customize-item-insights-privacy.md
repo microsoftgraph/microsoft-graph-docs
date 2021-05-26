@@ -35,9 +35,9 @@ Confirm the following additional prerequisites. Then you can use the [Microsoft 
 > ```powershell
 >    Select-MgProfile beta
 > ```
-To get item insights configuration for an organization, use the Microsoft Graph PowerShell module and the following command, where you replace `$OrgID` with your applicable ID organization:
+To get item insights configuration for an organization, use the Microsoft Graph PowerShell module and the following command, where you replace `$TenantId` with your Azure Active Directory tenant ID. You can retrieve this ID from the overview page of your Azure Active Directory.
 ```powershell
-   Get-MgOrganizationSettingItemInsight -OrganizationId $OrgID
+   Get-MgOrganizationSettingItemInsight -OrganizationId $TenantId
 ```
 
 By default, item insights are enabled for the entire organization. You can use the Microsoft Graph PowerShell module to change that and disable item insights for everyone in the organization. 
@@ -47,13 +47,13 @@ By default, item insights are enabled for the entire organization. You can use t
 >    Connect-MgGraph -Scopes "User.Read","User.ReadWrite"
 > ```
 
-Use the following command, where you replace `$OrgID` with your organization ID and specify `-IsEnabledInOrganization` as `false`.
+Use the following command, where you replace `$TenantId` with your Azure Active Directory Tenant ID and specify `-IsEnabledInOrganization` as `false`.
 ```powershell
-   Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -IsEnabledInOrganization:$false
+   Update-MgOrganizationSettingItemInsight -OrganizationId $TenantId -IsEnabledInOrganization:$false
 ```
-Alternatively, you can change the default and disable item insights for a specific Azure AD group. Use the following command, where you replace `$OrgID` with your organization ID, and `$GroupID` with the Azure AD group ID.
+Alternatively, you can change the default and disable item insights for a specific Azure AD group. Use the following command, where you replace `$TenantId` with your Azure Active Directory Tenant ID, and `$GroupID` with the Azure Active Directory group ID.
 ```powershell
-   Update-MgOrganizationSettingItemInsight -OrganizationId $OrgID -DisabledForGroup $GroupId
+   Update-MgOrganizationSettingItemInsight -OrganizationId $TenantId -DisabledForGroup $GroupId
 ```
 
 ### Configure item insights using REST API

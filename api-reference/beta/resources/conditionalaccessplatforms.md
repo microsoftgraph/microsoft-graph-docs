@@ -19,8 +19,8 @@ Platforms included in and excluded from the policy scope.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|includePlatforms|String collection| Possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`.|
-|excludePlatforms|String collection| Possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`.|
+|includePlatforms|conditionalAccessDevicePlatform collection| Possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`, `unknownFutureValue`.|
+|excludePlatforms|conditionalAccessDevicePlatform collection| Possible values are: `android`, `iOS`, `windows`, `windowsPhone`, `macOS`, `all`, `unknownFutureValue`.|
 
 ## Relationships
 

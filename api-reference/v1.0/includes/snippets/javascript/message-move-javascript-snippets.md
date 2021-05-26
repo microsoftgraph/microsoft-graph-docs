@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const message = {
-  destinationId: "deleteditems"
+  destinationId: 'deleteditems'
 };
 
-let res = await client.api('/me/messages/AAMkADhAAATs28OAAA=/move')
+await client.api('/me/messages/AAMkADhAAATs28OAAA=/move')
 	.post(message);
 
 ```

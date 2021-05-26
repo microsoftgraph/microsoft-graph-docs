@@ -11,7 +11,7 @@ var directoryObject = new DirectoryObject
 	Id = "alexd@contoso.com"
 };
 
-await graphClient.Groups["{id}"].AcceptedSenders.References
+await graphClient.Groups["{group-id}"].AcceptedSenders.References
 	.Request()
 	.AddAsync(directoryObject);
 

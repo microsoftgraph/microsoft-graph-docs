@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/settings/regionalAndLanguageSettings')
+let regionalAndLanguageSettings = await client.api('/me/settings/regionalAndLanguageSettings')
 	.version('beta')
 	.get();
 

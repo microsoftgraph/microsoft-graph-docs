@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/identity/b2xUserFlows/{id}')
+await client.api('/identity/b2xUserFlows/{id}')
 	.version('beta')
 	.delete();
 

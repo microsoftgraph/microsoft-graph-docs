@@ -1,5 +1,5 @@
 ---
-title: "Azure AD access reviews - group memberships"
+title: "Azure AD access reviews"
 description: "You can use Azure AD access reviews to configure one-time or recurring access reviews for attestation of user's access rights. This documentation serves the 2nd version of the APIs."
 localization_priority: Normal
 author: "isabelleatmsft"
@@ -7,14 +7,13 @@ ms.prod: "governance"
 doc_type: conceptualPageType
 ---
 
-# Azure AD access reviews for groups
+# Azure AD access reviews
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
->[!NOTE]
->The access review APIs in this section apply to only group memberships. For access reviews on all other supported resource types, see [Access reviews](accessreviews-root.md).
+[!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
 
 
 You can use [Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) to configure one-time or recurring access reviews for attestation of user's access rights.
@@ -40,7 +39,7 @@ The following table lists the methods that you can use to interact with access r
 |:---------------|:--------|:----------|
 |[List accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-list.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) collection | Lists every `accessReviewScheduleDefinition`. Does not include associated `accessReviewInstance` instances in listings. |
 |[Get accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-get.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Get an `accessReviewScheduleDefinition` with a specified id. |
-|[Create accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-create.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Create a new `accessReviewScheduleDefinition`. |
+|[Create accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-post.md) | [accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | Create a new `accessReviewScheduleDefinition`. |
 |[Delete accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-delete.md) | None. | Delete an `accessReviewScheduleDefinition` with a specified ID. |
 |[Update accessReviewScheduleDefinition](../api/accessreviewscheduledefinition-update.md) | None. | Update properties of an `accessReviewScheduleDefinition` with a specified ID. |
 |[List accessReviewInstance](../api/accessreviewinstance-list.md) | [accessReviewInstance](accessreviewinstance.md) collection | Lists every `accessReviewInstance` for a specific `accessReviewScheduleDefinition`. Does not include associated `accessReviewInstanceDecisionItem`s in listings. |
@@ -56,7 +55,7 @@ The following table lists the methods that you can use to interact with access r
 
 ## Role and application permission authorization checks
 
-The following directory roles are required for a calling user to manage access reviews. Note that only access reviews on groups are supported currently through Microsoft Graph APIs.
+The following directory roles are required for a calling user to manage access reviews. 
 
 | Operation | Application permissions | Required directory role of the calling user |
 |:------------------|:------------|:--------------------------------------------|

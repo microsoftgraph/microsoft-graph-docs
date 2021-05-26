@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Message message = new Message();
 LinkedList<Attachment> attachmentsList = new LinkedList<Attachment>();
@@ -20,7 +20,11 @@ message.attachments = attachmentCollectionPage;
 String comment = "Please take a look at the attached guidelines before you decide on the name.";
 
 graphClient.me().messages("AAMkADA1MTAAAH5JaKAAA=")
-	.replyAll(message,comment)
+	.replyAll(MessageReplyAllParameterSet
+		.newBuilder()
+		.withMessage(message)
+		.withComment(comment)
+		.build())
 	.buildRequest()
 	.post();
 

@@ -12,10 +12,9 @@ var targets = new List<InvitationParticipantInfo>()
 	{
 		Identity = new IdentitySet
 		{
-			Application = new Identity
+			AdditionalData = new Dictionary<string, object>()
 			{
-				DisplayName = "test bot 2",
-				Id = "22bfd41f-550e-477d-8789-f6f7bd2a5e8b"
+				{"phone", "{\"@odata.type\":\"#microsoft.graph.identity\",\"id\":\"+12345678901\"}"}
 			}
 		}
 	}
@@ -23,7 +22,7 @@ var targets = new List<InvitationParticipantInfo>()
 
 var callbackUri = "https://bot.contoso.com/api/calls/24701998-1a73-4d42-8085-bf46ed0ae039";
 
-await graphClient.Communications.Calls["491f0b00-ffff-4bc9-a43e-b226498ec22a"]
+await graphClient.Communications.Calls["{call-id}"]
 	.Redirect(targets,null,callbackUri)
 	.Request()
 	.PostAsync();

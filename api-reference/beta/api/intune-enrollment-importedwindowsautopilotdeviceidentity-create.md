@@ -20,7 +20,7 @@ Create a new [importedWindowsAutopilotDeviceIdentity](../resources/intune-enroll
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -49,7 +49,6 @@ The following table shows the properties that are required when you create the i
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The GUID for the object|
-|orderIdentifier|String|Order Id of the Windows autopilot device. - Deprecate|
 |groupTag|String|Group Tag of the Windows autopilot device.|
 |serialNumber|String|Serial number of the Windows autopilot device.|
 |productKey|String|Product Key of the Windows autopilot device.|
@@ -70,11 +69,10 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/importedWindowsAutopilotDeviceIdentities
 Content-type: application/json
-Content-length: 679
+Content-length: 631
 
 {
   "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
-  "orderIdentifier": "Order Identifier value",
   "groupTag": "Group Tag value",
   "serialNumber": "Serial Number value",
   "productKey": "Product Key value",
@@ -96,12 +94,11 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 728
+Content-Length: 680
 
 {
   "@odata.type": "#microsoft.graph.importedWindowsAutopilotDeviceIdentity",
   "id": "985b4f49-4f49-985b-494f-5b98494f5b98",
-  "orderIdentifier": "Order Identifier value",
   "groupTag": "Group Tag value",
   "serialNumber": "Serial Number value",
   "productKey": "Product Key value",

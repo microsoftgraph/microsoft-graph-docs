@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/groups/{groupId}/drives')
+let drives = await client.api('/groups/{groupId}/drives')
 	.version('beta')
 	.get();
 

@@ -11,7 +11,7 @@ var directoryObject = new DirectoryObject
 	Id = "{user-id}"
 };
 
-await graphClient.DirectoryRoles["roleTemplateId={role-templateId}"].Members.References
+await graphClient.DirectoryRoles["{directoryRole-id}"].Members.References
 	.Request()
 	.AddAsync(directoryObject);
 

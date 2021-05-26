@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/identity/userFlowAttributes/{id}')
+await client.api('/identity/userFlowAttributes/{id}')
 	.version('beta')
 	.delete();
 

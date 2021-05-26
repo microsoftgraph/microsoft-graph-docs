@@ -13,12 +13,12 @@ const client = Client.init(options);
 const authorizationPolicy = {
    defaultUserRolePermissions: {
       permissionGrantPoliciesAssigned: [
-         "managePermissionGrantsForSelf.microsoft-user-default-low"
+         'managePermissionGrantsForSelf.microsoft-user-default-low'
       ]
    }
 };
 
-let res = await client.api('/policies/authorizationPolicy')
+await client.api('/policies/authorizationPolicy')
 	.update(authorizationPolicy);
 
 ```

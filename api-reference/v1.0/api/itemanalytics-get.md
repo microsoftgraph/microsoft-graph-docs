@@ -1,6 +1,5 @@
 ---
 author: daspek
-ms.author: dspektor
 title: Get itemAnalytics
 description: Get itemAnalytics about the views that took place under this resource.
 localization_priority: Normal
@@ -90,7 +89,7 @@ GET /drives/{drive-id}/items/{item-id}/analytics
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.itemAnalytics", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

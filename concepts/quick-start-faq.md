@@ -2,7 +2,6 @@
 title: "Microsoft Graph quick start FAQ"
 description: "This FAQ answers questions related to the Microsoft Graph Quick Starts."
 author: jasonjoh
-ms.author: jasonjoh
 localization_priority: Normal
 ---
 

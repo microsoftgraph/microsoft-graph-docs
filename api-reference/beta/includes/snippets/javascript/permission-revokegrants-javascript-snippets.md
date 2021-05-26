@@ -13,12 +13,12 @@ const client = Client.init(options);
 const permission = {
   grantees: [
     {
-      email: "ryan@contoso.com"
+      email: 'ryan@contoso.com'
     }
   ]
 };
 
-let res = await client.api('/me/drive/items/{item-id}/permissions/{perm-id}/revokeGrants')
+await client.api('/me/drive/items/{item-id}/permissions/{perm-id}/revokeGrants')
 	.version('beta')
 	.post(permission);
 

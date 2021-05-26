@@ -24,7 +24,7 @@ var stream = new System.IO.MemoryStream(Encoding.UTF8.GetBytes(@"[
 var pages = new OnenotePage();
 pages.Content = stream;
 
-await graphClient.Me.Onenote.Pages["{id}"]
+await graphClient.Me.Onenote.Pages["{onenotePage-id}"]
 	.Request()
 	.UpdateAsync(pages);
 

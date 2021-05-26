@@ -12,7 +12,7 @@ var attachment = new FileAttachment
 	ContentBytes = Encoding.ASCII.GetBytes("R0lGODdhEAYEAA7")
 };
 
-await graphClient.Me.Messages["AAMkpsDRVK"].Attachments
+await graphClient.Me.Messages["{message-id}"].Attachments
 	.Request()
 	.AddAsync(attachment);
 

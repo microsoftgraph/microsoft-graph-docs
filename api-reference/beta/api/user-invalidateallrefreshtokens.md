@@ -2,7 +2,7 @@
 title: "user: invalidateAllRefreshTokens"
 description: "Invalidates all of the user's refresh tokens issued to applications and session cookies in a user's browser."
 localization_priority: Normal
-author: "krbain"
+author: "jpettere"
 ms.prod: "users"
 doc_type: apiPageType
 ---

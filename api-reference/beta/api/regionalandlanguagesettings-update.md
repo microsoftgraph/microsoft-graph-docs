@@ -1,9 +1,9 @@
 ---
 title: "Update regionalAndLanguageSettings"
-description: "Update the regional and language settings of a user"
+description: "Update the regional and language settings of a user."
 author: "jasonbro"
 localization_priority: Normal
-ms.prod: "settings"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 
@@ -51,7 +51,7 @@ PATCH /settings/regionalAndLanguageSettings
  
 ## Response
 
-If successful, this method returns a 200 response code and the updated regionalAndLanguageSettings object
+If successful, this method returns a 200 response code and the updated **regionalAndLanguageSettings** object.
 
 ## Example
 
@@ -99,7 +99,16 @@ Content-type: application/json
         "shortTimeFormat": "HH:mm",
         "longTimeFormat": "h:mm:ss tt",
         "timeZone": "Pacific Standard Time"
-    }
+    },
+    "translationPreferences": {
+        "translationBehavior": "Yes",
+        "languageOverrides": [
+            {
+                "languageTag": "fr",
+                "translationBehavior": "Yes" 
+            }
+        ]
+     }
 }
 ```
 # [C#](#tab/csharp)

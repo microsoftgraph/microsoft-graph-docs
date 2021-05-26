@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const approve = {
-  message: "message-value"
+  message: 'message-value'
 };
 
-let res = await client.api('/teams/{teamId}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId}/approve')
+await client.api('/teams/{teamId}/schedule/swapShiftsChangeRequests/{swapShiftChangeRequestId}/approve')
 	.version('beta')
 	.post(approve);
 

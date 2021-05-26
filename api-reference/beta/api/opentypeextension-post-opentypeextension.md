@@ -200,7 +200,7 @@ and the following for the new extension:
 - The default property **extensionName** specified in the request.
 - The custom data specified in the request stored as 3 custom properties.
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -560,7 +560,7 @@ Content-type: application/json
 Here is the response from the fifth example which contains the new conversation and a thread ID. This new thread contains an automatically
 created post, which in turn contains the new extension.
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 
 To get the new extension, first [get all the posts](../api/conversationthread-list-posts.md) in this
 thread, and initially there should be only one. Then apply the post ID and the extension name `Com.Contoso.Benefits` to

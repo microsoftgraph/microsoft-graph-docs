@@ -27,6 +27,7 @@ Represent result summary for assignment filter evaluation
 |evaluationResult|[assignmentFilterEvaluationResult](../resources/intune-policyset-assignmentfilterevaluationresult.md)|Assignment filter evaluation result. Possible values are: `unknown`, `match`, `notMatch`, `inconclusive`, `failure`, `notEvaluated`.|
 |evaluationDateTime|DateTimeOffset|The time assignment filter was evaluated.|
 |assignmentFilterType|[deviceAndAppManagementAssignmentFilterType](../resources/intune-shared-deviceandappmanagementassignmentfiltertype.md)|Indicate filter type either include or exclude. Possible values are: `none`, `include`, `exclude`.|
+|assignmentFilterTypeAndEvaluationResults|[assignmentFilterTypeAndEvaluationResult](../resources/intune-policyset-assignmentfiltertypeandevaluationresult.md) collection|A collection of filter types and their corresponding evaluation results.|
 
 ## Relationships
 None
@@ -47,7 +48,14 @@ Here is a JSON representation of the resource.
   "assignmentFilterPlatform": "String",
   "evaluationResult": "String",
   "evaluationDateTime": "String (timestamp)",
-  "assignmentFilterType": "String"
+  "assignmentFilterType": "String",
+  "assignmentFilterTypeAndEvaluationResults": [
+    {
+      "@odata.type": "microsoft.graph.assignmentFilterTypeAndEvaluationResult",
+      "assignmentFilterType": "String",
+      "evaluationResult": "String"
+    }
+  ]
 }
 ```
 

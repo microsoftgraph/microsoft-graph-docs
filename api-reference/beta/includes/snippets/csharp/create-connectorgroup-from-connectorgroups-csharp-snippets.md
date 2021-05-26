@@ -12,7 +12,7 @@ var connectorGroup = new ConnectorGroup
 	IsDefault = false
 };
 
-await graphClient.OnPremisesPublishingProfiles["applicationProxy"].ConnectorGroups
+await graphClient.OnPremisesPublishingProfiles["{onPremisesPublishingProfile-id}"].ConnectorGroups
 	.Request()
 	.AddAsync(connectorGroup);
 

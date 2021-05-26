@@ -2,9 +2,9 @@
 title: "changeNotification resource type"
 description: "Represents the change notification sent to the subscriber."
 localization_priority: Normal
-author: "davidmu1"
+author: "Jumaodhiss"
 doc_type: resourcePageType
-ms.prod: "non-product-specific"
+ms.prod: "change-notifications"
 ---
 
 # changeNotification resource type

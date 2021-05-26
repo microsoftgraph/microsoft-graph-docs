@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/11/2017
 title: List the SharePoint lists in a site
 localization_priority: Priority
@@ -67,7 +66,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.list", "isCollection": true, "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

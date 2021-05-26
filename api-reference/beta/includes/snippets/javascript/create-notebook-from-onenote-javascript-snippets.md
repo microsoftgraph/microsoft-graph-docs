@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const notebook = {
-  displayName: "Notebook name"
+    displayName: 'My Private notebook'
 };
 
-let res = await client.api('/me/onenote/notebooks')
+await client.api('/me/onenote/notebooks')
 	.version('beta')
 	.post(notebook);
 

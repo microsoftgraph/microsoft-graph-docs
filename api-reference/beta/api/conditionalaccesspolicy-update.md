@@ -3,7 +3,7 @@ title: "Update conditionalAccessPolicy"
 description: "Update the properties of a conditionalAccessPolicy object."
 localization_priority: Normal
 author: "videor"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 

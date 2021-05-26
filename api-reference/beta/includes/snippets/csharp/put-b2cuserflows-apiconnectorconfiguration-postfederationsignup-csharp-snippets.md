@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Identity.B2cUserFlows["B2C_1_testuserflow"].PostFederationSignup.Reference
+await graphClient.Identity.B2cUserFlows["{b2cIdentityUserFlow-id}"].PostFederationSignup.Reference
 	.Request()
 	.PutAsync("{id}");
 

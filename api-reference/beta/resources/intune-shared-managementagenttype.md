@@ -32,8 +32,9 @@ Management agent type.
 |jamf|32|The device attributes are fetched from Jamf.|
 |googleCloudDevicePolicyController|64|The device is managed by Google's CloudDPC.|
 |microsoft365ManagedMdm|258|This device is managed by Microsoft 365 through Intune.|
+|msSense|1024|Not yet documented|
+|intuneAosp|2048|This device is managed by Intune's MDM for AOSP (Android Open Source Project) devices|
 |windowsManagementCloudApi|512|This device is managed by Windows Management Cloud API.|
-
 
 
 

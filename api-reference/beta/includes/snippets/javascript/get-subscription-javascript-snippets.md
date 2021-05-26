@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/subscriptions/{id}')
+let subscription = await client.api('/subscriptions/{id}')
 	.version('beta')
 	.get();
 

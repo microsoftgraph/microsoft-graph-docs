@@ -11,7 +11,7 @@ var groupIds = new List<String>()
 	"groupIds-value"
 };
 
-await graphClient.ServicePrincipals["{id}"]
+await graphClient.ServicePrincipals["{servicePrincipal-id}"]
 	.CheckMemberGroups(groupIds)
 	.Request()
 	.PostAsync();

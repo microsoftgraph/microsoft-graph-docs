@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/devices/{id}/registeredOwners/{id}/$ref')
+await client.api('/devices/{id}/registeredOwners/{id}/$ref')
 	.version('beta')
 	.delete();
 

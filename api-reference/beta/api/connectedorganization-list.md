@@ -3,7 +3,7 @@ title: "List connectedOrganizations"
 description: "Retrieve a list of connectedOrganization objects."
 author: "markwahl-msft"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 | Delegated (work or school account)     | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Application                            | EntitlementManagement.Read.All, EntitlementManagement.ReadWrite.All |
 
 ## HTTP request
 

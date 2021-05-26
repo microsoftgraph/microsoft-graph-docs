@@ -1,12 +1,12 @@
 ---
-title: "Get change notifications delivered in different ways (preview)"
+title: "Get change notifications delivered in different ways"
 description: "Change notifications can be delivered via different technologies, including webhooks and Azure Event Hubs."
-author: "davidmu1"
+author: "Jumaodhiss"
 localization_priority: Priority
 ms.custom: graphiamtop20, devx-track-azurecli
 ---
 
-# Get change notifications delivered in different ways (preview)
+# Get change notifications delivered in different ways
 
 Change notifications can be delivered in different ways to subscribers. If the main delivery mode for change notifications is through webhooks, it can be challenging to take advantage of webhooks for high throughput scenarios or when the receiver cannot expose a publicly available notification URL.  
 
@@ -16,7 +16,7 @@ Good examples of high throughput scenarios include applications subscribing to a
 
 ## Using Azure Event Hubs to receive change notifications
 
-[Azure Event Hubs](https://azure.microsoft.com/services/event-hubs) is a popular real-time events ingestion and distribution service built for scale. You can use Azure Events Hubs instead of traditional webhooks to receive change notifications. This feature is currently in preview.  
+[Azure Event Hubs](https://azure.microsoft.com/services/event-hubs) is a popular real-time events ingestion and distribution service built for scale. You can use Azure Events Hubs instead of traditional webhooks to receive change notifications.  
 Using Azure Event Hubs to receive change notifications differs from webhooks in a few ways, including:
 
 - You don't rely on publicly exposed notification URLs. The Event Hubs SDK will relay the notifications to your application.

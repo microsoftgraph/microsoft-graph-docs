@@ -3,7 +3,7 @@ title: "Get a member"
 description: "Use this API to get a specific member (user or group) in an administrative unit."
 author: "anandyadavMSFT"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -49,7 +49,7 @@ GET https://graph.microsoft.com/v1.0/directory/administrativeUnits/{id}/members/
 ```
 
 ##### Response
-Here is an example of the respone. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the respone. Note: The response object shown here might be shortened for readability.
 
 ```http
 HTTP/1.1 200 OK

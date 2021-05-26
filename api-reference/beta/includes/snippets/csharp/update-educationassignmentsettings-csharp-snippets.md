@@ -11,7 +11,7 @@ var educationAssignmentSettings = new EducationAssignmentSettings
 	SubmissionAnimationDisabled = true
 };
 
-await graphClient.Education.Classes["{id}"].AssignmentSettings
+await graphClient.Education.Classes["{educationClass-id}"].AssignmentSettings
 	.Request()
 	.UpdateAsync(educationAssignmentSettings);
 

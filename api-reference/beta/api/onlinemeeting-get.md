@@ -1,7 +1,7 @@
 ---
 title: "Get onlineMeeting"
 description: "Retrieve the properties and relationships of an onlineMeeting object."
-author: "ananmishr"
+author: "jsandoval-msft"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: apiPageType
@@ -19,12 +19,14 @@ For example, you can:
 - Get details of an onlineMeeting using [VideoTeleconferenceId](#example-1-retrieve-an-online-meeting-by-videoteleconferenceid), [meeting ID](#example-2-retrieve-an-online-meeting-by-meeting-id), or [JoinWebURL](#example-3-retrieve-an-online-meeting-by-joinweburl).
 - Use the `/attendeeReport` path to get an attendee report of a live event, as shown in [example 4](#example-4-retrieve-the-attendee-report-of-a-live-event).
 - Use the `/recording` and `/alternativeRecording` paths to get the recordings of a live event, as shown in [example 5](#example-5-retrieve-the-recording-of-a-live-event).
+- Use the `/meetingAttendanceReport` path to get the attendance report for a scheduled meeting, as shown in [example 6](#example-6-retrieve-the-attendance-report-of-a-meeting).
 
->**Notes:** 
->- Currently, attendee reports and recordings are available only to live events.
->- Only the event organizer can access attendee reports and recordings.
->- Attendee reports and recordings are only available when the live event has concluded.
->- The download link in the `302 Found` [response](#example-4-retrieve-the-attendee-report-of-a-live-event) expires in **60** seconds.
+> [!NOTE]
+>- Meeting attendance reports are available for meetings other than live events, and are only available when the meeting has concluded.
+>- Only the meeting organizer can access meeting attendance reports.
+>- Recordings and attendee reports are only available for live events, and are only available when the live event has concluded.
+>- Only the live event organizer can access attendee reports and recordings.
+>- The download links for the live event attendee report and recordings expire in 60 seconds.
 
 ## Permissions
 
@@ -41,45 +43,55 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-To get the specified onlineMeeting using meeting ID:
+To get an onlineMeeting using meeting ID with delegated and app permission:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/onlineMeetings/{meetingId}
 GET /users/{userId}/onlineMeetings/{meetingId}
 ```
 
-To get the specified onlineMeeting using **videoTeleconferenceId**:
+To get an onlineMeeting using **videoTeleconferenceId** with app permission:
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
-GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{id}'
+GET /app/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
+GET /communications/onlineMeetings/?$filter=VideoTeleconferenceId%20eq%20'{videoTeleconferenceId}'
 ```
 
-To get the specified onlineMeeting using **joinWebUrl**:
+To get an onlineMeeting using **joinWebUrl** with delegated and app permission:
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 GET /users/{userId}/onlineMeetings?$filter=JoinWebUrl%20eq%20'{joinWebUrl}'
 ```
 
-To get the attendee report of a live event:
+To get the attendee report of a live event with delegated and app permission:
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/onlineMeetings/{meetingId}/attendeeReport
 GET /users/{userId}/onlineMeetings/{meetingId}/attendeeReport
 ```
 
-To get the recordings of a live event:
+To get the recordings of a live event with delegated and app permission:
 <!-- { "blockType": "ignored" } -->
 ```http
+GET /me/onlineMeetings/{meetingId}/recording
+GET /me/onlineMeetings/{meetingId}/alternativeRecording
 GET /users/{userId}/onlineMeetings/{meetingId}/recording
 GET /users/{userId}/onlineMeetings/{meetingId}/alternativeRecording
 ```
 
->**Notes:**
+To get the attendance report of a meeting with delegated permission:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /me/onlineMeetings/{meetingId}/meetingAttendanceReport
+```
+
+> [!NOTE]
 >- The `/app` path is deprecated. Going forward, use the `/communications` path.
->- `id` in the first two routes refers to [VTC conference id](/microsoftteams/cloud-video-interop-for-teams-set-up).
 >- `userId` is the object ID of a user in [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade). For more details, see [application access policy](/graph/cloud-communication-online-meeting-application-access-policy).
->- `meetingId` is the **id** of an [onlineMeeting entity](../resources/onlinemeeting.md).
->- `joinWebUrl` must be URL encoded and this route can only be used to retrieve meetings created by `userId`.
+>- `meetingId` is the **id** of an [onlineMeeting](../resources/onlinemeeting.md) object.
+> - **videoTeleconferenceId** is generated for Cloud-Video-Interop licensed users and can be found in an [onlineMeeting](../resources/onlinemeeting.md) object. Refer to [VTC conference id](/microsoftteams/cloud-video-interop-for-teams-set-up) for more details.
+>- `joinWebUrl` must be URL encoded.
 
 ## Optional query parameters
 This method supports the [OData query parameters](/graph/query-parameters) to help customize the response.
@@ -103,6 +115,9 @@ If successful, this method returns a `200 OK` response code. The method also inc
 
 ## Examples
 
+> [!NOTE]
+> The response objects of the following examples have been shortened for readability. All the properties will be returned from an actual call.
+
 ### Example 1: Retrieve an online meeting by VideoTeleconferenceId
 
 #### Request
@@ -110,6 +125,7 @@ If successful, this method returns a `200 OK` response code. The method also inc
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
+  "sampleKeys": ["123456789"],
   "name": "get-onlineMeeting"
 }-->
 ```msgraph-interactive
@@ -134,8 +150,6 @@ GET https://graph.microsoft.com/beta/communications/onlineMeetings/?$filter=Vide
 ---
 
 #### Response
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",
@@ -203,7 +217,9 @@ Content-Length: 1574
     "isDialInBypassEnabled": true
   },
   "isEntryExitAnnounced": true,
-  "allowedPresenters": "everyone"
+  "allowedPresenters": "everyone",
+  "allowMeetingChat": "enabled",
+  "allowTeamworkReactions": true
 }
 ```
 >**Note:** If 'Accept-Language: ja' is specified to indicate Japanese, for example, the response will include the following.
@@ -216,29 +232,29 @@ Content-Length: 1574
 ```
 
 ### Example 2: Retrieve an online meeting by meeting ID
-You can retrieve meeting information via meeting ID with either a user or application token. The meeting ID is provided in the response object when creating an [onlineMeeting](../resources/onlinemeeting.md). This option is available to support use cases where the meeting ID is known, such as when an application first creates the meeting, then retrieves meeting information later as a seperate action.
+You can retrieve meeting information via meeting ID with either a user or application token. The meeting ID is provided in the response object when creating an [onlineMeeting](../resources/onlinemeeting.md). This option is available to support use cases where the meeting ID is known, such as when an application first creates the online meeting using Graph API first then retrieves meeting information later as a separate action.
 
 #### Request
+
+> **Note:** The meeting ID has been truncated for readability.
 
 The following request uses a user token.
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/me/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy
 ```
 
 The following request uses an app token.
 <!-- { "blockType": "ignored" } -->
 ```http
-GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2
+GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy
 ```
 
 #### Response
 
-> **Note:** The response object shown here has been shortened for readability. All the properties will be returned from an actual call.
-
 ```json
 {
-    "id": "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_MGQ4MDQyNTEtNTQ2NS00YjQxLTlkM2EtZWVkODYxODYzMmY2@thread.v2",
+    "id": "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy",
     "creationDateTime": "2020-09-29T22:35:33.1594516Z",
     "startDateTime": "2020-09-29T22:35:31.389759Z",
     "endDateTime": "2020-09-29T23:35:31.389759Z",
@@ -247,6 +263,8 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
     "autoAdmittedUsers": "EveryoneInCompany",
     "isEntryExitAnnounced": true,
     "allowedPresenters": "everyone",
+    "allowMeetingChat": "enabled",
+    "allowTeamworkReactions": true,
     "videoTeleconferenceId": "(redacted)",
     "participants": {
         "organizer": {
@@ -291,8 +309,6 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 
 #### Response
 
-> **Note:** The response object shown here has been shortened for readability. All the properties will be returned from an actual call.
-
 ```json
 {
     "value": [
@@ -306,6 +322,8 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
             "autoAdmittedUsers": "EveryoneInCompany",
             "isEntryExitAnnounced": true,
             "allowedPresenters": "everyone",
+            "allowMeetingChat": "enabled",
+            "allowTeamworkReactions": true,
             "videoTeleconferenceId": "(redacted)",
             "participants": {
                 "organizer": {
@@ -337,29 +355,36 @@ GET https://graph.microsoft.com/beta/users/dc17674c-81d9-4adb-bfb2-8f6a442e4622/
 The following example shows a request to download an attendee report.
 
 #### Request
+The following request uses a user token.
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/beta/me/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/attendeeReport
+```
 
+The following request uses an app token.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get-attendeeReport"
+  "sampleKeys": ["dc74d9bb-6afe-433d-8eaa-e39d80d3a647", "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2"],
+  "name": "get-attendeeReport-app-token"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/attendeeReport
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-attendeereport-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-attendeereport-app-token-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-attendeereport-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-attendeereport-app-token-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-attendeereport-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-attendeereport-app-token-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-attendeereport-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-attendeereport-app-token-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -378,29 +403,36 @@ Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-51
 The following example shows a request to download a recording.
 
 #### Request
+The following request uses a user token.
+<!-- { "blockType": "ignored" } -->
+```http
+GET https://graph.microsoft.com/beta/me/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/recording
+```
 
+The following request uses an app token.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get-recording"
+  "sampleKeys": ["dc74d9bb-6afe-433d-8eaa-e39d80d3a647", "dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2"],
+  "name": "get-recording-app-token"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/users/dc74d9bb-6afe-433d-8eaa-e39d80d3a647/onlineMeetings/dc17674c-81d9-4adb-bfb2-8f6a442e4622_19:meeting_ZWE0YzQwMzItYjEyNi00NjJjLWE4MjYtOTUxYjE1NmFjYWIw@thread.v2/recording
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-recording-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-recording-app-token-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-recording-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-recording-app-token-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-recording-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-recording-app-token-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-recording-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-recording-app-token-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -429,3 +461,105 @@ Location: https://01-a-noam.dog.attend.teams.microsoft.com/broadcast/909c6581-51
   ]
 }
 -->
+
+### Example 6: Retrieve the attendance report of a meeting
+The following example shows a request to get a meeting attendance report.
+
+#### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "sampleKeys": ["dc74d9bb-6afe-433d-8eaa-e39d80d3a647", "MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy"],
+  "name": "get-meetingAttendanceReport"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/me/onlineMeetings/MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy/meetingAttendanceReport
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-meetingattendancereport-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-meetingattendancereport-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-meetingattendancereport-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-meetingattendancereport-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+---
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.meetingAttendanceReport"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+Content-Length: 1876
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('dc74d9bb-6afe-433d-8eaa-e39d80d3a647')/onlineMeetings('MSpkYzE3Njc0Yy04MWQ5LTRhZGItYmZiMi04ZdFpHRTNaR1F6WGhyZWFkLnYy')/meetingAttendanceReport/$entity",
+    "attendanceRecords": [
+        {
+            "emailAddress": "email address",
+            "totalAttendanceInSeconds": 1558,
+            "role": "Organizer",
+            "identity": {
+                "id": "dc74d9bb-6afe-433d-8eaa-e39d80d3a647",
+                "displayName": "(redacted)",
+                "tenantId": null
+            },
+            "attendanceIntervals": [
+                {
+                    "joinDateTime": "2021-03-16T18:59:46.598956Z",
+                    "leaveDateTime": "2021-03-16T19:25:45.4473057Z",
+                    "durationInSeconds": 1558
+                }
+            ]
+        },
+        {
+            "emailAddress": "email address",
+            "totalAttendanceInSeconds": 1152,
+            "role": "Presenter",
+            "identity": {
+                "id": "(redacted)",
+                "displayName": "(redacted)",
+                "tenantId": null
+            },
+            "attendanceIntervals": [
+                {
+                    "joinDateTime": "2021-03-16T18:59:52.2782182Z",
+                    "leaveDateTime": "2021-03-16T19:06:47.7218491Z",
+                    "durationInSeconds": 415
+                },
+                {
+                    "joinDateTime": "2021-03-16T19:09:23.9834702Z",
+                    "leaveDateTime": "2021-03-16T19:16:31.1381195Z",
+                    "durationInSeconds": 427
+                },
+                {
+                    "joinDateTime": "2021-03-16T19:20:27.7094382Z",
+                    "leaveDateTime": "2021-03-16T19:25:37.7121956Z",
+                    "durationInSeconds": 310
+                }
+            ]
+        }
+    ]
+}
+
+```

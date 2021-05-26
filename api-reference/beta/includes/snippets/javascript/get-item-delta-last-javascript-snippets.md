@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/drive/root/delta(token='1230919asd190410jlka')')
+let delta = await client.api('/me/drive/root/delta(token='1230919asd190410jlka')')
 	.version('beta')
 	.get();
 

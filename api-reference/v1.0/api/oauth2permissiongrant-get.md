@@ -3,7 +3,7 @@ title: "Get an oAuth2PermissionGrant"
 description: "Retrieve the properties and relationships of single oAuth2PermissionGrant, representing a delegated permission grant."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 author: "psignoret"
 ---
 
@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/oauth2PermissionGrants/{id}
 
 ### Response
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

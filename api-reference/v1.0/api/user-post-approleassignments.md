@@ -66,14 +66,13 @@ Here is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/users/{id}/appRoleAssignments
+POST https://graph.microsoft.com/v1.0/users/cde330e5-2150-4c11-9c5b-14bfdc948c79/appRoleAssignments
 Content-Type: application/json
-Content-Length: 110
 
 {
-  "principalId": "principalId-value",
-  "resourceId": "resourceId-value",
-  "appRoleId": "appRoleId-value"
+  "principalId": "cde330e5-2150-4c11-9c5b-14bfdc948c79",
+  "resourceId": "8e881353-1735-45af-af21-ee1344582a4d",
+  "appRoleId": "00000000-0000-0000-0000-000000000000"
 }
 ```
 # [C#](#tab/csharp)
@@ -95,13 +94,13 @@ Content-Length: 110
 ---
 
 
-In this example, `{id}` and `{principalId-value}` would both be the `id` of the assigned user.
+In this example, note that the value used as the user **id** in the request URL (`cde330e5-2150-4c11-9c5b-14bfdc948c79`) is the same as the **principalId** property in the body.
 
 ### Response
 
 Here is an example of the response. 
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -112,16 +111,18 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 253
 
 {
-  "id": "id-value",
-  "creationTimestamp": "2016-10-19T10:37:00Z",
-  "principalType": "principalType-value",
-  "principalId": "principalId-value",
-  "principalDisplayName": "principalDisplayName-value",
-  "resourceId": "resourceId-value",
-  "resourceDisplayName": "resourceDisplayName-value"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('cde330e5-2150-4c11-9c5b-14bfdc948c79')/appRoleAssignments/$entity",
+  "id": "5TDjzVAhEUycWxS_3JSMeY-oHkjrWvBKi7aIZwYGQzg",
+  "deletedDateTime": null,
+  "appRoleId": "00000000-0000-0000-0000-000000000000",
+  "createdDateTime": "2021-02-15T10:31:53.5164841Z",
+  "principalDisplayName": "Megan Bowen",
+  "principalId": "cde330e5-2150-4c11-9c5b-14bfdc948c79",
+  "principalType": "User",
+  "resourceDisplayName": "dxprovisioning-graphapi-client",
+  "resourceId": "8e881353-1735-45af-af21-ee1344582a4d"
 }
 ```
 

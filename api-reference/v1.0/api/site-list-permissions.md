@@ -98,7 +98,7 @@ Content-Type: application/json
       "grantedToIdentities": [{
         "application": {
           "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-          "displayName": "Foo App"
+          "displayName": "Contoso Time Manager App"
         }
       }]
     },
@@ -108,7 +108,7 @@ Content-Type: application/json
       "grantedToIdentities": [{
         "application": {
           "id": "22f09bb7-dd29-403e-bec2-ab5cde52c2b3",
-          "displayName": "Bar App"
+          "displayName": "Fabrikam Dashboard App"
         }
       }]
     }

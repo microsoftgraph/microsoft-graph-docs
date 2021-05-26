@@ -1,7 +1,7 @@
 ---
 title: "Create androidManagedAppProtection"
 description: "Create a new androidManagedAppProtection object."
-author: "dougeby"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType

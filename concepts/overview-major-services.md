@@ -80,15 +80,16 @@ Some services in Microsoft Graph make their debut there, others have been well-k
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Cloud printing (preview) | Universal Print | Universal Print is a Microsoft 365 cloud-based print infrastructure that enables a simple, rich and secure print experience for users and reduces administrative and management effort for IT. | [Cloud printing using Universal Print API](universal-print-concept-overview.md) |
+| Cloud printing | Universal Print | Universal Print is a Microsoft 365 cloud-based print infrastructure that enables a simple, rich and secure print experience for users and reduces administrative and management effort for IT. | [Cloud printing using Universal Print API](universal-print-concept-overview.md) |
 |Corp management of devices and apps | Intune | Enrolls and configures devices, and manages mobile applications in your organization. | [Intune devices and apps overview](intune-concept-overview.md) |
+| Device updates | Windows Update for Business deployment service | Provides control over the approval, scheduling, monitoring, and safeguarding of content delivered from Windows Update. | [Windows updates in Microsoft Graph](windowsupdates-concept-overview.md)
 
 
 ## Security
 
 |Feature     |Supporting services  |Description |More information |
 |:-----------|:--------------------|:-----------|:----------------|
-| Security integration | Azure AD Identity Protection, Azure Information Protection, Azure Security Center, Microsoft Cloud Application Security, Windows Defender Advanced Threat Protection, and [more](/graph/api/resources/security-api-overview?view=graph-rest-1.0) | Provides a unified gateway to security insights and actions across Microsoft and ecosystem partners. | [Security in Microsoft Graph](security-concept-overview.md) |
+| Security integration | Azure AD Identity Protection, Azure Information Protection, Azure Security Center, Microsoft Cloud Application Security, Windows Defender Advanced Threat Protection, and [more](/graph/api/resources/security-api-overview) | Provides a unified gateway to security insights and actions across Microsoft and ecosystem partners. | [Security in Microsoft Graph](security-concept-overview.md) |
 
 
 

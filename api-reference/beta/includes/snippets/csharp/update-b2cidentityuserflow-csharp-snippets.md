@@ -12,7 +12,7 @@ var b2cIdentityUserFlow = new B2cIdentityUserFlow
 	DefaultLanguageTag = "en"
 };
 
-await graphClient.Identity.B2cUserFlows["B2C_1_CustomerSignUp"]
+await graphClient.Identity.B2cUserFlows["{b2cIdentityUserFlow-id}"]
 	.Request()
 	.UpdateAsync(b2cIdentityUserFlow);
 

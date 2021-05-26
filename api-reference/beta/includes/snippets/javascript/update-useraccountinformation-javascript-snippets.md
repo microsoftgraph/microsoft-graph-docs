@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const userAccountInformation = {
-  countryCode: "NO"
+  countryCode: 'NO'
 };
 
-let res = await client.api('/me/profile/account/{id}')
+await client.api('/me/profile/account/{id}')
 	.version('beta')
 	.update(userAccountInformation);
 

@@ -4,10 +4,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IOutlookUserSupportedTimeZonesCollectionPage supportedTimeZones = graphClient.me().outlook()
-	.supportedTimeZones(microsoft.graph.timeZoneStandard'Iana')
+OutlookUserSupportedTimeZonesCollectionPage supportedTimeZones = graphClient.me().outlook()
+	.supportedTimeZones(OutlookUserSupportedTimeZonesParameterSet
+		.newBuilder()
+		.withTimeZoneStandard(microsoft.graph.timeZoneStandard'Iana')
+		.build())
 	.buildRequest()
 	.get();
 

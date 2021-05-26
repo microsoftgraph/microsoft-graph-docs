@@ -1,10 +1,10 @@
 ---
 title: "Use the Microsoft Graph API to get change notifications"
-description: "The Microsoft Graph REST API uses a webhook mechanism to deliver change notifications to clients. A client is a web service that configures its own URL to receive notifications. Client apps use notifications to update their state upon changes. For more details, including how to subscribe to and handle incoming notifications, see Set up notifications for changes in user data."
+description: "Deliver change notifications to clients."
 localization_priority: Normal
-author: "davidmu1"
+author: "Jumaodhiss"
 doc_type: conceptualPageType
-ms.prod: ""
+ms.prod: "change-notifications"
 ---
 
 # Use the Microsoft Graph API to get change notifications
@@ -19,7 +19,8 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 
 | **Resource** | **Supported resource paths** | **Resource data can be included in notifications**                  |
 |:----------------|:------------|:-----------------------------------------|
-| Cloud printing [printTaskDefinition][] | Changes to all events in a print task definition:<br>`/print/printtaskdefinition/{id}/tasks` | No |
+| Cloud printing [printer][] | Changes when a print job is ready to be downloaded (JobFetchable event):<br>`/print/printers/{id}/jobs` | No |
+| Cloud printing [printTaskDefinition][] | Changes when there is a valid job in the queue (JobStarted event) :<br>`/print/printtaskdefinition/{id}/tasks` | No |
 | [driveItem][] on OneDrive for Business | Changes to content within the hierarchy of the _root folder_:<br>`/drives/{id}/root`<br> `/users/{id}/drive/root` | No |
 | [driveItem][] on OneDrive (personal) | Changes to content within the hierarchy of _any folder_:<br>`/users/{id}/drive/root` | No |
 | [group][] | Changes to all groups:<br>`/groups` <br>Changes to a specific group:<br>`/groups/{id}`<br>Changes to owners of a specific group:<br>`/groups/{id}/owners`<br>Changes to members of a specific group:<br>`/groups/{id}/members` | No |
@@ -46,7 +47,7 @@ In general, subscription operations require read permission to the resource. For
 | :------------------------------------- | :------------------------------------------------------------------------------------ |
 | Delegated - work or school account     | [alert][], [contact][], [conversation][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [presence][], [chatMessage][] (preview), [todoTask][] |
 | Delegated - personal Microsoft account | [contact][], [driveItem][], [list][], [event][], [message][],[todoTask][]                                     |
-| Application                            | [alert][], [contact][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [callRecord][], [chatMessage][], [printTaskDefinition][]|
+| Application                            | [alert][], [contact][], [driveItem][], [list][], [event][], [group][], [message][], [user][], [callRecord][], [chatMessage][], [printer][], [printTaskDefinition][]|
 
 ## See also
 
@@ -70,6 +71,7 @@ In general, subscription operations require read permission to the resource. For
 [callRecord]: ./callrecords-callrecord.md
 [alert]: ./alert.md
 [presence]: ./presence.md
+[printer]: ./printer.md
 [printTaskDefinition]: ./printtaskdefinition.md
 [todoTask]: ./todoTask.md
 

@@ -3,7 +3,7 @@ title: "Get privilegedRoleSummary"
 description: "Retrieve the properties and relationships of privilegedRoleSummary object."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "shauliu"
 ---
 
@@ -76,7 +76,7 @@ GET https://graph.microsoft.com/beta/privilegedRoles/{id}/summary
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

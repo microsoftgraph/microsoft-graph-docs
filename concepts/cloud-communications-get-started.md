@@ -12,7 +12,7 @@ The cloud communications APIs in Microsoft Graph add a new dimension to how your
 
 ## Prerequisites
 
-Beore  you get started, it will be helpful to familiarize yourself with the following:
+Before  you get started, it will be helpful to familiarize yourself with the following:
 
 - [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis)
 (Azure AD) and how the service helps employees sign in and access resources.
@@ -59,3 +59,7 @@ The following SDKs are available in C#. We will provide support for other langua
 Learn how to implement different scenarios using stateful bots, such as [answering an incoming call](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/articles/index.html#example-incoming-calls) with either application-hosted or service-hosted media.
 
 For more examples, see the [Communications samples repository](https://microsoftgraph.github.io/microsoft-graph-comms-samples/docs/index.html).
+
+## Privacy and compliance
+
+In the requests to our APIs, sensitive data should not be sent in any client-side generated IDs (such as scenario IDs, request IDs, or other correlation IDs) in headers or the request body. These IDs will be logged on the server side for diagnostics.

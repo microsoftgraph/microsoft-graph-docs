@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+[!INCLUDE [accessreviews-disclaimer-v2](../../includes/accessreviews-disclaimer-v2.md)]
+
 Represents a base class for different types of review targets, each one with its own specific properties. The supported target types are: [accessReviewInstanceDecisionItemUserTarget](accessreviewinstancedecisionitemusertarget.md) and [accessReviewInstanceDecisionItemServicePrincipalTarget](accessreviewinstancedecisionitemserviceprincipaltarget.md).
 
 ## Properties

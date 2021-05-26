@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const outlookTaskFolder = {
-  name: "Charity work"
+  name: 'Charity work'
 };
 
-let res = await client.api('/me/outlook/taskFolders/AAMkADIyAAAhrbPWAAA=')
+await client.api('/me/outlook/taskFolders/AAMkADIyAAAhrbPWAAA=')
 	.version('beta')
 	.update(outlookTaskFolder);
 

@@ -28,8 +28,8 @@ The statistics summary for a particular role.
 |elevatedCount|int32|The number of users that have the role assigned and the role is activated.|
 |id|string| The unique identifier for the role. Read-only.|
 |managedCount|int32|The number of users that have the role assigned but the role is deactivated.|
-|mfaEnabled|boolean|**true** if the role activation requires MFA. **false** if the role activation doesn't require MFA.|
-|status|string| Possible values are: `ok`, `bad`. The value depends on the ratio of (managedCount / usersCount). If the ratio is less than a predefined threshold, `ok` is returned. Otherwise, `bad` is returned.|
+|mfaEnabled|boolean|`true` if the role activation requires MFA. `false` if the role activation doesn't require MFA.|
+|status|roleSummaryStatus| Possible values are: `ok`, `bad`. The value depends on the ratio of (managedCount / usersCount). If the ratio is less than a predefined threshold, `ok` is returned. Otherwise, `bad` is returned.|
 |usersCount|int32|The number of users that are assigned with the role.|
 
 ## Relationships

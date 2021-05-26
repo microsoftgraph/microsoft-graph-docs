@@ -4,7 +4,7 @@ description: "The **onPremisesExtensionAttributes** property of the user entity 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "users"
-author: "krbain"
+author: "jpettere"
 ---
 
 # onPremisesExtensionAttributes resource type

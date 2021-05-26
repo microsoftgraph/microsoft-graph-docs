@@ -13,7 +13,7 @@ var groupLifecyclePolicy = new GroupLifecyclePolicy
 	AlternateNotificationEmails = "admin@contoso.com"
 };
 
-await graphClient.GroupLifecyclePolicies["{id}"]
+await graphClient.GroupLifecyclePolicies["{groupLifecyclePolicy-id}"]
 	.Request()
 	.UpdateAsync(groupLifecyclePolicy);
 

@@ -13,6 +13,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphMailFolder *mailFolder = [[MSGraphMailFolder alloc] init];
 [mailFolder setDisplayName:@"Clutter"];
+[mailFolder setIsHidden: true];
 
 NSError *error;
 NSData *mailFolderData = [mailFolder getSerializedDataWithError:&error];

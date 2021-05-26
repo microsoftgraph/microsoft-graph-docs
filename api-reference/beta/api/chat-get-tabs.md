@@ -1,7 +1,7 @@
 ---
 title: "Get tab in chat"
 description: "Retrieve the properties and relationships of the specified tab in a chat. "
-author: "nkramer"
+author: "subray"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -26,6 +26,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 
 ## HTTP request
+
+<!-- {
+  "blockType": "ignored"
+}
+-->
 ```http
 GET /chats/{chat-id}/tabs/{tab-id}
 ```

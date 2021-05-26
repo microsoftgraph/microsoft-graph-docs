@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-```
+```http
 GET /financials/companies/{id}/journals/{id}
 ```
 
@@ -51,7 +51,7 @@ If successful, this method returns a `200 OK` response code and a **journals** o
 **Request**
 
 Here is an example of the request.
-```json
+```http
 GET https://graph.microsoft.com/beta/financials/companies/{id}/journals/{id}
 ```
 
@@ -59,7 +59,7 @@ GET https://graph.microsoft.com/beta/financials/companies/{id}/journals/{id}
 
 Here is an example of the response. 
 
-> **Note**: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note**: The response object shown here might be shortened for readability.
 
 ```json
 {

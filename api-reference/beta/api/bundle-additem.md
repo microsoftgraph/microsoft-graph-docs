@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
 title: Add item to a bundle
 description: Add item to a bundle of driveItems
 localization_priority: Normal

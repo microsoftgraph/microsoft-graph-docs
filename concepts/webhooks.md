@@ -93,9 +93,11 @@ When subscribing to Outlook resources such as **messages**, **events** or **cont
 
 `/users/sh.o'neal@contoso.com/messages`
 
-Use: 
+Use:
 
 `/users/{guid-user-id}/messages`
+
+A maximum of 1000 active subscriptions per mailbox for all applications is allowed.
 
 ### Teams resource limitations
 

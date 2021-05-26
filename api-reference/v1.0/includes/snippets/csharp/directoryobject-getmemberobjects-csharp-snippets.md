@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var securityEnabledOnly = true;
 
-await graphClient.DirectoryObjects["{object-id}"]
+await graphClient.DirectoryObjects["{directoryObject-id}"]
 	.GetMemberObjects(securityEnabledOnly)
 	.Request()
 	.PostAsync();

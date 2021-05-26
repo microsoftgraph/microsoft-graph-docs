@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/reports/getCredentialUserRegistrationCount')
+let getCredentialUserRegistrationCount = await client.api('/reports/getCredentialUserRegistrationCount')
 	.version('beta')
 	.get();
 

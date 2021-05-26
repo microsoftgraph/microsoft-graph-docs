@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const directoryObject = {
-  @odata.id: "https://graph.microsoft.com/v1.0/directoryObjects/{user-id}"
+  '@odata.id': 'https://graph.microsoft.com/v1.0/directoryObjects/{user-id}'
 };
 
-let res = await client.api('/directoryRoles/roleTemplateId={role-templateId}/members/$ref')
+await client.api('/directoryRoles/roleTemplateId={role-templateId}/members/$ref')
 	.post(directoryObject);
 
 ```

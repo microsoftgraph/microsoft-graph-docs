@@ -11,7 +11,7 @@ var languageProficiency = new LanguageProficiency
 	AllowedAudiences = AllowedAudiences.Organization
 };
 
-await graphClient.Me.Profile.Languages["{id}"]
+await graphClient.Me.Profile.Languages["{languageProficiency-id}"]
 	.Request()
 	.UpdateAsync(languageProficiency);
 

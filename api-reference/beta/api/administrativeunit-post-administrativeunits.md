@@ -3,7 +3,7 @@ title: "Create administrativeUnit"
 description: "Use this API to create a new administrativeUnit."
 author: "anandyadavMSFT"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -90,7 +90,7 @@ In the request body, supply a JSON representation of an [administrativeUnit](../
 ### Response
 
 The following is an example of the response. 
-> Note: The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

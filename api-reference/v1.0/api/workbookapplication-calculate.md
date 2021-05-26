@@ -25,7 +25,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/application/calculate
+POST /me/drive/items/{id}/workbook/application/calculate
+POST /me/drive/root:/{item-path}:/workbook/application/calculate
 
 ```
 ## Request headers

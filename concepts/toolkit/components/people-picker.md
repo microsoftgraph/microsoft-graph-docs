@@ -2,12 +2,12 @@
 title: "People-Picker component"
 description: "You can use the mgt-people-picker web component to search for a specified number of people and render the list of results via Microsoft Graph."
 localization_priority: Normal
-author: vogtn
+author: elisenyang
 ---
 
 # People-Picker component in the Microsoft Graph Toolkit
 
-You can use the `mgt-people-picker` web component to search for people and/or groups. By default, the component will search for all people and users in the organization, but you can change the behavior to also search for groups, or only groups. You can also filter the search to a specific group.
+You can use the `mgt-people-picker` web component to search for people and/or groups. By default, the component will search for all people and users in the organization, but you can change the behavior to also search for groups, or only groups. You can also filter the search to a specific group. Additionally, you can allow the user to enter and select any email address.
 
 ## Example
 
@@ -25,14 +25,18 @@ By default, the `mgt-people-picker` component fetches people from the `/me/peopl
 | -------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | show-max | showMax   | A number value to indicate the maximum number of people to show. the default value is 6.                                                                                             |
 | group-id    | groupId     | A string value that belongs to a Microsoft Graph defined group for further filtering of the search results.                                                                            |
-| type     | type      | The type of entities to search for. Available options are: `person`, `group`, `any`. Default value is `person`. This attribute has no effect if `group-id` property is set.         
 | transitive-search     | transitiveSearch      | A Boolean value to perform a transitive search returning a flat list of all nested members - by default transitive search is not used.|
-| group-type     | groupType      | The group type to search for. Available options are: `unified`, `security`, `mailenabledsecurity`, `distribution`, `any`. Default value is `any`. This attribute has no effect if the `type` property is set to `person`.                                                                           |
-|  selected-people  | selectedPeople     | An array of selected people. Set this value to select people programmatically.|
+| type     | type      | The type of entities to search for. Available options are: `person`, `group`, `any`. Default value is `person`. This attribute has no effect if `group-id` property is set.         
+| user-type     | userType      | The type of user to search for. Available options are: `any`, `user` for organizational users, or `contact` for contacts. Default value is `any`. |
+| group-type     | groupType      | The group type to search for. Available options are: `unified`, `security`, `mailenabledsecurity`, `distribution`, `any`. Default value is `any`. This attribute has no effect if the `type` property is set to `person`.  |
+| selected-people  | selectedPeople     | An array of selected people. Set this value to select people programmatically.|
 | people   | people    | An array of people found and rendered in the search result |
 | placeholder   | placeholder    | The default text that appears to explain how to use the component. Default value is `Start typing a name`.
 | default-selected-user-ids | defaultSelectedUserIds | When provided a string of comma-separated Microsoft Graph user IDs, the component renders the respective users as selected upon initialization.
+| default-selected-group-ids | defaultSelectedGroupIds | Similar to default-selected-user-ids, when provided a string of comma-separated Microsoft Graph group IDs, the component renders the respective groups as selected upon initialization.
 | selection-mode | selectionMode | Used to indicate whether to allow selecting multiple items (users or groups) or just a single item. Available options are: `single`, `multiple`. Default value is `multiple`.
+| disabled | disabled | Sets whether the people picker is disabled. When disabled, the user is not able to search or select people.
+| allow-any-email | allowAnyEmail | Indicates whether the people picker can accept email addresses without selecting a person. Default value is `false`. When you finish typing an email address, you can press comma (`,`), semicolon (`;`), tab or enter keys to add it.
 
 The following is a `show-max` example.
 
@@ -133,13 +137,22 @@ This component uses the following Microsoft Graph APIs and permissions.
 | [/me/people](/graph/api/user-list-people)                    | People.Read        |
 | [/users](/graph/api/user-list)  | User.ReadBasic.All |
 | [/groups](/group-list)  | Group.Read.All |
-| [/groups/\${groupId}/members](/graph/api/group-list-members) | User.ReadBasic.All        |
+| [/groups/\${groupId}/members](/graph/api/group-list-members) | GroupMember.Read.All        |
 | [/users/${userPrincipleName} ](/graph/api/user-get)  | User.Read |
 
 ## Authentication
 
 The control uses the global authentication provider described in the [authentication documentation](../providers/providers.md).
 
+## Cache
+
+|Object store|Cached data|Remarks|
+|---------|-----------|-------|
+|`groups`|List of groups|Used when `type` is set to `PersonType.group`|
+|`people`|List of people|Used when `type` is set to `PersonType.person` or `PersonType.any`|
+|`users`|List of users|Used when `groupId` specified|
+
+See [Caching](../customize-components/cache.md) for more details on how to configure the cache.
 ## Extend for more control
 
 For more complex scenarios or a truly custom UX, this component exposes several `protected render*` methods for override in component extensions.

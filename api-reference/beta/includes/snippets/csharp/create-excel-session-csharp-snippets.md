@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var persistChanges = true;
 
-await graphClient.Me.Drive.Items["{id}"].Workbook
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook
 	.CreateSession(persistChanges)
 	.Request()
 	.PostAsync();

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Education.Me.Rubrics["{id}"]
+await graphClient.Education.Me.Rubrics["{educationRubric-id}"]
 	.Request()
 	.DeleteAsync();
 

@@ -3,7 +3,7 @@ title: "List accessReviewInstanceDecisionItem"
 description: "Retrieve accessReviewInstanceDecisionItem objects."
 localization_priority: Normal
 author: "isabelleatmsft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 ---
 
 ### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -19,7 +19,7 @@ NSMutableArray *grantedToIdentitiesList = [[NSMutableArray alloc] init];
 MSGraphIdentitySet *grantedToIdentities = [[MSGraphIdentitySet alloc] init];
 MSGraphIdentity *application = [[MSGraphIdentity alloc] init];
 [application setId:@"89ea5c94-7736-4e25-95ad-3fa95f62b66e"];
-[application setDisplayName:@"Foo App"];
+[application setDisplayName:@"Contoso Time Manager App"];
 [grantedToIdentities setApplication:application];
 [grantedToIdentitiesList addObject: grantedToIdentities];
 [permission setGrantedToIdentities:grantedToIdentitiesList];

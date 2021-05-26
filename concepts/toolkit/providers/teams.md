@@ -28,10 +28,10 @@ npm install @microsoft/mgt @microsoft/teams-js
 Next, import and use the provider.
 
 ```ts
-import * as MicrosoftTeams from "@microsoft/teams-js/dist/MicrosoftTeams";
+import * as microsoftTeams from "@microsoft/teams-js";
 import {Providers, TeamsProvider} from '@microsoft/mgt';
 
-TeamsProvider.microsoftTeamsLib = MicrosoftTeams;
+TeamsProvider.microsoftTeamsLib = microsoftTeams;
 Providers.globalProvider = new TeamsProvider(config);
 ```
 
@@ -79,10 +79,10 @@ In order to sign in with your Teams credentials, you need to provide a URL that 
 # [npm](#tab/ts)
 
 ```ts
-import * as MicrosoftTeams from "@microsoft/teams-js/dist/MicrosoftTeams";
+import * as microsoftTeams from "@microsoft/teams-js";
 import {Providers, TeamsProvider} from '@microsoft/mgt';
 
-TeamsProvider.microsoftTeamsLib = MicrosoftTeams;
+TeamsProvider.microsoftTeamsLib = microsoftTeams;
 TeamsProvider.handleAuth();
 ```
 

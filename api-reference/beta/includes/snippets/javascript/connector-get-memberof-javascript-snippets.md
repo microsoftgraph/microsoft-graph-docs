@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf')
+let memberOf = await client.api('/onPremisesPublishingProfiles/applicationProxy/connectors/{id}/memberOf')
 	.version('beta')
 	.get();
 

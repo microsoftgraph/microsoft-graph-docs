@@ -64,7 +64,7 @@ GET /sites/{site-id}/pages
 } 
 -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

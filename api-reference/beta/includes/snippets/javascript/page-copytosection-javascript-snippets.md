@@ -11,11 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const onenoteOperation = {
-  id: "id-value",
-  groupId: "groupId-value"
+  id: 'id-value',
+  groupId: 'groupId-value'
 };
 
-let res = await client.api('/me/onenote/pages/{id}/copyToSection')
+await client.api('/me/onenote/pages/{id}/copyToSection')
 	.version('beta')
 	.post(onenoteOperation);
 

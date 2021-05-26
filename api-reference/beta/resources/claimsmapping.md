@@ -3,7 +3,7 @@ title: "claimsMapping resource type"
 description: "Map the claims from a token to the claims that Azure Active Directory B2C recognizes and uses."
 author: "namkedia"
 localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
 

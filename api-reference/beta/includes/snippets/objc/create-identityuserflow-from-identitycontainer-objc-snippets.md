@@ -12,6 +12,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphIdentityUserFlow *identityUserFlow = [[MSGraphIdentityUserFlow alloc] init];
+[identityUserFlow setId:@"Pol1"];
 [identityUserFlow setUserFlowType: [MSGraphUserFlowType signUpOrSignIn]];
 [identityUserFlow setUserFlowTypeVersion: 1];
 

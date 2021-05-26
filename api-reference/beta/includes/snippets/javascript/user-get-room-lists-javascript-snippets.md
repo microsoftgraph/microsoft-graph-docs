@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/findRoomLists')
+let findRoomLists = await client.api('/me/findRoomLists')
 	.version('beta')
 	.get();
 

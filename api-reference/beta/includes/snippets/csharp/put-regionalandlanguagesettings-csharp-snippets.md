@@ -44,6 +44,18 @@ var regionalAndLanguageSettings = new RegionalAndLanguageSettings
 		ShortTimeFormat = "HH:mm",
 		LongTimeFormat = "h:mm:ss tt",
 		TimeZone = "Pacific Standard Time"
+	},
+	TranslationPreferences = new TranslationPreferences
+	{
+		TranslationBehavior = TranslationBehavior.Yes,
+		LanguageOverrides = new List<TranslationLanguageOverride>()
+		{
+			new TranslationLanguageOverride
+			{
+				LanguageTag = "fr",
+				TranslationBehavior = TranslationBehavior.Yes
+			}
+		}
 	}
 };
 

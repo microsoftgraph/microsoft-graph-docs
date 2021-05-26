@@ -4,12 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String groupId = "ffffffff-ffff-ffff-ffff-ffffffffffff";
 
 graphClient.groupLifecyclePolicies()
-	.renewGroup(groupId)
+	.renewGroup(GroupLifecyclePolicyRenewGroupParameterSet
+		.newBuilder()
+		.withGroupId(groupId)
+		.build())
 	.buildRequest()
 	.post();
 

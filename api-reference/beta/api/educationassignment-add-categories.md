@@ -63,7 +63,7 @@ In the request body, supply the odata.id of the existing [educationCategory](../
 ##### Response
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All of the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 
 <!-- {

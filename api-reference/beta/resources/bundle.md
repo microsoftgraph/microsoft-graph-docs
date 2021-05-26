@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: jeremyke
 title: bundle resource type
 description: Facet describing a driveItem that is a logical grouping of other driveItems
 localization_priority: Normal

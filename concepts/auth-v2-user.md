@@ -3,7 +3,7 @@ title: "Get access on behalf of a user"
 description: "To use Microsoft Graph to read and write resources on behalf of a user, your app must get an access token from Azure AD and attach the token to requests that it sends to Microsoft Graph."
 author: "jackson-woods"
 localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ms.custom: graphiamtop20
 ---
 
@@ -272,3 +272,7 @@ For more information about getting access to Microsoft Graph on behalf of a user
 
 - For information about using the Microsoft identity platform endpoint with different kinds of apps, see the **Get Started** links in the [Microsoft identity platform developer documentation](/azure/active-directory/develop/active-directory-developers-guide). The documentation contains links to overview topics, quickstarts, tutorials, code samples and protocol documentation for different kinds of apps supported by the Microsoft identity platform endpoint.
 - For information about the Microsoft Authentication Library (MSAL) and server middleware available for use with the Microsoft identity platform endpoint, see [Microsoft Authentication Libraries](/azure/active-directory/develop/msal-overview).
+
+## See also
+
+For an example of a web app hosted on Azure App Service calling Microsoft Graph as the user, see [Tutorial: Access Microsoft Graph from a secured app as the user](/azure/app-service/scenario-secure-app-access-microsoft-graph-as-user). Learn how to grant delegated permissions to a web app, configure App Service to get an access token, and call Microsoft Graph from a web app for a signed-in user.

@@ -11,7 +11,7 @@ ms.custom: scenarios:getting-started
 
 On the [profile card](https://support.office.com/article/profile-cards-in-office-365-e80f931f-5fc4-4a59-ba6e-c1e35a85b501) in Microsoft 365, you can find information about users that is stored and maintained by your organization, for example **Job title** or **Office location**.
 
-Use the [profileCardProperty](/graph/api/resources/profilecardproperty?view=graph-rest-beta) resource to show additional properties from Azure AD on profile cards for an organization, by:
+Use the [profileCardProperty](/graph/api/resources/profilecardproperty) resource to show additional properties from Azure AD on profile cards for an organization, by:
 
 * Making additional attributes visible
 * Adding custom attributes
@@ -32,7 +32,7 @@ You can make the following attributes from Azure Active Directory (Azure AD) vis
 * `StateOrProvince`
 * `Alias`
 
-The following table shows how the Azure AD attributes correspond with properties of the Microsoft Graph [user](/graph/api/resources/user?view=graph-rest-beta) entity.
+The following table shows how the Azure AD attributes correspond with properties of the Microsoft Graph [user](/graph/api/resources/user) entity.
 
 | Azure AD attribute | User entity property |
 | ------------------ | -------------------- |
@@ -43,12 +43,12 @@ The following table shows how the Azure AD attributes correspond with properties
 | StateOrProvince | state |
 | Alias | mailNickname |
 
-You can add any of these attributes to the profile card by configuring your [organization settings](/graph/api/resources/organizationsettings?view=graph-rest-beta) and adding the attribute as the **directoryPropertyName** property of a **profileCardProperty** in Microsoft Graph. When you make additional attributes visible, you must use the property names for `en-us`. You don't have to add localized values. The additional properties will automatically be shown in the language settings that the user has specified for Microsoft 365.
+You can add any of these attributes to the profile card by configuring your [organization settings](/graph/api/resources/organizationsettings) and adding the attribute as the **directoryPropertyName** property of a **profileCardProperty** in Microsoft Graph. When you make additional attributes visible, you must use the property names for `en-us`. You don't have to add localized values. The additional properties will automatically be shown in the language settings that the user has specified for Microsoft 365.
 
 > [!IMPORTANT]
 > When adding an attribute to profile card, it takes up to 24 hours for the addition to be displayed.
 
-## Example
+### Example
 
 The following example displays the `Alias` attribute on the profile card.
 
@@ -75,13 +75,13 @@ Content-type: application/json
 
 ## Adding custom attributes
 
-You can add any of the 15 Azure AD [custom extension attributes](/graph/api/resources/onpremisesextensionattributes?view=graph-rest-beta) to users' profile cards by configuring your organization settings and [adding the corresponding value as a profileCardProperty](/graph/api/organizationsettings-post-profilecardproperties?view=graph-rest-beta) in Microsoft Graph. You can add one **profileCardProperty** resource at a time.
+You can add any of the 15 Azure AD [custom extension attributes](/graph/api/resources/onpremisesextensionattributes) to users' profile cards by configuring your organization settings and [adding the corresponding value as a profileCardProperty](/graph/api/organizationsettings-post-profilecardproperties) in Microsoft Graph. You can add one **profileCardProperty** resource at a time.
 
 It takes up to 24 hours for the changes to show on profile cards.
 
 Custom properties are not searchable and can't be used to search for people across Microsoft apps and services.
 
-The following table shows how the Azure AD custom extension attribute names correspond to the supported values for the **directoryPropertyName** property of the [profileCardProperty](/graph/api/resources/profilecardproperty?view=graph-rest-beta) resource. These Azure AD custom extension attribute names are *not case-sensitive*:
+The following table shows how the Azure AD custom extension attribute names correspond to the supported values for the **directoryPropertyName** property of the [profileCardProperty](/graph/api/resources/profilecardproperty) resource. These Azure AD custom extension attribute names are *not case-sensitive*:
 
 | Azure AD custom extension attribute | Value to specify as directoryPropertyName |
 | ----------------------------------- | ----------------------------------------- |
@@ -101,7 +101,7 @@ The following table shows how the Azure AD custom extension attribute names corr
 | extensionAttribute14 | customAttribute14 |
 | extensionAttribute15 | customAttribute15 |
 
-## Example
+### Example
 
 The following example adds the first Azure AD custom extension attribute to the profile card, using the display name **Cost center**. For users that have set their language settings to German, the display name will be **Kostenstelle**.
 
@@ -152,7 +152,7 @@ Content-type: application/json
 ## See also
 
 - [Find your Microsoft 365 tenant ID](/onedrive/find-your-office-365-tenant-id)
-- [onPremisesExtensionAttributes resource type](/graph/api/resources/onpremisesextensionattributes?view=graph-rest-beta)
-- [User resource type](/graph/api/resources/user?view=graph-rest-beta)
+- [onPremisesExtensionAttributes resource type](/graph/api/resources/onpremisesextensionattributes)
+- [User resource type](/graph/api/resources/user)
 - [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer)
-- [Get profileCardProperty](/graph/api/profilecardproperty-get?view=graph-rest-beta)
+- [Get profileCardProperty](/graph/api/profilecardproperty-get)

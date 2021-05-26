@@ -3,7 +3,7 @@ title: "phoneAuthenticationMethod: disableSmsSignIn"
 description: "Disable SMS sign-in for a mobile phone"
 localization_priority: Normal
 author: "mmcla"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 ### Permissions acting on other users
 
 |Permission type      | Permissions (from least to most privileged)              |
-|:---------------------------------------|:-------------------------|:-----------------|
+|:---------------------------------------|:-------------------------|
 | Delegated (work or school account)     | UserAuthenticationMethod.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | UserAuthenticationMethod.ReadWrite.All |
@@ -50,6 +50,7 @@ For delegated scenarios where an admin is acting on another user, the admin need
 POST /me/authentication/phoneMethods/{id}/disableSmsSignIn
 POST /users/{id | userPrincipalName}/authentication/phoneMethods/{id}/disableSmsSignIn
 ```
+The value of `id` for the `mobile` phoneType is `3179e48a-750b-4051-897c-87b9720928f7`.
 
 ## Request headers
 

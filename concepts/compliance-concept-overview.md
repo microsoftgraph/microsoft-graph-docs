@@ -3,7 +3,7 @@ title: "Overview of compliance in Microsoft Graph"
 description: "The Microsoft Graph APIs for Compliance provide functionality for organizations to automate repetitive tasks and integrate with their existing compliance tools to build predictable workflows that are often required to meet industry regulations."
 author: "mahage-msft"
 localization_priority: Normal
-ms.prod: "compliance"
+ms.prod: "ediscovery"
 ms.custom: scenarios:getting-started
 ---
 

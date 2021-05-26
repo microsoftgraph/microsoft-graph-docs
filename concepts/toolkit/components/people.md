@@ -32,6 +32,9 @@ By default, the `mgt-people` component fetches events from the `/me/people` endp
 | people-queries | peopleQueries | Given an array of person queries (names, upns, emails), the component will render these users. |
 | person-card | personCard | An enumeration to determine user action necessary to activate flyout panel - `hover` or `click`. Default value is `none`. |
 | show-presence | showPresence | A boolean to determine whether to show person presence badge on person image. |
+| resource | resource | The resource to get from Microsoft Graph (for example, `/me/people`). |
+| scopes | scopes | Optional array of strings if using the property or a comma delimited scope if using the attribute. The component will use these scopes (with a supported provider) to ensure that the user has consented to the right permission. |
+| version | version | Optional API version to use when making the GET request. Default is `v1.0`.  |
 
 
 The following example sets the maximum number of people to show.
@@ -99,6 +102,18 @@ When using the default templates, additional APIs and permissions are required. 
 
 The control uses the global authentication provider described in the [authentication documentation](../providers/providers.md).
 
+## Cache
+
+|Object store|Cached data|Remarks|
+|---------|-----------|-------|
+|`people`|Information about people matching the query|Used when `resource` specified|
+|`users`|Information about users matching the query|Used when `groupId`, `userIds`, `peopleQueries` or no properties specified|
+|`presence`|Presence for the specified set of people|Used when `showPresence` set to `true`|
+
+> [!NOTE]
+> By default, the `mgt-people` component uses the [`mgt-person`](./person.md) component to display information about people. The `mgt-person` component automatically downloads and caches the photo for each person.
+
+See [Caching](../customize-components/cache.md) for more details on how to configure the cache.
 ## Extend for more control
 
 For more complex scenarios or a truly custom UX, this component exposes several `protected render*` methods for override in component extensions.

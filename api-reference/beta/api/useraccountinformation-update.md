@@ -30,8 +30,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /me/profile/accounts/{id}
-PATCH /users/{id | userPrincipalName}/profile/accounts/{id}
+PATCH /me/profile/account/{id}
+PATCH /users/{id | userPrincipalName}/profile/account/{id}
 ```
 
 ## Request headers
@@ -99,7 +99,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

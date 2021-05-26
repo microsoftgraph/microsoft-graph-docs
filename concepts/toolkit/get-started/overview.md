@@ -13,6 +13,8 @@ You can watch this short video to see how quick and easy it is to get started wi
 
 > [!VIDEO https://www.youtube-nocookie.com/embed/oZCGb2MMxa0]
 
+For a step-by-step tutorial, see the [Get started with Microsoft Graph Toolkit module](/learn/modules/msgraph-toolkit-intro/). 
+
 ## Set up your Microsoft 365 tenant
 In order to develop with the Toolkit, you need access to a Microsoft 365 tenant. If you don't have one, you can get a free Microsoft 365 developer subscription by [joining the Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program). For details about how to configure your subscription, see [Set up a Microsoft 365 developer subscription](/office/developer-program/microsoft-365-developer-program-get-started).
 
@@ -28,7 +30,7 @@ To use the Toolkit via mgt-loader, add the reference in a script to your code:
 ```html
 <script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
 
-<mgt-msal-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal-provider>
+<mgt-msal2-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal2-provider>
 <mgt-login></mgt-login>
 ```
 # [npm](#tab/npm)
@@ -68,7 +70,11 @@ Providers are available via a single package and can be installed as needed. The
 
 - <b>@micosoft/mgt-msal-provider</b>
 
-    [`@micosoft/mgt-msal-provider`](../providers/msal.md) contains the `MsalProvider` and `mgt-msal-provider` component. The msal provider leverages msal.js for authenticating in web apps and PWAs.
+    [`@micosoft/mgt-msal-provider`](../providers/msal.md) contains the `MsalProvider` and `mgt-msal-provider` component. The MSAL provider uses msal.js for authenticating in web apps and Progressive Web Apps (PWAs).
+
+- <b>@micosoft/mgt-msal2-provider</b>
+
+    [`@micosoft/mgt-msal2-provider`](../providers/msal2.md) contains the `Msal2Provider` and `mgt-msal2-provider` component. The MSAL provider uses msal-browser for authenticating in web apps and PWAs.
 
 -  <b>@microsoft/mgt-teams-provider</b>
 
@@ -90,11 +96,9 @@ The `@microsoft/mgt` is the main package that includes all above packages and re
 
 The [`@microsoft/mgt-react`](./mgt-react.md) package contains all auto-generated React components and takes dependency on the `@microsoft/mgt` package.
 
-## Polyfills
+<b>@microsoft/mgt-spfx</b>
 
-If you're using the ES6 modules from the npm package and you're [targeting a browser such as IE11](https://caniuse.com/#search=components) that does not support web components natively, you will need to include polyfills in your project, as they are not automatically included. Polyfills help to fill in missing browser capabilities in browsers that are still in the process of updating to support Web Component standards. For instructions and to learn more, see [polyfills documentation](https://www.webcomponents.org/polyfills). 
-
-The polyfills are already included if you're using the Toolkit via the mgt-loader script.
+The [`@microsoft/mgt-spfx`](./mgt-spfx.md) package contains a SharePoint Framework library that's required to use Microsoft Graph Toolkit in SharePoint Framework solutions.
 
 ## Next Steps
 You're now ready to start developing with the Microsoft Graph Toolkit! The following guides are available to help you get started:

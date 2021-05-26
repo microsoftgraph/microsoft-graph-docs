@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var tiIndicator = await graphClient.Security.TiIndicators["{id}"]
+var tiIndicator = await graphClient.Security.TiIndicators["{tiIndicator-id}"]
 	.Request()
 	.GetAsync();
 

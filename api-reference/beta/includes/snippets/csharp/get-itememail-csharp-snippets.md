@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var itemEmail = await graphClient.Users["{userId}"].Profile.Emails["{id}"]
+var itemEmail = await graphClient.Users["{user-id}"].Profile.Emails["{itemEmail-id}"]
 	.Request()
 	.GetAsync();
 

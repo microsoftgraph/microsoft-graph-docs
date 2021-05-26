@@ -31,7 +31,7 @@ var message = new Message
 
 var comment = "Samantha, Randi, would you name the group please?";
 
-await graphClient.Me.Messages["AAMkADA1MTAAAAqldOAAA="]
+await graphClient.Me.Messages["{message-id}"]
 	.Reply(message,comment)
 	.Request()
 	.PostAsync();

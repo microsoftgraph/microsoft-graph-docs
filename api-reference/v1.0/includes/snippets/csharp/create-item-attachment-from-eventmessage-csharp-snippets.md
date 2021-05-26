@@ -14,7 +14,7 @@ var attachment = new ItemAttachment
 	}
 };
 
-await graphClient.Me.Events["{id}"].Attachments
+await graphClient.Me.Events["{event-id}"].Attachments
 	.Request()
 	.AddAsync(attachment);
 

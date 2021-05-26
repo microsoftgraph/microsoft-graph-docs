@@ -14,7 +14,7 @@ var grantees = new List<DriveRecipient>()
 	}
 };
 
-await graphClient.Me.Drive.Items["{item-id}"].Permissions["{perm-id}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"].Permissions["{permission-id}"]
 	.RevokeGrants(grantees)
 	.Request()
 	.PostAsync();

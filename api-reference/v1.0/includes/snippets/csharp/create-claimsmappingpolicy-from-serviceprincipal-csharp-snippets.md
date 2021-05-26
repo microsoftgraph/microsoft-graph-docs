@@ -14,7 +14,7 @@ var claimsMappingPolicy = new ClaimsMappingPolicy
 	}
 };
 
-await graphClient.ServicePrincipals["{id}"].ClaimsMappingPolicies.References
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].ClaimsMappingPolicies.References
 	.Request()
 	.AddAsync(claimsMappingPolicy);
 

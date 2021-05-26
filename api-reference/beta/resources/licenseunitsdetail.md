@@ -4,7 +4,7 @@ description: "The **prepaidUnits** property of the subscribedSku entity is of ty
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "directory-management"
-author: "krbain"
+author: "jpettere"
 ---
 
 # licenseUnitsDetail resource type

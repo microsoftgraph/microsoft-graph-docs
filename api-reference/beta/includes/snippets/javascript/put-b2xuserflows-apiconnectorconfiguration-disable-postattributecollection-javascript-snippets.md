@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 const identityApiConnector = { };
 
-let res = await client.api('/identity/b2xUserFlows/B2X_1_testuserflow/apiConnectorConfiguration/postAttributeCollection/$ref')
+await client.api('/identity/b2xUserFlows/B2X_1_testuserflow/apiConnectorConfiguration/postAttributeCollection/$ref')
 	.version('beta')
 	.put(identityApiConnector);
 

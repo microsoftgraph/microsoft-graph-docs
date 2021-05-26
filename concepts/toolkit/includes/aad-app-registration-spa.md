@@ -1,6 +1,5 @@
 ---
 author: waldekmastykarz
-ms.author: wmastyka
 ms.date: 10/28/2020
 ms.prod: aad
 ms.topic: include

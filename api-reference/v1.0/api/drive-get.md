@@ -1,6 +1,5 @@
 ---
 author: JeremyKelley
-ms.author: JeremyKelley
 ms.date: 09/10/2017
 title: Get Drive
 localization_priority: Priority
@@ -259,12 +258,6 @@ If the drive does not exist and cannot be provisioned automatically (when using 
   "keywords": "drive,onedrive,default drive,group drive",
   "section": "documentation",
   "suppressions": [
-      "Warning: /api-reference/v1.0/api/drive-get.md:
-        Unable to map some markdown elements into schema.
-            Unmapped methods:
-        get-drive-default, get-drive-by-user, get-drive-by-group, get-drive-by-id
-            Unmapped tables:
-        Permissions - AuthScopes, Path parameters - PathParameters, Path parameters - PathParameters, Path parameters - PathParameters, Path parameters - PathParameters"
   ],
   "tocPath": "Drives/Get drive"
 } -->

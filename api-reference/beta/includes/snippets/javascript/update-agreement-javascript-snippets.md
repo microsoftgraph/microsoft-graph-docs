@@ -11,11 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const agreement = {
-  displayName: "displayName-value",
+  displayName: 'displayName-value',
   isViewingBeforeAcceptanceRequired: true
 };
 
-let res = await client.api('/agreements/{id}')
+await client.api('/identityGovernance/termsOfUse/agreements/{id}')
 	.version('beta')
 	.update(agreement);
 

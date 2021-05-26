@@ -3,7 +3,7 @@ title: "List user usageRights"
 description: "Retrieve a list of usageRights objects for a user."
 author: "jeeshnair"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "users"
 doc_type: apiPageType
 ---
 
@@ -66,26 +66,26 @@ Additionally, if there are more pages in the response an @odata.nextLink is retu
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_usageright"
+  "name": "list_usageright_3"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/users/{userId}/usageRights
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-usageright-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-usageright-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-usageright-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-usageright-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-usageright-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/list-usageright-3-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-usageright-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-usageright-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -125,26 +125,26 @@ Content-Type: application/json
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "list_usageright"
+  "name": "list_usageright_4"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/users/{userId}/usageRights?$filter=state in ('active', 'suspended') and serviceIdentifier in ('ABCD')
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/list-usageright-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-usageright-4-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/list-usageright-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-usageright-4-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/list-usageright-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/list-usageright-4-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/list-usageright-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/list-usageright-4-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

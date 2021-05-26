@@ -3,6 +3,282 @@
     {
       "ChangeList": [
         {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerPlan"
+        },
+        {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerTask"
+        },
+        {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerPlanDetails"
+        },
+        {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerTaskDetails"
+        },
+        {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerBucket"
+        },
+        {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerAssignedToTaskBoardTaskFormat"
+        },
+        {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerBucketTaskBoardTaskFormat"
+        },
+        {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerProgressTaskBoardTaskFormat"
+        },        
+        {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
+          "Target": "plannerPlan"
+        },        
+        {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
+          "Target": "plannerTask"
+        },        
+        {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
+          "Target": "plannerPlanDetails"
+        },        
+        {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
+          "Target": "plannerTaskDetails"
+        },        
+        {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
+          "Target": "plannerBucket"
+        },        
+        {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
+          "Target": "plannerAssignedToTaskBoardTaskFormat"
+        },        
+        {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
+          "Target": "plannerBucketTaskBoardTaskFormat"
+        },        
+        {
+          "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
+          "Target": "plannerProgressTaskBoardTaskFormat"
+        }
+      ],
+      "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-03-30T00:00:00",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerPlan"
+        },
+        {
+          "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerTask"
+        },
+        {
+          "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerPlanDetails"
+        },
+        {
+          "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerTaskDetails"
+        },
+        {
+          "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerBucket"
+        },
+        {
+          "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerAssignedToTaskBoardTaskFormat"
+        },
+        {
+          "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerBucketTaskBoardTaskFormat"
+        },
+        {
+          "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.Read",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.Read` to the read operations of all Planner resources.",
+          "Target": "plannerProgressTaskBoardTaskFormat"
+        },        
+        {
+          "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
+          "Target": "plannerPlan"
+        },        
+        {
+          "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
+          "Target": "plannerTask"
+        },        
+        {
+          "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
+          "Target": "plannerPlanDetails"
+        },        
+        {
+          "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
+          "Target": "plannerTaskDetails"
+        },        
+        {
+          "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
+          "Target": "plannerBucket"
+        },        
+        {
+          "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
+          "Target": "plannerAssignedToTaskBoardTaskFormat"
+        },        
+        {
+          "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
+          "Target": "plannerBucketTaskBoardTaskFormat"
+        },        
+        {
+          "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+          "ApiChange": "Permission",
+          "ChangedApiName": "Tasks.ReadWrite",
+          "ChangeType": "Addition",
+          "Description": "Added support for delegated permission of `Tasks.ReadWrite` to the read and write operations of all Planner resources.",
+          "Target": "plannerProgressTaskBoardTaskFormat"
+        }
+      ],
+      "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-03-30T00:00:00",
+      "WorkloadArea": "Tasks and plans",
+      "SubArea": ""
+    },
+    { 
+      "ChangeList": [
+        {
           "Id": "9d024c18-5aa0-11eb-93a5-6e9aaa10c0ef",
           "ApiChange": "Relationship",
           "ChangedApiName": "rosterPlans",

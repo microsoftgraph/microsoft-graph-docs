@@ -1,7 +1,7 @@
 ---
 title: "Delete a user - Microsoft Graph API"
 description: "Describes the delete method of the user resource (entity) of the Microsoft Graph API (REST)."
-author: "krbain"
+author: "jpettere"
 localization_priority: Normal
 ms.prod: "users"
 doc_type: apiPageType

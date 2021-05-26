@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-Represents the details of one version of a [teamsApp](teamsapp.md).
+Represents the details of a version of a [teamsApp](teamsapp.md).
 
 ## Properties
 
@@ -22,6 +22,14 @@ Represents the details of one version of a [teamsApp](teamsapp.md).
 | publishingState| string|The published status of a specific version of a Teams app. Possible values are:</br>`submitted` — The specific version of the Teams app has been submitted and is under review. </br>`published`  — The request to publish the specific version of the Teams app has been approved by the admin and the app is published. </br> `rejected` — The request to publish the specific version of the Teams app was rejected by the admin. |
 | displayName         | string   | The name of the app provided by the app developer. |
 | version             | string   | The version number of the application. |
+| shortDescription    | string   | Short description of the application. |
+| description         | string   | Verbose description of the application. |
+
+## Relationships
+
+| Relationship | Type	| Description |
+|:---------------|:--------|:----------|
+|bot|[teamworkBot](teamworkbot.md) | The details of the bot specified in the Teams app manifest. |
 
 ## JSON representation
 

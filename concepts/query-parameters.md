@@ -233,7 +233,7 @@ GET https://graph.microsoft.com/v1.0/me/messages?$filter=Subject eq 'welcome' an
 >- [servicePrincipal](/graph/api/resources/serviceprincipal?view=graph-rest-beta&preserve-view=true)
 >- [user](/graph/api/resources/user?view=graph-rest-beta&preserve-view=true)
 >
-> To use `$orderby` and `$filter` together, you need to:
+> To use `$orderby` and `$filter` together, or `$filter` with `endsWith` you need to:
 >
 > - Add `$count=true` to the query parameters
 > - Add `ConsistencyLevel: eventual` request header

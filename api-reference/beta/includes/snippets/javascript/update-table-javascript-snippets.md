@@ -11,13 +11,13 @@ const options = {
 const client = Client.init(options);
 
 const workbookTable = {
-  name: "name-value",
+  name: 'name-value',
   showHeaders: true,
   showTotals: true,
-  style: "style-value"
+  style: 'style-value'
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/tables/{id|name}')
+await client.api('/me/drive/items/{id}/workbook/tables/{id|name}')
 	.version('beta')
 	.update(workbookTable);
 

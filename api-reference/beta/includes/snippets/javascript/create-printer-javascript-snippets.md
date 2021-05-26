@@ -11,19 +11,19 @@ const options = {
 const client = Client.init(options);
 
 const create = {
-  displayName: "Test Printer",
-  manufacturer: "Test Printer Manufacturer",
-  model: "Test Printer Model",
+  displayName: 'Test Printer',
+  manufacturer: 'Test Printer Manufacturer',
+  model: 'Test Printer Model',
   physicalDeviceId: null,
   hasPhysicalDevice: false,
   certificateSigningRequest: { 
-    content: "{content}",
-    transportKey: "{sampleTransportKey}"
+    content: '{content}',
+    transportKey: '{sampleTransportKey}'
   },
   connectorId: null
 };
 
-let res = await client.api('/print/printers/create')
+await client.api('/print/printers/create')
 	.version('beta')
 	.post(create);
 

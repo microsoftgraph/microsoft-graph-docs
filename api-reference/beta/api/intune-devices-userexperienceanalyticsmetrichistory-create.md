@@ -20,7 +20,7 @@ Create a new [userExperienceAnalyticsMetricHistory](../resources/intune-devices-
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -33,6 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 POST /deviceManagement/userExperienceAnalyticsMetricHistory
+POST /deviceManagement/userExperienceAnalyticsDeviceMetricHistory
 ```
 
 ## Request headers
@@ -49,6 +50,7 @@ The following table shows the properties that are required when you create the u
 |Property|Type|Description|
 |:---|:---|:---|
 |id|String|The unique identifier of the user experience analytics metric history.|
+|deviceId|String|The user experience analytics device id.|
 |metricDateTime|DateTimeOffset|The user experience analytics metric date time.|
 |metricType|String|The user experience analytics metric type.|
 
@@ -64,10 +66,11 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsMetricHistory
 Content-type: application/json
-Content-length: 174
+Content-length: 208
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetricHistory",
+  "deviceId": "Device Id value",
   "metricDateTime": "2017-01-01T00:00:28.4495993-08:00",
   "metricType": "Metric Type value"
 }
@@ -78,11 +81,12 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 223
+Content-Length: 257
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsMetricHistory",
   "id": "2b6d6456-6456-2b6d-5664-6d2b56646d2b",
+  "deviceId": "Device Id value",
   "metricDateTime": "2017-01-01T00:00:28.4495993-08:00",
   "metricType": "Metric Type value"
 }

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/groupSettings/{id}')
+await client.api('/groupSettings/{id}')
 	.delete();
 
 ```

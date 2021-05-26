@@ -1,7 +1,7 @@
 ---
 title: "Delete deviceManagementDerivedCredentialSettings"
 description: "Deletes a deviceManagementDerivedCredentialSettings."
-author: "dougeby"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType

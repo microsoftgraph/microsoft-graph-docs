@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const calendar = {
-  name: "Social events"
+  name: 'Social events'
 };
 
-let res = await client.api('/me/calendar')
+await client.api('/me/calendar')
 	.update(calendar);
 
 ```

@@ -12,7 +12,7 @@ var index = new Int32
 
 var values = JToken.Parse("[{}]");
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Tables["{id|name}"].Columns
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"].Columns
 	.Add(index,values,null)
 	.Request()
 	.PostAsync();

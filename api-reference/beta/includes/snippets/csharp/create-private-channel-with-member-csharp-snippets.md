@@ -27,7 +27,7 @@ var channel = new Channel
 	}
 };
 
-await graphClient.Teams["57fb72d0-d811-46f4-8947-305e6072eaa5"].Channels
+await graphClient.Teams["{team-id}"].Channels
 	.Request()
 	.AddAsync(channel);
 

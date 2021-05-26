@@ -3,7 +3,7 @@ title: "rbacApplicationMultiple resource type"
 description: "Role management navigation property"
 localization_priority: Normal
 author: "abhijeetsinha"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: "resourcePageType"
 ---
 

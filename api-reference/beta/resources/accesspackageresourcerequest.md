@@ -3,7 +3,7 @@ title: "accessPackageResourceRequest resource type"
 description: "An access package resource request is a request to a add a resource to a catalog so that the roles of the resource can be used in one or more of the catalog's access packages."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
 
@@ -27,7 +27,7 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |catalogId|String|The unique ID of the access package catalog.|
-|expirationDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|expirationDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |id|String| Read-only.|
 |isValidationOnly|Boolean|If set, does not add the resource.|
 |justification|String|The requestor's justification for adding or removing the resource.|

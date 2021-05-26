@@ -3,7 +3,7 @@ title: "claimsMappingPolicy resource type"
 description: "Represents a policy that can control the lifetime of an access token issued by Azure Active Directory (Azure AD)."
 localization_priority: Normal
 author: "paulgarn"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---
 

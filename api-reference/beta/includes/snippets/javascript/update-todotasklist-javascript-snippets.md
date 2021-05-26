@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const todoTaskList = {
-  displayName: "Vacation Plan"
+  displayName: 'Vacation Plan'
 };
 
-let res = await client.api('/me/todo/lists/AAMkADIyAAAhrbPWAAA=')
+await client.api('/me/todo/lists/AAMkADIyAAAhrbPWAAA=')
 	.version('beta')
 	.update(todoTaskList);
 

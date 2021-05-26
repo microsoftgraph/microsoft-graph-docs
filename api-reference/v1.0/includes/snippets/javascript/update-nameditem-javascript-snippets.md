@@ -11,15 +11,15 @@ const options = {
 const client = Client.init(options);
 
 const workbookNamedItem = {
-  type: "type-value",
-  scope: "scope-value",
-  comment: "comment-value",
+  type: 'type-value',
+  scope: 'scope-value',
+  comment: 'comment-value',
   value: {
   },
   visible: true
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/names/{name}')
+await client.api('/me/drive/items/{id}/workbook/names/{name}')
 	.update(workbookNamedItem);
 
 ```

@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const accessPackage = {
-  displayName:"Access Package New Name"
+  displayName: 'Access Package New Name'
 };
 
-let res = await client.api('/identityGovernance/entitlementManagement/accessPackages/{accessPackageId}')
+await client.api('/identityGovernance/entitlementManagement/accessPackages/{accessPackageId}')
 	.version('beta')
 	.update(accessPackage);
 

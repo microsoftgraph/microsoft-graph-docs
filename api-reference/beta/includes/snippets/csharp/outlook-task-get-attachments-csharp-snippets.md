@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var attachments = await graphClient.Users["{id}"].Outlook.Tasks["{id}"].Attachments
+var attachments = await graphClient.Users["{user-id}"].Outlook.Tasks["{outlookTask-id}"].Attachments
 	.Request()
 	.GetAsync();
 

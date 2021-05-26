@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /drives/{drive-id}/items/{item-id}/versions/{version-id}/content
-GET /groups/{group-id}/drive/{item-id}/versions/{version-id}/content
+GET /groups/{group-id}/drive/items/{item-id}/versions/{version-id}/content
 GET /me/drive/items/{item-id}/versions/{version-id}/content
 GET /sites/{site-id}/drive/items/{item-id}/versions/{version-id}/content
 GET /users/{user-id}/drive/items/{item-id}/versions/{version-id}/content

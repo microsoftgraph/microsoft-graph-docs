@@ -11,13 +11,13 @@ const options = {
 const client = Client.init(options);
 
 const printTaskDefinition = {
-  displayName: "Test TaskDefinitionName",
+  displayName: 'Test TaskDefinitionName',
   createdBy: {
-    displayName: "Requesting App Display Name"
+    displayName: 'Requesting App Display Name'
   }
 };
 
-let res = await client.api('/print/taskDefinitions')
+await client.api('/print/taskDefinitions')
 	.version('beta')
 	.post(printTaskDefinition);
 

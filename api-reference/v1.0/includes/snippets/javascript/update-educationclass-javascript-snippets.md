@@ -11,11 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const educationClass = {
-  description: "History - World History 1",
-  displayName: "World History Level 1",
+  description: 'History - World History 1',
+  displayName: 'World History Level 1',
 };
 
-let res = await client.api('/education/classes/{class-id}')
+await client.api('/education/classes/{class-id}')
 	.update(educationClass);
 
 ```

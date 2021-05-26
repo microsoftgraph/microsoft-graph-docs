@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Me.Profile.Anniversaries["{id}"]
+await graphClient.Me.Profile.Anniversaries["{personAnnualEvent-id}"]
 	.Request()
 	.DeleteAsync();
 

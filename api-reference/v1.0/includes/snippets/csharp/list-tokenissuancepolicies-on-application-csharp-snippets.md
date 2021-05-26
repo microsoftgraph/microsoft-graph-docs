@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var tokenIssuancePolicies = await graphClient.Applications["{id}"].TokenIssuancePolicies
+var tokenIssuancePolicies = await graphClient.Applications["{application-id}"].TokenIssuancePolicies
 	.Request()
 	.GetAsync();
 

@@ -1,6 +1,6 @@
 ---
 title: "Best practices for working with the OneNote API in Microsoft Graph"
-description: "This article provides recommendations for working with the OneNote APIs in Microsoft Graph. These recommendations are based on answers to common questions on Stack Overflow and Twitter."
+description: "This article provides recommendations for working with the OneNote APIs in Microsoft Graph. These recommendations are based on answers to common questions on Microsoft Q&A and Twitter."
 author: "jewan-microsoft"
 localization_priority: Normal
 ms.prod: "onenote"
@@ -8,7 +8,7 @@ ms.prod: "onenote"
 
 # Best practices for working with the OneNote API in Microsoft Graph
 
-This article provides recommendations for working with the OneNote APIs in Microsoft Graph. These recommendations are based on answers to common questions on Stack Overflow and Twitter.
+This article provides recommendations for working with the OneNote APIs in Microsoft Graph. These recommendations are based on answers to common questions on [Microsoft Q&A](/answers/topics/microsoft-graph-notes.html)  and Twitter.
 
 ## Use $select to select the minimum set of properties you need
 

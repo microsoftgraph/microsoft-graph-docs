@@ -12,7 +12,7 @@ var ticketNumber = "ticketNumber-value";
 
 var ticketSystem = "ticketSystem-value";
 
-await graphClient.PrivilegedRoleAssignments["{id}"]
+await graphClient.PrivilegedRoleAssignments["{privilegedRoleAssignment-id}"]
 	.MakePermanent(reason,ticketNumber,ticketSystem)
 	.Request()
 	.PostAsync();

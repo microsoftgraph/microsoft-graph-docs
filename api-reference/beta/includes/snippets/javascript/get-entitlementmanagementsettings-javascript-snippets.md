@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/identityGovernance/entitlementManagement/settings')
+let entitlementManagementSettings = await client.api('/identityGovernance/entitlementManagement/settings')
 	.version('beta')
 	.get();
 

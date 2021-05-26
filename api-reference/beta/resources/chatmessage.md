@@ -3,7 +3,7 @@ title: "chatMessage resource type"
 description: "Represents an individual chat message in a channel or chat entity. The chat message can be a root chat message or part of a thread that is defined by the **replyToId** property in the chat message."
 doc_type: resourcePageType
 localization_priority: Normal
-author: "clearab"
+author: "RamjotSingh"
 ms.prod: "microsoft-teams"
 ---
 
@@ -22,27 +22,27 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
 |**Channel messages**| | |
-|[List channel chatMessage](../api/channel-list-messages.md) | [chatMessage](chatmessage.md) collection | List of all root chat messages in a channel.|
-|[Get chatMessages in a channel delta](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Get incremental chat messages in a channel. |
-|[Create subscription for new channel messages](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Listen for new and edited channel messages, and reactions to them. |
-|[Get channel chatMessage](../api/channel-get-message.md) | [chatMessage](chatmessage.md) | Get a single root chat message from a channel.|
-|[Create chatMessage in a channel or chat](../api/chatmessage-post.md) | [chatMessage](chatmessage.md)| Create a new top-level chat message in a channel.|
-|[Update chatMessage](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Update the **policyViolation** property of a chat message.|
+|[List messages in channel](../api/channel-list-messages.md) | [chatMessage](chatmessage.md) collection | List of all root messages in a channel.|
+|[Get delta of messages in channel](../api/chatmessage-delta.md)  | [chatMessage](../resources/chatmessage.md) | Get incremental messages in a channel. |
+|[Create subscription for new channel messages](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Listen for new, edited, and deleted messages, and reactions to them. |
+|[Get message in channel](../api/chatmessage-get.md) | [chatMessage](chatmessage.md) | Get a single root message in a channel.|
+|[Send message in channel](../api/chatmessage-post.md) | [chatMessage](chatmessage.md)| Create a new root message in a channel.|
+|[Update message in channel](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Update the **policyViolation** property of a chat message.|
 |**Channel message replies**| | |
-|[List replies to a chatMessage](../api/channel-list-messagereplies.md) | [chatMessage](chatmessage.md) collection| List of all replies to a chat message in channel.|
-|[Get a reply to a chatMessage](../api/channel-get-messagereply.md) | [chatMessage](chatmessage.md)| Get a single reply to a chat message in a channel.|
-|[Reply to a chatMessage in a channel](../api/channel-post-messagereply.md) | [chatMessage](chatmessage.md)| Reply to an existing chat message in a channel.|
-|[Update chatMessage](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Update the **policyViolation** property of a chat message.|
-|**1:1 and group chat messages**| | |
-|[Get chatMessage in chat](../api/chat-get-message.md)  | [chatMessage](../resources/chatmessage.md) | Get a single chat message in a chat. |
-|[List chatMessages in a chat](../api/chat-list-message.md)  | [chatMessage](../resources/chatmessage.md) | List chat messages in a 1:1 or group chat. |
-|[Get all chat messages for user](../api/chats-getallmessages.md)| [chat](chat.md) collection| Get messages from all chats that a user is a participant in, including 1:1 chats, group chats, and meeting chats. |
-|[Create subscription for new chat messages](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Listen for new and edited chat messages, and reactions to them. |
-|[Create chatMessage in a chat](../api/chat-post-message.md) | [chatMessage](chatmessage.md)| Send a chat message in an existing 1:1 or group chat conversation.|
-|[Update chatMessage](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Update the **policyViolation** property of a chat message.|
+|[List replies to message](../api/chatmessage-list-replies.md) | [chatMessage](chatmessage.md) collection| List of all replies to a chat message in channel.|
+|[Get reply message in channel](../api/chatmessage-get.md) | [chatMessage](chatmessage.md) | Get a single reply message in a channel.|
+|[Reply to a message in channel](../api/chatmessage-post-replies.md) | [chatMessage](chatmessage.md)| Reply to an existing chat message in a channel.|
+|[Update reply message](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Update the **policyViolation** property of a chat message.|
+|**Chat messages**| | |
+|[List messages in chat](../api/chat-list-messages.md)  | [chatMessage](../resources/chatmessage.md) | List chat messages in a chat. |
+|[Get message in chat](../api/chatmessage-get.md)  | [chatMessage](../resources/chatmessage.md) | Get a single chat message in a chat. |
+|[Get messages across all chats for user](../api/chats-getallmessages.md)| [chat](chat.md) collection| Get messages from all chats that a user is a participant in, including 1:1 chats, group chats, and meeting chats. |
+|[Create subscription for new chat messages](../api/subscription-post-subscriptions.md) | [subscription](subscription.md) | Listen for new, edited, and deleted chat messages, and reactions to them. |
+|[Send message in chat](../api/chat-post-messages.md) | [chatMessage](chatmessage.md)| Send a chat message in an existing 1:1 or group chat conversation.|
+|[Update message in chat](../api/chatmessage-update.md)|[chatMessage](chatmessage.md)| Update the **policyViolation** property of a chat message.|
 |**Hosted content**| | |
-|[List all hosted content](../api/chatmessage-list-chatmessagehostedcontents.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) collection| Get all hosted content in a chat message.|
-|[Get hosted content](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) | Get hosted content from a chat message.|
+|[List all hosted content](../api/chatmessage-list-hostedcontents.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) collection| Get all hosted contents associated with a message.|
+|[Get hosted content](../api/chatmessagehostedcontent-get.md) | [chatMessageHostedContent](../resources/chatmessagehostedcontent.md) | Get hosted content (and its bytes) for a message.|
 
 
 ## Properties
@@ -53,8 +53,8 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |replyToId| string | Read-only. ID of the parent chat message or root chat message of the thread. (Only applies to chat messages in channels, not chats.) |
 |from|[identitySet](identityset.md)| Read only. Details of the sender of the chat message.|
 |etag| string | Read-only. Version number of the chat message. |
-|messageType|string|The type of chat message. The possible values are: `message`.|
-|createdDateTime|dateTimeOffset|Read only. Timestamp of when the chat message was created.|
+|messageType|string|The type of chat message. The possible value is: `message`.|
+|createdDateTime|dateTimeOffset|Timestamp of when the chat message was created.|
 |lastModifiedDateTime|dateTimeOffset|Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed. |
 |lastEditedDateTime|dateTimeOffset|Read only. Timestamp when edits to the chat message were made. Triggers an "Edited" flag in the Teams UI. If no edits are made the value is `null`.|
 |deletedDateTime|dateTimeOffset|Read only. Timestamp at which the chat message was deleted, or null if not deleted. |
@@ -64,9 +64,18 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |attachments|[chatMessageAttachment](chatmessageattachment.md) collection |Attached files. Attachments are currently read-only – sending attachments is not supported. |
 |mentions|[chatMessageMention](chatmessagemention.md) collection| List of entities mentioned in the chat message. Currently supports user, bot, team, channel.|
 |importance|string | The importance of the chat message. The possible values are: `normal`, `high`, `urgent`.|
-|reactions| [chatMessageReaction](./chatmessagereaction.md) collection | Reactions for this chat message (for example, Like).|
-|locale|string|Locale of the chat message set by the client.|
-| policyViolation | [chatMessagePolicyViolation](../resources/chatmessagepolicyviolation.md) |Defines the properties of a policy violation set by a data loss prevention (DLP) application.|
+|reactions| [chatMessageReaction](chatmessagereaction.md) collection | Reactions for this chat message (for example, Like).|
+|locale|string|Locale of the chat message set by the client. Always set to `en-us`.|
+|policyViolation | [chatMessagePolicyViolation](chatmessagepolicyviolation.md) |Defines the properties of a policy violation set by a data loss prevention (DLP) application.|
+|chatId|string|If the message was sent in a chat, represents the identity of the chat.|
+|channelIdentity|[channelIdentity](channelidentity.md)|If the message was sent in a channel, represents identity of the channel.|
+|webUrl|string|Read-only. Link to the message in Microsoft Teams.|
+## Relationships
+
+| Relationship   | Type    | Description |
+|:---------------|:--------|:----------|
+|replies|[chatMessage](chatmessage.md)| Replies for a specified message. |
+|hostedContents|[chatMessageHostedContent](chatmessagehostedcontent.md)| Content in a message hosted by Microsoft Teams e.g., images, code snippets etc. |
 
 ## JSON representation
 
@@ -75,14 +84,17 @@ The following is a JSON representation of the resource.
 <!-- {
   "blockType": "resource",
   "optionalProperties": [
-    "deleted",
+    "replyToId",
+    "lastEditedDateTime",
     "deletedDateTime",
-    "attachments",
-    "importance",
-    "reactions",
-    "mentions",
     "subject",
-    "summary"
+    "summary",
+    "attachments",
+    "mentions",
+    "reactions",
+    "policyViolation",
+    "chatId",
+    "channelIdentity"
   ],
   "baseType": "microsoft.graph.entity",
   "@odata.type": "microsoft.graph.chatMessage"
@@ -98,6 +110,7 @@ The following is a JSON representation of the resource.
   "messageType": "string",
   "createdDateTime": "string (timestamp)",
   "lastModifiedDateTime": "string (timestamp)",
+  "lastEditedDateTime": "string (timestamp)",
   "deletedDateTime": "string (timestamp)",
   "subject": "string",
   "body": {"@odata.type": "microsoft.graph.itemBody"},
@@ -108,7 +121,9 @@ The following is a JSON representation of the resource.
   "reactions": [{"@odata.type": "microsoft.graph.chatMessageReaction"}],
   "locale": "string",
   "policyViolation": {"@odata.type": "microsoft.graph.chatMessagePolicyViolation"},
-  "deleted": true
+  "chatId": "string",
+  "channelIdentity": {"@odata.type": "microsoft.graph.channelIdentity"},
+  "webUrl": "string"
 }
 ```
 

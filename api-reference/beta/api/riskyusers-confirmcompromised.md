@@ -3,7 +3,7 @@ title: Confirm riskyUser compromised
 description: Confirm a riskyUser object as compromised.
 author: cloudhandler
 localization_priority: Normal 
-ms.prod: microsoft-identity-platform
+ms.prod: identity-and-sign-in
 ms.date: 03/20/2019
 doc_type: apiPageType
 ---
@@ -53,7 +53,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "confirm_riskyuser"
+  "name": "confirm_riskyuser_1"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/riskyUsers/confirmCompromised
@@ -67,19 +67,19 @@ Content-type: application/json
 }
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/confirm-riskyuser-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/confirm-riskyuser-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/confirm-riskyuser-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/confirm-riskyuser-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/confirm-riskyuser-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/confirm-riskyuser-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/confirm-riskyuser-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/confirm-riskyuser-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -100,7 +100,7 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "confirm_riskyuser"
+  "name": "confirm_riskyuser_2"
 }-->
 ```http
 POST https://graph.microsoft.com/beta/identityProtection/riskyUsers/confirmCompromised
@@ -113,19 +113,19 @@ Content-type: application/json
 }
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/confirm-riskyuser-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/confirm-riskyuser-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/confirm-riskyuser-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/confirm-riskyuser-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/confirm-riskyuser-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/confirm-riskyuser-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/confirm-riskyuser-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/confirm-riskyuser-2-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

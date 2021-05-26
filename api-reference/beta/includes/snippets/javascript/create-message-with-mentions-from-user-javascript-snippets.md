@@ -11,26 +11,26 @@ const options = {
 const client = Client.init(options);
 
 const message = {
-    subject: "Party planning",
-    toRecipients:[
+    subject: 'Party planning',
+    toRecipients: [
       {
-          emailAddress:{
-              name:"Samantha Booth",
-              address:"samanthab@contoso.onmicrosoft.com"
+          emailAddress: {
+              name: 'Samantha Booth',
+              address: 'samanthab@contoso.onmicrosoft.com'
           }
       }
     ],
-    mentions:[
+    mentions: [
       {    
-        mentioned:{
-          name:"Dana Swope",
-          address:"danas@contoso.onmicrosoft.com"
+        mentioned: {
+          name: 'Dana Swope',
+          address: 'danas@contoso.onmicrosoft.com'
          }
       }
     ]
 };
 
-let res = await client.api('/me/messages')
+await client.api('/me/messages')
 	.version('beta')
 	.post(message);
 

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/agreements')
+let agreements = await client.api('/identityGovernance/termsOfUse/agreements')
 	.version('beta')
 	.get();
 

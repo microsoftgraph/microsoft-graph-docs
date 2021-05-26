@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String id = "5793aa3b-cca9-4794-679a240f8b58";
 
@@ -23,7 +23,11 @@ credentials1.type = "password";
 credentialsList.add(credentials1);
 
 graphClient.servicePrincipals("{id}")
-	.createPasswordSingleSignOnCredentials(id,credentialsList)
+	.createPasswordSingleSignOnCredentials(ServicePrincipalCreatePasswordSingleSignOnCredentialsParameterSet
+		.newBuilder()
+		.withId(id)
+		.withCredentials(credentialsList)
+		.build())
 	.buildRequest()
 	.post();
 

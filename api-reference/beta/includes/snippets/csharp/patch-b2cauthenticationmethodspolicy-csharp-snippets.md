@@ -9,7 +9,8 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var b2cAuthenticationMethodsPolicy = new B2cAuthenticationMethodsPolicy
 {
 	IsEmailPasswordAuthenticationEnabled = false,
-	IsUserNameAuthenticationEnabled = true
+	IsUserNameAuthenticationEnabled = true,
+	IsPhoneOneTimePasswordAuthenticationEnabled = true
 };
 
 await graphClient.Policies.B2cAuthenticationMethodsPolicy

@@ -20,7 +20,7 @@ var toRecipients = new List<Recipient>()
 
 var comment = "Dana, hope you can make this meeting.";
 
-await graphClient.Me.Events["{id}"]
+await graphClient.Me.Events["{event-id}"]
 	.Forward(toRecipients,comment)
 	.Request()
 	.PostAsync();

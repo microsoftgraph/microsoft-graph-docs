@@ -3,20 +3,1046 @@
     {
       "ChangeList": [
         {
-          "Id":"9c873d83-653c-11eb-8de9-f7f8b8b7f046",
-          "ApiChange":"Member",
-          "ChangedApiName":"windowsAzureADJoinUsingDeviceAuth",
-          "ChangeType":"Addition",
-          "Description":"Added the `windowsAzureADJoinUsingDeviceAuth` member to the **deviceEnrollmentType** enumeration",
-          "Target":"deviceEnrollmentType"
+          "Id": "5ccc71ec-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deletedWindowsAutopilotDeviceState",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **deletedWindowsAutopilotDeviceState** resource type.",
+          "Target": "deletedWindowsAutopilotDeviceState"
+        },
+        {
+          "Id": "5cced7de-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "windowsAutopilotDeviceDeletionState",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **windowsAutopilotDeviceDeletionState** enumeration type.",
+          "Target": "windowsAutopilotDeviceDeletionState"
+        },
+        {
+          "Id": "5cd13910-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Method",
+          "ChangedApiName": "deleteDevices",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **deleteDevices** method from the [windowsAutopilotDeviceIdentity](https://docs.microsoft.com/en-us/graph/api/resources/intune-windowsAutopilotDeviceIdentity?view=graph-rest-beta) resource.",
+          "Target": "windowsAutopilotDeviceIdentity"
+        },
+        {
+          "Id": "5cad2b76-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "cloudPCConnectivityIssues",
+          "ChangeType": "Addition",
+          "Description": "Added the **cloudPCConnectivityIssues** relationship to the [deviceManagement](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagement?view=graph-rest-beta) resource.",
+          "Target": "deviceManagement"
+        },
+        {
+          "Id": "5cafd669-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Property",
+          "ChangedApiName": "detectionScriptNotApplicableDeviceCount",
+          "ChangeType": "Addition",
+          "Description": "Added the **detectionScriptNotApplicableDeviceCount** property to the [deviceHealthScriptRunSummary](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceHealthScriptRunSummary?view=graph-rest-beta) resource.",
+          "Target": "deviceHealthScriptRunSummary"
+        },
+        {
+          "Id": "5cb23921-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Property",
+          "ChangedApiName": "assignmentFilterIds",
+          "ChangeType": "Addition",
+          "Description": "Added the **assignmentFilterIds** property to the [deviceHealthScriptDeviceState](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceHealthScriptDeviceState?view=graph-rest-beta) resource.",
+          "Target": "deviceHealthScriptDeviceState"
+        },
+        {
+          "Id": "5cb49c96-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Property",
+          "ChangedApiName": "osDescription",
+          "ChangeType": "Addition",
+          "Description": "Added the **osDescription** property to the [userExperienceAnalyticsWorkFromAnywhereDevice](https://docs.microsoft.com/en-us/graph/api/resources/intune-userExperienceAnalyticsWorkFromAnywhereDevice?view=graph-rest-beta) resource.",
+          "Target": "userExperienceAnalyticsWorkFromAnywhereDevice"
+        },
+        {
+          "Id": "5cb6fc2f-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Property",
+          "ChangedApiName": "osVersion",
+          "ChangeType": "Addition",
+          "Description": "Added the **osVersion** property to the [userExperienceAnalyticsWorkFromAnywhereDevice](https://docs.microsoft.com/en-us/graph/api/resources/intune-userExperienceAnalyticsWorkFromAnywhereDevice?view=graph-rest-beta) resource.",
+          "Target": "userExperienceAnalyticsWorkFromAnywhereDevice"
+        },
+        {
+          "Id": "5cb95f82-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Property",
+          "ChangedApiName": "managedInstaller",
+          "ChangeType": "Addition",
+          "Description": "Added the **managedInstaller** property to the [windowsManagementApp](https://docs.microsoft.com/en-us/graph/api/resources/intune-windowsManagementApp?view=graph-rest-beta) resource.",
+          "Target": "windowsManagementApp"
+        },
+        {
+          "Id": "5cbbc1f3-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Property",
+          "ChangedApiName": "managedInstallerConfiguredDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **managedInstallerConfiguredDateTime** property to the [windowsManagementApp](https://docs.microsoft.com/en-us/graph/api/resources/intune-windowsManagementApp?view=graph-rest-beta) resource.",
+          "Target": "windowsManagementApp"
+        },
+        {
+          "Id": "5cbe23e5-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "activateDeviceEsimActionResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [activateDeviceEsimActionResult](https://docs.microsoft.com/en-us/graph/api/resources/intune-activateDeviceEsimActionResult?view=graph-rest-beta) resource type.",
+          "Target": "activateDeviceEsimActionResult"
+        },
+        {
+          "Id": "5cc0879e-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "cloudPCConnectivityIssue",
+          "ChangeType": "Addition",
+          "Description": "Added the [cloudPCConnectivityIssue](https://docs.microsoft.com/en-us/graph/api/resources/intune-cloudPCConnectivityIssue?view=graph-rest-beta) resource type.",
+          "Target": "cloudPCConnectivityIssue"
+        },
+        {
+          "Id": "5cc2e7ea-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "managedInstallerStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **managedInstallerStatus** enumeration type.",
+          "Target": "managedInstallerStatus"
+        },
+        {
+          "Id": "5cc54d93-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Method",
+          "ChangedApiName": "setAsManagedInstaller",
+          "ChangeType": "Addition",
+          "Description": "Added the [setAsManagedInstaller](https://docs.microsoft.com/en-us/graph/api/intune-windowsManagementApp-setAsManagedInstaller?view=graph-rest-beta) method to the [windowsManagementApp](https://docs.microsoft.com/en-us/graph/api/resources/intune-windowsManagementApp?view=graph-rest-beta) resource.",
+          "Target": "windowsManagementApp"
+        },
+        {
+          "Id": "5c6e051c-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "configurationPolicyTemplates",
+          "ChangeType": "Addition",
+          "Description": "Added the **configurationPolicyTemplates** relationship to the [deviceManagement](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagement?view=graph-rest-beta) resource.",
+          "Target": "deviceManagement"
+        },
+        {
+          "Id": "5c706bd2-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "templateSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **templateSettings** relationship to the [deviceManagement](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagement?view=graph-rest-beta) resource.",
+          "Target": "deviceManagement"
+        },
+        {
+          "Id": "5c72c860-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Property",
+          "ChangedApiName": "settingInstanceTemplateReference",
+          "ChangeType": "Addition",
+          "Description": "Added the **settingInstanceTemplateReference** property to the [deviceManagementConfigurationSettingInstance](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementConfigurationSettingInstance?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementConfigurationSettingInstance"
+        },
+        {
+          "Id": "5c752bf7-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Property",
+          "ChangedApiName": "settingValueTemplateReference",
+          "ChangeType": "Addition",
+          "Description": "Added the **settingValueTemplateReference** property to the [deviceManagementConfigurationSettingValue](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementConfigurationSettingValue?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementConfigurationSettingValue"
+        },
+        {
+          "Id": "5c778ec1-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationSettingInstanceTemplateReference",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationSettingInstanceTemplateReference](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementConfigurationSettingInstanceTemplateReference?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationSettingInstanceTemplateReference"
+        },
+        {
+          "Id": "5c79f0e6-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationSettingValueTemplateReference",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationSettingValueTemplateReference](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementConfigurationSettingValueTemplateReference?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationSettingValueTemplateReference"
+        },
+        {
+          "Id": "5c7c524a-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationStringSettingValueTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationStringSettingValueTemplate](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementConfigurationStringSettingValueTemplate?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationStringSettingValueTemplate"
+        },
+        {
+          "Id": "5c7fdd6e-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationIntegerSettingValueDefaultTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationIntegerSettingValueDefaultTemplate](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementConfigurationIntegerSettingValueDefaultTemplate?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationIntegerSettingValueDefaultTemplate"
+        },
+        {
+          "Id": "5c82400c-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationIntegerSettingValueConstantDefaultTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationIntegerSettingValueConstantDefaultTemplate](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementConfigurationIntegerSettingValueConstantDefaultTemplate?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationIntegerSettingValueConstantDefaultTemplate"
+        },
+        {
+          "Id": "5c84a468-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationIntegerSettingValueDefinitionTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationIntegerSettingValueDefinitionTemplate](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementConfigurationIntegerSettingValueDefinitionTemplate?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationIntegerSettingValueDefinitionTemplate"
+        },
+        {
+          "Id": "5c870af0-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationIntegerSettingValueTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationIntegerSettingValueTemplate](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementConfigurationIntegerSettingValueTemplate?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationIntegerSettingValueTemplate"
+        },
+        {
+          "Id": "5c8965fe-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationStringSettingValueDefaultTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationStringSettingValueDefaultTemplate](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementConfigurationStringSettingValueDefaultTemplate?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationStringSettingValueDefaultTemplate"
+        },
+        {
+          "Id": "5c8bc9f5-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationStringSettingValueConstantDefaultTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationStringSettingValueConstantDefaultTemplate](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementConfigurationStringSettingValueConstantDefaultTemplate?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationStringSettingValueConstantDefaultTemplate"
+        },
+        {
+          "Id": "5c8e2d6c-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Member",
+          "ChangedApiName": "microsoftSense",
+          "ChangeType": "Addition",
+          "Description": "Added the `microsoftSense` member to the **deviceManagementConfigurationTechnologies** enumeration.",
+          "Target": "deviceManagementConfigurationTechnologies"
+        },
+        {
+          "Id": "5c908fc9-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Member",
+          "ChangedApiName": "endpointSecurityEndpointDetectionAndResponse",
+          "ChangeType": "Addition",
+          "Description": "Added the `endpointSecurityEndpointDetectionAndResponse` member to the **deviceManagementConfigurationTemplateFamily** enumeration.",
+          "Target": "deviceManagementConfigurationTemplateFamily"
+        },
+        {
+          "Id": "5c92f0a0-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Member",
+          "ChangedApiName": "endpointSecurityEndpointDectionAndResponse",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `endpointSecurityEndpointDectionAndResponse` member from the **deviceManagementConfigurationTemplateFamily** enumeration.",
+          "Target": "deviceManagementConfigurationTemplateFamily"
+        },
+        {
+          "Id": "5c97b66b-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Property",
+          "ChangedApiName": "autoUnlockBlocked",
+          "ChangeType": "Addition",
+          "Description": "Added the **autoUnlockBlocked** property to the [iosGeneralDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-iosGeneralDeviceConfiguration?view=graph-rest-beta) resource.",
+          "Target": "iosGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "5c9a187f-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Property",
+          "ChangedApiName": "unpairedExternalBootToRecoveryAllowed",
+          "ChangeType": "Addition",
+          "Description": "Added the **unpairedExternalBootToRecoveryAllowed** property to the [iosGeneralDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-iosGeneralDeviceConfiguration?view=graph-rest-beta) resource.",
+          "Target": "iosGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "5c9c7cb0-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Property",
+          "ChangedApiName": "onDeviceOnlyDictationForced",
+          "ChangeType": "Addition",
+          "Description": "Added the **onDeviceOnlyDictationForced** property to the [iosGeneralDeviceConfiguration](https://docs.microsoft.com/en-us/graph/api/resources/intune-iosGeneralDeviceConfiguration?view=graph-rest-beta) resource.",
+          "Target": "iosGeneralDeviceConfiguration"
+        },
+        {
+          "Id": "5c9edff7-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Property",
+          "ChangedApiName": "securityRequiredAndroidSafetyNetEvaluationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **securityRequiredAndroidSafetyNetEvaluationType** property to the [androidForWorkCompliancePolicy](https://docs.microsoft.com/en-us/graph/api/resources/intune-androidForWorkCompliancePolicy?view=graph-rest-beta) resource.",
+          "Target": "androidForWorkCompliancePolicy"
+        },
+        {
+          "Id": "5ca142c1-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Property",
+          "ChangedApiName": "securityRequiredAndroidSafetyNetEvaluationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **securityRequiredAndroidSafetyNetEvaluationType** property to the [androidWorkProfileCompliancePolicy](https://docs.microsoft.com/en-us/graph/api/resources/intune-androidWorkProfileCompliancePolicy?view=graph-rest-beta) resource.",
+          "Target": "androidWorkProfileCompliancePolicy"
+        },
+        {
+          "Id": "5ca3a3c8-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "androidSafetyNetEvaluationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **androidSafetyNetEvaluationType** enumeration type.",
+          "Target": "androidSafetyNetEvaluationType"
         }
       ],
-      "Id":"9c84dd16-653c-11eb-8de9-f7f8b8b7f046",
-      "Cloud":"prd",
-      "Version":"beta",
-      "CreatedDateTime":"2021-02-02T09:54:16.332Z",
-      "WorkloadArea":"Devices and apps",
-      "SubArea":"Corporate management"
+      "Id": "5c955302-b3ea-11eb-b1da-ccc38d4482e9",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-05-13T12:54:32.194Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "1d80c54c-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "userExperienceAnalyticsWorkFromAnywhereMetrics",
+          "ChangeType": "Addition",
+          "Description": "Added the **userExperienceAnalyticsWorkFromAnywhereMetrics** relationship to the [deviceManagement](https://docs.microsoft.com/en-us/graph/api/resources/intune-shared-deviceManagement?view=graph-rest-beta) resource.",
+          "Target": "deviceManagement"
+        },
+        {
+          "Id": "1d8327e7-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "userExperienceAnalyticsDeviceScores",
+          "ChangeType": "Addition",
+          "Description": "Added the **userExperienceAnalyticsDeviceScores** relationship to the [deviceManagement](https://docs.microsoft.com/en-us/graph/api/resources/intune-shared-deviceManagement?view=graph-rest-beta) resource.",
+          "Target": "deviceManagement"
+        },
+        {
+          "Id": "1d85899f-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Property",
+          "ChangedApiName": "esimIdentifier",
+          "ChangeType": "Addition",
+          "Description": "Added the **esimIdentifier** property to the [hardwareInformation](https://docs.microsoft.com/en-us/graph/api/resources/intune-devices-hardwareInformation?view=graph-rest-beta) resource.",
+          "Target": "hardwareInformation"
+        },
+        {
+          "Id": "1d8a4fbf-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userExperienceAnalyticsWorkFromAnywhereMetric",
+          "ChangeType": "Addition",
+          "Description": "Added the [userExperienceAnalyticsWorkFromAnywhereMetric](https://docs.microsoft.com/en-us/graph/api/resources/intune-devices-userExperienceAnalyticsWorkFromAnywhereMetric?view=graph-rest-beta) resource type.",
+          "Target": "userExperienceAnalyticsWorkFromAnywhereMetric"
+        },
+        {
+          "Id": "1d8cb128-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userExperienceAnalyticsWorkFromAnywhereDevice",
+          "ChangeType": "Addition",
+          "Description": "Added the [userExperienceAnalyticsWorkFromAnywhereDevice](https://docs.microsoft.com/en-us/graph/api/resources/intune-devices-userExperienceAnalyticsWorkFromAnywhereDevice?view=graph-rest-beta) resource type.",
+          "Target": "userExperienceAnalyticsWorkFromAnywhereDevice"
+        },
+        {
+          "Id": "1d8f11e4-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userExperienceAnalyticsDeviceScores",
+          "ChangeType": "Addition",
+          "Description": "Added the [userExperienceAnalyticsDeviceScores](https://docs.microsoft.com/en-us/graph/api/resources/intune-devices-userExperienceAnalyticsDeviceScores?view=graph-rest-beta) resource type.",
+          "Target": "userExperienceAnalyticsDeviceScores"
+        },
+        {
+          "Id": "1d91760e-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Member",
+          "ChangedApiName": "activateDeviceEsim",
+          "ChangeType": "Addition",
+          "Description": "Added the `activateDeviceEsim` member to the **remoteAction** enumeration.",
+          "Target": "remoteAction"
+        },
+        {
+          "Id": "1d93da31-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "persistEsimDataPlan",
+          "ChangeType": "Addition",
+          "Description": "Added the **persistEsimDataPlan** parameter to the [wipe](https://docs.microsoft.com/en-us/graph/api/intune-devices-managedDevice-wipe?view=graph-rest-beta) method.",
+          "Target": "wipe"
+        },
+        {
+          "Id": "1d963d61-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Method",
+          "ChangedApiName": "activateDeviceEsim",
+          "ChangeType": "Addition",
+          "Description": "Added the [activateDeviceEsim](https://docs.microsoft.com/en-us/graph/api/intune-managedDevice-activateDeviceEsim?view=graph-rest-beta) method to the [managedDevice](https://docs.microsoft.com/en-us/graph/api/resources/intune-devices-managedDevice?view=graph-rest-beta) resource.",
+          "Target": "managedDevice"
+        },
+        {
+          "Id": "1d989e14-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Property",
+          "ChangedApiName": "azureAdRegistered",
+          "ChangeType": "Change",
+          "Description": "Changed the type of the **azureAdRegistered** property in the [userExperienceAnalyticsNotAutopilotReadyDevice](https://docs.microsoft.com/en-us/graph/api/resources/intune-devices-userExperienceAnalyticsNotAutopilotReadyDevice?view=graph-rest-beta) resource.",
+          "Target": "userExperienceAnalyticsNotAutopilotReadyDevice"
+        },
+        {
+          "Id": "1d9d62a6-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "azureAdRegisteredState",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **azureAdRegisteredState** enumeration type.",
+          "Target": "azureAdRegisteredState"
+        },
+        {
+          "Id": "1da22689-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Method",
+          "ChangedApiName": "getAllCertificatesReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getAllCertificatesReport](https://docs.microsoft.com/en-us/graph/api/intune-deviceManagementReports-getAllCertificatesReport?view=graph-rest-beta) method to the [deviceManagementReports](https://docs.microsoft.com/en-us/graph/api/resources/intune-reporting-deviceManagementReports?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "1dba01ac-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Method",
+          "ChangedApiName": "getConfigManagerDevicePolicyStatusReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getConfigManagerDevicePolicyStatusReport](https://docs.microsoft.com/en-us/graph/api/intune-deviceManagementReports-getConfigManagerDevicePolicyStatusReport?view=graph-rest-beta) method to the [deviceManagementReports](https://docs.microsoft.com/en-us/graph/api/resources/intune-reporting-deviceManagementReports?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "1dc39475-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Method",
+          "ChangedApiName": "getDeviceManagementIntentSettingsReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getDeviceManagementIntentSettingsReport](https://docs.microsoft.com/en-us/graph/api/intune-deviceManagementReports-getDeviceManagementIntentSettingsReport?view=graph-rest-beta) method to the [deviceManagementReports](https://docs.microsoft.com/en-us/graph/api/resources/intune-reporting-deviceManagementReports?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "1dd28256-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Property",
+          "ChangedApiName": "endOfSupportDate",
+          "ChangeType": "Addition",
+          "Description": "Added the **endOfSupportDate** property to the [windowsFeatureUpdateProfile](https://docs.microsoft.com/en-us/graph/api/resources/intune-softwareupdate-windowsFeatureUpdateProfile?view=graph-rest-beta) resource.",
+          "Target": "windowsFeatureUpdateProfile"
+        },
+        {
+          "Id": "1dd4e785-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Property",
+          "ChangedApiName": "endOfSupportDate",
+          "ChangeType": "Addition",
+          "Description": "Added the **endOfSupportDate** property to the [windowsUpdateCatalogItem](https://docs.microsoft.com/en-us/graph/api/resources/intune-softwareupdate-windowsUpdateCatalogItem?view=graph-rest-beta) resource.",
+          "Target": "windowsUpdateCatalogItem"
+        },
+        {
+          "Id": "1dd74738-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Property",
+          "ChangedApiName": "kbArticleId",
+          "ChangeType": "Change",
+          "Description": "Changed the **kbArticleId** property in the [windowsQualityUpdateCatalogItem](https://docs.microsoft.com/en-us/graph/api/resources/intune-softwareupdate-windowsQualityUpdateCatalogItem?view=graph-rest-beta) resource from required to optional.",
+          "Target": "windowsQualityUpdateCatalogItem"
+        },
+        {
+          "Id": "1d1ca03c-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "reusableSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **reusableSettings** relationship to the [deviceManagement](https://docs.microsoft.com/en-us/graph/api/resources/intune-shared-deviceManagement?view=graph-rest-beta) resource.",
+          "Target": "deviceManagement"
+        },
+        {
+          "Id": "1d1f0474-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "reusablePolicySettings",
+          "ChangeType": "Addition",
+          "Description": "Added the **reusablePolicySettings** relationship to the [deviceManagement](https://docs.microsoft.com/en-us/graph/api/resources/intune-shared-deviceManagement?view=graph-rest-beta) resource.",
+          "Target": "deviceManagement"
+        },
+        {
+          "Id": "1d21667e-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Property",
+          "ChangedApiName": "templateReference",
+          "ChangeType": "Addition",
+          "Description": "Added the **templateReference** property to the [deviceManagementConfigurationPolicy](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceconfigv2-deviceManagementConfigurationPolicy?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementConfigurationPolicy"
+        },
+        {
+          "Id": "1d23c8e4-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Property",
+          "ChangedApiName": "referredSettingInformationList",
+          "ChangeType": "Addition",
+          "Description": "Added the **referredSettingInformationList** property to the [deviceManagementConfigurationSettingDefinition](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceconfigv2-deviceManagementConfigurationSettingDefinition?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementConfigurationSettingDefinition"
+        },
+        {
+          "Id": "1d262a25-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementReusablePolicySetting",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementReusablePolicySetting](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceconfigv2-deviceManagementReusablePolicySetting?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementReusablePolicySetting"
+        },
+        {
+          "Id": "1d288eab-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationReferenceSettingValue",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationReferenceSettingValue](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceconfigv2-deviceManagementConfigurationReferenceSettingValue?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationReferenceSettingValue"
+        },
+        {
+          "Id": "1d2af0b2-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationReferredSettingInformation",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationReferredSettingInformation](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceconfigv2-deviceManagementConfigurationReferredSettingInformation?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationReferredSettingInformation"
+        },
+        {
+          "Id": "1d2d6566-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationPolicyTemplateReference",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationPolicyTemplateReference](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceconfigv2-deviceManagementConfigurationPolicyTemplateReference?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationPolicyTemplateReference"
+        },
+        {
+          "Id": "1d2fb3fd-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationPolicyTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationPolicyTemplate](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceconfigv2-deviceManagementConfigurationPolicyTemplate?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationPolicyTemplate"
+        },
+        {
+          "Id": "1d34791e-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationSettingInstanceTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationSettingInstanceTemplate](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceconfigv2-deviceManagementConfigurationSettingInstanceTemplate?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationSettingInstanceTemplate"
+        },
+        {
+          "Id": "1d36dbea-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationSimpleSettingInstanceTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationSimpleSettingInstanceTemplate](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceconfigv2-deviceManagementConfigurationSimpleSettingInstanceTemplate?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationSimpleSettingInstanceTemplate"
+        },
+        {
+          "Id": "1d393ed4-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationChoiceSettingValueTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationChoiceSettingValueTemplate](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceconfigv2-deviceManagementConfigurationChoiceSettingValueTemplate?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationChoiceSettingValueTemplate"
+        },
+        {
+          "Id": "1d3ba0da-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationChoiceSettingValueDefaultTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationChoiceSettingValueDefaultTemplate](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceconfigv2-deviceManagementConfigurationChoiceSettingValueDefaultTemplate?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationChoiceSettingValueDefaultTemplate"
+        },
+        {
+          "Id": "1d3e039e-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationChoiceSettingValueConstantDefaultTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationChoiceSettingValueConstantDefaultTemplate](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceconfigv2-deviceManagementConfigurationChoiceSettingValueConstantDefaultTemplate?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationChoiceSettingValueConstantDefaultTemplate"
+        },
+        {
+          "Id": "1d40655a-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationChoiceSettingValueDefinitionTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationChoiceSettingValueDefinitionTemplate](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceconfigv2-deviceManagementConfigurationChoiceSettingValueDefinitionTemplate?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationChoiceSettingValueDefinitionTemplate"
+        },
+        {
+          "Id": "1d42c613-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationOptionDefinitionTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationOptionDefinitionTemplate](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceconfigv2-deviceManagementConfigurationOptionDefinitionTemplate?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationOptionDefinitionTemplate"
+        },
+        {
+          "Id": "1d4529c0-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationGroupSettingInstanceTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationGroupSettingInstanceTemplate](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceconfigv2-deviceManagementConfigurationGroupSettingInstanceTemplate?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationGroupSettingInstanceTemplate"
+        },
+        {
+          "Id": "1d478e76-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationSimpleSettingValueTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationSimpleSettingValueTemplate](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceconfigv2-deviceManagementConfigurationSimpleSettingValueTemplate?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationSimpleSettingValueTemplate"
+        },
+        {
+          "Id": "1d49f0c5-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationChoiceSettingInstanceTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationChoiceSettingInstanceTemplate](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceconfigv2-deviceManagementConfigurationChoiceSettingInstanceTemplate?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationChoiceSettingInstanceTemplate"
+        },
+        {
+          "Id": "1d4c5335-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationGroupSettingValueTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationGroupSettingValueTemplate](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceconfigv2-deviceManagementConfigurationGroupSettingValueTemplate?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationGroupSettingValueTemplate"
+        },
+        {
+          "Id": "1d4eb2e7-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationGroupSettingCollectionInstanceTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationGroupSettingCollectionInstanceTemplate](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceconfigv2-deviceManagementConfigurationGroupSettingCollectionInstanceTemplate?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationGroupSettingCollectionInstanceTemplate"
+        },
+        {
+          "Id": "1d511b87-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationSimpleSettingCollectionInstanceTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationSimpleSettingCollectionInstanceTemplate](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceconfig2-deviceManagementConfigurationSimpleSettingCollectionInstanceTemplate?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationSimpleSettingCollectionInstanceTemplate"
+        },
+        {
+          "Id": "1d5378c6-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementConfigurationChoiceSettingCollectionInstanceTemplate",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementConfigurationChoiceSettingCollectionInstanceTemplate](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceconfigv2-deviceManagementConfigurationChoiceSettingCollectionInstanceTemplate?view=graph-rest-beta) resource type.",
+          "Target": "deviceManagementConfigurationChoiceSettingCollectionInstanceTemplate"
+        },
+        {
+          "Id": "1d55d970-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "deviceManagementConfigurationTemplateFamily",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceManagementConfigurationTemplateFamily** enumeration type.",
+          "Target": "deviceManagementConfigurationTemplateFamily"
+        },
+        {
+          "Id": "1d583ec4-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "deviceManagementTemplateLifecycleState",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceManagementTemplateLifecycleState** enumeration type.",
+          "Target": "deviceManagementTemplateLifecycleState"
+        },
+        {
+          "Id": "1d5aa120-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Method",
+          "ChangedApiName": "clone",
+          "ChangeType": "Addition",
+          "Description": "Added the [clone](https://docs.microsoft.com/en-us/graph/api/intune-deviceManagementReusablePolicySetting-clone?view=graph-rest-beta) method to the [deviceManagementReusablePolicySetting](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceconfigv2-deviceManagementReusablePolicySetting?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReusablePolicySetting"
+        },
+        {
+          "Id": "1d5d03a0-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Method",
+          "ChangedApiName": "getConfigurationPolicySettingsDeviceSummaryReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getConfigurationPolicySettingsDeviceSummaryReport](https://docs.microsoft.com/en-us/graph/api/intune-deviceManagementReports-getConfigurationPolicySettingsDeviceSummaryReport?view=graph-rest-beta) method to the [deviceManagementReports](https://docs.microsoft.com/en-us/graph/api/resources/intune-reporting-deviceManagementReports?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "1d5f6649-99b0-11eb-8cb0-33bc249d550e",
+          "ApiChange": "Method",
+          "ChangedApiName": "createCopy",
+          "ChangeType": "Addition",
+          "Description": "Added the [createCopy](https://docs.microsoft.com/en-us/graph/api/intune-deviceconfigv2-deviceManagementConfigurationPolicy-createCopy?view=graph-rest-beta) method to the [deviceManagementConfigurationPolicy](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementConfigurationPolicy?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementConfigurationPolicy"
+        }
+      ],
+      "Id": "1d1a4023-99b0-11eb-8cb0-33bc249d550e",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-04-10T03:52:04.648Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "8a52be34-8123-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Property",
+          "ChangedApiName": "assignmentFilterTypeAndEvaluationResults",
+          "ChangeType": "Addition",
+          "Description": "Added the **assignmentFilterTypeAndEvaluationResults** property to the [assignmentFilterEvaluationSummary](https://docs.microsoft.com/en-us/graph/api/resources/intune-policyset-assignmentFilterEvaluationSummary?view=graph-rest-beta) resource.",
+          "Target": "assignmentFilterEvaluationSummary"
+        },
+        {
+          "Id": "8a552095-8123-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "assignmentFilterState",
+          "ChangeType": "Addition",
+          "Description": "Added the [assignmentFilterState](https://docs.microsoft.com/en-us/graph/api/resources/intune-policyset-assignmentFilterState?view=graph-rest-beta) resource type.",
+          "Target": "assignmentFilterState"
+        },
+        {
+          "Id": "8a57823b-8123-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "assignmentFilterTypeAndEvaluationResult",
+          "ChangeType": "Addition",
+          "Description": "Added the [assignmentFilterTypeAndEvaluationResult](https://docs.microsoft.com/en-us/graph/api/resources/intune-policyset-assignmentFilterTypeAndEvaluationResult?view=graph-rest-beta) resource type.",
+          "Target": "assignmentFilterTypeAndEvaluationResult"
+        },
+        {
+          "Id": "8a59e5e3-8123-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Method",
+          "ChangedApiName": "enable",
+          "ChangeType": "Addition",
+          "Description": "Added the [enable](https://docs.microsoft.com/en-us/graph/api/intune-deviceAndAppManagementAssignmentFilter-enable?view=graph-rest-beta) method to the [deviceAndAppManagementAssignmentFilter](https://docs.microsoft.com/en-us/graph/api/resources/intune-policyset-deviceAndAppManagementAssignmentFilter?view=graph-rest-beta) resource.",
+          "Target": "deviceAndAppManagementAssignmentFilter"
+        },
+        {
+          "Id": "8a5c47de-8123-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Method",
+          "ChangedApiName": "getState",
+          "ChangeType": "Addition",
+          "Description": "Added the [getState](https://docs.microsoft.com/en-us/graph/api/intune-deviceAndAppManagementAssignmentFilter-getState?view=graph-rest-beta) method to the [deviceAndAppManagementAssignmentFilter](https://docs.microsoft.com/en-us/graph/api/resources/intune-policyset-deviceAndAppManagementAssignmentFilter?view=graph-rest-beta) resource.",
+          "Target": "deviceAndAppManagementAssignmentFilter"
+        },
+        {
+          "Id": "8a6f5ae4-8123-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Member",
+          "ChangedApiName": "cloudPC",
+          "ChangeType": "Deletion",
+          "Description": "Removed the `cloudPC` member from the **deviceType** enumeration.",
+          "Target": "deviceType"
+        },
+        {
+          "Id": "8a65cf7b-8123-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Property",
+          "ChangedApiName": "visibility",
+          "ChangeType": "Addition",
+          "Description": "Added the **visibility** property to the [deviceManagementConfigurationSettingDefinition](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceconfigv2-deviceManagementConfigurationSettingDefinition?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementConfigurationSettingDefinition"
+        },
+        {
+          "Id": "8a683165-8123-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "deviceManagementConfigurationSettingVisibility",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceManagementConfigurationSettingVisibility** enumeration type.",
+          "Target": "deviceManagementConfigurationSettingVisibility"
+        },
+        {
+          "Id": "8a78e474-8123-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "userExperienceAnalyticsNotAutopilotReadyDevice",
+          "ChangeType": "Addition",
+          "Description": "Added the **userExperienceAnalyticsNotAutopilotReadyDevice** relationship to the [deviceManagement](https://docs.microsoft.com/en-us/graph/api/resources/intune-shared-deviceManagement?view=graph-rest-beta) resource.",
+          "Target": "deviceManagement"
+        },
+        {
+          "Id": "8a7b478f-8123-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "workFromAnywhereMetrics",
+          "ChangeType": "Addition",
+          "Description": "Added the **workFromAnywhereMetrics** relationship to the [userExperienceAnalyticsBaseline](https://docs.microsoft.com/en-us/graph/api/resources/intune-devices-userExperienceAnalyticsBaseline?view=graph-rest-beta) resource.",
+          "Target": "userExperienceAnalyticsBaseline"
+        },
+        {
+          "Id": "8a7da888-8123-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userExperienceAnalyticsWorkFromAnywhereDevicesSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [userExperienceAnalyticsWorkFromAnywhereDevicesSummary](https://docs.microsoft.com/en-us/graph/api/resources/intune-devices-userExperienceAnalyticsWorkFromAnywhereDevicesSummary?view=graph-rest-beta) resource type.",
+          "Target": "userExperienceAnalyticsWorkFromAnywhereDevicesSummary"
+        },
+        {
+          "Id": "8a8011a9-8123-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userExperienceAnalyticsNotAutopilotReadyDevice",
+          "ChangeType": "Addition",
+          "Description": "Added the [userExperienceAnalyticsNotAutopilotReadyDevice](https://docs.microsoft.com/en-us/graph/api/resources/intune-devices-userExperienceAnalyticsNotAutopilotReadyDevice?view=graph-rest-beta) resource type.",
+          "Target": "userExperienceAnalyticsNotAutopilotReadyDevice"
+        },
+        {
+          "Id": "8a82703c-8123-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userExperienceAnalyticsAutopilotDevicesSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [userExperienceAnalyticsAutopilotDevicesSummary](https://docs.microsoft.com/en-us/graph/api/resources/intune-devices-userExperienceAnalyticsAutopilotDevicesSummary?view=graph-rest-beta) resource type.",
+          "Target": "userExperienceAnalyticsAutopilotDevicesSummary"
+        },
+        {
+          "Id": "8a84d419-8123-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userExperienceAnalyticsCloudManagementDevicesSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [userExperienceAnalyticsCloudManagementDevicesSummary](https://docs.microsoft.com/en-us/graph/api/resources/intune-devices-userExperienceAnalyticsCloudManagementDevicesSummary?view=graph-rest-beta) resource type.",
+          "Target": "userExperienceAnalyticsCloudManagementDevicesSummary"
+        },
+        {
+          "Id": "8a87371a-8123-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userExperienceAnalyticsWindows10DevicesSummary",
+          "ChangeType": "Addition",
+          "Description": "Added the [userExperienceAnalyticsWindows10DevicesSummary](https://docs.microsoft.com/en-us/graph/api/resources/intune-devices-userExperienceAnalyticsWindows10DevicesSummary?view=graph-rest-beta) resource type.",
+          "Target": "userExperienceAnalyticsWindows10DevicesSummary"
+        },
+        {
+          "Id": "8a8bfe79-8123-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "azureAdRegisteredState",
+          "ChangeType": "Addition",
+          "Description": "Added the **azureAdRegisteredState** enumeration type.",
+          "Target": "azureAdRegisteredState"
+        },
+        {
+          "Id": "8a8e62dc-8123-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Method",
+          "ChangedApiName": "userExperienceAnalyticsSummarizeWorkFromAnywhereDevices",
+          "ChangeType": "Addition",
+          "Description": "Added the [userExperienceAnalyticsSummarizeWorkFromAnywhereDevices](https://docs.microsoft.com/en-us/graph/api/intune-deviceManagement-userExperienceAnalyticsSummarizeWorkFromAnywhereDevices?view=graph-rest-beta) method to the [deviceManagement](https://docs.microsoft.com/en-us/graph/api/resources/intune-shared-deviceManagement?view=graph-rest-beta) resource.",
+          "Target": "deviceManagement"
+        },
+        {
+          "Id": "8a97ec7d-8123-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Property",
+          "ChangedApiName": "azureAdDeviceId",
+          "ChangeType": "Addition",
+          "Description": "Added the **azureAdDeviceId** property to the [windowsAutopilotDeviceIdentity](https://docs.microsoft.com/en-us/graph/api/resources/intune-enrollment-windowsAutopilotDeviceIdentity?view=graph-rest-beta) resource.",
+          "Target": "windowsAutopilotDeviceIdentity"
+        },
+        {
+          "Id": "8a9a4e32-8123-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deletedWindowsAutopilotDeviceState",
+          "ChangeType": "Addition",
+          "Description": "Added the [deletedWindowsAutopilotDeviceState](https://docs.microsoft.com/en-us/graph/api/resources/intune-enrollment-deletedWindowsAutopilotDeviceState?view=graph-rest-beta) resource type.",
+          "Target": "deletedWindowsAutopilotDeviceState"
+        },
+        {
+          "Id": "8a9caeeb-8123-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "windowsAutopilotDeviceDeletionState",
+          "ChangeType": "Addition",
+          "Description": "Added the **windowsAutopilotDeviceDeletionState** enumeration type.",
+          "Target": "windowsAutopilotDeviceDeletionState"
+        },
+        {
+          "Id": "8a9f1371-8123-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Method",
+          "ChangedApiName": "deleteDevices",
+          "ChangeType": "Addition",
+          "Description": "Added the [deleteDevices](https://docs.microsoft.com/en-us/graph/api/intune-windowsAutopilotDeviceIdentity-deleteDevices?view=graph-rest-beta) method to the [windowsAutopilotDeviceIdentity](https://docs.microsoft.com/en-us/graph/api/resources/intune-enrollment-windowsAutopilotDeviceIdentity?view=graph-rest-beta) resource.",
+          "Target": "windowsAutopilotDeviceIdentity"
+        },
+        {
+          "Id": "8aa174b2-8123-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Property",
+          "ChangedApiName": "orderIdentifier",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **orderIdentifier** property from the [windowsAutopilotDeviceIdentity](https://docs.microsoft.com/en-us/graph/api/resources/intune-enrollment-windowsAutopilotDeviceIdentity?view=graph-rest-beta) resource.",
+          "Target": "windowsAutopilotDeviceIdentity"
+        },
+        {
+          "Id": "8aa3d628-8123-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Property",
+          "ChangedApiName": "orderIdentifier",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **orderIdentifier** property from the [importedWindowsAutopilotDeviceIdentity](https://docs.microsoft.com/en-us/graph/api/resources/intune-enrollment-importedWindowsAutopilotDeviceIdentity?view=graph-rest-beta) resource.",
+          "Target": "importedWindowsAutopilotDeviceIdentity"
+        },
+        {
+          "Id": "8ad12310-8123-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Property",
+          "ChangedApiName": "deployableContentDisplayName",
+          "ChangeType": "Addition",
+          "Description": "Added the **deployableContentDisplayName** property to the [windowsFeatureUpdateProfile](https://docs.microsoft.com/en-us/graph/api/resources/intune-softwareupdate-windowsFeatureUpdateProfile?view=graph-rest-beta) resource.",
+          "Target": "windowsFeatureUpdateProfile"
+        },
+        {
+          "Id": "8ad3859e-8123-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Property",
+          "ChangedApiName": "releaseDateDisplayName",
+          "ChangeType": "Addition",
+          "Description": "Added the **releaseDateDisplayName** property to the [windowsQualityUpdateProfile](https://docs.microsoft.com/en-us/graph/api/resources/intune-softwareupdate-windowsQualityUpdateProfile?view=graph-rest-beta) resource.",
+          "Target": "windowsQualityUpdateProfile"
+        },
+        {
+          "Id": "8ad5e7b4-8123-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Property",
+          "ChangedApiName": "deployableContentDisplayName",
+          "ChangeType": "Addition",
+          "Description": "Added the **deployableContentDisplayName** property to the [windowsQualityUpdateProfile](https://docs.microsoft.com/en-us/graph/api/resources/intune-softwareupdate-windowsQualityUpdateProfile?view=graph-rest-beta) resource.",
+          "Target": "windowsQualityUpdateProfile"
+        },
+        {
+          "Id": "8ad84cce-8123-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Method",
+          "ChangedApiName": "getWindowsQualityUpdateAlertSummaryReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getWindowsQualityUpdateAlertSummaryReport](https://docs.microsoft.com/en-us/graph/api/intune-deviceManagementReports-getWindowsQualityUpdateAlertSummaryReport?view=graph-rest-beta) method to the [deviceManagementReports](https://docs.microsoft.com/en-us/graph/api/resources/intune-reporting-deviceManagementReports?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReports"
+        },
+        {
+          "Id": "8adaaea0-8123-11eb-8a3c-f63608ac46d5",
+          "ApiChange": "Method",
+          "ChangedApiName": "getWindowsQualityUpdateAlertsPerPolicyPerDeviceReport",
+          "ChangeType": "Addition",
+          "Description": "Added the [getWindowsQualityUpdateAlertsPerPolicyPerDeviceReport](https://docs.microsoft.com/en-us/graph/api/intune-deviceManagementReports-getWindowsQualityUpdateAlertsPerPolicyPerDeviceReport?view=graph-rest-beta) method to the [deviceManagementReports](https://docs.microsoft.com/en-us/graph/api/resources/intune-reporting-deviceManagementReports?view=graph-rest-beta) resource.",
+          "Target": "deviceManagementReports"
+        }
+      ],
+      "Id": "8a505a2e-8123-11eb-8a3c-f63608ac46d5",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-03-09T22:05:20.929Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "e226595e-70aa-11eb-8401-e19c685756df",
+          "ApiChange": "Member",
+          "ChangedApiName": "exclude",
+          "ChangeType": "Addition",
+          "Description": "Added the `exclude` member to the **deviceAndAppManagementAssignmentFilterType** enumeration",
+          "Target": "deviceAndAppManagementAssignmentFilterType"
+        },
+        {
+          "Id": "e226595e-70aa-11eb-8401-e19c685756df",
+          "ApiChange": "Member",
+          "ChangedApiName": "ciscoAnyConnect",
+          "ChangeType": "Addition",
+          "Description": "Added the `ciscoAnyConnect` member to the **windows10VpnConnectionType** enumeration",
+          "Target": "windows10VpnConnectionType"
+        },
+        {
+          "Id": "74278eb2-715b-11eb-8401-e19c685756df",
+          "ApiChange": "Resource",
+          "ChangedApiName": "windowsKioskSingleWin32App",
+          "ChangeType": "Addition",
+          "Description": "Added the [windowsKioskSingleWin32App](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceconfig-windowsKioskSingleWin32App?view=graph-rest-beta) resource type.",
+          "Target": "windowsKioskSingleWin32App"
+        },
+        {
+          "Id": "7696100f-715b-11eb-8401-e19c685756df",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "windowsEdgeKioskType",
+          "ChangeType": "Addition",
+          "Description": "Added the **windowsEdgeKioskType** enumeration type.",
+          "Target": "windowsEdgeKioskType"
+        },
+        {
+          "Id": "78cc283b-715b-11eb-8401-e19c685756df",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userExperienceAnalyticsRemoteConnection",
+          "ChangeType": "Addition",
+          "Description": "Added the [userExperienceAnalyticsRemoteConnection](https://docs.microsoft.com/en-us/graph/api/resources/intune-devices-userExperienceAnalyticsRemoteConnection?view=graph-rest-beta) resource type.",
+          "Target": "userExperienceAnalyticsRemoteConnection"
+        },
+        {
+          "Id": "79b0d65b-715b-11eb-8401-e19c685756df",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userExperienceAnalyticsImpactingProcess",
+          "ChangeType": "Addition",
+          "Description": "Added the [userExperienceAnalyticsImpactingProcess](https://docs.microsoft.com/en-us/graph/api/resources/intune-devices-userExperienceAnalyticsImpactingProcess?view=graph-rest-beta) resource type.",
+          "Target": "userExperienceAnalyticsImpactingProcess"
+        },
+        {
+          "Id": "7ab9e741-715b-11eb-8401-e19c685756df",
+          "ApiChange": "Method",
+          "ChangedApiName": "summarizeDeviceRemoteConnection",
+          "ChangeType": "Addition",
+          "Description": "Added the [summarizeDeviceRemoteConnection](https://docs.microsoft.com/en-us/graph/api/intune-userExperienceAnalyticsRemoteConnection-summarizeDeviceRemoteConnection?view=graph-rest-beta) method to the [userExperienceAnalyticsRemoteConnection](https://docs.microsoft.com/en-us/graph/api/resources/intune-devices-userExperienceAnalyticsRemoteConnection?view=graph-rest-beta) resource.",
+          "Target": "userExperienceAnalyticsRemoteConnection"
+        },
+        {
+          "Id": "7ae992e5-715b-11eb-8401-e19c685756df",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "policyPlatformType",
+          "ChangeType": "Addition",
+          "Description": "Added the **policyPlatformType** enumeration type.",
+          "Target": "policyPlatformType"
+        },
+        {
+          "Id": "7daa7bf0-715b-11eb-8401-e19c685756df",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "deviceManagementExportJobLocalizationType",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceManagementExportJobLocalizationType** enumeration type.",
+          "Target": "deviceManagementExportJobLocalizationType"
+        }
+      ],
+      "Id": "e226595e-70aa-11eb-8401-e19c685756df",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-02-16T23:01:20.584Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "814b2858-6b0e-11eb-83a5-b441f1c9dab3",
+          "ApiChange": "Property",
+          "ChangedApiName": "settingUsage",
+          "ChangeType": "Addition",
+          "Description": "Added the **settingUsage** property to [deviceManagementConfigurationCategory](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceconfigv2-deviceManagementConfigurationCategory?view=graph-rest-beta) resource",
+          "Target": "deviceManagementConfigurationCategory"
+        },
+        {
+          "Id": "814d889b-6b0e-11eb-83a5-b441f1c9dab3",
+          "ApiChange": "Property",
+          "ChangedApiName": "parentCategoryId",
+          "ChangeType": "Addition",
+          "Description": "Added the **parentCategoryId** property to [deviceManagementConfigurationCategory](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceconfigv2-deviceManagementConfigurationCategory?view=graph-rest-beta) resource",
+          "Target": "deviceManagementConfigurationCategory"
+        },
+        {
+          "Id": "814fed36-6b0e-11eb-83a5-b441f1c9dab3",
+          "ApiChange": "Property",
+          "ChangedApiName": "rootCategoryId",
+          "ChangeType": "Addition",
+          "Description": "Added the **rootCategoryId** property to [deviceManagementConfigurationCategory](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceconfigv2-deviceManagementConfigurationCategory?view=graph-rest-beta) resource",
+          "Target": "deviceManagementConfigurationCategory"
+        },
+        {
+          "Id": "81524d6e-6b0e-11eb-83a5-b441f1c9dab3",
+          "ApiChange": "Property",
+          "ChangedApiName": "childCategoryIds",
+          "ChangeType": "Addition",
+          "Description": "Added the **childCategoryIds** property to [deviceManagementConfigurationCategory](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceconfigv2-deviceManagementConfigurationCategory?view=graph-rest-beta) resource",
+          "Target": "deviceManagementConfigurationCategory"
+        }
+      ],
+      "Id": "8148c18c-6b0e-11eb-83a5-b441f1c9dab3",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-02-09T19:39:20.767Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "9c873d83-653c-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Member",
+          "ChangedApiName": "windowsAzureADJoinUsingDeviceAuth",
+          "ChangeType": "Addition",
+          "Description": "Added the `windowsAzureADJoinUsingDeviceAuth` member to the **deviceEnrollmentType** enumeration",
+          "Target": "deviceEnrollmentType"
+        }
+      ],
+      "Id": "9c84dd16-653c-11eb-8de9-f7f8b8b7f046",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-02-02T09:54:16.332Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
     },
     {
       "ChangeList": [

@@ -2,7 +2,7 @@
 title: "Update subscription"
 description: "Renew a subscription by extending its expiry time."
 localization_priority: Normal
-author: "davidmu1"
+author: "Jumaodhiss"
 doc_type: apiPageType
 ms.prod: "change-notifications"
 ---
@@ -155,7 +155,8 @@ Content-length: 252
   "latestSupportedTlsVersion": "v1_2",
   "encryptionCertificate": "",
   "encryptionCertificateId": "",
-  "includeResourceData": false
+  "includeResourceData": false,
+  "notificationContentType": "application/json"
 }
 ```
 

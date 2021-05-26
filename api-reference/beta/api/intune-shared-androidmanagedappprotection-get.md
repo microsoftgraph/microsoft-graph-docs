@@ -1,7 +1,7 @@
 ---
 title: "Get androidManagedAppProtection"
 description: "Read properties and relationships of the androidManagedAppProtection object."
-author: "dougeby"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType

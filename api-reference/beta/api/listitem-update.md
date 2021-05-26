@@ -51,9 +51,9 @@ All other values on the listItem are left alone.
 
 
 # [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
+<!-- { "blockType": "request", "name": "create-listitem-2", "scopes": "sites.readwrite.all" } -->
 
-```json
+```http
 PATCH https://graph.microsoft.com/beta/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
 Content-Type: application/json
 
@@ -63,15 +63,15 @@ Content-Type: application/json
 }
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-listitem-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-listitem-2-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-listitem-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-listitem-2-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-listitem-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/create-listitem-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -83,7 +83,7 @@ If successful, this method returns a [fieldValueSet][] in the response body for 
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var threads = await graphClient.Groups["{id}"].Threads
+var threads = await graphClient.Groups["{group-id}"].Threads
 	.Request()
 	.GetAsync();
 

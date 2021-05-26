@@ -12,7 +12,7 @@ var contactFolder = new ContactFolder
 	DisplayName = "displayName-value"
 };
 
-await graphClient.Me.ContactFolders["{id}"]
+await graphClient.Me.ContactFolders["{contactFolder-id}"]
 	.Request()
 	.UpdateAsync(contactFolder);
 

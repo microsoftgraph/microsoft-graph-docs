@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const workbookChartLineFormat = {
-  color: "color-value"
+  color: 'color-value'
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/format/line')
+await client.api('/me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/axes/seriesAxis/format/line')
 	.update(workbookChartLineFormat);
 
 ```

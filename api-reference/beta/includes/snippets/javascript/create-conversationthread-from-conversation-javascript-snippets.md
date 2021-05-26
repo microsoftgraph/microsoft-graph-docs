@@ -11,16 +11,16 @@ const options = {
 const client = Client.init(options);
 
 const conversationThread = {
-  topic: "topic-value",
+  topic: 'topic-value',
   posts: [{
       body: {
-        contentType: "html",
-        content: "this is body content"
+        contentType: 'html',
+        content: 'this is body content'
       }
   }]
 };
 
-let res = await client.api('/groups/{id}/conversations/{id}/threads')
+await client.api('/groups/{id}/conversations/{id}/threads')
 	.version('beta')
 	.post(conversationThread);
 

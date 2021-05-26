@@ -11,7 +11,7 @@ var workPosition = new WorkPosition
 	IsCurrent = true
 };
 
-await graphClient.Me.Profile.Positions["{id}"]
+await graphClient.Me.Profile.Positions["{workPosition-id}"]
 	.Request()
 	.UpdateAsync(workPosition);
 

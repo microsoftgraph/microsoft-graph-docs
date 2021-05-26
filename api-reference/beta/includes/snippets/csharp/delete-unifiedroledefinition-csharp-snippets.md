@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.RoleManagement.Directory.RoleDefinitions["f189965f-f560-4c59-9101-933d4c87a91a"]
+await graphClient.RoleManagement.Directory.RoleDefinitions["{unifiedRoleDefinition-id}"]
 	.Request()
 	.DeleteAsync();
 

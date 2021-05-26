@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var securityAction = await graphClient.Security.SecurityActions["{id}"]
+var securityAction = await graphClient.Security.SecurityActions["{securityAction-id}"]
 	.Request()
 	.GetAsync();
 

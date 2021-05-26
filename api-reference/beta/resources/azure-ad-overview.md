@@ -3,7 +3,7 @@ title: "Working with Azure Active Directory resources in Microsoft Graph"
 description: "Microsoft Graph for Azure Active Directory (Azure AD) provides REST APIs to help manage your organization, resources, and assets."
 localization_priority: Priority
 doc_type: conceptualPageType
-ms.prod: "identity-access"
+ms.prod: "identity-and-access"
 author: "dkershaw10"
 ---
 
@@ -57,6 +57,8 @@ The following table lists some common use cases for Azure AD resources.
 | Manage branding for the sign-in experience of an organization. | [organizationalbranding](../resources/organizationalbrandingproperties.md) | [Add branding to your organization's Azure Active Directory sign-in page](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)|
 | **Access reviews** | | |
 | Ensure group memberships and application access rights are correct with access reviews. | [access reviews API](../resources/accessreviews-root.md) |[Azure AD access reviews](/azure/active-directory/active-directory-azure-ad-controls-access-reviews-overview) |
+| **Consent requests** | | |
+| Manage the consent request workflow for users attempting to access apps that require admin authorization.  | [Consent requests API](../resources/consentrequests-root.md) |[Configure the admin consent workflow](/azure/active-directory/manage-apps/configure-admin-consent-workflow) |
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

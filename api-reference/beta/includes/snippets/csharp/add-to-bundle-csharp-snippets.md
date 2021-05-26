@@ -11,7 +11,7 @@ var driveItem = new DriveItem
 	Id = "123456!87"
 };
 
-await graphClient.Drive.Bundles["{bundle-id}"].Children
+await graphClient.Drive.Bundles["{driveItem-id}"].Children
 	.Request()
 	.AddAsync(driveItem);
 

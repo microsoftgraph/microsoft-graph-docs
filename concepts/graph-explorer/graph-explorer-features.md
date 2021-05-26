@@ -49,7 +49,7 @@ Graph Explorer includes several features to make implementing UI easier. Reuse t
 
 ### Microsoft Graph Toolkit integration
 
-The [Microsoft Graph Toolkit](/graph/toolkit/overview) is a collection of reusable, framework-agnostic web components and helpers for accessing and working with Microsoft Graph. The components are fully functional, with built in providers that authenticate with and fetch data from Microsoft Graph.
+The [Microsoft Graph Toolkit](../toolkit/overview.md) is a collection of reusable, framework-agnostic web components and helpers for accessing and working with Microsoft Graph. The components are fully functional, with built in providers that authenticate with and fetch data from Microsoft Graph.
 
 Graph Explorer provides sample REST API queries that correspond to Microsoft Graph Toolkit components. A blue dot on the **Toolkit component** tab indicates that the Toolkit provides a component for the currently specified REST API query in Graph Explorer. You can conveniently copy the code for the component to your app.
 
@@ -112,5 +112,5 @@ Conveniently access the Microsoft 365 Developer Program site from the Graph Expl
 ## Next steps
 
 - Visit [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/) and explore sample queries.
-- Explore the [Microsoft Graph Toolkit documentation](/graph/toolkit/overview).
+- Explore the [Microsoft Graph Toolkit documentation](../toolkit/overview.md).
 - Contribute or provide feedback in the [Graph Explorer GitHub repo](https://github.com/microsoftgraph/microsoft-graph-explorer-v4/issues/new/choose).

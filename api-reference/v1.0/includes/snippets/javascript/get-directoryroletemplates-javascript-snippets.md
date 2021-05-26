@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/directoryRoleTemplates')
+let directoryRoleTemplates = await client.api('/directoryRoleTemplates')
 	.get();
 
 ```

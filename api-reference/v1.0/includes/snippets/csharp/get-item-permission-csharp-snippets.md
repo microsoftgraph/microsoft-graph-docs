@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var permission = await graphClient.Me.Drive.Items["{item-id}"].Permissions["{perm-id}"]
+var permission = await graphClient.Me.Drive.Items["{driveItem-id}"].Permissions["{permission-id}"]
 	.Request()
 	.GetAsync();
 

@@ -3,7 +3,7 @@ title: "Call Microsoft Graph from a Cloud Solution Provider application"
 description: "This topic describes how to enable application access to partner-managed customer data via Microsoft Graph using either the authorization code grant flow or the service to service client credentials flow."
 author: "jackson-woods"
 localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ms.custom: graphiamtop20
 ---
 

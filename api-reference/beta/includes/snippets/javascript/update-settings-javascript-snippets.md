@@ -14,7 +14,7 @@ const printSettings = {
   documentConversionEnabled: true
 };
 
-let res = await client.api('/print/settings')
+await client.api('/print/settings')
 	.version('beta')
 	.update(printSettings);
 

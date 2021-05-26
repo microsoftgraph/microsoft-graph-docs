@@ -12,37 +12,46 @@ const client = Client.init(options);
 
 const regionalAndLanguageSettings = {
     defaultDisplayLanguage: {
-        locale: "en-US"
+        locale: 'en-US'
     },
     authoringLanguages: [
         {
-            locale: "fr-FR"
+            locale: 'fr-FR'
         },
         {
-            locale: "de-DE"
+            locale: 'de-DE'
         }
     ],
     defaultTranslationLanguage: {
-        locale: "en-US"
+        locale: 'en-US'
     },
     defaultSpeechInputLanguage: {
-        locale: "en-US"
+        locale: 'en-US'
     },
     defaultRegionalFormat: {
-        locale: "en-GB"
+        locale: 'en-GB'
     },
     regionalFormatOverrides: {
-        calendar: "Gregorian Calendar",
-        firstDayOfWeek: "Sunday",
-        shortDateFormat: "yyyy-MM-dd",
-        longDateFormat: "dddd, MMMM d, yyyy",
-        shortTimeFormat: "HH:mm",
-        longTimeFormat: "h:mm:ss tt",
-        timeZone: "Pacific Standard Time"
-    }
+        calendar: 'Gregorian Calendar',
+        firstDayOfWeek: 'Sunday',
+        shortDateFormat: 'yyyy-MM-dd',
+        longDateFormat: 'dddd, MMMM d, yyyy',
+        shortTimeFormat: 'HH:mm',
+        longTimeFormat: 'h:mm:ss tt',
+        timeZone: 'Pacific Standard Time'
+    },
+    translationPreferences: {
+        translationBehavior: 'Yes',
+        languageOverrides: [
+            {
+                languageTag: 'fr',
+                translationBehavior: 'Yes' 
+            }
+        ]
+     }
 };
 
-let res = await client.api('/me/settings/regionalandlanguagesettings')
+await client.api('/me/settings/regionalandlanguagesettings')
 	.version('beta')
 	.put(regionalAndLanguageSettings);
 

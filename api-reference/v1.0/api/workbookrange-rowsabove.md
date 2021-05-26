@@ -26,7 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /me/drive/root/workbook/worksheets/{id}/range/rowsAbove(count=n)
+GET /me/drive/items/{id}/workbook/worksheets/{id}/range/rowsAbove(count=n)
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id}/range/rowsAbove(count=n)
 
 ```
 
@@ -83,7 +84,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/root/workbook/worksheets/{id}/rang
 
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

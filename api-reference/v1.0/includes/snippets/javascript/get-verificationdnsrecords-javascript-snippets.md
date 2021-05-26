@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/domains/{domain-name}/verificationDnsRecords')
+let verificationDnsRecords = await client.api('/domains/{domain-name}/verificationDnsRecords')
 	.get();
 
 ```

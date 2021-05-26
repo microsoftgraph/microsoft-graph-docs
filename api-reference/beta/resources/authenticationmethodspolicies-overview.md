@@ -23,11 +23,13 @@ The authentication method policies APIs are used to manage policy settings. For 
 ## What authentication methods policies can be managed in Microsoft Graph?
 
 |Authentication method policy       | Description |
-|:---------------------------|:------------|:------------|
+|:---------------------------|:------------|
+|[smsAuthenticationMethodConfiguration](smsAuthenticationMethodConfiguration.md)| Define users who can use Text Message on the Azure AD tenant.|
 |[fido2authenticationmethodconfiguration](fido2authenticationmethodconfiguration.md)| Define FIDO2 security key restrictions and users who can use them to sign in to Azure AD.|
 |[microsoftauthenticatorauthenticationmethodconfiguration](microsoftauthenticatorauthenticationmethodconfiguration.md)|Define users who can use Microsoft Authenticator on the Azure AD tenant.|
 |[emailauthenticationmethodconfiguration](emailauthenticationmethodconfiguration.md)|Define users who can use email OTP on the Azure AD tenant.|
 |[passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration](passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) (deprecated)|Define users who can use Passwordless Phone Sign-in to sign in to Azure AD.|
+|[temporaryaccesspassauthenticationmethodconfiguration](temporaryaccesspassauthenticationmethodconfiguration.md)|Define users who can use Temporary Access Pass to sign in to Azure AD.|
 
 ## Next steps
 

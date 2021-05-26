@@ -16,7 +16,7 @@ var tokenIssuancePolicy = new TokenIssuancePolicy
 	IsOrganizationDefault = true
 };
 
-await graphClient.Policies.TokenIssuancePolicies["{id}"]
+await graphClient.Policies.TokenIssuancePolicies["{tokenIssuancePolicy-id}"]
 	.Request()
 	.UpdateAsync(tokenIssuancePolicy);
 

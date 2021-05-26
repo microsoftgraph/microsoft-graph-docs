@@ -3,7 +3,7 @@ title: "Create authenticationListener"
 description: "Create a new authenticationListener object for the onSignUpStart event."
 author: "jkdouglas"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Settings["{id}"]
+await graphClient.Settings["{directorySetting-id}"]
 	.Request()
 	.DeleteAsync();
 

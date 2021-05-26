@@ -14,7 +14,7 @@ var personInterest = new PersonInterest
 	}
 };
 
-await graphClient.Me.Profile.Interests["{id}"]
+await graphClient.Me.Profile.Interests["{personInterest-id}"]
 	.Request()
 	.UpdateAsync(personInterest);
 

@@ -11,7 +11,7 @@ var subscription = new Subscription
 	ExpirationDateTime = DateTimeOffset.Parse("2016-11-22T18:23:45.9356913Z")
 };
 
-await graphClient.Subscriptions["{id}"]
+await graphClient.Subscriptions["{subscription-id}"]
 	.Request()
 	.UpdateAsync(subscription);
 

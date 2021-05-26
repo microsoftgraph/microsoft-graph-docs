@@ -3,7 +3,7 @@ title: "Cancel governanceRoleAssignmentRequest"
 description: "Cancel a governanceRoleAssignmentRequest."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "shauliu"
 ---
 

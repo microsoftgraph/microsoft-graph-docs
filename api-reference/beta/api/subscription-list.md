@@ -2,9 +2,9 @@
 title: "List subscriptions"
 description: " see the scenarios below for details."
 localization_priority: Normal
-author: "davidmu1"
+author: "Jumaodhiss"
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: "change-notifications"
 ---
 
 # List subscriptions
@@ -137,7 +137,8 @@ Content-length: 586
       "latestSupportedTlsVersion": "v1_2",
       "encryptionCertificate": "",
       "encryptionCertificateId": "",
-      "includeResourceData": false
+      "includeResourceData": false,
+      "notificationContentType": "application/json"
     }
   ]
 }

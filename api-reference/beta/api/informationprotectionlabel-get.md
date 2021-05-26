@@ -3,7 +3,7 @@ title: "Get informationProtectionLabel"
 description: "Retrieve the properties and relationships of the specified informationProtectionLabel object."
 localization_priority: Normal
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "apiPageType"
 ---
 
@@ -96,7 +96,7 @@ GET https://graph.microsoft.com/beta/me/informationprotection/policy/labels/{id}
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -110,14 +110,14 @@ Content-type: application/json
 User-agent: ContosoLOBApp/1.0
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#users('1e36d926-d716-4197-ba86-a6e18eb910b9')/informationProtection/policy/labels/$entity",
-    "id": "4662f9a3-dd50-4a20-b984-a7be82e0e79c",
-    "name": "LabelWithFooterAndHeaderActions_Tests",
-    "description": "",
-    "color": "",
-    "sensitivity": 12,
-    "tooltip": "LabelWithFooterAndHeaderActions_Tests",
-    "isActive": true
+  "id": "4b18e8bb-b4a5-4695-85d0-8ae23ef27892",
+  "name": "Highly Confidential",
+  "description": "Consult Contoso data labeling policy for more details.",
+  "color": "",
+  "sensitivity": 3,
+  "tooltip": "Data classified as Contoso Highly Confidential.",
+  "isActive": true,
+  "parent": null
 }
 ```
 

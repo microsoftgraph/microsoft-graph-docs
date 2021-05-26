@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/sites')
+let sites = await client.api('/sites')
 	.version('beta')
 	.filter('siteCollection/root ne null')
 	.select('siteCollection,webUrl')

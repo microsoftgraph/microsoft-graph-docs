@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Application|Financials.ReadWrite.All|
 
 ## HTTP request
-```
+```http
 POST /financials/companies/{id}/customerPaymentJournals/{id}/customerPayments/{id}
 ```
 
@@ -51,8 +51,8 @@ If successful, this method returns ```201 Created``` response code and a **custo
 
 Here is an example of a request.
 
-```json
-POST https://graph.microsoft.com/beta/financials/companies/{id}/customerPaymentJournal/{id}/customerPayments
+```http
+POST https://graph.microsoft.com/beta/financials/companies/{id}/customerPaymentJournals/{id}/customerPayments
 Content-type: application/json
 
 {
@@ -72,7 +72,7 @@ Content-type: application/json
 ```
 **Response**
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

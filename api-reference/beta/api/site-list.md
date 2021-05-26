@@ -78,7 +78,7 @@ GET https://graph.microsoft.com/beta/sites?$select=siteCollection,webUrl&$filter
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

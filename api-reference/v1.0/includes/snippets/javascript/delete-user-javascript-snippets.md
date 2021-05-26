@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/users/{user-id}')
+await client.api('/users/{user-id}')
 	.delete();
 
 ```

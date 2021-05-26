@@ -6,21 +6,21 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var externalItem = new ExternalItem
+var externalItem = new Microsoft.Graph.ExternalConnectors.ExternalItem
 {
-	Acl = new List<Acl>()
+	Acl = new List<Microsoft.Graph.ExternalConnectors.Acl>()
 	{
-		new Acl
+		new Microsoft.Graph.ExternalConnectors.Acl
 		{
-			Type = AclType.Everyone,
+			Type = Microsoft.Graph.ExternalConnectors.AclType.Everyone,
 			Value = "67a141d8-cf4e-4528-ba07-bed21bfacd2d",
-			AccessType = AccessType.Grant,
-			IdentitySource = "azureActiveDirectory"
+			AccessType = Microsoft.Graph.ExternalConnectors.AccessType.Grant,
+			IdentitySource = Microsoft.Graph.ExternalConnectors.IdentitySourceType.AzureActiveDirectory
 		}
 	}
 };
 
-await graphClient.Connections["contosohr"].Items["TSP228082938"]
+await graphClient.Connections["{externalConnectors.externalConnection-id}"].Items["{externalConnectors.externalItem-id}"]
 	.Request()
 	.UpdateAsync(externalItem);
 

@@ -20,7 +20,7 @@ The **plannerPlanContext** resource represents the relationship of a [plannerPla
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |associationType|String|Nullable. An app-defined type of association between the [plannerPlan](plannerplan.md) and the app. The app can use this information to track different kinds of relationships to the same [plannerPlan](plannerplan.md).|
-|createdDateTime|DateTimeOffset|Read-only. The date and time when the **plannerPlanContext** was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
+|createdDateTime|DateTimeOffset|Read-only. The date and time when the **plannerPlanContext** was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |displayNameSegments|String collection|The segments of the name of the external experience. Segments represent a hierarchical structure that allows other apps to display the relationship.|
 |isCreationContext|Boolean|Read-only. Indicates whether the plan is created from the specified context. Auto-generated based on whether the context is specified as part of plan creation.|
 |ownerAppId|String|Read-only. ID of the app that created the **plannerPlanContext**.|

@@ -44,9 +44,6 @@ POST /groups/{id}/calendar/events/{id}/forward
 POST /me/calendars/{id}/events/{id}/forward
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/forward
 
-POST /me/calendargroup/calendars/{id}/events/{id}/forward
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/forward
-
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/forward
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/forward
 ```

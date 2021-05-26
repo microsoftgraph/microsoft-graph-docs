@@ -15,7 +15,7 @@ var skillProficiency = new SkillProficiency
 	Proficiency = SkillProficiencyLevel.AdvancedProfessional
 };
 
-await graphClient.Me.Profile.Skills["{id}"]
+await graphClient.Me.Profile.Skills["{skillProficiency-id}"]
 	.Request()
 	.UpdateAsync(skillProficiency);
 

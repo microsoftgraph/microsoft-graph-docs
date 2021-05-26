@@ -2,7 +2,7 @@ name: EOL Blocker
 
 on:
   pull_request_target:
-    branches: [ master, live ]
+    branches: [ main, live ]
 
 jobs:
   check_pull_request_job:

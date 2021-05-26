@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/events/AAMkAGI1AAAoZDOFAAA=/')
+let event = await client.api('/me/events/AAMkAGI1AAAoZDOFAAA=/')
 	.version('beta')
 	.header('Prefer','outlook.body-content-type="text"')
 	.select('subject,body,bodyPreview')

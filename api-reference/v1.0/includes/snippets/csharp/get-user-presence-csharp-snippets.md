@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var presence = await graphClient.Users["66825e03-7ef5-42da-9069-724602c31f6b"].Presence
+var presence = await graphClient.Users["{user-id}"].Presence
 	.Request()
 	.GetAsync();
 

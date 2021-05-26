@@ -10,7 +10,7 @@ var clientContext = "clientContext-value";
 
 var status = RecordingStatus.NotRecording | RecordingStatus.Recording | RecordingStatus.Failed;
 
-await graphClient.Communications.Calls["{id}"]
+await graphClient.Communications.Calls["{call-id}"]
 	.UpdateRecordingStatus(status,clientContext)
 	.Request()
 	.PostAsync();

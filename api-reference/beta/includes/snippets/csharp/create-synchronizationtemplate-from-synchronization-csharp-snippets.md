@@ -13,7 +13,7 @@ var synchronizationTemplate = new SynchronizationTemplate
 	FactoryTag = "CustomSCIM"
 };
 
-await graphClient.Applications["{id}"].Synchronization.Templates
+await graphClient.Applications["{application-id}"].Synchronization.Templates
 	.Request()
 	.AddAsync(synchronizationTemplate);
 

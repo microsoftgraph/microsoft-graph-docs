@@ -1,7 +1,7 @@
 ---
 title: "Patch channel"
 description: "Update the properties of the specified channel."
-author: "clearab"
+author: "anandjo"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -23,19 +23,21 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | ChannelSettings.ReadWrite.Group*, ChannelSettings.ReadWrite.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
+> **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
+
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /teams/{id}/channels/{id}
+PATCH /teams/{team-id}/channels/{channel-id}
 ```
 
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
-| Content-Type  | application/json  |
+| Content-Type  | application/json. Required.  |
 
 ## Request body
 
@@ -53,18 +55,25 @@ If successful, this method returns a `204 No Content` response code.
 
 Here is an example of the request.
 
-```http
-PATCH https://graph.microsoft.com/v1.0/teams/{id}/channels/{id}
-```
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "update_channel"
+  "name": "patch_channel"
 }-->
+```http
+PATCH https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2
+```
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/patch-channel-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true,

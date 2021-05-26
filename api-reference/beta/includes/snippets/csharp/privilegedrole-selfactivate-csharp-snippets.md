@@ -14,7 +14,7 @@ var ticketNumber = "ticketNumber-value";
 
 var ticketSystem = "ticketSystem-value";
 
-await graphClient.PrivilegedRoles["{id}"]
+await graphClient.PrivilegedRoles["{privilegedRole-id}"]
 	.SelfActivate(reason,duration,ticketNumber,ticketSystem)
 	.Request()
 	.PostAsync();

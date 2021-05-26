@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String clientContext = "d45324c1-fcb5-430a-902c-f20af696537c";
 
@@ -20,7 +20,12 @@ promptsList.add(prompts);
 Boolean loop = false;
 
 graphClient.communications().calls("57dab8b1-894c-409a-b240-bd8beae78896")
-	.playPrompt(promptsList,loop,clientContext)
+	.playPrompt(CallPlayPromptParameterSet
+		.newBuilder()
+		.withPrompts(promptsList)
+		.withLoop(loop)
+		.withClientContext(clientContext)
+		.build())
 	.buildRequest()
 	.post();
 

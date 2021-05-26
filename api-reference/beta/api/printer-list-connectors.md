@@ -18,11 +18,11 @@ Retrieve a list of **connectors** associated with the [printer](../resources/pri
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, in addition to the permissions listed in the following table. The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
+To use the Universal Print service, the user or app's tenant must have an active Universal Print subscription, a permission that grants [Get printer](printer-get.md) access, and one of the permissions listed in the following table. The signed in user must be a [Printer Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#printer-administrator).
 
 |Permission type | Permissions (from least to most privileged) |
 |:---------------|:--------------------------------------------|
-|Delegated (work or school account)| Printer.Read.All, Printer.ReadWrite.All, Printer.FullControl.All |
+|Delegated (work or school account)| PrintConnector.Read.All, PrintConnector.ReadWrite.All |
 |Delegated (personal Microsoft account)|Not Supported.|
 |Application| Not Supported. |
 
@@ -51,32 +51,32 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_connectors"
+  "name": "get_connectors_3"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/beta/print/printers/{id}/connectors
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-connectors-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-connectors-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-connectors-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-connectors-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-connectors-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-connectors-3-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-connectors-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-connectors-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 ##### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -97,9 +97,6 @@ Content-length: 1373
       "fullyQualifiedDomainName": "connector1@redmond.corp.microsoft.com",
       "operatingSystem": "Microsoft Windows 10 Enterprise Insider Preview | 10.0.19555",
       "appVersion": "0.19.7338.23496",
-      "deviceHealth": {
-        "lastConnectionTime": "2020-02-04T07:00:00.0000000"
-      },
       "registeredDateTime": "2020-02-04T07:00:00.0000000",
       "location": {
         "latitude": 1.1,
@@ -115,9 +112,9 @@ Content-length: 1373
         "countryOrRegion": "USA",
         "site": "Puget Sound",
         "building": "Studio E",
-        "floorNumber": 1,
+        "floor": "1",
         "floorDescription": "First Floor",
-        "roomNumber": 1234,
+        "roomName": "1234",
         "roomDescription": "First floor copy room",
         "organization": [
             "C+AI",

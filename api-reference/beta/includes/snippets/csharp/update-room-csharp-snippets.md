@@ -15,7 +15,7 @@ var place = new Room
 	IsWheelChairAccessible = false
 };
 
-await graphClient.Places["cf100@contoso.com"]
+await graphClient.Places["{place-id}"]
 	.Request()
 	.UpdateAsync(place);
 

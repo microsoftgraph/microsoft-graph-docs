@@ -25,7 +25,7 @@ var timeOff = new TimeOff
 	}
 };
 
-await graphClient.Teams["{teamId}"].Schedule.TimesOff["{timeOffId}"]
+await graphClient.Teams["{team-id}"].Schedule.TimesOff["{timeOff-id}"]
 	.Request()
 	.Header("Prefer","return=representation")
 	.PutAsync(timeOff);

@@ -35,7 +35,7 @@ var messageRule = new MessageRule
 	}
 };
 
-await graphClient.Me.MailFolders["inbox"].MessageRules
+await graphClient.Me.MailFolders["{mailFolder-id}"].MessageRules
 	.Request()
 	.AddAsync(messageRule);
 

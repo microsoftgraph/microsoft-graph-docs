@@ -14,7 +14,7 @@ var ids = new List<String>()
 	"ac38546e-ddf3-437a-ac5c-27a94cd7a0f1"
 };
 
-await graphClient.Devices["{id}"]
+await graphClient.Devices["{device-id}"]
 	.CheckMemberObjects(ids)
 	.Request()
 	.PostAsync();

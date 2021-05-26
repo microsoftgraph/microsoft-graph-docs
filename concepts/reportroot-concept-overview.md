@@ -21,7 +21,7 @@ Many companies have existing reporting solutions that use a reporting applicatio
 ### Retain usage reports for historical analysis
 You can use the reports API to get the data that's available in all usage reports, including organization-level summaries per service, entity-level (user, sites, accounts) usage information for the last 7/30/90/180 days, and daily activity aggregates. This gives you the option to keep historical usage information for as long as required.
 
-### Analize AD FS application activity and configuration
+### Analyze AD FS application activity and configuration
 Provides information about a relying party configured with Active Directory Federation Services (AD FS), its aggregated usage, and whether the relying party configuration can be migrated to Azure Active Directory.
 
 ### Monitor application sign-ins
@@ -41,7 +41,6 @@ Gain a better understanding of how your users access and use Azure AD services. 
 You can use the reports APIs to access the data sets listed in the following table.
 
 | Reports APIs | Data set |
-|:------------ |:-------- |
 |:------------ |:-------- |
 | Activity | [Directory audit](/graph/api/resources/directoryaudit?view=graph-rest-1.0)<br/>[Sign-in](/graph/api/resources/signin?view=graph-rest-1.0)<br/>[Provisioning (Preview)](/graph/api/resources/provisioningobjectsummary?view=graph-rest-beta) |
 | AD FS applications | [Relying part detailed summary (Preview)](/graph/api/resources/relyingpartydetailedsummary?view=graph-rest-beta) |

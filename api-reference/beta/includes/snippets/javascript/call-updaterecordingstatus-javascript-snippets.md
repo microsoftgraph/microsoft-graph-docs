@@ -11,11 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const updateRecordingStatusOperation = {
-  clientContext: "clientContext-value",
-  status: "notRecording | recording | failed"
+  clientContext: 'clientContext-value',
+  status: 'notRecording | recording | failed'
 };
 
-let res = await client.api('/communications/calls/{id}/updateRecordingStatus')
+await client.api('/communications/calls/{id}/updateRecordingStatus')
 	.version('beta')
 	.post(updateRecordingStatusOperation);
 

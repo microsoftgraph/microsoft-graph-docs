@@ -14,7 +14,7 @@ var ids = new List<String>()
 	"ac38546e-ddf3-437a-ac5c-27a94cd7a0f1"
 };
 
-await graphClient.ServicePrincipals["{id}"]
+await graphClient.ServicePrincipals["{servicePrincipal-id}"]
 	.CheckMemberObjects(ids)
 	.Request()
 	.PostAsync();

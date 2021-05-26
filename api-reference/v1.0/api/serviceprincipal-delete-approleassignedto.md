@@ -82,6 +82,7 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/appRoleAssignedTo
 
 ---
 
+In this example, `{resource-SP-id}` would be the id of the resource service principal, and `{principalId}` would be the id of the assigned user, group, or client service principal.
 
 ### Response
 

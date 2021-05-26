@@ -12,7 +12,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphPrintConnector *printConnector = [[MSGraphPrintConnector alloc] init];
-[printConnector setName:@"ConnectorName"];
+[printConnector setDisplayName:@"ConnectorName"];
 [printConnector setFullyQualifiedDomainName:@"CONNECTOR-MACHINE"];
 [printConnector setOperatingSystem:@"Microsoft Windows 10 Enterprise Insider Preview | 10.0.19555"];
 [printConnector setAppVersion:@"0.19.7338.23496"];

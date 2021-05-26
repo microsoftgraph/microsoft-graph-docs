@@ -25,7 +25,7 @@ var team = new Team
 	}
 };
 
-await graphClient.Groups["{id}"].Team
+await graphClient.Groups["{group-id}"].Team
 	.Request()
 	.PutAsync(team);
 

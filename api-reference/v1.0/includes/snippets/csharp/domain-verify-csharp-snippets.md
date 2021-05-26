@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Domains["{domain-name}"]
+await graphClient.Domains["{domain-id}"]
 	.Verify()
 	.Request()
 	.PostAsync();

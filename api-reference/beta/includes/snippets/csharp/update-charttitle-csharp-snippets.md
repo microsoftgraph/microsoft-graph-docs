@@ -13,7 +13,7 @@ var workbookChartTitle = new WorkbookChartTitle
 	Visible = true
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Charts["{name}"].Title
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts["{workbookChart-id}"].Title
 	.Request()
 	.UpdateAsync(workbookChartTitle);
 

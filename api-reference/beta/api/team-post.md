@@ -1,7 +1,7 @@
 ---
 title: "Create team"
 description: "Create a new team."
-author: "laujan"
+author: "anandjo"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -26,6 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Application                            | Team.Create, Teamwork.Migrate.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 > **Note**: The Teamwork.Migrate.All permission is *only* supported for [migration](/microsoftteams/platform/graph-api/import-messages/import-external-messages-to-teams).
+In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data imported.
 
 ## HTTP request
 
@@ -105,8 +106,8 @@ Content-Type: application/json
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
-Location: /teams/{teamId}/operations/{operationId}
-Content-Location: /teams/{teamId}
+Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')/operations('3a6fdce1-c261-48bc-89de-1cfef658c0d5')
+Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
 Content-Length: 0
 ```
 
@@ -171,8 +172,8 @@ Content-Type: application/json
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
-Location: /teams/{teamId}/operations/{operationId}
-Content-Location: /teams/{teamId}
+Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')/operations('3a6fdce1-c261-48bc-89de-1cfef658c0d5')
+Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
 Content-Length: 0
 ```
 
@@ -210,14 +211,14 @@ Content-Type: application/json
             "tabs": [
                 {
                     "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.web')",
-                    "name": "A Pinned Website",
+                    "displayName": "A Pinned Website",
                     "configuration": {
                         "contentUrl": "https://docs.microsoft.com/microsoftteams/microsoft-teams"
                     }
                 },
                 {
                     "teamsApp@odata.bind": "https://graph.microsoft.com/v1.0/appCatalogs/teamsApps('com.microsoft.teamspace.tab.youtube')",
-                    "name": "A Pinned YouTube Video",
+                    "displayName": "A Pinned YouTube Video",
                     "configuration": {
                         "contentUrl": "https://tabs.teams.microsoft.com/Youtube/Home/YoutubeTab?videoId=X8krAMdGvCQ",
                         "websiteUrl": "https://www.youtube.com/watch?v=X8krAMdGvCQ"
@@ -284,6 +285,10 @@ Content-Type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/create-team-post-full-payload-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-team-post-full-payload-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 #### Response
@@ -296,8 +301,8 @@ Content-Type: application/json
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
-Location: /teams/{teamId}/operations/{operationId}
-Content-Location: /teams/{teamId}
+Location: /teams('958e8cf8-169a-42aa-8599-5c1c5479c0ca')/operations('00000000-0000-0000-0000-000000000000')
+Content-Location: /teams('958e8cf8-169a-42aa-8599-5c1c5479c0ca')
 Content-Length: 0
 ```
 
@@ -325,7 +330,7 @@ Content-Type: application/json
 
 {
   "template@odata.bind": "https://graph.microsoft.com/beta/teamsTemplates('standard')",
-  "group@odata.bind": "https://graph.microsoft.com/v1.0/groups('groupId')"
+  "group@odata.bind": "https://graph.microsoft.com/beta/groups('71392b2f-1765-406e-86af-5907d9bdb2ab')"
 }
 ```
 
@@ -357,8 +362,8 @@ Content-Type: application/json
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
-Location: /teams/{teamId}/operations/{operationId}
-Content-Location: /teams/{teamId}
+Location: /teams('71392b2f-1765-406e-86af-5907d9bdb2ab')/operations('9698b2b8-9636-4f49-b7a8-10dadfa7062a')
+Content-Location: /teams('71392b2f-1765-406e-86af-5907d9bdb2ab')
 Content-Length: 0
 ```
 
@@ -382,7 +387,7 @@ Content-Type: application/json
 
 {
    "template@odata.bind":"https://graph.microsoft.com/beta/teamsTemplates('standard')",
-   "group@odata.bind":"https://graph.microsoft.com/v1.0/groups('groupId')",
+   "group@odata.bind":"https://graph.microsoft.com/beta/groups('dbd8de4f-5d47-48da-87f1-594bed003375')",
    "channels":[
       {
          "displayName":"Class Announcements 📢",
@@ -438,8 +443,8 @@ Content-Type: application/json
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
-Location: /teams/{teamId}/operations/{operationId}
-Content-Location: /teams/{teamId}
+Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')/operations('3a6fdce1-c261-48bc-89de-1cfef658c0d5')
+Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
 Content-Length: 0
 ```
 
@@ -497,8 +502,8 @@ Content-Type: application/json
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
-Location: /teams/{teamId}/operations/{operationId}
-Content-Location: /teams/{teamId}
+Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')/operations('3a6fdce1-c261-48bc-89de-1cfef658c0d5')
+Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
 Content-Length: 0
 ```
 
@@ -578,8 +583,8 @@ Content-Type: application/json
 ```http
 HTTP/1.1 202 Accepted
 Content-Type: application/json
-Location: /teams/{teamId}/operations/{operationId}
-Content-Location: /teams/{teamId}
+Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')/operations('3a6fdce1-c261-48bc-89de-1cfef658c0d5')
+Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
 Content-Length: 0
 ```
 
@@ -588,6 +593,8 @@ Content-Length: 0
 #### Request
 
 The following example shows how to create a team for imported messages.
+
+>**Note:** In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data imported.
 
 >**Note:** Teams created in migration mode only support the `standard` template.
 
@@ -608,8 +615,8 @@ Content-Type: application/json
 
 ```http
 HTTP/1.1 202 Accepted
-Location: /teams/{teamId}/operations/{operationId}
-Content-Location: /teams/{teamId}
+Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')/operations('3a6fdce1-c261-48bc-89de-1cfef658c0d5')
+Content-Location: /teams('dbd8de4f-5d47-48da-87f1-594bed003375')
 ```
 
 #### Error response

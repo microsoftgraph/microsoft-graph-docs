@@ -1,5 +1,5 @@
 ---
-title: "List classes"
+title: "List classes of an educationUser"
 description: "Retrieve a list of class objects. Note that if the delegated token is used, members can only see information about their own classes. "
 localization_priority: Normal
 author: "mmast-msft"
@@ -7,11 +7,11 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# List classes
+# List classes of an educationUser
 
 Namespace: microsoft.graph
 
-Retrieve a list of class objects. Note that if the delegated token is used, members can only see information about their own classes. 
+Get the [educationClass](../resources/educationclass.md) resources an [educationUser](../resources/educationuser.md) is a member of.
 
 <!-- Please verify the revision to the delegated token text. -->
 
@@ -23,6 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (work or school account) |  EduRoster.ReadBasic  |
 |Delegated (personal Microsoft account) |  Not supported.  |
 |Application | EduRoster.Read.All, EduRoster.ReadWrite.All | 
+
+> [!NOTE]
+> Note that if the delegated token is used, members can only see information about their own classes.
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -49,25 +52,25 @@ The following is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_classes"
+  "name": "get_classes_3"
 }-->
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/education/me/classes
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-classes-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-classes-3-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-classes-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-classes-3-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-classes-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-classes-3-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-classes-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-classes-3-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -75,7 +78,7 @@ GET https://graph.microsoft.com/v1.0/education/me/classes
 ##### Response
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

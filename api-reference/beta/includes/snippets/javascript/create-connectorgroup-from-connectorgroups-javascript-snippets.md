@@ -11,11 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const connectorGroup = {
-  name: "name-value",
+  name: 'name-value',
   isDefault: false
 };
 
-let res = await client.api('/onPremisesPublishingProfiles/applicationProxy/connectorGroups')
+await client.api('/onPremisesPublishingProfiles/applicationProxy/connectorGroups')
 	.version('beta')
 	.post(connectorGroup);
 

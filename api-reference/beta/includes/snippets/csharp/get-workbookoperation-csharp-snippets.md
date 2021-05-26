@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var workbookOperation = await graphClient.Me.Drive.Items["{drive-item-id}"].Workbook.Operations["{operation-id}"]
+var workbookOperation = await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Operations["{workbookOperation-id}"]
 	.Request()
 	.GetAsync();
 

@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const identityUserFlowAttributeAssignment = {
-  userInputType: "textBox"
+  userInputType: 'textBox'
 };
 
-let res = await client.api('/identity/b2cUserFlows/{b2cIdentityUserFlowId}/userAttributeAssignments/{id}')
+await client.api('/identity/b2cUserFlows/{b2cIdentityUserFlowId}/userAttributeAssignments/{id}')
 	.version('beta')
 	.update(identityUserFlowAttributeAssignment);
 

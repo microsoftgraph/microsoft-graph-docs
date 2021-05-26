@@ -11,7 +11,7 @@ var calendarGroup = new CalendarGroup
 	Name = "name-value"
 };
 
-await graphClient.Me.CalendarGroups["{id}"]
+await graphClient.Me.CalendarGroups["{calendarGroup-id}"]
 	.Request()
 	.UpdateAsync(calendarGroup);
 

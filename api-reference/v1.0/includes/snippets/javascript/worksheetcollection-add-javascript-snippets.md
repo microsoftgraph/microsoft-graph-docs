@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const workbookWorksheet = {
-  name: "name-value"
+  name: 'name-value'
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/worksheets/add')
+await client.api('/me/drive/items/{id}/workbook/worksheets/add')
 	.post(workbookWorksheet);
 
 ```

@@ -14,7 +14,7 @@ const servicePrincipal = {
   appRoleAssignmentRequired: true
 };
 
-let res = await client.api('/servicePrincipals/{id}')
+await client.api('/servicePrincipals/{id}')
 	.update(servicePrincipal);
 
 ```

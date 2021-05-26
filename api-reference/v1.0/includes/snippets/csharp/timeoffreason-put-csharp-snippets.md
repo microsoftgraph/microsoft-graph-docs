@@ -13,7 +13,7 @@ var timeOffReason = new TimeOffReason
 	IsActive = true
 };
 
-await graphClient.Teams["{teamId}"].Schedule.TimeOffReasons["{timeOffReasonId}"]
+await graphClient.Teams["{team-id}"].Schedule.TimeOffReasons["{timeOffReason-id}"]
 	.Request()
 	.Header("Prefer","return=representation")
 	.PutAsync(timeOffReason);

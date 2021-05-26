@@ -3,7 +3,7 @@ title: "Property differences between Azure AD Graph and Microsoft Graph"
 description: "Describes property differences between Azure AD Graph resources (entities) and Microsoft Graph, in order to help migrate apps accordingly."
 author: "dkershaw10"
 localization_priority: Normal
-ms.prod: "azure-active-directory"
+ms.prod: "applications"
 ---
 
 # Property differences between Azure AD Graph and Microsoft Graph
@@ -14,9 +14,9 @@ In general, the best way to compare the Azure AD Graph API to Microsoft Graph is
 
 - [Azure AD Graph metadata](https://graph.windows.net/microsoft.com/$metadata?api-version=1.6)
 - [Microsoft Graph beta metadata](https://graph.microsoft.com/beta/$metadata)
-- [Microsoft Graph v1.0 metadata](https://graph.microsoft.comv/1.0/$metadata)
+- [Microsoft Graph v1.0 metadata](https://graph.microsoft.com/v1.0/$metadata)
 
-Here, property differences between resources are highlighted. If a property is not shown in this list, it is already available in the [v1.0 version](/graph/api/overview?view=graph-rest-1.0) of Microsoft Graph, with exactly the same name as in Azure AD Graph.
+Here, property differences between resources are highlighted. If a property is not shown in this list, it is already available in the [v1.0 version](/graph/api/overview) of Microsoft Graph, with exactly the same name as in Azure AD Graph.
 
 Because user and group are so frequently used, these resources appear first.  Other resources appear alphabetically.
 
@@ -28,15 +28,15 @@ Because user and group are so frequently used, these resources appear first.  Ot
 | **dirSyncEnabled** | beta &nbsp;-&nbsp;**onPremisesSyncEnabled** <br> v1.0 &nbsp;-&nbsp; **onPremisesSyncEnabled** | |
 | **facsimileTelephoneNumber** | beta  &nbsp;-&nbsp; **faxNumber** <br> v1.0 &nbsp;-&nbsp; **faxNumber** | |
 | **immutableId** | beta &nbsp;-&nbsp;**onPremisesImmutableId** <br> v1.0 &nbsp;-&nbsp; **onPremisesImmutableId**  | |
-| **isCompromised** | beta  &nbsp;-&nbsp; _Not available_ <br> v1.0 &nbsp;-&nbsp; _Not available_ | The Microsoft Graph [identity protection](/graph/api/resources/identityprotection-root?view=graph-rest-beta) API provides more sophisticated functionality. |
+| **isCompromised** | beta  &nbsp;-&nbsp; _Not available_ <br> v1.0 &nbsp;-&nbsp; _Not available_ | The Microsoft Graph [identity protection](/graph/api/resources/identityprotection-root?view=graph-rest-beta&preserve-view=true) API provides more sophisticated functionality. |
 | **lastDirSyncDateTime** | beta &nbsp;-&nbsp;**onPremisesLastSyncDateTime** <br> v1.0 &nbsp;-&nbsp; **onPremisesLastSyncDateTime** | |
 | **mobile** | beta  &nbsp;-&nbsp; **mobilePhone** <br> v1.0 &nbsp;-&nbsp; **mobilePhone** | |
 | **provisioningErrors** | beta &nbsp;-&nbsp; _Not available_ <br> v1.0 &nbsp;-&nbsp; _Not available_ | This property and its information is deprecated.  However, a new property describing any AD Connect related provisioning errors can be found in **onPremisesProvisioningErrors** |
 | **refreshTokensValidFromDateTime** | beta&nbsp;-&nbsp;**signinSessionsValidFromDateTime**<br>v1.0&nbsp;-&nbsp;**signinSessionsValidFromDateTime** | |
-| **signinNames** | beta &nbsp;-&nbsp; **identities/signInType** <br> v1.0 &nbsp;-&nbsp; **identities/signInType** | This property is now part of the [objectIdentity](/graph/api/resources/objectIdentity?view=graph-rest-1.0) resource.|
+| **signinNames** | beta &nbsp;-&nbsp; **identities/signInType** <br> v1.0 &nbsp;-&nbsp; **identities/signInType** | This property is now part of the [objectIdentity](/graph/api/resources/objectIdentity) resource.|
 | **telephoneNumber** | beta  &nbsp;-&nbsp; **businessPhones** <br> v1.0 &nbsp;-&nbsp; **businessPhones** | |
-| **thumbnailPhoto** | beta  &nbsp;-&nbsp; **photo**, photos <br> v1.0 &nbsp;-&nbsp; **photo**, photos | The Azure AD thumbnail photo is not available through Microsoft Graph.  Use the [photo API](/graph/api/resources/profilephoto?view=graph-rest-1.0) instead. |
-| **userIdentities** | beta &nbsp;-&nbsp; **identities** <br> v1.0 &nbsp;-&nbsp; **identities** | See [objectIdentity](/graph/api/resources/objectIdentity?view=graph-rest-1.0) resource type for more details.|
+| **thumbnailPhoto** | beta  &nbsp;-&nbsp; **photo**, photos <br> v1.0 &nbsp;-&nbsp; **photo**, photos | The Azure AD thumbnail photo is not available through Microsoft Graph.  Use the [photo API](/graph/api/resources/profilephoto) instead. |
+| **userIdentities** | beta &nbsp;-&nbsp; **identities** <br> v1.0 &nbsp;-&nbsp; **identities** | See [objectIdentity](/graph/api/resources/objectIdentity) resource type for more details.|
 | **userState** | beta  &nbsp;-&nbsp; **externalUserState** <br> v1.0 &nbsp;-&nbsp; **externalUserState** | |
 | **userStateChangedOn** | beta&nbsp;-&nbsp;**externalUserStateChangeDateTime**<br>v1.0&nbsp;-&nbsp;**externalUserStateChangeDateTime** | |
 
@@ -143,7 +143,7 @@ The Azure AD Graph directoryObjectReference resource has been renamed to directo
 
 ## Policy property differences
 
-In Microsoft Graph there are named policy types (such as tokenIssuancePolicy or tokenLifetimePolicy), rather than a generic policy resource type. More details are available in the [policy overview](/graph/api/resources/policy-overview?view=graph-rest-1.0).
+In Microsoft Graph there are named policy types (such as tokenIssuancePolicy or tokenLifetimePolicy), rather than a generic policy resource type. More details are available in the [policy overview](/graph/api/resources/policy-overview).
 
 ## ServiceEndpoint property differences
 
@@ -179,7 +179,7 @@ The Azure AD Graph TenantDetails resource is renamed to organization in Microsof
 
 ## TrustedCasForPasswordlessAuth property differences
 
-The Azure AD Graph TrustedCasForPasswordlessAuth resource has been renamed to [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration?view=graph-rest-beta), and is only available in the Microsoft Graph beta endpoint. There are no property differences; however, there are differences in the **certificateAuthority** resource type used by the **certificateAuthorities** property.
+The Azure AD Graph TrustedCasForPasswordlessAuth resource has been renamed to [certificateBasedAuthConfiguration](/graph/api/resources/certificatebasedauthconfiguration). There are no property differences; however, there are differences in the **certificateAuthority** resource type used by the **certificateAuthorities** property.
 
 ### CertificateAuthorityInformation
 

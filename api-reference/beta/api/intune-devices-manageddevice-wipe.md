@@ -20,11 +20,11 @@ Wipe a device
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.PriviligedOperation.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.PriviligedOperation.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementManagedDevices.PriviligedOperation.All, DeviceManagementManagedDevices.ReadWrite.All|
+|Application|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.PriviligedOperation.All|
 
 ## HTTP Request
 <!-- {
@@ -57,6 +57,7 @@ The following table shows the parameters that can be used with this action.
 |keepEnrollmentData|Boolean|Not yet documented|
 |keepUserData|Boolean|Not yet documented|
 |macOsUnlockCode|String|Not yet documented|
+|persistEsimDataPlan|Boolean|Not yet documented|
 |useProtectedWipe|Boolean|Not yet documented|
 
 
@@ -72,12 +73,13 @@ Here is an example of the request.
 POST https://graph.microsoft.com/beta/deviceManagement/managedDevices/{managedDeviceId}/wipe
 
 Content-type: application/json
-Content-length: 138
+Content-length: 170
 
 {
   "keepEnrollmentData": true,
   "keepUserData": true,
   "macOsUnlockCode": "Mac Os Unlock Code value",
+  "persistEsimDataPlan": true,
   "useProtectedWipe": true
 }
 ```

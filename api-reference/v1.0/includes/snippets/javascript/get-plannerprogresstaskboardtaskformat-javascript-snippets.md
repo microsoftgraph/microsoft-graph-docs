@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/planner/tasks/{task-id}/progressTaskBoardFormat')
+let plannerProgressTaskBoardTaskFormat = await client.api('/planner/tasks/{task-id}/progressTaskBoardFormat')
 	.get();
 
 ```

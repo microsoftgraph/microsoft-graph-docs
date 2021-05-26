@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/compliance/ediscovery/cases/6f65a8e4-c6a0-4cff-8a81-c9ab5df7290d/reviewSets')
+let reviewSets = await client.api('/compliance/ediscovery/cases/{caseId}/reviewSets')
 	.version('beta')
 	.get();
 

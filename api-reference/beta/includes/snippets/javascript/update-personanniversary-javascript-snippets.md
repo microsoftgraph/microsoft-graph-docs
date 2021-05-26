@@ -10,12 +10,12 @@ const options = {
 
 const client = Client.init(options);
 
-const personAnniversary = {
-  allowedAudiences: "contacts"
+const personAnnualEvent = {
+  allowedAudiences: 'contacts'
 };
 
-let res = await client.api('/me/profile/anniversaries/{id}')
+await client.api('/me/profile/anniversaries/{id}')
 	.version('beta')
-	.update(personAnniversary);
+	.update(personAnnualEvent);
 
 ```

@@ -22,7 +22,7 @@ var unifiedRoleDefinition = new UnifiedRoleDefinition
 	}
 };
 
-await graphClient.RoleManagement.Directory.RoleDefinitions["0d55728d-3e24-4309-9b1b-5ac09921475a"]
+await graphClient.RoleManagement.Directory.RoleDefinitions["{unifiedRoleDefinition-id}"]
 	.Request()
 	.UpdateAsync(unifiedRoleDefinition);
 

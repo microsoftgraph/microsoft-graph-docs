@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.ServicePrincipals["{servicePrincipalId}"].HomeRealmDiscoveryPolicies["{policyId}"].Reference
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].HomeRealmDiscoveryPolicies["{homeRealmDiscoveryPolicy-id}"].Reference
 	.Request()
 	.DeleteAsync();
 

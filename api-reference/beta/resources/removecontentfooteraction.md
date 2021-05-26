@@ -3,7 +3,7 @@ title: "removeContentFooterAction resource type"
 description: "Represents an action that specifies the details on the content footer to be removed from the information, if applicable."
 localization_priority: Normal
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 

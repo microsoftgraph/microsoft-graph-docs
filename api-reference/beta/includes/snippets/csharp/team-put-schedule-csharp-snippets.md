@@ -12,7 +12,7 @@ var schedule = new Schedule
 	TimeZone = "America/Chicago"
 };
 
-await graphClient.Teams["{teamId}"].Schedule
+await graphClient.Teams["{team-id}"].Schedule
 	.Request()
 	.PutAsync(schedule);
 

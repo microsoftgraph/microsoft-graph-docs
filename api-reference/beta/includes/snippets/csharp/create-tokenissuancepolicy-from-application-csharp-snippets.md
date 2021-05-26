@@ -14,7 +14,7 @@ var tokenIssuancePolicy = new TokenIssuancePolicy
 	}
 };
 
-await graphClient.Applications["{id}"].TokenIssuancePolicies.References
+await graphClient.Applications["{application-id}"].TokenIssuancePolicies.References
 	.Request()
 	.AddAsync(tokenIssuancePolicy);
 

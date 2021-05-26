@@ -12,7 +12,7 @@ var groupIds = new List<String>()
 	"4fe90ae065a-478b9400e0a0e1cbd540"
 };
 
-await graphClient.DirectoryObjects["{id}"]
+await graphClient.DirectoryObjects["{directoryObject-id}"]
 	.CheckMemberGroups(groupIds)
 	.Request()
 	.PostAsync();

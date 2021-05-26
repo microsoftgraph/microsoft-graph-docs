@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/onenote/operations/{id}')
+let onenoteOperation = await client.api('/me/onenote/operations/{id}')
 	.version('beta')
 	.get();
 

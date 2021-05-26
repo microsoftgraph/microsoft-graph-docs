@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/privilegedRoleAssignments/{id}/makeEligible')
+await client.api('/privilegedRoleAssignments/{id}/makeEligible')
 	.version('beta')
 	.post();
 

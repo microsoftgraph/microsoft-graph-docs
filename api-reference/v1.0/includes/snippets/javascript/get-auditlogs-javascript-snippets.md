@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/auditLogs')
+let auditLogRoot = await client.api('/auditLogs')
 	.get();
 
 ```

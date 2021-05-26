@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var disableUserAccounts = true;
 
-await graphClient.Domains["contoso.com"]
+await graphClient.Domains["{domain-id}"]
 	.ForceDelete(disableUserAccounts)
 	.Request()
 	.PostAsync();

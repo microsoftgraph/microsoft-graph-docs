@@ -47,11 +47,11 @@ For information about the permissions required to work with OneNote APIs, see [N
 ## Relationships
 | Relationship | Type	|Description|
 |:---------------|:--------|:----------|
-|notebooks|[Notebook](notebook.md) collection|The collection of OneNote notebooks that are owned by the user or group. Read-only. Nullable.|
-|operations|[OnenoteOperation](onenoteoperation.md) collection |The status of OneNote operations. Getting an operations collection is not supported, but you can get the status of long-running operations if the `Operation-Location` header is returned in the response. Read-only. Nullable.|
+|notebooks|[notebook](notebook.md) collection|The collection of OneNote notebooks that are owned by the user or group. Read-only. Nullable.|
+|operations|[onenoteOperation](onenoteoperation.md) collection |The status of OneNote operations. Getting an operations collection is not supported, but you can get the status of long-running operations if the `Operation-Location` header is returned in the response. Read-only. Nullable.|
 |pages|[OnenotePage](page.md) collection|The pages in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.|
 |resources|[OnenoteResource](resource.md) collection |The image and other file resources in OneNote pages. Getting a resources collection is not supported, but you can [get the binary content of a specific resource](resource.md). Read-only. Nullable.|
-|sectionGroups|[SectionGroup](sectiongroup.md) collection|The section groups in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.|
+|sectionGroups|[sectionGroup](sectiongroup.md) collection|The section groups in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.|
 |sections|[OnenoteSection](section.md) collection|The sections in all OneNote notebooks that are owned by the user or group.  Read-only. Nullable.|
 
 ## Methods

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/mailFolders/delta')
+let delta = await client.api('/me/mailFolders/delta')
 	.get();
 
 ```

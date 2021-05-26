@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var sections = await graphClient.Me.Onenote.Notebooks["{id}"].Sections
+var sections = await graphClient.Me.Onenote.Notebooks["{notebook-id}"].Sections
 	.Request()
 	.GetAsync();
 

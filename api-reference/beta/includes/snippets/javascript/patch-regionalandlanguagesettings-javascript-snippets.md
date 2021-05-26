@@ -13,16 +13,16 @@ const client = Client.init(options);
 const regionalAndLanguageSettings = {
   authoringLanguages: [
     {
-     locale: "en-US" },
+     locale: 'en-US' },
     {
-     locale: "es-MX" }
+     locale: 'es-MX' }
   ],
   defaultRegionalFormat: {
-     locale: "en-US"
+     locale: 'en-US'
    }
 };
 
-let res = await client.api('/me/settings/regionalandlanguagesettings')
+await client.api('/me/settings/regionalandlanguagesettings')
 	.version('beta')
 	.update(regionalAndLanguageSettings);
 

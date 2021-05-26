@@ -14,7 +14,7 @@ var nbf = 1508969811;
 
 var exp = 1508969811;
 
-await graphClient.TrustFramework.KeySets["{id}"]
+await graphClient.TrustFramework.KeySets["{trustFrameworkKeySet-id}"]
 	.GenerateKey(use,kty,nbf,exp)
 	.Request()
 	.PostAsync();

@@ -3,7 +3,7 @@ title: "subscribedSku resource type"
 description: "Represents the subscribed SKU type."
 localization_priority: Normal
 author: "SumitParikh"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 

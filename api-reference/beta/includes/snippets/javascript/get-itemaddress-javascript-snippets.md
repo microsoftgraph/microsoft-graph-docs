@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/profile/addresses/{id}')
+let itemAddress = await client.api('/me/profile/addresses/{id}')
 	.version('beta')
 	.get();
 

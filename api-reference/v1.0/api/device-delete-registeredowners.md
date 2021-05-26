@@ -3,7 +3,7 @@ title: "Delete registeredOwners"
 description: "Remove a user as a registered owner of the device."
 localization_priority: Normal
 author: "michaelrm97"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 

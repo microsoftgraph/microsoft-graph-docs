@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/programControls')
+let programControls = await client.api('/programControls')
 	.version('beta')
 	.get();
 

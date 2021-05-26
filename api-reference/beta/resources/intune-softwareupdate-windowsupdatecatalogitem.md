@@ -29,6 +29,7 @@ Windows update catalog item entity
 |id|String|The catalog item id.|
 |displayName|String|The display name for the catalog item.|
 |releaseDateTime|DateTimeOffset|The date the catalog item was released|
+|endOfSupportDate|DateTimeOffset|The last supported date for a catalog item|
 
 ## Relationships
 None
@@ -46,7 +47,8 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.windowsUpdateCatalogItem",
   "id": "String (identifier)",
   "displayName": "String",
-  "releaseDateTime": "String (timestamp)"
+  "releaseDateTime": "String (timestamp)",
+  "endOfSupportDate": "String (timestamp)"
 }
 ```
 

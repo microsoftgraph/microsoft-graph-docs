@@ -2,7 +2,7 @@
 title: "Assign a manager"
 description: "Use this API to assign a user's manager."
 localization_priority: Normal
-author: "krbain"
+author: "jpettere"
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -80,7 +80,7 @@ Content-length: xxx
 
 In the request body, supply a JSON representation of [user](../resources/user.md) object to be added.
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

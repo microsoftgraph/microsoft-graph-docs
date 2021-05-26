@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/print/printers/{printerId}/taskTriggers/{taskTriggerId}')
+let printTaskTrigger = await client.api('/print/printers/{printerId}/taskTriggers/{taskTriggerId}')
 	.version('beta')
 	.get();
 

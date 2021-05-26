@@ -2,8 +2,8 @@
 title: "Working with users in Microsoft Graph"
 description: "Build compelling app experiences based on users, their relationships with other users and groups, and their mail, calendar, and files."
 localization_priority: Priority
-author: "krbain"
-ms.prod: "microsoft-identity-platform"
+author: "jpettere"
+ms.prod: "users"
 doc_type: conceptualPageType
 ---
 

@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const outlookTaskGroup = {
-  name: "Personal Tasks",
+  name: 'Personal Tasks',
 };
 
-let res = await client.api('/me/outlook/taskgroups/AAMkADIyAAAhrbe-AAA=')
+await client.api('/me/outlook/taskgroups/AAMkADIyAAAhrbe-AAA=')
 	.version('beta')
 	.update(outlookTaskGroup);
 

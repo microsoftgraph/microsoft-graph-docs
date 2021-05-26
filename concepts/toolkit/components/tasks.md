@@ -161,3 +161,7 @@ For the Microsoft Planner data source, fetching and reading tasks requires the G
 ## Authentication
 
 The tasks component uses the global authentication provider described in the [authentication documentation](../providers/providers.md).
+
+## Cache
+
+The `mgt-tasks` component doesn't cache any data.

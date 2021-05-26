@@ -70,8 +70,6 @@ Content-length: 82
   "displayName": "Display Name value",
   "description": "Description value"
 }
-
-PATCH /deviceManagement/deviceManagementScripts/{deviceManagementScriptId}/deviceRunStates/{deviceManagementScriptDeviceStateId}/managedDevice/deviceCategory
 ```
 
 ### Response

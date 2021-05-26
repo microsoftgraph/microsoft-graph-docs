@@ -1,0 +1,104 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "48f75989-6c06-11eb-83a5-b441f1c9dab3",
+          "ApiChange": "Property",
+          "ChangedApiName": "publishingState",
+          "ChangeType": "Addition",
+          "Description": "Added the **publishingState** property to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-1.0) resource.",
+          "Target": "teamsAppDefinition"
+        },
+        {
+          "Id": "48f9bb34-6c06-11eb-83a5-b441f1c9dab3",
+          "ApiChange": "Property",
+          "ChangedApiName": "shortDescription",
+          "ChangeType": "Addition",
+          "Description": "Added the **shortDescription** property to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-1.0) resource.",
+          "Target": "teamsAppDefinition"
+        },
+        {
+          "Id": "48fc1d0d-6c06-11eb-83a5-b441f1c9dab3",
+          "ApiChange": "Property",
+          "ChangedApiName": "description",
+          "ChangeType": "Addition",
+          "Description": "Added the **description** property to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-1.0) resource.",
+          "Target": "teamsAppDefinition"
+        },
+        {
+          "Id": "48fe7edf-6c06-11eb-83a5-b441f1c9dab3",
+          "ApiChange": "Property",
+          "ChangedApiName": "lastModifiedDateTime",
+          "ChangeType": "Addition",
+          "Description": "Added the **lastModifiedDateTime** property to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-1.0) resource.",
+          "Target": "teamsAppDefinition"
+        },
+        {
+          "Id": "4900e27c-6c06-11eb-83a5-b441f1c9dab3",
+          "ApiChange": "Property",
+          "ChangedApiName": "createdBy",
+          "ChangeType": "Addition",
+          "Description": "Added the **createdBy** property to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-1.0) resource.",
+          "Target": "teamsAppDefinition"
+        },
+        {
+          "Id": "490344b6-6c06-11eb-83a5-b441f1c9dab3",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "bot",
+          "ChangeType": "Addition",
+          "Description": "Added the **bot** relationship to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-1.0) resource.",
+          "Target": "teamsAppDefinition"
+        },
+        {
+          "Id": "4905a764-6c06-11eb-83a5-b441f1c9dab3",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamworkBot",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamworkBot](https://docs.microsoft.com/en-us/graph/api/resources/teamworkBot?view=graph-rest-1.0) resource type.",
+          "Target": "teamworkBot"
+        },
+        {
+          "Id": "49080954-6c06-11eb-83a5-b441f1c9dab3",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "teamsAppPublishingState",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamsAppPublishingState** enumeration type.",
+          "Target": "teamsAppPublishingState"
+        }
+      ],
+      "Id": "48f4f795-6c06-11eb-83a5-b441f1c9dab3",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-03-04T01:13:01.454Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "524b63f7-a9d2-47cb-a4cf-fb6653615e86",
+          "ApiChange": "Property",
+          "ChangedApiName": "allowedInstallationScopes",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowedInstallationScopes** property to [teamsAppDefinition](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppDefinition?view=graph-rest-beta) resource.",
+          "Target": "teamsAppDefinition"
+        },
+        {
+          "Id": "8fd6b82e-1aec-4702-86dc-37abd4c54255",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "teamsAppInstallationScope",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamsAppInstallationScope** enumeration type.",
+          "Target": "teamsAppInstallationScope"
+        }
+      ],
+      "Id": "305c3e33-1d62-4a9e-b77c-a2f4ce0bb078",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-04-07T01:13:01.454Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    }
+  ]
+}

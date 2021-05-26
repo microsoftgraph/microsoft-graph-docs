@@ -11,11 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const fieldValueSet = {
-    Color: "Fuchsia",
+    Color: 'Fuchsia',
     Quantity: 934
 };
 
-let res = await client.api('/sites/{site-id}/lists/{list-id}/items/{item-id}/fields')
+await client.api('/sites/{site-id}/lists/{list-id}/items/{item-id}/fields')
 	.update(fieldValueSet);
 
 ```

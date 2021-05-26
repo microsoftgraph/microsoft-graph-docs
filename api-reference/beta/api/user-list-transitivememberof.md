@@ -2,7 +2,7 @@
 title: "List user transitive memberOf"
 description: "Get groups, directory roles and administrative units that the user is a member of. This API request is transitive, and will also return all groups the user is a nested member of."
 localization_priority: Normal
-author: "krbain"
+author: "jpettere"
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -92,7 +92,7 @@ GET https://graph.microsoft.com/beta/users/{id}/transitiveMemberOf
 #### Response
 
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -207,7 +207,7 @@ ConsistencyLevel: eventual
 #### Response
 
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -249,7 +249,7 @@ ConsistencyLevel: eventual
 #### Response
 
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

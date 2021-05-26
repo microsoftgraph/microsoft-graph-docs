@@ -17,7 +17,7 @@ var educationAssignment = new EducationAssignment
 	DueDateTime = DateTimeOffset.Parse("2014-02-01T00:00:00Z")
 };
 
-await graphClient.Education.Classes["11021"].Assignments["19002"]
+await graphClient.Education.Classes["{educationClass-id}"].Assignments["{educationAssignment-id}"]
 	.Request()
 	.UpdateAsync(educationAssignment);
 

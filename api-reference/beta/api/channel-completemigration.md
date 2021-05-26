@@ -2,7 +2,7 @@
 title: "channel: completeMigration"
 description: "Complete the migration of external messages by removing migration mode from a channel."
 localization_priority: Normal
-author: "laujan"
+author: "RamjotSingh"
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
 ---
@@ -30,7 +30,7 @@ The following permission is required to call this API. To learn more, *see* [Per
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /teams/{teamId}/channels/{channelId}/completeMigration
+POST /teams/{team-id}/channels/{channel-id}/completeMigration
 ```
 
 ## Request headers
@@ -56,6 +56,7 @@ The following is an example of the request.
 <!-- markdownlint-disable MD022 -->
 
 
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
@@ -63,7 +64,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/completeMigration
+POST https://graph.microsoft.com/beta/teams/57fb72d0-d811-46f4-8947-305e6072eaa5/channels/19:4b6bed8d24574f6a9e436813cb2617d8@thread.tacv2/completeMigration
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/completemigration-channel-csharp-snippets.md)]
@@ -82,6 +83,7 @@ POST https://graph.microsoft.com/beta/teams/{teamId}/channels/{channelId}/comple
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
 
 <!-- markdownlint-disable MD001 -->
 <!-- markdownlint-disable MD024 -->

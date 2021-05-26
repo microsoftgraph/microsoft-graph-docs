@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/external/connections')
+let connections = await client.api('/external/connections')
 	.version('beta')
 	.get();
 

@@ -20,7 +20,7 @@ Update the properties of a [deviceManagementExportJob](../resources/intune-repor
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementApps.ReadWrite.All, DeviceManagementManagedDevices.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -54,6 +54,7 @@ The following table shows the properties that are required when you create the [
 |select|String collection|Columns selected from the report|
 |format|[deviceManagementReportFileFormat](../resources/intune-reporting-devicemanagementreportfileformat.md)|Format of the exported report. Possible values are: `csv`, `pdf`.|
 |snapshotId|String|A snapshot is an identifiable subset of the dataset represented by the ReportName. A sessionId or CachedReportConfiguration id can be used here. If a sessionId is specified, Filter, Select, and OrderBy are applied to the data represented by the sessionId. Filter, Select, and OrderBy cannot be specified together with a CachedReportConfiguration id.|
+|localizationType|[deviceManagementExportJobLocalizationType](../resources/intune-reporting-devicemanagementexportjoblocalizationtype.md)|Configures how the requested export job is localized. Possible values are: `localizedValuesAsAdditionalColumn`, `replaceLocalizableValues`.|
 |status|[deviceManagementReportStatus](../resources/intune-reporting-devicemanagementreportstatus.md)|Status of the export job. Possible values are: `unknown`, `notStarted`, `inProgress`, `completed`, `failed`.|
 |url|String|Temporary location of the exported report|
 |requestDateTime|DateTimeOffset|Time that the exported report was requested|
@@ -71,7 +72,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/reports/exportJobs/{deviceManagementExportJobId}
 Content-type: application/json
-Content-length: 404
+Content-length: 455
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementExportJob",
@@ -82,6 +83,7 @@ Content-length: 404
   ],
   "format": "pdf",
   "snapshotId": "Snapshot Id value",
+  "localizationType": "replaceLocalizableValues",
   "status": "notStarted",
   "url": "Url value",
   "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",
@@ -94,7 +96,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 453
+Content-Length: 504
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementExportJob",
@@ -106,6 +108,7 @@ Content-Length: 453
   ],
   "format": "pdf",
   "snapshotId": "Snapshot Id value",
+  "localizationType": "replaceLocalizableValues",
   "status": "notStarted",
   "url": "Url value",
   "requestDateTime": "2017-01-01T00:03:07.1589002-08:00",

@@ -49,10 +49,6 @@ If successful, this method returns a `204 No Content` response code.
 
 ### Request
 
-> [!NOTE]
-> There are some known issues with this functionality. For details, see [known issues](/graph/known-issues#unable-to-remove-members-from-chat).
-
-
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var staffMembers = await graphClient.BookingBusinesses["Contosolunchdelivery@M365B489948.onmicrosoft.com"].StaffMembers
+var staffMembers = await graphClient.BookingBusinesses["{bookingBusiness-id}"].StaffMembers
 	.Request()
 	.GetAsync();
 

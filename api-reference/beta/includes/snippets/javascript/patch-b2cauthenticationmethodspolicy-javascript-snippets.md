@@ -12,10 +12,11 @@ const client = Client.init(options);
 
 const b2cAuthenticationMethodsPolicy = {
     isEmailPasswordAuthenticationEnabled: false,
-    isUserNameAuthenticationEnabled: true
+    isUserNameAuthenticationEnabled: true,
+    isPhoneOneTimePasswordAuthenticationEnabled: true
 };
 
-let res = await client.api('/policies/b2cAuthenticationMethodsPolicy')
+await client.api('/policies/b2cAuthenticationMethodsPolicy')
 	.version('beta')
 	.update(b2cAuthenticationMethodsPolicy);
 

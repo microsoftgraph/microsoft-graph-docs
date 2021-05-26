@@ -15,7 +15,7 @@ const workbookRangeFont = {
   size: 26
 };
 
-let res = await client.api('/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$B$1')/format/font')
+await client.api('/me/drive/items/{id}/workbook/worksheets/{sheet-id}/range(address='$B$1')/format/font')
 	.update(workbookRangeFont);
 
 ```

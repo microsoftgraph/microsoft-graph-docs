@@ -3,7 +3,7 @@ title: "Create accessPackageResourceRoleScope"
 description: "Create a new accessPackageResourceRoleScope for adding a resource role to an access package."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 
@@ -23,7 +23,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | EntitlementManagement.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Application                            | EntitlementManagement.ReadWrite.All |
 
 ## HTTP request
 

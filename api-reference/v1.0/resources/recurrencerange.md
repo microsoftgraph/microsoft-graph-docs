@@ -3,7 +3,7 @@ title: "recurrenceRange resource type"
 description: "Describes a date range over which a recurring event repeats. "
 localization_priority: Normal
 author: "harini84"
-ms.prod: ""
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -65,8 +65,6 @@ Here is a JSON representation of the resource
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-      "Warning: /api-reference/v1.0/resources/recurrencerange.md:
-      Failed to parse any rows out of table with headers: | type property  | Type of recurrence range | Description | Example | Required properties |"
   ],
   "tocPath": ""
 }-->

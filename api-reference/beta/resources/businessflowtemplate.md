@@ -3,7 +3,7 @@ title: "businessFlowTemplate resource type"
 description: "In the Azure AD access reviews feature, the `businesFlowTemplate` represents an Azure AD business flow template. The identifier of a template, such as to review guest members of a group, is supplied by the caller when creating an access review."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "markwahl-msft"
 ---
 

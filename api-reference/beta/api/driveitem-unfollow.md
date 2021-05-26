@@ -1,6 +1,5 @@
 ---
 author: chackman
-ms.author: chackman
 description: Unfollow an item that the user is following.
 title: Unfollow drive item
 localization_priority: Normal

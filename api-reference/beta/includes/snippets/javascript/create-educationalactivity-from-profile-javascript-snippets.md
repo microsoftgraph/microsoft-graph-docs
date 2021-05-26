@@ -11,37 +11,37 @@ const options = {
 const client = Client.init(options);
 
 const educationalActivity = {
-  completionMonthYear: "Date",
-  endMonthYear: "Date",
+  completionMonthYear: 'Date',
+  endMonthYear: 'Date',
   institution: {
     description: null,
-    displayName: "Colorado State University",
+    displayName: 'Colorado State University',
     location: {
-      type: "business",
+      type: 'business',
       postOfficeBox: null,
-      street: "12000 E Prospect Rd",
-      city: "Fort Collins",
-      state: "Colorado",
-      countryOrRegion: "USA",
-      postalCode: "80525"
+      street: '12000 E Prospect Rd',
+      city: 'Fort Collins',
+      state: 'Colorado',
+      countryOrRegion: 'USA',
+      postalCode: '80525'
     },
-    webUrl: "https://www.colostate.edu"
+    webUrl: 'https://www.colostate.edu'
   },
   program: {
-    abbreviation: "MBA",
+    abbreviation: 'MBA',
     activities: null,
     awards: null,
-    description: "Master of Business Administration with a major in Entreprenuership and Finance.",
-    displayName: "Master of Business Administration",
+    description: 'Master of Business Administration with a major in Entreprenuership and Finance.',
+    displayName: 'Master of Business Administration',
     fieldsOfStudy: null,
-    grade: "3.9",
+    grade: '3.9',
     notes: null,
-    webUrl: "https://biz.colostate.edu"
+    webUrl: 'https://biz.colostate.edu'
   },
-  startMonthYear: "Date"
+  startMonthYear: 'Date'
 };
 
-let res = await client.api('/me/profile/educationalActivities')
+await client.api('/me/profile/educationalActivities')
 	.version('beta')
 	.post(educationalActivity);
 

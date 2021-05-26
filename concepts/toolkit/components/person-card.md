@@ -15,9 +15,9 @@ For more information about the `mgt-person` component, see [mgt-person](./person
 
 The following example shows the use of the `mgt-person-card` component with a `mgt-person` component. Hover over the person to see the Person Card and use the code editor to see how [properties](#properties) change the behavior of the component.
   
-<iframe src="https://mgt.dev/iframe.html?id=components-mgt-person-card--person-card-hover&source=docs" height="400"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-person-card--person-card&source=docs" height="400"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-person-card--person-card-hover&source=docs)
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-person-card--person-card&source=docs)
 
 
 ## Global component configuration
@@ -72,10 +72,10 @@ The Person-Card component allows the user to contact the target person, includin
 If the Person-Card component is unable to detect the Teams lib, the component will attempt to open the Teams web client instead.
 
 ```ts
-import * as MicrosoftTeams from "@microsoft/teams-js/dist/MicrosoftTeams";
+import * as microsoftTeams from "@microsoft/teams-js";
 import {TeamsHelper} from '@microsoft/mgt';
 
-TeamsHelper.microsoftTeamsLib = MicrosoftTeams;
+TeamsHelper.microsoftTeamsLib = microsoftTeams;
 ```
 
 For more information about the `TeamsProvider` provider, see [Microsoft Teams provider](../providers/teams.md).
@@ -123,6 +123,14 @@ For example, you can use a template to customize the component attached to the `
     </mgt-person>
 
 ```
+
+## Events
+
+The following events are fired from the component.
+
+| Event | Description |
+| --- | --- |
+| `expanded` | The user has opened the expanded details section of the card. |
 
 ## CSS custom properties
 
@@ -178,3 +186,17 @@ const neededScopes = MgtPersonCard.getScopes();
 ## Authentication
 
 The Person-Card control uses the global authentication provider described in the [authentication documentation](../providers/providers.md). 
+
+## Cache
+
+> [!IMPORTANT]
+> The `mgt-person-card` component retrieves the basic person data from the parent `mgt-person` component without calling Microsoft Graph. When `mgt-person-card` is used separately, it will retrieve the necessary data itself and cache it. The data displayed in card's sections is retrieved separately and is not cached.
+
+|Object store|Cached data|Remarks|
+|---------|-----------|-------|
+|`people`|Person's information|Used when `personQuery` is specified and its value is different than `me`|
+|`photos`|Person's photo|
+|`presence`|Person's presence|Used, when `showPresence` is set to `true`|
+|`users`|Person's user information|Used when `userId` is specified or the `personQuery` is set to `me`|
+
+See [Caching](../customize-components/cache.md) for more details on how to configure the cache.
