@@ -23,6 +23,7 @@ Inherits from [deviceManagementConfigurationSettingValue](../resources/intune-de
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
+|settingValueTemplateReference|[deviceManagementConfigurationSettingValueTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvaluetemplatereference.md)|Setting value template reference Inherited from [deviceManagementConfigurationSettingValue](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvalue.md)|
 
 ## Relationships
 None
@@ -36,7 +37,12 @@ Here is a JSON representation of the resource.
 -->
 ``` json
 {
-  "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingValue"
+  "@odata.type": "#microsoft.graph.deviceManagementConfigurationSimpleSettingValue",
+  "settingValueTemplateReference": {
+    "@odata.type": "microsoft.graph.deviceManagementConfigurationSettingValueTemplateReference",
+    "settingValueTemplateId": "String",
+    "useTemplateDefault": true
+  }
 }
 ```
 

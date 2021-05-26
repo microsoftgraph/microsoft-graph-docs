@@ -40,6 +40,7 @@ Contains properties for device run state of the device health script.
 |postRemediationDetectionScriptOutput|String|Detection script output after remediation|
 |postRemediationDetectionScriptError|String|Error from the detection script after remediation|
 |remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|Remediation state from the lastest device health script execution. Possible values are: `unknown`, `skipped`, `success`, `remediationFailed`, `scriptError`.|
+|assignmentFilterIds|String collection|A list of the assignment filter ids used for health script applicability evaluation|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -67,7 +68,10 @@ Here is a JSON representation of the resource.
   "remediationScriptError": "String",
   "postRemediationDetectionScriptOutput": "String",
   "postRemediationDetectionScriptError": "String",
-  "remediationState": "String"
+  "remediationState": "String",
+  "assignmentFilterIds": [
+    "String"
+  ]
 }
 ```
 

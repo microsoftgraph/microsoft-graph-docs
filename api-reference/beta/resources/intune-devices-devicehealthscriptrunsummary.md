@@ -31,6 +31,7 @@ Contains properties for the run summary of a device management script.
 |issueDetectedDeviceCount|Int32|Number of devices for which the detection script found an issue|
 |detectionScriptErrorDeviceCount|Int32|Number of devices on which the detection script execution encountered an error and did not complete|
 |detectionScriptPendingDeviceCount|Int32|Number of devices which have not yet run the latest version of the device health script|
+|detectionScriptNotApplicableDeviceCount|Int32|Number of devices for which the detection script was not applicable|
 |issueRemediatedDeviceCount|Int32|Number of devices for which the remediation script was able to resolve the detected issue|
 |remediationSkippedDeviceCount|Int32|Number of devices for which remediation was skipped|
 |issueReoccurredDeviceCount|Int32|Number of devices for which the remediation script executed successfully but failed to resolve the detected issue|
@@ -57,6 +58,7 @@ Here is a JSON representation of the resource.
   "issueDetectedDeviceCount": 1024,
   "detectionScriptErrorDeviceCount": 1024,
   "detectionScriptPendingDeviceCount": 1024,
+  "detectionScriptNotApplicableDeviceCount": 1024,
   "issueRemediatedDeviceCount": 1024,
   "remediationSkippedDeviceCount": 1024,
   "issueReoccurredDeviceCount": 1024,

@@ -14,6 +14,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
+- [Activate device esim action result](intune-devices-activatedeviceesimactionresult.md)
 - [Admin consent](intune-devices-adminconsent.md)
 - [Admin consent state](intune-devices-adminconsentstate.md)
 - [App log collection download details](intune-devices-applogcollectiondownloaddetails.md)
@@ -30,7 +31,9 @@ Namespace: microsoft.graph
 - [Binary management condition expression operator type](intune-fencing-binarymanagementconditionexpressionoperatortype.md)
 - [Bulk managed device action result](intune-devices-bulkmanageddeviceactionresult.md)
 - [Chassis type](intune-devices-chassistype.md)
+- [Chrome o s device property](intune-devices-chromeosdeviceproperty.md)
 - [Circular geofence management condition](intune-fencing-circulargeofencemanagementcondition.md)
+- [Cloud PC connectivity issue](intune-devices-cloudpcconnectivityissue.md)
 - [Comanaged devices summary](intune-devices-comanageddevicessummary.md)
 - [Comanagement eligible device](intune-devices-comanagementeligibledevice.md)
 - [Comanagement eligible devices summary](intune-devices-comanagementeligibledevicessummary.md)
@@ -172,6 +175,7 @@ Namespace: microsoft.graph
 - [Managed device partner reported health state](intune-devices-manageddevicepartnerreportedhealthstate.md)
 - [Managed device remote action](intune-devices-manageddeviceremoteaction.md)
 - [Managed device summarized app state](intune-troubleshooting-manageddevicesummarizedappstate.md)
+- [Managed installer status](intune-devices-managedinstallerstatus.md)
 - [Management condition](intune-fencing-managementcondition.md)
 - [Management condition expression](intune-fencing-managementconditionexpression.md)
 - [Management condition expression model](intune-fencing-managementconditionexpressionmodel.md)

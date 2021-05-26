@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.IdentityProviders["{identityProvider-id}"]
+await graphClient.Identity.IdentityProviders["{identityProviderBase-id}"]
 	.Request()
 	.DeleteAsync();
 

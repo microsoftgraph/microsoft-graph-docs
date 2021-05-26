@@ -2712,6 +2712,39 @@ items:
               href: api/intune-apps-mobilelobapp-list.md
             - name: Get
               href: api/intune-apps-mobilelobapp-get.md
+          - name: Office client checkin status
+            href: resources/intune-cirrus-officeclientcheckinstatus.md
+          - name: Office client configuration
+            href: resources/intune-cirrus-officeclientconfiguration.md
+            items:
+            - name: List
+              href: api/intune-cirrus-officeclientconfiguration-list.md
+            - name: Get
+              href: api/intune-cirrus-officeclientconfiguration-get.md
+            - name: assign action
+              href: api/intune-cirrus-officeclientconfiguration-assign.md
+            - name: updatePriorities action
+              href: api/intune-cirrus-officeclientconfiguration-updatepriorities.md
+          - name: Office client configuration assignment
+            href: resources/intune-cirrus-officeclientconfigurationassignment.md
+            items:
+            - name: List
+              href: api/intune-cirrus-officeclientconfigurationassignment-list.md
+            - name: Get
+              href: api/intune-cirrus-officeclientconfigurationassignment-get.md
+            - name: Create
+              href: api/intune-cirrus-officeclientconfigurationassignment-create.md
+            - name: Delete
+              href: api/intune-cirrus-officeclientconfigurationassignment-delete.md
+            - name: Update
+              href: api/intune-cirrus-officeclientconfigurationassignment-update.md
+          - name: Office configuration
+            href: resources/intune-cirrus-officeconfiguration.md
+            items:
+          - name: Office configuration assignment target
+            href: resources/intune-cirrus-officeconfigurationassignmenttarget.md
+          - name: Office configuration group assignment target
+            href: resources/intune-cirrus-officeconfigurationgroupassignmenttarget.md
           - name: Office product id
             href: resources/intune-apps-officeproductid.md
           - name: Office suite app
@@ -2731,6 +2764,8 @@ items:
             href: resources/intune-apps-officesuiteinstallprogressdisplaylevel.md
           - name: Office update channel
             href: resources/intune-apps-officeupdatechannel.md
+          - name: Office user checkin summary
+            href: resources/intune-cirrus-officeusercheckinsummary.md
           - name: Resultant app state detail
             href: resources/intune-apps-resultantappstatedetail.md
           - name: Symantec code signing certificate
@@ -2897,6 +2932,32 @@ items:
               href: api/intune-apps-windowsmobilemsi-delete.md
             - name: Update
               href: api/intune-apps-windowsmobilemsi-update.md
+          - name: Windows office client configuration
+            href: resources/intune-cirrus-windowsofficeclientconfiguration.md
+            items:
+            - name: List
+              href: api/intune-cirrus-windowsofficeclientconfiguration-list.md
+            - name: Get
+              href: api/intune-cirrus-windowsofficeclientconfiguration-get.md
+            - name: Create
+              href: api/intune-cirrus-windowsofficeclientconfiguration-create.md
+            - name: Delete
+              href: api/intune-cirrus-windowsofficeclientconfiguration-delete.md
+            - name: Update
+              href: api/intune-cirrus-windowsofficeclientconfiguration-update.md
+          - name: Windows office client security configuration
+            href: resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md
+            items:
+            - name: List
+              href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-list.md
+            - name: Get
+              href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-get.md
+            - name: Create
+              href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-create.md
+            - name: Delete
+              href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-delete.md
+            - name: Update
+              href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-update.md
           - name: Windows package information
             href: resources/intune-apps-windowspackageinformation.md
           - name: Windows Phone 8.1 AppX
@@ -3106,8 +3167,6 @@ items:
               href: api/intune-enrollment-azureadwindowsautopilotdeploymentprofile-delete.md
             - name: Update
               href: api/intune-enrollment-azureadwindowsautopilotdeploymentprofile-update.md
-          - name: Deleted windows autopilot device state
-            href: resources/intune-enrollment-deletedwindowsautopilotdevicestate.md
           - name: DEP enrollment base profile
             href: resources/intune-enrollment-depenrollmentbaseprofile.md
             items:
@@ -3304,8 +3363,6 @@ items:
               href: api/intune-enrollment-windowsautopilotdeploymentprofileassignment-delete.md
             - name: Update
               href: api/intune-enrollment-windowsautopilotdeploymentprofileassignment-update.md
-          - name: Windows autopilot device deletion state
-            href: resources/intune-enrollment-windowsautopilotdevicedeletionstate.md
           - name: Windows autopilot device identity
             href: resources/intune-enrollment-windowsautopilotdeviceidentity.md
             items:
@@ -3327,8 +3384,6 @@ items:
               href: api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice.md
             - name: unassignResourceAccountFromDevice action
               href: api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice.md
-            - name: deleteDevices action
-              href: api/intune-enrollment-windowsautopilotdeviceidentity-deletedevices.md
           - name: Windows autopilot device type
             href: resources/intune-enrollment-windowsautopilotdevicetype.md
           - name: Windows autopilot profile assignment detailed status
@@ -3863,6 +3918,8 @@ items:
             href: resources/intune-deviceconfig-androidrequiredpasswordcomplexity.md
           - name: Android required password type
             href: resources/intune-deviceconfig-androidrequiredpasswordtype.md
+          - name: Android safety net evaluation type
+            href: resources/intune-deviceconfig-androidsafetynetevaluationtype.md
           - name: Android SCEP certificate profile
             href: resources/intune-deviceconfig-androidscepcertificateprofile.md
             items:
@@ -4086,6 +4143,19 @@ items:
               href: api/intune-deviceconfig-androidworkprofilewificonfiguration-delete.md
             - name: Update
               href: api/intune-deviceconfig-androidworkprofilewificonfiguration-update.md
+          - name: Aosp device owner compliance policy
+            href: resources/intune-deviceconfig-aospdeviceownercompliancepolicy.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-aospdeviceownercompliancepolicy-list.md
+            - name: Get
+              href: api/intune-deviceconfig-aospdeviceownercompliancepolicy-get.md
+            - name: Create
+              href: api/intune-deviceconfig-aospdeviceownercompliancepolicy-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-aospdeviceownercompliancepolicy-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-aospdeviceownercompliancepolicy-update.md
           - name: Aosp device owner device configuration
             href: resources/intune-deviceconfig-aospdeviceownerdeviceconfiguration.md
             items:
@@ -6660,6 +6730,8 @@ items:
         - name: Device management
           href: resources/intune-device-mgt-conceptual.md
           items:
+          - name: Activate device esim action result
+            href: resources/intune-devices-activatedeviceesimactionresult.md
           - name: Admin consent
             href: resources/intune-devices-adminconsent.md
           - name: Admin consent state
@@ -6734,6 +6806,8 @@ items:
             href: resources/intune-devices-bulkmanageddeviceactionresult.md
           - name: Chassis type
             href: resources/intune-devices-chassistype.md
+          - name: Chrome o s device property
+            href: resources/intune-devices-chromeosdeviceproperty.md
           - name: Circular geofence management condition
             href: resources/intune-fencing-circulargeofencemanagementcondition.md
             items:
@@ -6747,6 +6821,19 @@ items:
               href: api/intune-fencing-circulargeofencemanagementcondition-delete.md
             - name: Update
               href: api/intune-fencing-circulargeofencemanagementcondition-update.md
+          - name: Cloud PC connectivity issue
+            href: resources/intune-devices-cloudpcconnectivityissue.md
+            items:
+            - name: List
+              href: api/intune-devices-cloudpcconnectivityissue-list.md
+            - name: Get
+              href: api/intune-devices-cloudpcconnectivityissue-get.md
+            - name: Create
+              href: api/intune-devices-cloudpcconnectivityissue-create.md
+            - name: Delete
+              href: api/intune-devices-cloudpcconnectivityissue-delete.md
+            - name: Update
+              href: api/intune-devices-cloudpcconnectivityissue-update.md
           - name: Comanaged devices summary
             href: resources/intune-devices-comanageddevicessummary.md
           - name: Comanagement eligible device
@@ -7641,6 +7728,8 @@ items:
             href: resources/intune-devices-manageddeviceremoteaction.md
           - name: Managed device summarized app state
             href: resources/intune-troubleshooting-manageddevicesummarizedappstate.md
+          - name: Managed installer status
+            href: resources/intune-devices-managedinstallerstatus.md
           - name: Management condition
             href: resources/intune-fencing-managementcondition.md
             items:
@@ -8304,6 +8393,8 @@ items:
               href: api/intune-devices-windowsmanagementapp-get.md
             - name: Update
               href: api/intune-devices-windowsmanagementapp-update.md
+            - name: setAsManagedInstaller action
+              href: api/intune-devices-windowsmanagementapp-setasmanagedinstaller.md
           - name: Windows management app health state
             href: resources/intune-devices-windowsmanagementapphealthstate.md
             items:
@@ -9158,8 +9249,6 @@ items:
               href: api/intune-shared-devicemanagementscript-assign.md
             - name: hasPayloadLinks action
               href: api/intune-shared-devicemanagementscript-haspayloadlinks.md
-          - name: Device platform type
-            href: resources/intune-shared-deviceplatformtype.md
           - name: Enablement
             href: resources/intune-shared-enablement.md
           - name: Enrollment availability options
@@ -9287,8 +9376,6 @@ items:
               href: api/intune-shared-mobileapptroubleshootingevent-update.md
           - name: Owner type
             href: resources/intune-shared-ownertype.md
-          - name: Policy platform type
-            href: resources/intune-shared-policyplatformtype.md
           - name: Proxied domain
             href: resources/intune-shared-proxieddomain.md
           - name: Report

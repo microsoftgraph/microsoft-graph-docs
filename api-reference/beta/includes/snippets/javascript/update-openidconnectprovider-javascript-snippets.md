@@ -10,12 +10,12 @@ const options = {
 
 const client = Client.init(options);
 
-const identityProvider = {
+const identityProviderBase = {
   responseType: 'id_token'
 };
 
-await client.api('/identityProviders/OIDC-V1-MyTest-085a8a0c-58cb-4b6d-8e07-1328ea404e1a')
+await client.api('/identity/identityProviders/OIDC-V1-Nam_AD_Test-3e393390-ed2d-4794-97f6-5c999ccc61f7')
 	.version('beta')
-	.update(identityProvider);
+	.update(identityProviderBase);
 
 ```

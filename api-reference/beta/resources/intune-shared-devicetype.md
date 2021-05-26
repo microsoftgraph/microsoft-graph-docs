@@ -41,12 +41,12 @@ Device type.
 |androidEnterprise|18|Android enterprise device.|
 |windows10x|19|Windows 10x device.|
 |androidnGMS|20|Android non Google managed device.|
+|chromeOS|21|Cloud PC device.|
+|linux|22|Linux device.|
 |blackberry|100|Blackberry.|
 |palm|101|Palm.|
 |unknown|255|Represents that the device type is unknown.|
 |cloudPC|257|Cloud PC device.|
-
-
 
 
 

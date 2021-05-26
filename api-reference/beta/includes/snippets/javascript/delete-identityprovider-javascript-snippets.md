@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-await client.api('/identityProviders/{id}')
+await client.api('/identity/identityProviders/{id}')
 	.version('beta')
 	.delete();
 

@@ -257,7 +257,16 @@ Content-Length: 9442
       "joinType": "azureADJoined",
       "skuFamily": "Sku Family value",
       "skuNumber": 9,
-      "managementFeatures": "microsoftManagedDesktop"
+      "managementFeatures": "microsoftManagedDesktop",
+      "chromeOSDeviceInfo": [
+        {
+          "@odata.type": "microsoft.graph.chromeOSDeviceProperty",
+          "name": "Name value",
+          "value": "Value value",
+          "valueType": "Value Type value",
+          "updatable": true
+        }
+      ]
     }
   ]
 }

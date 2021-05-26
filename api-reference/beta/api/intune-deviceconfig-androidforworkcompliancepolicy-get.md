@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 1538
+Content-Length: 1611
 
 {
   "value": {
@@ -98,7 +98,8 @@ Content-Length: 1538
     "securityRequireSafetyNetAttestationCertifiedDevice": true,
     "securityRequireGooglePlayServices": true,
     "securityRequireUpToDateSecurityProviders": true,
-    "securityRequireCompanyPortalAppIntegrity": true
+    "securityRequireCompanyPortalAppIntegrity": true,
+    "securityRequiredAndroidSafetyNetEvaluationType": "hardwareBacked"
   }
 }
 ```
