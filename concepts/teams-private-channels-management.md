@@ -10,7 +10,7 @@ doc_type: resourcePageType
 
 # Management of private channels in Microsoft Teams
 
-Microsoft Teams contains private channels that can be managed using Microsoft Graph APIs. For more information on the private channels, see [Teams private channels](https://docs.microsoft.com/microsoftteams/private-channels).
+Microsoft Teams contains private channels that can be managed using Microsoft Graph APIs. For more information on the private channels, see [Private channels in Microsoft Teams](/microsoftteams/private-channels).
 
 The Microsoft Graph API methodology can be used to configure privileges that allow management of private channels.
 
@@ -20,14 +20,14 @@ You can use Microsoft Graph API to control whether members can create private ch
 
 ```HTTP
 
-PATCH /teams/{team-id}​
+   PATCH /teams/{team-id}​
 
-{"memberSettings": ​
+     {"memberSettings": ​
 
-  {​
+      {​
     "allowCreatePrivateChannels": false​
-  }​
-}
+      }​
+     }
 ```
 
 ## Create a private channel on behalf of a team owner
@@ -38,18 +38,18 @@ Use the following Microsoft Graph API to create a private channel on behalf of a
 
 ```HTTP
 
-POST /teams/{team-id}/channels​
+    POST /teams/{team-id}/channels​
 
-{ "membershipType": "Private",​
+           { "membershipType": "Private",​
 
-  "displayName": "{Channel-Name}",​
+              "displayName": "{Channel-Name}",​
 
-  "members":[{    ​
-           "@odata.type":"#microsoft.graph.aadUserConversationMember",​
+              "members":[{    ​
+               "@odata.type":"#microsoft.graph.aadUserConversationMember",​
 
-           "user@odata.bind":"https://graph.microsoft.com/v1.0/users('{user-id}')",​
+               "user@odata.bind":"https://graph.microsoft.com/v1.0/users('{user-id}')",​
 
-           "roles":["owner"]​
+               "roles":["owner"]​
             }]
 ```
 
@@ -79,7 +79,7 @@ You can try the Microsoft Graph APIs commands through [Graph Explorer](https://d
 ### Request
 
   ```HTTP
-    GET https://graph.microsoft.com/v1.0/teams/<team-id>/channels?$filter=membershipType eq 'private'
+    GET https://graph.microsoft.com/v1.0/teams/{team-id}/channels?$filter=membershipType eq 'private'
   ```
 
 ### Response
@@ -110,7 +110,7 @@ You can try the Microsoft Graph APIs commands through [Graph Explorer](https://d
 ### Request
 
  ```HTTP
-    GET https://graph.microsoft.com/v1.0/teams/<team-id>/channels/<channel-id>/filesFolder
+    GET https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/filesFolder
  ```
 
 ### Response
@@ -151,7 +151,7 @@ You can try these commands through [Graph Explorer](https://developer.microsoft.
 ### Request
 
   ```HTTP
-    GET https://graph.microsoft.com/v1.0/teams/<team-id>/channels/<channel-id>/members
+    GET https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/members
   ```
     
 ### Response
@@ -192,7 +192,7 @@ You can try these commands through [Graph Explorer](https://developer.microsoft.
 
   ```HTTP
     PATCH 
-    https://graph.microsoft.com/v1.0/teams/<team-id>/channels/<channel-id>/members/<id>
+    https://graph.microsoft.com/v1.0/teams/{team-id}/channels/{channel-id}/members/{id}
       
     {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
@@ -219,4 +219,6 @@ You can try these commands through [Graph Explorer](https://developer.microsoft.
 
 ## See also
 
-[Use the Microsoft Graph API to work with Microsoft Teams](https://docs.microsoft.com/graph/api/resources/teams-api-overview)
+[Use the Microsoft Graph API to work with Microsoft Teams](../api-reference/v1.0/resources/teams-api-overview.md)
+
+[channel resource type](/graph/api/resources/channel)
