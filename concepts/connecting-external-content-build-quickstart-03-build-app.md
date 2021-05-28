@@ -321,7 +321,7 @@ using Newtonsoft.Json.Serialization;
 using System;
 using System.IO;
 
-namespace PartsInventoryConnector.Graph
+namespace PartsInventoryConnector.MicrosoftGraph
 {
     // The Microsoft Graph SDK serializes enumerations in camelCase.
     // The Microsoft Graph service currently requires the PropertyType enum
@@ -403,7 +403,7 @@ using Newtonsoft.Json;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace PartsInventoryConnector.Graph
+namespace PartsInventoryConnector.MicrosoftGraph
 {
     public class MicrosoftGraphHelper
     {

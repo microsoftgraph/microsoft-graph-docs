@@ -7,6 +7,7 @@ In this step, you will build and run the sample. This code sample will create a 
 3. Use the command: `dotnet run` to run the sample.
 4. Select "**1. Create a connection**". Enter a unique identifier, name, and description for that connection.
 5. Select "**2. Register schema for the current connection option**" Then, wait for the operation to complete.
+6. Select "**3. Push all items to current connection**".
 
   > [!NOTE]
-  > If this step results in an error, wait a few minutes, and then select "**3. Push all items to current connection**".
+  > If step 5 results in an error, wait a few minutes, and then select "**3. Push all items to current connection**".
