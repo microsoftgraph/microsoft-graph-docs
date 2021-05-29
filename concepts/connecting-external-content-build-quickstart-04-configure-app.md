@@ -10,7 +10,7 @@
 3. Run the following commands to store your app ID, app secret, and tenant ID in the user secret store.
   
     ```dotnetcli
-      dotnet user-secrets set appId "YOUR_APP_ID_HERE"
-      dotnet user-secrets set appSecret "YOUR_APP_SECRET_HERE" (#CertificatesAndsecrets))
+      dotnet user-secrets set appId "YOUR_APP_ID_HERE" (Step 5 Register app)
+      dotnet user-secrets set appSecret "YOUR_APP_SECRET_HERE" (Step 10 in Register app)
       dotnet user-secrets set tenantId "YOUR_TENANT_ID_HERE" 
     ```

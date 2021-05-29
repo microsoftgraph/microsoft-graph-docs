@@ -6,7 +6,7 @@ In this step, you'll create a .NET Core console app. After that you will create 
 
 1. Launch Visual Studio 2019 and go to **File** > **New** > **Project**.
 2. Select the **Console App (.NET Core)** template, and select **Next**.
-3. Enter the **Project name**: "PartsInventoryConnector", and select the checkbox for "**Place solution and project in the same directory**", and select **Create** as shown in the next image.
+3. Enter the **Project name**: "PartsInventoryConnector", select the checkbox for "**Place solution and project in the same directory**", and select **Create** as shown in the next image.
 
 ![Screenshot of the "Configure your new project" section](images/connectors-images/build7.png)
 
@@ -391,7 +391,7 @@ namespace PartsInventoryConnector.MicrosoftGraph
 }
 ```
 
-3. Create a new file in the **Microsoft Graph** directory named MicrosoftGraphHelper.cs and place the code below in that file.
+3. Create a new file in the **MicrosoftGraph** directory named MicrosoftGraphHelper.cs and place the code below in that file.
 
 The following code contains methods that use the **MicrosoftGraphServiceClient** to build and send calls to the Microsoft Graph service and process the response.
 
@@ -580,7 +580,7 @@ namespace PartsInventoryConnector
 
 ## Create the connection
 
-1. Under **Microsoft Graph**, open the MicrosoftGraphHelper.cs file and add the following code after the **constructor** method.
+1. Under **MicrosoftGraph**, open the MicrosoftGraphHelper.cs file and add the following code after the **constructor** method.
 
 ```c
 #region Connections
@@ -630,7 +630,7 @@ private static async Task CreateConnectionAsync()
 
 ## Register schema
 
-1. Under **Microsoft Graph**, open the MicrosoftGraphHelper.cs file and add the following code after the **constructor** method.
+1. Under **MicrosoftGraph**, open the MicrosoftGraphHelper.cs file and add the following code after the **constructor** method.
 
 ```c
 #region Schema

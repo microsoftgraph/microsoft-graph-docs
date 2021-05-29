@@ -32,7 +32,7 @@ After all the prerequisites are in place, you will be able to register an applic
 
     ![Screenshot showing the "parts inventory connector api permissions" section](images/connectors-images/build5.png)
 
-10. Select **Certificates &amp; secrets** under **Manage** , then select **New client secret**.
+10. Select **Certificates & secrets** under **Manage** , then select **New client secret**.
 11. Enter a description and choose an expiration time for the secret, then select **Add**.
 
     ![Screenshot showing the "parts inventory connector certs and secrets" section](images/connectors-images/build6.png)
