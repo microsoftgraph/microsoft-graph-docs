@@ -2,7 +2,7 @@
 title: "Create localized organizationalBrandingProperties"
 description: "Create organization branding for a specific locale."
 localization_priority: Normal
-author: "almars"
+author: "AlexanderMars"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -29,7 +29,7 @@ POST to branding/localizations to create a new localization. The id specified in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-POST /organization/{id}/branding/localizations
+POST /organization/{tenant id}/branding/localizations
 ```
 
 ## Optional query parameters

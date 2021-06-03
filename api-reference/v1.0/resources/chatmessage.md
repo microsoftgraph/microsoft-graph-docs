@@ -72,7 +72,7 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 | Relationship   | Type    | Description |
 |:---------------|:--------|:----------|
 |replies|[chatMessage](chatmessage.md)| Replies for a specified message. |
-|hostedContents|[chatMessageHostedContent](chatmessagehostedcontent.md)| Content in a message hosted by Microsoft Teams e.g., images, code snippets etc. |
+|hostedContents|[chatMessageHostedContent](chatmessagehostedcontent.md)| Content in a message hosted by Microsoft Teams - for example, images, code snippets etc. |
 
 ## JSON representation
 

@@ -97,6 +97,10 @@ This component uses the [Person component](./person.md) to display the user and 
 
 The login control uses the global authentication provider described in the [authentication documentation](../providers/providers.md). 
 
+## Cache
+
+This component uses the [Person component](./person.md) to display the user and inherits all cache configuration from it.
+
 ## Extend for more control
 
 For more complex scenarios or a truly custom UX, this component exposes several `protected render*` methods for override in component extensions.

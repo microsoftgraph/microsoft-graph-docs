@@ -8,6 +8,7 @@ GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProv
 
 MailFolder mailFolder = new MailFolder();
 mailFolder.displayName = "displayName-value";
+mailFolder.isHidden = true;
 
 graphClient.me().mailFolders("{id}").childFolders()
 	.buildRequest()

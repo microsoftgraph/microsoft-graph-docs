@@ -1,7 +1,7 @@
 ---
 title: "Get educationUser"
-description: "Retrieve the properties and relationships of a user."
-author: "mmast-msft"
+description: "Read the properties and relationships of an educationUser object."
+author: "mlafleur"
 localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType
@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Retrieve the properties and relationships of a user.
+Read the properties and relationships of an [educationUser](../resources/educationuser.md) object.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -78,53 +78,76 @@ The following is an example of the response.
   "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationUser"
-} -->
+}
+-->
+
 ```http
 HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 508
+Content-Type: application/json
 
 {
-  "id": "13012",
-  "displayName": "Dion Matheson",
-  "givenName": "Dion",
-  "middleName": " ",
-  "surname": "Matheson",
-  "mail": "DionM@contoso.com",
-  "mobilePhone": "+1 (253) 555-0101",
-  "createdBy": {
-    "user": {
-      "displayName": "Susana Rocha",
-      "id": "14012"
+  "value": {
+    "@odata.type": "#microsoft.graph.educationUser",
+    "id": "90eedea1-dea1-90ee-a1de-ee90a1deee90",
+    "primaryRole": "String",
+    "middleName": "String",
+    "externalSource": "String",
+    "externalSourceDetail": "String",
+    "residenceAddress": {
+      "@odata.type": "microsoft.graph.physicalAddress"
+    },
+    "mailingAddress": {
+      "@odata.type": "microsoft.graph.physicalAddress"
+    },
+    "student": {
+      "@odata.type": "microsoft.graph.educationStudent"
+    },
+    "teacher": {
+      "@odata.type": "microsoft.graph.educationTeacher"
+    },
+    "createdBy": {
+      "@odata.type": "microsoft.graph.identitySet"
+    },
+    "accountEnabled": "Boolean",
+    "assignedLicenses": [
+      {
+        "@odata.type": "microsoft.graph.assignedLicense"
+      }
+    ],
+    "assignedPlans": [
+      {
+        "@odata.type": "microsoft.graph.assignedPlan"
+      }
+    ],
+    "businessPhones": [
+      "String"
+    ],
+    "department": "String",
+    "displayName": "String",
+    "givenName": "String",
+    "mail": "String",
+    "mailNickname": "String",
+    "mobilePhone": "String",
+    "passwordPolicies": "String",
+    "passwordProfile": {
+      "@odata.type": "microsoft.graph.passwordProfile"
+    },
+    "officeLocation": "String",
+    "preferredLanguage": "String",
+    "provisionedPlans": [
+      {
+        "@odata.type": "microsoft.graph.provisionedPlan"
+      }
+    ],
+    "refreshTokensValidFromDateTime": "String (timestamp)",
+    "showInAddressList": "Boolean",
+    "surname": "String",
+    "usageLocation": "String",
+    "userPrincipalName": "String",
+    "userType": "String",
+    "onPremisesInfo": {
+      "@odata.type": "microsoft.graph.educationOnPremisesInfo"
     }
-  },
-  "externalSource": "sis",
-  "mailingAddress": {
-    "city": "Los Angeles",
-    "countryOrRegion": "United States",
-    "postalCode": "98055",
-    "state": "CA",
-    "street": "12345 Main St."
-  },
-  "primaryRole": "student",
-  "residenceAddress": {
-    "city": "Los Angeles",
-    "countryOrRegion": "United States",
-    "postalCode": "98055",
-    "state": "CA",
-    "street": "12345 Main St."
-  },
+  }
 }
 ```
-
-<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
-2015-10-25 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "Get educationUser",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": "",
-  "suppressions": [
-  ]
-}-->

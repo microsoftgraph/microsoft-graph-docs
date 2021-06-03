@@ -60,6 +60,8 @@ The following table shows the properties that are required when you create the u
 |azureAdRegistered|Boolean|The user experience work from anywhere device's azureAdRegistered.|
 |azureAdDeviceId|String|The user experience work from anywhere azure Ad device Id.|
 |azureAdJoinType|String|The user experience work from anywhere device's azure Ad joinType.|
+|osDescription|String|The user experience work from anywhere device's OS Description.|
+|osVersion|String|The user experience work from anywhere device's OS Version.|
 
 
 
@@ -73,7 +75,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsWorkFromAnywhereMetrics/{userExperienceAnalyticsWorkFromAnywhereMetricId}/metricDevices
 Content-type: application/json
-Content-length: 505
+Content-length: 585
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsWorkFromAnywhereDevice",
@@ -87,7 +89,9 @@ Content-length: 505
   "autoPilotProfileAssigned": true,
   "azureAdRegistered": true,
   "azureAdDeviceId": "Azure Ad Device Id value",
-  "azureAdJoinType": "Azure Ad Join Type value"
+  "azureAdJoinType": "Azure Ad Join Type value",
+  "osDescription": "Os Description value",
+  "osVersion": "Os Version value"
 }
 ```
 
@@ -96,7 +100,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 554
+Content-Length: 634
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsWorkFromAnywhereDevice",
@@ -111,7 +115,9 @@ Content-Length: 554
   "autoPilotProfileAssigned": true,
   "azureAdRegistered": true,
   "azureAdDeviceId": "Azure Ad Device Id value",
-  "azureAdJoinType": "Azure Ad Join Type value"
+  "azureAdJoinType": "Azure Ad Join Type value",
+  "osDescription": "Os Description value",
+  "osVersion": "Os Version value"
 }
 ```
 

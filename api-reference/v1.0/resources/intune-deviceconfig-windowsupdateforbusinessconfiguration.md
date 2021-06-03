@@ -83,7 +83,7 @@ Here is a JSON representation of the resource.
   "microsoftUpdateServiceAllowed": true,
   "driversExcluded": true,
   "installationSchedule": {
-    "@odata.type": "microsoft.graph.windowsUpdateInstallScheduleType",
+    "@odata.type": "microsoft.graph.windowsUpdateScheduledInstall",
     "scheduledInstallDay": "String",
     "scheduledInstallTime": "String (time of day)"
   },
@@ -96,11 +96,6 @@ Here is a JSON representation of the resource.
   "businessReadyUpdatesOnly": "String"
 }
 ```
-
-
-
-
-
 
 
 

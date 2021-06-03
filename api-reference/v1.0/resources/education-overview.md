@@ -23,7 +23,7 @@ To deploy apps that are integrated with the Education APIs in Microsoft Graph, s
 
 To show a consent dialog box, use the following REST call.
 
-``` http
+```http
 GET https://login.microsoftonline.com/{tenant}/adminconsent?
 client_id={clientId}&state=12345&redirect_uri={redirectUrl}
 ```
@@ -54,10 +54,10 @@ The rostering APIs provide the following key resources:
 
 The rostering APIs support the following scenarios:
 
-- [List all schools](../api/educationroot-list-schools.md)
+- [List all schools](../api/educationschool-list.md)
 - [List schools in which a class is taught](../api/educationclass-list-schools.md)
 - [List schools for a user](../api/educationuser-list-schools.md)
-- [Get all classes](../api/educationroot-list-classes.md)
+- [Get all classes](../api/educationclass-list.md)
 - [Get classes in a school](../api/educationschool-list-classes.md)
 - [List classes for a user](../api/educationuser-list-classes.md)
 - [Add classes to a school](../api/educationschool-post-classes.md)

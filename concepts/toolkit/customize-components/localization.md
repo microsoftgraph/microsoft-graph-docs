@@ -194,3 +194,20 @@ The strings can be set at a global level or per component (with the `_components
   currentYearSubtitle: "Current"
 }
 ```
+
+### File
+
+```ts
+'file': {
+  modifiedSubtitle: 'Modified',
+  sizeSubtitle: 'Size'
+};
+```
+
+### File-List
+
+```ts
+"file-list": {
+  showMoreSubtitle: 'Show more items'
+}
+```

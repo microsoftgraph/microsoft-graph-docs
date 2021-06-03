@@ -120,7 +120,8 @@ Content-length: 279
   "closeDateTime": "2014-02-11T00:00:00Z",
   "dueDateTime": "2014-02-01T00:00:00Z",
   "assignDateTime": "2014-01-01T00:00:00Z",
-  "assignedDateTime": "2014-01-01T00:00:00Z"
+  "assignedDateTime": "2014-01-01T00:00:00Z",
+  "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!0sGAoOieeE6iSj1WXCV-nYYTuh2luKRDvUVGQBLOmvYpRzc5ARnCRorRht6P3MhU/items/01N74NOEZL7P3VK22SQFDKBZ3PHVPKDVAQ",
 }
 ```
 

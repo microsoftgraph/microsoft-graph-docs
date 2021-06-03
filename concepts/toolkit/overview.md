@@ -29,12 +29,14 @@ The components are also available as [React components](./get-started/mgt-react.
 |[Person](./components/person.md)|Displays a person or contact by their photo, name, and/or email address.|
 |[People](./components/people.md)|Displays a group of people or contacts by their photos or initials.|
 |[Agenda](./components/agenda.md)|Displays events in a user or group's calendar.|
-|[Tasks](./components/tasks.md)|Displays and enables adding, removing, completing, or editing of tasks from Microsoft Planner or Microsoft To Do.|
 |[People picker](./components/people-picker.md)|Provides the ability to search for people and renders the list of results.|
 |[Person card](./components/person-card.md)|A flyout used on the person component to display more profile information about a user.|
+|[File](./components/file.md)|Represents a file or folder with icon, filename, author, and more.|
+|[File list](./components/file-list.md)|Displays a list of multiple files or folders.|
 |[Get](./components/get.md)|Make a GET query to any Microsoft Graph API directly in your HTML.|
 |[Channel picker](./components/teams-channel-picker.md)|Provides the ability to search for Microsoft Teams channels to select a channel from a rendered list of results.|
 |[To Do](./components/todo.md)|Displays and enables adding, removing, completing, or editing of tasks from Microsoft To Do.|
+|[Tasks](./components/tasks.md)|Displays and enables adding, removing, completing, or editing of tasks from Microsoft Planner or Microsoft To Do.|
 
 ### Providers
 
@@ -43,6 +45,7 @@ The components are also available as [React components](./get-started/mgt-react.
 |Providers|Description|
 |---------|-----------|
 |[Msal](./providers/msal.md)|Uses MSAL.js to sign in users and acquire tokens to use with Microsoft Graph.|
+|[Msal 2.0](./providers/msal2.md)| Uses msal-browser to sign in users and acquire tokens to use with Microsoft Graph.|
 |[Electron](./providers/electron.md)|Authenticates and provides Microsoft Graph access to components inside of Electron apps|
 |[SharePoint](./providers/sharepoint.md)|Authenticates and provides Microsoft Graph access to components inside of SharePoint web parts.|
 |[Teams](./providers/teams.md)|Authenticates and provides Microsoft Graph access to components inside of Microsoft Teams tabs.|

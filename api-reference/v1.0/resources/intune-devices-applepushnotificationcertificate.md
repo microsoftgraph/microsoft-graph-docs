@@ -30,6 +30,7 @@ Apple push notification certificate.
 |topicIdentifier|String|Topic Id.|
 |lastModifiedDateTime|DateTimeOffset|Last modified date and time for Apple push notification certificate.|
 |expirationDateTime|DateTimeOffset|The expiration date and time for Apple push notification certificate.|
+|certificateSerialNumber|String|Certificate serial number. This property is read-only.|
 |certificate|String|Not yet documented|
 
 ## Relationships
@@ -51,14 +52,10 @@ Here is a JSON representation of the resource.
   "topicIdentifier": "String",
   "lastModifiedDateTime": "String (timestamp)",
   "expirationDateTime": "String (timestamp)",
+  "certificateSerialNumber": "String",
   "certificate": "String"
 }
 ```
-
-
-
-
-
 
 
 

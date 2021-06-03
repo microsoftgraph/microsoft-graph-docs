@@ -150,6 +150,10 @@ When using the default template and default `renderAttendees` template, addition
 
 The login control uses the global authentication provider described in the [authentication documentation](../providers/providers.md).
 
+## Cache
+
+The `mgt-agenda` component doesn't cache any data.
+
 ## Extend for more control
 
 For more complex scenarios or a truly custom UX, this component exposes several `protected` render* methods for override in component extensions.

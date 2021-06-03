@@ -1,7 +1,7 @@
 ---
 title: "Get a group setting"
 description: "Retrieve the properties of a specific of group setting object."
-author: "yyuank"
+author: "Jordanndahl"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType

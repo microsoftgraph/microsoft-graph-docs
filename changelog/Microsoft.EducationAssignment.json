@@ -2,12 +2,114 @@
   "changelog": [
     {
       "ChangeList": [
-         {
+        {
+          "Id": "f0bdabdb-62f0-497b-bd30-078719cfb0ff",
+          "ApiChange": "Method",
+          "ChangedApiName": "educationAssignmentResource",
+          "ChangeType": "Removal",
+          "Description": "Removed the support for PATCH operations on the **educationAssignmentResource** resource.",
+          "Target": "educationAssignmentResource"
+        }
+      ],
+      "Id": "f0bdabdb-62f0-497b-bd30-078719cfb0ff",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-06-02T18:46:18.701Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },  
+    {
+      "ChangeList": [
+        {
+          "Id": "837e4ca0-5c4e-4d56-bdff-01ff7376c219",
+          "ApiChange": "Method",
+          "ChangedApiName": "setUpResourcesFolder",
+          "ChangeType": "Addition",
+          "Description": "Added the [setUpResourcesFolder](https://docs.microsoft.com/en-us/graph/api/educationassignment-setupresourcesfolder?view=graph-rest-beta) method to the [educationAssignment](https://docs.microsoft.com/en-us/graph/api/resources/educationassignment?view=graph-rest-beta) resource.",
+          "Target": "educationAssignment"
+        },
+        {
+          "Id": "837e4ca0-5c4e-4d56-bdff-01ff7376c219",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationMakeCodeResource",
+          "ChangeType": "Change",
+          "Description": "Removed the **educationMakeCodeResource** resource type effective May 17, 2021. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://developer.microsoft.com/en-us/graph/blogs/breaking-changes-to-the-microsoft-graph-assignments-api-beta/).",
+          "Target": "educationMakeCodeResource"
+        },
+        {
+          "Id": "837e4ca0-5c4e-4d56-bdff-01ff7376c219",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationOneNoteResource",
+          "ChangeType": "Change",
+          "Description": "Removed the **educationOneNoteResource** resource type effective May 17, 2021. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://developer.microsoft.com/en-us/graph/blogs/breaking-changes-to-the-microsoft-graph-assignments-api-beta/).",
+          "Target": "educationOneNoteResource"
+        },
+        {
+          "Id": "837e4ca0-5c4e-4d56-bdff-01ff7376c219",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationFormResource",
+          "ChangeType": "Change",
+          "Description": "Removed the **educationFormResource** resource type effective May 17, 2021. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://developer.microsoft.com/en-us/graph/blogs/breaking-changes-to-the-microsoft-graph-assignments-api-beta/).",
+          "Target": "educationFormResource"
+        },
+        {
+          "Id": "837e4ca0-5c4e-4d56-bdff-01ff7376c219",
+          "ApiChange": "Property",
+          "ChangedApiName": "releasedBy",
+          "ChangeType": "Change",
+          "Description": "Removed the **releasedBy** property from the [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-beta) resource effective May 17, 2021. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://developer.microsoft.com/en-us/graph/blogs/breaking-changes-to-the-microsoft-graph-assignments-api-beta/).",
+          "Target": "educationSubmission"
+        },
+        {
+          "Id": "837e4ca0-5c4e-4d56-bdff-01ff7376c219",
+          "ApiChange": "Property",
+          "ChangedApiName": "releasedDateTime",
+          "ChangeType": "Change",
+          "Description": "Removed the **releasedDateTime** property from the [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationSubmission?view=graph-rest-beta) resource effective May 17, 2021. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://developer.microsoft.com/en-us/graph/blogs/breaking-changes-to-the-microsoft-graph-assignments-api-beta/).",
+          "Target": "educationSubmission"
+        },
+        {
+          "Id": "837e4ca0-5c4e-4d56-bdff-01ff7376c219",
+          "ApiChange": "Method",
+          "ChangedApiName": "getResourcesFolderUrl",
+          "ChangeType": "Change",
+          "Description": "Removed the [getResourcesFolderUrl](https://docs.microsoft.com/en-us/graph/api/educationassignment-getresourcesfolderurl?view=graph-rest-beta) method and replaced with new property `resourcesFolderUrl` exposed on [educationAssignment](https://docs.microsoft.com/en-us/graph/api/resources/educationAssignment?view=graph-rest-beta) resource. For more details, see [Breaking changes to the Microsoft Graph assignments API (beta)](https://developer.microsoft.com/en-us/graph/blogs/breaking-changes-to-the-microsoft-graph-assignments-api-beta/).",
+          "Target": "getResourcesFolderUrl"
+        }
+      ],
+      "Id": "837e4ca0-5c4e-4d56-bdff-01ff7376c219",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-05-21T23:46:18.701Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3d69383f-3ca5-45bd-bbaf-e2310e2dec25",
+          "ApiChange": "Method",
+          "ChangedApiName": "setUpResourcesFolder",
+          "ChangeType": "Addition",
+          "Description": "Added the [setUpResourcesFolder](https://docs.microsoft.com/en-us/graph/api/educationsubmission-setupresourcesfolder?view=graph-rest-beta) method to the [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationsubmission?view=graph-rest-beta) resource.",
+          "Target": "educationSubmission"
+        }
+      ],
+      "Id": "3d69383f-3ca5-45bd-bbaf-e2310e2dec25",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-05-12T18:46:18.701Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "55c6e37b-93d5-4684-9145-5d36f338faf3",
           "ApiChange": "Permission",
           "ChangedApiName": "educationAssignment",
           "ChangeType": "Addition",
-          "Description": "Added support for application permissions (in private preview) to the [educationAssignment](https://docs.microsoft.com/en-us/graph/api/resources/educationassignment?view=graph-rest-beta) resource.",
+          "Description": "Added support for application permissions to the [educationAssignment](https://docs.microsoft.com/en-us/graph/api/resources/educationassignment?view=graph-rest-beta) resource.",
           "Target": "educationAssignment"
         },
         {
@@ -15,7 +117,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "educationCategory",
           "ChangeType": "Addition",
-          "Description": "Added support for application permissions (in private preview) to the [educationCategory](https://docs.microsoft.com/en-us/graph/api/resources/educationcategory?view=graph-rest-beta) resource.",
+          "Description": "Added support for application permissions to the [educationCategory](https://docs.microsoft.com/en-us/graph/api/resources/educationcategory?view=graph-rest-beta) resource.",
           "Target": "educationCategory"
         },
         {
@@ -23,7 +125,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "educationAssignmentResource",
           "ChangeType": "Addition",
-          "Description": "Added support for application permissions (in private preview) to the [educationAssignmentResource](https://docs.microsoft.com/en-us/graph/api/resources/educationassignmentresource?view=graph-rest-beta) resource.",
+          "Description": "Added support for application permissions to the [educationAssignmentResource](https://docs.microsoft.com/en-us/graph/api/resources/educationassignmentresource?view=graph-rest-beta) resource.",
           "Target": "educationAssignmentResource"
         },
         {
@@ -31,7 +133,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "educationSubmission",
           "ChangeType": "Addition",
-          "Description": "Added support for application permissions (in private preview) to the [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationsubmission?view=graph-rest-beta) resource.",
+          "Description": "Added support for application permissions to the [educationSubmission](https://docs.microsoft.com/en-us/graph/api/resources/educationsubmission?view=graph-rest-beta) resource.",
           "Target": "educationSubmission"
         },
         {
@@ -39,7 +141,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "educationSubmissionResource",
           "ChangeType": "Addition",
-          "Description": "Added support for application permissions (in private preview) to the [educationSubmissionResource](https://docs.microsoft.com/en-us/graph/api/resources/educationsubmissionresource?view=graph-rest-beta) resource.",
+          "Description": "Added support for application permissions to the [educationSubmissionResource](https://docs.microsoft.com/en-us/graph/api/resources/educationsubmissionresource?view=graph-rest-beta) resource.",
           "Target": "educationSubmissionResource"
         },
         {
@@ -47,7 +149,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "educationRubric",
           "ChangeType": "Addition",
-          "Description": "Added support for application permissions (in private preview) to the [educationRubric](https://docs.microsoft.com/en-us/graph/api/resources/educationrubric?view=graph-rest-beta) resource.",
+          "Description": "Added support for application permissions to the [educationRubric](https://docs.microsoft.com/en-us/graph/api/resources/educationrubric?view=graph-rest-beta) resource.",
           "Target": "educationRubric"
         },
         {
@@ -55,7 +157,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "educationAssignmentDefaults",
           "ChangeType": "Addition",
-          "Description": "Added support for application permissions (in private preview) to the [educationAssignmentDefaults](https://docs.microsoft.com/en-us/graph/api/resources/educationassignmentdefaults?view=graph-rest-beta) resource.",
+          "Description": "Added support for application permissions to the [educationAssignmentDefaults](https://docs.microsoft.com/en-us/graph/api/resources/educationassignmentdefaults?view=graph-rest-beta) resource.",
           "Target": "educationAssignmentDefaults"
         },
         {
@@ -63,7 +165,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "educationAssignmentSettings",
           "ChangeType": "Addition",
-          "Description": "Added support for application permissions (in private preview) to the [educationAssignmentSettings](https://docs.microsoft.com/en-us/graph/api/resources/educationassignmentsettings?view=graph-rest-beta) resource.",
+          "Description": "Added support for application permissions to the [educationAssignmentSettings](https://docs.microsoft.com/en-us/graph/api/resources/educationassignmentsettings?view=graph-rest-beta) resource.",
           "Target": "educationAssignmentSettings"
         },
         {
@@ -71,14 +173,14 @@
           "ApiChange": "Permission",
           "ChangedApiName": "educationOutcome",
           "ChangeType": "Addition",
-          "Description": "Added support for application permissions (in private preview) to the [educationOutcome](https://docs.microsoft.com/en-us/graph/api/resources/educationoutcome?view=graph-rest-beta) resource.",
+          "Description": "Added support for application permissions to the [educationOutcome](https://docs.microsoft.com/en-us/graph/api/resources/educationoutcome?view=graph-rest-beta) resource.",
           "Target": "educationOutcome"
         }
       ],
       "Id": "55c6e37b-93d5-4684-9145-5d36f338faf3",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-04-22T00:00:00",
+      "CreatedDateTime": "2021-04-30T00:00:00",
       "WorkloadArea": "Education",
       "SubArea": ""
     },

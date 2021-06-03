@@ -53,6 +53,7 @@ PATCH /users/{userId}/onlineMeetings/{meetingId}
 The table below lists the properties that can be updated. In the request body, include only the properties that need updating, with the following exceptions:
 
 - Adjusting the start or end date/time of an online meeting always requires both **startDateTime** and **endDateTime** properties in the request body.
+- **organizer** field of the **participants** property cannot be updated. The organizer of the meeting cannot be modified once the meeting is created.
 - Adjusting the **attendees** field of the **participants** property, such as adding or removing an attendee to the meeting, always requires the full list of attendees in the request body.
 
 | Property             | Type                                                         | Description                                                                                                                                    |
@@ -60,7 +61,7 @@ The table below lists the properties that can be updated. In the request body, i
 | startDateTime        | DateTime                                                     | The meeting start time in UTC.                                                                                                                 |
 | endDateTime          | DateTime                                                     | The meeting end time in UTC.                                                                                                                   |
 | subject              | String                                                       | The subject of the online meeting.                                                                                                             |
-| participants         | [meetingParticipants](../resources/meetingparticipants.md)   | The participants associated with the online meeting. This includes the organizer and the attendees.                                            |
+| participants         | [meetingParticipants](../resources/meetingparticipants.md)   | The participants associated with the online meeting. Only attendees can be updated.                                            |
 | isEntryExitAnnounced | Boolean                                                      | Whether or not to announce when callers join or leave.                                                                                         |
 | lobbyBypassSettings  | [lobbyBypassSettings](../resources/lobbyBypassSettings.md)   | Specifies which participants can bypass the meeting lobby.                                                                                     |
 | allowedPresenters    | onlineMeetingPresenters                                      | Specifies who can be a presenter in a meeting. Possible values are everyone, organization, roleIsPresenter, organizer, and unknownFutureValue. |

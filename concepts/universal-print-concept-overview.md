@@ -3,7 +3,7 @@ title: "Universal Print cloud printing API overview"
 description: "Universal Print is a modern print solution that organizations can use to manage their print infrastructure through cloud services from Microsoft."
 author: "braedenp-msft"
 localization_priority: Priority
-ms.prod: "universal-print"
+ms.prod: "cloud-printing"
 ms.custom: scenarios:getting-started
 ---
 
@@ -91,7 +91,7 @@ Looking for the API reference for this service?
 
 ## Provide feedback
 
-We'd love to hear your feedback about the Universal Print APIs. Provide your suggestions on [UserVoice](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests).
+We'd love to hear your feedback about the Universal Print APIs. Provide your suggestions on the [Microsoft 365 Developer Platform ideas forum](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
 
 ## See also
 

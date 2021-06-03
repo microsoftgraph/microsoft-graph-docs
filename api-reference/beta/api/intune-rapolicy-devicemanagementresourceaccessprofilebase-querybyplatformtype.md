@@ -53,7 +53,7 @@ The following table shows the parameters that can be used with this action.
 
 
 ## Response
-If successful, this action returns a `200 OK` response code and a [iQueryable_1OfDeviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-iqueryable_1ofdevicemanagementresourceaccessprofilebase.md) in the response body.
+If successful, this action returns a `200 OK` response code and a [deviceManagementResourceAccessProfileBase](../resources/intune-rapolicy-devicemanagementresourceaccessprofilebase.md) collection in the response body.
 
 ## Example
 
@@ -75,12 +75,23 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 117
+Content-Length: 487
 
 {
-  "value": {
-    "@odata.type": "microsoft.graph.iQueryable_1OfDeviceManagementResourceAccessProfileBase"
-  }
+  "value": [
+    {
+      "@odata.type": "#microsoft.graph.deviceManagementResourceAccessProfileBase",
+      "id": "f442dd4a-dd4a-f442-4add-42f44add42f4",
+      "version": 7,
+      "displayName": "Display Name value",
+      "description": "Description value",
+      "creationDateTime": "2017-01-01T00:00:43.1365422-08:00",
+      "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
+      "roleScopeTagIds": [
+        "Role Scope Tag Ids value"
+      ]
+    }
+  ]
 }
 ```
 

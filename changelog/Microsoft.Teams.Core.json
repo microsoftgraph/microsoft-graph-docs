@@ -1,6 +1,56 @@
 {
 
   "changelog": [
+        {
+      "ChangeList": [
+        {
+          "Id": "185e5343-c8a2-4716-995f-1427973c31ca",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "userPrincipalName",
+          "ChangeType": "Addition",
+          "Description": "Added support for using user principal names in request URLs for [looking up chats](https://docs.microsoft.com/en-us/graph/api/chat-list?view=graph-rest-beta) of a user.",
+          "Target": "chat"
+        },
+        {
+          "Id": "185e5343-c8a2-4716-995f-1427973c31ca",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "userPrincipalName",
+          "ChangeType": "Addition",
+          "Description": "Added support for using user principal names in request URLs for [looking up joined teams](https://docs.microsoft.com/en-us/graph/api/user-list-joinedteams?graph-rest-1.0&tabs=http) of a user.",
+          "Target": "team"
+        },
+        {
+          "Id": "185e5343-c8a2-4716-995f-1427973c31ca",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "userPrincipalName",
+          "ChangeType": "Addition",
+          "Description": "Added support for using user principal names in request URLs for [managing apps in teams and chats](https://docs.microsoft.com/en-us/graph/api/resources/teamsappinstallation?view=graph-rest-1.0&tabs=http) for a user.",
+          "Target": "teamsAppInstallation"
+        },
+        {
+          "Id": "185e5343-c8a2-4716-995f-1427973c31ca",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "userPrincipalName",
+          "ChangeType": "Addition",
+          "Description": "Added support for using user principal names in request URLs for [sending activity feed notifications](https://docs.microsoft.com/en-us/graph/api/userteamwork-sendactivitynotification?view=graph-rest-1.0&tabs=http) to a user.",
+          "Target": "userTeamwork"
+        },
+        {
+          "Id": "185e5343-c8a2-4716-995f-1427973c31ca",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "userPrincipalName",
+          "ChangeType": "Addition",
+          "Description": "Added support for using user principal names in request URLs for [fetching hosted content](https://docs.microsoft.com/en-us/graph/api/chatmessage-list-hostedcontents?view=graph-rest-1.0&tabs=http) for a user.",
+          "Target": "chatMessageHostedContent"
+        }   
+      ],
+      "Id": "185e5343-c8a2-4716-995f-1427973c31ca",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-05-27T16:05:49.407Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
     {
       "ChangeList": [
         {

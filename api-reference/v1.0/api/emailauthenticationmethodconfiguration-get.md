@@ -33,7 +33,7 @@ For delegated scenarios, the administrator needs the Global admin role. For more
 -->
 
 ```http
-GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfiguration/email
+GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/email
 ```
 
 ## Request headers
@@ -83,7 +83,7 @@ Content-length: 491
     "@odata.type": "#microsoft.graph.emailAuthenticationMethodConfiguration",
     "id": "Email",
     "state": "enabled",
-    "allowExternalIdToUseEmailOtp": "True"
+    "allowExternalIdToUseEmailOtp": "enabled"
   }
 }
 ```

@@ -29,8 +29,3 @@ Defender’s default action to take on detected Malware threats.
 
 
 
-
-
-
-
-

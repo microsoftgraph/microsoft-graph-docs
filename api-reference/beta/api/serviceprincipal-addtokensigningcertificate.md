@@ -61,7 +61,7 @@ The following is an example of the request.
 }-->
 
 ```http
-POST https://graph.microsoft.com/beta/servicePrincipals/7c8d4399-b4bf-413a-8b6a-c577790cae7d/addTokenSigningCertificate
+POST https://graph.microsoft.com/beta/servicePrincipals/004375c5-6e2e-4dec-95e3-626838cb9f80/addTokenSigningCertificate
 Content-type: application/json
 
 {
@@ -88,7 +88,6 @@ Content-type: application/json
 ---
 
 
-
 ### Response
 
 The following is an example of the response.
@@ -104,15 +103,16 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-    "customKeyIdentifier": null,
-    "displayName": "customDisplayName",
-    "endDateTime": "2023-06-29T00:00:00Z",
-    "key": null,
-    "keyId": "b859fc29-969f-48b2-9a27-8399b69f441e",
-    "startDateTime": "2020-06-29T00:00:00Z",
-    "type": "AsymmetricX509Cert",
-    "thumbprint":"QWESRTGFWQWEDSASDTGGSADASDWQW",
-    "usage": "Verify"
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#microsoft.graph.selfSignedCertificate",
+  "customKeyIdentifier": "2iD8ppbE+D6Kmu1ZvjM2jtQh88E=",
+  "displayName": "CN=customDisplayName",
+  "endDateTime": "2024-01-25T00:00:00Z",
+  "key": "MIICuDCCAaCgAwIBAgIIYXJsNtL4oUMwDQYJKoZIhvcNAQEL...StP8s/w==",
+  "keyId": "93bc223f-7235-4b9c-beea-d66847531c49",
+  "startDateTime": "2021-05-05T18:38:51.8100763Z",
+  "thumbprint": "DA20FCA696C4F83E8A9AED59BE33368ED421F3C1",
+  "type": "AsymmetricX509Cert",
+  "usage": "Verify"
 }
 ```
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98

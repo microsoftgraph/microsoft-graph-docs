@@ -47,16 +47,11 @@ Here is a JSON representation of the resource.
   "@odata.type": "#microsoft.graph.managedEBookAssignment",
   "id": "String (identifier)",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
   },
   "installIntent": "String"
 }
 ```
-
-
-
-
-
 
 
 

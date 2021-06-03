@@ -2,7 +2,7 @@
 title: "groupLifecyclePolicy: renewGroup"
 description: "Renew a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy."
 localization_priority: Normal
-author: "yyuank"
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Renew a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy.
 
-> **Note:** When calling the v1.0 endpoint, use the [Renew group](/graph/api/group-renew?view=graph-rest-1.0) method.
+> **Note:** When calling the v1.0 endpoint, use the [Renew group](/graph/api/group-renew?view=graph-rest-1.0&preserve-view=true) method.
 
 ## Permissions
 

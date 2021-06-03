@@ -2,7 +2,7 @@
 title: "group resource type"
 description: "Represents an Azure Active Directory (Azure AD) group, which can be a Microsoft 365 group, a team in Microsoft Teams, or a security group."
 localization_priority: Priority
-author: "yyuank"
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: resourcePageType
 ---

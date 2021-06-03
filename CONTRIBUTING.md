@@ -111,7 +111,7 @@ When you're finished with your work and are ready to have it merged into the cen
 3. Click the **Pull Request** button at the top of the page.
 4. Ensure that the Base branch is `microsoftgraph/microsoft-graph-docs@main` and the Head branch is `<your username>/microsoft-graph-docs@<branch name>`.
 5. Click the **Update Commit Range** button.
-6. Give your pull request a Title, and describe all the changes you're making. If your bug fixes a UserVoice item or GitHub issue, be sure to reference that issue in the description.
+6. Give your pull request a Title, and describe all the changes you're making. If your bug fixes a feature request item or GitHub issue, be sure to reference that issue in the description.
 7. Submit the pull request.
 
 One of the site administrators will now process your pull request.

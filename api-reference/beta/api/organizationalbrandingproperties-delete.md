@@ -2,7 +2,7 @@
 title: "Delete organizationalBrandingProperties"
 description: "Delete organizationalBrandingProperties."
 localization_priority: Normal
-author: "almars"
+author: "AlexanderMars"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /organization/{id}/branding
+DELETE /organization/{tenant id}/branding
 ```
 
 ## Request headers

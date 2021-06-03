@@ -13,20 +13,34 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object. Use this object for get role assignments in Microsoft Intune. For other Microsoft 365 applications (like Azure AD), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
+Get the properties and relationships of a [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object of an RBAC provider. 
+
+The following RBAC providers are currently supported:
+- cloud PC 
+- device management (Intune)
+
+For other Microsoft 365 applications (like Azure AD), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
+
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference). 
 
-| Permission type | Permissions (from least to most privileged) |
-|:--------------- |:------------------------------------------- |
-| Delegated (work or school account) | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
+|Supported provider      | Delegated (work or school account)  | Delegated (personal Microsoft account) | Application |
+|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
+| Cloud PC | CloudPC.Read.All, CloudPC.ReadWrite.All | Not supported. | CloudPC.Read.All, CloudPC.ReadWrite.All |
+| Intune | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All | Not supported.| DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
 
 ## HTTP request
 
+To get the properties and relationships of a unifiedRoleAssignmentMultiple for a cloud PC provider:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /roleManagement/cloudPC/roleAssignments/{id}
+```
+
+To get the properties and relationships of a unifiedRoleAssignmentMultiple for an Intune provider:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/deviceManagement/roleAssignments/{id}
@@ -52,7 +66,7 @@ If successful, this method returns a `200 OK` response code and the requested [u
 
 ## Examples
 
-### Example 1: Get a directory-scoped roleAssignmentMultiple in Intune
+### Example 1: Get a directory-scoped roleAssignmentMultiple in an Intune provider
 
 #### Request
 
@@ -112,7 +126,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get a roleAssignmentMultiple in Intune assigned to a group
+### Example 2: Get a roleAssignmentMultiple assigned to a group in an Intune provider
 
 #### Request
 
@@ -185,7 +199,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Get a directory-scoped roleAssignmentMultiple with `$expand`
+### Example 3: Get a directory-scoped roleAssignmentMultiple in an Intune provider with `$expand`
 
 #### Request
 
@@ -280,7 +294,129 @@ Content-type: application/json
   ]
 }
 ```
+### Example 4: Get a roleAssignmentMultiple in a cloud PC provider
 
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "get_unifiedroleassignmentmultiple_1"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments/dbe9d288-fd87-41f4-b33d-b498ed207096
+```
+
+#### Response
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/cloudPC/roleAssignments/$entity",
+    "id": "dbe9d288-fd87-41f4-b33d-b498ed207096",
+    "description": null,
+    "displayName": "My test role assignment 1",
+    "roleDefinitionId": "b5c08161-a7af-481c-ace2-a20a69a48fb1",
+    "principalIds": [
+        "8e811502-ebda-4782-8f81-071d17f0f892",
+        "30e3492f-964c-4d73-88c6-986a53c6e2a0"
+    ],
+    "directoryScopeIds": [
+        "/"
+    ],
+    "appScopeIds": []
+}
+```
+
+### Example 5: Get a roleAssignmentMultiple in a cloud PC provider with `$expand`
+
+#### Request
+
+The following is an example of the request with the `$expand` query parameter.
+
+<!-- {
+  "blockType": "request",
+  "name": "get_unifiedroleassignment_3"
+}-->
+
+```http
+GET https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments/dbe9d288-fd87-41f4-b33d-b498ed207096?$expand=roleDefinition
+```
+
+#### Response
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleAssignment"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/cloudPC/roleAssignments/$entity",
+    "@odata.type": "#microsoft.graph.unifiedRoleAssignmentMultiple",
+    "id": "dbe9d288-fd87-41f4-b33d-b498ed207096",
+    "roleDefinitionId": "b5c08161-a7af-481c-ace2-a20a69a48fb1",
+    "principalIds": ["8e811502-ebda-4782-8f81-071d17f0f892", "30e3492f-964c-4d73-88c6-986a53c6e2a0"],
+    "directoryScopeIds": [
+        "/"
+    ],
+    "appScopeIds": [],
+    "roleDefinitions": {
+        "id": "b5c08161-a7af-481c-ace2-a20a69a48fb1",
+        "description": "Have read and write access to all Cloud PC features.",
+        "displayName": "Cloud PC Administrator",
+        "isBuiltIn": true,
+        "isEnabled": true,
+        "resourceScopes": [
+            "/"
+        ],
+        "templateId": "b5c08161-a7af-481c-ace2-a20a69a48fb1",
+        "version": null,
+        "rolePermissions": [
+            {
+                "allowedResourceActions": [
+                    "Microsoft.CloudPC/CloudPCs/Read",
+                    "Microsoft.CloudPC/CloudPCs/Reprovision",
+                    "Microsoft.CloudPC/DeviceImages/Create",
+                    "Microsoft.CloudPC/DeviceImages/Delete",
+                    "Microsoft.CloudPC/DeviceImages/Read",
+                    "Microsoft.CloudPC/OnPremisesConnections/Create",
+                    "Microsoft.CloudPC/OnPremisesConnections/Delete",
+                    "Microsoft.CloudPC/OnPremisesConnections/Read",
+                    "Microsoft.CloudPC/OnPremisesConnections/Update",
+                    "Microsoft.CloudPC/OnPremisesConnections/RunHealthChecks",
+                    "Microsoft.CloudPC/OnPremisesConnections/UpdateAdDomainPassword",
+                    "Microsoft.CloudPC/ProvisioningPolicies/Assign",
+                    "Microsoft.CloudPC/ProvisioningPolicies/Create",
+                    "Microsoft.CloudPC/ProvisioningPolicies/Delete",
+                    "Microsoft.CloudPC/ProvisioningPolicies/Read",
+                    "Microsoft.CloudPC/ProvisioningPolicies/Update",
+                    "Microsoft.CloudPC/RoleAssignments/Create",
+                    "Microsoft.CloudPC/RoleAssignments/Update",
+                    "Microsoft.CloudPC/RoleAssignments/Delete",
+                    "Microsoft.CloudPC/Roles/Read",
+                    "Microsoft.CloudPC/SelfServiceSettings/Read",
+                    "Microsoft.CloudPC/SelfServiceSettings/Update"
+                ],
+                "condition": null
+            }
+        ]
+    }
+}
+```
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {

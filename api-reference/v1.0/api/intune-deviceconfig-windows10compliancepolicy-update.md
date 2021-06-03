@@ -18,11 +18,11 @@ Update the properties of a [windows10CompliancePolicy](../resources/intune-devic
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -149,11 +149,6 @@ Content-Length: 1126
   "storageRequireEncryption": true
 }
 ```
-
-
-
-
-
 
 
 

@@ -2,7 +2,7 @@
 title: "Get localized organizationalBrandingProperties"
 description: "Retrieve organizationalbrandingproperties object for a specific locale."
 localization_priority: Normal
-author: "almars"
+author: "AlexanderMars"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /organization/{id}/branding/localizations/{locale}
+GET /organization/{tenant id}/branding/localizations/{locale}
 ```
 
 ## Request headers

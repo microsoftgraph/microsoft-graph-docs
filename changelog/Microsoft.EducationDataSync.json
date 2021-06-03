@@ -1,0 +1,63 @@
+{
+    "changelog": [
+      {
+        "ChangeList": [
+          {
+            "Id": "09f06952-e556-44ae-b943-f3efd1569fe9",
+            "ApiChange": "Permission",
+            "ChangedApiName": "educationSynchronizationProfileList",
+            "ChangeType": "Addition",
+            "Description": "Added support for application permissions to the [educationSynchronizationProfileList](https://docs.microsoft.com/en-us/graph/api/educationsynchronizationprofile-list?view=graph-rest-beta) resource.",
+            "Target": "educationSynchronizationProfileList"        
+          },
+          {
+            "Id": "09f06952-e556-44ae-b943-f3efd1569fe9",
+            "ApiChange": "Permission",
+            "ChangedApiName": "educationSynchronizationProfilePause",
+            "ChangeType": "Addition",
+            "Description": "Added support for application permissions to the [educationSynchronizationProfilePause](https://docs.microsoft.com/en-us/graph/api/educationsynchronizationprofile-pause?view=graph-rest-beta) resource.",
+            "Target": "educationSynchronizationProfilePause"        
+          },
+          {
+            "Id": "09f06952-e556-44ae-b943-f3efd1569fe9",
+            "ApiChange": "Permission",
+            "ChangedApiName": "educationSynchronizationProfileReset",
+            "ChangeType": "Addition",
+            "Description": "Added support for application permissions to the [educationSynchronizationProfileReset](https://docs.microsoft.com/en-us/graph/api/educationsynchronizationprofile-reset?view=graph-rest-beta) resource.",
+            "Target": "educationSynchronizationProfileReset"        
+          },
+          {
+            "Id": "09f06952-e556-44ae-b943-f3efd1569fe9",
+            "ApiChange": "Permission",
+            "ChangedApiName": "educationSynchronizationProfileResume",
+            "ChangeType": "Addition",
+            "Description": "Added support for application permissions to the [educationSynchronizationProfileResume](https://docs.microsoft.com/en-us/graph/api/educationsynchronizationprofile-resume?view=graph-rest-beta) resource.",
+            "Target": "educationSynchronizationProfileResume"        
+          },
+          {
+            "Id": "09f06952-e556-44ae-b943-f3efd1569fe9",
+            "ApiChange": "Permission",
+            "ChangedApiName": "educationSynchronizationProfileStart",
+            "ChangeType": "Addition",
+            "Description": "Added support for application permissions to the [educationSynchronizationProfileStart](https://docs.microsoft.com/en-us/graph/api/educationsynchronizationprofile-start?view=graph-rest-beta) resource.",
+            "Target": "educationSynchronizationProfileStart"        
+          },
+          {
+            "Id": "09f06952-e556-44ae-b943-f3efd1569fe9",
+            "ApiChange": "Permission",
+            "ChangedApiName": "educationSynchronizationProfileUploadUrl",
+            "ChangeType": "Addition",
+            "Description": "Added support for application permissions to the [educationSynchronizationProfileUploadUrl](https://docs.microsoft.com/en-us/graph/api/educationsynchronizationprofile-uploadurl?view=graph-rest-beta) resource.",
+            "Target": "educationSynchronizationProfileUploadUrl"        
+          }
+        ],
+        "Id": "09f06952-e556-44ae-b943-f3efd1569fe9",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2021-05-25T18:57:27.520Z",
+        "WorkloadArea": "Education",
+        "SubArea": ""
+      }
+    ]
+  }
+  

@@ -3,6 +3,184 @@
     {
       "ChangeList": [
         {
+          "Id": "229772e8-b3f1-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deviceManagementTroubleshootingEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [deviceManagementTroubleshootingEvent](https://docs.microsoft.com/en-us/graph/api/resources/intune-deviceManagementTroubleshootingEvent?view=graph-rest-1.0) resource type.",
+          "Target": "deviceManagementTroubleshootingEvent"
+        },
+        {
+          "Id": "2299d50c-b3f1-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "enrollmentTroubleshootingEvent",
+          "ChangeType": "Addition",
+          "Description": "Added the [enrollmentTroubleshootingEvent](https://docs.microsoft.com/en-us/graph/api/resources/intune-enrollmentTroubleshootingEvent?view=graph-rest-1.0) resource type.",
+          "Target": "enrollmentTroubleshootingEvent"
+        },
+        {
+          "Id": "229c379f-b3f1-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "report",
+          "ChangeType": "Addition",
+          "Description": "Added the [report](https://docs.microsoft.com/en-us/graph/api/resources/intune-report?view=graph-rest-1.0) resource type.",
+          "Target": "report"
+        },
+        {
+          "Id": "229e9905-b3f1-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "deviceEnrollmentType",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceEnrollmentType** enumeration type.",
+          "Target": "deviceEnrollmentType"
+        },
+        {
+          "Id": "22a0fbbf-b3f1-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "deviceEnrollmentFailureReason",
+          "ChangeType": "Addition",
+          "Description": "Added the **deviceEnrollmentFailureReason** enumeration type.",
+          "Target": "deviceEnrollmentFailureReason"
+        },
+        {
+          "Id": "22a35f52-b3f1-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Method",
+          "ChangedApiName": "managedDeviceEnrollmentFailureDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [managedDeviceEnrollmentFailureDetails](https://docs.microsoft.com/en-us/graph/api/intune-reportRoot-managedDeviceEnrollmentFailureDetails?view=graph-rest-1.0) method to the [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/intune-reportRoot?view=graph-rest-1.0) resource.",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "22a5c103-b3f1-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Method",
+          "ChangedApiName": "managedDeviceEnrollmentFailureDetails",
+          "ChangeType": "Addition",
+          "Description": "Added the [managedDeviceEnrollmentFailureDetails](https://docs.microsoft.com/en-us/graph/api/intune-reportRoot-managedDeviceEnrollmentFailureDetails?view=graph-rest-1.0) method to the [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/intune-reportRoot?view=graph-rest-1.0) resource.",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "22a82440-b3f1-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Method",
+          "ChangedApiName": "managedDeviceEnrollmentTopFailures",
+          "ChangeType": "Addition",
+          "Description": "Added the [managedDeviceEnrollmentTopFailures](https://docs.microsoft.com/en-us/graph/api/intune-reportRoot-managedDeviceEnrollmentTopFailures?view=graph-rest-1.0) method to the [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/intune-reportRoot?view=graph-rest-1.0) resource.",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "22aa8737-b3f1-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Method",
+          "ChangedApiName": "managedDeviceEnrollmentTopFailures",
+          "ChangeType": "Addition",
+          "Description": "Added the [managedDeviceEnrollmentTopFailures](https://docs.microsoft.com/en-us/graph/api/intune-reportRoot-managedDeviceEnrollmentTopFailures?view=graph-rest-1.0) method to the [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/intune-reportRoot?view=graph-rest-1.0) resource.",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "f6de1d52-b3f0-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Property",
+          "ChangedApiName": "certificateSerialNumber",
+          "ChangeType": "Addition",
+          "Description": "Added the **certificateSerialNumber** property to the [applePushNotificationCertificate](https://docs.microsoft.com/en-us/graph/api/resources/intune-applePushNotificationCertificate?view=graph-rest-1.0) resource.",
+          "Target": "applePushNotificationCertificate"
+        },
+        {
+          "Id": "f6e0803b-b3f0-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Property",
+          "ChangedApiName": "iccid",
+          "ChangeType": "Addition",
+          "Description": "Added the **iccid** property to the [managedDevice](https://docs.microsoft.com/en-us/graph/api/resources/intune-managedDevice?view=graph-rest-1.0) resource.",
+          "Target": "managedDevice"
+        },
+        {
+          "Id": "f6e2e3eb-b3f0-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Property",
+          "ChangedApiName": "udid",
+          "ChangeType": "Addition",
+          "Description": "Added the **udid** property to the [managedDevice](https://docs.microsoft.com/en-us/graph/api/resources/intune-managedDevice?view=graph-rest-1.0) resource.",
+          "Target": "managedDevice"
+        },
+        {
+          "Id": "f6e54529-b3f0-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Property",
+          "ChangedApiName": "notes",
+          "ChangeType": "Addition",
+          "Description": "Added the **notes** property to the [managedDevice](https://docs.microsoft.com/en-us/graph/api/resources/intune-managedDevice?view=graph-rest-1.0) resource.",
+          "Target": "managedDevice"
+        },
+        {
+          "Id": "f6e7a621-b3f0-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Property",
+          "ChangedApiName": "ethernetMacAddress",
+          "ChangeType": "Addition",
+          "Description": "Added the **ethernetMacAddress** property to the [managedDevice](https://docs.microsoft.com/en-us/graph/api/resources/intune-managedDevice?view=graph-rest-1.0) resource.",
+          "Target": "managedDevice"
+        },
+        {
+          "Id": "f6ea0ae0-b3f0-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Property",
+          "ChangedApiName": "physicalMemoryInBytes",
+          "ChangeType": "Addition",
+          "Description": "Added the **physicalMemoryInBytes** property to the [managedDevice](https://docs.microsoft.com/en-us/graph/api/resources/intune-managedDevice?view=graph-rest-1.0) resource.",
+          "Target": "managedDevice"
+        },
+        {
+          "Id": "f6ec6c52-b3f0-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Member",
+          "ChangedApiName": "windowsAzureADJoinUsingDeviceAuth",
+          "ChangeType": "Addition",
+          "Description": "Added the `windowsAzureADJoinUsingDeviceAuth` member to the **deviceEnrollmentType** enumeration.",
+          "Target": "deviceEnrollmentType"
+        },
+        {
+          "Id": "f6eeced6-b3f0-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Member",
+          "ChangedApiName": "appleUserEnrollment",
+          "ChangeType": "Addition",
+          "Description": "Added the `appleUserEnrollment` member to the **deviceEnrollmentType** enumeration.",
+          "Target": "deviceEnrollmentType"
+        },
+        {
+          "Id": "f6f12f8e-b3f0-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Member",
+          "ChangedApiName": "appleUserEnrollmentWithServiceAccount",
+          "ChangeType": "Addition",
+          "Description": "Added the `appleUserEnrollmentWithServiceAccount` member to the **deviceEnrollmentType** enumeration.",
+          "Target": "deviceEnrollmentType"
+        },
+        {
+          "Id": "f6f391e1-b3f0-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "persistEsimDataPlan",
+          "ChangeType": "Addition",
+          "Description": "Added the **persistEsimDataPlan** parameter to the [wipe](https://docs.microsoft.com/en-us/graph/api/intune-managedDevice-wipe?view=graph-rest-1.0) method.",
+          "Target": "wipe"
+        },
+        {
+          "Id": "5ccc71ec-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Resource",
+          "ChangedApiName": "deletedWindowsAutopilotDeviceState",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **deletedWindowsAutopilotDeviceState** resource type.",
+          "Target": "deletedWindowsAutopilotDeviceState"
+        },
+        {
+          "Id": "5cced7de-b3ea-11eb-b1da-ccc38d4482e9",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "windowsAutopilotDeviceDeletionState",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **windowsAutopilotDeviceDeletionState** enumeration type.",
+          "Target": "windowsAutopilotDeviceDeletionState"
+        }
+      ],
+      "Id": "5c955302-b3ea-11eb-b1da-ccc38d4482e9",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-06-02T12:54:32.194Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Corporate management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "1d80c54c-99b0-11eb-8cb0-33bc249d550e",
           "ApiChange": "Relationship",
           "ChangedApiName": "userExperienceAnalyticsWorkFromAnywhereMetrics",

@@ -40,7 +40,7 @@ const educationOutcome = {
     ]
 };
 
-await client.api('/education/me/assignments/{id}/submissions/{id}/outcomes/{id}')
+await client.api('/education/classes/{id}/assignments/{id}/submissions/{id}/outcomes/{id}')
 	.version('beta')
 	.update(educationOutcome);
 

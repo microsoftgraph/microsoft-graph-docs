@@ -22,6 +22,8 @@ landingContent:
             url: ./auth-concepts.md
           - text: App registration
             url: ../auth-register-app-v2.md
+          - text: Choose an authentication provider
+            url: ../sdks/choose-authentication-providers.md
       - linkListType: video
         links:
           - text: Microsoft Graph and app registration (7:29)

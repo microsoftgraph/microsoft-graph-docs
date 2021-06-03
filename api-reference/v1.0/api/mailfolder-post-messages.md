@@ -1,5 +1,5 @@
 ---
-title: "Create Message"
+title: "Create message in a mailfolder"
 description: "Use this API to create a new Message in a mailfolder."
 author: "abheek-das"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "outlook"
 doc_type: apiPageType
 ---
 
-# Create Message
+# Create message in a mailfolder
 
 Namespace: microsoft.graph
 

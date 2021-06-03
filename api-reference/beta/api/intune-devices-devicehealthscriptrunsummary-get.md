@@ -63,7 +63,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 586
+Content-Length: 637
 
 {
   "value": {
@@ -73,6 +73,7 @@ Content-Length: 586
     "issueDetectedDeviceCount": 8,
     "detectionScriptErrorDeviceCount": 15,
     "detectionScriptPendingDeviceCount": 1,
+    "detectionScriptNotApplicableDeviceCount": 7,
     "issueRemediatedDeviceCount": 10,
     "remediationSkippedDeviceCount": 13,
     "issueReoccurredDeviceCount": 10,

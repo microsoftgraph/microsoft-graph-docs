@@ -164,8 +164,8 @@ When you create a recurring access review series for all Microsoft 365 groups wi
 The access review series uses following settings:
 + It's a recurring access review and reviewed quarterly.
 + The group owners review the continued access of guest users.
-+ The review scope is limited to Microsoft 365 groups with **Guest users** only.
-+ A backup reviewer. This can be a fallback user or a group that can review the access in case the group doesn't have any owners assigned.
++ The review scope is limited to Microsoft 365 groups with **Guest users** only. For more options for configuring the scope, see the [See also](#see-also) section. 
++ A backup reviewer. This can be a fallback user or a group that can review the access in case the group doesn't have any owners assigned. For more options for configuring the reviewers, see the [See also](#see-also) section.
 + **autoApplyDecisionsEnabled** is set to `true`. In this case, decisions are applied automatically once the reviewer completes the access review or the access review duration ends. If not enabled, a user must, after the review completes, apply the decisions manually.
 + Apply **removeAccessApplyAction** action to denied guest users. This removes the membership in the group of the denied guest. The guest user can still sign in to your tenant.
 
@@ -479,12 +479,10 @@ Congratulations! You have created an access review for all guest users in Micros
 
 ## See also
 
-+ [Access Reviews overview and license requirements](/azure/active-directory/governance/access-reviews-overview)
-+ [Access Reviews license scenarios](/azure/active-directory/governance/access-reviews-overview#example-license-scenarios)
++ [Access reviews API Reference](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
++ [Configure the scope of your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept)
++ [Assign reviewers to your access review definition using the Microsoft Graph API](/graph/accessreviews-reviewers-concept)
++ [Access reviews overview and license requirements](/azure/active-directory/governance/access-reviews-overview)
 + [Create an access review of groups & applications](/azure/active-directory/governance/create-access-review)
 + [Invite/add guest users to your organization](/graph/api/resources/invitation?view=graph-rest-beta&preserve-view=true)
-+ [Access Reviews API Reference](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
-+ [Create accessReviewScheduleDefinition](/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&preserve-view=true)
-+ [List accessReviewInstance](/graph/api/accessreviewinstance-list?view=graph-rest-beta&preserve-view=true)
-+ [List accessReviewInstanceDecisionItem](/graph/api/accessreviewinstancedecisionitem-list?view=graph-rest-beta&preserve-view=true)
 

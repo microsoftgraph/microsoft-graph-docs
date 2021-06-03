@@ -1,5 +1,5 @@
 ---
-title: "assign action"
+title: "Device compliance script assign action"
 description: "Not yet documented"
 author: "dougeby"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "intune"
 doc_type: apiPageType
 ---
 
-# assign action
+# Device compliance script assign action
 
 Namespace: microsoft.graph
 

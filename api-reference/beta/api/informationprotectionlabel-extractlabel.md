@@ -170,7 +170,8 @@ Content-type: application/json
         "color": "#000000",
         "sensitivity": 13,
         "tooltip": "This information is top secret.",
-        "isActive": true
+        "isActive": true,
+        "parent" : null
     }
 }
 ```

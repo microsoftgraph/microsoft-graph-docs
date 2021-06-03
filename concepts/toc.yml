@@ -26,8 +26,6 @@ items:
             href: deployments.md
           - name: Hybrid deployments (preview)
             href: hybrid-rest-support.md
-      - name: Microsoft Graph data connect
-        href: data-connect-overview.md
       - name: Tutorials
         items:
           - name: Overview
@@ -99,8 +97,23 @@ items:
             href: application-saml-sso-configure-api.md
           - name: Configure application proxy
             href: application-proxy-configure-api.md
-          - name: Configure provisioning
-            href: application-provisioning-configure-api.md
+      - name: Accessing data at scale
+        displayName: Microsoft Graph Data Connect
+        items:
+          - name: Overview of Data Connect
+            href: data-connect-concept-overview.md
+          - name: Build your first Data Connect application
+            href: data-connect-quickstart.yml
+          - name: Datasets, regions, and sinks
+            href: data-connect-datasets.md
+          - name: Policies and billing
+            href: data-connect-policies.md
+          - name: User selection and filtering
+            href: data-connect-filtering.md
+          - name: Integrate with PAM
+            href: data-connect-pam.md
+          - name: Frequently asked questions
+            href: data-connect-faq.md
       - name: Calendar
         displayName: Outlook
         items:
@@ -150,6 +163,25 @@ items:
             href: cloud-communications-phone-number.md
       - name: Compliance (preview)
         href: compliance-concept-overview.md
+      - name: Connecting external content (preview)
+        displayName: connectors
+        items:
+          - name: Overview of Microsoft Graph connectors
+            href: connecting-external-content-connectors-overview.md
+          - name: Connectors API
+            href: connecting-external-content-connectors-api-overview.md
+          - name: Use Postman
+            href: connecting-external-content-connectors-api-postman.md
+          - name: Manage connections
+            href: connecting-external-content-manage-connections.md
+          - name: Manage schema
+            href: connecting-external-content-manage-schema.md
+          - name: Manage items
+            href: connecting-external-content-manage-items.md
+          - name: API limits
+            href: connecting-external-content-api-limits.md
+          - name: Build your first custom connector
+            href: connecting-external-content-build-quickstart.yml            
       - name: Cross-device experiences
         displayName: Project Rome
         items:
@@ -164,23 +196,6 @@ items:
       - name: Customer booking (preview)
         href: booking-concept-overview.md
         displayName: Bookings, Microsoft Bookings
-      - name: Data access
-        displayName: Microsoft Graph data connect
-        items:
-          - name: Data connect overview
-            href: data-connect-concept-overview.md
-          - name: Get started
-            href: data-connect-get-started.md
-          - name: Datasets, regions, and sinks
-            href: data-connect-datasets.md
-          - name: Policies and licensing
-            href: data-connect-policies.md
-          - name: User selection and filtering
-            href: data-connect-filtering.md
-          - name: Integrate with PAM
-            href: data-connect-pam.md
-          - name: Tips
-            href: data-connect-tips.md
       - name: Devices and apps
         expanded: true
         items:
@@ -263,6 +278,8 @@ items:
             href: outlook-organize-messages.md
           - name: Get MIME content
             href: outlook-get-mime-message.md
+          - name: Send MIME message
+            href: outlook-send-mime-message.md
           - name: Attach large files
             href: outlook-large-attachments.md
           - name: Get shared messages
@@ -370,14 +387,6 @@ items:
                 href: search-concept-aggregation.md
               - name: Request spelling correction (preview)
                 href: search-concept-speller.md
-          - name: Index (preview)
-            items:
-              - name: Manage connections
-                href: search-index-manage-connections.md
-              - name: Manage schema
-                href: search-index-manage-schema.md
-              - name: Manage items
-                href: search-index-manage-items.md
       - name: Security
         items:
           - name: Overview
@@ -534,6 +543,8 @@ items:
           - name: Azure AD Graph
             displayName: Migration, Azure AD Graph
             items:
+              - name: Overview
+                href: migrate-azure-ad-graph-overview.md
               - name: Checklist to migrate apps
                 href: migrate-azure-ad-graph-planning-checklist.md
               - name: "1: Review differences"
@@ -604,6 +615,8 @@ items:
                 href: toolkit/get-started/overview.md
               - name: Toolkit for React
                 href: toolkit/get-started/mgt-react.md
+              - name: Toolkit for SPFx
+                href: toolkit/get-started/mgt-spfx.md
           - name: Build your first app
             items:
               - name: Register an Azure Active Directory app
@@ -626,6 +639,8 @@ items:
                 href: toolkit/providers/providers.md
               - name: MSAL provider
                 href: toolkit/providers/msal.md
+              - name: MSAL 2 provider
+                href: toolkit/providers/msal2.md
               - name: SharePoint provider
                 href: toolkit/providers/sharepoint.md
               - name: Microsoft Teams provider
@@ -658,6 +673,10 @@ items:
                 href: toolkit/components/tasks.md
               - name: To-do tasks
                 href: toolkit/components/todo.md
+              - name: File
+                href: toolkit/components/file.md
+              - name: File list
+                href: toolkit/components/file-list.md
           - name: Customize components
             items:
               - name: Styling components

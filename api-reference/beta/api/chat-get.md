@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /me/chats/{chat-id}
-GET /users/{user-id}/chats/{chat-id}
+GET /users/{user-id | user-principal-name}/chats/{chat-id}
 GET /chats/{chat-id}
 ```
 

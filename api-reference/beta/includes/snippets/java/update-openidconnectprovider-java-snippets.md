@@ -6,11 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IdentityProvider identityProvider = new IdentityProvider();
-identityProvider.responseType = EnumSet.of(OpenIdConnectResponseTypes.ID_TOKEN);
+IdentityProviderBase identityProviderBase = new IdentityProviderBase();
+identityProviderBase.responseType = EnumSet.of(OpenIdConnectResponseTypes.ID_TOKEN);
 
-graphClient.identityProviders("OIDC-V1-MyTest-085a8a0c-58cb-4b6d-8e07-1328ea404e1a")
+graphClient.identity().identityProviders("OIDC-V1-Nam_AD_Test-3e393390-ed2d-4794-97f6-5c999ccc61f7")
 	.buildRequest()
-	.patch(identityProvider);
+	.patch(identityProviderBase);
 
 ```

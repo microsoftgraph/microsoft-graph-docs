@@ -63,13 +63,15 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 186
+Content-Length: 313
 
 {
   "value": {
     "@odata.type": "#microsoft.graph.windowsManagementApp",
     "id": "5facc79c-c79c-5fac-9cc7-ac5f9cc7ac5f",
-    "availableVersion": "Available Version value"
+    "availableVersion": "Available Version value",
+    "managedInstaller": "enabled",
+    "managedInstallerConfiguredDateTime": "Managed Installer Configured Date Time value"
   }
 }
 ```

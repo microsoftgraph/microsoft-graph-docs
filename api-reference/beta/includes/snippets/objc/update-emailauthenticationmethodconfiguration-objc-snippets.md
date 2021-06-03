@@ -12,7 +12,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphAuthenticationMethodConfiguration *authenticationMethodConfiguration = [[MSGraphAuthenticationMethodConfiguration alloc] init];
-[authenticationMethodConfiguration setAllowExternalIdToUseEmailOtp: [MSGraphExternalEmailOtpState default]];
+[authenticationMethodConfiguration setAllowExternalIdToUseEmailOtp: [MSGraphExternalEmailOtpState disabled]];
 
 NSError *error;
 NSData *authenticationMethodConfigurationData = [authenticationMethodConfiguration getSerializedDataWithError:&error];

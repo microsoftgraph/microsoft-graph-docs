@@ -216,6 +216,8 @@ items:
           href: api/user-delete.md
         - name: Get delta
           href: api/user-delta.md
+        - name: Invalidate refresh tokens
+          href: api/user-invalidateallrefreshtokens.md
       - name: App role assignments
         href: resources/approleassignment.md
         items:
@@ -788,12 +790,15 @@ items:
             href: api/application-removekey.md
         - name: Extensions
           items:
-          - name: List extensions
-            href: api/application-list-extensionproperty.md
-          - name: Create extension
-            href: api/application-post-extensionproperty.md
-          - name: Delete extension
-            href: api/application-delete-extensionproperty.md
+          - name: Extension property
+            href: resources/extensionproperty.md
+            items:
+            - name: List
+              href: api/application-list-extensionproperty.md
+            - name: Create
+              href: api/application-post-extensionproperty.md
+            - name: Delete
+              href: api/application-delete-extensionproperty.md
         - name: Owners
           items:
           - name: List owners
@@ -2712,6 +2717,39 @@ items:
               href: api/intune-apps-mobilelobapp-list.md
             - name: Get
               href: api/intune-apps-mobilelobapp-get.md
+          - name: Office client checkin status
+            href: resources/intune-cirrus-officeclientcheckinstatus.md
+          - name: Office client configuration
+            href: resources/intune-cirrus-officeclientconfiguration.md
+            items:
+            - name: List
+              href: api/intune-cirrus-officeclientconfiguration-list.md
+            - name: Get
+              href: api/intune-cirrus-officeclientconfiguration-get.md
+            - name: assign action
+              href: api/intune-cirrus-officeclientconfiguration-assign.md
+            - name: updatePriorities action
+              href: api/intune-cirrus-officeclientconfiguration-updatepriorities.md
+          - name: Office client configuration assignment
+            href: resources/intune-cirrus-officeclientconfigurationassignment.md
+            items:
+            - name: List
+              href: api/intune-cirrus-officeclientconfigurationassignment-list.md
+            - name: Get
+              href: api/intune-cirrus-officeclientconfigurationassignment-get.md
+            - name: Create
+              href: api/intune-cirrus-officeclientconfigurationassignment-create.md
+            - name: Delete
+              href: api/intune-cirrus-officeclientconfigurationassignment-delete.md
+            - name: Update
+              href: api/intune-cirrus-officeclientconfigurationassignment-update.md
+          - name: Office configuration
+            href: resources/intune-cirrus-officeconfiguration.md
+            items:
+          - name: Office configuration assignment target
+            href: resources/intune-cirrus-officeconfigurationassignmenttarget.md
+          - name: Office configuration group assignment target
+            href: resources/intune-cirrus-officeconfigurationgroupassignmenttarget.md
           - name: Office product id
             href: resources/intune-apps-officeproductid.md
           - name: Office suite app
@@ -2731,6 +2769,8 @@ items:
             href: resources/intune-apps-officesuiteinstallprogressdisplaylevel.md
           - name: Office update channel
             href: resources/intune-apps-officeupdatechannel.md
+          - name: Office user checkin summary
+            href: resources/intune-cirrus-officeusercheckinsummary.md
           - name: Resultant app state detail
             href: resources/intune-apps-resultantappstatedetail.md
           - name: Symantec code signing certificate
@@ -2897,6 +2937,32 @@ items:
               href: api/intune-apps-windowsmobilemsi-delete.md
             - name: Update
               href: api/intune-apps-windowsmobilemsi-update.md
+          - name: Windows office client configuration
+            href: resources/intune-cirrus-windowsofficeclientconfiguration.md
+            items:
+            - name: List
+              href: api/intune-cirrus-windowsofficeclientconfiguration-list.md
+            - name: Get
+              href: api/intune-cirrus-windowsofficeclientconfiguration-get.md
+            - name: Create
+              href: api/intune-cirrus-windowsofficeclientconfiguration-create.md
+            - name: Delete
+              href: api/intune-cirrus-windowsofficeclientconfiguration-delete.md
+            - name: Update
+              href: api/intune-cirrus-windowsofficeclientconfiguration-update.md
+          - name: Windows office client security configuration
+            href: resources/intune-cirrus-windowsofficeclientsecurityconfiguration.md
+            items:
+            - name: List
+              href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-list.md
+            - name: Get
+              href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-get.md
+            - name: Create
+              href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-create.md
+            - name: Delete
+              href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-delete.md
+            - name: Update
+              href: api/intune-cirrus-windowsofficeclientsecurityconfiguration-update.md
           - name: Windows package information
             href: resources/intune-apps-windowspackageinformation.md
           - name: Windows Phone 8.1 AppX
@@ -3106,8 +3172,6 @@ items:
               href: api/intune-enrollment-azureadwindowsautopilotdeploymentprofile-delete.md
             - name: Update
               href: api/intune-enrollment-azureadwindowsautopilotdeploymentprofile-update.md
-          - name: Deleted windows autopilot device state
-            href: resources/intune-enrollment-deletedwindowsautopilotdevicestate.md
           - name: DEP enrollment base profile
             href: resources/intune-enrollment-depenrollmentbaseprofile.md
             items:
@@ -3304,8 +3368,6 @@ items:
               href: api/intune-enrollment-windowsautopilotdeploymentprofileassignment-delete.md
             - name: Update
               href: api/intune-enrollment-windowsautopilotdeploymentprofileassignment-update.md
-          - name: Windows autopilot device deletion state
-            href: resources/intune-enrollment-windowsautopilotdevicedeletionstate.md
           - name: Windows autopilot device identity
             href: resources/intune-enrollment-windowsautopilotdeviceidentity.md
             items:
@@ -3327,8 +3389,6 @@ items:
               href: api/intune-enrollment-windowsautopilotdeviceidentity-assignresourceaccounttodevice.md
             - name: unassignResourceAccountFromDevice action
               href: api/intune-enrollment-windowsautopilotdeviceidentity-unassignresourceaccountfromdevice.md
-            - name: deleteDevices action
-              href: api/intune-enrollment-windowsautopilotdeviceidentity-deletedevices.md
           - name: Windows autopilot device type
             href: resources/intune-enrollment-windowsautopilotdevicetype.md
           - name: Windows autopilot profile assignment detailed status
@@ -3863,6 +3923,8 @@ items:
             href: resources/intune-deviceconfig-androidrequiredpasswordcomplexity.md
           - name: Android required password type
             href: resources/intune-deviceconfig-androidrequiredpasswordtype.md
+          - name: Android safety net evaluation type
+            href: resources/intune-deviceconfig-androidsafetynetevaluationtype.md
           - name: Android SCEP certificate profile
             href: resources/intune-deviceconfig-androidscepcertificateprofile.md
             items:
@@ -4086,6 +4148,19 @@ items:
               href: api/intune-deviceconfig-androidworkprofilewificonfiguration-delete.md
             - name: Update
               href: api/intune-deviceconfig-androidworkprofilewificonfiguration-update.md
+          - name: Aosp device owner compliance policy
+            href: resources/intune-deviceconfig-aospdeviceownercompliancepolicy.md
+            items:
+            - name: List
+              href: api/intune-deviceconfig-aospdeviceownercompliancepolicy-list.md
+            - name: Get
+              href: api/intune-deviceconfig-aospdeviceownercompliancepolicy-get.md
+            - name: Create
+              href: api/intune-deviceconfig-aospdeviceownercompliancepolicy-create.md
+            - name: Delete
+              href: api/intune-deviceconfig-aospdeviceownercompliancepolicy-delete.md
+            - name: Update
+              href: api/intune-deviceconfig-aospdeviceownercompliancepolicy-update.md
           - name: Aosp device owner device configuration
             href: resources/intune-deviceconfig-aospdeviceownerdeviceconfiguration.md
             items:
@@ -6660,6 +6735,8 @@ items:
         - name: Device management
           href: resources/intune-device-mgt-conceptual.md
           items:
+          - name: Activate device esim action result
+            href: resources/intune-devices-activatedeviceesimactionresult.md
           - name: Admin consent
             href: resources/intune-devices-adminconsent.md
           - name: Admin consent state
@@ -6734,6 +6811,8 @@ items:
             href: resources/intune-devices-bulkmanageddeviceactionresult.md
           - name: Chassis type
             href: resources/intune-devices-chassistype.md
+          - name: Chrome o s device property
+            href: resources/intune-devices-chromeosdeviceproperty.md
           - name: Circular geofence management condition
             href: resources/intune-fencing-circulargeofencemanagementcondition.md
             items:
@@ -6747,6 +6826,19 @@ items:
               href: api/intune-fencing-circulargeofencemanagementcondition-delete.md
             - name: Update
               href: api/intune-fencing-circulargeofencemanagementcondition-update.md
+          - name: Cloud PC connectivity issue
+            href: resources/intune-devices-cloudpcconnectivityissue.md
+            items:
+            - name: List
+              href: api/intune-devices-cloudpcconnectivityissue-list.md
+            - name: Get
+              href: api/intune-devices-cloudpcconnectivityissue-get.md
+            - name: Create
+              href: api/intune-devices-cloudpcconnectivityissue-create.md
+            - name: Delete
+              href: api/intune-devices-cloudpcconnectivityissue-delete.md
+            - name: Update
+              href: api/intune-devices-cloudpcconnectivityissue-update.md
           - name: Comanaged devices summary
             href: resources/intune-devices-comanageddevicessummary.md
           - name: Comanagement eligible device
@@ -7641,6 +7733,8 @@ items:
             href: resources/intune-devices-manageddeviceremoteaction.md
           - name: Managed device summarized app state
             href: resources/intune-troubleshooting-manageddevicesummarizedappstate.md
+          - name: Managed installer status
+            href: resources/intune-devices-managedinstallerstatus.md
           - name: Management condition
             href: resources/intune-fencing-managementcondition.md
             items:
@@ -8304,6 +8398,8 @@ items:
               href: api/intune-devices-windowsmanagementapp-get.md
             - name: Update
               href: api/intune-devices-windowsmanagementapp-update.md
+            - name: setAsManagedInstaller action
+              href: api/intune-devices-windowsmanagementapp-setasmanagedinstaller.md
           - name: Windows management app health state
             href: resources/intune-devices-windowsmanagementapphealthstate.md
             items:
@@ -9158,8 +9254,6 @@ items:
               href: api/intune-shared-devicemanagementscript-assign.md
             - name: hasPayloadLinks action
               href: api/intune-shared-devicemanagementscript-haspayloadlinks.md
-          - name: Device platform type
-            href: resources/intune-shared-deviceplatformtype.md
           - name: Enablement
             href: resources/intune-shared-enablement.md
           - name: Enrollment availability options
@@ -9287,8 +9381,6 @@ items:
               href: api/intune-shared-mobileapptroubleshootingevent-update.md
           - name: Owner type
             href: resources/intune-shared-ownertype.md
-          - name: Policy platform type
-            href: resources/intune-shared-policyplatformtype.md
           - name: Proxied domain
             href: resources/intune-shared-proxieddomain.md
           - name: Report
@@ -9482,6 +9574,29 @@ items:
             href: api/cloudpcprovisioningpolicy-delete.md
           - name: Assign
             href: api/cloudpcprovisioningpolicy-assign.md
+        - name: Role management
+          href: resources/rolemanagement.md
+          items:
+          - name: Role definition
+            href: resources/unifiedroledefinition.md
+            items:
+            - name: List
+              href: api/rbacapplication-list-roledefinitions.md
+            - name: Get
+              href: api/unifiedroledefinition-get.md
+          - name: Role assignment multiple
+            href: resources/unifiedroleassignmentmultiple.md
+            items:
+            - name: List
+              href: api/rbacapplicationmultiple-list-roleassignments.md
+            - name: Create
+              href: api/rbacapplicationmultiple-post-roleassignments.md
+            - name: Get
+              href: api/unifiedroleassignmentmultiple-get.md
+            - name: Update
+              href: api//unifiedroleassignmentmultiple-update.md
+            - name: Delete
+              href: api/unifiedroleassignmentmultiple-delete.md
       - name: Device updates (preview)
         displayName: Windows updates
         items:
@@ -9681,16 +9796,14 @@ items:
           href: api/educationassignment-post-resources.md
         - name: Get assignment resource
           href: api/educationassignmentresource-get.md
-        - name: Update assignment resource
-          href: api/educationassignmentresource-update.md
         - name: Delete resource from assignment
           href: api/educationassignmentresource-delete.md
         - name: Publish assignment
           href: api/educationassignment-publish.md
         - name: List submissions for assignment
           href: api/educationassignment-list-submissions.md
-        - name: Get resource folder URL (deprecated)
-          href: api/educationassignment-getresourcesfolderurl.md
+        - name: Set up assignment resources folder
+          href: api/educationassignment-setupresourcesfolder.md
         - name: Get rubric attached to assignment
           href: api/educationassignment-get-rubric.md
         - name: List categories
@@ -9740,7 +9853,7 @@ items:
       - name: Submission
         href: resources/educationsubmission.md
         items:
-        - name: List submission resource
+        - name: List submission resources
           href: api/educationsubmission-list-resources.md
         - name: Add submission resource
           href: api/educationsubmission-post-resources.md
@@ -9750,6 +9863,8 @@ items:
           href: api/educationsubmissionresource-delete.md
         - name: Get submission
           href: api/educationsubmission-get.md
+        - name: Set up submission resources folder
+          href: api/educationsubmission-setupresourcesfolder.md
         - name: Submit submission
           href: api/educationsubmission-submit.md
         - name: Unsubmit submission
@@ -10401,6 +10516,33 @@ items:
               href: api/subscribedsku-list.md
             - name: Get subscribedSku
               href: api/subscribedsku-get.md
+        - name: Mobility management policy (Preview)
+          href: resources/mobilitymanagementpolicy.md
+          items:
+          - name: List mobile device management policies
+            href: api/mobiledevicemanagementpolicies-list.md
+          - name: Get
+            href: api/mobiledevicemanagementpolicies-get.md
+          - name: Update
+            href: api/mobiledevicemanagementpolicies-update.md
+          - name: List included groups
+            href: api/mobiledevicemanagementpolicies-list-includedgroups.md
+          - name: Add included groups
+            href: api/mobiledevicemanagementpolicies-post-includedgroups.md
+          - name: Remove included groups
+            href: api/mobiledevicemanagementpolicies-delete-includedgroups.md
+          - name: List mobile app management policies
+            href: api/mobileappmanagementpolicies-list.md
+          - name: Get
+            href: api/mobileappmanagementpolicies-get.md
+          - name: Update
+            href: api/mobileappmanagementpolicies-update.md
+          - name: List included groups
+            href: api/mobileappmanagementpolicies-list-includedgroups.md
+          - name: Add included groups
+            href: api/mobileappmanagementpolicies-post-includedgroups.md
+          - name: Remove included groups
+            href: api/mobileappmanagementpolicies-delete-includedgroups.md
         - name: Role management
           href: resources/rolemanagement.md
           items:
@@ -10432,15 +10574,81 @@ items:
             href: resources/unifiedroleassignmentmultiple.md
             items:
             - name: List
-              href: api/unifiedroleassignmentmultiple-list.md
+              href: api/rbacapplicationmultiple-list-roleassignments.md
             - name: Create
-              href: api/unifiedroleassignmentmultiple-post.md
+              href: api/rbacapplicationmultiple-post-roleassignments.md
             - name: Get
               href: api/unifiedroleassignmentmultiple-get.md
             - name: Update
               href: api/unifiedroleassignmentmultiple-update.md
             - name: Delete
               href: api/unifiedroleassignmentmultiple-delete.md
+          - name: Role assignment request
+            href: resources/unifiedroleassignmentschedulerequest.md
+            items:
+            - name: List
+              href: api/unifiedroleassignmentschedulerequest-list.md
+            - name: Get
+              href: api/unifiedroleassignmentschedulerequest-get.md
+            - name: Create
+              href: api/unifiedroleassignmentschedulerequest-post-unifiedroleassignmentschedulerequests.md
+            - name: Update
+              href: api/unifiedroleassignmentschedulerequest-update.md
+            - name: Cancel
+              href: api/unifiedroleassignmentschedulerequest-cancel.md
+            - name: Filter by current user
+              href: api/unifiedroleassignmentschedulerequest-filterbycurrentuser.md
+          - name: Role eligibility request
+            href: resources/unifiedroleeligibilityschedulerequest.md
+            items:
+            - name: List
+              href: api/unifiedroleeligibilityschedulerequest-list.md
+            - name: Get
+              href: api/unifiedroleeligibilityschedulerequest-get.md
+            - name: Create
+              href: api/unifiedroleeligibilityschedulerequest-post-unifiedroleeligibilityschedulerequests.md
+            - name: Update
+              href: api/unifiedroleeligibilityschedulerequest-update.md
+            - name: Cancel
+              href: api/unifiedroleeligibilityschedulerequest-cancel.md
+            - name: Filter by current user
+              href: api/unifiedroleeligibilityschedulerequest-filterbycurrentuser.md
+          - name: Role assignment schedule
+            href: resources/unifiedRoleAssignmentSchedule.md
+            items:
+            - name: List
+              href: api/unifiedroleassignmentschedule-list.md
+            - name: Get
+              href: api/unifiedroleassignmentschedule-get.md
+            - name: Filter by current user
+              href: api/unifiedroleassignmentschedule-filterbycurrentuser.md
+          - name: Role eligibility schedule
+            href: resources/unifiedRoleEligibilitySchedule.md
+            items:
+            - name: List
+              href: api/unifiedRoleEligibilitySchedule-list.md
+            - name: Get
+              href: api/unifiedRoleEligibilitySchedule-get.md
+            - name: Filter by current user
+              href: api/unifiedRoleEligibilitySchedule-filterbycurrentuser.md
+          - name: Role assignment instance
+            href: resources/unifiedRoleAssignmentScheduleInstance.md
+            items:
+            - name: List
+              href: api/unifiedRoleAssignmentScheduleInstance-list.md
+            - name: Get
+              href: api/unifiedRoleAssignmentScheduleInstance-get.md
+            - name: Filter by current user
+              href: api/unifiedRoleAssignmentScheduleInstance-filterbycurrentuser.md
+          - name: Role eligibility instance
+            href: resources/unifiedRoleEligibilityScheduleInstance.md
+            items:
+            - name: List
+              href: api/unifiedRoleEligibilityScheduleInstance-list.md
+            - name: Get
+              href: api/unifiedRoleEligibilityScheduleInstance-get.md
+            - name: Filter by current user
+              href: api/unifiedRoleEligibilityScheduleInstance-filterbycurrentuser.md
       - name: Identity and sign-in
         items:
         - name: Authentication events policy
@@ -10475,8 +10683,11 @@ items:
             - name: Update
               href: api/authenticationflowspolicy-update.md
         - name: Authentication methods
-          href: resources/authenticationmethods-overview.md
           items:
+          - name: Overview
+            href: resources/authenticationmethods-overview.md
+          - name: List all methods
+            href: api/authentication-list-methods.md
           - name: FIDO2 security keys
             href: resources/fido2authenticationmethod.md
             items:
@@ -10569,6 +10780,13 @@ items:
           items:
           - name: Overview
             href: resources/authenticationmethodspolicies-overview.md
+          - name: Authentication method policy
+            href: resources/authenticationmethodspolicy.md
+            items:
+            - name: Get
+              href: api/authenticationmethodspolicy-get.md
+            - name: Update
+              href: api/authenticationmethodspolicy-update.md
           - name: FIDO2 policy
             href: resources/fido2authenticationmethodconfiguration.md
             items:
@@ -10641,11 +10859,13 @@ items:
             href: api/certificatebasedauthconfiguration-post-certificatebasedauthconfiguration.md
           - name: Delete
             href: api/certificatebasedauthconfiguration-delete.md
-        - name: Conditional access
+        - name: Conditional Access
           items:
+          - name: Conditional Access
+            href: resources/conditionalaccessroot.md
           - name: Policies
             items:
-            - name: Conditional access policy
+            - name: Conditional Access policy
               href: resources/conditionalaccesspolicy.md
             - name: List
               href: api/conditionalaccessroot-list-policies.md
@@ -10697,6 +10917,18 @@ items:
                   href: api/ipnamedlocation-update.md
                 - name: Delete
                   href: api/ipnamedlocation-delete.md
+          - name: Authentication context class references
+            items:
+            - name: Authentication context class references
+              href: resources/authenticationcontextclassreference.md
+            - name: List
+              href: api/conditionalaccessroot-list-authenticationcontextclassreferences.md
+            - name: Create
+              href: api/conditionalaccessroot-post-authenticationcontextclassreferences.md
+            - name: Get
+              href: api/authenticationcontextclassreference-get.md
+            - name: Update
+              href: api/authenticationcontextclassreference-update.md
         - name: Data policy operation
           href: resources/datapolicyoperation.md
           items:
@@ -10960,6 +11192,33 @@ items:
                   href: api/permissiongrantpolicy-post-excludes.md
                 - name: Delete from excludes
                   href: api/permissiongrantpolicy-delete-excludes.md
+          - name: Role management policy
+            href: resources/unifiedRoleManagementPolicy.md
+            items:
+            - name: List
+              href: api/unifiedrolemanagementpolicy-list.md
+            - name: Get
+              href: api/unifiedrolemanagementpolicy-get.md
+            - name: List effective rules
+              href: api/unifiedrolemanagementpolicy-list-effectiverules.md
+            - name: List rules
+              href: api/unifiedrolemanagementpolicy-list-rules.md
+          - name: Role management policy assignment
+            href: resources/unifiedRoleManagementPolicyAssignment.md
+            items:
+            - name: List
+              href: api/unifiedRoleManagementPolicyAssignment-list.md
+            - name: Get
+              href: api/unifiedRoleManagementPolicyAssignment-get.md
+          - name: Role management policy rule
+            href: resources/unifiedRoleManagementPolicyRule.md
+            items:
+            - name: List
+              href: api/unifiedRoleManagementPolicyRule-list.md
+            - name: Get
+              href: api/unifiedRoleManagementPolicyRule-get.md
+            - name: Update
+              href: api/unifiedRoleManagementPolicyRule-update.md
           - name: Token issuance policy
             href: resources/tokenissuancepolicy.md
             items:
@@ -11187,7 +11446,7 @@ items:
             - name: Get
               href: api/accessreviewscheduledefinition-get.md
             - name: Create
-              href: api/accessreviewscheduledefinition-create.md
+              href: api/accessreviewscheduledefinition-post.md
             - name: Delete
               href: api/accessreviewscheduledefinition-delete.md 
             - name: Update
@@ -11227,7 +11486,18 @@ items:
               href: api/accessreviewpolicy-get.md
             - name: Update
               href: api/accessreviewpolicy-update.md
-        - name: Access reviews (legacy)
+          - name: Access review history definition
+            href: resources/accessreviewhistorydefinition.md
+            items:
+            - name: Get
+              href: api/accessreviewhistorydefinition-get.md
+            - name: List
+              href: api/accessreviewhistorydefinition-list.md
+            - name: Create
+              href: api/accessreviewhistorydefinition-post.md
+            - name: Generate download URI
+              href: api/accessreviewhistorydefinition-generatedownloaduri.md
+        - name: Access reviews (deprecated)
           href: resources/accessreviews-root.md
           items:
           - name: Access review
@@ -11335,11 +11605,15 @@ items:
               href: api/accesspackage-update.md
             - name: Delete
               href: api/accesspackage-delete.md
+            - name: Filter by current user
+              href: api/accesspackage-filterbycurrentuser.md
           - name: Access package assignment
             href: resources/accesspackageassignment.md
             items:
             - name: List
               href: api/accesspackageassignment-list.md
+            - name: Filter by current user
+              href: api/accesspackageassignment-filterbycurrentuser.md
           - name: Access package assignment approval
             href: resources/approval.md
             items:
@@ -11375,6 +11649,10 @@ items:
               href: api/accesspackageassignmentrequest-post.md
             - name: Get
               href: api/accesspackageassignmentrequest-get.md
+            - name: Filter by current user
+              href: api/accesspackageassignmentrequest-filterbycurrentuser.md
+            - name: Cancel
+              href: api/accesspackageassignmentrequest-cancel.md
           - name: Access package assignment resource role
             href: resources/accesspackageassignmentresourcerole.md
             items:
@@ -11695,22 +11973,22 @@ items:
           href: api/mailfolder-update.md
         - name: Delete mail folder
           href: api/mailfolder-delete.md
-        - name: Get folder delta
-          href: api/mailfolder-delta.md
         - name: Copy mail folder
           href: api/mailfolder-copy.md
-        - name: Move mail folder
-          href: api/mailfolder-move.md
-        - name: List messages in folder
-          href: api/mailfolder-list-messages.md
+        - name: Create child folder
+          href: api/mailfolder-post-childfolders.md
         - name: Create message in folder
-          href: api/mailfolder-post-messages.md
+          href: api/mailfolder-post-messages.md          
+        - name: Get folder delta
+          href: api/mailfolder-delta.md
         - name: Get message delta
           href: api/message-delta.md
         - name: List child folders
           href: api/mailfolder-list-childfolders.md
-        - name: Create mail child folder
-          href: api/mailfolder-post-childfolders.md
+        - name: List messages in folder
+          href: api/mailfolder-list-messages.md
+        - name: Move mail folder
+          href: api/mailfolder-move.md
       - name: Mail search folder
         href: resources/mailsearchfolder.md
         items:

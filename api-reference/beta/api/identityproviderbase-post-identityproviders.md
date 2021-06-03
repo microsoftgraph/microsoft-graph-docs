@@ -307,8 +307,6 @@ Content-length: 154
 ---
 
 
----
-
 #### Response
 
 The following is an example of the response.

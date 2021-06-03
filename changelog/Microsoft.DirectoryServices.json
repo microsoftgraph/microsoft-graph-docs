@@ -1,5 +1,143 @@
 {
   "changelog": [
+        {
+          "ChangeList": [
+              {
+                  "Id": "1542fba3-8dbc-11eb-a57c-31dcdef91872",
+                  "ApiChange": "Property",
+                  "ChangedApiName": "registrationEnforcement",
+                  "ChangeType": "Addition",
+                  "Description": "Added the **registrationEnforcement** property to the [authenticationMethodsPolicy](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodsPolicy?view=graph-rest-beta) resource.",
+                  "Target": "authenticationMethodsPolicy"
+              },
+              {
+                  "Id": "15455ff6-8dbc-11eb-a57c-31dcdef91872",
+                  "ApiChange": "Resource",
+                  "ChangedApiName": "authenticationMethodsRegistrationCampaign",
+                  "ChangeType": "Addition",
+                  "Description": "Added the [authenticationMethodsRegistrationCampaign](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodsRegistrationCampaign?view=graph-rest-beta) resource type.",
+                  "Target": "authenticationMethodsRegistrationCampaign"
+              },
+              {
+                  "Id": "1547d0ea-8dbc-11eb-a57c-31dcdef91872",
+                  "ApiChange": "Resource",
+                  "ChangedApiName": "authenticationMethodsRegistrationCampaignIncludeTarget",
+                  "ChangeType": "Addition",
+                  "Description": "Added the [authenticationMethodsRegistrationCampaignIncludeTarget](https://docs.microsoft.com/en-us/graph/api/resources/authenticationMethodsRegistrationCampaignIncludeTarget?view=graph-rest-beta) resource type.",
+                  "Target": "authenticationMethodsRegistrationCampaignIncludeTarget"
+              },
+              {
+                  "Id": "154a24ee-8dbc-11eb-a57c-31dcdef91872",
+                  "ApiChange": "Resource",
+                  "ChangedApiName": "excludeTarget",
+                  "ChangeType": "Addition",
+                  "Description": "Added the [excludeTarget](https://docs.microsoft.com/en-us/graph/api/resources/excludeTarget?view=graph-rest-beta) resource type.",
+                  "Target": "excludeTarget"
+              },
+              {
+                  "Id": "154c88de-8dbc-11eb-a57c-31dcdef91872",
+                  "ApiChange": "Resource",
+                  "ChangedApiName": "registrationEnforcement",
+                  "ChangeType": "Addition",
+                  "Description": "Added the [registrationEnforcement](https://docs.microsoft.com/en-us/graph/api/resources/registrationEnforcement?view=graph-rest-beta) resource type.",
+                  "Target": "registrationEnforcement"
+              },
+              {
+                  "Id": "154ee88f-8dbc-11eb-a57c-31dcdef91872",
+                  "ApiChange": "Enum type",
+                  "ChangedApiName": "advancedConfigState",
+                  "ChangeType": "Addition",
+                  "Description": "Added the **advancedConfigState** enumeration type.",
+                  "Target": "advancedConfigState"
+              }
+          ],
+          "Id": "15409990-8dbc-11eb-a57c-31dcdef91872",
+          "Cloud": "prd",
+          "Version": "beta",
+          "CreatedDateTime": "2021-05-25T22:47:31.485Z",
+          "WorkloadArea": "Identity and access",
+          "SubArea": "Identity and sign-in"
+      },
+      {
+        "ChangeList": [
+            {
+                "Id": "55cd90a5-69ec-11eb-9359-06bda5ccc16f",
+                "ApiChange": "Resource",
+                "ChangedApiName": "selfSignedCertificate",
+                "ChangeType": "Addition",
+                "Description": "Added the [selfSignedCertificate](https://docs.microsoft.com/en-us/graph/api/resources/selfSignedCertificate?view=graph-rest-beta) resource type.",
+                "Target": "selfSignedCertificate"
+            }
+        ],
+        "Id": "55cd90a5-69ec-11eb-9359-06bda5ccc16f",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2021-03-18T09:02:13.750Z",
+        "WorkloadArea": "Identity and access",
+        "SubArea": "Directory management"
+    },
+    {
+        "ChangeList": [
+            {
+                "Id": "55cfd9a0-69ec-11eb-9359-06bda5ccc16f",
+                "ApiChange": "Method",
+                "ChangedApiName": "addTokenSigningCertificate",
+                "ChangeType": "Addition",
+                "Description": "Added the [addTokenSigningCertificate](https://docs.microsoft.com/en-us/graph/api/servicePrincipal-addTokenSigningCertificate?view=graph-rest-beta) method to the [servicePrincipal](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipal?view=graph-rest-beta) resource.",
+                "Target": "servicePrincipal"
+            }
+        ],
+        "Id": "55cfd9a0-69ec-11eb-9359-06bda5ccc16f",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2021-03-18T09:02:13.750Z",
+        "WorkloadArea": "Applications",
+        "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "3dc87842-0acd-4b98-89b3-a798f6bbc044",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conditionalaccesspolicy",
+          "ChangeType": "Change",
+          "Description": "Added [includeAuthenticationContextClassReferences] property to the [conditionalAccessApplications](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccessapplications?view=graph-rest-beta) property, to manage configured authentication context in policy.",
+          "Target": "Conditional Access"
+        },
+        {
+          "Id": "3dc87842-0acd-4b98-89b3-a798f6bbc044",
+          "ApiChange": "Resource",
+          "ChangedApiName": "authenticationcontextclassreference",
+          "ChangeType": "Addition",
+          "Description": "Added the [authenticationContextClassReference](https://docs.microsoft.com/en-us/graph/api/resources/authenticationcontextclassreference?view=graph-rest-beta) resource and associated methods.",
+          "Target": "authenticationcontextclassreference"
+        }
+      ],
+      "Id": "3dc87842-0acd-4b98-89b3-a798f6bbc044",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-05-10T00:00:00",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "c3d570f0-e2f4-449c-851e-ad0f0c0d5557",
+          "ApiChange": "Property",
+          "ChangedApiName": "authorizationPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the guestUserRoleId property to [authorizationPolicy](https://docs.microsoft.com/graph/api/resources/authorizationpolicy?view=graph-rest-1.0&preserve-view=true) to specify the role granted to guest users.",
+          "Target": "authorizationPolicy"
+        }
+      ],
+      "Id": "c3d570f0-e2f4-449c-851e-ad0f0c0d5557",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-05-03T17:53:06Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
     {
       "ChangeList": [
         {
@@ -7,7 +145,7 @@
           "ApiChange": "Permission",
           "ChangedApiName": "accessReviews",
           "ChangeType": "Addition",
-          "Description": "Added Policy.ReadWrite.All permission.",
+          "Description": "Added Policy.ReadWrite.AccessReviews permission.",
           "Target": "accessReviews"
         }
       ],
@@ -2940,7 +3078,7 @@
           "ApiChange": "Resource",
           "ChangedApiName": "unifiedRoleAssignmentMultiple,rbacApplicationMultiple,appScope,List unifiedRoleAssignmentMultiple,Get unifiedRoleAssignmentMultiple,Create unifiedRoleAssignmentMultiple,Update unifiedRoleAssignmentMultiple,Delete unifiedRoleAssignmentMultiple",
           "ChangeType": "Addition",
-          "Description": "Added [unifiedRoleAssignmentMultiple](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroleassignmentmultiple?view=graph-rest-beta), [rbacApplicationMultiple](https://docs.microsoft.com/en-us/graph/api/resources/rbacapplicationmultiple?view=graph-rest-beta), and [appScope](https://docs.microsoft.com/en-us/graph/api/resources/appscope?view=graph-rest-beta) and the following actions:\u003Cbr\u003E\u003Cli\u003E[List unifiedRoleAssignmentMultiple](https://docs.microsoft.com/en-us/graph/api/unifiedroleassignmentmultiple-list?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Get unifiedRoleAssignmentMultiple](https://docs.microsoft.com/en-us/graph/api/unifiedroleassignmentmultiple-get?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Create unifiedRoleAssignmentMultiple](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroleassignmentmultiple-post?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Update unifiedRoleAssignmentMultiple](https://docs.microsoft.com/en-us/graph/api/unifiedroleassignmentmultiple-update?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Delete unifiedRoleAssignmentMultiple](https://docs.microsoft.com/en-us/graph/api/unifiedroleassignmentmultiple-delete?view=graph-rest-beta)\u003C/li\u003E.",
+          "Description": "Added [unifiedRoleAssignmentMultiple](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroleassignmentmultiple?view=graph-rest-beta), [rbacApplicationMultiple](https://docs.microsoft.com/en-us/graph/api/resources/rbacapplicationmultiple?view=graph-rest-beta), and [appScope](https://docs.microsoft.com/en-us/graph/api/resources/appscope?view=graph-rest-beta) and the following actions:\u003Cbr\u003E\u003Cli\u003E[List unifiedRoleAssignmentMultiple](https://docs.microsoft.com/en-us/graph/api/rbacapplicationmultiple-list-roleassignments?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Get unifiedRoleAssignmentMultiple](https://docs.microsoft.com/en-us/graph/api/unifiedroleassignmentmultiple-get?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Create unifiedRoleAssignmentMultiple](https://docs.microsoft.com/en-us/graph/api/resources/rbacapplicationmultiple-post-roleassignments?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Update unifiedRoleAssignmentMultiple](https://docs.microsoft.com/en-us/graph/api/unifiedroleassignmentmultiple-update?view=graph-rest-beta)\u003C/li\u003E\u003Cli\u003E[Delete unifiedRoleAssignmentMultiple](https://docs.microsoft.com/en-us/graph/api/unifiedroleassignmentmultiple-delete?view=graph-rest-beta)\u003C/li\u003E.",
           "Target": "unifiedRoleAssignmentMultiple,rbacApplicationMultiple,appScope,List unifiedRoleAssignmentMultiple,Get unifiedRoleAssignmentMultiple,Create unifiedRoleAssignmentMultiple,Update unifiedRoleAssignmentMultiple,Delete unifiedRoleAssignmentMultiple"
         },
         {
@@ -6344,6 +6482,44 @@
       "SubArea": ""
     },
     {
+
+    "ChangeList": [
+      {"Id":"f327cb08-5076-11eb-ae35-ed470c456b69",
+        "ApiChange":"Method",
+        "ChangedApiName":"FilterByCurrentUser",
+        "ChangeType":"Addition",
+        "Description":"Added the [FilterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/accessPackageAssignmentRequest-FilterByCurrentUser?view=graph-rest-beta) method to the [accessPackageAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-beta) resource",
+        "Target":"accessPackageAssignmentRequest"
+      },
+      {"Id":"f32a33c2-5076-11eb-ae35-ed470c456b69",
+        "ApiChange":"Method",
+        "ChangedApiName":"FilterByCurrentUser",
+        "ChangeType":"Addition",
+        "Description":"Added the [FilterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/accessPackageAssignment-FilterByCurrentUser?view=graph-rest-beta) method to the [accessPackageAssignment](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignment?view=graph-rest-beta) resource",
+        "Target":"accessPackageAssignment"
+      },
+      {"Id":"f32c8c02-5076-11eb-ae35-ed470c456b69",
+        "ApiChange":"Method",
+        "ChangedApiName":"My",
+        "ChangeType":"Deletion",
+        "Description":"Removed the **My** method from the [accessPackageAssignmentRequest](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequest?view=graph-rest-beta) resource",
+        "Target":"accessPackageAssignmentRequest"
+      },
+      {"Id":"f32ef85c-5076-11eb-ae35-ed470c456b69",
+        "ApiChange":"Method",
+        "ChangedApiName":"My",
+        "ChangeType":"Deletion",
+        "Description":"Removed the **My** method from the [accessPackageAssignment](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignment?view=graph-rest-beta) resource",
+        "Target":"accessPackageAssignment"
+        }],
+      "Id":"f3230454-5076-11eb-ae35-ed470c456b69",
+        "Cloud":"prd",
+        "Version":"beta",
+        "CreatedDateTime":"2021-05-07T23:28:58.045Z",
+        "WorkloadArea":"Identity and access",
+        "SubArea":"Identity governance"
+      }, {
+
       "ChangeList": [
         {
           "Id": "f7c9599a-1e37-4506-a16b-3ba8ffa9e530",
@@ -7096,6 +7272,452 @@
       "CreatedDateTime": "2021-03-30T00:00:00",
       "WorkloadArea": "Identity and access",
       "SubArea": ""
+    },
+    {      
+      "ChangeList":[
+        {
+          "Id": "d8fedf6b-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRoleAssignmentSchedule",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoleAssignmentSchedule](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleAssignmentSchedule?view=graph-rest-beta) resource type",
+          "Target": "unifiedRoleAssignmentSchedule"
+        },
+        {
+          "Id": "d9039b93-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRoleEligibilitySchedule",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoleEligibilitySchedule](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleEligibilitySchedule?view=graph-rest-beta) resource type",
+          "Target": "unifiedRoleEligibilitySchedule"
+        },
+        {
+          "Id": "d90608ab-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRoleAssignmentScheduleInstance",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoleAssignmentScheduleInstance](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleAssignmentScheduleInstance?view=graph-rest-beta) resource type",
+          "Target": "unifiedRoleAssignmentScheduleInstance"
+        },
+        {
+          "Id": "d90876ee-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRoleEligibilityScheduleInstance",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoleEligibilityScheduleInstance](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleEligibilityScheduleInstance?view=graph-rest-beta) resource type",
+          "Target": "unifiedRoleEligibilityScheduleInstance"
+        },
+        {
+          "Id": "d90ad140-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRoleAssignmentScheduleRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoleAssignmentScheduleRequest](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleAssignmentScheduleRequest?view=graph-rest-beta) resource type",
+          "Target": "unifiedRoleAssignmentScheduleRequest"
+        },
+        {
+          "Id": "d90d309b-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRoleEligibilityScheduleRequest",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoleEligibilityScheduleRequest](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleEligibilityScheduleRequest?view=graph-rest-beta) resource type",
+          "Target": "unifiedRoleEligibilityScheduleRequest"
+        },
+        {
+          "Id": "d90fa219-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRoleManagementPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoleManagementPolicy](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementPolicy?view=graph-rest-beta) resource type",
+          "Target": "unifiedRoleManagementPolicy"
+        },
+        {
+          "Id": "d9120049-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRoleManagementPolicyAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoleManagementPolicyAssignment](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementPolicyAssignment?view=graph-rest-beta) resource type",
+          "Target": "unifiedRoleManagementPolicyAssignment"
+        },
+        {
+          "Id": "d914622a-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRoleManagementPolicyRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoleManagementPolicyRule](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementPolicyRule?view=graph-rest-beta) resource type",
+          "Target": "unifiedRoleManagementPolicyRule"
+        },
+        {
+          "Id": "d9169f0a-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identitySet",
+          "ChangeType": "Addition",
+          "Description": "Added the [identitySet](https://docs.microsoft.com/en-us/graph/api/resources/identitySet?view=graph-rest-beta) resource type",
+          "Target": "identitySet"
+        },
+        {
+          "Id": "d918ff2c-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identity",
+          "ChangeType": "Addition",
+          "Description": "Added the [identity](https://docs.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-beta) resource type",
+          "Target": "identity"
+        },
+        {
+          "Id": "d91b49d7-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "requestSchedule",
+          "ChangeType": "Addition",
+          "Description": "Added the [requestSchedule](https://docs.microsoft.com/en-us/graph/api/resources/requestSchedule?view=graph-rest-beta) resource type",
+          "Target": "requestSchedule"
+        },
+        {
+          "Id": "d91da81f-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "expirationPattern",
+          "ChangeType": "Addition",
+          "Description": "Added the [expirationPattern](https://docs.microsoft.com/en-us/graph/api/resources/expirationPattern?view=graph-rest-beta) resource type",
+          "Target": "expirationPattern"
+        },
+        {
+          "Id": "d9226830-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "recurrencePattern",
+          "ChangeType": "Addition",
+          "Description": "Added the [recurrencePattern](https://docs.microsoft.com/en-us/graph/api/resources/recurrencePattern?view=graph-rest-beta) resource type",
+          "Target": "recurrencePattern"
+        },
+        {
+          "Id": "d924c64a-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "recurrenceRange",
+          "ChangeType": "Addition",
+          "Description": "Added the [recurrenceRange](https://docs.microsoft.com/en-us/graph/api/resources/recurrenceRange?view=graph-rest-beta) resource type",
+          "Target": "recurrenceRange"
+        },
+        {
+          "Id": "d9271d31-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "ticketInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [ticketInfo](https://docs.microsoft.com/en-us/graph/api/resources/ticketInfo?view=graph-rest-beta) resource type",
+          "Target": "ticketInfo"
+        },
+        {
+          "Id": "d92974d1-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRoleManagementPolicyRuleTarget",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoleManagementPolicyRuleTarget](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementPolicyRuleTarget?view=graph-rest-beta) resource type",
+          "Target": "unifiedRoleManagementPolicyRuleTarget"
+        },
+        {
+          "Id": "d92bd4d8-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRoleManagementPolicyNotificationRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoleManagementPolicyNotificationRule](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementPolicyNotificationRule?view=graph-rest-beta) resource type",
+          "Target": "unifiedRoleManagementPolicyNotificationRule"
+        },
+        {
+          "Id": "d92e2f3e-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRoleManagementPolicyAuthenticationContextRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoleManagementPolicyAuthenticationContextRule](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementPolicyAuthenticationContextRule?view=graph-rest-beta) resource type",
+          "Target": "unifiedRoleManagementPolicyAuthenticationContextRule"
+        },
+        {
+          "Id": "d9308f4e-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRoleManagementPolicyExpirationRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoleManagementPolicyExpirationRule](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementPolicyExpirationRule?view=graph-rest-beta) resource type",
+          "Target": "unifiedRoleManagementPolicyExpirationRule"
+        },
+        {
+          "Id": "d932d2fd-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRoleManagementPolicyEnablementRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoleManagementPolicyEnablementRule](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementPolicyEnablementRule?view=graph-rest-beta) resource type",
+          "Target": "unifiedRoleManagementPolicyEnablementRule"
+        },
+        {
+          "Id": "d93539a6-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRoleManagementPolicyApprovalRule",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoleManagementPolicyApprovalRule](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementPolicyApprovalRule?view=graph-rest-beta) resource type",
+          "Target": "unifiedRoleManagementPolicyApprovalRule"
+        },
+        {
+          "Id": "d9378194-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRoleScheduleBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoleScheduleBase](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleScheduleBase?view=graph-rest-beta) resource type",
+          "Target": "unifiedRoleScheduleBase"
+        },
+        {
+          "Id": "d939c203-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRoleScheduleInstanceBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [unifiedRoleScheduleInstanceBase](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleScheduleInstanceBase?view=graph-rest-beta) resource type",
+          "Target": "unifiedRoleScheduleInstanceBase"
+        },
+        {
+          "Id": "d93c0ab6-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "approvalSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [approvalSettings](https://docs.microsoft.com/en-us/graph/api/resources/approvalSettings?view=graph-rest-beta) resource type",
+          "Target": "approvalSettings"
+        },
+        {
+          "Id": "d93e6248-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "approvalStage",
+          "ChangeType": "Addition",
+          "Description": "Added the [approvalStage](https://docs.microsoft.com/en-us/graph/api/resources/approvalStage?view=graph-rest-beta) resource type",
+          "Target": "approvalStage"
+        },
+        {
+          "Id": "d940b613-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userSet",
+          "ChangeType": "Addition",
+          "Description": "Added the [userSet](https://docs.microsoft.com/en-us/graph/api/resources/userSet?view=graph-rest-beta) resource type",
+          "Target": "userSet"
+        },
+        {
+          "Id": "d9431ef5-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "singleUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [singleUser](https://docs.microsoft.com/en-us/graph/api/resources/singleUser?view=graph-rest-beta) resource type",
+          "Target": "singleUser"
+        },
+        {
+          "Id": "d9457eb5-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "groupMembers",
+          "ChangeType": "Addition",
+          "Description": "Added the [groupMembers](https://docs.microsoft.com/en-us/graph/api/resources/groupMembers?view=graph-rest-beta) resource type",
+          "Target": "groupMembers"
+        },
+        {
+          "Id": "d947c412-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "recurrenceRangeType",
+          "ChangeType": "Addition",
+          "Description": "Added the **recurrenceRangeType** enumeration type",
+          "Target": "recurrenceRangeType"
+        },
+        {
+          "Id": "d94a0f13-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "recurrencePatternType",
+          "ChangeType": "Addition",
+          "Description": "Added the **recurrencePatternType** enumeration type",
+          "Target": "recurrencePatternType"
+        },
+        {
+          "Id": "d94c5ac5-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "dayOfWeek",
+          "ChangeType": "Addition",
+          "Description": "Added the **dayOfWeek** enumeration type",
+          "Target": "dayOfWeek"
+        },
+        {
+          "Id": "d94ec957-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "weekIndex",
+          "ChangeType": "Addition",
+          "Description": "Added the **weekIndex** enumeration type",
+          "Target": "weekIndex"
+        },
+        {
+          "Id": "d95106b3-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "expirationPatternType",
+          "ChangeType": "Addition",
+          "Description": "Added the **expirationPatternType** enumeration type",
+          "Target": "expirationPatternType"
+        },
+        {
+          "Id": "d9534f0a-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "roleAssignmentScheduleRequestFilterByCurrentUserOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **roleAssignmentScheduleRequestFilterByCurrentUserOptions** enumeration type",
+          "Target": "roleAssignmentScheduleRequestFilterByCurrentUserOptions"
+        },
+        {
+          "Id": "d955bf43-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "roleAssignmentScheduleFilterByCurrentUserOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **roleAssignmentScheduleFilterByCurrentUserOptions** enumeration type",
+          "Target": "roleAssignmentScheduleFilterByCurrentUserOptions"
+        },
+        {
+          "Id": "d958391c-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "roleEligibilityScheduleRequestFilterByCurrentUserOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **roleEligibilityScheduleRequestFilterByCurrentUserOptions** enumeration type",
+          "Target": "roleEligibilityScheduleRequestFilterByCurrentUserOptions"
+        },
+        {
+          "Id": "d95a81c9-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "roleEligibilityScheduleFilterByCurrentUserOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **roleEligibilityScheduleFilterByCurrentUserOptions** enumeration type",
+          "Target": "roleEligibilityScheduleFilterByCurrentUserOptions"
+        },
+        {
+          "Id": "d95ced27-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "roleAssignmentScheduleInstanceFilterByCurrentUserOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **roleAssignmentScheduleInstanceFilterByCurrentUserOptions** enumeration type",
+          "Target": "roleAssignmentScheduleInstanceFilterByCurrentUserOptions"
+        },
+        {
+          "Id": "d95f645d-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "roleEligibilityScheduleInstanceFilterByCurrentUserOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the **roleEligibilityScheduleInstanceFilterByCurrentUserOptions** enumeration type",
+          "Target": "roleEligibilityScheduleInstanceFilterByCurrentUserOptions"
+        },
+        {
+          "Id": "d961d67d-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Method",
+          "ChangedApiName": "cancel",
+          "ChangeType": "Addition",
+          "Description": "Added the [cancel](https://docs.microsoft.com/en-us/graph/api/unifiedRoleAssignmentScheduleRequest-cancel?view=graph-rest-beta) method to the [unifiedRoleAssignmentScheduleRequest](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleAssignmentScheduleRequest?view=graph-rest-beta) resource",
+          "Target": "unifiedRoleAssignmentScheduleRequest"
+        },
+        {
+          "Id": "d9642123-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Method",
+          "ChangedApiName": "cancel",
+          "ChangeType": "Addition",
+          "Description": "Added the [cancel](https://docs.microsoft.com/en-us/graph/api/unifiedRoleEligibilityScheduleRequest-cancel?view=graph-rest-beta) method to the [unifiedRoleEligibilityScheduleRequest](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleEligibilityScheduleRequest?view=graph-rest-beta) resource",
+          "Target": "unifiedRoleEligibilityScheduleRequest"
+        },
+        {
+          "Id": "d9668d2b-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Method",
+          "ChangedApiName": "roleSchedules",
+          "ChangeType": "Addition",
+          "Description": "Added the [roleSchedules](https://docs.microsoft.com/en-us/graph/api/rbacApplication-roleSchedules?view=graph-rest-beta) method to the [rbacApplication](https://docs.microsoft.com/en-us/graph/api/resources/rbacApplication?view=graph-rest-beta) resource",
+          "Target": "rbacApplication"
+        },
+        {
+          "Id": "d968f4cc-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Method",
+          "ChangedApiName": "roleScheduleInstances",
+          "ChangeType": "Addition",
+          "Description": "Added the [roleScheduleInstances](https://docs.microsoft.com/en-us/graph/api/rbacApplication-roleScheduleInstances?view=graph-rest-beta) method to the [rbacApplication](https://docs.microsoft.com/en-us/graph/api/resources/rbacApplication?view=graph-rest-beta) resource",
+          "Target": "rbacApplication"
+        },
+        {
+          "Id": "d96b618b-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Method",
+          "ChangedApiName": "filterByCurrentUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/unifiedRoleAssignmentScheduleRequest-filterByCurrentUser?view=graph-rest-beta) method to the [unifiedRoleAssignmentScheduleRequest](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleAssignmentScheduleRequest?view=graph-rest-beta) resource",
+          "Target": "unifiedRoleAssignmentScheduleRequest"
+        },
+        {
+          "Id": "d96dc90c-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Method",
+          "ChangedApiName": "filterByCurrentUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/unifiedRoleEligibilityScheduleRequest-filterByCurrentUser?view=graph-rest-beta) method to the [unifiedRoleEligibilityScheduleRequest](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleEligibilityScheduleRequest?view=graph-rest-beta) resource",
+          "Target": "unifiedRoleEligibilityScheduleRequest"
+        },
+        {
+          "Id": "d9702c41-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Method",
+          "ChangedApiName": "filterByCurrentUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/unifiedRoleAssignmentSchedule-filterByCurrentUser?view=graph-rest-beta) method to the [unifiedRoleAssignmentSchedule](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleAssignmentSchedule?view=graph-rest-beta) resource",
+          "Target": "unifiedRoleAssignmentSchedule"
+        },
+        {
+          "Id": "d97289d5-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Method",
+          "ChangedApiName": "filterByCurrentUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/unifiedRoleEligibilitySchedule-filterByCurrentUser?view=graph-rest-beta) method to the [unifiedRoleEligibilitySchedule](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleEligibilitySchedule?view=graph-rest-beta) resource",
+          "Target": "unifiedRoleEligibilitySchedule"
+        },
+        {
+          "Id": "d974d6d2-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Method",
+          "ChangedApiName": "filterByCurrentUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/unifiedRoleAssignmentScheduleInstance-filterByCurrentUser?view=graph-rest-beta) method to the [unifiedRoleAssignmentScheduleInstance](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleAssignmentScheduleInstance?view=graph-rest-beta) resource",
+          "Target": "unifiedRoleAssignmentScheduleInstance"
+        },
+        {
+          "Id": "d9773f3e-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Method",
+          "ChangedApiName": "filterByCurrentUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/unifiedRoleEligibilityScheduleInstance-filterByCurrentUser?view=graph-rest-beta) method to the [unifiedRoleEligibilityScheduleInstance](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleEligibilityScheduleInstance?view=graph-rest-beta) resource",
+          "Target": "unifiedRoleEligibilityScheduleInstance"
+        }
+      ],
+      "Id": "d8fc54d5-58aa-11eb-9aa5-a83ab134eab0",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-01-17T10:00:37.303Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "d91ffcda-58aa-11eb-9aa5-a83ab134eab0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "patternedRecurrence",
+          "ChangeType": "Addition",
+          "Description": "Added the [patternedRecurrence](https://docs.microsoft.com/en-us/graph/api/resources/patternedRecurrence?view=graph-rest-beta) resource type",
+          "Target": "patternedRecurrence"
+        }
+      ],
+      "Id": "d8fc54d5-58aa-11eb-9aa5-a83ab134eab0",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-01-17T10:00:37.303Z",
+      "WorkloadArea": "Calendar",
+      "SubArea": "Identity governance"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "a45bff3c-e579-4b5b-92d1-a46d14d85a92",
+          "ApiChange": "Property",
+          "ChangedApiName": "unifiedRoleManagementPolicyNotificationRule",
+          "ChangeType": "Addition",
+          "Description": "Added the **isDefaultRecipientsEnabled** property to the [unifiedRoleManagementPolicyNotificationRule](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleManagementPolicyNotificationRule?view=graph-rest-beta) resource.",
+          "Target": "unifiedRoleManagementPolicyNotificationRule"
+        }
+      ],
+      "Id": "a45bff3c-e579-4b5b-92d1-a46d14d85a92",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-04-13T00:00:00",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity governance"
     }
   ]
 }

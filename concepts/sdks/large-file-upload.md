@@ -101,7 +101,7 @@ InputStream fileStream = new FileInputStream(file);
 long streamSize = file.length();
 
 // Create a callback used by the upload provider
-IProgressCallback<DriveItem> callback = new IProgressCallback<DriveItem>() {
+IProgressCallback callback = new IProgressCallback() {
     @Override
     // Called after each slice of the file is uploaded
     public void progress(final long current, final long max) {
@@ -111,6 +111,10 @@ IProgressCallback<DriveItem> callback = new IProgressCallback<DriveItem>() {
     }
 };
 
+DriveItemCreateUploadSessionParameterSet uploadParams =
+    DriveItemCreateUploadSessionParameterSet.newBuilder()
+        .withItem(new DriveItemUploadableProperties()).build();
+
 // Create an upload session
 UploadSession uploadSession = graphClient
     .me()
@@ -119,7 +123,7 @@ UploadSession uploadSession = graphClient
     // itemPath like "/Folder/file.txt"
     // does not need to be a path to an existing item
     .itemWithPath(itemPath)
-    .createUploadSession(new DriveItemUploadableProperties())
+    .createUploadSession(uploadParams)
     .buildRequest()
     .post();
 
@@ -127,13 +131,8 @@ LargeFileUploadTask<DriveItem> largeFileUploadTask =
     new LargeFileUploadTask<DriveItem>
         (uploadSession, graphClient, fileStream, streamSize, DriveItem.class);
 
-// Config parameter is an array of integers
-// customConfig[0] indicates the max slice size
-// Max slice size must be a multiple of 320 KiB
-int[] customConfig = { 320 * 1024 };
-
 // Do the upload
-largeFileUploadTask.upload(callback, customConfig);
+largeFileUploadTask.upload(0, null, callback);
 ```
 
 ---

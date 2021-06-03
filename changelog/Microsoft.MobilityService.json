@@ -1,0 +1,54 @@
+{
+    "changelog": [
+        {
+            "ChangeList": [
+                {
+                    "Id": "5c98f801-d1c4-44eb-ac11-f72b6754deda",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "mobilityManagementPolicy",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [mobilityManagementPolicy](/graph/api/resources/mobilityManagementPolicy?view=graph-rest-beta) resource type",
+                    "Target": "mobilityManagementPolicy"
+                },
+                {
+                    "Id": "5c98f801-d1c4-44eb-ac11-f72b6754deda",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "mobileDeviceManagementPolicies",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [mobileDeviceManagementPolicies](/graph/api/resources/mobileDeviceManagementPolicies?view=graph-rest-1.0) resource type",
+                    "Target": "mobileDeviceManagementPolicies"
+                },
+                {
+                    "Id": "5c98f801-d1c4-44eb-ac11-f72b6754deda",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "mobileAppManagementPolicies",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [mobileAppManagementPolicies](/graph/api/resources/mobileAppManagementPolicies?view=graph-rest-1.0) resource type",
+                    "Target": "mobileAppManagementPolicies"
+                },
+                {
+                    "Id": "5c98f801-d1c4-44eb-ac11-f72b6754deda",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "policyScope",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **policyScope** enumeration type",
+                    "Target": "policyScope"
+                },
+                {
+                    "Id": "b8f0d5d5-a0b6-4ed0-8662-7a26dbfd2d46",
+                    "ApiChange": "Permission",
+                    "ChangedApiName": "Policy.ReadWrite.MobilityManagement",
+                    "ChangeType": "Addition",
+                    "Description": "Added new [Policy.ReadWrite.MobilityManagement](https://docs.microsoft.com/en-us/graph/permissions-reference#policy-permissions) delegated permission for policy APIs.",
+                    "Target": "policyRoot"
+                }
+            ],
+            "Id": "b8f0d5d5-a0b6-4ed0-8662-7a26dbfd2d46",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2020-05-12T00:00:00",
+            "WorkloadArea": "Identity and access",
+            "SubArea" : ""
+        }
+    ]
+}

@@ -30,7 +30,7 @@ This resource lets you add your own data to custom properties using [extensions]
 |**Schema extensions**| | |
 |[Add schema extension values](../api/schemaextension-post-schemaextensions.md) | [schemaExtension](schemaextension.md) | Create a schema extension definition and then use it to add custom typed data to a resource.|
 |[Create organizationalBrandingProperties](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Create a new organizationalBrandingProperties by posting to the branding collection. |
-|[Get branding](../api/organizationalbrandingproperties-get.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) collection | Get a organizationalBrandingProperties object collection. |
+|[Get branding](../api/organizationalbrandingproperties-get.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) collection | Get an organizationalBrandingProperties object collection. |
 
 ## Properties 
 | Property | Type	| Description |
@@ -48,7 +48,7 @@ This resource lets you add your own data to custom properties using [extensions]
 | isMultipleDataLocationsForServicesEnabled | Boolean | `true` if organization is Multi-Geo enabled; `false` if organization is not Multi-Geo enabled; `null` (default). Read-only. For more information, see [OneDrive Online Multi-Geo](/sharepoint/dev/solution-guidance/multigeo-introduction). |
 | marketingNotificationEmails | String collection | Not nullable. |
 | objectType | String | A string that identifies the object type. For tenants the value is always `Company`.|
-| onPremisesLastSyncDateTime | DateTimeOffset | The time and date at which the tenant was last synced with the on-premise directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
+| onPremisesLastSyncDateTime | DateTimeOffset | The time and date at which the tenant was last synced with the on-premises directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 | onPremisesSyncEnabled | Boolean | `true` if this object is synced from an on-premises directory; `false` if this object was originally synced from an on-premises directory but is no longer synced; Nullable. `null` if this object has never been synced from an on-premises directory (default). |
 | postalCode | String | Postal code of the address for the organization. |
 | preferredLanguage | String | The preferred language for the organization. Should follow ISO 639-1 Code; for example `en`. |

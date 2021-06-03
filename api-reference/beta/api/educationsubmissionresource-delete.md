@@ -28,8 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 DELETE /education/classes/{id}/assignments/{id}/submissions/{id}/resources/{id}
-
 ```
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|

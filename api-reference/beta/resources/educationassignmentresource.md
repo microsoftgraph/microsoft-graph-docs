@@ -23,7 +23,6 @@ will receive a copy of this resource in the resource list of their submission. E
 | Method		   | Return Type	|Description|
 |:---------------|:--------|:----------|
 |[Get educationAssignmentResource](../api/educationassignmentresource-get.md) | [educationAssignmentResource](educationassignmentresource.md) |Read properties and relationships of an **educationAssignmentResource** object.|
-|[Update](../api/educationassignmentresource-update.md) | [educationAssignmentResource](educationassignmentresource.md)	|Update an **educationAssignmentResource** object. |
 |[Delete](../api/educationassignmentresource-delete.md) | None |Delete an **educationAssignmentResource** object. |
 
 ## Properties

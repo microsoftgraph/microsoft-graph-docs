@@ -2,7 +2,7 @@
 title: "group: checkMemberObjects"
 description: "Check for membership in a list of groups, directory roles, or administrative units for the specified group object."
 localization_priority: Normal
-author: "yyuank"
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: "apiPageType"
 ---

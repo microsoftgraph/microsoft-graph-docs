@@ -12,7 +12,7 @@ const client = Client.init(options);
 
 const authenticationMethodConfiguration = {
   '@odata.type': '#microsoft.graph.emailAuthenticationMethodConfiguration',
-  allowExternalIdToUseEmailOtp: 'false',
+  allowExternalIdToUseEmailOtp: 'disabled',
 };
 
 await client.api('/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/email')

@@ -18,11 +18,11 @@ Create a new [androidCustomConfiguration](../resources/intune-deviceconfig-andro
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -66,7 +66,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 402
+Content-length: 376
 
 {
   "@odata.type": "#microsoft.graph.androidCustomConfiguration",
@@ -75,11 +75,10 @@ Content-length: 402
   "version": 7,
   "omaSettings": [
     {
-      "@odata.type": "microsoft.graph.omaSettingInteger",
+      "@odata.type": "microsoft.graph.omaSetting",
       "displayName": "Display Name value",
       "description": "Description value",
-      "omaUri": "Oma Uri value",
-      "value": 5
+      "omaUri": "Oma Uri value"
     }
   ]
 }
@@ -90,7 +89,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 574
+Content-Length: 548
 
 {
   "@odata.type": "#microsoft.graph.androidCustomConfiguration",
@@ -102,20 +101,14 @@ Content-Length: 574
   "version": 7,
   "omaSettings": [
     {
-      "@odata.type": "microsoft.graph.omaSettingInteger",
+      "@odata.type": "microsoft.graph.omaSetting",
       "displayName": "Display Name value",
       "description": "Description value",
-      "omaUri": "Oma Uri value",
-      "value": 5
+      "omaUri": "Oma Uri value"
     }
   ]
 }
 ```
-
-
-
-
-
 
 
 

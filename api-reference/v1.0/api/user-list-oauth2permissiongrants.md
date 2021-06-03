@@ -16,6 +16,9 @@ Retrieve a list of [oAuth2PermissionGrant](../resources/oAuth2PermissionGrant.md
 > [!NOTE]
 > Querying the delegated permission grants for a user will only return delegated permissions grants that are specifically for the given user. Delegated permissions granted on behalf of all users in the organization are _not_ included in the response.
 
+> [!NOTE]
+> This request might have replication delays for delegated permission grants that were recently created, updated, or deleted.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

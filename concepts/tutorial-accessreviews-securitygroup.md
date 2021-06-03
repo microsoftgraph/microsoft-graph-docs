@@ -135,6 +135,7 @@ Create an access review for members of the security group, using the following s
 ### Request
 In this call, replace the following:
 + `825f1b5e-6fb2-4d9a-b393-d491101acc0c` with the **id** of **Building security group**.
++ The scope specifies that the review is applied to all group members of the the **Building security group**. For more options for configuring the scope, see the [See also](#see-also) section.
 + Value of **startDate** with today's date and value of **endDate** with a date one year from the start date.
 
 By failing to specify the value of the **reviewers** property, this access review is configured as self-reviewing with the members as the reviewers.
@@ -472,11 +473,8 @@ Content-type: text/plain
 
 ## See also
 
-+ [access reviews overview and license requirements](/azure/active-directory/governance/access-reviews-overview)
-+ [access reviews license scenarios](/azure/active-directory/governance/access-reviews-overview#example-license-scenarios)
++ [Access reviews API Reference](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
++ [Configure the scope of your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept)
++ [Access reviews overview and license requirements](/azure/active-directory/governance/access-reviews-overview)
 + [Create an access review of groups & applications](/azure/active-directory/governance/create-access-review)
-+ [access reviews API Reference](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
-+ [Create accessReviewScheduleDefinition](/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&preserve-view=true)
-+ [List accessReviewInstance](/graph/api/accessreviewinstance-list?view=graph-rest-beta&preserve-view=true)
-+ [List accessReviewInstanceDecisionItem](/graph/api/accessreviewinstancedecisionitem-list?view=graph-rest-beta&preserve-view=true)
 

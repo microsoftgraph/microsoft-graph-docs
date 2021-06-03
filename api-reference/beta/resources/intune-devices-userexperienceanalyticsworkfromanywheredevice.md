@@ -41,6 +41,8 @@ The user experience analytics Device for work from anywhere report
 |azureAdRegistered|Boolean|The user experience work from anywhere device's azureAdRegistered.|
 |azureAdDeviceId|String|The user experience work from anywhere azure Ad device Id.|
 |azureAdJoinType|String|The user experience work from anywhere device's azure Ad joinType.|
+|osDescription|String|The user experience work from anywhere device's OS Description.|
+|osVersion|String|The user experience work from anywhere device's OS Version.|
 
 ## Relationships
 None
@@ -67,7 +69,9 @@ Here is a JSON representation of the resource.
   "autoPilotProfileAssigned": true,
   "azureAdRegistered": true,
   "azureAdDeviceId": "String",
-  "azureAdJoinType": "String"
+  "azureAdJoinType": "String",
+  "osDescription": "String",
+  "osVersion": "String"
 }
 ```
 
