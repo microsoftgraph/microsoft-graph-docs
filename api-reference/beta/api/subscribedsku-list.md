@@ -32,7 +32,7 @@ GET /subscribedSkus
 ```
 ## Optional query parameters
 
-This method does not support the [OData query parameters](/graph//query-parameters) to help customize the response (`$filter` is not supported).
+This method does **not** support the [OData query parameters](/graph//query-parameters) to help customize the response - for example, `$filter` isn't supported.
 
 ## Request headers
 
