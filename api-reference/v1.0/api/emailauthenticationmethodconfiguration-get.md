@@ -19,9 +19,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Policy.ReadWrite.AuthenticationMethod|
+|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.AuthenticationMethod|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Policy.ReadWrite.AuthenticationMethod|
+|Application|Policy.Read.All, Policy.ReadWrite.AuthenticationMethod|
 
 For delegated scenarios, the administrator needs the Global admin role. For more information, see [role](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
@@ -33,7 +33,7 @@ For delegated scenarios, the administrator needs the Global admin role. For more
 -->
 
 ```http
-GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/email
+GET /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/email
 ```
 
 ## Request headers
@@ -60,7 +60,7 @@ If successful, this method returns a `200 OK` response code and an [emailAuthent
 -->
 
 ```http
-GET /policies/authenticationMethodsPolicy/email
+GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/email
 ```
 
 ### Response
