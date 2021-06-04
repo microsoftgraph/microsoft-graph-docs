@@ -22,9 +22,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Schedule.ReadWrite.All, Group.ReadWrite.All    |
+|Delegated (work or school account) | Schedule.ReadWrite.All   |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Schedule.ReadWrite.All |
+|Application | Schedule.ReadWrite.All* |
+
+>\* **Important:** Application permissions require MS-APP-ACTS-AS header to be provided.
 
 ## HTTP request
 
@@ -39,6 +41,7 @@ DELETE /teams/{teamId}/schedule/schedulingGroups/{schedulingGroupId}
 | Header       | Value |
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
+| MS-APP-ACTS-AS | The id of the user on behalf of whom the app is acting. Required for Application permission scope. |
 
 ## Request body
 Do not supply a request body for this method.

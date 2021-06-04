@@ -158,6 +158,18 @@ For a summary of the value of these API changes, as well as recent tools, compon
 |Addition|beta|Added the **plannerContainerType** enumeration type.|
 |Change|beta| Deprecated the **owner** property on [plannerPlan](/graph/api/resources/plannerPlan?view=graph-rest-beta&preserve-view=true) resource.|
 
+## January 2021
+
+### Teamwork
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | Beta | Added new entity:[timecard](/graph/api/resources/timecard?view=graph-rest-beta) and associated methods. |
+| Addition | Beta | Added new complex types:<br/>[timeCardEntry](/graph/api/resources/timecardentry?view=graph-rest-beta)<br/>[timeCardBreak](/graph/api/resources/timecardbreak?view=graph-rest-beta)<br/>[timeCardEvent](/graph/api/resources/timecardevent?view=graph-rest-beta)<br/>[timeClockSettings](/graph/api/resources/timeclocksettings?view=graph-rest-beta)<br/>|
+| Addition | Beta | Added new enum types:<br/>[timeCardState](/graph/api/resources/enums?view=graph-rest-beta)<br/>[confirmedBy](/graph/api/resources/enums?view=graph-rest-beta)<br/>|
+| Change | Beta | Updated application permission requirements to include MS- header for following entities:<br/>[schedule](/graph/api/resources/schedule?view=graph-rest-beta)<br/>[shift](/graph/api/resources/shift?view=graph-rest-beta)<br/>[schedulingGroup](/graph/api/resources/schedulingGroup?view=graph-rest-beta)<br/>[offerShiftRequest](/graph/api/resources/offerShiftRequest?view=graph-rest-beta)<br/>[openshift](/graph/api/resources/openshift?view=graph-rest-beta)<br/>[openshiftchangerequest](/graph/api/resources/openshiftchangerequest?view=graph-rest-beta)<br/>[shiftPreferences](/graph/api/resources/shiftPreferences?view=graph-rest-beta)<br/>[timeoff](/graph/api/resources/timeoff?view=graph-rest-beta)<br/>[timeoffreason](/graph/api/resources/timeoffreason?view=graph-rest-beta)<br/>[timeoffrequest](/graph/api/resources/timeoffrequest?view=graph-rest-beta)<br/>[swapshiftschangerequest](/graph/api/resources/swapshiftschangerequest?view=graph-rest-beta)<br/>|
+| Change | v1.0 | Updated application permission requirements to include MS- header for following entities:<br/>[schedule](/graph/api/resources/schedule?view=graph-rest-1.0)<br/>[shift](/graph/api/resources/shift?view=graph-rest-1.0)<br/>[schedulingGroup](/graph/api/resources/schedulingGroup?view=graph-rest-1.0)<br/>[offerShiftRequest](/graph/api/resources/offerShiftRequest?view=graph-rest-1.0)<br/>[openshift](/graph/api/resources/openshift?view=graph-rest-1.0)<br/>[openshiftchangerequest](/graph/api/resources/openshiftchangerequest?view=graph-rest-1.0)<br/>[shiftPreferences](/graph/api/resources/shiftPreferences?view=graph-rest-1.0)<br/>[timeoff](/graph/api/resources/timeoff?view=graph-rest-1.0)<br/>[timeoffreason](/graph/api/resources/timeoffreason?view=graph-rest-1.0)<br/>[timeoffrequest](/graph/api/resources/timeoffrequest?view=graph-rest-1.0)<br/>[swapshiftschangerequest](/graph/api/resources/swapshiftschangerequest?view=graph-rest-1.0)<br/>|
+
 ## December 2020
 
 ### Calendar

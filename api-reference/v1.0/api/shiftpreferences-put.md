@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | User.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | UserShiftPreferences.ReadWrite.All |
+|Application | UserShiftPreferences.ReadWrite.All* |
 
-> **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
+>\* **Important:** Application permissions require MS-APP-ACTS-AS header to be provided.
 
 ## HTTP request
 
@@ -39,6 +39,7 @@ PATCH /users/{userId}/settings/shiftPreferences
 |:---------------|:--------|
 | Authorization  | Bearer {token}. Required.  |
 | Content-Type  | application/json. Required.  |
+| MS-APP-ACTS-AS | The id of the user on behalf of whom the app is acting. Required for Application permission scope. |
 
 ## Request body
 In the request body, supply a JSON representation of a [shiftPreferences](../resources/shiftpreferences.md) object.

@@ -24,6 +24,7 @@ A unit of non-work in a schedule.
 |[Get](../api/timeoff-get.md) | [timeOff](timeoff.md) | Get a **timeOff** object by ID.|
 |[Replace](../api/timeoff-put.md) | [timeOff](timeoff.md) | Replace a **timeOff** object.|
 |[Delete](../api/timeoff-delete.md) | None | Delete a **timeOff** object from the schedule.|
+|[Stage deletion](../api/schedule-stageForDeletion-timesoff.md) | None | Stage a **timeoff** deletion in draft mode.|
 
 ## Properties
 |Name          |Type           |Description                                                                                                                                      |
@@ -35,6 +36,7 @@ A unit of non-work in a schedule.
 | createdDateTime		|`DateTimeOffset`        |The time stamp at which this `timeOff` was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 | lastModifiedDateTime		|`DateTimeOffset`        |The time stamp at which this `timeOff` was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 | lastModifiedBy		| [identitySet](identityset.md)        |The identity that last updated this `timeOff`. |
+| isStagedForDeletion | `Edm.Boolean` | Indicates whether the timeoff is staged for deletion |
 
 ## JSON representation
 

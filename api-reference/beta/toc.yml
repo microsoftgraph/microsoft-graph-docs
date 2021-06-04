@@ -13785,6 +13785,31 @@ items:
             href: api/swapshiftschangerequest-approve.md
           - name: Decline
             href: api/swapshiftschangerequest-decline.md
+        - name: Time card
+          href: resources/timecard.md
+          items:
+          - name: List
+            href: api/timecard-list.md
+          - name: Create
+            href: api/timecard-create.md
+          - name: Get
+            href: api/timecard-get.md
+          - name: Put
+            href: api/timecard-put.md
+          - name: Patch
+            href: api/timecard-patch.md
+          - name: Delete
+            href: api/timecard-delete.md
+          - name: Clock In
+            href: api/timecard-clockin.md
+          - name: Clock Out
+            href: api/timecard-clockout.md
+          - name: Start Break
+            href: api/timecard-startbreak.md
+          - name: End Break
+            href: api/timecard-endbreak.md
+          - name: Confirm
+            href: api/timecard-confirm.md
         - name: Time off
           href: resources/timeoff.md
           items:

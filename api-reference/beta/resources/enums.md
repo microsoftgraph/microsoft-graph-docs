@@ -928,9 +928,30 @@ Namespace: microsoft.graph
 |none
 |shift
 |swapRequest
+|userShiftPreferences
 |openShift
 |openShiftRequest
-|userShiftPreferences
+|offerShiftRequest
+|timeCard
+|timeOffReason
+|timeOff
+|timeOffRequest
+
+### timeCardState values
+
+| Member
+|:----------------------------
+|clockedIn
+|onBreak
+|clockedOut
+
+### confirmedBy values
+
+| Member
+|:----------------------------
+|none
+|user
+|manager
 
 ### timeZoneStandard values
 

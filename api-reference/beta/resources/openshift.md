@@ -24,6 +24,7 @@ Represents an unassigned, open shift in a [schedule](../resources/schedule.md).
 | [Get](../api/openshift-get.md) | [openShift](openshift.md) | Read the properties and relationships of an **openShift** object. |
 | [Update](../api/openshift-update.md) | [openShift](openshift.md) | Update an **openShift** object. |
 | [Delete](../api/openshift-delete.md) | None | Delete an **openShift** object. |
+|[Stage deletion](../api/openshift-stageForDeletion.md) | None | Stage an **openShift** deletion in draft mode.|
 
 ## Properties
 
@@ -32,6 +33,7 @@ Represents an unassigned, open shift in a [schedule](../resources/schedule.md).
 |draftOpenShift|[openShiftItem](openshiftitem.md)|An unpublished open shift.|
 |schedulingGroupId|String|ID for the scheduling group that the open shift belongs to.|
 |sharedOpenShift|[openShiftItem](openshiftitem.md)|A published open shift.|
+| isStagedForDeletion | `Edm.Boolean` | Indicates whether the open shift is staged for deletion. |
 
 ## Relationships
 

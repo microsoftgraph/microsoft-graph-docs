@@ -21,16 +21,16 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 |Delegated (work or school account) | Schedule.Read.All, Group.Read.All, Schedule.ReadWrite.All, Group.ReadWrite.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
-|Application | Schedule.Read.All, Schedule.ReadWrite.All |
+|Application | Schedule.Read.All*, Schedule.ReadWrite.All* |
 
-> **Note**: This API supports admin permissions. Global admins can access groups that they are not a member of.
+>\* **Important:** Application permissions require MS-APP-ACTS-AS header to be provided.
 
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /teams/{teamId}/schedule/swapShiftsChangeRequests
+GET /teams/{teamId}/schedule/swapShiftChangeRequests/{swapShiftsChangeRequestId}
 ```
 
 ## Optional query parameters
@@ -42,6 +42,7 @@ This method supports some of the OData query parameters to help customize the re
 | Name      |Description|
 |:----------|:----------|
 | Authorization | Bearer {token}. Required. |
+| MS-APP-ACTS-AS | The id of the user on behalf of whom the app is acting. Required for Application permission scope. |
 
 ## Request body
 
@@ -65,7 +66,7 @@ The following is an example of the request.
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/swapShiftsChangeRequests/{swapShiftsChangeRequestId}
+GET https://graph.microsoft.com/v1.0/teams/{teamId}/schedule/swapShiftChangeRequests/{swapShiftsChangeRequestId}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-swapshiftschangerequest-1-csharp-snippets.md)]

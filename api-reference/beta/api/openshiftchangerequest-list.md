@@ -21,9 +21,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | Group.ReadWrite.All, Group.Read.All |
+| Delegated (work or school account)     | Schedule.ReadWrite.All, Schedule.Read.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Not supported. |
+| Application                            | Schedule.ReadWrite.All*, Schedule.Read.All*  |
+
+>\* **Important:** Application permissions require MS-APP-ACTS-AS header to be provided.
 
 ## HTTP request
 
@@ -42,6 +44,7 @@ This method supports some of the OData query parameters to help customize the re
 | Name      |Description|
 |:----------|:----------|
 | Authorization | Bearer {token}. Required. |
+| MS-APP-ACTS-AS | The id of the user on behalf of whom the app is acting. Required for Application permission scope. |
 
 ## Request body
 

@@ -20,7 +20,7 @@ Availability of the user to be scheduled for a [shift](shift.md) and its recurre
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |recurrence|[patternedRecurrence](patternedrecurrence.md)| Specifies the pattern for recurrence |
-|timeSlots|[timeRange](timerange.md) collection|The time slot(s) preferred by the user.|
+|timeSlots|[timeSlot](timeSlot.md) collection|The time slot(s) preferred by the user.|
 |timeZone|String|Specifies the time zone for the indicated time. |
 
 ## JSON representation
@@ -39,7 +39,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "recurrence": {"@odata.type": "microsoft.graph.patternedRecurrence"},
-  "timeSlots": [{"@odata.type": "microsoft.graph.timeRange"}],
+  "timeSlots": [{"@odata.type": "microsoft.graph.timeSlot"}],
   "timeZone": "String"
 }
 ```

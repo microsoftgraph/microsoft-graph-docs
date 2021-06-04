@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 | Delegated (personal Microsoft account) | Not supported. |
 |Application | Schedule.ReadWrite.All* |
 
->\* **Important:** Application permissions are currently in private preview only and are not available for public use.
+>\* **Important:** Application permissions require MS-APP-ACTS-AS header to be provided.
 
 ## HTTP request
 
@@ -40,6 +40,7 @@ DELETE /teams/{teamId}/schedule/timeOffRequests/{timeOffRequestId}
 | Name          | Description   |
 |:--------------|:--------------|
 | Authorization | Bearer {token}. Required. |
+| MS-APP-ACTS-AS | The id of the user on behalf of whom the app is acting. Required for Application permission scope. |
 
 ## Request body
 

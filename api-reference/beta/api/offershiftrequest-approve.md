@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Approve an [offershiftrequest](../resources/offershiftrequest.md) object.
+Approve an [offerShiftRequest](../resources/offershiftrequest.md) object.
 
 ## Permissions
 
@@ -23,7 +23,9 @@ One of the following permissions is required to call this API. To learn more, in
 |:---------------------------------------|:--------------------------------------------|
 | Delegated (work or school account)     | Schedule.ReadWrite.All, Group.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | Schedule.ReadWrite.All |
+| Application                            | Schedule.ReadWrite.All* |
+
+>\* **Important:** When you use application permissions, you must include the `MS-APP-ACTS-AS` header in the request.
 
 ## HTTP request
 
@@ -39,6 +41,7 @@ POST /teams/{teamId}/schedule/offerShiftRequests/{offerShiftRequestId}/approve
 |:--------------|:--------------|
 | Authorization | Bearer {token}. Required. |
 | Content-type | application/json. Required. |
+| MS-APP-ACTS-AS | The ID of the user on behalf of whom the app is acting. Required when you use the application permission scope. |
 
 ## Request body
 
