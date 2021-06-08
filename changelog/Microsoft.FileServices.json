@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "9601e3e1-bb2f-4b1d-b8d7-8d806b3039e2",
+          "ApiChange": "Resource",
+          "ChangedApiName": "",
+          "ChangeType": "Addition",
+          "Description": "Added _delta_ function to track changes to listItems. Example: GET /sites/{siteId}/lists/{listId}/items/delta",
+          "Target": ""
+        }
+      ],
+      "Id": "9601e3e1-bb2f-4b1d-b8d7-8d806b3039e2",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-08-06T12:44:48Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "aa7c9c04-2a12-458f-9bd5-a46c3b2fccd4",
           "ApiChange": "Relationship",
           "ChangedApiName": "permissions",

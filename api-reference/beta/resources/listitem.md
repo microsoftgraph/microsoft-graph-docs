@@ -30,6 +30,7 @@ All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.
 | [Get column values][Get]       | GET /items/{item-id}?expand=fields
 | [Get analytics][]              | GET /items/{item-id}/analytics
 | [Get activities by interval][] | GET /items/{item-id}/getActivitiesByInterval
+| [List changes for all Items in the List][item-changes]    | GET /items/{item-id}/delta
 | [Create][]                     | POST /items
 | [Delete][]                     | DELETE /items/{item-id}
 | [Update][]                     | PATCH /items/{item-id}
@@ -41,6 +42,7 @@ All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.
 [Create]: ../api/listitem-create.md
 [Delete]: ../api/listitem-delete.md
 [Update]: ../api/listitem-update.md
+[item-changes]: ../api/listitem-delta.md
 
 ## JSON representation
 
