@@ -24,6 +24,8 @@ Once a sharee or delegate has been set up for a calendar, you can [update](../ap
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
 | [Get calendarPermission](../api/calendarpermission-get.md) | [calendarPermission](calendarpermission.md) | Read properties and relationships of calendarPermission object. |
+| [List](../api/calendarpermission-list.md) | [calendarPermission](calendarpermission.md) | List calendarPermission object. |
+| [Create](../api/calendarpermission-create.md) | [calendarPermission](calendarpermission.md) | Create calendarPermission object. |
 | [Update](../api/calendarpermission-update.md) | [calendarPermission](calendarpermission.md) | Update calendarPermission object. |
 | [Delete](../api/calendarpermission-delete.md) | None | Delete calendarPermission object. |
 
