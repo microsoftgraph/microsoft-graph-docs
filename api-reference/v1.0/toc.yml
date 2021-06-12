@@ -5647,6 +5647,22 @@ items:
           href: api/site-unfollow.md
         - name: List followed sites
           href: api/sites-list-followed.md
+        - name: List columns
+          href: api/site-list-columns.md
+        - name: Create column
+          href: api/site-post-columns.md
+        - name: List content types
+          href: api/site-list-contenttypes.md
+        - name: Create content type
+          href: api/site-post-contenttypes.md
+        - name: Get applicable content types for list
+          href: api/site-getapplicablecontenttypesforlist.md
+        - name: Get lists
+          href: api/list-list.md
+        - name: Create list
+          href: api/list-create.md
+        - name: List subsites
+          href: api/site-list-subsites.md
         - name: Permissions
           href: resources/permission.md
           items:
@@ -5661,16 +5677,62 @@ items:
           - name: Delete site permission
             href: api/site-delete-permission.md
       - name: Lists
-        href: resources/list.md
         items:
+        - name: List
+          href: resources/list.md
+        - name: Get lists in a site
+          href: api/list-list.md
+        - name: Create list
+          href: api/list-create.md
         - name: Get list
           href: api/list-get.md
         - name: Get items
           href: api/listitem-list.md
-        - name: Create list
-          href: api/list-create.md
-      - name: ListItems
-        href: resources/listitem.md
+        - name: List columns
+          href: api/list-list-columns.md
+        - name: Create column
+          href: api/list-post-columns.md
+        - name: List content types
+          href: api/list-list-contenttypes.md
+        - name: Add copy of content type
+          href: api/contenttype-addcopy.md
+      - name: Columns
+        items:
+        - name: Column definition
+          href: resources/columndefinition.md
+        - name: Get
+          href: api/columndefinition-get.md
+        - name: Update
+          href: api/columndefinition-update.md
+        - name: Delete
+          href: api/columndefinition-delete.md
+      - name: Content types
+        items:
+        - name: Content type
+          href: resources/contentType.md
+        - name: Get
+          href: api/contenttype-get.md
+        - name: Update
+          href: api/contenttype-update.md
+        - name: Delete
+          href: api/contenttype-delete.md
+        - name: IsPublished
+          href: api/contenttype-ispublished.md
+        - name: Publish
+          href: api/contenttype-publish.md
+        - name: Unpublish
+          href: api/contenttype-unpublish.md
+        - name: Add copy to list
+          href: api/contenttype-addcopy.md
+        - name: Associate with hub sites
+          href: api/contenttype-associatewithhubsites.md
+        - name: Copy to default content location
+          href: api/contenttype-copytodefaultcontentlocation.md
+        - name: List columns
+          href: api/contenttype-list-columns.md
+        - name: Create column
+          href: api/contenttype-post-columns.md
+      - name: List items
         items:
         - name: Get item
           href: api/listitem-get.md

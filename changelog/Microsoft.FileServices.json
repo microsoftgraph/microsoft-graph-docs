@@ -1556,6 +1556,274 @@
     		"CreatedDateTime": "2021-03-10T11:48:06.486Z",
     		"WorkloadArea": "Sites and lists",
     		"SubArea": ""
-    }
+    },
+	{
+			"ChangeList": [{
+			"Id": "6fd0fa91-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Property",
+			"ChangedApiName": "validation",
+			"ChangeType": "Addition",
+			"Description": "Added the **validation** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+			"Target": "columnDefinition"
+		}, {
+			"Id": "6fd35cf2-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Property",
+			"ChangedApiName": "contentApprovalStatus",
+			"ChangeType": "Addition",
+			"Description": "Added the **contentApprovalStatus** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+			"Target": "columnDefinition"
+		}, {
+			"Id": "6fd5bf11-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Property",
+			"ChangedApiName": "hyperlinkOrPicture",
+			"ChangeType": "Addition",
+			"Description": "Added the **hyperlinkOrPicture** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+			"Target": "columnDefinition"
+		}, {
+			"Id": "6fd81eb2-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Property",
+			"ChangedApiName": "isDeletable",
+			"ChangeType": "Addition",
+			"Description": "Added the **isDeletable** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+			"Target": "columnDefinition"
+		}, {
+			"Id": "6fda8007-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Property",
+			"ChangedApiName": "isReorderable",
+			"ChangeType": "Addition",
+			"Description": "Added the **isReorderable** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+			"Target": "columnDefinition"
+		}, {
+			"Id": "6fdce4c5-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Property",
+			"ChangedApiName": "isSealed",
+			"ChangeType": "Addition",
+			"Description": "Added the **isSealed** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+			"Target": "columnDefinition"
+		}, {
+			"Id": "6fdf4e02-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Property",
+			"ChangedApiName": "propagateChanges",
+			"ChangeType": "Addition",
+			"Description": "Added the **propagateChanges** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+			"Target": "columnDefinition"
+		}, {
+			"Id": "6fe1a857-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Property",
+			"ChangedApiName": "term",
+			"ChangeType": "Addition",
+			"Description": "Added the **term** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+			"Target": "columnDefinition"
+		}, {
+			"Id": "6fe40c94-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Property",
+			"ChangedApiName": "thumbnail",
+			"ChangeType": "Addition",
+			"Description": "Added the **thumbnail** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+			"Target": "columnDefinition"
+		}, {
+			"Id": "6fe671a8-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Property",
+			"ChangedApiName": "type",
+			"ChangeType": "Addition",
+			"Description": "Added the **type** property to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+			"Target": "columnDefinition"
+		}, {
+			"Id": "6fe8d0d2-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Relationship",
+			"ChangedApiName": "sourceColumn",
+			"ChangeType": "Addition",
+			"Description": "Added the **sourceColumn** relationship to the [columnDefinition](https://docs.microsoft.com/en-us/graph/api/resources/columnDefinition?view=graph-rest-1.0) resource.",
+			"Target": "columnDefinition"
+		}, {
+			"Id": "6feb353b-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Property",
+			"ChangedApiName": "associatedHubsUrls",
+			"ChangeType": "Addition",
+			"Description": "Added the **associatedHubsUrls** property to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+			"Target": "contentType"
+		}, {
+			"Id": "6fed9571-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Property",
+			"ChangedApiName": "documentSet",
+			"ChangeType": "Addition",
+			"Description": "Added the **documentSet** property to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+			"Target": "contentType"
+		}, {
+			"Id": "6feffa75-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Property",
+			"ChangedApiName": "documentTemplate",
+			"ChangeType": "Addition",
+			"Description": "Added the **documentTemplate** property to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+			"Target": "contentType"
+		}, {
+			"Id": "6ff25822-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Property",
+			"ChangedApiName": "isBuiltIn",
+			"ChangeType": "Addition",
+			"Description": "Added the **isBuiltIn** property to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+			"Target": "contentType"
+		}, {
+			"Id": "6ff4bb40-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Property",
+			"ChangedApiName": "propagateChanges",
+			"ChangeType": "Addition",
+			"Description": "Added the **propagateChanges** property to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+			"Target": "contentType"
+		}, {
+			"Id": "6ff72069-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Relationship",
+			"ChangedApiName": "base",
+			"ChangeType": "Addition",
+			"Description": "Added the **base** relationship to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+			"Target": "contentType"
+		}, {
+			"Id": "6ff98122-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Relationship",
+			"ChangedApiName": "baseTypes",
+			"ChangeType": "Addition",
+			"Description": "Added the **baseTypes** relationship to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+			"Target": "contentType"
+		}, {
+			"Id": "6ffbe6b1-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Relationship",
+			"ChangedApiName": "columnPositions",
+			"ChangeType": "Addition",
+			"Description": "Added the **columnPositions** relationship to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+			"Target": "contentType"
+		}, {
+			"Id": "6ffe4862-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Relationship",
+			"ChangedApiName": "columns",
+			"ChangeType": "Addition",
+			"Description": "Added the **columns** relationship to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+			"Target": "contentType"
+		}, {
+			"Id": "7000aa94-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Relationship",
+			"ChangedApiName": "externalColumns",
+			"ChangeType": "Addition",
+			"Description": "Added the **externalColumns** relationship to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-1.0) resource.",
+			"Target": "site"
+		}, {
+			"Id": "70030c07-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Resource",
+			"ChangedApiName": "columnValidation",
+			"ChangeType": "Addition",
+			"Description": "Added the [columnValidation](https://docs.microsoft.com/en-us/graph/api/resources/columnValidation?view=graph-rest-1.0) resource type.",
+			"Target": "columnValidation"
+		}, {
+			"Id": "70056f49-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Resource",
+			"ChangedApiName": "contentApprovalStatusColumn",
+			"ChangeType": "Addition",
+			"Description": "Added the [contentApprovalStatusColumn](https://docs.microsoft.com/en-us/graph/api/resources/contentApprovalStatusColumn?view=graph-rest-1.0) resource type.",
+			"Target": "contentApprovalStatusColumn"
+		}, {
+			"Id": "7007cef4-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Resource",
+			"ChangedApiName": "displayNameLocalization",
+			"ChangeType": "Addition",
+			"Description": "Added the [displayNameLocalization](https://docs.microsoft.com/en-us/graph/api/resources/displayNameLocalization?view=graph-rest-1.0) resource type.",
+			"Target": "displayNameLocalization"
+		}, {
+			"Id": "700a3527-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Resource",
+			"ChangedApiName": "documentSet",
+			"ChangeType": "Addition",
+			"Description": "Added the [documentSet](https://docs.microsoft.com/en-us/graph/api/resources/documentSet?view=graph-rest-1.0) resource type.",
+			"Target": "documentSet"
+		}, {
+			"Id": "700c9959-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Resource",
+			"ChangedApiName": "documentSetContent",
+			"ChangeType": "Addition",
+			"Description": "Added the [documentSetContent](https://docs.microsoft.com/en-us/graph/api/resources/documentSetContent?view=graph-rest-1.0) resource type.",
+			"Target": "documentSetContent"
+		}, {
+			"Id": "700ef77b-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Resource",
+			"ChangedApiName": "hyperlinkOrPictureColumn",
+			"ChangeType": "Addition",
+			"Description": "Added the [hyperlinkOrPictureColumn](https://docs.microsoft.com/en-us/graph/api/resources/hyperlinkOrPictureColumn?view=graph-rest-1.0) resource type.",
+			"Target": "hyperlinkOrPictureColumn"
+		}, {
+			"Id": "70115827-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Resource",
+			"ChangedApiName": "termColumn",
+			"ChangeType": "Addition",
+			"Description": "Added the [termColumn](https://docs.microsoft.com/en-us/graph/api/resources/termColumn?view=graph-rest-1.0) resource type.",
+			"Target": "termColumn"
+		}, {
+			"Id": "7013ba68-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Resource",
+			"ChangedApiName": "thumbnailColumn",
+			"ChangeType": "Addition",
+			"Description": "Added the [thumbnailColumn](https://docs.microsoft.com/en-us/graph/api/resources/thumbnailColumn?view=graph-rest-1.0) resource type.",
+			"Target": "thumbnailColumn"
+		}, {
+			"Id": "70161dcd-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Enum type",
+			"ChangedApiName": "columnTypes",
+			"ChangeType": "Addition",
+			"Description": "Added the **columnTypes** enumeration type.",
+			"Target": "columnTypes"
+		}, {
+			"Id": "70188152-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Method",
+			"ChangedApiName": "addCopy",
+			"ChangeType": "Addition",
+			"Description": "Added the [addCopy](https://docs.microsoft.com/en-us/graph/api/contentType-addCopy?view=graph-rest-1.0) method to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+			"Target": "contentType"
+		}, {
+			"Id": "701ae5c0-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Method",
+			"ChangedApiName": "associateWithHubSites",
+			"ChangeType": "Addition",
+			"Description": "Added the [associateWithHubSites](https://docs.microsoft.com/en-us/graph/api/contentType-associateWithHubSites?view=graph-rest-1.0) method to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+			"Target": "contentType"
+		}, {
+			"Id": "701d46ac-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Method",
+			"ChangedApiName": "copyToDefaultContentLocation",
+			"ChangeType": "Addition",
+			"Description": "Added the [copyToDefaultContentLocation](https://docs.microsoft.com/en-us/graph/api/contentType-copyToDefaultContentLocation?view=graph-rest-1.0) method to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+			"Target": "contentType"
+		}, {
+			"Id": "701fa969-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Method",
+			"ChangedApiName": "publish",
+			"ChangeType": "Addition",
+			"Description": "Added the [publish](https://docs.microsoft.com/en-us/graph/api/contentType-publish?view=graph-rest-1.0) method to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+			"Target": "contentType"
+		}, {
+			"Id": "7022091c-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Method",
+			"ChangedApiName": "unpublish",
+			"ChangeType": "Addition",
+			"Description": "Added the [unpublish](https://docs.microsoft.com/en-us/graph/api/contentType-unpublish?view=graph-rest-1.0) method to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+			"Target": "contentType"
+		}, {
+			"Id": "70246ccc-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Method",
+			"ChangedApiName": "getApplicableContentTypesForList",
+			"ChangeType": "Addition",
+			"Description": "Added the [getApplicableContentTypesForList](https://docs.microsoft.com/en-us/graph/api/site-getApplicableContentTypesForList?view=graph-rest-1.0) method to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-1.0) resource.",
+			"Target": "site"
+		}, {
+			"Id": "7026ce91-c912-11eb-995f-5903f88189f5",
+			"ApiChange": "Method",
+			"ChangedApiName": "isPublished",
+			"ChangeType": "Addition",
+			"Description": "Added the [isPublished](https://docs.microsoft.com/en-us/graph/api/contentType-isPublished?view=graph-rest-1.0) method to the [contentType](https://docs.microsoft.com/en-us/graph/api/resources/contentType?view=graph-rest-1.0) resource.",
+			"Target": "contentType"
+		}],
+		"Id": "6fce9744-c912-11eb-995f-5903f88189f5",
+		"Cloud": "prd",
+		"Version": "v1.0",
+		"CreatedDateTime": "2021-06-09T11:04:18.733Z",
+		"WorkloadArea": "Sites and lists",
+		"SubArea": ""
+	}
   ]
 }

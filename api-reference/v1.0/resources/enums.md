@@ -1273,6 +1273,30 @@ Possible values for user account types (group membership), per Windows definitio
 | waitingOnOthers
 | deferred
 
+### columnTypes values
+
+|Member|Description|
+|:-------|:------
+|note| multiline text. |
+|text | single line text. |
+|choice | choice column |
+|multichoice | multichoice column. |
+|number | number column. |
+|currency | currency column. |
+|dateTime | dateTime column. |
+|lookup | lookup column. |
+|boolean | Yes/No column. |
+|user | person or group column. |
+|url | hyperlink or picture column. |
+|calculated | calculated column. |
+|location | location column. |
+|geolocation | geolocation column. |
+|term | managed metadata column. |
+|multiterm | managed metadata column accepting multiple values. |
+|thumbnail | Image column. |
+|approvalStatus | Content approval status column. |
+|unknownFutureValue | unknownFuturevalue |
+
 ### permissionClassificationType values
 
 | Member
