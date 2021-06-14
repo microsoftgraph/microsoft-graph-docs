@@ -26,7 +26,7 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Channel.Delete.Group*, Channel.Delete.All, Group.ReadWrite.All, Directory.ReadWrite.All |
 
-> **Note**: Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc).
+> **Note**: Permissions marked with * use [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
 
 > **Note**: This API supports admin permissions. Global admins and Microsoft Teams service admins can access teams that they are not a member of.
 
@@ -103,5 +103,3 @@ HTTP/1.1 204 No Content
   ]
 }
 -->
-
-

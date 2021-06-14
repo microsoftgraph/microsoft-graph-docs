@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 Renew a group's expiration. When a group is renewed, the group expiration is extended by the number of days defined in the policy.
 
-> **Note:** When calling the v1.0 endpoint, use the [Renew group](/graph/api/group-renew?view=graph-rest-1.0&preserve-view=true) method.
+> **Note:** When calling the v1.0 endpoint, use the [Renew group](../../v1.0/api/group-renew.md?preserve-view=true&view=graph-rest-1.0) method.
 
 ## Permissions
 
