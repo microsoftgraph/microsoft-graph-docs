@@ -518,6 +518,10 @@ items:
                     href: teams-changenotifications-team-and-channel.md
                   - name: Team membership
                     href: teams-changenotifications-teamMembership.md
+                  - name: Change notifications for chat
+                    href: teams-changenotifications-chat.md
+                  - name: Change notifications for chat membership
+                    href: teams-changenotifications-chatMembership.md
           - name: Change tracking
             displayName: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
             items:

@@ -1,7 +1,33 @@
 {
 
   "changelog": [
+    {
+      "ChangeList": [
         {
+          "Id": "3b66e2c7-10a4-4965-a602-7be3081d8a28",
+          "ApiChange": "Resource",
+          "ChangedApiName": "chat",
+          "ChangeType": "Addition",
+          "Description": "Added support for the creation of [subscriptions](https://docs.microsoft.com/graph/api/resources/subscription) for change notifications to the [chat](https://docs.microsoft.com/graph/api/resources/chat).",
+          "Target": "chat"
+        },
+        {
+          "Id": "3b66e2c7-10a4-4965-a602-7be3081d8a28",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conversationMember",
+          "ChangeType": "Addition",
+          "Description": "Added support for the creation of [subscriptions](https://docs.microsoft.com/graph/api/resources/subscription) for change notifications to the [conversationMember](https://docs.microsoft.com/graph/api/resources/conversationMember).",
+          "Target": "chat"
+        }
+      ],
+      "Id": "3b66e2c7-10a4-4965-a602-7be3081d8a28",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-05-27T16:05:49.407Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
       "ChangeList": [
         {
           "Id": "185e5343-c8a2-4716-995f-1427973c31ca",
@@ -42,7 +68,7 @@
           "ChangeType": "Addition",
           "Description": "Added support for using user principal names in request URLs for [fetching hosted content](https://docs.microsoft.com/en-us/graph/api/chatmessage-list-hostedcontents?view=graph-rest-1.0&tabs=http) for a user.",
           "Target": "chatMessageHostedContent"
-        }   
+        }
       ],
       "Id": "185e5343-c8a2-4716-995f-1427973c31ca",
       "Cloud": "prd",
@@ -61,8 +87,8 @@
           "Description": "Added support for the creation of [subscriptions](https://docs.microsoft.com/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true) for change notifications to the [channel](https://docs.microsoft.com/graph/api/resources/channel) resource.",
           "Target": "channel"
         },
-			
-			 {
+
+        {
           "Id": "8575a784-e80a-4f96-a782-39b0f19fc24d",
           "ApiChange": "Resource",
           "ChangedApiName": "team",
@@ -70,15 +96,15 @@
           "Description": "Added support for the creation of [subscriptions](https://docs.microsoft.com/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true) for change notifications to the [team](https://docs.microsoft.com/graph/api/resources/team) resource.",
           "Target": "team"
         },
-			
-			 {
+
+        {
           "Id": "8575a784-e80a-4f96-a782-39b0f19fc24d",
           "ApiChange": "Resource",
           "ChangedApiName": "conversationMember",
           "ChangeType": "Addition",
           "Description": "Added support for the creation of [subscriptions](https://docs.microsoft.com/graph/api/resources/subscription?view=graph-rest-beta&preserve-view=true) for change notifications to the [conversationMember](https://docs.microsoft.com/graph/api/resources/conversationMember) resource.",
           "Target": "team"
-        }   
+        }
       ],
       "Id": "8575a784-e80a-4f96-a782-39b0f19fc24d",
       "Cloud": "prd",
