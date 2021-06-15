@@ -40,7 +40,9 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | participants          | [meetingParticipants](meetingparticipants.md) | The participants associated with the online meeting.  This includes the organizer and the attendees.                       |
 | startDateTime         | DateTime                                      | The meeting start time in UTC.                                                                                             |
 | subject               | String                                        | The subject of the online meeting.                                                                                         |
-| videoTeleconferenceId | String                                        | The video teleconferencing ID. Read-only.                                                                                  |
+| videoTeleconferenceId | String                                        | The video teleconferencing ID. Read-only.   
+                    |
+| allowMeetingChat	    |meetingChatMode                                |	Specifies the mode of meeting chat.
 
 ### onlineMeetingPresenters values
 
@@ -75,7 +77,8 @@ Contains information about a meeting, including the URL used to join a meeting, 
   "videoTeleconferenceId": "String",
   "isEntryExitAnnounced": "Boolean",
   "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
-  "allowedPresenters": "String"
+  "allowedPresenters": "String",
+  "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
 }
 ```
 
