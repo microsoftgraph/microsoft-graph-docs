@@ -30,6 +30,7 @@ All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.
 | [Get column values][Get]       | GET /items/{item-id}?expand=fields
 | [Get analytics][]              | GET /items/{item-id}/analytics
 | [Get activities by interval][] | GET /items/{item-id}/getActivitiesByInterval
+| [List changes for all Items in the List][item-changes]    | GET /items/{item-id}/delta
 | [Create][]                     | POST /items
 | [Delete][]                     | DELETE /items/{item-id}
 | [Update][]                     | PATCH /items/{item-id}
@@ -41,6 +42,7 @@ All examples below are relative to a **[list][]**, eg: `https://graph.microsoft.
 [Create]: ../api/listitem-create.md
 [Delete]: ../api/listitem-delete.md
 [Update]: ../api/listitem-update.md
+[item-changes]: ../api/listitem-delta.md
 
 ## JSON representation
 
@@ -75,7 +77,10 @@ Here is a JSON representation of a **listItem** resource.
   "lastModifiedBy": { "@odata.type": "microsoft.graph.identitySet" },
   "lastModifiedDateTime": "timestamp",
   "parentReference": { "@odata.type": "microsoft.graph.itemReference"},
-  "webUrl": "url"
+  "webUrl": "url",
+
+   /* instance annotations */
+  "@microsoft.graph.removed": "microsoft.graph.removed"
 }
 ```
 
@@ -115,6 +120,15 @@ The following properties are inherited from **[baseItem][]**.
 | fields            | [fieldValueSet][]              | The values of the columns set on this list item.
 | versions          | [listItemVersion][] collection | The list of previous versions of the list item.
 
+## Instance Attributes
+
+Instance attributes are properties with special behaviors.
+These properties are temporary and either a) define behavior the service should perform or b) provide short-term property values.
+
+| Property name                     | Type   | Description
+|:----------------------------------|:-------|:--------------------------------
+| @microsoft.graph.removed          | [removed]] | Information about the removed item. Read-only.
+
 [baseItem]: baseitem.md
 [contentTypeInfo]: contenttypeinfo.md
 [driveItem]: driveitem.md
@@ -126,6 +140,7 @@ The following properties are inherited from **[baseItem][]**.
 [list]: list.md
 [listItemVersion]: listitemversion.md
 [sharepointIds]: sharepointids.md
+[removed]: removed.md
 
 <!--
 {
@@ -140,5 +155,3 @@ The following properties are inherited from **[baseItem][]**.
   "suppressions": []
 }
 -->
-
-

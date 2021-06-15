@@ -70,6 +70,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 |:-------------------------|:-------------------|:-----------------------------
 | **id**                   | string             | The [unique identifier](#id-property) of the item. Read-only.
 | **createdDateTime**      | DateTimeOffset     | The date and time the item was created. Read-only.
+| **deleted**              | [deleted][]        | Optional. Information about the deleted state of the item. Read-only.
 | **description**          | string             | The descriptive text for the site.
 | **eTag**                 | string             | ETag for the item. Read-only.                                                                  |
 | **displayName**          | string             | The full title for the site. Read-only.
@@ -108,9 +109,19 @@ The `root` identifier always references the root site for a given target, as fol
 | **termStore**     | [microsoft.graph.termStore.store]  | The termStore under this site.
 | **externalColumns**     | Collection([columnDefinition][])  | The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site.
 
+## Instance Attributes
+
+Instance attributes are properties with special behaviors.
+These properties are temporary and either a) define behavior the service should perform or b) provide short-term property values.
+
+| Property name                     | Type   | Description
+|:----------------------------------|:-------|:--------------------------------
+| @microsoft.graph.removed          | [removed]] | Information about the removed item. Read-only.
+
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
 [contentType]: contenttype.md
+[deleted]: deleted.md
 [drive]: drive.md
 [identitySet]: identityset.md
 [itemAnalytics]: itemanalytics.md
@@ -122,6 +133,7 @@ The `root` identifier always references the root site for a given target, as fol
 [sharepointIds]: sharepointids.md
 [siteCollection]: sitecollection.md
 [microsoft.graph.termStore.store]: termstore-store.md
+[removed]: removed.md
 
 ## JSON representation
 
@@ -138,7 +150,9 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
     "drive",
     "drives",
     "permissions",
-    "sites"
+    "sites",
+    "deleted",
+    "@microsoft.graph.removed"
   ],
   "keyProperty": "id",
   "baseType": "microsoft.graph.baseItem",
@@ -151,6 +165,7 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
   "root": { "@odata.type": "microsoft.graph.root" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "siteCollection": {"@odata.type": "microsoft.graph.siteCollection"},
+  "deleted": { "@odata.type": "microsoft.graph.deleted"},
   "displayName": "string",
 
   /* relationships */
@@ -171,7 +186,10 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
   "description": "string",
   "eTag": "string",
   "lastModifiedDateTime": "datetime",
-  "webUrl": "url"
+  "webUrl": "url",
+
+  /* instance annotations */
+  "@microsoft.graph.removed": "microsoft.graph.removed"
 }
 ```
 

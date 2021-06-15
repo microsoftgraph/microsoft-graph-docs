@@ -10005,7 +10005,7 @@ items:
           href: api/driveitem-createuploadsession.md
         - name: Search items
           href: api/driveitem-search.md
-        - name: Track changes
+        - name: Get delta
           href: api/driveitem-delta.md
         - name: Get preview link
           href: api/driveitem-preview.md
@@ -13119,6 +13119,8 @@ items:
             href: api/site-update-permission.md
           - name: Delete site permission
             href: api/site-delete-permission.md
+        - name: Get delta
+          href: api/sites-delta.md
       - name: Lists
         items:
         - name: List
@@ -13195,6 +13197,8 @@ items:
           href: api/itemanalytics-get.md
         - name: Get activities by interval
           href: api/itemactivity-getbyinterval.md
+        - name: Get delta
+          href: api/listitem-delta.md
       - name: Pages
         items:
         - name: Site page

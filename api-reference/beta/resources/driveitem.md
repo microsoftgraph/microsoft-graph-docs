@@ -44,7 +44,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
        "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
        "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
        "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
-       "sharepointIds"],
+       "sharepointIds", "@microsoft.graph.removed"],
        "keyProperty": "id", "openType": true } -->
 
 ```json
@@ -97,7 +97,8 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
   /* instance annotations */
   "@microsoft.graph.conflictBehavior": "string",
   "@microsoft.graph.downloadUrl": "url",
-  "@microsoft.graph.sourceUrl": "url"
+  "@microsoft.graph.sourceUrl": "url",
+  "@microsoft.graph.removed": "microsoft.graph.removed"
 }
 ```
 
@@ -168,6 +169,7 @@ These properties are temporary and either a) define behavior the service should 
 | @microsoft.graph.conflictBehavior | string | The conflict resolution behavior for actions that create a new item. You can use the values *fail*, *replace*, or *rename*. The default for PUT is *replace*. An item will never be returned with this annotation. Write-only.
 | @microsoft.graph.downloadUrl      | string | A URL that can be used to download this file's content. Authentication is not required with this URL. Read-only.
 | @microsoft.graph.sourceUrl        | string | When issuing a PUT request, this instance annotation can be used to instruct the service to download the contents of the URL, and store it as the file. Write-only.
+| @microsoft.graph.removed          | [removed]] | Information about the removed item. Read-only.
 
 **Note:** The @microsoft.graph.downloadUrl value is a short-lived URL and can't be cached.
 The URL will only be available for a short period of time (1 hour) before it is invalidated.
@@ -252,6 +254,7 @@ In OneDrive for Business or SharePoint document libraries, the **cTag** property
 [workbook]: workbook.md
 [user]: /graph/api/resources/users
 [publicationFacet]: publicationfacet.md
+[removed]: removed.md
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->

@@ -2,12 +2,12 @@
 author: JeremyKelley
 description: "This method allows your app to track changes to a drive and its children over time."
 ms.date: 09/10/2017
-title: Sync the contents of a drive
+title: "driveitem: delta"
 localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
-# Track changes for a drive
+# driveitem: delta
 
 Namespace: microsoft.graph
 
@@ -22,8 +22,9 @@ Your app should continue calling with the `@odata.nextLink` until you no longer 
 After you have finished receiving all the changes, you may apply them to your local state.
 To check for changes in the future, call `delta` again with the `@odata.deltaLink` from the previous response.
 
-Deleted items are returned with the [`deleted` facet](../resources/deleted.md). 
-Items with this property set should be removed from your local state. 
+Deleted items are returned with an @removed object and [`deleted` facet](../resources/deleted.md).
+The @removed will include reason property, for example, "@removed": {"reason": "deleted"}.
+Items with this deleted reason or deleted facet property should be removed from your local state.
 
 **Note:** you should only delete a folder locally if it is empty after syncing all the changes.
 
@@ -312,10 +313,8 @@ In addition to the resync errors detailed above, see [Error Responses][error-res
   "description": "Sync changes from the service to your client state.",
   "keywords": "sync,delta,changes,$delta",
   "section": "documentation",
-  "tocPath": "Items/Sync changes",
+  "tocPath": "Items/Get delta",
   "suppressions": [
   ]
 }
 -->
-
-
