@@ -36,6 +36,7 @@ GET /me/joinedTeams
 or
 GET /users/{id | user-principal-name}/joinedTeams
 ```
+> **Note**: These APIs don't return the parent team of the shared channel that the user is a direct member of.
 
 ## Optional query parameters
 The [OData Query Parameters](/graph/query-parameters) are not currently supported.

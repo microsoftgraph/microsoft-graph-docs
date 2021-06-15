@@ -13,7 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Update the role of a [conversationMember](../resources/conversationmember.md) in a [channel](../resources/channel.md). This operation is allowed only for channels with a **membershipType** value of `private`.
+Update the role of a [conversationMember](../resources/conversationmember.md) in a [channel](../resources/channel.md). This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
+> **Note:** Shared channels are only available in private preview.
 
 ## Permissions
 
@@ -111,7 +112,8 @@ Content-length: 475
   "roles": ["owner"],
   "displayName": "John Doe",
   "userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-  "email": null
+  "email": null,
+  "tenantId": "f2eea028-3898-4e55-b611-2e2d960f7512"
 }
 ```
 

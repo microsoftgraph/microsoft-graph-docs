@@ -1723,11 +1723,12 @@ Possible values for user account types (group membership), per Windows definitio
 
 ### channelMembershipType values
 
-| Member             | Value |
-| :----------------- | :---- |
-| standard           | 0     |
-| private            | 1     |
-| unknownFutureValue | 2     |
+| Member             | Value |Description|
+| :----------------- | :---- |:-----------|
+| standard           | 0     |Channel inherits the list of members of the parent team.|
+| private            | 1     |Channel can have members that are a subset of all the members on the parent team.|
+| unknownFutureValue | 2     | |
+| shared             | 3     |Channel can have members that belong to different tenant or different team from same tenant.|
 
 ### stagedFeatureName values
 

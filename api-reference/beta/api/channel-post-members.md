@@ -13,7 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Add a [conversationMember](../resources/conversationmember.md) to a [channel](../resources/channel.md). This operation is allowed only for channels with a **membershipType** value of `private`.
+Add a [conversationMember](../resources/conversationmember.md) to a [channel](../resources/channel.md). This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
+> **Note:** Shared channels are only available in private preview.
 
 ## Permissions
 
@@ -53,7 +54,7 @@ If successful, this method returns a `201 Created` response code and a [conversa
 
 ## Examples
 
-### Example 1: Add a member to a channel
+### Example 1: Add a member to a private channel
 
 #### Request
 
@@ -117,7 +118,7 @@ Content-length: 468
 }
 ```
 
-### Example 2: Add a member with the owner role to a channel
+### Example 2: Add a member with the owner role to a private channel
 
 #### Request
 
@@ -181,6 +182,102 @@ Content-length: 468
   "displayName": "John Doe",
   "userId": "8b081ef6-4792-4def-b2c9-c363a1bf41d5",
   "email": null
+}
+```
+### Example 3: Add a user who is part of the same tenant as a member to a shared channel
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "shared_channel_add_intra_tenant_member"
+} -->
+
+```http
+POST https://graph.microsoft.com/beta/teams/6a720ba5-7373-463b-bc9f-4cd04b5c6742/channels/19:LpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81@thread.tacv2/members
+Content-type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "roles": [],
+    "user@odata.bind": "https://graph.microsoft.com/beta/users/24b3819b-4e1d-4f3e-86bd-e42b54d0b2b4"
+}
+```
+
+#### Response
+
+Here is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability. 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.conversationMember"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 468
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('6a720ba5-7373-463b-bc9f-4cd04b5c6742')/channels('19%3ALpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81%40thread.tacv2')/members/$entity",
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "id": "ZGY4MWRiNTMtYzdlMi00MThhLTg4MDMtMGU2OGQ0Yjg4NjA3IyMxOTpMcHhTaEhaWmg5dXRqTmNFbVVTNWFPRVA5QVN3ODVPVW4wNU5jV1lBaFg4MUB0aHJlYWQudGFjdjIjIzI0YjM4MTliLTRlMWQtNGYzZS04NmJkLWU0MmI1NGQwYjJiNA==",
+    "roles": [],
+    "displayName": "John Doe",
+    "visibleHistoryStartDateTime": null,
+    "userId": "24b3819b-4e1d-4f3e-86bd-e42b54d0b2b4",
+    "email": "john_doe@crosstenantchannel1.onmicrosoft.com",
+    "tenantId": "df81db53-c7e2-418a-8803-0e68d4b88607"
+}
+```
+
+### Example 4: Add a user who is part of a different tenant as a member to a shared channel
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "shared_channel_add_x_tenant_member"
+} -->
+
+```http
+POST https://graph.microsoft.com/beta/teams/6a720ba5-7373-463b-bc9f-4cd04b5c6742/channels/19:LpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81@thread.tacv2/members
+Content-type: application/json
+
+{
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "roles": [],
+    "user@odata.bind": "https://graph.microsoft.com/beta/users/bc3598dd-cce4-4742-ae15-173429951408",
+    "tenantId": "a18103d1-a6ef-4f66-ac64-e4ef42ea8681"
+}
+```
+
+#### Response
+
+Here is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability. 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.conversationMember"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+Content-length: 468
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#teams('6a720ba5-7373-463b-bc9f-4cd04b5c6742')/channels('19%3ALpxShHZZh9utjNcEmUS5aOEP9ASw85OUn05NcWYAhX81%40thread.tacv2')/members/$entity",
+    "@odata.type": "#microsoft.graph.aadUserConversationMember",
+    "id": "YTE4MTAzZDEtYTZlZi00ZjY2LWFjNjQtZTRlZjQyZWE4NjgxIyMxOTpMcHhTaEhaWmg5dXRqTmNFbVVTNWFPRVA5QVN3ODVPVW4wNU5jV1lBaFg4MUB0aHJlYWQudGFjdjIjI2JjMzU5OGRkLWNjZTQtNDc0Mi1hZTE1LTE3MzQyOTk1MTQwOA==",
+    "roles": [],
+    "displayName": "John Doe",
+    "visibleHistoryStartDateTime": null,
+    "userId": "bc3598dd-cce4-4742-ae15-173429951408",
+    "email": "John_Doe@fabrikam.onmicrosoft.com",
+    "tenantId": "a18103d1-a6ef-4f66-ac64-e4ef42ea8681"
 }
 ```
 

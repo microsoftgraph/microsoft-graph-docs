@@ -54,6 +54,40 @@
     {
       "ChangeList": [
         {
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "shared",
+          "ChangeType": "Addition",
+          "Description": "Added the ``shared`` member to the **channelMembershipType** enumeration.",
+          "Target": "channelMembershipType"
+        },
+		{
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "teamifyGroup",
+          "ChangeType": "Addition",
+          "Description": "Added the ``teamifyGroup`` member to the **teamsAsyncOperationType** enumeration.",
+          "Target": "teamsAsyncOperationType"
+        },
+		{
+          "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "createChannel",
+          "ChangeType": "Addition",
+          "Description": "Added the ``createChannel`` member to the **teamsAsyncOperationType** enumeration.",
+          "Target": "teamsAsyncOperationType"
+        }
+      ],
+      "Id": "c8d87142-595a-11eb-ae93-0242ac130002",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-01-15T21:46:49.407Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "21dfc156-d5cf-4f5c-bdb0-84a982e9d54e",
           "ApiChange": "Method",
           "ChangedApiName": "chat",

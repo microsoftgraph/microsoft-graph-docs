@@ -24,12 +24,13 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Files.Read.All, Files.ReadWrite.All, Group.Read.All, Group.ReadWrite.All |
 
-
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /teams/{id}/channels/{id}/filesFolder
 ```
+
+> **Note**: This API doesn't support shared channels.
 
 ## Optional query parameters
 
