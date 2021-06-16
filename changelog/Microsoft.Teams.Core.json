@@ -176,6 +176,32 @@
     {
       "ChangeList": [
         {
+          "Id": "185e5343-c8a2-4716-995f-1427973c31ca",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "UserPrincipalName",
+          "ChangeType": "Addition",
+          "Description": "UserPrincipalName can be used in the request URL for [looking up chats](https://docs.microsoft.com/en-us/graph/api/chat-list?view=graph-rest-beta) of a user.",
+          "Target": "chat"
+        },
+        {
+          "Id": "185e5343-c8a2-4716-995f-1427973c31ca",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "UserPrincipalName",
+          "ChangeType": "Addition",
+          "Description": "UserPrincipalName can be used in the request URL for [looking up joined teams of a user](https://docs.microsoft.com/en-us/graph/api/user-list-joinedteams?view=graph-rest-beta).",
+          "Target": "team"
+        }
+      ],
+      "Id": "185e5343-c8a2-4716-995f-1427973c31ca",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-04-7T16:05:49.407Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "1db1cd43-231a-4044-bbdb-b5e23b2b2d16",
           "ApiChange": "Relationship",
           "ChangedApiName": "permissionGrants",
