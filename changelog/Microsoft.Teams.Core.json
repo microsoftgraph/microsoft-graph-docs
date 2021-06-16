@@ -1,5 +1,4 @@
 {
-
   "changelog": [
         {
       "ChangeList": [
@@ -170,6 +169,24 @@
       "Cloud": "prd",
       "Version": "beta",
       "CreatedDateTime": "2021-04-16T20:18:40.595Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ecb01663-dbaa-4564-ba93-18a354c750aa",
+          "ApiChange": "Method",
+          "ChangedApiName": "chat",
+          "ChangeType": "Addition",
+          "Description": "Added the [List chat members](https://docs.microsoft.com/en-us/graph/api/chat-list-members?view=graph-rest-1.0&preserve-view=true) method.",
+          "Target": "chat"
+        }
+      ],
+      "Id": "ecb01663-dbaa-4564-ba93-18a354c750aa",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-04-05T00:00:00",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
     },

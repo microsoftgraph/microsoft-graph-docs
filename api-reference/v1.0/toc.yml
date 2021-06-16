@@ -431,6 +431,8 @@ items:
           href: api/userscopeteamsappinstallation-get-chat.md 
         - name: Get chat for user
           href: api/chat-get.md
+        - name: List chats for user
+          href: api/chat-list.md
       - name: To-do tasks
         items:
         - name: Task
