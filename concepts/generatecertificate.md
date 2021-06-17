@@ -1,6 +1,15 @@
-# Generate a self-signed public certificate for your application
+---
+title: "Generate a self-signed public certificate for your application"
+description: "Generate a self-signed public certificate to authenticate your application."
+author: "FaithOmbongi"
+localization_priority: Priority
+---
 
-Azure AD allows you to upload a self-signed public certificate for your application. This article curates some common tools and methods you can use to generate your self-signed certificate from your local machine.
+# Generate a self-signed public certificate to authenticate your application
+
+Azure AD supports two types of authentication for service principals: **password-based authentication** (app secret) and **certificate-based authentication**. While app secrets can easily be generated via the **App registrations** blade, Microsoft recommends using a certificate.
+
+While you can use a CA-signed public certificate, for testing purposes, you can also use a self-signed public certificate. This article curates popular methods you can use to generate your self-signed certificate.
 
 >**NOTE:
 >Using a self-signed certificate is only recommended for development, not production.
@@ -17,7 +26,7 @@ After you generate your certificate, you can export them to a location where the
 
 ## Generate your public certificate
 
-### Use PowerShell
+##### [Use PowerShell](#tab/powershell)
 
 Modern versions of Windows (Windows 8.1 and greater, and Windows Server 2012R2 and greater) include a built-in PowerShell cmdlet `New-SelfSignedCertificate` to create a self-signed certificate.
 
@@ -49,9 +58,7 @@ This certificate is supported for use for both client and server authentication.
 Export-Certificate -Cert $cert -FilePath "C:\Users\admin\Desktop\{certificateName}.cer"   ##replace {certificateName}
 ```
 
-### Use a programming language
-
-#### [Use C#](#tab/csharp)
+##### [Use C#](#tab/csharp)
 
 ```csharp
 using System;
@@ -128,9 +135,7 @@ namespace Self_signed_cert
 }
 ```
 
-#### [Use Java](#tab/java)
 
-No content here.
 
 ---
 
@@ -138,7 +143,7 @@ No content here.
 #### Export your certificate from your personal certificate store
 
 1. In Windows search, search for "Manage user certificates". This takes you to your local certificate store with the root node indicating **Certificates - Current User**. Expand the **Personals**, then click the **Certificates** option. Find the certificate whose **Issued To** field is the same name you specified for `{certificateName}`.
-2. Right click **All Tasks**, **Expor**t.
+2. Right click **All Tasks**, **Export**.
 3. Click **Next** to continue with the certificate wizard.
 4. You do not need to export the private key. Select **No, do not export the private key**.
 5. Select the first option, **DER encoded binary X.509 (.CER)**.
@@ -152,5 +157,3 @@ https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-certificates-poin
 ## Next steps
 
 Now that you have your certificate in one of the formats supported by Azure AD, you can use it to authenticate your application.
-
-## See also
