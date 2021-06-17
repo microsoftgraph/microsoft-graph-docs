@@ -13,6 +13,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphEducationAssignmentDefaults *educationAssignmentDefaults = [[MSGraphEducationAssignmentDefaults alloc] init];
 [educationAssignmentDefaults setAddedStudentAction: [MSGraphEducationAddedStudentAction assignIfOpen]];
+[educationAssignmentDefaults setAddToCalendarAction: [MSGraphEducationAddToCalendarOptions studentsAndTeamOwners]];
 [educationAssignmentDefaults setNotificationChannelUrl:@"https://graph.microsoft.com/beta/teams('id')/channels('id')"];
 
 NSError *error;

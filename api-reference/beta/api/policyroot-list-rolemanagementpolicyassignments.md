@@ -3,7 +3,7 @@ title: "List roleManagementPolicyAssignments"
 description: "Get the unifiedRoleManagementPolicyAssignment resources from the roleManagementPolicyAssignments navigation property."
 author: "shauliu"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 

@@ -50,5 +50,11 @@
   ],
   "branch_target_mapping": {},
   "need_generate_pdf_url_template": false,
-  "targets": {}
+  "targets": {},
+  "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content",
+        "Tutorial": "Content"
+      }
 }

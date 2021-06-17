@@ -1,5 +1,5 @@
 ---
-title: "Assign reviewers to your access review definition using the Microsoft Graph API"
+title: "Assign reviewers to your access review using the Microsoft Graph API"
 description: "Learn how to use the access reviews API in Microsoft Graph to assign access reviewers."
 author: "isabelleatmsft"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "governance"
 doc_type: conceptualPageType
 ---
 
-# Assign reviewers to your access review definition using the Microsoft Graph API
+# Assign reviewers to your access review using the Microsoft Graph API
 
 The Azure AD [access reviews API](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true) allows you to programmatically review the access that users, service principals, or groups have to your Azure AD resources.
 

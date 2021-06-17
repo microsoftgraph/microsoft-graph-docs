@@ -71,6 +71,7 @@ In the request body, supply the values for relevant fields that should be update
 |mobilePhone|String|The primary cellular telephone number for the user.|
 |mySite|String|The URL for the user's personal site.|
 |officeLocation|String|The office location in the user's place of business.|
+| onPremisesExtensionAttributes | [onPremisesExtensionAttributes](../resources/onpremisesextensionattributes.md) | Contains extensionAttributes 1-15 for the user. Note that the individual extension attributes are neither selectable nor filterable. For an `onPremisesSyncEnabled` user, the source of authority for this set of properties is the on-premises and is read-only and is read-only. These extension attributes are also known as Exchange custom attributes 1-15.|
 |onPremisesImmutableId|String|This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user’s **userPrincipalName** (UPN) property. **Important:** The **$** and **_** characters cannot be used when specifying this property.                            |
 |otherMails|String |A list of additional email addresses for the user; for example: `["bob@contoso.com", "Robert@fabrikam.com"]`.|
 |passwordPolicies|String|Specifies password policies for the user. This value is an enumeration with one possible value being `DisableStrongPassword`, which allows weaker passwords than the default policy to be specified. `DisablePasswordExpiration` can also be specified. The two may be specified together; for example: `DisablePasswordExpiration, DisableStrongPassword`.|
@@ -144,9 +145,7 @@ Content-type: application/json
 
 The following example shows the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content
@@ -198,9 +197,7 @@ Content-type: application/json
 
 The following example shows the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

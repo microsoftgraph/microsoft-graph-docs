@@ -126,10 +126,7 @@ Content-length: 109
   "description": "NamedItemCollection: add",
   "keywords": "",
   "section": "documentation",
-  "suppressions": [
-    "Warning: NamedItemcollection_add/value:
-      Schemas type was 'Custom' which is not supported. Add a resource type to the definition of property: value"
-  ],
+  "suppressions": [],
   "tocPath": ""
 }-->
 

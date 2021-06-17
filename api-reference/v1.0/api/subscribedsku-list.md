@@ -29,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 GET /subscribedSkus
 ```
 ## Optional query parameters
-This method does **not** support the [OData Query Parameters](/graph/query-parameters) to help customize the response (e.g. $filter is not supported here).
+This method does **not** support the [OData Query Parameters](/graph/query-parameters) to help customize the response - for example, $filter isn't supported here.
 
 ## Request headers
 

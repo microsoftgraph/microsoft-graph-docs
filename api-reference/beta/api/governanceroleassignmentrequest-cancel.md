@@ -105,8 +105,7 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
 ### Response
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": false
 } -->
 ```http
 HTTP/1.1 204 No Content

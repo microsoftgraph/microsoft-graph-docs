@@ -13,20 +13,40 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve the properties and relationships of a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object. Currently "directory" is the only RBAC application supported.
+Get the properties and relationships of a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object of an RBAC provider. 
+
+The following RBAC providers are currently supported:
+- cloud PC 
+- device management (Intune)
+- directory (Azure AD) 
+
+[!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference). 
 
-|Permission type      | Permissions (from least to most privileged)              |
-|:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
-|Delegated (personal Microsoft account) | Not supported.    |
-|Application | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
+|Supported provider      | Delegated (work or school account)  | Delegated (personal Microsoft account) | Application |
+|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
+| Cloud PC | CloudPC.Read.All, CloudPC.ReadWrite.All | Not supported. | CloudPC.Read.All, CloudPC.ReadWrite.All |
+| Device management | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All | Not supported. | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
+| Directory | RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All | Not supported.| RoleManagement.Read.Directory, Directory.Read.All, RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## HTTP request
 
+Get a role definition for a cloud PC provider:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /roleManagement/cloudPC/roleDefinitions/{id}
+```
+
+Get a role definition for a device management provider:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /roleManagement/deviceManagement/roleDefinitions/{id}
+```
+
+Get a role definition for a directory provider:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -53,7 +73,7 @@ If successful, this method returns a `200 OK` response code and the requested [u
 
 ## Examples
 
-### Example 1: Get the definition of a custom role
+### Example 1: Get the definition of a custom role for a directory provider
 
 #### Request
 
@@ -127,7 +147,7 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get the definition of a built-in role
+### Example 2: Get the definition of a built-in role for a directory provider
 
 #### Request
 
@@ -388,6 +408,81 @@ Content-type: application/json
                     "condition": null
                 }
             ]
+        }
+    ]
+}
+```
+
+### Example 4: Get the definition of a built-in role for a cloud PC provider
+
+#### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "get_built-in_cloudpc_role_unifiedroledefinition"
+}-->
+
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/roleManagement/cloudPC/roleDefinitions/d40368cb-fbf4-4965-bbc1-f17b3a78e510
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-built-in-cloudpc-role-unifiedroledefinition-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-built-in-cloudpc-role-unifiedroledefinition-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-built-in-cloudpc-role-unifiedroledefinition-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-built-in-cloudpc-role-unifiedroledefinition-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+
+
+#### Response
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.unifiedRoleDefinition"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#roleManagement/cloudPC/roleDefinitions/$entity",
+    "id": "d40368cb-fbf4-4965-bbc1-f17b3a78e510",
+    "description": "Have read-only access all Cloud PC features.",
+    "displayName": "Cloud PC Reader",
+    "isBuiltIn": true,
+    "isEnabled": true,
+    "resourceScopes": [
+        "/"
+    ],
+    "templateId": "d40368cb-fbf4-4965-bbc1-f17b3a78e510",
+    "version": null,
+    "rolePermissions": [
+        {
+            "allowedResourceActions": [
+                "Microsoft.CloudPC/CloudPCs/Read",
+                "Microsoft.CloudPC/DeviceImages/Read",
+                "Microsoft.CloudPC/OnPremisesConnections/Read",
+                "Microsoft.CloudPC/ProvisioningPolicies/Read",
+                "Microsoft.CloudPC/Roles/Read",
+                "Microsoft.CloudPC/SelfServiceSettings/Read"
+            ],
+            "condition": null
         }
     ]
 }

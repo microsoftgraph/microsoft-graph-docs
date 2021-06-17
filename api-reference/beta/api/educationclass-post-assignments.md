@@ -1,6 +1,6 @@
 ---
 title: "Create educationAssignment"
-description: "Creates a new assignment. Only teachers in a class can create an assignment. Assignments start in the Draft state, which means that students will not see the assignment until publish is called.  "
+description: "Create a new assignment."
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Creates a new assignment. Only teachers in a class can create an assignment. Assignments start in the Draft state, which means that students will not see the assignment until publish is called.  
+Create a new assignment. 
+
+Only teachers in a class can create an assignment. Assignments start in the Draft state, which means that students will not see the assignment until publication.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

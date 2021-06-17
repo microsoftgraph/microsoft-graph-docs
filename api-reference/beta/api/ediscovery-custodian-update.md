@@ -98,9 +98,7 @@ Content-length: 254
 ### Response
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.ediscovery.custodian"
+  "blockType": "response"
 }
 -->
 

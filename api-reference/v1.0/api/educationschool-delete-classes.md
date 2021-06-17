@@ -74,9 +74,7 @@ DELETE https://graph.microsoft.com/v1.0/education/schools/{school-id}/classes/{c
 The following is an example of the response. 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationClass"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

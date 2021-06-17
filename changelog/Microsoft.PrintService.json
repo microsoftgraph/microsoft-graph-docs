@@ -3,6 +3,168 @@
     {
       "ChangeList": [
         {
+          "Id": "dc4d5c05-64f8-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "dailyPrintUsageByUser",
+          "ChangeType": "Addition",
+          "Description": "Added the **dailyPrintUsageByUser** relationship to [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "dc4d5c05-64f8-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "monthlyPrintUsageByUser",
+          "ChangeType": "Addition",
+          "Description": "Added the **monthlyPrintUsageByUser** relationship to [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "dc4d5c05-64f8-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "dailyPrintUsageByPrinter",
+          "ChangeType": "Addition",
+          "Description": "Added the **dailyPrintUsageByPrinter** relationship to [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "dc4d5c05-64f8-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "monthlyPrintUsageByPrinter",
+          "ChangeType": "Addition",
+          "Description": "Added the **monthlyPrintUsageByPrinter** relationship to [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "dc4d5c05-64f8-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printUsage",
+          "ChangeType": "Addition",
+          "Description": "Added the [printUsage](https://docs.microsoft.com/en-us/graph/api/resources/printUsage?view=graph-rest-beta) resource type",
+          "Target": "printUsage"
+        },
+        {
+          "Id": "dc4d5c05-64f8-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printUsageByUser",
+          "ChangeType": "Addition",
+          "Description": "Added the [printUsageByUser](https://docs.microsoft.com/en-us/graph/api/resources/printUsageByUser?view=graph-rest-beta) resource type",
+          "Target": "printUsageByUser"
+        },
+        {
+          "Id": "dc4d5c05-64f8-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "printUsageByPrinter",
+          "ChangeType": "Addition",
+          "Description": "Added the [printUsageByPrinter](https://docs.microsoft.com/en-us/graph/api/resources/printUsageByPrinter?view=graph-rest-beta) resource type",
+          "Target": "printUsageByPrinter"
+        },
+        {
+          "Id": "dc4d5c05-64f8-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Method",
+          "ChangedApiName": "getUserArchivedPrintJobs",
+          "ChangeType": "Addition",
+          "Description": "Added the [getUserArchivedPrintJobs](https://docs.microsoft.com/en-us/graph/api/reportRoot-getUserArchivedPrintJobs?view=graph-rest-beta) method to the [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "dc4d5c05-64f8-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Method",
+          "ChangedApiName": "getGroupArchivedPrintJobs",
+          "ChangeType": "Addition",
+          "Description": "Added the [getGroupArchivedPrintJobs](https://docs.microsoft.com/en-us/graph/api/reportRoot-getGroupArchivedPrintJobs?view=graph-rest-beta) method to the [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "dc4d5c05-64f8-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Method",
+          "ChangedApiName": "getPrinterArchivedPrintJobs",
+          "ChangeType": "Addition",
+          "Description": "Added the [getPrinterArchivedPrintJobs](https://docs.microsoft.com/en-us/graph/api/reportRoot-getPrinterArchivedPrintJobs?view=graph-rest-beta) method to the [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "dc4d5c05-64f8-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "dailyPrintUsageSummariesByUser",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **dailyPrintUsageSummariesByUser** relationship from [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "dc4d5c05-64f8-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "monthlyPrintUsageSummariesByUser",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **monthlyPrintUsageSummariesByUser** relationship from [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "dc4d5c05-64f8-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "dailyPrintUsageSummariesByPrinter",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **dailyPrintUsageSummariesByPrinter** relationship from [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "dc4d5c05-64f8-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "monthlyPrintUsageSummariesByPrinter",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **monthlyPrintUsageSummariesByPrinter** relationship from [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "dc4d5c05-64f8-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "PrintUsageSummaryByUser",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **PrintUsageSummaryByUser** resource type",
+          "Target": "PrintUsageSummaryByUser"
+        },
+        {
+          "Id": "dc4d5c05-64f8-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Resource",
+          "ChangedApiName": "PrintUsageSummaryByPrinter",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **PrintUsageSummaryByPrinter** resource type",
+          "Target": "PrintUsageSummaryByPrinter"
+        },
+        {
+          "Id": "dc4d5c05-64f8-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Method",
+          "ChangedApiName": "getUserArchivedPrintJobs",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **getUserArchivedPrintJobs** method from the [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "dc4d5c05-64f8-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Method",
+          "ChangedApiName": "getGroupArchivedPrintJobs",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **getGroupArchivedPrintJobs** method from the [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
+          "Target": "reportRoot"
+        },
+        {
+          "Id": "dc4d5c05-64f8-11eb-8de9-f7f8b8b7f046",
+          "ApiChange": "Method",
+          "ChangedApiName": "getPrinterArchivedPrintJobs",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **getPrinterArchivedPrintJobs** method from the [reportRoot](https://docs.microsoft.com/en-us/graph/api/resources/reportRoot?view=graph-rest-beta) resource",
+          "Target": "reportRoot"
+        }
+      ],
+      "Id": "dc4d5c05-64f8-11eb-8de9-f7f8b8b7f046",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-05-19T01:49:17.565Z",
+      "WorkloadArea": "Devices and apps",
+      "SubArea": "Cloud printing"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "07927310-e5b8-44a4-851b-15cef00478fa",
           "ApiChange": "Resource",
           "ChangedApiName": "Printer",
@@ -14,7 +176,7 @@
       "Id": "07927310-e5b8-44a4-851b-15cef00478fa",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2021-05-04T00:00:00",
+      "CreatedDateTime": "2021-06-03T00:00:00",
       "WorkloadArea": "Devices and apps",
       "SubArea": "Cloud printing"
     },

@@ -44,7 +44,10 @@ To consent to the required permissions in Graph Explorer:
 Create three new test users by running the request below three times, changing the **displayName**, **mailNickname**, and **userPrincipalName** properties each time. Record their **id**s.
 
 ### Request
-
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-Securitygroup-createUser"
+}-->
 ```http
 POST /users
 Content-Type: application/json
@@ -62,6 +65,11 @@ Content-Type: application/json
 ```
 
 ### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -82,12 +90,17 @@ Content-type: application/json
 Create a security group named **Building security group** that is the target of the access reviews in this tutorial. Assign to this group two group owners and two members. These members will be the subject of review by the group owners.
 
 ### Request
+
 In this call, replace:
 + `010b2de0-0ed4-4ece-bfa2-22fff71d0497` and `b828cc0e-4240-46ed-bb25-888744487e2d` with the **id**s of your two group owners.
   + One of the **id**s belongs to one of the users you created in Step 1.
   + The other is your **id**. To retrieve your **id**, run `GET` on `https://graph.microsoft.com/beta/me`.
 + `43b12b0c-ee2c-4257-96fe-505d823e06ab` and `859924d0-7115-422a-9ee8-ea8c0c014707` with the **id**s of you two group members. These are the other two members you created in Step 1.
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-Securitygroup-creategroup"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/groups
 Content-Type: application/json
@@ -111,6 +124,12 @@ Content-Type: application/json
 ```
 
 ### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "name": "create_group"
+} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -125,7 +144,7 @@ Content-type: application/json
 ```
 From the response, record the **id** of the new group to use it later in this tutorial.
 
-## Step 3: Create an access review
+## Step 3: Create an access review for the security group
 
 Create an access review for members of the security group, using the following settings:
 + It is a self-reviewing access review. In this case, users under review will self-attest to their need for access to the group.
@@ -133,12 +152,18 @@ Create an access review for members of the security group, using the following s
 + The review scope is limited to members of **Building security group**.
 
 ### Request
+
 In this call, replace the following:
 + `825f1b5e-6fb2-4d9a-b393-d491101acc0c` with the **id** of **Building security group**.
++ The scope specifies that the review is applied to all group members of the the **Building security group**. For more options for configuring the scope, see the [See also](#see-also) section.
 + Value of **startDate** with today's date and value of **endDate** with a date one year from the start date.
 
 By failing to specify the value of the **reviewers** property, this access review is configured as self-reviewing with the members as the reviewers.
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-Securitygroup-create_accessReviewScheduleDefinition"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions
 Content-type: application/json
@@ -185,6 +210,11 @@ Content-type: application/json
 ```
 
 ### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewScheduleDefinition"
+} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -239,8 +269,13 @@ Content-type: application/json
 The following query lists all instances of the access review definition. Because you created a one-time access review in Step 3, the request returns only one instance whose **id** is the same as the access definition’s **id**.
 
 ### Request
+
 In this call, replace `d7286a17-3a01-406a-b872-986b6b40317c` with the **id** of your access review definition returned in Step 3.
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-Securitygroup-list_accessReviewInstance"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/d7286a17-3a01-406a-b872-986b6b40317c/instances
 ```
@@ -249,6 +284,12 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 In this response, the **status** of the access review instance is `InProgress` because **startDateTime** is past and **endDateTime** is in the future. If **startDateTime** is in the future, the status will be `NotStarted`. On the other hand, if **endDateTime** is in the past, the status will be `Completed`.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewInstance",
+  "isCollection": "true"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -275,8 +316,13 @@ Content-type: application/json
 You are interested in the decisions taken for the instance of the access review.
 
 ### Request
+
 In this call, replace `d7286a17-3a01-406a-b872-986b6b40317c` with the **id** of your access review definition returned in Step 3.
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-Securitygroup-list_accessReviewInstanceDecisionItem"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/d7286a17-3a01-406a-b872-986b6b40317c/instances/d7286a17-3a01-406a-b872-986b6b40317c/decisions
 ```
@@ -285,6 +331,12 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 The following response shows the decision taken for the instance of the review.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItem",
+  "isCollection": "true"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -425,13 +477,22 @@ Delete the resources that you created for this tutorial—**Building security gr
 ### Delete the security group
 
 #### Request
+
 In this call, replace `825f1b5e-6fb2-4d9a-b393-d491101acc0c` with the **id** of **Building security group**.
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-Securitygroup-delete_group"
+}-->
 ```http
 DELETE https://graph.microsoft.com/beta/groups/825f1b5e-6fb2-4d9a-b393-d491101acc0c
 ```
 
 #### Response
+<!-- {
+  "blockType": "response",
+  "truncated": false
+} -->
 
 ```http
 HTTP/1.1 204 No Content
@@ -443,27 +504,42 @@ Content-type: text/plain
 In this call, replace `d7286a17-3a01-406a-b872-986b6b40317c` with the **id** of your access review definition. Since the access review schedule definition is the blueprint for the access review, deleting the definition will remove the settings, instances, and decisions associated with the access review.
 
 #### Request
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-Securitygroup-delete_accessReviewScheduleDefinition"
+}-->
 ```http
 DELETE https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/d7286a17-3a01-406a-b872-986b6b40317c
 ```
 
 #### Response
+<!-- {
+  "blockType": "response",
+  "truncated": false
+} -->
 ```http
 HTTP/1.1 204 No Content
 Content-type: text/plain
 ```
 
 ### Delete the three test users
-
-#### Request
 In this call, replace `43b12b0c-ee2c-4257-96fe-505d823e06ab` with the **id** of your test user. Repeat this twice with the **id**s of the other two users to delete them.
 
+#### Request
+
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-Securitygroup-delete_user"
+}-->
 ```http
 DELETE https://graph.microsoft.com/beta/users/43b12b0c-ee2c-4257-96fe-505d823e06ab
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 ```http
 HTTP/1.1 204 No Content
 Content-type: text/plain
@@ -472,11 +548,8 @@ Content-type: text/plain
 
 ## See also
 
-+ [access reviews overview and license requirements](/azure/active-directory/governance/access-reviews-overview)
-+ [access reviews license scenarios](/azure/active-directory/governance/access-reviews-overview#example-license-scenarios)
++ [Access reviews API Reference](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
++ [Configure the scope of your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept)
++ [Access reviews overview and license requirements](/azure/active-directory/governance/access-reviews-overview)
 + [Create an access review of groups & applications](/azure/active-directory/governance/create-access-review)
-+ [access reviews API Reference](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
-+ [Create accessReviewScheduleDefinition](/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&preserve-view=true)
-+ [List accessReviewInstance](/graph/api/accessreviewinstance-list?view=graph-rest-beta&preserve-view=true)
-+ [List accessReviewInstanceDecisionItem](/graph/api/accessreviewinstancedecisionitem-list?view=graph-rest-beta&preserve-view=true)
 

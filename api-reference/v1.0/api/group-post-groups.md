@@ -1,7 +1,7 @@
 ---
 title: "Create group"
 description: "Create a new group as specified in the request body. "
-author: "yyuank"
+author: "Jordanndahl"
 localization_priority: Priority
 ms.prod: "groups"
 doc_type: apiPageType
@@ -131,7 +131,7 @@ Content-length: 244
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the default properties are returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -228,7 +228,7 @@ Content-Type: application/json
 
 The following is an example of a successful response. It includes only default properties. You can subsequently get the **owners** or **members** navigation properties of the group to verify the owner or members. 
 
->**Note:** The response object shown here might be shortened for readability. All the default properties are returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

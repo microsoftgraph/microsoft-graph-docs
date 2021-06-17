@@ -71,9 +71,7 @@ PATCH https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e2026
 
 Here is an example of the response. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.channel"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content
@@ -134,9 +132,7 @@ Content-type: application/json
 Here is an example of the response. 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.channel"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

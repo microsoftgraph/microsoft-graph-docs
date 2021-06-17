@@ -40,7 +40,7 @@ GET /accessReviews/{reviewId}/reviewers
 No request body should be supplied.
 
 ## Response
-If successful, this method returns a `200, OK` response code and an array of [userIdentity](../resources/useridentity.md) objects in the response body.
+If successful, this method returns a `200 OK` response code and an array of [userIdentity](../resources/useridentity.md) objects in the response body.
 
 ## Example
 ##### Request

@@ -23,7 +23,7 @@ Retrieve the list of [chatMessageHostedContent](../resources/chatmessagehostedco
 |:---------------------------------------|:--------------------------------------------|
 |Delegated (work or school account)| ChannelMessage.Read.All, Group.Read.All, Group.Read.WriteAll |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application| ChannelMessage.Read.Group, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
+|Application| ChannelMessage.Read.Group*, ChannelMessage.Read.All, Group.Read.All, Group.ReadWrite.All |
 
 ### Permissions for chat
 
@@ -31,7 +31,7 @@ Retrieve the list of [chatMessageHostedContent](../resources/chatmessagehostedco
 |:---------------------------------------|:--------------------------------------------|
 |Delegated (work or school account)| Chat.Read, Chat.ReadWrite|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application| Chat.Read.All, Chat.ReadWrite.All|
+|Application| ChatMessage.Read.Chat*, Chat.Read.All, Chat.ReadWrite.All|
 
 > **Note**: Permissions marked with * use [resource-specific consent]( https://aka.ms/teams-rsc).
 
@@ -51,7 +51,7 @@ GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies/{reply-
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /chats/{chat-id}/messages/{message-id}/hostedContents
-GET /users/{user-id}/chats/{chat-id}/messages/{message-id}/hostedContents
+GET /users/{user-id | user-principal-name}/chats/{chat-id}/messages/{message-id}/hostedContents
 ```
 
 ## Optional query parameters

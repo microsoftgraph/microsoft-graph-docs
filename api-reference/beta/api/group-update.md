@@ -1,7 +1,7 @@
 ---
 title: "Update group"
 description: "Update the properties of a [group](../resources/group.md) object."
-author: "yyuank"
+author: "Jordanndahl"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
@@ -117,9 +117,7 @@ Content-length: 211
 
 The following is an example of the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "blockType": "response"
 } -->
 
 ```http
@@ -174,9 +172,7 @@ Content-length: 211
 
 The following is an example of the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "blockType": "response"
 } -->
 
 ```http

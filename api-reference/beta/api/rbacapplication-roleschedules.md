@@ -3,7 +3,7 @@ title: "rbacApplication: roleSchedules"
 description: "Retrieve both roleAssignmentSchedules and roleEligibilitySchedules."
 author: "shauliu"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 

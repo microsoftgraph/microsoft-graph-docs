@@ -30,7 +30,7 @@ The assignment APIs are exposed in the class namespace.
 |[Get assignment](../api/educationassignment-get.md) | [educationAssignment](educationassignment.md) |Read properties and relationships of an **educationAssignment** object.|
 |[Update](../api/educationassignment-update.md) | [educationAssignment](educationassignment.md)	|Update an **educationAssignment** object. |
 |[Delete](../api/educationassignment-delete.md) | None |Delete an **educationAssignment** object. |
-|[Add categories](../api/educationassignment-add-categories.md) |[educationCategory](educationcategory.md) | Assign an **educationCategory** belonging to the class to this assignment.|
+|[Add categories](../api/educationassignment-post-categories.md) |[educationCategory](educationcategory.md) | Assign an **educationCategory** belonging to the class to this assignment.|
 |[Remove category](../api/educationassignment-remove-category.md) |None| Remove an **educationCategory** belonging to the class from this assignment.|
 |[Attach rubric](../api/educationassignment-put-rubric.md)|None|Attach an existing **educationRubric** to this assignment.|
 |[Remove rubric](../api/educationassignment-delete-rubric.md)|None|Detach the **educationRubric** from this assignment.|
@@ -42,6 +42,7 @@ The assignment APIs are exposed in the class namespace.
 |:---------------|:--------|:----------|
 |id|String| Read-only.|
 |addedStudentAction|String|Optional field to control the assignment behavior for students who are added after the assignment is published. If not specified, defaults to `none` value. Currently supports only two values: `none` or `assignIfOpen`.|
+|addToCalendarAction| educationAddToCalendarOptions|Optional field to control the assignment behavior  for adding assignments to students' and teachers' calendars when the assignment is published. Possible values are: `studentsAndPublisher`, `studentsAndTeamOwners`, `none`. Default value is `none`.|
 |allowLateSubmissions|Boolean| Identifies whether students can submit after the due date. If this property is not specified during create, it defaults to true. |
 |allowStudentsToAddResourcesToSubmission|Boolean| Identifies whether students can add their own resources to a submission or if they can only modify resources added by the teacher. |
 |assignDateTime|DateTimeOffset|The date when the assignment should become active.  If in the future, the assignment is not shown to the student until this date.  The **Timestamp** type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
@@ -87,6 +88,7 @@ The following is a JSON representation of the resource.
 {
   "id": "String (identifier)",
   "addedStudentAction": "none",
+  "addToCalendarAction": "string",
   "allowLateSubmissions": true,
   "allowStudentsToAddResourcesToSubmission": true,
   "assignDateTime": "String (timestamp)",

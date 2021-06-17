@@ -60,6 +60,6 @@ Find out about the [latest new features and updates](/graph/whats-new-overview) 
 
 ## Connect with us
 
-Are there additional APIs or features you'd like to see in Microsoft Graph? Post new feature requests on [UserVoice](https://officespdev.uservoice.com/forums/224641-general/filters/new?category_id=101632).
+Are there additional APIs or features you'd like to see in Microsoft Graph? Post new feature requests on the [Microsoft 365 Developer Platform ideas forum](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).
 
 Have feedback for existing Microsoft Graph APIs? Connect with us on [Github](https://github.com/microsoftgraph/microsoft-graph-docs/issues).

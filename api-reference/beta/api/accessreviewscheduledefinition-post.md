@@ -52,7 +52,7 @@ The following table shows the properties accepted to create an accessReview.
 | instanceEnumerationScope | [accessReviewScope](../resources/accessreviewscope.md) | In the case of an all groups review, this determines the scope of which groups will be reviewed. See [accessReviewScope](../resources/accessreviewscheduledefinition.md) and also learn how to [configure the scope of your access review definition](/graph/accessreviews-scope-concept).| 
 | settings | [accessReviewScheduleSettings](../resources/accessreviewschedulesettings.md)| The settings for an access review series. Recurrence is determined here. See [accessReviewScheduleSettings](../resources/accessreviewscheduledefinition.md). |
 | reviewers | [accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection | Defines who the reviewers are. If none are specified, the review is a self-review (users reviewed review their own access). See [accessReviewReviewerScope](../resources/accessreviewscheduledefinition.md). |
-
+| additionalNotificationRecipients   |[accessReviewNotificationRecipientItem](../resources/accessReviewNotificationRecipientItem.md) collection| Defines the list of additional users or group members to be notified of the access review progress. |
 
 ## Response
 If successful, this method returns a `201 Created` response code and an [accessReviewScheduleDefinition](../resources/accessreviewscheduledefinition.md) object in the response body.
@@ -92,7 +92,7 @@ Content-type: application/json
       "query": "/users/398164b1-5196-49dd-ada2-364b49f99b27",
       "queryType": "MicrosoftGraph"
     }
-  ],
+  ],  
   "settings": {
     "mailNotificationsEnabled": true,
     "reminderNotificationsEnabled": true,
@@ -168,7 +168,7 @@ Content-type: application/json
       "queryType": "MicrosoftGraph",
       "queryRoot": "decisions"
     }
-  ],
+  ],  
   "settings": {
     "mailNotificationsEnabled": true,
     "reminderNotificationsEnabled": true,
@@ -257,7 +257,7 @@ Content-type: application/json
     "recurrence": {
       "pattern": {
         "type": "absoluteMonthly",
-        "dayOfMonth": "5",
+        "dayOfMonth": 5,
         "interval": 3
       },
       "range": {
@@ -335,13 +335,7 @@ Content-type: application/json
       "queryRoot": null
     }
   ],
-  "backupReviewers": [
-    {
-      "query": "/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
-      "queryType": "MicrosoftGraph",
-      "queryRoot": null
-    }
-  ],
+  "backupReviewers": [],
   "fallbackReviewers": [
     {
       "query": "/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f",
@@ -363,24 +357,20 @@ Content-type: application/json
         "type": "absoluteMonthly",
         "interval": 3,
         "month": 0,
-        "dayOfMonth": 0,
+        "dayOfMonth": 5,
         "daysOfWeek": [],
         "firstDayOfWeek": "sunday",
         "index": "first"
       },
       "range": {
-        "type": "numbered",
+        "type": "noEnd",
         "numberOfOccurrences": 0,
         "recurrenceTimeZone": null,
         "startDate": "2021-05-05",
-        "endDate": "9999-12-31"
+        "endDate": null
       }
     },
-    "applyActions": [
-      {
-        "@odata.type": "#microsoft.graph.removeAccessApplyAction"
-      }
-    ]
+    "applyActions": []
   }
 }
 ```

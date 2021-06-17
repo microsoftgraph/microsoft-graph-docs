@@ -96,6 +96,7 @@ Content-length: 1044
     "applicationTemplateId": null,
     "identifierUris": [],
     "createdDateTime": "2019-09-17T19:10:35.2742618Z",
+    "disabledByMicrosoftStatus": null,
     "displayName": "Display name",
     "isDeviceOnlyAuthSupported": null,
     "groupMembershipClaims": null,

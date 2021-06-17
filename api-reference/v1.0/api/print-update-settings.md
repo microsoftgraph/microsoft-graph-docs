@@ -93,8 +93,7 @@ Content-type: application/json
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.printSettings"
+  "truncated": true
 }
 -->
 ``` http

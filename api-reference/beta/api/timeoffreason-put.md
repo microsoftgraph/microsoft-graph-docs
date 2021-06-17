@@ -56,7 +56,7 @@ If successful, this method returns a `200 OK` response code and a [timeOffReason
 
 ## Example
 
-#### Request
+### Request
 
 The following is an example of the request.
 
@@ -95,7 +95,7 @@ Prefer: return=representation
 ---
 
 
-#### Response
+### Response
 
 The following is an example of the response. 
 

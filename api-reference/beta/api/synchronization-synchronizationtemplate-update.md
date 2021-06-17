@@ -89,9 +89,7 @@ Content-type: application/json
 ##### Response
 The following is an example of a response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.synchronizationTemplate"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

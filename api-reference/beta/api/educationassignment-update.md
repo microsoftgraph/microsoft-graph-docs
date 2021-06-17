@@ -74,7 +74,9 @@ Content-length: 279
     "contentType": "Text",
     "content": "Read chapters 1 through 3"
   },
-  "dueDateTime": "2014-02-01T00:00:00Z"
+  "dueDateTime": "2014-02-01T00:00:00Z",
+  "addedStudentAction": "none",
+  "addToCalendarAction": "studentsAndPublisher",
 }
 ```
 # [C#](#tab/csharp)
@@ -118,6 +120,7 @@ Content-length: 279
     "content": "Read chapters 1 through 3"
   },
   "closeDateTime": "2014-02-11T00:00:00Z",
+  "addToCalendarAction": "studentsAndPublisher",
   "dueDateTime": "2014-02-01T00:00:00Z",
   "assignDateTime": "2014-01-01T00:00:00Z",
   "assignedDateTime": "2014-01-01T00:00:00Z",

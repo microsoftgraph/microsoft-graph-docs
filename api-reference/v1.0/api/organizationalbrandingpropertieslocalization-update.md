@@ -2,7 +2,7 @@
 title: "Update localized organizationalbrandingproperties"
 description: "Update the properties of the organizationalbrandingproperties object for a specific localization."
 localization_priority: Normal
-author: "almars"
+author: "AlexanderMars"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -105,8 +105,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "truncated": true
 } -->
 
 ```http
@@ -161,8 +160,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "truncated": true
 } -->
 
 ```http
@@ -197,8 +195,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "truncated": true
 } -->
 
 ```http
@@ -257,8 +254,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "truncated": true
 } -->
 
 ```http

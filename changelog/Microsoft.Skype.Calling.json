@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "cf7f6cc3-01ab-491e-b9f4-ffd20f2eeb06",
+          "ApiChange": "Resource",
+          "ChangedApiName": "allowAttendeeToEnableMic",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowAttendeeToEnableMic** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        },
+        {
+          "Id": "cf7f6cc3-01ab-491e-b9f4-ffd20f2eeb06",
+          "ApiChange": "Method",
+          "ChangedApiName": "allowAttendeeToEnableCamera",
+          "ChangeType": "Addition",
+          "Description": "Added the **allowAttendeeToEnableCamera** property to the [onlineMeeting](https://docs.microsoft.com/en-us/graph/api/resources/onlinemeeting?view=graph-rest-beta) resource.",
+          "Target": "onlineMeeting"
+        }
+      ],
+      "Id": "cf7f6cc3-01ab-491e-b9f4-ffd20f2eeb06",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-06-10T00:00:00",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "3a4fca5c-53f1-4302-90a0-172e13a760c8",
           "ApiChange": "Method",
           "ChangedApiName": "GET",

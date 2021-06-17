@@ -35,15 +35,17 @@ POST /education/classes/{id}/assignments/{id}/submissions/{id}/setUpResourcesFol
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
-| Authorization  | Bearer {token}. Required.  |
+| Authorization  | Bearer `{token}`. Required.  |
 
 ## Request body
-Do not supply a request body for this method.
+Provide an empty json `{}` as request body for this method.
+
 ## Response
 If successful, this method returns a `200 Ok` response code. The body will contain the submission model.
 
 ## Example
 The following example shows how to call this API.
+
 ### Request
 The following is an example of a request.
 
@@ -55,6 +57,10 @@ The following is an example of a request.
 }-->
 ```msgraph-interactive
 POST https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/submissions/20302/setUpResourcesFolder
+Content-type: application/json
+
+{
+}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/educationsubmission-setupresourcesfolder-csharp-snippets.md)]
@@ -75,7 +81,6 @@ POST https://graph.microsoft.com/beta/education/classes/11012/assignments/19002/
 ---
 
 ---
-
 
 ### Response
 The following is an example of a response. 

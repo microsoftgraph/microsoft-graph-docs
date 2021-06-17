@@ -114,8 +114,9 @@ HTTP/1.1 200 OK
 ```
 ### Example 2: Reply-all in MIME format to a message
 ##### Request
+
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "message_replyAll_mime_v1"
 }-->
 
@@ -125,6 +126,7 @@ Content-type: text/plain
 
 Q29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9wa2NzNy1taW1lOw0KCW5hbWU9c21pbWUucDdtOw0KCXNtaW1lLXR5cGU9ZW52ZWxvcGVkLWRhdGENCk1pbWUtVmVyc2lvbjogMS4wIChNYWMgT1MgWCBNYWlsIDEzLjAgXCgzNjAxLjAuMTBcKSkNClN1YmplY3Q6IFJlOiBUZXN0aW5nIFMvTUlNRQ0KQ29udGVudC1EaXNwb3Np
 ```
+
 ##### Response
 Here is an example of the response.
 <!-- {

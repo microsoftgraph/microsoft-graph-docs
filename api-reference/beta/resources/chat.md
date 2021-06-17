@@ -61,6 +61,7 @@ not all scenarios are possible. It is possible to get chat IDs with delegated pe
 | createdDateTime| dateTimeOffset|  Date and time at which the chat was created. Read-only.|
 | lastUpdatedDateTime| dateTimeOffset|  Date and time at which the chat was renamed or list of members were last changed. Read-only.|
 | chatType| [chatType](../resources/chat.md#chattype-values) | Specifies the type of chat. Possible values are:`group`, `oneOnOne` and `meeting`.|
+|  webUrl          |   string                  |  A hyperlink that will go to the chat in Microsoft Teams. This URL should be treated as an opaque blob, and not parsed. Read-only.     |
 
 ### chatType values 
 
@@ -96,7 +97,8 @@ Here is a JSON representation of the resource.
   "topic": "string",
   "createdDateTime": "dateTimeOffset",
   "lastUpdatedDateTime": "dateTimeOffset",
-  "chatType": "String"
+  "chatType": "String",
+  "webUrl": "string"
 }
 ```
 

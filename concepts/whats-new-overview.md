@@ -12,6 +12,17 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 > [!IMPORTANT]
 > Features, including APIs and tools, in _preview_ status may change without notice, and some may never be promoted to generally available (GA) status. Do not use preview features in production apps.
 
+## June 2021: New and generally available
+
+### Education
+The APIs for the education [assignments service](/graph/api/resources/educationassignment?view=graph-rest-1.0&preserve-view=true) are now generally available. 
+
+## June 2021: New in preview only
+
+### Education
+- Teachers can now select the default behavior for a calendar when they publish assignments. Teachers can control the assignment calendar behavior by using the **addToCalendarAction** property of the [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) resource.
+- Teachers can now also set a default behavior for a calendar when they publish assignments. Teachers can control the assignment default calendar behavior by using the **addToCalendarAction** property of the [educationAssignmentDefaults](/graph/api/resources/educationAssignmentDefaults?view=graph-rest-beta&preserve-view=true) resource.
+
 ## May 2021: New and generally available
 
 ### Devices and apps | Cloud printing

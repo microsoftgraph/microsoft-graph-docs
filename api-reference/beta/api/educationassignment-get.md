@@ -1,6 +1,6 @@
 ---
 title: "Get educationAssignment"
-description: "Get the properties and relationships of an assignment."
+description: "Get the properties and relationships of a given assignment. Note that teachers and applications can see all assignments in a class."
 author: "dipakboyed"
 localization_priority: Normal
 ms.prod: "education"
@@ -45,11 +45,13 @@ Do not supply a request body for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code and an [educationAssignment](../resources/educationassignment.md) object in the response body.
+
 ## Example
 ##### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_educationassignment"
@@ -93,6 +95,7 @@ Content-length: 279
 {
   "id": "19002",
   "addedStudentAction": "none",
+  "addToCalendarAction": "studentsAndPublisher",
   "allowLateSubmissions": true,
   "allowStudentsToAddResourcesToSubmission": true,
   "assignDateTime": "String (timestamp)",

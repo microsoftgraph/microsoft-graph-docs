@@ -13,22 +13,34 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Delete a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object.
+Delete a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object for an RBAC provider.
+
+The following RBAC providers are currently supported:
+- device management (Intune)
+- directory (Azure AD) 
+
+> [!NOTE]
+> The cloud PC RBAC provider currently supports only the [list](rbacapplication-list-roledefinitions.md) and [get](unifiedroledefinition-get.md) operations.
 
 ## Permissions
 
-One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
+Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference). 
 
-| Permission type                        | Permissions (from least to most privileged) |
-|:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | RoleManagement.ReadWrite.Directory |
-| Delegated (personal Microsoft account) | Not supported. |
-| Application                            | RoleManagement.ReadWrite.Directory |
+|Supported provider      | Delegated (work or school account)  | Delegated (personal Microsoft account) | Application |
+|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
+| Device management | DeviceManagementRBAC.ReadWrite.All | Not supported. | DeviceManagementRBAC.ReadWrite.All |
+| Directory | RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All, Directory.AccessAsUser.All | Not supported.| RoleManagement.ReadWrite.Directory, Directory.ReadWrite.All |
 
 ## HTTP request
 
+To delete a role definition for a device management provider:
 <!-- { "blockType": "ignored" } -->
+```http
+DELETE /roleManagement/deviceManagement/roleDefinitions/{id}
+```
 
+To delete a role definition for a directory provider:
+<!-- { "blockType": "ignored" } -->
 ```http
 DELETE /roleManagement/directory/roleDefinitions/{id}
 
@@ -52,7 +64,7 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 ### Request
 
-The following is an example of the request.
+The following example deletes a **unifiedRoleDefinition** for a directory provider.
 
 # [HTTP](#tab/http)
 <!-- {

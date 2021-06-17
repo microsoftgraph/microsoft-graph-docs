@@ -54,13 +54,11 @@ conceptualContent:
         - url: ./onedrive-concept-overview.md
           itemType: overview
           text: Work with various types of files from OneDrive.
-    - title: Outlook calendar
+    - title: Outlook calendar and mail
       links:
         - url: ./outlook-calendar-concept-overview.md
           itemType: overview
           text: Control calendars such as creating an event.
-    - title: Outlook mail
-      links:
         - url: ./outlook-mail-concept-overview.md
           itemType: overview
           text: Access and manage messages and mail data.
@@ -74,6 +72,11 @@ conceptualContent:
         - url: ./azuread-identity-access-management-concept-overview.md
           itemType: overview
           text: Use Azure AD methods to manage access and authenticate users.
+    - title: Microsoft Graph Data Connect
+      links:
+        - url: ./data-connect-concept-overview.md
+          itemType: overview
+          text: Develop applications by extending Microsoft 365 data into Azure.
 
 tools:
   title: SDKs and tools

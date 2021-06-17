@@ -2,7 +2,7 @@
 title: "Add member"
 description: "Add a member to a Microsoft 365 group or security group through the **members** navigation property."
 localization_priority: Normal
-author: "yyuank"
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -90,9 +90,7 @@ In the request body, supply a JSON representation of the `id` of the [directoryO
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

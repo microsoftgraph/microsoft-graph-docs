@@ -3,7 +3,7 @@ title: "Get unifiedRoleAssignmentSchedule"
 description: "Read the properties and relationships of an unifiedRoleAssignmentSchedule object."
 author: "shauliu"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 

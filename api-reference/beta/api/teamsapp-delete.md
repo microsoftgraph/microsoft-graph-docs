@@ -101,9 +101,7 @@ DELETE https://graph.microsoft.com/beta/appCatalogs/teamsApps/06805b9e-77e3-4b93
 ### Response
 
 <!-- {
-  "blockType": "response",
-  "@odata.type": "microsoft.graph.teamsApp",
-  "truncated": true
+  "blockType": "response"
 } -->
 
 ```http

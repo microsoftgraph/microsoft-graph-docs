@@ -21,8 +21,8 @@ Inherits from [ipRange](../resources/intune-mam-iprange.md)
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|lowerAddress|String|Lower address|
-|upperAddress|String|Upper address|
+|lowerAddress|String|Lower address.|
+|upperAddress|String|Upper address.|
 
 ## Relationships
 None
@@ -41,11 +41,6 @@ Here is a JSON representation of the resource.
   "upperAddress": "String"
 }
 ```
-
-
-
-
-
 
 
 

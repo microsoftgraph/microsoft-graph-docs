@@ -111,10 +111,10 @@ To learn more, see [styling components](../customize-components/style.md).
 
 | Configuration | Permissions | API |
 | ------------- | ----------------- | --- |
-| Default (no identifiers or query provided) | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/root/children`	|
+| Default (no identifiers or query provided) | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/root/children` |
 | Provide `{drive-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /drives/{drive-id}/items/{item-id}/children` |
 | Provide `{group-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /groups/{group-id}/drive/items/{item-id}/children` |
-| Provide ONLY `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/items/{item-id}/children` | 
+| Provide ONLY `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/items/{item-id}/children` |
 | Provide `{site-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /sites/{site-id}/drive/items/{item-id}/children` |
 | Pprovide `{user-id}` AND `{item-id}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /users/{user-id}/drive/items/{item-id}/children` |
 | Provide `{drive-id}` AND `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /drives/{drive-id}/root:/{item-path}:/children` |
@@ -123,7 +123,7 @@ To learn more, see [styling components](../customize-components/style.md).
 | Provide `{user-id}` AND `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /users/{user-id}/root:/{item-path}:/children` |
 | Provide only `{item-path}` | Files.Read, Files.Read.All, Sites.Read.All | `GET /me/drive/root:/{item-path}:/children` |
 | `insight-type` is set to trending | Sites.Read.All | `GET /me/insights/trending` |
-| Provide `{user-id or upn}` AND `insight-type` is set to `trending` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/trending` | 
+| Provide `{user-id or upn}` AND `insight-type` is set to `trending` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/trending` |
 | `insight-type` is set to `used` | Sites.Read.All | `GET /me/insights/used` |
 | Provide `{user-id or upn}` AND `insight-type` is set to `used` | Sites.Read.All | `GET /users/{id or userPrincipalName}/insights/used` |
 | `insight-type` is set to shared | Sites.Read.All | `GET /me/insights/shared` |

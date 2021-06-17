@@ -3,7 +3,7 @@ title: "unifiedRoleScheduleBase resource type"
 description: "Base property of unified role schedules that combines unified role assignment schedules and unified role eligibility schedules"
 author: "shauliu"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 

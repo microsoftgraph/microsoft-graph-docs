@@ -306,14 +306,6 @@ Namespace: microsoft.graph
 |passwordlessCapable|
 |mfaCapable|
 
-### authenticatorAppFeatureSettings values 
-
-
-
-|Member|
-|:---|
-|requireNumberMatching|
-|unknownFutureValue|
 
 ### authMethodsType values 
 
@@ -601,6 +593,14 @@ Namespace: microsoft.graph
 |assignIfOpen|
 |unknownFutureValue|
 
+### educationAddToCalendarOptions values
+|Member|
+|:---|
+|none|
+|studentsAndPublisher|
+|studentsAndTeamOwners|
+|unknownFutureValue|
+
 ### externalEmailOtpState values
 
 |Member|
@@ -812,6 +812,7 @@ Namespace: microsoft.graph
 |list|
 |listItem|
 |drive|
+|unknownFutureValue|
 
 ### searchAlterationType values
 
@@ -887,6 +888,15 @@ Namespace: microsoft.graph
 |sunny|
 |unknownFutureValue|
 
+### timeCardState values
+
+|Member|
+|:---|
+|clockedIn|
+|onBreak|
+|clockedOut|
+|unknownFutureValue|
+
 ### scheduleChangeState values
 
 | Member
@@ -915,14 +925,29 @@ Namespace: microsoft.graph
 
 ### workforceIntegrationSupportedEntities values
 
+|Member|
+|:---|
+|none|
+|shift|
+|swapRequest|
+|userShiftPreferences|
+|openShift|
+|openShiftRequest|
+|offerShiftRequest|
+|unknownFutureValue|
+|timeCard|
+|timeOffReason|
+|timeOff|
+|timeOffRequest|
+
+### confirmedBy values
+
 | Member
-|:----------------------------
-|none
-|shift
-|swapRequest
-|openShift
-|openShiftRequest
-|userShiftPreferences
+|:-----------------
+| none|
+| user|
+| manager|
+| unknownFutureValue|
 
 ### timeZoneStandard values
 
@@ -1585,6 +1610,15 @@ Possible values for user account types (group membership), per Windows definitio
 |adminConfirmedSigninCompromised|
 |adminConfirmedUserCompromised|
 |hidden|
+|unknownFutureValue|
+
+### advancedConfigState values 
+
+|Member|
+|:---|
+|default|
+|enabled|
+|disabled|
 |unknownFutureValue|
 
 ### referenceAttachmentPermission values

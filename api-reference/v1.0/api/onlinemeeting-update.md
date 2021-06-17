@@ -1,7 +1,7 @@
 ---
 title: "Update onlineMeeting"
 description: "Update the properties of an online meeting."
-author: "jsandoval-msft"
+author: "mkhribech"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: apiPageType

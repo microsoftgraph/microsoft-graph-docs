@@ -27,8 +27,6 @@ Microsoft Graph Data Connect consumption charges are billed monthly on a pay-as-
 - BasicDataSet_v0.Manager
 - BasicDataSet_v0.DirectReport.
 
-The price for Microsoft Graph Data Connect objects as of today is $0.375 per 1K objects extracted.
-
 ## Is it possible for my data to stay within the organization's subscription with Microsoft Graph Data Connect?
 
 Data Connect pipelines are orchestrated by Azure Data Factory, a data integration service that runs in an Azure subscription. The Azure subscription is [associated with exactly one Microsoft 365 tenant](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory). This way, the data must initially flow to an associated Azure subscription. After further minimalization and aggregation, the data can be used elsewhere.

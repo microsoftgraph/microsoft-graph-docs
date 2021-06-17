@@ -92,7 +92,7 @@ Content-Type: application/json
 
 If successful, it returns the following JSON response. 
 
-<!-- { "blockType": "response", "@type": "microsoft.graph.site", "isCollection": true, "truncated": true } -->
+<!-- { "blockType": "response" } -->
 
 ```http
 HTTP/1.1 204 No Content

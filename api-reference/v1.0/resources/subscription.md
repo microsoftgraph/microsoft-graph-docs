@@ -63,10 +63,10 @@ See [Use the Microsoft Graph API to get change notifications](webhooks.md) for t
 | Teams **callRecord**    | 4230 minutes (under 3 days)  |
 | Teams **chatMessage**    | 60 minutes (1 hour)  |
 | Group **conversation** | 4230 minutes (under 3 days)    |
-| OneDrive **driveItem**    | 4230 minutes (under 3 days)    |
-| SharePoint **list**    | 4230 minutes (under 3 days)    |
+| OneDrive **driveItem**    | 42300 minutes (under 30 days)    |
+| SharePoint **list**    | 42300 minutes (under 30 days)    |
 | Outlook **message**, **event**, **contact**              | 4230 minutes (under 3 days)    |
-| **user**, **group**, other directory resources   | 4230 minutes (under 3 days)    |
+| **user**, **group**, other directory resources   | 41760 minutes (under 29 days)    |
 | Print **printer** | 4230 minutes (under 3 days)    |
 | Print **printTaskDefinition** | 4230 minutes (under 3 days)    |
 

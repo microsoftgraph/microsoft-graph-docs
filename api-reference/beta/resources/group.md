@@ -2,7 +2,7 @@
 title: "group resource type"
 description: "Represents an Azure Active Directory (Azure AD) group, which can be a Microsoft 365 group, a team in Microsoft Teams, or a security group."
 localization_priority: Priority
-author: "yyuank"
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: resourcePageType
 ---
@@ -96,6 +96,7 @@ This resource supports:
 | **Other group resources** |||
 | [List photos](../api/group-list-photos.md) | [profilePhoto](photo.md) collection | Get a collection of profile photos for the group. |
 | [List plannerPlans](../api/plannergroup-list-plans.md) | [plannerPlan](plannerplan.md) collection | Get Planner plans owned by the group. |
+| [List permissionGrants](../api/group-list-permissiongrants.md) | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | List permissions that have been granted to apps to access the group. |
 | **User settings** |||
 | [addFavorite](../api/group-addfavorite.md) | None | Add the group to the list of the signed-in user's favorite groups. Supported for only Microsoft 365 groups. |
 | [removeFavorite](../api/group-removefavorite.md) | None | Remove the group from the list of the signed-in user's favorite groups. Supported for Microsoft 365 groups only. |
@@ -125,7 +126,7 @@ This resource supports:
 |hideFromAddressLists |Boolean |`true` if the group is not displayed in certain parts of the Outlook user interface: in the **Address Book**, in address lists for selecting message recipients, and in the **Browse Groups** dialog for searching groups; false otherwise. Default value is `false`. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`).|
 |hideFromOutlookClients |Boolean |`true` if the group is not displayed in Outlook clients, such as Outlook for Windows and Outlook on the web, false otherwise. Default value is `false`. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`).|
 |id|String|The unique identifier for the group. <br><br>Returned by default. Inherited from [directoryObject](directoryobject.md). Key. Not nullable. Read-only.|
-|isAssignableToRole|Boolean|Indicates whether this group can be assigned to an Azure Active Directory role or not.<br><br>This property can only be set while creating the group and is immutable. Only Global Administrator and Privileged Role Administrator roles can set this property. For more information, see [Using a group to manage Azure AD role assignments](https://go.microsoft.com/fwlink/?linkid=2103037)<br><br>Returned by default.|
+|isAssignableToRole|Boolean|Indicates whether this group can be assigned to an Azure Active Directory role.<br><br>This property can only be set while creating the group and is immutable. If set to `true`, the **securityEnabled** property must also be set to `true` and the group cannot be a dynamic group (that is, **groupTypes** cannot contain `DynamicMembership`).Only callers in Global Administrator and Privileged Role Administrator roles can set this property. For more, see [Using a group to manage Azure AD role assignments](https://go.microsoft.com/fwlink/?linkid=2103037)<br><br>Returned by default.|
 |infoCatalogs|String collection|Identifies the info segments assigned to the group. Returned by default.|
 |isSubscribedByMail|Boolean|Indicates whether the signed-in user is subscribed to receive email conversations. Default value is `true`. <br><br>Returned only on `$select`. Supported only on the Get group API (`GET /groups/{ID}`). |
 |licenseProcessingState|String|Indicates status of the group license assignment to all members of the group. Possible values: `QueuedForProcessing`, `ProcessingInProgress`, and `ProcessingComplete`. <br><br>Returned only on `$select`. Read-only. |
@@ -185,7 +186,7 @@ This resource supports:
 |membersWithLicenseErrors|[user](user.md) collection|A list of group members with license errors from this group-based license assignment. Read-only.|
 |onenote|[onenote](onenote.md)| Read-only.|
 |owners|[directoryObject](directoryobject.md) collection|The owners of the group. The owners are a set of non-admin users who are allowed to modify this object. HTTP Methods: GET (supported for all groups), POST (supported for security groups and mail-enabled security groups), DELETE (supported only for security groups) Read-only. Nullable.|
-|permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)|The permission that has been granted for a group to a specific application.|
+|permissionGrants|[resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md)|The permissions that have been granted for a group to a specific application.|
 |photo|[profilePhoto](profilephoto.md)| The group's profile photo. |
 |photos|[profilePhoto](profilephoto.md) collection| The profile photos owned by the group. Read-only. Nullable.|
 |planner|[plannerGroup](plannergroup.md)| Selective Planner services available to the group. Read-only. Nullable. |

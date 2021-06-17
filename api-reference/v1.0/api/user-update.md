@@ -57,16 +57,17 @@ In the request body, supply the values for relevant fields that should be update
 |department|String|The name for the department in which the user works.|
 |displayName|String|The name displayed in the address book for the user. This is usually the combination of the user's first name, middle initial and last name. This property is required when a user is created and it cannot be cleared during updates. Supports `$filter` and `$orderby`.|
 | employeeId | String | The employee identifier assigned to the user by the organization. |
-| employeeType | String | Captures enterprise worker type. For example, `Employee`, `Contractor`, `Consultant`, or `Vendor`. Returned only on `$select`. Supports `$filter` with the `eq` operator.|
+| employeeType | String | Captures enterprise worker type. For example, `Employee`, `Contractor`, `Consultant`, or `Vendor`. Returned only on `$select`.|
 |givenName|String|The given name (first name) of the user.|
 |hireDate|DateTimeOffset|The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |interests|String collection|A list for the user to describe their interests.|
 |jobTitle|String|The user’s job title.|
-|mail|String|The SMTP address for the user, for example, `jeff@contoso.onmicrosoft.com`. Changes to this property will also update the user's **proxyAddresses** collection to include the value as a SMTP address. <br><br>Supports `$filter`.|
+|mail|String|The SMTP address for the user, for example, `jeff@contoso.onmicrosoft.com`. Changes to this property will also update the user's **proxyAddresses** collection to include the value as a SMTP address.|
 |mailNickname|String|The mail alias for the user. This property must be specified when a user is created.|
 |mobilePhone|String|The primary cellular telephone number for the user.|
 |mySite|String|The URL for the user's personal site.|
 |officeLocation|String|The office location in the user's place of business.|
+| onPremisesExtensionAttributes | [onPremisesExtensionAttributes](../resources/onpremisesextensionattributes.md) | Contains extensionAttributes 1-15 for the user. Note that the individual extension attributes are neither selectable nor filterable. For an `onPremisesSyncEnabled` user, the source of authority for this set of properties is the on-premises and is read-only and is read-only. These extension attributes are also known as Exchange custom attributes 1-15.|
 |onPremisesImmutableId|String|This property is used to associate an on-premises Active Directory user account to their Azure AD user object. This property must be specified when creating a new user account in the Graph if you are using a federated domain for the user’s **userPrincipalName** (UPN) property. **Important:** The **$** and **_** characters cannot be used when specifying this property.                            |
 |otherMails|String |A list of additional email addresses for the user; for example: `["bob@contoso.com", "Robert@fabrikam.com"]`.|
 |passwordPolicies|String|Specifies password policies for the user. This value is an enumeration with one possible value being `DisableStrongPassword`, which allows weaker passwords than the default policy to be specified. `DisablePasswordExpiration` can also be specified. The two may be specified together; for example: `DisablePasswordExpiration, DisableStrongPassword`.|
@@ -136,9 +137,7 @@ Content-type: application/json
 #### Response
 The following example shows the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content
@@ -190,9 +189,7 @@ Content-type: application/json
 
 The following example shows the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

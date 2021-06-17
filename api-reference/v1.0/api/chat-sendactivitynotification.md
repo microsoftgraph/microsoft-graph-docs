@@ -131,9 +131,9 @@ Content-Type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Notify a user about a approval needed in a chat message
+### Example 2: Notify a user about an approval needed in a chat message
 
-Similar to the previous example, this example uses `entityUrl` for the `topic`. However, in this case, it links to a message in the chat. The message can contains a card with the approval button on it.
+Similar to the previous example, this example uses `entityUrl` for the `topic`. However, in this case, it links to a message in the chat. The message can contain a card with the approval button on it.
 
 #### Request
 <!-- {

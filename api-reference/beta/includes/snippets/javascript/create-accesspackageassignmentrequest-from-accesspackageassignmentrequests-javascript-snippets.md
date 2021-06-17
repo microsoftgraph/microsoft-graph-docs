@@ -11,11 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const accessPackageAssignmentRequest = {
-    requestType: 'UserAdd',
+    requestType: 'AdminRemove',
     accessPackageAssignment: {
-        accessPackageId: 'a914b616-e04e-476b-aa37-91038f0b165b'
-    },
-    justification: 'Need access to New Hire access package'
+     id: 'a6bb6942-3ae1-4259-9908-0133aaee9377'
+    }
 };
 
 await client.api('/identityGovernance/entitlementManagement/accessPackageAssignmentRequests')

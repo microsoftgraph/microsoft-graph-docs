@@ -3,7 +3,7 @@ title: "List roleManagementPolicies"
 description: "Get the unifiedRoleManagementPolicy resources from the roleManagementPolicies navigation property."
 author: "shauliu"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 

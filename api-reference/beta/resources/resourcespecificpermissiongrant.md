@@ -21,6 +21,7 @@ A resourceSpecificPermissionGrant declares the permission that has been granted 
 | :------------------------------------------------------------------------ | :------------------------------------------------------------------------------- | :----------------------------------------------------------- |
 |[List permission grants of a chat](../api/chat-list-permissiongrants.md)   | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | List permissions that have been granted in a specific chat.  |
 |[List permission grants of a group](../api/group-list-permissiongrants.md) | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | List permissions that have been granted in a specific group. |
+|[List permission grants of a team](../api/team-list-permissiongrants.md)   | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | List permissions that have been granted in a specific team.  |
 
 ## Properties
 

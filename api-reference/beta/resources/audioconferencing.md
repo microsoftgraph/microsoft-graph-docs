@@ -1,7 +1,7 @@
 ---
 title: "audioConferencing resource type"
 description: "Represents phone access information for an online meeting."
-author: "jsandoval-msft"
+author: "mkhribech"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType

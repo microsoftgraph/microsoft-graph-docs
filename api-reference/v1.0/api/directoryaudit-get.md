@@ -89,16 +89,14 @@ Here is an example of the response.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryaudit"
+  "@odata.type": "microsoft.graph.directoryAudit"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 218
-```
 
-```json
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#auditlogs/directoryaudits",
   "value": [{
@@ -126,9 +124,9 @@ Content-length: 218
 			"modifiedProperties": [{
 				"displayName": "Action Client Name",
 				"oldValue": null,
-				"newValue": "DirectorySync" }],
-			"groupType": "unifiedGroups"
+				"newValue": "DirectorySync" 
 			}],
+			"groupType": "unifiedGroups"
 		}, {
 			"id": "1f0e98f5-3161-4c6b-9b50-d488572f2bb7",
 			"displayName": null,

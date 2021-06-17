@@ -2,7 +2,7 @@
 title: "Get organizationalBrandingProperties"
 description: "Retrieve the properties and relationships of an organizationalBrandingProperties object."
 localization_priority: Normal
-author: "almars"
+author: "AlexanderMars"
 ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
@@ -141,8 +141,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "truncated": true
 } -->
 
 ```http
@@ -300,8 +299,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "truncated": true
 } -->
 
 ```http

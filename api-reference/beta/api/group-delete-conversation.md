@@ -1,7 +1,7 @@
 ---
 title: "Delete conversation"
 description: "Delete a conversation object."
-author: "yyuank"
+author: "Jordanndahl"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType

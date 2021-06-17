@@ -187,6 +187,7 @@ For backward compatibility, the original properties and types are accessible and
 | [searchHit](./searchhit.md)        | Remove property | **_sortField** | Not applicable |
 | [searchHit](./searchhit.md)        | Rename property | **_source** | **resource** |
 | [searchHit](./searchhit.md)        | Rename property | **_summary**  | **summary**  |
+| [entityTypes](./enums.md)          | Rename enum value | **unknownfuturevalue**  | **unknownFutureValue**  |
 
 ## See also
 

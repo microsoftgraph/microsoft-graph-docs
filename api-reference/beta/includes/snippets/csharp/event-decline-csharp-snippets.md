@@ -24,8 +24,8 @@ var proposedNewTime = new TimeSlot
 	}
 };
 
-await graphClient.Me.Events["{id}"]
-	.Decline(proposedNewTime,sendResponse,comment)
+await graphClient.Me.Events["{event-id}"]
+	.Decline(comment,sendResponse,proposedNewTime)
 	.Request()
 	.PostAsync();
 

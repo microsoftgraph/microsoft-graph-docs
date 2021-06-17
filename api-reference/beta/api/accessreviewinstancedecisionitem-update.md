@@ -95,9 +95,7 @@ Content-length: 730
 ### Response
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItem"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 Accepted

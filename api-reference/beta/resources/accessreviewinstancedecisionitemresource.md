@@ -21,7 +21,7 @@ Every decision item in an access review represents a principal's access to a res
 |:---|:---|:---|
 |displayName|String|Display name of the resource|
 |id|String|Resource ID|
-|type|String|Type of resource. Types include: Group, ServicePrincipal, DirectoryRole, AzureRole, AccessPackageAssignmentPolicy.|
+|type|String|Type of resource. Types include: `Group`, `ServicePrincipal`, `DirectoryRole`, `AzureRole`, `AccessPackageAssignmentPolicy`.|
 
 ## Relationships
 None.

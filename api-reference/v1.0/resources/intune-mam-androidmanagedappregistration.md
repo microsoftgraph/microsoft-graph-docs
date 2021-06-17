@@ -1,7 +1,6 @@
 ---
 title: "androidManagedAppRegistration resource type"
-description: "Represents the synchronization details of an android app, with management capabilities, for a specific user.
- The ManagedAppRegistration resource represents the details of an app, with management capability, used by a member of the organization."
+description: "Represents the synchronization details of an android app, with management capabilities, for a specific user. The ManagedAppRegistration resource represents the details of an app, with management capability, used by a member of the organization."
 author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
@@ -47,7 +46,7 @@ Inherits from [managedAppRegistration](../resources/intune-mam-managedappregistr
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|appliedPolicies|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) collection|Zero or more policys already applied on the registered app when it last synchronized with management service. Inherited from [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
+|appliedPolicies|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) collection|Zero or more policys already applied on the registered app when it last synchronized with managment service. Inherited from [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |intendedPolicies|[managedAppPolicy](../resources/intune-mam-managedapppolicy.md) collection|Zero or more policies admin intended for the app as of now. Inherited from [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 |operations|[managedAppOperation](../resources/intune-mam-managedappoperation.md) collection|Zero or more long running operations triggered on the app registration. Inherited from [managedAppRegistration](../resources/intune-mam-managedappregistration.md)|
 
@@ -82,16 +81,6 @@ Here is a JSON representation of the resource.
   "version": "String"
 }
 ```
-
-<!-- {
-  "type": "#page.annotation",
-  "suppressions": [
-  ],
-}
--->
-
-
-
 
 
 

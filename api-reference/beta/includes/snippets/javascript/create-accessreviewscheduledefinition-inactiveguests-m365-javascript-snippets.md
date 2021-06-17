@@ -46,7 +46,7 @@ const accessReviewScheduleDefinition = {
     recurrence: {
       pattern: {
         type: 'absoluteMonthly',
-        dayOfMonth: '5',
+        dayOfMonth: 5,
         interval: 3
       },
       range: {

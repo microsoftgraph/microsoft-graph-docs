@@ -23,7 +23,7 @@ const accessReviewScheduleDefinition = {
       query: '/users/398164b1-5196-49dd-ada2-364b49f99b27',
       queryType: 'MicrosoftGraph'
     }
-  ],
+  ],  
   settings: {
     mailNotificationsEnabled: true,
     reminderNotificationsEnabled: true,

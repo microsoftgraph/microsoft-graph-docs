@@ -371,7 +371,7 @@ Intune [October](changelog.md#october-2020) updates for the beta version.
 - Specify in an [authorization policy](/graph/api/resources/authorizationpolicy?view=graph-rest-beta&preserve-view=true) if and who can invite external users to an organization.
 
 ### People and workplace intelligence | Insights 
-Administrators can see [examples of using PowerShell cmdlets](insights-customize-item-insights-privacy.md#how-to-configure-item-insights-setting-via-powershell) to customize item insight settings for an organization.
+Administrators can see [examples of using PowerShell cmdlets](insights-customize-item-insights-privacy.md#how-to-configure-item-insights-settings-via-powershell) to customize item insight settings for an organization.
 
 ### Teamwork
 - Use the instance attribute **channelCreationMode** to indicate that a [channel](/graph/api/resources/channel?preserve-view=true&view=graph-rest-beta#instance-attributes) is being created to serve migration of data. Use the [completeMigration](/graph/api/channel-completemigration?view=graph-rest-beta&preserve-view=true) to indicate migration is over, such that members can post and read messages.

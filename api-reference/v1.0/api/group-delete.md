@@ -1,7 +1,7 @@
 ---
 title: "Delete group - Microsoft Graph API"
 description: "Delete a group resource."
-author: "yyuank"
+author: "Jordanndahl"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType

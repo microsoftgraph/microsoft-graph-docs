@@ -1,19 +1,18 @@
 ---
 author: JeremyKelley
 description: "You can use createLink action to share a DriveItem via a sharing link."
-ms.date: 09/10/2017
-title: Share a file with a link
+title: "driveItem: createLink"
 localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
-# Create a sharing link for a DriveItem
+# driveItem: createLink
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-You can use **createLink** action to share a [DriveItem](../resources/driveitem.md) via a sharing link.
+You can use **createLink** action to share a [driveItem](../resources/driveitem.md) via a sharing link.
 
 The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application.
 If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
@@ -41,19 +40,24 @@ POST /me/drive/items/{itemId}/createLink
 POST /sites/{siteId}/drive/items/{itemId}/createLink
 POST /users/{userId}/drive/items/{itemId}/createLink
 ```
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+|Content-Type|application/json. Required.|
 
-### Request body
+## Request body
 
 The body of the request defines properties of the sharing link your application is requesting.
 The request should be a JSON object with the following properties.
 
 |   Property                 |  Type  |                                 Description                                                               |
 | :----------------------| :----- | :---------------------------------------------------------------------------------------------------------|
-|type               | string | The type of sharing link to create. Either view, edit, or embed.                                    |
-|password           | string | The password of the sharing link that is set by the creator. Optional and OneDrive Personal only.         |
-|expirationDateTime | string | A String with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission. |
-|scope              | string | Optional. The scope of link to create. Either anonymous or organization.                              |
-
+|type|String|Optional.The type of sharing link to create.   |
+|scope|String|Optional. The scope of link to create. Either anonymous, organization or users.|
+|expirationDateTime|DateTimeOffset|Optional. A String with format of yyyy-MM-ddTHH:mm:ssZ of DateTime indicates the expiration time of the permission.|
+|password|String|Optional.The password of the sharing link that is set by the creator.|
+|recipients|[driveRecipient](../resources/driverecipient.md) collection|Optional. A collection of recipients who will receive access to the sharing link.|
 
 ### Link types
 
@@ -61,73 +65,88 @@ The following values are allowed for the **type** parameter.
 
 | Type value | Description                                                                                  |
 |:-----------|:---------------------------------------------------------------------------------------------|
-| view     | Creates a read-only link to the DriveItem.                                                        |
-| edit     | Creates a read-write link to the DriveItem.                                                       |
-| embed    | Creates an embeddable link to the DriveItem. This option is only available for files in OneDrive personal. |
+| view           | Creates a read-only link to the **driveItem**.                                                                        |
+| review         | Creates a review link to the **driveItem**. This option is only available for files in OneDrive for Business and SharePoint.                   |
+| edit           | Creates an read-write link to the **driveItem**.                                                                       |
+| embed          | Creates an embeddable link to the **driveItem**.                                                                      |
+| blocksDownload | Creates a read-only link that blocks download to the **driveItem**. This option is only available for files in OneDrive for Business and SharePoint.  |
+| createOnly     | Creates an upload-only link to the **driveItem**. This option is only available for folders in OneDrive for Business and SharePoint.             |
+| addressBar     | Creates the default link that is shown in the browser address bars for newly created files. Only available in OneDrive for Business and SharePoint. The organization admin configures whether this link type is supported, and what features are supported by this link type. |
+| adminDefault   | Creates the default link to the **driveItem** as determined by the administrator of the organization. Only available in OneDrive for Business and SharePoint. The policy is enforced for the organization by the admin |
 
 ### Scope types
 
 The following values are allowed for the **scope** parameter.
-If the **scope** parameter is not specified, the default link type for the organization is created.
 
 | Value          | Description
 |:---------------|:------------------------------------------------------------
 | anonymous    | Anyone with the link has access, without needing to sign in. This may include people outside of your organization. Anonymous link support may be disabled by an administrator.
 | organization | Anyone signed into your organization (tenant) can use the link to get access. Only available in OneDrive for Business and SharePoint.
-
+| users        | Specific people in the recipients collection can use the link to get access. Only available in OneDrive for Business and SharePoint.
 
 ## Response
 
 If successful, this method returns a single [Permission](../resources/permission.md) resource in the response body that represents the requested sharing permissions.
 
-The response will be `201 Created` if a new sharing link is created for the item or `200 OK` if an existing link is returned.
+The response will be `201 Created` if a new sharing link is created for the **driveItem** or `200 OK` if an existing link is returned.
 
-## Example
+## Examples
 
-The following example requests a sharing link to be created for the DriveItem specified by {itemId} in the user's OneDrive.
+### Example 1: Create an anonymous sharing link
+The following example requests a sharing link to be created for the **driveItem** specified by {itemId} in the user's OneDrive.
 The sharing link is configured to be read-only and usable by anyone with the link.
 
-### Request
-
-
-# [HTTP](#tab/http)
+#### Request
 <!-- {
   "blockType": "request",
-  "name": "item_createlink"
+  "name": "driveItem_createlink",
+  "sampleKeys": ["01G7ZEPNWQ6DTNTJHHJFBYZD47OAVFOO46"]
 }-->
 
 ```http
 POST /me/drive/items/{itemId}/createLink
-Content-type: application/json
+Content-Type: application/json
+Content-length: 212
 
 {
   "type": "view",
-  "password": "ThisIsMyPrivatePassword",
-  "scope": "anonymous"
+  "scope": "anonymous",
+  "password": "String",
+  "recipients": [
+    {
+      "@odata.type": "microsoft.graph.driveRecipient"
+    }
+  ]
 }
 ```
+
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/item-createlink-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/driveitem-createlink-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/item-createlink-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/driveitem-createlink-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/item-createlink-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/driveitem-createlink-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/item-createlink-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/driveitem-createlink-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
 
 
-### Response
-
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
+#### Response
+>**Note:** The response object shown here might be shortened for readability.
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.permission"
+}
+-->
 
 ```http
 HTTP/1.1 201 Created
@@ -149,17 +168,20 @@ Content-Type: application/json
 }
 ```
 
-## Creating company sharable links
+### Example 2: Creating company sharable links
 
 OneDrive for Business and SharePoint support company sharable links.
 These are similar to anonymous links, except they only work for members of the owning organization.
 To create a company sharable link, use the **scope** parameter with a value of `organization`.
 
-### Request
+#### Request
 
-
-# [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "create-link-scoped", "scopes": "files.readwrite service.sharepoint" } -->
+<!-- {
+  "blockType": "request",
+  "name": "create-link-scoped",
+  "scopes": "files.readwrite service.sharepoint",
+  "sampleKeys": ["01G7ZEPNWQ6DTNTJHHJFBYZD47OAVFOO46"]
+ } -->
 
 ```http
 POST /me/drive/items/{item-id}/createLink
@@ -189,7 +211,7 @@ Content-Type: application/json
 ---
 
 
-### Response
+#### Response
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 
@@ -212,18 +234,21 @@ Content-Type: application/json
 }
 ```
 
-## Creating embeddable links
+### Example 3: Creating embeddable links
 
 When using the `embed` link type, the webUrl returned can be embedded in an `<iframe>` HTML element.
 When an embed link is created the `webHtml` property contains the HTML code for an `<iframe>` to host the content.
 
-**Note:** Embed links are only supported for OneDrive personal.
+>**Note:** Embed links are only supported for OneDrive personal.
 
-### Request
+#### Request
 
-
-# [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "create-embedded-link", "scopes": "files.readwrite service.onedrive" } -->
+<!-- {
+  "blockType": "request",
+  "name": "create-embedded-link",
+  "scopes": "files.readwrite service.onedrive",
+  "sampleKeys": ["01G7ZEPNWQ6DTNTJHHJFBYZD47OAVFOO46"]
+} -->
 
 ```http
 POST /me/drive/items/{item-id}/createLink
@@ -252,7 +277,7 @@ Content-Type: application/json
 ---
 
 
-### Response
+#### Response
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
 
@@ -277,14 +302,15 @@ Content-Type: application/json
 
 ## Remarks
 
+* To create a link based on the organization's default policy and the caller's permissions on the **driveItem**, omit the scope and type parameters
 * Links created using this action do not expire unless a default expiration policy is enforced for the organization.
-* Links are visible in the sharing permissions for the item and can be removed by an owner of the item.
-* Links always point to the current version of a item unless the item is checked out (SharePoint only).
+* Links are visible in the sharing permissions for the **driveItem** and can be removed by an owner of the **driveItem**.
+* Links always point to the current version of a **driveItem** unless the **driveItem** is checked out (SharePoint only).
 
 <!--
 {
   "type": "#page.annotation",
-  "description": "Create a new sharing link for an item.",
+  "description": "Create a new sharing link for a driveItem.",
   "keywords": "create,sharing,sharing link",
   "section": "documentation",
   "tocPath": "Sharing/Create link",
@@ -292,5 +318,3 @@ Content-Type: application/json
   ]
 }
 -->
-
-

@@ -42,7 +42,8 @@ var call = new Call
 	},
 	MediaConfig = new ServiceHostedMediaConfig
 	{
-	}
+	},
+	TenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
 };
 
 await graphClient.Communications.Calls

@@ -1,7 +1,7 @@
 ---
 title: "Get onlineMeeting"
 description: "Retrieve the properties and relationships of an online meeting object."
-author: "jsandoval-msft"
+author: "mkhribech"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: apiPageType

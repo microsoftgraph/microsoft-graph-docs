@@ -167,8 +167,7 @@ Content-Type: application/json
 #### Response
 
 <!-- {
-  "blockType": "response", 
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -345,8 +344,7 @@ Content-Type: application/json
 #### Response
 
 <!-- {
-  "blockType": "response", 
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ``` http
@@ -501,8 +499,7 @@ Content-Type: application/json
 #### Response
 
 <!-- {
-  "blockType": "response", 
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-PrintUsageByUserCollectionPage monthlyPrintUsageSummariesByUser = graphClient.print().reports().monthlyPrintUsageSummariesByUser()
+PrintUsageByUserCollectionPage monthlyPrintUsageByUser = graphClient.print().reports().monthlyPrintUsageByUser()
 	.buildRequest()
 	.get();
 

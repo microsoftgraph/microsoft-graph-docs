@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /servicePrincipals/{id}/appRoleAssignedTo/{id}
+DELETE /servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{principal-id}
 ```
 
 > [!NOTE]
@@ -85,6 +85,7 @@ DELETE https://graph.microsoft.com/beta/servicePrincipals/{resource-SP-id}/appRo
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
 
 In this example, `{resource-SP-id}` would be the id of the resource service principal, and `{principalId}` would be the id of the assigned user, group, or client service principal.
 

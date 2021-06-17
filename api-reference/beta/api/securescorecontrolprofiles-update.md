@@ -100,9 +100,7 @@ Content-type: application/json
 
 The following is an example of a successful response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.secureScoreControlProfile"
+  "blockType": "response"
 } -->
 
 ```http

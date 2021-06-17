@@ -21,7 +21,7 @@ Retrieve the list of [chatMessageHostedContent](../resources/chatmessagehostedco
 |:---------------------------------------|:--------------------------------------------|
 |Delegated (work or school account)| ChannelMessage.Read.All |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application| ChannelMessage.Read.Group, ChannelMessage.Read.All |
+|Application| ChannelMessage.Read.Group*, ChannelMessage.Read.All |
 
 ### Permissions for chat
 
@@ -49,7 +49,7 @@ GET /teams/{team-id}/channels/{channel-id}/messages/{message-id}/replies/{reply-
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /chats/{chat-id}/messages/{message-id}/hostedContents
-GET /users/{user-id}/chats/{chat-id}/messages/{message-id}/hostedContents
+GET /users/{user-id | user-principal-name}/chats/{chat-id}/messages/{message-id}/hostedContents
 ```
 
 ## Optional query parameters

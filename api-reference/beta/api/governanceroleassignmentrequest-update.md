@@ -114,8 +114,7 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
 
 ##### Response
 <!-- {
-  "blockType": "response",
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

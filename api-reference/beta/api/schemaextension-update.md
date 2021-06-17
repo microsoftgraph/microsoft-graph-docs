@@ -114,9 +114,7 @@ Content-length: 201
 ##### Response
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.schemaExtension"
+  "blockType": "response"
 } -->
 
 ```http

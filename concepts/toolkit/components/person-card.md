@@ -154,26 +154,20 @@ mgt-person {
 
 To learn more, see [styling components](../customize-components/style.md).
 
-## Microsoft Graph APIs and permissions
+## Microsoft Graph permissions
 
 The Person-Card control uses the following Microsoft Graph APIs and permissions.
 
-| Resource | Permission | Section |
-| - | - | - |
-| [/me](/graph/api/user-get) | User.Read | Default |
-| [/me/photo/$value](/graph/api/profilephoto-get) | User.Read | Default |
-| [/me/people/?$search=](/graph/api/user-list-people) | People.Read | Default |
-| [/me/contacts/\*](/graph/api/user-list-contacts) | Contacts.Read | Default |
-| [/users/{id}](/graph/api/user-list-people) | User.ReadBasic.All | Default |
-| [/users/{id}/photo/$value](/graph/api/profilephoto-get) | User.ReadBasic.All | Default |
-| [/me/presence](/graph/api/presence-get) | Presence.Read | Default |
-| [/users/{id}/presence](/graph/api/presence-get) | Presence.Read.All | Default |
-| [/users/{id}/manager](/graph/api/user-list-manager) | User.Read.All | Organization |
-| [/users/{id}/directReports](/graph/api/user-list-directreports) | User.Read.All | Organization |
-| [/users/{id}/people](/graph/api/user-list-people) | People.Read.All | Organization |
-| [/me/messages](/graph/api/user-list-messages) | Mail.ReadBasic | Messages |
-| [/me/insights/shared](/graph/api/insights-list-shared) and [/me/insights/used](/graph/api/insights-list-used) | Sites.Read.All | Files |
-| [/users/{id}/profile](/graph/api/profile-get) | User.Read.All | Profile |
+| Configuration | Permission | API | Section |
+| --- | ---------- | ------- | --------- |
+| `personDetails` set with user's `id` but without e-mail, or `userId` set, or `personQuery` set to `me` | User.ReadBasic.All | [/users/{id}](/graph/api/user-list-people), [/users/{id}/photo/$value](/graph/api/profilephoto-get) | Default |
+| `personQuery` set to a value different than `me` | People.Read | [/me/people/?$search=](/graph/api/user-list-people) | Default |
+| `personQuery` set to a value different than `me` and `config.useContactApis` set to `true` (default) | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) | Default |
+| `showPresence` set to `true` | Presence.Read.All | [/users/{id}/presence](/graph/api/presence-get) | Default |
+| `sections.organization` enabled (default) | User.Read.All | [/users/{id}/manager](/graph/api/user-list-manager) | Organization |
+| `sections.organization.showWorksWith` set (default) | People.Read.All | [/users/{id}/people](/graph/api/user-list-people) | Organization |
+| `sections.mailMessages` enabled (default) | Mail.ReadBasic | [/me/messages](/graph/api/user-list-messages) | Messages |
+| `sections.files` enabled (default) | Sites.Read.All | [/me/insights/shared](/graph/api/insights-list-shared) and [/me/insights/used](/graph/api/insights-list-used) | Files |
 
 The `MgtPersonCard` class also exposes a `getScopes` static method that returns an array of scopes required for the person card to function based on the global person card configuration.
 

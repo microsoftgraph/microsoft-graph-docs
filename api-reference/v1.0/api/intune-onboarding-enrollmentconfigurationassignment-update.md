@@ -18,11 +18,11 @@ Update the properties of a [enrollmentConfigurationAssignment](../resources/intu
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -46,8 +46,8 @@ The following table shows the properties that are required when you create the [
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Not yet documented|
-|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Not yet documented|
+|id|String|Key of the enrollment configuration assignment|
+|target|[deviceAndAppManagementAssignmentTarget](../resources/intune-shared-deviceandappmanagementassignmenttarget.md)|Represents an assignment to managed devices in the tenant|
 
 
 
@@ -61,12 +61,13 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/deviceEnrollmentConfigurations/{deviceEnrollmentConfigurationId}/assignments/{enrollmentConfigurationAssignmentId}
 Content-type: application/json
-Content-length: 173
+Content-length: 225
 
 {
   "@odata.type": "#microsoft.graph.enrollmentConfigurationAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+    "collectionId": "Collection Id value"
   }
 }
 ```
@@ -76,21 +77,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 222
+Content-Length: 274
 
 {
   "@odata.type": "#microsoft.graph.enrollmentConfigurationAssignment",
   "id": "705b021c-021c-705b-1c02-5b701c025b70",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+    "collectionId": "Collection Id value"
   }
 }
 ```
-
-
-
-
-
 
 
 

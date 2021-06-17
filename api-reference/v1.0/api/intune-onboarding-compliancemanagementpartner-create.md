@@ -18,7 +18,7 @@ Create a new [complianceManagementPartner](../resources/intune-onboarding-compli
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -69,7 +69,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/complianceManagementPartners
 Content-type: application/json
-Content-length: 982
+Content-length: 1186
 
 {
   "@odata.type": "#microsoft.graph.complianceManagementPartner",
@@ -83,7 +83,8 @@ Content-length: 982
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "collectionId": "Collection Id value"
       }
     }
   ],
@@ -91,7 +92,8 @@ Content-length: 982
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "collectionId": "Collection Id value"
       }
     }
   ],
@@ -99,7 +101,8 @@ Content-length: 982
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "collectionId": "Collection Id value"
       }
     }
   ]
@@ -111,7 +114,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1031
+Content-Length: 1235
 
 {
   "@odata.type": "#microsoft.graph.complianceManagementPartner",
@@ -126,7 +129,8 @@ Content-Length: 1031
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "collectionId": "Collection Id value"
       }
     }
   ],
@@ -134,7 +138,8 @@ Content-Length: 1031
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "collectionId": "Collection Id value"
       }
     }
   ],
@@ -142,14 +147,13 @@ Content-Length: 1031
     {
       "@odata.type": "microsoft.graph.complianceManagementPartnerAssignment",
       "target": {
-        "@odata.type": "microsoft.graph.allDevicesAssignmentTarget"
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "collectionId": "Collection Id value"
       }
     }
   ]
 }
 ```
-
-
 
 
 

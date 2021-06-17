@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 Retrieve the properties of a [directoryRole](../resources/directoryrole.md) object. The role must be activated in tenant for a successful response.
 
-> [!Note]
-> You can use both the object ID and template ID of the **directoryRole** with this API. The template ID of a built-in role is immutable and can be seen in the role description on the Azure portal. For details, see [Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
+You can use both the object ID and template ID of the **directoryRole** with this API. The template ID of a built-in role is immutable and can be seen in the role description on the Azure portal. For details, see [Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -28,10 +27,11 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /directoryRoles/{id}
+GET /directoryRoles/{role-objectId}
+GET /directoryRoles/roleTemplateId={role-templateId}
 ```
 ## Optional query parameters
-This method does **not** support the [OData Query Parameters](/graph/query-parameters) to help customize the response (e.g. $filter is not supported here).
+This method does **not** support any [OData Query Parameters](/graph/query-parameters) to help customize the response (for example, `$filter` is not supported here).
 
 ## Request headers
 | Name       | Type | Description|
@@ -46,8 +46,8 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and [directoryRole](../resources/directoryrole.md) object in the response body.
 ## Examples
 
-### Example 1: Get the definition of a directory role using objectId
-##### Request
+### Example 1: Get the definition of a directory role using role objectId
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -98,8 +98,8 @@ Content-type: application/json
 }
 ```
 
-### Example 2: Get the definition of a directory role using templateId
-##### Request
+### Example 2: Get the definition of a directory role using role templateId
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -129,7 +129,7 @@ GET https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=4a5d8f65-41da
 ---
 
 
-##### Response
+#### Response
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {

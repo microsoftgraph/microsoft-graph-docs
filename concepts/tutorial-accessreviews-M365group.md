@@ -41,6 +41,10 @@ To consent to the required permissions in Graph Explorer:
 ## Step 1: Create a test user in your tenant
 
 ### Request
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-createUser"
+}-->
 
 ```http
 POST /users
@@ -59,6 +63,11 @@ Content-Type: application/json
 ```
 
 ### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.user"
+} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -78,6 +87,10 @@ Content-type: application/json
 Invite a guest user with the email address **john@tailspintoys.com** to your tenant.
 
 ### Request
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-inviteguest"
+}-->
 
 ```http
 POST https://graph.microsoft.com/beta/invitations
@@ -92,6 +105,11 @@ Content-Type: application/json
 ```
 
 ### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.invitation"
+} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -113,10 +131,15 @@ In this step:
 3. Add john@tailspintoys.com as a group member. Their access to the group is the subject of review by you, the group owner.
 
 ### Request
+
 In this call, replace:
 + `cdb555e3-b33e-4fd5-a427-17fadacbdfa7` with your **id**. To retrieve your **id**, run `GET` on `https://graph.microsoft.com/beta/me`.
 + `baf1b0a0-1f9a-4a56-9884-6a30824f8d20` with **john@tailspintoys.com**'s **id** from the response in Step 2.
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-creategroup"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/groups
 Content-Type: application/json
@@ -140,6 +163,12 @@ Content-Type: application/json
 ```
 
 ### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.group",
+  "name": "create_group"
+} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -164,17 +193,22 @@ When you create a recurring access review series for all Microsoft 365 groups wi
 The access review series uses following settings:
 + It's a recurring access review and reviewed quarterly.
 + The group owners review the continued access of guest users.
-+ The review scope is limited to Microsoft 365 groups with **Guest users** only.
-+ A backup reviewer. This can be a fallback user or a group that can review the access in case the group doesn't have any owners assigned.
++ The review scope is limited to Microsoft 365 groups with **Guest users** only. For more options for configuring the scope, see the [See also](#see-also) section. 
++ A backup reviewer. This can be a fallback user or a group that can review the access in case the group doesn't have any owners assigned. For more options for configuring the reviewers, see the [See also](#see-also) section.
 + **autoApplyDecisionsEnabled** is set to `true`. In this case, decisions are applied automatically once the reviewer completes the access review or the access review duration ends. If not enabled, a user must, after the review completes, apply the decisions manually.
 + Apply **removeAccessApplyAction** action to denied guest users. This removes the membership in the group of the denied guest. The guest user can still sign in to your tenant.
 
 ### Request
+
 In this call, replace the following:
 
 + `c9a5aff7-9298-4d71-adab-0a222e0a05e4` with the **id** of the user you are designating as a backup reviewer. This is the **id** from the response in Step 1.
 + Value of **startDate** with today's date and value of **endDate** with a date one year from the start date. 
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-create_accessReviewScheduleDefinition"
+}-->
 ```http
 POST https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions
 Content-type: application/json
@@ -242,6 +276,11 @@ Content-type: application/json
 ```
 
 ### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewScheduleDefinition"
+} -->
 
 ```http
 HTTP/1.1 201 Created
@@ -316,15 +355,27 @@ Content-type: application/json
 The following query lists all instances of the access review definition. If your test tenant contains other Microsoft 365 groups with guest users, this request will return one instance for every Microsoft 365 group with guest users in the tenant.
 
 ### Request
+
 In this call, replace `c22ae540-b89a-4d24-bac0-4ef35e6591ea` with the **id** of your access review definition returned in Step 4.
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-list_accessReviewInstance"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/c22ae540-b89a-4d24-bac0-4ef35e6591ea/instances
 ```
 
 ### Response
+
 In this response, the scope includes a group with **id** `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` (the **Feelgood marketing campaign** group created in Step 3) because it has a guest user.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewInstance",
+  "isCollection": "true"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -352,10 +403,15 @@ In this response, the access review instance is currently `InProgress`. Because 
 Get the decisions taken for the instance of an access review.
 
 ### Request
+
 In this call:
 + Replace `c22ae540-b89a-4d24-bac0-4ef35e6591ea` with the **id** of your access review definition returned in Step 4.
 + Replace `6392b1a7-9c25-4844-83e5-34e23c88e16a` with the **id** of your access review instance returned in Step 5.
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-list_accessReviewInstanceDecisionItem"
+}-->
 ```http
 GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/c22ae540-b89a-4d24-bac0-4ef35e6591ea/instances/6392b1a7-9c25-4844-83e5-34e23c88e16a/decisions
 ```
@@ -364,6 +420,12 @@ GET https://graph.microsoft.com/beta/identityGovernance/accessReviews/definition
 
 The following response shows the decision taken for the instance of the review.
 
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessReviewInstanceDecisionItem",
+  "isCollection": "true"
+} -->
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
@@ -417,14 +479,22 @@ Delete the resources that you created for this tutorial—**Feelgood marketing c
 ### Delete the Microsoft 365 group
 
 #### Request
+
 In this call, replace `59ab642a-2776-4e32-9b68-9ff7a47b7f6a` with the **id** of your **Feelgood marketing campaign** Microsoft 365 group.
 
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-delete_group"
+}-->
 ```http
 DELETE https://graph.microsoft.com/beta/groups/59ab642a-2776-4e32-9b68-9ff7a47b7f6a
 ```
 
 #### Response
-
+<!-- {
+  "blockType": "response",
+  "truncated": false
+} -->
 ```http
 HTTP/1.1 204 No Content
 Content-type: text/plain
@@ -435,40 +505,65 @@ Content-type: text/plain
 In this call, replace `c22ae540-b89a-4d24-bac0-4ef35e6591ea` with the **id** of your access review definition. Since the access review schedule definition is the blueprint for the access review, deleting the definition will remove the settings, instances, and decisions associated with the access review.
 
 #### Request
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-delete_accessReviewScheduleDefinition"
+}-->
 ```http
 DELETE https://graph.microsoft.com/beta/identityGovernance/accessReviews/definitions/c22ae540-b89a-4d24-bac0-4ef35e6591ea
 ```
 
 #### Response
+<!-- {
+  "blockType": "response",
+  "truncated": false
+} -->
 ```http
 HTTP/1.1 204 No Content
 Content-type: text/plain
 ```
+
 ### Remove the guest user
 
 In this call, replace `baf1b0a0-1f9a-4a56-9884-6a30824f8d20` with the **id** of the guest user, john@tailspintoys.com.
 
 #### Request
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-delete_user"
+}-->
 ```http
 DELETE https://graph.microsoft.com/beta/users/baf1b0a0-1f9a-4a56-9884-6a30824f8d20
 ```
 
 #### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 ```http
 HTTP/1.1 204 No Content
 Content-type: text/plain
 ```
 
 ### Delete the test user
+In this call, replace `c9a5aff7-9298-4d71-adab-0a222e0a05e4` with the **id** of your test user.
 
 #### Request
-In this call, replace `c9a5aff7-9298-4d71-adab-0a222e0a05e4` with the **id** of your test user.
+<!-- {
+  "blockType": "request",
+  "name": "tutorial-accessreviews-M365group-delete_guestuser"
+}-->
 
 ```http
 DELETE https://graph.microsoft.com/beta/users/c9a5aff7-9298-4d71-adab-0a222e0a05e4
 ```
 
 #### Response
+<!-- {
+  "blockType": "response",
+  "truncated": true
+} -->
 
 ```http
 HTTP/1.1 204 No Content
@@ -479,12 +574,10 @@ Congratulations! You have created an access review for all guest users in Micros
 
 ## See also
 
-+ [Access Reviews overview and license requirements](/azure/active-directory/governance/access-reviews-overview)
-+ [Access Reviews license scenarios](/azure/active-directory/governance/access-reviews-overview#example-license-scenarios)
++ [Access reviews API Reference](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
++ [Configure the scope of your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept)
++ [Assign reviewers to your access review definition using the Microsoft Graph API](/graph/accessreviews-reviewers-concept)
++ [Access reviews overview and license requirements](/azure/active-directory/governance/access-reviews-overview)
 + [Create an access review of groups & applications](/azure/active-directory/governance/create-access-review)
 + [Invite/add guest users to your organization](/graph/api/resources/invitation?view=graph-rest-beta&preserve-view=true)
-+ [Access Reviews API Reference](/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta&preserve-view=true)
-+ [Create accessReviewScheduleDefinition](/graph/api/accessreviewscheduledefinition-create?view=graph-rest-beta&preserve-view=true)
-+ [List accessReviewInstance](/graph/api/accessreviewinstance-list?view=graph-rest-beta&preserve-view=true)
-+ [List accessReviewInstanceDecisionItem](/graph/api/accessreviewinstancedecisionitem-list?view=graph-rest-beta&preserve-view=true)
 

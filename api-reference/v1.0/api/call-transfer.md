@@ -105,8 +105,7 @@ Content-Length: 430
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -294,8 +293,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -472,8 +470,7 @@ Content-Length: 430
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -656,8 +653,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 }-->
 ```http
 HTTP/1.1 202 Accepted

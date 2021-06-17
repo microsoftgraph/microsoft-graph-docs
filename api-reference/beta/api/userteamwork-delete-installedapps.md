@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /users/{user-id}/teamwork/installedApps/{app-installation-id}
+DELETE /users/{user-id | user-principal-name}/teamwork/installedApps/{app-installation-id}
 ```
 
 ## Request headers

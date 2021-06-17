@@ -132,13 +132,13 @@ The following examples shows how to use the `error` template.
 
 This component uses the following Microsoft Graph APIs and permissions.
 
-| API                                                                                                              | Permission  |
-| ---------------------------------------------------------------------------------------------------------------- | ----------- |
-| [/me/people](/graph/api/user-list-people)                    | People.Read        |
-| [/users](/graph/api/user-list)  | User.ReadBasic.All |
-| [/groups](/group-list)  | Group.Read.All |
-| [/groups/\${groupId}/members](/graph/api/group-list-members) | GroupMember.Read.All        |
-| [/users/${userPrincipleName} ](/graph/api/user-get)  | User.Read |
+| Configuration | Permission | API
+| --- | ---------- | ------- |
+| `group-id` set | People.Read, User.Read.All | [/groups/\${groupId}/members](/graph/api/group-list-members) |
+| `type` set to `Person` or `any` | People.Read | [/me/people](/graph/api/user-list-people) |
+| `type` set to `Group` or searching for users and `type` set to `Group` or `any` | Group.Read.All | [/groups](/graph/api/group-list) |
+| `default-selected-user-ids` set | User.ReadBasic.All | [/users](/graph/api/user-list) |
+| searching for users and `type` set to `Person` or `any` | People.Read, User.ReadBasic.All | [/me/people](/graph/api/user-list-people), [/users](/graph/api/user-list) |
 
 ## Authentication
 
@@ -153,6 +153,7 @@ The control uses the global authentication provider described in the [authentica
 |`users`|List of users|Used when `groupId` specified|
 
 See [Caching](../customize-components/cache.md) for more details on how to configure the cache.
+
 ## Extend for more control
 
 For more complex scenarios or a truly custom UX, this component exposes several `protected render*` methods for override in component extensions.

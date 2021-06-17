@@ -112,10 +112,12 @@ Here is an example of the response.
 
 > **Note:** The response object shown here might be shortened for readability.
 
+[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
+
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryaudit",
+  "@odata.type": "microsoft.graph.directoryAudit",
   "isCollection": true
 } -->
 
@@ -123,11 +125,7 @@ Here is an example of the response.
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 271
-```
 
-[!INCLUDE [sdk-documentation](../includes/snippets_sdk_documentation_link.md)]
-
-```json
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#auditlogs/directoryaudits",
   "value": [{

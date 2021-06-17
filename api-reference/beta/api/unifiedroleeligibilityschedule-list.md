@@ -3,7 +3,7 @@ title: "List unifiedRoleEligibilitySchedules"
 description: "Get a list of the unifiedRoleEligibilitySchedule objects and their properties."
 author: "shauliu"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 

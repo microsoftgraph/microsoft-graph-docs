@@ -502,7 +502,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 | _ChannelSettings.Read.All_ | Read the names, descriptions, and settings of all channels. | Read all channel names, channel descriptions, and channel settings, without a signed-in user.| Yes | No |
 | _ChannelSettings.ReadWrite.All_ | Read and write the names, descriptions, and settings of all channels. | Read and write the names, descriptions, and settings of all channels, without a signed-in user.| Yes | No |
 
-## Chats permissions
+## Chat permissions
 
 #### Delegated permissions
 
@@ -521,6 +521,22 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |_Chat.UpdatePolicyViolation.All_ |Flag chat messages for violating policy |Allows the app to update Microsoft Teams 1:1 or group chat messages by patching a set of Data Loss Prevention (DLP) policy violation properties to handle the output of DLP processing. | Yes | No |
 
 > **Note:** For messages in a channel, see [ChannelMessage permissions](#channel-message-permissions).
+
+## Chat resource-specific consent permissions
+
+| Permission                     | Display String                                                | Description  | Admin Consent Required | Microsoft Account supported |
+|:-------------------------------|:--------------------------------------------------------------|:-------------|:-----------------------|:----------------------------|
+| _ChatSettings.Read.Chat_         | Read this chat's settings.                                    | Allows the app to read this chat's settings, without a signed-in user. |No | No |
+| _ChatSettings.ReadWrite.Chat_    | Read and write this chat's settings.                          | Allows the app to read and write this chat's settings, without a signed-in user. |No | No |
+| _ChatMessage.Read.Chat_          | Read this chat's messages.                                    | Allows the app to read this chat's messages, without a signed-in user. |No | No |
+| _ChatMember.Read.Chat_           | Read this chat's members.                                     | Allows the app to read this chat's members, without a signed-in user. |No | No |
+| _Chat.Manage.Chat_               | Manage this chat.                                             | Allows the app to manage the chat, the chat's members, and grant access to the chat's data, without a signed-in user.  |No | No |
+| _TeamsTab.Read.Chat_             | Read this chat's tabs.                                        | Allows the app to read this chat's tabs, without a signed-in user. |No | No |
+| _TeamsTab.Create.Chat_           | Create tabs in this chat.                                     | Allows the app to create tabs in this chat, without a signed-in user. |No | No |
+| _TeamsTab.Delete.Chat_           | Delete this chat's tabs.                                      | Allows the app to delete this chat's tabs, without a signed-in user. |No | No |
+| _TeamsTab.ReadWrite.Chat_        | Manage this chat's tabs.                                      | Allows the app to manage this chat's tabs, without a signed-in user. |No | No |
+| _TeamsAppInstallation.Read.Chat_ | Read which apps are installed in this chat.                   | Allows the app to read the Teams apps that are installed in this chat along with the permissions granted to each app, without a signed-in user.  |No | No |
+| _OnlineMeeting.ReadBasic.Chat_   | Read basic properties of a meeting associated with this chat. | Allows the app to read basic properties—such as name, schedule, organizer, and join link—of a meeting associated with this chat, without a signed-in user. |No | No |
 
 ## ChatMessage permissions ([private preview](#permissions-availability-status))
 
@@ -634,7 +650,7 @@ For more complex scenarios involving multiple permissions, see [Permission scena
 |_Device.ReadWrite.All_ |Read and write devices |Allows the app to read and write all device properties without a signed in user. Does not allow device creation, device deletion, or update of device alternative security identifiers. |Yes |
 
 > [!NOTE]
-> Before December 3rd, 2020, when the application permission *Device.Read.All* was granted, the [Device Managers](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#deprecated-roles) directory role was also assigned to the app's service principal. This directory role assignment is not removed automatically when the associated application permissions is revoked. To ensure that an application's access to read or write to devices is removed, customers must also remove any related directory roles that were granted to the application.
+> Before December 3rd, 2020, when the application permission *Device.ReadWrite.All* was granted, the [Device Managers](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#deprecated-roles) directory role was also assigned to the app's service principal. This directory role assignment is not removed automatically when the associated application permissions is revoked. To ensure that an application's access to read or write to devices is removed, customers must also remove any related directory roles that were granted to the application.
 > 
 > A service update disabling this behavior began rolling out on December 3rd, 2020. Deployment to all customers completed on January 11th, 2021. Directory roles are no longer automatically assigned when application permissions are granted.
 
@@ -1981,19 +1997,20 @@ Taxonomy permissions are valid only on work or school accounts.
 |:----------------|:------------------|:-------------|:-----------------------|:--------------|
 | TeamSettings.Read.Group | Read this team's settings. | Read this team's settings, without a signed-in user. |No | No |
 | TeamSettings.ReadWrite.Group | Update the settings for this team. | Read and write this team's settings, without a signed-in user. |No | No |
-| ChannelSettings.Read.Group | Read the names, descriptions, and settings of this team’s channels. | Read this group's channel names, channel descriptions, and channel settings, without a signed-in user. |No | No |
-| ChannelSettings.ReadWrite.Group | Update the names, descriptions, and settings of this team’s channels.| Update this group's channel names, channel descriptions, and channel settings, without a signed-in user. |No | No |
-|Channel.Create.Group | Create channels in this team. | Create channels in this group, without a signed-in user. |No | No |
-|Channel.Delete.Group | Delete this team's channels. | Delete this group's channels, without a signed-in user. |No | No |
-|ChannelMessage.Read.Group | Read the team’s channel messages. | Allows an app to read this group's channel's messages, without a signed-in user. |No | No |
-|TeamsAppInstallation.Read.Group | See which apps are installed in this team. | See which apps are installed in this group, without a signed-in user. |No | No |
-|TeamsTab.Read.Group | Read this team's tabs. | Read this group's tabs, without a signed-in user. |No | No |
-|TeamsTab.Create.Group | Create tabs in this team. | Create tabs in this group, without a signed-in user. |No | No |
-|TeamsTab.ReadWrite.Group | Update this team's tabs. | Update this group's tabs, without a signed-in user. |No | No |
-|TeamsTab.Delete.Group | Delete this team's tabs. | Delete this group's tabs, without a signed-in user. |No | No |
+| ChannelSettings.Read.Group | Read the names, descriptions, and settings of this team’s channels. | Read this team's channel names, channel descriptions, and channel settings, without a signed-in user. |No | No |
+| ChannelSettings.ReadWrite.Group | Update the names, descriptions, and settings of this team’s channels.| Update this team's channel names, channel descriptions, and channel settings, without a signed-in user. |No | No |
+|Channel.Create.Group | Create channels in this team. | Create channels in this team, without a signed-in user. |No | No |
+|Channel.Delete.Group | Delete this team's channels. | Delete this team's channels, without a signed-in user. |No | No |
+|ChannelMessage.Read.Group | Read the team’s channel messages. | Allows an app to read this team's channel's messages, without a signed-in user. |No | No |
+|TeamsAppInstallation.Read.Group | See which apps are installed in this team. | See which apps are installed in this team, without a signed-in user. |No | No |
+|TeamsTab.Read.Group | Read this team's tabs. | Read this team's tabs, without a signed-in user. |No | No |
+|TeamsTab.Create.Group | Create tabs in this team. | Create tabs in this team, without a signed-in user. |No | No |
+|TeamsTab.ReadWrite.Group | Update this team's tabs. | Update this team's tabs, without a signed-in user. |No | No |
+|TeamsTab.Delete.Group | Delete this team's tabs. | Delete this team's tabs, without a signed-in user. |No | No |
 |TeamMember.Read.Group | Read this team's members. | Read this team's members, without a signed-in user. |No | No |
 |Member.Read.Group | Read this group's members.| Read this group's members, without a signed-in user. |No | No |
 |Owner.Read.Group| Read this group's owners.	| Read this group's owners, without a signed-in user. |No | No |
+|File.Read.Group| Read this team's files and folders. | **Limited support** <br/> (Preview) Read this team's files and folders, without a signed-in users. | No | No |
 
 ## Teams settings permissions
 

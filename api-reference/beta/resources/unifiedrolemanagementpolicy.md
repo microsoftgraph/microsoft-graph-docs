@@ -3,7 +3,7 @@ title: "unifiedRoleManagementPolicy resource type"
 description: "A unifiedRoleManagementPolicy specifies the various policies associated with a scope and role definition. It is derived from microsoft.graph.policyBase."
 author: "shauliu"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 

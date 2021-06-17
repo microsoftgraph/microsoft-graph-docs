@@ -3,7 +3,7 @@ title: "provisioningStatusInfo resource type"
 description: "Describes the status of the provisioning summary event."
 localization_priority: Normal
 author: "ArvindHarinder1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 doc_type: "resourcePageType"
 ---
 

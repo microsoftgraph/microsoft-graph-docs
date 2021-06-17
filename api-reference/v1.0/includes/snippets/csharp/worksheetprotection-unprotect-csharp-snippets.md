@@ -6,9 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var password = "password-value";
-
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Protection
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Protection
 	.Unprotect()
 	.Request()
 	.PostAsync();

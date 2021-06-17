@@ -58,7 +58,7 @@ The `mgt-get` component supports several [templates](../customize-components/tem
 
 ## Microsoft Graph permissions
 
-For more information about permissions, see the Microsoft Graph [permissions reference](../../permissions-reference.md). 
+Permissions required by this component depend on the data that you want to retrieve with it from Microsoft Graph. For more information about permissions, see the Microsoft Graph [permissions reference](../../permissions-reference.md).
 
 ## Authentication
 

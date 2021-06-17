@@ -114,12 +114,15 @@ Content-Type: application/json
       "managedDeviceId": "bdc8e6dd-0455-4412-83d9-c818664fffff",
       "managedDeviceName": "Managed Device Name value",
       "provisioningPolicyId": "7ed725ad-0a00-4117-b557-d965c373ffff",
+      "provisioningPolicyName": "Provisioning Policy Name value",
+      "onPremisesConnectionName": "On-premises connection Name value",
       "servicePlanId": "dbb9148c-ff83-4a4c-8d7f-28752e93ffff",
       "servicePlanName": "lite",
       "status": "provisioned",
       "userPrincipalName": "User Principal Name value",
       "lastModifiedDateTime": "2020-11-03T10:29:57Z",
-      "statusDetails": null
+      "statusDetails": null,
+      "gracePeriodEndDateTime": "Grace Period End Date Time value "
     }
   ]
 }

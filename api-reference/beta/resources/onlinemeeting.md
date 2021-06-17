@@ -1,7 +1,7 @@
 ---
 title: "onlineMeeting resource type"
 description: "Contains information about a meeting."
-author: "jsandoval-msft"
+author: "mkhribech"
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "cloud-communications"
@@ -30,6 +30,8 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | Property              | Type                                          | Description                                                                                                                                                                                                                                                 |
 | :-------------------- | :-------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)| Specifies who can be a presenter in a meeting. Possible values are `everyone`, `organization`, `roleIsPresenter`, `organizer`, and `unknownFutureValue`.                                                                                                    |
+| allowAttendeeToEnableCamera | Boolean | Indicates whether attendees can turn on their camera. |
+| allowAttendeeToEnableMic | Boolean | Indicates whether attendees can turn on their microphone. |
 | allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Specifies the mode of meeting chat. |
 | allowTeamworkReactions | Boolean | Indicates if Teams reactions are enabled for the meeting. |
 | alternativeRecording  | Stream                                        | The content stream of the alternative recording of a live event. Read-only.                                                                                                                                                                                 |
@@ -43,12 +45,12 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | endDateTime           | DateTime                                      | The meeting end time in UTC.                                                                                                                                                                                                                                |
 | externalId            | String                                        | The external ID. A custom ID. Optional.                                                                                                                                                                                                                     |
 | id                    | String                                        | The default ID associated with the online meeting. Read-only.                                                                                                                                                                                               |
-| isBroadcast           | Boolean                                       | Indicates if this is a live event.                                                                                                                                                                                                                   |
-| isEntryExitAnnounced  | Boolean                                       | Whether or not to announce when callers join or leave.                                                                                                                                                                                                      |
+| isBroadcast           | Boolean                                       | Indicates whether this is a live event.                                                                                                                                                                                                                   |
+| isEntryExitAnnounced  | Boolean                                       | Indicates whether to announce when callers join or leave.                                                                                                                                                                                                      |
 | joinWebUrl            | String                                        | The join URL of the online meeting. Read-only.                                                                                                                                                                                                              |
 | joinInformation       | [itemBody](itembody.md)                       | The join information in the language and locale variant specified in 'Accept-Language' request HTTP header. Read-only                                                                                                                                       |
 | lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting lobby.                                                                                                                                                                                                  |
-|meetingAttendanceReport | [meetingAttendanceReport](meetingAttendanceReport.md) | The attendance report of a scheduled meeting. Read-only. |
+| meetingAttendanceReport | [meetingAttendanceReport](meetingAttendanceReport.md) | The attendance report of a scheduled meeting. Read-only. |
 | participants          | [meetingParticipants](meetingparticipants.md) | The participants associated with the online meeting. This includes the organizer and the attendees.                                                                                                                                                        |
 | recording             | Stream                                        | The content stream of the recording of a live event. Read-only.                                                                                                                                                                                             |
 | startDateTime         | DateTime                                      | The meeting start time in UTC.                                                                                                                                                                                                                              |
@@ -73,7 +75,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | unknownFutureValue | Unknown future value.                                         |
 
 > [!TIP]
-> If the value of **allowedPresenters** is set to `roleIsPresenter`, please specify each meeting participant's meeting role using **role** property in [meetingParticipantInfo](../resources/meetingparticipantinfo.md).
+> If the value of **allowedPresenters** is set to `roleIsPresenter`, specify each meeting participant's meeting role using the [meetingParticipantInfo](../resources/meetingparticipantinfo.md) **role** property.
 
 ### meetingChatMode values
 
@@ -111,7 +113,9 @@ Contains information about a meeting, including the URL used to join a meeting, 
   "isBroadcast": "Boolean",
   "broadcastSettings": {"@odata.type": "microsoft.graph.broadcastSettings"},
   "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
-  "allowTeamworkReactions": "Boolean"
+  "allowTeamworkReactions": "Boolean",
+  "allowAttendeeToEnableMic": "Boolean",
+  "allowAttendeeToEnableCamera": "Boolean"
 }
 ```
 

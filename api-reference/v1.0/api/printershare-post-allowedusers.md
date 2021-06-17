@@ -90,8 +90,7 @@ Content-length: 46
 ### Response
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.user"
+  "truncated": true
 }
 -->
 ```http

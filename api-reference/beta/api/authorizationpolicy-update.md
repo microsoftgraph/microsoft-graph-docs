@@ -87,9 +87,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -141,9 +139,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -192,9 +188,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -246,9 +240,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -298,9 +290,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -353,9 +343,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationPolicy"
+  "blockType": "response"
 } -->
 
 ```http
@@ -408,9 +396,7 @@ PATCH https://graph.microsoft.com/beta/policies/authorizationPolicy/authorizatio
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.authorizationpolicy"
+  "blockType": "response"
 } -->
 
 ```http

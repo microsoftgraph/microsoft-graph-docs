@@ -41,16 +41,16 @@ If you would like to use your own backend authentication, use the [Proxy Provide
 
 You can choose to initialize the provider in either your HTML or your JavaScript code. 
 
-# [html](#tab/HTML)
+# [HTML](#tab/HTML)
 Add the `mgt-msal2-provider` component to your HTML page and set the `client-id` to your application client-id.
 
 ```html
 <mgt-msal2-provider client-id="<YOUR_CLIENT_ID"></mgt-msal2-provider>
 ```
-# [js](#tab/JavaScript)
+# [JavaScript](#tab/JavaScript)
 To initialize the MSAL provider in your JavaScript, add the following code to your application:
 
-```js
+```javascript
 import {Providers, Msal2Provider} from '@microsoft/mgt'
 
 Providers.globalProvider = new Msal2Provider({
@@ -69,7 +69,7 @@ In order to get a client ID, you need to [register your application](./add-aad-a
 ## Add components
 After you initialize the MSAL 2.0 provider, you can start using any of the Toolkit components.
 
-# [html](#tab/HTML)
+# [HTML](#tab/HTML)
 The following is a full working example using mgt-loader, the MSAL Provider initialized in HTML, and the Login component:
 
 ```html
@@ -87,10 +87,10 @@ This is an example using the ES6 modules, the MSAL 2.0 Provider initialized in H
 
 <mgt-login></mgt-login>
 ```
-# [js](#tab/JavaScript)
+# [JavaScript](#tab/JavaScript)
 This is an example using the ES6 modules, the MSAL 2.0 Provider initialized in JavaScript, and the Login component:
 
-```js
+```javascript
 import {Providers, Msal2Provider} from '@microsoft/mgt'
 
 Providers.globalProvider = new Msal2Provider({
@@ -115,6 +115,74 @@ In order to test your app, MSAL requires the page to be hosted in a web server f
 
 If you're just getting started and want to play around, you can use [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) in Visual Studio Code or any similar lightweight development server. Download the extension and open your HTML file using live server. 
 > **Note:** Make sure the **redirect URI** in your app registration is set to the localhost port your application is hosted on. Go to your app registration in the [Azure portal](https://portal.azure.com), click **Authentication** under manage, and add the correct **redirect URI**.
+
+## Track a user's sign in state
+
+You can detect when a user has successfully signed in and display specific components accordingly. For example, display the agenda component if the user has signed in. Otherwise, display the sign in interface.
+
+You can determine if a user is signed in by evaluating the `globalProvider` and `providerState`.
+
+# [HTML](#tab/HTML)
+
+If you're using the `mgt-loader` library, you can access the `provider` and `providerState` from the `mgt` property.
+
+```html
+<script src="https://unpkg.com/@microsoft/mgt/dist/bundle/mgt-loader.js"></script>
+
+<mgt-msal-provider client-id="<YOUR_CLIENT_ID>"></mgt-msal-provider>
+
+<div id="main"><mgt-login></mgt-login></div>
+
+<script>
+    const provider = mgt.Providers.globalProvider;
+    const isLoggedIn = provider && provider.state === mgt.ProviderState.SignedIn
+
+    // Show the mgt-agenda component ONLY if the user is logged in, show the mgt-login component if not
+    function loadAgenda(){
+        if(isLoggedIn){
+            const main = document.getElementById("main");
+            main.innerHTML = `<mgt-agenda></mgt-agenda>`;
+        } else {
+            main.innerHTML = `<mgt-login></mgt-login>`;
+        }
+    }
+
+    loadAgenda();
+</script>
+```
+
+# [JavaScript](#tab/JavaScript)
+If you're using the Toolkit via the npm packages, you can import the `provider` and `providerState` from `@microsoft/mgt`.
+
+```javascript
+import {Providers, ProviderState} from '@microsoft/mgt'
+
+Providers.globalProvider = new MsalProvider({
+    clientId: "<YOUR_CLIENT_ID>"
+})
+
+function isLoggedIn(){
+    const provider = Providers.globalProvider;
+    return provider && provider.state === ProviderState.SignedIn;
+}
+
+function loadAgenda(){
+    const agenda = document.createElement("mgt-agenda");
+    const loginComponent = document.createElement("mgt-login");
+    if(isLoggedIn()){
+        // the user is logged in, load their agenda
+        document.body.innerHTML = `<mgt-agenda></mgt-agenda>`;
+    } else {
+        // the user is not logged in, show them the login component
+        document.body.innerHTML = `<mgt-login></mgt-login>`
+    }
+}
+
+loadAgenda();
+```
+
+---
+
 
 ## Next Steps
 - Check out the [Get started with Microsoft Graph Toolkit](/learn/modules/msgraph-toolkit-intro/) step-by-step tutorial.

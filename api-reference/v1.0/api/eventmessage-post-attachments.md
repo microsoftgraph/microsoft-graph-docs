@@ -97,9 +97,7 @@ In the request body, supply a JSON representation of [attachment](../resources/a
 ##### Response
 Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.attachment"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 201 Created
@@ -150,9 +148,7 @@ Content-length: 100
 Here is an example of the response. Note: The response object shown here may be
 truncated for brevity. All of the properties will be returned from an actual call.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.attachment"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 201 Created
