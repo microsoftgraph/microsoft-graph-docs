@@ -6,8 +6,8 @@ localization_priority: Normal
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
-
 # Update deviceRegistrationPolicy
+
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
@@ -15,6 +15,7 @@ Namespace: microsoft.graph
 Update the properties of a [deviceRegistrationPolicy](../resources/deviceregistrationpolicy.md) object. Represents deviceRegistrationPolicy quota restrictions, additional authentication and authorization policies to register device identities to your organization.
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
@@ -38,25 +39,27 @@ PUT /policies/deviceRegistrationPolicy
 ```
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
 |Content-Type|application/json. Required.|
 
 ## Request body
+
 In the request body, supply a JSON representation of the [deviceRegistrationPolicy](../resources/deviceregistrationpolicy.md) object.
 
 The following table shows the properties that are required when you update the [deviceRegistrationPolicy](../resources/deviceregistrationpolicy.md).
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Read-only.|
-|displayName|String|Read-only.|
-|description|String|Read-only|
+|id|String| This string is read-only and is always set to `deviceRegistrationPolicy`. |
+|displayName|String| This string is read-only and is always set to `Device Registration Policy`. |
+|description|String| This string is read-only and is always set to `Tenant-wide policy that manages intial provisioning controls using quota restrictions, additional authentication and authorization checks`. |
 |userDeviceQuota|Int32|Specifies the maximum number of devices that a user can have within your organization before blocking new device registrations. Required.|
-|multiFactorAuthConfiguration|multiFactorAuthConfiguration|Specifies the authentication policy for a user to complete registration using Azure AD Join or Azure AD registered within your organization. Possible values are: `notRequired`, `required`, `unknownFutureValue`. Required.|
-|azureADRegistration|[azureADRegistrationPolicy](../resources/azureadregistrationpolicy.md)|Specifies the authorization policy for controlling registration of new devices using Azure AD registered within your organization. Required. [Learn more](https://docs.microsoft.com/azure/active-directory/devices/overview) about device identities in Azure AD.|
-|azureADJoin|[azureAdJoinPolicy](../resources/azureadjoinpolicy.md)|Specifies the authorization policy for controlling registration of new devices using Azure AD Join within your organization. Required. [Learn more](https://docs.microsoft.com/azure/active-directory/devices/overview) about device identities in Azure AD.|
+|multiFactorAuthConfiguration|multiFactorAuthConfiguration|Specifies the authentication policy for a user to complete registration using Azure AD Join or Azure AD registered within your organization. Possible values are: `notRequired` or `required`. Required.|
+|azureADRegistration|[azureADRegistrationPolicy](../resources/azureadregistrationpolicy.md)|Specifies the authorization policy for controlling registration of new devices using Azure AD registration within your organization. Required. For more information, see [What is a device identity?](/azure/active-directory/devices/overview). If Intune is enabled this property cannot be modified.|
+|azureADJoin|[azureAdJoinPolicy](../resources/azureadjoinpolicy.md)|Specifies the authorization policy for controlling registration of new devices using Azure AD Join within your organization. Required. For more information, see [What is a device identity?](/azure/active-directory/devices/overview).|
 
 ## Response
 
@@ -65,6 +68,7 @@ If successful, this method returns a `200 OK` response code and an updated [devi
 ## Examples
 
 ### Request
+
 <!-- {
   "blockType": "request",
   "name": "update_deviceregistrationpolicy"
@@ -95,8 +99,8 @@ Content-Type: application/json
 }
 ```
 
-
 ### Response
+
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
@@ -128,4 +132,3 @@ Content-Type: application/json
     }
 }
 ```
-
