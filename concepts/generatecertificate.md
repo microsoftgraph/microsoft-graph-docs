@@ -22,26 +22,28 @@ After you generate your certificate, you can export them to a location where the
 
 Modern versions of Windows (Windows 8.1 and greater, and Windows Server 2012R2 and greater) include a built-in PowerShell cmdlet `New-SelfSignedCertificate` to create a self-signed certificate. This powerful tool replaced the [MakeCert](https://docs.microsoft.com/windows/win32/seccrypto/makecert) tool.
 
-In an elevated PowerShell prompt, run the following command:
+In an elevated PowerShell prompt, run the following command and leave the PowerShell console session open.
 
 ```powershell
-$cert = New-SelfSignedCertificate -Subject "CN={certificateName}" -CertStoreLocation "Cert:\CurrentUser\My" -KeyExportPolicy Exportable -KeySpec Signature -KeyLength 2048 -KeyAlgorithm RSA -HashAlgorithm SHA256 
+
+$cert = New-SelfSignedCertificate -Subject "CN={certificateName}" -CertStoreLocation "Cert:\CurrentUser\My" -KeyExportPolicy Exportable -KeySpec Signature -KeyLength 2048 -KeyAlgorithm RSA -HashAlgorithm SHA256
+
 ```
 
 > [!NOTE]
 > + **-KeyLength** can be up to 2048 bits.
 > + Allowed values for **-KeyAlgorithm** values are `SHA256`, `SHA384`, `SHA512`, `SHA-512/224`, `SHA-512/256`, `RSA`, and `ECDSA_curvename`.
 > + To learn more about the configuration properties for the `New-SelfSignedCertificate` cmdlet, see the [`New-SelfSignedCertificate` reference](/powershell/module/pki/new-selfsignedcertificate?view=windowsserver2019-ps).
+> + This self-signed certificate is supported for use for both client and server authentication.
 
 
 The **$cert** variable in the previous command stores your certificate in the current session and allows you to export it using the command below.
 
 ```powershell
-Export-Certificate -Cert $cert -FilePath "C:\Users\admin\Desktop\{certificateName}.cer"   ## Specify a different location; replace {certificateName}
-```
 
-> [!TIP]
-> This self-signed certificate is supported for use for both client and server authentication.
+Export-Certificate -Cert $cert -FilePath "C:\Users\admin\Desktop\{certificateName}.cer"   ## Specify a different location; replace {certificateName}
+
+```
 
 ##### [Use C#](#tab/csharp)
 
@@ -130,7 +132,7 @@ To export the certificate from your personal certificate store:
 8. Confirm the certificate settings and click **Finish** to export your certificate.
 
 
-##### [Use Linux](#tab/csharp)
+##### [Use Linux](#tab/Linux)
 
 To generate a certificate using the Linux CLI, follow [Generate and export certificates](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-certificates-point-to-site-linux).
 
