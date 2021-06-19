@@ -183,6 +183,68 @@
             "CreatedDateTime": "2021-03-25T18:47:16.557Z",
             "WorkloadArea": "Identity and access",
             "SubArea": "Governance"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "48e9d736-c31d-11eb-995f-5903f88189f5",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "recommendationLookBackDuration",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **recommendationLookBackDuration** property to the [accessReviewScheduleSettings](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleSettings?view=graph-rest-beta) resource.",
+                    "Target": "accessReviewScheduleSettings"
+                }
+            ],
+            "Id": "48e7726c-c31d-11eb-995f-5903f88189f5",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-06-01T21:06:50.952Z",
+            "WorkloadArea": "Identity and access",
+            "SubArea": "Identity governance"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "fe3acf08-6328-46d0-86ba-71a396b5f827",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "accessReviewInstanceDecisionItemResource",
+                    "ChangeType": "Update",
+                    "Description": "Updated the [accessReviewInstanceDecisionItemResource](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemResource?view=graph-rest-beta) resource type to be open type.",
+                    "Target": "accessReviewInstanceDecisionItemResource"
+                }
+            ],
+            "Id": "fe3acf08-6328-46d0-86ba-71a396b5f827",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-06-03T21:06:50.952Z",
+            "WorkloadArea": "Identity and access",
+            "SubArea": "Identity governance"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "75b73eb8-6bdf-4480-98c6-46beaf2d9058",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "reviewers",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **reviewers** property to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-beta) resource.",
+                    "Target": "accessReviewInstance"
+                },
+                {
+                    "Id": "25760582-e705-4f64-824b-ec6a94f510a0",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "fallbackReviewers",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **fallbackReviewers** property to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-beta) resource.",
+                    "Target": "accessReviewInstance"
+                }
+            ],
+            "Id": "fe3acf08-6328-46d0-86ba-71a396b5f827",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-06-18T21:06:50.952Z",
+            "WorkloadArea": "Identity and access",
+            "SubArea": "Identity governance"
         }
     ]
 }

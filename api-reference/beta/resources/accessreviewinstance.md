@@ -41,6 +41,8 @@ Every **accessReviewInstance** contains a list of [decisions](accessreviewinstan
 | endDateTime | DateTimeOffset | DateTime when review instance is scheduled to end.The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 | status | String | Specifies the status of an accessReview. The typical states include `Initializing`, `NotStarted`, `Starting`, `InProgress`, `Completing`, `Completed`, `AutoReviewing`, and `AutoReviewed`.  Read-only.|
 | scope | [accessReviewScope](accessreviewscope.md) | Created based on **scope** and **instanceEnumerationScope** at the `accessReviewScheduleDefinition` level. Defines the scope of users reviewed in a group. In the case of a single-group review, the scope defined at the `accessReviewScheduleDefinition` level applies to all instances. In the case of all groups review, scope may be different for each group. Read-only.  | 
+| reviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| This collection of access review scopes is used to define who are the reviewers. Supports `$select`. For examples of options for assigning reviewers, see [Assign reviewers to your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept).|
+| fallbackReviewers   |[accessReviewReviewerScope](../resources/accessreviewreviewerscope.md) collection| This collection of reviewer scopes is used to define the list of fallback reviewers. These fallback reviewers will be notified to take action if no users are found from the list of reviewers specified. This could occur when either the group owner is specified as the reviewer but the group owner does not exist, or manager is specified as reviewer but a user's manager does not exist. Supports `$select`.|
 | decisions | [accessReviewInstanceDecisionItem](accessreviewinstancedecisionitem.md) collection | Each user reviewed in an [accessReviewInstance](#accessreviewinstance-resource-type) has a decision item representing if their access was approved, denied, or not yet reviewed. |
 | definition |[accessReviewScheduleDefinition](accessreviewscheduledefinition.md) | There is exactly one **accessReviewScheduleDefinition** associated with each instance. It is the parent schedule for the instance, where instances are created for each recurrence of a review definition and each group selected to review by the definition. |
 
@@ -73,7 +75,17 @@ Here is a JSON representation of the resource.
  "status": "string",
  "scope": {
     "@odata.type": "microsoft.graph.accessReviewScope"
-  }
+  },
+  "reviewers": [
+    {
+      "@odata.type": "microsoft.graph.accessReviewReviewerScope"
+    }
+  ],
+  "fallbackReviewers": [
+    {
+      "@odata.type": "microsoft.graph.accessReviewReviewerScope"
+    }
+  ]
 }
 ```
 
