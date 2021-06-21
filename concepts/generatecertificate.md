@@ -20,7 +20,7 @@ After you generate your certificate, you can export them to a location where the
 
 ##### [Use PowerShell](#tab/powershell)
 
-Modern versions of Windows (Windows 8.1 and greater, and Windows Server 2012R2 and greater) include a built-in PowerShell cmdlet `New-SelfSignedCertificate` to create a self-signed certificate. This powerful tool replaced the [MakeCert](https://docs.microsoft.com/windows/win32/seccrypto/makecert) tool.
+Modern versions of Windows (Windows 8.1 and greater, and Windows Server 2012R2 and greater) include a built-in PowerShell cmdlet `New-SelfSignedCertificate` to create a self-signed certificate. This powerful tool replaced the [MakeCert](/windows/win32/seccrypto/makecert) tool.
 
 In an elevated PowerShell prompt, run the following command and leave the PowerShell console session open.
 
@@ -134,7 +134,7 @@ To export the certificate from your personal certificate store:
 
 ##### [Use Linux](#tab/linux)
 
-To generate a certificate using the Linux CLI, follow [Generate and export certificates](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-certificates-point-to-site-linux).
+To generate a certificate using the Linux CLI, follow [Generate and export certificates](/azure/vpn-gateway/vpn-gateway-certificates-point-to-site-linux).
 
 
 ---
