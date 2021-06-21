@@ -7,9 +7,9 @@ localization_priority: Priority
 
 # Generate a self-signed public certificate to authenticate your application
 
-Azure AD supports two types of authentication for service principals: **password-based authentication** (app secret) and **certificate-based authentication**. While app secrets can easily be generated via the **App registrations** blade, Microsoft recommends using a certificate.
+Azure Active Directory (Azure AD) supports two types of authentication for service principals: **password-based authentication** (app secret) and **certificate-based authentication**. While app secrets can easily be generated via the **App registrations** blade, Microsoft recommends using a certificate.
 
-For testing purposes, you can use a self-signed public certificate instead of a CA-signed certificate. This article shows 3 methods you can use to generate your self-signed certificate.
+For testing purposes, you can use a self-signed public certificate instead of a Certificate Authority (CA) signed certificate. This article shows 3 methods you can use to generate your self-signed certificate.
 
 > [!CAUTION]
 > Using a self-signed certificate is only recommended for development, not production.
@@ -132,14 +132,14 @@ To export the certificate from your personal certificate store:
 8. Confirm the certificate settings and click **Finish** to export your certificate.
 
 
-##### [Use Linux](#tab/Linux)
+##### [Use Linux](#tab/linux)
 
 To generate a certificate using the Linux CLI, follow [Generate and export certificates](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-certificates-point-to-site-linux).
+
 
 ---
 
 
-
 ## Next steps
 
-Now that you have your certificate in one of the formats supported by Azure AD, you can use it to [authenticate your application]().
+Now that you have your certificate in one of the formats supported by Azure AD, use it to [authenticate your application]().
