@@ -19,16 +19,13 @@ var chatMessage = new ChatMessage
 		{
 			Id = 0,
 			MentionText = "Jane Smith",
-			Mentioned = new IdentitySet
+			Mentioned = new ChatMessageMentionedIdentitySet
 			{
 				User = new Identity
 				{
 					DisplayName = "Jane Smith",
 					Id = "ef1c916a-3135-4417-ba27-8eb7bd084193",
-					AdditionalData = new Dictionary<string, object>()
-					{
-						{"userIdentityType", "aadUser"}
-					}
+					UserIdentityType = TeamworkUserIdentityType.AadUser
 				}
 			}
 		}

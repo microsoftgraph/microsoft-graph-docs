@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var authenticationContextClassReferences = await graphClient.Identity.ConditionalAccess.AuthenticationContextClassReferences
+var authenticationContextClassReference = await graphClient.Identity.ConditionalAccess.AuthenticationContextClassReferences["{authenticationContextClassReference-id}"]
 	.Request()
 	.GetAsync();
 

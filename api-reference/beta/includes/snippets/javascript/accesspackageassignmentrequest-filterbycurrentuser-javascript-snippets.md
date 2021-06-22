@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let filterByCurrentUser = await client.api('/identityGovernance/entitlementManagement/accessPackages/filterByCurrentUser(on='allowedRequestor')')
+let filterByCurrentUser = await client.api('/identityGovernance/entitlementManagement/accessPackageAssignmentRequests/filterByCurrentUser(on='target')')
 	.version('beta')
 	.get();
 

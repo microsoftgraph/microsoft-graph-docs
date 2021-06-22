@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-AuthenticationContextClassReferenceCollectionPage authenticationContextClassReferences = graphClient.identity().conditionalAccess().authenticationContextClassReferences()
+AuthenticationContextClassReference authenticationContextClassReference = graphClient.identity().conditionalAccess().authenticationContextClassReferences("c1")
 	.buildRequest()
 	.get();
 

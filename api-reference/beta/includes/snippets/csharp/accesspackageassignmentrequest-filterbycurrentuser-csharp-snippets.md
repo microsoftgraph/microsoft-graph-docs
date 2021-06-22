@@ -6,8 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var filterByCurrentUser = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackages
-	.FilterByCurrentUser(AccessPackageFilterByCurrentUserOptions.AllowedRequestor)
+var filterByCurrentUser = await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageAssignmentRequests
+	.FilterByCurrentUser(AccessPackageAssignmentRequestFilterByCurrentUserOptions.Target)
 	.Request()
 	.GetAsync();
 

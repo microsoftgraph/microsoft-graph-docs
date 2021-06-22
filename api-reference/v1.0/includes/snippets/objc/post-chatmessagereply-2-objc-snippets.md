@@ -12,7 +12,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 
 MSGraphChatMessage *chatMessage = [[MSGraphChatMessage alloc] init];
 [chatMessage setCreatedDateTime: "2019-02-04T19:58:15.511Z"];
-MSGraphIdentitySet *from = [[MSGraphIdentitySet alloc] init];
+MSGraphChatMessageFromIdentitySet *from = [[MSGraphChatMessageFromIdentitySet alloc] init];
 MSGraphIdentity *user = [[MSGraphIdentity alloc] init];
 [user setId:@"8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca"];
 [user setDisplayName:@"John Doe"];
