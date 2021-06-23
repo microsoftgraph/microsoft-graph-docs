@@ -10,6 +10,16 @@ localization_priority: Priority
 This changelog covers specific API-level changes in Microsoft Graph v1.0 and beta.
 
 For a summary of the value of these API changes, as well as recent tools, components, guidance, and tutorial additions, see [What's new in Microsoft Graph](whats-new-overview.md).
+
+## June 2021
+### Reports | Microsoft 365 Browser reports
+
+| **Change type** | **Version**   | **Description**                          |
+| :-------------- | :------------ | :--------------------------------------- |
+| Addition | beta | Added the [browserUserDetail](/graph/api/reportRoot-browserUserDetail?view=graph-rest-beta) method. |
+| Addition | beta | Added the [browserDistributionUserCounts](/graph/api/reportRoot-browserUsageUserCounts?view=graph-rest-beta) method. |
+| Addition | beta | Added the [browserDistributionUserCounts](/graph/api/reportRoot-browserDistributionUserCounts?view=graph-rest-beta) method. |
+
 ## March 2021
 
 ### Users

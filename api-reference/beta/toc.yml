@@ -12792,6 +12792,15 @@ items:
             href: api/reportroot-getm365appusercounts.md
           - name: Get platform user counts
             href: api/reportroot-getm365appplatformusercounts.md
+        - name: Microsoft 365 Browser usage
+          href: resources/microsoft-365-browser-usage-report.md
+          items:
+          - name: Get user detail
+            href: api/reportroot-browseruserdetail.md
+          - name: Get user counts
+            href: api/reportroot-browserusageusercounts.md
+          - name: Get user counts distribution
+            href: api/reportroot-browserdistributionusercounts.md
         - name: Microsoft 365 groups activity
           href: resources/office-365-groups-activity-reports.md
           items:
