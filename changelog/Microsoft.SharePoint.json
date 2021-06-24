@@ -3,6 +3,32 @@
     {
       "ChangeList": [
         {
+          "Id": "4116e288-18ad-4423-8a95-f1ac63edc3bc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "site",
+          "ChangeType": "Addition",
+          "Description": "Added the [termStore.store](https://docs.microsoft.com/en-us/graph/api/resources/termstore-store?view=graph-rest-beta&preserve-view=true) navigation property to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta&preserve-view=true) entity.",
+          "Target": "site"
+        },
+        {
+          "Id": "4116e288-18ad-4423-8a95-f1ac63edc3bc",
+          "ApiChange": "Resource",
+          "ChangedApiName": "termStore.group",
+          "ChangeType": "Addition",
+          "Description": "Added the **parentSiteId** property to the [termStore.group](https://docs.microsoft.com/en-us/graph/api/resources/termstore-group?view=graph-rest-beta) entity.",
+          "Target": "termStore.group"
+        }
+      ],
+      "Id": "4116e288-18ad-4423-8a95-f1ac63edc3bc",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-03-30T00:00:00",
+      "WorkloadArea": "Sites and lists ",
+      "SubArea": "Taxonomy"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "a0d55ae3-01e6-42c2-8763-efdea7afc8f3",
           "ApiChange": "Resource",
           "ChangedApiName": "termStore.store,termStore.term,termStore.set,termStore.relation",

@@ -1,7 +1,7 @@
 ---
 title: "Delete conversationMember"
 description: "Delete conversationMember from a channel."
-author: "laujan"
+author: "akjo"
 doc_type: "apiPageType"
 localization_priority: Normal
 ms.prod: "microsoft-teams"

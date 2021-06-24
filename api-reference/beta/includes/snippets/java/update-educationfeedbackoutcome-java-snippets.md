@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 EducationFeedbackOutcome educationOutcome = new EducationFeedbackOutcome();
 EducationFeedback feedback = new EducationFeedback();
@@ -14,7 +14,7 @@ text.contentType = BodyType.TEXT;
 feedback.text = text;
 educationOutcome.feedback = feedback;
 
-graphClient.education().me().assignments("{id}").submissions("{id}").outcomes("{id}")
+graphClient.education().classes("{id}").assignments("{id}").submissions("{id}").outcomes("{id}")
 	.buildRequest()
 	.patch(educationOutcome);
 

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/teams/{id}/channels/{id}/filesFolder')
+let driveItem = await client.api('/teams/{id}/channels/{id}/filesFolder')
 	.get();
 
 ```

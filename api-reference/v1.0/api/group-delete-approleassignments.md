@@ -11,7 +11,7 @@ author: "psignoret"
 
 Namespace: microsoft.graph
 
-Deletes an [appRoleAssignment](../resources/approleassignment.md) which a group has been granted.
+Deletes an [appRoleAssignment](../resources/approleassignment.md) that a group has been granted.
 
 ## Permissions
 

@@ -11,11 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const permissionGrantConditionSet = {
-  permissionType: "delegated",
+  permissionType: 'delegated',
   clientApplicationsFromVerifiedPublisherOnly: true
 };
 
-let res = await client.api('/policies/permissionGrantPolicies/{id}/includes')
+await client.api('/policies/permissionGrantPolicies/{id}/includes')
 	.version('beta')
 	.post(permissionGrantConditionSet);
 

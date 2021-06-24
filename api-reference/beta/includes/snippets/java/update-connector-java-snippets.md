@@ -4,10 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 PrintConnector printConnector = new PrintConnector();
-printConnector.name = "ConnectorName";
+printConnector.displayName = "ConnectorName";
 printConnector.fullyQualifiedDomainName = "CONNECTOR-MACHINE";
 printConnector.operatingSystem = "Microsoft Windows 10 Enterprise Insider Preview | 10.0.19555";
 printConnector.appVersion = "0.19.7338.23496";

@@ -3,7 +3,7 @@ title: "groupMembers complex type"
 description: "Identifies a collection of users in the tenant who will be allowed as requestor, approver, or reviewer."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "resourcePageType"
 ---
 

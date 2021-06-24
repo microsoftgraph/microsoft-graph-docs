@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var reviewers = await graphClient.AccessReviews["2b83cc42-09db-46f6-8c6e-16fec466a82d"].Reviewers
+var reviewers = await graphClient.AccessReviews["{accessReview-id}"].Reviewers
 	.Request()
 	.GetAsync();
 

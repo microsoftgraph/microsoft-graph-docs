@@ -26,8 +26,10 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /workbook/worksheets/{id|name}/range(address='<address>')
-GET /workbook/tables/{id|name}/columns/{id|name}/range
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')
+GET /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range
+GET /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range
 ```
 ## Optional query parameters
 This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
@@ -75,7 +77,7 @@ GET https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/r
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -18,7 +18,7 @@ var contact = new Contact
 	Birthday = DateTimeOffset.Parse("1974-07-22")
 };
 
-await graphClient.Me.Contacts["{id}"]
+await graphClient.Me.Contacts["{contact-id}"]
 	.Request()
 	.UpdateAsync(contact);
 

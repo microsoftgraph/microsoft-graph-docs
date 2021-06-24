@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/contacts/{id}')
+let orgContact = await client.api('/contacts/{id}')
 	.version('beta')
 	.get();
 

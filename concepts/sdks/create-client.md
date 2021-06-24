@@ -28,43 +28,50 @@ GraphServiceClient graphClient = new GraphServiceClient(authProvider);
 
 ```javascript
 const clientId = "INSERT-CLIENT-APP-ID"; // Client Id of the registered application
-const callback = (errorDesc, token, error, tokenType) => {};
-// An Optional options for initializing the MSAL @see https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-basics#configuration-options
-const options = {
-	redirectUri: "Your redirect URI",
-};
-const graphScopes = ["user.read", "mail.send"]; // An array of graph scopes
 
-// Initialize the MSAL @see https://github.com/AzureAD/microsoft-authentication-library-for-js/wiki/MSAL-basics#initialization-of-msal
-const userAgentApplication = new UserAgentApplication(clientId, undefined, callback, options);
-const authProvider = new MSALAuthenticationProvider(userAgentApplication, graphScopes );
+/**
+* Create an authProvider to authenticate againt the Microsoft Graph API.
+* You can use the TokenCredentialAuthenticationProvider instance with @azure/identity library or
+* you can authentication using any MSAL auth library with a custom authentication provider.
+*/
+const credential = new ClientSecretCredential(tenantId, clientId, clientSecret);
+const authProvider = new TokenCredentialAuthenticationProvider(credential, { scopes: [scopes] });
+const client = Client.initWithMiddleware({
+	debugLogging: true,
+	authProvider,
+});
 ```
 
 # [Java](#tab/Java)
 
 ```java
-ClientCredentialProvider authProvider = new ClientCredentialProvider(CLIENT_ID, SCOPES, CLIENT_SECRET, TENANT_GUID, NationalCloud.Global);
+final ClientSecretCredential clientSecretCredential = new ClientSecretCredentialBuilder()
+        .clientId(CLIENT_ID)
+        .clientSecret(CLIENT_SECRET)
+        .tenantId(TENANT_GUID)
+        .build();
 
-IGraphServiceClient graphClient = GraphServiceClient
+final TokenCredentialAuthProvider tokenCredAuthProvider = new TokenCredentialAuthProvider(SCOPES, clientSecretCredential);
+
+final GraphServiceClient graphClient = GraphServiceClient
 				.builder()
-				.authenticationProvider(authProvider)
+				.authenticationProvider(tokenCredAuthProvider)
 				.buildClient();
 ```
 
 # [Android](#tab/Android)
 
 ```java
-PublicClientApplication publicClientApplication = new PublicClientApplication(getApplicationContext(), "INSERT-CLIENT-APP-ID");
+final InteractiveBrowserCredential interactiveBrowserCredential = new InteractiveBrowserCredentialBuilder()
+                .clientId(CLIENT_ID)
+                .redirectUrl("http://localhost:8765")
+                .build();
 
-MSALAuthenticationProvider msalAuthenticationProvider = new MSALAuthenticationProvider(
-    getActivity(),
-    getApplication(),
-    publicClientApplication,
-    scopes);
+final TokenCredentialAuthProvider tokenCredAuthProvider = new TokenCredentialAuthProvider(SCOPES, interactiveBrowserCredential);
 
-IGraphServiceClient graphClient = GraphServiceClient
+GraphServiceClient graphClient = GraphServiceClient
 				.builder()
-				.authenticationProvider(authProvider)
+				.authenticationProvider(tokenCredAuthProvider)
 				.buildClient();
 ```
 

@@ -11,12 +11,12 @@ const options = {
 const client = Client.init(options);
 
 const synchronizationTemplate = {
-    id: "Slack",
-    applicationId: "{id}",
-    factoryTag: "CustomSCIM"
+    id: 'Slack',
+    applicationId: '{id}',
+    factoryTag: 'CustomSCIM'
 };
 
-let res = await client.api('/applications/{id}/synchronization/templates/{templateId}')
+await client.api('/applications/{id}/synchronization/templates/{templateId}')
 	.version('beta')
 	.put(synchronizationTemplate);
 

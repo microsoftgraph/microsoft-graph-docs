@@ -22,7 +22,7 @@ var parameters = new List<SynchronizationJobApplicationParameters>()
 	}
 };
 
-await graphClient.ServicePrincipals["{servicePrincipalsId}"].Synchronization.Jobs["{synchronizationJobId}"]
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization.Jobs["{synchronizationJob-id}"]
 	.ProvisionOnDemand(parameters)
 	.Request()
 	.PostAsync();

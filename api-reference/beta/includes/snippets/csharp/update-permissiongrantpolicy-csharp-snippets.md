@@ -11,7 +11,7 @@ var permissionGrantPolicy = new PermissionGrantPolicy
 	DisplayName = "Custom permission grant policy"
 };
 
-await graphClient.Policies.PermissionGrantPolicies["my-custom-consent-policy"]
+await graphClient.Policies.PermissionGrantPolicies["{permissionGrantPolicy-id}"]
 	.Request()
 	.UpdateAsync(permissionGrantPolicy);
 

@@ -18,7 +18,7 @@ var acceptedModalities = new List<Modality>()
 	Modality.Audio
 };
 
-await graphClient.Communications.Calls["{id}"]
+await graphClient.Communications.Calls["{call-id}"]
 	.Answer(callbackUri,mediaConfig,acceptedModalities)
 	.Request()
 	.PostAsync();

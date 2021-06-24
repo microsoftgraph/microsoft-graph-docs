@@ -2,7 +2,7 @@
 title: "attendeeAvailability resource type"
 description: "The availability of an attendee."
 localization_priority: Normal
-author: "angelgolfer-ms"
+author: "vrod9429"
 ms.prod: "outlook"
 doc_type: resourcePageType
 ---

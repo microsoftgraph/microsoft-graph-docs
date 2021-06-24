@@ -11,7 +11,7 @@ var synchronizationJob = new SynchronizationJob
 	TemplateId = "BoxOutDelta"
 };
 
-await graphClient.ServicePrincipals["{id}"].Synchronization.Jobs
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization.Jobs
 	.Request()
 	.AddAsync(synchronizationJob);
 

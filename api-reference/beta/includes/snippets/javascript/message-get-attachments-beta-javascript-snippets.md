@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/messages/{id}/attachments')
+let attachments = await client.api('/me/messages/{id}/attachments')
 	.version('beta')
 	.get();
 

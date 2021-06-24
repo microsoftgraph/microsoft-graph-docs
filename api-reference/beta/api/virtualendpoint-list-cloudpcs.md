@@ -25,7 +25,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:---|:---|
 |Delegated (work or school account)|CloudPC.Read.All, CloudPC.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|CloudPC.Read.All, CloudPC.ReadWrite.All|
 
 ## HTTP request
 
@@ -109,17 +109,20 @@ Content-Type: application/json
     {
       "@odata.type": "#microsoft.graph.cloudPC",
       "id": "662009bc-7732-4f6f-8726-25883518ffff",
-      "displayName": "Display Name value",
-      "imageDisplayName": "Image Display Name value",
+      "displayName": "Demo-1",
+      "imageDisplayName": "Windows-10 19h1-evd",
       "managedDeviceId": "bdc8e6dd-0455-4412-83d9-c818664fffff",
-      "managedDeviceName": "Managed Device Name value",
+      "managedDeviceName": "A00002GI001",
       "provisioningPolicyId": "7ed725ad-0a00-4117-b557-d965c373ffff",
+      "provisioningPolicyName": "HR provisioning policy",
+      "onPremisesConnectionName": "on-Premises connection for HR",
       "servicePlanId": "dbb9148c-ff83-4a4c-8d7f-28752e93ffff",
       "servicePlanName": "lite",
       "status": "provisioned",
-      "userPrincipalName": "User Principal Name value",
+      "userPrincipalName": "pmitchell@cpccustomer001.onmicrosoft.com",
       "lastModifiedDateTime": "2020-11-03T10:29:57Z",
-      "statusDetails": null
+      "statusDetails": null,
+      "gracePeriodEndDateTime": "2020-11-010T20:00:34Z"
     }
   ]
 }

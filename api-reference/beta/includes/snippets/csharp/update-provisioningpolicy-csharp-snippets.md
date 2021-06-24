@@ -16,7 +16,7 @@ var cloudPcProvisioningPolicy = new CloudPcProvisioningPolicy
 	ImageType = CloudPcProvisioningPolicyImageType.Custom
 };
 
-await graphClient.DeviceManagement.VirtualEndpoint.ProvisioningPolicies["{id}"]
+await graphClient.DeviceManagement.VirtualEndpoint.ProvisioningPolicies["{cloudPcProvisioningPolicy-id}"]
 	.Request()
 	.UpdateAsync(cloudPcProvisioningPolicy);
 

@@ -20,7 +20,7 @@ var workforceIntegration = new WorkforceIntegration
 	Supports = WorkforceIntegrationSupportedEntities.None
 };
 
-await graphClient.Teamwork.WorkforceIntegrations["{workforceIntegrationId}"]
+await graphClient.Teamwork.WorkforceIntegrations["{workforceIntegration-id}"]
 	.Request()
 	.UpdateAsync(workforceIntegration);
 

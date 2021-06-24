@@ -12,7 +12,7 @@ var queryOptions = new List<QueryOption>()
 	new QueryOption("end", "2018-05-10T00:00:00Z")
 };
 
-var calendarView = await graphClient.BookingBusinesses["Contosolunchdelivery@M365B489948.onmicrosoft.com"].CalendarView
+var calendarView = await graphClient.BookingBusinesses["{bookingBusiness-id}"].CalendarView
 	.Request( queryOptions )
 	.GetAsync();
 

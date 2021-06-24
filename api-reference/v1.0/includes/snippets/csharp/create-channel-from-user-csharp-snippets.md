@@ -21,13 +21,13 @@ var channel = new Channel
 			},
 			AdditionalData = new Dictionary<string, object>()
 			{
-				{"user@odata.bind", "https://graph.microsoft.com/v1.0/users('{user_id}')"}
+				{"user@odata.bind", "https://graph.microsoft.com/v1.0/users('62855810-484b-4823-9e01-60667f8b12ae')"}
 			}
 		}
 	}
 };
 
-await graphClient.Teams["{group_id}"].Channels
+await graphClient.Teams["{team-id}"].Channels
 	.Request()
 	.AddAsync(channel);
 

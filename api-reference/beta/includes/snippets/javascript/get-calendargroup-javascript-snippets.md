@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/calendarGroups/{id}')
+let calendarGroup = await client.api('/me/calendarGroups/{id}')
 	.version('beta')
 	.get();
 

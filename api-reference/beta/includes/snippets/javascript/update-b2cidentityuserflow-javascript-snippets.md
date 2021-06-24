@@ -12,10 +12,10 @@ const client = Client.init(options);
 
 const b2cIdentityUserFlow = {
   isLanguageCustomizationEnabled: true,
-  defaultLanguageTag: "en",
+  defaultLanguageTag: 'en',
 };
 
-let res = await client.api('/identity/b2cUserFlows/B2C_1_CustomerSignUp')
+await client.api('/identity/b2cUserFlows/B2C_1_CustomerSignUp')
 	.version('beta')
 	.update(b2cIdentityUserFlow);
 

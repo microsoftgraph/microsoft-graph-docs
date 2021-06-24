@@ -14,7 +14,7 @@ const string = {
   securityEnabledOnly: true
 };
 
-let res = await client.api('/me/getMemberObjects')
+await client.api('/me/getMemberObjects')
 	.version('beta')
 	.post(string);
 

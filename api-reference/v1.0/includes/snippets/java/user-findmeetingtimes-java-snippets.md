@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("Prefer", "outlook.timezone=\"Pacific Standard Time\""));
@@ -53,7 +53,17 @@ boolean returnSuggestionReasons = true;
 Double minimumAttendeePercentage = 100d;
 
 graphClient.me()
-	.findMeetingTimes(attendeesList,locationConstraint,timeConstraint,meetingDuration,null,isOrganizerOptional,returnSuggestionReasons,minimumAttendeePercentage)
+	.findMeetingTimes(UserFindMeetingTimesParameterSet
+		.newBuilder()
+		.withAttendees(attendeesList)
+		.withLocationConstraint(locationConstraint)
+		.withTimeConstraint(timeConstraint)
+		.withMeetingDuration(meetingDuration)
+		.withMaxCandidates(null)
+		.withIsOrganizerOptional(isOrganizerOptional)
+		.withReturnSuggestionReasons(returnSuggestionReasons)
+		.withMinimumAttendeePercentage(minimumAttendeePercentage)
+		.build())
 	.buildRequest( requestOptions )
 	.post();
 

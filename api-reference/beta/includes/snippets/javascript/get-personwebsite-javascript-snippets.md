@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/profile/websites/{id}')
+let personWebsite = await client.api('/me/profile/websites/{id}')
 	.version('beta')
 	.get();
 

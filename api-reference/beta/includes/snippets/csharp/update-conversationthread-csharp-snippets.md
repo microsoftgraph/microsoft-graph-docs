@@ -11,7 +11,7 @@ var conversationThread = new ConversationThread
 	IsLocked = true
 };
 
-await graphClient.Groups["{id}"].Threads["{id}"]
+await graphClient.Groups["{group-id}"].Threads["{conversationThread-id}"]
 	.Request()
 	.UpdateAsync(conversationThread);
 

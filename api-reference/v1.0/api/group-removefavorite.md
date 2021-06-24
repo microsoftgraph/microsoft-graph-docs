@@ -2,7 +2,7 @@
 title: "group: removeFavorite"
 description: "Remove the group from the list of the current user's favorite groups. Supported for Microsoft 365 groups only."
 localization_priority: Normal
-author: "yyuank"
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---

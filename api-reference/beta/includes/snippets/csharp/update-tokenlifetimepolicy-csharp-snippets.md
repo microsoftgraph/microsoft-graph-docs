@@ -16,7 +16,7 @@ var tokenLifetimePolicy = new TokenLifetimePolicy
 	IsOrganizationDefault = true
 };
 
-await graphClient.Policies.TokenLifetimePolicies["{id}"]
+await graphClient.Policies.TokenLifetimePolicies["{tokenLifetimePolicy-id}"]
 	.Request()
 	.UpdateAsync(tokenLifetimePolicy);
 

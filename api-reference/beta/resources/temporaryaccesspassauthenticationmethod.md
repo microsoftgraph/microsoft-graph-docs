@@ -2,9 +2,8 @@
 title: "temporaryAccessPassAuthenticationMethod resource type"
 description: "Represents a Temporary Access Pass registered to a user."
 author: "inbarckms"
-ms.author: inbarc
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
@@ -14,14 +13,15 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a Temporaty Access Pass registered to a user. A Temporary Access Pass is a time-limited passcode that serves as a strong credential and allows onboarding of passwordless credentials.
+Represents a Temporary Access Pass registered to a user. A Temporary Access Pass is a time-limited passcode that serves as a strong credential and allows onboarding of passwordless credentials.
 
 ## Methods
+
 |Method|Return type|Description|
 |:---|:---|:---|
 |[List](../api/temporaryaccesspassauthenticationmethod-list.md)|[temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md) collection|Retrieve a list of a user's **temporaryAccessPassAuthenticationMethod** objects and their properties. Users can only have one Temporary Access Pass authentication method.|
 |[Create](../api/temporaryaccesspassauthenticationmethod-post.md)|[temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)|Create a user's **temporaryAccessPassAuthenticationMethod** object.|
-|[Get](../api/temporaryaccesspassauthenticationmethod-get.md)|[temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)|Retrieve the properties of the user's **temporaryAccessPassAuthenticationMethod** object.||
+|[Get](../api/temporaryaccesspassauthenticationmethod-get.md)|[temporaryAccessPassAuthenticationMethod](../resources/temporaryaccesspassauthenticationmethod.md)|Retrieve the properties of the user's **temporaryAccessPassAuthenticationMethod** object.|
 |[Delete](../api/temporaryaccesspassauthenticationmethod-delete.md)|None|Delete a user's **temporaryAccessPassAuthenticationMethod** object.|
 
 ## Properties

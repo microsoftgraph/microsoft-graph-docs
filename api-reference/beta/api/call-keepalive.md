@@ -84,9 +84,7 @@ POST https://graph.microsoft.com/beta/communications/calls/2e1a0b00-2db4-4022-95
 The following example shows the response.
 <!-- {
   "blockType": "response",
-  "name": "keep-alive",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "name": "keep-alive"
 } -->
 ```http
 HTTP/1.1 200 OK

@@ -108,7 +108,7 @@ var bookingStaffMember = new BookingStaffMember
 	}
 };
 
-await graphClient.BookingBusinesses["{id}"].StaffMembers
+await graphClient.BookingBusinesses["{bookingBusiness-id}"].StaffMembers
 	.Request()
 	.AddAsync(bookingStaffMember);
 

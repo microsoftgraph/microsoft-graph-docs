@@ -1,7 +1,7 @@
 ---
 title: "List iosManagedAppProtections"
 description: "List properties and relationships of the iosManagedAppProtection objects."
-author: "dougeby"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType

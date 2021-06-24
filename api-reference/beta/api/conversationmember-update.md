@@ -1,7 +1,7 @@
 ---
 title: "Update conversationMember"
 description: "Update the role of a conversationMember in a team or channel."
-author: "clearab"
+author: "akjo"
 doc_type: "apiPageType"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -99,7 +99,7 @@ content-length: 26
 
 Here is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

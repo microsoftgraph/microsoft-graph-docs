@@ -89,4 +89,4 @@ The starter sample includes the following files:
 
 ## Need help?
 
-If you need help, post your questions on [StackOverflow](https://stackoverflow.com/questions/tagged/microsoftgraph?sort=newest). Tag your post with {microsoftgraph}.
+If you need help, post your questions on [Microsoft Q&A](/answers/products/m365#microsoft-graph). Tag your post with {microsoft-graph-identity}.

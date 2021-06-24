@@ -1,7 +1,7 @@
 ---
 title: "Create User"
 description: "Use this API to create a new User."
-author: "krbain"
+author: "jpettere"
 localization_priority: Priority
 ms.prod: "users"
 doc_type: apiPageType
@@ -44,7 +44,7 @@ POST /users
 
 In the request body, supply a JSON representation of [user](../resources/user.md) object.
 
-The following table lists the properties that are required when you create a user. If you're including an **identities** property for the user you're creating, not all the properties listed are required. For a [B2C local account identity](../resources/objectidentity.md), only  **passwordProfile** is required, and **passwordPolicy** must be set to `DisablePasswordExpiration`. For a social identity, none of the properties are required.
+The following table lists the properties that are required when you create a user. If you're including an **identities** property for the user you're creating, not all the properties listed are required. For a [B2C local account identity](../resources/objectidentity.md), only  **passwordProfile** is required, and **passwordPolicies** must be set to `DisablePasswordExpiration`. For a social identity, none of the properties are required.
 
 | Parameter | Type | Description|
 |:---------------|:--------|:----------|
@@ -52,7 +52,7 @@ The following table lists the properties that are required when you create a use
 |displayName |string |The name to display in the address book for the user.|
 |onPremisesImmutableId |string |Only needs to be specified when creating a new user account if you are using a federated domain for the user's userPrincipalName (UPN) property.|
 |mailNickname |string |The mail alias for the user.|
-|passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |The password profile for the user.|
+|passwordProfile|[PasswordProfile](../resources/passwordprofile.md) |The password profile for the user. For Azure B2C tenants, the **forceChangePasswordNextSignIn** property should be set to `false` and instead use custom policies to force password reset at first sign in.|
 |userPrincipalName |string |The user principal name (someuser@contoso.com).|
 
 Because the **user** resource supports [extensions](/graph/extensibility-overview), you can use the `POST` operation and add custom properties with your own data to the user instance while creating it.
@@ -70,7 +70,7 @@ If successful, this method returns `201 Created` response code and [user](../res
 
 #### Request
 
-Here is an example of the request.
+Here is an example of the request. 
 
 # [HTTP](#tab/http)
 <!-- {
@@ -116,7 +116,7 @@ In the request body, supply a JSON representation of [user](../resources/user.md
 
 #### Response
 
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -212,7 +212,7 @@ Content-type: application/json
 
 Here is an example of the response. 
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

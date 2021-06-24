@@ -51,7 +51,7 @@ var shift = new Shift
 	}
 };
 
-await graphClient.Teams["{teamId}"].Schedule.Shifts
+await graphClient.Teams["{team-id}"].Schedule.Shifts
 	.Request()
 	.AddAsync(shift);
 

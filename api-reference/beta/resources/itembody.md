@@ -19,7 +19,7 @@ Represents properties of the body of an item, such as a message, event or group 
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |content|String|The content of the item.|
-|contentType|String|The type of the content. Possible values are `text` and `html`.|
+|contentType|bodyType|The type of the content. Possible values are `text` and `html`.|
 
 ## JSON representation
 

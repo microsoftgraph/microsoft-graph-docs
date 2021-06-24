@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var tokenLifetimePolicy = await graphClient.Policies.TokenLifetimePolicies["{id}"]
+var tokenLifetimePolicy = await graphClient.Policies.TokenLifetimePolicies["{tokenLifetimePolicy-id}"]
 	.Request()
 	.GetAsync();
 

@@ -18,11 +18,11 @@ Update the properties of a [applePushNotificationCertificate](../resources/intun
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -51,6 +51,7 @@ The following table shows the properties that are required when you create the [
 |topicIdentifier|String|Topic Id.|
 |lastModifiedDateTime|DateTimeOffset|Last modified date and time for Apple push notification certificate.|
 |expirationDateTime|DateTimeOffset|The expiration date and time for Apple push notification certificate.|
+|certificateSerialNumber|String|Certificate serial number. This property is read-only.|
 |certificate|String|Not yet documented|
 
 
@@ -65,13 +66,14 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceManagement/applePushNotificationCertificate
 Content-type: application/json
-Content-length: 271
+Content-length: 336
 
 {
   "@odata.type": "#microsoft.graph.applePushNotificationCertificate",
   "appleIdentifier": "Apple Identifier value",
   "topicIdentifier": "Topic Identifier value",
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
+  "certificateSerialNumber": "Certificate Serial Number value",
   "certificate": "Certificate value"
 }
 ```
@@ -81,7 +83,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 384
+Content-Length: 449
 
 {
   "@odata.type": "#microsoft.graph.applePushNotificationCertificate",
@@ -90,14 +92,10 @@ Content-Length: 384
   "topicIdentifier": "Topic Identifier value",
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
+  "certificateSerialNumber": "Certificate Serial Number value",
   "certificate": "Certificate value"
 }
 ```
-
-
-
-
-
 
 
 

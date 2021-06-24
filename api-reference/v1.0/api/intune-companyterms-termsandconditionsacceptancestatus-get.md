@@ -18,11 +18,11 @@ Read properties and relationships of the [termsAndConditionsAcceptanceStatus](..
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementServiceConfig.Read.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementServiceConfig.Read.All, DeviceManagementServiceConfig.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 289
+Content-Length: 344
 
 {
   "value": {
@@ -69,15 +69,11 @@ Content-Length: 289
     "id": "a045ce1a-ce1a-a045-1ace-45a01ace45a0",
     "userDisplayName": "User Display Name value",
     "acceptedVersion": 15,
-    "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00"
+    "acceptedDateTime": "2016-12-31T23:57:43.6165506-08:00",
+    "userPrincipalName": "User Principal Name value"
   }
 }
 ```
-
-
-
-
-
 
 
 

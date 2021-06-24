@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/sites/{sitesId}/permissions')
+let permissions = await client.api('/sites/{sitesId}/permissions')
 	.version('beta')
 	.get();
 

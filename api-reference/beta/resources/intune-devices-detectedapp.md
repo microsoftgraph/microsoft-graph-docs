@@ -38,7 +38,7 @@ A managed or unmanaged app that is installed on a managed device. Unmanaged apps
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|managedDevices|[managedDevice](../resources/intune-shared-manageddevice.md) collection|The devices that have the discovered application installed|
+|managedDevices|[managedDevice](../resources/intune-devices-manageddevice.md) collection|The devices that have the discovered application installed|
 
 ## JSON Representation
 Here is a JSON representation of the resource.

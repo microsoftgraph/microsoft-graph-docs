@@ -3,7 +3,7 @@ title: "Configure an API connector in a user flow"
 description: "Enable or disable an API connector to a specific step in a user flow by updating the apiConnectorConfiguration property."
 author: "nickgmicrosoft"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -173,6 +173,7 @@ HTTP/1.1 204 No Content
 #### Request 
 
 The following is an example of the request.
+
 
 
 # [HTTP](#tab/http)

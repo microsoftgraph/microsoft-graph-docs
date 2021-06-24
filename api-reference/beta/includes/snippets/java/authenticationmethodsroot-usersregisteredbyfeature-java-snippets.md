@@ -4,10 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 UserRegistrationFeatureSummary userRegistrationFeatureSummary = graphClient.reports().authenticationMethods()
-	.usersRegisteredByFeature('all','all')
+	.usersRegisteredByFeature(AuthenticationMethodsRootUsersRegisteredByFeatureParameterSet
+		.newBuilder()
+		.withIncludedUserTypes('all')
+		.withIncludedUserRoles('all')
+		.build())
 	.buildRequest()
 	.get();
 

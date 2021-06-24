@@ -1,7 +1,7 @@
 ---
 title: "Allow applications to access online meetings on behalf of a user"
 description: "Find out how to configure applications to access online meetings on behalf of a user."
-author: "frankpeng7"
+author: "mkhribech"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 ---
@@ -18,7 +18,7 @@ These steps are specific to online meetings and do not apply to other Microsoft 
 
 To configure an application access policy and allow applications to access online meetings with application permissions:
 
-1. Identify the app’s applcation (client) ID and the user IDs of the users on behalf of which the app will be authorized to access online meetings.
+1. Identify the app’s application (client) ID and the user IDs of the users on behalf of which the app will be authorized to access online meetings.
 
     - Identify the app’s application (client) ID in the [Azure app registration portal](https://portal.azure.com/#blade/Microsoft_AAD_RegisteredApps/ApplicationsListBlade).
     - Identify the user's user (object) ID in the [Azure user management portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade)
@@ -41,8 +41,7 @@ To configure an application access policy and allow applications to access onlin
    Grant-CsApplicationAccessPolicy -PolicyName Test-policy -Identity "ddb80e06-92f3-4978-bc22-a0eee85e6a9e"
    ```
 
-> **Note** 
-> 
+> [!NOTE]
 > - _Identity_ refers to the policy name when creating the policy, but the user ID when granting the policy.
 > - Changes to application access policies can take up to 30 minutes to take effect in Microsoft Graph REST API calls.
 

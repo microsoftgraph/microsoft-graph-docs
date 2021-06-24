@@ -3,7 +3,7 @@ title: "informationProtectionLabel: evaluateApplication"
 description: "Evaluate which label to apply based on existing content info and desired content state."
 localization_priority: Normal
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "apiPageType"
 ---
 
@@ -174,7 +174,7 @@ User-agent: ContosoLOBApp/1.0
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

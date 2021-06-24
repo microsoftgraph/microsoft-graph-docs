@@ -37,6 +37,8 @@ Windows Quality Update Profile
 |createdDateTime|DateTimeOffset|The date time that the profile was created.|
 |lastModifiedDateTime|DateTimeOffset|The date time that the profile was last modified.|
 |roleScopeTagIds|String collection|List of Scope Tags for this Quality Update entity.|
+|releaseDateDisplayName|String|Friendly release date to display for a Quality Update release|
+|deployableContentDisplayName|String|Friendly display name of the quality update profile deployable content|
 
 ## Relationships
 |Relationship|Type|Description|
@@ -66,7 +68,9 @@ Here is a JSON representation of the resource.
   "lastModifiedDateTime": "String (timestamp)",
   "roleScopeTagIds": [
     "String"
-  ]
+  ],
+  "releaseDateDisplayName": "String",
+  "deployableContentDisplayName": "String"
 }
 ```
 

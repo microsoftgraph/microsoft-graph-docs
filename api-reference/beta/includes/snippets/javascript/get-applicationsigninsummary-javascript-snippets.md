@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/reports/getAzureADApplicationSignInSummary(period='D7')')
+let getAzureADApplicationSignInSummary = await client.api('/reports/getAzureADApplicationSignInSummary(period='D7')')
 	.version('beta')
 	.get();
 

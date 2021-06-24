@@ -3,7 +3,7 @@ title: "addContentHeaderAction resource type"
 description: "Represents an action that specifies the details on the content header to be added to the information, if applicable."
 localization_priority: Normal
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 

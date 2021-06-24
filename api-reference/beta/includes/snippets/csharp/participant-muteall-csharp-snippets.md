@@ -13,7 +13,7 @@ var participants = new List<String>()
 
 var clientContext = "clientContext-value";
 
-await graphClient.Communications.Calls["{id}"].Participants
+await graphClient.Communications.Calls["{call-id}"].Participants
 	.MuteAll(participants,clientContext)
 	.Request()
 	.PostAsync();

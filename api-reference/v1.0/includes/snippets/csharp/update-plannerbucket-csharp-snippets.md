@@ -11,8 +11,9 @@ var plannerBucket = new PlannerBucket
 	Name = "Development"
 };
 
-await graphClient.Planner.Buckets["{bucket-id}"]
+await graphClient.Planner.Buckets["{plannerBucket-id}"]
 	.Request()
+	.Header("Prefer","return=representation")
 	.Header("If-Match","W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"")
 	.UpdateAsync(plannerBucket);
 

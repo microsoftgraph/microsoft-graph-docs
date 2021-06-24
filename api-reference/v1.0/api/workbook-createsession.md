@@ -44,7 +44,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/createSession
+POST /me/drive/items/{id}/workbook/createSession
+POST /me/drive/root:/{item-path}:/workbook/createSession
 ```
 ## Request headers
 | Name       | Description|

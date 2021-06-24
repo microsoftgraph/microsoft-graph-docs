@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const directoryObject = {
-  @odata.id: "https://graph.microsoft.com/beta/users/{id}"
+  '@odata.id': 'https://graph.microsoft.com/beta/users/{id}'
 };
 
-let res = await client.api('/identityGovernance/entitlementManagement/connectedOrganizations/{id}/externalSponsors/$ref')
+await client.api('/identityGovernance/entitlementManagement/connectedOrganizations/{id}/externalSponsors/$ref')
 	.version('beta')
 	.post(directoryObject);
 

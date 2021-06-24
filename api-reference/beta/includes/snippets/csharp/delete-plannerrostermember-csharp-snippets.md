@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Planner.Rosters["523a9d5a-f9d5-45c1-929f-b8525393515c"].Members["5ba84f7a-aa11-4a51-a298-9f2c7ec6bb38"]
+await graphClient.Planner.Rosters["{plannerRoster-id}"].Members["{plannerRosterMember-id}"]
 	.Request()
 	.DeleteAsync();
 

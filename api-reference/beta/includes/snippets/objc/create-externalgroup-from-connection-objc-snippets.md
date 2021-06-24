@@ -11,7 +11,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphExternalGroup *externalGroup = [[MSGraphExternalGroup alloc] init];
+MSGraphExternalConnectorsExternalGroup *externalGroup = [[MSGraphExternalConnectorsExternalGroup alloc] init];
 [externalGroup setId:@"31bea3d537902000"];
 [externalGroup setDisplayName:@"Contoso Marketing"];
 [externalGroup setDescription:@"The product marketing team"];

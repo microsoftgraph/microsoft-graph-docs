@@ -12,7 +12,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphContactFolder *contactFolder = [[MSGraphContactFolder alloc] init];
-[contactFolder setDisplayName:@"displayName-value"];
+[contactFolder setDisplayName:@"Family"];
 
 NSError *error;
 NSData *contactFolderData = [contactFolder getSerializedDataWithError:&error];

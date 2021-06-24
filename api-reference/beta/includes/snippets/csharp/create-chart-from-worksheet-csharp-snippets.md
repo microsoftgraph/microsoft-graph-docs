@@ -13,7 +13,7 @@ var workbookChart = new WorkbookChart
 	Left = 99
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Charts
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts
 	.Request()
 	.AddAsync(workbookChart);
 

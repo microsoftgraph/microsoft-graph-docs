@@ -3,7 +3,7 @@ title: "Tutorial: Manage access to resources in Active Directory entitlement man
 description: "Learn how to manage access to resources in Active Directory (Azure AD) entitlement management using Microsoft Graph APIs."
 author: "davidmu1"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 ---
 
 # Tutorial: Manage access to resources in Active Directory entitlement management using Microsoft Graph APIs

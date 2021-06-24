@@ -1,8 +1,8 @@
 ---
 title: "Delete educationClass"
 description: "Delete a class. Because a class is also a universal group, deleting a class deletes the group."
+author: "mlafleur"
 localization_priority: Normal
-author: "mmast-msft"
 ms.prod: "education"
 doc_type: apiPageType
 ---
@@ -11,7 +11,10 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Delete a class. Because a class is also a universal group, deleting a class deletes the group.
+Delete an [educationClass](../resources/educationclass.md).
+
+> [!IMPORTANT]
+> Because a class is also a universal group, deleting a class deletes the group.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -92,4 +95,3 @@ HTTP/1.1 204 No Content
   "suppressions": [
   ]
 }-->
-

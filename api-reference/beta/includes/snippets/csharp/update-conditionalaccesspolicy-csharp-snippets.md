@@ -19,7 +19,7 @@ var conditionalAccessPolicy = new ConditionalAccessPolicy
 	}
 };
 
-await graphClient.Identity.ConditionalAccess.Policies["{id}"]
+await graphClient.Identity.ConditionalAccess.Policies["{conditionalAccessPolicy-id}"]
 	.Request()
 	.UpdateAsync(conditionalAccessPolicy);
 

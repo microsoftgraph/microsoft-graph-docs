@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var languageProficiency = await graphClient.Me.Profile.Languages["{id}"]
+var languageProficiency = await graphClient.Me.Profile.Languages["{languageProficiency-id}"]
 	.Request()
 	.GetAsync();
 

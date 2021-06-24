@@ -6,14 +6,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var personAnniversary = new PersonAnniversary
+var personAnnualEvent = new PersonAnnualEvent
 {
-	Type = AnniversaryType.Birthday,
+	Type = PersonAnnualEventType.Birthday,
 	Date = new Date(1980,1,8)
 };
 
 await graphClient.Me.Profile.Anniversaries
 	.Request()
-	.AddAsync(personAnniversary);
+	.AddAsync(personAnnualEvent);
 
 ```

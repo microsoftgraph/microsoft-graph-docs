@@ -31,7 +31,7 @@ var values = new List<ConversationMember>()
 	}
 };
 
-await graphClient.Teams["e4183b04-c9a2-417c-bde4-70e3ee46a6dc"].Members
+await graphClient.Teams["{team-id}"].Members
 	.Add(values)
 	.Request()
 	.PostAsync();

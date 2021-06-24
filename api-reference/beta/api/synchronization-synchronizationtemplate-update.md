@@ -27,7 +27,7 @@ One of the following permissions is required to call this API. To learn more, in
 ### HTTP Request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH application/{id}/synchronization/templates/{templateId}
+PATCH applications/{id}/synchronization/templates/{templateId}
 ```
 
 ## Request headers
@@ -89,9 +89,7 @@ Content-type: application/json
 ##### Response
 The following is an example of a response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.synchronizationTemplate"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

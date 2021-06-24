@@ -120,7 +120,7 @@ GET https://graph.microsoft.com/beta/me/insights/trending
 ---
 
 #### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call. See an example un-truncated response at the bottom of the page.
+Here is an example of the response. Note: The response object shown here might be shortened for readability. See an example un-truncated response at the bottom of the page.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -131,29 +131,28 @@ Here is an example of the response. Note: The response object shown here may be 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 801
 
 {
-    "value": [
-        {
-            "id": "id-value",
-            "weight": "weight-value",
-            "resourceVisualization": {
-                "title": "title-value",
-                "type": "type-value",
-                "mediaType": "mediaType-value",
-                "previewImageUrl": "previewImageUrl-value",
-                "previewText": "previewText-value",
-                "containerWebUrl": "containerWebUrl-value",
-                "containerDisplayName": "containerDisplayName-value",
-                "containerType": "containerType-value"
-            },
-            "resourceReference": {
-                "webUrl": "webUrl-value",
-                "id": "id-value",
-                "type": "type-value"
-            }
-        }
-    ]
+  "value": [
+    {
+      "id": "AWMiSOpKHlJCpP_ZoVJQXi9ees4wFhDQQqF55Pm5DlaMzvtd2zra4UWSTEvpTldvb6EhQ289G4BAsxnrajQyjW1jIkjqSh5SQqT_2aFSUF4vBQ",
+      "weight": "0.1583399742569597",
+      "resourceVisualization": {
+        "title": "LiveCaptions",
+        "type": "Image",
+        "mediaType": "application/octet-stream",
+        "previewImageUrl": "https://contoso.sharepoint.com/_api/v2.0/drives/b!YyJI6koeUkKk_9mhUlBeL156zjAWENBCoXnk-bkOVozO-13bOtrhRZJMS-lOV29v/items/01H273TR5BEFBW6PI3QBALGGPLNI2DFDLN/thumbnails/0/small/thumbnailContent",
+        "previewText": "",
+        "containerWebUrl": "https://contoso.sharepoint.com/sites/Mark8ProjectTeam/Shared Documents/Go to Market Plan",
+        "containerDisplayName": "Mark 8 Project Team",
+        "containerType": "Site"
+      },
+      "resourceReference": {
+        "webUrl": "https://contoso.sharepoint.com/sites/Mark8ProjectTeam/Shared%20Documents/Go%20to%20Market%20Plan/LiveCaptions.gif",
+        "id": "drives/b!YyJI6koeUkKk_9mhUlBeL156zjAWENBCoXnk-bkOVozO-13bOtrhRZJMS-lOV29v/items/01H273TR5BEFBW6PI3QBALGGPLNI2DFDLN",
+        "type": "microsoft.graph.driveItem"
+      }
+    }
+  ]
 }
 ```

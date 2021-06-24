@@ -74,7 +74,7 @@ GET https://graph.microsoft.com/beta/me/drive/activities
 
 <!-- { "blockType": "response", "@type": "Collection(microsoft.graph.itemActivity)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

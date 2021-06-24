@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/education/classes/delta')
+let delta = await client.api('/education/classes/delta')
 	.version('beta')
 	.get();
 

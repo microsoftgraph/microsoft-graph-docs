@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/businessFlowTemplates')
+let businessFlowTemplates = await client.api('/businessFlowTemplates')
 	.version('beta')
 	.get();
 

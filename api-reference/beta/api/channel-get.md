@@ -1,7 +1,7 @@
 ---
 title: "Get channel"
 description: "Retrieve the properties and relationships of a channel."
-author: "clearab"
+author: "nkramer"
 doc_type: apiPageType
 localization_priority: Normal
 ms.prod: "microsoft-teams"
@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /teams/{id}/channels/{id}
+GET /teams/{team-id}/channels/{channel-id}
 ```
 
 ## Optional query parameters
@@ -59,16 +59,15 @@ If successful, this method returns a `200 OK` response code and a [channel](../r
 
 Here is an example of the request.
 
-# [HTTP](#tab/http)
 
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_channel"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}
+GET https://graph.microsoft.com/beta/teams/893075dd-2487-4122-925f-022c42e20265/channels/19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2
 ```
-
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-channel-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
@@ -87,11 +86,12 @@ GET https://graph.microsoft.com/beta/teams/{id}/channels/{id}
 
 ---
 
+
 ### Response
 
 Here is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -101,13 +101,16 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 201
 
 {
-    "description": "description-value",
-    "displayName": "display-name-value",
-    "id": "id-value",
-    "membershipType": "membership-type-value"
+    "id": "19:561fbdbbfca848a484f0a6f00ce9dbbd@thread.tacv2",
+    "createdDateTime": "2020-05-27T19:22:25.692Z",
+    "displayName": "General",
+    "description": "AutoTestTeam_20210311_150740.2550_fim3udfdjen9",
+    "membershipType": "standard"
 }
+
 ```
 
 Here is an example of the response for a standard channel with channel moderation off.
@@ -135,7 +138,7 @@ HTTP/1.1 200 OK
 
 Here is an example of the response for a standard channel with channel moderation on.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 ```http
 HTTP/1.1 200 OK

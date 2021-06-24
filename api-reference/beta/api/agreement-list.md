@@ -3,7 +3,7 @@ title: "List agreements"
 description: "Retrieve a list of agreement objects."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "raprakasMSFT"
 ---
 
@@ -23,10 +23,15 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported. |
 |Application                            | Not supported. |
 
+When calling on behalf of a user, the user needs to belong to one of the following directory roles. To learn more about directory roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference):
++ Global Administrator
++ Conditional Access Administrator
++ Security Administrator
+
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /agreements
+GET /identityGovernance/termsOfUse/agreements
 ```
 <!--
 ## Optional query parameters
@@ -45,13 +50,14 @@ If successful, this method returns a `200 OK` response code and collection of [a
 ## Example
 ##### Request
 
+
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_agreements"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/agreements
+GET https://graph.microsoft.com/beta/identityGovernance/termsOfUse/agreements
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-agreements-csharp-snippets.md)]
@@ -71,8 +77,9 @@ GET https://graph.microsoft.com/beta/agreements
 
 ---
 
+
 ##### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

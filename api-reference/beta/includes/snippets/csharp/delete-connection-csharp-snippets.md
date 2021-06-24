@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Connections["contosohr"]
+await graphClient.Connections["{externalConnectors.externalConnection-id}"]
 	.Request()
 	.DeleteAsync();
 

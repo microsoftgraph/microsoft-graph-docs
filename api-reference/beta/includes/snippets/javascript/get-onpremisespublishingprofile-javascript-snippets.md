@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/onPremisesPublishingProfiles/provisioning')
+let onPremisesPublishingProfile = await client.api('/onPremisesPublishingProfiles/provisioning')
 	.version('beta')
 	.expand('agentGroups')
 	.get();

@@ -22,7 +22,7 @@ var conversationThread = new ConversationThread
 	}
 };
 
-await graphClient.Groups["{id}"].Conversations["{id}"].Threads
+await graphClient.Groups["{group-id}"].Conversations["{conversation-id}"].Threads
 	.Request()
 	.AddAsync(conversationThread);
 

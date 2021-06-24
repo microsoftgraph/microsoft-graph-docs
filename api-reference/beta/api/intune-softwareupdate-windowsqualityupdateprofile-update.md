@@ -20,7 +20,7 @@ Update the properties of a [windowsQualityUpdateProfile](../resources/intune-sof
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -55,6 +55,8 @@ The following table shows the properties that are required when you create the [
 |createdDateTime|DateTimeOffset|The date time that the profile was created.|
 |lastModifiedDateTime|DateTimeOffset|The date time that the profile was last modified.|
 |roleScopeTagIds|String collection|List of Scope Tags for this Quality Update entity.|
+|releaseDateDisplayName|String|Friendly release date to display for a Quality Update release|
+|deployableContentDisplayName|String|Friendly display name of the quality update profile deployable content|
 
 
 
@@ -68,7 +70,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/windowsQualityUpdateProfiles/{windowsQualityUpdateProfileId}
 Content-type: application/json
-Content-length: 418
+Content-length: 558
 
 {
   "@odata.type": "#microsoft.graph.windowsQualityUpdateProfile",
@@ -81,7 +83,9 @@ Content-length: 418
   },
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "releaseDateDisplayName": "Release Date Display Name value",
+  "deployableContentDisplayName": "Deployable Content Display Name value"
 }
 ```
 
@@ -90,7 +94,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 590
+Content-Length: 730
 
 {
   "@odata.type": "#microsoft.graph.windowsQualityUpdateProfile",
@@ -106,7 +110,9 @@ Content-Length: 590
   "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
-  ]
+  ],
+  "releaseDateDisplayName": "Release Date Display Name value",
+  "deployableContentDisplayName": "Deployable Content Display Name value"
 }
 ```
 

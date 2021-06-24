@@ -11,11 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const outlookCategory = {
-      displayName:"Project expenses",
-      color:"preset9"
+      displayName: 'Project expenses',
+      color: 'preset9'
 };
 
-let res = await client.api('/me/outlook/masterCategories')
+await client.api('/me/outlook/masterCategories')
 	.version('beta')
 	.post(outlookCategory);
 

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/deviceManagement/virtualEndpoint/onPremisesConnections')
+let onPremisesConnections = await client.api('/deviceManagement/virtualEndpoint/onPremisesConnections')
 	.version('beta')
 	.get();
 

@@ -89,7 +89,7 @@ properties:
 }
 ```
 
-| Property name  | Value                  | Description\                                                                                               |
+| Property name  | Value                  | Description                                                                                                |
 |:---------------|:-----------------------|:-----------------------------------------------------------------------------------------------------------|
 | **code**       | string                 | An error code string for the error that occurred                                                            |
 | **message**    | string                 | A developer ready message about the error that occurred. This should not be displayed to the user directly. |

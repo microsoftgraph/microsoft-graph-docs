@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/informationProtection/threatAssessmentRequests')
+let threatAssessmentRequests = await client.api('/informationProtection/threatAssessmentRequests')
 	.version('beta')
 	.get();
 

@@ -30,7 +30,7 @@ This resource supports:
 | [Delete](../api/print-delete-taskdefinition.md) | None | Delete a printTaskDefinition. |
 | [List tasks](../api/printtaskdefinition-list-tasks.md) | [printTask](printtask.md) | Get a list of tasks that have been created based on this definition. The list includes currently running tasks and recently completed tasks. |
 | [Get task](../api/printtask-get.md) | [printTask](printtask.md) | Gets a task that has been created based on this definition. |
-| [Update task](../api/printtaskdefinition-update-task.md) | None | Update a task that has been created based on this definition. **Applications that register task triggers are responsible for updating task status when processing is finished, unless the related printJob has been redirected to another printer.** Failure to report completion will result in the related print job being blocked from printing and eventually deleted. |
+| [Update task](../api/printtaskdefinition-update-task.md) | [printTask](printtask.md) | Update a task that has been created based on this definition. **Applications that register task triggers are responsible for updating task status when processing is finished, unless the related printJob has been redirected to another printer.** Failure to report completion will result in the related print job being blocked from printing and eventually deleted. |
 
 ## Properties
 | Property     | Type        | Description |

@@ -12,13 +12,13 @@ const client = Client.init(options);
 
 const claimsMappingPolicy = {
   definition: [
-    "definition-value"
+    'definition-value'
   ],
-  displayName: "displayName-value",
+  displayName: 'displayName-value',
   isOrganizationDefault: true
 };
 
-let res = await client.api('/policies/claimsMappingPolicies')
+await client.api('/policies/claimsMappingPolicies')
 	.post(claimsMappingPolicy);
 
 ```

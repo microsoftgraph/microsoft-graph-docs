@@ -3,7 +3,7 @@ title: "List identityApiConnectors"
 description: "Get a list of the identityApiConnector objects and their properties"
 author: "nickgmicrosoft"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -110,16 +110,38 @@ Content-Type: application/json
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#identity/apiConnectors",
     "value": [
-      {
-          "id": "<guid>",
-          "displayName": "Test API",
-          "targetUrl": "https://someapi.com/api/endpoint",
-          "authenticationConfiguration": {
-            "@odata.type": "#microsoft.graph.basicAuthentication",
-            "username": "<USERNAME>",
-            "password": "******"
-          }
-      }
+        {
+            "id": "<guid>",
+            "displayName": "Test API",
+            "targetUrl": "https://someapi.com/api/endpoint",
+            "authenticationConfiguration": {
+              "@odata.type": "#microsoft.graph.basicAuthentication",
+              "username": "<USERNAME>",
+              "password": "******"
+            }
+        },
+        {
+            "id": "<guid>",
+            "displayName": "My API connector",
+            "targetUrl": "https://someotherapi.com/api/endpoint",
+            "authenticationConfiguration": {
+                "@odata.type": "#microsoft.graph.clientCertificateAuthentication",
+                "certificateList": [
+                    {
+                        "thumbprint": "0EB255CC895477798BA418B378255204304897AD",
+                        "notAfter": 1666350522,
+                        "notBefore": 1508670522,
+                        "isActive": true
+                    },
+                    {
+                        "thumbprint": "1AB255CC895477798BA418B378255204304897BC",
+                        "notAfter": 1766350522,
+                        "notBefore": 1608670522,
+                        "isActive": false
+                    }
+                ]
+            }
+        }
   ]
 }
 ```

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/groups/{id}/threads/{id}')
+await client.api('/groups/{id}/threads/{id}')
 	.version('beta')
 	.delete();
 

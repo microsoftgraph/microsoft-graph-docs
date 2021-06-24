@@ -18,6 +18,8 @@ MSGraphEducationItemBody *instructions = [[MSGraphEducationItemBody alloc] init]
 [instructions setContent:@"Read chapters 1 through 3"];
 [educationAssignment setInstructions:instructions];
 [educationAssignment setDueDateTime: "2014-02-01T00:00:00Z"];
+[educationAssignment setAddedStudentAction: [MSGraphEducationAddedStudentAction none]];
+[educationAssignment setAddToCalendarAction: [MSGraphEducationAddToCalendarOptions studentsAndPublisher]];
 
 NSError *error;
 NSData *educationAssignmentData = [educationAssignment getSerializedDataWithError:&error];

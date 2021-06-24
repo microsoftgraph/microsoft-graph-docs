@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var pivotTables = await graphClient.Drive.Root.Workbook.Worksheets["{id}"].PivotTables
+var pivotTables = await graphClient.Drive.Root.Workbook.Worksheets["{workbookWorksheet-id}"].PivotTables
 	.Request()
 	.GetAsync();
 

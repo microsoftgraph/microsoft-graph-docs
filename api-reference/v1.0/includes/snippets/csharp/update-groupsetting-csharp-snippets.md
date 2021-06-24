@@ -20,7 +20,7 @@ var groupSetting = new GroupSetting
 	}
 };
 
-await graphClient.Groups["{id}"].Settings["{id}"]
+await graphClient.Groups["{group-id}"].Settings["{groupSetting-id}"]
 	.Request()
 	.UpdateAsync(groupSetting);
 

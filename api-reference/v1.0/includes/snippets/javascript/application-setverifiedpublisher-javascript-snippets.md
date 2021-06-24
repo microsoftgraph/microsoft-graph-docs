@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const setVerifiedPublisher = {
-    verifiedPublisherId: "1234567"
+    verifiedPublisherId: '1234567'
 };
 
-let res = await client.api('/applications/{id}/setVerifiedPublisher')
+await client.api('/applications/{id}/setVerifiedPublisher')
 	.post(setVerifiedPublisher);
 
 ```

@@ -6,13 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var externalConnection = new ExternalConnection
+var externalConnection = new Microsoft.Graph.ExternalConnectors.ExternalConnection
 {
 	Name = "Contoso HR Service Tickets",
 	Description = "Connection to index HR service tickets"
 };
 
-await graphClient.Connections["contosohr"]
+await graphClient.Connections["{externalConnectors.externalConnection-id}"]
 	.Request()
 	.UpdateAsync(externalConnection);
 

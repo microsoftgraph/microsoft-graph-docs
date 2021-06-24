@@ -14,7 +14,7 @@ var directorySetting = new DirectorySetting
 	}
 };
 
-await graphClient.Groups["{id}"].Settings
+await graphClient.Groups["{group-id}"].Settings
 	.Request()
 	.AddAsync(directorySetting);
 

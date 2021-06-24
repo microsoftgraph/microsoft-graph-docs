@@ -4,7 +4,7 @@ description: "Update properties of an identityUserFlowAttribute."
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 ---
 
 # Update identityUserFlowAttribute
@@ -35,7 +35,7 @@ The work or school account needs to belong to one of the following roles:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-PATCH /userFlowAttributes/{id}
+PATCH /identity/userFlowAttributes/{id}
 ```
 
 ## Request headers

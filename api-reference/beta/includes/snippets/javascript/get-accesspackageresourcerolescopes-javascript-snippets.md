@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/identityGovernance/entitlementManagement/accessPackages/{id}')
+let accessPackage = await client.api('/identityGovernance/entitlementManagement/accessPackages/{id}')
 	.version('beta')
 	.expand('accessPackageResourceRoleScopes($expand=accessPackageResourceRole,accessPackageResourceScope)')
 	.get();

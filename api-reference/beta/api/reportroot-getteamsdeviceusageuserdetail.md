@@ -76,6 +76,9 @@ The CSV file has the following headers for columns.
 - Used Mac
 - Used Android Phone
 - Used Windows
+- Used Chrome OS
+- Used Linux
+- Is Licensed
 - Report Period
 
 ### JSON
@@ -129,7 +132,7 @@ Follow the 302 redirection and the CSV file that downloads will have the followi
 HTTP/1.1 200 OK
 Content-Type: application/octet-stream
 
-Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Used Web,Used Windows Phone,Used iOS,Used Mac,Used Android Phone,Used Windows,Report Period
+Report Refresh Date,User Principal Name,Last Activity Date,Is Deleted,Deleted Date,Used Web,Used Windows Phone,Used iOS,Used Mac,Used Android Phone,Used Windows,Used Chrome OS,Used Linux,Is Licensed,Report Period
 ```
 
 ### JSON
@@ -155,7 +158,7 @@ GET https://graph.microsoft.com/beta/reports/getTeamsDeviceUsageUserDetail(perio
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -174,6 +177,7 @@ Content-Length: 374
     {
       "reportRefreshDate": "2017-09-01", 
       "userPrincipalName": "userPrincipalName-value", 
+      "isLicensed": true, 
       "lastActivityDate": "2017-09-01", 
       "isDeleted": false, 
       "deletedDate": null, 
@@ -183,6 +187,8 @@ Content-Length: 374
       "usedMac": false, 
       "usedAndroidPhone": false, 
       "usedWindows": true, 
+      "usedChromeOS": false, 
+      "usedLinux": false, 
       "reportPeriod": "7"
     }
   ]

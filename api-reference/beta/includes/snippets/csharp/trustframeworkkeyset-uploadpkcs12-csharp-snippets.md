@@ -10,7 +10,7 @@ var key = "Base64-encoded-pfx-content";
 
 var password = "password-value";
 
-await graphClient.TrustFramework.KeySets["{id}"]
+await graphClient.TrustFramework.KeySets["{trustFrameworkKeySet-id}"]
 	.UploadPkcs12(key,password)
 	.Request()
 	.PostAsync();

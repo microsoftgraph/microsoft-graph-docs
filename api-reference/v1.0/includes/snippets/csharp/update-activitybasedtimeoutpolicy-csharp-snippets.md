@@ -16,7 +16,7 @@ var activityBasedTimeoutPolicy = new ActivityBasedTimeoutPolicy
 	IsOrganizationDefault = true
 };
 
-await graphClient.Policies.ActivityBasedTimeoutPolicies["{id}"]
+await graphClient.Policies.ActivityBasedTimeoutPolicies["{activityBasedTimeoutPolicy-id}"]
 	.Request()
 	.UpdateAsync(activityBasedTimeoutPolicy);
 

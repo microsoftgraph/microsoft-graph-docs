@@ -24,10 +24,14 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "samples" } -->
 ```http
-GET /workbook/worksheets/{id|name}/charts/{name}/image
-GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640)
-GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480)
-GET /workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fittingMode='fit')
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/image
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/image
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/image(width=640)
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/image(width=640)
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480)
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480)
+GET /me/drive/items/{id}/workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fittingMode='fit')
+GET /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/charts/{name}/image(width=640,height=480,fittingMode='fit')
 ```
 ## Request headers
 | Name       | Description|
@@ -60,7 +64,7 @@ GET https://graph.microsoft.com/v1.0/me/drive/items/{id}/workbook/worksheets/{id
 ```
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- { "blockType": "response", "@odata.type": "Edm.String" } -->
 ```http
 HTTP/1.1 200 OK

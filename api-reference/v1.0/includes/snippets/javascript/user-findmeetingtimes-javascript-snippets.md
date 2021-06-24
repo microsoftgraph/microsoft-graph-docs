@@ -13,10 +13,10 @@ const client = Client.init(options);
 const meetingTimeSuggestionsResult = {
   attendees: [ 
     { 
-      type: "required",  
+      type: 'required',  
       emailAddress: { 
-        name: "Alex Wilbur",
-        address: "alexw@contoso.onmicrosoft.com" 
+        name: 'Alex Wilbur',
+        address: 'alexw@contoso.onmicrosoft.com' 
       } 
     }
   ],  
@@ -26,32 +26,32 @@ const meetingTimeSuggestionsResult = {
     locations: [ 
       { 
         resolveAvailability: false,
-        displayName: "Conf room Hood" 
+        displayName: 'Conf room Hood' 
       } 
     ] 
   },  
   timeConstraint: {
-    activityDomain:"work", 
+    activityDomain: 'work', 
     timeSlots: [ 
       { 
         start: { 
-          dateTime: "2019-04-16T09:00:00",  
-          timeZone: "Pacific Standard Time" 
+          dateTime: '2019-04-16T09:00:00',  
+          timeZone: 'Pacific Standard Time' 
         },  
         end: { 
-          dateTime: "2019-04-18T17:00:00",  
-          timeZone: "Pacific Standard Time" 
+          dateTime: '2019-04-18T17:00:00',  
+          timeZone: 'Pacific Standard Time' 
         } 
       } 
     ] 
   },  
-  isOrganizerOptional: "false",
-  meetingDuration: "PT1H",
-  returnSuggestionReasons: "true",
-  minimumAttendeePercentage: "100"
+  isOrganizerOptional: 'false',
+  meetingDuration: 'PT1H',
+  returnSuggestionReasons: 'true',
+  minimumAttendeePercentage: '100'
 };
 
-let res = await client.api('/me/findMeetingTimes')
+await client.api('/me/findMeetingTimes')
 	.post(meetingTimeSuggestionsResult);
 
 ```

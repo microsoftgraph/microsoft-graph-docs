@@ -21,7 +21,7 @@ var options = new WorkbookWorksheetProtectionOptions
 	AllowPivotTables = true
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Protection
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Protection
 	.Protect(options)
 	.Request()
 	.PostAsync();

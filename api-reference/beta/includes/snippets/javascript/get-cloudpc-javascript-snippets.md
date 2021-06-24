@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/deviceManagement/virtualEndpoint/cloudPCs/{id}')
+let cloudPC = await client.api('/deviceManagement/virtualEndpoint/cloudPCs/{id}')
 	.version('beta')
 	.get();
 

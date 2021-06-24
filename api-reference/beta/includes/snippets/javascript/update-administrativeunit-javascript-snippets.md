@@ -11,12 +11,12 @@ const options = {
 const client = Client.init(options);
 
 const administrativeUnit = {
-  displayName: "displayName-value",
-  description: "description-value",
-  visibility: "visibility-value"
+  displayName: 'displayName-value',
+  description: 'description-value',
+  visibility: 'visibility-value'
 };
 
-let res = await client.api('/administrativeUnits/{id}')
+await client.api('/administrativeUnits/{id}')
 	.version('beta')
 	.update(administrativeUnit);
 

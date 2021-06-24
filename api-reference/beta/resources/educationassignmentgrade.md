@@ -1,6 +1,6 @@
 ---
 title: "educationAssignmentGrade resource type"
-description: " however, all types of grading (points, pass/fail, and so on) are subclasses of this"
+description: "Represents the **Grade** object on a Submission."
 localization_priority: Normal
 author: "dipakboyed"
 ms.prod: "education"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the **Grade** object on a Submission. This is an abstract type that will never be instantiated; however, all types of grading (points, pass/fail, and so on) are subclasses of this
+Represents the **Grade** object on a Submission. 
+
+This is an abstract type that will never be instantiated; however, all types of grading (points, pass/fail, and so on) are subclasses of this
 resource type. This object also tracks who is doing the grading. This is used in the **submission.grade** property.
 
 
@@ -21,7 +23,7 @@ resource type. This object also tracks who is doing the grading. This is used in
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |gradedBy|[identitySet](identityset.md)| User who did the grading. |
-|gradedDateTime|DateTimeOffset| Moment in time when the grade was applied to this submission object. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|gradedDateTime|DateTimeOffset| Moment in time when the grade was applied to this submission object. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 
 ## JSON representation
 

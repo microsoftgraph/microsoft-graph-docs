@@ -431,6 +431,23 @@
       "CreatedDateTime": "2018-04-01T00:00:00",
       "WorkloadArea": "Security",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [{
+        "Id": "7f8dd226-41d6-456c-8836-f833ebe5f662",
+        "ApiChange": "Property",
+        "ChangedApiName": "parent",
+        "ChangeType": "Addition",
+        "Description": "Added the **parent** property to the [informationProtectionLabel](https://docs.microsoft.com/en-us/graph/api/resources/informationprotectionlabel?view=graph-rest-beta) resource.",
+        "Target": "informationProtectionLabel"
+      }],
+      "Id": "7f8dd226-41d6-456c-8836-f833ebe5f662",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-06-25T19:36:30.757Z",
+      "WorkloadArea": "Security",
+      "SubArea": ""
     }
   ]
 }
+

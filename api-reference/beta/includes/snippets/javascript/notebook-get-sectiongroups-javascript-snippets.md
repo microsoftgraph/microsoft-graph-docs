@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/onenote/notebooks/{id}/sectionGroups')
+let sectionGroups = await client.api('/me/onenote/notebooks/{id}/sectionGroups')
 	.version('beta')
 	.get();
 

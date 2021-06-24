@@ -30,7 +30,7 @@ TODOSEARCHAPI - Bug 1653398
 
 In addition, you can aggregate search results based on properties in an [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) that are numeric or string type, and that are set to be refinable in the [schema](/graph/api/resources/schema?view=graph-rest-beta&preserve-view=true). For more information, see [Refine search results using aggregations](search-concept-aggregation.md).
 
-## Example
+## Example 1: Retrieve items using Azure SQL built-in connector
 
 In this example, the content of the [AdventureWorks](/sql/samples/adventureworks-install-configure) database has been ingested using the Azure SQL built-in connector.
 
@@ -75,7 +75,7 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.searchResponse)",
   "value": [
     {
-      "searchTerms": ["ya"],
+      "searchTerms": ["yang"],
       "hitsContainers": [
         {
           "total": 2,
@@ -104,7 +104,7 @@ Content-type: application/json
                 "@odata.type": "#microsoft.graph.externalItem",
                 "properties": {
                   "businessEntityID": 20704,
-                  "shortdescription": "Contoso maintenance guidelines",
+                  "shortDescription": "Contoso maintenance guidelines",
                   "firstName": "Amy",
                   "lastName": "Yang"
                 }
@@ -117,6 +117,123 @@ Content-type: application/json
   ]
 }
 ```
+
+## Example 2: Retrieve items using semantic labels
+
+### Request
+
+```HTTP
+POST https://graph.microsoft.com/beta/search/query
+Content-Type: application/json
+
+{
+    "requests": [
+      {
+        "entityTypes": [
+          "microsoft.graph.externalItem"
+        ],
+        "contentSources": [
+          "/external/connections/FileAsUdt"
+        ],
+        "query": {
+          "query_string": {
+            "query": "test"
+          }
+        },
+        "stored_fields": [
+          "label_Title",
+          "label_URL",
+          "label_LastModifiedBy",
+          "label_LastModifiedDateTime"
+        ],
+        "from": 0,
+        "size": 25
+      }
+    ]
+}
+```
+
+### Response
+
+```HTTP
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.searchResponse)",
+"value": [
+      {
+        "searchTerms": [
+          "test"
+        ],
+        "hitsContainers": [
+          {
+            "hits": [
+              {
+                "_id": "AQMkAGRjZWJjZTFkLTkzYWItNDhlOC1iODA2LTgwMTNjNjEzYzI2YwBGAAADOx0/YV2JckefuDmJtUO7mwcAHNjGq33S50uXSFeU/U9mogAAAgEWAAAAHNjGq33S50uXSFeU/U9mogAAAgleAAAA",
+                "_contentSource": "FileAsUdt",
+                "_score": 1,
+                "_summary": "<c0>Test</c0> component to move data files and messages between the gateway and internal <ddd/>",
+                "_source": {
+                  "@odata.type": "#microsoft.graph.externalItem",
+                  "properties": {
+                    "label_Title": "SONIC Operations support and test Guide for the month of March",
+                    "label_URL": "D:\\\\ConnectorsEcho\\\\New\\\\MSW06SecondSet\\\\teams\\\\Enterprise_Platforms\\\\CCO\\\\Projects\\\\BTSi Modernization\\\\SONIC Retirement\\\\SONIC_Operations_Support_Guide.docx",
+                    "label_LastModifiedBy": [
+                      "Bob",
+                      "Scott"
+                    ],
+                    "label_LastModifiedDateTime": "2020-01-30T12:44:19Z"
+                  }
+                }
+              },
+              {
+                "_id": "AQMkAGRjZWJjZTFkLTkzYWItNDhlOC1iODA2LTgwMTNjNjEzYzI2YwBGAAADOx0/YV2JckefuDmJtUO7mwcAHNjGq33S50uXSFeU/U9mogAAAgEWAAAAHNjGq33S50uXSFeU/U9mogAAAgldAAAA",
+                "_contentSource": "FileAsUdt",
+                "_score": 2,
+                "_summary": "File Transfer Workbench A <c0>test</c0> File transfer Management Solution File Transfer the number <ddd/>",
+                "_source": {
+                  "@odata.type": "#microsoft.graph.externalItem",
+                  "properties": {
+                    "label_Title": "Test File Transfer Workbench for the month of January",
+                    "label_URL": "D:\\\\ConnectorsEcho\\\\New\\\\MSW06SecondSet\\\\teams\\\\IssueLog\\\\FCAGA Organisation\\\\NSN CO CCA Infra YBCFTPAR entry\\\\File Transfer Workbench.ppt",
+                    "label_LastModifiedBy": [
+                      "Alice",
+                      "Scott"
+                    ],
+                    "label_LastModifiedDateTime": "2020-01-31T11:44:19Z"
+                  }
+                }
+              },
+              {
+                "_id": "AQMkAGRjZWJjZTFkLTkzYWItNDhlOC1iODA2LTgwMTNjNjEzYzI2YwBGAAADOx0/YV2JckefuDmJtUO7mwcAHNjGq33S50uXSFeU/U9mogAAAgEWAAAAHNjGq33S50uXSFeU/U9mogAAAglgAAAA",
+                "_contentSource": "FileAsUdt",
+                "_score": 3,
+                "_summary": "document and the associated <c0>test</c0> software are the sole property of Express Logic.<ddd/>",
+                "_source": {
+                  "@odata.type": "#microsoft.graph.externalItem",
+                  "properties": {
+                    "label_Title": "System User Guide Express Logic 858.613.6640",
+                    "label_URL": "D:\\\\ConnectorsEcho\\\\New\\\\MSW06FirstSet\\\\teams\\\\AzureIoTMarketing\\\\Shared Documents\\\\Whitepapers\\\\RTOS Whitepapers\\\\User Guides\\\\Azure_RTOS_FileX_User_Guide.pdf",
+                    "label_LastModifiedBy": [
+                      "Alice",
+                      "Bob"
+                    ],
+                    "label_LastModifiedDateTime": "2020-05-25T10:20:19Z"
+                  }
+                }
+              }
+            ],
+            "total": 3,
+            "moreResultsAvailable": false
+          }
+        ]
+      }
+    ]
+}
+```
+
+For more details, see [Assign property labels](/microsoftsearch/configure-connector#step-5-assign-property-labels).
 
 ## Next steps
 

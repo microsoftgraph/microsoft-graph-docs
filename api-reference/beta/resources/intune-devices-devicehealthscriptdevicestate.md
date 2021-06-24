@@ -33,18 +33,19 @@ Contains properties for device run state of the device health script.
 |detectionState|[runState](../resources/intune-shared-runstate.md)|Detection state from the lastest device health script execution. Possible values are: `unknown`, `success`, `fail`, `scriptError`, `pending`, `notApplicable`.|
 |lastStateUpdateDateTime|DateTimeOffset|The last timestamp of when the device health script executed|
 |expectedStateUpdateDateTime|DateTimeOffset|The next timestamp of when the device health script is expected to execute|
-|lastSyncDateTime|DateTimeOffset|The last time that Intune Management Extension synced with Intune|
+|lastSyncDateTime|DateTimeOffset|The last time that Intune Managment Extension synced with Intune|
 |preRemediationDetectionScriptOutput|String|Output of the detection script before remediation|
 |preRemediationDetectionScriptError|String|Error from the detection script before remediation|
 |remediationScriptError|String|Error output of the remediation script|
 |postRemediationDetectionScriptOutput|String|Detection script output after remediation|
 |postRemediationDetectionScriptError|String|Error from the detection script after remediation|
 |remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|Remediation state from the lastest device health script execution. Possible values are: `unknown`, `skipped`, `success`, `remediationFailed`, `scriptError`.|
+|assignmentFilterIds|String collection|A list of the assignment filter ids used for health script applicability evaluation|
 
 ## Relationships
 |Relationship|Type|Description|
 |:---|:---|:---|
-|managedDevice|[managedDevice](../resources/intune-shared-manageddevice.md)|The managed device on which the device health script executed|
+|managedDevice|[managedDevice](../resources/intune-devices-manageddevice.md)|The managed device on which the device health script executed|
 
 ## JSON Representation
 Here is a JSON representation of the resource.
@@ -67,7 +68,10 @@ Here is a JSON representation of the resource.
   "remediationScriptError": "String",
   "postRemediationDetectionScriptOutput": "String",
   "postRemediationDetectionScriptError": "String",
-  "remediationState": "String"
+  "remediationState": "String",
+  "assignmentFilterIds": [
+    "String"
+  ]
 }
 ```
 

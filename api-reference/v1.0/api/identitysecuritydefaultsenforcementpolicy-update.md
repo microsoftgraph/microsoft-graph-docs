@@ -3,7 +3,7 @@ title: "Update identitySecurityDefaultsEnforcementPolicy"
 description: "Update the properties of an identitySecurityDefaultsEnforcementPolicy object."
 localization_priority: Normal
 author: "rohinigoyal1"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -95,9 +95,7 @@ Content-type: application/json
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.identitySecurityDefaultsEnforcementPolicy"
+  "blockType": "response"
 } -->
 
 ```http

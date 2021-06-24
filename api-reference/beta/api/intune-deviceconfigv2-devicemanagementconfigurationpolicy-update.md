@@ -20,11 +20,11 @@ Update the properties of a [deviceManagementConfigurationPolicy](../resources/in
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -33,6 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 ``` http
 PATCH /deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}
+PATCH /deviceManagement/reusablePolicySettings/{deviceManagementReusablePolicySettingId}/referencingConfigurationPolicies/{deviceManagementConfigurationPolicyId}
 ```
 
 ## Request headers
@@ -52,13 +53,14 @@ The following table shows the properties that are required when you create the [
 |name|String|Policy name|
 |description|String|Policy description|
 |platforms|[deviceManagementConfigurationPlatforms](../resources/intune-deviceconfigv2-devicemanagementconfigurationplatforms.md)|Platforms for this policy. Possible values are: `none`, `macOS`, `windows10X`, `windows10`.|
-|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Technologies for this policy. Possible values are: `none`, `mdm`, `windows10XManagement`, `configManager`.|
+|technologies|[deviceManagementConfigurationTechnologies](../resources/intune-deviceconfigv2-devicemanagementconfigurationtechnologies.md)|Technologies for this policy. Possible values are: `none`, `mdm`, `windows10XManagement`, `configManager`, `microsoftSense`.|
 |createdDateTime|DateTimeOffset|Policy creation date and time. This property is read-only.|
 |lastModifiedDateTime|DateTimeOffset|Policy last modification date and time. This property is read-only.|
 |settingCount|Int32|Number of settings. This property is read-only.|
 |creationSource|String|Policy creation source|
 |roleScopeTagIds|String collection|List of Scope Tags for this Entity instance.|
 |isAssigned|Boolean|Policy assignment status. This property is read-only.|
+|templateReference|[deviceManagementConfigurationPolicyTemplateReference](../resources/intune-deviceconfigv2-devicemanagementconfigurationpolicytemplatereference.md)|Template reference information|
 
 
 
@@ -72,7 +74,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/configurationPolicies/{deviceManagementConfigurationPolicyId}
 Content-type: application/json
-Content-length: 346
+Content-length: 685
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicy",
@@ -85,7 +87,14 @@ Content-length: 346
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
-  "isAssigned": true
+  "isAssigned": true,
+  "templateReference": {
+    "@odata.type": "microsoft.graph.deviceManagementConfigurationPolicyTemplateReference",
+    "templateId": "Template Id value",
+    "templateFamily": "endpointSecurityAntivirus",
+    "templateDisplayName": "Template Display Name value",
+    "templateDisplayVersion": "Template Display Version value"
+  }
 }
 ```
 
@@ -94,7 +103,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 518
+Content-Length: 857
 
 {
   "@odata.type": "#microsoft.graph.deviceManagementConfigurationPolicy",
@@ -110,7 +119,14 @@ Content-Length: 518
   "roleScopeTagIds": [
     "Role Scope Tag Ids value"
   ],
-  "isAssigned": true
+  "isAssigned": true,
+  "templateReference": {
+    "@odata.type": "microsoft.graph.deviceManagementConfigurationPolicyTemplateReference",
+    "templateId": "Template Id value",
+    "templateFamily": "endpointSecurityAntivirus",
+    "templateDisplayName": "Template Display Name value",
+    "templateDisplayVersion": "Template Display Version value"
+  }
 }
 ```
 

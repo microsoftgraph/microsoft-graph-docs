@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/users/{id}/calendar/calendarPermissions/{id}')
+await client.api('/users/{id}/calendar/calendarPermissions/{id}')
 	.delete();
 
 ```

@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const directoryRole = {
-  roleTemplateId: "roleTemplateId-value"
+  roleTemplateId: 'fe930be7-5e62-47db-91af-98c3a49a38b1'
 };
 
-let res = await client.api('/directoryRoles')
+await client.api('/directoryRoles')
 	.post(directoryRole);
 
 ```

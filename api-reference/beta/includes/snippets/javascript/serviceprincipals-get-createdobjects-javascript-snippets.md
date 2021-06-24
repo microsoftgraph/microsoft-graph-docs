@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/servicePrincipals/{id}/createdObjects')
+let createdObjects = await client.api('/servicePrincipals/{id}/createdObjects')
 	.version('beta')
 	.get();
 

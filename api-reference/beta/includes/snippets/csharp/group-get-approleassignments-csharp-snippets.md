@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var appRoleAssignments = await graphClient.Groups["{id}"].AppRoleAssignments
+var appRoleAssignments = await graphClient.Groups["{group-id}"].AppRoleAssignments
 	.Request()
 	.GetAsync();
 

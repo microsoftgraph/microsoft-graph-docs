@@ -20,7 +20,7 @@ Create a new [androidCustomConfiguration](../resources/intune-deviceconfig-andro
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
@@ -74,7 +74,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceConfigurations
 Content-type: application/json
-Content-length: 1269
+Content-length: 1337
 
 {
   "@odata.type": "#microsoft.graph.androidCustomConfiguration",
@@ -112,6 +112,7 @@ Content-length: 1269
       "displayName": "Display Name value",
       "description": "Description value",
       "omaUri": "Oma Uri value",
+      "secretReferenceValueId": "Secret Reference Value Id value",
       "isEncrypted": true
     }
   ]
@@ -123,7 +124,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 1441
+Content-Length: 1509
 
 {
   "@odata.type": "#microsoft.graph.androidCustomConfiguration",
@@ -164,6 +165,7 @@ Content-Length: 1441
       "displayName": "Display Name value",
       "description": "Description value",
       "omaUri": "Oma Uri value",
+      "secretReferenceValueId": "Secret Reference Value Id value",
       "isEncrypted": true
     }
   ]

@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const permission = {
-  roles: ["read"]
+  roles: ['read']
 };
 
-let res = await client.api('/sites/{sitesId}/permissions/{permissionId}')
+await client.api('/sites/{sitesId}/permissions/{permissionId}')
 	.update(permission);
 
 ```

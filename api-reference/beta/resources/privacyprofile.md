@@ -4,7 +4,7 @@ description: "Represents a company's privacy profile, which includes a privacy s
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "directory-management"
-author: "davidmu1"
+author: "Jumaodhiss"
 ---
 
 # privacyProfile resource type

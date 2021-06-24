@@ -16,7 +16,7 @@ var partsToClone = ClonableTeamParts.Apps | ClonableTeamParts.Tabs | ClonableTea
 
 var visibility = TeamVisibilityType.Public;
 
-await graphClient.Teams["{id}"]
+await graphClient.Teams["{team-id}"]
 	.Clone(visibility,partsToClone,displayName,description,mailNickname,null)
 	.Request()
 	.PostAsync();

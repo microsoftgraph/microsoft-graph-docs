@@ -11,7 +11,7 @@ var device = new Device
 	AccountEnabled = false
 };
 
-await graphClient.Devices["{id}"]
+await graphClient.Devices["{device-id}"]
 	.Request()
 	.UpdateAsync(device);
 

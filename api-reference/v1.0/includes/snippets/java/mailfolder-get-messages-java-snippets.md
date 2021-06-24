@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IMessageCollectionPage messages = graphClient.me().mailFolders("{id}").messages()
+MessageCollectionPage messages = graphClient.me().mailFolders("{id}").messages()
 	.buildRequest()
 	.get();
 

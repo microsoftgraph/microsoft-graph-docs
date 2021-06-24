@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var cloudPC = await graphClient.DeviceManagement.VirtualEndpoint.CloudPCs["{id}"]
+var cloudPC = await graphClient.DeviceManagement.VirtualEndpoint.CloudPCs["{cloudPC-id}"]
 	.Request()
 	.GetAsync();
 

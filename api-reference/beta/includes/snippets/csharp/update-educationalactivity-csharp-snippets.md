@@ -23,7 +23,7 @@ var educationalActivity = new EducationalActivity
 	}
 };
 
-await graphClient.Me.Profile.EducationalActivities["{id}"]
+await graphClient.Me.Profile.EducationalActivities["{educationalActivity-id}"]
 	.Request()
 	.UpdateAsync(educationalActivity);
 

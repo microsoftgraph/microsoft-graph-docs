@@ -17,14 +17,14 @@ var b2cIdentityUserFlow = new B2cIdentityUserFlow
 		{
 			AdditionalData = new Dictionary<string, object>()
 			{
-				{"@odata.id", "https://graph.microsoft.com/beta/identity/apiConnectors/{id}"}
+				{"@odata.id", "{apiConnectorId}"}
 			}
 		},
 		PostAttributeCollection = new IdentityApiConnector
 		{
 			AdditionalData = new Dictionary<string, object>()
 			{
-				{"@odata.id", "https://graph.microsoft.com/beta/identity/apiConnectors/{id}"}
+				{"@odata.id", "{apiConnectorId}"}
 			}
 		}
 	}

@@ -29,4 +29,3 @@ Contains properties for detection operator.
 
 
 
-

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Option> requestOptions = new LinkedList<Option>();
 requestOptions.add(new HeaderOption("User-Agent", "ContosoLOBApp/1.0"));
@@ -52,7 +52,11 @@ downgradeJustification.justificationMessage = "The information has been declassi
 downgradeJustification.isDowngradeJustified = true;
 
 graphClient.informationProtection().policy().labels()
-	.evaluateRemoval(contentInfo,downgradeJustification)
+	.evaluateRemoval(InformationProtectionLabelEvaluateRemovalParameterSet
+		.newBuilder()
+		.withContentInfo(contentInfo)
+		.withDowngradeJustification(downgradeJustification)
+		.build())
 	.buildRequest( requestOptions )
 	.post();
 

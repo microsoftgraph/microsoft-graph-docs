@@ -4,12 +4,20 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String type = "embed";
 
 graphClient.me().drive().items("{item-id}")
-	.createLink(type,null,null,null,null,null)
+	.createLink(DriveItemCreateLinkParameterSet
+		.newBuilder()
+		.withType(type)
+		.withScope(null)
+		.withExpirationDateTime(null)
+		.withPassword(null)
+		.withMessage(null)
+		.withRecipients(null)
+		.build())
 	.buildRequest()
 	.post();
 

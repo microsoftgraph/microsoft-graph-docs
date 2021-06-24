@@ -58,7 +58,14 @@ Here is a JSON representation of the resource.
       "assignmentFilterPlatform": "String",
       "evaluationResult": "String",
       "evaluationDateTime": "String (timestamp)",
-      "assignmentFilterType": "String"
+      "assignmentFilterType": "String",
+      "assignmentFilterTypeAndEvaluationResults": [
+        {
+          "@odata.type": "microsoft.graph.assignmentFilterTypeAndEvaluationResult",
+          "assignmentFilterType": "String",
+          "evaluationResult": "String"
+        }
+      ]
     }
   ]
 }

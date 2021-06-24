@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var endpoint = await graphClient.Groups["{id}"].Endpoints["{id}"]
+var endpoint = await graphClient.Groups["{group-id}"].Endpoints["{endpoint-id}"]
 	.Request()
 	.GetAsync();
 

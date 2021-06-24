@@ -11,7 +11,7 @@ var driveItem = new DriveItem
 	Name = "Shared legal agreements"
 };
 
-await graphClient.Drive.Items["{bundle-id}"]
+await graphClient.Drive.Items["{driveItem-id}"]
 	.Request()
 	.UpdateAsync(driveItem);
 

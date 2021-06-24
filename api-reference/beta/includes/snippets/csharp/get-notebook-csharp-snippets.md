@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var notebook = await graphClient.Me.Onenote.Notebooks["{id}"]
+var notebook = await graphClient.Me.Onenote.Notebooks["{notebook-id}"]
 	.Request()
 	.GetAsync();
 

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/directory/deletedItems/{object-id}/restore')
+await client.api('/directory/deletedItems/{object-id}/restore')
 	.post();
 
 ```

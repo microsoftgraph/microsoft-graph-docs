@@ -126,29 +126,29 @@ The following events are fired from the control.
 
 | Event | Description |
 | --- | --- |
-| eventClick | The user clicks or taps an event.|
+| `eventClick` | The user clicks or taps an event.|
 
-## Permissions
+For more information about handling events, see [events](../customize-components/events.md).
+
+## Microsoft Graph permissions
 
 This component uses the following Microsoft Graph APIs and permissions:
 
-| Resource | Permission |
-| - | - |
-| [/me/calendarview](/graph/api/calendar-list-calendarview) | Calendars.Read |
+| Configuration | Permission | API
+| - | - | - |
+| default | Calendars.Read | [/me/calendarview](/graph/api/calendar-list-calendarview) |
 
 The component allows you to specify a different Microsoft Graph query to call (such as `/groups/{id}/calendar/calendarView`). In this case, append the permission to the end of the string, delimited by `|`.
 
-When using the default template and default `renderAttendees` template, additional APIs and permissions are required. The default template for this component uses a [mgt-people](people.md) component for events that have attendees, which requires the following.
-
-| Resource | Permission |
-| - | - |
-| [/users](/graph/api/user-list) | Users.ReadBasic.All |
-| [/me/calendarview](/graph/api/user-list-people) | People.Read |
-| [/me/calendarview](/graph/api/user-list-contacts) | Contacts.Read |
+When using the default template and default `renderAttendees` template, additional APIs and permissions are required. The default template for this component uses a [mgt-people](people.md) component for events that have attendees, and inherits all permissions.
 
 ## Authentication
 
 The login control uses the global authentication provider described in the [authentication documentation](../providers/providers.md).
+
+## Cache
+
+The `mgt-agenda` component doesn't cache any data.
 
 ## Extend for more control
 

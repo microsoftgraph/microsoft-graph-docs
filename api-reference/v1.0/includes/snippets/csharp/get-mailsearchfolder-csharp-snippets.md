@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var mailFolder = await graphClient.Me.MailFolders["AAMkAGVmMDEzN"]
+var mailFolder = await graphClient.Me.MailFolders["{mailFolder-id}"]
 	.Request()
 	.GetAsync();
 

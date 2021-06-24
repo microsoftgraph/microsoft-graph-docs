@@ -3,7 +3,7 @@ title: "Remove connected organization internal sponsor"
 description: "Remove a user or group from the connected organization's internal sponsors."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -81,9 +81,7 @@ DELETE https://graph.microsoft.com/beta/identityGovernance/entitlementManagement
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

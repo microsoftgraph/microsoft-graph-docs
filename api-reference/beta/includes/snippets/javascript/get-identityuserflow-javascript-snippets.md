@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/identity/userFlows/B2C_1_Pol1')
+let identityUserFlow = await client.api('/identity/userFlows/B2C_1_Pol1')
 	.version('beta')
 	.get();
 

@@ -14,7 +14,7 @@ var educationUser = new EducationUser
 	Surname = "Cazares"
 };
 
-await graphClient.Education.Users["13020"]
+await graphClient.Education.Users["{educationUser-id}"]
 	.Request()
 	.UpdateAsync(educationUser);
 

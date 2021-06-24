@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 EducationRubricOutcome educationOutcome = new EducationRubricOutcome();
 LinkedList<RubricQualityFeedbackModel> rubricQualityFeedbackList = new LinkedList<RubricQualityFeedbackModel>();
@@ -34,7 +34,7 @@ rubricQualitySelectedLevels1.columnId = "aac076bf-51ba-48c5-a2e0-ee235b0b9740";
 rubricQualitySelectedLevelsList.add(rubricQualitySelectedLevels1);
 educationOutcome.rubricQualitySelectedLevels = rubricQualitySelectedLevelsList;
 
-graphClient.education().me().assignments("{id}").submissions("{id}").outcomes("{id}")
+graphClient.education().classes("{id}").assignments("{id}").submissions("{id}").outcomes("{id}")
 	.buildRequest()
 	.patch(educationOutcome);
 

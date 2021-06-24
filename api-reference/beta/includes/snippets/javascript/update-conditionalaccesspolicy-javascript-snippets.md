@@ -13,14 +13,14 @@ const client = Client.init(options);
 const conditionalAccessPolicy = {
     conditions: {
         signInRiskLevels: [
-            "high",
-            "medium",
-            "low",
+            'high',
+            'medium',
+            'low',
         ]
     }
 };
 
-let res = await client.api('/identity/conditionalAccess/policies/{id}')
+await client.api('/identity/conditionalAccess/policies/{id}')
 	.version('beta')
 	.update(conditionalAccessPolicy);
 

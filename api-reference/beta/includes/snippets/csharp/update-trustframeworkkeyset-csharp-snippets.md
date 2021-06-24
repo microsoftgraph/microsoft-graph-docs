@@ -35,7 +35,7 @@ var trustFrameworkKeySet = new TrustFrameworkKeySet
 	}
 };
 
-await graphClient.TrustFramework.KeySets["{id}"]
+await graphClient.TrustFramework.KeySets["{trustFrameworkKeySet-id}"]
 	.Request()
 	.PutAsync(trustFrameworkKeySet);
 

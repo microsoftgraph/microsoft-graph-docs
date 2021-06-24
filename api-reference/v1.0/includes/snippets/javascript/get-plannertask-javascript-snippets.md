@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/planner/tasks/{task-id}')
+let plannerTask = await client.api('/planner/tasks/{task-id}')
 	.get();
 
 ```

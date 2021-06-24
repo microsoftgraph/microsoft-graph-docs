@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var directoryObject = await graphClient.DirectoryObjects["{id}"]
+var directoryObject = await graphClient.DirectoryObjects["{directoryObject-id}"]
 	.Request()
 	.GetAsync();
 

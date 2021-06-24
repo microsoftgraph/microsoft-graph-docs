@@ -11,7 +11,7 @@ var workbookRangeFill = new WorkbookRangeFill
 	Color = "#0000FF"
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["Sheet1"]
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"]
 	.Range("$C$1").Format.Fill
 	.Request()
 	.UpdateAsync(workbookRangeFill);

@@ -17,7 +17,7 @@ var namedLocation = new CountryNamedLocation
 	IncludeUnknownCountriesAndRegions = false
 };
 
-await graphClient.Identity.ConditionalAccess.NamedLocations["1c4427fd-0885-4a3d-8b23-09a899ffa959"]
+await graphClient.Identity.ConditionalAccess.NamedLocations["{namedLocation-id}"]
 	.Request()
 	.UpdateAsync(namedLocation);
 

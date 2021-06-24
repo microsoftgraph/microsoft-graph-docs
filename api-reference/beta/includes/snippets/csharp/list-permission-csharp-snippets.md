@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var permissions = await graphClient.Sites["{sitesId}"].Permissions
+var permissions = await graphClient.Sites["{site-id}"].Permissions
 	.Request()
 	.GetAsync();
 

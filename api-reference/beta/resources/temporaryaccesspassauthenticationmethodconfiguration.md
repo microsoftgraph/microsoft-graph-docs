@@ -2,9 +2,8 @@
 title: "temporaryAccessPassAuthenticationMethodConfiguration resource type"
 description: "Represents a Temporary Access Pass authentication methods policy."
 author: "inbarckms"
-ms.author: inbarc
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 doc_type: apiPageType
 ---
 

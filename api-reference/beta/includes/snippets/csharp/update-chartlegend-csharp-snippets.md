@@ -13,7 +13,7 @@ var workbookChartLegend = new WorkbookChartLegend
 	Overlay = true
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Charts["{name}"].Legend
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts["{workbookChart-id}"].Legend
 	.Request()
 	.UpdateAsync(workbookChartLegend);
 

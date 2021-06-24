@@ -11,7 +11,7 @@ var queryOptions = new List<QueryOption>()
 	new QueryOption("format", "{format}")
 };
 
-var stream = await graphClient.Me.Drive.Items["{item-id}"].Content
+var stream = await graphClient.Me.Drive.Items["{driveItem-id}"].Content
 	.Request( queryOptions )
 	.GetAsync();
 

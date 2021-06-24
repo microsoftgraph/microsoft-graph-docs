@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<SynchronizationJobApplicationParameters> parametersList = new LinkedList<SynchronizationJobApplicationParameters>();
 SynchronizationJobApplicationParameters parameters = new SynchronizationJobApplicationParameters();
@@ -19,7 +19,10 @@ parameters.ruleId = "ea807875-5618-4f0a-9125-0b46a05298ca";
 parametersList.add(parameters);
 
 graphClient.servicePrincipals("{servicePrincipalsId}").synchronization().jobs("{synchronizationJobId}")
-	.provisionOnDemand(parametersList)
+	.provisionOnDemand(SynchronizationJobProvisionOnDemandParameterSet
+		.newBuilder()
+		.withParameters(parametersList)
+		.build())
 	.buildRequest()
 	.post();
 

@@ -49,7 +49,7 @@ To update the photo for a team:
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PUT /groups/{teamId}/photo/$value`
+PUT /groups/{teamId}/photo/$value
 ```
 
 ## Request headers
@@ -100,9 +100,7 @@ The following is an example of the response.
 
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.profilePhoto"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

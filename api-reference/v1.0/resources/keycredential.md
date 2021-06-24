@@ -18,9 +18,9 @@ Contains a key credential associated with an application <!--or a service princi
 |:---------------|:--------|:----------|
 |customKeyIdentifier|Binary| Custom key identifier |
 | displayName | String | Friendly name for the key. Optional. |
-|endDateTime|DateTimeOffset|The date and time at which the credential expires.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|endDateTime|DateTimeOffset|The date and time at which the credential expires.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |keyId|Guid|The unique identifier (GUID) for the key.|
-|startDateTime|DateTimeOffset|The date and time at which the credential becomes valid.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|startDateTime|DateTimeOffset|The date and time at which the credential becomes valid.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |type|String|The type of key credential; for example, “Symmetric”.|
 |usage|String|A string that describes the purpose for which the key can be used; for example, “Verify”.|
 |key|Binary| The certificate's raw data in byte array converted to Base64 string; for example, `[System.Convert]::ToBase64String($Cert.GetRawCertData())`. |

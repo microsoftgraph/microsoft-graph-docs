@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var itemAnalytics = await graphClient.Drives["{drive-id}"].Items["{item-id}"].Analytics
+var itemAnalytics = await graphClient.Drives["{drive-id}"].Items["{driveItem-id}"].Analytics
 	.Request()
 	.GetAsync();
 

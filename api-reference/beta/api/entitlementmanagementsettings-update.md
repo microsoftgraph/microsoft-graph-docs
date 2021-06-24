@@ -3,7 +3,7 @@ title: "Update entitlementManagementSettings"
 description: "Update a entitlementManagementSettings object to change one or more of its properties."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -82,9 +82,7 @@ Content-type: application/json
 ### Response
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.entitlementManagementSettings"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

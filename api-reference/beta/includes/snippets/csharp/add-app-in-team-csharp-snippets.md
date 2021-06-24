@@ -14,7 +14,7 @@ var teamsAppInstallation = new TeamsAppInstallation
 	}
 };
 
-await graphClient.Teams["87654321-0abc-zqf0-321456789q"].InstalledApps
+await graphClient.Teams["{team-id}"].InstalledApps
 	.Request()
 	.AddAsync(teamsAppInstallation);
 

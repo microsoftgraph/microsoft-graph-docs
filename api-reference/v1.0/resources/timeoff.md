@@ -30,8 +30,8 @@ A unit of non-work in a schedule.
 | userId 			|`string`      |ID of the user assigned to the **timeOff**. Required.|
 | sharedTimeOff 	| [timeOffItem](timeoffitem.md)  |The shared version of this **timeOff** that is viewable by both employees and managers. Required.|
 | draftTimeOff		| [timeOffItem](timeoffitem.md)        |The draft version of this **timeOff** that is viewable by managers. Required.|
-| createdDateTime		|`DateTimeOffset`        |The time stamp at which this **timeOff** was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |
-| lastModifiedDateTime		|`DateTimeOffset`        |The time stamp at which this **timeOff** was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. |
+| createdDateTime		|`DateTimeOffset`        |The time stamp at which this **timeOff** was first created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
+| lastModifiedDateTime		|`DateTimeOffset`        |The time stamp at which this **timeOff** was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 | lastModifiedBy		| [identitySet](identityset.md)        |The identity that last updated this **timeOff**. |
 
 ## JSON representation

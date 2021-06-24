@@ -34,7 +34,7 @@ Inherits from [entity](../resources/entity.md).
 |createdDateTime|DateTimeOffset|Date and time of term creation. Read-only|
 |descriptions|[microsoft.graph.termStore.localizedDescription](../resources/termstore-localizeddescription.md) collection|Description about term that is dependent on the languageTag|
 |id|String|Unique identifier of term. Read-Only|
-|labels|[microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md) collection||Label metadata for a term|
+|labels|[microsoft.graph.termStore.localizedLabel](../resources/termstore-localizedlabel.md) collection|Label metadata for a term|
 |lastModifiedDateTime|DateTimeOffset|Last date and time of term modification. Read-only|
 |properties|[microsoft.graph.keyValue](../resources/keyvalue.md) collection|Collection of properties on the term|
 

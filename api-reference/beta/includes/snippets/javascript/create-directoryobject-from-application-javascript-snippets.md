@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const directoryObject = {
-@odata.id: "https://graph.microsoft.com/beta/directoryObjects/{id}"
+'@odata.id': 'https://graph.microsoft.com/beta/directoryObjects/{id}'
 };
 
-let res = await client.api('/applications/{id}/owners/$ref')
+await client.api('/applications/{id}/owners/$ref')
 	.version('beta')
 	.post(directoryObject);
 

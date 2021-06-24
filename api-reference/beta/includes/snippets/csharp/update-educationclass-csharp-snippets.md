@@ -12,7 +12,7 @@ var educationClass = new EducationClass
 	DisplayName = "World History Level 1"
 };
 
-await graphClient.Education.Classes["11014"]
+await graphClient.Education.Classes["{educationClass-id}"]
 	.Request()
 	.UpdateAsync(educationClass);
 

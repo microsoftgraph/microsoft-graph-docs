@@ -35,7 +35,7 @@ Represents an employee in Dynamics 365 Business Central.
 |givenName           |string  |The given name of the employee.                        |
 |middleName          |string  |The middle name of the employee.                       |
 |surname             |string  |The surname of the employee                            |
-|jobTitle            |string  |The full name of the employee                          |
+|jobTitle            |string  |The job title of the employee                          |
 |address             |[NAV.PostalAddress](../resources/dynamics-complextypes.md)|Specifies the employee's address. This address will appear on all resource documents for the employee.|
 |phoneNumber         |string  |Specifies the employee's telephone number.             |
 |mobilePhone         |string  |Specifies the employee's mobile telephone number.      |

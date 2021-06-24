@@ -43,7 +43,7 @@ var @event = new Event
 	TransactionId = "7E163156-7762-4BEB-A1C6-729EA81755A7"
 };
 
-await graphClient.Me.Calendars["AAMkAGViNDU7zAAAAAGtlAAA="].Events
+await graphClient.Me.Calendars["{calendar-id}"].Events
 	.Request()
 	.AddAsync(@event);
 

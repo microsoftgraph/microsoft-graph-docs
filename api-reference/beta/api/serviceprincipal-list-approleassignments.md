@@ -11,8 +11,6 @@ author: "sureshja"
 
 Namespace: microsoft.graph
 
-Namespace: microsoft.graph
-
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Retrieve the list of [appRoleAssignment](../resources/approleassignment.md) that have been granted to a service principal.
@@ -68,7 +66,7 @@ The following is an example of a request to retrieve the app roles that have bee
 }-->
 
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignments
+GET https://graph.microsoft.com/beta/servicePrincipals/8e881353-1735-45af-af21-ee1344582a4d/appRoleAssignments
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-get-approleassignments-csharp-snippets.md)]
@@ -93,7 +91,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}/appRoleAssignments
 
 Here is an example of the response. 
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -105,17 +103,19 @@ Here is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 306
 
 {
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#appRoleAssignments",
   "value": [
     {
-      "creationTimestamp": "2016-10-19T10:37:00Z",
-      "id": "id-value",
-      "principalDisplayName": "principalDisplayName-value",
-      "principalId": "principalId-value",
-      "principalType": "principalType-value",
-      "resourceDisplayName": "resourceDisplayName-value"
+      "id": "UxOIjjUXr0WvIe4TRFgqTY4z9Wu5KxpBtlEpoTGjw-A",
+      "creationTimestamp": "2021-02-02T04:22:45.4980259Z",
+      "appRoleId": "e2a3a72e-5f79-4c64-b1b1-878b674786c9",
+      "principalDisplayName": "dxprovisioning-graphapi-client",
+      "principalId": "8e881353-1735-45af-af21-ee1344582a4d",
+      "principalType": "ServicePrincipal",
+      "resourceDisplayName": "Microsoft Graph",
+      "resourceId": "fea94d6d-b5bf-44d2-a887-4f72a8d74f44"
     }
   ]
 }
@@ -134,4 +134,3 @@ Content-length: 306
   ]
 }
 -->
-

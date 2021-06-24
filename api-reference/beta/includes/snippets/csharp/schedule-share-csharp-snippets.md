@@ -12,7 +12,7 @@ var startDateTime = DateTimeOffset.Parse("2018-10-08T00:00:00Z");
 
 var endDateTime = DateTimeOffset.Parse("2018-10-15T00:00:00Z");
 
-await graphClient.Teams["{teamId}"].Schedule
+await graphClient.Teams["{team-id}"].Schedule
 	.Share(notifyTeam,startDateTime,endDateTime)
 	.Request()
 	.PostAsync();

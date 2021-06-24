@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var registeredOwners = await graphClient.Devices["{id}"].RegisteredOwners
+var registeredOwners = await graphClient.Devices["{device-id}"].RegisteredOwners
 	.Request()
 	.GetAsync();
 

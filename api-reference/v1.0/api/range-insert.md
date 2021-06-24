@@ -24,9 +24,12 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/names/{name}/range/insert
-POST /workbook/worksheets/{id|name}/range(address='<address>')/insert
-POST /workbook/tables/{id|name}/columns/{id|name}/range/insert
+POST /me/drive/items/{id}/workbook/names/{name}/range/insert
+POST /me/drive/root:/{item-path}:/workbook/names/{name}/range/insert
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/range(address='<address>')/insert
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/range(address='<address>')/insert
+POST /me/drive/items/{id}/workbook/tables/{id|name}/columns/{id|name}/range/insert
+POST /me/drive/root:/{item-path}:/workbook/tables/{id|name}/columns/{id|name}/range/insert
 
 ```
 ## Request headers
@@ -85,7 +88,7 @@ Content-length: 28
 
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

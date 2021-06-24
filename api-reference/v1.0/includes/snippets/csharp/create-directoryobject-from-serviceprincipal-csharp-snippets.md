@@ -11,7 +11,7 @@ var directoryObject = new DirectoryObject
 	Id = "{id}"
 };
 
-await graphClient.ServicePrincipals["{id}"].Owners.References
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].Owners.References
 	.Request()
 	.AddAsync(directoryObject);
 

@@ -12,7 +12,7 @@ var publishedResource = new PublishedResource
 	ResourceName = "domain1.contoso.com"
 };
 
-await graphClient.OnPremisesPublishingProfiles["provisioning"].PublishedResources
+await graphClient.OnPremisesPublishingProfiles["{onPremisesPublishingProfile-id}"].PublishedResources
 	.Request()
 	.AddAsync(publishedResource);
 

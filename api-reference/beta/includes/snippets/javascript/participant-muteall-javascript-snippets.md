@@ -12,12 +12,12 @@ const client = Client.init(options);
 
 const muteParticipantsOperation = {
   participants: [
-    ""
+    ''
   ],
-  clientContext: "clientContext-value"
+  clientContext: 'clientContext-value'
 };
 
-let res = await client.api('/communications/calls/{id}/participants/muteAll')
+await client.api('/communications/calls/{id}/participants/muteAll')
 	.version('beta')
 	.post(muteParticipantsOperation);
 

@@ -3,7 +3,7 @@ title: "Update identityApiConnector"
 description: "Update the properties of an identityApiConnector object."
 author: "nickgmicrosoft"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -57,7 +57,7 @@ The following table shows the properties of the [identityApiConnector](../resour
 |:---|:---|:---|
 |displayName|String| The name of the API connector. |
 |targetUrl|String| The URL of the API endpoint to call. |
-|authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|The object which describes the authentication configuration details for calling the API. Only [Basic authentication](../resources/basicauthentication.md) is supported at this time. All properties of the apiAuthenticationConfigurationBase must be set at the same time, like both username and password.|
+|authenticationConfiguration|[apiAuthenticationConfigurationBase](../resources/apiauthenticationconfigurationbase.md)|The object which describes the authentication configuration details for calling the API. Only [Basic authentication](../resources/basicauthentication.md) and [PKCS 12 client certificate](../resources/pkcs12certificate.md) are supported.|
 
 ## Response
 
@@ -65,10 +65,11 @@ If successful, this method returns a `204 No Content` response code.
 
 ## Examples
 
-### Request
+### Example 1: Changing display name, targetUrl, and username & password used for basic authentication
+
+#### Request
 
 The following is an example of the request.
-
 
 # [HTTP](#tab/http)
 <!-- {
@@ -110,7 +111,47 @@ Content-Type: application/json
 ---
 
 
-### Response
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+}
+-->
+
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 2: Changing API connector to use client certificate authentication
+
+> **Note:** This will overwrite any previous authenticationConfiguration settings. To change from Basic authentication to certificate authentication, use this. To add additional certificates to list of certificates, use the [Upload client certificate](../api/identityapiconnector-uploadclientcertificate.md) method. When using this method, consequent "Get" or "List" operations of API connectors, `authenticationConfiguration` will be of type [microsoft.graph.clientCertificateAuthentication](../resources/clientcertificateauthentication.md).
+
+#### Request
+
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "update_identityapiconnector"
+}
+-->
+
+``` http
+PATCH https://graph.microsoft.com/beta/identity/apiConnectors/{identityApiConnectorId}
+Content-Type: application/json
+
+{
+  "authenticationConfiguration": {
+    "@odata.type": "#microsoft.graph.pkcs12Certificate",
+    "pkcs12Value": "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA",
+    "password": "secret"
+  }
+}
+```
+
+#### Response
 
 The following is an example of the response.
 

@@ -1,0 +1,86 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "b990a287-7105-11eb-a2f0-283fcfb406cf",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationOnPremisesInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationOnPremisesInfo](https://docs.microsoft.com/en-us/graph/api/resources/educationOnPremisesInfo?view=graph-rest-1.0) resource type.",
+          "Target": "educationOnPremisesInfo"
+        },
+        {
+          "Id": "b990a287-7105-11eb-a2f0-283fcfb406cf",
+          "ApiChange": "Property",
+          "ChangedApiName": "grade",
+          "ChangeType": "Addition",
+          "Description": "Added the **grade** property to [educationUser](https://docs.microsoft.com/en-us/graph/api/resources/educationUser?view=graph-rest-1.0) resource.",
+          "Target": "educationUser"
+        },
+        {
+          "Id": "b990a287-7105-11eb-a2f0-283fcfb406cf",
+          "ApiChange": "Property",
+          "ChangedApiName": "externalSourceDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the **externalSourceDetail** property to [educationUser](https://docs.microsoft.com/en-us/graph/api/resources/educationUser?view=graph-rest-1.0) resource.",
+          "Target": "educationUser"
+        },
+        {
+          "Id": "b990a287-7105-11eb-a2f0-283fcfb406cf",
+          "ApiChange": "Resource",
+          "ChangedApiName": "educationTerm",
+          "ChangeType": "Addition",
+          "Description": "Added the [educationTerm](https://docs.microsoft.com/en-us/graph/api/resources/educationTerm?view=graph-rest-1.0) resource type.",
+          "Target": "educationTerm"
+        },
+        {
+          "Id": "b990a287-7105-11eb-a2f0-283fcfb406cf",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "taughtClasses",
+          "ChangeType": "Addition",
+          "Description": "Added the **taughtClasses** relationship to the [educationUser](https://docs.microsoft.com/en-us/graph/api/resources/educationUser?view=graph-rest-1.0) resource type.",
+          "Target": "educationUser"
+        },
+        {
+          "Id": "b990a287-7105-11eb-a2f0-283fcfb406cf",
+          "ApiChange": "Property",
+          "ChangedApiName": "externalSourceDetail",
+          "ChangeType": "Addition",
+          "Description": "Added  the **externalSourceDetail** property to [educationSchool](https://docs.microsoft.com/en-us/graph/api/resources/educationSchool?view=graph-rest-1.0) resource.",
+          "Target": "educationSchool"
+        },
+        {
+          "Id": "b990a287-7105-11eb-a2f0-283fcfb406cf",
+          "ApiChange": "Method",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](https://docs.microsoft.com/en-us/graph/api/educationClass-delta?view=graph-rest-1.0) method to the [educationClass](https://docs.microsoft.com/en-us/graph/api/resources/educationClass?view=graph-rest-1.0) resource.",
+          "Target": "educationClass"
+        },
+        {
+          "Id": "b990a287-7105-11eb-a2f0-283fcfb406cf",
+          "ApiChange": "Method",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](https://docs.microsoft.com/en-us/graph/api/educationSchool-delta?view=graph-rest-1.0) method to the [educationSchool](https://docs.microsoft.com/en-us/graph/api/resources/educationSchool?view=graph-rest-1.0) resource.",
+          "Target": "educationSchool"
+        },
+        {
+          "Id": "b990a287-7105-11eb-a2f0-283fcfb406cf",
+          "ApiChange": "Method",
+          "ChangedApiName": "delta",
+          "ChangeType": "Addition",
+          "Description": "Added the [delta](https://docs.microsoft.com/en-us/graph/api/educationUser-delta?view=graph-rest-1.0) method to the [educationUser](https://docs.microsoft.com/en-us/graph/api/resources/educationUser?view=graph-rest-1.0) resource.",
+          "Target": "educationUser"
+        }
+      ],
+      "Id": "b990a287-7105-11eb-a2f0-283fcfb406cf",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-03-17T09:51:36.520Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    }
+  ]
+}

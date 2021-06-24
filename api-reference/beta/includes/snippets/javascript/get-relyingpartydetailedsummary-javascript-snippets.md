@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/reports/getRelyingPartyDetailedSummary(period='period_value')')
+let getRelyingPartyDetailedSummary = await client.api('/reports/getRelyingPartyDetailedSummary(period='period_value')')
 	.version('beta')
 	.get();
 

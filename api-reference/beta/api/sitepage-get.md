@@ -69,7 +69,7 @@ GET /sites/{site-id}/pages/{page-id}
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.sitePage", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

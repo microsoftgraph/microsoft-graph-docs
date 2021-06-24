@@ -1,7 +1,7 @@
 ---
 title: "List members of channel"
 description: "List members of a channel."
-author: "laujan"
+author: "akjo"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType

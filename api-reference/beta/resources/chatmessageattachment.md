@@ -3,8 +3,8 @@ title: "chatMessageAttachment resource type"
 description: "Represents an attachment to a chat message entity."
 localization_priority: Normal
 doc_type: resourcePageType
-ms.prod: ""
-author: "clearab"
+ms.prod: "microsoft-teams"
+author: "RamjotSingh"
 ---
 
 # chatMessageAttachment resource type
@@ -21,7 +21,7 @@ An entity of type `chatMessageAttachment` is returned as part of the [Get channe
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |id|string| Read-only. Unique id of the attachment.|
-|contentType| string | The media type of the content attachment. It can have the following values: <br><ul><li>`reference`: Attachment is a link to another file. Populate the contentURL with the link to the object.</li><li>Any contentTypes supported by the Bot Framework's [Attachment object](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?view=azure-bot-service-4.0#attachment-object)</li><li>`application/vnd.microsoft.card.codesnippet`: A code snippet. </li><li>`application/vnd.microsoft.card.announcement`: An announcement header. </li>|
+|contentType| string | The media type of the content attachment. It can have the following values: <br><ul><li>`reference`: Attachment is a link to another file. Populate the contentURL with the link to the object.</li><li>Any contentTypes supported by the Bot Framework's [Attachment object](/azure/bot-service/rest-api/bot-framework-rest-connector-api-reference?#attachment-object)</li><li>`application/vnd.microsoft.card.codesnippet`: A code snippet. </li><li>`application/vnd.microsoft.card.announcement`: An announcement header. </li>|
 |contentUrl|string|URL for the content of the attachment. Supported protocols: http, https, file and data.|
 |content|string|The content of the attachment. If the attachment is a [rich card](/microsoftteams/platform/task-modules-and-cards/cards/cards-reference), set the property to the rich card object. This property and contentUrl are mutually exclusive.|
 |name|string|Name of the attachment.|

@@ -75,7 +75,7 @@ GET https://graph.microsoft.com/beta/print/operations/{id}
 
 ### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -87,7 +87,7 @@ Content-type: application/json
 Content-length: 1199
 
 {
-    "@odata.context": "https://graph.microsoft-ppe.com/beta/$metadata#print/operations/$entity",
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/operations/$entity",
     "@odata.type": "#microsoft.graph.printerCreateOperation",
     "id": "81f4cca3-b3b7-47ea-9f88-7ddbf7208ef4",
     "createdDateTime": "2020-06-15T22:27:03.031849Z",
@@ -98,26 +98,20 @@ Content-length: 1199
     },
     "printer": {
         "registeredDateTime": "2020-06-15T22:27:12.0920077Z",
-        "acceptingJobs": null,
         "isShared": false,
         "id": "e56f9cdd-acec-486f-a05e-b622ff0bcc7d",
-        "name": "Test Printer",
+        "displayName": "Test Printer",
         "manufacturer": "Test Printer Manufacturer",
         "model": "Test Printer Model",
         "isAcceptingJobs": null,
-        "capabilities": null,
         "status": {
-            "processingState": "unknown",
-            "processingStateReasons": [],
-            "processingStateDescription": ""
+            "state": "unknown",
+            "details": [],
+            "description": ""
         },
         "location": {
             "latitude": null,
             "longitude": null
-        },
-        "defaults": {
-            "copiesPerJob": 1,
-            "finishings": []
         }
     }
 }

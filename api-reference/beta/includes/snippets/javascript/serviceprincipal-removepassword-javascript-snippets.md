@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const removePassword = {
-    keyId: "f0b0b335-1d71-4883-8f98-567911bfdca6"
+    keyId: 'f0b0b335-1d71-4883-8f98-567911bfdca6'
 };
 
-let res = await client.api('/servicePrincipals/{id}/removePassword')
+await client.api('/servicePrincipals/{id}/removePassword')
 	.version('beta')
 	.post(removePassword);
 

@@ -1,0 +1,16 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```javascript
+
+const options = {
+	authProvider,
+};
+
+const client = Client.init(options);
+
+let childFolders = await client.api('/me/mailFolders/{id}/childFolders?includeHiddenFolders=true')
+	.get();
+
+```

@@ -114,12 +114,15 @@ mgt-tasks {
 ````
 
 ## Events
+
 | Event | Detail | Description |
 | --- | --- | --- |
-| taskAdded | The detail contains the respective `task` object | Fires when a new task has been created. |
-| taskChanged | The detail contains the respective `task` object | Fires when task metadata has been changed, such as marking completed. |
-| taskClick | The detail contains the respective `task` object | Fires when the user clicks or taps on a task. |
-| taskRemoved | The detail contains the respective `task` object | Fires when an existing task has been deleted. |
+| `taskAdded` | The detail contains the respective `task` object | Fires when a new task has been created. |
+| `taskChanged` | The detail contains the respective `task` object | Fires when task metadata has been changed, such as marking completed. |
+| `taskClick` | The detail contains the respective `task` object | Fires when the user clicks or taps on a task. |
+| `taskRemoved` | The detail contains the respective `task` object | Fires when an existing task has been deleted. |
+
+For more information about handling events, see [events](../customize-components/events.md).
 
 ## Templates
 
@@ -149,15 +152,22 @@ The following example defines a template for the tasks component.
 
 This control uses the following Microsoft Graph APIs and permissions.
 
-| Resource | Permission |
-| - | - |
-| /me/planner/plans | Group.Read.All |
-| /planner/plans/${id} | Group.Read.All, Group.ReadWrite.All |
-| /planner/tasks | Group.ReadWrite.All |
-| /groups/${group-id}/planner/plans | Group.Read.All, Group.ReadWrite.All |
+| Configuration | Permission | API |
+| ------------- | ---------- | --- |
+| `groupId` set and `dataSource` set to `TasksSource.planner` | Group.Read.All | [/groups/${group-id}/planner/plans](/graph/api/plannergroup-list-plans?view=graph-rest-1.0&tabs=http), [/planner/plans/${planId}/buckets](/graph/api/plannerplan-list-buckets?view=graph-rest-1.0&tabs=http), [/planner/buckets/${bucketId}/tasks](/graph/api/plannerplan-list-tasks?view=graph-rest-1.0&tabs=http) |
+| `targetId` set and `dataSource` set to `TasksSource.todo` | Tasks.Read | [/me/outlook/taskGroups](/graph/api/outlookuser-list-taskgroups?view=graph-rest-beta&tabs=http&viewFallbackFrom=graph-rest-1.0), [/me/outlook/taskGroups/${groupId}/taskFolders](/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-beta&tabs=http), [/me/outlook/taskFolders/${folderId}/tasks](/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-beta&tabs=http) |
+| `targetId` set and `dataSource` set to something else than `TasksSource.todo` | Group.Read.All | [/planner/plans/${planId}](/graph/api/plannerplan-get?view=graph-rest-1.0&tabs=http), [/planner/plans/${planId}/buckets](/graph/api/plannerplan-list-buckets?view=graph-rest-1.0&tabs=http), [/planner/buckets/${bucketId}/tasks](/graph/api/plannerplan-list-tasks?view=graph-rest-1.0&tabs=http) |
+| `dataSource` set to `TasksSource.planner` | Group.Read.All | [/me/planner/plans](/graph/api/planneruser-list-plans?view=graph-rest-1.0&tabs=http), [/planner/plans/${planId}/buckets](/graph/api/plannerplan-list-buckets?view=graph-rest-1.0&tabs=http), [/planner/buckets/${bucketId}/tasks](/graph/api/plannerplan-list-tasks?view=graph-rest-1.0&tabs=http) |
+| `dataSource` set to `TasksSource.todo` | Tasks.Read | [/me/outlook/taskGroups](/graph/api/outlookuser-list-taskgroups?view=graph-rest-beta&tabs=http&viewFallbackFrom=graph-rest-1.0), [/me/outlook/taskGroups/${groupId}/taskFolders](/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-beta&tabs=http), [/me/outlook/taskFolders/${folderId}/tasks](/graph/api/outlooktaskfolder-list-tasks?view=graph-rest-beta&tabs=http) |
+| `addTask` set to `true` and `dataSource` set to `TasksSource.planner` | Group.ReadWrite.All | [/planner/tasks](/graph/api/planner-post-tasks?view=graph-rest-1.0&tabs=http) |
+| `addTask` set to `true` and `dataSource` set to `TasksSource.todo` | Tasks.ReadWrite | [/me/outlook/taskFolders/${parentFolderId}/tasks](/graph/api/outlookuser-post-tasks?view=graph-rest-beta&tabs=csharp) |
 
 For the Microsoft Planner data source, fetching and reading tasks requires the Groups.Read.All permission. Adding, updating, or removing tasks requires the Groups.ReadWrite.All permission.
 
 ## Authentication
 
 The tasks component uses the global authentication provider described in the [authentication documentation](../providers/providers.md).
+
+## Cache
+
+The `mgt-tasks` component doesn't cache any data.

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/identity/b2cUserFlows/B2C_1_testuserflow/apiConnectorConfiguration')
+let userFlowApiConnectorConfiguration = await client.api('/identity/b2cUserFlows/B2C_1_testuserflow/apiConnectorConfiguration')
 	.version('beta')
 	.expand('postAttributeCollection')
 	.get();

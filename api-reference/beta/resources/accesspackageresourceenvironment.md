@@ -3,7 +3,7 @@ title: "accessPackageResourceEnvironment resource type"
 description: "An access package resource environment is a reference to the geolocation environment in which a resource is located."
 author: "hanki-microsoft"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -26,13 +26,13 @@ In [Azure AD Entitlement Management](entitlementmanagement-root.md), an access p
 |:---|:---|:---|
 |connectionInfo|[connectionInfo](../resources/connectioninfo.md)|Connection information of an environment used to connect to a resource. |
 |createdBy|String|The display name of the user that created this object.|
-|createdDateTime|DateTimeOffset|The date and time that this object was created. <br>The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `'2014-01-01T00:00:00Z'`.|
+|createdDateTime|DateTimeOffset|The date and time that this object was created. <br>The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |description|String|The description of this *accessPackageResourceEnvironment* object.|
 |displayName|String|The display name of this object.|
 |id|String|The system-assigned unique identifier of the object.|
 |isDefaultEnvironment|Boolean|Determines whether this is default environment or not. It is set to `true` for all static origin systems, such as Azure AD groups and Azure AD Applications.|
 |modifiedBy|String|The display name of the entity that last modified this object.|
-|modifiedDateTime|DateTimeOffset|The date and time that this object was last modified. <br>The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `'2014-01-01T00:00:00Z'`. |
+|modifiedDateTime|DateTimeOffset|The date and time that this object was last modified. <br>The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. |
 |originId|String|The unique identifier of this environment in the origin system.|
 |originSystem|String|The type of the resource in the origin system such as `SharePointOnline`. Supports `$filter`.|
 

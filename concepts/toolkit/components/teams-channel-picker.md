@@ -72,9 +72,12 @@ mgt-teams-channel-picker {
 ```
 
 ## Events
+
 | Event | Detail | Description |
 | --- | --- | --- |
-| selectionChanged | The detail contains the currently selected item  of `{channel : `[MicrosoftGraph.Channel](/graph/api/resources/channel)`, team: `[MicrosoftGraph.Team](/graph/api/resources/team)`}` | Fired when user makes a change in selection of a channel. |
+| `selectionChanged` | The detail contains the currently selected item  of `{channel : `[MicrosoftGraph.Channel](/graph/api/resources/channel)`, team: `[MicrosoftGraph.Team](/graph/api/resources/team)`}` | Fired when user makes a change in selection of a channel. |
+
+For more information about handling events, see [events](../customize-components/events.md).
 
 ## Templates
 
@@ -98,16 +101,37 @@ The following example shows how to use the `error` template.
 
 ## Microsoft Graph permissions
 
-This component uses the following Microsoft Graph APIs and permissions.
+This component uses the following Microsoft Graph APIs and permissions by default.
 
 | API                                                                                                              | Permission  |
 | ---------------------------------------------------------------------------------------------------------------- | ----------- |
 | [/me/joinedTeams](/graph/api/user-list-joinedteams)                    | User.Read.All        |
 | [/teams/${id}/channels](/graph/api/channel-list) | Group.Read.All        |
 
+In version 2.2, the required permissions have been updated to the less restrictive Teams-based permissions. To avoid a breaking change, you need to opt in to the new permissions via a global config.
+
+```ts
+import {MgtTeamsChannelPicker} from "@microsoft/mgt-components";
+
+MgtTeamsChannelPicker.config.useTeamsBasedScopes = true;
+```
+
+With `useTeamsBasedScopes` set to `true`, the Teams Channel Picker will use the following scopes. 
+
+| API                                                                                                              | Permission  |
+| ---------------------------------------------------------------------------------------------------------------- | ----------- |
+| [/me/joinedTeams](/graph/api/user-list-joinedteams)                    | Team.ReadBasic.All        |
+| [/teams/${id}/channels](/graph/api/channel-list) | Channel.ReadBasic.All        |
+
+These will be the default permissions in the next major update.
+
 ## Authentication
 
 The control uses the global authentication provider described in the [authentication documentation](../providers/providers.md).
+
+## Cache
+
+The `mgt-teams-channel-picker` component doesn't cache any data.
 
 ## Extend for more control
 

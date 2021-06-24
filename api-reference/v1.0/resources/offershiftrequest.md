@@ -27,7 +27,7 @@ Represents a request to offer a shift to another user in the team.
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-|recipientActionDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|recipientActionDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |recipientActionMessage|String| Custom message sent by recipient of the offer shift request. |
 |recipientUserId|String| User ID of the recipient of the offer shift request.|
 |senderShiftId|String| User ID of the sender of the offer shift request.|

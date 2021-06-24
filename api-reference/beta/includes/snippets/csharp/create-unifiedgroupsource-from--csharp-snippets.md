@@ -11,11 +11,11 @@ var unifiedGroupSource = new Microsoft.Graph.Ediscovery.UnifiedGroupSource
 	IncludedSources = Microsoft.Graph.Ediscovery.SourceType.Mailbox | Microsoft.Graph.Ediscovery.SourceType.Site,
 	AdditionalData = new Dictionary<string, object>()
 	{
-		{"group@odata.bind", "/groups/000044f9-47c8-4a87-bccf-291fbf006a54"}
+		{"group@odata.bind", "https://graph.microsoft.com/v1.0/groups/b96f95c5-b1b3-4142-b039-8ac79e7d2c84"}
 	}
 };
 
-await graphClient.Compliance.Ediscovery.Cases["{ediscoveryCaseId}"].Custodians["{custodianId}"].UnifiedGroupSources
+await graphClient.Compliance.Ediscovery.Cases["{ediscovery.case-id}"].Custodians["{ediscovery.custodian-id}"].UnifiedGroupSources
 	.Request()
 	.AddAsync(unifiedGroupSource);
 

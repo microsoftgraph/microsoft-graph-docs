@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Me.Outlook.Tasks["AAMkADIyAAAhrb_QAAA="]
+await graphClient.Me.Outlook.Tasks["{outlookTask-id}"]
 	.Request()
 	.DeleteAsync();
 

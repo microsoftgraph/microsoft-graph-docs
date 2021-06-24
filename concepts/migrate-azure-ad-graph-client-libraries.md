@@ -3,7 +3,7 @@ title: "Migrate Azure AD Graph .NET apps to Microsoft Graph"
 description: "Describes how to migrate Azure Active Directory (Azure AD) API apps to Microsoft Graph API."
 author: "dkershaw10"
 localization_priority: Normal
-ms.prod: "azure-active-directory"
+ms.prod: "applications"
 ---
 
 # Migrate .NET client library use to Microsoft Graph

@@ -3,7 +3,7 @@ title: "Delete permissionGrantPolicy"
 description: "Delete a permissionGrantPolicy object."
 localization_priority: Normal
 doc_type: "apiPageType"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 author: "psignoret"
 ---
 
@@ -85,9 +85,7 @@ DELETE https://graph.microsoft.com/beta/policies/permissionGrantPolicies/my-cust
 ### Response
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.permissionGrantPolicy"
+  "blockType": "response"
 } -->
 
 ```http

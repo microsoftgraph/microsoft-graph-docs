@@ -3,7 +3,7 @@ title: "List history"
 description: "Get the riskyUserHistoryItems from the history navigation property."
 author: "cloudhandler"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -52,7 +52,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_riskyuserhistoryitem"
+  "name": "get_riskyuserhistoryitem_2"
 }
 -->
 ``` http

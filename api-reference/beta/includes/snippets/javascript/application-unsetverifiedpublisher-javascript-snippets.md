@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/applications/{id}/unsetVerifiedPublisher')
+await client.api('/applications/{id}/unsetVerifiedPublisher')
 	.version('beta')
 	.post();
 

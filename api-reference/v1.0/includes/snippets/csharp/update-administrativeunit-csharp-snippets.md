@@ -13,7 +13,7 @@ var administrativeUnit = new AdministrativeUnit
 	Visibility = "visibility-value"
 };
 
-await graphClient.Directory.AdministrativeUnits["{id}"]
+await graphClient.Directory.AdministrativeUnits["{administrativeUnit-id}"]
 	.Request()
 	.UpdateAsync(administrativeUnit);
 

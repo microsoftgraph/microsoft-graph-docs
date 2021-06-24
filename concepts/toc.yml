@@ -26,8 +26,6 @@ items:
             href: deployments.md
           - name: Hybrid deployments (preview)
             href: hybrid-rest-support.md
-      - name: Microsoft Graph data connect
-        href: data-connect-overview.md
       - name: Tutorials
         items:
           - name: Overview
@@ -99,8 +97,23 @@ items:
             href: application-saml-sso-configure-api.md
           - name: Configure application proxy
             href: application-proxy-configure-api.md
-          - name: Configure provisioning
-            href: application-provisioning-configure-api.md
+      - name: Accessing data at scale
+        displayName: Microsoft Graph Data Connect
+        items:
+          - name: Overview of Data Connect
+            href: data-connect-concept-overview.md
+          - name: Build your first Data Connect application
+            href: data-connect-quickstart.yml
+          - name: Datasets, regions, and sinks
+            href: data-connect-datasets.md
+          - name: Policies and billing
+            href: data-connect-policies.md
+          - name: User selection and filtering
+            href: data-connect-filtering.md
+          - name: Integrate with PAM
+            href: data-connect-pam.md
+          - name: Frequently asked questions
+            href: data-connect-faq.md
       - name: Calendar
         displayName: Outlook
         items:
@@ -150,6 +163,27 @@ items:
             href: cloud-communications-phone-number.md
       - name: Compliance (preview)
         href: compliance-concept-overview.md
+      - name: Connecting external content (preview)
+        displayName: connectors
+        items:
+          - name: Overview of Microsoft Graph connectors
+            href: connecting-external-content-connectors-overview.md
+          - name: Connectors API
+            href: connecting-external-content-connectors-api-overview.md
+          - name: Use Postman
+            href: connecting-external-content-connectors-api-postman.md
+          - name: Build your first custom connector
+            href: connecting-external-content-build-quickstart.yml            
+          - name: Manage connections
+            href: connecting-external-content-manage-connections.md
+          - name: Manage schema
+            href: connecting-external-content-manage-schema.md
+          - name: Manage items
+            href: connecting-external-content-manage-items.md
+          - name: External groups
+            href: connecting-external-content-external-groups.md            
+          - name: API limits
+            href: connecting-external-content-api-limits.md
       - name: Cross-device experiences
         displayName: Project Rome
         items:
@@ -164,28 +198,10 @@ items:
       - name: Customer booking (preview)
         href: booking-concept-overview.md
         displayName: Bookings, Microsoft Bookings
-      - name: Data access
-        displayName: Microsoft Graph data connect
-        items:
-          - name: Data connect overview
-            href: data-connect-concept-overview.md
-          - name: Get started
-            href: data-connect-get-started.md
-          - name: Datasets, regions, and sinks
-            href: data-connect-datasets.md
-          - name: Policies and licensing
-            href: data-connect-policies.md
-          - name: User selection and filtering
-            href: data-connect-filtering.md
-          - name: Integrate with PAM
-            href: data-connect-pam.md
-          - name: Tips
-            href: data-connect-tips.md
       - name: Devices and apps
         expanded: true
         items:
-          - name: Cloud printing (preview)
-            expanded: true
+          - name: Cloud printing
             items:
               - name: Overview
                 href: universal-print-concept-overview.md
@@ -199,6 +215,25 @@ items:
           - name: Corporate management
             href: intune-concept-overview.md
             displayName: Intune
+          - name: Device updates (preview)
+            displayName: Windows updates
+            items:
+              - name: Overview
+                href: windowsupdates-concept-overview.md
+              - name: Software updates
+                href: windowsupdates-software-updates.md
+              - name: Deployments
+                href: windowsupdates-deployments.md
+              - name: Enroll in management
+                href: windowsupdates-enroll.md
+              - name: Deploy a feature update
+                href: windowsupdates-deploy-update.md
+              - name: Deploy an expedited update
+                href: windowsupdates-deploy-expedited-update.md
+              - name: Schedule a deployment
+                href: windowsupdates-schedule-deployment.md
+              - name: Manage monitoring rules
+                href: windowsupdates-manage-monitoring-rules.md
       - name: Education
         items:
           - name: Overview
@@ -226,6 +261,14 @@ items:
             items:
               - name: Manage access to resources
                 href: tutorial-access-package-api.md
+              - name: Review access to your resources
+                items:
+                  - name: Overview of the access reviews API
+                    href: accessreviews-overview.md
+                  - name: Review access to a security group
+                    href: tutorial-accessreviews-securitygroup.md
+                  - name: Review access to a Microsoft 365 group
+                    href: tutorial-accessreviews-M365group.md
       - name: Mail
         displayName: Outlook, Outlook mail
         items:
@@ -237,6 +280,8 @@ items:
             href: outlook-organize-messages.md
           - name: Get MIME content
             href: outlook-get-mime-message.md
+          - name: Send MIME message
+            href: outlook-send-mime-message.md
           - name: Attach large files
             href: outlook-large-attachments.md
           - name: Get shared messages
@@ -281,7 +326,7 @@ items:
         displayName: Notifications
         items:
           - name: Overview
-            href: notifications-concept-overview.md
+            href: notifications-concept-overview.md                  
           - name: Get started
             displayName: Notifications
             items:
@@ -298,7 +343,7 @@ items:
               - name: Android app integration
                 href: notifications-integrating-with-android.md
               - name: IOS app integration
-                href: notifications-integrating-with-ios.md
+                href: notifications-integrating-with-ios.md                
       - name: People and workplace intelligence
         items:
           - name: Overview
@@ -307,7 +352,9 @@ items:
             href: people-example.md
           - name: Customize the profile card (preview)
             href: add-properties-profilecard.md
-          - name: Customize insights privacy (preview)
+          - name: Item insights overview
+            href: item-insights-overview.md
+          - name: Customize item insights privacy (preview)
             href: insights-customize-item-insights-privacy.md
       - name: Personal contacts
         displayName: Outlook, Outlook contacts, Outlook contact, People
@@ -342,14 +389,8 @@ items:
                 href: search-concept-sort.md
               - name: Refine search results (preview)
                 href: search-concept-aggregation.md
-          - name: Index (preview)
-            items:
-              - name: Manage connections
-                href: search-index-manage-connections.md
-              - name: Manage schema
-                href: search-index-manage-schema.md
-              - name: Manage items
-                href: search-index-manage-items.md
+              - name: Request spelling correction (preview)
+                href: search-concept-speller.md
       - name: Security
         items:
           - name: Overview
@@ -364,6 +405,8 @@ items:
             href: information-protection-overview.md
           - name: Partner opportunities
             href: security-partner-overview.md
+      - name: Service health and communications (preview)
+        href: service-communications-concept-overview.md
       - name: Sites and lists
         href: sharepoint-concept-overview.md
         displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal
@@ -389,8 +432,13 @@ items:
             href: teams-licenses.md
           - name: Send proactive messages with a bot
             href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
-          - name: Send activity feed notifications
+          - name: Activity feed notifications
             href: teams-send-activityfeednotifications.md
+            items:
+              - name: Send activity feed notifications
+                href: teams-send-activityfeednotifications.md
+              - name: Best practices 
+                href: activity-feed-notifications-best-practices.md  
       - name: To-do tasks
         href: todo-concept-overview.md
         displayName: Microsoft To Do
@@ -446,15 +494,22 @@ items:
             href: traverse-the-graph.md
           - name: Paging
             href: paging.md
-          - name: Use query parameters
-            href: query-parameters.md
+          - name: Query parameters
+            displayName: OData query parameters
+            items:
+              - name: Use query parameters
+                href: query-parameters.md
+              - name: Use the search query parameter
+                href: search-query-parameter.md
+              - name: Advanced query capabilities
+                href: aad-advanced-queries.md
           - name: Batching
             displayName: Batch requests
             href: json-batching.md
           - name: Throttling
             href: throttling.md
           - name: Change notifications
-            displayName: Webhooks, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
+            displayName: Webhooks, cloud printing, Unviersal Print, Outlook mail, Outlook calendar, Outlook contacts, Outlook contact, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint, Security, Users, Groups
             items:
               - name: Overview
                 href: webhooks.md
@@ -464,10 +519,21 @@ items:
                 href: webhooks-lifecycle.md
               - name: Notifications with resource data
                 href: webhooks-with-resource-data.md
-              - name: Get notifications delivered different ways (preview)
+              - name: Get notifications delivered different ways
                 href: change-notifications-delivery.md
-              - name: Get change notifications for chat and channel messages
-                href: teams-changenotifications-chatmessage.md
+              - name: Change notifications for cloud printing
+                href: universal-print-webhook-notifications.md
+              - name: Change notification in Microsoft Teams
+                displayName: Change notifications in Microsoft Teams
+                items:
+                  - name: Overview
+                    href: change-notification-in-microsoft-teams-overview.md
+                  - name: Chat and channel messages
+                    href: teams-changenotifications-chatmessage.md
+                  - name: Teams and channels
+                    href: teams-changenotifications-team-and-channel.md
+                  - name: Team membership
+                    href: teams-changenotifications-teamMembership.md
           - name: Change tracking
             displayName: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
             items:
@@ -504,6 +570,8 @@ items:
           - name: Azure AD Graph
             displayName: Migration, Azure AD Graph
             items:
+              - name: Overview
+                href: migrate-azure-ad-graph-overview.md
               - name: Checklist to migrate apps
                 href: migrate-azure-ad-graph-planning-checklist.md
               - name: "1: Review differences"
@@ -574,6 +642,8 @@ items:
                 href: toolkit/get-started/overview.md
               - name: Toolkit for React
                 href: toolkit/get-started/mgt-react.md
+              - name: Toolkit for SPFx
+                href: toolkit/get-started/mgt-spfx.md
           - name: Build your first app
             items:
               - name: Register an Azure Active Directory app
@@ -588,16 +658,22 @@ items:
                 href: toolkit/get-started/build-a-sharepoint-web-part.md
               - name: Build a Microsoft Teams tab
                 href: toolkit/get-started/build-a-microsoft-teams-tab.md
+              - name: Build an Electron app
+                href: toolkit/get-started/build-an-electron-app.md
           - name: Providers
             items:
               - name: Using the providers
                 href: toolkit/providers/providers.md
               - name: MSAL provider
                 href: toolkit/providers/msal.md
+              - name: MSAL 2 provider
+                href: toolkit/providers/msal2.md
               - name: SharePoint provider
                 href: toolkit/providers/sharepoint.md
               - name: Microsoft Teams provider
                 href: toolkit/providers/teams.md
+              - name: Electron provider
+                href: toolkit/providers/electron.md
               - name: Proxy provider
                 href: toolkit/providers/proxy.md
               - name: Custom provider
@@ -624,12 +700,18 @@ items:
                 href: toolkit/components/tasks.md
               - name: To-do tasks
                 href: toolkit/components/todo.md
+              - name: File
+                href: toolkit/components/file.md
+              - name: File list
+                href: toolkit/components/file-list.md
           - name: Customize components
             items:
               - name: Styling components
                 href: toolkit/customize-components/style.md
               - name: Templating components
                 href: toolkit/customize-components/templates.md
+              - name: Handling events
+                href: toolkit/customize-components/events.md
               - name: Caching Microsoft Graph calls in components
                 href: toolkit/customize-components/cache.md
               - name: Localizing components

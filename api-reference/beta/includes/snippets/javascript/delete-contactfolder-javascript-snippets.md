@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/contactFolders/{id}')
+await client.api('/me/contactFolders/{id}')
 	.version('beta')
 	.delete();
 

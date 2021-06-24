@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/mailboxSettings')
+let mailboxSettings = await client.api('/me/mailboxSettings')
 	.version('beta')
 	.get();
 

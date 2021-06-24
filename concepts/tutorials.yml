@@ -75,13 +75,17 @@ landingContent:
             url: /graph/tutorials/spfx
           - text: Teams
             url: /graph/tutorials/teams
-  - title: Scenarios
+          - text: Microsoft Graph Toolkit
+            url: /learn/modules/msgraph-toolkit-intro
+  - title: Learn modules
     linkLists:
-      - linkListType: tutorial
+      - linkListType: learn
         links:
-          - text: Change notifications and change tracking
-            url: /learn/modules/msgraph-changenotifications-trackchanges
-          - text: Optimize data usage with query parameters
-            url: /learn/modules/optimize-data-usage
-          - text: Optimize network traffic
-            url: /learn/modules/optimize-network-traffic
+          - text: Microsoft Graph Fundamentals
+            url: /learn/paths/m365-msgraph-fundamentals
+          - text: Build apps with Microsoft Graph - Associate
+            url: /learn/paths/m365-msgraph-associate
+          - text: Develop apps with the Microsoft Graph Toolkit
+            url: /learn/paths/m365-msgraph-toolkit
+          - text: Explore Microsoft Graph scenarios for JavaScript development
+            url: /learn/paths/m365-msgraph-scenarios

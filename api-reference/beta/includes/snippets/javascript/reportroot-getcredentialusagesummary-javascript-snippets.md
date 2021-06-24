@@ -10,9 +10,9 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/reports/getCredentialUsageSummary(period='D30')')
+let getCredentialUsageSummary = await client.api('/reports/getCredentialUsageSummary(period='D30')')
 	.version('beta')
-	.filter('feature eq 'registration'')
+	.filter('feature eq \'registration\'')
 	.get();
 
 ```

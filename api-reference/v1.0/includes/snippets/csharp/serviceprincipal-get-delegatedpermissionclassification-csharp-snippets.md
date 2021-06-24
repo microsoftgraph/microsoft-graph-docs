@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var delegatedPermissionClassifications = await graphClient.ServicePrincipals["{id}"].DelegatedPermissionClassifications
+var delegatedPermissionClassifications = await graphClient.ServicePrincipals["{servicePrincipal-id}"].DelegatedPermissionClassifications
 	.Request()
 	.GetAsync();
 

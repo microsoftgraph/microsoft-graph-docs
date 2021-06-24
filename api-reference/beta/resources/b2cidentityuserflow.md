@@ -3,7 +3,7 @@ title: "b2cIdentityUserFlow resource type"
 description: "Represents a user flow within an Azure Active Directory B2C tenant."
 localization_priority: Priority
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 author: "jkdouglas"
 ---
 
@@ -47,7 +47,7 @@ To help you set up the most common identity tasks for your applications, Azure A
 |Property|Type|Description|
 |:---------------|:--------|:----------|
 |id|String|The name of the user flow. This is a required value and is immutable after it's created. The name will be prefixed with the value of `B2C_1_` after creation.|
-|userFlowType|userFlowType|The [type of user flow](/azure/active-directory-b2c/user-flow-versions). The supported values for **userFlowType** are:<br/><ul><li>`signUp`</li><li>`signIn`</li><li>`signUpOrSignIn`</li><li>`passwordReset`</li><li>`profileUpdate`</li><li>`resourceOwner`</li>|
+|userFlowType|userFlowType|The [type of user flow](/azure/active-directory-b2c/user-flow-versions). The supported values for **userFlowType** are: `signUp`, `signIn`, `signUpOrSignIn`, `passwordReset`, `profileUpdate`, `resourceOwner`.|
 |userFlowTypeVersion|Single|The version of the user flow.|
 |isLanguageCustomizationEnabled|Boolean|The property that determines whether language customization is enabled within the B2C user flow. Language customization is not enabled by default for B2C user flows.|
 |defaultLanguageTag|String|Indicates the default language of the b2cIdentityUserFlow that is used when no `ui_locale` tag is specified in the request. This field is [RFC 5646](https://tools.ietf.org/html/rfc5646) compliant.|

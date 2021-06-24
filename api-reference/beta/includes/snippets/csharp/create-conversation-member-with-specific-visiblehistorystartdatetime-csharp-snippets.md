@@ -15,7 +15,7 @@ var conversationMember = new AadUserConversationMember
 	}
 };
 
-await graphClient.Chats["19:cf66807577b149cca1b7af0c32eec122@thread.v2"].Members
+await graphClient.Chats["{chat-id}"].Members
 	.Request()
 	.AddAsync(conversationMember);
 

@@ -19,7 +19,7 @@ var bookingBusiness = new BookingBusiness
 	}
 };
 
-await graphClient.BookingBusinesses["fabrikam@M365B489948.onmicrosoft.com"]
+await graphClient.BookingBusinesses["{bookingBusiness-id}"]
 	.Request()
 	.UpdateAsync(bookingBusiness);
 
