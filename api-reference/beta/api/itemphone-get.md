@@ -31,7 +31,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ```http
 GET /me/profile/phones/{id}
-GET /user/{userId}/profile/phones/{id}
+GET /users/{userId}/profile/phones/{id}
 ```
 
 ## Optional query parameters
@@ -56,26 +56,26 @@ If successful, this method returns a `200 OK` response code and an [itemPhone](.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_itemphone"
+  "name": "get_itemphone_1"
 }
 -->
 ``` http
 GET https://graph.microsoft.com/beta/me/profile/phones/{id}
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-itemphone-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-itemphone-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-itemphone-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-itemphone-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-itemphone-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-itemphone-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-itemphone-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-itemphone-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

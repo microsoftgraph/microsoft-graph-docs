@@ -49,7 +49,7 @@ In the request body, supply the values for the relevant [printTaskDefinition](..
 |createdBy|String|Information about the app that created the task definition. Only the `createdBy.displayName` property can be updated.|
 
 ## Response
-If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `200 OK` response code and an updated [printTaskDefinition](../resources/printtaskdefinition.md) object in the response body.
 ## Example
 ### Request
 The following is an example of the request.
@@ -96,10 +96,24 @@ Content-length: 122
 ### Response
 The following is an example of the response.
 <!-- {
-  "blockType": "response"
-} -->
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.printTaskDefinition"
+}
+-->
 ```http
-HTTP/1.1 204 No Content
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "@odata.context": "https://graph.microsoft.com/beta/$metadata#print/taskDefinitions/$entity",
+  "id": "fab143fd-ee61-4358-8558-2c7dee953982",
+  "displayName": "Test TaskDefinitionName",
+  "createdBy": {
+    "appId" : "479688a0-cc3a-4993-ab24-54c7c80b047e",
+    "displayName": "Requesting App Display Name"
+  }
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

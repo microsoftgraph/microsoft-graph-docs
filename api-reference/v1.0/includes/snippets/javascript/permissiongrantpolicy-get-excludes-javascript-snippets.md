@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/policies/permissionGrantPolicies/microsoft-application-admin/excludes')
+let excludes = await client.api('/policies/permissionGrantPolicies/microsoft-application-admin/excludes')
 	.get();
 
 ```

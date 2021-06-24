@@ -11,12 +11,12 @@ const options = {
 const client = Client.init(options);
 
 const onenoteOperation = {
-  id: "id-value",
-  groupId: "groupId-value",
-  renameAs: "renameAs-value"
+  id: 'id-value',
+  groupId: 'groupId-value',
+  renameAs: 'renameAs-value'
 };
 
-let res = await client.api('/me/onenote/sections/{id}/copyToNotebook')
+await client.api('/me/onenote/sections/{id}/copyToNotebook')
 	.post(onenoteOperation);
 
 ```

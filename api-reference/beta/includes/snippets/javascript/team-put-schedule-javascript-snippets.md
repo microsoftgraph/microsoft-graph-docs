@@ -12,10 +12,10 @@ const client = Client.init(options);
 
 const schedule = {
   enabled: true,
-  timeZone: "America/Chicago"
+  timeZone: 'America/Chicago'
 };
 
-let res = await client.api('/teams/{teamId}/schedule')
+await client.api('/teams/{teamId}/schedule')
 	.version('beta')
 	.put(schedule);
 

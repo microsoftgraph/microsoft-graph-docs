@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<AssignedLicense> addLicensesList = new LinkedList<AssignedLicense>();
 AssignedLicense addLicenses = new AssignedLicense();
@@ -25,7 +25,11 @@ addLicensesList.add(addLicenses1);
 LinkedList<UUID> removeLicensesList = new LinkedList<UUID>();
 
 graphClient.me()
-	.assignLicense(addLicensesList,removeLicensesList)
+	.assignLicense(UserAssignLicenseParameterSet
+		.newBuilder()
+		.withAddLicenses(addLicensesList)
+		.withRemoveLicenses(removeLicensesList)
+		.build())
 	.buildRequest()
 	.post();
 

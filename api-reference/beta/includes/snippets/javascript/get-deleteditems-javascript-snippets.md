@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/directory/deleteditems/microsoft.graph.group')
+let group = await client.api('/directory/deleteditems/microsoft.graph.group')
 	.version('beta')
 	.get();
 

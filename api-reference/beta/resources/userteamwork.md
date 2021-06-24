@@ -1,7 +1,7 @@
 ---
 title: "userTeamwork resource type"
 description: "A container for Microsoft Teams features available per user. "
-author: "clearab"
+author: "akjo"
 doc_type: resourcePageType
 localization_priority: Priority
 ms.prod: "microsoft-teams"

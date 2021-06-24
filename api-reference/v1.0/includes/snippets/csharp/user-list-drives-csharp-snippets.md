@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var drives = await graphClient.Users["{userId}"].Drives
+var drives = await graphClient.Users["{user-id}"].Drives
 	.Request()
 	.GetAsync();
 

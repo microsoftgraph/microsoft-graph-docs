@@ -3,7 +3,7 @@ title: "recurrenceRange resource type"
 description: "Describes a date range over which a recurring event repeats. "
 localization_priority: Normal
 author: "harini84"
-ms.prod: ""
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 

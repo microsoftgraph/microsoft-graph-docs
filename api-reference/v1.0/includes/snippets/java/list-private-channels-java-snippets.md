@@ -4,9 +4,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IChannelCollectionPage channels = graphClient.teams("{id}").channels()
+ChannelCollectionPage channels = graphClient.teams("64c323f2-226a-4e64-8ba4-3e6e3f7b9330").channels()
 	.buildRequest()
 	.filter("membershipType eq 'private'")
 	.get();

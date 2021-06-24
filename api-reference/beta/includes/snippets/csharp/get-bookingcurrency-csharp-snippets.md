@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var bookingCurrency = await graphClient.BookingCurrencies["USD"]
+var bookingCurrency = await graphClient.BookingCurrencies["{bookingCurrency-id}"]
 	.Request()
 	.GetAsync();
 

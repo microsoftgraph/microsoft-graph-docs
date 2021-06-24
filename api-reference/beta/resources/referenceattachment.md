@@ -32,7 +32,7 @@ Derived from [attachment](attachment.md).
 |id|String|The attachment ID.  Read-only.|
 |isFolder|Boolean|Specifies whether the attachment is a link to a folder. Must set this to true if **sourceUrl** is a link to a folder. Optional.|
 |isInline|Boolean|Set to true if the attachment appears inline in the body of the embedding object. Optional.|
-|lastModifiedDateTime|DateTimeOffset|The date and time when the attachment was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`. Optional.|
+|lastModifiedDateTime|DateTimeOffset|The date and time when the attachment was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Optional.|
 |name|String|The text that is displayed below the icon representing the embedded attachment. This does not need to be the actual file name. Required.|
 |permission|referenceAttachmentPermission|Specifies the permissions granted for the attachment by the type of provider in **providerType**. Possible values are: `other`, `view`, `edit`, `anonymousView`, `anonymousEdit`, `organizationView`, `organizationEdit`. Optional.|
 |previewUrl|String|Applies to only a reference attachment of an image - URL to get a preview image. Use **thumbnailUrl** and **previewUrl** only when **sourceUrl** identifies an image file. Optional.|

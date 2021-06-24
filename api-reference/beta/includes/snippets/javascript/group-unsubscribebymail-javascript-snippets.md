@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/groups/{id}/unsubscribeByMail')
+await client.api('/groups/{id}/unsubscribeByMail')
 	.version('beta')
 	.post();
 

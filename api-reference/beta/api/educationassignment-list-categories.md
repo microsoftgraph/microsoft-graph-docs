@@ -22,7 +22,7 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) |  EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite  |
 |Delegated (personal Microsoft account) |  Not supported.  |
-|Application | Not Supported. | 
+|Application | EduAssignments.ReadBasic, EduAssignments.ReadWriteBasic, EduAssignments.Read, EduAssignments.ReadWrite | 
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
@@ -49,12 +49,12 @@ The following is an example of the request.
   "name": "get_submissions"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/categories
+GET https://graph.microsoft.com/beta/education/classes/95c15102-5f20-4ca1-8461-0673db4c70a1/assignments/9a5e4047-c1dc-4243-9628-580d3c64b80c/categories
 ```
 ##### Response
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All of the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "ignored",

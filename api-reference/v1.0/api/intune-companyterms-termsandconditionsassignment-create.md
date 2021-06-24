@@ -18,11 +18,11 @@ Create a new [termsAndConditionsAssignment](../resources/intune-companyterms-ter
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -61,12 +61,13 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/v1.0/deviceManagement/termsAndConditions/{termsAndConditionsId}/assignments
 Content-type: application/json
-Content-length: 168
+Content-length: 220
 
 {
   "@odata.type": "#microsoft.graph.termsAndConditionsAssignment",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+    "collectionId": "Collection Id value"
   }
 }
 ```
@@ -76,21 +77,17 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 217
+Content-Length: 269
 
 {
   "@odata.type": "#microsoft.graph.termsAndConditionsAssignment",
   "id": "64c1a196-a196-64c1-96a1-c16496a1c164",
   "target": {
-    "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+    "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+    "collectionId": "Collection Id value"
   }
 }
 ```
-
-
-
-
-
 
 
 

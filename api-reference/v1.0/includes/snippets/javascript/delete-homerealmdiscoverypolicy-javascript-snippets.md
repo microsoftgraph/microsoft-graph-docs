@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/policies/homeRealmDiscoveryPolicies/{id}')
+await client.api('/policies/homeRealmDiscoveryPolicies/{id}')
 	.delete();
 
 ```

@@ -3,7 +3,7 @@ title: "directoryRole: delta"
 description: "Get newly created, updated, or deleted directory roles without having to perform a full read of the entire resource collection. See Using Delta Query for details."
 localization_priority: Normal
 author: "abhijeetsinha"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -71,7 +71,7 @@ Do not supply a request body for this method.
 
 ### Response
 
-If successful, this method returns `200 OK` response code and [directoryRole](../resources/directoryrole.md) collection object in the response body. The response also includes a `nextLink` URL or a `deltaLink` URL.
+If successful, this method returns a `200 OK` response code and [directoryRole](../resources/directoryrole.md) collection object in the response body. The response also includes a `nextLink` URL or a `deltaLink` URL.
 
 - If a `nextLink` URL is returned, there are additional pages of data to be retrieved in the session. The application continues making requests using the `nextLink` URL until a `deltaLink` URL is included in the response.
 
@@ -79,7 +79,7 @@ If successful, this method returns `200 OK` response code and [directoryRole](..
 
 ### Example
 
-##### Request
+#### Request
 
 
 # [HTTP](#tab/http)
@@ -110,9 +110,9 @@ GET https://graph.microsoft.com/v1.0/directoryRoles/delta
 ---
 
 
-##### Response
+#### Response
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- { 
   "blockType": "response",
   "truncated": true,
@@ -124,14 +124,23 @@ HTTP/1.1 200 OK
 Content-type: application/json
 
 {
-  "@odata.context":"https://graph.microsoft.com/v1.0/$metadata#directoryRoles",
-  "@odata.nextLink":"https://graph.microsoft.com/v1.0/directoryRoles/delta?$skiptoken=pqwSUjGYvb3jQpbwVAwEL7yuI3dU1LecfkkfLPtnIjsXoYQp_dpA3cNJWc",
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#directoryRoles",
+  "@odata.nextLink": "https://graph.microsoft.com/v1.0/directoryRoles/delta?$skiptoken=pkXMyA5aFCIMmH1Kk1XEAnf2X-fodqXKXF03gYPQknSHRxogVsxvSq_26nhos-O2-shortened",
   "value": [
-      {
-      "description": "description-value",
-      "displayName": "displayName-value",
-      "roleTemplateId": "roleTemplateId-value",
-      "id": "id-value"
+    {
+      "description": "Device Administrators",
+      "displayName": "Azure AD Joined Device Local Administrator",
+      "roleTemplateId": "9f06204d-73c1-4d4c-880a-6edb90606fd8",
+      "id": "f8e85ed8-f66f-4058-b170-3efae8b9c6e5",
+      "members@delta": [
+        {
+          "@odata.type": "#microsoft.graph.user",
+          "id": "bb165b45-151c-4cf6-9911-cd7188912848",
+          "@removed": {
+            "reason": "deleted"
+          }
+        }
+      ]
     }
   ]
 }

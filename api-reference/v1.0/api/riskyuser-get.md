@@ -3,7 +3,7 @@ title: "Get riskyUser"
 description: "Read the properties and relationships of a riskyUser object."
 author: "cloudhandler"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -53,7 +53,7 @@ If successful, this method returns a `200 OK` response code and a [riskyUser](..
 ### Request
 <!-- {
   "blockType": "request",
-  "name": "get_riskyuser"
+  "name": "get_riskyuser_1"
 }
 -->
 ``` http

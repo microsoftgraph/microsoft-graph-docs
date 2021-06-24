@@ -11,14 +11,14 @@ const options = {
 const client = Client.init(options);
 
 const threatAssessmentRequest = {
-  @odata.type: "#microsoft.graph.fileAssessmentRequest",
-  expectedAssessment: "block",
-  category: "malware",
-  fileName: "test.txt",
-  contentData: "VGhpcyBpcyBhIHRlc3QgZmlsZQ=="
+  '@odata.type': '#microsoft.graph.fileAssessmentRequest',
+  expectedAssessment: 'block',
+  category: 'malware',
+  fileName: 'test.txt',
+  contentData: 'VGhpcyBpcyBhIHRlc3QgZmlsZQ=='
 };
 
-let res = await client.api('/informationProtection/threatAssessmentRequests')
+await client.api('/informationProtection/threatAssessmentRequests')
 	.post(threatAssessmentRequest);
 
 ```

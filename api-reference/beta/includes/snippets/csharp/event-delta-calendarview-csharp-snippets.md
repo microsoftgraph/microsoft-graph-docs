@@ -12,7 +12,7 @@ var queryOptions = new List<QueryOption>()
 	new QueryOption("endDateTime", "2020-06-10T00:00:00Z")
 };
 
-var delta = await graphClient.Me.Calendars["AAMkADI5M1BbeAAA="].CalendarView
+var delta = await graphClient.Me.Calendars["{calendar-id}"].CalendarView
 	.Delta()
 	.Request( queryOptions )
 	.GetAsync();

@@ -11,12 +11,12 @@ const options = {
 const client = Client.init(options);
 
 const authorizationPolicy = {
-   defaultUserRolePermissions:{
-      allowedToCreateApps:false
+   defaultUserRolePermissions: {
+      allowedToCreateApps: false
    }
 };
 
-let res = await client.api('/policies/authorizationPolicy')
+await client.api('/policies/authorizationPolicy')
 	.update(authorizationPolicy);
 
 ```

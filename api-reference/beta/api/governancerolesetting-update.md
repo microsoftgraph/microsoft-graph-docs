@@ -3,7 +3,7 @@ title: "Update governanceRoleSetting"
 description: "Update the properties of governanceRoleSetting."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "shauliu"
 ---
 
@@ -125,8 +125,7 @@ Content-length: 350
 
 ##### Response
 <!-- {
-  "blockType": "response",
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

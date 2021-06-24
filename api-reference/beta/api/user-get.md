@@ -1,7 +1,7 @@
 ---
 title: "Get a user"
 description: "Retrieve the properties and relationships of user object."
-author: "krbain"
+author: "jpettere"
 localization_priority: Priority
 ms.prod: "users"
 doc_type: apiPageType
@@ -28,11 +28,17 @@ One of the following permissions is required to call this API. To learn more, in
 
 Calling the `/me` endpoint requires a signed-in user and therefore a delegated permission. Application permissions are not supported when using the `/me` endpoint.
 
+## HTTP request
+
 For a specific user:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /users/{id | userPrincipalName}
 ```
+
+>**Note:**
+> + When the **userPrincipalName** begins with a `$` character, remove the slash (/) after `/users` and enclose the **userPrincipalName** in parentheses and single quotes. For example, `/users('$AdeleVance@contoso.com')`. For details, see the [known issues](/graph/known-issues#users) list.
+> + To query a B2B user using the **userPrincipalName**, encode the hash (#) character. That is, replace the `#` symbol with `%23`. For example, `/users/AdeleVance_adatum.com%23EXT%23@contoso.com`.
 
 For the signed-in user:
 <!-- { "blockType": "ignored" } -->
@@ -95,7 +101,7 @@ GET https://graph.microsoft.com/beta/me
 ---
 
 ##### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. 
+Here is an example of the response. Note: The response object shown here might be shortened for readability. 
 
 <!-- {
   "blockType": "response",

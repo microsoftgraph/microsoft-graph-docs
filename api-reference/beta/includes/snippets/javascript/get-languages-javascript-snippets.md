@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/profile/languages')
+let languages = await client.api('/me/profile/languages')
 	.version('beta')
 	.get();
 

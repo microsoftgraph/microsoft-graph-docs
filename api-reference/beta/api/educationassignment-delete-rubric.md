@@ -1,5 +1,5 @@
 ---
-title: "Remove educationRubric from educationAssignment"
+title: "Delete educationRubric from educationAssignment"
 description: "Remove an educationRubric from an educationAssignment"
 localization_priority: Normal
 author: "dipakboyed"
@@ -13,7 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove an [educationRubric](../resources/educationrubric.md) from an [educationAssignment](../resources/educationassignment.md).  This does not delete the rubric itself.
+Delete an [educationRubric](../resources/educationrubric.md) from an [educationAssignment](../resources/educationassignment.md).
+This method does not delete the rubric itself.
 
 ## Permissions
 
@@ -54,13 +55,14 @@ If successful, this method returns a `204 No Content` response code. It does not
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_educationrubric_from_educationassignment"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/beta/education/me/assignments/{id}/rubric/$ref
+DELETE https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/rubric/$ref
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-educationrubric-from-educationassignment-csharp-snippets.md)]
@@ -84,8 +86,6 @@ DELETE https://graph.microsoft.com/beta/education/me/assignments/{id}/rubric/$re
 ### Response
 
 The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
 
 <!-- {
   "blockType": "response",

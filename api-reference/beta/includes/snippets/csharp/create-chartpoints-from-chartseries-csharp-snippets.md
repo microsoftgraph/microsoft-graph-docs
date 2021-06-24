@@ -10,7 +10,7 @@ var workbookChartPoint = new WorkbookChartPoint
 {
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"].Charts["{name}"].Series["{undefined}"].Points
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"].Charts["{workbookChart-id}"].Series["{workbookChartSeries-id}"].Points
 	.Request()
 	.AddAsync(workbookChartPoint);
 

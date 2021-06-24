@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const driveItem = {
-  name: "new-file-name.docx"
+  name: 'new-file-name.docx'
 };
 
-let res = await client.api('/me/drive/items/{item-id}')
+await client.api('/me/drive/items/{item-id}')
 	.version('beta')
 	.update(driveItem);
 

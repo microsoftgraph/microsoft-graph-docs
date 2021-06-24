@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/identityGovernance/entitlementManagement/connectedOrganizations/{id}/externalSponsors')
+let externalSponsors = await client.api('/identityGovernance/entitlementManagement/connectedOrganizations/{id}/externalSponsors')
 	.version('beta')
 	.get();
 

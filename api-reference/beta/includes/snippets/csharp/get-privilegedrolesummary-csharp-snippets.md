@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var privilegedRoleSummary = await graphClient.PrivilegedRoles["{id}"].Summary
+var privilegedRoleSummary = await graphClient.PrivilegedRoles["{privilegedRole-id}"].Summary
 	.Request()
 	.GetAsync();
 

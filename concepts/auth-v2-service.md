@@ -3,7 +3,7 @@ title: "Get access without a user"
 description: "Some apps call Microsoft Graph with their own identity and not on behalf of a user. In many cases, these are background services or daemons that run on a server without the presence of a signed-in user."
 author: "jackson-woods"
 localization_priority: Priority
-ms.prod: "microsoft-identity-platform"
+ms.prod: "applications"
 ms.custom: graphiamtop20
 ---
 
@@ -132,7 +132,7 @@ client_id=535fb089-9ff3-47b6-9bfb-4f1264799865
 |:--------------|:----------|:------------
 | tenant        | Required  | The directory tenant that you want to request permission from. This can be in GUID or friendly name format.
 | client_id     | Required  | The Application ID that the [Azure app registration portal](https://go.microsoft.com/fwlink/?linkid=2083908) assigned when you registered your app.
-| scope         | Required  | The value passed for the `scope` parameter in this request should be the resource identifier (Application ID URI) of the resource you want, affixed with the `.default` suffix. For Microsoft Graph, the value is `https://graph.microsoft.com/.default`. This value informs the Microsoft identity platform endpoint that of all the application permissions you have configured for your app, it should issue a token for the ones associated with the resource you want to use.
+| scope         | Required  | The value passed for the `scope` parameter in this request should be the resource identifier (Application ID URI) of the resource you want, affixed with the `.default` suffix. For Microsoft Graph, the value is `https://graph.microsoft.com/.default`. This value informs the Microsoft identity platform endpoint that of all the application permissions you have configured for your app in the app registration portal, it should issue a token for the ones associated with the resource you want to use.
 | client_secret | Required  | The Application Secret that you generated for your app in the app registration portal.
 | grant_type    | Required  | Must be `client_credentials`.
 
@@ -220,3 +220,9 @@ You can explore this scenario further with the following resources:
 
 - For information about using the Microsoft identity platform with different kinds of apps, see the **Get Started** links in the [Microsoft identity platform documentation](/azure/active-directory/develop/active-directory-developers-guide). The guide contains links to overview topics, quickstarts, tutorials, code samples, and protocol documentation for different kinds of apps supported by the Microsoft identity platform.
 - For information about the Microsoft Authentication Library (MSAL) and server middleware available for use with the Microsoft identity platform endpoint, see [Microsoft Authentication Libraries](/azure/active-directory/develop/active-directory-authentication-libraries).
+
+
+## See also
+
+- For an example of a web app hosted on Azure App Service calling Microsoft Graph as the app (using managed identities), see [Tutorial: Access Microsoft Graph from a secured app as the app](/azure/app-service/scenario-secure-app-access-microsoft-graph-as-app). This tutorial shows you how to create a system-assigned managed identity on a web app, add Microsoft Graph API permissions to a managed identity, and call Microsoft Graph.
+- For samples using the Microsoft identity platform to secure different application types, see [Microsoft identity platform code samples (v2.0 endpoint)](/azure/active-directory/develop/sample-v2-code).

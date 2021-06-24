@@ -59,7 +59,7 @@ The following example updates the **Color** and **Quantity** fields of the list 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "update-listitem", "scopes": "sites.readwrite.all" } -->
 
-```json
+```http
 PATCH https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items/{item-id}/fields
 Content-Type: application/json
 
@@ -91,7 +91,7 @@ Content-Type: application/json
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.fieldValueSet", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

@@ -3,7 +3,7 @@ title: "List externalSponsors"
 description: "Retrieve a list of connectedOrganization's externalSponsors."
 author: "markwahl-msft"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 

@@ -192,7 +192,7 @@ Content-type: application/json
 }
 ```
 
-Some things to note about the example response above:
+Some things to note about the previous example response:
 
 - When the user is deleted, the item contains an annotation: `@removed` with value of `"reason": "changed"`.
 

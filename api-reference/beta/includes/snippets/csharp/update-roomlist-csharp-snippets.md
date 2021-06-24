@@ -28,7 +28,7 @@ var place = new RoomList
 	}
 };
 
-await graphClient.Places["Building1RroomList@contoso.onmicrosoft.com"]
+await graphClient.Places["{place-id}"]
 	.Request()
 	.UpdateAsync(place);
 

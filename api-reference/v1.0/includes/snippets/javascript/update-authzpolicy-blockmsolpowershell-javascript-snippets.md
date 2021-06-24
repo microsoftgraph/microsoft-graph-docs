@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const authorizationPolicy = {
-   blockMsolPowerShell:true
+   blockMsolPowerShell: true
 };
 
-let res = await client.api('/policies/authorizationPolicy')
+await client.api('/policies/authorizationPolicy')
 	.update(authorizationPolicy);
 
 ```

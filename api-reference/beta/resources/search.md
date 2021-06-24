@@ -35,7 +35,7 @@ None
 
 | Method       | Return Type | Description |
 |:-------------|:------------|:------------|
-| [query](../api/search-query.md) | [searchResponse](searchresponse.md) Collection| Executes the query specified in the [searchRequest](../resources/searchrequest.md) |
+| [query](../api/search-query.md) | [searchResponse](searchresponse.md)| Executes the query specified in the [searchRequest](../resources/searchrequest.md) |
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->

@@ -16,7 +16,7 @@ var claimsMappingPolicy = new ClaimsMappingPolicy
 	IsOrganizationDefault = true
 };
 
-await graphClient.Policies.ClaimsMappingPolicies["{id}"]
+await graphClient.Policies.ClaimsMappingPolicies["{claimsMappingPolicy-id}"]
 	.Request()
 	.UpdateAsync(claimsMappingPolicy);
 

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Post post = new Post();
 ItemBody body = new ItemBody();
@@ -13,7 +13,10 @@ body.content = "content-value";
 post.body = body;
 
 graphClient.groups("{id}").threads("{id}")
-	.reply(post)
+	.reply(ConversationThreadReplyParameterSet
+		.newBuilder()
+		.withPost(post)
+		.build())
 	.buildRequest()
 	.post();
 

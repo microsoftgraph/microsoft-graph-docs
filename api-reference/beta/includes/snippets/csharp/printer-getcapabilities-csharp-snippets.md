@@ -6,9 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Print.Printers["{id}"]
+var printerCapabilities = await graphClient.Print.Printers["{printer-id}"]
 	.GetCapabilities()
 	.Request()
-	.PostAsync();
+	.GetAsync();
 
 ```

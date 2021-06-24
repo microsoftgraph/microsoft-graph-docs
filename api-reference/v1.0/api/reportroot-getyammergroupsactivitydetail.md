@@ -122,7 +122,7 @@ GET https://graph.microsoft.com/v1.0/reports/getYammerGroupsActivityDetail(date=
 
 The following is an example of the response.
 
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.report" } --> 
+<!-- { "blockType": "response" } --> 
 
 ```http
 HTTP/1.1 302 Found

@@ -11,21 +11,21 @@ const options = {
 const client = Client.init(options);
 
 const unifiedRoleDefinition = {
-  description: "Update basic properties of application registrations",
-  displayName: "Application Registration Support Administrator",
-  rolePermissions:
+  description: 'Update basic properties of application registrations',
+  displayName: 'Application Registration Support Administrator',
+  rolePermissions: 
     [
         {
             allowedResourceActions: 
             [
-                "microsoft.directory/applications/basic/read"
+                'microsoft.directory/applications/basic/read'
             ]
         }
     ],
-    "isEnabled" : "true"
+    isEnabled: 'true'
 };
 
-let res = await client.api('/roleManagement/directory/roleDefinitions')
+await client.api('/roleManagement/directory/roleDefinitions')
 	.version('beta')
 	.post(unifiedRoleDefinition);
 

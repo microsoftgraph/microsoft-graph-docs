@@ -4,12 +4,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 CalendarGroup calendarGroup = new CalendarGroup();
-calendarGroup.name = "name-value";
-calendarGroup.classId = UUID.fromString("classId-value");
-calendarGroup.changeKey = "changeKey-value";
+calendarGroup.name = "Personal events";
 
 graphClient.me().calendarGroups()
 	.buildRequest()

@@ -3,7 +3,7 @@ title: "identityUserFlowAttribute resource type"
 description: "Represents user flow attributes in an Azure Active Directory tenant and an Azure AD B2C tenant."
 localization_priority: Priority
 doc_type: resourcePageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 author: "jkdouglas"
 ---
 
@@ -16,6 +16,8 @@ Namespace: microsoft.graph
 Represents user flow attributes in an Azure Active Directory (Azure AD) tenant and an Azure AD B2C tenant.
 
 Configuring user flow attributes in your Azure AD or Azure AD B2C tenant allows you to collect information about a user during sign-up. You can choose to collect a built-in set of attribute; for example, Given Name, Surname, City, and Postal Code. You can also configure custom user flow attributes to collect information from a user that is not built in to the directory. Custom user flow attributes are an abstraction over [Azure Active Directory schema extensions](/azure/active-directory/develop/active-directory-schema-extensions).
+
+[identityBuiltInUserFlowAttributes](../resources/identitybuiltinuserflowattribute.md) and [identityCustomUserFlowAttributes](../resources/identitycustomuserflowattribute.md) both inherit from this base type.
 
 ## Methods
 
@@ -34,8 +36,8 @@ Configuring user flow attributes in your Azure AD or Azure AD B2C tenant allows 
 |id|String|The identifier of the user flow attribute. This is a read-only attribute that is automatically created.|
 |displayName|String|The display name of the user flow attribute.|
 |description|String|The description of the user flow attribute that's shown to the user at the time of sign-up.|
-|userFlowAttributeType|String|The type of the user flow attribute. This is a read-only attribute that is automatically set. Depending on the type of attribute, the values for this property will be `builtIn` or `custom`.|
-|dataType|String|The data type of the user flow attribute. This cannot be modified after the custom user flow attribute is created. The supported values for **dataType** are:<br/><ul><li>`string` - denotes that the dataType for the identityUserFlowAttribute is a string. </li><li>`boolean` - denotes that the dataType for the identityUserFlowAttribute is a Boolean.</li><li>`int64` - denotes that the dataType for the identityUserFlowAttribute is an integer.</li></ul>|
+|userFlowAttributeType|identityUserFlowAttributeType|The type of the user flow attribute. This is a read-only attribute that is automatically set. Depending on the type of attribute, the values for this property will be `builtIn`, `custom`, or `required`.|
+|dataType|identityUserFlowAttributeDataType|The data type of the user flow attribute. This cannot be modified after the custom user flow attribute is created. The supported values for **dataType** are: `string` , `boolean` , `int64` , `stringCollection` , `dateTime`.|
 
 ## JSON representation
 

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Groups["{id}"].RejectedSenders.References
+await graphClient.Groups["{group-id}"].RejectedSenders.References
 	.Request()
 	.DeleteAsync();
 

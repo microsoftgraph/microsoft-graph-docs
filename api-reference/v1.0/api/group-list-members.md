@@ -2,7 +2,7 @@
 title: "List members"
 description: "Get a list of the group's direct members. A group can have users, organizational contacts, devices, service principals and other groups as members."
 localization_priority: Priority
-author: "yyuank"
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/v1.0/groups/{id}/members
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -188,7 +188,7 @@ ConsistencyLevel: eventual
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -235,7 +235,7 @@ ConsistencyLevel: eventual
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

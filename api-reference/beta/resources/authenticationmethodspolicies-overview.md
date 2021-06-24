@@ -3,7 +3,6 @@ title: "Azure AD authentication methods policy API overview"
 description: "Authentication methods policies define which authentication methods can be used by users in Azure AD."
 localization_priority: Normal
 author: "mmcla"
-ms.author: michmcla
 ms.prod: "identity-and-sign-in"
 doc_type: "conceptualPageType"
 ---
@@ -20,17 +19,23 @@ The authentication method policies APIs are used to manage policy settings. For 
 
 * Define the types of FIDO2 security keys that can be used in the Azure AD tenant.
 * Define the users or groups of users who are allowed to use FIDO2 Security Keys or Passwordless Phone Sign-in to sign in to Azure AD.
+* Define the users or groups of users who should be reminded to set up the Microsoft Authenticator for MFA using push notifications.
 
 ## What authentication methods policies can be managed in Microsoft Graph?
 
 |Authentication method policy       | Description |
-|:---------------------------|:------------|:------------|
+|:---------------------------|:------------|
 |[smsAuthenticationMethodConfiguration](smsAuthenticationMethodConfiguration.md)| Define users who can use Text Message on the Azure AD tenant.|
 |[fido2authenticationmethodconfiguration](fido2authenticationmethodconfiguration.md)| Define FIDO2 security key restrictions and users who can use them to sign in to Azure AD.|
 |[microsoftauthenticatorauthenticationmethodconfiguration](microsoftauthenticatorauthenticationmethodconfiguration.md)|Define users who can use Microsoft Authenticator on the Azure AD tenant.|
 |[emailauthenticationmethodconfiguration](emailauthenticationmethodconfiguration.md)|Define users who can use email OTP on the Azure AD tenant.|
 |[passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration](passwordlessmicrosoftauthenticatorauthenticationmethodconfiguration.md) (deprecated)|Define users who can use Passwordless Phone Sign-in to sign in to Azure AD.|
 |[temporaryaccesspassauthenticationmethodconfiguration](temporaryaccesspassauthenticationmethodconfiguration.md)|Define users who can use Temporary Access Pass to sign in to Azure AD.|
+
+## Policies available to push users to set up authentication methods:
+|Policy       | Description |
+|:---------------------------|:------------|
+|[authenticationMethodsRegistrationCampaign](authenticationmethodsregistrationcampaign.md)| Define users who should be reminded to set up an authentication method (only supported for the Microsoft Authenticator).|
 
 ## Next steps
 

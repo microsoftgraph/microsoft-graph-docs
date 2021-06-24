@@ -1,7 +1,7 @@
 ---
 title: "List memberOf"
 description: "Get groups and directory roles that the user is a direct member of. "
-author: "krbain"
+author: "Jordanndahl"
 localization_priority: Priority
 ms.prod: "users"
 doc_type: apiPageType
@@ -11,14 +11,14 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Get [groups](../resources/group.md) and [directory roles](../resources/directoryrole.md) that the user is a direct member of. 
+Get [groups](../resources/group.md), [directory roles](../resources/directoryrole.md), and [administrative units](../resources/administrativeunit.md) that the user is a direct member of. 
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account) | Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Delegated (work or school account) | User.Read, GroupMember.Read.All, Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Directory.Read.All, Directory.ReadWrite.All |
 
@@ -87,7 +87,7 @@ GET https://graph.microsoft.com/v1.0/users/{id}/memberOf
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -130,7 +130,7 @@ ConsistencyLevel: eventual
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response"
@@ -138,6 +138,8 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
+
+17
 ```
 
 ### Example 3: Use OData cast to get only a count of group membership
@@ -165,6 +167,8 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
+
+16
 ```
 
 ### Example 4: Use $search and OData cast to get membership in groups with display names that contain the letters 'tier' including a count of returned objects
@@ -186,7 +190,7 @@ ConsistencyLevel: eventual
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -229,7 +233,7 @@ ConsistencyLevel: eventual
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

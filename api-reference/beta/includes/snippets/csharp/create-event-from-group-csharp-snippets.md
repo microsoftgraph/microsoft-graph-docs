@@ -42,7 +42,7 @@ var @event = new Event
 	}
 };
 
-await graphClient.Groups["01d4ee64-15ce-491e-bad1-b91aa3223df4"].Events
+await graphClient.Groups["{group-id}"].Events
 	.Request()
 	.AddAsync(@event);
 

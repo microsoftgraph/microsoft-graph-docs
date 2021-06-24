@@ -11,7 +11,7 @@ var driveItem = new DriveItem
 	Name = "new-file-name.docx"
 };
 
-await graphClient.Me.Drive.Items["{item-id}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"]
 	.Request()
 	.UpdateAsync(driveItem);
 

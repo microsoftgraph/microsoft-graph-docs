@@ -14,7 +14,7 @@ const educationAssignmentSettings = {
   submissionAnimationDisabled: true
 };
 
-let res = await client.api('/education/classes/{id}/assignmentSettings')
+await client.api('/education/classes/{id}/assignmentSettings')
 	.version('beta')
 	.update(educationAssignmentSettings);
 

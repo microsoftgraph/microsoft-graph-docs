@@ -17,7 +17,7 @@ var mailFolder = new MailSearchFolder
 	FilterQuery = "contains(subject, 'weekly digest')"
 };
 
-await graphClient.Me.MailFolders["AQMkADYAAAIBDAAAAA=="].ChildFolders
+await graphClient.Me.MailFolders["{mailFolder-id}"].ChildFolders
 	.Request()
 	.AddAsync(mailFolder);
 

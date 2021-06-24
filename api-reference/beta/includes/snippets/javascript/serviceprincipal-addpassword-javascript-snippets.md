@@ -12,11 +12,11 @@ const client = Client.init(options);
 
 const addPassword = {
   passwordCredential: {
-    displayName: "Password friendly name"
+    displayName: 'Password friendly name'
   }
 };
 
-let res = await client.api('/servicePrincipals/{id}/addPassword')
+await client.api('/servicePrincipals/{id}/addPassword')
 	.version('beta')
 	.post(addPassword);
 

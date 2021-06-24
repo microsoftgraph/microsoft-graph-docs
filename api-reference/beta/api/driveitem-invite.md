@@ -123,7 +123,7 @@ Here is an example of the response.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -158,7 +158,7 @@ Here is an example of the partial response.
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.permission)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 207 Multi-Status
 Content-type: application/json
 

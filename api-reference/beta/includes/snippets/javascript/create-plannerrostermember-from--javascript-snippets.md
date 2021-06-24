@@ -11,11 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const plannerRosterMember = {
-  @odata.type: "#microsoft.graph.plannerRosterMember",
-  userId: "String"
+  '@odata.type': '#microsoft.graph.plannerRosterMember',
+  userId: 'String'
 };
 
-let res = await client.api('/planner/rosters/6519868f-868f-6519-8f86-19658f861965/members')
+await client.api('/planner/rosters/6519868f-868f-6519-8f86-19658f861965/members')
 	.version('beta')
 	.post(plannerRosterMember);
 

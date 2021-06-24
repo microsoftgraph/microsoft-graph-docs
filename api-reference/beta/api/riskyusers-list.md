@@ -4,7 +4,7 @@ description: "Retrieve the properties and relationships of a collection of **ris
 localization_priority: Normal
 author: "cloudhandler"
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 ---
 # List riskyUsers
 

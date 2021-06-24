@@ -11,69 +11,69 @@ const options = {
 const client = Client.init(options);
 
 const groupSetting = {
-  displayName: "Group.Unified",
-  templateId: "62375ab9-6b52-47ed-826b-58e47e0e304b",
+  displayName: 'Group.Unified',
+  templateId: '62375ab9-6b52-47ed-826b-58e47e0e304b',
   values: [
     {
-      name: "EnableMIPLabels",
-      value: "false"
+      name: 'EnableMIPLabels',
+      value: 'false'
     },
     {
-      name: "CustomBlockedWordsList",
-      value: ""
+      name: 'CustomBlockedWordsList',
+      value: ''
     },
     {
-      name: "EnableMSStandardBlockedWords",
-      value: "false"
+      name: 'EnableMSStandardBlockedWords',
+      value: 'false'
     },
     {
-      name: "ClassificationDescriptions",
-      value: ""
+      name: 'ClassificationDescriptions',
+      value: ''
     },
     {
-      name: "DefaultClassification",
-      value: ""
+      name: 'DefaultClassification',
+      value: ''
     },
     {
-      name: "PrefixSuffixNamingRequirement",
-      value: ""
+      name: 'PrefixSuffixNamingRequirement',
+      value: ''
     },
     {
-      name: "AllowGuestsToBeGroupOwner",
-      value: "false"
+      name: 'AllowGuestsToBeGroupOwner',
+      value: 'false'
     },
     {
-      name: "AllowGuestsToAccessGroups",
-      value: "true"
+      name: 'AllowGuestsToAccessGroups',
+      value: 'true'
     },
     {
-      name: "GuestUsageGuidelinesUrl",
-      value: ""
+      name: 'GuestUsageGuidelinesUrl',
+      value: ''
     },
     {
-      name: "GroupCreationAllowedGroupId",
-      value: ""
+      name: 'GroupCreationAllowedGroupId',
+      value: ''
     },
     {
-      name: "AllowToAddGuests",
-      value: "true"
+      name: 'AllowToAddGuests',
+      value: 'true'
     },
     {
-      name: "UsageGuidelinesUrl",
-      value: ""
+      name: 'UsageGuidelinesUrl',
+      value: ''
     },
     {
-      name: "ClassificationList",
-      value: ""
+      name: 'ClassificationList',
+      value: ''
     },
     {
-      name: "EnableGroupCreation",
-      value: "true"
+      name: 'EnableGroupCreation',
+      value: 'true'
     }
   ]
 };
 
-let res = await client.api('/groupSettings/{id}')
+await client.api('/groupSettings/{id}')
 	.update(groupSetting);
 
 ```

@@ -11,7 +11,7 @@ var queryOptions = new List<QueryOption>()
 	new QueryOption("expand", "fields")
 };
 
-var listItemVersion = await graphClient.Sites["{site-id}"].Lists["{list-id}"].Items["{item-id}"].Versions["{version-id}"]
+var listItemVersion = await graphClient.Sites["{site-id}"].Lists["{list-id}"].Items["{listItem-id}"].Versions["{listItemVersion-id}"]
 	.Request( queryOptions )
 	.GetAsync();
 

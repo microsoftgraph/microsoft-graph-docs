@@ -89,7 +89,7 @@ GET /me/followedSites
 ### Response
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.site)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

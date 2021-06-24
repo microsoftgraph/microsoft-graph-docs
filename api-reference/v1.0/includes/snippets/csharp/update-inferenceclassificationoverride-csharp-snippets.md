@@ -11,7 +11,7 @@ var inferenceClassificationOverride = new InferenceClassificationOverride
 	ClassifyAs = InferenceClassificationType.Focused
 };
 
-await graphClient.Me.InferenceClassification.Overrides["{id}"]
+await graphClient.Me.InferenceClassification.Overrides["{inferenceClassificationOverride-id}"]
 	.Request()
 	.UpdateAsync(inferenceClassificationOverride);
 

@@ -41,7 +41,7 @@ POST /print/shares/{id}/allowedGroups/$ref
 In the request body, supply a reference to a group entity by using the `@odata.id` format, as shown in the following example.
 
 ## Response
-If successful, this method returns a `201 Created` response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Example
 ### Request
@@ -86,9 +86,7 @@ In the request body, supply a reference to a group entity by including the group
 ### Response
 The following is an example of the response. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

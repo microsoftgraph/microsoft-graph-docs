@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /teams/{id}
+PATCH /teams/{team-id}
 ```
 ## Request headers
 | Header       | Value |
@@ -99,9 +99,7 @@ Content-length: 211
 
 #### Response
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.team"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

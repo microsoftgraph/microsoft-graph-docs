@@ -1,7 +1,7 @@
 ---
 title: "groupLifecyclePolicy: removeGroup"
 description: "Removes a group from a lifecycle policy."
-author: "yyuank"
+author: "Jordanndahl"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
@@ -66,7 +66,7 @@ Content-length: 57
 ```
 
 ##### Response
-<!-- { "blockType": "ignored" } -->
+<!-- { "blockType": "response" } -->
 
 ```http
 HTTP/1.1 200 OK

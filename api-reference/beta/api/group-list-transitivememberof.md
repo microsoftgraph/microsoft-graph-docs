@@ -2,7 +2,7 @@
 title: "List group transitive memberOf"
 description: "Get groups and administrative units that the group is a member of."
 localization_priority: Normal
-author: "yyuank"
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/beta/groups/{id}/transitiveMemberOf
 #### Response
 
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -199,7 +199,7 @@ ConsistencyLevel: eventual
 #### Response
 
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -241,7 +241,7 @@ ConsistencyLevel: eventual
 #### Response
 
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

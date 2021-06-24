@@ -11,12 +11,12 @@ const options = {
 const client = Client.init(options);
 
 const attachment = {
-  @odata.type: "#microsoft.graph.fileAttachment",
-  name: "smile",
-  contentBytes: "a0b1c76de9f7="
+  '@odata.type': '#microsoft.graph.fileAttachment',
+  name: 'smile',
+  contentBytes: 'a0b1c76de9f7='
 };
 
-let res = await client.api('/me/messages/AAMkpsDRVK/attachments')
+await client.api('/me/messages/AAMkpsDRVK/attachments')
 	.version('beta')
 	.post(attachment);
 

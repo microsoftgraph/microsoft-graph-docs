@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/pendingAccessReviewInstances')
+let pendingAccessReviewInstances = await client.api('/me/pendingAccessReviewInstances')
 	.version('beta')
 	.expand('definition')
 	.skip(0)

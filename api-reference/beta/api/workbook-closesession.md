@@ -25,7 +25,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/closeSession
+POST /me/drive/items/{id}/workbook/closeSession
+POST /me/drive/root:/{item-path}:/workbook/closeSession
 workbook-session-id: {session-id}
 ```
 ## Request headers

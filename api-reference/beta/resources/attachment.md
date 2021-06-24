@@ -60,7 +60,7 @@ The following are the base properties of any attachment resource. Refer to the s
 |contentType|String|The MIME type.|
 |id|String| Read-only.|
 |isInline|Boolean|`true` if the attachment is an inline attachment; otherwise, `false`.|
-|lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`|
+|lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |name|String|The display name of the attachment. This does not need to be the actual file name.|
 |size|Int32|The length of the attachment in bytes.|
 

@@ -4,7 +4,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 TeleconferenceDeviceQuality quality = new TeleconferenceDeviceQuality();
 quality.callChainId = UUID.fromString("0622673d-9f69-49b3-9d4f-5ec64f42ecce");
@@ -85,7 +85,10 @@ mediaQualityListList.add(mediaQualityList2);
 quality.mediaQualityList = mediaQualityListList;
 
 graphClient.communications().calls()
-	.logTeleconferenceDeviceQuality(quality)
+	.logTeleconferenceDeviceQuality(CallLogTeleconferenceDeviceQualityParameterSet
+		.newBuilder()
+		.withQuality(quality)
+		.build())
 	.buildRequest()
 	.post();
 

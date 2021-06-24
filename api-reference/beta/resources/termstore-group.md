@@ -36,6 +36,7 @@ Inherits from [entity](../resources/entity.md).
 | id                   | string             | Unique identifier of group. Read-Only.
 | displayName          | string             | Name of group.
 | scope                | string              | Returns type of group. Possible values are 'global', 'system' and 'siteCollection'.
+| parentSiteId         | string             | Id of the parent site of this group.
 
 ## Relationships
 | Relationship       | Type                        | Description
@@ -60,7 +61,8 @@ The following is a JSON representation of a **group** resource.
   "createdDateTime": "string (timestamp)",
   "description": "string",
   "scope" : "microsoft.graph.termStore.groupScope",
-  "displayName": "string" 
+  "displayName": "string",
+  "parentSiteId" : "string"
 }
 ```
 

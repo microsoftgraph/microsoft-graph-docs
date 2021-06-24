@@ -18,11 +18,11 @@ List properties and relationships of the [managedDeviceMobileAppConfigurationAss
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegated (work or school account)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 287
+Content-Length: 281
 
 {
   "value": [
@@ -66,17 +66,12 @@ Content-Length: 287
       "@odata.type": "#microsoft.graph.managedDeviceMobileAppConfigurationAssignment",
       "id": "4df81c9c-1c9c-4df8-9c1c-f84d9c1cf84d",
       "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+        "@odata.type": "microsoft.graph.allLicensedUsersAssignmentTarget"
       }
     }
   ]
 }
 ```
-
-
-
-
-
 
 
 

@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var personAnnotation = await graphClient.Me.Profile.Notes["{id}"]
+var personAnnotation = await graphClient.Me.Profile.Notes["{personAnnotation-id}"]
 	.Request()
 	.GetAsync();
 

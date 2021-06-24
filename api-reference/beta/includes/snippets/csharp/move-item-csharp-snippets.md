@@ -15,7 +15,7 @@ var driveItem = new DriveItem
 	Name = "new-item-name.txt"
 };
 
-await graphClient.Me.Drive.Items["{item-id}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"]
 	.Request()
 	.UpdateAsync(driveItem);
 

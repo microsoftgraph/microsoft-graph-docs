@@ -15,9 +15,9 @@ For more information about the `mgt-person` component, see [mgt-person](./person
 
 The following example shows the use of the `mgt-person-card` component with a `mgt-person` component. Hover over the person to see the Person Card and use the code editor to see how [properties](#properties) change the behavior of the component.
   
-<iframe src="https://mgt.dev/iframe.html?id=components-mgt-person-card--person-card-hover&source=docs" height="400"></iframe>
+<iframe src="https://mgt.dev/iframe.html?id=components-mgt-person-card--person-card&source=docs" height="400"></iframe>
 
-[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-person-card--person-card-hover&source=docs)
+[Open this example in mgt.dev](https://mgt.dev/?path=/story/components-mgt-person-card--person-card&source=docs)
 
 
 ## Global component configuration
@@ -72,10 +72,10 @@ The Person-Card component allows the user to contact the target person, includin
 If the Person-Card component is unable to detect the Teams lib, the component will attempt to open the Teams web client instead.
 
 ```ts
-import * as MicrosoftTeams from "@microsoft/teams-js/dist/MicrosoftTeams";
+import * as microsoftTeams from "@microsoft/teams-js";
 import {TeamsHelper} from '@microsoft/mgt';
 
-TeamsHelper.microsoftTeamsLib = MicrosoftTeams;
+TeamsHelper.microsoftTeamsLib = microsoftTeams;
 ```
 
 For more information about the `TeamsProvider` provider, see [Microsoft Teams provider](../providers/teams.md).
@@ -124,6 +124,16 @@ For example, you can use a template to customize the component attached to the `
 
 ```
 
+## Events
+
+The following events are fired from the component.
+
+| Event | Description |
+| --- | --- |
+| `expanded` | The user has opened the expanded details section of the card. |
+
+For more information about handling events, see [events](../customize-components/events.md).
+
 ## CSS custom properties
 
 The `mgt-person-card` component defines the following CSS custom properties. 
@@ -146,26 +156,20 @@ mgt-person {
 
 To learn more, see [styling components](../customize-components/style.md).
 
-## Microsoft Graph APIs and permissions
+## Microsoft Graph permissions
 
 The Person-Card control uses the following Microsoft Graph APIs and permissions.
 
-| Resource | Permission | Section |
-| - | - | - |
-| [/me](/graph/api/user-get) | User.Read | Default |
-| [/me/photo/$value](/graph/api/profilephoto-get) | User.Read | Default |
-| [/me/people/?$search=](/graph/api/user-list-people) | People.Read | Default |
-| [/me/contacts/\*](/graph/api/user-list-contacts) | Contacts.Read | Default |
-| [/users/{id}](/graph/api/user-list-people) | User.ReadBasic.All | Default |
-| [/users/{id}/photo/$value](/graph/api/profilephoto-get) | User.ReadBasic.All | Default |
-| [/me/presence](/graph/api/presence-get) | Presence.Read | Default |
-| [/users/{id}/presence](/graph/api/presence-get) | Presence.Read.All | Default |
-| [/users/{id}/manager](/graph/api/user-list-manager) | User.Read.All | Organization |
-| [/users/{id}/directReports](/graph/api/user-list-directreports) | User.Read.All | Organization |
-| [/users/{id}/people](/graph/api/user-list-people) | People.Read.All | Organization |
-| [/me/messages](/graph/api/user-list-messages) | Mail.ReadBasic | Messages |
-| [/me/insights/shared](/graph/api/insights-list-shared) and [/me/insights/used](/graph/api/insights-list-used) | Sites.Read.All | Files |
-| [/users/{id}/profile](/graph/api/profile-get) | User.Read.All | Profile |
+| Configuration | Permission | API | Section |
+| --- | ---------- | ------- | --------- |
+| `personDetails` set with user's `id` but without e-mail, or `userId` set, or `personQuery` set to `me` | User.ReadBasic.All | [/users/{id}](/graph/api/user-list-people), [/users/{id}/photo/$value](/graph/api/profilephoto-get) | Default |
+| `personQuery` set to a value different than `me` | People.Read | [/me/people/?$search=](/graph/api/user-list-people) | Default |
+| `personQuery` set to a value different than `me` and `config.useContactApis` set to `true` (default) | Contacts.Read | [/me/contacts/\*](/graph/api/user-list-contacts) | Default |
+| `showPresence` set to `true` | Presence.Read.All | [/users/{id}/presence](/graph/api/presence-get) | Default |
+| `sections.organization` enabled (default) | User.Read.All | [/users/{id}/manager](/graph/api/user-list-manager) | Organization |
+| `sections.organization.showWorksWith` set (default) | People.Read.All | [/users/{id}/people](/graph/api/user-list-people) | Organization |
+| `sections.mailMessages` enabled (default) | Mail.ReadBasic | [/me/messages](/graph/api/user-list-messages) | Messages |
+| `sections.files` enabled (default) | Sites.Read.All | [/me/insights/shared](/graph/api/insights-list-shared) and [/me/insights/used](/graph/api/insights-list-used) | Files |
 
 The `MgtPersonCard` class also exposes a `getScopes` static method that returns an array of scopes required for the person card to function based on the global person card configuration.
 
@@ -178,3 +182,17 @@ const neededScopes = MgtPersonCard.getScopes();
 ## Authentication
 
 The Person-Card control uses the global authentication provider described in the [authentication documentation](../providers/providers.md). 
+
+## Cache
+
+> [!IMPORTANT]
+> The `mgt-person-card` component retrieves the basic person data from the parent `mgt-person` component without calling Microsoft Graph. When `mgt-person-card` is used separately, it will retrieve the necessary data itself and cache it. The data displayed in card's sections is retrieved separately and is not cached.
+
+|Object store|Cached data|Remarks|
+|---------|-----------|-------|
+|`people`|Person's information|Used when `personQuery` is specified and its value is different than `me`|
+|`photos`|Person's photo|
+|`presence`|Person's presence|Used, when `showPresence` is set to `true`|
+|`users`|Person's user information|Used when `userId` is specified or the `personQuery` is set to `me`|
+
+See [Caching](../customize-components/cache.md) for more details on how to configure the cache.

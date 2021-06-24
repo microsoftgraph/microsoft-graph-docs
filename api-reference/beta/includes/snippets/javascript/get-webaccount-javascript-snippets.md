@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/profile/webAccounts/{id}')
+let webAccount = await client.api('/me/profile/webAccounts/{id}')
 	.version('beta')
 	.get();
 

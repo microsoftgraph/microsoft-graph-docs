@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/privilegedApproval/myRequests')
+let myRequests = await client.api('/privilegedApproval/myRequests')
 	.version('beta')
 	.get();
 

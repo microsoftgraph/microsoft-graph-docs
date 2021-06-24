@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/groups/{groupId}/drive')
+let drive = await client.api('/groups/{groupId}/drive')
 	.get();
 
 ```

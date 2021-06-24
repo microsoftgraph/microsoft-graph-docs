@@ -3,7 +3,7 @@ title: "Update b2cAuthenticationMethodsPolicy"
 description: "Update properties of a b2cAuthenticationMethodsPolicy object."
 localization_priority: Priority
 author: "namkedia"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: "apiPageType"
 ---
 
@@ -50,6 +50,7 @@ The following table shows the properties that are required when you update the [
 |:-------------|:------------|:------------|
 |isEmailPasswordAuthenticationEnabled|Boolean|The tenant admin can configure local accounts using email if the email and password authentication method is enabled.|
 |isUserNameAuthenticationEnabled|Boolean|The tenant admin can configure local accounts using username if the username and password authentication method is enabled.|
+|isPhoneOneTimePasswordAuthenticationEnabled|Boolean|The tenant admin can configure local accounts using phone number if the phone number and one-time password authentication method is enabled.|
 
 ## Response
 
@@ -73,7 +74,8 @@ PATCH https://graph.microsoft.com/beta/policies/b2cAuthenticationMethodsPolicy
 
 {
     "isEmailPasswordAuthenticationEnabled": false,
-    "isUserNameAuthenticationEnabled": true
+    "isUserNameAuthenticationEnabled": true,
+    "isPhoneOneTimePasswordAuthenticationEnabled": true
 }
 ```
 # [C#](#tab/csharp)
@@ -100,9 +102,7 @@ PATCH https://graph.microsoft.com/beta/policies/b2cAuthenticationMethodsPolicy
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.b2cauthenticationmethodspolicy"
+  "blockType": "response"
 } -->
 
 ```http

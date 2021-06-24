@@ -57,26 +57,26 @@ Here is an example of the request.
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "get_directoryaudit"
+  "name": "get_directoryaudit_1"
 }-->
 
 ```msgraph-interactive
 GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits/{id}
 ```
 # [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-directoryaudit-csharp-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-directoryaudit-1-csharp-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-directoryaudit-javascript-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-directoryaudit-1-javascript-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-directoryaudit-objc-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/objc/get-directoryaudit-1-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 # [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-directoryaudit-java-snippets.md)]
+[!INCLUDE [sample-code](../includes/snippets/java/get-directoryaudit-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
@@ -85,20 +85,18 @@ GET https://graph.microsoft.com/v1.0/auditLogs/directoryAudits/{id}
 ### Response
 
 Here is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "microsoft.graph.directoryaudit"
+  "@odata.type": "microsoft.graph.directoryAudit"
 } -->
 
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
 Content-length: 218
-```
 
-```json
 {
   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#auditlogs/directoryaudits",
   "value": [{
@@ -126,9 +124,9 @@ Content-length: 218
 			"modifiedProperties": [{
 				"displayName": "Action Client Name",
 				"oldValue": null,
-				"newValue": "DirectorySync" }],
-			"groupType": "unifiedGroups"
+				"newValue": "DirectorySync" 
 			}],
+			"groupType": "unifiedGroups"
 		}, {
 			"id": "1f0e98f5-3161-4c6b-9b50-d488572f2bb7",
 			"displayName": null,

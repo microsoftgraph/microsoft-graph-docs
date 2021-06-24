@@ -14,7 +14,7 @@ var tokenLifetimePolicy = new TokenLifetimePolicy
 	}
 };
 
-await graphClient.Applications["{id}"].TokenLifetimePolicies.References
+await graphClient.Applications["{application-id}"].TokenLifetimePolicies.References
 	.Request()
 	.AddAsync(tokenLifetimePolicy);
 

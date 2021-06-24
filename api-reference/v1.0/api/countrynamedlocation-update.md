@@ -3,7 +3,7 @@ title: "Update countryNamedlocation"
 description: "Update the properties of a countryNamedLocation object."
 localization_priority: Normal
 author: "videor"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
@@ -103,9 +103,7 @@ Content-type: application/json
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.countryNamedLocation"
+  "blockType": "response"
 } -->
 
 ```http

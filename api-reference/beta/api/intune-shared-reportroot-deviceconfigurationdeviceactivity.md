@@ -1,7 +1,7 @@
 ---
 title: "deviceConfigurationDeviceActivity function"
 description: "Metadata for the device configuration device activity report"
-author: "dougeby"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: apiPageType

@@ -3,7 +3,7 @@ title: "Create accessPackageAssignmentRequest"
 description: "Create a new accessPackageAssignmentRequest."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: "apiPageType"
 ---
 
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In [Azure AD entitlement management](../resources/entitlementmanagement-root.md), create a new [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.  This operation is used to assign a user to an access package, or to remove an access package assignment.
+In [Azure AD Entitlement Management](../resources/entitlementmanagement-root.md), create a new [accessPackageAssignmentRequest](../resources/accesspackageassignmentrequest.md) object.  This operation is used to assign a user to an access package, or to remove an access package assignment.
 
 ## Permissions
 
@@ -48,7 +48,9 @@ For an administrator to request to create an assignment for a user, the value of
 
 For an administrator to request to remove an assignment, the value of the **requestType** property is `AdminRemove`, and the **accessPackageAssignment** property contains the **id** property identifying the [accessPackageAssignment](../resources/accesspackageassignment.md) being removed.
 
-For a non-administrator user to request to create an assignment for themselves, the value of the **requestType** property is `UserAdd`, and the **accessPackageAssignment** property contains the `targetId` with the ID of the users themselves, the **assignmentPolicyId** property identifying the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md), and the **accessPackageId** property identifying the [accessPackage](../resources/accesspackage.md).  The user making the request must already exist in the directory.
+For a non-administrator user to request to create their own assignment for either a first assignment or renew assignment, the value of the **requestType** property is `UserAdd`. The **accessPackageAssignment** property contains the `targetId` with the `id` of the users. The **assignmentPolicyId** property identifies the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md). The **accessPackageId** property identifies the [accessPackage](../resources/accesspackage.md). The user making the request must already exist in the directory.
+
+For a non-administrator user to request to extend their own assignments, the value of the **requestType** property is `UserExtend`. The **accessPackageAssignment** property contains the `targetId` with the `id` of the users. The **assignmentPolicyId** property identifies the [accessPackageAssignmentPolicy](../resources/accesspackageassignmentpolicy.md). The **accessPackageId** property identifies the [accessPackage](../resources/accesspackage.md). The user making the request must already exist in the directory.
 
 ## Response
 
@@ -66,7 +68,7 @@ The following is an example of the request for a direct assignment, in which the
 # [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests"
+  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests_1"
 }-->
 
 ```http
@@ -105,7 +107,7 @@ Content-type: application/json
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -134,9 +136,11 @@ The following is an example of a request where the requestor provided answers to
  
 
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
-  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests"
+  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests_2"
 }-->
 
 ```http
@@ -165,16 +169,31 @@ Content-type: application/json
     }]
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accesspackageassignmentrequest-from-accesspackageassignmentrequests-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accesspackageassignmentrequest-from-accesspackageassignmentrequests-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-accesspackageassignmentrequest-from-accesspackageassignmentrequests-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-accesspackageassignmentrequest-from-accesspackageassignmentrequests-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---
+
 
 
 #### Response
 
 The following is an example of the response.
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -250,6 +269,122 @@ Content-type: application/json
             "isSingleLineQuestion": false
         }
     }]
+}
+```
+### Example 3: Request a package and provide a justification
+#### Request
+
+The following example shows how to request an access package and provide justification to the approver.
+ 
+
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests
+Content-type: application/json
+
+{
+    "requestType": "UserAdd",
+    "accessPackageAssignment": {
+        "accessPackageId": "a914b616-e04e-476b-aa37-91038f0b165b"
+    },
+    "justification":"Need access to New Hire access package"
+}
+```
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "id": "813bbc6b-31f5-4cdf-8fed-1ba4284a1e3f",
+    "requestType": "UserAdd",
+    "requestState": "Submitted",
+    "requestStatus": "Accepted",
+    "isValidationOnly": false,
+    "expirationDateTime": null,
+    "justification": "Requested for the new task.",
+    "answers": [],
+    "schedule": {
+        "startDateTime": null,
+        "recurrence": null,
+        "expiration": {
+            "endDateTime": null,
+            "duration": null,
+            "type": null
+        }
+    }
+}
+```
+
+### Example 4: Remove an assignment
+
+To remove assignments, create a new accessPackageAssignmentRequest object with the following settings:
+
++ The value of the **requestType** property set to `AdminRemove`.
++ In the accessPackageAssignment property, include a list with the identifier of the accessPackageAssignment objects to delete.
+
+#### Request
+
+The following example shows how to remove an assignment.
+
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests
+Content-type: application/json
+
+{
+    "requestType": "AdminRemove",
+    "accessPackageAssignment":{
+     "id": "a6bb6942-3ae1-4259-9908-0133aaee9377"
+    }
+}
+```
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#accessPackageAssignmentRequests/$entity",
+
+    "id": "78eaee8c-e6cf-48c9-8f99-aae44c35e379",
+    "requestType": "AdminRemove",
+    "requestState": "Submitted",
+    "requestStatus": "Accepted"
 }
 ```
 

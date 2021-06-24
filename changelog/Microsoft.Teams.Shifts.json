@@ -1,0 +1,112 @@
+{
+    "changelog":[
+       {
+          "ChangeList":[
+             {
+                "Id": "1db1cd43-231a-4044-bbdb-b5e23b2b2d16",
+                "ApiChange": "Resources",
+                "ChangedApiName": "resourceSpecificPermissionGrant",
+                "ChangeType": "Addition",
+                "Description": "Added the [resourceSpecificPermissionGrant](https://docs.microsoft.com/en-us/graph/api/resources/resourcespecificpermissiongrant?view=graph-rest-beta) resource.",
+                "Target": "resourceSpecificPermissionGrant"
+             },
+             {
+                "Id":"c1b17c32-9287-11eb-8507-815178c7c041",
+                "ApiChange":"Resources",
+                "ChangedApiName":"timeCard",
+                "ChangeType":"Addition",
+                "Description":"Added the [timeCard](https://docs.microsoft.com/en-us/graph/api/resources/timecard?view=graph-rest-beta) resource.",
+                "Target":"timeCard"
+             },
+             {
+               "Id":"c1b17c32-9287-11eb-8507-815178c7c041",
+               "ApiChange":"Resources",
+               "ChangedApiName":"timeCardBreak",
+               "ChangeType":"Addition",
+               "Description":"Added the [timeCardBreak](https://docs.microsoft.com/en-us/graph/api/resources/timecardbreak?view=graph-rest-beta) resource.",
+               "Target":"timeCardBreak"
+             },
+             {
+               "Id":"c1b17c32-9287-11eb-8507-815178c7c041",
+               "ApiChange":"Resources",
+               "ChangedApiName":"timeCardEntry",
+               "ChangeType":"Addition",
+               "Description":"Added the [timeCardEntry](https://docs.microsoft.com/en-us/graph/api/resources/timecardentry?view=graph-rest-beta) resource.",
+               "Target":"timeCardEntry"
+             },
+             {
+               "Id":"c1b17c32-9287-11eb-8507-815178c7c041",
+               "ApiChange":"Resources",
+               "ChangedApiName":"timeCardEvent",
+               "ChangeType":"Addition",
+               "Description":"Added the [timeCardEvent](https://docs.microsoft.com/en-us/graph/api/resources/timecardevent?view=graph-rest-beta) resource.",
+               "Target":"timeCardEvent"
+             },
+             {
+                "Id":"c1b3db9e-9287-11eb-8507-815178c7c041",
+                "ApiChange":"Member",
+                "ChangedApiName":"timeOffReason",
+                "ChangeType":"Addition",
+                "Description":"Added the `timeOffReason` member to the **workforceIntegrationSupportedEntities** enumeration.",
+                "Target":"workforceIntegrationSupportedEntities"
+             },
+             {
+                "Id":"c1b63d09-9287-11eb-8507-815178c7c041",
+                "ApiChange":"Member",
+                "ChangedApiName":"timeOff",
+                "ChangeType":"Addition",
+                "Description":"Added the `timeOff` member to the **workforceIntegrationSupportedEntities** enumeration.",
+                "Target":"workforceIntegrationSupportedEntities"
+             },
+             {
+                "Id":"c1b89e1f-9287-11eb-8507-815178c7c041",
+                "ApiChange":"Member",
+                "ChangedApiName":"timeOffRequest",
+                "ChangeType":"Addition",
+                "Description":"Added the `timeOffRequest` member to the **workforceIntegrationSupportedEntities** enumeration.",
+                "Target":"workforceIntegrationSupportedEntities"
+             },
+             {
+               "Id":"c1b89e1f-9287-11eb-8507-815178c7c041",
+               "ApiChange":"Member",
+               "ChangedApiName":"confirmedBy",
+               "ChangeType":"Addition",
+               "Description":"Added the `none`, `user`, `manager` and `unknownFutureValue` members to the **confirmedBy** enumeration.",
+               "Target":"confirmedBy"
+            }
+          ],
+          "Id":"c1af173d-9287-11eb-8507-815178c7c041",
+          "Cloud":"prd",
+          "Version":"beta",
+          "CreatedDateTime":"2021-06-04T01:15:33.264Z",
+          "WorkloadArea":"Teamwork",
+          "SubArea":"Shifts"
+       },
+       {
+        "ChangeList":[
+           {
+              "Id":"c9923370-4dca-4605-9027-77a05ddfdc8b",
+              "ApiChange":"Member",
+              "ChangedApiName":"workforceIntegrationSupportedEntities",
+              "ChangeType":"Addition",
+              "Description":"Added the `shift`,`swapRequest`,`userShiftPreferences`,`openShift`,``openShiftRequest`,`offerShiftRequest` members to the **workforceIntegrationSupportedEntities** enumeration.",
+              "Target":"workforceIntegrationSupportedEntities"
+           },
+           {
+            "Id":"c9923370-4dca-4605-9027-77a05ddfdc8b",
+            "ApiChange":"Member",
+            "ChangedApiName":"workforceIntegrationEncryptionProtocol",
+            "ChangeType":"Addition",
+            "Description":"Added the `sharedSecret` and `unknownFutureValue` members to the **workforceIntegrationEncryptionProtocol** enumeration.",
+            "Target":"workforceIntegrationEncryptionProtocol"
+         }
+        ],
+        "Id":"c9923370-4dca-4605-9027-77a05ddfdc8b",
+        "Cloud":"prd",
+        "Version":"beta",
+        "CreatedDateTime":"2021-06-04T01:15:33.264Z",
+        "WorkloadArea":"Teamwork",
+        "SubArea":"Shifts"
+     }
+    ]
+ }

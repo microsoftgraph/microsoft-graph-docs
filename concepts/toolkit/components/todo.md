@@ -96,10 +96,12 @@ The following events are fired from the component.
 
 | Event | Detail | Description |
 | --- | --- | --- |
-| taskAdded | The detail contains the respective `task` object | Fires when a new task has been created. |
-| taskChanged | The detail contains the respective `task` object | Fires when task metadata has been changed, such as marking completed. |
-| taskClick | The detail contains the respective `task` object | Fires when the user clicks or taps on a task. |
-| taskRemoved | The detail contains the respective `task` object | Fires when an existing task has been deleted. |
+| `taskAdded` | The detail contains the respective `task` object | Fires when a new task has been created. |
+| `taskChanged` | The detail contains the respective `task` object | Fires when task metadata has been changed, such as marking completed. |
+| `taskClick` | The detail contains the respective `task` object | Fires when the user clicks or taps on a task. |
+| `taskRemoved` | The detail contains the respective `task` object | Fires when an existing task has been deleted. |
+
+For more information about handling events, see [events](../customize-components/events.md).
 
 ## Templates
 
@@ -126,12 +128,16 @@ The following example defines a template for the tasks component.
 
 This control uses the following Microsoft Graph APIs and permissions.
 
-| Resource | Permission |
-| - | - |
-| [/me/todo/lists/](/graph/api/todo-list-lists) | Tasks.ReadWrite |
-| [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) | Tasks.ReadWrite |
-| [/me/todo/lists/{todoTaskListId}/tasks/{taskId}](/graph/api/todotask-get) | Tasks.ReadWrite |
+| Configuration | Permission | API |
+| ------------- | ---------- | --- |
+| `targetId` set | Tasks.Read | [/me/todo/lists/${listId}](/graph/api/todotasklist-get?view=graph-rest-1.0&tabs=http), [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
+| `targetId` not set | Tasks.Read | [/me/todo/lists](/graph/api/todo-list-lists?view=graph-rest-1.0&tabs=http), [/me/todo/lists/{todoTaskListId}/tasks](/graph/api/todotasklist-list-tasks) |
+| create, update or delete task | Tasks.ReadWrite | [/me/todo/lists/{todoTaskListId}/tasks/{taskId}](/graph/api/todotask-get) |
 
 ## Authentication
 
 The tasks component uses the global authentication provider described in the [authentication documentation](../providers/providers.md).
+
+## Cache
+
+The `mgt-todo` component doesn't cache any data.

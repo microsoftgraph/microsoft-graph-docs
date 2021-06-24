@@ -1,7 +1,7 @@
 ---
 title: "groupLifecyclePolicy: addGroup"
 description: "Adds a group to a lifecycle policy."
-author: "yyuank"
+author: "Jordanndahl"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType

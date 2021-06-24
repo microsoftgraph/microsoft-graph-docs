@@ -119,7 +119,7 @@ Content-type: application/json
 }
 ```
 
-The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+The response object shown here might be shortened for readability.
 
 
 ### Example 2: List all photo albums in a drive
@@ -161,7 +161,7 @@ Because all bundles are items, you can use use all the standard item operations 
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.driveItem", "truncated": true, "isCollection": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 
@@ -193,7 +193,7 @@ Content-type: application/json
 }
 ```
 
-The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+The response object shown here might be shortened for readability.
 
 
 [bundle]: ../resources/bundle.md

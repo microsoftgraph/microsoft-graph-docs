@@ -6,11 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var address = "address-value";
-
-await graphClient.Me.Drive.Items["{id}"].Workbook.Worksheets["{id|name}"]
+var workbookRange = await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Worksheets["{workbookWorksheet-id}"]
 	.Range()
 	.Request()
-	.PostAsync();
+	.GetAsync();
 
 ```

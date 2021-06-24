@@ -11,7 +11,7 @@ var sectionGroup = new SectionGroup
 	DisplayName = "Section group name"
 };
 
-await graphClient.Me.Onenote.SectionGroups["{id}"].SectionGroups
+await graphClient.Me.Onenote.SectionGroups["{sectionGroup-id}"].SectionGroups
 	.Request()
 	.AddAsync(sectionGroup);
 

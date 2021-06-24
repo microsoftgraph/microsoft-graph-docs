@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/activities/13881113971988980728/')
+await client.api('/me/activities/13881113971988980728/')
 	.version('beta')
 	.delete();
 

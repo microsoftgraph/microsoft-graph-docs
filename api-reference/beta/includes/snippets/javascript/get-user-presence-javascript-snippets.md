@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/users/66825e03-7ef5-42da-9069-724602c31f6b/presence')
+let presence = await client.api('/users/66825e03-7ef5-42da-9069-724602c31f6b/presence')
 	.version('beta')
 	.get();
 

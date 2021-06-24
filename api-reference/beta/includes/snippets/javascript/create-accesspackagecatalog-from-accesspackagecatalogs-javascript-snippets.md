@@ -11,12 +11,12 @@ const options = {
 const client = Client.init(options);
 
 const accessPackageCatalog = {
-  displayName: "sales",
-  description: "for employees working with sales and outside sales partners",
+  displayName: 'sales',
+  description: 'for employees working with sales and outside sales partners',
   isExternallyVisible: true
 };
 
-let res = await client.api('/identityGovernance/entitlementManagement/accessPackageCatalogs')
+await client.api('/identityGovernance/entitlementManagement/accessPackageCatalogs')
 	.version('beta')
 	.post(accessPackageCatalog);
 

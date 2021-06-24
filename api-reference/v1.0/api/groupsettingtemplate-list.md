@@ -1,7 +1,7 @@
 ---
 title: "List groupSettingTemplates"
 description: "Retrieve a list of available groupSettingTemplates objects."
-author: "yyuank"
+author: "Jordanndahl"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
@@ -77,7 +77,7 @@ GET https://graph.microsoft.com/v1.0/groupSettingTemplates
 
 ##### Response
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

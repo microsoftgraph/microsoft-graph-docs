@@ -4,7 +4,7 @@ description: "Specifies a domain for a tenant. The **verifiedDomains** property 
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "directory-management"
-author: "davidmu1"
+author: "Jumaodhiss"
 ---
 
 # verifiedDomain resource type

@@ -12,7 +12,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphDirectoryRole *directoryRole = [[MSGraphDirectoryRole alloc] init];
-[directoryRole setRoleTemplateId:@"roleTemplateId-value"];
+[directoryRole setRoleTemplateId:@"fe930be7-5e62-47db-91af-98c3a49a38b1"];
 
 NSError *error;
 NSData *directoryRoleData = [directoryRole getSerializedDataWithError:&error];

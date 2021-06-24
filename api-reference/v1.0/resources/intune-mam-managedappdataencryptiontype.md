@@ -26,8 +26,3 @@ Represents the level to which app data is encrypted for managed apps
 
 
 
-
-
-
-
-

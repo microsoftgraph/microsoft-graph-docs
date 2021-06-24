@@ -3,7 +3,7 @@ title: "Remove accessReview reviewer"
 description: "Remove an access review reviewer."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -40,7 +40,7 @@ No request body should be supplied.
 
 
 ## Response
-If successful, this method returns a 200-series response code.
+If successful, this method returns a `204 No Content` response code.
 
 ## Example
 

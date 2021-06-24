@@ -13,7 +13,7 @@ var parentReference = new ItemReference
 
 var name = "String";
 
-await graphClient.Me.Drive.Items["{item-id}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"]
 	.Restore(parentReference,name)
 	.Request()
 	.PostAsync();

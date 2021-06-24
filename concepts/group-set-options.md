@@ -1,13 +1,13 @@
 ---
 title: "Set Microsoft 365 group behaviors and provisioning options"
 description: "Using the group resource in Microsoft Graph, you can set specific group behaviors and resources to provision when creating a Microsoft 365 group."
-author: "yyuank"
+author: "Jordanndahl"
 localization_priority: Priority
 ---
 
 # Set Microsoft 365 group behaviors and provisioning options (preview)
 
-Using the [group](/graph/api/resources/group?view=graph-rest-beta) resource in Microsoft Graph, you can set specific group behaviors and resources to provision when creating a Microsoft 365 group. Depending on the resource, some can also be provisioned on group update.
+Using the [group](/graph/api/resources/group?view=graph-rest-beta&preserve-view=true) resource in Microsoft Graph, you can set specific group behaviors and resources to provision when creating a Microsoft 365 group. Depending on the resource, some can also be provisioned on group update.
 
 ### Configuring and provisioning groups
 
@@ -16,7 +16,7 @@ The **group** resource exposes two properties, **resourceBehaviorOptions** and *
 > [!NOTE]
 > The **resourceBehaviorOptions** and **resourceProvisioningOptions** properties are currently available in only the Microsoft Graph beta endpoint. Do not use them in production apps, as they are subject to change without notice.
 
-**resourceBehaviorOptions** is a string collection that specifies group behaviors for a Microsoft 365 group. These behaviors can be set only on [group creation](/graph/api/group-post-groups?view=graph-rest-beta) (`POST`).
+**resourceBehaviorOptions** is a string collection that specifies group behaviors for a Microsoft 365 group. These behaviors can be set only on [group creation](/graph/api/group-post-groups?view=graph-rest-beta&preserve-view=true) (`POST`).
 
 | Supported values for resourceBehaviorOptions   |Description|Default if not set|
 |:---------------|:--------|:-----------|
@@ -29,7 +29,7 @@ The **group** resource exposes two properties, **resourceBehaviorOptions** and *
 
 | Supported values for resourceProvisioningOptions   |Description| Default if not set |
 |:---------------|:--------|:------------|
-| Teams|Provision this group as a team in Microsoft Teams. Additionally, this value can be added to the **resourceProvisioningOptions** string collection on [group update](/graph/api/group-update?view=graph-rest-beta) through a `PATCH` operation, in order to convert an existing Microsoft 365 group to a team.| The group is a regular Microsoft 365 group without Teams capabilities.|
+| Teams|Provision this group as a team in Microsoft Teams. Additionally, this value can be added to the **resourceProvisioningOptions** string collection on [group update](/graph/api/group-update?view=graph-rest-beta&preserve-view=true) through a `PATCH` operation, in order to convert an existing Microsoft 365 group to a team.| The group is a regular Microsoft 365 group without Teams capabilities.|
 
 
 ## See also

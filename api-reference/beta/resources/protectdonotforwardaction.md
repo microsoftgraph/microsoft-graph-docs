@@ -3,7 +3,7 @@ title: "protectDoNotForwardAction resource type"
 description: "Informs the application to apply Do Not Forward protection."
 localization_priority: Normal
 author: "tommoser"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 

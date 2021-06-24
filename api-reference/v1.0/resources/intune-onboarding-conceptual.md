@@ -17,11 +17,16 @@ You can enroll devices, including Windows PCs, to enable mobile device managemen
 
 The following Graph resources are available to manage enrollment in Intune:  
 
+- [Compliance management partner](intune-onboarding-compliancemanagementpartner.md)
+- [Compliance management partner assignment](intune-onboarding-compliancemanagementpartnerassignment.md)
+- [Device app management](intune-onboarding-deviceappmanagement.md)
+- [Device category](intune-onboarding-devicecategory.md)
 - [Device enrollment configuration](intune-onboarding-deviceenrollmentconfiguration.md)
 - [Device enrollment limit configuration](intune-onboarding-deviceenrollmentlimitconfiguration.md)
 - [Device enrollment platform restriction](intune-onboarding-deviceenrollmentplatformrestriction.md)
 - [Device enrollment platform restrictions configuration](intune-onboarding-deviceenrollmentplatformrestrictionsconfiguration.md)
 - [Device enrollment Windows Hello for business configuration](intune-onboarding-deviceenrollmentwindowshelloforbusinessconfiguration.md)
+- [Device management](intune-onboarding-devicemanagement.md)
 - [Device management exchange connector](intune-onboarding-devicemanagementexchangeconnector.md)
 - [Device management exchange connector status](intune-onboarding-devicemanagementexchangeconnectorstatus.md)
 - [Device management exchange connector sync type](intune-onboarding-devicemanagementexchangeconnectorsynctype.md)
@@ -38,13 +43,8 @@ The following Graph resources are available to manage enrollment in Intune:
 - [On-premises conditional access settings](intune-onboarding-onpremisesconditionalaccesssettings.md)
 - [Organization](intune-onboarding-organization.md)
 - [RGB color](intune-onboarding-rgbcolor.md)
+- [User](intune-onboarding-user.md)
 - [VPP token](intune-onboarding-vpptoken.md)
 - [VPP token state](intune-onboarding-vpptokenstate.md)
 - [VPP token sync status](intune-onboarding-vpptokensyncstatus.md)
 - [Windows Hello for business PIN usage](intune-onboarding-windowshelloforbusinesspinusage.md)
-
-
-
-
-
-

@@ -452,6 +452,77 @@ Content-Type: application/json
 }
 ```
 
+### Example 6: List the details of apps filtered by app installation scope
+
+The following example lists only those apps that can be installed in the personal scope of a user.
+
+#### Request
+
+
+# [HTTP](#tab/http)
+<!-- {
+  "blockType": "request",
+  "name": "list_teamsapp_in_personal_scope"
+}-->
+
+```msgraph-interactive
+GET  https://graph.microsoft.com/beta/appCatalogs/teamsApps?$expand=appDefinitions($select=id,displayName,allowedInstallationScopes)&$filter=appDefinitions/any(a:a/allowedInstallationScopes has 'personal')
+```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/list-teamsapp-in-personal-scope-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/list-teamsapp-in-personal-scope-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/list-teamsapp-in-personal-scope-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/list-teamsapp-in-personal-scope-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
+---
+
+#### Response
+
+<!-- {
+  "blockType": "response",
+  "name": "list_teamsapp_in_personal_scope",
+  "@odata.type": "microsoft.graph.teamsApp",
+  "truncated": true,
+  "isCollection": true
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps(appDefinitions(id,displayName,allowedInstallationScopes))",
+    "value": [
+        {
+            "id": "5a542e1c-5f8c-4793-8b0c-6082464b2378",
+            "externalId": "4b3ec336-b998-4623-9e25-d4182fb82159",
+            "displayName": "Carriage",
+            "distributionMethod": "organization",
+            "appDefinitions@odata.context": "https://graph.microsoft.com/beta/$metadata#appCatalogs/teamsApps('5a542e1c-5f8c-4793-8b0c-6082464b2378')/appDefinitions(id,displayName,allowedInstallationScopes)",
+            "appDefinitions": [
+                {
+                    "id": "MWE1NDJlMWMtNWY4Yy00NzkzLThiMGMtNjA4MjQ2NGIyMzc4IyMxLjAuMCMjUHVibGlzaGVk",
+                    "displayName": "Carriage",
+                    "allowedInstallationScopes": "personal"
+                }
+            ]
+        }
+    ]
+}
+```
+
 
 ## See also
 

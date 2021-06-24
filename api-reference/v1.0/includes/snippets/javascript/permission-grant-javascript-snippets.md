@@ -13,16 +13,16 @@ const client = Client.init(options);
 const permission = {
   recipients: [
     {
-      email: "john@contoso.com"
+      email: 'john@contoso.com'
     },
     {
-      email: "ryan@external.com"
+      email: 'ryan@external.com'
     }
   ],
-  roles: ["read"]
+  roles: ['read']
 };
 
-let res = await client.api('/shares/{encoded-sharing-url}/permission/grant')
+await client.api('/shares/{encoded-sharing-url}/permission/grant')
 	.post(permission);
 
 ```

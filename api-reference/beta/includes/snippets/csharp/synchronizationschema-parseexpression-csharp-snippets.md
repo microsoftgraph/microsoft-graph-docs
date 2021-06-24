@@ -339,7 +339,7 @@ var testInputObject = new ExpressionInputObject
 	}
 };
 
-await graphClient.ServicePrincipals["{id}"].Synchronization.Jobs["{id}"].Schema
+await graphClient.ServicePrincipals["{servicePrincipal-id}"].Synchronization.Jobs["{synchronizationJob-id}"].Schema
 	.ParseExpression(expression,testInputObject,targetAttributeDefinition)
 	.Request()
 	.PostAsync();

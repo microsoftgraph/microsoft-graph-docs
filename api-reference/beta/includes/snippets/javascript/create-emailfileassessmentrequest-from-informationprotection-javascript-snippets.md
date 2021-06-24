@@ -11,14 +11,14 @@ const options = {
 const client = Client.init(options);
 
 const threatAssessmentRequest = {
-  @odata.type: "#microsoft.graph.emailFileAssessmentRequest",
-  recipientEmail: "tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com",
-  expectedAssessment: "block",
-  category: "malware",
-  contentData: "UmVjZWl2ZWQ6IGZyb20gTVcyUFIwME1CMDMxNC5uYW1wcmQwMC....."
+  '@odata.type': '#microsoft.graph.emailFileAssessmentRequest',
+  recipientEmail: 'tifc@a830edad9050849EQTPWBJZXODQ.onmicrosoft.com',
+  expectedAssessment: 'block',
+  category: 'malware',
+  contentData: 'UmVjZWl2ZWQ6IGZyb20gTVcyUFIwME1CMDMxNC5uYW1wcmQwMC.....'
 };
 
-let res = await client.api('/informationProtection/threatAssessmentRequests')
+await client.api('/informationProtection/threatAssessmentRequests')
 	.version('beta')
 	.post(threatAssessmentRequest);
 

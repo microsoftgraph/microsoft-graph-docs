@@ -1,7 +1,7 @@
 ---
 title: "cloudCommunications: getPresencesByUserId"
 description: "Get the presence information for multiple users."
-author: "elvinyang-msft"
+author: "mkhribech"
 localization_priority: Normal
 doc_type: apiPageType
 ms.prod: "cloud-communications"
@@ -109,8 +109,7 @@ The following example shows the response.
 HTTP/1.1 200 OK
 Content-Type: application/json
 Content-Length: 1574
-```
-```json
+
 {
 	"value": [{
 			"id": "fa8bf3dc-eca7-46b7-bad1-db199b62afc3",

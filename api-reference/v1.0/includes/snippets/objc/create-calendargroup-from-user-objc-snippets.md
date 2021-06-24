@@ -12,9 +12,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphCalendarGroup *calendarGroup = [[MSGraphCalendarGroup alloc] init];
-[calendarGroup setName:@"name-value"];
-[calendarGroup setClassId:@"classId-value"];
-[calendarGroup setChangeKey:@"changeKey-value"];
+[calendarGroup setName:@"Personal events"];
 
 NSError *error;
 NSData *calendarGroupData = [calendarGroup getSerializedDataWithError:&error];

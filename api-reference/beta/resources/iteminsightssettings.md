@@ -11,13 +11,13 @@ doc_type: resourcePageType
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents privacy settings for [itemInsights](iteminsights.md) and privacy setting for meeting hours insights. Use this API to disable/enable calculation and visibility of item insights and meeting hours insights. 
+Represents privacy settings for [itemInsights](iteminsights.md) and privacy setting for [meeting hours insights](https://support.microsoft.com/en-us/office/update-your-meeting-hours-using-the-profile-card-0613d113-d7c1-4faa-bb11-c8ba30a78ef1)
+. Use this API to disable/enable calculation and visibility of item insights and meeting hours insights. 
 
 - Item insights: Calculates relationship between users and items such as documents or sites in Microsoft 365.  
 - Meeting hours insights: Calculates a person's calendar meeting hours based on activities in Word, Excel, PowerPoint, email, and Outlook calendar in Microsoft 365.
 
-> [!NOTE]
-> Meeting hours insights are rolling out to customers starting November 2020. 
+Use the [userInsightsSettings](userinsightssettings.md) resource to disable/enable calculation and visibility of item insights and meeting hours insights of a user.
 
 ## Methods
 

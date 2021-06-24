@@ -30,6 +30,7 @@ VPN connection types.
 |pptp|7|PPTP.|
 |citrix|8|Citrix.|
 |paloAltoGlobalProtect|9|Palo Alto Networks GlobalProtect.|
+|ciscoAnyConnect|10|Cisco AnyConnect|
 
 
 

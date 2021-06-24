@@ -3,7 +3,7 @@ title: "directoryRole resource type"
 description: "Represents an Azure AD directory role. Azure AD directory roles are also known as *administrator roles*."
 localization_priority: Priority
 author: "abhijeetsinha"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: resourcePageType
 ---
 
@@ -27,6 +27,7 @@ This resource supports:
 |[List members](../api/directoryrole-list-members.md) |[directoryObject](directoryobject.md) collection| Get the users that are members of the directory role from the members navigation property.|
 |[Remove a member](../api/directoryrole-delete-member.md) |[directoryObject](directoryobject.md)| Remove a user from the directory role.|
 |[Activate directoryRole](../api/directoryrole-post-directoryroles.md) |[directoryRole](directoryrole.md) | Activate a directory role.|
+|[List scopedMembers](../api/directoryrole-list-scopedmembers.md) |[scopedRoleMembership](scopedrolemembership.md) collection| List the members of this directory role that are scoped to [administrative units](administrativeunit.md), through the scopedRoleMembership resource collection.|
 |[delta](../api/directoryrole-delta.md)|directoryRole collection| Get incremental changes for directory roles. |
 
 ## Properties
@@ -41,6 +42,7 @@ This resource supports:
 | Relationship | Type |Description|
 |:---------------|:--------|:----------|
 |members|[directoryObject](directoryobject.md) collection|Users that are members of this directory role. HTTP Methods: GET, POST, DELETE. Read-only. Nullable.|
+|scopedMembers|[scopedRoleMembership](scopedrolemembership.md) collection| Members of this directory role that are scoped to [administrative units](administrativeunit.md). Read-only. Nullable.|
 
 ## JSON representation
 

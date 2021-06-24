@@ -16,7 +16,7 @@ var domain = new Domain
 	}
 };
 
-await graphClient.Domains["contoso.com"]
+await graphClient.Domains["{domain-id}"]
 	.Request()
 	.UpdateAsync(domain);
 

@@ -18,7 +18,7 @@ var conversationMember = new AadUserConversationMember
 	}
 };
 
-await graphClient.Teams["ee0f5ae2-8bc6-4ae5-8466-7daeebbfa062"].Members
+await graphClient.Teams["{team-id}"].Members
 	.Request()
 	.AddAsync(conversationMember);
 

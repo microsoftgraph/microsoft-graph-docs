@@ -10,9 +10,9 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats')
+let chats = await client.api('/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5/chats')
 	.version('beta')
-	.filter('members/any(o: o/displayname eq 'Peter Parker')')
+	.filter('members/any(o: o/displayname eq \'Peter Parker\')')
 	.expand('members')
 	.get();
 

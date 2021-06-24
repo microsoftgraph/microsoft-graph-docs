@@ -70,17 +70,11 @@ Here is a JSON representation of the resource.
       "@odata.type": "microsoft.graph.omaSetting",
       "displayName": "String",
       "description": "String",
-      "omaUri": "String",
-      "value": 1024
+      "omaUri": "String"
     }
   ]
 }
 ```
-
-
-
-
-
 
 
 

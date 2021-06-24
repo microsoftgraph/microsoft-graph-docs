@@ -24,12 +24,12 @@ One of the following permissions is required to call this API. To learn more, in
 |:-----------|:----------|
 | Delegated (work or school account) | EduAdministration.ReadWrite |
 |Delegated (personal Microsoft account|Not supported.|
-|Application|Not supported.|
+|Application|EduAdministration.ReadWrite.All |
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /synchronizationProfiles/{id}/start
+POST /education/synchronizationProfiles/{id}/start
 ```
 
 ## Request headers
@@ -76,7 +76,7 @@ POST https://graph.microsoft.com/beta/education/synchronizationProfiles/{id}/sta
 ##### Response
 Here is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

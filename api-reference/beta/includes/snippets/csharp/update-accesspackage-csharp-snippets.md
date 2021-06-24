@@ -11,7 +11,7 @@ var accessPackage = new AccessPackage
 	DisplayName = "Access Package New Name"
 };
 
-await graphClient.IdentityGovernance.EntitlementManagement.AccessPackages["{accessPackageId}"]
+await graphClient.IdentityGovernance.EntitlementManagement.AccessPackages["{accessPackage-id}"]
 	.Request()
 	.UpdateAsync(accessPackage);
 

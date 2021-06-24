@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/identity/b2cUserFlows/B2C_1_CustomerSignUp/languages')
+let languages = await client.api('/identity/b2cUserFlows/B2C_1_CustomerSignUp/languages')
 	.version('beta')
 	.filter('isEnabled eq true')
 	.get();

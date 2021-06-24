@@ -11,32 +11,32 @@ const options = {
 const client = Client.init(options);
 
 const user = {
-  displayName: "John Smith",
+  displayName: 'John Smith',
   identities: [
     {
-      signInType: "userName",
-      issuer: "contoso.onmicrosoft.com",
-      issuerAssignedId: "johnsmith"
+      signInType: 'userName',
+      issuer: 'contoso.onmicrosoft.com',
+      issuerAssignedId: 'johnsmith'
     },
     {
-      signInType: "emailAddress",
-      issuer: "contoso.onmicrosoft.com",
-      issuerAssignedId: "jsmith@yahoo.com"
+      signInType: 'emailAddress',
+      issuer: 'contoso.onmicrosoft.com',
+      issuerAssignedId: 'jsmith@yahoo.com'
     },
     {
-      signInType: "federated",
-      issuer: "facebook.com",
-      issuerAssignedId: "5eecb0cd"
+      signInType: 'federated',
+      issuer: 'facebook.com',
+      issuerAssignedId: '5eecb0cd'
     }
   ],
-  "passwordProfile" : {
-    password: "password-value",
+  passwordProfile: {
+    password: 'password-value',
     forceChangePasswordNextSignIn: false
   },
-  passwordPolicies: "DisablePasswordExpiration"
+  passwordPolicies: 'DisablePasswordExpiration'
 };
 
-let res = await client.api('/users')
+await client.api('/users')
 	.version('beta')
 	.post(user);
 

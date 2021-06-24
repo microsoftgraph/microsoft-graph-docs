@@ -4,11 +4,14 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 WorkbookRange workbookRange = graphClient.me().drive().items("{id}").workbook().names("{name}")
 	.range()
-	.usedRange(true)
+	.usedRange(WorkbookRangeUsedRangeParameterSet
+		.newBuilder()
+		.withValuesOnly(true)
+		.build())
 	.buildRequest()
 	.get();
 

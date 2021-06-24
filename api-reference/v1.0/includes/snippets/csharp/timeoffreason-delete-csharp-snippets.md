@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.Teams["{teamId}"].Schedule.TimeOffReasons["{timeOffReasonId}"]
+await graphClient.Teams["{team-id}"].Schedule.TimeOffReasons["{timeOffReason-id}"]
 	.Request()
 	.DeleteAsync();
 

@@ -19,7 +19,7 @@ var cloudPcOnPremisesConnection = new CloudPcOnPremisesConnection
 	SubnetId = "/subscriptions/0ac520ee-14c0-480f-b6c9-0a90c585ffff/resourceGroups/ExampleRG/providers/Microsoft.Network/virtualNetworks/ExampleVNet/subnets/default"
 };
 
-await graphClient.DeviceManagement.VirtualEndpoint.OnPremisesConnections["{id}"]
+await graphClient.DeviceManagement.VirtualEndpoint.OnPremisesConnections["{cloudPcOnPremisesConnection-id}"]
 	.Request()
 	.UpdateAsync(cloudPcOnPremisesConnection);
 

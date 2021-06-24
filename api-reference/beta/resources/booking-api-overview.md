@@ -1,6 +1,6 @@
 ---
 title: "Use the Microsoft Bookings API in Microsoft Graph"
-description: " > **Important:** APIs under the /beta version in Microsoft Graph are in preview and are subject to change. Use of these APIs in production applications is not supported."
+description: "Microsoft Bookings lets enterprise organization and small business owners manage customer bookings and information with minimal setup."
 localization_priority: Priority
 author: "arvindmicrosoft"
 ms.prod: "bookings"
@@ -97,7 +97,7 @@ Find out about the [latest new features and updates](/graph/whats-new-overview) 
 ## See also
 
 - Try the API in the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
-- See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/graph/examples#partners).
+- See [how some of our partners are using Microsoft Graph](https://developer.microsoft.com/graph/partners).
 - Learn how to choose [permissions](/graph/permissions-reference) in Microsoft Graph.
 
 

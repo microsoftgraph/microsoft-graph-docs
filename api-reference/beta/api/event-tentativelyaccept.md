@@ -38,9 +38,6 @@ POST /users/{id | userPrincipalName}/calendar/events/{id}/tentativelyAccept
 POST /me/calendars/{id}/events/{id}/tentativelyAccept
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/tentativelyAccept
 
-POST /me/calendargroup/calendars/{id}/events/{id}/tentativelyAccept
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/tentativelyAccept
-
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/tentativelyAccept
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/tentativelyAccept
 ```
@@ -107,6 +104,10 @@ Content-type: application/json
 
 # [Objective-C](#tab/objc)
 [!INCLUDE [sample-code](../includes/snippets/objc/event-tentativelyaccept-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/event-tentativelyaccept-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
 ---

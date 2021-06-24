@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/informationprotection/policy/labels/{id}')
+let informationProtectionLabel = await client.api('/me/informationprotection/policy/labels/{id}')
 	.version('beta')
 	.get();
 

@@ -24,8 +24,8 @@ var proposedNewTime = new TimeSlot
 	}
 };
 
-await graphClient.Me.Events["{id}"]
-	.TentativelyAccept(proposedNewTime,sendResponse,comment)
+await graphClient.Me.Events["{event-id}"]
+	.TentativelyAccept(comment,sendResponse,proposedNewTime)
 	.Request()
 	.PostAsync();
 

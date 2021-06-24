@@ -133,7 +133,7 @@ Content-Type: application/json
 ---
 
 #### Response
-The response includes the updated settings for automatic replies. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+The response includes the updated settings for automatic replies. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "update_mailboxsettings_1",
@@ -168,8 +168,10 @@ Content-type: application/json
 The second example customizes the time zone for the working hours of the signed-in user, by setting the **timeZone** property 
 to a [custom time zone](../resources/customtimezone.md).
 
+
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "update_mailboxsettings_2"
 }-->
 ```http
@@ -210,10 +212,28 @@ Content-Type: application/json
   }
 } 
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/update-mailboxsettings-2-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/update-mailboxsettings-2-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/update-mailboxsettings-2-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/update-mailboxsettings-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 #### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "name": "update_mailboxsettings_2",
   "truncated": true,
   "@odata.type": "microsoft.graph.mailboxSettings"

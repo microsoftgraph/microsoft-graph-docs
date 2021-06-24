@@ -27,8 +27,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.    |
 |Application | Not supported. |
 
->**Note:** Using delegated permissions for this operation requires the signed-in user to have a global administrator role.
-
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 
@@ -87,7 +85,7 @@ GET https://graph.microsoft.com/beta/organization/{organizationId}/settings/item
 ##### Response
 
 Here is an example of the response. 
-> **Note:** The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

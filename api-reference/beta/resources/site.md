@@ -4,7 +4,7 @@ description: "The site resource provides metadata and relationships for a ShareP
 ms.date: 09/10/2017
 title: Site
 localization_priority: Priority
-ms.prod: "sharepoint"
+ms.prod: "sites-and-lists"
 doc_type: resourcePageType
 ---
 # site resource type
@@ -36,6 +36,10 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 | [Create permissions][]         | POST /sites/{site-id}/permissions
 | [Delete permission][]         | DELETE /sites/{site-id}/permissions/{permission-id}
 | [Update permission][]         | PATCH /sites/{site-id}/permissions/{permission-id}
+|[List content types][]          | GET /sites/{site-id}/contentTypes
+|[Create contentType][]        | POST /sites/{site-id}/contentTypes
+|[List columns][]               | GET /sites/{site-id}/columns
+|[Create column][]              | POST /sites/{site-id}/columns
 
 [Get site]: ../api/site-get.md
 [Get root site]: ../api/site-get.md
@@ -54,6 +58,10 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 [Create permissions]: ../api/site-post-permissions.md
 [Delete permission]: ../api/site-delete-permission.md
 [Update permission]: ../api/site-update-permission.md
+[List content types]: ../api/site-list-contenttypes.md
+[Create contentType]: ../api/site-post-contenttypes.md
+[List columns]: ../api/site-list-columns.md
+[Create column]: ../api/site-post-columns.md
 
 
 ## Properties
@@ -97,6 +105,8 @@ The `root` identifier always references the root site for a given target, as fol
 | **pages**         | Collection([sitePage][])         | The collection of pages in the SitePages list in this site.
 | **permissions**   | Collection([permission][])         | The permissions associated with the site. Nullable.
 | **sites**         | Collection([site][])             | The collection of the sub-sites under this site.
+| **termStore**     | [microsoft.graph.termStore.store]  | The termStore under this site.
+| **externalColumns**     | Collection([columnDefinition][])  | The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site.
 
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
@@ -111,6 +121,7 @@ The `root` identifier always references the root site for a given target, as fol
 [site]: site.md
 [sharepointIds]: sharepointids.md
 [siteCollection]: sitecollection.md
+[microsoft.graph.termStore.store]: termstore-store.md
 
 ## JSON representation
 
@@ -152,7 +163,8 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
   "permissions": [ { "@odata.type": "microsoft.graph.permission" }],
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
-
+  "termStore": { "@odata.type": "microsoft.graph.termStore.store" },
+  "externalColumns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   /* inherited from baseItem */
   "name": "string",
   "createdDateTime": "datetime",

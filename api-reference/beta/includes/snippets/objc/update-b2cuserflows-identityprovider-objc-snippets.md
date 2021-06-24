@@ -8,14 +8,14 @@ MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationPr
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
 NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/identity/b2cUserFlows/{id}/identityProviders/$ref"]]];
-[urlRequest setHTTPMethod:@"PATCH"];
+[urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphIdentityProvider *identityProviders = [[MSGraphIdentityProvider alloc] init];
+MSGraphIdentityProvider *identityProvider = [[MSGraphIdentityProvider alloc] init];
 
 NSError *error;
-NSData *identityProvidersData = [identityProviders getSerializedDataWithError:&error];
-[urlRequest setHTTPBody:identityProvidersData];
+NSData *identityProviderData = [identityProvider getSerializedDataWithError:&error];
+[urlRequest setHTTPBody:identityProviderData];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {

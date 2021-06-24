@@ -14,7 +14,7 @@ var workbookTable = new WorkbookTable
 	Style = "style-value"
 };
 
-await graphClient.Me.Drive.Items["{id}"].Workbook.Tables["{id|name}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"].Workbook.Tables["{workbookTable-id}"]
 	.Request()
 	.UpdateAsync(workbookTable);
 

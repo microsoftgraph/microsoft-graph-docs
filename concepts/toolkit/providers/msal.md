@@ -24,7 +24,9 @@ Initializing the MSAL provider in HTML is the simplest way to create a new provi
                    login-type="redirect/popup"
                    scopes="user.read,people.read"
                    redirect-uri="https://my.redirect/uri"
-                   authority=""></mgt-msal-provider>
+                   authority=""
+                   domainHint="mydomain.com"
+                   prompt="consent"></mgt-msal-provider>
 ```
 
 | Attribute    | Description                                                                                                                                                                                                                                                           |
@@ -34,7 +36,10 @@ Initializing the MSAL provider in HTML is the simplest way to create a new provi
 | scopes       | Comma separated strings for scopes the user must consent to on sign in. Optional.                                                                                                                                                                                     |
 | authority    | Authority string - default is the common authority. For single-tenant apps, use your tenant ID or tenant name. For example, `https://login.microsoftonline.com/[your-tenant-name].onmicrosoft.com` or `https://login.microsoftonline.com/[your-tenant-id]`. Optional. |
 | redirect-uri | Redirect URI string - by default the current window URI is used. Optional.                                                                                                                                                                                            |
-| depends-on   | Element selector string of another higher priority provider component. Optional.                                                                                                                                                                                      |
+| depends-on   | Element selector string of another higher priority provider component. Optional. 
+| domain-hint  | Query string of domain location for forwarding sign in experience. Optional.              
+| prompt | Selection for type of user interaction required to login. Valid options include: <ul><li>`login` forces the user to enter credentials on request </li><li>`none` for no interactive prompt</li> <li>`select_account` to send the user to an account picker</li><li>`consent` to send the user to a OAuth consent dialog</li></ul> For more prompt information, see the [prompt behavior in MSAL.js](/azure/active-directory/develop/msal-js-prompt-behavior) article. Optional.                                                                                                                                                                            |
+
 
 ### Initialize in JavaScript
 
@@ -62,6 +67,8 @@ interface MsalConfig {
   loginType?: LoginType; // LoginType.Popup or LoginType.Redirect (redirect is default)
   loginHint?: string
   options?: Configuration; // msal js Configuration object
+  domainHint?: string;
+  prompt?: string; // "login", "none", "select_account", "consent"
 }
 ```
 

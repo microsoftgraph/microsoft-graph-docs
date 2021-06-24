@@ -56,6 +56,7 @@ Represents a defined collection of Azure resource information that can be used t
 |running|Health checks are running.|
 |passed|Health checks passed.|
 |failed|Health checks failed.|
+|warning|Health checks passed with warning.|
 |unknownFutureValue|Unknown future status (reserved, not used right now).|
 
 ## Relationships

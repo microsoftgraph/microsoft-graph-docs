@@ -11,20 +11,20 @@ const options = {
 const client = Client.init(options);
 
 const contact = {
-  givenName: "Pavel",
-  surname: "Bansky",
+  givenName: 'Pavel',
+  surname: 'Bansky',
   emailAddresses: [
     {
-      address: "pavelb@fabrikam.onmicrosoft.com",
-      name: "Pavel Bansky"
+      address: 'pavelb@fabrikam.onmicrosoft.com',
+      name: 'Pavel Bansky'
     }
   ],
   businessPhones: [
-    "+1 732 555 0102"
+    '+1 732 555 0102'
   ]
 };
 
-let res = await client.api('/me/contacts')
+await client.api('/me/contacts')
 	.post(contact);
 
 ```

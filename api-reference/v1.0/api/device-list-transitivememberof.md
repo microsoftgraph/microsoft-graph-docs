@@ -2,7 +2,7 @@
 title: "List device transitive groups"
 description: "Get groups that the device is a member of."
 author: "spunukol"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 localization_priority: Normal
 doc_type: apiPageType
 ---
@@ -91,7 +91,7 @@ GET https://graph.microsoft.com/v1.0/devices/{id}/transitiveMemberOf
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -166,7 +166,7 @@ ConsistencyLevel: eventual
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -209,7 +209,7 @@ ConsistencyLevel: eventual
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

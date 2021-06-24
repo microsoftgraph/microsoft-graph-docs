@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var rows = await graphClient.Drive.Root.Workbook.Worksheets["{id}"]
+var rows = await graphClient.Drive.Root.Workbook.Worksheets["{workbookWorksheet-id}"]
 	.Range("A1:Z10")
 	.VisibleView().Rows
 	.Request()

@@ -29,7 +29,7 @@ var team = new Team
 	}
 };
 
-await graphClient.Teams["{id}"]
+await graphClient.Teams["{team-id}"]
 	.Request()
 	.UpdateAsync(team);
 

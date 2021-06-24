@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/identity/apiConnectors/{id}')
+let identityApiConnector = await client.api('/identity/apiConnectors/{id}')
 	.version('beta')
 	.get();
 

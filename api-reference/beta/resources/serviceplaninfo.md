@@ -4,7 +4,7 @@ description: "Contains information about a service plan associated with a subscr
 localization_priority: Normal
 doc_type: resourcePageType
 ms.prod: "directory-management"
-author: "krbain"
+author: "jpettere"
 ---
 
 # servicePlanInfo resource type

@@ -68,7 +68,7 @@ GET https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items?expan
 
 <!-- { "blockType": "response", "@odata.type": "Collection(microsoft.graph.listItem)", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

@@ -18,7 +18,7 @@ var governanceRoleSetting = new GovernanceRoleSetting
 	}
 };
 
-await graphClient.PrivilegedAccess["azureResources"].RoleSettings["5fb5aef8-1081-4b8e-bb16-9d5d0385bab5"]
+await graphClient.PrivilegedAccess["{privilegedAccess-id}"].RoleSettings["{governanceRoleSetting-id}"]
 	.Request()
 	.UpdateAsync(governanceRoleSetting);
 

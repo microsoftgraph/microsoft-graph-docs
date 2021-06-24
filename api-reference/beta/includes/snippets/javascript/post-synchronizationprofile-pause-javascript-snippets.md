@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/education/synchronizationProfiles/{id}/pause')
+await client.api('/education/synchronizationProfiles/{id}/pause')
 	.version('beta')
 	.post();
 

@@ -18,11 +18,11 @@ Update the properties of a [managedMobileApp](../resources/intune-mam-managedmob
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -65,12 +65,13 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/v1.0/deviceAppManagement/iosManagedAppProtections/{iosManagedAppProtectionId}/apps/{managedMobileAppId}
 Content-type: application/json
-Content-length: 181
+Content-length: 226
 
 {
   "@odata.type": "#microsoft.graph.managedMobileApp",
   "mobileAppIdentifier": {
-    "@odata.type": "microsoft.graph.mobileAppIdentifier"
+    "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
+    "packageId": "Package Id value"
   },
   "version": "Version value"
 }
@@ -81,22 +82,18 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 230
+Content-Length: 275
 
 {
   "@odata.type": "#microsoft.graph.managedMobileApp",
   "mobileAppIdentifier": {
-    "@odata.type": "microsoft.graph.mobileAppIdentifier"
+    "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
+    "packageId": "Package Id value"
   },
   "id": "0a129715-9715-0a12-1597-120a1597120a",
   "version": "Version value"
 }
 ```
-
-
-
-
-
 
 
 

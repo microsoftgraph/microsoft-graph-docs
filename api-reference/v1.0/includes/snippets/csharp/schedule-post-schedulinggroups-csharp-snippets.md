@@ -17,7 +17,7 @@ var schedulingGroup = new SchedulingGroup
 	}
 };
 
-await graphClient.Teams["{teamId}"].Schedule.SchedulingGroups
+await graphClient.Teams["{team-id}"].Schedule.SchedulingGroups
 	.Request()
 	.AddAsync(schedulingGroup);
 

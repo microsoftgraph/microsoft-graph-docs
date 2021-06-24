@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /users/{user-id}/teamwork/installedApps/{app-installation-id}/chat
+GET /users/{user-id | user-principal-name}/teamwork/installedApps/{app-installation-id}/chat
 ```
 
 ## Optional query parameters
@@ -90,7 +90,7 @@ GET https://graph.microsoft.com/beta/users/f32b83bb-4fc8-4db7-b7f5-76cdbbb8aa1c/
 #### Response
 
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "name": "user_chat_teamsApps",

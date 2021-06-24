@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/contacts/delta')
+let delta = await client.api('/contacts/delta')
 	.header('Prefer','return=minimal')
 	.select('displayName,jobTitle,mail')
 	.get();

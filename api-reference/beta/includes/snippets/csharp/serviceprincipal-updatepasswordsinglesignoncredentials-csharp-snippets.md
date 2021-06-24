@@ -24,7 +24,7 @@ var credentials = new List<Credential>()
 	}
 };
 
-await graphClient.ServicePrincipals["{id}"]
+await graphClient.ServicePrincipals["{servicePrincipal-id}"]
 	.UpdatePasswordSingleSignOnCredentials(id,credentials)
 	.Request()
 	.PostAsync();

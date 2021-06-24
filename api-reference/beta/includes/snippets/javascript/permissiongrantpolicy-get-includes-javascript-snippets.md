@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/policies/permissionGrantPolicies/microsoft-application-admin/includes')
+let includes = await client.api('/policies/permissionGrantPolicies/microsoft-application-admin/includes')
 	.version('beta')
 	.get();
 

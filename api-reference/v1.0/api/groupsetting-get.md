@@ -1,7 +1,7 @@
 ---
 title: "Get a group setting"
 description: "Retrieve the properties of a specific of group setting object."
-author: "yyuank"
+author: "Jordanndahl"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
@@ -83,7 +83,7 @@ GET https://graph.microsoft.com/v1.0/groupSettings/{id}
 
 ##### Response
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

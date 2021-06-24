@@ -40,6 +40,8 @@ Not yet documented
 |categoryId|String|Specifies the area group under which the setting is configured in a specified configuration service provider (CSP)|
 |settingUsage|[deviceManagementConfigurationSettingUsage](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingusage.md)|Setting type, for example, configuration and compliance. Possible values are: `none`, `configuration`.|
 |uxBehavior|[deviceManagementConfigurationControlType](../resources/intune-deviceconfigv2-devicemanagementconfigurationcontroltype.md)|Setting control type representation in the UX. Possible values are: `default`, `dropdown`, `smallTextBox`, `largeTextBox`, `toggle`, `multiheaderGrid`, `contextPane`.|
+|visibility|[deviceManagementConfigurationSettingVisibility](../resources/intune-deviceconfigv2-devicemanagementconfigurationsettingvisibility.md)|Setting visibility scope to UX. Possible values are: `none`, `settingsCatalog`, `template`.|
+|referredSettingInformationList|[deviceManagementConfigurationReferredSettingInformation](../resources/intune-deviceconfigv2-devicemanagementconfigurationreferredsettinginformation.md) collection|List of referred setting information.|
 |id|String|Identifier for item|
 |description|String|Description of the item|
 |helpText|String|Help text of the item|
@@ -86,6 +88,13 @@ Here is a JSON representation of the resource.
   "categoryId": "String",
   "settingUsage": "String",
   "uxBehavior": "String",
+  "visibility": "String",
+  "referredSettingInformationList": [
+    {
+      "@odata.type": "microsoft.graph.deviceManagementConfigurationReferredSettingInformation",
+      "settingDefinitionId": "String"
+    }
+  ],
   "id": "String (identifier)",
   "description": "String",
   "helpText": "String",

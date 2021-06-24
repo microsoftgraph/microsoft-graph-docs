@@ -11,7 +11,7 @@ var oAuth2PermissionGrant = new OAuth2PermissionGrant
 	Scope = "scope-value"
 };
 
-await graphClient.Oauth2PermissionGrants["{id}"]
+await graphClient.Oauth2PermissionGrants["{oAuth2PermissionGrant-id}"]
 	.Request()
 	.UpdateAsync(oAuth2PermissionGrant);
 

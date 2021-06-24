@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-await graphClient.BookingBusinesses["fabrikam@M365B489948.onmicrosoft.com"]
+await graphClient.BookingBusinesses["{bookingBusiness-id}"]
 	.Request()
 	.DeleteAsync();
 

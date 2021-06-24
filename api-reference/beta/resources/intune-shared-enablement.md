@@ -1,7 +1,7 @@
 ---
 title: "enablement enum type"
 description: "Possible values of a property"
-author: "dougeby"
+author: "rolyon"
 localization_priority: Normal
 ms.prod: "intune"
 doc_type: enumPageType

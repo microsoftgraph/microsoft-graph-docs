@@ -1,0 +1,488 @@
+{
+    "changelog": [
+        {
+            "ChangeList": [
+                {
+                    "Id": "02045A24-F358-47CA-85AE-238118A96121",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "additionalNotificationRecipients",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **additionalNotificationRecipients** property to the [accessReviewScheduleDefinition](https://docs.microsoft.com/en-us/graph/api/accessreviewscheduledefinition?view=graph-rest-beta&tabs=http) resource.",
+                    "Target": "accessreviewscheduledefinition"
+                },
+                {
+                    "Id": "02045A24-F358-47CA-85AE-238118A96121",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "accessreviewnotificationrecipientitem",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [accessreviewnotificationrecipientitem](https://docs.microsoft.com/en-us/graph/api/accessreviewnotificationrecipientitem?view=graph-rest-beta&tabs=http) resource type.",
+                    "Target": "accessreviewnotificationrecipientitem"
+                },
+                {
+                    "Id": "02045A24-F358-47CA-85AE-238118A96121",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "accessReviewnotificationrecipientqueryscope",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [accessReviewnotificationrecipientqueryscope](https://docs.microsoft.com/en-us/graph/api/accessReviewnotificationrecipientqueryscope?view=graph-rest-beta&tabs=http) resource type.",
+                    "Target": "accessReviewnotificationrecipientqueryscope"
+                }
+            ],
+            "Id": "02045A24-F358-47CA-85AE-238118A96121",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-06-10T18:47:16.557Z",
+            "WorkloadArea": "Identity and access",
+            "SubArea": "Governance"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "d8d53d12-7b8d-11eb-8d30-85f45032d4a1",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "principal",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **principal** property to the [accessReviewInstanceDecisionItem](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItem?view=graph-rest-beta) resource.",
+                    "Target": "accessReviewInstanceDecisionItem"
+                },
+                {
+                    "Id": "d8d7a0f9-7b8d-11eb-8d30-85f45032d4a1",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "resource",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **resource** property to the [accessReviewInstanceDecisionItem](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItem?view=graph-rest-beta) resource.",
+                    "Target": "accessReviewInstanceDecisionItem"
+                },
+                {
+                    "Id": "d8da07af-7b8d-11eb-8d30-85f45032d4a1",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "accessReviewQueryScope",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [accessReviewQueryScope](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewQueryScope?view=graph-rest-beta) resource type.",
+                    "Target": "accessReviewQueryScope"
+                },
+                {
+                    "Id": "d8dc642a-7b8d-11eb-8d30-85f45032d4a1",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "principalResourceMembershipsScope",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [principalResourceMembershipsScope](https://docs.microsoft.com/en-us/graph/api/resources/principalResourceMembershipsScope?view=graph-rest-beta) resource type.",
+                    "Target": "principalResourceMembershipsScope"
+                },
+                {
+                    "Id": "d8ded947-7b8d-11eb-8d30-85f45032d4a1",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "accessReviewInactiveUsersQueryScope",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [accessReviewInactiveUsersQueryScope](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInactiveUsersQueryScope?view=graph-rest-beta) resource type.",
+                    "Target": "accessReviewInactiveUsersQueryScope"
+                },
+                {
+                    "Id": "d8e128ec-7b8d-11eb-8d30-85f45032d4a1",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "servicePrincipalIdentity",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [servicePrincipalIdentity](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipalIdentity?view=graph-rest-beta) resource type.",
+                    "Target": "servicePrincipalIdentity"
+                },
+                {
+                    "Id": "d8e389f8-7b8d-11eb-8d30-85f45032d4a1",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "accessReviewInstanceDecisionItemResource",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [accessReviewInstanceDecisionItemResource](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemResource?view=graph-rest-beta) resource type.",
+                    "Target": "accessReviewInstanceDecisionItemResource"
+                },
+                {
+                    "Id": "d8e5ef40-7b8d-11eb-8d30-85f45032d4a1",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "query",
+                    "ChangeType": "Deletion",
+                    "Description": "Removed the **query** property from the [accessReviewScope](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScope?view=graph-rest-beta) resource.",
+                    "Target": "accessReviewScope"
+                },
+                {
+                    "Id": "d8d2da25-7b8d-11eb-8d30-85f45032d4a1",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "queryType",
+                    "ChangeType": "Deletion",
+                    "Description": "Removed the **queryType** property from the [accessReviewScope](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScope?view=graph-rest-beta) resource.",
+                    "Target": "accessReviewScope"
+                },
+                {
+                    "Id": "d8d2da25-7b8d-11eb-8d30-85f45032d4a1",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "batchRecordDecisions",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [batchRecordDecisions](https://docs.microsoft.com/en-us/graph/api/accessReviewInstance-batchRecordDecisions?view=graph-rest-beta) method to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-beta) resource.",
+                    "Target": "accessReviewInstance"
+                }
+            ],
+            "Id": "d8d2da25-7b8d-11eb-8d30-85f45032d4a1",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-03-02T19:31:12.323Z",
+            "WorkloadArea": "Identity and access",
+            "SubArea": "Governance"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "71941e3b-b555-4bc6-8348-7cf2ddf44350",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "accessReviewPolicy",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [accessReviewPolicy](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewPolicy?view=graph-rest-beta) resource type.",
+                    "Target": "accessReviewPolicy"
+                },
+                {
+                    "Id": "71941e3b-b555-4bc6-8348-7cf2ddf44350",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "accessReviewPolicy",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [accessReviewPolicy](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewPolicy?view=graph-rest-beta) resource type.",
+                    "Target": "accessReviewPolicy"
+                }
+            ],
+            "Id": "71941e3b-b555-4bc6-8348-7cf2ddf44350",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-04-27T18:46:20.323Z",
+            "WorkloadArea": "Identity and access",
+            "SubArea": "Governance"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "8549217c-8d9a-11eb-a57c-31dcdef91872",
+                    "ApiChange": "Relationship",
+                    "ChangedApiName": "historyDefinitions",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **historyDefinitions** relationship to the [accessReviewSet](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewSet?view=graph-rest-beta) resource.",
+                    "Target": "accessReviewSet"
+                },
+                {
+                    "Id": "8549217c-8d9a-11eb-a57c-31dcdef91872",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "accessReviewHistoryDefinition",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [accessReviewHistoryDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewHistoryDefinition?view=graph-rest-beta) resource type.",
+                    "Target": "accessReviewHistoryDefinition"
+                },
+                {
+                    "Id": "8549217c-8d9a-11eb-a57c-31dcdef91872",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "generateDownloadUri",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [generateDownloadUri](https://docs.microsoft.com/en-us/graph/api/accessReviewHistoryDefinition-generateDownloadUri?view=graph-rest-beta) method to the [accessReviewHistoryDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewHistoryDefinition?view=graph-rest-beta) resource.",
+                    "Target": "accessReviewHistoryDefinition"
+                }
+            ],
+            "Id": "8549217c-8d9a-11eb-a57c-31dcdef91872",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-03-25T18:47:16.557Z",
+            "WorkloadArea": "Identity and access",
+            "SubArea": "Governance"
+        },
+        {
+            "ChangeList": [
+              {
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
+                "ApiChange": "Resource",
+                "ChangedApiName": "accessReviewScope",
+                "ChangeType": "Addition",
+                "Description": "Added the [accessReviewScope](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScope?view=graph-rest-1.0) resource type.",
+                "Target": "accessReviewScope"
+              },
+              {
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
+                "ApiChange": "Resource",
+                "ChangedApiName": "accessReviewQueryScope",
+                "ChangeType": "Addition",
+                "Description": "Added the [accessReviewQueryScope](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewQueryScope?view=graph-rest-1.0) resource type.",
+                "Target": "accessReviewQueryScope"
+              },
+              {
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
+                "ApiChange": "Resource",
+                "ChangedApiName": "principalResourceMembershipsScope",
+                "ChangeType": "Addition",
+                "Description": "Added the [principalResourceMembershipsScope](https://docs.microsoft.com/en-us/graph/api/resources/principalResourceMembershipsScope?view=graph-rest-1.0) resource type.",
+                "Target": "principalResourceMembershipsScope"
+              },
+              {
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
+                "ApiChange": "Resource",
+                "ChangedApiName": "accessReviewInactiveUsersQueryScope",
+                "ChangeType": "Addition",
+                "Description": "Added the [accessReviewInactiveUsersQueryScope](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInactiveUsersQueryScope?view=graph-rest-1.0) resource type.",
+                "Target": "accessReviewInactiveUsersQueryScope"
+              },
+              {
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
+                "ApiChange": "Resource",
+                "ChangedApiName": "accessReviewApplyAction",
+                "ChangeType": "Addition",
+                "Description": "Added the [accessReviewApplyAction](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewApplyAction?view=graph-rest-1.0) resource type.",
+                "Target": "accessReviewApplyAction"
+              },
+              {
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
+                "ApiChange": "Resource",
+                "ChangedApiName": "removeAccessApplyAction",
+                "ChangeType": "Addition",
+                "Description": "Added the [removeAccessApplyAction](https://docs.microsoft.com/en-us/graph/api/resources/removeAccessApplyAction?view=graph-rest-1.0) resource type.",
+                "Target": "removeAccessApplyAction"
+              },
+              {
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
+                "ApiChange": "Resource",
+                "ChangedApiName": "disableAndDeleteUserApplyAction",
+                "ChangeType": "Addition",
+                "Description": "Added the [disableAndDeleteUserApplyAction](https://docs.microsoft.com/en-us/graph/api/resources/disableAndDeleteUserApplyAction?view=graph-rest-1.0) resource type.",
+                "Target": "disableAndDeleteUserApplyAction"
+              },
+              {
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
+                "ApiChange": "Resource",
+                "ChangedApiName": "accessReviewScheduleSettings",
+                "ChangeType": "Addition",
+                "Description": "Added the [accessReviewScheduleSettings](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleSettings?view=graph-rest-1.0) resource type.",
+                "Target": "accessReviewScheduleSettings"
+              },
+              {
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
+                "ApiChange": "Resource",
+                "ChangedApiName": "accessReviewScheduleDefinition",
+                "ChangeType": "Addition",
+                "Description": "Added the [accessReviewScheduleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleDefinition?view=graph-rest-1.0) resource type.",
+                "Target": "accessReviewScheduleDefinition"
+              },
+              {
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
+                "ApiChange": "Resource",
+                "ChangedApiName": "accessReviewInstance",
+                "ChangeType": "Addition",
+                "Description": "Added the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-1.0) resource type.",
+                "Target": "accessReviewInstance"
+              },
+              {
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
+                "ApiChange": "Resource",
+                "ChangedApiName": "accessReviewInstanceDecisionItem",
+                "ChangeType": "Addition",
+                "Description": "Added the [accessReviewInstanceDecisionItem](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItem?view=graph-rest-1.0) resource type.",
+                "Target": "accessReviewInstanceDecisionItem"
+              },
+              {
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
+                "ApiChange": "Resource",
+                "ChangedApiName": "servicePrincipalIdentity",
+                "ChangeType": "Addition",
+                "Description": "Added the [servicePrincipalIdentity](https://docs.microsoft.com/en-us/graph/api/resources/servicePrincipalIdentity?view=graph-rest-1.0) resource type.",
+                "Target": "servicePrincipalIdentity"
+              },
+              {
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
+                "ApiChange": "Resource",
+                "ChangedApiName": "accessReviewInstanceDecisionItemResource",
+                "ChangeType": "Addition",
+                "Description": "Added the [accessReviewInstanceDecisionItemResource](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItemResource?view=graph-rest-1.0) resource type.",
+                "Target": "accessReviewInstanceDecisionItemResource"
+              },
+              {
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
+                "ApiChange": "Method",
+                "ChangedApiName": "stop",
+                "ChangeType": "Addition",
+                "Description": "Added the [stop](https://docs.microsoft.com/en-us/graph/api/accessReviewInstance-stop?view=graph-rest-1.0) method to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-1.0) resource.",
+                "Target": "accessReviewInstance"
+              },
+              {
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
+                "ApiChange": "Method",
+                "ChangedApiName": "sendReminder",
+                "ChangeType": "Addition",
+                "Description": "Added the [sendReminder](https://docs.microsoft.com/en-us/graph/api/accessReviewInstance-sendReminder?view=graph-rest-1.0) method to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-1.0) resource.",
+                "Target": "accessReviewInstance"
+              },
+              {
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
+                "ApiChange": "Method",
+                "ChangedApiName": "resetDecisions",
+                "ChangeType": "Addition",
+                "Description": "Added the [resetDecisions](https://docs.microsoft.com/en-us/graph/api/accessReviewInstance-resetDecisions?view=graph-rest-1.0) method to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-1.0) resource.",
+                "Target": "accessReviewInstance"
+              },
+              {
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
+                "ApiChange": "Method",
+                "ChangedApiName": "applyDecisions",
+                "ChangeType": "Addition",
+                "Description": "Added the [applyDecisions](https://docs.microsoft.com/en-us/graph/api/accessReviewInstance-applyDecisions?view=graph-rest-1.0) method to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-1.0) resource.",
+                "Target": "accessReviewInstance"
+              },
+              {
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
+                "ApiChange": "Method",
+                "ChangedApiName": "acceptRecommendations",
+                "ChangeType": "Addition",
+                "Description": "Added the [acceptRecommendations](https://docs.microsoft.com/en-us/graph/api/accessReviewInstance-acceptRecommendations?view=graph-rest-1.0) method to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-1.0) resource.",
+                "Target": "accessReviewInstance"
+              },
+              {
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
+                "ApiChange": "Method",
+                "ChangedApiName": "batchRecordDecisions",
+                "ChangeType": "Addition",
+                "Description": "Added the [batchRecordDecisions](https://docs.microsoft.com/en-us/graph/api/accessReviewInstance-batchRecordDecisions?view=graph-rest-1.0) method to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-1.0) resource.",
+                "Target": "accessReviewInstance"
+              },
+              {
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
+                "ApiChange": "Method",
+                "ChangedApiName": "filterByCurrentUser",
+                "ChangeType": "Addition",
+                "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/accessReviewScheduleDefinition-filterByCurrentUser?view=graph-rest-1.0) method to the [accessReviewScheduleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleDefinition?view=graph-rest-1.0) resource.",
+                "Target": "accessReviewScheduleDefinition"
+              },
+              {
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
+                "ApiChange": "Method",
+                "ChangedApiName": "filterByCurrentUser",
+                "ChangeType": "Addition",
+                "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/accessReviewInstance-filterByCurrentUser?view=graph-rest-1.0) method to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-1.0) resource.",
+                "Target": "accessReviewInstance"
+              },
+              {
+                "Id": "cfa21b4a-9646-11eb-a4ee-0754add743a7",
+                "ApiChange": "Method",
+                "ChangedApiName": "filterByCurrentUser",
+                "ChangeType": "Addition",
+                "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/accessReviewInstanceDecisionItem-filterByCurrentUser?view=graph-rest-1.0) method to the [accessReviewInstanceDecisionItem](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItem?view=graph-rest-1.0) resource.",
+                "Target": "accessReviewInstanceDecisionItem"
+              }
+            ],
+            "Id": "cf9af399-9646-11eb-a4ee-0754add743a7",
+            "Cloud": "prd",
+            "Version": "v1.0",
+            "CreatedDateTime": "2021-06-18T19:40:43.984Z",
+            "WorkloadArea": "Identity and access",
+            "SubArea": "Governance"
+          },
+          {
+            "ChangeList": [
+              {
+                "Id": "136d3fb8-0b3b-4e01-b1af-277e42c21cb7",
+                "ApiChange": "Method",
+                "ChangedApiName": "filterByCurrentUser",
+                "ChangeType": "Addition",
+                "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/accessReviewInstance-filterByCurrentUser?view=graph-rest-beta) method to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-beta) resource.",
+                "Target": "accessReviewInstance"
+              },
+              {
+                "Id": "136d3fb8-0b3b-4e01-b1af-277e42c21cb7",
+                "ApiChange": "Method",
+                "ChangedApiName": "resetDecisions",
+                "ChangeType": "Addition",
+                "Description": "Added the [resetDecisions](https://docs.microsoft.com/en-us/graph/api/accessReviewInstance-resetDecisions?view=graph-rest-beta) method to the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-beta) resource.",
+                "Target": "accessReviewInstance"
+              },
+              {
+                "Id": "136d3fb8-0b3b-4e01-b1af-277e42c21cb7",
+                "ApiChange": "Method",
+                "ChangedApiName": "filterByCurrentUser",
+                "ChangeType": "Addition",
+                "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/accessReviewInstanceDecisionItem-filterByCurrentUser?view=graph-rest-beta) method to the [accessReviewInstanceDecisionItem](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItem?view=graph-rest-beta) resource.",
+                "Target": "accessReviewInstanceDecisionItem"
+              },
+              {
+                "Id": "136d3fb8-0b3b-4e01-b1af-277e42c21cb7",
+                "ApiChange": "Method",
+                "ChangedApiName": "Get",
+                "ChangeType": "Addition",
+                "Description": "Added the [Get](https://docs.microsoft.com/en-us/graph/api/accessReviewInstanceDecisionItem-get?view=graph-rest-beta) method to the [accessReviewInstanceDecisionItem](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItem?view=graph-rest-beta) resource.",
+                "Target": "accessReviewInstanceDecisionItem"
+              },
+              {
+                "Id": "136d3fb8-0b3b-4e01-b1af-277e42c21cb7",
+                "ApiChange": "Method",
+                "ChangedApiName": "filterByCurrentUser",
+                "ChangeType": "Addition",
+                "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/accessReviewScheduleDefinition-filterByCurrentUser?view=graph-rest-beta) method to the [accessReviewScheduleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleDefinition?view=graph-rest-beta) resource.",
+                "Target": "accessReviewScheduleDefinition"
+              },
+              {
+                "Id": "136d3fb8-0b3b-4e01-b1af-277e42c21cb7",
+                "ApiChange": "Property",
+                "ChangedApiName": "principalLink",
+                "ChangeType": "Addition",
+                "Description": "Added the **principalLink** property to the [accessReviewInstanceDecisionItem](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItem?view=graph-rest-beta) resource.",
+                "Target": "accessReviewInstanceDecisionItem"
+              },
+              {
+                "Id": "136d3fb8-0b3b-4e01-b1af-277e42c21cb7",
+                "ApiChange": "Property",
+                "ChangedApiName": "resourceLink",
+                "ChangeType": "Addition",
+                "Description": "Added the **resourceLink** property to the [accessReviewInstanceDecisionItem](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstanceDecisionItem?view=graph-rest-beta) resource.",
+                "Target": "accessReviewInstanceDecisionItem"
+              },
+              {
+                "Id": "136d3fb8-0b3b-4e01-b1af-277e42c21cb7",
+                "ApiChange": "Property",
+                "ChangedApiName": "displayName",
+                "ChangeType": "Deletion",
+                "Description": "Removed the **displayName** property from the [accessReviewInstance](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewInstance?view=graph-rest-beta) resource.",
+                "Target": "accessReviewInstanceDecisionItem"
+              },
+              {
+                "Id": "136d3fb8-0b3b-4e01-b1af-277e42c21cb7",
+                "ApiChange": "Property",
+                "ChangedApiName": "fallbackReviewers",
+                "ChangeType": "Addition",
+                "Description": "Added the **fallbackReviewers** property to the [accessReviewScheduleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessReviewScheduleDefinition?view=graph-rest-beta) resource.",
+                "Target": "accessReviewInstanceDecisionItem"
+              },
+              {
+                "Id": "136d3fb8-0b3b-4e01-b1af-277e42c21cb7",
+                "ApiChange": "Resource",
+                "ChangedApiName": "accessreview",
+                "ChangeType": "Deprecation",
+                "Description": "Deprecation of [accessReview](https://docs.microsoft.com/en-us/graph/api/resources/accessreviews-root?view=graph-rest-beta) resource. Replaced with [accessReview](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewsv2-root?view=graph-rest-beta)",
+                "Target": "accessReview"
+              },
+              {
+                "Id": "136d3fb8-0b3b-4e01-b1af-277e42c21cb7",
+                "ApiChange": "Method",
+                "ChangedApiName": "accessreviewinstance-pendingaccessreviewinstances",
+                "ChangeType": "Deprecation",
+                "Description": "Deprecation of [accessReviewInstance: pendingAccessReviewInstances](https://docs.microsoft.com/en-us/graph/api//accessreviewinstance-pendingaccessreviewinstances?view=graph-rest-beta) method. Replaced with [accessReviewInstance: filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/accessreviewinstance-filterbycurrentuser?view=graph-rest-beta)",
+                "Target": "accessReviewInstance"
+              },
+              {
+                "Id": "136d3fb8-0b3b-4e01-b1af-277e42c21cb7",
+                "ApiChange": "Method",
+                "ChangedApiName": "accessreviewinstancedecisionitem-listpendingapproval",
+                "ChangeType": "Deprecation",
+                "Description": "Deprecation of [List accessReviewInstanceDecisionItems pending approval](https://docs.microsoft.com/en-us/graph/api/accessreviewinstancedecisionitem-listpendingapproval?view=graph-rest-beta) method. Replaced with [accessReviewInstanceDecisionItem: filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/accessreviewinstancedecisionitem-filterbycurrentuser?view=graph-rest-beta)",
+                "Target": "accessReviewInstanceDecisionItem"
+              },
+              {
+                "Id": "136d3fb8-0b3b-4e01-b1af-277e42c21cb7",
+                "ApiChange": "Property",
+                "ChangedApiName": "backupReviewers",
+                "ChangeType": "Deprecation",
+                "Description": "Deprecation of **backupReviewers** property on the [accessReviewScheduleDefinition](https://docs.microsoft.com/en-us/graph/api/resources/accessreviewscheduledefinition?view=graph-rest-beta) resource",
+                "Target": "accessReviewScheduleDefinition"
+              }
+            ],
+            "Id": "49ebf6ed-e100-40e8-812f-781f58b264ce",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-06-18T19:40:43.984Z",
+            "WorkloadArea": "Identity and access",
+            "SubArea": "Governance"
+          }
+    ]
+}

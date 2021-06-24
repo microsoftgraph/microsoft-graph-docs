@@ -2,7 +2,7 @@
 title: "List calendarView"
 description: "Get the occurrences, exceptions, and single instances of events in a calendar view defined by a time range,"
 localization_priority: Normal
-author: "yyuank"
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -92,7 +92,7 @@ Prefer: outlook.body-content-type="text"
 
 #### Response
 The following is an example of the response.
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

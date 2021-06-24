@@ -11,7 +11,7 @@ var queryOptions = new List<QueryOption>()
 	new QueryOption("select", "c300x400_Crop")
 };
 
-var thumbnails = await graphClient.Me.Drive.Items["{item-id}"].Thumbnails
+var thumbnails = await graphClient.Me.Drive.Items["{driveItem-id}"].Thumbnails
 	.Request( queryOptions )
 	.GetAsync();
 

@@ -16,7 +16,7 @@ var homeRealmDiscoveryPolicy = new HomeRealmDiscoveryPolicy
 	IsOrganizationDefault = true
 };
 
-await graphClient.Policies.HomeRealmDiscoveryPolicies["{id}"]
+await graphClient.Policies.HomeRealmDiscoveryPolicies["{homeRealmDiscoveryPolicy-id}"]
 	.Request()
 	.UpdateAsync(homeRealmDiscoveryPolicy);
 

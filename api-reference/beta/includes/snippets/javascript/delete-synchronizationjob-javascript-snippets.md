@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/servicePrincipals/{id}/synchronization/jobs/{jobId}/')
+await client.api('/servicePrincipals/{id}/synchronization/jobs/{jobId}/')
 	.version('beta')
 	.delete();
 

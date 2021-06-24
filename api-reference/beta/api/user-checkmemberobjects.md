@@ -2,7 +2,7 @@
 title: "user: checkMemberObjects"
 description: "Check for membership in a list of group, directory role, or administrative unit objects for the specified user object."
 localization_priority: Normal
-author: "krbain"
+author: "jpettere"
 ms.prod: "users"
 doc_type: "apiPageType"
 ---
@@ -21,9 +21,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 | Permission type                        | Permissions (from least to most privileged) |
 |:---------------------------------------|:--------------------------------------------|
-| Delegated (work or school account)     | User.ReadBasic.All, User.Read.All, User.ReadWrite.All<br><br>In addition:<br><br><ul><li>If checking for membership in groups: Group.Read.All, Group.ReadWrite.All</li><li>If checking for membership in administrative units: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All</li><li>If checking for membership in directory roles: RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory</li></ul>Directory.Read.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
+| Delegated (work or school account)     | User.ReadBasic.All, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All  |
 | Delegated (personal Microsoft account) | Not supported. |
-| Application                            | User.ReadBasic.All, User.Read.All, User.ReadWrite.All<br>And:<ul><li>If checking for membership in groups: Group.Read.All, Group.ReadWrite.All</li><li>If checking for membership in administrative units: AdministrativeUnit.Read.All, AdministrativeUnit.ReadWrite.All</li><li>If checking for membership in directory roles: RoleManagement.Read.Directory, RoleManagement.ReadWrite.Directory</li></ul>Directory.Read.All, Directory.ReadWrite.All |
+| Application                            | User.ReadBasic.All, User.Read.All, Directory.Read.All, User.ReadWrite.All, Directory.ReadWrite.All |
 
 ## HTTP request
 
@@ -103,7 +103,7 @@ Content-type: application/json
 
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

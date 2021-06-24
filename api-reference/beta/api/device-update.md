@@ -3,7 +3,7 @@ title: "Update device"
 description: "Update the properties of a device."
 author: "spunukol"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -99,9 +99,7 @@ Content-length: 31
 ##### Response
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.device"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

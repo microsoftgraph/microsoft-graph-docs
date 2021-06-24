@@ -12,7 +12,7 @@ var password = "ThisIsMyPrivatePassword";
 
 var scope = "anonymous";
 
-await graphClient.Me.Drive.Items["{itemId}"]
+await graphClient.Me.Drive.Items["{driveItem-id}"]
 	.CreateLink(type,scope,null,password,null,null)
 	.Request()
 	.PostAsync();

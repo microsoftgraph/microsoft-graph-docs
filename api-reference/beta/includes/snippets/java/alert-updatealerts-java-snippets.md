@@ -4,12 +4,12 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 LinkedList<Alert> valueList = new LinkedList<Alert>();
 Alert value = new Alert();
 value.assignedTo = "String";
-value.closedDateTime = CalendarSerializer.deserialize("String (timestamp)");
+value.closedDateTime = OffsetDateTimeSerializer.deserialize("String (timestamp)");
 LinkedList<String> commentsList = new LinkedList<String>();
 commentsList.add("String");
 value.comments = commentsList;
@@ -32,7 +32,10 @@ alertCollectionResponse.value = valueList;
 AlertCollectionPage alertCollectionPage = new AlertCollectionPage(alertCollectionResponse, null);
 
 graphClient.security().alerts()
-	.updateAlerts(valueList)
+	.updateAlerts(AlertUpdateAlertsParameterSet
+		.newBuilder()
+		.withValue(valueList)
+		.build())
 	.buildRequest()
 	.post();
 

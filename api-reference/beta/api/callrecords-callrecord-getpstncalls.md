@@ -112,7 +112,9 @@ HTTP/1.1 200 OK
             "destinationName": "United States",
             "conferenceId": null,
             "licenseCapability": "MCOPSTNU",
-            "inventoryType": "Subscriber"
+            "inventoryType": "Subscriber",
+			"operator": "Microsoft",
+			"callDurationSource": "microsoft"
         }],
     "@odata.nextLink": "https://graph.microsoft.com/beta/communications/callRecords/getPstnCalls(from=2019-11-01,to=2019-12-01)?$skip=1000"
 }

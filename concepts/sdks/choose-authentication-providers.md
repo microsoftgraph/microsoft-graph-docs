@@ -29,6 +29,7 @@ Authentication providers implement the code required to acquire a token using th
 | [Mobile app that calls web APIs](/azure/active-directory/develop/scenario-mobile-acquire-token) | | | |
 | | Interactive | Delegated Consumer/Org | [Interactive Provider](#InteractiveProvider) |
 
+> Note: Java and android developers need to add the [azure-identity](/java/api/overview/azure/identity-readme?view=azure-java-stable) library in order to get access to the different credentials types.
 
 ## <a name="AuthCodeProvider" ></a>Authorization code provider
 
@@ -53,12 +54,22 @@ Authorization code, client credential, and on-behalf-of OAuth flows require that
 # [Java](#tab/Java)
 
 ```java
-AuthorizationCodeProvider authProvider = new AuthorizationCodeProvider(
-                                                    clientId,
-                                                    scopes,
-                                                    authorizationCode,
-                                                    redirectUri,
-                                                    clientSecret);
+final AuthorizationCodeCredential authCodeCredential = new AuthorizationCodeCredentialBuilder()
+        .clientId(clientId)
+        .clientSecret(clientSecret) //required for web apps, do not set for native apps
+        .authorizationCode(authorizationCode)
+        .redirectUrl(redirectUri)
+        .build();
+
+final TokenCredentialAuthProvider tokenCredentialAuthProvider = new TokenCredentialAuthProvider(scopes, authCodeCredential);
+
+final GraphServiceClient graphClient =
+  GraphServiceClient
+    .builder()
+    .authenticationProvider(tokenCredentialAuthProvider)
+    .buildClient();
+
+final User me = graphClient.me().buildRequest().get();
 ```
 
 # [Android](#tab/Android)
@@ -71,11 +82,11 @@ Not applicable.
 
 # [PHP](#tab/PHP)
 
-Not yet available. Please support or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+Not yet available. Please support or open a [Microsoft Graph feature request](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) if this is important to you.
 
 # [Ruby](#tab/Ruby)
 
-Not available, yet. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+Not available, yet. Please vote for or open a [Microsoft Graph feature request](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) if this is important to you.
 
 ---
 
@@ -102,12 +113,21 @@ Authorization code, client credential, and on-behalf-of OAuth flows require that
 # [Java](#tab/Java)
 
 ```java
-ClientCredentialProvider authProvider = new ClientCredentialProvider(
-                                                    clientId,
-                                                    scopes,
-                                                    clientSecret,
-                                                    tenant,
-                                                    NationalCloud.Global);
+final ClientSecretCredential clientSecretCredential = new ClientSecretCredentialBuilder()
+        .clientId(clientId)
+        .clientSecret(clientSecret)
+        .tenantId(tenant)
+        .build();
+
+final TokenCredentialAuthProvider tokenCredentialAuthProvider = new TokenCredentialAuthProvider(scopes, clientSecretCredential);
+
+final GraphServiceClient graphClient =
+  GraphServiceClient
+    .builder()
+    .authenticationProvider(tokenCredentialAuthProvider)
+    .buildClient();
+
+final User me = graphClient.me().buildRequest().get();
 ```
 
 # [Android](#tab/Android)
@@ -120,11 +140,11 @@ Not applicable.
 
 # [PHP](#tab/PHP)
 
-Not available, yet. Please support or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+Not available, yet. Please support or open a [Microsoft Graph feature request](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) if this is important to you.
 
 # [Ruby](#tab/Ruby)
 
-Not available, yet. Please support or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+Not available, yet. Please support or open a [Microsoft Graph feature request](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) if this is important to you.
 
 ---
 
@@ -150,7 +170,7 @@ Authorization code, client credential, and on-behalf-of OAuth flows require that
 
 # [Java](#tab/Java)
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+Not yet available. Please vote for or open a [Microsoft Graph feature request](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) if this is important to you.
 
 # [Android](#tab/Android)
 
@@ -162,11 +182,11 @@ Not applicable.
 
 # [PHP](#tab/PHP)
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+Not yet available. Please vote for or open a [Microsoft Graph feature request](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) if this is important to you.
 
 # [Ruby](#tab/Ruby)
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+Not yet available. Please vote for or open a [Microsoft Graph feature request](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) if this is important to you.
 
 ---
 
@@ -240,11 +260,28 @@ DeviceCodeProvider authProvider = new DeviceCodeProvider(publicClientApplication
 
 # [Javascript](#tab/Javascript)
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+Not yet available. Please vote for or open a [Microsoft Graph feature request](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) if this is important to you.
 
 # [Java](#tab/Java)
 
-Not available, yet. Please support or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+```java
+final DeviceCodeCredential deviceCodeCredential = new DeviceCodeCredentialBuilder()
+                    .clientId(clientId)
+                    .challengeConsumer(challenge -> {
+                        // lets user know of the challenge
+                        System.out.println(challenge.getMessage());
+                    })
+                    .build();
+final TokenCredentialAuthProvider tokenCredentialAuthProvider = new TokenCredentialAuthProvider(scopes, deviceCodeCredential);
+
+final GraphServiceClient graphClient =
+  GraphServiceClient
+    .builder()
+    .authenticationProvider(tokenCredentialAuthProvider)
+    .buildClient();
+
+final User me = graphClient.me().buildRequest().get();
+```
 
 # [Android](#tab/Android)
 
@@ -256,11 +293,11 @@ Not applicable.
 
 # [PHP](#tab/PHP)
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+Not yet available. Please vote for or open a [Microsoft Graph feature request](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) if this is important to you.
 
 # [Ruby](#tab/Ruby)
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+Not yet available. Please vote for or open a [Microsoft Graph feature request](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) if this is important to you.
 
 ---
 
@@ -321,27 +358,42 @@ InteractiveAuthenticationProvider authProvider = new InteractiveAuthenticationPr
 
 # [Javascript](#tab/Javascript)
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+Not yet available. Please vote for or open a [Microsoft Graph feature request](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) if this is important to you.
 
 # [Java](#tab/Java)
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+```java
+final InteractiveBrowserCredential interactiveBrowserCredential = new InteractiveBrowserCredentialBuilder()
+                .clientId(clientId)
+                .redirectUrl("http://localhost:8765")
+                .build();
+final TokenCredentialAuthProvider tokenCredentialAuthProvider = new TokenCredentialAuthProvider(scopes, interactiveBrowserCredential);
+
+final GraphServiceClient graphClient =
+  GraphServiceClient
+    .builder()
+    .authenticationProvider(tokenCredentialAuthProvider)
+    .buildClient();
+
+final User me = graphClient.me().buildRequest().get();
+```
 
 # [Android](#tab/Android)
 
 ```java
-PublicClientApplication publicClientApplication = new PublicClientApplication(getApplicationContext(), "CLIENT_ID_OF_YOUR_APPLICATION");
-MSALAuthenticationProvider msalAuthenticationProvider = new MSALAuthenticationProvider(
-    getActivity(),
-    getApplication(),
-    publicClientApplication,
-    scopes);
+final InteractiveBrowserCredential interactiveBrowserCredential = new InteractiveBrowserCredentialBuilder()
+                .clientId(clientId)
+                .redirectUrl("http://localhost:8765")
+                .build();
+final TokenCredentialAuthProvider tokenCredentialAuthProvider = new TokenCredentialAuthProvider(scopes, interactiveBrowserCredential);
 
-IGraphServiceClient graphClient =
+final GraphServiceClient graphClient =
   GraphServiceClient
     .builder()
-    .authenticationProvider(msalAuthenticationProvider)
+    .authenticationProvider(tokenCredentialAuthProvider)
     .buildClient();
+
+final User me = graphClient.me().buildRequest().get();
 ```
 
 # [Objective-C](#tab/Objective-C)
@@ -392,16 +444,26 @@ User me = await graphClient.Me.Request()
 
 # [Javascript](#tab/Javascript)
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+Not yet available. Please vote for or open a [Microsoft Graph feature request](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) if this is important to you.
 
 # [Java](#tab/Java)
 
 ```java
-UsernamePasswordProvider authProvider = new UsernamePasswordProvider(
-                                                    clientId,
-                                                    scopes,
-                                                    username,
-                                                    password);
+final UsernamePasswordCredential usernamePasswordCredential = new UsernamePasswordCredentialBuilder()
+        .clientId(clientId)
+        .username(username)
+        .password(password)
+        .build();
+
+final TokenCredentialAuthProvider tokenCredentialAuthProvider = new TokenCredentialAuthProvider(scopes, usernamePasswordCredential);
+
+final GraphServiceClient graphClient =
+  GraphServiceClient
+    .builder()
+    .authenticationProvider(tokenCredentialAuthProvider)
+    .buildClient();
+
+final User me = graphClient.me().buildRequest().get();
 ```
 
 # [Android](#tab/Android)
@@ -414,15 +476,16 @@ Not applicable.
 
 # [PHP](#tab/PHP)
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+Not yet available. Please vote for or open a [Microsoft Graph feature request](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) if this is important to you.
 
 # [Ruby](#tab/Ruby)
 
-Not yet available. Please vote for or open a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests) if this is important to you.
+Not yet available. Please vote for or open a [Microsoft Graph feature request](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph) if this is important to you.
 
 ---
 
 ## Next steps
 
+* For code samples that show you how to use the Microsoft identity platform to secure different application types, see [Microsoft identity platform code samples (v2.0 endpoint)](/azure/active-directory/develop/sample-v2-code).
 * Authentication providers require an client ID. You'll want to [register your application](https://portal.azure.com/) after you set up your authentication provider.
-* Let us know if a required OAuth flow isn't currently supported by voting for or opening a [Microsoft Graph feature request](https://microsoftgraph.uservoice.com/forums/920506-microsoft-graph-feature-requests).
+* Let us know if a required OAuth flow isn't currently supported by voting for or opening a [Microsoft Graph feature request](https://techcommunity.microsoft.com/t5/microsoft-365-developer-platform/idb-p/Microsoft365DeveloperPlatform/label-name/Microsoft%20Graph).

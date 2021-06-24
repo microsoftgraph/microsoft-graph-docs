@@ -12,12 +12,12 @@ const client = Client.init(options);
 
 const resultInfo = {
   value: [
-    "id-value1",
-    "id-value2"
+    'id-value1',
+    'id-value2'
   ]
 };
 
-let res = await client.api('/security/tiIndicators/deleteTiIndicators')
+await client.api('/security/tiIndicators/deleteTiIndicators')
 	.version('beta')
 	.post(resultInfo);
 

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/identityGovernance/entitlementManagement/connectedOrganizations/{id}')
+await client.api('/identityGovernance/entitlementManagement/connectedOrganizations/{id}')
 	.version('beta')
 	.delete();
 

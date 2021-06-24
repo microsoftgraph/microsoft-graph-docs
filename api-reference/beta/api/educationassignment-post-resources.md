@@ -1,6 +1,6 @@
 ---
 title: "Create educationAssignmentResource"
-description: "odata.type to indicate which type of resource is being created. Note that file-based resources must first be uploaded to the assignments **resourceFolder**."
+description: "Create an education assignment resource."
 localization_priority: Normal
 author: "dipakboyed"
 ms.prod: "education"
@@ -68,7 +68,7 @@ In the request body, supply a JSON representation of the [educationAssignmentRes
 ##### Response
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All of the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 
 <!-- {

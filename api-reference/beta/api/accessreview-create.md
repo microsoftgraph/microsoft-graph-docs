@@ -3,7 +3,7 @@ title: "Create accessReview"
 description: "In the Azure AD access reviews feature, create a new accessReview object."
 localization_priority: Normal
 author: "markwahl-msft"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -15,7 +15,7 @@ Namespace: microsoft.graph
 
 In the Azure AD [access reviews](../resources/accessreviews-root.md) feature, create a new [accessReview](../resources/accessreview.md) object.
 
-Before making this request, the caller must have previously [retrieved the list of business flow templates](businessflowtemplate-list.md), to have the value of `businessFlowTemplateId` to include in the request.
+Before making this request, the caller must have previously [retrieved the list of business flow templates](businessflowtemplate-list.md), to have the value of **businessFlowTemplateId** to include in the request.
 
 After making this request, the caller should [create a programControl](programcontrol-create.md), to link the access review to a program.  
 
@@ -50,24 +50,24 @@ The following table shows the properties that are required when you create an ac
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| `displayName`             |`String`                                                        | The access review name.  |
-| `startDateTime`           |`DateTimeOffset`                                                | The DateTime when the review is scheduled to be start.  This must be a date in the future.   |
-| `endDateTime`             |`DateTimeOffset`                                                | The DateTime when the review is scheduled to end. This must be at least one day later than the start date.   |
-| `description`             |`String`                                                        | The description, to show to the reviewers. |
-| `businessFlowTemplateId`  |`String`                                                        | The business flow template identifier, obtained from a [businessFlowTemplate](../resources/businessflowtemplate.md).  |
-| `reviewerType`            |`String`                                                        | The relationship type of reviewer to the access rights of the reviewed object, one of `self`, `delegated`, or `entityOwners`. | 
-| `reviewedEntity`          |`microsoft.graph.identity`                                      | The object for which an access review is created, such as the membership of a group or the assignments of users to an application. | 
+| displayName             |String                                                        | The access review name.  |
+| startDateTime           |DateTimeOffset                                                | The DateTime when the review is scheduled to be start.  This must be a date in the future.   |
+| endDateTime             |DateTimeOffset                                                | The DateTime when the review is scheduled to end. This must be at least one day later than the start date.   |
+| description             |String                                                        | The description, to show to the reviewers. |
+| businessFlowTemplateId  |String                                                        | The business flow template identifier, obtained from a [businessFlowTemplate](../resources/businessflowtemplate.md).  |
+| reviewerType            |String                                                        | The relationship type of reviewer to the access rights of the reviewed object, one of `self`, `delegated`, or `entityOwners`. | 
+| reviewedEntity          |[identity](../resources/identity.md)                                     | The object for which an access review is created, such as the membership of a group or the assignments of users to an application. | 
 
 
-If the reviewerType being supplied has the value `delegated`, then the caller must also include the `reviewers` property, with a collection of [userIdentity](../resources/useridentity.md) of the reviewers.
+If the **reviewerType** has the value `delegated`, then the caller must also include the **reviewers** property, with a collection of [userIdentity](../resources/useridentity.md) objects representing the reviewers.
 
 If your app is calling this API without a signed-in user, then the caller must also include the **createdBy** property, the value for which is a [userIdentity](../resources/useridentity.md) of the user who will be identified as the creator of the review.
 
-In addition, the caller can include settings, to create a recurring review series or to change from the default review behavior. In particular, to create a recurring review, the caller must include the `accessReviewRecurrenceSettings` within the access review settings,
+In addition, the caller can include **settings**, to create a recurring review series or to change from the default review behavior. In particular, to create a recurring review, the caller must include the [accessReviewRecurrenceSettings](../resources/accessreviewrecurrencesettings.md) within the access review settings,
 
 
 ## Response
-If successful, this method returns a `201, Created` response code and an [accessReview](../resources/accessreview.md) object in the response body.
+If successful, this method returns a `201 Created` response code and an [accessReview](../resources/accessreview.md) object in the response body.
 
 ## Example
 
@@ -76,8 +76,10 @@ This is an example of creating a one-time (not recurring) access review, explici
 ### Request
 In the request body, supply a JSON representation of the [accessReview](../resources/accessreview.md) object.
 
+
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
+  "blockType": "request",
   "name": "create_accessReview_from_accessReviews"
 }-->
 ```http
@@ -124,9 +126,27 @@ Content-type: application/json
     }
 }
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/create-accessreview-from-accessreviews-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/create-accessreview-from-accessreviews-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/create-accessreview-from-accessreviews-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/create-accessreview-from-accessreviews-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ### Response
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

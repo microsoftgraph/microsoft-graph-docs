@@ -3,12 +3,14 @@ title: "Get microsoftAuthenticatorAuthenticationMethod"
 description: "Read the properties and relationships of a microsoftAuthenticatorAuthenticationMethod object."
 author: "mmcla"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-sign-in"
 doc_type: apiPageType
 ---
 
 # Get microsoftAuthenticatorAuthenticationMethod
 Namespace: microsoft.graph
+
+[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Read the properties and relationships of a [microsoftAuthenticatorAuthenticationMethod](../resources/microsoftauthenticatorauthenticationmethod.md) object.
 
@@ -27,7 +29,7 @@ One of the following permissions is required to call this API. To learn more, in
 ### Permissions acting on other users
 
 |Permission type      | Permissions (from least to most privileged)              |
-|:---------------------------------------|:-------------------------|:-----------------|
+|:---------------------------------------|:-------------------------|
 | Delegated (work or school account)     | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application                            | UserAuthenticationMethod.Read.All, UserAuthenticationMethod.ReadWrite.All |
@@ -67,6 +69,8 @@ If successful, this method returns a `200 OK` response code and a [microsoftAuth
 ## Examples
 
 ### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_microsoftauthenticatorauthenticationmethod"
@@ -75,6 +79,24 @@ If successful, this method returns a `200 OK` response code and a [microsoftAuth
 ``` http
 GET https://graph.microsoft.com/beta/users/anirban@contoso.com/authentication/microsoftAuthenticatorMethods/_jpuR-TGZtk6aQCLF3BQjA2
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-microsoftauthenticatorauthenticationmethod-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-microsoftauthenticatorauthenticationmethod-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-microsoftauthenticatorauthenticationmethod-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-microsoftauthenticatorauthenticationmethod-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

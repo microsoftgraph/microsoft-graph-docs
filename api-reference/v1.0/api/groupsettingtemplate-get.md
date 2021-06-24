@@ -2,7 +2,7 @@
 title: "Get a group setting template"
 description: "Get a group setting template that represents a template of settings from which settings may be created within a tenant."
 localization_priority: Normal
-author: "yyuank"
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -75,7 +75,7 @@ GET https://graph.microsoft.com/v1.0/groupSettingTemplates/{id}
 
 ##### Response
 
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

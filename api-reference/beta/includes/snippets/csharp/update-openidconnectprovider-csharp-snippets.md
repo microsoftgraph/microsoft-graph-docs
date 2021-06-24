@@ -6,13 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var identityProvider = new IdentityProvider
+var identityProviderBase = new IdentityProviderBase
 {
 	ResponseType = OpenIdConnectResponseTypes.Id_token
 };
 
-await graphClient.IdentityProviders["OIDC-V1-MyTest-085a8a0c-58cb-4b6d-8e07-1328ea404e1a"]
+await graphClient.Identity.IdentityProviders["{identityProviderBase-id}"]
 	.Request()
-	.UpdateAsync(identityProvider);
+	.UpdateAsync(identityProviderBase);
 
 ```

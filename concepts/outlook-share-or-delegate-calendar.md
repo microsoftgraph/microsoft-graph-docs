@@ -1,7 +1,7 @@
 ---
 title: "Share or delegate a calendar in Outlook"
 description: "In Outlook, a calendar owner can share the calendar with another user, or delegate another user to manage meetings in the owner's primary calendar."
-author: "angelgolfer-ms"
+author: "juforan"
 localization_priority: Priority
 ms.prod: "outlook"
 ---
@@ -82,7 +82,8 @@ This example shows with the consent of Alex or administrator, how to get the **c
   - **role** is `freeBusyRead`, the default setting for "My Organization".
   - **emailAddress** specifies the **name** sub-property as "My Organization"; **address** for "My Organization" is by default null.
 
-#### Microsoft Graph permissions
+**Microsoft Graph permissions**
+
 Use the least privileged delegated or application permission, `Calendars.Read`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
 
 # [HTTP](#tab/http)
@@ -169,7 +170,8 @@ Aside from the **role** property, you cannot update other properties of an exist
 
 The example in this section updates the **role** property, changing the permission of an existing sharee, Adele, from `read` to `write` for the custom calendar "Kids parties".
 
-#### Microsoft Graph permissions
+**Microsoft Graph permissions**
+
 Use the least privileged delegated or application permission, `Calendars.ReadWrite`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
 
 # [HTTP](#tab/http)
@@ -254,7 +256,8 @@ Note the following properties on Alex' behalf:
 - **isSharedWithMe** is always false for the calendar owner.
 - **owner** shows Alex as the owner.
 
-#### Microsoft Graph permissions
+**Microsoft Graph permissions**
+
 Use the least privileged delegated or application permission, `Calendars.Read`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
 
 # [HTTP](#tab/http)
@@ -334,7 +337,8 @@ Note the following properties:
 > [!NOTE] 
 > A sharee or delegate can customize only the **name** property of a shared/delegated calendar. The update is visible only to themselves; the calendar owner does not see such calendar name changes.
 
-#### Microsoft Graph permissions
+**Microsoft Graph permissions**
+
 Use the least privileged delegated permission, `Calendars.Read.Shared`, or application permission, `Calendars.Read`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
 
 # [HTTP](#tab/http)
@@ -424,7 +428,8 @@ This is a mailbox-wide setting, so the same setting applies to all delegates of 
 
 The example in this section gets the **mailboxSettings** of a calendar owner who lets Outlook direct meeting requests and responses to only calendar delegates; that is, **delegateMeetingMessageDeliveryOptions** is set to `sendToDelegateOnly`.
 
-#### Microsoft Graph permissions
+**Microsoft Graph permissions**
+
 Use the least privileged delegated or application permission, `MailboxSettings.Read`, as appropriate, for this operation. For more information about mailbox permissions, see [mail permissions](permissions-reference.md#mail-permissions).
 
 # [HTTP](#tab/http)
@@ -507,7 +512,8 @@ Content-type: application/json
 
 The example in this section updates the **delegateMeetingMessageDeliveryOptions** property to `sendToDelegateAndPrincipal`, to have Outlook direct meeting requests and responses of the delegated calendar to all delegates and the owner.
 
-#### Microsoft Graph permissions
+**Microsoft Graph permissions**
+
 Use the least privileged delegated or application permission, `MailboxSettings.ReadWrite`, as appropriate, for this operation. For more information about mailbox permissions, see [mail permissions](permissions-reference.md#mail-permissions).
 
 # [HTTP](#tab/http)
@@ -560,7 +566,8 @@ Content-type: application/json
 
 In the example below, Alex deletes Megan as a sharee of the "Kids parties" calendar.
 
-#### Microsoft Graph permissions
+**Microsoft Graph permissions**
+
 Use the least privileged delegated or application permission, `Calendars.ReadWrite`, as appropriate, for this operation. For more information, see [calendar permissions](permissions-reference.md#calendars-permissions).
 
 # [HTTP](#tab/http)

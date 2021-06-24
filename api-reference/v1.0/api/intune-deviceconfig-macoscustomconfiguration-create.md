@@ -18,11 +18,11 @@ Create a new [macOSCustomConfiguration](../resources/intune-deviceconfig-macoscu
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -101,11 +101,6 @@ Content-Length: 453
   "payload": "cGF5bG9hZA=="
 }
 ```
-
-
-
-
-
 
 
 

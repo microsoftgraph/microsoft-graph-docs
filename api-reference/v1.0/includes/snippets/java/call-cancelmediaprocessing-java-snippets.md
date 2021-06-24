@@ -4,12 +4,15 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String clientContext = "clientContext-value";
 
 graphClient.communications().calls("{id}")
-	.cancelMediaProcessing(clientContext)
+	.cancelMediaProcessing(CallCancelMediaProcessingParameterSet
+		.newBuilder()
+		.withClientContext(clientContext)
+		.build())
 	.buildRequest()
 	.post();
 

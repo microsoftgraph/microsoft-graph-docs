@@ -1,7 +1,7 @@
 ---
 title: "Uninstall app in a chat"
 description: "Uninstall (remove) an app installed in a chat."
-author: "nkramer"
+author: "subray"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -25,7 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat |
 |Delegated (personal Microsoft account) | Not supported.   |
-|Application | TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All |
+|Application | Chat.Manage.Chat*, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All |
+
+> **Note**: Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc).
 
 ## HTTP request
 
@@ -36,6 +38,14 @@ One of the following permissions is required to call this API. To learn more, in
 ```http
 DELETE /chats/{chat-id}/installedApps/{app-installation-id}
 ```
+
+## Request headers
+|Name|Description|
+|:---|:---|
+|Authorization|Bearer {token}. Required.|
+
+## Request body
+Do not supply a request body for this method.
 
 ## Response
 

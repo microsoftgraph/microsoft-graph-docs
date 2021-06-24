@@ -20,11 +20,11 @@ Update the properties of a [deviceHealthScriptRunSummary](../resources/intune-de
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -53,6 +53,7 @@ The following table shows the properties that are required when you create the [
 |issueDetectedDeviceCount|Int32|Number of devices for which the detection script found an issue|
 |detectionScriptErrorDeviceCount|Int32|Number of devices on which the detection script execution encountered an error and did not complete|
 |detectionScriptPendingDeviceCount|Int32|Number of devices which have not yet run the latest version of the device health script|
+|detectionScriptNotApplicableDeviceCount|Int32|Number of devices for which the detection script was not applicable|
 |issueRemediatedDeviceCount|Int32|Number of devices for which the remediation script was able to resolve the detected issue|
 |remediationSkippedDeviceCount|Int32|Number of devices for which remediation was skipped|
 |issueReoccurredDeviceCount|Int32|Number of devices for which the remediation script executed successfully but failed to resolve the detected issue|
@@ -72,7 +73,7 @@ Here is an example of the request.
 ``` http
 PATCH https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/runSummary
 Content-type: application/json
-Content-length: 494
+Content-length: 543
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptRunSummary",
@@ -80,6 +81,7 @@ Content-length: 494
   "issueDetectedDeviceCount": 8,
   "detectionScriptErrorDeviceCount": 15,
   "detectionScriptPendingDeviceCount": 1,
+  "detectionScriptNotApplicableDeviceCount": 7,
   "issueRemediatedDeviceCount": 10,
   "remediationSkippedDeviceCount": 13,
   "issueReoccurredDeviceCount": 10,
@@ -94,7 +96,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 543
+Content-Length: 592
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptRunSummary",
@@ -103,6 +105,7 @@ Content-Length: 543
   "issueDetectedDeviceCount": 8,
   "detectionScriptErrorDeviceCount": 15,
   "detectionScriptPendingDeviceCount": 1,
+  "detectionScriptNotApplicableDeviceCount": 7,
   "issueRemediatedDeviceCount": 10,
   "remediationSkippedDeviceCount": 13,
   "issueReoccurredDeviceCount": 10,

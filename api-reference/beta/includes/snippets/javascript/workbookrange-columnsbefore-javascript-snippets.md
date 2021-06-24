@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=2)')
+let workbookRange = await client.api('/drive/root/workbook/worksheets/{id}/range/columnsBefore(count=2)')
 	.version('beta')
 	.get();
 

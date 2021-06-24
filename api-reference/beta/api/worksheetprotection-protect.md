@@ -26,7 +26,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /workbook/worksheets/{id|name}/protection/protect
+POST /me/drive/items/{id}/workbook/worksheets/{id|name}/protection/protect
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id|name}/protection/protect
 
 ```
 ## Request headers
@@ -99,9 +100,7 @@ Content-length: 383
 ##### Response
 Here is an example of the response. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

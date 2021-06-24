@@ -1,0 +1,59 @@
+| Property                        | eq                   | ne                | NOT               | ge                   | le                   | in                   | startsWith           | null values          |
+|---------------------------------|----------------------|-------------------|-------------------|----------------------|----------------------|----------------------|----------------------|----------------------|
+| accountEnabled                  | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] |                      |                      | ![Default.][default] |                      |                      |
+| ageGroup                        | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] |                      |                      | ![Default.][default] |                      |                      |
+| assignedLicenses                | ![Default.][default] |                   | ![Advanced.][AQP] |                      |                      |                      |                      |                      |
+| assignedPlans                   | ![Default.][default] |                   | ![Advanced.][AQP] |                      |                      |                      |                      |                      |
+| businessPhones                  | ![Default.][default] |                   | ![Advanced.][AQP] |                      |                      |                      |                      |                      |
+| city                            | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Default.][default] | ![Default.][default] | ![Default.][default] | ![Default.][default] | ![Advanced.][AQP]    |
+| companyName                     | ![Advanced.][AQP]    | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    |
+| consentProvidedForMinor         | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] |                      |                      | ![Default.][default] |                      |                      |
+| country                         | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Default.][default] | ![Default.][default] | ![Default.][default] | ![Default.][default] | ![Advanced.][AQP]    |
+| createdDateTime                 | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Default.][default] | ![Default.][default] | ![Advanced.][AQP]    |                      |                      |
+| creationType                    | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] |                      |                      | ![Default.][default] |                      |                      |
+| deletedDateTime                 | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Default.][default] | ![Default.][default] | ![Advanced.][AQP]    |                      |                      |
+| department                      | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Default.][default] | ![Default.][default] | ![Default.][default] | ![Default.][default] | ![Advanced.][AQP]    |
+| displayName                     | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Default.][default] | ![Default.][default] | ![Default.][default] | ![Default.][default] | ![Advanced.][AQP]    |
+| employeeHireDate                | ![Advanced.][AQP]    | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    |                      |                      |
+| employeeId                      | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Default.][default] | ![Default.][default] |                      | ![Default.][default] | ![Default.][default] |
+| employeeHireDate                | ![Advanced.][AQP]    | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    |                      |                      |
+| employeeOrgData                 | ![Advanced.][AQP]    | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    |                      |                      |
+| employeeType                    | ![Advanced.][AQP]    | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    |                      |
+| externalUserState               | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] |                      |                      | ![Default.][default] |                      |                      |
+| externalUserStateChangeDateTime | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] |                      |                      | ![Default.][default] |                      |                      |
+| faxNumber                       | ![Advanced.][AQP]    | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    |
+| givenName                       | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Default.][default] | ![Default.][default] | ![Default.][default] | ![Default.][default] | ![Advanced.][AQP]    |
+| id                              | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] |                      |                      |                      |                      |                      |
+| identities                      | ![Default.][default] |                   |                   |                      |                      |                      |                      |                      |
+| imAddresses                     | ![Default.][default] |                   | ![Advanced.][AQP] | ![Default.][default] | ![Default.][default] |                      | ![Default.][default] |                      |
+| infoCatalogs                    | ![Default.][default] |                   | ![Advanced.][AQP] | ![Default.][default] | ![Default.][default] |                      | ![Default.][default] |                      |
+| isResourceAccount               | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] |                      |                      |                      |                      |                      |
+| jobTitle                        | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Default.][default] | ![Default.][default] | ![Default.][default] | ![Default.][default] | ![Advanced.][AQP]    |
+| mail                            | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Default.][default] | ![Default.][default] | ![Default.][default] | ![Default.][default] |                      |
+| mailNickname                    | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Default.][default] | ![Default.][default] | ![Default.][default] | ![Default.][default] | ![Advanced.][AQP]    |
+| mobilePhone                     | ![Advanced.][AQP]    | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    |
+| officeLocation                  | ![Advanced.][AQP]    | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    |
+| onPremisesExtensionAttributes   | ![Advanced.][AQP]    |                   | ![Advanced.][AQP] | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    |                      |                      |
+| onPremisesImmutableId           | ![Advanced.][AQP]    | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    |                      |                      |
+| onPremisesLastSyncDateTime      | ![Advanced.][AQP]    | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    |                      |                      |
+| onPremisesSamAccountName        | ![Advanced.][AQP]    | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    |                      |
+| onPremisesSecurityIdentifier    | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] |                      |                      | ![Default.][default] |                      | ![Advanced.][AQP]    |
+| onPremisesSyncEnabled           | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] |                      |                      | ![Default.][default] |                      |                      |
+| onPremisesUserPrincipalName     | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Default.][default] | ![Default.][default] | ![Default.][default] | ![Default.][default] |                      |
+| otherMails                      | ![Default.][default] |                   | ![Advanced.][AQP] | ![Default.][default] | ![Default.][default] | ![Default.][default] | ![Default.][default] |                      |
+| passwordPolicies                | ![Advanced.][AQP]    | ![Advanced.][AQP] | ![Advanced.][AQP] |                      |                      |                      |                      | ![Advanced.][AQP]    |
+| postalCode                      | ![Advanced.][AQP]    | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    |
+| preferredLanguage               | ![Advanced.][AQP]    | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    |
+| proxyAddresses                  | ![Default.][default] |                   | ![Advanced.][AQP] | ![Default.][default] | ![Default.][default] |                      | ![Default.][default] | ![Advanced.][AQP]    |
+| showInAddressList               | ![Advanced.][AQP]    | ![Advanced.][AQP] | ![Advanced.][AQP] |                      |                      | ![Advanced.][AQP]    |                      |                      |
+| signInActivity                  | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Default.][default] | ![Default.][default] |                      |                      |                      |
+| state                           | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Default.][default] | ![Default.][default] | ![Default.][default] | ![Default.][default] | ![Advanced.][AQP]    |
+| streetAddress                   | ![Advanced.][AQP]    | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    | ![Advanced.][AQP]    |
+| surname                         | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Default.][default] | ![Default.][default] | ![Default.][default] | ![Default.][default] | ![Advanced.][AQP]    |
+| usageLocation                   | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Default.][default] | ![Default.][default] | ![Default.][default] | ![Default.][default] |                      |
+| userPrincipalName               | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] | ![Default.][default] | ![Default.][default] | ![Default.][default] | ![Default.][default] |                      |
+| userType                        | ![Default.][default] | ![Advanced.][AQP] | ![Advanced.][AQP] |                      |                      | ![Default.][default] |                      | ![Advanced.][AQP]    |
+
+
+[AQP]: /graph/images/advanced-query-parameters/advanced.png
+[default]: /graph/images/advanced-query-parameters/default.png

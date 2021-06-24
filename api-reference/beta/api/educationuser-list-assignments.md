@@ -1,19 +1,21 @@
 ---
-title: "List assignments"
-description: "Returns a list of assignments assigned to a user for all classes. This utility namespace allows a caller to find all a student's assignments in a single call rather than having to request assignments from each class. The assignment list contains what is needed to get the detailed information for the assignment from within the class namespace. All other operations on the assignment should use the class namespace."
+title: "List assignments of a user"
+description: "Returns a list of assignments assigned to a user for all classes."
 localization_priority: Normal
 author: "mmast-msft"
 ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# List assignments
+# List assignments of a user
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Returns a list of assignments assigned to a user for all classes. This utility namespace allows a caller to find all a student's assignments in a single call rather than having to request assignments from each class. The assignment list contains what is needed to get the detailed information for the assignment from within the class namespace. All other operations on the assignment should use the class namespace.
+Returns a list of assignments assigned to a user for all classes. 
+
+This utility namespace allows a caller to find all a student's assignments in a single call rather than having to request assignments from each class. The assignment list contains what is needed to get the detailed information for the assignment from within the class namespace. All other operations on the assignment should use the class namespace.
 
 ## Permissions
 
@@ -28,7 +30,6 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /education/me/assignments/
 GET /education/users/{id}/assignments
 ```
 
@@ -54,10 +55,12 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 ##### Request
 The following is an example of the request.
+
 <!-- {
   "blockType": "ignored",
-  "name": "get_assignments"
+  "name": "get_me_assignments"
 }-->
+
 ```http 
 GET https://graph.microsoft.com/beta/education/me/assignments
 ```
@@ -66,7 +69,7 @@ GET https://graph.microsoft.com/beta/education/me/assignments
 
 The following is an example of the response. 
 
-> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+> **Note:** The response object shown here might be shortened for readability.
 
 
 <!-- {

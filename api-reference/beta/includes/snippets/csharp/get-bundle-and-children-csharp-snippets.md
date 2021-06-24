@@ -11,7 +11,7 @@ var queryOptions = new List<QueryOption>()
 	new QueryOption("expand", "children")
 };
 
-var driveItem = await graphClient.Drive.Items["{bundle-id}"]
+var driveItem = await graphClient.Drive.Items["{driveItem-id}"]
 	.Request( queryOptions )
 	.GetAsync();
 

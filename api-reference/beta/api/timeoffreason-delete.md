@@ -54,7 +54,7 @@ If successful, this method returns a `204 No Content` response code. It does not
 
 ## Example
 
-#### Request
+### Request
 
 The following is an example of the request.
 
@@ -85,15 +85,13 @@ DELETE https://graph.microsoft.com/beta/teams/{teamId}/schedule/timeOffReasons/{
 ---
 
 
-#### Response
+### Response
 
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

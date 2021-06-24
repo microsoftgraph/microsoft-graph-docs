@@ -29,7 +29,8 @@ One of the following permissions is required to call this API. To learn more, in
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /me/drive/root/workbook/worksheets/{id}/pivotTables/{id}/refresh
+POST /me/drive/items/{id}/workbook/worksheets/{id}/pivotTables/{id}/refresh
+POST /me/drive/root:/{item-path}:/workbook/worksheets/{id}/pivotTables/{id}/refresh
 ```
 ## Request headers
 | Name       | Description|
@@ -78,9 +79,7 @@ POST https://graph.microsoft.com/beta/drive/root/workbook/worksheets/{id}/pivotT
 ##### Response
 Here is an example of the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

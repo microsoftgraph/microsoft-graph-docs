@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /servicePrincipals/{id}/appRoleAssignments/{id}
+DELETE /servicePrincipals/{servicePrincipal-id}/appRoleAssignments/{appRoleAssignment-id}
 ```
 
 > [!NOTE]
@@ -64,7 +64,7 @@ Here is an example of the request to delete an app role assignment.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/appRoleAssignments/{id}
+DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{servicePrincipal-id}/appRoleAssignments/{appRoleAssignment-id}
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/serviceprincipal-delete-approleassignment-csharp-snippets.md)]
@@ -86,8 +86,6 @@ DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{id}/appRoleAssignment
 
 
 ### Response
-
-The following is an example of the response.
 
 <!-- {
   "blockType": "response",

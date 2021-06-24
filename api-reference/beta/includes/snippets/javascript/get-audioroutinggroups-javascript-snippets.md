@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/communications/calls/{id}/audioRoutingGroups')
+let audioRoutingGroups = await client.api('/communications/calls/{id}/audioRoutingGroups')
 	.version('beta')
 	.get();
 

@@ -18,11 +18,11 @@ List properties and relationships of the [windowsInformationProtection](../resou
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementApps.ReadWrite.All, DeviceManagementApps.Read.All|
+|Delegated (work or school account)|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementApps.Read.All, DeviceManagementApps.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -60,7 +60,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 4601
+Content-Length: 4491
 
 {
   "value": [
@@ -143,9 +143,7 @@ Content-Length: 4601
           "displayName": "Display Name value",
           "ranges": [
             {
-              "@odata.type": "microsoft.graph.iPv6Range",
-              "lowerAddress": "Lower Address value",
-              "upperAddress": "Upper Address value"
+              "@odata.type": "microsoft.graph.ipRange"
             }
           ]
         }
@@ -194,11 +192,6 @@ Content-Length: 4601
   ]
 }
 ```
-
-
-
-
-
 
 
 

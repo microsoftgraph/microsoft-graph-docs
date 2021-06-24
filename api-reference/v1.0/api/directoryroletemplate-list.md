@@ -3,7 +3,7 @@ title: "List directoryRoleTemplates"
 description: "Retrieve a list of directoryRoleTemplate objects."
 author: "abhijeetsinha"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -73,7 +73,7 @@ GET https://graph.microsoft.com/v1.0/directoryRoleTemplates
 ---
 
 ##### Response
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

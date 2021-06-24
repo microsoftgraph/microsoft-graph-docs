@@ -19,7 +19,7 @@ The following permissions are required to call this API. To learn more, includin
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Reports.Read.All|
+|Delegated (work or school account)|AuditLogs.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
 |Application|Not supported.|
 
@@ -137,7 +137,7 @@ Content-Type: application/json
 			"feature": "ssprCapable",
 			"userCount": 4234
 		}, {
-			"feature": "passwordlessRegistered",
+			"feature": "passwordlessCapable",
 			"userCount": 323
 		},
 		{

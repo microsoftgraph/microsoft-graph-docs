@@ -11,31 +11,31 @@ const options = {
 const client = Client.init(options);
 
 const message = {
-    subject:"9/8/2018: concert",
-    body:{
-        contentType:"HTML",
-        content:"The group represents Washington."
+    subject: '9/8/2018: concert',
+    body: {
+        contentType: 'HTML',
+        content: 'The group represents Washington.'
     },
-    toRecipients:[
+    toRecipients: [
         {
-            emailAddress:{
-                address:"AlexW@contoso.OnMicrosoft.com"
+            emailAddress: {
+                address: 'AlexW@contoso.OnMicrosoft.com'
             }
         }
     ],
-    internetMessageHeaders:[
+    internetMessageHeaders: [
         {
-            name:"x-custom-header-group-name",
-            value:"Washington"
+            name: 'x-custom-header-group-name',
+            value: 'Washington'
         },
         {
-            name:"x-custom-header-group-id",
-            value:"WA001"
+            name: 'x-custom-header-group-id',
+            value: 'WA001'
         }
     ]
 };
 
-let res = await client.api('/me/messages')
+await client.api('/me/messages')
 	.version('beta')
 	.post(message);
 

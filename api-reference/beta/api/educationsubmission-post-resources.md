@@ -28,8 +28,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /education/classes/{id}/assignments/{id}/submissions/{id}/resources
-
 ```
+
 ## Request headers
 | Header       | Value |
 |:---------------|:--------|
@@ -50,7 +50,7 @@ The following is an example of the request.
   "blockType": "ignored",
   "name": "create_educationsubmissionresource_from_educationsubmission"
 }-->
-```
+```http
 POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/submissions/850f51b7/resources
 Content-type: application/json
 Content-length: 1097
@@ -82,13 +82,12 @@ Content-length: 1097
   },
   "@odata.type": "microsoft.graph.educationResource"
 }
-
 ```
 
 ##### Response
 The following is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "ignored",
@@ -127,7 +126,6 @@ Content-length: 1152
       "fileUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeTZ_iul5AdW9f/items/017NJZI27BCN2QI2H7HJGLIVPXR6SD2DH6",
   }
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

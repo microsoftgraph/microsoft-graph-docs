@@ -20,7 +20,7 @@ var message = new Message
 	BodyPreview = "bodyPreview-value"
 };
 
-await graphClient.Me.MailFolders["{id}"].Messages
+await graphClient.Me.MailFolders["{mailFolder-id}"].Messages
 	.Request()
 	.AddAsync(message);
 

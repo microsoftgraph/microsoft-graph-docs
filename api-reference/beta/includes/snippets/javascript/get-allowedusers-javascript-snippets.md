@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/print/shares/{id}/allowedUsers')
+let allowedUsers = await client.api('/print/shares/{id}/allowedUsers')
 	.version('beta')
 	.get();
 

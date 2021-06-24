@@ -40,9 +40,6 @@ A user's [calendar](../resources/calendar.md) in the default [calendarGroup](../
 ```http
 GET /me/calendars/{id}
 GET /users/{id | userPrincipalName}/calendars/{id}
-
-GET /me/calendarGroup/calendars/{id}
-GET /users/{id | userPrincipalName}/calendarGroup/calendars/{id}
 ```
 A user's [calendar](../resources/calendar.md) in a specific [calendarGroup](../resources/calendargroup.md).
 ```http
@@ -93,7 +90,7 @@ GET https://graph.microsoft.com/v1.0/me/calendar
 ---
 
 ### Response
-Here is an example of the response. Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Here is an example of the response. Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

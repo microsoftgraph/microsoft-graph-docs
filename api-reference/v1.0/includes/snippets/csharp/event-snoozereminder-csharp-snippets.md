@@ -12,7 +12,7 @@ var newReminderTime = new DateTimeTimeZone
 	TimeZone = "timeZone-value"
 };
 
-await graphClient.Me.Events["{id}"]
+await graphClient.Me.Events["{event-id}"]
 	.SnoozeReminder(newReminderTime)
 	.Request()
 	.PostAsync();

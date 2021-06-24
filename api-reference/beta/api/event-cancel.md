@@ -47,9 +47,6 @@ POST /groups/{id}/calendar/events/{id}/cancel
 POST /me/calendars/{id}/events/{id}/cancel
 POST /users/{id | userPrincipalName}/calendars/{id}/events/{id}/cancel
 
-POST /me/calendargroup/calendars/{id}/events/{id}/cancel
-POST /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/{id}/cancel
-
 POST /me/calendargroups/{id}/calendars/{id}/events/{id}/cancel
 POST /users/{id | userPrincipalName}/calendargroups/{id}/calendars/{id}/events/{id}/cancel
 ```

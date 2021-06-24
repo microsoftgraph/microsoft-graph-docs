@@ -46,6 +46,7 @@ LocalizationHelper.strings = {
     "person-card": {
       sendEmailLinkSubtitle: "ارسل بريد الكتروني",
       startChatLinkSubtitle: "ابدأ الدردشة",
+      showExpandedDetailsButton: 'Show expanded details',
       showMoreSectionButton: "أظهر المزيد", // global declaration
     },
     "person-card-contact": {
@@ -191,5 +192,22 @@ The strings can be set at a global level or per component (with the `_components
   personalInterestsSubSectionTitle: "Personal Interests",
   birthdaySubSectionTitle: "Birthday",
   currentYearSubtitle: "Current"
+}
+```
+
+### File
+
+```ts
+'file': {
+  modifiedSubtitle: 'Modified',
+  sizeSubtitle: 'Size'
+};
+```
+
+### File-List
+
+```ts
+"file-list": {
+  showMoreSubtitle: 'Show more items'
 }
 ```

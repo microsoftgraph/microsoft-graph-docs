@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/identityGovernance/accessReviews/definitions')
+let definitions = await client.api('/identityGovernance/accessReviews/definitions')
 	.version('beta')
 	.skip(0)
 	.top(100)

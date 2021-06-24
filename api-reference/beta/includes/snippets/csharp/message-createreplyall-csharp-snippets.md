@@ -20,7 +20,7 @@ var message = new Message
 
 var comment = "if the project gets approved, please take a look at the attached guidelines before you decide on the name.";
 
-await graphClient.Me.Messages["AAMkADA1MTAAAH5JaKAAA="]
+await graphClient.Me.Messages["{message-id}"]
 	.CreateReplyAll(message,comment)
 	.Request()
 	.PostAsync();

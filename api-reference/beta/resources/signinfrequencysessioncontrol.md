@@ -3,7 +3,7 @@ title: "signInFrequencySessionControl resource type"
 description: "Session control to enforce signin frequency."
 localization_priority: Normal
 author: "dkershaw10"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "identity-and-access-reports"
 doc_type: resourcePageType
 ---
 
@@ -20,7 +20,7 @@ Session control to enforce sign-in frequency. Inherits from [Conditional Access 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |isEnabled     |Boolean      | Specifies whether the session control is enabled. |
-|type          |String       | Possible values are: `days`, `hours`.|
+|type          |signinFrequencyType       | Possible values are: `days`, `hours`.|
 |value         |Int32        | The number of `days` or `hours`.|
 
 ## Relationships

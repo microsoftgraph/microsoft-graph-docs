@@ -100,7 +100,7 @@ Content-Type: application/json
     "grantedToIdentities": [{
       "application": {
         "id": "89ea5c94-7736-4e25-95ad-3fa95f62b66e",
-        "displayName": "Bar App"
+        "displayName": "Fabrikam Dashboard App"
       }
     }]
 }

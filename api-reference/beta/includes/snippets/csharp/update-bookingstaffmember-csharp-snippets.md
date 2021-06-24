@@ -93,7 +93,7 @@ var bookingStaffMember = new BookingStaffMember
 	}
 };
 
-await graphClient.BookingBusinesses["Contosolunchdelivery@M365B489948.onmicrosoft.com"].StaffMembers["8ee1c803-a1fa-406d-8259-7ab53233f148"]
+await graphClient.BookingBusinesses["{bookingBusiness-id}"].StaffMembers["{bookingStaffMember-id}"]
 	.Request()
 	.UpdateAsync(bookingStaffMember);
 

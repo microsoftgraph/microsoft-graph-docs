@@ -2,8 +2,8 @@
 title: "userIdentity type"
 description: "Represents an Azure AD user identity for a reviewer of an access review."
 localization_priority: Normal
-author: "krbain"
-ms.prod: "users"
+author: "isabelleatmsft"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 
@@ -24,17 +24,16 @@ None.  You would include objects of this type in the body of a request when [cre
 
 ## Properties
 
-| Property | Type | Description|
-|:---------------|:--------|:----------|
-| `displayName` | `String` | The identity's display name. Note that this may not always be available or up-to-date.    |
-| `id`          | `String` | Unique identifier for the identity.  |
-| `ipAddress`| `String`| Indicates the client IP address used by user performing the activity (audit log only).|
-| `userPrincipalName`|`String` | The userPrincipalName attribute of the user. |
+| Property          | Type   | Description                                                                            |
+|:------------------|:-------|:---------------------------------------------------------------------------------------|
+| displayName       | String | The identity's display name. Note that this may not always be available or up-to-date. |
+| id                | String | Unique identifier for the identity. Nullable.                                                   |
+| ipAddress         | String | Indicates the client IP address used by user performing the activity (audit log only). |
+| userPrincipalName | String | The userPrincipalName attribute of the user.                                           |
 
-## Remarks
+### Remarks
 
-In some circumstances, the unique identifier for the actor may not be available.
-In this case, the **displayName** property for the identity will be returned, but the **id** property will be missing from the resource.
+In some circumstances, the unique identifier for the actor may not be available. In this case, the **displayName** property for the identity will be returned, but the **id** property will be missing from the resource.
 
 ## Relationships
 

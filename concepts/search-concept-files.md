@@ -350,6 +350,7 @@ You can use KQL in search terms of queries for OneDrive and SharePoint. For exam
 - `"query": "test path:\"https://contoso.sharepoint.com/sites/Team Site/Documents/Project\\""` scopes the query to a particular folder within a site.
 - `"query": "contoso AND isDocument=true"` scopes the query to only return documents. Any container (folder, document library) will not be returned.
 - `"query": "contoso contentclass:STS_List_Events"` scopes the query to Calendar events stored in SharePoint.
+- `"query": "contoso (LastModifiedTime > 2021-02-01 AND Created > 2021-02-01)"` scopes the query to filter SharePoint and OneDrive items by date
 
 In order to be valid, properties restriction should specify a valid, queryable managed property name in the condition.
 

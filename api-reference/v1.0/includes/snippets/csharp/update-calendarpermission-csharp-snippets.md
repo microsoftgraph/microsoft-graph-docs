@@ -11,7 +11,7 @@ var calendarPermission = new CalendarPermission
 	Role = CalendarRoleType.Write
 };
 
-await graphClient.Users["{id}"].Calendar.CalendarPermissions["RGVmYXVsdA=="]
+await graphClient.Users["{user-id}"].Calendar.CalendarPermissions["{calendarPermission-id}"]
 	.Request()
 	.UpdateAsync(calendarPermission);
 

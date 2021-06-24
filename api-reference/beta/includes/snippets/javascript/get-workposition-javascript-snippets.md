@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/profile/positions/{id}')
+let workPosition = await client.api('/me/profile/positions/{id}')
 	.version('beta')
 	.get();
 

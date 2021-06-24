@@ -33,7 +33,7 @@ var conversationThread = new ConversationThread
 	}
 };
 
-await graphClient.Groups["{id}"].Threads
+await graphClient.Groups["{group-id}"].Threads
 	.Request()
 	.AddAsync(conversationThread);
 

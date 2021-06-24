@@ -2,7 +2,7 @@
 title: "user: delta"
 description: "Get newly created, updated, or deleted users without having to perform a full read of the entire user collection."
 localization_priority: Priority
-author: "krbain"
+author: "jpettere"
 ms.prod: "users"
 doc_type: apiPageType
 ---
@@ -136,7 +136,7 @@ GET https://graph.microsoft.com/v1.0/users/delta
 
 The following is an example of the response when using `deltaLink` obtained from the query initialization.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

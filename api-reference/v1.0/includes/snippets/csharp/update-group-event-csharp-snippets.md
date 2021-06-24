@@ -14,7 +14,7 @@ var @event = new Event
 	}
 };
 
-await graphClient.Groups["01d4ee64-15ce-491e-bad1-b91aa3223df4"].Calendar.Events["AAMkADZlAAAAABERAAA="]
+await graphClient.Groups["{group-id}"].Calendar.Events["{event-id}"]
 	.Request()
 	.UpdateAsync(@event);
 

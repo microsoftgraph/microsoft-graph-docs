@@ -3,7 +3,7 @@ title: "List deleted items"
 description: "Retrieve a list of recently deleted items from deleted items."
 author: "keylimesoda"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "directory-management"
 doc_type: apiPageType
 ---
 
@@ -56,7 +56,18 @@ GET /directory/deletedItems/microsoft.graph.user
 This API currently supports retrieving object types of applications (microsoft.graph.application), groups (microsoft.graph.group) or users (microsoft.graph.user) from deleted items. The type is specified as a required part of the URI. Calling GET /directory/deleteditems without a type is not supported.
 
 ## Optional query parameters
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$orderBy` [OData query parameter](/graph/query-parameters) to help customize the response. 
+
+### Examples using the $orderBy OData query parameter
+
+The `$orderBy` OData query parameter is supported on the **deletedDateTime**, **displayName**, and **userPrincipalName** properties of the deleted object types. On the **deletedDateTime** property, the query requires adding the [advanced query parameters](/graph/aad-advanced-queries) (**ConsistencyLevel** header set to `true` and `$count=true` query string).
+
+| OData cast | Properties supporting $orderBy | Example |
+| :--- | :--- | :--- |
+| microsoft.graph.user | deletedDateTime, displayName, userPrincipalName | /directory/deletedItems/microsoft.graph.user?$orderBy=userPrincipalName |
+| microsoft.graph.group | deletedDateTime, displayName | /directory/deletedItems/microsoft.graph.group?$orderBy=deletedDateTime asc&$count=true |
+| microsoft.graph.application | deletedDateTime, displayName | /directory/deletedItems/microsoft.graph.application?$orderBy=displayName |
+| microsoft.graph.device | deletedDateTime, displayName | /directory/deletedItems/microsoft.graph.device?$orderBy=deletedDateTime&$count=true |
 
 ## Request headers
 | Name      |Description|
@@ -101,7 +112,7 @@ GET https://graph.microsoft.com/beta/directory/deleteditems/microsoft.graph.grou
 ---
 
 ##### Response
-Note: The response object shown here may be truncated for brevity. All of the properties will be returned from an actual call.
+Note: The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

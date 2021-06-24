@@ -11,7 +11,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setHTTPMethod:@"POST"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
-MSGraphExternalConnection *externalConnection = [[MSGraphExternalConnection alloc] init];
+MSGraphExternalConnectorsExternalConnection *externalConnection = [[MSGraphExternalConnectorsExternalConnection alloc] init];
 [externalConnection setId:@"contosohr"];
 [externalConnection setName:@"Contoso HR"];
 [externalConnection setDescription:@"Connection to index Contoso HR system"];

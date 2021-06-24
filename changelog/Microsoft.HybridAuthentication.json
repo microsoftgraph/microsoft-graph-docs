@@ -1,0 +1,56 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "3c32d90b-76ec-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "featureRolloutPolicy",
+          "ChangeType": "Change",
+          "Description": "Deprecated the URL segment for [featureRolloutPolicy](https://docs.microsoft.com/en-us/graph/api/resources/featureRolloutPolicy?view=graph-rest-beta) under /directory.",
+          "Target": "featureRolloutPolicy"
+        },
+        {
+          "Id": "3c32d90b-76ec-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "featureRolloutPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the URL segment for [featureRolloutPolicy](https://docs.microsoft.com/en-us/graph/api/resources/featureRolloutPolicy?view=graph-rest-beta) under /policies.",
+          "Target": "featureRolloutPolicy"
+        }
+      ],
+      "Id": "3c3063a0-76ec-11eb-8d30-85f45032d4a1",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-02-24T22:04:15.909Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "fea6a600-76ec-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "featureRolloutPolicy",
+          "ChangeType": "Addition",
+          "Description": "Added the [featureRolloutPolicy](https://docs.microsoft.com/en-us/graph/api/resources/featureRolloutPolicy?view=graph-rest-1.0) resource type and associated methods.",
+          "Target": "featureRolloutPolicy"
+        },
+        {
+          "Id": "fea912ba-76ec-11eb-8d30-85f45032d4a1",
+          "ApiChange": "Enum type",
+          "ChangedApiName": "stagedFeatureName",
+          "ChangeType": "Addition",
+          "Description": "Added the **stagedFeatureName** enumeration type.",
+          "Target": "stagedFeatureName"
+        }
+      ],
+      "Id": "fea3e500-76ec-11eb-8d30-85f45032d4a1",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-03-18T22:09:42.144Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    }
+  ]
+}

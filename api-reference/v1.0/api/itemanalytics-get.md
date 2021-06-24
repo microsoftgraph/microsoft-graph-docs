@@ -89,7 +89,7 @@ GET /drives/{drive-id}/items/{item-id}/analytics
 
 <!-- { "blockType": "response", "@type": "microsoft.graph.itemAnalytics", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 200 OK
 Content-type: application/json
 

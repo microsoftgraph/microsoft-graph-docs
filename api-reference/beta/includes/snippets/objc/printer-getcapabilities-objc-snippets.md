@@ -8,12 +8,12 @@ MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationPr
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
 NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/print/printers/{id}/getCapabilities"]]];
-[urlRequest setHTTPMethod:@"POST"];
+[urlRequest setHTTPMethod:@"GET"];
 
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
-		//Request Completed
+		MSGraphPrinterCapabilities *printerCapabilities = [[MSGraphPrinterCapabilities alloc] initWithData:data error:&nserror];
 
 }];
 

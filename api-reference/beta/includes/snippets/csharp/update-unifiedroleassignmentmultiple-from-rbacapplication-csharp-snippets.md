@@ -15,7 +15,7 @@ var unifiedRoleAssignmentMultiple = new UnifiedRoleAssignmentMultiple
 	}
 };
 
-await graphClient.RoleManagement.DeviceManagement.RoleAssignments["lAPpYvVpN0KRkAEhdxReEJC2sEqbR_9Hr48lds9SGHI-1"]
+await graphClient.RoleManagement.DeviceManagement.RoleAssignments["{unifiedRoleAssignmentMultiple-id}"]
 	.Request()
 	.UpdateAsync(unifiedRoleAssignmentMultiple);
 

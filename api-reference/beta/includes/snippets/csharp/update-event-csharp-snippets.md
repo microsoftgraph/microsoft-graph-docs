@@ -28,7 +28,7 @@ var @event = new Event
 	}
 };
 
-await graphClient.Me.Events["{id}"]
+await graphClient.Me.Events["{event-id}"]
 	.Request()
 	.UpdateAsync(@event);
 

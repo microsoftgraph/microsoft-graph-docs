@@ -9,6 +9,7 @@ MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationPr
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/v1.0/";
 NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/planner/plans/{plan-id}"]]];
 [urlRequest setHTTPMethod:@"PATCH"];
+[urlRequest setValue:@"return=representation" forHTTPHeaderField:@"Prefer"];
 [urlRequest setValue:@"W/\"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc=\"" forHTTPHeaderField:@"If-Match"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 

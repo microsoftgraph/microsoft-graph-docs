@@ -168,7 +168,7 @@ GET /users/{id | userPrincipalName}/contactfolders/{id}/contacts/{id}
 * Accessing a contact contained in a child folder of a **contactFolder**.  The example below shows one level of nesting, but a contact can be located in a child of a child and so on.
 
 ```http
-GET /me/contactFolder/{id}/childFolders/{id}/.../contacts/{id}
+GET /me/contactFolders/{id}/childFolders/{id}/.../contacts/{id}
 GET /users/{id | userPrincipalName}/contactFolders/{id}/childFolders/{id}/contacts/{id}
 ```
 
@@ -336,16 +336,17 @@ In both the v1 and beta endpoints, the response of `GET /users/id/messages` incl
 To get a list of teams, see [list all teams](teams-list-all-teams.md) and 
 [list your teams](/graph/api/user-list-joinedteams).
 
-### Unable to remove members from chat
-In certain situations, the call to `DELETE /chats/chat-id/members/membership-id` will fail with a `404` even if the chat member exists. This is due to a issue with the computation of the `membership-id`.
-
 ### Unable to filter team members by roles
 The filter query to get members of a team based on their roles `GET /teams/team-id/members?$filter=roles/any(r:r eq 'owner')` might not work. The server might respond with a `BAD REQUEST`.
 
-### Missing tenantId for chat members
-In certain instances, the `tenantId` property for the individual members of a chat might not be populated on a `GET /chats/chat-id/members` or `GET /chats/chat-id/members/membership-id` request.
+### Missing properties for chat members
+In certain instances, the `tenantId` / `email` / `displayName` property for the individual members of a chat might not be populated on a `GET /chats/chat-id/members` or `GET /chats/chat-id/members/membership-id` request.
 
 ## Users
+
+### Use the dollar ($) symbol in the userPrincipalName
+
+Microsoft Graph allows the **userPrincipalName** to begin with a dollar (`$`) character. However, when querying users by userPrincipalName, the request URL `/users/$x@y.com` fails. This is because this request URL violates the OData URL conventions which expects only system query options to be prefixed with a `$` character. As a workaround, remove the slash (/) after `/users` and enclose the **userPrincipalName** in parentheses and single quotes as follows: `/users('$x@y.com')`.
 
 ### No instant access after creation
 
@@ -380,19 +381,25 @@ Requesting objects using [Get directory objects from a list of IDs](/graph/api/d
 ## Query parameter limitations
 
 * Multiple namespaces are not supported.
-* GETs on `$ref` and casting is not supported on users, groups, devices, service principals and applications.
+* GETs on `$ref` and casting are not supported on users, groups, devices, service principals and applications.
 * `@odata.bind` is not supported.  This means that developers won’t be able to properly set the **acceptedSenders** or **rejectedSenders** navigation property on a group.
 * `@odata.id` is not present on non-containment navigations (like messages) when using minimal metadata.
 * `$expand`:
-  * No support for `nextLink`
-  * No support for more than 1 level of expand
-  * No support with extra parameters (`$filter`, `$select`)
+  * Returns a maximum of 20 objects.
+  * No support for `@odata.nextLink`.
+  * No support for more than 1 level of expand.
+  * No support with extra parameters (`$filter`, `$select`).
 * `$filter`:
   * `/attachments` endpoint does not support filters. If present, the `$filter` parameter is ignored.
   * Cross-workload filtering is not supported.
 * `$search`:
   * Full-text search is only available for a subset of entities such as messages.
   * Cross-workload searching is not supported.
+  * Searching is not supported on Azure AD B2C tenants.
+* `$count`:
+  * Not supported on Azure AD B2C tenants.
+  * When using the `$count=true` query string when querying against directory resources, the `@odata.count` property will be present only in the first page of the paged data.
+* Query parameters specified in a request might fail silently. This can be true for unsupported query parameters as well as for unsupported combinations of query parameters.
 
 
 ## Functionality available only in Office 365 REST or Azure AD Graph APIs

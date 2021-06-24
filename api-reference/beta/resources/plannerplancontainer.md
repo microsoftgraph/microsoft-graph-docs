@@ -20,7 +20,7 @@ Planner currently supports the container types listed in the following table. Wh
 |Type|Description|Path to the resource|
 |----|-----------|--------------------|
 |group| Plan is contained by a [group](group.md).| https://graph.microsoft.com/beta/groups/&lt;id&gt;|
-|roster| Plan is container by a [plannerRoster](plannerroster.md) | https://graph.microsoft.com/beta/planner/rosters/&lt;id&gt;|
+|roster| Plan is contained by a [plannerRoster](plannerroster.md) | https://graph.microsoft.com/beta/planner/rosters/&lt;id&gt;|
 
 ## Properties
 |Property|Type|Description|

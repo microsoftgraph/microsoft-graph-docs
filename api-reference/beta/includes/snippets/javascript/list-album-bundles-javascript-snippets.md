@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/drive/bundles?filter=bundle/album%20ne%20null')
+let bundles = await client.api('/drive/bundles?filter=bundle/album%20ne%20null')
 	.version('beta')
 	.filter('bundle/album ne null')
 	.get();

@@ -58,17 +58,13 @@ Here is a JSON representation of the resource.
     {
       "@odata.type": "microsoft.graph.settingSource",
       "id": "String",
-      "displayName": "String"
+      "displayName": "String",
+      "sourceType": "String"
     }
   ],
   "currentValue": "String"
 }
 ```
-
-
-
-
-
 
 
 

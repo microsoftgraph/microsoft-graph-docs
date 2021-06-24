@@ -132,7 +132,6 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users('bb8775a4-4d8c-42cf-a1d4-4d58c2bb668f')/messages(sender,subject)",
-    "@odata.nextLink": "https://graph.microsoft.com/v1.0/me/messages?$select=sender%2csubject&$skip=14",
     "value": [
         {
             "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAwR4Hg\"",
@@ -142,108 +141,6 @@ Content-type: application/json
                 "emailAddress": {
                     "name": "Microsoft Planner",
                     "address": "noreply@Planner.Office365.com"
-                }
-            }
-        },
-        {
-            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4D1e\"",
-            "id": "AAMkAGUAAAq5QKlAAA=",
-            "subject": "You have late tasks!",
-            "sender": {
-                "emailAddress": {
-                    "name": "Microsoft Planner",
-                    "address": "noreply@Planner.Office365.com"
-                }
-            }
-        },
-        {
-            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4D0v\"",
-            "id": "AAMkAGUAAAq5QKkAAA=",
-            "subject": "Your Azure AD Identity Protection Weekly Digest",
-            "sender": {
-                "emailAddress": {
-                    "name": "Microsoft Azure",
-                    "address": "azure-noreply@contoso.com"
-                }
-            }
-        },
-        {
-            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4DsN\"",
-            "id": "AAMkAGUAAAq5QKjAAA=",
-            "subject": "Use attached file",
-            "sender": {
-                "emailAddress": {
-                    "name": "Megan Bowen",
-                    "address": "MeganB@contoso.com"
-                }
-            }
-        },
-        {
-            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dq9\"",
-            "id": "AAMkAGUAAAq5QKiAAA=",
-            "subject": "Original invitation",
-            "sender": {
-                "emailAddress": {
-                    "name": "Megan Bowen",
-                    "address": "MeganB@contoso.com"
-                }
-            }
-        },
-        {
-            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dq1\"",
-            "id": "AAMkAGUAAAq5QKhAAA=",
-            "subject": "Koala image",
-            "sender": {
-                "emailAddress": {
-                    "name": "Megan Bowen",
-                    "address": "MeganB@contoso.com"
-                }
-            }
-        },
-        {
-            "@odata.etag": "W/\"CQAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dqp\"",
-            "id": "AAMkAGUAAAq5QKgAAA=",
-            "subject": "Sales invoice template",
-            "sender": {
-                "emailAddress": {
-                    "name": "Megan Bowen",
-                    "address": "MeganB@contoso.com"
-                }
-            }
-        },
-        {
-            "@odata.type": "#microsoft.graph.eventMessage",
-            "@odata.etag": "W/\"DAAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dft\"",
-            "id": "AAMkAGUAAAq5UMVAAA=",
-            "subject": "Accepted: Review strategy for Q3",
-            "sender": {
-                "emailAddress": {
-                    "name": "Adele Vance",
-                    "address": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=A17A02BCF30C4937A87B14273385667C-ADELEV"
-                }
-            }
-        },
-        {
-            "@odata.type": "#microsoft.graph.eventMessage",
-            "@odata.etag": "W/\"DAAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4DfF\"",
-            "id": "AAMkAGUAAAq5UMUAAA=",
-            "subject": "Accepted: Review strategy for Q3",
-            "sender": {
-                "emailAddress": {
-                    "name": "Adele Vance",
-                    "address": "/O=EXCHANGELABS/OU=EXCHANGE ADMINISTRATIVE GROUP (FYDIBOHF23SPDLT)/CN=RECIPIENTS/CN=A17A02BCF30C4937A87B14273385667C-ADELEV"
-                }
-            }
-        },
-        {
-            "@odata.type": "#microsoft.graph.eventMessage",
-            "@odata.etag": "W/\"CwAAABYAAADHcgC8Hl9tRZ/hc1wEUs1TAAAq4Dfa\"",
-            "id": "AAMkAGUAAAq5T8tAAA=",
-            "subject": "Review strategy for Q3",
-            "sender": {
-                "emailAddress": {
-                    "name": "Megan Bowen",
-                    "address": "MeganB@contoso.com"
                 }
             }
         }

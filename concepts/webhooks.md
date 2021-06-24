@@ -39,8 +39,11 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - Security [alert][]
 - SharePoint [list][]
 - Teams [callRecord][]
+- Teams [channel][]
 - Teams [chatMessage][]
+- Teams [conversationMember][]
 - Teams [presence][] (preview)
+- Teams [team][]
 - [todoTask][] (preview)
 - [user][]
 
@@ -93,9 +96,11 @@ When subscribing to Outlook resources such as **messages**, **events** or **cont
 
 `/users/sh.o'neal@contoso.com/messages`
 
-Use: 
+Use:
 
 `/users/{guid-user-id}/messages`
+
+A maximum of 1000 active subscriptions per mailbox for all applications is allowed.
 
 ### Teams resource limitations
 
@@ -292,9 +297,11 @@ The following table lists the latency to expect between an event happening in th
 |:-----|:-----|:-----|
 |[alert][] | Less than 3 minutes | 5 minutes |
 |[callRecord][] | Less than 15 minutes | 60 minutes |
+|[channel][] | Less than 10 seconds | 60 minutes |
 |[chatMessage][] | Less than 10 seconds | 1 minute |
 |[contact][] | Unknown | Unknown |
 |[conversation][] | Unknown | Unknown |
+|[conversationMember][] | Less than 10 seconds | 60 minutes |
 |[driveItem][] | Less than 1 minute | 5 minutes |
 |[event][] | Unknown | Unknown |
 |[group][] | Less than 2 minutes | 15 minutes |
@@ -303,6 +310,7 @@ The following table lists the latency to expect between an event happening in th
 |[presence][] (preview) | Less than 10 seconds | 1 minute |
 |[printer][] | Less than 1 minute | 5 minutes |
 |[printTaskDefinition][] | Less than 1 minute | 5 minutes |
+|[team][] | Less than 10 seconds | 60 minutes |
 |[todoTask][] | Less than 2 minutes | 15 minutes |
 |[user][] | Less than 2 minutes | 15 minutes |
 
@@ -333,3 +341,6 @@ The following table lists the latency to expect between an event happening in th
 [printer]: /graph/api/resources/printer
 [printTaskDefinition]: /graph/api/resources/printtaskdefinition
 [todoTask]: /graph/api/resources/todotask
+[channel]: /graph/api/resources/channel
+[conversationMember]: /graph/api/resources/conversationmember
+[team]: /graph/api/resources/team

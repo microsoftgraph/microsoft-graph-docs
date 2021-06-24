@@ -11,7 +11,7 @@ var plannerRosterMember = new PlannerRosterMember
 	UserId = "String"
 };
 
-await graphClient.Planner.Rosters["6519868f-868f-6519-8f86-19658f861965"].Members
+await graphClient.Planner.Rosters["{plannerRoster-id}"].Members
 	.Request()
 	.AddAsync(plannerRosterMember);
 

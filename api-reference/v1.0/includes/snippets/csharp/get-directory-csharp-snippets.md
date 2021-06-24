@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var directoryObject = await graphClient.Directory.DeletedItems["{object-id}"]
+var directoryObject = await graphClient.Directory.DeletedItems["{directoryObject-id}"]
 	.Request()
 	.GetAsync();
 

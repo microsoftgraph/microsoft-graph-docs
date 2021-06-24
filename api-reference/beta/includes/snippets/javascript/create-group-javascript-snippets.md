@@ -11,17 +11,17 @@ const options = {
 const client = Client.init(options);
 
 const group = {
-  description: "Self help community for golf",
-  displayName: "Golf Assist",
+  description: 'Self help community for golf',
+  displayName: 'Golf Assist',
   groupTypes: [
-    "Unified"
+    'Unified'
   ],
   mailEnabled: true,
-  mailNickname: "golfassist",
+  mailNickname: 'golfassist',
   securityEnabled: false
 };
 
-let res = await client.api('/groups')
+await client.api('/groups')
 	.version('beta')
 	.post(group);
 

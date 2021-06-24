@@ -3,7 +3,7 @@ title: "Update a connectedOrganization object"
 description: "Update a connectedOrganization object."
 author: "markwahl-msft"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 

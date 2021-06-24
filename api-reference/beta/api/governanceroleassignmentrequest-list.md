@@ -3,7 +3,7 @@ title: "List governanceRoleAssignmentRequests"
 description: "Retrieve a collection of governanceRoleAssignmentRequests. "
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "shauliu"
 ---
 
@@ -94,7 +94,7 @@ GET https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssignm
 ##### Response
 Here is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,

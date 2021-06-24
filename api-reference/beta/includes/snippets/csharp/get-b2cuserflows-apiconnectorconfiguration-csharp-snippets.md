@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var b2cUserFlows = await graphClient.Identity.B2cUserFlows["B2C_1_testuserflow"]
+var b2cUserFlows = await graphClient.Identity.B2cUserFlows["{b2cIdentityUserFlow-id}"]
 	.Request()
 	.Expand("postAttributeCollection")
 	.Select("ApiConnectorConfiguration")

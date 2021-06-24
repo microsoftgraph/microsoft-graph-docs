@@ -12,7 +12,7 @@ var permissionGrantConditionSet = new PermissionGrantConditionSet
 	ClientApplicationsFromVerifiedPublisherOnly = true
 };
 
-await graphClient.Policies.PermissionGrantPolicies["{id}"].Includes
+await graphClient.Policies.PermissionGrantPolicies["{permissionGrantPolicy-id}"].Includes
 	.Request()
 	.AddAsync(permissionGrantConditionSet);
 

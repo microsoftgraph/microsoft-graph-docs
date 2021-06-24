@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var securityEnabledOnly = false;
 
-await graphClient.Groups["{id}"]
+await graphClient.Groups["{group-id}"]
 	.GetMemberObjects(securityEnabledOnly)
 	.Request()
 	.PostAsync();

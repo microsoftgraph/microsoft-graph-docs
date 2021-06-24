@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const entitlementManagementSettings = {
-  externalUserLifecycleAction: "None"
+  externalUserLifecycleAction: 'None'
 };
 
-let res = await client.api('/identityGovernance/entitlementManagement/settings')
+await client.api('/identityGovernance/entitlementManagement/settings')
 	.version('beta')
 	.update(entitlementManagementSettings);
 

@@ -12,13 +12,13 @@ const client = Client.init(options);
 
 const tokenLifetimePolicy = {
   definition: [
-    "definition-value"
+    'definition-value'
   ],
-  displayName: "displayName-value",
+  displayName: 'displayName-value',
   isOrganizationDefault: true
 };
 
-let res = await client.api('/policies/tokenLifetimePolicies/{id}')
+await client.api('/policies/tokenLifetimePolicies/{id}')
 	.version('beta')
 	.update(tokenLifetimePolicy);
 

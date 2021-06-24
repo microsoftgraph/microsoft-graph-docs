@@ -16,7 +16,7 @@ var extensionProperty = new ExtensionProperty
 	}
 };
 
-await graphClient.Applications["{id}"].ExtensionProperties
+await graphClient.Applications["{application-id}"].ExtensionProperties
 	.Request()
 	.AddAsync(extensionProperty);
 

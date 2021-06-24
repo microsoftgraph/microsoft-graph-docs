@@ -18,11 +18,11 @@ Not yet documented
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
 |Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -61,7 +61,7 @@ Here is an example of the request.
 POST https://graph.microsoft.com/v1.0/deviceManagement/deviceConfigurations/{deviceConfigurationId}/assign
 
 Content-type: application/json
-Content-length: 277
+Content-length: 333
 
 {
   "assignments": [
@@ -69,7 +69,8 @@ Content-length: 277
       "@odata.type": "#microsoft.graph.deviceConfigurationAssignment",
       "id": "d59b6342-6342-d59b-4263-9bd542639bd5",
       "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "collectionId": "Collection Id value"
       }
     }
   ]
@@ -81,7 +82,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 271
+Content-Length: 327
 
 {
   "value": [
@@ -89,17 +90,13 @@ Content-Length: 271
       "@odata.type": "#microsoft.graph.deviceConfigurationAssignment",
       "id": "d59b6342-6342-d59b-4263-9bd542639bd5",
       "target": {
-        "@odata.type": "microsoft.graph.deviceAndAppManagementAssignmentTarget"
+        "@odata.type": "microsoft.graph.configurationManagerCollectionAssignmentTarget",
+        "collectionId": "Collection Id value"
       }
     }
   ]
 }
 ```
-
-
-
-
-
 
 
 

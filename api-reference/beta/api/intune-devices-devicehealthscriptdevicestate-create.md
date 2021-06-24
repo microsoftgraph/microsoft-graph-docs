@@ -20,11 +20,11 @@ Create a new [deviceHealthScriptDeviceState](../resources/intune-devices-deviceh
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -59,6 +59,7 @@ The following table shows the properties that are required when you create the d
 |postRemediationDetectionScriptOutput|String|Detection script output after remediation|
 |postRemediationDetectionScriptError|String|Error from the detection script after remediation|
 |remediationState|[remediationState](../resources/intune-devices-remediationstate.md)|Remediation state from the lastest device health script execution. Possible values are: `unknown`, `skipped`, `success`, `remediationFailed`, `scriptError`.|
+|assignmentFilterIds|String collection|A list of the assignment filter ids used for health script applicability evaluation|
 
 
 
@@ -72,7 +73,7 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/deviceHealthScripts/{deviceHealthScriptId}/deviceRunStates
 Content-type: application/json
-Content-length: 762
+Content-length: 831
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptDeviceState",
@@ -85,7 +86,10 @@ Content-length: 762
   "remediationScriptError": "Remediation Script Error value",
   "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value",
   "postRemediationDetectionScriptError": "Post Remediation Detection Script Error value",
-  "remediationState": "skipped"
+  "remediationState": "skipped",
+  "assignmentFilterIds": [
+    "Assignment Filter Ids value"
+  ]
 }
 ```
 
@@ -94,7 +98,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 811
+Content-Length: 880
 
 {
   "@odata.type": "#microsoft.graph.deviceHealthScriptDeviceState",
@@ -108,7 +112,10 @@ Content-Length: 811
   "remediationScriptError": "Remediation Script Error value",
   "postRemediationDetectionScriptOutput": "Post Remediation Detection Script Output value",
   "postRemediationDetectionScriptError": "Post Remediation Detection Script Error value",
-  "remediationState": "skipped"
+  "remediationState": "skipped",
+  "assignmentFilterIds": [
+    "Assignment Filter Ids value"
+  ]
 }
 ```
 

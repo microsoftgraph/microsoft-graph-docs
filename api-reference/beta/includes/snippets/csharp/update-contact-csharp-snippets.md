@@ -26,7 +26,7 @@ var contact = new Contact
 	}
 };
 
-await graphClient.Me.Contacts["AAMkADh6v5AAAvgTCEAAA="]
+await graphClient.Me.Contacts["{contact-id}"]
 	.Request()
 	.UpdateAsync(contact);
 

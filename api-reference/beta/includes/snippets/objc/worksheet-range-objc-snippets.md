@@ -8,7 +8,7 @@ MSHTTPClient *httpClient = [MSClientFactory createHTTPClientWithAuthenticationPr
 
 NSString *MSGraphBaseURL = @"https://graph.microsoft.com/beta/";
 NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:[MSGraphBaseURL stringByAppendingString:@"/me/drive/items/{id}/workbook/worksheets/{id|name}/Range"]]];
-[urlRequest setHTTPMethod:@"POST"];
+[urlRequest setHTTPMethod:@"GET"];
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 NSMutableDictionary *payloadDictionary = [[NSMutableDictionary alloc] init];
@@ -22,7 +22,7 @@ NSData *data = [NSJSONSerialization dataWithJSONObject:payloadDictionary options
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
-		//Request Completed
+		MSGraphWorkbookRange *workbookRange = [[MSGraphWorkbookRange alloc] initWithData:data error:&nserror];
 
 }];
 

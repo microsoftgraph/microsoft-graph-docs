@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var relations = await graphClient.TermStore.Sets["{setId}"].Relations
+var relations = await graphClient.TermStore.Sets["{termStore.set-id}"].Relations
 	.Request()
 	.GetAsync();
 

@@ -11,11 +11,11 @@ const options = {
 const client = Client.init(options);
 
 const publishedResource = {
-    displayName: "New provisioning",
-    resourceName: "domain1.contoso.com"
+    displayName: 'New provisioning',
+    resourceName: 'domain1.contoso.com'
 };
 
-let res = await client.api('/onPremisesPublishingProfiles/provisioning/publishedResources')
+await client.api('/onPremisesPublishingProfiles/provisioning/publishedResources')
 	.version('beta')
 	.post(publishedResource);
 

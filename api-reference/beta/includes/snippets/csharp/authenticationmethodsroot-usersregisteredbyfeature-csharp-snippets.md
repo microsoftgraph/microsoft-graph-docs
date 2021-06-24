@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var userRegistrationFeatureSummary = await graphClient.Reports.AuthenticationMethods
-	.UsersRegisteredByFeature(.all,.all)
+	.UsersRegisteredByFeature(IncludedUserTypes.All,IncludedUserRoles.All)
 	.Request()
 	.GetAsync();
 

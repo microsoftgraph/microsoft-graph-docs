@@ -1,7 +1,7 @@
 ---
 title: "Update groupLifecyclePolicy"
 description: "Update the properties of a groupLifecyclePolicygroupLifecyclePolicy resource type object."
-author: "yyuank"
+author: "Jordanndahl"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType
@@ -87,7 +87,7 @@ Content-length: 125
 ---
 
 ##### Response
-Note: The response object shown here may be truncated for brevity. 
+Note: The response object shown here might be shortened for readability. 
 <!-- {
   "blockType": "response",
   "truncated": true,

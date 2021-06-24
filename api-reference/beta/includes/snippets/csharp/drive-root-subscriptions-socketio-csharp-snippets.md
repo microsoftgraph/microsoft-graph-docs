@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var subscription = await graphClient.Me.Drive.Root.Subscriptions["socketIo"]
+var subscription = await graphClient.Me.Drive.Root.Subscriptions["{subscription-id}"]
 	.Request()
 	.GetAsync();
 

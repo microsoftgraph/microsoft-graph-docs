@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/teamwork/workforceIntegrations/{workforceIntegrationId}')
+await client.api('/teamwork/workforceIntegrations/{workforceIntegrationId}')
 	.delete();
 
 ```

@@ -11,7 +11,7 @@ var accessPackageCatalog = new AccessPackageCatalog
 	DisplayName = "Catalog One"
 };
 
-await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageCatalogs["{accessPackageCatalogId}"]
+await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageCatalogs["{accessPackageCatalog-id}"]
 	.Request()
 	.UpdateAsync(accessPackageCatalog);
 

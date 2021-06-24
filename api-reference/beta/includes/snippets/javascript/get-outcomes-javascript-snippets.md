@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/education/me/assignments/{id}/submissions/{id}/outcomes')
+let outcomes = await client.api('/education/classes/{id}/assignments/{id}/submissions/{id}/outcomes')
 	.version('beta')
 	.get();
 

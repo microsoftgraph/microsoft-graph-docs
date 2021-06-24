@@ -12,7 +12,7 @@ Microsoft Graph Toolkit components work great with web frameworks like Angular i
 ## Add the Microsoft Graph Toolkit
 
 First, you need to enable custom elements in your Angular application by adding the `CUSTOM_ELEMENT_SCHEMA` to the `@NgModule() decorator` in `app.module.ts`. The following example shows how to do this:
-```ts
+```TypeScript
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
@@ -28,18 +28,22 @@ import { AppComponent } from './app.component';
 export class AppModule {}
 ```
 Next, add the Microsoft Graph Toolkit to your project by installing the npm package with:
-```bash
+```Command Line
 npm install @microsoft/mgt
 ```
 ## Initialize a provider
 
 The Microsoft Graph Toolkit providers enable authentication and access to Microsoft Graph for the components. To learn more, see [Using the providers](../providers/providers.md). The provider you use depends on the context in which your solution will be used.
 
-The following example shows how to add the [MSAL Provider](../providers/msal.md), but you can follow the same model with any of the providers. Import the provider and set it to initialize when the application initializes. Replace `<YOUR-CLIENT-ID>` with the client ID for your application.
+The following example shows how to add the [MSAL 2 Provider](../providers/msal2.md), but you can follow the same model with any of the providers.
+>[!NOTE] 
+>If you are currently using the MSAL Provider and would like to update to the MSAL 2 Provider, follow the steps in the [MSAL 2 provider](../providers/msal2.md#migrating-from-msal-provider-to-msal-2-provider) article.
 
-```ts
+Import the provider and set it to initialize when the application initializes. Replace `<YOUR-CLIENT-ID>` with the client ID for your application.
+
+```TypeScript
 import { Component, OnInit } from '@angular/core';
-import { Providers, MsalProvider } from '@microsoft/mgt';
+import { Providers, Msal2Provider } from '@microsoft/mgt';
 
 @Component({
     selector: 'app-root',
@@ -50,7 +54,7 @@ export class AppComponent implements OnInit {
 
     ngOnInit()
     {
-        Providers.globalProvider = new MsalProvider({
+        Providers.globalProvider = new Msal2Provider({
             clientId: '<YOUR-CLIENT-ID>'
         });
     }
@@ -58,7 +62,6 @@ export class AppComponent implements OnInit {
 ```
 ### Create an app/client ID
 In order to get a client ID, you need to [register your application](../../auth-register-app-v2.md) in Azure AD. 
->**Note**: MSAL only supports the Implicit Flow for OAuth. Make sure to enable Implicit Flow in your application in the Azure Portal (it is not enabled by default). Under **Authentication**, find the **Implicit grant** section and select the checkboxes for **Access tokens** and **ID tokens**.
 
 ## Add components
 
@@ -87,9 +90,9 @@ You can avoid these errors by changing the default characters used by the Toolki
 
 Import the `TemplateHelper` and use the `.setBindingSyntax()` method to set your custom binding syntax.
 
-```ts
+```TypeScript
 import { Component, OnInit } from '@angular/core';
-import { Providers, MsalProvider, TemplateHelper } from '@microsoft/mgt';
+import { Providers, Msal2Provider, TemplateHelper } from '@microsoft/mgt';
 
 @Component({
     selector: 'app-root',
@@ -100,7 +103,7 @@ export class AppComponent implements OnInit {
 
     ngOnInit()
     {
-        Providers.globalProvider = new MsalProvider({ clientId: '<YOUR-CLIENT-ID>'})
+        Providers.globalProvider = new Msal2Provider({ clientId: '<YOUR-CLIENT-ID>'})
         TemplateHelper.setBindingSyntax('[[',']]');
     }
 }

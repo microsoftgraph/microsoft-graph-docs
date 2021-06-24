@@ -3,7 +3,7 @@ title: "Cancel governanceRoleAssignmentRequest"
 description: "Cancel a governanceRoleAssignmentRequest."
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 author: "shauliu"
 ---
 
@@ -105,8 +105,7 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
 ### Response
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": false
 } -->
 ```http
 HTTP/1.1 204 No Content

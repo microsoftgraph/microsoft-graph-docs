@@ -21,7 +21,7 @@ Describes who or what initiated the provisioning event.
 |:-------------|:------------|:------------|
 |displayName|String|Name of the person or service that initiated the provisioning event.|
 |id|String|Uniquely identifies the person or service that initiated the provisioning event.|
-|initiatorType|String| Type of initiator. Possible values are: `user`, `app`, `system`, `unknownFutureValue`.|
+|initiatorType|String| Type of initiator. Possible values are: `user`, `application`, `system`, `unknownFutureValue`.|
 
 ## JSON representation
 

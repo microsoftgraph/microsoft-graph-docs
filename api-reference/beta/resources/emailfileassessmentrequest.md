@@ -3,7 +3,7 @@ title: "emailFileAssessmentRequest resource type"
 description: "Used to create and retrieve an email file threat assessment."
 localization_priority: Normal
 author: "hafen-ms"
-ms.prod: "microsoft-identity-platform"
+ms.prod: "security"
 doc_type: "resourcePageType"
 ---
 
@@ -34,7 +34,7 @@ The email file can be an .eml file type.
 |category|[threatCategory](enums.md#threatcategory-values)|The threat category. Possible values are: `spam`, `phishing`, `malware`.|
 |contentType|[threatAssessmentContentType](enums.md#threatassessmentcontenttype-values)|The content type of threat assessment. Possible values are: `mail`, `url`, `file`.|
 |createdBy|[identitySet](identityset.md)|The threat assessment request creator.|
-|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: `'2014-01-01T00:00:00Z'`.|
+|createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`.|
 |expectedAssessment|[threatExpectedAssessment](enums.md#threatexpectedassessment-values)|The expected assessment from submitter. Possible values are: `block`, `unblock`.|
 |id|String|The threat assessment request ID is a globally unique identifier (GUID).|
 |requestSource|[threatAssessmentRequestSource](enums.md#threatassessmentrequestsource-values)|The source of threat assessment request. Possible values are: `user`, `administrator`.|

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/oauth2PermissionGrants/{id}')
+await client.api('/oauth2PermissionGrants/{id}')
 	.delete();
 
 ```

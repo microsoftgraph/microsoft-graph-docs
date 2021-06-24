@@ -81,7 +81,7 @@ GET https://graph.microsoft.com/beta/servicePrincipals/{id}
 ### Response
 Here is an example of the response. 
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -102,6 +102,7 @@ Content-type: application/json
         "applicationTemplateId": null,
         "appOwnerOrganizationId": "1bc1c026-2f7b-48a5-98da-afa2fd8bc7bc",
         "appRoleAssignmentRequired": false,
+        "disabledByMicrosoftStatus": null,
         "displayName": "foo",
         "errorUrl": null,
         "homepage": null,

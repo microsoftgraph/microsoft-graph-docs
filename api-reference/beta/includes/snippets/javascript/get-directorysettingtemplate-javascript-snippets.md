@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/directorySettingTemplates/{id}')
+let directorySettingTemplate = await client.api('/directorySettingTemplates/{id}')
 	.version('beta')
 	.get();
 

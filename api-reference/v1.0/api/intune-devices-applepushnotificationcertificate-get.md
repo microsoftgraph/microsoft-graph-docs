@@ -18,11 +18,11 @@ Read properties and relationships of the [applePushNotificationCertificate](../r
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementManagedDevices.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
+|Delegated (work or school account)|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementServiceConfig.ReadWrite.All, DeviceManagementManagedDevices.Read.All|
 
 ## HTTP Request
 <!-- {
@@ -61,7 +61,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 417
+Content-Length: 484
 
 {
   "value": {
@@ -71,15 +71,11 @@ Content-Length: 417
     "topicIdentifier": "Topic Identifier value",
     "lastModifiedDateTime": "2017-01-01T00:00:35.1329464-08:00",
     "expirationDateTime": "2016-12-31T23:57:57.2481234-08:00",
+    "certificateSerialNumber": "Certificate Serial Number value",
     "certificate": "Certificate value"
   }
 }
 ```
-
-
-
-
-
 
 
 

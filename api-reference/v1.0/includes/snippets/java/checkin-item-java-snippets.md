@@ -4,12 +4,16 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 ```java
 
-IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
+GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 String comment = "Updating the latest guidelines";
 
 graphClient.drives("{drive-id}").items("{item-id}")
-	.checkin(null,comment)
+	.checkin(DriveItemCheckinParameterSet
+		.newBuilder()
+		.withCheckInAs(null)
+		.withComment(comment)
+		.build())
 	.buildRequest()
 	.post();
 

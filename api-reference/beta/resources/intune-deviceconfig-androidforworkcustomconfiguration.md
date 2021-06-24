@@ -104,6 +104,7 @@ Here is a JSON representation of the resource.
       "displayName": "String",
       "description": "String",
       "omaUri": "String",
+      "secretReferenceValueId": "String",
       "isEncrypted": true
     }
   ]

@@ -20,7 +20,7 @@ var todoTask = new TodoTask
 	}
 };
 
-await graphClient.Me.Todo.Lists["AQMkADAwATM0MDAAMS0yMDkyLWVjMzYtM"].Tasks
+await graphClient.Me.Todo.Lists["{todoTaskList-id}"].Tasks
 	.Request()
 	.AddAsync(todoTask);
 

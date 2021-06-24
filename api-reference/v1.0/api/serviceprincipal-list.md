@@ -86,7 +86,7 @@ GET https://graph.microsoft.com/v1.0/servicePrincipals
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -104,7 +104,6 @@ Content-type: application/json
     {
       "accountEnabled":true,
       "displayName":"amasf",
-      "publisherName":"Contoso",
       "servicePrincipalType":"Application",
       "signInAudience":"AzureADMyOrg"
     }
@@ -137,9 +136,9 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: text/plain
-```
 
-`893`
+893
+```
 
 ### Example 3: Use $filter and $top to get one service principal with a display name that starts with 'a' including a count of returned objects
 
@@ -160,7 +159,7 @@ ConsistencyLevel: eventual
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -179,7 +178,6 @@ Content-type: application/json
     {
       "accountEnabled":true,
       "displayName":"a",
-      "publisherName":"Contoso",
       "servicePrincipalType":"Application",
       "signInAudience":"AzureADMyOrg"
     }
@@ -206,7 +204,7 @@ ConsistencyLevel: eventual
 
 The following is an example of the response.
 
->**Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -225,7 +223,6 @@ Content-type: application/json
     {
       "accountEnabled":true,
       "displayName":"myContosoTeam",
-      "publisherName":"Contoso",
       "servicePrincipalType":"Application",
       "signInAudience":"AzureADMyOrg"
     }

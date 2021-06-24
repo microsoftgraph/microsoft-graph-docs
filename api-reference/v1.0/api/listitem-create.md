@@ -43,7 +43,7 @@ Here is an example of how to create a new generic list item.
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "create-listitem", "scopes": "sites.readwrite.all" } -->
 
-```json
+```http
 POST https://graph.microsoft.com/v1.0/sites/{site-id}/lists/{list-id}/items
 Content-Type: application/json
 
@@ -80,7 +80,7 @@ If successful, this method returns a [listItem][] in the response body for the c
 
 <!-- { "blockType": "response", "@odata.type": "microsoft.graph.listItem", "truncated": true } -->
 
-```json
+```http
 HTTP/1.1 201 Created
 Content-type: application/json
 

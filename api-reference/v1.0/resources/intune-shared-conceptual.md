@@ -19,24 +19,14 @@ The following Graph resources are shared between Intune workflows:
 
 - [All devices assignment target](intune-shared-alldevicesassignmenttarget.md)
 - [All licensed users assignment target](intune-shared-alllicensedusersassignmenttarget.md)
+- [Android enterprise always on VPN package type](intune-shared-androidenterprisealwaysonvpnpackagetype.md)
 - [Compliance status](intune-shared-compliancestatus.md)
+- [Configuration manager collection assignment target](intune-shared-configurationmanagercollectionassignmenttarget.md)
 - [Device and app management assignment target](intune-shared-deviceandappmanagementassignmenttarget.md)
-- [Device app management](intune-shared-deviceappmanagement.md)
-- [Device category](intune-shared-devicecategory.md)
-- [Device management](intune-shared-devicemanagement.md)
 - [Exclusion group assignment target](intune-shared-exclusiongroupassignmenttarget.md)
 - [Group assignment target](intune-shared-groupassignmenttarget.md)
 - [Install intent](intune-shared-installintent.md)
 - [MIME content](intune-shared-mimecontent.md)
-- [Report](intune-shared-report.md)
-- [Report root](intune-shared-reportroot.md)
 - [Saved UI state generation options](intune-shared-saveduistategenerationoptions.md)
 - [URI](intune-shared-uri.md)
-- [User](intune-shared-user.md)
 - [VPP token account type](intune-shared-vpptokenaccounttype.md)
-
-
-
-
-
-

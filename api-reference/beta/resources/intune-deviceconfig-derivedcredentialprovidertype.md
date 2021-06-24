@@ -21,7 +21,7 @@ Provider type for Derived Credentials.
 |Member|Value|Description|
 |:---|:---|:---|
 |notConfigured|0|No Derived Credential Provider Configured.|
-|entrustDataCard|1|Entrust DataCard.|
+|entrustDataCard|1|Entrust.|
 |purebred|2|Purebred - Defense Information Systems Agency.|
 |xTec|3|Xtec - AuthentX.|
 |intercede|4|Intercede.|

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/me/activities/recent')
+let recent = await client.api('/me/activities/recent')
 	.get();
 
 ```

@@ -1,7 +1,7 @@
 ---
 title: "teamsAppInstallation: upgrade"
 description: "Update an app installed in a chat and bring it in sync with the current version available in the tenant app catalog."
-author: "laujan"
+author: "subray"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -25,7 +25,9 @@ One of the following permissions is required to call this API. To learn more, in
 |:--------------------|:---------------------------------------------------------|
 |Delegated (work or school account) | TeamsAppInstallation.ReadWriteSelfForChat, TeamsAppInstallation.ReadWriteForChat |
 |Delegated (personal Microsoft account) | Not supported.   |
-|Application | TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All |
+|Application | Chat.Manage.Chat*, TeamsAppInstallation.ReadWriteSelfForChat.All, TeamsAppInstallation.ReadWriteForChat.All |
+
+> **Note**: Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

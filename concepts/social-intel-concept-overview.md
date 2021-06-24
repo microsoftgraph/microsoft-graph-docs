@@ -28,7 +28,7 @@ The insights API uses advanced analytics and machine learning to provide the mos
 
 ## Why integrate with people data?
 
-The people API returns data of a single entity, [person](/graph/api/resources/person?view=graph-rest-1.0), which includes typical data of an individual in today's business world. What makes this **person** data especially useful is its _relevance_ with respect to a Microsoft Graph user. Relevance is noted in a relevance score of each person, calculated based on the user's communication and collaboration patterns and business relationships. There are 3 main types of application of this _relevance_ data.
+The people API returns data of a single entity, [person](/graph/api/resources/person), which includes typical data of an individual in today's business world. What makes this **person** data especially useful is its _relevance_ with respect to a Microsoft Graph user. Relevance is noted in a relevance score of each person, calculated based on the user's communication and collaboration patterns and business relationships. There are 3 main types of application of this _relevance_ data.
 
 ### Browse people by relevance
 
@@ -59,7 +59,7 @@ Profile cards let users in an organization see information about one another, su
 
 During a typical work day, users often interact with large amounts of information stored across many documents and collaborate with other users in many different ways. It's important that they can always can find what they need, when they need it.
 
-You can use the insights API, which includes the [trending](/graph/api/resources/insights-trending?view=graph-rest-1.0), [shared](/graph/api/resources/insights-shared?view=graph-rest-1.0), and [used](/graph/api/resources/insights-used?view=graph-rest-1.0) APIs, to surface files from across Microsoft 365 based on your users' current context and needs, making users more productive and improving collaboration in your organization. Organizations can [customize privacy settings](insights-customize-item-insights-privacy.md) for these document-based insights, and control the availability of these insights in specific Microsoft 365 experiences.
+You can use the insights API, which includes the [trending](/graph/api/resources/insights-trending), [shared](/graph/api/resources/insights-shared), and [used](/graph/api/resources/insights-used) APIs, to surface files from across Microsoft 365 based on your users' current context and needs, making users more productive and improving collaboration in your organization. Organizations can [customize privacy settings](insights-customize-item-insights-privacy.md) for these document-based insights, and control the availability of these insights in specific Microsoft 365 experiences.
 
 It is easy to render the results from the insights API in your app. Every result comes with a set of common visualization properties, like a preview image URL or preview text.
 
@@ -67,7 +67,7 @@ It is easy to render the results from the insights API in your app. Every result
 
 In Microsoft 365, Delve uses the _trending_ insight to help users discover the documents that are most interesting to them right now. See figure 1.
 
-Programmatically, you can use the [trending](/graph/api/resources/insights-trending?view=graph-rest-1.0) entity in the insights API to provide your app customers a similar experience. Use the **trending** entity to connect to documents that are trending around and relevant to the user. [Listing trending documents](/graph/api/insights-list-trending?view=graph-rest-1.0) returns those files stored on OneDrive or SharePoint team sites, sorted by relevance with the most important ones first. 
+Programmatically, you can use the [trending](/graph/api/resources/insights-trending) entity in the insights API to provide your app customers a similar experience. Use the **trending** entity to connect to documents that are trending around and relevant to the user. [Listing trending documents](/graph/api/insights-list-trending) returns those files stored on OneDrive or SharePoint team sites, sorted by relevance with the most important ones first. 
 
 **Figure 1. Delve in Microsoft 365 showing popular documents for a user**
 
@@ -77,7 +77,7 @@ Programmatically, you can use the [trending](/graph/api/resources/insights-trend
 
 The new Microsoft 365 people cards tap into the _used_ and _shared_ insights to connect the dots between people and units of knowledge. The people card identifies and displays relevant documents about a person. Users can see people cards across the suite, for example, in Outlook on the web. See figure 2.
 
-The insights API provides a similar functionality with the [used](/graph/api/resources/insights-used?view=graph-rest-1.0) and [shared](/graph/api/resources/insights-shared?view=graph-rest-1.0) entities. They return what a user has been viewing or working on most recently, or what colleagues have shared with the user most recently in Microsoft 365.
+The insights API provides a similar functionality with the [used](/graph/api/resources/insights-used) and [shared](/graph/api/resources/insights-shared) entities. They return what a user has been viewing or working on most recently, or what colleagues have shared with the user most recently in Microsoft 365.
 
 **Figure 2. Outlook on the web showing a people card for a user**
 
@@ -102,9 +102,9 @@ Looking for the API reference for these services?
 
 ## Next steps
 
-* Use the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to try out the people, insights, and analytics APIs with your own files. Sign in, and choose **Show more samples** in the column on the left. Use the menu to turn on **People**, **Insights**, and **Analytics**.
+* Use the [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer) to try out the people, insights, and analytics APIs with your own files. Sign in, expand **People** or **Insights** in the column on the left, and try their sample queries.
 * Find more about the [people API](people-example.md).
 * See how to [customize the profile card](add-properties-profilecard.md).
-* Find out more about [customizing user privacy](insights-customize-item-insights-privacy.md), and the [insights API](/api-reference/beta/resources/iteminsights.md).
-* Find more about the [analytics API](/graph/api/resources/social-overview?view=graph-rest-beta#help-users-balance-work-and-life).
-* Find more about the [profile API](/graph/api/resources/profile?view=graph-rest-beta).
+* Find out more about [item insights](item-insights-overview.md), [customizing item insights privacy for users (preview)](insights-customize-item-insights-privacy.md), and the [item insights settings API (preview)](/graph/api/resources/iteminsightssettings?view=graph-rest-beta&preserve-view=true) that supports the customization.
+* Find more about the [analytics API](/graph/api/resources/social-overview?view=graph-rest-beta&preserve-view=true#help-users-balance-work-and-life).
+* Find more about the [profile API](/graph/api/resources/profile?view=graph-rest-beta&preserve-view=true).

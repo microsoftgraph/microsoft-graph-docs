@@ -12,7 +12,7 @@ var custodian = new Microsoft.Graph.Ediscovery.Custodian
 	ApplyHoldToSources = true
 };
 
-await graphClient.Compliance.Ediscovery.Cases["2192ca408ea2410eba3bec8ae873be6b"].Custodians
+await graphClient.Compliance.Ediscovery.Cases["{ediscovery.case-id}"].Custodians
 	.Request()
 	.AddAsync(custodian);
 

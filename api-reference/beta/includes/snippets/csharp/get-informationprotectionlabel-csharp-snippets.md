@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var informationProtectionLabel = await graphClient.Me.InformationProtection.Policy.Labels["{id}"]
+var informationProtectionLabel = await graphClient.Me.InformationProtection.Policy.Labels["{informationProtectionLabel-id}"]
 	.Request()
 	.GetAsync();
 

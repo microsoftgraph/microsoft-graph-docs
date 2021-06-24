@@ -11,10 +11,10 @@ const options = {
 const client = Client.init(options);
 
 const plannerRoster = {
-  @odata.type: "#microsoft.graph.plannerRoster"
+  '@odata.type': '#microsoft.graph.plannerRoster'
 };
 
-let res = await client.api('/planner/rosters')
+await client.api('/planner/rosters')
 	.version('beta')
 	.post(plannerRoster);
 

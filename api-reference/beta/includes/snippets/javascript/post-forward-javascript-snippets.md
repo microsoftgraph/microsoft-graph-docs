@@ -11,18 +11,18 @@ const options = {
 const client = Client.init(options);
 
 const forward = {
-  comment: "comment-value",
+  comment: 'comment-value',
   toRecipients: [
     {
       emailAddress: {
-        name: "name-value",
-        address: "address-value"
+        name: 'name-value',
+        address: 'address-value'
       }
     }
   ]
 };
 
-let res = await client.api('/groups/{id}/threads/{id}/posts/{id}/forward')
+await client.api('/groups/{id}/threads/{id}/posts/{id}/forward')
 	.version('beta')
 	.post(forward);
 
