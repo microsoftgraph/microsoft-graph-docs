@@ -42,7 +42,7 @@ Export-Certificate -Cert $cert -FilePath "C:\Users\admin\Desktop\{certificateNam
 
 ```
 
-Your certificate is now ready to upload to the Azure Portal.
+Your certificate is now ready to upload to the Azure Portal. Once uploaded, you can retrieve the certificate thumbprint for use to authenticate your application.
 
 
 ## Option 2: Generate and export your public certificate with it's private key
@@ -80,7 +80,7 @@ Export-PfxCertificate -Cert $cert -FilePath "C:\Users\admin\Desktop\{privateKeyN
 
 ```
 
-Your certificate is now ready to upload to the Azure Portal. You also have a private key (PFX file) that you can use to 
+Your certificate (`.cer` file) is now ready to upload to the Azure Portal. You also have a private key (PFX file). Once uploaded, you can retrieve the certificate thumbprint for use to authenticate your application. 
 
 
 ## Optional task: Delete the certificate from the keystore.
