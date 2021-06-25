@@ -17,8 +17,9 @@ For testing purposes, you can use a self-signed public certificate instead of a 
 Modern versions of Windows (Windows 8.1 and greater, and Windows Server 2012R2 and greater) include a built-in PowerShell cmdlet `New-SelfSignedCertificate` to create a self-signed certificate and the `Export-Certificate` cmdlet to export it to a location that is easily accessible. This tutorial uses these built-in PowerShell tools to generate and export the certificate.
 
 > [!NOTE]
-> + The **-KeyLength** property can be up to 2048 bits.
-> + Allowed values for **-KeyAlgorithm** property are `SHA256`, `SHA384`, `SHA512`, `SHA-512/224`, `SHA-512/256`, `RSA`, and `ECDSA_curvename`.
+> + Longer **-KeyLength** values are supported, but 2048 bit size is highly recommended for the best combination of security and performance.
+> + Only `RSA` is allowed for **-KeyAlgorithm**.
+> + Supported values for **-HashAlgorithm** are `SHA256`, `SHA384`, and `SHA512`.
 > + This tutorial generates certificates that are valid for 1 year. To customize the start and expiry date as well as other properties, see the [`New-SelfSignedCertificate` reference](/powershell/module/pki/new-selfsignedcertificate?view=windowsserver2019-ps).
 > + Self-signed certificate generated following this tutorial are supported for use for both client and server authentication.
 
