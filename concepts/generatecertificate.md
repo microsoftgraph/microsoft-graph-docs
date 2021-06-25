@@ -9,137 +9,108 @@ localization_priority: Priority
 
 Azure Active Directory (Azure AD) supports two types of authentication for service principals: **password-based authentication** (app secret) and **certificate-based authentication**. While app secrets can easily be generated via the **App registrations** blade, Microsoft recommends using a certificate.
 
-For testing purposes, you can use a self-signed public certificate instead of a Certificate Authority (CA) signed certificate. This article shows 3 methods you can use to generate your self-signed certificate.
+For testing purposes, you can use a self-signed public certificate instead of a Certificate Authority (CA) signed certificate. This article shows you how to use PowerShell to generate and export a self-signed certificate with or without a private key.
 
 > [!CAUTION]
 > Using a self-signed certificate is only recommended for development, not production.
 
-After you generate your certificate, you can export them to a location where they are easily accessible and in any of the following file types supported by the Azure Portal: `.cer`, `.pem`, or `.crt`.
-
-## Generate your public certificate
-
-##### [Use PowerShell](#tab/powershell)
-
-Modern versions of Windows (Windows 8.1 and greater, and Windows Server 2012R2 and greater) include a built-in PowerShell cmdlet `New-SelfSignedCertificate` to create a self-signed certificate. This powerful tool replaced the [MakeCert](/windows/win32/seccrypto/makecert) tool.
-
-In an elevated PowerShell prompt, run the following command and leave the PowerShell console session open.
-
-```powershell
-
-$cert = New-SelfSignedCertificate -Subject "CN={certificateName}" -CertStoreLocation "Cert:\CurrentUser\My" -KeyExportPolicy Exportable -KeySpec Signature -KeyLength 2048 -KeyAlgorithm RSA -HashAlgorithm SHA256
-
-```
+Modern versions of Windows (Windows 8.1 and greater, and Windows Server 2012R2 and greater) include a built-in PowerShell cmdlet `New-SelfSignedCertificate` to create a self-signed certificate and the `Export-Certificate` cmdlet to export it to a location that is easily accessible. This tutorial uses these built-in PowerShell tools to generate and export the certificate.
 
 > [!NOTE]
-> + **-KeyLength** can be up to 2048 bits.
-> + Allowed values for **-KeyAlgorithm** values are `SHA256`, `SHA384`, `SHA512`, `SHA-512/224`, `SHA-512/256`, `RSA`, and `ECDSA_curvename`.
-> + To learn more about the configuration properties for the `New-SelfSignedCertificate` cmdlet, see the [`New-SelfSignedCertificate` reference](/powershell/module/pki/new-selfsignedcertificate?view=windowsserver2019-ps).
-> + This self-signed certificate is supported for use for both client and server authentication.
+> + The **-KeyLength** property can be up to 2048 bits.
+> + Allowed values for **-KeyAlgorithm** property are `SHA256`, `SHA384`, `SHA512`, `SHA-512/224`, `SHA-512/256`, `RSA`, and `ECDSA_curvename`.
+> + This tutorial generates certificates that are valid for 1 year. To customize the start and expiry date as well as other properties, see the [`New-SelfSignedCertificate` reference](/powershell/module/pki/new-selfsignedcertificate?view=windowsserver2019-ps).
+> + Self-signed certificate generated following this tutorial are supported for use for both client and server authentication.
 
 
-The **$cert** variable in the previous command stores your certificate in the current session and allows you to export it using the command below.
+## Option 1: Generate and export your public certificate without a private key
+
+In an elevated PowerShell prompt, run the following command and leave the PowerShell console session open. In the following command, replace `{certificateName}` with name you wish to give your certificate.
 
 ```powershell
 
-Export-Certificate -Cert $cert -FilePath "C:\Users\admin\Desktop\{certificateName}.cer"   ## Specify a different location; replace {certificateName}
+$cert = New-SelfSignedCertificate -Subject "CN={certificateName}" -CertStoreLocation "Cert:\CurrentUser\My" -KeyExportPolicy Exportable -KeySpec Signature -KeyLength 2048 -KeyAlgorithm RSA -HashAlgorithm SHA256    ## Replace {certificateName}
 
 ```
 
-##### [Use C#](#tab/csharp)
+The **$cert** variable in the previous command stores your certificate in the current session and allows you to export it. The command below exports the certificate in `.cer` format. You can export it in any format supported on the Azure Portal including `.pem` and `.crt`.
 
-```csharp
-using System;
-using System.Security.Cryptography;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-    /* CONSOLE APP - PROOF OF CONCEPT CODE ONLY!!
-     * This code uses a self-signed certificate and should not be used 
-     * in production. This code is for reference and learning ONLY.
-     */
-namespace Self_signed_cert
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            // Generate a guid to use as a password and then create the cert.
-          string password = Guid.NewGuid().ToString();
-          var selfsignedCert = buildSelfSignedServerCertificate(password);
-          // Print values so we can copy paste into the JSON fields.
-            // Print out the private key in base64 format.
-          Console.WriteLine("Private Key: {0}{1}", Convert.ToBase64String(selfsignedCert.Export(X509ContentType.Pfx, password)), Environment.NewLine);
-          // Print out the start date in ISO 8601 format.
-          DateTime startDate = DateTime.Parse(selfsignedCert.GetEffectiveDateString()).ToUniversalTime();
-          Console.WriteLine("startDateTime: " + startDate.ToString("o"));
-          // Print out the end date in ISO 8601 format.
-          DateTime endDate = DateTime.Parse(selfsignedCert.GetExpirationDateString()).ToUniversalTime();
-          Console.WriteLine("endDateTime: " + endDate.ToString("o"));
-          // Print the GUID used for keyId
-          string signAndPasswordGuid = Guid.NewGuid().ToString();
-          string verifyGuid = Guid.NewGuid().ToString();
-          Console.WriteLine("keyId GUID for Sign and passwordCredentials: " + signAndPasswordGuid);
-          Console.WriteLine("keyId GUID for Verify: " + verifyGuid);
-          // Print out the password.
-          Console.WriteLine("Password: {0}", password);
-          // Print out a displayName to use as an example.
-          Console.WriteLine("displayName: CN=Example");
-          Console.WriteLine();
-          // Print out the public key.
-          Console.WriteLine("Public Key: {0}{1}", Convert.ToBase64String(selfsignedCert.Export(X509ContentType.Cert)), Environment.NewLine);
-          Console.WriteLine();
-          // Generate the customKeyIdentifier using hash of thumbprint.
-          Console.WriteLine("Cert thumbprint: {0}{1}", selfsignedCert.Thumbprint, Environment.NewLine);
-          Console.WriteLine("customKeyIdentifier:");
-          string keyIdentifier = GetSha256FromThumbprint(selfsignedCert.Thumbprint);
-          Console.WriteLine(keyIdentifier);
-        }
-        // Generate a self-signed certificate.
-        private static X509Certificate2 buildSelfSignedServerCertificate(string password)
-        {
-          const string CertificateName = @"Microsoft Azure Federated SSO Certificate TEST";
-          DateTime certificateStartDate = DateTime.UtcNow;
-          DateTime certificateEndDate = certificateStartDate.AddYears(2).ToUniversalTime();
-          X500DistinguishedName distinguishedName = new X500DistinguishedName($"CN={CertificateName}");
-          using (RSA rsa = RSA.Create(2048))
-          {
-            var request = new CertificateRequest(distinguishedName, rsa, HashAlgorithmName.SHA256, RSASignaturePadding.Pkcs1);
-            request.CertificateExtensions.Add (
-              new X509KeyUsageExtension(X509KeyUsageFlags.DataEncipherment | X509KeyUsageFlags.KeyEncipherment | X509KeyUsageFlags.DigitalSignature, false)
-            );
-            var certificate = request.CreateSelfSigned(new DateTimeOffset(certificateStartDate), new DateTimeOffset(certificateEndDate));
-                certificate.FriendlyName = CertificateName;
-            return new X509Certificate2(certificate.Export(X509ContentType.Pfx, password), password, X509KeyStorageFlags.Exportable);
-            }
-        }
-        // Generate hash from thumbprint.
-        public static string GetSha256FromThumbprint(string thumbprint)
-        {
-          var message = Encoding.ASCII.GetBytes(thumbprint);
-          SHA256Managed hashString = new SHA256Managed();
-          return Convert.ToBase64String(hashString.ComputeHash(message));
-        }
-    }
-}
+```powershell
+
+Export-Certificate -Cert $cert -FilePath "C:\Users\admin\Desktop\{certificateName}.cer"   ## Specify your preferred location and replace {certificateName}
+
 ```
 
-To export the certificate from your personal certificate store:
-1. In Windows search, search for and select to open **Manage user certificates**. This takes you to your local certificate store with the root node indicating **Certificates - Current User**. 
-2. Expand the **Personal** folder, then click the **Certificates** option. Find the certificate whose **Issued To** field is the same name you specified for `{certificateName}`. Locate your self-signed certificate and right click. Select **All Tasks**, then click **Export**. This starts the **Certificate Export Wizard**.
-4. Click **Next** to continue with the certificate export wizard.
-5. If you do not need to export the private key, select **No, do not export the private key**.
-6. On the **Export File Format** page, select **DER encoded binary X.509 (.CER)** as the export file format. Click Next.
-7. For **File to Export**, browse to the location to which you want to export the certificate. For **File name**, supply a name for the certificate. Then, click **Next**.
-8. Confirm the certificate settings and click **Finish** to export your certificate.
+Your certificate is now ready to upload to the Azure Portal.
 
 
-##### [Use Linux](#tab/linux)
+## Option 2: Generate and export your public certificate with it's private key
 
-To generate a certificate using the Linux CLI, follow [Generate and export certificates](/azure/vpn-gateway/vpn-gateway-certificates-point-to-site-linux).
+In an elevated PowerShell prompt, run the following command and leave the PowerShell console session open. Replace `{certificateName}` with name you wish to give your certificate.
+
+```powershell
+
+$cert = New-SelfSignedCertificate -Subject "CN={certificateName}" -CertStoreLocation "Cert:\CurrentUser\My" -KeyExportPolicy Exportable -KeySpec Signature -KeyLength 2048 -KeyAlgorithm RSA -HashAlgorithm SHA256    ## Replace {certificateName}
+
+```
+
+The **$cert** variable in the previous command stores your certificate in the current session and allows you to export it. The command below exports the certificate in `.cer` format. You can export it in any format supported on the Azure Portal including `.pem` and `.crt`.
 
 
----
+```powershell
+
+Export-Certificate -Cert $cert -FilePath "C:\Users\admin\Desktop\{certificateName}.cer"   ## Specify your preferred location and replace {certificateName}
+
+```
+
+Still in the same session, create a password for your certificate private key and save it in a variable. In the following command, replace `{myPassword}` with the password you wish to use to protect your certificate private key.
+
+```powershell
+
+$mypwd = ConvertTo-SecureString -String "{myPassword}" -Force -AsPlainText  ## Replace {myPassword}
+
+```
+
+Now, using the password you stored in the `$mypwd` variable, secure and export your private key.
+
+```powershell
+
+Export-PfxCertificate -Cert $cert -FilePath "C:\Users\admin\Desktop\{privateKeyName}.pfx" -Password $mypwd   ## Specify your preferred location and replace {privateKeyName}
+
+```
+
+Your certificate is now ready to upload to the Azure Portal.
+
+
+## Optional task: Delete the certificate from the keystore.
+
+If the application that will interact with Microsoft Graph and Azure AD will not run from your local machine, you can delete the certificate (and the private key) you generated from your personal store. First, get it's thumbprint.
+
+```powershell
+
+Get-ChildItem -Path "Cert:\CurrentUser\My" | Where-Object {$_.Subject -Match "{certificateName}"} | Select-Object Thumbprint, FriendlyName    ## Replace {privateKeyName} with the name you gave your certificate
+
+```
+
+Then, copy the thumbprint that is displayed and use it delete the certificate and it's private key.
+
+```powershell
+
+Remove-Item -Path Cert:\CurrentUser\My\{pasteTheCertificateThumbprintHere} -DeleteKey
+
+```
 
 
 ## Next steps
 
 Now that you have your certificate in one of the formats supported by Azure AD, use it to [authenticate your application]().
+
+
+## See more
+
+The `New-SelfSignedCertificate` cmdlet supports additional properties that you can use to configure your certificate. These include the following:
++ `-DnsName` to specify the issuer. This can be your domain address. 
++ `-NotBefore` and `-NotAfter` properties to explicitly specify when the certificate becomes valid and when it expires.
++ `-Pin` to specify the personal identification number (PIN) used to access the private key of the new certificate.
+
+To know the properties you can use to configure your certificate, see the [`New-SelfSignedCertificate` reference](/powershell/module/pki/new-selfsignedcertificate?view=windowsserver2019-ps).
