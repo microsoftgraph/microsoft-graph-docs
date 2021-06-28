@@ -1,7 +1,7 @@
 ---
 title: "List scopedRoleMembers"
 description: "Retrieve a list of scopedRoleMembership resources."
-author: "anandyadavMSFT"
+author: "DougKirschner"
 localization_priority: Normal
 ms.prod: "directory-management"
 doc_type: apiPageType

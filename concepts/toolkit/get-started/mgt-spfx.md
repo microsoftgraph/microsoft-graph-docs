@@ -62,15 +62,8 @@ export default class MgtNoFrameworkWebPart extends BaseClientSideWebPart<IMgtNoF
 
   public render(): void {
     this.domElement.innerHTML = `
-      <div class="${styles.mgtNoFramework}">
-        <div class="${styles.container}">
-          <div class="${styles.row}">
-            <div class="${styles.column}">
-              <span class="${styles.title}">No framework webpart</span>
-              <mgt-person person-query="me" show-name show-email></mgt-person>
-            </div>
-          </div>
-        </div>
+      <div>
+        <mgt-person person-query="me"></mgt-person>
       </div>`;
   }
 
@@ -78,10 +71,13 @@ export default class MgtNoFrameworkWebPart extends BaseClientSideWebPart<IMgtNoF
 }
 ```
 
-If you build a web part using React, load components from the `@microsoft/mgt-react` package:
+### React
+
+If you're building a web part using React, you can use the `@microsoft/mgt-react` package. However, make sure to import all React components from the `@microsoft/mgt-react/dist/es6/spfx` path. This will ensure that your solution will only use Microsoft Graph Toolkit components that are already registered on the page, rather than instantiating its own.
 
 ```tsx
-import { Person } from '@microsoft/mgt-react';
+import { Person } from '@microsoft/mgt-react/dist/es6/spfx';
+import { ViewType } from '@microsoft/mgt-spfx';
 
 // [...] trimmed for brevity
 
@@ -89,12 +85,19 @@ export default class MgtReact extends React.Component<IMgtReactProps, {}> {
   public render(): React.ReactElement<IMgtReactProps> {
     return (
       <div className={ styles.mgtReact }>
-        <Person personQuery="me" />
+        <Person personQuery="me" view={ViewType.image}></Person>
       </div>
     );
   }
 }
 ```
+
+>[!IMPORTANT]
+> Make sure all Microsoft Graph Toolkit imports in your solution are from either:
+> * `@microsoft/mgt-spfx` or
+> * `@microsoft/mgt-react/dist/es6/spfx`
+> 
+> Do not import from any other Microsoft Graph Toolkit packages (`@microsoft/mgt-*`) to avoid packaging your own copy of the toolkit and colliding with the shared library.
 
 ## See also
 

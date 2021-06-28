@@ -72,9 +72,12 @@ mgt-teams-channel-picker {
 ```
 
 ## Events
+
 | Event | Detail | Description |
 | --- | --- | --- |
-| selectionChanged | The detail contains the currently selected item  of `{channel : `[MicrosoftGraph.Channel](/graph/api/resources/channel)`, team: `[MicrosoftGraph.Team](/graph/api/resources/team)`}` | Fired when user makes a change in selection of a channel. |
+| `selectionChanged` | The detail contains the currently selected item  of `{channel : `[MicrosoftGraph.Channel](/graph/api/resources/channel)`, team: `[MicrosoftGraph.Team](/graph/api/resources/team)`}` | Fired when user makes a change in selection of a channel. |
+
+For more information about handling events, see [events](../customize-components/events.md).
 
 ## Templates
 

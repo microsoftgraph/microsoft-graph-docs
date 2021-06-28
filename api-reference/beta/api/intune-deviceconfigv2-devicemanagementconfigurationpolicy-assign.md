@@ -1,5 +1,5 @@
 ---
-title: "assign action"
+title: "Device management configuration policy assign action"
 description: "Not yet documented"
 author: "dougeby"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "intune"
 doc_type: apiPageType
 ---
 
-# assign action
+# Device management configuration policy assign action
 
 Namespace: microsoft.graph
 

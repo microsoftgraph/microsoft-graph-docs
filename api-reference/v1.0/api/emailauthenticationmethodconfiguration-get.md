@@ -33,7 +33,7 @@ For delegated scenarios, the administrator needs the Global admin role. For more
 -->
 
 ```http
-GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfiguration/email
+GET https://graph.microsoft.com/v1.0/policies/authenticationMethodsPolicy/authenticationMethodConfigurations/email
 ```
 
 ## Request headers

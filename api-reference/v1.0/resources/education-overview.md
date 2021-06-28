@@ -68,6 +68,35 @@ The rostering APIs support the following scenarios:
 
 <!-- Should you list delete scenarios here as well? -->
 
+## Assignments
+
+You can use the assignment-related education APIs to integrate with assignments in Microsoft Teams. Microsoft Teams in Microsoft 365 for Education is based on the same education APIs, and provides a use case for what you can do with the APIs. Your app can use these APIs to interact with assignments throughout the assignment lifecycle. 
+
+The assignment APIs provide the following key resources:
+
+- [educationAssignment](educationassignment.md) - The core object of the assignments API. Represents a task or unit of work assigned to a student or team member in a class as part of their study.
+- [educationSubmission](educationsubmission.md) - Represents the resources that an individual (or group) submits for an assignment and the associated grade and feedback for that assignment.
+- [educationResource](educationresource.md) - Represents the learning object that is being assigned or submitted. An **educationResource** is associated with an **educationAssignment** and/or an **educationSubmission**.
+
+The assignment APIs support the following scenarios:
+
+- [Create assignment](../api/educationclass-post-assignment.md)
+- [Publish assignment](../api/educationassignment-publish.md)
+- [Create assignment resource](../api/educationassignment-post-resource.md)
+- [Create submission resource](../api/educationsubmission-post-resources.md)
+- [Submit assignment](../api/educationsubmission-submit.md)
+- [Unsubmit assignment](../api/educationsubmission-unsubmit.md)
+- [Return grades and feedback to student](../api/educationsubmission-return.md)
+- [Get assignment details](../api/educationuser-list-assignments.md)
+
+The following are some common use cases for the assignment-related education APIs.
+
+| Use case                    | Description                                                                                                         | See also                                                          |
+| :-------------------------- | :------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------- |
+| Create assignments          | An external system can create an assignment for the class and attach resources to the assignment.                   | [Create assignment](../api/educationassignment-post-resource.md) |
+| Read assignment information | An analytics application can get information about assignments and student submissions, including dates and grades. | [Get assignment](../api/educationassignment-get.md)               |
+| Track student submissions   | Your app can provide a teacher dashboard that shows how many submissions from students need to be graded.           | [Submission resource](educationsubmission.md)                     |
+
 ## What's new
 
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

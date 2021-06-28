@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let monthlyPrintUsageSummariesByPrinter = await client.api('/print/reports/monthlyPrintUsageSummariesByPrinter')
+let monthlyPrintUsageByPrinter = await client.api('/print/reports/monthlyPrintUsageByPrinter')
 	.version('beta')
 	.get();
 

@@ -90,9 +90,7 @@ Content-Length: 72797
 
 One or more segments missing:
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.printDocument"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted

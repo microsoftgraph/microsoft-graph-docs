@@ -2,7 +2,7 @@
 title: "organizationalBrandingProperties resource type"
 description: "Contains details of the organization's branding."
 localization_priority: Normal
-author: "almars"
+author: "AlexanderMars"
 ms.prod: "identity-and-sign-in"
 doc_type: "resourcePageType"
 ---

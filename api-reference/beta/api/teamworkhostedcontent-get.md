@@ -156,9 +156,7 @@ GET https://graph.microsoft.com/beta/appCatalogs/teamsApps/5a31d4f7-a11d-4052-96
 Response contains bytes for the hosted content in the body. `content-type` header specifies the kind of hosted content.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.teamworkHostedContent"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

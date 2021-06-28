@@ -3,7 +3,7 @@ title: "Create unifiedRoleEligibilityScheduleRequest"
 description: "Create a new unifiedRoleEligibilityScheduleRequest object."
 author: "shauliu"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 

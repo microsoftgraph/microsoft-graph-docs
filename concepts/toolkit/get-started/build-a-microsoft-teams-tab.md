@@ -62,7 +62,7 @@ Replace `<YOUR_CLIENT_ID>` with the client ID for your application.
 
 To initialize the provider in your JavaScript code, Locate the `src/components/App.js` file in your project directory. Import the Teams Provider and initialize the provider.
 
-```js
+```JavaScript
 import * as microsoftTeams from "@microsoft/teams-js";
 import { Providers, TeamsProvider } from '@microsoft/mgt';
 
@@ -110,7 +110,7 @@ Now, you're ready to add any of the Microsoft Graph Toolkit components to your t
 
 You can add components to your HTML as you normally would. For example, to add the Login component add the below code to the body of your `index.html`:
 
-```html
+```HTML
 <mgt-login></mgt-login>
 ```
 
@@ -118,19 +118,19 @@ Or, you can add the components in JSX to the Tab component. We recommend using t
 
 First, install `mgt-react`:
 
-```bash
+```Command Line
 npm install @microsoft/mgt-react
 ```
 
 Locate the `src/components/Tab.js` file and import the components you want to use from the `mgt-react` library. For example, to add the `Login` component use:
 
-```js
+```JavaScript
 import { Login } from "@microsoft/mgt-react"
 ```
 
 Then, add the the component to the `return()` statement of the `render()` method of `Tab`:
 
-```jsx
+```JavaScript
 render() {
   return(
     <Login />

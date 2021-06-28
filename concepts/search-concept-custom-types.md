@@ -75,7 +75,7 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#Collection(microsoft.graph.searchResponse)",
   "value": [
     {
-      "searchTerms": ["ya"],
+      "searchTerms": ["yang"],
       "hitsContainers": [
         {
           "total": 2,

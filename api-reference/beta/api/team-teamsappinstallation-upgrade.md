@@ -1,7 +1,7 @@
 ---
 title: "teamsAppInstallation: upgrade"
 description: "Upgrade an app installation in a team"
-author: "clearab"
+author: "akjo"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType

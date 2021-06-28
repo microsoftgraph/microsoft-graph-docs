@@ -10,27 +10,12 @@ const options = {
 
 const client = Client.init(options);
 
-const settings = {
-    redundancyDetection: {
-        isEnabled: false,
-        similarityThreshold: 70,
-        minWords: 12,
-        maxWords: 400000
-    },
-    topicModeling: {
-        isEnabled: false,
-        ignoreNumbers: false,
-        topicCount: 50,
-        dynamicallyAdjustTopicCount: false
-    },
-    ocr: {
-        isEnabled: true,
-        maxImageSize: 12000
-    }
+const printSettings = {
+  documentConversionEnabled: true
 };
 
-await client.api('/compliance/ediscovery/cases/{caseId}/settings')
+await client.api('/print/settings')
 	.version('beta')
-	.update(settings);
+	.update(printSettings);
 
 ```

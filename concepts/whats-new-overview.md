@@ -12,6 +12,17 @@ See highlights of what's new in the recent two months in Microsoft Graph, [what'
 > [!IMPORTANT]
 > Features, including APIs and tools, in _preview_ status may change without notice, and some may never be promoted to generally available (GA) status. Do not use preview features in production apps.
 
+## June 2021: New and generally available
+
+### Education
+The APIs for the education [assignments service](/graph/api/resources/educationassignment?view=graph-rest-1.0&preserve-view=true) are now generally available. 
+
+## June 2021: New in preview only
+
+### Education
+- Teachers can now select the default behavior for a calendar when they publish assignments. Teachers can control the assignment calendar behavior by using the **addToCalendarAction** property of the [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true) resource.
+- Teachers can now also set a default behavior for a calendar when they publish assignments. Teachers can control the assignment default calendar behavior by using the **addToCalendarAction** property of the [educationAssignmentDefaults](/graph/api/resources/educationAssignmentDefaults?view=graph-rest-beta&preserve-view=true) resource.
+
 ## May 2021: New and generally available
 
 ### Devices and apps | Cloud printing
@@ -20,10 +31,24 @@ Find out when a printer last interacted with Universal Print, by using the **las
 ### Identity and access | Identity and sign-in
 Get or update the role of a guest user by using the **guestUserRoleId** property of [authorizationPolicy](/graph/api/resources/authorizationpolicy).
 
+### Mail
+- [Create drafts and send Outlook messages in MIME format](outlook-send-mime-message.md), attach S/MIME digital signatures, and encrypt message content in S/MIME.
+- Create a [mailFolder](/graph/api/resources/mailfolder) as a [hidden folder](/graph/api/resources/mailfolder#hidden-mail-folders) by [setting the isHidden property](/graph/api/user-post-mailfolders#example).
+
+### Microsoft Graph Toolkit
+Try the following new features in the Microsoft Graph Toolkit 2.2:
+- [File](/graph/toolkit/components/file) and [file list](/graph/toolkit/components/file-list) components
+- [MSAL 2.0 authentication provider](/graph/toolkit/providers/msal2)
+- [SharePoint Framework library](/graph/toolkit/get-started/mgt-spfx)
+
 ### Reports | Azure AD activity reports
 GA of the reporting API to [list](/graph/api/provisioningobjectsummary-list) actions performed by the Azure AD provisioning service and its associated properties. Aligned the prior beta version to the v1.0 version of the API.
 
 ## May 2021: New in preview only
+
+### Connecting external content
+- Be aware of [implementation and operational limits](connecting-external-content-api-limits.md) when designing connectors.
+- Try the [connectors API with Postman](connecting-external-content-connectors-api-postman.md).
 
 ### Devices and apps | Cloud PC
 Request the least privileged application permissions, `CloudPC.Read.All` or `CloudPC.ReadWrite.All`, to access methods of the following resources:
@@ -33,7 +58,8 @@ Request the least privileged application permissions, `CloudPC.Read.All` or `Clo
   - Read and write operations, and [assign](/graph/api/cloudpcprovisioningpolicy-assign?view=graph-rest-beta&preserve-view=true) method of [cloudPcProvisioningPolicy](/graph/api/resources/cloudpcprovisioningpolicy?view=graph-rest-beta&preserve-view=true).
 
 ### Education
-[Set up a SharePoint resource folder](/graph/api/educationsubmission-setupresourcesfolder?view=graph-rest-beta&preserve-view=true) to which all file-based resources, such as a Word or Excel file, of an [educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta&preserve-view=true) should be uploaded.
+- [Set up a SharePoint resource folder](/graph/api/educationAssignment-setupresourcesfolder?view=graph-rest-beta&preserve-view=true) to upload and store all file-based resources in the same location for an [educationAssignment](/graph/api/resources/educationAssignment?view=graph-rest-beta&preserve-view=true).
+- [Set up a SharePoint resource folder](/graph/api/educationsubmission-setupresourcesfolder?view=graph-rest-beta&preserve-view=true) to upload and store all file-based resources, such as a Word or Excel file, in the same location for an [educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta&preserve-view=true).
 
 ### Identity and access | Governance
 - Get a collection of [accessPackageAssignment](/graph/api/resources/accessPackageAssignment?view=graph-rest-beta&preserve-view=true) resources by [filtering on the signed-in user](/graph/api/accesspackageassignment-filterbycurrentuser?view=graph-rest-beta&preserve-view=true).

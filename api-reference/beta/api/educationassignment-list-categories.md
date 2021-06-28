@@ -49,7 +49,7 @@ The following is an example of the request.
   "name": "get_submissions"
 }-->
 ```http
-GET https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/categories
+GET https://graph.microsoft.com/beta/education/classes/95c15102-5f20-4ca1-8461-0673db4c70a1/assignments/9a5e4047-c1dc-4243-9628-580d3c64b80c/categories
 ```
 ##### Response
 The following is an example of the response. 

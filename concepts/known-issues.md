@@ -185,12 +185,6 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 * Schema extensions (legacy) are not returned with $select statement, but are returned without $select.
 * Clients cannot track changes to open extensions or registered schema extensions.
 
-## Devices and apps | Device updates (Windows updates)
-
-### Making a request for the first time
-
-When you make a call to the Windows updates API for the first time, you might receive a `401 Unauthorized` response. The error occurs in cases when an application's service principal does not yet exist in your tenant and requires time to complete provisioning. Please try again after about 24 hours.
-
 ## Extensions
 
 ### Change tracking is not supported
@@ -391,15 +385,21 @@ Requesting objects using [Get directory objects from a list of IDs](/graph/api/d
 * `@odata.bind` is not supported.  This means that developers won’t be able to properly set the **acceptedSenders** or **rejectedSenders** navigation property on a group.
 * `@odata.id` is not present on non-containment navigations (like messages) when using minimal metadata.
 * `$expand`:
-  * No support for `nextLink`
-  * No support for more than 1 level of expand
-  * No support with extra parameters (`$filter`, `$select`)
+  * Returns a maximum of 20 objects.
+  * No support for `@odata.nextLink`.
+  * No support for more than 1 level of expand.
+  * No support with extra parameters (`$filter`, `$select`).
 * `$filter`:
   * `/attachments` endpoint does not support filters. If present, the `$filter` parameter is ignored.
   * Cross-workload filtering is not supported.
 * `$search`:
   * Full-text search is only available for a subset of entities such as messages.
   * Cross-workload searching is not supported.
+  * Searching is not supported on Azure AD B2C tenants.
+* `$count`:
+  * Not supported on Azure AD B2C tenants.
+  * When using the `$count=true` query string when querying against directory resources, the `@odata.count` property will be present only in the first page of the paged data.
+* Query parameters specified in a request might fail silently. This can be true for unsupported query parameters as well as for unsupported combinations of query parameters.
 
 
 ## Functionality available only in Office 365 REST or Azure AD Graph APIs

@@ -50,6 +50,7 @@ The following table shows the properties that are required when you create the u
 |:---|:---|:---|
 |id|String|The unique identifier of the user experience analytics device startup process.|
 |startupDateTime|DateTimeOffset|The user experience analytics device startup date time.|
+|overallScore|Int32|User experience analytics overall score. Score will be in the range 0-100, 100 is the ideal score. Valid values 0 to 100|
 |startupScore|Int32|User experience analytics device startup score. Score will be in the range 0-100, 100 is the ideal score.|
 |coreBootScore|Int32|The user experience analytics device core boot score. Score will be in the range 0-100, 100 is the ideal score.|
 |coreSigninScore|Int32|The User experience analytics device core sign-in score. Score will be in the range 0-100, 100 is the ideal score.|
@@ -68,11 +69,12 @@ Here is an example of the request.
 ``` http
 POST https://graph.microsoft.com/beta/deviceManagement/userExperienceAnalyticsScoreHistory
 Content-type: application/json
-Content-length: 266
+Content-length: 289
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsScoreHistory",
   "startupDateTime": "2017-01-01T00:03:13.1084278-08:00",
+  "overallScore": 12,
   "startupScore": 12,
   "coreBootScore": 13,
   "coreSigninScore": 15,
@@ -86,12 +88,13 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 201 Created
 Content-Type: application/json
-Content-Length: 315
+Content-Length: 338
 
 {
   "@odata.type": "#microsoft.graph.userExperienceAnalyticsScoreHistory",
   "id": "d15e3ba8-3ba8-d15e-a83b-5ed1a83b5ed1",
   "startupDateTime": "2017-01-01T00:03:13.1084278-08:00",
+  "overallScore": 12,
   "startupScore": 12,
   "coreBootScore": 13,
   "coreSigninScore": 15,

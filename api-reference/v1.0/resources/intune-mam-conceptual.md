@@ -24,6 +24,8 @@ The following Graph resources are available to manage app protection polices in 
 - [Android mobile app identifier](intune-mam-androidmobileappidentifier.md)
 - [Application type](intune-wip-applicationtype.md)
 - [Default managed app protection](intune-mam-defaultmanagedappprotection.md)
+- [Device app management](intune-mam-deviceappmanagement.md)
+- [Device management](intune-wip-devicemanagement.md)
 - [iOS managed app protection](intune-mam-iosmanagedappprotection.md)
 - [iOS managed app registration](intune-mam-iosmanagedappregistration.md)
 - [iOS mobile app identifier](intune-mam-iosmobileappidentifier.md)
@@ -48,6 +50,7 @@ The following Graph resources are available to manage app protection polices in 
 - [Managed app registration](intune-mam-managedappregistration.md)
 - [Managed app status](intune-mam-managedappstatus.md)
 - [Managed app status raw](intune-mam-managedappstatusraw.md)
+- [Managed browser type](intune-mam-managedbrowsertype.md)
 - [Managed mobile app](intune-mam-managedmobileapp.md)
 - [MDM windows information protection policy](intune-mam-mdmwindowsinformationprotectionpolicy.md)
 - [Mobile app identifier](intune-mam-mobileappidentifier.md)
@@ -55,6 +58,7 @@ The following Graph resources are available to manage app protection polices in 
 - [Targeted managed app configuration](intune-mam-targetedmanagedappconfiguration.md)
 - [Targeted managed app policy assignment](intune-mam-targetedmanagedapppolicyassignment.md)
 - [Targeted managed app protection](intune-mam-targetedmanagedappprotection.md)
+- [User](intune-mam-user.md)
 - [Windows information protection](intune-mam-windowsinformationprotection.md)
 - [Windows information protection app](intune-mam-windowsinformationprotectionapp.md)
 - [Windows information protection app learning summary](intune-wip-windowsinformationprotectionapplearningsummary.md)
@@ -69,9 +73,3 @@ The following Graph resources are available to manage app protection polices in 
 - [Windows information protection proxied domain collection](intune-mam-windowsinformationprotectionproxieddomaincollection.md)
 - [Windows information protection resource collection](intune-mam-windowsinformationprotectionresourcecollection.md)
 - [Windows information protection store app](intune-mam-windowsinformationprotectionstoreapp.md)
-
-
-
-
-
-

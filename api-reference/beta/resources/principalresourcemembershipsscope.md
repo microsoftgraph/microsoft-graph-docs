@@ -1,6 +1,6 @@
 ---
 title: "principalResourceMembershipsScope resource type"
-description: "Allows for the selection scopes to review access of the selected principals to the selected resources."
+description: "Allows for the selection of access review scope to review access of the selected principals to the selected resources."
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"
@@ -21,8 +21,8 @@ Inherits from [accessReviewScope](../resources/accessreviewscope.md).
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|principalScopes|[accessReviewScope](../resources/accessreviewscope.md) collection|Defines the scopes of the principals to be included in an access review.|
-|resourceScopes|[accessReviewScope](../resources/accessreviewscope.md) collection|Defines the scopes of the resources for which access will be reviewed.|
+|principalScopes|[accessReviewScope](../resources/accessreviewscope.md) collection|Defines the scopes of the principals whose access to resources are reviewed in the access review.|
+|resourceScopes|[accessReviewScope](../resources/accessreviewscope.md) collection|Defines the scopes of the resources for which access is reviewed.|
 
 You must also specify the **@odata.type** type property with the value `#microsoft.graph.principalResourceMembershipsScope`. For more about configuration options for **scope** using **principalResourceMembershipsScope**, see [Configure the scope of your access review definition using the Microsoft Graph API](/graph/accessreviews-scope-concept).
 

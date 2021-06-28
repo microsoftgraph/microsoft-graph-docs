@@ -101,8 +101,7 @@ Content-length: 206
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.ediscovery.noncustodialDataSource"
+  "truncated": true
 }
 -->
 

@@ -1,6 +1,6 @@
 ---
 title: "iosHomeScreenFolder resource type"
-description: "A folder containing pages of apps on the Home Screen"
+description: "A folder containing pages of apps and web clips on the Home Screen."
 author: "dougeby"
 localization_priority: Normal
 ms.prod: "intune"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 > **Note:** The Microsoft Graph API for Intune requires an [active Intune license](https://go.microsoft.com/fwlink/?linkid=839381) for the tenant.
 
-A folder containing pages of apps on the Home Screen
+A folder containing pages of apps and web clips on the Home Screen.
 
 
 Inherits from [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)
@@ -22,7 +22,7 @@ Inherits from [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreen
 |Property|Type|Description|
 |:---|:---|:---|
 |displayName|String|Name of the app Inherited from [iosHomeScreenItem](../resources/intune-deviceconfig-ioshomescreenitem.md)|
-|pages|[iosHomeScreenFolderPage](../resources/intune-deviceconfig-ioshomescreenfolderpage.md) collection|Pages of Home Screen Layout Icons which must be Application Type. This collection can contain a maximum of 500 elements.|
+|pages|[iosHomeScreenFolderPage](../resources/intune-deviceconfig-ioshomescreenfolderpage.md) collection|Pages of Home Screen Layout Icons which must be applications or web clips. This collection can contain a maximum of 500 elements.|
 
 ## Relationships
 None
@@ -53,11 +53,6 @@ Here is a JSON representation of the resource.
   ]
 }
 ```
-
-
-
-
-
 
 
 

@@ -1,7 +1,7 @@
 ---
 title: "Remove app from team"
 description: "Uninstalls an app from the specified team."
-author: "clearab"
+author: "akjo"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 doc_type: apiPageType

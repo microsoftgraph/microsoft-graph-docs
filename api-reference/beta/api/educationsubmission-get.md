@@ -13,7 +13,11 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Retrieve a particular submission. A submission object represents a student's work for an assignment. Resources associated with the submission represent this work. Only the student the submission is assigned to can see and modify the submission. A teacher or application with application permissions has full access to all submissions.
+Retrieve a particular submission.
+
+A submission object represents a student's work for an assignment. Resources associated with the submission represent this work. 
+
+Only the **assignedTo** student can see and modify the submission. A teacher or application with application permissions has full access to all submissions.
 
 The grade and feedback from a teacher are part of the [educationOutcome](../resources/educationoutcome.md) associated with this object. Only teachers or applications with application permissions can add or change grades and feedback. Students will not see the grade or feedback until the assignment has been released.
 
@@ -92,20 +96,20 @@ Content-type: application/json
 Content-length: 712
 
 {
-      "id": "33223",
-      "recipient": {
-        "userId": "13015"
-      },
-      "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeT456457AdW9f/items/017NJZI25NOB5XZNLABF7646XAMDZTQQ6T",
-      "status": "working",
-      "submittedBy": {
-          "user": {
-            "displayName": "Susana Rocha",
-            "id": "14012"
-          },
-        },
-      "submittedDateTime": "2014-01-01T00:00:00Z"
+  "id": "33223",
+  "recipient": {
+    "userId": "13015"
+  },
+  "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!8-QjN2tsv0WyGnTv7vOvnQkmGHbbeMNLqYKONmHLVnvCVmBYIGpeT456457AdW9f/items/017NJZI25NOB5XZNLABF7646XAMDZTQQ6T",
+  "status": "working",
+  "submittedBy": {
+    "user": {
+      "displayName": "Susana Rocha",
+      "id": "14012"
     }
+  },
+  "submittedDateTime": "2014-01-01T00:00:00Z"
+}
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

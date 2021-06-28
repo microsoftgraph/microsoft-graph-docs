@@ -1,6 +1,6 @@
 ---
 title: "Get educationAssignment"
-description: " teachers can see all assignments in a class."
+description: "Get the properties and relationships of a given assignment. Note that teachers and applications can see all assignments in a class."
 author: "dipakboyed"
 localization_priority: Normal
 ms.prod: "education"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get the properties and relationships of an assignment. Students can only see assignments assigned to them; teachers and applications with application permissions can see all assignments in a class.
+Get the properties and relationships of an assignment. 
+
+Students can only see assignments assigned to them; teachers and applications with application permissions can see all assignments in a class.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -43,11 +45,13 @@ Do not supply a request body for this method.
 
 ## Response
 If successful, this method returns a `200 OK` response code and an [educationAssignment](../resources/educationassignment.md) object in the response body.
+
 ## Example
 ##### Request
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "get_educationassignment"
@@ -91,6 +95,7 @@ Content-length: 279
 {
   "id": "19002",
   "addedStudentAction": "none",
+  "addToCalendarAction": "studentsAndPublisher",
   "allowLateSubmissions": true,
   "allowStudentsToAddResourcesToSubmission": true,
   "assignDateTime": "String (timestamp)",
@@ -107,6 +112,7 @@ Content-length: 279
   "createdDateTime": "2014-01-01T00:00:00Z",
   "displayName": "Mid term exam",
   "dueDateTime": "2014-01-11T00:00:00Z",
+  "resourcesFolderUrl": "https://graph.microsoft.com/v1.0/drives/b!0sGAoOieeE6iSj1WXCV-nYYTuh2luKRDvUVGQBLOmvYpRzc5ARnCRorRht6P3MhU/items/01N74NOEZL7P3VK22SQFDKBZ3PHVPKDVAQ",
   "grading": {
       "@odata.type": "microsoft.graph.educationAssignmentPointsGradeType",
       "maxPoints": 100

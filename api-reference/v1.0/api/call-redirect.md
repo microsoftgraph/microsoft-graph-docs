@@ -158,8 +158,7 @@ Content-Type: application/json
 ##### Response
 
 <!-- {
-  "blockType": "response", 
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -332,8 +331,7 @@ Content-Type: application/json
 ##### Response
 
 <!-- {
-  "blockType": "response", 
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ``` http
@@ -398,6 +396,7 @@ Content-Type: application/json
 ### Example 3: Forward a call to a PSTN number
 
 This call requires an application instance with a PSTN number assigned. For details, see [Assign a phone number to your bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
+> **Note:** Phone ID is the phone number in E.164 format.
 
 #### Notification - incoming
 <!-- {
@@ -485,8 +484,7 @@ Content-Type: application/json
 #### Response
 
 <!-- {
-  "blockType": "response", 
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted

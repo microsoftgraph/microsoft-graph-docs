@@ -1,5 +1,5 @@
 ---
-title: "List educationCategories"
+title: "List assignmentCategories"
 description: "Retrieve a list of category objects."
 author: "mmast-msft"
 localization_priority: Normal
@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# List educationCategories
+# List assignmentCategories
 
 Namespace: microsoft.graph
 
@@ -56,14 +56,35 @@ If successful, this method returns a `200 OK` response code and a collection of 
 
 The following is an example of the request.
 
+
+# [HTTP](#tab/http)
 <!-- {
-  "blockType": "ignored",
-  "name": "get_assignments"
+  "blockType": "request",
+  "sampleKeys": ["4797d052-ebf5-4018-a088-e11adc6b2cbb"],
+  "name": "get_class_categories"
 }-->
 
-```http
-GET https://graph.microsoft.com/beta/education/classes/{id}/assignmentCategories
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/education/classes/4797d052-ebf5-4018-a088-e11adc6b2cbb/assignmentCategories
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-class-categories-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-class-categories-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-class-categories-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-class-categories-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 ##### Response
 
@@ -72,7 +93,7 @@ The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
-  "blockType": "ignored",
+  "blockType": "response",
   "truncated": true,
   "@odata.type": "microsoft.graph.educationCategory",
   "isCollection": true
@@ -84,13 +105,17 @@ Content-type: application/json
 Content-length: 218
 
 {
-    "value": [{
-        "displayName": "Quizzes",
-        "id": "ec98f158-341d-4fea-9f8c-14a250d489ac"
-    }, {
-        "displayName": "Homework",
-        "id": "3943e9ea-c69b-4dc9-9674-5f24168cee35"
-    }]
+    "@odata.context": "https://graph.microsoft.com/v1.0/education/classes('4797d052-ebf5-4018-a088-e11adc6b2cbb')/assignmentCategories",
+    "value": [
+      {
+          "displayName": "Quizzes",
+          "id": "f997a279-6bcf-429e-b1d0-d2320c4b84ab"
+      },
+      {
+          "displayName": "Homework",
+          "id": "9b8f8f88-ddfc-4aad-9fe9-280513fffc74"
+      }
+    ]
 }
 ```
 

@@ -102,36 +102,36 @@ Content-type: application/json
 Content-length: 345
 
 {
-  "value": [
-    {
-      "id": "10001",
-      "displayName": "Contoso High School",
-      "description": "Public 9-12 high school",
-      "status": "active",
-      "externalSource": "sis",
-      "principalEmail": "amyr@contoso.com",
-      "principalName": "Amy Roebuck",
-      "externalPrincipalId": "14007",
-      "highestGrade": "12",
-      "lowestGrade": "9",
-      "schoolNumber": "10001",
-      "address": {
-        "city": "Los Angeles",
-        "countryOrRegion": "United States",
-        "postalCode": "98055",
-        "state": "CA",
-        "street": "12345 Main St."
-      },
-      "createdBy": {
-        "user": {
-          "displayName": "Susana Rocha",
-          "id": "14012",
-        }
-      },
-      "externalId": "10001",
-      "phone": "+1 (253) 555-0102",
-    }
-  ]
+   "value":[
+      {
+         "id":"10001",
+         "displayName":"Contoso High School",
+         "description":"Public 9-12 high school",
+         "status":"active",
+         "externalSource":"sis",
+         "principalEmail":"amyr@contoso.com",
+         "principalName":"Amy Roebuck",
+         "externalPrincipalId":"14007",
+         "highestGrade":"12",
+         "lowestGrade":"9",
+         "schoolNumber":"10001",
+         "address":{
+            "city":"Los Angeles",
+            "countryOrRegion":"United States",
+            "postalCode":"98055",
+            "state":"CA",
+            "street":"12345 Main St."
+         },
+         "createdBy":{
+            "user":{
+               "displayName":"Susana Rocha",
+               "id":"14012"
+            }
+         },
+         "externalId":"10001",
+         "phone":"+1 (253) 555-0102"
+      }
+   ]
 }
 ```
 

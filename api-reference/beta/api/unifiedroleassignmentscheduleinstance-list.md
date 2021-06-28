@@ -3,7 +3,7 @@ title: "List unifiedRoleAssignmentScheduleInstances"
 description: "Get a list of the unifiedRoleAssignmentScheduleInstance objects and their properties."
 author: "shauliu"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 

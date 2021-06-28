@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var effectiveRules = await graphClient.Policies.RoleManagementPolicies["{unifiedRoleManagementPolicy-id}"].EffectiveRules
+var rules = await graphClient.Policies.RoleManagementPolicies["{unifiedRoleManagementPolicy-id}"].Rules
 	.Request()
 	.GetAsync();
 

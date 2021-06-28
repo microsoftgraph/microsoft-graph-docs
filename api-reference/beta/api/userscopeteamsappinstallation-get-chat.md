@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /users/{user-id}/teamwork/installedApps/{app-installation-id}/chat
+GET /users/{user-id | user-principal-name}/teamwork/installedApps/{app-installation-id}/chat
 ```
 
 ## Optional query parameters

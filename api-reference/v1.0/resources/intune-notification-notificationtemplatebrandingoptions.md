@@ -26,8 +26,3 @@ Branding Options for the Message Template. Branding is defined in the Intune Adm
 
 
 
-
-
-
-
-

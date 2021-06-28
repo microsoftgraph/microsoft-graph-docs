@@ -18,11 +18,11 @@ List properties and relationships of the [windows10CustomConfiguration](../resou
 ## Prerequisites
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-|Permission type|Permissions (from most to least privileged)|
+|Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|DeviceManagementConfiguration.ReadWrite.All, DeviceManagementConfiguration.Read.All|
+|Delegated (work or school account)|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported.|
-|Application|Not supported.|
+|Application|DeviceManagementConfiguration.Read.All, DeviceManagementConfiguration.ReadWrite.All|
 
 ## HTTP Request
 <!-- {
@@ -58,7 +58,7 @@ Here is an example of the response. Note: The response object shown here may be 
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
-Content-Length: 673
+Content-Length: 643
 
 {
   "value": [
@@ -72,22 +72,16 @@ Content-Length: 673
       "version": 7,
       "omaSettings": [
         {
-          "@odata.type": "microsoft.graph.omaSettingInteger",
+          "@odata.type": "microsoft.graph.omaSetting",
           "displayName": "Display Name value",
           "description": "Description value",
-          "omaUri": "Oma Uri value",
-          "value": 5
+          "omaUri": "Oma Uri value"
         }
       ]
     }
   ]
 }
 ```
-
-
-
-
-
 
 
 

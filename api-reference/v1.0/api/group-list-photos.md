@@ -1,7 +1,7 @@
 ---
 title: "List photos"
 description: "Retrieve a list of profilePhoto objects."
-author: "yyuank"
+author: "Jordanndahl"
 localization_priority: Normal
 ms.prod: "groups"
 doc_type: apiPageType

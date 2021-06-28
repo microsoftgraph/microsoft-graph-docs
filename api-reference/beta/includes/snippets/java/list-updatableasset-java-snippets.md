@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-UpdatableAssetCollectionPage exclusions = graphClient.admin().windows().updates().deployments("{deploymentId}").audience().exclusions()
+UpdatableAssetCollectionPage members = graphClient.admin().windows().updates().deployments("{deploymentId}").audience().members()
 	.buildRequest()
 	.get();
 

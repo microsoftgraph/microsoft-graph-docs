@@ -3,7 +3,7 @@ title: "Update unifiedRoleManagementPolicyRule"
 description: "Update the properties of an unifiedRoleManagementPolicyRule object."
 author: "shauliu"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -100,8 +100,7 @@ Content-length: 170
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.unifiedRoleManagementPolicyRule"
+  "truncated": true
 }
 -->
 ```http

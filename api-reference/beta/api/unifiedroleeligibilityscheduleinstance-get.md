@@ -3,7 +3,7 @@ title: "Get unifiedRoleEligibilityScheduleInstance"
 description: "Read the properties and relationships of an unifiedRoleEligibilityScheduleInstance object."
 author: "shauliu"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 

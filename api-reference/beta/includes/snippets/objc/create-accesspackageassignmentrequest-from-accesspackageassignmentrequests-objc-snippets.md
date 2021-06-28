@@ -12,11 +12,10 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphAccessPackageAssignmentRequest *accessPackageAssignmentRequest = [[MSGraphAccessPackageAssignmentRequest alloc] init];
-[accessPackageAssignmentRequest setRequestType:@"UserAdd"];
+[accessPackageAssignmentRequest setRequestType:@"AdminRemove"];
 MSGraphAccessPackageAssignment *accessPackageAssignment = [[MSGraphAccessPackageAssignment alloc] init];
-[accessPackageAssignment setAccessPackageId:@"a914b616-e04e-476b-aa37-91038f0b165b"];
+[accessPackageAssignment setId:@"a6bb6942-3ae1-4259-9908-0133aaee9377"];
 [accessPackageAssignmentRequest setAccessPackageAssignment:accessPackageAssignment];
-[accessPackageAssignmentRequest setJustification:@"Need access to New Hire access package"];
 
 NSError *error;
 NSData *accessPackageAssignmentRequestData = [accessPackageAssignmentRequest getSerializedDataWithError:&error];

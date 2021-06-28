@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let classes = await client.api('/education/classes')
+let taughtClasses = await client.api('/education/users/{educationUserId}/taughtClasses')
 	.get();
 
 ```

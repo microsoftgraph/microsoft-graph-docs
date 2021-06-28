@@ -27,8 +27,3 @@ Possible values for applicationGuardBlockFileTransfer
 
 
 
-
-
-
-
-

@@ -30,29 +30,31 @@ Customers like how Outlook helps them stay organized. Microsoft Graph brings the
 
 - Customers organize their messages in different ways - some leave all messages in the Inbox and simply search for them, others file their messages in folders. They like Outlook's flexible and intuitive approach that supports both flat and folder-based organizations. Apps can conveniently [filter, search, or sort](query-parameters.md) messages in specific folders or the user's entire mailbox.
 
-- Outlook categories are differentiated by name and color. Categories allow customers to tag messages to enhance organization and discovery. Apps can access and [define a user's master list of categories](/graph/api/outlookuser-post-mastercategories?view=graph-rest-1.0). More, that list is shared across Outlook messages,
+- Outlook categories are differentiated by name and color. Categories allow customers to tag messages to enhance organization and discovery. Apps can access and [define a user's master list of categories](/graph/api/outlookuser-post-mastercategories). More, that list is shared across Outlook messages,
 as well as events, contacts, tasks, and group posts, and opens up creative scenarios for app developers. For example, an online training provider can color-code the emails, course events, and follow-up assignments for each course a user has enrolled in.
 
 - Additionally, app users can change the importance of a message (or event or task), or flag a message for follow-up. (Flagging is currently [in preview](versioning-and-support.md#beta-version) in Microsoft Graph.)
 
-- The rules API takes message organization to the next level. Apps can set up [Inbox rules](/graph/api/resources/messagerule?view=graph-rest-1.0) to promptly handle incoming messages and reduce email clutter. For example, an app can automatically move messages to another folder if their subject lines contain certain keywords, and assign categories and importance to make them easier for later follow-up.
+- The rules API takes message organization to the next level. Apps can set up [Inbox rules](/graph/api/resources/messagerule) to promptly handle incoming messages and reduce email clutter. For example, an app can automatically move messages to another folder if their subject lines contain certain keywords, and assign categories and importance to make them easier for later follow-up.
+
+- Many customers use email clients that send and receive messages in MIME format. Even though Outlook does not save messages in MIME format, apps can [get the body of an Outlook message in MIME format](outlook-get-mime-message.md), [send Outlook messages in MIME format](outlook-send-mime-message.md), attach S/MIME digital signatures, and encrypt message content in S/MIME.
 
 ### Write smarter apps that leverage intelligence
 
 Use Microsoft Graph to suggest contextual data to your app users:
 
-- Integrate with [Focused Inbox](/graph/api/resources/manage-focused-inbox?view=graph-rest-1.0) and [@-mentions (preview)](/graph/api/message-get?view=graph-rest-beta#request-2) and let your app users read and respond to what's relevant to them first.
+- Integrate with [Focused Inbox](/graph/api/resources/manage-focused-inbox) and [@-mentions (preview)](/graph/api/message-get?view=graph-rest-beta&preserve-view=true#example-2-get-all-mentions-in-a-specific-message) and let your app users read and respond to what's relevant to them first.
 
-- Check [mail tips](/graph/api/resources/mailtips?view=graph-rest-1.0) while still composing a message to get useful status information about a recipient (such as the recipient sending an auto-reply or has a full mailbox). Mail tips can alert apps of certain conditions so to take more efficient follow-up actions instead.
+- Check [mail tips](/graph/api/resources/mailtips) while still composing a message to get useful status information about a recipient (such as the recipient sending an auto-reply or has a full mailbox). Mail tips can alert apps of certain conditions so to take more efficient follow-up actions instead.
 
 - Make use of the [people API](people-example.md) to provide interactive controls such as a people picker in your app. The people API can suggest persons most relevant to a user, based on the user’s communication and collaboration patterns and business relationships.
 
-- Offer app users a smart file picker and suggest files that they have recently interacted with, to add as attachments when composing a message. [Insights (preview)](/graph/api/resources/insights?view=graph-rest-beta) use advanced analytics to suggest files that are trending around a user, recently viewed or edited by the user, or shared with the user.
+- Offer app users a smart file picker and suggest files that they have recently interacted with, to add as attachments when composing a message. [Insights](/graph/api/resources/officegraphinsights) use advanced analytics to suggest files that are trending around a user, recently viewed or edited by the user, or shared with the user.
 
 
 ### Store app data in a resource or resource instance
 
-Often times apps have to store their data in an external data store and entail overhead in managing and accessing the data. Microsoft Graph lets you simply include app data as Internet message headers when [creating](/graph/api/user-post-messages?view=graph-rest-1.0#request-2) or [sending](/graph/api/user-sendmail?view=graph-rest-1.0#request-2) a new message, or a reply to a message.
+Often times apps have to store their data in an external data store and entail overhead in managing and accessing the data. Microsoft Graph lets you simply include app data as Internet message headers when [creating](/graph/api/user-post-messages#example-2-create-message-draft-that-includes-custom-message-headers) or [sending](/graph/api/user-sendmail#example-2-create-a-message-with-custom-internet-message-headers-and-send-the-message) a new message, or a reply to a message.
 
 If you need to add and subsequently update custom data, you can [store the data in individual resource instances](extensibility-overview.md#open-extensions). If appropriate, as an alternative, you can extend the schema, add custom properties, and store typed data in Microsoft Graph resources. You can make such [schema extensions](extensibility-overview.md#schema-extensions) discoverable and shareable.
 
@@ -63,8 +65,8 @@ If you need to add and subsequently update custom data, you can [store the data 
 ## API reference
 Looking for the API reference for this service?
 
-- [Outlook mail API in Microsoft Graph v1.0](/graph/api/resources/mail-api-overview?view=graph-rest-1.0)
-- [Outlook mail API in Microsoft Graph beta](/graph/api/resources/mail-api-overview?view=graph-rest-beta)
+- [Outlook mail API in Microsoft Graph v1.0](/graph/api/resources/mail-api-overview)
+- [Outlook mail API in Microsoft Graph beta](/graph/api/resources/mail-api-overview?view=graph-rest-beta&preserve-view=true)
 
 
 ## Next steps
@@ -79,7 +81,8 @@ Looking for the API reference for this service?
   - [Getting shared messages](outlook-share-messages-folders.md)
   - How to [send mail from another user](outlook-send-mail-from-other-user.md)
   - [Getting immutable identifiers for Outlook resources](outlook-immutable-id.md)
+  - [Sending emails with MIME contents](outlook-send-mime-message.md)
 
-- Find out more about [using the mail API](/graph/api/resources/mail-api-overview?view=graph-rest-1.0) and its [use cases](/graph/api/resources/mail-api-overview?view=graph-rest-1.0#common-use-cases) in Microsoft Graph v1.0.
+- Find out more about [using the mail API](/graph/api/resources/mail-api-overview) and its [use cases](/graph/api/resources/mail-api-overview#common-use-cases) in Microsoft Graph v1.0.
 
 

@@ -39,7 +39,7 @@ GET /accessReviews/{reviewId}/myDecisions
 No request body should be supplied.
 
 ## Response
-If successful, this method returns a `200, OK` response code and an array of [accessReviewDecision](../resources/accessreviewdecision.md) objects in the response body, for which the calling user is an assigned reviewer.
+If successful, this method returns a `200 OK` response code and an array of [accessReviewDecision](../resources/accessreviewdecision.md) objects in the response body, for which the calling user is an assigned reviewer.
 
 ## Example
 ##### Request

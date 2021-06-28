@@ -32,7 +32,7 @@ For delegated scenarios, the administrator needs the Global admin role. For more
 -->
 
 ```http
-PATCH /policies/authenticationMethodsPolicy/email
+PATCH /policies/authenticationMethodsPolicy/authenticationMethodConfigurations/email
 ```
 
 ## Request headers

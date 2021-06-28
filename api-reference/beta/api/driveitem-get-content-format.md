@@ -89,7 +89,7 @@ To download the converted file, your app must follow the `Location` header in th
 
 Pre-authenticated URLs are only valid for a short period of time (a few minutes) and do not require an `Authorization` header to access.
 
-<!-- { "blockType": "response", "@odata.type": "stream" } -->
+<!-- { "blockType": "response" } -->
 
 ```http
 HTTP/1.1 302 Found

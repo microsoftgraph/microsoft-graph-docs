@@ -1,5 +1,5 @@
 ---
-title: "Attach educationRubric to educationAssignment"
+title: "Attach educationRubric to an educationAssignment"
 description: "Attach an existing educationRubric object to an educationAssignment."
 localization_priority: Normal
 author: "dipakboyed"
@@ -7,7 +7,7 @@ ms.prod: "education"
 doc_type: "apiPageType"
 ---
 
-# Create educationRubric
+# Attach educationRubric to an educationAssignment
 
 Namespace: microsoft.graph
 
@@ -100,6 +100,9 @@ The following is an example of the response.
 
 ```http
 HTTP/1.1 204 No Content
+
+{
+}
 ```
 
 

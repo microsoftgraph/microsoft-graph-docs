@@ -18,7 +18,7 @@ Azure Active Directory (Azure AD) consent requests help you manage the request w
 To allow users to request access or admin consent for applications they're unauthorized to grant consent to themselves, first enable the consent request workflow. 
 
 >[!NOTE]
->The current APIs are limited to configuring the workflow, reading the list of requests, and denying a request. At this time, there aren’t any methods available to programmatically approve a request. However, the contents of the request can be used to recreate a URL which can be used to grant admin consent and approve a request.
+>The current APIs are limited to configuring the workflow and reading the list of requests. At this time, there aren’t any methods available to programmatically approve or deny a request. However, the contents of the request can be used to recreate a URL which can be used to grant admin consent and approve a request.
 
 The consent request resource types include:
 
@@ -26,7 +26,6 @@ The consent request resource types include:
 * [appConsentRequest](../resources/appconsentrequest.md): A request that represents a collection of **userConsentRequests** for a specific application.
 * [userConsentRequest](../resources/userconsentrequest.md): A request created by a user to use an app that requires admin consent to access.
 * [appConsentRequestScope](../resources/appconsentrequestscope.md): A resource that contains details of the dynamic permission scopes being requested for an application.  
-
 
 ## Methods
 
@@ -50,7 +49,6 @@ The following directory roles are required for a calling user to manage the requ
 | Operation | Delegated permissions | Required directory role of the calling user |
 |:------------------|:------------|:--------------------------------------------|
 | Read | ConsentRequest.Read.All, ConsentRequest.ReadWrite.All | Global Administrator, Global Reader, Cloud App Administrator, and Application Administrator |
-| Update | ConsentRequest.ReadWrite.All |Global Administrator |
 
 ## See also
 

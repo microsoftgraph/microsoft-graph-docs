@@ -105,8 +105,7 @@ Content-Length: 430
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -294,8 +293,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -428,6 +426,7 @@ Content-Type: application/json
 ### Example 3: Call transfer to PSTN number
 
 This call requires an application instance with a PSTN number assigned. For details, see [Assign a phone number to your bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
+> **Note:** Phone ID is the phone number in E.164 format.
 
 #### Request
 The following example shows the request.
@@ -471,8 +470,7 @@ Content-Length: 430
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 }-->
 ```http
 HTTP/1.1 202 Accepted
@@ -608,6 +606,7 @@ Content-Type: application/json
 ### Example 4: Consultative transfer to PSTN number
 
 This call requires an application instance with a PSTN number assigned. For details, see [Assign a phone number to your bot](/graph/cloud-communications-phone-number#assign-a-phone-number-to-your-bot).
+> **Note:** Phone ID is the phone number in E.164 format.
 
 #### Request
 The following example shows the request.
@@ -654,8 +653,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 }-->
 ```http
 HTTP/1.1 202 Accepted

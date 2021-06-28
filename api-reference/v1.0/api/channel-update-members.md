@@ -1,7 +1,7 @@
 ---
 title: "Update member in channel"
 description: "Update the role of member in a channel."
-author: "laujan"
+author: "akjo"
 doc_type: "apiPageType"
 localization_priority: Normal
 ms.prod: "microsoft-teams"

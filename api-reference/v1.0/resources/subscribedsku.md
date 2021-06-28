@@ -25,7 +25,7 @@ Only the read operation is supported on subscribed SKUs; create, update, and del
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
 |appliesTo|String| For example, "User" or "Company". |
-|capabilityStatus|String|  Possible values are: `Enabled`, `Warning`, `Suspended`, `Deleted`, `LockedOut`. |
+|capabilityStatus|String|  Possible values are: `Enabled`, `Warning`, `Suspended`, `Deleted`, `LockedOut`. The capabilityStatus is `Enabled` if the **prepaidUnits** property has at least 1 unit that is **enabled**, and `LockedOut` if the customer cancelled their subscription. |
 |consumedUnits|Int32| The number of licenses that have been assigned. |
 |id|String| The unique identifier for the subscribed sku object. Key, not nullable. |
 |prepaidUnits|[licenseUnitsDetail](licenseunitsdetail.md)| Information about the number and status of prepaid licenses. |

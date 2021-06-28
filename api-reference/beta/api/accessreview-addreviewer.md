@@ -42,11 +42,11 @@ The following table shows the properties that can be supplied when you update an
 
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
-| `id`        | `String`   | The user ID.|
+| id        | String   | The user ID.|
 
 
 ## Response
-If successful, this method returns a `201, Created` response code .
+If successful, this method returns a `201 Created` response code .
 
 ## Example
 
@@ -89,7 +89,6 @@ Content-Type: application/json
 
 
 ##### Response
->**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true

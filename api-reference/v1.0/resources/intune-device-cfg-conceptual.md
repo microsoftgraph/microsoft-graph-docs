@@ -64,6 +64,8 @@ The following Graph resources are available to manage settings and features on d
 - [Device configuration setting state](intune-deviceconfig-deviceconfigurationsettingstate.md)
 - [Device configuration user overview](intune-deviceconfig-deviceconfigurationuseroverview.md)
 - [Device configuration user status](intune-deviceconfig-deviceconfigurationuserstatus.md)
+- [Device management](intune-deviceconfig-devicemanagement.md)
+- [Device management](intune-deviceconfig-devicemanagement.md)
 - [Device management settings](intune-deviceconfig-devicemanagementsettings.md)
 - [Device threat protection level](intune-deviceconfig-devicethreatprotectionlevel.md)
 - [Diagnostic data submission mode](intune-deviceconfig-diagnosticdatasubmissionmode.md)
@@ -137,9 +139,12 @@ The following Graph resources are available to manage settings and features on d
 - [Rating United Kingdom television type](intune-deviceconfig-ratingunitedkingdomtelevisiontype.md)
 - [Rating United States movies type](intune-deviceconfig-ratingunitedstatesmoviestype.md)
 - [Rating United States television type](intune-deviceconfig-ratingunitedstatestelevisiontype.md)
+- [Report](intune-deviceconfig-report.md)
+- [Report root](intune-deviceconfig-reportroot.md)
 - [Required password type](intune-deviceconfig-requiredpasswordtype.md)
 - [Safe search filter type](intune-deviceconfig-safesearchfiltertype.md)
 - [Setting source](intune-deviceconfig-settingsource.md)
+- [Setting source type](intune-deviceconfig-settingsourcetype.md)
 - [Setting state device summary](intune-deviceconfig-settingstatedevicesummary.md)
 - [Shared PC account deletion policy type](intune-deviceconfig-sharedpcaccountdeletionpolicytype.md)
 - [Shared PC account manager policy](intune-deviceconfig-sharedpcaccountmanagerpolicy.md)
@@ -179,9 +184,3 @@ The following Graph resources are available to manage settings and features on d
 - [Windows update scheduled install](intune-deviceconfig-windowsupdatescheduledinstall.md)
 - [Windows update type](intune-deviceconfig-windowsupdatetype.md)
 - [Windows user account control settings](intune-deviceconfig-windowsuseraccountcontrolsettings.md)
-
-
-
-
-
-

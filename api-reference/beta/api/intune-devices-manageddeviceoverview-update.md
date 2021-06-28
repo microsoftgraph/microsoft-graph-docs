@@ -92,7 +92,8 @@ Content-length: 1271
     "configMgrDeviceCount": 4,
     "aospUserlessCount": 1,
     "aospUserAssociatedCount": 7,
-    "linuxCount": 10
+    "linuxCount": 10,
+    "chromeOSCount": 13
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",
@@ -143,7 +144,8 @@ Content-Length: 1384
     "configMgrDeviceCount": 4,
     "aospUserlessCount": 1,
     "aospUserAssociatedCount": 7,
-    "linuxCount": 10
+    "linuxCount": 10,
+    "chromeOSCount": 13
   },
   "deviceExchangeAccessStateSummary": {
     "@odata.type": "microsoft.graph.deviceExchangeAccessStateSummary",

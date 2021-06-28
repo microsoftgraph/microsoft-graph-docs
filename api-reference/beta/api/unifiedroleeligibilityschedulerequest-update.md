@@ -3,7 +3,7 @@ title: "Update unifiedRoleEligibilityScheduleRequest"
 description: "Update the properties of an unifiedRoleEligibilityScheduleRequest object."
 author: "shauliu"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: apiPageType
 ---
 
@@ -121,8 +121,7 @@ Content-length: 467
 **Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.unifiedRoleEligibilityScheduleRequest"
+  "truncated": true
 }
 -->
 ```http

@@ -52,9 +52,11 @@ Well-known names work regardless of the locale of the user's mailbox, so the abo
 
 | Method | Return Type | Description |
 |:-------|:------------|:------------|
+|[List mailFolders](../api/user-list-mailfolders.md) | [mailFolder](mailfolder.md) collection|Get all the mail folders in the specified user's mailbox, including any mail search folders.|
 |[Get mailFolder](../api/mailfolder-get.md) | [mailFolder](mailfolder.md) |Read properties and relationships of mailFolder object.|
-|[Create MailFolder](../api/mailfolder-post-childfolders.md) |[MailFolder](mailfolder.md)| Create a new mailFolder under the current one by posting to the childFolders collection.|
+|[Create mailFolder](../api/user-post-mailfolders.md) |[mailFolder](mailfolder.md)| Create a new mail folder in the root folder of the user's mailbox.|
 |[List childFolders](../api/mailfolder-list-childfolders.md) |[MailFolder](mailfolder.md) collection| Get the folder collection under the specified folder. You can use the `.../me/MailFolders` shortcut to get the top-level folder collection and navigate to another folder.|
+|[Create childFolder](../api/mailfolder-post-childfolders.md) |[mailFolder](mailfolder.md)| Create a new mailFolder under the current one by posting to the childFolders collection.|
 |[Create Message](../api/mailfolder-post-messages.md) |[Message](message.md)| Create a new message in the current mailFolder by posting to the messages collection.|
 |[List messages](../api/mailfolder-list-messages.md) |[Message](message.md) collection| Get all the messages in the signed-in user's mailbox, or those messages in a specified folder in the mailbox.|
 |[Update](../api/mailfolder-update.md) | [mailFolder](mailfolder.md)|Update the specified mailFolder object. |
@@ -75,6 +77,7 @@ Well-known names work regardless of the locale of the user's mailbox, so the abo
 |childFolderCount|Int32|The number of immediate child mailFolders in the current mailFolder.|
 |displayName|String|The mailFolder's display name.|
 |id|String|The mailFolder's unique identifier.|
+|isHidden|Boolean|Indicates whether the mailFolder is hidden. This property can be set only when creating the folder. Find more information in [Hidden mail folders](#hidden-mail-folders).|
 |parentFolderId|String|The unique identifier for the mailFolder's parent mailFolder.|
 |totalItemCount|Int32|The number of items in the mailFolder.|
 |unreadItemCount|Int32|The number of items in the mailFolder marked as unread.|
@@ -89,6 +92,13 @@ https://outlook.office.com/api/v1.0/me/folders/inbox/messages?$count=true&$filte
 ```
 
 Mail folders in Outlook can contain more than one type of items, for example, the Inbox can contain meeting request items which are distinct from mail items. `TotalItemCount` and `UnreadItemCount` include items in a mail folder irrespective of their item types.
+
+### Hidden mail folders
+The default value of the `isHidden` property is `false`. You can set **isHidden** only once when [creating the mailFolder](../api/user-post-mailfolders.md). You cannot update the property using a PATCH operation. To change the **isHidden** property of a folder, delete the existing folder and create a new one with the desired value.
+
+Hidden mail folders support all operations that are supported by a regular mail folder.
+
+By default, [listing mailFolders](../api/user-list-mailfolders.md) returns only mail folders that are not hidden. To include hidden mail folders in the response, use the query parameter `includeHiddenFolders=true`. Then use the **isHidden** property to identify whether a mail folder is hidden. 
 
 ## Relationships
 
@@ -151,6 +161,7 @@ Here is a JSON representation of the resource
   "parentFolderId": "string",
   "totalItemCount": 1024,
   "unreadItemCount": 1024,
+  "isHidden": false,
   "childFolders": [ { "@odata.type": "microsoft.graph.mailFolder" } ],
   "messageRules": [ { "@odata.type": "microsoft.graph.messageRule" } ],
   "messages": [ { "@odata.type": "microsoft.graph.message" } ],

@@ -12,6 +12,7 @@ const client = Client.init(options);
 
 const educationAssignmentDefaults = {
   addedStudentAction: 'assignIfOpen',
+  addToCalendarAction: 'studentsAndTeamOwners',
   notificationChannelUrl: 'https://graph.microsoft.com/beta/teams(\'id\')/channels(\'id\')'
 };
 

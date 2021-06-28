@@ -1,7 +1,7 @@
 ---
 title: "List channels"
 description: "Retrieve the list of channels in this team."
-author: "clearab"
+author: "akjo"
 doc_type: "apiPageType"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
@@ -36,7 +36,11 @@ GET /teams/{team-id}/channels
 ```
 
 ## Optional query parameters
-This method supports the $filter, $select, and $expand [OData query parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$filter`, `$select`, and `$expand` [OData query parameters](/graph/query-parameters) to help customize the response.
+
+### Use $select for better performance
+Populating the **email** and **moderationSettings** properties for a channel is an expensive operation that results in slow performance. Use `$select` to exclude the **email** and **moderationSettings** properties to improve performance.
+
 
 ## Request headers
 

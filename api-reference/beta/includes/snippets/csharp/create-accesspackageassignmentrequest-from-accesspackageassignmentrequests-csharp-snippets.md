@@ -8,12 +8,11 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var accessPackageAssignmentRequest = new AccessPackageAssignmentRequestObject
 {
-	RequestType = "UserAdd",
+	RequestType = "AdminRemove",
 	AccessPackageAssignment = new AccessPackageAssignment
 	{
-		AccessPackageId = "a914b616-e04e-476b-aa37-91038f0b165b"
-	},
-	Justification = "Need access to New Hire access package"
+		Id = "a6bb6942-3ae1-4259-9908-0133aaee9377"
+	}
 };
 
 await graphClient.IdentityGovernance.EntitlementManagement.AccessPackageAssignmentRequests

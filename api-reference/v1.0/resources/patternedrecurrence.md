@@ -16,7 +16,7 @@ The recurrence pattern and range.
 ## Properties
 | Property	   | Type	|Description|
 |:---------------|:--------|:----------|
-|pattern|[RecurrencePattern](recurrencepattern.md)|The frequency of an event.|
+|pattern|[RecurrencePattern](recurrencepattern.md)|The frequency of an event. Do not specify for a one-time access review.|
 |range|[RecurrenceRange](recurrencerange.md)|The duration of an event.|
 
 ## JSON representation

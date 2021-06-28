@@ -35,16 +35,12 @@ Here is a JSON representation of the resource.
 {
   "@odata.type": "#microsoft.graph.managedAppPolicyDeploymentSummaryPerApp",
   "mobileAppIdentifier": {
-    "@odata.type": "microsoft.graph.mobileAppIdentifier"
+    "@odata.type": "microsoft.graph.androidMobileAppIdentifier",
+    "packageId": "String"
   },
   "configurationAppliedUserCount": 1024
 }
 ```
-
-
-
-
-
 
 
 

@@ -46,7 +46,8 @@ const call = {
   mediaConfig: {
     '@odata.type': '#microsoft.graph.appHostedMediaConfig',
     blob: '<Media Session Configuration>'
-  }
+  },
+  tenantId: 'aa67bd4c-8475-432d-bd41-39f255720e0a'
 };
 
 await client.api('/communications/calls')

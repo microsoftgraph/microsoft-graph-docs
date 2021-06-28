@@ -1,6 +1,42 @@
 {
   "changelog": [
     {
+      "ChangeList":[
+        {
+          "Id": "6C5FE045-824E-411C-A316-35ECE4F6DD08",
+          "ApiChange": "Parameter",
+          "ChangedApiName": "type",
+          "ChangeType": "Change",
+          "Description": "Changed **type** (string) property in [createLink](https://docs.microsoft.com/en-us/graph/api/driveitem-createlink?view=graph-rest-beta) action on a [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-beta) resource from required to optional.",
+          "Target": "createLink"
+        }
+    ],
+    "Id": "6C5FE045-824E-411C-A316-35ECE4F6DD08",
+    "Cloud": "prd",
+    "Version": "beta",
+    "CreatedDateTime": "2021-06-14T00:00:00.000Z",
+    "WorkloadArea": "Files",
+    "SubArea": ""
+    },
+    {
+      "ChangeList":[
+        {
+          "Id": "133A857A-DC2E-4A41-BCF7-D2B9BBC016AF",
+          "ApiChange": "Method",
+          "ChangedApiName": "createLink",
+          "ChangeType": "Addition",
+          "Description": "Added the [createLink](https://docs.microsoft.com/en-us/graph/api/listitem-createlink?view=graph-rest-beta) action on a [listItem](https://docs.microsoft.com/en-us/graph/api/resources/listitem?view=graph-rest-beta) resource.",
+          "Target": "listItem"
+        }
+    ],
+    "Id": "133A857A-DC2E-4A41-BCF7-D2B9BBC016AF",
+    "Cloud": "prd",
+    "Version": "beta",
+    "CreatedDateTime": "2021-06-14T00:00:00.000Z",
+    "WorkloadArea": "Sites and lists",
+    "SubArea": ""
+    },
+    {
       "ChangeList": [
         {
           "Id": "aa7c9c04-2a12-458f-9bd5-a46c3b2fccd4",
@@ -1556,6 +1592,70 @@
     		"CreatedDateTime": "2021-03-10T11:48:06.486Z",
     		"WorkloadArea": "Sites and lists",
     		"SubArea": ""
+    },
+    {
+        "ChangeList": [{
+            "Id": "27ef62cb-2b26-486e-8c74-fd0ce1e92403",
+            "ApiChange": "Resource",
+            "ChangedApiName": "subscription",
+            "ChangeType": "change",
+            "Description": "Updated the OneDrive and SharePoint maximum subscription expiration length to 30 days.",
+            "Target": "subscription"
+        }],
+        "Id": "27ef62cb-2b26-486e-8c74-fd0ce1e92403",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2021-06-08T19:00:00.000Z",
+        "WorkloadArea": "Change notifications",
+        "SubArea": ""
+    },
+    {
+        "ChangeList": [{
+            "Id": "c0ff6217-2cfb-47d3-ba44-b31b9f03b234",
+            "ApiChange": "Resource",
+            "ChangedApiName": "subscription",
+            "ChangeType": "change",
+            "Description": "Updated the OneDrive and SharePoint maximum subscription expiration length to 30 days.",
+            "Target": "subscription"
+        }],
+        "Id": "c0ff6217-2cfb-47d3-ba44-b31b9f03b234",
+        "Cloud": "prd",
+        "Version": "v1.0",
+        "CreatedDateTime": "2021-06-11T19:00:00.001Z",
+        "WorkloadArea": "Change notifications",
+        "SubArea": ""
+    },
+    {
+        "ChangeList": [{
+            "Id": "4f8f9b37-4149-42d5-80af-3b01fff10780",
+            "ApiChange": "Resource",
+            "ChangedApiName": "driveItem",
+            "ChangeType": "change",
+            "Description": "Removed SharePoint and OneDrive for Business driveItem delta limitation regarding calls targeting non-root folders.",
+            "Target": "driveItem"
+        }],
+        "Id": "4f8f9b37-4149-42d5-80af-3b01fff10780",
+        "Cloud": "prd",
+        "Version": "beta",
+        "CreatedDateTime": "2021-06-11T20:00:00.000Z",
+        "WorkloadArea": "Files",
+        "SubArea": ""
+    },
+    {
+        "ChangeList": [{
+            "Id": "6f3dd177-b9b4-45c0-8893-c65196a2e502",
+            "ApiChange": "Resource",
+            "ChangedApiName": "driveItem",
+            "ChangeType": "change",
+            "Description": "Removed SharePoint and OneDrive for Business driveItem delta limitation regarding calls targeting non-root folders.",
+            "Target": "driveItem"
+        }],
+        "Id": "6f3dd177-b9b4-45c0-8893-c65196a2e502",
+        "Cloud": "prd",
+        "Version": "v1.0",
+        "CreatedDateTime": "2021-06-11T20:00:00.001Z",
+        "WorkloadArea": "Files",
+        "SubArea": ""
     }
   ]
 }

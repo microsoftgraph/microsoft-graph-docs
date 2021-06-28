@@ -102,9 +102,7 @@ PATCH https://graph.microsoft.com/beta/policies/b2cAuthenticationMethodsPolicy
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.b2cauthenticationmethodspolicy"
+  "blockType": "response"
 } -->
 
 ```http

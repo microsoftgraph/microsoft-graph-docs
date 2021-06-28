@@ -42,17 +42,17 @@ In the request body, supply a JSON representation of the parameters of an [acces
 
 The following table shows the properties that can be supplied when you update an accessReview.
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-| `displayName`             |`String`                                                        | The access review name.  |
-| `startDateTime`           |`DateTimeOffset`                                                | The DateTime when the review is scheduled to be start.  This must be a date in the future.   |
-| `endDateTime`             |`DateTimeOffset`                                                | The DateTime when the review is scheduled to end. This must be at least one day later than the start date.   |
-| `description`             |`String`                                                        | The description, to show to the reviewers. |
+| Property      | Type           | Description                                                                                                |
+|:--------------|:---------------|:-----------------------------------------------------------------------------------------------------------|
+| displayName   | String         | The access review name.                                                                                    |
+| startDateTime | DateTimeOffset | The DateTime when the review is scheduled to be start.  This must be a date in the future.                 |
+| endDateTime   | DateTimeOffset | The DateTime when the review is scheduled to end. This must be at least one day later than the start date. |
+| description   | String         | The description, to show to the reviewers.                                                                 |
 
 
 
 ## Response
-If successful, this method returns a `204, Accepted` response code and an [accessReview](../resources/accessreview.md) object in the response body.
+If successful, this method returns a `204 Accepted` response code and an [accessReview](../resources/accessreview.md) object in the response body.
 
 ## Example
 

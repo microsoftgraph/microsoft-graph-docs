@@ -1,5 +1,5 @@
 ---
-title: "Remove educationRubric from educationAssignment"
+title: "Delete educationRubric from educationAssignment"
 description: "Remove an educationRubric from an educationAssignment"
 localization_priority: Normal
 author: "dipakboyed"
@@ -13,7 +13,8 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Remove an [educationRubric](../resources/educationrubric.md) from an [educationAssignment](../resources/educationassignment.md).  This does not delete the rubric itself.
+Delete an [educationRubric](../resources/educationrubric.md) from an [educationAssignment](../resources/educationassignment.md).
+This method does not delete the rubric itself.
 
 ## Permissions
 
@@ -54,6 +55,7 @@ If successful, this method returns a `204 No Content` response code. It does not
 The following is an example of the request.
 
 # [HTTP](#tab/http)
+
 <!-- {
   "blockType": "request",
   "name": "delete_educationrubric_from_educationassignment"
@@ -84,8 +86,6 @@ DELETE https://graph.microsoft.com/beta/education/classes/{id}/assignments/{id}/
 ### Response
 
 The following is an example of the response.
-
-> **Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",

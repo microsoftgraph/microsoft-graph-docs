@@ -94,6 +94,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 |appRoles|[appRole](approle.md) collection|The roles exposed by the application which this service principal represents. For more information see the **appRoles** property definition on the [application](application.md) entity. Not nullable. |
 | deletedDateTime | DateTimeOffset | The date and time the service principal was deleted. Read-only. |
 |description| String | Free text field to provide an internal end-user facing description of the service principal. End-user portals such [MyApps](/azure/active-directory/user-help/my-apps-portal-end-user-access) will display the application description in this field. The maximum allowed size is 1024 characters.|
+| disabledByMicrosoftStatus | String | Specifies whether Microsoft has disabled the registered application. Possible values are: `null` (default value), `NotDisabled`, and `DisabledDueToViolationOfServicesAgreement` (reasons may include suspicious, abusive, or malicious activity, or a violation of the Microsoft Services Agreement). |
 |displayName|String|The display name for the service principal.|
 |errorUrl|String|Deprecated. Don't use.|
 |homepage|String|Home page or landing page of the application.|
@@ -168,6 +169,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
   "applicationTemplateId": "string",
   "appRoleAssignmentRequired": true,
   "appRoles": [{"@odata.type": "microsoft.graph.appRole"}],
+  "disabledByMicrosoftStatus": "string",
   "displayName": "string",
   "errorUrl": "string",
   "homepage": "string",
@@ -210,6 +212,5 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
   ]
 }
 -->
-
 
 

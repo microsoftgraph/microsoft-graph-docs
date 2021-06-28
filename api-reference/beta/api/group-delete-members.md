@@ -2,7 +2,7 @@
 title: "Remove member"
 description: "Use this API to remove a member from a Microsoft 365 group, a security group, or a mail-enabled security group through the **members** navigation property. You can remove users or other groups."
 localization_priority: Normal
-author: "yyuank"
+author: "Jordanndahl"
 ms.prod: "groups"
 doc_type: apiPageType
 ---
@@ -77,9 +77,7 @@ In the request, specify the identifier of the group and the identifier of the di
 The following is an example of the response.
 >**Note:** The response object shown here might be shortened for readability.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

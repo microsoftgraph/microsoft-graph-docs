@@ -1,19 +1,19 @@
 ---
-title: "List educationAssignmentResources"
-description: "Get all the resources associated with this assignment."
+title: "List assignment resources"
+description: "Get all the resources associated with an assignment."
 author: "dipakboyed"
 localization_priority: Normal
 ms.prod: "education"
 doc_type: apiPageType
 ---
 
-# List educationAssignmentResources
+# List assignment resources
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Get all the resources associated with this assignment.
+Get all the resources associated with an assignment.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

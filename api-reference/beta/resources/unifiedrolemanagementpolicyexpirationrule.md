@@ -3,7 +3,7 @@ title: "unifiedRoleManagementPolicyExpirationRule resource type"
 description: "A unifiedRoleManagementPolicyExpirationRule specifies the enablement rule associated with a role management policy. It is derived from microsoft.graph.unifiedRoleManagementPolicyRule."
 author: "shauliu"
 localization_priority: Normal
-ms.prod: "microsoft-identity-platform"
+ms.prod: "governance"
 doc_type: resourcePageType
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Update conversationMember"
 description: "Update the role of conversationMember in a team or channel."
-author: "laujan"
+author: "akjo"
 doc_type: "apiPageType"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
