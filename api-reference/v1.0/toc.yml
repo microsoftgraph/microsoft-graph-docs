@@ -4510,6 +4510,33 @@ items:
               href: api/subscribedsku-list.md
             - name: Get subscribedSku
               href: api/subscribedsku-get.md
+        - name: Role management
+          href: resources/rolemanagement.md
+          items:
+          - name: Role definition
+            href: resources/unifiedroledefinition.md
+            items:
+            - name: List role definitions
+              href: api/rbacapplication-list-roledefinitions.md
+            - name: Create role definition
+              href: api/rbacapplication-post-roledefinitions.md
+            - name: Get role definition
+              href: api/unifiedroledefinition-get.md
+            - name: Update role definition
+              href: api/unifiedroledefinition-update.md
+            - name: Delete role definition
+              href: api/unifiedroledefinition-delete.md
+          - name: Role assignment
+            href: resources/unifiedroleassignment.md
+            items:
+            - name: List role assignment
+              href: api/rbacapplication-list-roleassignments.md
+            - name: Create role assignment
+              href: api/rbacapplication-post-roleassignments.md
+            - name: Get role assignment
+              href: api/unifiedroleassignment-get.md
+            - name: Delete role assignment
+              href: api/unifiedroleassignment-delete.md            
       - name: Identity and sign-in
         items:
         - name: Authentication flows policy

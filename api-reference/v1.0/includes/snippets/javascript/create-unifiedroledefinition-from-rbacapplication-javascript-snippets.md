@@ -1,0 +1,32 @@
+---
+description: "Automatically generated file. DO NOT MODIFY"
+---
+
+```javascript
+
+const options = {
+	authProvider,
+};
+
+const client = Client.init(options);
+
+const unifiedRoleDefinition = {
+  description: "Update basic properties of application registrations",
+  displayName: "Application Registration Support Administrator",
+  rolePermissions:
+    [
+        {
+            allowedResourceActions: 
+            [
+                "microsoft.directory/applications/basic/read"
+            ]
+        }
+    ],
+    "isEnabled" : "true"
+};
+
+let res = await client.api('/roleManagement/directory/roleDefinitions')
+	.version('v1.0')
+	.post(unifiedRoleDefinition);
+
+```

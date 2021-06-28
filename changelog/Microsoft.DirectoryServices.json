@@ -493,6 +493,40 @@
     {
       "ChangeList": [
         {
+          "Id": "9f3915fa-2e8c-4cdb-bddc-da054da9bfb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "roleManagement",
+          "ChangeType": "Addition",
+          "Description": "Added the **roleManagement** resource type.",
+          "Target": "roleManagement"
+        },
+        {
+          "Id": "9f3915fa-2e8c-4cdb-bddc-da054da9bfb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRoleDefinition",
+          "ChangeType": "Addition",
+          "Description": "Added the **unifiedRoleDefinition** resource type.",
+          "Target": "unifiedRoleDefinition"
+        },
+        {
+          "Id": "9f3915fa-2e8c-4cdb-bddc-da054da9bfb0",
+          "ApiChange": "Resource",
+          "ChangedApiName": "unifiedRoleAssignment",
+          "ChangeType": "Addition",
+          "Description": "Added the **unifiedRoleAssignment** resource type.",
+          "Target": "unifiedRoleAssignment"
+        }
+      ],
+      "Id": "9f3915fa-2e8c-4cdb-bddc-da054da9bfb0",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-05-03T00:00:00Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Directory management"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "31a0a04f-7706-4c72-94b7-752932a6592e",
           "ApiChange": "Resource",
           "ChangedApiName": "identityProviders",
