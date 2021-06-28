@@ -3108,7 +3108,7 @@
           "ApiChange": "Property",
           "ChangedApiName": "chat",
           "ChangeType": "Addition",
-          "Description": "Added the **installedApps** property to the [Create chat](https://docs.microsoft.com/graph/api/resources/chat-post?view=graph-rest-beta) method.",
+          "Description": "Added the **installedApps** property to the [Create chat](https://docs.microsoft.com/graph/api/chat-post?view=graph-rest-beta) method.",
           "Target": "chat"
         }
       ],

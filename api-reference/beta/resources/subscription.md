@@ -21,7 +21,7 @@ A subscription allows a client app to receive change notifications about changes
 - A [channel](./channel.md) in Microsoft Teams.
 - A [chatMessage][] sent via teams or channels in Microsoft Teams.
 - A [conversation][] in a Microsoft 365 group.
-- A [conversationMember](./conversationmember.md) in a Microsoft 365 group.
+- A [conversationMember](./conversationmember.md) in a team, channel, or chat in Microsoft Teams.
 - Content in the hierarchy of a root folder [driveItem][] in OneDrive for Business, or of a root folder or subfolder [driveItem][] in a user's personal OneDrive.
 - A [list][] under a SharePoint [site][].
 - A [message][], [event][], or [contact][] in Outlook.
