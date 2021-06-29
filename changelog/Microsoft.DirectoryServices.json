@@ -96,7 +96,7 @@
       "Id": "a31ecb17-b4df-4da2-abe9-018d2de2d518",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2021-06-25T00:00:00",
+      "CreatedDateTime": "2021-06-25T00:00:00Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     },
