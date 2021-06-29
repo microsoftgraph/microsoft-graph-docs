@@ -1,5 +1,55 @@
 {
   "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "e1be4f32-9422-46b6-9ad7-ee71bb0e206a",
+          "ApiChange": "Resource",
+          "ChangedApiName": "microsoftAuthenticatorAuthenticationMethodTarget",
+          "ChangeType": "Change",
+          "Description": "Changed [microsoftAuthenticatorAuthenticationMethodTarget](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethodtarget?view=graph-rest-1.0).",
+          "Target": "microsoftAuthenticatorAuthenticationMethodTarget"
+        },
+        {
+          "Id": "90f5543f-9964-430c-bfdd-684e6fcd802e",
+          "ApiChange": "Enum",
+          "ChangedApiName": "authenticatorAppFeatureSettings",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **authenticatorAppFeatureSettings** enumeration type.",
+          "Target": "authenticatorAppFeatureSettings"
+        },
+        {
+          "Id": "90f5543f-9964-430c-bfdd-684e6fcd802e",
+          "ApiChange": "Enum",
+          "ChangedApiName": "authenticatorAppContextType",
+          "ChangeType": "Deletion",
+          "Description": "Removed the **authenticatorAppContextType** enumeration type.",
+          "Target": "authenticatorAppContextType"
+        },
+        {
+          "Id": "e7cd95d2-b206-433e-a03b-05a87b5414f4",
+          "ApiChange": "Property",
+          "ChangedApiName": "featureSettings",
+          "ChangeType": "Deletion",
+          "Description": "Removed the featureSettings property from [microsoftAuthenticatorAuthenticationMethodTarget](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethodtarget?view=graph-rest-1.0).",
+          "Target": "featureSettings"
+        },
+        {
+          "Id": "e7cd95d2-b206-433e-a03b-05a87b5414f4",
+          "ApiChange": "Property",
+          "ChangedApiName": "shownContext",
+          "ChangeType": "Deletion",
+          "Description": "Removed the shownContext property from [microsoftAuthenticatorAuthenticationMethodTarget](https://docs.microsoft.com/en-us/graph/api/resources/microsoftauthenticatorauthenticationmethodtarget?view=graph-rest-1.0).",
+          "Target": "shownContext"
+        }
+      ],
+      "Id": "d7ea2a03-b7ed-415c-84d5-cbf05fac2fc5",
+    "Cloud": "prd",
+    "Version": "beta",
+    "CreatedDateTime": "2021-06-10T00:00:00",
+    "WorkloadArea": "Identity and access",
+    "SubArea": "Identity and sign-in"
+  },
       {
           "ChangeList": [
               {
