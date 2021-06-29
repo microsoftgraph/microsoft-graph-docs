@@ -124,7 +124,8 @@
               "type": "string"
             },
             "CreatedDateTime": {
-              "type": "string"
+              "type": "string",
+              "format": "date-time"
             },
             "WorkloadArea": {
               "type": "string"
