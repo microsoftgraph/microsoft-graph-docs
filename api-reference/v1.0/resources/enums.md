@@ -1501,3 +1501,14 @@ Possible values for user account types (group membership), per Windows definitio
 |application|
 |system|
 |unknownFutureValue|
+
+
+### approvalFilterByCurrentUserOptions values 
+
+
+|Member|
+|:---|
+|target|
+|createdBy|
+|approver|
+|unknownFutureValue|

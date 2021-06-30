@@ -483,6 +483,48 @@
             "CreatedDateTime": "2021-06-18T19:40:43.984Z",
             "WorkloadArea": "Identity and access",
             "SubArea": "Governance"
-          }
+          },
+          {
+            "ChangeList": [
+                {
+                    "Id": "594b3455-d092-11eb-bd0d-7e17a7640a61",
+                    "ApiChange": "Relationship",
+                    "ChangedApiName": "entitlementManagement",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **entitlementManagement** relationship to the [identityGovernance](https://docs.microsoft.com/en-us/graph/api/resources/identityGovernance?view=graph-rest-1.0) resource.",
+                    "Target": "identityGovernance"
+                },
+                {
+                    "Id": "594d9854-d092-11eb-bd0d-7e17a7640a61",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "entitlementManagement",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [entitlementManagement](https://docs.microsoft.com/en-us/graph/api/resources/entitlementManagement-root?view=graph-rest-1.0) resource type.",
+                    "Target": "entitlementManagement"
+                },
+                {
+                    "Id": "594ffb55-d092-11eb-bd0d-7e17a7640a61",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "approvalFilterByCurrentUserOptions",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **approvalFilterByCurrentUserOptions** enumeration type.",
+                    "Target": "approvalFilterByCurrentUserOptions"
+                },
+                {
+                    "Id": "59525d18-d092-11eb-bd0d-7e17a7640a61",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "filterByCurrentUser",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [filterByCurrentUser](https://docs.microsoft.com/en-us/graph/api/entitlementmanagement-accesspackageassignmentapproval-filterByCurrentUser?view=graph-rest-1.0) method to the [approval](https://docs.microsoft.com/en-us/graph/api/resources/approval?view=graph-rest-1.0) resource.",
+                    "Target": "approval"
+                }
+            ],
+            "Id": "5948d128-d092-11eb-bd0d-7e17a7640a61",
+            "Cloud": "prd",
+            "Version": "v1.0",
+            "CreatedDateTime": "2021-06-19T00:07:34.667Z",
+            "WorkloadArea": "Identity and access",
+            "SubArea": "Identity governance"
+        }
     ]
 }
