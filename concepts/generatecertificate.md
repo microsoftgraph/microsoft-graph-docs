@@ -85,7 +85,7 @@ Your certificate (`.cer` file) is now ready to upload to the Azure Portal. You a
 
 ## Optional task: Delete the certificate from the keystore.
 
-If the application that will interact with Microsoft Graph and Azure AD will not run from your local machine, you can delete the certificate (and the private key) you generated from your personal store. First, get it's thumbprint.
+If the application that interacts with Microsoft Graph and Azure AD won't be run from your local machine, you can delete the certificate (and the private key) you generated from your personal store. First, get it's thumbprint.
 
 ```powershell
 
