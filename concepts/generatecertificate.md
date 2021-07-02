@@ -21,7 +21,7 @@ Modern versions of Windows (Windows 8.1 and greater, and Windows Server 2012R2 a
 > + Only `RSA` is allowed for **-KeyAlgorithm**.
 > + Supported values for **-HashAlgorithm** are `SHA256`, `SHA384`, and `SHA512`.
 > + This tutorial generates certificates that are valid for 1 year. To customize the start and expiry date as well as other properties, see the [`New-SelfSignedCertificate` reference](/powershell/module/pki/new-selfsignedcertificate?view=windowsserver2019-ps).
-> + Self-signed certificate generated following this tutorial are supported for use for both client and server authentication.
+> + The self-signed certificates that you generate are supported for use for both client and server authentication.
 
 
 ## Option 1: Generate and export your public certificate without a private key
