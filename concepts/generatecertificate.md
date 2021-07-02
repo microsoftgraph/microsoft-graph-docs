@@ -5,7 +5,7 @@ author: "FaithOmbongi"
 localization_priority: Priority
 ---
 
-# Generate a self-signed public certificate to authenticate your application
+# Create a self-signed public certificate for authentication
 
 Azure Active Directory (Azure AD) supports two types of authentication for service principals: **password-based authentication** (app secret) and **certificate-based authentication**. While app secrets can easily be generated via the **App registrations** blade, Microsoft recommends using a certificate.
 
