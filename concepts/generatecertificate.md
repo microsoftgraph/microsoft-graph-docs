@@ -1,6 +1,6 @@
 ---
 title: "Create a self-signed public certificate for authentication"
-description: "Generate a self-signed public certificate to authenticate your application."
+description: "Create a self-signed public certificate to authenticate your application."
 author: "FaithOmbongi"
 localization_priority: Priority
 ---
