@@ -93,7 +93,7 @@ Get-ChildItem -Path "Cert:\CurrentUser\My" | Where-Object {$_.Subject -Match "{c
 
 ```
 
-Then, copy the thumbprint that is displayed and use it delete the certificate and it's private key.
+Then, copy the thumbprint that is displayed and use it to delete the certificate and it's private key.
 
 ```powershell
 
