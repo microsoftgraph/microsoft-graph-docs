@@ -78,7 +78,7 @@ Contains information about a meeting, including the URL used to join a meeting, 
   "isEntryExitAnnounced": "Boolean",
   "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
   "allowedPresenters": "String",
-  "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
+  "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"}
 }
 ```
 
