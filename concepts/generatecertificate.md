@@ -45,7 +45,7 @@ Export-Certificate -Cert $cert -FilePath "C:\Users\admin\Desktop\{certificateNam
 Your certificate is now ready to upload to the Azure Portal. Once uploaded, you can retrieve the certificate thumbprint for use to authenticate your application.
 
 
-## Option 2: Generate and export your public certificate with it's private key
+## Option 2: Create and export your public certificate with it's private key
 
 In an elevated PowerShell prompt, run the following command and leave the PowerShell console session open. Replace `{certificateName}` with name you wish to give your certificate.
 
