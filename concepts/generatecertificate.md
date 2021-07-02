@@ -26,7 +26,7 @@ Modern versions of Windows (Windows 8.1 and greater, and Windows Server 2012R2 a
 
 ## Option 1:  Create and export your public certificate without a private key
 
-In an elevated PowerShell prompt, run the following command and leave the PowerShell console session open. In the following command, replace `{certificateName}` with name you wish to give your certificate.
+In an elevated PowerShell prompt, run the following command and leave the PowerShell console session open. In the following command, replace `{certificateName}` with the name that you wish to give to your certificate.
 
 ```powershell
 
