@@ -7,7 +7,7 @@ localization_priority: Priority
 
 # Create a self-signed public certificate for authentication
 
-Azure Active Directory (Azure AD) supports two types of authentication for service principals: **password-based authentication** (app secret) and **certificate-based authentication**. While app secrets can easily be generated via the **App registrations** blade, Microsoft recommends using a certificate.
+Azure Active Directory (Azure AD) supports two types of authentication for service principals: **password-based authentication** (app secret) and **certificate-based authentication**. While app secrets can easily be created by using the **App registrations** blade in the portal, it is recommended that your application uses a certificate.
 
 For testing purposes, you can use a self-signed public certificate instead of a Certificate Authority (CA) signed certificate. This article shows you how to use PowerShell to generate and export a self-signed certificate with or without a private key.
 
