@@ -42,7 +42,8 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | subject               | String                                        | The subject of the online meeting.                                                                                         |
 | videoTeleconferenceId | String                                        | The video teleconferencing ID. Read-only.   
                     |
-| allowMeetingChat	    |meetingChatMode                                |	Specifies the mode of meeting chat.|
+| allowMeetingChat	    |meetingChatMode                                |	Specifies the mode of meeting chat.
+                    |
 
 ### onlineMeetingPresenters values
 
