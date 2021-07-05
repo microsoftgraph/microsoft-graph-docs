@@ -56,7 +56,7 @@ This resource supports using [delta query](/graph/delta-query-overview) to track
 
 ## Properties
 
->**NOTE:** Specific usage of `$filter` and the `$search` query parameter is supported only when you use [advanced query parameters](/graph/aad-advanced-queries), that is, the **ConsistencyLevel** header set to `true` and `$count`. To confirm properties that require advanced query parameters, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+> **Note:** Specific usage of `$filter` and the `$search` query parameter is supported only when you use the **ConsistencyLevel** header set to `eventual` and `$count`. For more information, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
 | Property | Type | Description |
 |:---------------|:--------|:----------|
