@@ -180,9 +180,11 @@ Content-length: 252
 }
 ```
 
-## Notification endpoint validation
+## Error Responses & Notification endpoint validation
 
 The subscription notification endpoint (specified in the `notificationUrl` property) must be capable of responding to a validation request as described in [Set up notifications for changes in user data](/graph/webhooks#notification-endpoint-validation). If validation fails, the request to create the subscription returns a 400 Bad Request error.
+
+Additionally, the Content-Type header **MUST** be set to `application/json`. If Powershell's [`Invoke-RESTMethod`](/powershell/module/microsoft.powershell.utility/invoke-restmethod) is used, the `-ContentType` flag **MUST** be set to `application/json`, otherwise you shall recieve 400 errors that look similar to the notification endpoint validation error shown above.
 
 [error-response]: /graph/errors
 
