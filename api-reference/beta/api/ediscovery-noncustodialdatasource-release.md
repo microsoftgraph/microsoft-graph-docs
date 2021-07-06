@@ -1,5 +1,5 @@
 ---
-title: "noncustodialDataSource: Release"
+title: "noncustodialDataSource: release"
 description: "Releases the non-custodial data source from the case."
 author: "mahage-msft"
 localization_priority: Normal
@@ -33,7 +33,7 @@ One of the following permissions is required to call this API. To learn more, in
 -->
 
 ``` http
-POST /compliance/ediscovery/cases/{caseId}/noncustodialDataSources/{noncustodialDataSourceId}/Release
+POST /compliance/ediscovery/cases/{caseId}/noncustodialDataSources/{noncustodialDataSourceId}/release
 ```
 
 ## Request headers
