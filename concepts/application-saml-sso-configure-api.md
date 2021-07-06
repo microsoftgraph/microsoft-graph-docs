@@ -122,11 +122,6 @@ Content-type: application/json
     "tokenEncryptionKeyId": null,
     "defaultRedirectUri": null,
     "optionalClaims": null,
-    "verifiedPublisher": {
-      "displayName": null,
-      "verifiedPublisherId": null,
-      "addedDateTime": null
-    },
     "addIns": [],
     "api": {
       "acceptMappedClaims": null,
@@ -219,11 +214,6 @@ Content-type: application/json
     ],
     "tokenEncryptionKeyId": null,
     "samlSingleSignOnSettings": null,
-    "verifiedPublisher": {
-      "displayName": null,
-      "verifiedPublisherId": null,
-      "addedDateTime": null
-    },
     "addIns": [],
     "appRoles": [
       {

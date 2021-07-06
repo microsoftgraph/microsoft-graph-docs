@@ -164,8 +164,7 @@ Here is a JSON representation of the resource
   "servicePrincipalNames": ["string"],
   "servicePrincipalType": "string",
   "tags": ["string"],
-  "tokenEncryptionKeyId": "String",
-  "verifiedPublisher": {"@odata.type": "microsoft.graph.verifiedPublisher"}
+  "tokenEncryptionKeyId": "String"
 }
 ```
 

@@ -77,12 +77,7 @@ Content-type: application/json
   "signInAudience": "AzureADandPersonalMicrosoftAccount",
   "tags": [],
   "tokenEncryptionKeyId": null,
-  "uniqueName": null,
-  "verifiedPublisher": {
-      "displayName": null,
-      "verifiedPublisherId": null,
-      "addedDateTime": null
-  },
+  "uniqueName": null
 }
 ```
 

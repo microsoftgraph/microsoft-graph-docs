@@ -148,7 +148,6 @@ The following is a JSON representation of the resource.
   "spa": {"@odata.type": "microsoft.graph.spaApplication"},
   "tags": ["String"],
   "tokenEncryptionKeyId": "String",
-  "verifiedPublisher": {"@odata.type": "microsoft.graph.verifiedPublisher"},
   "web": {"@odata.type": "microsoft.graph.webApplication"}
 }
 ```

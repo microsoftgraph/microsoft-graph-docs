@@ -161,7 +161,6 @@ The following is a JSON representation of the resource.
   "tags": ["String"],
   "tokenEncryptionKeyId": "String",
   "uniqueName": "String",
-  "verifiedPublisher": {"@odata.type": "microsoft.graph.verifiedPublisher"},
   "web": {"@odata.type": "microsoft.graph.webApplication"}
 }
 ```
