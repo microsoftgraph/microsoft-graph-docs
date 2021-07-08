@@ -6,11 +6,17 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
+var userReferences = new [] {
+	"https://graph.microsoft.com/v1.0/directoryObjects/{id}",
+	"https://graph.microsoft.com/v1.0/directoryObjects/{id}",
+	"https://graph.microsoft.com/v1.0/directoryObjects/{id}"
+};
+
 var group = new Group
 {
 	AdditionalData = new Dictionary<string, object>()
 	{
-		{"members@odata.bind", "[\"https://graph.microsoft.com/v1.0/directoryObjects/{id}\",\"https://graph.microsoft.com/v1.0/directoryObjects/{id}\",\"https://graph.microsoft.com/v1.0/directoryObjects/{id}\"]"}
+		{ "members@odata.bind", userReferences }
 	}
 };
 
