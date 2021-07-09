@@ -26,7 +26,7 @@ To read from or write to a resource such as a user or an email message, you cons
   "blockType": "ignored"
 }-->
 ```http
-{HTTP method} https://graph.microsoft.com/{version}/{resource}?{query-parameters}
+*<HTTP method>* https://graph.microsoft.com/*<version>*/<resource>?*<query-parameters>*
 ```
 
 The components of a request include:

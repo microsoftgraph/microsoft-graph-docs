@@ -61,7 +61,7 @@ Here is an example of the request.
   "name": "get_directoryrole_members"
 }-->
 ```msgraph-interactive
-GET https://graph.microsoft.com/beta/directoryRoles/23f3b4b4-8a29-4420-8052-e4950273bbda/members
+GET https://graph.microsoft.com/beta/directoryRoles/*<23f3b4b4-8a29-4420-8052-e4950273bbda>*/members
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/get-directoryrole-members-csharp-snippets.md)]
