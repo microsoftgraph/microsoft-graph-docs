@@ -1,0 +1,22 @@
+{
+    "changelog": [
+        {
+            "ChangeList": [
+                {
+                    "Id": "8baa6eb3-e352-11eb-88f7-f923b9ff781d",
+                    "ApiChange": "Property",
+                    "ChangedApiName": "principalOrganizationId",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **principalOrganizationId** property to the [unifiedRoleAssignment](https://docs.microsoft.com/en-us/graph/api/resources/unifiedRoleAssignment?view=graph-rest-beta) resource.",
+                    "Target": "unifiedRoleAssignment"
+                }
+            ],
+            "Id": "8ba809fd-e352-11eb-88f7-f923b9ff781d",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-07-12T20:48:43.480Z",
+            "WorkloadArea": "Role management",
+            "SubArea": ""
+        }
+    ]
+}
