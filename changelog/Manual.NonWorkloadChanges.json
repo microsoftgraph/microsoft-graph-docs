@@ -14,7 +14,7 @@
       "Id": "0a01c9dd-93ec-4529-875e-842a925277d1",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-07-01T00:00:00",
+      "CreatedDateTime": "2020-07-01T00:00:00Z",
       "WorkloadArea": "Compliance ",
       "SubArea": "eDiscovery"
     },
@@ -32,7 +32,7 @@
       "Id": "13bdd50b-5817-4a82-a7c9-730696cebdfc",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2020-07-01T00:00:00",
+      "CreatedDateTime": "2020-07-01T00:00:00Z",
       "WorkloadArea": "Extensions ",
       "SubArea": "Schema extensions"
     },
@@ -138,7 +138,7 @@
       "Id": "ca2707d8-fb80-4253-a6b5-6582f1ff61f9",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2019-12-01T00:00:00",
+      "CreatedDateTime": "2019-12-01T00:00:00Z",
       "WorkloadArea": "Microsoft Graph Toolkit",
       "SubArea": ""
     },
@@ -180,7 +180,7 @@
       "Id": "72618597-8ff0-48ac-96ca-3dc6a2acfb62",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2019-11-01T00:00:00",
+      "CreatedDateTime": "2019-11-01T00:00:00Z",
       "WorkloadArea": "October 2019",
       "SubArea": ""
     },
@@ -198,7 +198,7 @@
       "Id": "6446fff4-2844-409c-93e0-988408e3df12",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2018-09-01T00:00:00",
+      "CreatedDateTime": "2018-09-01T00:00:00Z",
       "WorkloadArea": "Data access",
       "SubArea": ""
     },
@@ -264,7 +264,7 @@
       "Id": "701fd3ae-9365-4fef-8196-bbf769e3fe4b",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2018-05-01T00:00:00",
+      "CreatedDateTime": "2018-05-01T00:00:00Z",
       "WorkloadArea": "Customer booking",
       "SubArea": ""
     },
@@ -282,7 +282,7 @@
       "Id": "f88a3741-db20-48a3-8e14-e3430f99ec77",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2018-01-01T00:00:00",
+      "CreatedDateTime": "2018-01-01T00:00:00Z",
       "WorkloadArea": "Batching",
       "SubArea": ""
     },
@@ -300,7 +300,7 @@
       "Id": "f88a3741-db20-48a3-8e14-e3430f99ec77",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2018-01-01T00:00:00",
+      "CreatedDateTime": "2018-01-01T00:00:00Z",
       "WorkloadArea": "Batching",
       "SubArea": ""
     },
@@ -318,7 +318,7 @@
       "Id": "67c58ec6-075c-4bf3-89a8-d45cb2567cc5",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2017-05-01T00:00:00",
+      "CreatedDateTime": "2017-05-01T00:00:00Z",
       "WorkloadArea": "Change tracking",
       "SubArea": ""
     },
@@ -336,7 +336,7 @@
       "Id": "67c58ec6-075c-4bf3-89a8-d45cb2567cc5",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2017-05-01T00:00:00",
+      "CreatedDateTime": "2017-05-01T00:00:00Z",
       "WorkloadArea": "Change tracking",
       "SubArea": ""
     },
@@ -370,7 +370,7 @@
       "Id": "c6dfdc40-cdc3-41af-8259-c09e431ebadf",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2017-05-01T00:00:00",
+      "CreatedDateTime": "2017-05-01T00:00:00Z",
       "WorkloadArea": "Added deletedDateTime property",
       "SubArea": ""
     },
@@ -388,7 +388,7 @@
       "Id": "cbee22dd-507a-49e0-8571-004daaf91fc6",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2017-05-01T00:00:00",
+      "CreatedDateTime": "2017-05-01T00:00:00Z",
       "WorkloadArea": "Added domain operations to v1.0",
       "SubArea": ""
     },
@@ -406,7 +406,7 @@
       "Id": "d63dc0c9-1b01-40c3-9b52-7de74a02df56",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2017-05-01T00:00:00",
+      "CreatedDateTime": "2017-05-01T00:00:00Z",
       "WorkloadArea": "Added contracts to v1.0",
       "SubArea": ""
     },
@@ -432,7 +432,7 @@
       "Id": "b35b7681-3136-430b-9ff0-8d77b38d5a13",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2017-05-01T00:00:00",
+      "CreatedDateTime": "2017-05-01T00:00:00Z",
       "WorkloadArea": "Added licenseDetails to v1.0",
       "SubArea": ""
     },
@@ -450,7 +450,7 @@
       "Id": "87a1ff39-8824-454e-a021-4cebbd907775",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2017-05-01T00:00:00",
+      "CreatedDateTime": "2017-05-01T00:00:00Z",
       "WorkloadArea": "Extensions ",
       "SubArea": "Open extensions"
     },
@@ -484,7 +484,7 @@
       "Id": "87a1ff39-8824-454e-a021-4cebbd907775",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2017-05-01T00:00:00",
+      "CreatedDateTime": "2017-05-01T00:00:00Z",
       "WorkloadArea": "Extensions ",
       "SubArea": "Open extensions"
     },
@@ -534,7 +534,7 @@
       "Id": "2f2c8f95-3315-4d43-a8c0-bb74451112b5",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2017-05-01T00:00:00",
+      "CreatedDateTime": "2017-05-01T00:00:00Z",
       "WorkloadArea": "Extensions ",
       "SubArea": "Schema extensions"
     },
@@ -552,7 +552,7 @@
       "Id": "1bd344b2-067c-460e-9a19-57d5ed0b5715",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2017-04-01T00:00:00",
+      "CreatedDateTime": "2017-04-01T00:00:00Z",
       "WorkloadArea": "Cloud Solution Provider",
       "SubArea": ""
     },
@@ -578,7 +578,7 @@
       "Id": "1aab83f4-ed55-4a81-8e12-a8c4f40a84ff",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2017-03-01T00:00:00",
+      "CreatedDateTime": "2017-03-01T00:00:00Z",
       "WorkloadArea": "Extensions ",
       "SubArea": "Schema extensions"
     },
@@ -596,7 +596,7 @@
       "Id": "1b6493c3-30c6-429c-9ced-cba8af346387",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2017-03-01T00:00:00",
+      "CreatedDateTime": "2017-03-01T00:00:00Z",
       "WorkloadArea": "Extensions ",
       "SubArea": "Open extensions"
     },
@@ -614,7 +614,7 @@
       "Id": "1b6493c3-30c6-429c-9ced-cba8af346387",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2017-03-01T00:00:00",
+      "CreatedDateTime": "2017-03-01T00:00:00Z",
       "WorkloadArea": "Extensions ",
       "SubArea": "Open extensions"
     },
@@ -632,7 +632,7 @@
       "Id": "f4f79b77-0682-41a7-927b-bae57967c5e3",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2016-12-01T00:00:00",
+      "CreatedDateTime": "2016-12-01T00:00:00Z",
       "WorkloadArea": "Change tracking",
       "SubArea": ""
     },
@@ -666,7 +666,7 @@
       "Id": "e91d9ba7-e1af-44c4-9b80-b6aba05cecaa",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2016-10-01T00:00:00",
+      "CreatedDateTime": "2016-10-01T00:00:00Z",
       "WorkloadArea": "Authorization provider",
       "SubArea": ""
     },
@@ -684,7 +684,7 @@
       "Id": "b0c3999b-a15b-408e-9b94-356fb44405a0",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2016-09-01T00:00:00",
+      "CreatedDateTime": "2016-09-01T00:00:00Z",
       "WorkloadArea": "Hybrid deployment",
       "SubArea": ""
     },
@@ -702,7 +702,7 @@
       "Id": "62954073-e0b4-4300-addd-53676a9ead63",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2016-09-01T00:00:00",
+      "CreatedDateTime": "2016-09-01T00:00:00Z",
       "WorkloadArea": "Query parameters",
       "SubArea": ""
     },
@@ -736,7 +736,7 @@
       "Id": "5705ba5c-af3b-4cb5-a327-d430d57bd9cc",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2016-04-01T00:00:00",
+      "CreatedDateTime": "2016-04-01T00:00:00Z",
       "WorkloadArea": "General",
       "SubArea": ""
     },
@@ -762,7 +762,7 @@
       "Id": "5705ba5c-af3b-4cb5-a327-d430d57bd9cc",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2016-04-01T00:00:00",
+      "CreatedDateTime": "2016-04-01T00:00:00Z",
       "WorkloadArea": "General",
       "SubArea": ""
     },
@@ -788,7 +788,7 @@
       "Id": "ff2fbf5f-72bb-4c76-acfa-adbd50c46eb7",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2016-03-01T00:00:00",
+      "CreatedDateTime": "2016-03-01T00:00:00Z",
       "WorkloadArea": "General",
       "SubArea": ""
     },
@@ -822,7 +822,7 @@
       "Id": "ff2fbf5f-72bb-4c76-acfa-adbd50c46eb7",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2016-03-01T00:00:00",
+      "CreatedDateTime": "2016-03-01T00:00:00Z",
       "WorkloadArea": "General",
       "SubArea": ""
     },
@@ -840,7 +840,7 @@
       "Id": "5ea132db-190c-4c33-9886-ee286db069e5",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2016-03-01T00:00:00",
+      "CreatedDateTime": "2016-03-01T00:00:00Z",
       "WorkloadArea": "Permission",
       "SubArea": ""
     },
@@ -858,7 +858,7 @@
       "Id": "cf0701aa-a514-446d-be76-bcbfe3571d5d",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2016-02-01T00:00:00",
+      "CreatedDateTime": "2016-02-01T00:00:00Z",
       "WorkloadArea": "General",
       "SubArea": ""
     },
@@ -884,7 +884,7 @@
       "Id": "cf0701aa-a514-446d-be76-bcbfe3571d5d",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2016-02-01T00:00:00",
+      "CreatedDateTime": "2016-02-01T00:00:00Z",
       "WorkloadArea": "General",
       "SubArea": ""
     },
@@ -918,7 +918,7 @@
       "Id": "a8b0a61a-f840-431c-9a78-39c2cb17d1a7",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2015-12-01T00:00:00",
+      "CreatedDateTime": "2015-12-01T00:00:00Z",
       "WorkloadArea": "General",
       "SubArea": ""
     }

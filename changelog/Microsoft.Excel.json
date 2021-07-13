@@ -22,7 +22,7 @@
       "Id": "b96cd9c9-df0e-4739-b79a-2395b92ebb31",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2020-07-01T00:00:00",
+      "CreatedDateTime": "2020-07-01T00:00:00Z",
       "WorkloadArea": "Workbooks and charts",
       "SubArea": ""
     },
@@ -40,7 +40,7 @@
       "Id": "fcbd588d-a8f1-46f1-9725-365c357f2f02",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2018-03-01T00:00:00",
+      "CreatedDateTime": "2018-03-01T00:00:00Z",
       "WorkloadArea": "Workbooks and charts",
       "SubArea": ""
     },
@@ -58,7 +58,7 @@
       "Id": "bacce3a8-5bf2-4c2e-aec1-e03176910c02",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2016-12-01T00:00:00",
+      "CreatedDateTime": "2016-12-01T00:00:00Z",
       "WorkloadArea": "Workbooks and charts",
       "SubArea": ""
     },
@@ -76,7 +76,7 @@
       "Id": "97f0ddf6-07f8-45b1-b74e-ef8070b80d97",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2016-08-01T00:00:00",
+      "CreatedDateTime": "2016-08-01T00:00:00Z",
       "WorkloadArea": "Workbooks and charts",
       "SubArea": ""
     },
@@ -94,7 +94,7 @@
       "Id": "c26b71a5-2e97-4529-ae9c-93dfa37dabb3",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2016-03-01T00:00:00",
+      "CreatedDateTime": "2016-03-01T00:00:00Z",
       "WorkloadArea": "Workbooks and charts",
       "SubArea": ""
     }

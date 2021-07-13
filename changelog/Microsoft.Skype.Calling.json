@@ -22,7 +22,7 @@
       "Id": "4638e7e5-4e09-48f1-af79-021f2d7dd717",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-06-23T00:00:00",
+      "CreatedDateTime": "2021-06-23T00:00:00Z",
       "WorkloadArea": "Cloud communications",
       "SubArea": ""
     },
@@ -48,7 +48,7 @@
       "Id": "cf7f6cc3-01ab-491e-b9f4-ffd20f2eeb06",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-06-10T00:00:00",
+      "CreatedDateTime": "2021-06-10T00:00:00Z",
       "WorkloadArea": "Cloud communications",
       "SubArea": ""
     },
@@ -66,7 +66,7 @@
       "Id": "3a4fca5c-53f1-4302-90a0-172e13a760c8",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-05-14T00:00:00",
+      "CreatedDateTime": "2021-05-14T00:00:00Z",
       "WorkloadArea": "Cloud communications",
       "SubArea": ""
     },
@@ -108,7 +108,7 @@
         "Id": "3f2925a1-bd98-48d2-9380-9e24798f2946",
         "Cloud": "prd",
         "Version": "beta",
-        "CreatedDateTime": "2021-04-19T00:00:00",
+        "CreatedDateTime": "2021-04-19T00:00:00Z",
         "WorkloadArea": "Cloud communications",
         "SubArea": ""
       },
@@ -142,7 +142,7 @@
         "Id": "28469e7e-e4cf-4db5-806e-d4db752746e6",
         "Cloud": "prd",
         "Version": "beta",
-        "CreatedDateTime": "2021-04-21T00:00:00",
+        "CreatedDateTime": "2021-04-21T00:00:00Z",
         "WorkloadArea": "Cloud communications",
         "SubArea": ""
     },
@@ -168,7 +168,7 @@
       "Id": "4a915d72-a737-421a-b5a5-5b38491c48af",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-04-28T00:00:00",
+      "CreatedDateTime": "2021-04-28T00:00:00Z",
       "WorkloadArea": "Cloud communications",
       "SubArea": ""
     },
@@ -202,7 +202,7 @@
       "Id": "5a319127-8866-4ef9-93c7-cbd3d9ac84fa",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-04-16T00:00:00",
+      "CreatedDateTime": "2021-04-16T00:00:00Z",
       "WorkloadArea": "Cloud communications",
       "SubArea": ""
     },
@@ -220,7 +220,7 @@
       "Id": "3a98db4e-7246-4b4c-b97c-feff3f93ce42",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2021-03-05T00:00:00",
+      "CreatedDateTime": "2021-03-05T00:00:00Z",
       "WorkloadArea": "Cloud communications",
       "SubArea": ""
     },
@@ -322,7 +322,7 @@
       "Id": "6ebc1737-3f93-4ef1-a9e7-cafa03262cf8",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2021-02-13T00:00:00",
+      "CreatedDateTime": "2021-02-13T00:00:00Z",
       "WorkloadArea": "Cloud communications",
       "SubArea": ""
     },
@@ -372,7 +372,7 @@
       "Id": "91d6c619-fb51-4183-b8ab-83613256650d",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-01-13T00:00:00",
+      "CreatedDateTime": "2021-01-13T00:00:00Z",
       "WorkloadArea": "Cloud communications",
       "SubArea": ""
     },
@@ -398,7 +398,7 @@
       "Id": "b8406963-d747-4399-b0e6-a90e6d547ca4",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-01-08T00:00:00",
+      "CreatedDateTime": "2021-01-08T00:00:00Z",
       "WorkloadArea": "Cloud communications",
       "SubArea": ""
     },
@@ -416,7 +416,7 @@
       "Id": "edb25912-4b47-4396-82c0-132c22fe7699",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2020-12-04T00:00:00",
+      "CreatedDateTime": "2020-12-04T00:00:00Z",
       "WorkloadArea": "Cloud communications",
       "SubArea": ""
     },
@@ -434,7 +434,7 @@
       "Id": "8ff3f9a7-f4f2-4b78-b6d7-97c5ef078f00",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-11-30T00:00:00",
+      "CreatedDateTime": "2020-11-30T00:00:00Z",
       "WorkloadArea": "Cloud communications",
       "SubArea": ""
     },
@@ -460,7 +460,7 @@
       "Id": "65dabc09-b9d1-4292-93eb-830585daefc6",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-10-15T00:00:00",
+      "CreatedDateTime": "2020-10-15T00:00:00Z",
       "WorkloadArea": "Cloud communications",
       "SubArea": ""
     },
@@ -478,7 +478,7 @@
       "Id": "65dabc09-b9d1-4292-93eb-830585daefc6",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2020-11-17T00:00:00",
+      "CreatedDateTime": "2020-11-17T00:00:00Z",
       "WorkloadArea": "Cloud communications",
       "SubArea": ""
     },
@@ -512,7 +512,7 @@
       "Id": "670bfe8b-e88a-4610-b593-38c6edfe81b9",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-09-01T00:00:00",
+      "CreatedDateTime": "2020-09-01T00:00:00Z",
       "WorkloadArea": "Cloud communications",
       "SubArea": ""
     },
@@ -530,7 +530,7 @@
       "Id": "670bfe8b-e88a-4610-b593-38c6edfe81b9",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2020-09-01T00:00:00",
+      "CreatedDateTime": "2020-09-01T00:00:00Z",
       "WorkloadArea": "Cloud communications",
       "SubArea": ""
     },
@@ -556,7 +556,7 @@
       "Id": "51343f6b-5e10-4747-ab05-d7825853ab69",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2020-08-01T00:00:00",
+      "CreatedDateTime": "2020-08-01T00:00:00Z",
       "WorkloadArea": "Cloud communications",
       "SubArea": ""
     },
@@ -582,7 +582,7 @@
       "Id": "73f93d98-e53b-48f1-9b7c-c3884dea98b8",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-07-01T00:00:00",
+      "CreatedDateTime": "2020-07-01T00:00:00Z",
       "WorkloadArea": "Cloud communications",
       "SubArea": ""
     },
@@ -608,7 +608,7 @@
       "Id": "095a2c9c-7ec1-4f96-8aa6-640092ba513a",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-07-01T00:00:00",
+      "CreatedDateTime": "2020-07-01T00:00:00Z",
       "WorkloadArea": "Cloud communications ",
       "SubArea": "Call records"
     },
@@ -626,7 +626,7 @@
       "Id": "4ce90099-db9c-4866-8a4c-0c63d965933e",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-06-01T00:00:00",
+      "CreatedDateTime": "2020-06-01T00:00:00Z",
       "WorkloadArea": "Cloud communications",
       "SubArea": ""
     },
@@ -660,7 +660,7 @@
       "Id": "4ce90099-db9c-4866-8a4c-0c63d965933e",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2020-06-01T00:00:00",
+      "CreatedDateTime": "2020-06-01T00:00:00Z",
       "WorkloadArea": "Cloud communications",
       "SubArea": ""
     },
@@ -726,7 +726,7 @@
       "Id": "48bf6848-1feb-4805-ab00-7833f3196493",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2020-05-01T00:00:00",
+      "CreatedDateTime": "2020-05-01T00:00:00Z",
       "WorkloadArea": "Cloud communications ",
       "SubArea": "Call records"
     },
@@ -888,7 +888,7 @@
       "Id": "9c72866f-b194-4ab6-9540-ff8499f77bc3",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2020-03-01T00:00:00",
+      "CreatedDateTime": "2020-03-01T00:00:00Z",
       "WorkloadArea": "Cloud communications ",
       "SubArea": "Call"
     },
@@ -922,7 +922,7 @@
       "Id": "4b658708-b0e0-43b3-ad64-c2aff937d6c9",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-03-01T00:00:00",
+      "CreatedDateTime": "2020-03-01T00:00:00Z",
       "WorkloadArea": "Cloud communications ",
       "SubArea": "Online meeting"
     },
@@ -940,7 +940,7 @@
       "Id": "a08ef648-377b-49a2-ad7f-dd2dd416dadb",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-02-01T00:00:00",
+      "CreatedDateTime": "2020-02-01T00:00:00Z",
       "WorkloadArea": "Cloud communications ",
       "SubArea": "Call"
     },
@@ -982,7 +982,7 @@
       "Id": "5147562b-c599-4456-be5f-76b83c818aa2",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-02-01T00:00:00",
+      "CreatedDateTime": "2020-02-01T00:00:00Z",
       "WorkloadArea": "Cloud communications ",
       "SubArea": "Call records"
     },
@@ -1016,7 +1016,7 @@
       "Id": "bbc3a0df-e4a6-494e-bee9-89be9910ebd3",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2019-12-01T00:00:00",
+      "CreatedDateTime": "2019-12-01T00:00:00Z",
       "WorkloadArea": "Cloud communications",
       "SubArea": ""
     },
@@ -1050,7 +1050,7 @@
       "Id": "bbc3a0df-e4a6-494e-bee9-89be9910ebd3",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2019-12-01T00:00:00",
+      "CreatedDateTime": "2019-12-01T00:00:00Z",
       "WorkloadArea": "Cloud communications",
       "SubArea": ""
     },
@@ -1084,7 +1084,7 @@
       "Id": "659b8848-21a2-4dd5-89b5-60d502cd8fe4",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2019-11-01T00:00:00",
+      "CreatedDateTime": "2019-11-01T00:00:00Z",
       "WorkloadArea": "Cloud communications ",
       "SubArea": "Call"
     },
@@ -1158,7 +1158,7 @@
       "Id": "03abf87b-e8bc-4041-b12a-92cb7651271c",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2019-11-01T00:00:00",
+      "CreatedDateTime": "2019-11-01T00:00:00Z",
       "WorkloadArea": "Cloud Communications ",
       "SubArea": "Recording"
     },
@@ -1224,7 +1224,7 @@
       "Id": "1fa26c7b-50bb-48c8-90f2-aa0e0979321c",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2019-09-01T00:00:00",
+      "CreatedDateTime": "2019-09-01T00:00:00Z",
       "WorkloadArea": "Cloud communications ",
       "SubArea": "Online meeting"
     },
@@ -1290,7 +1290,7 @@
       "Id": "95f2638f-73ee-4195-8471-5580b972ee0d",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2019-07-01T00:00:00",
+      "CreatedDateTime": "2019-07-01T00:00:00Z",
       "WorkloadArea": "Cloud communications",
       "SubArea": ""
     },
@@ -1364,7 +1364,7 @@
       "Id": "7810391a-83ce-453a-87a9-34f761a51763",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2018-09-01T00:00:00",
+      "CreatedDateTime": "2018-09-01T00:00:00Z",
       "WorkloadArea": "Cloud communications",
       "SubArea": ""
     }

@@ -22,7 +22,7 @@
       "Id": "4116e288-18ad-4423-8a95-f1ac63edc3bc",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-03-30T00:00:00",
+      "CreatedDateTime": "2021-03-30T00:00:00Z",
       "WorkloadArea": "Sites and lists ",
       "SubArea": "Taxonomy"
     },
@@ -40,7 +40,7 @@
       "Id": "a0d55ae3-01e6-42c2-8763-efdea7afc8f3",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-07-01T00:00:00",
+      "CreatedDateTime": "2020-07-01T00:00:00Z",
       "WorkloadArea": "Sites and lists ",
       "SubArea": "Taxonomy"
     },
@@ -58,7 +58,7 @@
       "Id": "ee925251-5d5e-4491-a03c-cb29a6fb431d",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2020-06-01T00:00:00",
+      "CreatedDateTime": "2020-06-01T00:00:00Z",
       "WorkloadArea": "Sites and lists",
       "SubArea": ""
     },
@@ -76,7 +76,7 @@
       "Id": "62b1f3c3-aefe-472d-9cfa-c0999e244b58",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-04-01T00:00:00",
+      "CreatedDateTime": "2020-04-01T00:00:00Z",
       "WorkloadArea": "Sites and lists",
       "SubArea": ""
     },
@@ -110,7 +110,7 @@
       "Id": "62b1f3c3-aefe-472d-9cfa-c0999e244b58",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2020-04-01T00:00:00",
+      "CreatedDateTime": "2020-04-01T00:00:00Z",
       "WorkloadArea": "Sites and lists",
       "SubArea": ""
     },
@@ -144,7 +144,7 @@
       "Id": "6d6fee0f-f73b-47fe-b626-b5fa40a073f3",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2020-03-01T00:00:00",
+      "CreatedDateTime": "2020-03-01T00:00:00Z",
       "WorkloadArea": "Sites and lists",
       "SubArea": ""
     },
@@ -162,7 +162,7 @@
       "Id": "c941c079-a79f-4f2b-a080-e77d0e54888a",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2019-07-01T00:00:00",
+      "CreatedDateTime": "2019-07-01T00:00:00Z",
       "WorkloadArea": "Sites",
       "SubArea": ""
     },
@@ -188,7 +188,7 @@
       "Id": "81237144-15c6-409f-8bc3-efe213752cae",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2019-06-01T00:00:00",
+      "CreatedDateTime": "2019-06-01T00:00:00Z",
       "WorkloadArea": "Sites and lists",
       "SubArea": ""
     },
@@ -302,7 +302,7 @@
       "Id": "83975882-ac83-4904-9709-f8a210fde177",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2019-04-01T00:00:00",
+      "CreatedDateTime": "2019-04-01T00:00:00Z",
       "WorkloadArea": "Sites and lists",
       "SubArea": ""
     },
@@ -320,7 +320,7 @@
       "Id": "b63055e3-f7b8-4a0f-a908-27c3dd21e624",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2017-05-01T00:00:00",
+      "CreatedDateTime": "2017-05-01T00:00:00Z",
       "WorkloadArea": "Sites and lists",
       "SubArea": ""
     },
@@ -338,7 +338,7 @@
       "Id": "b63055e3-f7b8-4a0f-a908-27c3dd21e624",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2017-05-01T00:00:00",
+      "CreatedDateTime": "2017-05-01T00:00:00Z",
       "WorkloadArea": "Sites and lists",
       "SubArea": ""
     },
@@ -364,7 +364,7 @@
       "Id": "54c8f6cc-3d14-4c83-9d87-e93e1318f7c8",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2017-05-01T00:00:00",
+      "CreatedDateTime": "2017-05-01T00:00:00Z",
       "WorkloadArea": "Sites and lists",
       "SubArea": ""
     },
@@ -390,7 +390,7 @@
       "Id": "9f645b9a-c6e2-495c-8443-f7f1216750ba",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2016-09-01T00:00:00",
+      "CreatedDateTime": "2016-09-01T00:00:00Z",
       "WorkloadArea": "Sites and lists",
       "SubArea": ""
     }

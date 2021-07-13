@@ -134,7 +134,7 @@
       "Id": "6aa8d44e-1415-43ef-b71f-c680382941ea",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-03-30T00:00:00",
+      "CreatedDateTime": "2021-03-30T00:00:00Z",
       "WorkloadArea": "Tasks and plans",
       "SubArea": ""
     },
@@ -272,7 +272,7 @@
       "Id": "79526dea-b980-4116-9a6a-81e1ea644efa",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2021-03-30T00:00:00",
+      "CreatedDateTime": "2021-03-30T00:00:00Z",
       "WorkloadArea": "Tasks and plans",
       "SubArea": ""
     },
@@ -446,7 +446,7 @@
       "Id": "3a22446c-e65a-43dc-aca4-999146a95ca8",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-08-01T00:00:00",
+      "CreatedDateTime": "2020-08-01T00:00:00Z",
       "WorkloadArea": "To-do tasks",
       "SubArea": ""
     },
@@ -464,7 +464,7 @@
       "Id": "d09e8b60-aacb-45e7-9691-253940c1b408",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2019-08-01T00:00:00",
+      "CreatedDateTime": "2019-08-01T00:00:00Z",
       "WorkloadArea": "Tasks and plans",
       "SubArea": ""
     },
@@ -522,7 +522,7 @@
       "Id": "a760876c-d24c-46c8-9842-37295b5b7216",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2018-02-01T00:00:00",
+      "CreatedDateTime": "2018-02-01T00:00:00Z",
       "WorkloadArea": "Tasks and plans",
       "SubArea": ""
     },
@@ -540,7 +540,7 @@
       "Id": "46f0da80-1dbc-4931-8d66-f8c1a1b6d6b2",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2017-05-01T00:00:00",
+      "CreatedDateTime": "2017-05-01T00:00:00Z",
       "WorkloadArea": "Tasks and plans",
       "SubArea": ""
     },
@@ -582,7 +582,7 @@
       "Id": "97c3d22e-a50e-4f31-946b-239acfafb174",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2017-05-01T00:00:00",
+      "CreatedDateTime": "2017-05-01T00:00:00Z",
       "WorkloadArea": "To-do tasks",
       "SubArea": ""
     },
@@ -600,7 +600,7 @@
       "Id": "30092d1a-95ae-4207-b2a6-59245ab06159",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2017-05-01T00:00:00",
+      "CreatedDateTime": "2017-05-01T00:00:00Z",
       "WorkloadArea": "Tasks and plans",
       "SubArea": ""
     },
@@ -618,7 +618,7 @@
       "Id": "b5842b87-9a53-423a-b3a2-215bb3585996",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2017-04-01T00:00:00",
+      "CreatedDateTime": "2017-04-01T00:00:00Z",
       "WorkloadArea": "Tasks and plans",
       "SubArea": ""
     },

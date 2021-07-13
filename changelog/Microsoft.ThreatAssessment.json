@@ -14,7 +14,7 @@
       "Id": "6990ba5d-3fd0-4c0f-836d-2ce020b1d2f5",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2020-06-01T00:00:00",
+      "CreatedDateTime": "2020-06-01T00:00:00Z",
       "WorkloadArea": "Security",
       "SubArea": ""
     },
@@ -32,7 +32,7 @@
       "Id": "7f201f04-85ef-49cb-849f-4885fdd08870",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2020-02-01T00:00:00",
+      "CreatedDateTime": "2020-02-01T00:00:00Z",
       "WorkloadArea": "Security",
       "SubArea": ""
     },
@@ -50,7 +50,7 @@
       "Id": "403de8ef-1aea-40ed-a4f8-2549073bf79e",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2020-01-01T00:00:00",
+      "CreatedDateTime": "2020-01-01T00:00:00Z",
       "WorkloadArea": "Security",
       "SubArea": ""
     },
@@ -76,7 +76,7 @@
       "Id": "9e9df8b7-5a68-4629-a6dc-fc1c4e0a1766",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2019-12-01T00:00:00",
+      "CreatedDateTime": "2019-12-01T00:00:00Z",
       "WorkloadArea": "Security",
       "SubArea": ""
     },
@@ -94,7 +94,7 @@
       "Id": "2b9eca99-9c5d-486c-bac6-22d71dde6b4b",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2019-11-01T00:00:00",
+      "CreatedDateTime": "2019-11-01T00:00:00Z",
       "WorkloadArea": "Security",
       "SubArea": ""
     },
@@ -288,7 +288,7 @@
       "Id": "2bd02d5f-0ca2-4758-aefa-b2cee5a02c14",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2019-11-01T00:00:00",
+      "CreatedDateTime": "2019-11-01T00:00:00Z",
       "WorkloadArea": "Security",
       "SubArea": ""
     },
@@ -306,7 +306,7 @@
       "Id": "dff64024-cfa4-48d8-b8db-fa879298b292",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2019-05-01T00:00:00",
+      "CreatedDateTime": "2019-05-01T00:00:00Z",
       "WorkloadArea": "Security",
       "SubArea": ""
     },
@@ -340,7 +340,7 @@
       "Id": "86a33091-37a8-4c62-9e2c-1700e89fc265",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2019-02-01T00:00:00",
+      "CreatedDateTime": "2019-02-01T00:00:00Z",
       "WorkloadArea": "Security",
       "SubArea": ""
     },
@@ -366,7 +366,7 @@
       "Id": "8d86b64a-99eb-41e6-bf09-7c3c9ab59164",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2018-12-01T00:00:00",
+      "CreatedDateTime": "2018-12-01T00:00:00Z",
       "WorkloadArea": "Security",
       "SubArea": ""
     },
@@ -392,7 +392,7 @@
       "Id": "ec36f8cb-0fd5-4cc7-bac0-fa3894ee48c4",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2018-09-01T00:00:00",
+      "CreatedDateTime": "2018-09-01T00:00:00Z",
       "WorkloadArea": "Security",
       "SubArea": ""
     },
@@ -410,7 +410,7 @@
       "Id": "03100c5f-2c9d-43ef-aed7-6e3da35c371d",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2018-06-01T00:00:00",
+      "CreatedDateTime": "2018-06-01T00:00:00Z",
       "WorkloadArea": "Security",
       "SubArea": ""
     },
@@ -428,7 +428,7 @@
       "Id": "f0b26b58-db86-4c69-b339-8896fd929d18",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2018-04-01T00:00:00",
+      "CreatedDateTime": "2018-04-01T00:00:00Z",
       "WorkloadArea": "Security",
       "SubArea": ""
     },

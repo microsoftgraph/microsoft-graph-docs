@@ -6334,7 +6334,7 @@
       "Id": "2531d4d1-1572-4ce3-0654-61cf63abow90",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2021-06-01T00:00:00",
+      "CreatedDateTime": "2021-06-01T00:00:00Z",
       "WorkloadArea": "Devices and apps",
       "SubArea": "Cloud printing"
     },
@@ -12672,7 +12672,7 @@
       "Id": "2531d4d1-1572-4ce3-0654-61cf63abow90",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2021-06-17T00:00:00",
+      "CreatedDateTime": "2021-06-17T00:00:00Z",
       "WorkloadArea": "Devices and apps",
       "SubArea": "Cloud printing"
     },
@@ -19010,7 +19010,7 @@
       "Id": "2f7decaa-87f4-4d93-9cf6-8ef17182fed4",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-06-17T00:00:00",
+      "CreatedDateTime": "2021-06-17T00:00:00Z",
       "WorkloadArea": "Devices and apps",
       "SubArea": "Cloud printing"
     },
@@ -19190,7 +19190,7 @@
       "Id": "07927310-e5b8-44a4-851b-15cef00478fa",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2021-06-03T00:00:00",
+      "CreatedDateTime": "2021-06-03T00:00:00Z",
       "WorkloadArea": "Devices and apps",
       "SubArea": "Cloud printing"
     },
@@ -19208,7 +19208,7 @@
       "Id": "4479ad3e-1fa7-4ed2-aa24-8fbf0b2b8aca",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-03-05T00:00:00",
+      "CreatedDateTime": "2021-03-05T00:00:00Z",
       "WorkloadArea": "Devices and apps ",
       "SubArea": " Cloud printing"
     },
@@ -19676,7 +19676,7 @@
       "Id": "330349f4-de5b-4bb0-92de-0a0a1453d23a",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-03-03T00:00:00",
+      "CreatedDateTime": "2021-03-03T00:00:00Z",
       "WorkloadArea": "Devices and apps",
       "SubArea": "Cloud printing"
     },
@@ -19694,7 +19694,7 @@
       "Id": "118e092d-5c9b-4d50-928f-12aaa33abaf6",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-01-27T00:00:00",
+      "CreatedDateTime": "2021-01-27T00:00:00Z",
       "WorkloadArea": "Devices and apps",
       "SubArea": "Cloud printing"
     },
@@ -19730,7 +19730,7 @@
       "Id": "c9105e15-6dd7-482a-994c-e156afed581c",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-01-21T00:00:00",
+      "CreatedDateTime": "2021-01-21T00:00:00Z",
       "WorkloadArea": "Devices and apps",
       "SubArea": "Cloud printing"
     },
@@ -19772,7 +19772,7 @@
       "Id": "bb46f739-3c69-46ab-a3e1-75cd4e9aae46",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-01-07T00:00:00",
+      "CreatedDateTime": "2021-01-07T00:00:00Z",
       "WorkloadArea": "Devices and apps ",
       "SubArea": "Cloud printing"
     },
@@ -19798,7 +19798,7 @@
       "Id": "d686e617-f373-4e2b-b26e-c71f475b05de",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-12-10T00:00:00",
+      "CreatedDateTime": "2020-12-10T00:00:00Z",
       "WorkloadArea": "Devices and apps ",
       "SubArea": "Cloud printing"
     },
@@ -19816,7 +19816,7 @@
       "Id": "2241d4d1-9372-4ce3-9888-61cf63abea21",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-12-16T00:00:00",
+      "CreatedDateTime": "2020-12-16T00:00:00Z",
       "WorkloadArea": "Devices and apps ",
       "SubArea": "Cloud printing"
     },
@@ -19842,7 +19842,7 @@
       "Id": "c6857dac-2cec-457f-a760-5dac6397e554",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-12-10T00:00:00",
+      "CreatedDateTime": "2020-12-10T00:00:00Z",
       "WorkloadArea": "Devices and apps ",
       "SubArea": "Cloud printing"
     },
@@ -20020,7 +20020,7 @@
       "Id": "16d1d36f-53eb-11eb-a966-cb5b1188a896",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2021-01-21T00:00:00",
+      "CreatedDateTime": "2021-01-21T00:00:00Z",
       "WorkloadArea": "Devices and apps ",
       "SubArea": "Cloud printing"
     },
@@ -20054,7 +20054,7 @@
       "Id": "76cd4ab2-7d93-48a2-844d-f991b9c239e4",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-12-02T00:00:00",
+      "CreatedDateTime": "2020-12-02T00:00:00Z",
       "WorkloadArea": "Devices and apps ",
       "SubArea": "Cloud printing"
     },
@@ -20088,7 +20088,7 @@
       "Id": "3a4e1e60-0477-4cda-9665-3a880ab0e927",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-10-16T00:00:00",
+      "CreatedDateTime": "2020-10-16T00:00:00Z",
       "WorkloadArea": "Devices and apps ",
       "SubArea": "Cloud printing"
     }

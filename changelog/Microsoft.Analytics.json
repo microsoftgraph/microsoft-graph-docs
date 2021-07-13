@@ -14,7 +14,7 @@
       "Id": "31591e8c-641d-455a-bdea-5b111f39b085",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-08-01T00:00:00",
+      "CreatedDateTime": "2020-08-01T00:00:00Z",
       "WorkloadArea": "People and workplace intelligence ",
       "SubArea": "Profile"
     },
@@ -40,7 +40,7 @@
       "Id": "8c224202-825a-4190-9b47-ff758248262d",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-07-01T00:00:00",
+      "CreatedDateTime": "2020-07-01T00:00:00Z",
       "WorkloadArea": "People and workplace intelligence ",
       "SubArea": "Insights"
     },
@@ -66,7 +66,7 @@
       "Id": "a9247538-0fcc-463f-8439-cf5a7e86dd19",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2020-07-01T00:00:00",
+      "CreatedDateTime": "2020-07-01T00:00:00Z",
       "WorkloadArea": "People and workplace intelligence ",
       "SubArea": "Profile"
     },
@@ -84,7 +84,7 @@
       "Id": "99f277e8-b0bb-4193-8248-095bb0842f78",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2019-12-01T00:00:00",
+      "CreatedDateTime": "2019-12-01T00:00:00Z",
       "WorkloadArea": "People and workplace intelligence ",
       "SubArea": "Insights"
     },
@@ -102,7 +102,7 @@
       "Id": "8010b2c9-d937-436f-84b1-74b9a5eb67cf",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2019-11-01T00:00:00",
+      "CreatedDateTime": "2019-11-01T00:00:00Z",
       "WorkloadArea": "People and workplace intelligence",
       "SubArea": ""
     },
@@ -136,7 +136,7 @@
       "Id": "82f7015c-fd60-442f-8d1c-7affba36df0c",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2019-08-01T00:00:00",
+      "CreatedDateTime": "2019-08-01T00:00:00Z",
       "WorkloadArea": "People and workplace intelligence",
       "SubArea": ""
     },
@@ -154,7 +154,7 @@
       "Id": "45a46158-d7bc-42b2-bcfd-6aa75db1d410",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2018-05-01T00:00:00",
+      "CreatedDateTime": "2018-05-01T00:00:00Z",
       "WorkloadArea": "People and workplace intelligence ",
       "SubArea": "Insights"
     },
@@ -212,7 +212,7 @@
       "Id": "05d556a5-95e7-4cc5-8f25-54b0362d9c98",
       "Cloud": "prd",
       "Version": "v1.0",
-      "CreatedDateTime": "2017-08-01T00:00:00",
+      "CreatedDateTime": "2017-08-01T00:00:00Z",
       "WorkloadArea": "People and workplace intelligence ",
       "SubArea": "People"
     },
@@ -254,7 +254,7 @@
       "Id": "df864cd6-a5ae-4969-8529-9e61cfeb9f81",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2017-05-01T00:00:00",
+      "CreatedDateTime": "2017-05-01T00:00:00Z",
       "WorkloadArea": "People and workplace intelligence ",
       "SubArea": "Insights"
     },
@@ -272,7 +272,7 @@
       "Id": "52a2d5fe-1db2-46ff-af8b-2dd5179fb20b",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2016-08-01T00:00:00",
+      "CreatedDateTime": "2016-08-01T00:00:00Z",
       "WorkloadArea": "People and workplace intelligence ",
       "SubArea": "People"
     },
@@ -298,7 +298,7 @@
       "Id": "bdae8773-190a-4645-a342-7da30a4b0012",
       "Cloud": "prd",
       "Version": "beta",
-      "CreatedDateTime": "2016-03-01T00:00:00",
+      "CreatedDateTime": "2016-03-01T00:00:00Z",
       "WorkloadArea": "People and workplace intelligence ",
       "SubArea": "People"
     }
