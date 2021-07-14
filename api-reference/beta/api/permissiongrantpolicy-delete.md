@@ -85,9 +85,7 @@ DELETE https://graph.microsoft.com/beta/policies/permissionGrantPolicies/my-cust
 ### Response
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.permissionGrantPolicy"
+  "blockType": "response"
 } -->
 
 ```http

@@ -86,9 +86,7 @@ DELETE https://graph.microsoft.com/beta/education/schools/10001/users/13006
 The following is an example of the response. 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationClass"
+  "blockType": "response"
 } -->
 
 ```http

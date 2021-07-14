@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let scopedMembers = await client.api('/directoryRoles/{id}/scopedMembers')
+let scopedMembers = await client.api('/directoryRoles/41d12a2f-caa8-4e3e-ba14-05e5102ce085/scopedMembers')
 	.version('beta')
 	.get();
 

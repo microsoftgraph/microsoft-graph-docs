@@ -234,6 +234,9 @@ items:
                 href: windowsupdates-schedule-deployment.md
               - name: Manage monitoring rules
                 href: windowsupdates-manage-monitoring-rules.md
+          - name: Multi-tenant management (preview)
+            displayName: Microsoft 365 Lighthouse
+            href: managedtenants-concept-overview.md
       - name: Education
         items:
           - name: Overview
@@ -326,7 +329,7 @@ items:
         displayName: Notifications
         items:
           - name: Overview
-            href: notifications-concept-overview.md
+            href: notifications-concept-overview.md                  
           - name: Get started
             displayName: Notifications
             items:
@@ -343,7 +346,7 @@ items:
               - name: Android app integration
                 href: notifications-integrating-with-android.md
               - name: IOS app integration
-                href: notifications-integrating-with-ios.md
+                href: notifications-integrating-with-ios.md                
       - name: People and workplace intelligence
         items:
           - name: Overview
@@ -352,7 +355,9 @@ items:
             href: people-example.md
           - name: Customize the profile card (preview)
             href: add-properties-profilecard.md
-          - name: Customize insights privacy (preview)
+          - name: Item insights overview
+            href: item-insights-overview.md
+          - name: Customize item insights privacy (preview)
             href: insights-customize-item-insights-privacy.md
       - name: Personal contacts
         displayName: Outlook, Outlook contacts, Outlook contact, People
@@ -383,12 +388,16 @@ items:
                 href: search-concept-files.md
               - name: Search connectors
                 href: search-concept-custom-types.md
+              - name: Search person (preview)
+                href: search-concept-person.md
               - name: Sort search results (preview)
                 href: search-concept-sort.md
               - name: Refine search results (preview)
                 href: search-concept-aggregation.md
               - name: Request spelling correction (preview)
                 href: search-concept-speller.md
+              - name: Search display layout (preview)
+                href: search-concept-display-layout.md
       - name: Security
         items:
           - name: Overview
@@ -403,6 +412,8 @@ items:
             href: information-protection-overview.md
           - name: Partner opportunities
             href: security-partner-overview.md
+      - name: Service health and communications (preview)
+        href: service-communications-concept-overview.md
       - name: Sites and lists
         href: sharepoint-concept-overview.md
         displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal
@@ -428,8 +439,13 @@ items:
             href: teams-licenses.md
           - name: Send proactive messages with a bot
             href: /microsoftteams/platform/graph-api/proactive-bots-and-messages/graph-proactive-bots-and-messages?context=graph/context
-          - name: Send activity feed notifications
+          - name: Activity feed notifications
             href: teams-send-activityfeednotifications.md
+            items:
+              - name: Send activity feed notifications
+                href: teams-send-activityfeednotifications.md
+              - name: Best practices 
+                href: teams-activity-feed-notifications-best-practices.md  
       - name: To-do tasks
         href: todo-concept-overview.md
         displayName: Microsoft To Do
@@ -485,8 +501,15 @@ items:
             href: traverse-the-graph.md
           - name: Paging
             href: paging.md
-          - name: Use query parameters
-            href: query-parameters.md
+          - name: Query parameters
+            displayName: OData query parameters
+            items:
+              - name: Use query parameters
+                href: query-parameters.md
+              - name: Use the search query parameter
+                href: search-query-parameter.md
+              - name: Advanced query capabilities
+                href: aad-advanced-queries.md
           - name: Batching
             displayName: Batch requests
             href: json-batching.md
@@ -505,10 +528,22 @@ items:
                 href: webhooks-with-resource-data.md
               - name: Get notifications delivered different ways
                 href: change-notifications-delivery.md
-              - name: Get change notifications for chat and channel messages
-                href: teams-changenotifications-chatmessage.md
               - name: Change notifications for cloud printing
                 href: universal-print-webhook-notifications.md
+              - name: Change notifications in Microsoft Teams
+                items:
+                  - name: Overview
+                    href: teams-change-notification-in-microsoft-teams-overview.md
+                  - name: Teams and channels
+                    href: teams-changenotifications-team-and-channel.md
+                  - name: Team membership
+                    href: teams-changenotifications-teamMembership.md
+                  - name: Chat and channel messages
+                    href: teams-changenotifications-chatmessage.md                  
+                  - name: Chat
+                    href: teams-changenotifications-chat.md
+                  - name: Chat membership
+                    href: teams-changenotifications-chatMembership.md
           - name: Change tracking
             displayName: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
             items:
@@ -685,6 +720,8 @@ items:
                 href: toolkit/customize-components/style.md
               - name: Templating components
                 href: toolkit/customize-components/templates.md
+              - name: Handling events
+                href: toolkit/customize-components/events.md
               - name: Caching Microsoft Graph calls in components
                 href: toolkit/customize-components/cache.md
               - name: Localizing components

@@ -11,12 +11,28 @@ doc_type: enumPageType
 
 Namespace: microsoft.graph
 
+### lifecycleEventType values
+
+|Member|
+|:---|
+|missed|
+|subscriptionRemoved|
+|reauthorizationRequired|
+
+### changeType values
+
+|Member|
+|:---|
+|clientIpAddress|
+|authenticatorAppGps|
+
 ### consentRequestFilterByCurrentUserOptions values 
 
 |Member|
 |:---|
 |reviewer|
 |unknownFutureValue|
+
 ### externalEmailOtpState values
 
 |Member|
@@ -24,6 +40,14 @@ Namespace: microsoft.graph
 |default|
 |enabled|
 |disabled|
+|unknownFutureValue|
+
+### educationAddedStudentAction values
+
+|Member|
+|:---|
+|none|
+|assignIfOpen|
 |unknownFutureValue|
 
 ### authenticatorAppContextType values
@@ -431,6 +455,26 @@ Namespace: microsoft.graph
 |trafficCone|
 |pin|
 |sunny|
+|unknownFutureValue|
+
+### workforceIntegrationEncryptionProtocol values
+
+| Member
+|:----------------------------
+|sharedSecret
+|unknownFutureValue
+
+### workforceIntegrationSupportedEntities values
+
+|Member|
+|:---|
+|none|
+|shift|
+|swapRequest|
+|userShiftPreferences|
+|openShift|
+|openShiftRequest|
+|offerShiftRequest|
 |unknownFutureValue|
 
 ### timeZoneStandard values
@@ -1456,4 +1500,37 @@ Possible values for user account types (group membership), per Windows definitio
 |user|
 |application|
 |system|
+|unknownFutureValue|
+
+### teamworkApplicationIdentityType values 
+
+|Member|
+|:---|
+|aadApplication|
+|bot|
+|tenantBot|
+|office365Connector|
+|outgoingWebhook|
+|unknownFutureValue|
+
+### teamworkConversationIdentityType values 
+
+|Member|
+|:---|
+|team|
+|channel|
+|chat|
+|unknownFutureValue|
+
+### teamworkUserIdentityType values 
+
+|Member|
+|:---|
+|aadUser|
+|onPremiseAadUser|
+|anonymousGuest|
+|federatedUser|
+|personalMicrosoftAccountUser|
+|skypeUser|
+|phoneUser|
 |unknownFutureValue|

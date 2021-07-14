@@ -76,8 +76,7 @@ PATCH https://graph.microsoft.com/v1.0/teams/893075dd-2487-4122-925f-022c42e2026
 Here is an example of the response. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.channel"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 204 No Content

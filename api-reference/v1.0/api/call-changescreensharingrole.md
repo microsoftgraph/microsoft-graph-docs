@@ -90,8 +90,7 @@ Here is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 202 Accepted

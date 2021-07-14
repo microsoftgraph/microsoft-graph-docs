@@ -36,7 +36,7 @@ GET /identityGovernance/entitlementManagement/connectedOrganizations
 ```
 
 ## Optional query parameters
-This method supports some of the OData query parameters to help customize the response. For example, to retrieve only the connected organizations with a specific display name, add `$filter=displayName eq 'Name'`. For general information, see [OData query parameters](/graph/query-parameters).
+This method supports some of the OData query parameters to help customize the response. For example, to retrieve only the connected organizations with a specific display name, add `$filter=displayName eq 'Name'`. Similarly, to retrieve only the connected organizations with an identity source of a specific tenant, add `$filter=identitySources/any(is:is/microsoft.graph.azureActiveDirectoryTenant/tenantId eq '72f988bf-86f1-41af-91ab-2d7cd011db47')`. For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
 |Name|Description|

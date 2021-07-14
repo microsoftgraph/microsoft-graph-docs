@@ -13,11 +13,13 @@ Namespace: microsoft.graph
 
 A resourceSpecificPermissionGrant declares the permission that has been granted to a specific AzureAD app for an instance of a resource in Microsoft Graph.
 
+For more information about granting apps consent to access a specific instance of a resource, see [resource-specific consent](/microsoftteams/platform/graph-api/rsc/resource-specific-consent).
+
 ## Methods
 
 |  Method                                                                   |  Return Type                                                                     | Description                                                  | 
 | :------------------------------------------------------------------------ | :------------------------------------------------------------------------------- | :----------------------------------------------------------- |
-|[List permission grants of a group](../api/group-list-permissiongrants.md) | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | List permissions that have been granted in a specific group. |
+|[List permission grants of a group](../api/group-list-permissiongrants.md) | [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection | List resource-specific permissions that have been granted in a specific [group](group.md). |
 
 ## Properties
 
@@ -29,7 +31,7 @@ A resourceSpecificPermissionGrant declares the permission that has been granted 
 | clientAppId     | string        | ID of the service principal of the Azure AD app that has been granted access. Read-only.   |
 | resourceAppId   | string        | ID of the Azure AD app that is hosting the resource. Read-only.                        |
 | permissionType  | string        | The type of permission. Possible values are: `Application`, `Delegated`. Read-only. |
-| permission      | string        | The name of the permission. Read-only.                                                |
+| permission      | string        | The name of the resource-specific permission. Read-only.                                                |
 
 ## JSON representation
 

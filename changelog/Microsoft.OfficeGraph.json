@@ -1,0 +1,54 @@
+{
+  "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "6bd25da3-69ed-11eb-8539-acd03a94fa95",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [userSettings](https://docs.microsoft.com/en-us/graph/api/resources/userSettings?view=graph-rest-beta) resource type.",
+          "Target": "userSettings"
+        },
+        {
+          "Id": "6bd25da3-69ed-11eb-8539-acd03a94fa95",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "itemInsights",
+          "ChangeType": "Addition",
+          "Description": "Added the **itemInsights** navigation property to the [userSettings](https://docs.microsoft.com/en-us/graph/api/resources/userSettings?view=graph-rest-beta) resource.",
+          "Target": "userSettings"
+        },
+        {
+          "Id": "6bd25da3-69ed-11eb-8539-acd03a94fa95",
+          "ApiChange": "Resource",
+          "ChangedApiName": "userInsightsSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [userInsightsSettings](https://docs.microsoft.com/en-us/graph/api/resources/userInsightsSettings?view=graph-rest-beta) resource type.",
+          "Target": "userInsightsSettings"
+        },
+        {
+          "Id": "6bd25da3-69ed-11eb-8539-acd03a94fa95",
+          "ApiChange": "Method",
+          "ChangedApiName": "itemInsights",
+          "ChangeType": "Addition",
+          "Description": "Added the **GET** operation to the [userInsightsSettings](https://docs.microsoft.com/en-us/graph/api/resources/userInsightsSettings?view=graph-rest-beta) resource.",
+          "Target": "userInsightsSettings"
+        },
+        {
+          "Id": "6bd25da3-69ed-11eb-8539-acd03a94fa95",
+          "ApiChange": "Method",
+          "ChangedApiName": "itemInsights",
+          "ChangeType": "Addition",
+          "Description": "Added the **PATCH** operation to the [userInsightsSettings](https://docs.microsoft.com/en-us/graph/api/resources/userInsightsSettings?view=graph-rest-beta) resource.",
+          "Target": "userInsightsSettings"
+        }
+      ],
+      "Id": "6bd25da3-69ed-11eb-8539-acd03a94fa95",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-06-23T09:10:00.188Z",
+      "WorkloadArea": "People and workplace intelligence",
+      "SubArea": "Insights"
+    }
+  ]
+}

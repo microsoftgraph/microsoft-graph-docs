@@ -103,9 +103,7 @@ Content-length: 222
 ### Response
 The following is an example of the response. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.orgContact"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

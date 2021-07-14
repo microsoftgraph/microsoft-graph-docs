@@ -16,7 +16,9 @@ const educationAssignment = {
     contentType: 'Text',
     content: 'Read chapters 1 through 3'
   },
-  dueDateTime: '2014-02-01T00:00:00Z'
+  dueDateTime: '2014-02-01T00:00:00Z',
+  addedStudentAction: 'none',
+  addToCalendarAction: 'studentsAndPublisher',
 };
 
 await client.api('/education/classes/11021/assignments/19002')

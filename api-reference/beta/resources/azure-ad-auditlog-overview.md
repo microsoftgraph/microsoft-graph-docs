@@ -72,7 +72,7 @@ To learn more, see [Azure AD pricing](https://azure.microsoft.com/pricing/detail
 ## Next steps
 
 - [Register your app](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to satisfy report prerequisites. 
-- Learn from [audit log](/azure/active-directory/active-directory-reporting-api-audit-samples) and [sign-in samples](/azure/active-directory/active-directory-reporting-api-sign-in-activity-samples).  
+- To learn how to retrieve audit logs while authenticated using certificates, see [Tutorial: Get data using the Azure Active Directory reporting API with certificates](/azure/active-directory/reports-monitoring/tutorial-access-api-with-certificates).  
 - Review the [directoryAudit](directoryaudit.md) resource and actions.
 - Review the [signIn](signin.md) resource and actions. 
 - Review the [provisioningObjectSummary](provisioningobjectsummary.md) resource.

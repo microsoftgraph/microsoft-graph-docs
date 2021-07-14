@@ -1,6 +1,6 @@
 ---
 title: "accessReviewInstance: batchRecordDecisions"
-description: "Emable reviewers to review all accessReviewInstanceDecisionItems in batches."
+description: "Enables reviewers to review all accessReviewInstanceDecisionItem objects in batches."
 author: "isabelleatmsft"
 localization_priority: Normal
 ms.prod: "governance"
@@ -12,16 +12,16 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Enable reviewers to review all [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects in batches by using `principalId`, `resourceId`, or neither.
+Enables reviewers to review all [accessReviewInstanceDecisionItem](../resources/accessreviewinstancedecisionitem.md) objects in batches by using **principalId**, **resourceId**, or neither.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|AccessReviews.ReadWrite.All|
+|Delegated (work or school account)|AccessReview.ReadWrite.All|
 |Delegated (personal Microsoft account)|Not supported|
-|Application|AccessReviews.ReadWrite.All|
+|Application|AccessReview.ReadWrite.All|
 
 ## HTTP request
 
@@ -70,7 +70,6 @@ If successful, this action returns a `204 No Content` response code.
 ``` http
 POST https://graph.microsoft.com/beta/me/pendingAccessReviewInstances/{accessReviewInstanceId}/batchRecordDecisions
 Content-Type: application/json
-Content-length: 113
 
 {
   "decision": "Approve",

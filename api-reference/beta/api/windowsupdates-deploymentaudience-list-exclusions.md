@@ -8,11 +8,15 @@ doc_type: apiPageType
 ---
 
 # List deployment audience exclusions
+
 Namespace: microsoft.graph.windowsUpdates
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 List the [updatableAsset](../resources/windowsupdates-updatableasset.md) resources that are excluded from a [deploymentAudience](../resources/windowsupdates-deploymentaudience.md).
+
+> [!NOTE]
+> This API has a [known issue](/Graph/known-issues#accessing-and-updating-deployment-audiences) related to deployments created via Intune.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -98,10 +102,6 @@ Content-Type: application/json
 
 {
   "value": [
-    {
-      "@odata.type": "#microsoft.graph.windowsUpdates.updatableAssetGroup",
-      "id": "f5ba7065-7065-f5ba-6570-baf56570baf5"
-    },
     {
       "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
       "id": "fb95f07d-9e73-411d-99ab-7eca3a5122b1",

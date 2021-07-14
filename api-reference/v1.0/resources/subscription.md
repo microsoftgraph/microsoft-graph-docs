@@ -39,21 +39,21 @@ See [Use the Microsoft Graph API to get change notifications](webhooks.md) for t
 
 | Property | Type | Description | Supported Resources |
 |:---------|:-----|:------------|:--------------|
-| changeType | string | Required. Indicates the type of change in the subscribed resource that will raise a change notification. The supported values are: `created`, `updated`, `deleted`. Multiple values can be combined using a comma-separated list.<br><br>Note: Drive root item and list change notifications support only the `updated` changeType. User and group change notifications support `updated` and `deleted` changeType. | All |
-| notificationUrl | string | Required. The URL of the endpoint that will receive the change notifications. This URL must make use of the HTTPS protocol. | All |
-| lifecycleNotificationUrl | string | The URL of the endpoint that receives lifecycle notifications, including `subscriptionRemoved` and `missed` notifications. This URL must make use of the HTTPS protocol. Optional. <br><br>[Read more](/graph/webhooks-lifecycle) about how Outlook resources use lifecycle notifications. | All |
-| resource | string | Required. Specifies the resource that will be monitored for changes. Do not include the base URL (`https://graph.microsoft.com/v1.0/`). See the possible resource path [values](webhooks.md) for each supported resource.| All |
-| expirationDateTime | [dateTime](https://tools.ietf.org/html/rfc3339) | Required. Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.  See the table below for maximum supported subscription length of time. | All |
-| clientState | string | Optional. Specifies the value of the `clientState` property sent by the service in each change notification. The maximum length is 128 characters. The client can check that the change notification came from the service by comparing the value of the `clientState` property sent with the subscription with the value of the `clientState` property received with each change notification. | All |
-| id | string | Unique identifier for the subscription. Read-only. | All |
 | applicationId | string | Identifier of the application used to create the subscription. Read-only. | All |
+| changeType | string | Required. Indicates the type of change in the subscribed resource that will raise a change notification. The supported values are: `created`, `updated`, `deleted`. Multiple values can be combined using a comma-separated list.<br><br>Note: Drive root item and list change notifications support only the `updated` changeType. User and group change notifications support `updated` and `deleted` changeType. | All |
+| clientState | string | Optional. Specifies the value of the `clientState` property sent by the service in each change notification. The maximum length is 128 characters. The client can check that the change notification came from the service by comparing the value of the `clientState` property sent with the subscription with the value of the `clientState` property received with each change notification. | All |
 | creatorId | string | Identifier of the user or service principal that created the subscription. If the app used delegated permissions to create the subscription, this field contains the id of the signed-in user the app called on behalf of. If the app used application permissions, this field contains the id of the service principal corresponding to the app. Read-only. | All |
-| includeResourceData | Boolean | When set to `true`, change notifications [include resource data](/graph/webhooks-with-resource-data) (such as content of a chat message). Optional. | All |
 | encryptionCertificate | string | A base64-encoded representation of a certificate with a public key used to encrypt resource data in change notifications. Optional. Required when **includeResourceData** is true. | All |
 | encryptionCertificateId | string | A custom app-provided identifier to help identify the certificate needed to decrypt resource data. Optional.| All |
+| expirationDateTime | DateTimeOffset | Required. Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to.  See the table below for maximum supported subscription length of time. | All |
+| id | string | Unique identifier for the subscription. Read-only. | All |
+| includeResourceData | Boolean | When set to `true`, change notifications [include resource data](/graph/webhooks-with-resource-data) (such as content of a chat message). Optional. | All |
 | latestSupportedTlsVersion | String | Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by **notificationUrl**, supports. The possible values are: `v1_0`, `v1_1`, `v1_2`, `v1_3`. </br></br>For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set [timeline](https://developer.microsoft.com/graph/blogs/microsoft-graph-subscriptions-deprecating-tls-1-0-and-1-1/) allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these subscribers, not setting this property per the timeline would result in subscription operations failing. </br></br>For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases, Microsoft Graph defaults the property to `v1_2`. | All |
+| lifecycleNotificationUrl | string | The URL of the endpoint that receives lifecycle notifications, including `subscriptionRemoved` and `missed` notifications. This URL must make use of the HTTPS protocol. Optional. <br><br>[Read more](/graph/webhooks-lifecycle) about how Outlook resources use lifecycle notifications. | All |
 | notificationContentType | string | Desired content-type for MS Graph change notifications for supported resource types. The default content-type is the "application/json" content-type. | All |
 | notificationQueryOptions | string | OData Query Options for specifying value for the targeting resource. Clients receive notifications when resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property eg  when the print job is completed, when a print job resource `isFetchable` property value becomes true etc. | [Universal Print Service](/graph/universal-print-webhook-notifications) |
+| notificationUrl | string | Required. The URL of the endpoint that will receive the change notifications. This URL must make use of the HTTPS protocol. | All |
+| resource | string | Required. Specifies the resource that will be monitored for changes. Do not include the base URL (`https://graph.microsoft.com/v1.0/`). See the possible resource path [values](webhooks.md) for each supported resource.| All |
 
 ### Maximum length of subscription per resource type
 
@@ -63,10 +63,10 @@ See [Use the Microsoft Graph API to get change notifications](webhooks.md) for t
 | Teams **callRecord**    | 4230 minutes (under 3 days)  |
 | Teams **chatMessage**    | 60 minutes (1 hour)  |
 | Group **conversation** | 4230 minutes (under 3 days)    |
-| OneDrive **driveItem**    | 4230 minutes (under 3 days)    |
-| SharePoint **list**    | 4230 minutes (under 3 days)    |
+| OneDrive **driveItem**    | 42300 minutes (under 30 days)    |
+| SharePoint **list**    | 42300 minutes (under 30 days)    |
 | Outlook **message**, **event**, **contact**              | 4230 minutes (under 3 days)    |
-| **user**, **group**, other directory resources   | 4230 minutes (under 3 days)    |
+| **user**, **group**, other directory resources   | 41760 minutes (under 29 days)    |
 | Print **printer** | 4230 minutes (under 3 days)    |
 | Print **printTaskDefinition** | 4230 minutes (under 3 days)    |
 

@@ -96,7 +96,7 @@ GET /sites/{site-id}/contentTypes/{contentType-id}/columns/{column-id}
 
   
 
-#### Response
+### Response
 
   
 

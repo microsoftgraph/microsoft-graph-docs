@@ -15,6 +15,7 @@ const accessReviewScheduleDefinition = {
   descriptionForAdmins: 'New scheduled access review',
   descriptionForReviewers: 'If you have any questions, contact jerry@contoso.com',
   scope: {
+    '@odata.type': '#microsoft.graph.accessReviewQueryScope',
     query: '/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers',
     queryType: 'MicrosoftGraph'
   },
@@ -23,7 +24,7 @@ const accessReviewScheduleDefinition = {
       query: '/users/398164b1-5196-49dd-ada2-364b49f99b27',
       queryType: 'MicrosoftGraph'
     }
-  ],
+  ],  
   settings: {
     mailNotificationsEnabled: true,
     reminderNotificationsEnabled: true,

@@ -21,6 +21,7 @@ Represents results from a search query, and the terms used for the query.
 |:-------------|:------------|:------------|
 |hitsContainers|[searchHitsContainer](searchhitscontainer.md) collection|A collection of search results.|
 |searchTerms|String collection|Contains the search terms sent in the initial search query.|
+|resultTemplates|[resultTemplate](resultTemplate.md) collection|A dictionary of resultTemplateIds and associated values, which include the name and JSON schema of the result templates.
 
 ## JSON representation
 
@@ -38,7 +39,8 @@ The following is a JSON representation of the resource.
 ```json
 {
   "hitsContainers": [{"@odata.type": "microsoft.graph.searchHitsContainer"}],
-  "searchTerms": ["String"]
+  "searchTerms": ["String"],
+  "resultTemplates": [{"@odata.type":"microsoft.graph.resultTemplateDictionary"}]
 }
 ```
 

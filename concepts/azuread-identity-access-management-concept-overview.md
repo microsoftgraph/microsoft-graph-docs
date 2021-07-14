@@ -15,7 +15,7 @@ You can use the Azure AD REST APIs in Microsoft Graph to create unique workflows
 
 ## Why use the Azure AD APIs?
 
-More than 15 million organizations use Azure AD while subscribing to Microsoft cloud services like Microsoft 365, Microsoft Azure, Enterprise Mobility Suite, or Microsoft 365.
+More than 15 million organizations use Azure AD while subscribing to Microsoft cloud services like Microsoft 365, Microsoft Azure, and Enterprise Mobility Suite.
 
 Enterprise developers use Microsoft Graph to integrate Azure AD identity management and other services to automate administrative workflows, such as employee onboarding (and termination), profile maintenance, license deployment, and more.
 

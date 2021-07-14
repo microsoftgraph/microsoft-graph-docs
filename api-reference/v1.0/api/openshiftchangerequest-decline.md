@@ -98,8 +98,7 @@ Content-type: application/json
 The following is an example of the response.
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 
 ```http

@@ -23,12 +23,25 @@ This is applicable for a RBAC application that supports multiple principals and 
 
 ## Permissions
 
-Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference). 
+Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, see [Permissions](/graph/permissions-reference). 
 
-|Supported provider      | Delegated (work or school account)  | Delegated (personal Microsoft account) | Application |
-|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
-| Cloud PC | CloudPC.ReadWrite.All | Not supported. | CloudPC.ReadWrite.All |
-| Intune | DeviceManagementRBAC.ReadWrite.All | Not supported.| DeviceManagementRBAC.ReadWrite.All |
+### For Cloud PC provider
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) |  CloudPC.ReadWrite.All   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | CloudPC.ReadWrite.All  |
+
+### For Device management (Intune) provider
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) |  DeviceManagementRBAC.ReadWrite.All   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | DeviceManagementRBAC.ReadWrite.All |
+
+
 
 ## HTTP request
 
@@ -114,6 +127,8 @@ HTTP/1.1 204 No Content
 
 ### Request
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "delete_unifiedroleassignmentMultiple_cloudpc"
@@ -122,6 +137,24 @@ HTTP/1.1 204 No Content
 ```http
 DELETE https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments/id
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/delete-unifiedroleassignmentmultiple-cloudpc-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/delete-unifiedroleassignmentmultiple-cloudpc-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/delete-unifiedroleassignmentmultiple-cloudpc-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/delete-unifiedroleassignmentmultiple-cloudpc-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 
 ### Response

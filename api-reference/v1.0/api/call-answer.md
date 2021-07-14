@@ -43,9 +43,10 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter        | Type                                     |Description                                                                                                                                    |
 |:-----------------|:-----------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------|
-|callbackUri       |String                                    |Allows bots to provide a specific callback URI for the current call to receive later notifications. If this property has not been set, the bot's global callback URI will be used instead. This must be `https`.    |
+|callbackUri       |String                                    |Allows bots to provide a specific callback URI for the concurrent call to receive later notifications. If this property has not been set, the bot's global callback URI will be used instead. This must be `https`.    |
 |acceptedModalities|String collection                         |The list of accept modalities. Possible values are: `audio`, `video`, `videoBasedScreenSharing`. Required for answering a call. |
 |mediaConfig       | [appHostedMediaConfig](../resources/apphostedmediaconfig.md) or [serviceHostedMediaConfig](../resources/servicehostedmediaconfig.md) |The media configuration. (Required)                                                                                                            |
+| participantCapacity | Int | The number of participant that the application can handle for the call, for [Teams policy-based recording](/MicrosoftTeams/teams-recording-policy) scenario.                                                     |
 
 ## Response
 This method returns a `202 Accepted` response code.
@@ -75,7 +76,8 @@ Content-Length: 211
   },
   "acceptedModalities": [
     "audio"
-  ]
+  ],
+  "participantCapacity": 200
 }
 ```
 This blob is the serialized configuration for media sessions which is generated from the media SDK.
@@ -104,8 +106,7 @@ Here is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -197,8 +198,7 @@ Content-Type: application/json
 ##### Response
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -364,8 +364,7 @@ Content-Type: application/json
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 202 Accepted
@@ -435,6 +434,9 @@ Content-Type: application/json
 
 Under the [Policy-based recording scenario](/microsoftteams/teams-recording-policy), before a participant under policy joins a call, an incoming call notification will be sent to the bot associated with the policy.
 The join information can be found under the **botData** property. The bot can then choose to answer the call and [update the recording status](call-updaterecordingstatus.md) accordingly.
+
+When `participantCapacity` is specified in the `Answer` request for a policy-based recording notification, subsequent participant joining event belonging to the same policy group will be sent out as [participantJoiningNotification](../resources/participantJoiningNotification.md) instead of
+new incoming call notification, until number of participants that current call instance is handling has reached the number specified in `participantCapacity`.
 
 Here is an example of the incoming call notification that a bot would recieve in this case.
 

@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var queryOptions = new List<QueryOption>()
 {
-	new QueryOption("select", "c300x400_Crop")
+	new QueryOption("select", "c300x400_crop")
 };
 
 var thumbnails = await graphClient.Me.Drive.Items["{driveItem-id}"].Thumbnails

@@ -106,9 +106,7 @@ POST https://graph.microsoft.com/beta/me/authentication/phoneMethods/3179e48a-75
 
 The following is an example of the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "blockType": "response"
 } -->
 
 ```http

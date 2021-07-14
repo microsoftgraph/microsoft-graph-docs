@@ -333,6 +333,61 @@ Content-type: application/json
 }
 ```
 
+### Example 4: Remove an assignment
+
+To remove assignments, create a new accessPackageAssignmentRequest object with the following settings:
+
++ The value of the **requestType** property set to `AdminRemove`.
++ In the accessPackageAssignment property, include a list with the identifier of the accessPackageAssignment objects to delete.
+
+#### Request
+
+The following example shows how to remove an assignment.
+
+
+<!-- {
+  "blockType": "request",
+  "name": "create_accesspackageassignmentrequest_from_accesspackageassignmentrequests"
+}-->
+
+```http
+POST https://graph.microsoft.com/beta/identityGovernance/entitlementManagement/accessPackageAssignmentRequests
+Content-type: application/json
+
+{
+    "requestType": "AdminRemove",
+    "accessPackageAssignment":{
+     "id": "a6bb6942-3ae1-4259-9908-0133aaee9377"
+    }
+}
+```
+
+#### Response
+
+The following is an example of the response.
+
+> **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.accessPackageAssignmentRequest"
+} -->
+
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#accessPackageAssignmentRequests/$entity",
+
+    "id": "78eaee8c-e6cf-48c9-8f99-aae44c35e379",
+    "requestType": "AdminRemove",
+    "requestState": "Submitted",
+    "requestStatus": "Accepted"
+}
+```
+
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
 <!-- {

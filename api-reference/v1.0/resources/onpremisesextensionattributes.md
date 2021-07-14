@@ -11,7 +11,7 @@ doc_type: resourcePageType
 
 Namespace: microsoft.graph
 
-The **onPremisesExtensionAttributes** property of the [user](user.md) entity contains fifteen custom extension attribute properties. For an **onPremisesSyncEnabled** user, the source of authority for this set of properties is the on-premises Active Directory which is synchronized to Azure AD, and is read-only. For a cloud-only user (where **onPremisesSyncEnabled** is false), these properties can be set over Exchange Online. The attributes are read only in Microsoft Graph.
+The **onPremisesExtensionAttributes** property of the [user](user.md) entity contains fifteen custom extension attribute properties. For an **onPremisesSyncEnabled** user, the source of authority for this set of properties is the on-premises Active Directory which is synchronized to Azure AD, and is read-only. For a cloud-only user (where **onPremisesSyncEnabled** is `false`), these properties may be set during [creation](../api/user-post-users.md) or [update](../api/user-update.md).
 
 > **Note:** These extension attributes are also known as Exchange custom attributes 1-15.
 

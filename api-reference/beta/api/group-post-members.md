@@ -90,9 +90,7 @@ In the request body, supply a JSON representation of the `id` of the [directoryO
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.directoryObject"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

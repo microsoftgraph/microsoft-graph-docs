@@ -227,7 +227,7 @@ Content-Type: application/json
         "content": "New deployment requires your approval"
     },
     "recipient": {
-        "@odata.type": "Microsoft.Teams.GraphSvc.aadUserNotificationRecipient",
+        "@odata.type": "microsoft.graph.aadUserNotificationRecipient",
         "userId": "569363e2-4e49-4661-87f2-16f245c5d66a"
     },
     "templateParameters": [
@@ -236,6 +236,137 @@ Content-Type: application/json
             "value": "6788662"
         }
     ]
+}
+```
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 4: Notify the team members about an event
+
+This example shows how you can send an activity feed notification to all team members. This example notifies the team members about a new event. 
+
+> **Note:** The ability to send notifications to all team members is currently only available in beta.
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "team_sendactivitynotification"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/teams/7155e3c8-175e-4311-97ef-572edc3aa3db/sendActivityNotification
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "text",
+        "value": "Weekly Virtual Social",
+        "webUrl": "Teams webUrl"
+    },
+    "previewText": {
+        "content": "It will be fun!"
+    },
+    "activityType": "eventCreated",
+    "recipient": {
+        "@odata.type": "microsoft.graph.teamMembersNotificationRecipient",
+        "teamId": "7155e3c8-175e-4311-97ef-572edc3aa3db"
+    }
+}
+```
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 5: Notify the channel members about an event
+
+This example shows how you can send an activity feed notification to all channel members. This example notifies the channel members about a new event. 
+
+> **Note:** The ability to send notifications to all channel members is currently only available in beta.
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "team_sendactivitynotification"
+}
+-->
+``` http
+POST https://graph.microsoft.com/beta/teams/7155e3c8-175e-4311-97ef-572edc3aa3db/sendActivityNotification
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "text",
+        "value": "Weekly Virtual Social",
+        "webUrl": "Teams webUrl"
+    },
+    "previewText": {
+        "content": "It will be fun!"
+    },
+    "activityType": "eventCreated",
+    "recipient": {
+        "@odata.type": "microsoft.graph.channelMembersNotificationRecipient",
+        "teamId": "7155e3c8-175e-4311-97ef-572edc3aa3db",
+        "channelId": "19:0ea5de04de4743bcb4cd20cb99235d99@thread.tacv2"
+    }
+}
+```
+
+#### Response
+<!-- {
+  "blockType": "response",
+  "truncated": false
+}
+-->
+``` http
+HTTP/1.1 204 No Content
+```
+
+### Example 6: Notify the chat members about an event
+
+This example shows how you can send an activity feed notification to all chat members. This example notifies the chat members about a new event. 
+
+> **Note:** The ability to send notifications to all chat members is currently only available in beta.
+
+#### Request
+<!-- {
+  "blockType": "request",
+  "name": "chat_sendactivitynotification"
+}
+-->
+
+``` http
+POST https://graph.microsoft.com/beta/chats/19:d65713bc498c4a428c71ef9353e6ce20@thread.v2/sendActivityNotification
+Content-Type: application/json
+
+{
+    "topic": {
+        "source": "text",
+        "value": "Weekly Virtual Social",
+        "webUrl": "Teams webUrl"
+    },
+    "previewText": {
+        "content": "It will be fun!"
+    },
+    "activityType": "eventCreated",
+    "recipient": {
+        "@odata.type": "microsoft.graph.chatMembersNotificationRecipient",
+        "chatId": "19:d65713bc498c4a428c71ef9353e6ce20@thread.v2"
+    }
 }
 ```
 
@@ -281,4 +412,6 @@ The settings will appear after the first notification is sent by the Teams app. 
 
 `Conflict` errors primarily occur when multiple Teams apps installed in the same scope (team, chat, user, and so on) have the same Azure AD appId in the `webApplicationInfo` section of the manifest. When this happens, you will get an error such as `Found multiple applications with the same Azure AD App ID 'Your AzureAD AppId'.`. Make sure that you use unique Azure AD apps for unique Teams apps. Note that you can have the same Teams app installed in multiple scopes (team + user for example).
 
+## See also
 
+[Best practices for using Microsoft Teams activity feed notifications](teams-activity-feed-notifications-best-practices.md).

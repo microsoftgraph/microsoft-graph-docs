@@ -1,7 +1,7 @@
 ---
 title: "Install app for user"
 description: "Install an app in the personal scope of the specified user."
-author: "clearab"
+author: "akjo"
 doc_type: "apiPageType"
 localization_priority: Normal
 ms.prod: "microsoft-teams"

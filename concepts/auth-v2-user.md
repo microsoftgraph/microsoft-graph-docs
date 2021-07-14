@@ -47,7 +47,7 @@ With the Microsoft identity platform endpoint, permissions are requested using t
 // Line breaks for legibility only
 
 https://login.microsoftonline.com/{tenant}/oauth2/v2.0/authorize?
-client_id=6731de76-14a6-49ae-97bc-6eba6914391e
+client_id=11111111-1111-1111-1111-111111111111
 &response_type=code
 &redirect_uri=http%3A%2F%2Flocalhost%2Fmyapp%2F
 &response_mode=query
@@ -110,12 +110,12 @@ POST /{tenant}/oauth2/v2.0/token HTTP/1.1
 Host: https://login.microsoftonline.com
 Content-Type: application/x-www-form-urlencoded
 
-client_id=6731de76-14a6-49ae-97bc-6eba6914391e
+client_id=11111111-1111-1111-1111-111111111111
 &scope=user.read%20mail.read
 &code=OAAABAAAAiL9Kn2Z27UubvWFPbm0gLWQJVzCTE9UkP3pSx1aXxUjq3n8b2JRLk4OxVXr...
 &redirect_uri=http%3A%2F%2Flocalhost%2Fmyapp%2F
 &grant_type=authorization_code
-&client_secret=JqQX2PNo9bpM0uEihUPzyrh    // NOTE: Only required for web apps
+&client_secret=jXoM3iz...    // NOTE: Only required for web apps
 ```
 
 | Parameter     | Required              | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -204,12 +204,12 @@ POST /common/oauth2/v2.0/token HTTP/1.1
 Host: https://login.microsoftonline.com
 Content-Type: application/x-www-form-urlencoded
 
-client_id=6731de76-14a6-49ae-97bc-6eba6914391e
+client_id=11111111-1111-1111-1111-111111111111
 &scope=user.read%20mail.read
 &refresh_token=OAAABAAAAiL9Kn2Z27UubvWFPbm0gLWQJVzCTE9UkP3pSx1aXxUjq...
 &redirect_uri=http%3A%2F%2Flocalhost%2Fmyapp%2F
 &grant_type=refresh_token
-&client_secret=JqQX2PNo9bpM0uEihUPzyrh      // NOTE: Only required for web apps
+&client_secret=jXoM3iz...      // NOTE: Only required for web apps
 ```
 
 | Parameter     | Required              | Description                                                                                                                                                                                                                                                                                                         |

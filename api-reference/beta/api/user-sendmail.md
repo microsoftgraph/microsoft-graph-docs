@@ -344,7 +344,7 @@ HTTP/1.1 202 Accepted
 #### Request
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "message_send_mime_beta"
 }-->
 
@@ -361,6 +361,7 @@ MU1CMjAwMDAwMDAwRDc2RDlDMjgyMjAwMDA5QUQ5QTlASFdIUFIxMzAxTUIwMDAwLmNvZGVudW0u
 cHJvZC5vdXRsb29rLmNvbT4KQ29udGVudC1MYW5ndWFnZTogZW4tVVMKWC1NUy1IYXMtQXR0YWNo
 OgpYLU1TLVRORUYtQ29ycmVsYXRvcjoKWC1NUy1Fe
 ```
+
 #### Response
 Here is an example of the response.
 

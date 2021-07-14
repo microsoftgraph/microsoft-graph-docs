@@ -57,5 +57,30 @@
 		"CreatedDateTime": "2020-12-15T19:36:30.757Z",
 		"WorkloadArea": "Identity and access",
 		"SubArea": "Identity and sign-in"
+	}, {
+		"ChangeList": [
+		  {
+			"Id": "5d689536-f9cf-49b5-b231-ecb9cc5d3332",
+			"ApiChange": "Property",
+			"ChangedApiName": "deviceFilter",
+			"ChangeType": "Addition",
+			"Description": "Added the **deviceFilter** property to the [conditionalAccessDevices](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessDevices?view=graph-rest-beta) resource.",
+			"Target": "conditionalAccessDevices"
+		  },
+		  {
+			"Id": "5d689536-f9cf-49b5-b231-ecb9cc5d3332",
+			"ApiChange": "ComplexType",
+			"ChangedApiName": "conditionalAccessFilter",
+			"ChangeType": "Addition",
+			"Description": "Added the **conditionalAccessFilter** type to the [conditionalAccessPolicy](https://docs.microsoft.com/en-us/graph/api/resources/conditionalaccesspolicy?view=graph-rest-beta) resource.",
+			"Target": "conditionalAccessPolicy"
+		  }
+		],
+		"Id": "5d689536-f9cf-49b5-b231-ecb9cc5d3332",
+		"Cloud": "Prod",
+		"Version": "beta",
+		"CreatedDateTime": "2021-06-21T18:03:46.8906341Z",
+		"WorkloadArea": "Identity and access",
+		"SubArea": "Identity and sign-in"
 	}]
 }

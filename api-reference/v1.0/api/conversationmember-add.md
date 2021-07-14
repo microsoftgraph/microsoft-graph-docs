@@ -1,7 +1,7 @@
 ---
 title: "Add conversationMember"
 description: "Add conversationMember to a channel."
-author: "laujan" 
+author: "akjo" 
 doc_type: "apiPageType"
 localization_priority: Normal 
 ms.prod: "microsoft-teams"

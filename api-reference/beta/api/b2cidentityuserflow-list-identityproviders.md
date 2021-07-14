@@ -1,17 +1,18 @@
 ---
-title: "List all identityProviders in a b2cIdentityUserFlow"
-description: "List all identityProviders in a b2cIdentityUserFlow."
+title: "List all identityProviders in a b2cIdentityUserFlow (deprecated)"
+description: "List all identityProviders in a b2cIdentityUserFlow. (deprecated)"
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
 ms.prod: "identity-and-sign-in"
 ---
 
-# List all identityProviders in a b2cIdentityUserFlow
+# List all identityProviders in a b2cIdentityUserFlow (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Get the identity providers in a [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) object.
 
@@ -58,8 +59,6 @@ If successful, this method returns a `200 OK` response code and a JSON represent
 
 The following is an example of the request.
 
-
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_b2cUserFlow_list_identityProviders"
@@ -69,24 +68,6 @@ The following is an example of the request.
 ``` http
 GET https://graph.microsoft.com/beta/identity/b2cUserFlows/{id}/identityProviders
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-b2cuserflow-list-identityproviders-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-b2cuserflow-list-identityproviders-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-b2cuserflow-list-identityproviders-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-b2cuserflow-list-identityproviders-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 ### Response
 
@@ -121,5 +102,3 @@ Content-type: application/json
     ]
 }
 ```
-
-

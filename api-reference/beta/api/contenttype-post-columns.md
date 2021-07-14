@@ -53,7 +53,7 @@ POST https://graph.microsoft.com/beta/sites/{site-id}/contentTypes/{contentType-
 Content-Type: application/json
 
 {
-	"sourceColumn@odata.bind": "https://graph.microsoft.com/beta/sites/root/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103",
+	"sourceColumn@odata.bind": "https://graph.microsoft.com/beta/sites/root/columns/99ddcf45-e2f7-4f17-82b0-6fba34445103"
 }
 ```
 

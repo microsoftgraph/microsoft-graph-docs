@@ -183,6 +183,58 @@
       "CreatedDateTime": "2019-11-01T00:00:00",
       "WorkloadArea": "Search",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2bfcc8d6-25a0-4a1f-b135-b71a4462c8d4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "entityTypes",
+          "ChangeType": "Addition",
+          "Description": "Added a new value `externalItem` to the **entityTypes** property.",
+          "Target": "searchRequest"
+        }
+      ],
+      "Id": "2bfcc8d6-25a0-4a1f-b135-b71a4462c8d4",
+      "Cloud": "Prod",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-06-22T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f0153c87-7a38-4750-873a-95b98bbb85af",
+          "ApiChange": "Resource",
+          "ChangedApiName": "resultTemplateOptions",
+          "ChangeType": "Addition",
+          "Description": "Added the [resultTemplateOptions](https://docs.microsoft.com/en-us/graph/api/resources/searchrequest?view=graph-rest-beta) resource to enable search display layouts.",
+          "Target": "resultTemplateOptions"
+        },
+        {
+          "Id": "f0153c87-7a38-4750-873a-95b98bbb85af",
+          "ApiChange": "Resource",
+          "ChangedApiName": "resultTemplates",
+          "ChangeType": "Addition",
+          "Description": "Added the [resultTemplate](https://docs.microsoft.com/en-us/graph/api/resources/searchresultset?view=graph-rest-beta) resource, with the search display layouts schema.",
+          "Target": "resultTemplate"
+        },
+        {
+          "Id": "f0153c87-7a38-4750-873a-95b98bbb85af",
+          "ApiChange": "Property",
+          "ChangedApiName": "resultTemplateId",
+          "ChangeType": "Addition",
+          "Description": "Added the **resultTemplateId** property to the [searchHit](https://docs.microsoft.com/en-us/graph/api/resources/searchhit?view=graph-rest-beta) resource.",
+          "Target": "searchHit"
+        }
+      ],
+      "Id": "f0153c87-7a38-4750-873a-95b98bbb85af",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-06-29T00:00:00",
+      "WorkloadArea": "Search",
+      "SubArea": ""
     }
   ]
 }

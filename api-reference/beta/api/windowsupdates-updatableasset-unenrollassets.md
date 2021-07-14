@@ -32,7 +32,7 @@ One of the following permissions is required to call this API. To learn more, in
 }
 -->
 ``` http
-POST /updatableAssetGroup/members/unenrollAssets
+POST /admin/windows/updates/updatableAssets/unenrollAssets
 ```
 
 ## Request headers
@@ -66,7 +66,7 @@ If successful, this action returns a `202 Accepted` response code. It does not r
 }
 -->
 ``` http
-POST https://graph.microsoft.com/beta/updatableAssetGroup/members/unenrollAssets
+POST https://graph.microsoft.com/beta/admin/windows/updates/updatableAssets/unenrollAssets
 Content-Type: application/json
 
 {

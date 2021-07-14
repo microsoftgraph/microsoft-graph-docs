@@ -48,6 +48,9 @@ A chat is a collection of [chatMessages](chatmessage.md) between one or more par
 |[Add tab to chat](../api/chat-post-tabs.md) | [teamsTab](teamstab.md) | Add (pin) a tab to a chat (and associated meeting).|
 |[Update tab in chat](../api/chat-patch-tabs.md) | [teamsTab](teamstab.md) | Update the properties of a tab in a chat (and associated meeting).|
 |[Remove tab from chat](../api/chat-delete-tabs.md) | None | Remove (unpin) a tab from a chat (and associated meeting).|
+| **Operations** |||
+|[List operations on chat](../api/chat-list-operations.md) | [teamsAsyncOperation](teamsAsyncOperation.md) collection | Get the list of async operations that ran or are running on the chat.|
+|[Get operation on chat](../api/teamsasyncoperation-get.md#example-get-operation-on-chat) | [teamsAsyncOperation](teamsAsyncOperation.md) | Get a single async operation that ran or is running on the chat.|
 
 >**Note:** When using application permissions, be sure you know how you're going to get the chat ID. Because listing chats with application permissions is not supported, 
 not all scenarios are possible. It is possible to get chat IDs with delegated permissions, and from [change notifications for /chats/getAllMessages](../api/subscription-post-subscriptions.md) with application permissions.
@@ -61,6 +64,8 @@ not all scenarios are possible. It is possible to get chat IDs with delegated pe
 | createdDateTime| dateTimeOffset|  Date and time at which the chat was created. Read-only.|
 | lastUpdatedDateTime| dateTimeOffset|  Date and time at which the chat was renamed or list of members were last changed. Read-only.|
 | chatType| [chatType](../resources/chat.md#chattype-values) | Specifies the type of chat. Possible values are:`group`, `oneOnOne` and `meeting`.|
+| viewpoint|[chatViewpoint](../resources/chatviewpoint.md)|Represents caller-specific information about the chat, such as last message read date and time. This property is populated only when the request is made in a delegated context.|
+| webUrl| String | A hyperlink that will go to the chat in Microsoft Teams. This URL should be treated as an opaque blob, and not parsed. Read-only.|
 
 ### chatType values 
 
@@ -79,6 +84,8 @@ not all scenarios are possible. It is possible to get chat IDs with delegated pe
 | members | [conversationMember](conversationmember.md) collection | A collection of all the members in the chat. Nullable. |
 | messages | [chatMessage](chatmessage.md) collection | A collection of all the messages in the chat. Nullable. |
 | permissionGrants| [resourceSpecificPermissionGrant](resourcespecificpermissiongrant.md) collection| A collection of permissions granted to apps for the chat.|
+| operations | [teamsAsyncOperation](teamsasyncoperation.md) collection | A collection of all the Teams async operations that ran or are running on the chat. Nullable. 
+| lastMessagePreview | [chatMessageInfo](chatmessageinfo.md)| Preview of the last message sent in the chat. Null if no messages have been sent in the chat. Currently, only the [list chats](../api/chat-list.md) operation supports this property.|
 
 ## JSON representation
 
@@ -96,7 +103,11 @@ Here is a JSON representation of the resource.
   "topic": "string",
   "createdDateTime": "dateTimeOffset",
   "lastUpdatedDateTime": "dateTimeOffset",
-  "chatType": "String"
+  "chatType": "String",
+  "chatViewpoint": {
+    "@odata.type": "microsoft.graph.chatViewpoint"
+  },
+  "webUrl": "string"
 }
 ```
 

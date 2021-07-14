@@ -72,19 +72,21 @@ mgt-teams-channel-picker {
 ```
 
 ## Events
-| Event | Detail | Description |
-| --- | --- | --- |
-| selectionChanged | The detail contains the currently selected item  of `{channel : `[MicrosoftGraph.Channel](/graph/api/resources/channel)`, team: `[MicrosoftGraph.Team](/graph/api/resources/team)`}` | Fired when user makes a change in selection of a channel. |
+
+Event | When is it emitted | Custom data | Cancelable | Bubbles | Works with custom template
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`selectionChanged` | Fired when user makes a change in selection of a channel | The currently selected item as `{ channel: `[channel](/graph/api/resources/channel)`, team: `[team](/graph/api/resources/team)`}` | No | No | Yes
+
+For more information about handling events, see [events](../customize-components/events.md).
 
 ## Templates
 
- `mgt-teams-channel-picker` supports several [templates](../customize-components/templates.md) that you can use to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.
+`mgt-teams-channel-picker` supports several [templates](../customize-components/templates.md) that you can use to replace certain parts of the component. To specify a template, include a `<template>` element inside a component and set the `data-type` value to one of the following.
 
 | Data type | Data context | Description |
 | --- | --- | --- |
 | loading | null: no data | The template used to render the state of the picker while the request to Microsoft Graph is being made. |
 | error | null: no data| The template used if user search returns no users. |
-
 
 The following example shows how to use the `error` template.
 

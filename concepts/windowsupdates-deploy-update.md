@@ -153,11 +153,11 @@ Content-Type: application/json
 
 ## Step 3: Assign devices to the deployment audience
 
-After a deployment is created, you can assign devices to the [deployment audience](/graph/api/resources/windowsupdates-deploymentaudience). Devices can be assigned directly, or via [updatable asset groups](/graph/api/resources/windowsupdates-updatableassetgroup). Once the deployment audience is successfully updated, Windows Update starts offering the update to the relevant devices according to the deployment settings.
+After a deployment is created, you can assign devices to the [deployment audience](/graph/api/resources/windowsupdates-deploymentaudience). After the deployment audience is successfully updated, Windows Update starts offering the update to the relevant devices according to the deployment settings.
 
-Devices are automatically registered with the service when added to the members or exclusions collections of a deployment audience (i.e. an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) object is automatically created if it does not already exist).
+Devices are automatically registered with the service when added to the members or exclusions collections of a deployment audience (that is, an [azureADDevice](/graph/api/resources/windowsupdates-azureaddevice) object is automatically created if it does not already exist).
 
-Below is an example of adding updatable asset groups and Azure AD devices as members of the deployment audience, while also excluding a specific Azure AD device.
+The follwoing example shows how to add Azure AD devices as members of the deployment audience.
 
 ### Request
 
@@ -168,19 +168,13 @@ Content-type: application/json
 {
     "addMembers": [
         {
-            "@odata.type": "#microsoft.graph.windowsUpdates.updatableAssetGroup",
-            "id": "String (identifier)"
-        },
-        {
             "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
             "id": "String (identifier)"
         },
         {
             "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
             "id": "String (identifier)"
-        }
-    ],
-    "addExclusions": [
+        },
         {
             "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
             "id": "String (identifier)"

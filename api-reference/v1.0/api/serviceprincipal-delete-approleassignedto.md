@@ -28,7 +28,7 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{principal-id}
+DELETE /servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{appRoleAssignment-id}
 ```
 
 > [!NOTE]
@@ -54,16 +54,18 @@ If successful, this method returns `204 No Content` response code. It does not r
 
 Here is an example of the request to delete an app role assignment from the resource service principal.
 
+
 <!-- {
   "blockType": "request",
   "name": "serviceprincipal_delete_approleassignedto"
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{principalId}
+DELETE https://graph.microsoft.com/v1.0/servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{appRoleAssignment-id}
 ```
 
-In this example, `{resource-SP-id}` would be the id of the resource service principal, and `{principalId}` would be the id of the assigned user, group, or client service principal.
+
+In this example, `{resource-SP-id}` is the id of the resource service principal, and `{appRoleAssignment-id}` is the id of the appRoleAssignment object that represents an assignment to the user, group, or client service principal.
 
 ### Response
 

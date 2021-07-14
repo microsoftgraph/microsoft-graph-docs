@@ -21,9 +21,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission Type|Permissions (from least to most privileged)|
 |---------|-------------|
-|Delegated (work or school account)| ChatMember.ReadWrite |
+|Delegated (work or school account)| ChatMember.ReadWrite, Chat.ReadWrite |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application| Not supported. |
+|Application| Chat.Manage.Chat*, ChatMember.ReadWrite.All, Chat.ReadWrite.All |
+
+> **Note**: Permissions marked with * use [resource-specific consent](https://aka.ms/teams-rsc).
 
 <!-- { "blockType": "ignored"} -->
 ```http
@@ -66,7 +68,8 @@ content-type: application/json
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
     "user@odata.bind": "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-    "visibleHistoryStartDateTime": "2019-04-18T23:51:43.255Z"
+    "visibleHistoryStartDateTime": "2019-04-18T23:51:43.255Z",
+    "roles": ["owner"]
 }
 ```
 # [JavaScript](#tab/javascript)
@@ -99,8 +102,7 @@ Here is an example of the response.
 {
  "blockType": "response",
   "truncated": true,
-  "name": "create_conversation_member_with_specific_visibleHistoryStartDateTime",
-  "@odata.type": "Microsoft.Teams.GraphSvc.conversationMember"
+  "name": "create_conversation_member_with_specific_visibleHistoryStartDateTime"
 }
 -->
 ```http
@@ -126,7 +128,8 @@ Content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
-    "user@odata.bind": "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
+    "user@odata.bind": "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5",
+    "roles": ["owner"]
 }
 ```
 
@@ -160,8 +163,7 @@ Here is an example of the response.
 {
  "blockType": "response",
   "truncated": true,
-  "name": "create_conversation_member_with_no_visibleHistoryStartDateTime",
-  "@odata.type": "Microsoft.Teams.GraphSvc.conversationMember"
+  "name": "create_conversation_member_with_no_visibleHistoryStartDateTime"
 }
 -->
 ```http
@@ -188,7 +190,8 @@ content-type: application/json
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
     "user@odata.bind": "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-    "visibleHistoryStartDateTime": "0001-01-01T00:00:00Z"
+    "visibleHistoryStartDateTime": "0001-01-01T00:00:00Z",
+    "roles": ["owner"]
 }
 ```
 # [JavaScript](#tab/javascript)
@@ -221,8 +224,7 @@ Here is an example of the response.
 {
  "blockType": "response",
   "truncated": true,
-  "name": "create_conversation_member_with_all_visibleHistoryStartDateTime",
-  "@odata.type": "Microsoft.Teams.GraphSvc.conversationMember"
+  "name": "create_conversation_member_with_all_visibleHistoryStartDateTime"
 }
 -->
 ```http

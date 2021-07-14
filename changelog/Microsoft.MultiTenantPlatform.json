@@ -1,0 +1,454 @@
+{
+    "changelog": [
+        {
+            "ChangeList": [
+                {
+                    "Id": "e26a0fba-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "workloadStatus",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [workloadStatus](https://docs.microsoft.com/en-us/graph/api/resources/workloadStatus?view=graph-rest-1.0) resource type.",
+                    "Target": "workloadStatus"
+                },
+                {
+                    "Id": "e26c7294-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "tenantStatusInformation",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [tenantStatusInformation](https://docs.microsoft.com/en-us/graph/api/resources/tenantStatusInformation?view=graph-rest-1.0) resource type.",
+                    "Target": "tenantStatusInformation"
+                },
+                {
+                    "Id": "e26ed114-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "tenantContactInformation",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [tenantContactInformation](https://docs.microsoft.com/en-us/graph/api/resources/tenantContactInformation?view=graph-rest-1.0) resource type.",
+                    "Target": "tenantContactInformation"
+                },
+                {
+                    "Id": "e2713711-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "tenantContract",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [tenantContract](https://docs.microsoft.com/en-us/graph/api/resources/tenantContract?view=graph-rest-1.0) resource type.",
+                    "Target": "tenantContract"
+                },
+                {
+                    "Id": "e27399e2-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "managedTenant",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [managedTenant](https://docs.microsoft.com/en-us/graph/api/resources/managedTenant?view=graph-rest-1.0) resource type.",
+                    "Target": "managedTenant"
+                },
+                {
+                    "Id": "e275fb7c-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "conditionalAccessPolicyCoverage",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [conditionalAccessPolicyCoverage](https://docs.microsoft.com/en-us/graph/api/resources/conditionalAccessPolicyCoverage?view=graph-rest-1.0) resource type.",
+                    "Target": "conditionalAccessPolicyCoverage"
+                },
+                {
+                    "Id": "e2785df2-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "managedDeviceCompliance",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [managedDeviceCompliance](https://docs.microsoft.com/en-us/graph/api/resources/managedDeviceCompliance?view=graph-rest-1.0) resource type.",
+                    "Target": "managedDeviceCompliance"
+                },
+                {
+                    "Id": "e27ac063-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "managedDeviceComplianceTrend",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [managedDeviceComplianceTrend](https://docs.microsoft.com/en-us/graph/api/resources/managedDeviceComplianceTrend?view=graph-rest-1.0) resource type.",
+                    "Target": "managedDeviceComplianceTrend"
+                },
+                {
+                    "Id": "e27d2049-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "aggregatedPolicyCompliance",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [aggregatedPolicyCompliance](https://docs.microsoft.com/en-us/graph/api/resources/aggregatedPolicyCompliance?view=graph-rest-1.0) resource type.",
+                    "Target": "aggregatedPolicyCompliance"
+                },
+                {
+                    "Id": "e27f8715-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "windowsDeviceMalwareState",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [windowsDeviceMalwareState](https://docs.microsoft.com/en-us/graph/api/resources/windowsDeviceMalwareState?view=graph-rest-1.0) resource type.",
+                    "Target": "windowsDeviceMalwareState"
+                },
+                {
+                    "Id": "e281e39a-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "windowsProtectionState",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [windowsProtectionState](https://docs.microsoft.com/en-us/graph/api/resources/windowsProtectionState?view=graph-rest-1.0) resource type.",
+                    "Target": "windowsProtectionState"
+                },
+                {
+                    "Id": "e2844633-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "riskyUser",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [riskyUser](https://docs.microsoft.com/en-us/graph/api/resources/riskyUser?view=graph-rest-1.0) resource type.",
+                    "Target": "riskyUser"
+                },
+                {
+                    "Id": "e286aa7f-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "deviceCompliancePolicySettingStateSummary",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [deviceCompliancePolicySettingStateSummary](https://docs.microsoft.com/en-us/graph/api/resources/deviceCompliancePolicySettingStateSummary?view=graph-rest-1.0) resource type.",
+                    "Target": "deviceCompliancePolicySettingStateSummary"
+                },
+                {
+                    "Id": "e2890c17-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "credentialUserRegistrationsSummary",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [credentialUserRegistrationsSummary](https://docs.microsoft.com/en-us/graph/api/resources/credentialUserRegistrationsSummary?view=graph-rest-1.0) resource type.",
+                    "Target": "credentialUserRegistrationsSummary"
+                },
+                {
+                    "Id": "e28b7079-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcDevice",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcDevice](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcDevice?view=graph-rest-1.0) resource type.",
+                    "Target": "cloudPcDevice"
+                },
+                {
+                    "Id": "e28dd266-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcConnection",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcConnection](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcConnection?view=graph-rest-1.0) resource type.",
+                    "Target": "cloudPcConnection"
+                },
+                {
+                    "Id": "e290352a-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "cloudPcOverview",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [cloudPcOverview](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcOverview?view=graph-rest-1.0) resource type.",
+                    "Target": "cloudPcOverview"
+                },
+                {
+                    "Id": "e2929610-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "managedTenantOperationError",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [managedTenantOperationError](https://docs.microsoft.com/en-us/graph/api/resources/managedTenantOperationError?view=graph-rest-1.0) resource type.",
+                    "Target": "managedTenantOperationError"
+                },
+                {
+                    "Id": "e294f82b-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "managedTenantGenericError",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [managedTenantGenericError](https://docs.microsoft.com/en-us/graph/api/resources/managedTenantGenericError?view=graph-rest-1.0) resource type.",
+                    "Target": "managedTenantGenericError"
+                },
+                {
+                    "Id": "e2975ec8-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "managedTenantExecutionError",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [managedTenantExecutionError](https://docs.microsoft.com/en-us/graph/api/resources/managedTenantExecutionError?view=graph-rest-1.0) resource type.",
+                    "Target": "managedTenantExecutionError"
+                },
+                {
+                    "Id": "e299bc7f-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "tenant",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [tenant](https://docs.microsoft.com/en-us/graph/api/resources/tenant?view=graph-rest-1.0) resource type.",
+                    "Target": "tenant"
+                },
+                {
+                    "Id": "e29c2131-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "tenantDetailedInformation",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [tenantDetailedInformation](https://docs.microsoft.com/en-us/graph/api/resources/tenantDetailedInformation?view=graph-rest-1.0) resource type.",
+                    "Target": "tenantDetailedInformation"
+                },
+                {
+                    "Id": "e29e81c0-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "tenantCustomizedInformation",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [tenantCustomizedInformation](https://docs.microsoft.com/en-us/graph/api/resources/tenantCustomizedInformation?view=graph-rest-1.0) resource type.",
+                    "Target": "tenantCustomizedInformation"
+                },
+                {
+                    "Id": "e2a0e366-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "tenantTag",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [tenantTag](https://docs.microsoft.com/en-us/graph/api/resources/tenantTag?view=graph-rest-1.0) resource type.",
+                    "Target": "tenantTag"
+                },
+                {
+                    "Id": "e2a348a2-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "tenantInfo",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [tenantInfo](https://docs.microsoft.com/en-us/graph/api/resources/tenantInfo?view=graph-rest-1.0) resource type.",
+                    "Target": "tenantInfo"
+                },
+                {
+                    "Id": "e2a5a89b-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "managementIntent",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [managementIntent](https://docs.microsoft.com/en-us/graph/api/resources/managementIntent?view=graph-rest-1.0) resource type.",
+                    "Target": "managementIntent"
+                },
+                {
+                    "Id": "e2a80904-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "managementTemplate",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [managementTemplate](https://docs.microsoft.com/en-us/graph/api/resources/managementTemplate?view=graph-rest-1.0) resource type.",
+                    "Target": "managementTemplate"
+                },
+                {
+                    "Id": "e2aa6caf-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "managementAction",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [managementAction](https://docs.microsoft.com/en-us/graph/api/resources/managementAction?view=graph-rest-1.0) resource type.",
+                    "Target": "managementAction"
+                },
+                {
+                    "Id": "e2acce80-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "tenantGroup",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [tenantGroup](https://docs.microsoft.com/en-us/graph/api/resources/tenantGroup?view=graph-rest-1.0) resource type.",
+                    "Target": "tenantGroup"
+                },
+                {
+                    "Id": "e2af3a1d-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "managementActionTenantDeploymentStatus",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [managementActionTenantDeploymentStatus](https://docs.microsoft.com/en-us/graph/api/resources/managementActionTenantDeploymentStatus?view=graph-rest-1.0) resource type.",
+                    "Target": "managementActionTenantDeploymentStatus"
+                },
+                {
+                    "Id": "e2b1922e-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "managementTemplateDetailedInfo",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [managementTemplateDetailedInfo](https://docs.microsoft.com/en-us/graph/api/resources/managementTemplateDetailedInfo?view=graph-rest-1.0) resource type.",
+                    "Target": "managementTemplateDetailedInfo"
+                },
+                {
+                    "Id": "e2b3f765-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "templateParameter",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [templateParameter](https://docs.microsoft.com/en-us/graph/api/resources/templateParameter?view=graph-rest-1.0) resource type.",
+                    "Target": "templateParameter"
+                },
+                {
+                    "Id": "e2b65aa3-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "workloadAction",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [workloadAction](https://docs.microsoft.com/en-us/graph/api/resources/workloadAction?view=graph-rest-1.0) resource type.",
+                    "Target": "workloadAction"
+                },
+                {
+                    "Id": "e2b8bb63-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "setting",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [setting](https://docs.microsoft.com/en-us/graph/api/resources/setting?view=graph-rest-1.0) resource type.",
+                    "Target": "setting"
+                },
+                {
+                    "Id": "e2bb2070-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "managementIntentInfo",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [managementIntentInfo](https://docs.microsoft.com/en-us/graph/api/resources/managementIntentInfo?view=graph-rest-1.0) resource type.",
+                    "Target": "managementIntentInfo"
+                },
+                {
+                    "Id": "e2bd80af-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "managementActionInfo",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [managementActionInfo](https://docs.microsoft.com/en-us/graph/api/resources/managementActionInfo?view=graph-rest-1.0) resource type.",
+                    "Target": "managementActionInfo"
+                },
+                {
+                    "Id": "e2bfe367-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "managementActionDeploymentStatus",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [managementActionDeploymentStatus](https://docs.microsoft.com/en-us/graph/api/resources/managementActionDeploymentStatus?view=graph-rest-1.0) resource type.",
+                    "Target": "managementActionDeploymentStatus"
+                },
+                {
+                    "Id": "e2c24529-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "workloadActionDeploymentStatus",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [workloadActionDeploymentStatus](https://docs.microsoft.com/en-us/graph/api/resources/workloadActionDeploymentStatus?view=graph-rest-1.0) resource type.",
+                    "Target": "workloadActionDeploymentStatus"
+                },
+                {
+                    "Id": "e2c4a7e6-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "tenantRelationship",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [tenantRelationship](https://docs.microsoft.com/en-us/graph/api/resources/tenantRelationship?view=graph-rest-1.0) resource type.",
+                    "Target": "tenantRelationship"
+                },
+                {
+                    "Id": "e2c708d0-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "genericError",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [genericError](https://docs.microsoft.com/en-us/graph/api/resources/genericError?view=graph-rest-1.0) resource type.",
+                    "Target": "genericError"
+                },
+                {
+                    "Id": "e2c96c3f-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "tenantOnboardingStatus",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **tenantOnboardingStatus** enumeration type.",
+                    "Target": "tenantOnboardingStatus"
+                },
+                {
+                    "Id": "e2cbcc30-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "delegatedPrivilegeStatus",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **delegatedPrivilegeStatus** enumeration type.",
+                    "Target": "delegatedPrivilegeStatus"
+                },
+                {
+                    "Id": "e2ce30e9-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "workloadOnboardingStatus",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **workloadOnboardingStatus** enumeration type.",
+                    "Target": "workloadOnboardingStatus"
+                },
+                {
+                    "Id": "e2d0938e-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "managementCategory",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **managementCategory** enumeration type.",
+                    "Target": "managementCategory"
+                },
+                {
+                    "Id": "e2d2f7d9-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "workloadActionCategory",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **workloadActionCategory** enumeration type.",
+                    "Target": "workloadActionCategory"
+                },
+                {
+                    "Id": "e2d55ab4-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "managementParameterValueType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **managementParameterValueType** enumeration type.",
+                    "Target": "managementParameterValueType"
+                },
+                {
+                    "Id": "e2d7b990-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "managementActionStatus",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **managementActionStatus** enumeration type.",
+                    "Target": "managementActionStatus"
+                },
+                {
+                    "Id": "e2da1b3d-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "workloadActionStatus",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **workloadActionStatus** enumeration type.",
+                    "Target": "workloadActionStatus"
+                },
+                {
+                    "Id": "e2dc8317-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "apply",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [apply](https://docs.microsoft.com/en-us/graph/api/managementAction-apply?view=graph-rest-1.0) method to the [managementAction](https://docs.microsoft.com/en-us/graph/api/resources/managementAction?view=graph-rest-1.0) resource.",
+                    "Target": "managementAction"
+                },
+                {
+                    "Id": "e2dee15d-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "tenantSearch",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [tenantSearch](https://docs.microsoft.com/en-us/graph/api/tenantGroup-tenantSearch?view=graph-rest-1.0) method to the [tenantGroup](https://docs.microsoft.com/en-us/graph/api/resources/tenantGroup?view=graph-rest-1.0) resource.",
+                    "Target": "tenantGroup"
+                },
+                {
+                    "Id": "e2e1455b-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "changeDeploymentStatus",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [changeDeploymentStatus](https://docs.microsoft.com/en-us/graph/api/managementActionTenantDeploymentStatus-changeDeploymentStatus?view=graph-rest-1.0) method to the [managementActionTenantDeploymentStatus](https://docs.microsoft.com/en-us/graph/api/resources/managementActionTenantDeploymentStatus?view=graph-rest-1.0) resource.",
+                    "Target": "managementActionTenantDeploymentStatus"
+                },
+                {
+                    "Id": "e2e3a677-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "offboardTenant",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [offboardTenant](https://docs.microsoft.com/en-us/graph/api/tenant-offboardTenant?view=graph-rest-1.0) method to the [tenant](https://docs.microsoft.com/en-us/graph/api/resources/tenant?view=graph-rest-1.0) resource.",
+                    "Target": "tenant"
+                },
+                {
+                    "Id": "e2e60795-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "resetTenantOnboardingStatus",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [resetTenantOnboardingStatus](https://docs.microsoft.com/en-us/graph/api/tenant-resetTenantOnboardingStatus?view=graph-rest-1.0) method to the [tenant](https://docs.microsoft.com/en-us/graph/api/resources/tenant?view=graph-rest-1.0) resource.",
+                    "Target": "tenant"
+                },
+                {
+                    "Id": "e2e86a1c-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "assignTag",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [assignTag](https://docs.microsoft.com/en-us/graph/api/tenantTag-assignTag?view=graph-rest-1.0) method to the [tenantTag](https://docs.microsoft.com/en-us/graph/api/resources/tenantTag?view=graph-rest-1.0) resource.",
+                    "Target": "tenantTag"
+                },
+                {
+                    "Id": "e2ead069-cd2a-11eb-995f-5903f88189f5",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "unassignTag",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [unassignTag](https://docs.microsoft.com/en-us/graph/api/tenantTag-unassignTag?view=graph-rest-1.0) method to the [tenantTag](https://docs.microsoft.com/en-us/graph/api/resources/tenantTag?view=graph-rest-1.0) resource.",
+                    "Target": "tenantTag"
+                }
+            ],
+            "Id": "e267ac74-cd2a-11eb-995f-5903f88189f5",
+            "Cloud": "prd",
+            "Version": "Beta",
+            "CreatedDateTime": "2021-07-13T16:09:23.569Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Multi-tenant management"
+        }
+    ]
+}

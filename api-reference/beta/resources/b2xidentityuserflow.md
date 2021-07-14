@@ -21,18 +21,21 @@ User flows are used to enable a [self-service sign up](/azure/active-directory/e
 
 | Method       | Return Type  |Description|
 |:---------------|:--------|:----------|
-|[List user flows](../api/identitycontainer-list-b2xuserflows.md)|b2xIdentityUserFlow collection|Retrieve all self-service sign up user flows.|
-|[Get user flow](../api/b2xidentityuserflow-get.md)|b2xIdentityUserFlow|Retrieve properties of a self-service sign up user flow.|
-|[Create user flow](../api/identitycontainer-post-b2xuserflows.md)|b2xIdentityUserFlow|Create a new self-service sign up user flow.|
-|[Delete user flow](../api/b2xidentityuserflow-delete.md)|None|Delete a self-service sign up user flow.|
-|[List identity providers](../api/b2xidentityuserflow-list-identityproviders.md)|[identityProvider](../resources/identityProvider.md) collection|Retrieve all identity providers in a self-service sign up user flow.|
-|[Add identity provider](../api/b2xidentityuserflow-post-identityproviders.md)|None|Add an identity provider to a self-service sign up user flow.|
-|[Remove identity provider](../api/b2xidentityuserflow-delete-identityproviders.md)|None|Remove an identity provider from a self-service sign up user flow.|
-|[List user attribute assignments](../api/b2xidentityuserflow-list-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) collection|Retrieve all user attribute assignments in a self-service sign up user flow.|
-|[Create user attribute assignment](../api/b2xidentityuserflow-post-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Create a user attribute assignment in a self-service sign up user flow.|
-|[List languages](../api/b2xidentityuserflow-list-languages.md)|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) collection|Retrieve all languages within a self-service sign up user flow.|
-|[Get API connectors configuration for user flow](../api/b2xidentityuserflow-get-apiConnectorConfiguration.md)|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)| Get the configuration for API connectors used in the self-service sign up user flow. The $expand query parameter is not supported for this method.|
-|[Configure an API connector in a user flow](../api/b2xidentityuserflow-put-apiConnectorConfiguration.md)|None| Configure an API connector for specific steps in a self-service sign up user flow by updating the [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) property.|
+|[List user flows](../api/identitycontainer-list-b2xuserflows.md)|b2xIdentityUserFlow collection|Retrieve all B2X user flows.|
+|[Get user flow](../api/b2xidentityuserflow-get.md)|b2xIdentityUserFlow|Retrieve properties of a B2X user flow.|
+|[Create user flow](../api/identitycontainer-post-b2xuserflows.md)|b2xIdentityUserFlow|Create a new B2X user flow.|
+|[Delete user flow](../api/b2xidentityuserflow-delete.md)|None|Delete a B2X user flow.|
+|[List identity providers](../api/b2xidentityuserflow-list-userflowidentityproviders.md)|[identityProvider](../resources/identityproviderbase.md) collection|Retrieve all identity providers in a B2X user flow.|
+|[Add identity provider](../api/b2xidentityuserflow-userflowidentityproviders-update.md)|None|Add an identity provider to a B2X user flow.|
+|[Remove identity provider](../api/b2xidentityuserflow-delete-userflowidentityproviders.md)|None|Remove an identity provider from a B2X user flow.|
+|[List identity providers](../api/b2xidentityuserflow-list-identityproviders.md) (deprecated)|[identityProvider](../resources/identityProvider.md) collection|Retrieve all identity providers in a B2X user flow.|
+|[Add identity provider](../api/b2xidentityuserflow-post-identityproviders.md) (deprecated)|None|Add an identity provider to a B2X user flow.|
+|[Remove identity provider](../api/b2xidentityuserflow-delete-identityproviders.md) (deprecated)|None|Remove an identity provider from a B2X user flow.|
+|[List user attribute assignments](../api/b2xidentityuserflow-list-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) collection|Retrieve all user attribute assignments in a B2X user flow.|
+|[Create user attribute assignment](../api/b2xidentityuserflow-post-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Create a user attribute assignment in a B2X user flow.|
+|[List languages](../api/b2xidentityuserflow-list-languages.md)|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) collection|Retrieve all languages within a B2X user flow.|
+|[Get API connectors configuration for user flow](../api/b2xidentityuserflow-get-apiConnectorConfiguration.md)|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)| Get the configuration for API connectors used in the user flow. The $expand query parameter is not supported for this method.|
+|[Configure an API connector in a user flow](../api/b2xidentityuserflow-put-apiConnectorConfiguration.md)|None| Configure an API connector for specific steps in a user flow by updating the [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) property.|
 
 ## Properties
 
@@ -47,7 +50,8 @@ User flows are used to enable a [self-service sign up](/azure/active-directory/e
 
 | Relationship       | Type  |Description|
 |:---------------|:--------|:----------|
-|identityProviders|[identityProvider](../resources/identityprovider.md) collection|The identity providers included in the user flow.|
+|userflowIdentityProviders|[identityProviderBase](../resources/identityproviderbase.md) collection|The identity providers included in the user flow.|
+|identityProviders (deprecated)|[identityProvider](../resources/identityprovider.md) collection|The identity providers included in the user flow.|
 |userAttributeAssignments|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) collection|The user attribute assignments included in the user flow.|
 |languages|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) collection|The languages supported for customization within the user flow. Language customization is enabled by default in self-service sign up user flow. You cannot create custom languages in self-service sign up user flows.|
 
@@ -67,6 +71,7 @@ The following is a JSON representation of the resource.
     "id": "String (identifier)",
     "userFlowType": "String",
     "userFlowTypeVersion": "Single",
+    "userflowIdentityProviders": [{"@odata.type": "microsoft.graph.identityProviderBase"}],
     "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}],
     "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}],
     "languages": [{"@odata.type": "microsoft.graph.userFlowLanguageConfiguration"}],

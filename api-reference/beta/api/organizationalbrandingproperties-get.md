@@ -145,9 +145,7 @@ GET https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "blockType": "response"
 } -->
 
 ```http
@@ -303,9 +301,7 @@ Accept-Language: de
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "blockType": "response"
 } -->
 
 ```http

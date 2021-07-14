@@ -2,7 +2,7 @@
 title: "Add a scopedRoleMember"
 description: "Add a new scopedRoleMembership. NOTE: Only the *User account administrator* and *Helpdesk administrator* roles are currently supported for scoped-role memberships."
 localization_priority: Normal
-author: "anandyadavMSFT"
+author: "DougKirschner"
 ms.prod: "directory-management"
 doc_type: apiPageType
 ---
@@ -32,6 +32,7 @@ POST /directory/administrativeUnits/{id}/scopedRoleMembers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required.|
+| Content-type | application/json. Required. |
 
 ## Request body
 In the request body, supply a JSON representation of [scopedRoleMembership](../resources/scopedrolemembership.md) object.

@@ -8,10 +8,25 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var educationUser = new EducationUser
 {
-	DisplayName = "Rogelio Cazares",
-	GivenName = "Rogelio",
-	MiddleName = "Fernando",
-	Surname = "Cazares"
+	RelatedContacts = new List<RelatedContact>()
+	{
+		new RelatedContact
+		{
+			DisplayName = "Father Time",
+			EmailAddress = "father@time.com",
+			MobilePhone = "4251231234",
+			Relationship = ContactRelationship.Guardian,
+			AccessConsent = true
+		},
+		new RelatedContact
+		{
+			DisplayName = "Mother Nature",
+			EmailAddress = "mother@nature.co.uk",
+			MobilePhone = "3251231234",
+			Relationship = ContactRelationship.Parent,
+			AccessConsent = true
+		}
+	}
 };
 
 await graphClient.Education.Users["{educationUser-id}"]

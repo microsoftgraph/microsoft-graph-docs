@@ -144,7 +144,7 @@ HTTP/1.1 202 Accepted
 ##### Request
 
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "message_reply_mime_beta"
 }-->
 

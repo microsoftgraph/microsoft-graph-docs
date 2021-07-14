@@ -25,12 +25,25 @@ For other Microsoft 365 applications (like Azure AD), use [unifiedRoleAssignment
 
 ## Permissions
 
-Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, search for the following permissions in [Permissions](/graph/permissions-reference). 
+Depending on the RBAC provider and the permission type (delegated or application) that is needed, choose from the following table the least privileged permission required to call this API. To learn more, including [taking caution](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) before choosing more privileged permissions, see [Permissions](/graph/permissions-reference). 
 
-|Supported provider      | Delegated (work or school account)  | Delegated (personal Microsoft account) | Application |
-|:-----------------------|:------------------------------------|:---------------------------------------|:------------|
-| Cloud PC | CloudPC.Read.All, CloudPC.ReadWrite.All | Not supported. | CloudPC.Read.All, CloudPC.ReadWrite.All |
-| Intune | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All | Not supported.| DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
+### For Cloud PC provider
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) |  CloudPC.Read.All, CloudPC.ReadWrite.All   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | CloudPC.Read.All, CloudPC.ReadWrite.All  |
+
+### For Device management (Intune) provider
+
+|Permission type      | Permissions (from least to most privileged)              |
+|:--------------------|:---------------------------------------------------------|
+|Delegated (work or school account) |  DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All   |
+|Delegated (personal Microsoft account) | Not supported.    |
+|Application | DeviceManagementRBAC.Read.All, DeviceManagementRBAC.ReadWrite.All |
+
+
 
 ## HTTP request
 
@@ -297,14 +310,34 @@ Content-type: application/json
 ### Example 4: Get a roleAssignmentMultiple in a cloud PC provider
 
 #### Request
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_unifiedroleassignmentmultiple_1"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments/dbe9d288-fd87-41f4-b33d-b498ed207096
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignmentmultiple-1-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-unifiedroleassignmentmultiple-1-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-unifiedroleassignmentmultiple-1-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-unifiedroleassignmentmultiple-1-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.
@@ -342,14 +375,34 @@ Content-type: application/json
 
 The following is an example of the request with the `$expand` query parameter.
 
+
+# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_unifiedroleassignment_3"
 }-->
 
-```http
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/roleManagement/cloudPC/roleAssignments/dbe9d288-fd87-41f4-b33d-b498ed207096?$expand=roleDefinition
 ```
+# [C#](#tab/csharp)
+[!INCLUDE [sample-code](../includes/snippets/csharp/get-unifiedroleassignment-3-csharp-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [JavaScript](#tab/javascript)
+[!INCLUDE [sample-code](../includes/snippets/javascript/get-unifiedroleassignment-3-javascript-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Objective-C](#tab/objc)
+[!INCLUDE [sample-code](../includes/snippets/objc/get-unifiedroleassignment-3-objc-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/get-unifiedroleassignment-3-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
+---
+
 
 #### Response
 > **Note:** The response object shown here might be shortened for readability. All the properties will be returned from an actual call.

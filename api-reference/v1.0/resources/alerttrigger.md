@@ -18,7 +18,7 @@ Contains information about the properties that triggered a detection (properties
 | Property   | Type|Description|
 |:---------------|:--------|:----------|
 |name|String|Name of the property serving as a detection trigger.|
-|type|String|Type of the property in the key:value pair for interpretation. For example, String, Boolean, etc.|
+|type|String|Type of the property in the key:value pair for interpretation. For example, String, Boolean etc.|
 |value|String|Value of the property serving as a detection trigger.|
 
 ## JSON representation
@@ -39,7 +39,6 @@ The following is a JSON representation of the resource.
   "type": "String",
   "value": "String"
 }
-
 ```
 
 ## Example
@@ -50,7 +49,6 @@ The following is a JSON representation of the resource.
   "type": "String",
   "value": "10.154.9.40"
 }
-
 ```
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79

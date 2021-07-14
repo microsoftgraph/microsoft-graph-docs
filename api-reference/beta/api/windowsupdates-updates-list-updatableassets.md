@@ -102,10 +102,6 @@ Content-Type: application/json
 {
   "value": [
     {
-      "@odata.type": "#microsoft.graph.windowsUpdates.updatableAssetGroup",
-      "id": "5c55730b-730b-5c55-0b73-555c0b73555c"
-    },
-    {
       "@odata.type": "#microsoft.graph.windowsUpdates.azureADDevice",
       "id": "983f03cd-03cd-983f-cd03-3f98cd033f98",
       "errors": [],

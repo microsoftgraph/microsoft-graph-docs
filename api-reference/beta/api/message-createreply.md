@@ -167,8 +167,9 @@ Content-type: application/json
 
 ### Example 2: Create a draft message in MIME format to reply to an existing message
 ##### Request
+
 <!-- {
-  "blockType": "request",
+  "blockType": "ignored",
   "name": "message_createReply_mime_v1"
 }-->
 

@@ -70,13 +70,15 @@ To learn more, see [styling components](../customize-components/style.md).
 
 The following events are fired from the control.
 
-| Event | Description |
-| --- | --- |
-| `loginInitiated` | The user clicked the sign in button to start the login process - cancelable.|
-| `loginCompleted` | the login process was successful and the user is now signed in. |
-| `loginFailed` | The user canceled the login process or was unable to sign in.|
-| `logoutInitiated` | The user started to logout - cancelable. |
-| `logoutCompleted` | The user signed out. |
+Event | When is it emitted | Custom data | Cancelable | Bubbles | Works with custom template
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`loginInitiated` | The user clicked the sign in button to start the login process | None | Yes | No | Yes
+`loginCompleted` | The login process was successful and the user is now signed in | None | No | No | Yes
+`loginFailed` | The user canceled the login process or was unable to sign in | None | No | No | Yes
+`logoutInitiated` | The user started to logout | None | Yes | No | Yes
+`logoutCompleted` | The user signed out | None | No | No | Yes
+
+For more information about handling events, see [events](../customize-components/events.md).
 
 ## Templates
 

@@ -107,7 +107,7 @@ Content-Type: application/json
 HTTP/1.1 202 Accepted
 ```
 
-You can unregister a device from the service completely by deleting the device object. When a device is unregistered, it is automatically unenrolled from management by the service for all update categories and removed from all deployment audiences and [updatableAsset](/graph/api/resources/windowsupdates-updatableasset) groups.
+You can unregister a device from the service completely by deleting the device object. When a device is unregistered, it is automatically unenrolled from management by the service for all update categories and removed from every [deploymentAudience](/graph/api/resources/windowsupdates-deploymentaudience) and [updatableAssetGroup](/graph/api/resources/windowsupdates-updatableassetgroup).
 
 ### Request
 

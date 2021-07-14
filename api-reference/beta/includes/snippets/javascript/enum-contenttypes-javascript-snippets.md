@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let contentTypes = await client.api('/sites/{site-id}/lists/{list-id}/contentTypes')
+let contentTypes = await client.api('/sites/{site-id}/contentTypes')
 	.version('beta')
 	.get();
 

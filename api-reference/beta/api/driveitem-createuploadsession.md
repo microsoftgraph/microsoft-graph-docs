@@ -1,22 +1,22 @@
 ---
 author: JeremyKelley
 description: "Create an upload session to allow your app to upload files up to the maximum file size."
-ms.date: 09/10/2017
-title: Resumable file upload
+title: driveItem: createUploadSession
 localization_priority: Normal
-ms.prod: "sharepoint"
+ms.prod: "sites-and-lists"
 doc_type: apiPageType
 ---
-# Upload large files with an upload session
+# driveItem: createUploadSession
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
 Create an upload session to allow your app to upload files up to the maximum file size.
+
 An upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
 
-To upload a file using an upload session, there are two steps:
+To upload a file using an upload session:
 
 1. [Create an upload session](#create-an-upload-session)
 2. [Upload bytes to the upload session](#upload-bytes-to-the-upload-session)
@@ -61,8 +61,10 @@ For example, the `item` property allows setting the following parameters:
 {
   "@microsoft.graph.conflictBehavior": "fail (default) | replace | rename",
   "description": "description",
+  "driveItemSource": { "@odata.type": "microsoft.graph.driveItemSource" },
   "fileSize": 1234,
-  "name": "filename.txt"
+  "name": "filename.txt",
+  "mediaSource": { "@odata.type": "microsoft.graph.mediaSource" }
 }
 ```
 
@@ -412,8 +414,10 @@ Content-Type: application/json
 See the [Error Responses][error-response] topic for details about
 how errors are returned.
 
+[driveItemSource]: ../resources/driveItemSource.md
 [error-response]: /graph/errors
 [item-resource]: ../resources/driveitem.md
+[mediaSource]: ../resources/mediaSource.md
 
 <!--
 {

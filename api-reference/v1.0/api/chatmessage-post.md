@@ -216,6 +216,10 @@ Content-type: application/json
 [!INCLUDE [sample-code](../includes/snippets/objc/post-chatmessage-2-objc-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
+# [Java](#tab/java)
+[!INCLUDE [sample-code](../includes/snippets/java/post-chatmessage-2-java-snippets.md)]
+[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
+
 ---
 
 
@@ -738,6 +742,219 @@ Content-type: application/json
         }
     ],
     "mentions": [],
+    "reactions": []
+}
+```
+
+### Example 7 : @mention a channel in a channel message
+
+#### Request
+The following is an example of the request. For information about how to get a list of channels in a team, see [List channels](../api/channel-list.md).
+
+> Note: **conversationIdentityType** must be set to `channel` to @mention a channel.
+
+<!-- {
+  "blockType": "request",
+  "name": "post_chatmessage_atmentionchannel"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/teams/68a3e365-f7d9-4a56-b499-24332a9cc572/channels/19:0b50940236084d258c97b21bd01917b0@thread.skype/messages
+Content-type: application/json
+
+{
+    "body": {
+        "contentType": "html",
+        "content": "<div><div><at id=\"0\">General</at>&nbsp;Hello there!</div></div>"
+    },
+    "mentions": [
+        {
+            "id": 0,
+            "mentionText": "General",
+            "mentioned": {
+                "conversation": {
+                    "id": "19:0b50940236084d258c97b21bd01917b0@thread.skype",
+                    "displayName": "General",
+                    "conversationIdentityType": "channel"
+                }
+            }
+        }
+    ]
+}
+```
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('68a3e365-f7d9-4a56-b499-24332a9cc572')/channels('19%3A0b50940236084d258c97b21bd01917b0%40thread.skype')/messages/$entity",
+    "id": "1625727486746",
+    "replyToId": null,
+    "etag": "1625727486746",
+    "messageType": "message",
+    "createdDateTime": "2021-07-08T06:58:06.746Z",
+    "lastModifiedDateTime": "2021-07-08T06:58:06.746Z",
+    "lastEditedDateTime": null,
+    "deletedDateTime": null,
+    "subject": null,
+    "summary": null,
+    "chatId": null,
+    "importance": "normal",
+    "locale": "en-us",
+    "webUrl": "https://teams.microsoft.com/l/message/19%3A0b50940236084d258c97b21bd01917b0%40thread.skype/1625727486746?groupId=68a3e365-f7d9-4a56-b499-24332a9cc572&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1625727486746&parentMessageId=1625727486746",
+    "policyViolation": null,
+    "eventDetail": null,
+    "from": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+            "displayName": "Robin Kline",
+            "userIdentityType": "aadUser"
+        }
+    },
+    "body": {
+        "contentType": "html",
+        "content": "<div><div><at id=\"0\">General</at>&nbsp;Hello there!</div></div>"
+    },
+    "channelIdentity": {
+        "teamId": "68a3e365-f7d9-4a56-b499-24332a9cc572",
+        "channelId": "19:0b50940236084d258c97b21bd01917b0@thread.skype"
+    },
+    "attachments": [],
+    "mentions": [
+        {
+            "id": 0,
+            "mentionText": "General",
+            "mentioned": {
+                "application": null,
+                "device": null,
+                "user": null,
+                "tag": null,
+                "conversation": {
+                    "id": "19:0b50940236084d258c97b21bd01917b0@thread.skype",
+                    "displayName": "General",
+                    "conversationIdentityType": "channel"
+                }
+            }
+        }
+    ],
+    "reactions": []
+}
+```
+
+### Example 8 : @mention a team in a channel message
+
+#### Request
+The following is an example of the request.
+
+> Note: **conversationIdentityType** must be set to `team` to @mention a team.
+
+<!-- {
+  "blockType": "request",
+  "name": "post_chatmessage_atmentionteam"
+}-->
+```http
+POST https://graph.microsoft.com/v1.0/teams/68a3e365-f7d9-4a56-b499-24332a9cc572/channels/19:0b50940236084d258c97b21bd01917b0@thread.skype/messages
+Content-type: application/json
+
+{
+    "body": {
+        "contentType": "html",
+        "content": "<div><div><at id=\"0\">GraphTesting</at>&nbsp;Hello team</div></div>"
+    },
+    "mentions": [
+        {
+            "id": 0,
+            "mentionText": "GraphTesting",
+            "mentioned": {
+                "conversation": {
+                    "id": "68a3e365-f7d9-4a56-b499-24332a9cc572",
+                    "displayName": "GraphTesting",
+                    "conversationIdentityType": "team"
+                }
+            }
+        }
+    ],
+    "reactions": []
+}
+```
+
+#### Response
+
+The following is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chatMessage"
+} -->
+```http
+HTTP/1.1 201 Created
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('68a3e365-f7d9-4a56-b499-24332a9cc572')/channels('19%3A0b50940236084d258c97b21bd01917b0%40thread.skype')/messages/$entity",
+    "id": "1625727671938",
+    "replyToId": null,
+    "etag": "1625727671938",
+    "messageType": "message",
+    "createdDateTime": "2021-07-08T07:01:11.938Z",
+    "lastModifiedDateTime": "2021-07-08T07:01:11.938Z",
+    "lastEditedDateTime": null,
+    "deletedDateTime": null,
+    "subject": null,
+    "summary": null,
+    "chatId": null,
+    "importance": "normal",
+    "locale": "en-us",
+    "webUrl": "https://teams.microsoft.com/l/message/19%3A0b50940236084d258c97b21bd01917b0%40thread.skype/1625727671938?groupId=68a3e365-f7d9-4a56-b499-24332a9cc572&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1625727671938&parentMessageId=1625727671938",
+    "policyViolation": null,
+    "eventDetail": null,
+    "from": {
+        "application": null,
+        "device": null,
+        "user": {
+            "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+            "displayName": "Robin Kline",
+            "userIdentityType": "aadUser"
+        }
+    },
+    "body": {
+        "contentType": "html",
+        "content": "<div><div><at id=\"0\">GraphTesting</at>&nbsp;Hello team</div></div>"
+    },
+    "channelIdentity": {
+        "teamId": "68a3e365-f7d9-4a56-b499-24332a9cc572",
+        "channelId": "19:0b50940236084d258c97b21bd01917b0@thread.skype"
+    },
+    "attachments": [],
+    "mentions": [
+        {
+            "id": 0,
+            "mentionText": "GraphTesting",
+            "mentioned": {
+                "application": null,
+                "device": null,
+                "user": null,
+                "tag": null,
+                "conversation": {
+                    "id": "68a3e365-f7d9-4a56-b499-24332a9cc572",
+                    "displayName": "GraphTesting",
+                    "conversationIdentityType": "team"
+                }
+            }
+        }
+    ],
     "reactions": []
 }
 ```

@@ -45,7 +45,7 @@ MSGraphAccessReviewScheduleSettings *settings = [[MSGraphAccessReviewScheduleSet
 MSGraphPatternedRecurrence *recurrence = [[MSGraphPatternedRecurrence alloc] init];
 MSGraphRecurrencePattern *pattern = [[MSGraphRecurrencePattern alloc] init];
 [pattern setType: [MSGraphRecurrencePatternType absoluteMonthly]];
-[pattern setDayOfMonth:@"5"];
+[pattern setDayOfMonth: 5];
 [pattern setInterval: 3];
 [recurrence setPattern:pattern];
 MSGraphRecurrenceRange *range = [[MSGraphRecurrenceRange alloc] init];

@@ -30,7 +30,7 @@ The assignment APIs are exposed in the class namespace.
 |[Get assignment](../api/educationassignment-get.md) | [educationAssignment](educationassignment.md) |Read properties and relationships of an **educationAssignment** object.|
 |[Update](../api/educationassignment-update.md) | [educationAssignment](educationassignment.md)	|Update an **educationAssignment** object. |
 |[Delete](../api/educationassignment-delete.md) | None |Delete an **educationAssignment** object. |
-|[Add categories](../api/educationassignment-add-categories.md) |[educationCategory](educationcategory.md) | Assign an **educationCategory** belonging to the class to this assignment.|
+|[Add categories](../api/educationassignment-post-categories.md) |[educationCategory](educationcategory.md) | Assign an **educationCategory** belonging to the class to this assignment.|
 |[Remove category](../api/educationassignment-remove-category.md) |None| Remove an **educationCategory** belonging to the class from this assignment.|
 |[Attach rubric](../api/educationassignment-put-rubric.md)|None|Attach an existing **educationRubric** to this assignment.|
 |[Remove rubric](../api/educationassignment-delete-rubric.md)|None|Detach the **educationRubric** from this assignment.|

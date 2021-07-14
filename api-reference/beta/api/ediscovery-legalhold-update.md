@@ -101,9 +101,7 @@ Content-length: 295
 ### Response
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.ediscovery.legalHold"
+  "blockType": "response"
 }
 -->
 

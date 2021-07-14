@@ -11,6 +11,76 @@ author: "MSGraphDocsvTeam"
 
 Namespace: microsoft.graph
 
+### synchronizationSecret values
+
+|Member|
+|:----|
+|None|
+|UserName|
+|Password|
+|SecretToken|
+|AppKey|
+|BaseAddress|
+|ClientIdentifier|
+|ClientSecret|
+|SingleSignOnType|
+|Sandbox|
+|Url|
+|Domain|
+|ConsumerKey|
+|ConsumerSecret|
+|TokenKey|
+|TokenExpiration|
+|Oauth2AccessToken|
+|Oauth2AccessTokenCreationTime|
+|Oauth2RefreshToken|
+|SyncAll|
+|InstanceName|
+|Oauth2ClientId|
+|Oauth2ClientSecret|
+|CompanyId|
+|UpdateKeyOnSoftDelete|
+|SynchronizationSchedule|
+|SystemOfRecord|
+|SandboxName|
+|EnforceDomain|
+|SyncNotificationSettings|
+|SkipOutOfScopeDeletions|
+|Oauth2AuthorizationCode|
+|Oauth2RedirectUri|
+|ApplicationTemplateIdentifier|
+|Server|
+|PerformInboundEntitlementGrants|
+|HardDeletesEnabled|
+|SyncAgentCompatibilityKey|
+|SyncAgentADContainer|
+|ValidateDomain|
+|TestReferences|
+
+### filterMode values
+
+|Member|
+|:---|
+|include|
+|exclude|
+
+### lifecycleEventType values
+
+|Member|
+|:---|
+|missed|
+|subscriptionRemoved|
+|reauthorizationRequired|
+
+### changeType values
+
+|Member|
+|:---|
+|created|
+|updated|
+|deleted|
+
+
 ### countryLookupMethodType values
 
 |Member|
@@ -306,14 +376,6 @@ Namespace: microsoft.graph
 |passwordlessCapable|
 |mfaCapable|
 
-### authenticatorAppFeatureSettings values 
-
-
-
-|Member|
-|:---|
-|requireNumberMatching|
-|unknownFutureValue|
 
 ### authMethodsType values 
 
@@ -820,6 +882,7 @@ Namespace: microsoft.graph
 |list|
 |listItem|
 |drive|
+|unknownFutureValue|
 
 ### searchAlterationType values
 
@@ -895,6 +958,15 @@ Namespace: microsoft.graph
 |sunny|
 |unknownFutureValue|
 
+### timeCardState values
+
+|Member|
+|:---|
+|clockedIn|
+|onBreak|
+|clockedOut|
+|unknownFutureValue|
+
 ### scheduleChangeState values
 
 | Member
@@ -923,14 +995,29 @@ Namespace: microsoft.graph
 
 ### workforceIntegrationSupportedEntities values
 
+|Member|
+|:---|
+|none|
+|shift|
+|swapRequest|
+|userShiftPreferences|
+|openShift|
+|openShiftRequest|
+|offerShiftRequest|
+|unknownFutureValue|
+|timeCard|
+|timeOffReason|
+|timeOff|
+|timeOffRequest|
+
+### confirmedBy values
+
 | Member
-|:----------------------------
-|none
-|shift
-|swapRequest
-|openShift
-|openShiftRequest
-|userShiftPreferences
+|:-----------------
+| none|
+| user|
+| manager|
+| unknownFutureValue|
 
 ### timeZoneStandard values
 
@@ -2240,3 +2327,145 @@ Possible values for user account types (group membership), per Windows definitio
 |:---|
 |principal|
 |unknownFutureValue|
+
+### cloudPcAuditActivityOperationType values 
+
+|Member|
+|:---|
+|create|
+|delete|
+|patch|
+|other|
+
+### cloudPcAuditActivityResult values 
+
+|Member|
+|:---|
+|success|
+|clientError|
+|failure|
+|timeout|
+|other|
+
+### cloudPcAuditActorType values 
+
+|Member|
+|:---|
+|itPro|
+|application|
+|partner|
+|unknown|
+
+### cloudPcAuditCategory values 
+
+|Member|
+|:---|
+|cloudPC|
+|other|
+
+### postType values 
+
+|Member|
+|:---|
+|regular|
+|quick|
+|strategic|
+|unknownFutureValue|
+
+### serviceHealthClassificationType values 
+
+|Member|
+|:---|
+|advisory|
+|incident|
+|unknownFutureValue|
+
+### serviceHealthOrigin values 
+
+|Member|
+|:---|
+|microsoft|
+|thirdParty|
+|customer|
+|unknownFutureValue|
+
+### serviceHealthStatus values 
+
+|Member|
+|:---|
+|serviceOperational|
+|investigating|
+|restoringService|
+|verifyingService|
+|serviceRestored|
+|postIncidentReviewPublished|
+|serviceDegradation|
+|serviceInterruption|
+|extendedRecovery|
+|falsePositive|
+|investigationSuspended|
+|resolved|
+|mitigatedExternal|
+|mitigated|
+|resolvedExternal|
+|confirmed|
+|reported|
+|unknownFutureValue|
+
+### serviceUpdateCategory values 
+
+|Member|
+|:---|
+|preventOrFixIssue|
+|planForChange|
+|stayInformed|
+|unknownFutureValue|
+
+### serviceUpdateSeverity values 
+
+|Member|
+|:---|
+|normal|
+|high|
+|critical|
+|unknownFutureValue|
+
+### teamworkTagType values
+
+|Member| Value | Description               |
+|:---|:---- | :------------------------ |
+|standard| 0     |Default type for a tag. Tags of type standard can be managed in the team by members who have permissions.|
+
+### teamworkApplicationIdentityType values 
+
+|Member|
+|:---|
+|aadApplication|
+|bot|
+|tenantBot|
+|office365Connector|
+|outgoingWebhook|
+|unknownFutureValue|
+
+### teamworkConversationIdentityType values 
+
+|Member|
+|:---|
+|team|
+|channel|
+|chat|
+|unknownFutureValue|
+
+### teamworkUserIdentityType values 
+
+|Member|
+|:---|
+|aadUser|
+|onPremiseAadUser|
+|anonymousGuest|
+|federatedUser|
+|personalMicrosoftAccountUser|
+|skypeUser|
+|phoneUser|
+|unknownFutureValue|
+

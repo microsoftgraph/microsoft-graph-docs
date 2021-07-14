@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-In Azure AD, a mobility management policy represents an auto-enrollment configuration for a mobility management (MDM or MAM) application. These policies are only applicable to devices based on Windows 10 OS and its derivatives (Surface Hub, Hololens etc.). [Auto-enrollment](https://docs.microsoft.com/windows/client-management/mdm/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal) enables organizations to automatically enroll devices into their chosen mobility management application as part of [Azure AD join](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join) or [Azure AD register](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-register) process on Windows 10 devices.
+In Azure AD, a mobility management policy represents an auto-enrollment configuration for a mobility management (MDM or MAM) application. These policies are only applicable to devices based on Windows 10 OS and its derivatives (Surface Hub, Hololens etc.). [Auto-enrollment](/windows/client-management/mdm/azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal) enables organizations to automatically enroll devices into their chosen mobility management application as part of [Azure AD join](/azure/active-directory/devices/concept-azure-ad-join) or [Azure AD register](/azure/active-directory/devices/concept-azure-ad-register) process on Windows 10 devices.
 
 ## Methods
 
@@ -42,6 +42,7 @@ In Azure AD, a mobility management policy represents an auto-enrollment configur
 |discoveryUrl|String|Discovery URL of the mobility management application.|
 |displayName|String|Display name of the mobility management application.|
 |id|String|Object Id of the mobility management application.|
+|isValid|Boolean|Whether policy is valid. Invalid policies may not be updated and should be deleted.|
 |termsOfUseUrl|String|Terms of Use URL of the mobility management application.|
 
 ## Relationships
@@ -69,6 +70,7 @@ The following is a JSON representation of the resource.
   "description": "String",
   "discoveryUrl": "String",
   "displayName": "String",
+  "isValid": "Boolean",
   "termsOfUseUrl": "String"
 }
 ```

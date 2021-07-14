@@ -1,7 +1,7 @@
 ---
 title: "List conversationMembers"
 description: "Retrieve list of chat or channel members."
-author: "clearab"
+author: "akjo"
 localization_priority: Priority
 ms.prod: "microsoft-teams"
 doc_type: apiPageType
@@ -28,8 +28,6 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported.|
 |Application| Not supported. |
 
-> [!NOTE]
-> Before calling this API with application permissions, you must request access. For details, see [Protected APIs in Microsoft Teams](/graph/teams-protected-apis).
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->

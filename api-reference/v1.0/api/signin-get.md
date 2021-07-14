@@ -23,6 +23,16 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported   |
 |Application | AuditLog.Read.All and Directory.Read.All |
 
+Apps must be [properly registered](/azure/active-directory/active-directory-reporting-api-prerequisites-azure-portal) to Azure AD.
+
+In addition to the delegated permissions, the signed-in user needs to belong to one of the following directory roles that allow them to read sign-in reports. To learn more about directory roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference):
++ Global Administrator
++ Global Reader
++ Reports Reader
++ Security Administrator
++ Security Operator
++ Security Reader
+
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->

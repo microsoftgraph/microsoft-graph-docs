@@ -2,7 +2,7 @@
 title: "administrativeUnit resource type"
 description: "An administrative unit provides a conceptual container for User and Group directory objects."
 localization_priority: Normal
-author: "anandyadavMSFT"
+author: "DougKirschner"
 ms.prod: "directory-management"
 doc_type: resourcePageType
 ---

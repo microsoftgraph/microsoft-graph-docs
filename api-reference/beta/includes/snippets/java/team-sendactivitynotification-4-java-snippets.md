@@ -7,30 +7,33 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 TeamworkActivityTopic topic = new TeamworkActivityTopic();
-topic.source = TeamworkActivityTopicSource.TEXT;
-topic.value = "Deployment Approvals Channel";
-topic.webUrl = "https://teams.microsoft.com/l/message/19:448cfd2ac2a7490a9084a9ed14cttr78c@thread.skype/1605223780000?tenantId=c8b1bf45-3834-4ecf-971a-b4c755ee677d&groupId=d4c2a937-f097-435a-bc91-5c1683ca7245&parentMessageId=1605223771864&teamName=Approvals&channelName=Azure%20DevOps&createdTime=1605223780000";
+topic.source = TeamworkActivityTopicSource.ENTITY_URL;
+topic.value = "https://graph.microsoft.com/beta/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7";
 
-String activityType = "deploymentApprovalRequired";
+String activityType = "pendingFinanceApprovalRequests";
 
 ItemBody previewText = new ItemBody();
-previewText.content = "New deployment requires your approval";
+previewText.content = "Internal spending team has a pending finance approval requests";
+
+TeamMembersNotificationRecipient recipient = new TeamMembersNotificationRecipient();
+recipient.teamId = "e8bece96-d393-4b9b-b8da-69cedef1a7e7";
 
 LinkedList<KeyValuePair> templateParametersList = new LinkedList<KeyValuePair>();
 KeyValuePair templateParameters = new KeyValuePair();
-templateParameters.name = "deploymentId";
-templateParameters.value = "6788662";
+templateParameters.name = "pendingRequestCount";
+templateParameters.value = "5";
 
 templateParametersList.add(templateParameters);
 
-graphClient.users("{userId}").teamwork()
-	.sendActivityNotification(UserTeamworkSendActivityNotificationParameterSet
+graphClient.teams("e8bece96-d393-4b9b-b8da-69cedef1a7e7")
+	.sendActivityNotification(TeamSendActivityNotificationParameterSet
 		.newBuilder()
 		.withTopic(topic)
 		.withActivityType(activityType)
 		.withChainId(null)
 		.withPreviewText(previewText)
 		.withTemplateParameters(templateParametersList)
+		.withRecipient(recipient)
 		.build())
 	.buildRequest()
 	.post();

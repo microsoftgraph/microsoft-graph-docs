@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 Remove a member from a [directoryRole](../resources/directoryrole.md).
 
-> [!Note]
-> You can use both the object ID and template ID of the **directoryRole** with this API. The template ID of a built-in role is immutable and can be seen in the role description on the Azure portal. For details, see [Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
+You can use both the object ID and template ID of the **directoryRole** with this API. The template ID of a built-in role is immutable and can be seen in the role description on the Azure portal. For details, see [Role template IDs](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#role-template-ids).
 
 ## Permissions
 
@@ -32,7 +31,8 @@ One of the following permissions is required to call this API. To learn more, in
 <!-- { "blockType": "ignored" } -->
 
 ```http
-DELETE /directoryRoles/{id}/members/{id}/$ref
+DELETE /directoryRoles/{role-id}/members/{id}/$ref
+DELETE /directoryRoles/roleTemplateId={roleTemplateId}/members/{id}/$ref
 ```
 
 ## Request headers
@@ -47,15 +47,15 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns `204 No Content` response code. It does not return anything in the response body.
+If successful, this method returns a `204 No Content` response code. It does not return anything in the response body.
 
 ## Examples
 
-### Example 1: Remove directory role member using role objectId
+### Example 1: Remove directory role member using role id
 
-##### Request
+#### Request
 
-Here is an example of the request.
+In this example, replace `f8e85ed8-f66f-4058-b170-3efae8b9c6e5` with the **id** value of the directory role and `bb165b45-151c-4cf6-9911-cd7188912848` with the **id** value of the user or directory object that you wish to unassign from the directory role.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -64,7 +64,7 @@ Here is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/directoryRoles/{role-objectId}/members/{user-id}/$ref
+DELETE https://graph.microsoft.com/v1.0/directoryRoles/f8e85ed8-f66f-4058-b170-3efae8b9c6e5/members/bb165b45-151c-4cf6-9911-cd7188912848/$ref
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-directoryobject-from-directoryrole-objectid-csharp-snippets.md)]
@@ -85,9 +85,7 @@ DELETE https://graph.microsoft.com/v1.0/directoryRoles/{role-objectId}/members/{
 ---
 
 
-##### Response
-
-Here is an example of the response. 
+#### Response
 <!-- {
   "blockType": "response",
   "truncated": true
@@ -97,11 +95,11 @@ Here is an example of the response.
 HTTP/1.1 204 No Content
 ```
 
-### Example 2: Remove directory role member using role templateId
+### Example 2: Remove directory role member using roleTemplateId
 
-##### Request
+#### Request
 
-Here is an example of the request.
+The following is an example of the request. Replace `9f06204d-73c1-4d4c-880a-6edb90606fd8` with the value of your roleTemplateId and `bb165b45-151c-4cf6-9911-cd7188912848` with the **id** value of your user of directory object.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -110,7 +108,7 @@ Here is an example of the request.
 }-->
 
 ```http
-DELETE https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId={role-templateId}/members/{user-id}/$ref
+DELETE https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId=9f06204d-73c1-4d4c-880a-6edb90606fd8/members/bb165b45-151c-4cf6-9911-cd7188912848/$ref
 ```
 # [C#](#tab/csharp)
 [!INCLUDE [sample-code](../includes/snippets/csharp/delete-directoryobject-from-directoryrole-templateid-csharp-snippets.md)]
@@ -131,9 +129,7 @@ DELETE https://graph.microsoft.com/v1.0/directoryRoles/roleTemplateId={role-temp
 ---
 
 
-##### Response
-
-Here is an example of the response. 
+#### Response
 <!-- {
   "blockType": "response",
   "truncated": true

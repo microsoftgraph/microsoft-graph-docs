@@ -9,7 +9,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 var chatMessage = new ChatMessage
 {
 	CreatedDateTime = DateTimeOffset.Parse("2019-02-04T19:58:15.511Z"),
-	From = new IdentitySet
+	From = new ChatMessageFromIdentitySet
 	{
 		User = new Identity
 		{

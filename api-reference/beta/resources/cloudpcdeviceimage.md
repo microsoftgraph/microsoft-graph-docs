@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the image resource on cloud PC.
+Represents the image resource on a cloud PC.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -26,12 +26,13 @@ Represents the image resource on cloud PC.
 |[Create cloudPcDeviceImage](../api/virtualendpoint-post-deviceimages.md)|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md)|Create a new [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object.|
 |[Delete cloudPcDeviceImage](../api/cloudpcdeviceimage-delete.md)|None|Delete a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object.|
 |[getSourceImages](../api/cloudpcdeviceimage-getsourceimages.md)|[cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) collection|Get [cloudPcSourceDeviceImage](../resources/cloudpcsourcedeviceimage.md) objects.|
+|[Reupload cloudPcDeviceImage](../api/cloudpcdeviceimage-reupload.md)|None|Reupload a [cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) object that failed to upload.|
 
 ## Properties
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for the image resource on cloud PC. Read-only.|
+|id|String|Unique identifier for the image resource on the cloud PC. Read-only.|
 |sourceImageResourceId|String|The ID of the source image resource on Azure. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
 |displayName|String|The image's display name.|
 |version|String|The image version. For example: 0.0.1, 1.5.13.|
@@ -46,7 +47,7 @@ Represents the image resource on cloud PC.
 |Member|Description|
 |:---|:---|
 |pending|The image upload is in progress.|
-|ready|The image is ready for use on Cloud PCs.|
+|ready|The image is ready for use on cloud PCs.|
 |failed|The image couldn’t be uploaded. |
 
 ### cloudPcDeviceImageStatusDetails values

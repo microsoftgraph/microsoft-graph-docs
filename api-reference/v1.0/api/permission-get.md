@@ -1,7 +1,7 @@
 ---
 author: JeremyKelley
 ms.date: 09/10/2017
-title: Get permissions
+title: Get permission
 localization_priority: Normal
 description: "Return the effective sharing permission for a particular permission resource."
 ms.prod: ""
@@ -17,8 +17,6 @@ Effective permissions of an item can come from two sources: permissions set dire
 
 Callers can differentiate if the permission is inherited or not by checking the `inheritedFrom` property.
 This property is an [ItemReference](../resources/itemreference.md) resource referencing the ancestor that the permission is inherited from.
-
-SharePoint permission levels set on an item are returned with an 'SP' prefix. For example, SP.View Only, SP.Limited Access, SP.View Web Analytics Data. See [Full list of SharePoint roles](/SharePoint/sites/user-permissions-and-permission-levels#section1).
 
 ## Permissions
 

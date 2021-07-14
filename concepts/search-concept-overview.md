@@ -35,6 +35,7 @@ The Microsoft Search API supports searching the following content in the Microso
 
 - Outlook email [messages](/graph/api/resources/message) and calendar [events](/graph/api/resources/event) objects
 - SharePoint and OneDrive files and folders ([driveItem](/graph/api/resources/driveitem)), [lists](/graph/api/resources/list), [listItems](/graph/api/resources/listitem), [sites](/graph/api/resources/site) and [drives](/graph/api/resources/drive)
+- [People](/graph/api/resources/person) in the organisation who are most relevant to a user
 - Content ingested throught the Graph Connectors platform : [externalItems](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) (preview)
 
 ## API reference
@@ -55,8 +56,12 @@ Looking for the API reference for this service?
   - [Search calendar events](search-concept-events.md)
   - [Search content in Sharepoint and OneDrive](search-concept-files.md)
   - [Search external content](search-concept-custom-types.md) (preview)
+  - [Search person](search-concept-person.md) (preview)
   - [Sort search results](search-concept-sort.md) (preview)
   - [Refine search results](search-concept-aggregation.md) (preview)
+  - [Request spelling correction](search-concept-speller.md) (preview)
+  - [Search display layout](search-concept-display-layout.md) (preview)
+ 
   
 - Explore the search APIs in  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Download the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub.

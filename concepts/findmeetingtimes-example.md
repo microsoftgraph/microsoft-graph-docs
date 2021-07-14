@@ -17,7 +17,7 @@ during the work hours of the organizer and attendees, and suggestions where requ
 In Microsoft 365, work hours and time zones are configurable per mailbox. The **findMeetingTimes** action handles time zone variations among the organizer 
 and attendees. By default, **findMeetingTimes** returns suggestions in UTC. You can use the following request header to have **findMeetingTimes** return suggestions 
 expressed in a specific time zone.
-```
+``` http
 Prefer: outlook.timezone="{time-zone-string}}"
 ```
 

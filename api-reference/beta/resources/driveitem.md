@@ -1,10 +1,9 @@
 ---
 author: JeremyKelley
 description: "The driveItem resource represents a file, folder, or other item stored in a drive."
-ms.date: 09/10/2017
-title: DriveItem
+title: driveItem
 localization_priority: Normal
-ms.prod: "sharepoint"
+ms.prod: "sites-and-lists"
 doc_type: resourcePageType
 ---
 
@@ -44,7 +43,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
        "optionalProperties": ["cTag", "children", "folder", "file", "image", "audio", "video",
        "location", "deleted", "specialFolder", "photo", "thumbnails", "searchResult", "remoteItem",
        "shared", "content", "@microsoft.graph.conflictBehavior", "@microsoft.graph.downloadUrl", "@content.sourceUrl",
-       "sharepointIds"],
+       "sharepointIds", "source", "media"],
        "keyProperty": "id", "openType": true } -->
 
 ```json
@@ -59,6 +58,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
   "folder": { "@odata.type": "microsoft.graph.folder" },
   "image": { "@odata.type": "microsoft.graph.image" },
   "location": { "@odata.type": "microsoft.graph.geoCoordinates" },
+  "media": { "@odata.type": "microsoft.graph.media" },
   "package": { "@odata.type": "microsoft.graph.package" },
   "pendingOperations": { "@odata.type": "microsoft.graph.pendingOperations" },
   "photo": { "@odata.type": "microsoft.graph.photo" },
@@ -69,6 +69,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
   "shared": { "@odata.type": "microsoft.graph.shared" },
   "sharepointIds": { "@odata.type": "microsoft.graph.sharepointIds" },
   "size": 1024,
+  "source": { "@odata.type": "microsoft.graph.driveItemSource" },
   "specialFolder": { "@odata.type": "microsoft.graph.specialFolder" },
   "video": { "@odata.type": "microsoft.graph.video" },
   "webDavUrl": "string",
@@ -121,6 +122,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 | lastModifiedBy       | [identitySet][]    | Identity of the user, device, and application which last modified the item. Read-only.
 | lastModifiedDateTime | DateTimeOffset     | Date and time the item was last modified. Read-only.
 | location             | [geoCoordinates][] | Location metadata, if the item has location data. Read-only.
+| media                | [media][]          | Information about the media (audio or video) item. Read-write. Only on OneDrive for Business and SharePoint.
 | name                 | String             | The name of the item (filename and extension). Read-write.
 | package              | [package][]        | If present, indicates that this item is a package instead of a folder or file. Packages are treated like files in some contexts and folders in others. Read-only.
 | parentReference      | [itemReference][]  | Parent information, if the item has a parent. Read-write.
@@ -134,6 +136,7 @@ The **driveItem** resource is derived from [**baseItem**][baseItem] and inherits
 | sharepointIds        | [sharepointIds][]  | Returns identifiers useful for SharePoint REST compatibility. Read-only.
 | size                 | Int64              | Size of the item in bytes. Read-only.
 | specialFolder        | [specialFolder][]  | If the current item is also available as a special folder, this facet is returned. Read-only.
+| source               | [driveItemSource][]| Information about the drive item source. Read-only. Only on OneDrive for Business and SharePoint.
 | video                | [video][]          | Video metadata, if the item is a video. Read-only.
 | webDavUrl            | String             | WebDAV compatible URL for the item.
 | webUrl               | String             | URL that displays the resource in the browser. Read-only.
@@ -221,6 +224,7 @@ In OneDrive for Business or SharePoint document libraries, the **cTag** property
 [baseItem]: baseitem.md
 [deleted]: deleted.md
 [download-format]: ../api/driveitem-get-content-format.md
+[driveItemSource]: driveItemSource.md
 [driveItemVersion]: driveitemversion.md
 [file]: file.md
 [fileSystemInfo]: filesysteminfo.md
@@ -236,6 +240,7 @@ In OneDrive for Business or SharePoint document libraries, the **cTag** property
 [geoCoordinates]: geocoordinates.md
 [List activities]: ../api/activities-list.md
 [listItem]: listitem.md
+[media]: media.md
 [package]: package.md
 [permission]: permission.md
 [pendingOperations]: pendingoperations.md

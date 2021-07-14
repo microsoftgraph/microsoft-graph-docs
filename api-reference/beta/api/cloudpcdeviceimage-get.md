@@ -1,5 +1,5 @@
 ---
-title: "Get cloudPcDeviceImages"
+title: "Get cloudPcDeviceImage"
 description: "Read the properties and relationships of a cloudPcDeviceImage object."
 author: "AshleyYangSZ"
 localization_priority: Normal

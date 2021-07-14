@@ -81,9 +81,7 @@ POST https://graph.microsoft.com/beta/me/drive/items/{id}/workbook/names/{name}/
 ##### Response
 Here is an example of the response. 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 200 OK

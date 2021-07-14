@@ -1,7 +1,7 @@
 ---
 title: "meetingAttendanceReport resource type"
 description: "Contains information associated with meeting attendance report."
-author: "jsandoval-msft"
+author: "mkhribech"
 localization_priority: Normal
 ms.prod: "cloud-communications"
 doc_type: resourcePageType

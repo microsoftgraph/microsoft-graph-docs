@@ -8,7 +8,7 @@ ms.custom: graphiamtop20
 
 # Combine multiple requests in one HTTP call using JSON batching
 
-JSON batching allows you to optimize your application by combining multiple requests into a single JSON object. For example, a client might want to compose a view of unrelated data such as:
+JSON batching allows you to optimize your application by combining multiple requests (up to 20) into a single JSON object. For example, a client might want to compose a view of unrelated data such as:
 
 1. An image stored in OneDrive
 2. A list of Planner tasks

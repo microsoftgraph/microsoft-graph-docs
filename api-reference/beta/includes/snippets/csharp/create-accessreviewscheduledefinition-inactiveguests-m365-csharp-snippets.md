@@ -50,7 +50,7 @@ var accessReviewScheduleDefinition = new AccessReviewScheduleDefinition
 			Pattern = new RecurrencePattern
 			{
 				Type = RecurrencePatternType.AbsoluteMonthly,
-				DayOfMonth = "5",
+				DayOfMonth = 5,
 				Interval = 3
 			},
 			Range = new RecurrenceRange

@@ -90,8 +90,7 @@ Content-length: 48
 Here is an example of the response. 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.none"
+  "truncated": true
 } -->
 
 ```http

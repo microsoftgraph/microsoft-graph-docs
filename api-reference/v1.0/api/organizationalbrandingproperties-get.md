@@ -141,8 +141,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "truncated": true
 } -->
 
 ```http
@@ -300,8 +299,7 @@ The following is an example of the response.
 
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "truncated": true
 } -->
 
 ```http

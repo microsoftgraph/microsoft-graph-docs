@@ -7,11 +7,10 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 AccessPackageAssignmentRequest accessPackageAssignmentRequest = new AccessPackageAssignmentRequest();
-accessPackageAssignmentRequest.requestType = "UserAdd";
+accessPackageAssignmentRequest.requestType = "AdminRemove";
 AccessPackageAssignment accessPackageAssignment = new AccessPackageAssignment();
-accessPackageAssignment.accessPackageId = "a914b616-e04e-476b-aa37-91038f0b165b";
+accessPackageAssignment.id = "a6bb6942-3ae1-4259-9908-0133aaee9377";
 accessPackageAssignmentRequest.accessPackageAssignment = accessPackageAssignment;
-accessPackageAssignmentRequest.justification = "Need access to New Hire access package";
 
 graphClient.identityGovernance().entitlementManagement().accessPackageAssignmentRequests()
 	.buildRequest()

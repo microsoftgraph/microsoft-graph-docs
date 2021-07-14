@@ -77,9 +77,7 @@ POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationAssignment"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

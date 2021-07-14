@@ -131,9 +131,11 @@ To learn more, see [styling components](../customize-components/style.md).
 
 ## Events
 
-| Event | Description |
-| ----- | ----------- |
-| itemClick | Fired when the user clicks a file. Returns the file details. |
+Event | When is it emitted | Custom data | Cancelable | Bubbles | Works with custom template
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`itemClick` | Fired when the user clicks a file. | Selected [file](/graph/api/resources/driveItem) | No | No | Yes, with custom **file** template
+
+For more information about handling events, see [events](../customize-components/events.md).
 
 ## Templates
 

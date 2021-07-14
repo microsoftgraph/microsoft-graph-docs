@@ -95,10 +95,7 @@ Content-Type: application/json
 ### Response
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.permissionGrantPolicy",
-  "isCollection": false
+  "blockType": "response"
 } -->
 
 ```http

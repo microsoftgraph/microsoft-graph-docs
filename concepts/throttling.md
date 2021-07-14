@@ -165,7 +165,7 @@ The following resources are provided by the Outlook service.
 
 ### Cloud communication service limits
 
-| Resource      | Limits per app per tenant    |
+| Resource      | Limits per app    |
 | -------------- | ------------ |
 | [Calls](/graph/api/resources/call) | 10,000 calls/month and 100 concurrent calls   |
 | [Meeting information](/graph/api/resources/meetinginfo)   | 2000 meetings/user each month |
@@ -501,7 +501,7 @@ dataPolicyOperation.
 
 ### Assignment service limits
 
-The following limits apply to requests on the assignment service beta API:
+The following limits apply to requests on the assignment service API:
 
 | Request Type                 | Limit per app per tenant     | Limit per tenant for all apps |
 |---------------------------|------------------------------|----------------------------|
@@ -509,6 +509,6 @@ The following limits apply to requests on the assignment service beta API:
 | GET me/Assignment  | 50 requests per 10 seconds | 150 requests per 10 seconds |  
 
 The preceding limits apply to the following resources: 
-[educationAssignment](/graph/api/resources/educationassignment?view=graph-rest-beta)
-[educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest-beta)
-[educationResource](/graph/api/resources/educationresource?view=graph-rest-beta)
+[educationAssignment](/graph/api/resources/educationassignment?view=graph-rest)
+[educationSubmission](/graph/api/resources/educationsubmission?view=graph-rest)
+[educationResource](/graph/api/resources/educationresource?view=graph-rest)

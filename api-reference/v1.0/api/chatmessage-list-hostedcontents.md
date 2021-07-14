@@ -21,7 +21,7 @@ Retrieve the list of [chatMessageHostedContent](../resources/chatmessagehostedco
 |:---------------------------------------|:--------------------------------------------|
 |Delegated (work or school account)| ChannelMessage.Read.All |
 |Delegated (personal Microsoft account)|Not supported.|
-|Application| ChannelMessage.Read.Group, ChannelMessage.Read.All |
+|Application| ChannelMessage.Read.Group*, ChannelMessage.Read.All |
 
 ### Permissions for chat
 

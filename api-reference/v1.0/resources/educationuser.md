@@ -159,9 +159,7 @@ The following is a JSON representation of the resource.
   "keywords": "",
   "section": "documentation",
   "suppressions": [
-    "Error: microsoft.graph.educationUser/assignments:
-      Referenced type microsoft.graph.educationAssignment is not defined in the doc set! Potential suggestion: UNKNOWN"
-  ],
+   ],
   "tocPath": ""
 }-->
 

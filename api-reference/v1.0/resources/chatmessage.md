@@ -48,7 +48,7 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |:---------------|:--------|:----------|
 |id|String| Read-only. Unique Id of the message.|
 |replyToId| string | Read-only. Id of the parent chat message or root chat message of the thread. (Only applies to chat messages in channels, not chats.) |
-|from|[identitySet](identityset.md)| Read only. Details of the sender of the chat message.|
+|from|[chatMessageFromIdentitySet](chatmessagefromidentityset.md)| Read only. Details of the sender of the chat message.|
 |etag| string | Read-only. Version number of the chat message. |
 |messageType|string|The type of chat message. The possible value is: `message`.|
 |createdDateTime|dateTimeOffset|Timestamp of when the chat message was created.|
@@ -72,7 +72,7 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 | Relationship   | Type    | Description |
 |:---------------|:--------|:----------|
 |replies|[chatMessage](chatmessage.md)| Replies for a specified message. |
-|hostedContents|[chatMessageHostedContent](chatmessagehostedcontent.md)| Content in a message hosted by Microsoft Teams - for example, images, code snippets etc. |
+|hostedContents|[chatMessageHostedContent](chatmessagehostedcontent.md)| Content in a message hosted by Microsoft Teams - for example, images or code snippets. |
 
 ## JSON representation
 
@@ -102,7 +102,7 @@ The following is a JSON representation of the resource.
 {
   "id": "string (identifier)",
   "replyToId": "string (identifier)",
-  "from": {"@odata.type": "microsoft.graph.identitySet"},
+  "from": {"@odata.type": "microsoft.graph.chatMessageFromIdentitySet"},
   "etag": "string",
   "messageType": "string",
   "createdDateTime": "string (timestamp)",

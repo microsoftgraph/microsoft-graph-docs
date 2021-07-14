@@ -96,7 +96,19 @@ Content-Type: application/json
   "value": {
     "@odata.type": "#microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration",
     "id": "129ae788-e788-129a-88e7-9a1288e79a12",
-    "state": "String"
+    "state": "String",
+    "includeTargets@odata.context": "https://graph.microsoft.com/beta/$metadata#policies/authenticationMethodsPolicy/authenticationMethodConfigurations('MicrosoftAuthenticator')/microsoft.graph.microsoftAuthenticatorAuthenticationMethodConfiguration/includeTargets", 
+    "includeTargets": [ 
+        { 
+            "targetType": "group", 
+            "id": "5c6226ca-d325-4972-9fa8-1861c91f74c0", 
+            "isRegistrationRequired": false, 
+            "authenticationMode": "any", 
+            "numberMatchingRequiredState": "default",
+            "displayLocationInformationRequiredState": "default",
+            "displayAppInformationRequiredState": "default"
+        } 
+    ] 
   }
 }
 ```

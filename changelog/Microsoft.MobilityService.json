@@ -1,13 +1,63 @@
 {
     "changelog": [
         {
+             "ChangeList": [
+                  {
+                    "Id": "9ebdf457-11ea-493d-8dfb-ce12f80664bb",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "mobilityManagementPolicy",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **isValid** property to the [mobilityManagementPolicy](/graph/api/mobilityManagementPolicy?view=graph-rest-beta) resource.",
+                    "Target": "mobilityManagementPolicy"
+                },
+                {
+                    "Id": "9ebdf457-11ea-493d-8dfb-ce12f80664bb",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "mobilityManagementPolicy",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [delete mobilityDeviceManagementPolicy](/graph/api/mobiledevicemanagementpolicies-delete?view=graph-rest-beta) method.",
+                    "Target": "mobileDeviceManagementPolicies"
+                },
+                {
+                    "Id": "9ebdf457-11ea-493d-8dfb-ce12f80664bb",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "mobilityManagementPolicy",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [delete mobilityAppManagementPolicy](/graph/api/mobileappmanagementpolicies-delete?view=graph-rest-beta) method.",
+                    "Target": "mobileAppManagementPolicies"
+                },
+                {
+                    "Id": "9ebdf457-11ea-493d-8dfb-ce12f80664bb",
+                    "ApiChange": "Permission",
+                    "ChangedApiName": "mobileDeviceManagementPolicies",
+                    "ChangeType": "Update",
+                    "Description": "Updated the delegated permission scope to use Policy.ReadWrite.MobilityManagement instead of Policy.ReadWrite.All.",
+                    "Target": "mobileDeviceManagementPolicies"
+                },
+                {
+                    "Id": "9ebdf457-11ea-493d-8dfb-ce12f80664bb",
+                    "ApiChange": "Permission",
+                    "ChangedApiName": "mobileAppManagementPolicies",
+                    "ChangeType": "Update",
+                    "Description": "Updated the delegated permission scope to use Policy.ReadWrite.MobilityManagement instead of Policy.ReadWrite.All.",
+                    "Target": "mobileAppManagementPolicies"
+                }
+            ],
+            "Id": "9ebdf457-11ea-493d-8dfb-ce12f80664bb",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2020-07-12T00:00:00",
+            "WorkloadArea": "Identity and access",
+            "SubArea" : ""
+        },
+        {
             "ChangeList": [
                 {
                     "Id": "5c98f801-d1c4-44eb-ac11-f72b6754deda",
                     "ApiChange": "Resource",
                     "ChangedApiName": "mobilityManagementPolicy",
                     "ChangeType": "Addition",
-                    "Description": "Added the [mobilityManagementPolicy](/graph/api/resources/mobilityManagementPolicy?view=graph-rest-beta) resource type",
+                    "Description": "Added the [mobilityManagementPolicy](/graph/api/resources/mobilityManagementPolicy?view=graph-rest-beta) resource type.",
                     "Target": "mobilityManagementPolicy"
                 },
                 {
@@ -15,7 +65,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "mobileDeviceManagementPolicies",
                     "ChangeType": "Addition",
-                    "Description": "Added the [mobileDeviceManagementPolicies](/graph/api/resources/mobileDeviceManagementPolicies?view=graph-rest-1.0) resource type",
+                    "Description": "Added the [mobileDeviceManagementPolicies](/graph/api/resources/mobileDeviceManagementPolicies?view=graph-rest-1.0) resource type.",
                     "Target": "mobileDeviceManagementPolicies"
                 },
                 {
@@ -23,7 +73,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "mobileAppManagementPolicies",
                     "ChangeType": "Addition",
-                    "Description": "Added the [mobileAppManagementPolicies](/graph/api/resources/mobileAppManagementPolicies?view=graph-rest-1.0) resource type",
+                    "Description": "Added the [mobileAppManagementPolicies](/graph/api/resources/mobileAppManagementPolicies?view=graph-rest-1.0) resource type.",
                     "Target": "mobileAppManagementPolicies"
                 },
                 {
@@ -31,7 +81,7 @@
                     "ApiChange": "Enum type",
                     "ChangedApiName": "policyScope",
                     "ChangeType": "Addition",
-                    "Description": "Added the **policyScope** enumeration type",
+                    "Description": "Added the **policyScope** enumeration type.",
                     "Target": "policyScope"
                 },
                 {

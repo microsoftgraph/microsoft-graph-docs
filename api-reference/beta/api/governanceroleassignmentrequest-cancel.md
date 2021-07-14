@@ -38,7 +38,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type | Permissions |
 |:-------------- |:----------- |
-| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureADGroups |
+| Delegated (work or school account) | PrivilegedAccess.ReadWrite.AzureADGroup |
 | Delegated (personal Microsoft account) | Not supported. |
 | Application | Not supported. |
 
@@ -105,8 +105,7 @@ POST https://graph.microsoft.com/beta/privilegedAccess/azureResources/roleAssign
 ### Response
 <!-- {
   "blockType": "response",
-  "truncated": false,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": false
 } -->
 ```http
 HTTP/1.1 204 No Content

@@ -1,7 +1,7 @@
 ---
 title: "Add a member"
 description: "Use this API to add a member (user or group) to an administrative unit."
-author: "anandyadavMSFT"
+author: "DougKirschner"
 localization_priority: Normal
 ms.prod: "directory-management"
 doc_type: apiPageType
@@ -34,6 +34,7 @@ POST /directory/administrativeUnits/{id}/members/$ref
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required. |
+| Content-type | application/json. Required. |
 
 ## Request body
 In the request body, provide the `id` of a [user](../resources/user.md),  [group](../resources/group.md) or [directoryObject](../resources/directoryobject.md) to be added.

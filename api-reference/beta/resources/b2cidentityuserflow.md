@@ -32,15 +32,18 @@ To help you set up the most common identity tasks for your applications, Azure A
 |[Create user flow](../api/identitycontainer-post-b2cuserflows.md)|b2cIdentityUserFlow|Create a new B2C user flow.|
 |[Update user flow](../api/b2cidentityuserflow-update.md)|b2cIdentityUserFlow|Update the properties of a B2C user flow.|
 |[Delete user flow](../api/b2cidentityuserflow-delete.md)|None|Delete a B2C user flow.|
-|[List identity providers](../api/b2cidentityuserflow-list-identityproviders.md)|[identityProvider](../resources/identityProvider.md) collection|Retrieve all identity providers in a B2C user flow.|
-|[Add identity provider](../api/b2cidentityuserflow-post-identityproviders.md)|None|Add an identity provider to a B2C user flow.|
-|[Remove identity provider](../api/b2cidentityuserflow-delete-identityproviders.md)|None|Remove an identity provider from a B2C user flow.|
+|[List identity providers](../api/b2cidentityuserflow-list-userflowidentityproviders.md)|[identityProvider](../resources/identityProviderbase.md) collection|Retrieve all identity providers in a B2C user flow.|
+|[Add identity provider](../api/b2cidentityuserflow-userflowidentityproviders-update.md)|None|Add an identity provider to a B2C user flow.|
+|[Delete identity provider](../api/b2cidentityuserflow-delete-userflowidentityproviders.md)|None|Remove an identity provider from a B2C user flow|
 |[List user attribute assignments](../api/b2cidentityuserflow-list-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) collection|Retrieve all user attribute assignments in a B2C user flow.|
 |[Create user attribute assignment](../api/b2cidentityuserflow-post-userattributeassignments.md)|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md)|Create a user attribute assignment in a B2C user flow.|
 |[List languages](../api/b2cidentityuserflow-list-languages.md)|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) collection|Retrieve all languages within a B2C user flow.|
 |[Create language](../api/b2cidentityuserflow-put-languages.md)|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md)|Creates a custom language in a B2C user flow.|
 |[Get API connectors configuration for user flow](../api/b2cidentityuserflow-get-apiConnectorConfiguration.md)|[userFlowApiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md)| Get the configuration for API connectors used in the user flow. The $expand query parameter is not supported for this method.|
 |[Configure an API connector in a user flow](../api/b2cidentityuserflow-put-apiConnectorConfiguration.md)|None| Configure an API connector for specific steps in a user flow by updating the [apiConnectorConfiguration](../resources/userflowapiconnectorconfiguration.md) property.|
+|[List identity providers](../api/b2cidentityuserflow-list-identityproviders.md) (deprecated)|[identityProvider](../resources/identityProvider.md) collection|Retrieve all identity providers in a B2C user flow.|
+|[Add identity provider](../api/b2cidentityuserflow-post-identityproviders.md) (deprecated)|None|Add an identity provider to a B2C user flow.|
+|[Delete identity provider](../api/b2cidentityuserflow-delete-identityproviders.md) (deprecated)|None|Remove an identity provider from a B2C user flow|
 
 ## Properties
 
@@ -57,7 +60,8 @@ To help you set up the most common identity tasks for your applications, Azure A
 
 | Relationship       | Type  |Description|
 |:---------------|:--------|:----------|
-|identityProviders|[identityProvider](../resources/identityprovider.md) collection|The identity providers included in the user flow.|
+|userflowIdentityProviders|[identityProviderBase](../resources/identityproviderbase.md) collection|The identity providers included in the user flow.|
+|identityProviders (deprecated)|[identityProvider](../resources/identityprovider.md) collection|The identity providers included in the user flow.|
 |userAttributeAssignments|[identityUserFlowAttributeAssignment](../resources/identityuserflowattributeassignment.md) collection|The user attribute assignments included in the user flow.|
 |languages|[userFlowLanguageConfiguration](../resources/userflowlanguageconfiguration.md) collection|The languages supported for customization within the user flow. Language customization is not enabled by default in B2C user flows.|
 
@@ -79,6 +83,7 @@ The following is a JSON representation of the resource.
     "userFlowTypeVersion": "Single",
     "isLanguageCustomizationEnabled": "Boolean",
     "defaultLanguageTag": "String",
+    "userflowidentityProviders": [{"@odata.type": "microsoft.graph.identityProviderBase"}],
     "identityProviders": [{"@odata.type": "microsoft.graph.identityProvider"}],
     "userAttributeAssignments": [{"@odate.type": "microsoft.graph.identityUserFlowAttributeAssignment"}],
     "languages": [{"@odata.type": "microsoft.graph.userFlowLanguageConfiguration"}],

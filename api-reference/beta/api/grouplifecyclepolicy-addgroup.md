@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Adds a group to a lifecycle policy.
+Adds specific groups to a lifecycle policy. This action limits the group lifecycle policy to a set of groups only if the **managedGroupTypes** property of [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) is set to `Selected`.
 
 ## Permissions
 
@@ -44,11 +44,15 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter | Type | Description |
 |:---------------|:--------|:----------|
-|groupId|Guid| The id of the group to add to the policy. |
+|groupId|String| The identifier of the group to add to the policy. |
+
+When the **managedGroupTypes** property of [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) is set to `Selected`, you can add up to 500 groups to the list. If you need to add more than 500 groups, the **managedGroupTypes** property of [groupLifecyclePolicy](../resources/grouplifecyclepolicy.md) must be set to `All`.
+
+Only one group can be added per request.
 
 ## Response
 
-If successful, this method returns `200 OK` response code. If the group is added to the policy, a **true** value is returned in the response body. Otherwise, a **false** value is returned in the reponse body.
+If successful, this method returns `200 OK` response code. If the group is added to the policy, a `true` value is returned in the response body. Otherwise, a `false` value is returned in the response body.
 
 ## Example
 

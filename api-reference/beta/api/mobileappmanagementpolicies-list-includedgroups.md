@@ -21,7 +21,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type|Permissions (from least to most privileged)|
 |:---|:---|
-|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.All|
+|Delegated (work or school account)|Policy.Read.All, Policy.ReadWrite.MobilityManagement|
 |Delegated (personal Microsoft account) | Not supported.|
 |Application | Not supported.|
 
@@ -61,7 +61,7 @@ If successful, this method returns a `200 OK` response code and a collection of 
 -->
 
 ``` http
-GET https://graph.microsoft.com/beta/policies/mobileAppManagementPoliciesab90bacf-55a3-4a3e-839a-aa4b74e4f020/includedGroups
+GET https://graph.microsoft.com/beta/policies/mobileAppManagementPolicies/ab90bacf-55a3-4a3e-839a-aa4b74e4f020/includedGroups
 ```
 
 ### Response

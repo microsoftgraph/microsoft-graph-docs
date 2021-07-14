@@ -51,6 +51,8 @@ Additional limitations apply for subscriptions on OneDrive items. The limitation
 
 On a personal OneDrive, you can subscribe to the root folder or any subfolder in that drive. On OneDrive for Business, you can subscribe to only the root folder. Change notifications are sent for the requested types of changes on the subscribed folder, or any file, folder, or other **driveItem** instances in its hierarchy. You cannot subscribe to **drive** or **driveItem** instances that are not folders, such as individual files.
 
+OneDrive for Business and SharePoint support sending your application notifications of security events that occur on a **driveItem**. To subscribe to these events, add the `prefer:includesecuritywebhooks` header to your request to create a subscription. After the subscription is created, you will receive notifications when the permissions on an item change. This header is applicable to SharePoint and OneDrive for Business but not consumer OneDrive accounts.
+
 ### contact, event, and message
 
 Additional limitations apply for subscriptions on Outlook items. The limitations apply to creating as well as managing (getting, updating, and deleting) subscriptions.

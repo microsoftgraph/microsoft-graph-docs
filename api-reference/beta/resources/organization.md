@@ -31,8 +31,11 @@ This resource lets you add your own data to custom properties using [extensions]
 |[Add schema extension values](../api/schemaextension-post-schemaextensions.md) | [schemaExtension](schemaextension.md) | Create a schema extension definition and then use it to add custom typed data to a resource.|
 |[Create organizationalBrandingProperties](../api/organizationalbrandingproperties-create.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) | Create a new organizationalBrandingProperties by posting to the branding collection. |
 |[Get branding](../api/organizationalbrandingproperties-get.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) collection | Get an organizationalBrandingProperties object collection. |
+|[Get branding](../api/organizationalbrandingproperties-get.md) | [organizationalBrandingProperties](organizationalbrandingproperties.md) collection | Get a collection of organizationalBrandingProperties objects. |
+|[activateService](../api/organization-activateservice.md) | None |  Activate a service for an organization. |
 
-## Properties 
+## Properties
+
 | Property | Type	| Description |
 |:-------- |:---- |:----------- |
 | assignedPlans | [assignedPlan](assignedplan.md) collection | The collection of service plans associated with the tenant. Not nullable. |

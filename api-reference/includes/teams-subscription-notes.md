@@ -17,6 +17,3 @@ ms.date: 01/25/2021
 >`/teams/getAllMessages` and `/chats/getAllMessages` are available to users that have the 
 [required licenses](https://aka.ms/teams-changenotification-licenses).
 In the future, Microsoft may require you or your customers to pay additional fees based on the amount of data accessed through the API.
->
->`/chats/getAllMessages` only returns messages from chats owned by the tenant. 
-If a chat thread is initiated by a user outside the tenant, that chat thread is not owned by the tenant, and does not create change notifications.

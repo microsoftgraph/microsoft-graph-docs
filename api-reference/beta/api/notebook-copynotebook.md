@@ -96,9 +96,7 @@ Content-length: 108
 ##### Response
 Here is an example of the response.
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.onenoteOperation"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 202 Accepted

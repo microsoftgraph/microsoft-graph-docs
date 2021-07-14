@@ -90,8 +90,7 @@ Content-length: 47
 ### Response
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.group"
+  "truncated": true
 }
 -->
 ``` http

@@ -104,9 +104,7 @@ Content-Type: application/json
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "blockType": "response"
 } -->
 
 ```http
@@ -137,9 +135,7 @@ Content-Type: image/jpeg
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "blockType": "response"
 } -->
 
 ```http
@@ -170,9 +166,7 @@ Content-Language: fr
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "blockType": "response"
 } -->
 
 ```http
@@ -225,9 +219,7 @@ Content-Language: fr
 The following is an example of the response.
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.organizationalBrandingProperties"
+  "blockType": "response"
 } -->
 
 ```http

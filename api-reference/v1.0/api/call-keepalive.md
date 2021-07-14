@@ -84,8 +84,7 @@ The following example shows the response.
 <!-- {
   "blockType": "response",
   "name": "keep-alive",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.None"
+  "truncated": true
 } -->
 ```http
 HTTP/1.1 200 OK

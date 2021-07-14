@@ -15,6 +15,9 @@ Namespace: microsoft.graph
 
 Create a new [accessPackage](../resources/accesspackage.md) object.
 
+The access package will be added to an existing [accessPackageCatalog](../resources/accesspackagecatalog.md). After the access package is created, you can then create [accessPackageAssignmentPolicies](../resources/accesspackageassignmentpolicy.md) which specify how users are assigned to the access package.
+
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -38,11 +41,11 @@ POST /identityGovernance/entitlementManagement/accessPackages
 | Name          | Description   |
 |:--------------|:--------------|
 | Authorization | Bearer \{token\}. Required. |
-| Content-Type  | application/json  |
+| Content-type  | application/json. Required.  |
 
 ## Request body
 
-In the request body, supply a JSON representation of [accessPackage](../resources/accesspackage.md) object.
+In the request body, supply a JSON representation of an [accessPackage](../resources/accesspackage.md) object.
 
 ## Response
 

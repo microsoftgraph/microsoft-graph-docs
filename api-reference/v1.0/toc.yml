@@ -28,6 +28,11 @@ items:
       href: /graph/paging?context=graph/api/1.0
     - name: Use query parameters
       href: /graph/query-parameters?context=graph/api/1.0
+      items:
+      - name: Use the search query parameter
+        href: /graph/search-query-parameter?context=graph/api/1.0
+      - name: Advanced query capabilities
+        href: /graph/aad-advanced-queries?context=graph/api/1.0
     - name: Batching
       displayName: Batch requests
       href: /graph/json-batching?context=graph/api/1.0
@@ -212,6 +217,8 @@ items:
           href: api/user-update.md
         - name: Delete user
           href: api/user-delete.md
+        - name: Change password
+          href: api/user-changepassword.md
         - name: Get delta
           href: api/user-delta.md
       - name: App role assignments
@@ -312,8 +319,9 @@ items:
       - name: Insights
         items:
         - name: Office Graph insights
-          href: resources/officegraphinsights.md
           items:
+          - name: Office Graph insights
+            href: resources/officegraphinsights.md
           - name: List shared
             href: api/insights-list-shared.md
           - name: List trending
@@ -443,6 +451,14 @@ items:
           href: api/todotasklist-list-tasks.md
         - name: List task lists
           href: api/todo-list-lists.md
+      - name: User settings
+        items:
+        - name: User settings
+          href: resources/usersettings.md
+        - name: Get settings
+          href: api/usersettings-get.md
+        - name: Update settings
+          href: api/usersettings-update.md
     - name: Groups
       items:
       - name: Overview
@@ -4048,6 +4064,18 @@ items:
           href: api/educationclass-post-members.md
         - name: Remove member
           href: api/educationclass-delete-members.md
+        - name: List class assignments
+          href: api/educationclass-list-assignments.md
+        - name: Create assignment
+          href: api/educationclass-post-assignment.md
+        - name: Get assignment settings
+          href: api/educationassignmentsettings-get.md
+        - name: Get assignment defaults
+          href: api/educationassignmentdefaults-get.md
+        - name: List categories
+          href: api/educationclass-list-categories.md
+        - name: Create category
+          href: api/educationclass-post-category.md
       - name: Users
         href: resources/educationuser.md
         items:
@@ -4059,12 +4087,128 @@ items:
           href: api/educationuser-get.md
         - name: Delete user
           href: api/educationuser-delete.md
+        - name: Get directory user
+          href: api/educationuser-get-user.md
         - name: Get changes to users
           href: api/educationuser-delta.md
         - name: List classes
           href: api/educationuser-list-classes.md
+        - name: List rubrics
+          href: api/educationuser-list-rubrics.md
         - name: List taught classes
           href: api/educationuser-list-taughtclasses.md
+        - name: Create rubric
+          href: api/educationuser-post-rubrics.md
+      - name: Assignment
+        href: resources/educationassignment.md
+        items:
+        - name: Create assignment
+          href: api/educationclass-post-assignment.md
+        - name: Get assignment
+          href: api/educationassignment-get.md
+        - name: Update assignment
+          href: api/educationassignment-update.md
+        - name: Delete assignment
+          href: api/educationassignment-delete.md
+        - name: Set up assignment resources folder
+          href: api/educationassignment-setupresourcesfolder.md
+        - name: Publish assignment
+          href: api/educationassignment-publish.md
+        - name: List assignment resources
+          href: api/educationassignment-list-resources.md
+        - name: Create assignment resource
+          href: api/educationassignment-post-resource.md
+        - name: Get assignment resource
+          href: api/educationassignmentresource-get.md
+        - name: Delete resource from assignment
+          href: api/educationassignmentresource-delete.md
+        - name: List submissions for assignment
+          href: api/educationassignment-list-submissions.md
+        - name: Get rubric attached to assignment
+          href: api/educationassignment-get-rubric.md
+        - name: List categories
+          href: api/educationassignment-list-categories.md
+        - name: Add category
+          href: api/educationassignment-post-categories.md
+        - name: Remove category
+          href: api/educationassignment-remove-category.md
+        - name: Attach rubric to assignment
+          href: api/educationassignment-put-rubric.md
+        - name: Remove rubric from assignment
+          href: api/educationassignment-delete-rubric.md
+      - name: Assignment settings
+        href: resources/educationassignmentsettings.md
+        items:
+        - name: Get assignment settings
+          href: api/educationassignmentsettings-get.md
+        - name: Update assignment settings
+          href: api/educationassignmentsettings-update.md
+      - name: Assignment defaults
+        href: resources/educationassignmentdefaults.md
+        items:
+        - name: Get assignment defaults
+          href: api/educationassignmentdefaults-get.md
+        - name: Update assignment defaults
+          href: api/educationassignmentdefaults-update.md
+      - name: Category
+        href: resources/educationcategory.md
+        items:
+        - name: Create category
+          href: api/educationclass-post-category.md
+        - name: Get category
+          href: api/educationcategory-get.md
+        - name: Delete category
+          href: api/educationcategory-delete.md
+      - name: Rubric
+        href: resources/educationrubric.md
+        items:
+        - name: Create rubric
+          href: api/educationuser-post-rubrics.md
+        - name: Get rubric
+          href: api/educationrubric-get.md
+        - name: Update rubric
+          href: api/educationrubric-update.md
+        - name: Delete rubric
+          href: api/educationrubric-delete.md
+      - name: Submission
+        href: resources/educationsubmission.md
+        items:
+        - name: List submission resources
+          href: api/educationsubmission-list-resources.md
+        - name: Add submission resource
+          href: api/educationsubmission-post-resources.md
+        - name: Get submission resource
+          href: api/educationsubmissionresource-get.md
+        - name: Delete submission resource
+          href: api/educationsubmissionresource-delete.md
+        - name: Get submission
+          href: api/educationsubmission-get.md
+        - name: Set up submission resources folder
+          href: api/educationsubmission-setupresourcesfolder.md
+        - name: Submit submission
+          href: api/educationsubmission-submit.md
+        - name: Unsubmit submission
+          href: api/educationsubmission-unsubmit.md
+        - name: List submitted resources
+          href: api/educationsubmission-list-submittedresources.md
+        - name: List outcomes
+          href: api/educationsubmission-list-outcomes.md
+        - name: Get submitted resource
+          href: api/educationsubmittedsubmissionresource-get.md
+        - name: Return submission
+          href: api/educationsubmission-return.md
+      - name: Outcome
+        items:
+        - name: Outcome
+          href: resources/educationoutcome.md
+        - name: Feedback outcome type
+          href: resources/educationfeedbackoutcome.md
+        - name: Points outcome type
+          href: resources/educationpointsoutcome.md
+        - name: Rubric outcome type
+          href: resources/educationrubricoutcome.md
+        - name: Update outcome
+          href: api/educationoutcome-update.md
     - name: Extensions
       items:
       - name: Open extensions
@@ -4302,6 +4446,10 @@ items:
             href: api/directoryrole-post-members.md
           - name: Remove member
             href: api/directoryrole-delete-member.md
+          - name: List scoped members
+            href: api/directoryrole-list-scopedmembers.md
+          - name: Get delta
+            href: api/directoryrole-delta.md
         - name: Directory role template
           href: resources/directoryroletemplate.md
           items:
@@ -4791,50 +4939,104 @@ items:
               href: api/identityapiconnector-delete.md    
       - name: Governance
         items:
-          - name: Consent requests
-            href: resources/consentrequests-root.md
+        - name: Access reviews
+          href: resources/accessreviewsv2-root.md
+          items:
+          - name: Access review schedule definition
+            href: resources/accessreviewscheduledefinition.md
             items:
-            - name: Admin consent request policy
-              href: resources/adminconsentrequestpolicy.md
-              items:
-              - name: Get
-                href: api/adminconsentrequestpolicy-get.md
-              - name: Update
-                href: api/adminconsentrequestpolicy-update.md
-            - name: App consent requests
-              href: resources/appconsentrequest.md
-              items:
-              - name: List
-                href: api/appconsentrequest-list.md
-              - name: Get
-                href: api/appconsentrequest-get.md
-              - name: Filter by current user
-                href: api/appconsentrequest-filterByCurrentUser.md
-            - name: User consent requests
-              href: resources/userconsentrequest.md
-              items:
-              - name: List
-                href: api/userconsentrequest-list.md
-              - name: Get
-                href: api/userconsentrequest-get.md
-              - name: Filter by current user
-                href: api/userconsentrequest-filterByCurrentUser.md
-          - name: Terms of use
-            items:
-            - name: Agreement
-              href: resources/agreement.md
             - name: List
-              href: api/agreement-list.md          
-            - name: Create
-              href: api/agreement-post-agreements.md
+              href: api/accessreviewscheduledefinition-list.md
+            - name: List instances
+              href: api/accessreviewscheduledefinition-list-instances.md
             - name: Get
-              href: api/agreement-get.md
-            - name: Update
-              href: api/agreement-update.md
+              href: api/accessreviewscheduledefinition-get.md
+            - name: Create
+              href: api/accessreviewscheduledefinition-post.md
             - name: Delete
-              href: api/agreement-delete.md
-            - name: List acceptance status
-              href: api/user-list-agreementacceptances.md      
+              href: api/accessreviewscheduledefinition-delete.md 
+            - name: Update
+              href: api/accessreviewscheduledefinition-update.md
+            - name: Filter by current user
+              href: api/accessreviewscheduledefinition-filterbycurrentuser.md
+          - name: Access review instance
+            href: resources/accessreviewinstance.md
+            items:
+            - name: List
+              href: api/accessreviewinstance-list.md
+            - name: List decisions
+              href: api/accessreviewinstance-list-decisions.md
+            - name: Get
+              href: api/accessreviewinstance-get.md
+            - name: Accept recommendations
+              href: api/accessreviewinstance-acceptrecommendations.md
+            - name: Apply decisions
+              href: api/accessreviewinstance-applydecisions.md
+            - name: Batch record decisions
+              href: api/accessreviewinstance-batchrecorddecisions.md
+            - name: Filter by current user
+              href: api/accessreviewinstance-filterbycurrentuser.md
+            - name: Reset decisions
+              href: api/accessreviewinstance-resetdecisions.md
+            - name: Send reminder
+              href: api/accessreviewinstance-sendreminder.md
+            - name: Stop
+              href: api/accessreviewinstance-stop.md
+          - name: Access review instance decision item
+            href: resources/accessreviewinstancedecisionitem.md
+            items:
+            - name: Get
+              href: api/accessreviewinstancedecisionitem-get.md
+            - name: List
+              href: api/accessreviewinstancedecisionitem-list.md
+            - name: Update
+              href: api/accessreviewinstancedecisionitem-update.md
+            - name: Filter by current user
+              href: api/accessreviewinstancedecisionitem-filterbycurrentuser.md
+        - name: Consent requests
+          href: resources/consentrequests-root.md
+          items:
+          - name: Admin consent request policy
+            href: resources/adminconsentrequestpolicy.md
+            items:
+            - name: Get
+              href: api/adminconsentrequestpolicy-get.md
+            - name: Update
+              href: api/adminconsentrequestpolicy-update.md
+          - name: App consent requests
+            href: resources/appconsentrequest.md
+            items:
+            - name: List
+              href: api/appconsentrequest-list.md
+            - name: Get
+              href: api/appconsentrequest-get.md
+            - name: Filter by current user
+              href: api/appconsentrequest-filterByCurrentUser.md
+          - name: User consent requests
+            href: resources/userconsentrequest.md
+            items:
+            - name: List
+              href: api/userconsentrequest-list.md
+            - name: Get
+              href: api/userconsentrequest-get.md
+            - name: Filter by current user
+              href: api/userconsentrequest-filterByCurrentUser.md
+        - name: Terms of use
+          items:
+          - name: Agreement
+            href: resources/agreement.md
+          - name: List
+            href: api/agreement-list.md          
+          - name: Create
+            href: api/agreement-post-agreements.md
+          - name: Get
+            href: api/agreement-get.md
+          - name: Update
+            href: api/agreement-update.md
+          - name: Delete
+            href: api/agreement-delete.md
+          - name: List acceptance status
+            href: api/user-list-agreementacceptances.md      
     - name: Mail
       displayName: Outlook, Outlook mail
       items:
@@ -5106,8 +5308,14 @@ items:
         - name: List people
           href: api/user-list-people.md
       - name: Insights
-        href: resources/officegraphinsights.md
         items:
+        - name: Office Graph insights
+          href: resources/officegraphinsights.md
+        - name: Shared
+          href: resources/insights-shared.md
+          items:
+          - name: List shared
+            href: api/insights-list-shared.md
         - name: Trending
           href: resources/insights-trending.md
           items:
@@ -5118,11 +5326,6 @@ items:
           items:
           - name: List used
             href: api/insights-list-used.md
-        - name: Shared
-          href: resources/insights-shared.md
-          items:
-          - name: List shared
-            href: api/insights-list-shared.md
     - name: Personal contacts
       href: resources/contact.md
       displayName: Outlook, Outlook contacts, Outlook contact, People
@@ -5735,34 +5938,34 @@ items:
           href: api/channel-patch.md
         - name: Delete channel
           href: api/channel-delete.md
-        - name: List members
-          href: api/channel-list-members.md
         - name: Add member 
           href: api/channel-post-members.md
-        - name: Get member
-          href: api/channel-get-members.md
-        - name: Update member role
-          href: api/channel-update-members.md   
-        - name: Remove member
-          href: api/channel-delete-members.md
         - name: Complete migration for channel
           href: api/channel-completemigration.md
-        - name: Get files folder
-          href: api/channel-get-filesfolder.md
-        - name: List channel messages
-          href: api/channel-list-messages.md
-        - name: Get channel messages delta
-          href: api/chatmessage-delta.md
         - name: Get channel message
           href: api/chatmessage-get.md
-        - name: List message replies
-          href: api/chatmessage-list-replies.md
+        - name: Get channel messages delta
+          href: api/chatmessage-delta.md
+        - name: Get files folder
+          href: api/channel-get-filesfolder.md
+        - name: Get member
+          href: api/channel-get-members.md
         - name: Get message reply
           href: api/chatmessage-get.md
-        - name: Send message
-          href: api/channel-post-messages.md
+        - name: List channel messages
+          href: api/channel-list-messages.md
+        - name: List members
+          href: api/channel-list-members.md        
+        - name: List message replies
+          href: api/chatmessage-list-replies.md
+        - name: Remove member
+          href: api/channel-delete-members.md
         - name: Reply to message
           href: api/chatmessage-post-replies.md
+        - name: Send message
+          href: api/channel-post-messages.md
+        - name: Update member role
+          href: api/channel-update-members.md
         - name: Update message
           href: api/chatmessage-update.md
       - name: Chat

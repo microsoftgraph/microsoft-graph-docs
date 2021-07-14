@@ -1,13 +1,13 @@
 ---
-title: "teamsAppInstallation: upgrade"
+title: "teamsAppInstallation in personal scope: upgrade"
 description: "Upgrade an app installation in the personal scope of a user"
-author: "clearab"
+author: "akjo"
 doc_type: "apiPageType"
 localization_priority: Normal
 ms.prod: "microsoft-teams"
 ---
 
-# teamsAppInstallation: upgrade
+# teamsAppInstallation in personal scope: upgrade
 
 Namespace: microsoft.graph
 

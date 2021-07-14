@@ -99,9 +99,7 @@ Content-length: 31
 ##### Response
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.device"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content

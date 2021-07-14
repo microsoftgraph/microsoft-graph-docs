@@ -33,6 +33,10 @@ To call this API, the signed-in user must also be in a directory role that permi
 ```http
 GET /identityGovernance/accessReviews/definitions/{review-id}
 ```
+
+## Optional query parameters
+This method supports `$select` OData query parameters to help customize the response. For general information, see [OData query parameters](/graph/query-parameters).
+
 ## Request headers
 None.
 

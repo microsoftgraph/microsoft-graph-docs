@@ -50,9 +50,9 @@ If successful, this method returns the `204 No Content` response code if the act
 
 ## Example
 
-##### Request
+### Request
 
-Here is an example of the request.
+The following is an example of the request.
 
 
 # [HTTP](#tab/http)
@@ -83,9 +83,9 @@ DELETE https://graph.microsoft.com/beta/me/activities/13881113971988980728/
 ---
 
 
-##### Response
+### Response
 
-Here is an example of the response.
+The following is an example of the response.
 
 <!-- {
   "blockType": "response",

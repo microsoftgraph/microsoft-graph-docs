@@ -1,6 +1,6 @@
 ---
 title: "educationAssignment: publish"
-description: "This action changes the state of an assignment from its original draft status to the published status. Only a teacher in the class can make this call. When an assignment is in draft status, students will not see the assignment, nor will there be any submission objects. When you call this API, submission objects are created and the assignment appears in the student's list."
+description: "This action changes the state of an assignment from its original draft status to the published status."
 localization_priority: Normal
 author: "dipakboyed"
 ms.prod: "education"
@@ -13,7 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-This action changes the state of an assignment from its original draft status to the published status. Only a teacher in the class can make this call. When an assignment is in draft status, students will not see the assignment, nor will there be any submission objects. When you call this API, submission objects are created and the assignment appears in the student's list.
+This action changes the state of an assignment from its original draft status to the published status. 
+
+Only a teacher in the class can make this call. When an assignment is in draft status, students will not see the assignment, nor will there be any submission objects. When you call this API, submission objects are created and the assignment appears in the student's list.
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -77,9 +79,7 @@ POST https://graph.microsoft.com/beta/education/classes/11021/assignments/19002/
 The following is an example of a response. 
 
 <!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationAssignment"
+  "blockType": "response"
 } -->
 ```http
 HTTP/1.1 204 No Content
