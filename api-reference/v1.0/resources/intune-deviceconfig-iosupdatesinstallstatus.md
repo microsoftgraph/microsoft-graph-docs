@@ -36,6 +36,7 @@ Not yet documented
 |notSupportedOperation|-2016330701|Not yet documented|
 |sharedDeviceUserLoggedInError|-2016330699|Not yet documented|
 |deviceOsHigherThanDesiredOsVersion|-2016330696|Not yet documented|
+|UpdatePolicyConflict|-2016281211|Two or more Update policies are targetting the device|
 
 
 
