@@ -1,6 +1,42 @@
 {
     "changelog": [
         {
+            "ChangeList":[
+                {
+                    "Id": "3445a5f1-b682-4adc-9485-a9d6e1b996be",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "permissionCheckNoResourceGroupNetworkContributorRole",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `permissionCheckNoResourceGroupNetworkContributorRole` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                }
+            ],
+            "Id":"3445a5f1-b682-4adc-9485-a9d6e1b996be",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-07-12T15:14:07.177Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "632170da-397c-415a-854d-993e3b1e2349",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "reupload",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [reupload](https://docs.microsoft.com/graph/api/cloudpcdeviceimage-reupload?view=graph-rest-beta) method to the [cloudPcDeviceImage](https://docs.microsoft.com/graph/api/resources/cloudpcdeviceimage?view=graph-rest-beta) resource.",
+                    "Target": "cloudPcDeviceImage"
+                }
+            ],
+            "Id": "632170da-397c-415a-854d-993e3b1e2349",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-07-09T14:30:43.735Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
             "ChangeList": [{
                 "Id": "3467da3f-b955-11eb-b432-abd44c4c47a3",
                 "ApiChange": "Property",
@@ -63,6 +99,24 @@
         {
             "ChangeList":[
                 {
+                    "Id": "51df25fb-7bd4-4f2d-911f-9a3101129a70",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "adJoinCheckComputerObjectAlreadyExists",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `adJoinCheckComputerObjectAlreadyExists` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                }
+            ],
+            "Id": "51df25fb-7bd4-4f2d-911f-9a3101129a70",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-07-07T13:13:07.177Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC" 
+        },
+        {
+            "ChangeList": [
+                { 
                     "Id": "3eb4567b-b9c9-4aaa-ab77-8cf0e22408e1",
                     "ApiChange": "Member",
                     "ChangedApiName": "internalServerErrorUnableToRunDscScript",
@@ -109,6 +163,138 @@
             "Cloud": "prd",
             "Version": "beta",
             "CreatedDateTime": "2021-06-03T17:52:07.177Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+              {
+                "Id": "4db352a1-1ba2-4574-adc2-742e2b3cb79d",
+                "ApiChange": "EnumType",
+                "ChangedApiName": "cloudPcAuditActivityOperationType",
+                "ChangeType": "Addition",
+                "Description": "Added the **cloudPcAuditActivityOperationType** enumeration type.",
+                "Target": "cloudPcAuditActivityOperationType"
+              },
+              {
+                "Id": "4db352a1-1ba2-4574-adc2-742e2b3cb79d",
+                "ApiChange": "EnumType",
+                "ChangedApiName": "cloudPcAuditActivityResult",
+                "ChangeType": "Addition",
+                "Description": "Added the **cloudPcAuditActivityResult** enumeration type.",
+                "Target": "cloudPcAuditActivityResult"
+              },
+              {
+                "Id": "4db352a1-1ba2-4574-adc2-742e2b3cb79d",
+                "ApiChange": "EnumType",
+                "ChangedApiName": "cloudPcAuditActorType",
+                "ChangeType": "Addition",
+                "Description": "Added the **cloudPcAuditActorType** enumeration type.",
+                "Target": "cloudPcAuditActorType"
+              },
+              {
+                "Id": "4db352a1-1ba2-4574-adc2-742e2b3cb79d",
+                "ApiChange": "EnumType",
+                "ChangedApiName": "cloudPcAuditCategory",
+                "ChangeType": "Addition",
+                "Description": "Added the **cloudPcAuditCategory** enumeration type.",
+                "Target": "cloudPcAuditCategory"
+              },
+              {
+                "Id": "4db352a1-1ba2-4574-adc2-742e2b3cb79d",
+                "ApiChange": "ComplexType",
+                "ChangedApiName": "cloudPcAuditActor",
+                "ChangeType": "Addition",
+                "Description": "Added the [cloudPcAuditActor](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcAuditActor?view=graph-rest-beta) resource type.",
+                "Target": "cloudPcAuditActor"
+              },
+              {
+                "Id": "4db352a1-1ba2-4574-adc2-742e2b3cb79d",
+                "ApiChange": "ComplexType",
+                "ChangedApiName": "cloudPcAuditProperty",
+                "ChangeType": "Addition",
+                "Description": "Added the [cloudPcAuditProperty](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcAuditProperty?view=graph-rest-beta) resource type.",
+                "Target": "cloudPcAuditProperty"
+              },
+              {
+                "Id": "4db352a1-1ba2-4574-adc2-742e2b3cb79d",
+                "ApiChange": "ComplexType",
+                "ChangedApiName": "cloudPcAuditResource",
+                "ChangeType": "Addition",
+                "Description": "Added the [cloudPcAuditResource](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcAuditResource?view=graph-rest-beta) resource type.",
+                "Target": "cloudPcAuditResource"
+              },
+              {
+                "Id": "4db352a1-1ba2-4574-adc2-742e2b3cb79d",
+                "ApiChange": "ComplexType",
+                "ChangedApiName": "cloudPcUserRoleScopeTagInfo",
+                "ChangeType": "Addition",
+                "Description": "Added the [cloudPcUserRoleScopeTagInfo](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcUserRoleScopeTagInfo?view=graph-rest-beta) resource type.",
+                "Target": "cloudPcUserRoleScopeTagInfo"
+              },
+              {
+                "Id": "4db352a1-1ba2-4574-adc2-742e2b3cb79d",
+                "ApiChange": "EntityType",
+                "ChangedApiName": "cloudPcAuditEvent",
+                "ChangeType": "Addition",
+                "Description": "Added the [cloudPcAuditEvent](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcAuditEvent?view=graph-rest-beta) resource.",
+                "Target": "cloudPcAuditEvent"
+              },
+              {
+                "Id": "4db352a1-1ba2-4574-adc2-742e2b3cb79d",
+                "ApiChange": "NavigationProperty",
+                "ChangedApiName": "auditEvents",
+                "ChangeType": "Addition",
+                "Description": "Added the **auditEvents** relationship to the [virtualEndpoint](https://docs.microsoft.com/en-us/graph/api/resources/virtualEndpoint?view=graph-rest-beta) resource.",
+                "Target": "virtualEndpoint"
+              },
+              {
+                "Id": "4db352a1-1ba2-4574-adc2-742e2b3cb79d",
+                "ApiChange": "Function",
+                "ChangedApiName": "getAuditActivityTypes",
+                "ChangeType": "Addition",
+                "Description": "Added the [getAuditActivityTypes](https://docs.microsoft.com/en-us/graph/api/cloudPcAuditEvent-getAuditActivityTypes?view=graph-rest-beta) method to the [cloudPcAuditEvent](https://docs.microsoft.com/en-us/graph/api/resources/cloudPcAuditEvent?view=graph-rest-beta) resource.",
+                "Target": "cloudPcAuditEvent"
+              }
+            ],
+            "Id": "4db352a1-1ba2-4574-adc2-742e2b3cb79d",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-06-29T07:45:15.1242441Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
+            "ChangeList": [
+                {
+                    "Id": "1cd08c2a-1f76-4d7b-9d40-260134a85660",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "aadConnectivityCheckUnknownError",
+                    "ChangeType": "Change",
+                    "Description": "Changed the `aadConnectivityCheckUnknownError` member to `azureAdDeviceSyncCheckUnknownError` in the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "1cd08c2a-1f76-4d7b-9d40-260134a85660",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "azureAdDeviceSyncCheckDeviceNotFound",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `azureAdDeviceSyncCheckDeviceNotFound` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "1cd08c2a-1f76-4d7b-9d40-260134a85660",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "azureAdDeviceSyncCheckLongSyncCircle",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `azureAdDeviceSyncCheckLongSyncCircle` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                }
+            ],
+            "Id": "1cd08c2a-1f76-4d7b-9d40-260134a85660",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-07-07T13:43:07.177Z",
             "WorkloadArea": "Devices and apps",
             "SubArea": "Cloud PC"
         },
@@ -363,6 +549,40 @@
             "SubArea": "Cloud PC"
         },
         {  
+            "ChangeList": [
+                {
+                    "Id": "77fa9e59-ff0f-4a21-90e1-a48c6a9b7ca2",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "resourceAvailabilityCheckSubscriptionNotFound",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `resourceAvailabilityCheckSubscriptionNotFound` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "77fa9e59-ff0f-4a21-90e1-a48c6a9b7ca2",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "resourceAvailabilityCheckSubscriptionTransferred",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `resourceAvailabilityCheckSubscriptionTransferred` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                },
+                {
+                    "Id": "77fa9e59-ff0f-4a21-90e1-a48c6a9b7ca2",
+                    "ApiChange": "Member",
+                    "ChangedApiName": "resourceAvailabilityCheckGeneralSubscriptionError",
+                    "ChangeType": "Addition",
+                    "Description": "Added the `resourceAvailabilityCheckGeneralSubscriptionError` member to the **cloudPcOnPremisesConnectionHealthCheckErrorType** enumeration.",
+                    "Target": "cloudPcOnPremisesConnectionHealthCheckErrorType"
+                }
+            ],
+            "Id": "77fa9e59-ff0f-4a21-90e1-a48c6a9b7ca2",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-07-09T14:55:07.177Z",
+            "WorkloadArea": "Devices and apps",
+            "SubArea": "Cloud PC"
+        },
+        {
             "ChangeList": [
                 {
                     "Id": "354f1cbe-9671-4608-8027-eb7dce79a0b7",

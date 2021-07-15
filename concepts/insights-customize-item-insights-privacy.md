@@ -36,7 +36,7 @@ Item insights settings provide flexibility for administrators to use Azure AD to
 The next section describes using the admin center, and is followed by the section about PowerShell cmdlets. If you're using the REST API, skip the next two sections and continue with [Configure item insights using REST API](#configure-item-insights-using-rest-api). Then refer to the [read](/graph/api/iteminsightssettings-get?view=graph-rest-beta&preserve-view=true) or [update](/graph/api/iteminsightssettings-update?view=graph-rest-beta&preserve-view=true) REST operations for more information.
 
 ### How to configure item insights settings via Microsoft admin center?
-An administrator with the _global administrator role_ can tune item insights privacy settings via toggles. To do so, in the Micrsofot 365 admin center, expand **Settings**, select **Search & intelligence**, and under **Item insights**, choose **Change settings**.
+An administrator with the _global administrator role_ can tune item insights privacy settings via toggles. To do so, in the Microsoft 365 admin center, expand **Settings**, select **Search & intelligence**, and under **Item insights**, choose **Change settings**.
 ![image](https://user-images.githubusercontent.com/54312959/117024482-b39eca00-ad02-11eb-9a11-e6a01039822e.png)
 
 

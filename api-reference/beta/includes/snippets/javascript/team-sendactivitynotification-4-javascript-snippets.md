@@ -12,23 +12,26 @@ const client = Client.init(options);
 
 const sendActivityNotification = {
     topic: {
-        source: 'text',
-        value: 'Deployment Approvals Channel',
-        webUrl: 'https://teams.microsoft.com/l/message/19:448cfd2ac2a7490a9084a9ed14cttr78c@thread.skype/1605223780000?tenantId=c8b1bf45-3834-4ecf-971a-b4c755ee677d&groupId=d4c2a937-f097-435a-bc91-5c1683ca7245&parentMessageId=1605223771864&teamName=Approvals&channelName=Azure%20DevOps&createdTime=1605223780000'
+        source: 'entityUrl',
+        value: 'https://graph.microsoft.com/beta/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7'
     },
-    activityType: 'deploymentApprovalRequired',
+    activityType: 'pendingFinanceApprovalRequests',
     previewText: {
-        content: 'New deployment requires your approval'
+        content: 'Internal spending team has a pending finance approval requests'
+    },
+    recipient: {
+        '@odata.type': 'microsoft.graph.teamMembersNotificationRecipient',
+        teamId: 'e8bece96-d393-4b9b-b8da-69cedef1a7e7'
     },
     templateParameters: [
         {
-            name: 'deploymentId',
-            value: '6788662'
+            name: 'pendingRequestCount',
+            value: '5'
         }
-    ]
+    ] 
 };
 
-await client.api('/users/{userId}/teamwork/sendActivityNotification')
+await client.api('/teams/e8bece96-d393-4b9b-b8da-69cedef1a7e7/sendActivityNotification')
 	.version('beta')
 	.post(sendActivityNotification);
 

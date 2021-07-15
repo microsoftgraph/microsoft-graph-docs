@@ -177,7 +177,7 @@ These conditions apply regardless of whether the signed-in user is an administra
 
 ## Time zone representation
 By default, the start and end times of the returned schedule items are represented in UTC. You can use a `Prefer` header to specify a time zone appropriate for your app. As an example: 
-```
+``` http
 Prefer: outlook.timezone="Pacific Standard Time"
 ```
 

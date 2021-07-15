@@ -111,11 +111,11 @@ To learn more, see [styling components](../customize-components/style.md).
 
 The following events are fired from the component.
 
-| Event | Detail | Description |
-| --- | --- | --- |
-| `line1clicked` | The detail contains the respective `person` object | Fired when line1 is clicked. |
-| `line2clicked` | The detail contains the respective `person` object | Fired when line2 is clicked. |
-| `line3clicked` | The detail contains the respective `person` object | Fired when line3 is clicked. |
+Event | When is it emitted | Custom data | Cancelable | Bubbles | Works with custom template
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`line1clicked` | Fired when line1 is clicked | The `person` object which can be a Graph [user](/graph/api/resources/user), [person](/graph/api/resources/person) or [contact](/graph/api/resources/contact) with an additional `personImage` property that contains the URL of the user's photo | No | No | Yes, unless you override the default template
+`line2clicked` | Fired when line2 is clicked | The `person` object which can be a Graph [user](/graph/api/resources/user), [person](/graph/api/resources/person) or [contact](/graph/api/resources/contact) with an additional `personImage` property that contains the URL of the user's photo | No | No | Yes, unless you override the default template
+`line3clicked` | Fired when line3 is clicked | The `person` object which can be a Graph [user](/graph/api/resources/user), [person](/graph/api/resources/person) or [contact](/graph/api/resources/contact) with an additional `personImage` property that contains the URL of the user's photo | No | No | Yes, unless you override the default template
 
 For more information about handling events, see [events](../customize-components/events.md).
 

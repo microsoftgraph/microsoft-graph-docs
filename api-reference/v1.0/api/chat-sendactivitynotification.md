@@ -223,3 +223,6 @@ Content-Type: application/json
 ``` http
 HTTP/1.1 204 No Content
 ```
+## See also
+
+[Notify Feed App C# sample](https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/graph-activity-feed/csharp)

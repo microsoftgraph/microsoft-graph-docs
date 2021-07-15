@@ -14,22 +14,26 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-A subscription allows a client app to receive change notifications about changes to data in Microsoft Graph. Currently, subscriptions are enabled for the following resources:
+A subscription allows a client app to receive change notifications about changes to data in Microsoft Graph. Currently, subscriptions are enabled for the following resources. 
+
+> **Note** Subscriptions marked with an asterisk (*) are supported in the beta endpoint only.
 
 - An [alert][] from the Microsoft Graph Security API.
 - A [callRecord][] produced after a call or meeting in Microsoft Teams.
-- A [channel](./channel.md) in Microsoft Teams.
+- A [channel](./channel.md) in Microsoft Teams.*
+- A [chat](./chat.md) in Microsoft Teams.*
 - A [chatMessage][] sent via teams or channels in Microsoft Teams.
 - A [conversation][] in a Microsoft 365 group.
-- A [conversationMember](./conversationmember.md) in a Microsoft 365 group.
+- A [conversationMember](./conversationmember.md) in a team, channel, or chat in Microsoft Teams.*
 - Content in the hierarchy of a root folder [driveItem][] in OneDrive for Business, or of a root folder or subfolder [driveItem][] in a user's personal OneDrive.
+- A [group][] in Azure Active Directory.
 - A [list][] under a SharePoint [site][].
 - A [message][], [event][], or [contact][] in Outlook.
-- The [presence][] of a user in Microsoft Teams.
-- A [team](./team.md) in Microsoft Teams.
-- A [user][] or [group][] in Azure Active Directory.
+- The [presence][] of a user in Microsoft Teams.*
+- A [team](./team.md) in Microsoft Teams.*
 - A [printer][] (when a print job for the printer gets to JobFetchable state - ready to be fetched for printing) and a [printTaskDefinition][] in Universal Print. For more information, see [Subscribe to change notifications from cloud printing APIs](/graph/universal-print-webhook-notifications).
-- A [todoTask][] of a user in Microsoft To Do.
+- A [todoTask][] of a user in Microsoft To Do.*
+- A [user][] in Azure Active Directory.
 
 See [Use the Microsoft Graph API to get change notifications](webhooks.md) for the possible resource path values for each supported resource.
 
@@ -70,6 +74,7 @@ See [Use the Microsoft Graph API to get change notifications](webhooks.md) for t
 | Security **alert**     | 43200 minutes (under 30 days)  |
 | Teams **callRecord**    | 4230 minutes (under 3 days)  |
 | Teams **channel**    | 60 minutes (1 hour)  |
+| Teams **chat** | 60 minutes (1 hour) |
 | Teams **chatMessage**    | 60 minutes (1 hour)  |
 | Teams **conversationMember**    | 60 minutes (1 hour)  |
 | Teams **team**    | 60 minutes (1 hour)  |

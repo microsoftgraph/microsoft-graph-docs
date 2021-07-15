@@ -32,6 +32,7 @@ POST /directory/administrativeUnits/{id}/scopedRoleMembers
 | Name      |Description|
 |:----------|:----------|
 | Authorization  | Bearer {token}. Required.|
+| Content-type | application/json. Required. |
 
 ## Request body
 In the request body, supply a JSON representation of [scopedRoleMembership](../resources/scopedrolemembership.md) object.

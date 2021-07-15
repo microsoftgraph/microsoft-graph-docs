@@ -128,9 +128,9 @@ For example, you can use a template to customize the component attached to the `
 
 The following events are fired from the component.
 
-| Event | Description |
-| --- | --- |
-| `expanded` | The user has opened the expanded details section of the card. |
+Event | When is it emitted | Custom data | Cancelable | Bubbles | Works with custom template
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`expanded` | The user has opened the expanded details section of the card | None | No | Yes | Yes, unless you override the default template
 
 For more information about handling events, see [events](../customize-components/events.md).
 

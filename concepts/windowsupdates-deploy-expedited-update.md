@@ -81,9 +81,6 @@ Content-Type: application/json
 
 ## Step 2: Create a deployment
 
-> [!NOTE]
-> The first time you deploy an expedited security update in your tenant, you may experience up to a one-day delay while the service is configured for your organization. This delay does not apply to subsequent deployments or deployments of feature updates, and will be addressed in a future update.
-
 A [deployment](/graph/api/resources/windowsupdates-deployment) specifies content to deploy, how and when to deploy the content, and the targeted devices. For quality updates, the content is specified using a target compliance date. When a deployment is created, a deployment audience is automatically created as a relationship.
 
 When you deploy an expedited security update to a device, Windows Update offers an update that brings the device above the minimum compliance level specified. Depending on when each device scans and updates, some devices may receive newer updates (e.g. if there is a newer security update than the one corresponding to the desired minimum compliance level), but all devices meet the specified security update compliance standard. This behavior of offering the latest applicable update, indicated by the property **equivalentContent** being set to the default value `latestSecurity`, helps keep devices as secure as possible and prevents a device from receiving an expedited update followed by another regular update just days later.

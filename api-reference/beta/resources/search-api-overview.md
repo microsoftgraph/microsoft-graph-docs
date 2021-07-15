@@ -36,6 +36,7 @@ Search requests run on behalf of the user. Search results are scoped to enforce 
 |[Refine results using aggregations](#refine-results-using-aggregations)| **aggregations** |
 |[Search custom types imported using connectors](/graph/search-concept-custom-types)| **contentSources** |
 |[Request spelling correction](#request-spelling-correction)| **queryAlterationOptions** |
+|[Search display layout](#search-display-layout) (preview)| **resultTemplateOptions**
 
 ## Scope search based on entity types
 
@@ -52,6 +53,7 @@ The following table describes the types available to query and the supported per
 |[listItem](listitem.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint and OneDrive | List items. Note that files and folders are also returned as list items; **listItem** is the super class of **driveItem**. |
 |[site](site.md)|Sites.Read.All, Sites.ReadWrite.All| SharePoint | Sites in SharePoint.|
 |[externalItem](externalitem.md)|ExternalItem.Read.All| Microsoft Graph connectors| All content ingested with the Microsoft Graph connectors API.|
+|[person](person.md)|People.Read|Exchange Online|Personal contacts and contacts or addressable objects in your organization.|
 
 ## Page search results
 
@@ -86,13 +88,13 @@ When searching the **message** entity, specifying **enableTopResults** as `true`
 
 ## Get selected properties
 
-When searching an entity type, such as **message**, **event**, **drive**, **driveItem**, **list**, **listItem**, **site**, **externalItem**, you can include in the **fields** property specific entity properties to return in the search results. This is similar to using the [OData system query option, $select](/graph/query-parameters#select-parameter) in REST requests. The search API does not technically support these query options because the behavior is expressed in the POST body.
+When searching an entity type, such as **message**, **event**, **drive**, **driveItem**, **list**, **listItem**, **site**, **externalItem**, or **person**, you can include in the **fields** property specific entity properties to return in the search results. This is similar to using the [OData system query option, $select](/graph/query-parameters#select-parameter) in REST requests. The search API does not technically support these query options because the behavior is expressed in the POST body.
 
 For all these entity types, specifying the **fields** property reduces the number of properties returned in the response, optimizing the payload over the wire.
 
-The **listItem** and **externalItem** entities are the only supported entities that allow getting extended fields configured in the schema. You cannot retrieve extended properties from all the other entities. For example, if you created a field for **externalItem** in the search schema, or if you have a custom column on a **listItem**, you can retrieve these properties from search. To retrieve an extended property on a file, specify the **listItem** type in the request.
+The **listItem** and **externalItem** entities are the only supported entities that allow getting extended retrievable fields configured in the schema. You cannot retrieve extended properties from all the other entities by using the search API. For example, if you created a retrievable field for **externalItem** in the search schema, or if you have a retrievable custom column on a **listItem**, you can retrieve these properties from search. To retrieve an extended property on a file, specify the **listItem** type in the request.
 
-If the **fields** specified in the request are not present in the schema, they will not be returned in the response. Invalid fields in the request are silently ignored.
+If the **fields** specified in the request are either not present in the schema, or not marked as retrievable, they will not be returned in the response. Invalid fields in the request are silently ignored.
 
 If you do not specify any **fields** in the request,  you will get the default set of properties for all types. For extended properties, **listItem** and **externalItem** behave differently when no **fields** are passed in the request:
 
@@ -113,7 +115,7 @@ Depending on the entity type, the searchable properties vary. For details, see:
 Search results in the response are sorted in the following default sort order:
 
 - **message** and **event** are sorted by date.
-- All SharePoint, OneDrive and connector types are sorted by relevance.
+- All SharePoint, OneDrive, person and connector types are sorted by relevance.
 
 The [query](../api/search-query.md) method lets you customize the search order by specifying the **sortProperties** on the `requests` parameter, which is a collection of [searchRequest](./searchrequest.md) objects. This allows you to specify a list of one or more sortable properties and the sort order.
 
@@ -147,6 +149,14 @@ In the request body of the [query](/graph/api/search-query?view=graph-rest-beta&
 
 For examples that show how to use spelling corrections, see [Request spelling correction](/graph/search-concept-speller).
 
+## Search display layout
+
+The search API allows you to render search results from [connectors](/microsoftsearch/connectors-overview), by using the display layout or result template configured by the IT admin for each connector. The result templates are [Adaptive Cards](https://adaptivecards.io/), which are a semantically meaningful combination of layout and data.
+
+To get the result template in the [searchresponse](searchresponse.md), you have to set **true** the **enableResultTemplate** property, defined in the [resultTemplateOptions](./resulttemplateoption.md), in the [searchRequest](./searchrequest.md). The response includes a **resultTemplateId** for every [search hit](./searchhit.md), which maps to one of the display layouts included in the **resultTemplates** dictionary that is included in the response.
+
+See [Use search display layout](/graph/search-concept-display-layout) for examples. 
+
 ## Error handling
 
 The search API returns error responses as defined by [OData error object definition](http://docs.oasis-open.org/odata/odata-json-format/v4.01/cs01/odata-json-format-v4.01-cs01.html#sec_ErrorResponse), each of which is a JSON object containing a code and a message.
@@ -160,13 +170,13 @@ The search API has the following limitations:
 - The **query** method is defined to allow passing a collection of one or more **searchRequest** instances at once. However, the service currently supports only a single [searchRequest](./searchrequest.md) at a time.
 
 - The [searchRequest](./searchrequest.md) resource supports passing multiple types of entities at a time. However, currently the only supported combination is for SharePoint and OneDrive entityTypes: **driveItem**, **drive**, **site**, **list**, **listItem**.
-Any combinations involving **message**, **event**, SharePoint and OneDrive types , or **externalItem** are currently not supported.  
+Any combinations involving **message**, **event**, **person**, SharePoint and OneDrive types, or **externalItem** are currently not supported.  
 
 - The **contentSource** property, which defines the connection to use, is only applicable when **entityType** is specified as `externalItem`.
 
-- The search API does not support custom sort for **message**, **event** or  **externalItem**.
+- The search API does not support custom sort for **message**, **event**, **person**, or **externalItem**.
 
-- The search API does not support aggregations for **message**, **event**, **site** or **drive**.
+- The search API does not support aggregations for **message**, **event**, **site**, **person**, or **drive**.
 
 - Customizations in SharePoint search, such as a custom search schema or result sources, can interfere with the operation of the Microsoft Search API.
 
@@ -194,13 +204,15 @@ For backward compatibility, the original properties and types are accessible and
 - Learn more about a few key use cases:
   - [Search Outlook messages](/graph/search-concept-messages)
   - [Search calendar events](/graph/search-concept-events)
+  - [Search person](/graph/search-concept-person)  
   - [Search content in Sharepoint and OneDrive](/graph/search-concept-files)
   - [Search custom types imported using connectors](/graph/search-concept-custom-types)
   - [Sort search results](/graph/search-concept-sort)
   - [Refine search results](/graph/search-concept-aggregation)
   - [Request spelling correction](/graph/search-concept-speller)
+  - [Use search display layout](/graph/search-concept-display-layout)
 
-- Explore the search APIs in  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
+- Explore the search APIs in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 
 ## What's new
 

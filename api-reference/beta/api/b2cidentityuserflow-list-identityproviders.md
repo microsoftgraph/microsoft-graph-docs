@@ -1,17 +1,18 @@
 ---
-title: "List all identityProviders in a b2cIdentityUserFlow"
-description: "List all identityProviders in a b2cIdentityUserFlow."
+title: "List all identityProviders in a b2cIdentityUserFlow (deprecated)"
+description: "List all identityProviders in a b2cIdentityUserFlow. (deprecated)"
 localization_priority: Normal
 doc_type: apiPageType
 author: "jkdouglas"
 ms.prod: "identity-and-sign-in"
 ---
 
-# List all identityProviders in a b2cIdentityUserFlow
+# List all identityProviders in a b2cIdentityUserFlow (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Get the identity providers in a [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) object.
 
@@ -121,5 +122,3 @@ Content-type: application/json
     ]
 }
 ```
-
-

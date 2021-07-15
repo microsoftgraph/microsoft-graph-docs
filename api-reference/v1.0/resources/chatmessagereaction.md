@@ -21,7 +21,7 @@ An entity of type `chatMessageReaction` is returned as part of the [Get channel 
 |:-------------|:------------|:------------|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |reactionType|String|Supported values are `like`, `angry`, `sad`, `laugh`, `heart`, `surprised`. |
-|user|[identitySet](identityset.md)|The user who reacted to the message.|
+|user|[chatMessageReactionIdentitySet](chatmessagereactionidentityset.md)|The user who reacted to the message.|
 
 ## JSON representation
 
@@ -40,7 +40,7 @@ The following is a JSON representation of the resource.
 {
   "createdDateTime": "String (timestamp)",
   "reactionType": "String",
-  "user": {"@odata.type": "microsoft.graph.identitySet"}
+  "user": {"@odata.type": "microsoft.graph.chatMessageReactionIdentitySet"}
 }
 ```
 

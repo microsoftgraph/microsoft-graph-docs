@@ -72,9 +72,9 @@ You can populate selected people data by doing one of the following:
 
 The following events are fired from the component.
 
-| Event | Description |
-| --- | --- |
-| `selectionChanged` | The user added or removed a person from the list of selected/picked people.|
+Event | When is it emitted | Custom data | Cancelable | Bubbles | Works with custom template
+------|-------------------|--------------|:-----------:|:---------:|:---------------------------:|
+`selectionChanged` | The user added or removed a person from the list of selected/picked people | Array of selected people, where a person can be a Graph [user](/graph/api/resources/user), [person](/graph/api/resources/person) or [contact](/graph/api/resources/contact) with an additional `personImage` property that contains the URL of the user's photo | No | No | Yes, unless you override the default template
 
 For more information about handling events, see [events](../customize-components/events.md).
 

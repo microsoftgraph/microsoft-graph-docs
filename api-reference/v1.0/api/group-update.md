@@ -55,7 +55,7 @@ In the request body, supply the values for relevant fields that should be update
 
 > **Note:**
 >
-> - You can update **allowExternalSenders** and **autoSubscribeNewMembers** by specifying them in their own PATCH request, without including the other properties in the table above.
+> - To update the following Exchange-specific properties, you must specify them in their own PATCH request, without including the other properties listed in the table above: **allowExternalSenders**, **autoSubscribeNewMembers**, **hideFromAddressLists**, **hideFromOutlookClients**, **isSubscribedByMail**, **unseenCount**.
 > - Only a subset of the group API pertaining to core group administration and management support application and delegated permissions. All other members of the group API, including updating  **autoSubscribeNewMembers**, support only delegated permissions. See [known issues](/graph/known-issues#groups) for examples.
 > - The rules for updating mail-enabled security groups in Microsoft Exchange Server can be complex; to learn more, see [Manage mail-enabled security groups in Exchange Server](/Exchange/recipients/mail-enabled-security-groups?view=exchserver-2019).
 
@@ -80,17 +80,15 @@ The following is an example of the request.
 ```http
 PATCH https://graph.microsoft.com/v1.0/groups/{id}
 Content-type: application/json
-Content-length: 211
 
 {
-  "description": "description-value",
-  "displayName": "displayName-value",
+  "description": "Library Assist",
+  "displayName": "Library Assist",
   "groupTypes": [
-    "groupTypes-value"
+    "Unified"
   ],
-  "mail": "mail-value",
   "mailEnabled": true,
-  "mailNickname": "mailNickname-value"
+  "mailNickname": "library-help"
 }
 ```
 # [C#](#tab/csharp)

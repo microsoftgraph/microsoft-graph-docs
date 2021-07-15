@@ -53,7 +53,7 @@ The following table shows the parameters that can be used with this action.
 |Parameter|Type|Description|
 |-|-|-|
 |sourceFile| [itemReference](../resources/itemreference.md) |Metadata about the source file that needs to be copied to the default content location. Required.|
-|destinationFileName| string |Destination filename. 
+|destinationFileName| string |Destination filename. |
 
 ## Response
 

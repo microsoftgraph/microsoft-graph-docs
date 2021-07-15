@@ -1,17 +1,18 @@
 ---
-title: "Add identityProvider to a b2cIdentityUserFlow"
-description: "Add identityProvider to a b2cIdentityUserFlow."
+title: "Add identityProvider to a b2cIdentityUserFlow (deprecated)"
+description: "Add identityProvider to a b2cIdentityUserFlow. (deprecated)"
 localization_priority: Normal
 doc_type: apiPageType
-author: "jkdouglas"
+author: "namkedia"
 ms.prod: "identity-and-sign-in"
 ---
 
-# Add identityProvider to a b2cIdentityUserFlow
+# Add identityProvider to a b2cIdentityUserFlow (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Add identity providers in a [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) object.
 

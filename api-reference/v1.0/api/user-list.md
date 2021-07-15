@@ -185,7 +185,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following is an example of the request. This request requires the **ConsistencyLevel** header set to `eventual` because `$count` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
 <!-- {
   "blockType": "ignored",
@@ -214,7 +214,7 @@ Content-type: text/plain
 
 #### Request
 
-The following is an example of the request.
+The following is an example of the request. This request requires the **ConsistencyLevel** header set to `eventual` and the `$count=true` query string because the request has both the `$orderBy` and `$filter` query parameters. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
 <!-- {
   "blockType": "ignored",
@@ -261,7 +261,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following is an example of the request. This request requires the **ConsistencyLevel** header set to `eventual` and the `$count=true` query string because the request has both the `$orderBy` and `$filter` query parameters, and also uses the `endsWith` operator. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
 
 # [HTTP](#tab/http)
@@ -328,7 +328,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following is an example of the request. This request requires the **ConsistencyLevel** header set to `eventual` because `$search` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
 <!-- {
   "blockType": "ignored",
@@ -374,7 +374,7 @@ Content-type: application/json
 
 #### Request
 
-The following is an example of the request.
+The following is an example of the request. This request requires the **ConsistencyLevel** header set to `eventual` because `$search` is in the request. For more information about the use of **ConsistencyLevel** and `$count`, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
 
 <!-- {
   "blockType": "ignored",

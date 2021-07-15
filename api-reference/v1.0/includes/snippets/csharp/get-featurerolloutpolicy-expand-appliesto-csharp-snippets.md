@@ -6,7 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var featureRolloutPolicy = await graphClient.Directory.FeatureRolloutPolicies["{featureRolloutPolicy-id}"]
+var featureRolloutPolicy = await graphClient.Policies.FeatureRolloutPolicies["{featureRolloutPolicy-id}"]
 	.Request()
 	.Expand("appliesTo")
 	.GetAsync();

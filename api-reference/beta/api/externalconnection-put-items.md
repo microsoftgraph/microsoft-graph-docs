@@ -17,8 +17,6 @@ Create a new [externalItem](../resources/externalitem.md).
 
 This API can be used to create a custom item. Specify the type you are creating by including the `@odata.type` property in the JSON body. The containing [externalConnection](../resources/externalconnection.md) must have a [schema](../resources/schema.md) registered of the corresponding type.
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
-
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

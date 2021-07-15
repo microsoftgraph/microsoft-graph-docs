@@ -39,33 +39,40 @@ The result of a cloud PC on-premises connection health check.
 
 |Member|Description|
 |:---|:---|
-|dnsCheckFqdnNotFound|The DNS check failed because the fully qualified domain name was not found. Please re-enter fully qualified domain name.|
-|dnsCheckUnknownError|The DNS check failed due to an unknown error. Please contact customer support.|
-|adJoinCheckFqdnNotFound|The active domain join check failed because the fully qualified domain name was not found. Please re-enter fully qualified domain name.|
-|adJoinCheckIncorrectCredentials|The active domain join check failed because the domain credentials are incorrect. Please update the username and password.|
-|adJoinCheckOrganizationalUnitNotFound|The active domain join check failed because the specified organizational unit was not found. Please re-enter organization unit.|
-|adJoinCheckOrganizationalUnitIncorrectFormat|The active domain join check failed because the format of the specified organizational unit is incorrect. Example format: “OU=OU1,OU=OU2,OU=OU3,DC=DC1”.|
-|adJoinCheckAccessDenied|The active domain join check failed because access is denied when non-administrator users who have been delegated control try to join computer objects to a domain controller. Please assign the correct permission to the customer to join computer object to the domain. Permissions needed: Create computer objects, Delete computer objects.|
-|adJoinCheckUnknownError|The active domain join check failed due to an unknown error. Please contact customer support.|
-|endpointConnectivityCheckCloudPcUrlNotAllowListed|The endpoint connectivity check failed because the CPC provision script storage URL isn’t on the allow list in the network firewall settings. Please add URLs to the list of allowed network firewall settings. The URLs can be found in additional information.|
-|endpointConnectivityCheckWVDUrlNotAllowListed|The endpoint connectivity check failed because the WVD URL isn’t on the allow list in the network firewall settings. Please add URLs to the list of allowed network firewall settings.|
-|endpointConnectivityCheckIntuneUrlNotAllowListed|The endpoint connectivity check failed because the Intune URL isn’t on the allow list in the network firewall settings. Please add URLs to the list of allowed network firewall settings.|
-|endpointConnectivityCheckUnknownError|The endpoint connectivity check failed due to an unknown error. Please contact customer support.|
-|aadConnectivityCheckUnknownError|The Azure Active Directory connectivity check failed due to an unknown error. Please contact customer support.|
-|resourceAvailabilityCheckNoSubnetIP|The resource availability check failed because there were no available IP addresses in the subnet. Please free up some or change to another subnet and retry.|
-|resourceAvailabilityCheckSubscriptionDisabled|The resource availability check failed due to a disabled Azure subscription. Please re-enable the subscription.|
-|resourceAvailabilityCheckAzurePolicyViolation|Creating the required Azure resource failed because your organizations Azure policy blocked the action. Please update your Azure policy to allow this resource creation.|
-|resourceAvailabilityCheckUnsupportedVNetRegion|Selected vNet is not in a supported Azure region.|
-|resourceAvailabilityCheckUnknownError|The resource availability check failed due to an unknown error. Please contact customer support.|
-|permissionCheckNoSubscriptionReaderRole|Cloud PC service principal does not have reader permissions on the specified Azure subscription. Please work with subscription owner to add reader role assignment on the Azure subscription for the Cloud PC service principal.|
-|permissionCheckNoResourceGroupOwnerRole|Cloud PC service principal does not have owner permissions on the specified resource group. Please work with the subscription owner to add owner role assignment on the resource group for the Cloud PC service principal.|
-|permissionCheckNoVNetContributorRole|Cloud PC service principal does not have network contributor permissions on the specified virtual network. Please work with subscription owner to add the network contributor role assignment for the Cloud PC service principal. |
-|permissionCheckUnknownError|The permission check failed due to an unknown error. Please contact customer support.|
-|internalServerErrorDeploymentCanceled|The deployment was canceled. Try again later. If the problem persists, contact support.|
-|internalServerErrorAllocateResourceFailed|The allocation of resources failed. Try again or contact support for more details.|
-|internalServerErrorVMDeploymentTimeout|The virtual machine deployment timed out. Try again. If the problem persists, contact support.|
-|internalServerErrorUnableToRunDscScript|Unable to run DSC script during the health check. The service needs access to WinRM to successfully provision the cloud PC. Please ensure that no Group Policy or related configuration is blocking the use of PowerShell/DSC.|
-|internalServerUnknownError|The health check failed due to an unknown internal server error. Please contact customer support.|
+|dnsCheckFqdnNotFound|The DNS resolution failed for the domain name. Possible error causes: 1. The specified Azure vNet's DNS server can't resolve the domain name. Please update the vNet with an appropriate DNS server; 2. The domain name provided doesn't exist or isn't correct. Please update the on-premises network connection with the correct domain name. Please make sure that the vNet defined in the on-premises network connection can resolve the domain name.|
+|dnsCheckUnknownError|The DNS resolution failed for the domain name. Possible error causes: 1. The specified Azure vNet's DNS server can't resolve the domain name. Please update the vNet with an appropriate DNS server; 2. The domain name provided doesn't exist or isn't correct. Please update the on-premises network connection with the correct domain name. Please make sure that the vNet defined in the on-premises network connection can resolve the domain name.|
+|adJoinCheckFqdnNotFound|The domain join check failed because the domain name couldn't be found. Please make sure a domain controller for the domain name can be contacted by the vNet defined in the on-premises network connection.|
+|adJoinCheckIncorrectCredentials|The domain join check failed because the credentials provided for the domain aren't correct. Please update the on-premises network connection with correct credentials.|
+|adJoinCheckOrganizationalUnitNotFound|The domain join check failed because the organizational unit (OU) can't be found. Please provide an OU in the domain. The OU must be in distinguished name format. Example format: “OU=OU1,OU=OU2,OU=OU3,DC=DC1”.|
+|adJoinCheckOrganizationalUnitIncorrectFormat|The domain join check failed because the organizational unit (OU) can't be found. Please provide an OU in the domain. The OU must be in distinguished name format. Example format: “OU=OU1,OU=OU2,OU=OU3,DC=DC1”.|
+|adJoinCheckComputerObjectAlreadyExists|The computer account can't be found in the organizational unit (OU) provided in the on-premises network connection but the computer name already exists in the domain. This often occurs after the computer object was moved out of the OU configured in the on-premises network connection. Please move the computer object back to the target OU.|
+|adJoinCheckAccessDenied|The domain join check failed because the user account provided doesn't have sufficient permissions to join the domain. Please make sure that the account provided has sufficient permissions or change the user account defined in the on-premises network connection properties. Permissions needed: *Create computer objects* and *Delete computer objects*.|
+|adJoinCheckUnknownError|The domain join check failed due to an unknown error. Please make sure that the on-premises network connection can successfully join the domain using the details provided.|
+|endpointConnectivityCheckCloudPcUrlNotAllowListed|During provisioning, one or more required URLs couldn't be contacted. Please make sure that all of the required URLs are allowed through the firewalls and proxies.|
+|endpointConnectivityCheckWVDUrlNotAllowListed|During provisioning, one or more required WVD URLs couldn't be contacted. Please make sure that all of the required URLs are allowed through the firewalls and proxies.|
+|endpointConnectivityCheckIntuneUrlNotAllowListed|During provisioning, one or more required Intune URLs couldn’t be contacted. Please make sure that all of the required URLs are allowed through the firewalls and proxies.|
+|endpointConnectivityCheckUnknownError|During provisioning, one or more required URLs couldn't be contacted. Please make sure that all of the required URLs are allowed through the firewalls and proxies.|
+|azureAdDeviceSyncCheckDeviceNotFound|The cloud PC computer object can't be found in Azure Active Directory (Azure AD). Please make sure that Azure AD connect works and syncs frequently so that the cloud PC computer objects are synced to Azure AD. Azure AD device sync must be enabled and synced within the last 60 minutes.|
+|azureAdDeviceSyncCheckLongSyncCircle|The check whether the cloud PC computer object has been synced to Azure Active Directory (Azure AD) has timed out. Please make sure that Azure AD connect works and syncs frequently so that the cloud PC computer objects are synced to Azure AD. Azure AD device sync must be enabled and synced within the last 60 minutes.|
+|azureAdDeviceSyncCheckUnknownError|Hybrid Azure Active Directory (Azure AD) connectivity check failed. Please make sure that Azure AD connect works and syncs frequently so that the cloud PC computer objects are synced to Azure AD. Azure AD device sync must be enabled and synced within the last 60 minutes.|
+|resourceAvailabilityCheckNoSubnetIP|The subnet provided doesn't have IP addresses available. Please make sure that the subnet provided in the on-premises network connection has sufficient IP addresses available. Please expand the current selected subnet or select a different subnet to be used for provisioning.|
+|resourceAvailabilityCheckSubscriptionDisabled|The Azure subscription provided is disabled. Please make sure that the Azure subscription is enabled and available for provisioning.|
+|resourceAvailabilityCheckAzurePolicyViolation|The Azure subscription provided can't be found. Please ensure that the Azure subscription is available for provisioning.|
+|resourceAvailabilityCheckSubscriptionNotFound|The Azure subscription provided can't be accessed. Please ensure that the Azure subscription is available for provisioning.|
+|resourceAvailabilityCheckSubscriptionTransferred|The Azure subscription provided can't be accessed. Please ensure that the Azure subscription is available for provisioning.|
+|resourceAvailabilityCheckGeneralSubscriptionError|An Azure policy is restricting the creation of resources. Please ensure that there is no Azure policy that restricts creating resources in the subscription and/or resource group.|
+|resourceAvailabilityCheckUnsupportedVNetRegion|The selected vNet is located in an unsupported region. Please ensure that the selected vNet is located in a supported region.|
+|resourceAvailabilityCheckUnknownError|The resource availability check for Azure resources failed due to an unknown error. Please ensure that all Azure resources meet the prerequisites.|
+|permissionCheckNoSubscriptionReaderRole|The cloud PC service principal doesn't have sufficient permissions on the Azure subscription. Please make sure that the cloud PC service principal has the *Reader* permissions on the subscription.|
+|permissionCheckNoResourceGroupOwnerRole|The cloud PC service principal doesn't have sufficient permissions on the Azure resource group. Please make sure that the cloud PC service principal has the *Owner* permissions on the resource group. |
+|permissionCheckNoVNetContributorRole|The cloud PC service principal doesn't have sufficient permissions on the Azure vNet. Please make sure that the cloud PC service has the *Network contributor* permissions on the vNet.|
+|permissionCheckNoResourceGroupNetworkContributorRole|Cloud PC service principal doesn't have sufficient permissions on the Azure resource group. Please make sure that the  application has Network contributor permissions on the resource group.|
+|permissionCheckUnknownError|The cloud PC service principal doesn't have sufficient permissions. Please make sure that the cloud PC service principal is granted sufficient Azure permissions.|
+|internalServerErrorDeploymentCanceled|The deployment was canceled. Please try again later. If the problem persists, please contact support.|
+|internalServerErrorAllocateResourceFailed|The allocation of resources failed. Please try again later. If the problem persists, please contact support.|
+|internalServerErrorVMDeploymentTimeout|The virtual machine deployment timed out. Please try again later. If the problem persists, please contact support.|
+|internalServerErrorUnableToRunDscScript|During provisioning, some PowerShell DSC scripts are executed on the cloud PC. Unable to either download these DSC scripts or execute them during the health check. Please ensure vNet has unrestricted access to the required endpoints, and PowerShell isn't blocked in the environment or Group Policy.|
+|internalServerUnknownError|The provisioning has failed due to an internal error. Please contact customer support.|
 
 ## Relationships
 

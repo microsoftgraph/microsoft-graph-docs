@@ -12,8 +12,8 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 [urlRequest setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
 
 MSGraphGroup *group = [[MSGraphGroup alloc] init];
-[group setDescription:@"description-value"];
-[group setDisplayName:@"displayName-value"];
+[group setDescription:@"Contoso Life v2.0"];
+[group setDisplayName:@"Contoso Life Renewed"];
 
 NSError *error;
 NSData *groupData = [group getSerializedDataWithError:&error];

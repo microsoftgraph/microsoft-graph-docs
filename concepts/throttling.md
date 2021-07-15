@@ -165,7 +165,7 @@ The following resources are provided by the Outlook service.
 
 ### Cloud communication service limits
 
-| Resource      | Limits per app per tenant    |
+| Resource      | Limits per app    |
 | -------------- | ------------ |
 | [Calls](/graph/api/resources/call) | 10,000 calls/month and 100 concurrent calls   |
 | [Meeting information](/graph/api/resources/meetinginfo)   | 2000 meetings/user each month |

@@ -31,7 +31,7 @@ var mediaConfig = new ServiceHostedMediaConfig
 };
 
 await graphClient.Communications.Calls["{call-id}"]
-	.Answer(callbackUri,mediaConfig,acceptedModalities)
+	.Answer(callbackUri,mediaConfig,acceptedModalities,null)
 	.Request()
 	.PostAsync();
 

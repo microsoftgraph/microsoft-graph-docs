@@ -39,6 +39,56 @@
     {
       "ChangeList": [
         {
+          "Id": "f6a7cc4e-7659-11eb-9758-816d298b468f",
+          "ApiChange": "Property",
+          "ChangedApiName": "media",
+          "ChangeType": "Addition",
+          "Description": "Added the **media** property to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
+          "Target": "driveItem"
+        },
+        {
+          "Id": "f6a7cc4e-7659-11eb-9758-816d298b468f",
+          "ApiChange": "Property",
+          "ChangedApiName": "source",
+          "ChangeType": "Addition",
+          "Description": "Added the **source** property to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveItem?view=graph-rest-beta) resource.",
+          "Target": "driveItem"
+        },
+        {
+          "Id": "f6a7cc4e-7659-11eb-9758-816d298b468f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "driveItemSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [driveItemSource](https://docs.microsoft.com/en-us/graph/api/resources/driveItemSource?view=graph-rest-beta) resource type.",
+          "Target": "driveItemSource"
+        },
+        {
+          "Id": "f6a7cc4e-7659-11eb-9758-816d298b468f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "media",
+          "ChangeType": "Addition",
+          "Description": "Added the [media](https://docs.microsoft.com/en-us/graph/api/resources/media?view=graph-rest-beta) resource type.",
+          "Target": "media"
+        },
+        {
+          "Id": "f6a7cc4e-7659-11eb-9758-816d298b468f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "mediaSource",
+          "ChangeType": "Addition",
+          "Description": "Added the [mediaSource](https://docs.microsoft.com/en-us/graph/api/resources/mediaSource?view=graph-rest-beta) resource type.",
+          "Target": "mediaSource"
+        }
+      ],
+      "Id": "f6a7cc4e-7659-11eb-9758-816d298b468f",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-06-30T04:37:12.404Z",
+      "WorkloadArea": "Sites and lists",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "aa7c9c04-2a12-458f-9bd5-a46c3b2fccd4",
           "ApiChange": "Relationship",
           "ChangedApiName": "permissions",

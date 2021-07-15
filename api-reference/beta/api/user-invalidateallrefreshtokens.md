@@ -41,10 +41,13 @@ This operation has no request content.
 
 If successful, this method returns `204 No Content` response code.
 
+>[!NOTE]
+>This API returns a different HTTP response code, similar to the [revokeSignInSessions](user-revokesigninsessions.md) action. For details, see [known issue](/graph/known-issues#revoke-sign-in-sessions-returns-wrong-HTTP-code). 
+
 ## Example
-Here is an example of how to call this API.
-##### Request
-Here is an example of the request.
+
+### Request
+The following is an example of the request.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -73,8 +76,8 @@ POST https://graph.microsoft.com/beta/me/invalidateAllRefreshTokens
 ---
 
 
-##### Response
-Here is an example of the response. 
+### Response
+The following is an example of the response. 
 <!-- {
   "blockType": "response",
   "truncated": true

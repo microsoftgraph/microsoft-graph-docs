@@ -133,7 +133,7 @@ client_id=535fb089-9ff3-47b6-9bfb-4f1264799865
 | tenant        | Required  | The directory tenant that you want to request permission from. This can be in GUID or friendly name format.
 | client_id     | Required  | The Application ID that the [Azure app registration portal](https://go.microsoft.com/fwlink/?linkid=2083908) assigned when you registered your app.
 | scope         | Required  | The value passed for the `scope` parameter in this request should be the resource identifier (Application ID URI) of the resource you want, affixed with the `.default` suffix. For Microsoft Graph, the value is `https://graph.microsoft.com/.default`. This value informs the Microsoft identity platform endpoint that of all the application permissions you have configured for your app in the app registration portal, it should issue a token for the ones associated with the resource you want to use.
-| client_secret | Required  | The Application Secret that you generated for your app in the app registration portal.
+| client_secret | Required  | The Application Secret that you generated for your app in the app registration portal. Ensure that it is URL encoded.
 | grant_type    | Required  | Must be `client_credentials`.
 
 #### Token response

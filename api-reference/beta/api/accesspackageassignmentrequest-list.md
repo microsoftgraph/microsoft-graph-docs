@@ -35,7 +35,7 @@ GET /identityGovernance/entitlementManagement/accessPackageAssignmentRequests
 
 ## Optional query parameters
 
-This method supports some of the OData query parameters to help customize the response. For example, to retrieve the access package of each request, include `$expand=accessPackage` in the query.  To retrieve only requests for a specific access package, include in the query a filter such as `$expand=accessPackage&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea'`.  To retrieve the resulting assignment, include `$expand=accessPackageAssignment` in the query.
+This method supports the `$expand` and `$filter` OData query parameters to help customize the response. For example, to retrieve the access package of each request, include `$expand=accessPackage` in the query.  To retrieve only requests for a specific access package, include in the query a filter such as `$expand=accessPackage&$filter=accessPackage/id eq '9bbe5f7d-f1e7-4eb1-a586-38cdf6f8b1ea'`.  To retrieve the resulting assignment, include `$expand=accessPackageAssignment` in the query.  To obtain more details on the requestor, include `$expand=requestor` in the query.
 For general information, see [OData query parameters](/graph/query-parameters).
 
 ## Request headers
@@ -126,5 +126,4 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
 

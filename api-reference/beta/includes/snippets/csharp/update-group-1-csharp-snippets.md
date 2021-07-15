@@ -8,8 +8,8 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var group = new Group
 {
-	Description = "description-value",
-	DisplayName = "displayName-value"
+	Description = "Contoso Life v2.0",
+	DisplayName = "Contoso Life Renewed"
 };
 
 await graphClient.Groups["{group-id}"]

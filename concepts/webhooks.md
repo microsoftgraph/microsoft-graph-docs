@@ -40,6 +40,7 @@ Using the Microsoft Graph API, an app can subscribe to changes on the following 
 - SharePoint [list][]
 - Teams [callRecord][]
 - Teams [channel][]
+- Teams [chat][]
 - Teams [chatMessage][]
 - Teams [conversationMember][]
 - Teams [presence][] (preview)
@@ -115,7 +116,7 @@ Each Teams resource has different subscription quotas.
 
 ## Subscription lifetime
 
-Subscriptions have a limited lifetime. Apps need to renew their subscriptions before the expiration time. Otherwise, they need to create a new subscription. For a list of maximum expiration times, see [Maximum length of subscription per resource type](/graph/api/resources/subscription?view=graph-rest-1.0#maximum-length-of-subscription-per-resource-type).
+Subscriptions have a limited lifetime. Apps need to renew their subscriptions before the expiration time. Otherwise, they need to create a new subscription. For a list of maximum expiration times, see [Maximum length of subscription per resource type](/graph/api/resources/subscription#maximum-length-of-subscription-per-resource-type).
 
 Apps can also unsubscribe at any time to stop getting change notifications.
 
@@ -154,13 +155,13 @@ Content-Type: application/json
 }
 ```
 
-The `changeType`, `notificationUrl`, `resource`, and `expirationDateTime` properties are required. See [subscription resource type](/graph/api/resources/subscription?view=graph-rest-1.0) for property definitions and values.
+The `changeType`, `notificationUrl`, `resource`, and `expirationDateTime` properties are required. See [subscription resource type](/graph/api/resources/subscription) for property definitions and values.
 
 The `resource` property specifies the resource that will be monitored for changes. For example, you can create a subscription to a specific mail folder: `me/mailFolders('inbox')/messages` or on behalf of a user given by an administrator  consent: `users/john.doe@onmicrosoft.com/mailFolders('inbox')/messages`.
 
 Although `clientState` is not required, you must include it to comply with our recommended change notification handling process. Setting this property will allow you to confirm that change notifications you receive originate from the Microsoft Graph service. For this reason, the value of the property should remain secret and known only to your application and the Microsoft Graph service.
 
-If successful, Microsoft Graph returns a `201 Created` code and a [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) object in the body.
+If successful, Microsoft Graph returns a `201 Created` code and a [subscription](/graph/api/resources/subscription) object in the body.
 
 > **Note:** Any query string parameter included in the **notificationUrl** property will be included in the HTTP POST request when notifications are being delivered.
 
@@ -210,7 +211,7 @@ Content-Type: application/json
 }
 ```
 
-If successful, Microsoft Graph returns a `200 OK` code and a [subscription](/graph/api/resources/subscription?view=graph-rest-1.0) object in the body. The subscription object includes the new `expirationDateTime` value.
+If successful, Microsoft Graph returns a `200 OK` code and a [subscription](/graph/api/resources/subscription) object in the body. The subscription object includes the new `expirationDateTime` value.
 
 ### Deleting a subscription
 
@@ -298,6 +299,7 @@ The following table lists the latency to expect between an event happening in th
 |[alert][] | Less than 3 minutes | 5 minutes |
 |[callRecord][] | Less than 15 minutes | 60 minutes |
 |[channel][] | Less than 10 seconds | 60 minutes |
+|[chat][] | Less than 10 seconds | 60 minutes |
 |[chatMessage][] | Less than 10 seconds | 1 minute |
 |[contact][] | Unknown | Unknown |
 |[conversation][] | Unknown | Unknown |
@@ -318,23 +320,23 @@ The following table lists the latency to expect between an event happening in th
 
 ## See also
 
-- [Subscription resource type](/graph/api/resources/subscription?view=graph-rest-1.0)
-- [Get subscription](/graph/api/subscription-get?view=graph-rest-1.0)
-- [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0)
-- [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta) resource type
-- [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta) resource type
+- [Subscription resource type](/graph/api/resources/subscription?view=graph-rest-1.0&preserve-view=true)
+- [Get subscription](/graph/api/subscription-get?view=graph-rest-1.0&preserve-view=true)
+- [Create subscription](/graph/api/subscription-post-subscriptions?view=graph-rest-1.0&preserve-view=true)
+- [changeNotification](/graph/api/resources/changenotification?view=graph-rest-beta&preserve-view=true) resource type
+- [changeNotificationCollection](/graph/api/resources/changenotificationcollection?view=graph-rest-beta&preserve-view=true) resource type
 - [Change notifications and change tracking tutorial](/learn/modules/msgraph-changenotifications-trackchanges)
 - [Lifecycle notifications](./webhooks-lifecycle.md)
 
-[contact]: /graph/api/resources/contact?view=graph-rest-1.0
-[conversation]: /graph/api/resources/conversation?view=graph-rest-1.0
-[driveItem]: /graph/api/resources/driveitem?view=graph-rest-1.0
-[event]: /graph/api/resources/event?view=graph-rest-1.0
-[group]: /graph/api/resources/group?view=graph-rest-1.0
-[message]: /graph/api/resources/message?view=graph-rest-1.0
-[user]: /graph/api/resources/user?view=graph-rest-1.0
-[alert]: /graph/api/resources/alert?view=graph-rest-1.0
-[callRecord]: /graph/api/resources/callrecords-callrecord?view=graph-rest-1.0
+[contact]: /graph/api/resources/contact
+[conversation]: /graph/api/resources/conversation
+[driveItem]: /graph/api/resources/driveitem
+[event]: /graph/api/resources/event
+[group]: /graph/api/resources/group
+[message]: /graph/api/resources/message
+[user]: /graph/api/resources/user
+[alert]: /graph/api/resources/alert
+[callRecord]: /graph/api/resources/callrecords-callrecord
 [presence]: /graph/api/resources/presence
 [chatMessage]: /graph/api/resources/chatmessage
 [list]: /graph/api/resources/list
@@ -342,5 +344,6 @@ The following table lists the latency to expect between an event happening in th
 [printTaskDefinition]: /graph/api/resources/printtaskdefinition
 [todoTask]: /graph/api/resources/todotask
 [channel]: /graph/api/resources/channel
+[chat]: /graph/api/resources/chat
 [conversationMember]: /graph/api/resources/conversationmember
 [team]: /graph/api/resources/team

@@ -44,11 +44,11 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter | Type | Description |
 |:---------------|:--------|:----------|
-|groupId|Guid| The id of the group to remove from the policy.|
+|groupId|String| The identifier of the group to remove from the policy.|
 
 ## Response
 
-If successful, this method returns `200 OK` response code. If the group is removed from the policy, a **true** value is returned in the response body. Otherwise, a **false** value is returned in the reponse body.
+If successful, this method returns `200 OK` response code. If the group is removed from the policy, a `true` value is returned in the response body. Otherwise, a `false` value is returned in the response body.
 
 ## Example
 

@@ -3,6 +3,40 @@
     {
       "ChangeList": [
         {
+          "Id": "adc688c0-193c-44da-bf01-bebf53fbf02d",
+          "ApiChange": "Resource",
+          "ChangedApiName": "chatMembersNotificationRecipient",
+          "ChangeType": "Addition",
+          "Description": "Added the [chatMembersNotificationRecipient](https://docs.microsoft.com/graph/api/resources/chatMembersNotificationRecipient?view=graph-rest-beta) resource type.",
+          "Target": "chatMembersNotificationRecipient"
+        },
+        {
+          "Id": "adc688c0-193c-44da-bf01-bebf53fbf02e",
+          "ApiChange": "Resource",
+          "ChangedApiName": "channelMembersNotificationRecipient",
+          "ChangeType": "Addition",
+          "Description": "Added the [channelMembersNotificationRecipient](https://docs.microsoft.com/graph/api/resources/channelMembersNotificationRecipient?view=graph-rest-beta) resource type.",
+          "Target": "channelMembersNotificationRecipient"
+        },
+        {
+          "Id": "adc688c0-193c-44da-bf01-bebf53fbf02f",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamMembersNotificationRecipient",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamMembersNotificationRecipient](https://docs.microsoft.com/graph/api/resources/teammembersnotificationrecipient?view=graph-rest-beta) resource type.",
+          "Target": "teamMembersNotificationRecipient"
+        }
+      ],
+      "Id": "adc688c0-193c-44da-bf01-bebf53fbf02c",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-06-29T19:48:01.454Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "48f75989-6c06-11eb-83a5-b441f1c9dab3",
           "ApiChange": "Property",
           "ChangedApiName": "publishingState",

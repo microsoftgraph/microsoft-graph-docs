@@ -1,17 +1,18 @@
 ---
-title: "Add identityProvider to a b2xIdentityUserFlow"
-description: "Add identityProvider in a b2xIdentityUserFlow."
+title: "Add identityProvider to a b2xIdentityUserFlow (deprecated)"
+description: "Add identityProvider in a b2xIdentityUserFlow (deprecated)."
 localization_priority: Normal
 doc_type: apiPageType
-author: "jkdouglas"
+author: "namkedia"
 ms.prod: "identity-and-sign-in"
 ---
 
-# Add identityProvider to a b2xIdentityUserFlow
+# Add identityProvider to a b2xIdentityUserFlow (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Update the identity providers in a [b2xIdentityUserFlow](../resources/b2xidentityuserflow.md) object.
 
@@ -107,5 +108,3 @@ The following is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
-
-

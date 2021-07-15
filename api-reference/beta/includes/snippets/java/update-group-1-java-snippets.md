@@ -7,8 +7,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 GraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 Group group = new Group();
-group.description = "description-value";
-group.displayName = "displayName-value";
+group.description = "Contoso Life v2.0";
+group.displayName = "Contoso Life Renewed";
 
 graphClient.groups("{id}")
 	.buildRequest()

@@ -1,5 +1,63 @@
 {
-  "changelog": [
+  "changelog": [    
+    {
+      "ChangeList": [
+        {
+          "Id": "d077c3c1-70a4-11eb-8401-e19c685756df",
+          "ApiChange": "Resource",
+          "ChangedApiName": "participantJoiningNotification",
+          "ChangeType": "Addition",
+          "Description": "Added the [participantJoiningNotification](https://docs.microsoft.com/en-us/graph/api/resources/participantJoiningNotification?view=graph-rest-v1.0) resource type.",
+          "Target": "participantJoiningNotification"
+        },
+        {
+          "Id": "d07a25b2-70a4-11eb-8401-e19c685756df",
+          "ApiChange": "Resource",
+          "ChangedApiName": "participantLeftNotification",
+          "ChangeType": "Addition",
+          "Description": "Added the [participantLeftNotification](https://docs.microsoft.com/en-us/graph/api/resources/participantLeftNotification?view=graph-rest-v1.0) resource type.",
+          "Target": "participantLeftNotification"
+        },
+        {
+          "Id": "d0bce7ec-70a4-11eb-8401-e19c685756df",
+          "ApiChange": "Resource",
+          "ChangedApiName": "participantJoiningResponse",
+          "ChangeType": "Addition",
+          "Description": "Added the [participantJoiningResponse](https://docs.microsoft.com/en-us/graph/api/resources/participantJoiningResponse?view=graph-rest-v1.0) resource type.",
+          "Target": "participantJoiningResponse"
+        },
+        {
+          "Id": "d0bf4abe-70a4-11eb-8401-e19c685756df",
+          "ApiChange": "Resource",
+          "ChangedApiName": "acceptJoinResponse",
+          "ChangeType": "Addition",
+          "Description": "Added the [acceptJoinResponse](https://docs.microsoft.com/en-us/graph/api/resources/acceptJoinResponse?view=graph-rest-v1.0) resource type.",
+          "Target": "acceptJoinResponse"
+        },
+        {
+          "Id": "d0c1ae67-70a4-11eb-8401-e19c685756df",
+          "ApiChange": "Resource",
+          "ChangedApiName": "inviteNewBotResponse",
+          "ChangeType": "Addition",
+          "Description": "Added the [inviteNewBotResponse](https://docs.microsoft.com/en-us/graph/api/resources/inviteNewBotResponse?view=graph-rest-v1.0) resource type.",
+          "Target": "inviteNewBotResponse"
+        },
+        {
+          "Id": "d0c411c7-70a4-11eb-8401-e19c685756df",
+          "ApiChange": "Resource",
+          "ChangedApiName": "rejectJoinResponse",
+          "ChangeType": "Addition",
+          "Description": "Added the [rejectJoinResponse](https://docs.microsoft.com/en-us/graph/api/resources/rejectJoinResponse?view=graph-rest-v1.0) resource type.",
+          "Target": "rejectJoinResponse"
+        }
+      ],
+      "Id": "d04e80cf-70a4-11eb-8401-e19c685756df",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-07-09T22:17:53.668Z",
+      "WorkloadArea": "Cloud communications",
+      "SubArea": ""
+    },
     {
       "ChangeList": [
         {

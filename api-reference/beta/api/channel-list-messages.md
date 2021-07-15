@@ -74,7 +74,7 @@ The following is an example of the request.
   "blockType": "request",
   "name": "get_listchannelmessages_1"
 }-->
-```
+```msgraph-interactive
 GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/channels/19:4a95f7d8db4c4e7fae857bcebe0623e6@thread.tacv2/messages
 ```
 # [C#](#tab/csharp)

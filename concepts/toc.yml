@@ -234,6 +234,9 @@ items:
                 href: windowsupdates-schedule-deployment.md
               - name: Manage monitoring rules
                 href: windowsupdates-manage-monitoring-rules.md
+          - name: Multi-tenant management (preview)
+            displayName: Microsoft 365 Lighthouse
+            href: managedtenants-concept-overview.md
       - name: Education
         items:
           - name: Overview
@@ -375,22 +378,24 @@ items:
         items:
           - name: Overview
             href: search-concept-overview.md
-          - name: Query
-            items:
-              - name: Search messages
-                href: search-concept-messages.md
-              - name: Search events
-                href: search-concept-events.md
-              - name: Search content in OneDrive and SharePoint
-                href: search-concept-files.md
-              - name: Search connectors
-                href: search-concept-custom-types.md
-              - name: Sort search results (preview)
-                href: search-concept-sort.md
-              - name: Refine search results (preview)
-                href: search-concept-aggregation.md
-              - name: Request spelling correction (preview)
-                href: search-concept-speller.md
+          - name: Search messages
+            href: search-concept-messages.md
+          - name: Search events
+            href: search-concept-events.md
+          - name: Search content in OneDrive and SharePoint
+            href: search-concept-files.md
+          - name: Search connectors
+            href: search-concept-custom-types.md
+          - name: Search persons (preview)
+            href: search-concept-person.md
+          - name: Sort search results (preview)
+            href: search-concept-sort.md
+          - name: Refine search results (preview)
+            href: search-concept-aggregation.md
+          - name: Request spelling correction (preview)
+            href: search-concept-speller.md
+          - name: Search display layout (preview)
+            href: search-concept-display-layout.md
       - name: Security
         items:
           - name: Overview
@@ -438,7 +443,7 @@ items:
               - name: Send activity feed notifications
                 href: teams-send-activityfeednotifications.md
               - name: Best practices 
-                href: activity-feed-notifications-best-practices.md  
+                href: teams-activity-feed-notifications-best-practices.md  
       - name: To-do tasks
         href: todo-concept-overview.md
         displayName: Microsoft To Do
@@ -523,17 +528,20 @@ items:
                 href: change-notifications-delivery.md
               - name: Change notifications for cloud printing
                 href: universal-print-webhook-notifications.md
-              - name: Change notification in Microsoft Teams
-                displayName: Change notifications in Microsoft Teams
+              - name: Change notifications in Microsoft Teams
                 items:
                   - name: Overview
-                    href: change-notification-in-microsoft-teams-overview.md
-                  - name: Chat and channel messages
-                    href: teams-changenotifications-chatmessage.md
+                    href: teams-change-notification-in-microsoft-teams-overview.md
                   - name: Teams and channels
                     href: teams-changenotifications-team-and-channel.md
                   - name: Team membership
                     href: teams-changenotifications-teamMembership.md
+                  - name: Chat and channel messages
+                    href: teams-changenotifications-chatmessage.md                  
+                  - name: Chat
+                    href: teams-changenotifications-chat.md
+                  - name: Chat membership
+                    href: teams-changenotifications-chatMembership.md
           - name: Change tracking
             displayName: Delta query, track changes, Outlook calendar, Groups, Outlook mail, Users
             items:

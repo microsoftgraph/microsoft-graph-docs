@@ -3,7 +3,7 @@ title: "driveItemUploadableProperties resource type"
 description: "The driveItemUploadableProperties resource represents an item being uploaded when creating an upload session."
 localization_priority: Normal
 author: "JeremyKelley"
-ms.prod: ""
+ms.prod: "sites-and-lists"
 doc_type: "resourcePageType"
 ---
 
@@ -20,8 +20,10 @@ The **driveItemUploadableProperties** resource represents an item being uploaded
 | Property     | Type                              | Description                                                                                         |
 |:-------------|:----------------------------------|:----------------------------------------------------------------------------------------------------|
 |description   |String                             | Provides a user-visible description of the item. Read-write. Only on OneDrive Personal.             |
+|driveItemSource| [driveItemSource](driveItemSource.md)              | Information about the drive item source. Read-write. Only on OneDrive for Business and SharePoint.  |
 |fileSize      |Int64                              | Provides an expected file size to perform a quota check prior to upload. Only on OneDrive Personal. |
 |fileSystemInfo|[fileSystemInfo](filesysteminfo.md)| File system information on client. Read-write.                                                      |
+|mediaSource  | [mediaSource](mediaSource.md)                    | Media source information. Read-write. Only on OneDrive for Business and SharePoint.                 |
 |name          |String                             | The name of the item (filename and extension). Read-write.                                          |
 
 ## JSON representation

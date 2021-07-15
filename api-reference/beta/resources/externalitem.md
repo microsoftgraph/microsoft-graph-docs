@@ -15,8 +15,6 @@ Namespace: microsoft.graph
 
 An item added to a Microsoft Graph [connection](externalconnection.md). 
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
-
 ## Methods
 
 | Method                                                        | Return Type                     | Description |

@@ -10,7 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-await client.api('/servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{principal-id}')
+await client.api('/servicePrincipals/{resource-SP-id}/appRoleAssignedTo/{appRoleAssignment-id}')
 	.version('beta')
 	.delete();
 

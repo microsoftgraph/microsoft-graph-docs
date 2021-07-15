@@ -114,6 +114,9 @@ Content-type: application/json
             "createdDateTime": "2020-12-08T23:53:05.801Z",
             "lastUpdatedDateTime": "2020-12-08T23:58:32.511Z",
             "chatType": "meeting",
+            "chatViewpoint": {
+                "lastMessageReadDateTime": "2021-06-03T08:05:49.521Z"
+            },
             "webUrl": "https://teams.microsoft.com/l/chat/19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
         },
         {
@@ -122,6 +125,9 @@ Content-type: application/json
             "createdDateTime": "2020-12-03T19:41:07.054Z",
             "lastUpdatedDateTime": "2020-12-08T23:53:11.012Z",
             "chatType": "group",
+            "chatViewpoint": {
+                "lastMessageReadDateTime": "2021-05-27T22:13:01.577Z"
+            },
             "webUrl": "https://teams.microsoft.com/l/chat/19%3A561082c0f3f847a58069deb8eb300807@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
         },
         {
@@ -130,6 +136,9 @@ Content-type: application/json
             "createdDateTime": "2020-12-04T23:10:28.51Z",
             "lastUpdatedDateTime": "2020-12-04T23:10:36.925Z",
             "chatType": "oneOnOne",
+            "chatViewpoint": {
+                "lastMessageReadDateTime": "0001-01-01T00:00:00Z"
+            },
             "webUrl": "https://teams.microsoft.com/l/chat/19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f"
         }
     ]
@@ -201,6 +210,9 @@ Content-type: application/json
             "createdDateTime": "2020-12-08T23:53:05.801Z",
             "lastUpdatedDateTime": "2020-12-08T23:58:32.511Z",
             "chatType": "meeting",
+            "chatViewpoint": {
+                "lastMessageReadDateTime": "2021-04-02T08:15:02.091Z"
+            },
             "webUrl": "https://teams.microsoft.com/l/chat/19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
             "members@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2%40thread.v2')/members",
             "members": [
@@ -236,6 +248,9 @@ Content-type: application/json
             "createdDateTime": "2020-12-03T19:41:07.054Z",
             "lastUpdatedDateTime": "2020-12-08T23:53:11.012Z",
             "chatType": "group",
+            "chatViewpoint": {
+                "lastMessageReadDateTime": "0001-01-01T00:00:00Z"
+            },
             "webUrl": "https://teams.microsoft.com/l/chat/19%3A561082c0f3f847a58069deb8eb300807@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
             "members@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3A561082c0f3f847a58069deb8eb300807%40thread.v2')/members",
             "members": [
@@ -287,6 +302,9 @@ Content-type: application/json
             "createdDateTime": "2020-12-04T23:10:28.51Z",
             "lastUpdatedDateTime": "2020-12-04T23:10:36.925Z",
             "chatType": "oneOnOne",
+            "chatViewpoint": {
+                "lastMessageReadDateTime": "2021-06-05T00:31:30.047Z"
+            },
             "webUrl": "https://teams.microsoft.com/l/chat/19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
             "members@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca%40unq.gbl.spaces')/members",
             "members": [
@@ -312,7 +330,131 @@ Content-type: application/json
 }
 ```
 
-### Example 3: List all the chats that have a member with a specific display name
+### Example 3: List chats along with the preview of the last message sent in the chat
+
+#### Request
+
+The following example shows a request to list chats along with the preview of the last message sent in the chat. Comparing `createdDateTime` on the preview to `lastMessageReadDateTime` in `viewpoint` allows the caller to determine whether the user has read all messages in a chat.
+
+<!-- {
+  "blockType": "request",
+  "name": "list_chats_expand_lastMessagePreview"
+}-->
+```msgraph-interactive
+GET https://graph.microsoft.com/beta/chats?$expand=lastMessagePreview
+```
+
+#### Response
+
+Here is an example of the response.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "microsoft.graph.chat",
+  "isCollection": true
+} -->
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats(lastMessagePreview())",
+    "@odata.count": 3,
+    "@odata.nextLink": "https://graph.microsoft.com/beta/chats?$expand=lastMessagePreview&$skiptoken=eyJDb250aW51YXRpb25Ub2tlbiI6Ilczc2ljM1JoY25RaU9pSXlNREl4TFRBMUxUSTNWREl5T2pFek9qQXpMakUyT1Nzd01Eb3dNQ0lzSW1WdVpDSTZJakl3TWpFdE1EWXRNRFZVTURBNk16RTZNekl1T0RBMkt6QXdPakF3SW4wc2V5SnpkR0Z5ZENJNklqRTVOekF0TURFdE1ERlVNREE2TURBNk1EQXJNREE2TURBaUxDSmxibVFpT2lJeE9UY3dMVEF4TFRBeFZEQXdPakF3T2pBd0xqQXdNU3N3TURvd01DSjlYUT09IiwiQ2hhdFR5cGUiOiJjaGF0fG1lZXRpbmd8c2ZiaW50ZXJvcGNoYXR8cGhvbmVjaGF0In0%3d",
+    "value": [
+        {
+            "id": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438@unq.gbl.spaces",
+            "topic": null,
+            "createdDateTime": "2021-06-05T00:31:30.767Z",
+            "lastUpdatedDateTime": "2021-06-05T00:31:32.806Z",
+            "chatType": "oneOnOne",
+            "chatViewpoint": {
+                "lastMessageReadDateTime": "2021-06-05T00:31:30.047Z"
+            },
+            "lastMessagePreview@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3A8ea0e38b-efb3-4757-924a-5f94061cf8c2_976f4b31-fd01-4e0b-9178-29cc40c14438%40unq.gbl.spaces')/lastMessagePreview/$entity",
+            "lastMessagePreview": {
+                "id": "1622853091207",
+                "createdDateTime": "2021-06-05T00:31:31.207Z",
+                "isDeleted": false,
+                "body": {
+                    "contentType": "text",
+                    "content": "Testing unread read status"
+                },
+                "from": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "8ea0e38b-efb3-4757-924a-5f94061cf8c2",
+                        "displayName": "Nick Fury",
+                        "userIdentityType": "aadUser"
+                    }
+                }
+            }
+        },
+        {
+            "id": "19:8ea0e38b-efb3-4757-924a-5f94061cf8c2_da7d471b-de7d-4152-8556-1cdf7a564f6c@unq.gbl.spaces",
+            "topic": null,
+            "createdDateTime": "2020-07-17T22:46:28.077Z",
+            "lastUpdatedDateTime": "2021-06-03T08:05:49.788Z",
+            "chatType": "oneOnOne",
+            "chatViewpoint": {
+                "lastMessageReadDateTime": "2021-06-03T08:05:49.521Z"
+            },
+            "lastMessagePreview@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3A8ea0e38b-efb3-4757-924a-5f94061cf8c2_da7d471b-de7d-4152-8556-1cdf7a564f6c%40unq.gbl.spaces')/lastMessagePreview/$entity",
+            "lastMessagePreview": {
+                "id": "1622707540293",
+                "createdDateTime": "2021-06-03T08:05:40.293Z",
+                "isDeleted": false,
+                "body": {
+                    "contentType": "html",
+                    "content": "<attachment id=\"ee8d34acd36d4dfe87ca6ad4e060b7be\"></attachment>"
+                },
+                "from": {
+                    "device": null,
+                    "user": null,
+                    "application": {
+                        "id": "da7d471b-de7d-4152-8556-1cdf7a564f6c",
+                        "displayName": "talla",
+                        "applicationIdentityType": "bot"
+                    }
+                }
+            }
+        },
+        {
+            "id": "19:a6bac1f4daaf4db3bc6ac7536721331f@thread.v2",
+            "topic": null,
+            "createdDateTime": "2021-05-19T16:46:20.564Z",
+            "lastUpdatedDateTime": "2021-05-27T22:13:03.169Z",
+            "chatType": "group",
+            "chatViewpoint": {
+                "lastMessageReadDateTime": "2021-05-27T22:13:01.577Z"
+            },
+            "lastMessagePreview@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Aa6bac1f4daaf4db3bc6ac7536721331f%40thread.v2')/lastMessagePreview/$entity",
+            "lastMessagePreview": {
+                "id": "1621533401696",
+                "createdDateTime": "2021-05-20T17:56:41.696Z",
+                "isDeleted": false,
+                "body": {
+                    "contentType": "text",
+                    "content": "sup"
+                },
+                "from": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "4595d2f2-7b31-446c-84fd-9b795e63114b",
+                        "displayName": "Peter Parker",
+                        "userIdentityType": "aadUser"
+                    }
+                }
+            }
+        }
+    ]
+}
+```
+
+### Example 4: List all the chats that have a member with a specific display name
 
 #### Request
 
@@ -377,6 +519,9 @@ Content-type: application/json
             "createdDateTime": "2020-12-08T23:53:05.801Z",
             "lastUpdatedDateTime": "2020-12-08T23:58:32.511Z",
             "chatType": "meeting",
+            "chatViewpoint": {
+                "lastMessageReadDateTime": "2021-06-05T00:01:30.233Z"
+            },
             "webUrl": "https://teams.microsoft.com/l/chat/19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2@thread.v2/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
             "members@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Ameeting_MjdhNjM4YzUtYzExZi00OTFkLTkzZTAtNTVlNmZmMDhkNGU2%40thread.v2')/members",
             "members": [
@@ -412,6 +557,9 @@ Content-type: application/json
             "createdDateTime": "2020-12-04T23:10:28.51Z",
             "lastUpdatedDateTime": "2020-12-04T23:10:36.925Z",
             "chatType": "oneOnOne",
+            "chatViewpoint": {
+                "lastMessageReadDateTime": "2021-06-05T00:31:30.047Z"
+            },
             "webUrl": "https://teams.microsoft.com/l/chat/19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca@unq.gbl.spaces/0?tenantId=b33cbe9f-8ebe-4f2a-912b-7e2a427f477f",
             "members@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3Ad74fc2ed-cb0e-4288-a219-b5c71abaf2aa_8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca%40unq.gbl.spaces')/members",
             "members": [

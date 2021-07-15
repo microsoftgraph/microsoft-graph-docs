@@ -28,6 +28,11 @@ items:
       href: /graph/paging?context=graph/api/beta
     - name: Use query parameters
       href: /graph/query-parameters?context=graph/api/beta
+      items:
+      - name: Use the search query parameter
+        href: /graph/search-query-parameter?context=graph/api/beta
+      - name: Advanced query capabilities
+        href: /graph/aad-advanced-queries?context=graph/api/beta
     - name: Batching
       displayName: Batch requests
       href: /graph/json-batching?context=graph/api/beta
@@ -214,6 +219,8 @@ items:
           href: api/user-update.md
         - name: Delete user
           href: api/user-delete.md
+        - name: Change password
+          href: api/user-changepassword.md
         - name: Get delta
           href: api/user-delta.md
         - name: Invalidate refresh tokens
@@ -1721,7 +1728,7 @@ items:
         - name: Delete
           href: api/bookingstaffmember-delete.md
     - name: Devices and apps
-      expanded: false
+      expanded: true
       items:
       - name: Cloud printing
         items:
@@ -9555,6 +9562,8 @@ items:
             href: api/cloudpcdeviceimage-delete.md
           - name: Get source images
             href: api/cloudpcdeviceimage-getsourceimages.md
+          - name: Reupload
+            href: api/cloudpcdeviceimage-reupload.md
         - name: Cloud PC on-premises connection
           href: resources/cloudpconpremisesconnection.md
           items:
@@ -9587,6 +9596,15 @@ items:
             href: api/cloudpcprovisioningpolicy-delete.md
           - name: Assign
             href: api/cloudpcprovisioningpolicy-assign.md
+        - name: Cloud PC audit event
+          href: resources/cloudpcauditevent.md
+          items:
+          - name: List
+            href: api/virtualendpoint-list-auditevents.md
+          - name: Get
+            href: api/cloudpcauditevent-get.md
+          - name: Get audit activity types
+            href: api/cloudpcauditevent-getauditactivitytypes.md
         - name: Cloud PC user setting
           href: resources/cloudpcusersetting.md
           items:
@@ -9605,6 +9623,33 @@ items:
         - name: Role management
           href: resources/rolemanagement.md
           items:
+          - name: Role management policy
+            href: resources/unifiedRoleManagementPolicy.md
+            items:
+            - name: List
+              href: api/unifiedrolemanagementpolicy-list.md
+            - name: Get
+              href: api/unifiedrolemanagementpolicy-get.md
+            - name: List effective rules
+              href: api/unifiedrolemanagementpolicy-list-effectiverules.md
+            - name: List rules
+              href: api/unifiedrolemanagementpolicy-list-rules.md
+          - name: Role management policy assignment
+            href: resources/unifiedRoleManagementPolicyAssignment.md
+            items:
+            - name: List
+              href: api/unifiedRoleManagementPolicyAssignment-list.md
+            - name: Get
+              href: api/unifiedRoleManagementPolicyAssignment-get.md
+          - name: Role management policy rule
+            href: resources/unifiedRoleManagementPolicyRule.md
+            items:
+            - name: List
+              href: api/unifiedRoleManagementPolicyRule-list.md
+            - name: Get
+              href: api/unifiedRoleManagementPolicyRule-get.md
+            - name: Update
+              href: api/unifiedRoleManagementPolicyRule-update.md
           - name: Role definition
             href: resources/unifiedroledefinition.md
             items:
@@ -9718,6 +9763,177 @@ items:
               href: api/windowsupdates-updatableassetgroup-removemembers.md
             - name: Remove members by ID
               href: api/windowsupdates-updatableassetgroup-removemembersbyid.md
+      - name: Multi-tenant management (preview)
+        items:
+        - name: Managed tenant
+          href: resources/managedtenants-managedtenant.md
+        - name: Aggregated policy compliance
+          href: resources/managedtenants-aggregatedpolicycompliance.md
+          items: 
+          - name: List aggregated policy compliances
+            href: api/managedtenants-managedtenant-list-aggregatedpolicycompliances.md
+        - name: Cloud PC connection
+          href: resources/managedtenants-cloudpcconnection.md
+          items:
+          - name: List cloud PC connections
+            href: api/managedtenants-managedtenant-list-cloudpcconnections.md
+          - name: Get cloud PC connection
+            href: api/managedtenants-cloudpcconnection-get.md
+        - name: Cloud PC device
+          href: resources/managedtenants-cloudpcdevice.md
+          items:
+          - name: List cloud PC devices
+            href: api/managedtenants-managedtenant-list-cloudpcdevices.md
+          - name: Get cloud PC device
+            href: api/managedtenants-cloudpcdevice-get.md
+        - name: Cloud PC overview
+          href: resources/managedtenants-cloudpcoverview.md
+          items:
+          - name: List cloud PC overviews
+            href: api/managedtenants-managedtenant-list-cloudpcsoverview.md
+          - name: Get cloud PC overview
+            href: api/managedtenants-cloudpcoverview-get.md
+        - name: Conditional access policy coverage
+          href: resources/managedtenants-conditionalaccesspolicycoverage.md
+          items:
+            - name: List conditional access coverages
+              href: api/managedtenants-managedtenant-list-conditionalaccesspolicycoverages.md
+            - name: Get conditional access policy coverage
+              href: api/managedtenants-conditionalaccesspolicycoverage-get.md
+        - name: Credential user registrations summary
+          href: resources/managedtenants-credentialuserregistrationssummary.md
+          items:
+            - name: List credential user registration summaries
+              href: api/managedtenants-managedtenant-list-credentialuserregistrationssummaries.md
+            - name: Get credential user registrations summary
+              href: api/managedtenants-credentialuserregistrationssummary-get.md
+        - name: Device compliance policy setting state summary
+          href: resources/managedtenants-devicecompliancepolicysettingstatesummary.md
+          items:
+            - name: List device compliance policy setting state summary 
+              href: api/managedtenants-managedtenant-list-devicecompliancepolicysettingstatesummary.md
+            - name: Get device compliance policy setting state summary 
+              href: api/managedtenants-devicecompliancepolicysettingstatesummary-get.md
+        - name: Managed device compliance
+          href: resources/managedtenants-manageddevicecompliance.md
+          items:
+          - name: List managed device compliances
+            href: api/managedtenants-managedtenant-list-manageddevicecompliances.md
+          - name: Get managed device compliance
+            href: api/managedtenants-manageddevicecompliance-get.md
+        - name: Managed device compliance trend
+          href: resources/managedtenants-manageddevicecompliancetrend.md
+          items:
+            - name: List managed device compliance trend
+              href: api/managedtenants-managedtenant-list-manageddevicecompliancetrends.md
+            - name: Get managed device compliance trend
+              href: api/managedtenants-manageddevicecompliancetrend-get.md
+        - name: Management action
+          href: resources/managedtenants-managementaction.md
+          items:
+          - name: List management action
+            href: api/managedtenants-managedtenant-list-managementactions.md
+          - name: Get management action 
+            href: api/managedtenants-managementaction-get.md
+          - name: Apply management action
+            href: api/managedtenants-managementaction-apply.md
+        - name: Management action tenant deployment status
+          href: resources/managedtenants-managementactiontenantdeploymentstatus.md
+          items: 
+          - name: List management action deployment statuses
+            href: api/managedtenants-managedtenant-list-managementactiontenantdeploymentstatuses.md
+          - name: Get management action deployment status
+            href: api/managedtenants-managementactiontenantdeploymentstatus-get.md
+          - name: Change management action deployment status
+            href: api/managedtenants-managementactiontenantdeploymentstatus-changedeploymentstatus.md
+        - name: Management intent
+          href: resources/managedtenants-managementintent.md
+          items: 
+          - name: List management intents
+            href: api/managedtenants-managedtenant-list-managementintents.md
+          - name: Get management intent
+            href: api/managedtenants-managementintent-get.md
+        - name: Management template
+          href: resources/managedtenants-managementtemplate.md
+          items: 
+          - name: List management templates
+            href: api/managedtenants-managedtenant-list-managementtemplates.md
+          - name: Get management template
+            href: api/managedtenants-managementtemplate-get.md
+        - name: Risky user
+          href: resources/managedtenants-riskyuser.md
+          items:
+            - name: List risky user
+              href: api/managedtenants-managedtenant-list-riskyusers.md
+            - name: Get risky user
+              href: api/managedtenants-riskyuser-get.md
+        - name: Tenant customized information
+          href: resources/managedtenants-tenantcustomizedinformation.md
+          items:
+          - name: List tenant customized information
+            href: api/managedtenants-managedtenant-list-tenantscustomizedinformation.md
+          - name: Get tenant customized information
+            href: api/managedtenants-tenantcustomizedinformation-get.md
+          - name: Update tenant customized information
+            href: api/managedtenants-tenantcustomizedinformation-update.md
+        - name: Tenant detailed information
+          href: resources/managedtenants-tenantdetailedinformation.md
+          items:
+          - name: List tenant detailed information
+            href: api/managedtenants-managedtenant-list-tenantsdetailedinformation.md
+          - name: Get tenant detailed information
+            href: api/managedtenants-tenantdetailedinformation-get.md
+        - name: Tenant
+          href: resources/managedtenants-tenant.md
+          items:
+          - name: List tenants
+            href: api/managedtenants-managedtenant-list-tenants.md
+          - name: Get tenant
+            href: api/managedtenants-tenant-get.md
+          - name: Offboard tenant
+            href: api/managedtenants-tenant-offboardtenant.md
+          - name: Reset tenant onboarding status
+            href: api/managedtenants-tenant-resettenantonboardingstatus.md
+        - name: Tenant group
+          href: resources/managedtenants-tenantgroup.md
+          items:
+            - name: List tenant groups
+              href: api/managedtenants-managedtenant-list-tenantgroups.md
+            - name: Get tenant group
+              href: api/managedtenants-tenantgroup-get.md
+            - name: Search for tenant
+              href: api/managedtenants-tenantgroup-tenantsearch.md
+        - name: Tenant tag
+          href: resources/managedtenants-tenanttag.md
+          items: 
+          - name: List tenant tags
+            href: api/managedtenants-managedtenant-list-tenanttags.md
+          - name: Create tenant tag
+            href: api/managedtenants-managedtenant-post-tenanttags.md
+          - name: Get tenant tag
+            href: api/managedtenants-tenanttag-get.md
+          - name: Update tenant tag
+            href: api/managedtenants-tenanttag-update.md
+          - name: Delete tenant tag
+            href: api/managedtenants-tenanttag-delete.md
+          - name: Assign tenant tag
+            href: api/managedtenants-tenanttag-assigntag.md
+          - name: Unassign tenant tag
+            href: api/managedtenants-tenanttag-unassigntag.md 
+        - name: Windows device malware state
+          href: resources/managedtenants-windowsdevicemalwarestate.md
+          items:
+          - name: List Windows device malware states
+            href: api/managedtenants-managedtenant-list-windowsdevicemalwarestates.md
+          - name: Get Windows device malware state
+            href: api/managedtenants-windowsdevicemalwarestate-get.md
+        - name: Windows protection state
+          href: resources/managedtenants-windowsprotectionstate.md
+          items:
+            - name: List Windows protection state
+              href: api/managedtenants-managedtenant-list-windowsprotectionstates.md
+            - name: Get Windows protection state
+              href: api/managedtenants-windowsprotectionstate-get.md
     - name: Education
       items:
       - name: Overview
@@ -10557,6 +10773,8 @@ items:
             href: api/mobiledevicemanagementpolicies-get.md
           - name: Update
             href: api/mobiledevicemanagementpolicies-update.md
+          - name: Delete
+            href: api/mobiledevicemanagementpolicies-delete.md
           - name: List included groups
             href: api/mobiledevicemanagementpolicies-list-includedgroups.md
           - name: Add included groups
@@ -10569,6 +10787,8 @@ items:
             href: api/mobileappmanagementpolicies-get.md
           - name: Update
             href: api/mobileappmanagementpolicies-update.md
+          - name: Delete
+            href: api/mobileappmanagementpolicies-delete.md
           - name: List included groups
             href: api/mobileappmanagementpolicies-list-includedgroups.md
           - name: Add included groups
@@ -10624,8 +10844,6 @@ items:
               href: api/unifiedroleassignmentschedulerequest-get.md
             - name: Create
               href: api/unifiedroleassignmentschedulerequest-post-unifiedroleassignmentschedulerequests.md
-            - name: Update
-              href: api/unifiedroleassignmentschedulerequest-update.md
             - name: Cancel
               href: api/unifiedroleassignmentschedulerequest-cancel.md
             - name: Filter by current user
@@ -10639,8 +10857,6 @@ items:
               href: api/unifiedroleeligibilityschedulerequest-get.md
             - name: Create
               href: api/unifiedroleeligibilityschedulerequest-post-unifiedroleeligibilityschedulerequests.md
-            - name: Update
-              href: api/unifiedroleeligibilityschedulerequest-update.md
             - name: Cancel
               href: api/unifiedroleeligibilityschedulerequest-cancel.md
             - name: Filter by current user
@@ -11224,33 +11440,6 @@ items:
                   href: api/permissiongrantpolicy-post-excludes.md
                 - name: Delete from excludes
                   href: api/permissiongrantpolicy-delete-excludes.md
-          - name: Role management policy
-            href: resources/unifiedRoleManagementPolicy.md
-            items:
-            - name: List
-              href: api/unifiedrolemanagementpolicy-list.md
-            - name: Get
-              href: api/unifiedrolemanagementpolicy-get.md
-            - name: List effective rules
-              href: api/unifiedrolemanagementpolicy-list-effectiverules.md
-            - name: List rules
-              href: api/unifiedrolemanagementpolicy-list-rules.md
-          - name: Role management policy assignment
-            href: resources/unifiedRoleManagementPolicyAssignment.md
-            items:
-            - name: List
-              href: api/unifiedRoleManagementPolicyAssignment-list.md
-            - name: Get
-              href: api/unifiedRoleManagementPolicyAssignment-get.md
-          - name: Role management policy rule
-            href: resources/unifiedRoleManagementPolicyRule.md
-            items:
-            - name: List
-              href: api/unifiedRoleManagementPolicyRule-list.md
-            - name: Get
-              href: api/unifiedRoleManagementPolicyRule-get.md
-            - name: Update
-              href: api/unifiedRoleManagementPolicyRule-update.md
           - name: Token issuance policy
             href: resources/tokenissuancepolicy.md
             items:
@@ -11360,10 +11549,16 @@ items:
              - name: Delete
                href: api/b2cidentityuserflow-delete.md
              - name: List identity providers
-               href: api/b2cidentityuserflow-list-identityproviders.md
+               href: api/b2cidentityuserflow-list-userflowidentityproviders.md
              - name: Add identity provider
-               href: api/b2cidentityuserflow-post-identityproviders.md
+               href: api/b2cidentityuserflow-userflowidentityproviders-update.md
              - name: Remove identity provider
+               href: api/b2cidentityuserflow-delete-userflowidentityproviders.md
+             - name: List identity providers (deprecated)
+               href: api/b2cidentityuserflow-list-identityproviders.md
+             - name: Add identity provider (deprecated)
+               href: api/b2cidentityuserflow-post-identityproviders.md
+             - name: Remove identity provider (deprecated)
                href: api/b2cidentityuserflow-delete-identityproviders.md
              - name: List user attribute assignments
                href: api/b2cidentityuserflow-list-userattributeassignments.md
@@ -11390,10 +11585,16 @@ items:
              - name: Delete
                href: api/b2xidentityuserflow-delete.md
              - name: List identity providers
-               href: api/b2xidentityuserflow-list-identityproviders.md
+               href: api/b2xidentityuserflow-list-userflowidentityproviders.md
              - name: Add identity provider
+               href: api/b2xidentityuserflow-userflowidentityproviders-update.md
+             - name: Delete identity provider
+               href: api/b2xidentityuserflow-delete-userflowidentityproviders.md
+             - name: List identity providers (deprecated)
+               href: api/b2xidentityuserflow-list-identityproviders.md
+             - name: Add identity provider (deprecated)
                href: api/b2xidentityuserflow-post-identityproviders.md
-             - name: Remove identity provider
+             - name: Delete identity provider (deprecated)
                href: api/b2xidentityuserflow-delete-identityproviders.md
              - name: List user attribute assignments
                href: api/b2xidentityuserflow-list-userattributeassignments.md
@@ -11651,6 +11852,20 @@ items:
               href: api/accesspackage-delete.md
             - name: Filter by current user
               href: api/accesspackage-filterbycurrentuser.md
+            - name: List incompatible access packages
+              href: api/accesspackage-list-incompatibleaccesspackages.md
+            - name: Add incompatible access package
+              href: api/accesspackage-post-incompatibleaccesspackage.md
+            - name: Remove incompatible access package
+              href: api/accesspackage-delete-incompatibleaccesspackage.md
+            - name: List incompatible groups
+              href: api/accesspackage-list-incompatiblegroups.md
+            - name: Add incompatible group
+              href: api/accesspackage-post-incompatiblegroup.md
+            - name: Remove incompatible group
+              href: api/accesspackage-delete-incompatiblegroup.md
+            - name: List access packages incompatible with
+              href: api/accesspackage-list-accesspackagesincompatiblewith.md
           - name: Access package assignment
             href: resources/accesspackageassignment.md
             items:

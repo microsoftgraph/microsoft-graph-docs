@@ -185,6 +185,15 @@ GET /users/{id | userPrincipalName}/contacts/{id}
 * Schema extensions (legacy) are not returned with $select statement, but are returned without $select.
 * Clients cannot track changes to open extensions or registered schema extensions.
 
+## Devices and apps | Device updates (Windows updates)
+
+### Accessing and updating deployment audiences
+
+Accessing and updating deployment audiences on **deployment** resources created via Intune is not currently supported.
+
+* [Listing deployment audience members](/graph/api/windowsupdates-deploymentaudience-list-members) and [listing deployment audience exclusions](/graph/api/windowsupdates-deploymentaudience-list-exclusions) returns `404 Not Found`.
+* [Updating deployment audience members and exclusions](/graph/api/windowsupdates-deploymentaudience-updateaudience) or [updating by ID](/graph/api/windowsupdates-deploymentaudience-updateaudiencebyid) returns `202 Accepted` but the audience is not updated.
+
 ## Extensions
 
 ### Change tracking is not supported

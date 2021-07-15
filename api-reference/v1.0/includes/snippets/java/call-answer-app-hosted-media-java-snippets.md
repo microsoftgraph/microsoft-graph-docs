@@ -20,6 +20,7 @@ graphClient.communications().calls("57DAB8B1894C409AB240BD8BEAE78896")
 		.withCallbackUri(callbackUri)
 		.withMediaConfig(mediaConfig)
 		.withAcceptedModalities(acceptedModalitiesList)
+		.withParticipantCapacity(null)
 		.build())
 	.buildRequest()
 	.post();

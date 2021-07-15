@@ -48,7 +48,7 @@ GET /me
 
 ## Optional query parameters
 
-This method supports the [OData Query Parameters](/graph/query-parameters) to help customize the response.
+This method supports the `$select` [OData query parameter](/graph/query-parameters) to retrieve specific user properties, including those that are not returned by default.
 
 ## Request headers
 
@@ -63,7 +63,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this method returns a `200 OK` response code and [user](../resources/user.md) object in the response body.
+If successful, this method returns a `200 OK` response code and [user](../resources/user.md) object in the response body. It returns the default properties unless you use `$select` to specify specific properties.
 
 This method returns `202 Accepted` when the request has been processed successfully but the server requires more time to complete related background operations.
 

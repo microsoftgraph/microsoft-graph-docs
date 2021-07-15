@@ -1,17 +1,18 @@
 ---
-title: "Delete identityProvider from a b2cIdentityUserFlow"
-description: "Delete an identityProvider from a b2cIdentityUserFlow."
+title: "Delete identityProvider from a b2cIdentityUserFlow (deprecated)"
+description: "Delete an identityProvider from a b2cIdentityUserFlow. (deprecated)"
 localization_priority: Normal
 doc_type: apiPageType
-author: "jkdouglas"
+author: "namkedia"
 ms.prod: "identity-and-sign-in"
 ---
 
-# Delete an identityProvider from a b2cIdentityUserFlow
+# Delete an identityProvider from a b2cIdentityUserFlow (deprecated)
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Delete an identity provider from a [b2cIdentityUserFlow](../resources/b2cidentityuserflow.md) object. For more information about identity providers available for user flows, see the [identityProviders](../resources/identityprovider.md) API reference.
 
@@ -100,5 +101,3 @@ The following is an example of the response.
 ```http
 HTTP/1.1 204 No Content
 ```
-
-

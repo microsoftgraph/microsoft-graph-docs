@@ -154,14 +154,15 @@ Content-type: application/json
 ```
 
 ## See also
+
 - Search [mail messages](/graph/search-concept-messages)
 - Search [calendar events](/graph/search-concept-events)
+- Search [person](/graph/search-concept-person)
 - Search content in SharePoint and OneDrive ([files, lists and sites](/graph/search-concept-files))
 - Search [custom types (Graph Connectors)](/graph/search-concept-custom-types) data
 - [Sort](/graph/search-concept-sort) search results
 - Use [aggregations](/graph/search-concept-aggregations) to refine search results
 - Enable [spell corrections](/graph/search-concept-speller) in search results
-
 
 <!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
 2019-02-04 14:57:30 UTC -->
@@ -172,5 +173,3 @@ Content-type: application/json
   "section": "documentation",
   "tocPath": ""
 }-->
-
-

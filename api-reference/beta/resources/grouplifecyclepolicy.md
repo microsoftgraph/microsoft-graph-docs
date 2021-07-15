@@ -33,7 +33,7 @@ Represents a lifecycle policy for a Microsoft 365 group. A group lifecycle polic
 |:---------------|:--------|:----------|
 |alternateNotificationEmails|String| List of email address to send notifications for groups without owners. Multiple email address can be defined by separating email address with a semicolon. |
 |groupLifetimeInDays|Int32| Number of days before a group expires and needs to be renewed. Once renewed, the group expiration is extended by the number of days defined. |
-|id|Guid| A unique identifier for a policy. Read-only.|
+|id|String| A unique identifier for a policy. Read-only.|
 |managedGroupTypes|String| The group type for which the expiration policy applies. Possible values are **All**, **Selected** or **None**. |
 
 ## Relationships

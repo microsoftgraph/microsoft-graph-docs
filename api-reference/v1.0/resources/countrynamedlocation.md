@@ -30,6 +30,7 @@ Inherits from [namedLocation](../resources/namedLocation.md)
 | Property     | Type        | Description |
 |:-------------|:------------|:------------|
 |countriesAndRegions|String collection|List of countries and/or regions in two-letter format specified by ISO 3166-2.|
+|countryLookupMethod|countryLookupMethodType|Determines what method is used to decide which country the user is located in. Possible values are `clientIpAddress` and `authenticatorAppGps`.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents creation date and time of the location using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`. Read-only. Inherited from [namedLocation](../resources/namedLocation.md).|
 |displayName|String|Human-readable name of the location. Inherited from [namedLocation](../resources/namedLocation.md).|
 |id|String|Identifier of a namedLocation object. Read-only. Inherited from [namedLocation](../resources/namedLocation.md).|
@@ -55,6 +56,7 @@ The following is a JSON representation of the resource.
 ```json
 {
   "countriesAndRegions": ["String"],
+  "countryLookupMethod": "String",
   "createdDateTime": "String (timestamp)",
   "displayName": "String",
   "id": "String (identifier)",
@@ -72,4 +74,3 @@ The following is a JSON representation of the resource.
   "section": "documentation",
   "tocPath": ""
 }-->
-

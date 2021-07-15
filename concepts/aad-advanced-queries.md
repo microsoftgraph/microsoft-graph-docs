@@ -10,7 +10,7 @@ ms.custom: graphiamtop20, scenarios:getting-started
 
 As Azure AD continues to deliver more capabilities and improvements in stability, availability, and performance, Microsoft Graph also continues to evolve and scale to efficiently access the data. One way is through Microsoft Graph's increasing support for advanced query capabilities on various Azure AD objects and their properties. For example, the addition of **Not** (`NOT`), **Not equals** (`ne`), and **Ends with** (`endsWith`) operators on the `$filter` query parameter in October 2020.
 
-The Microsoft Graph query engine uses an index store to fulfill query requests. To add support for additional query capabilities on some properties, these properties are now indexed in a separate server. This separate indexing allows Azure AD to increase support and improve the performance of the query requests. However, these advanced query capabilities are not available by default but, the requestor must also set the **ConsistencyLevel** header set to `eventual` *and*, with the exception of `$search`, use the `$count` query parameter (either as a [URL segment](/graph/query-parameters#other-odata-url-capabilities) or `$count=true` query string). The **ConsistencyLevel** header and `$count` are referred to as *advanced query parameters*.
+The Microsoft Graph query engine uses an index store to fulfill query requests. To add support for additional query capabilities on some properties, these properties are now indexed in a separate server. This separate indexing allows Azure AD to increase support and improve the performance of the query requests. However, these advanced query capabilities are not available by default but, the requestor must also set the **ConsistencyLevel** header set to `eventual` *and*, with the exception of `$search`, use the `$count` query parameter. The **ConsistencyLevel** header and `$count` are referred to as *advanced query parameters*.
 
 For example, if you wish to retrieve only inactive user accounts, you can run either of these queries that use the `$filter` query parameter.
 
@@ -31,7 +31,7 @@ GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled eq false
   "name": "get_users_not_enabled"
 } -->
 ```msgraph-interactive
-https://graph.microsoft.com/v1.0/users?$filter=accountEnabled ne true&$count=true
+GET https://graph.microsoft.com/v1.0/users?$filter=accountEnabled ne true&$count=true
 ConsistencyLevel: eventual
 ```
 
@@ -42,7 +42,7 @@ These advanced query capabilities are supported only on Azure AD objects, that i
 - [device](/graph/api/resources/device)
 - [group](/graph/api/resources/group)
 - [servicePrincipal](/graph/api/resources/serviceprincipal)
-- [users](/graph/api/resources/user)
+- [user](/graph/api/resources/user)
 
 The following table lists query scenarios on directory objects that are supported only in advanced queries.
 
@@ -56,7 +56,7 @@ The following table lists query scenarios on directory objects that are supporte
 | Use of `$filter` and `$orderby` in the same query                        | [GET](https://developer.microsoft.com/graph/graph-explorer?request=applications%3F%24orderby%3DdisplayName%26%24filter%3DstartsWith(displayName%2C%20'Box')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../applications?$orderby=displayName&$filter=startsWith(displayName, 'Box')&$count=true`                       |
 | Use of `$filter` with the `startsWith` operators on specific properties. | [GET](https://developer.microsoft.com/graph/graph-explorer?request=users%3F%24filter%3DstartsWith(mobilePhone%2C%20'25478')%20OR%20startsWith(mobilePhone%2C%20'25473')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=startsWith(mobilePhone, '25478') OR startsWith(mobilePhone, '25473')&$count=true` |
 | Use of `$filter` with `ne` and `NOT` operators                           | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=users%3F%24filter%3DcompanyName%20ne%20null%20and%20NOT(companyName%20eq%20'Microsoft')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=companyName ne null and NOT(companyName eq 'Microsoft')&$count=true`                     |
-| Use of `$filter` with `NOT` and `startsWith` operators                   | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=%2Fusers%3F%24filter%3DNOT%20startsWith(displayName%2C%20'Conf')%26%24count%3Dtrue&method=GET&version=beta&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=NOT startsWith(displayName, 'Conf')&$count=true`                                                                |
+| Use of `$filter` with `NOT` and `startsWith` operators                   | [GET](https://developer.microsoft.com/en-us/graph/graph-explorer?request=%2Fusers%3F%24filter%3DNOT%20startsWith(displayName%2C%20'Conf')%26%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../users?$filter=NOT startsWith(displayName, 'Conf')&$count=true`                                                                |
 | Use of OData cast with another query parameter                           | [GET](https://developer.microsoft.com/graph/graph-explorer?request=me%2FtransitiveMemberOf%2Fmicrosoft.graph.group%3F%24count%3Dtrue&method=GET&version=v1.0&GraphUrl=https://graph.microsoft.com&headers=W3sibmFtZSI6IkNvbnNpc3RlbmN5TGV2ZWwiLCJ2YWx1ZSI6ImV2ZW50dWFsIn1d) `../me/transitiveMemberOf/microsoft.graph.group?$count=true`                                                                                             |
 
 > [!NOTE]
@@ -66,7 +66,7 @@ The following table lists query scenarios on directory objects that are supporte
 
 Properties of directory objects behave differently in their support for query parameters. The following are common scenarios for directory objects:
 
-+ Properties with the same name across directory resources support the same `$filter` operators. For example, the **createdDateTime** property is available in **application**, **group**, **organization**, and **user** resources. It supports the `eq`, `ge`, and `le` operators by default and the `in`, `ne`, and `NOT` operators only in advanced queries.
++ Unless otherwise indicated, properties with the same name across directory resources support the same `$filter` operators. For example, the **createdDateTime** property is available in **application**, **group**, **organization**, and **user** resources. It supports the `eq`, `ge`, and `le` operators by default and the `in`, `ne`, and `NOT` operators only in advanced queries.
 + The `endsWith` operator is supported only on **mail** and **userPrincipalName** properties.
 + Queries that are supported by default will also work in advanced queries.
 + The `NOT` and `ne` negation operators are supported only in advanced queries. 
@@ -108,7 +108,7 @@ https://graph.microsoft.com/v1.0/users/$count
 }
 ```
 
-`$search` on Azure AD resources that derive from [directoryObject](/graph/api/resources/directoryobject) works only in advanced queries. If the **ConsistencyLevel** header is not specified, the request returns an error.
+For directory objects, `$search` works only in advanced queries. If the **ConsistencyLevel** header is not specified, the request returns an error.
 
 ```http
 https://graph.microsoft.com/v1.0/applications?$search="displayName:Browser"
@@ -131,7 +131,7 @@ https://graph.microsoft.com/v1.0/applications?$search="displayName:Browser"
 If a property or query parameter in the URL is supported only in advanced queries but either the **ConsistencyLevel** header or the `$count=true` query string is missing, the request returns an error.
 
 ```http
-https://graph.microsoft.com/beta/users?$filter=endsWith(mail,'@outlook.com')
+https://graph.microsoft.com/v1.0/users?$filter=endsWith(mail,'@outlook.com')
 ```
 
 ```json
@@ -195,4 +195,4 @@ Content-type: application/json
 
 - [Use query parameters to customize responses](/graph/query-parameters)
 - [Query parameter limitations](known-issues.md#query-parameter-limitations)
-- [Use the $search query parameter to match a search criterion](/graph/aad-advanced-queries)
+- [Use the $search query parameter to match a search criterion](/graph/search-query-parameter)

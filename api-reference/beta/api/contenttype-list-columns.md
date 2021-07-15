@@ -97,7 +97,8 @@ GET https://graph.microsoft.com/beta/sites/{site-id}/contentTypes/{contentType-i
 <!-- {
   "blockType": "response",
   "truncated": true,
-  "@odata.type": "Collection(microsoft.graph.columnDefinition)"
+  "@odata.type": "microsoft.graph.columnDefinition",
+  "isCollection": true
 }
 -->  
 

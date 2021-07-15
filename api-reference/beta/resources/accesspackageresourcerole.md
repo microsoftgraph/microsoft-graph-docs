@@ -28,7 +28,7 @@ In [Azure AD entitlement management](entitlementmanagement-root.md), an access p
 |description|String|A description for the resource role.|
 |displayName|String|The display name of the resource role such as the role defined by the application.|
 |id|String| Read-only.|
-|originId|String|The unique identifier of the resource role in the origin system. |
+|originId|String|The unique identifier of the resource role in the origin system. For a SharePoint Online site, the originId will be the sequence number of the role in the site. |
 |originSystem|String|The type of the resource in the origin system, such as `SharePointOnline`, `AadApplication` or `AadGroup`.|
 
 ## Relationships

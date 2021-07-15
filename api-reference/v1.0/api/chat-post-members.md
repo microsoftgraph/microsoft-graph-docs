@@ -65,7 +65,8 @@ content-type: application/json
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
     "user@odata.bind": "https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-    "visibleHistoryStartDateTime": "2019-04-18T23:51:43.255Z"
+    "visibleHistoryStartDateTime": "2019-04-18T23:51:43.255Z",
+    "roles": ["owner"]
 }
 ```
 # [C#](#tab/csharp)
@@ -123,7 +124,8 @@ Content-type: application/json
 
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
-    "user@odata.bind": "https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
+    "user@odata.bind": "https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5",
+    "roles": ["owner"]
 }
 ```
 # [C#](#tab/csharp)
@@ -182,7 +184,8 @@ content-type: application/json
 {
     "@odata.type": "#microsoft.graph.aadUserConversationMember",
     "user@odata.bind": "https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5",
-    "visibleHistoryStartDateTime": "0001-01-01T00:00:00Z"
+    "visibleHistoryStartDateTime": "0001-01-01T00:00:00Z",
+    "roles": ["owner"]
 }
 ```
 # [C#](#tab/csharp)

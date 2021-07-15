@@ -17,8 +17,6 @@ Get the properties and relationships of an [externalitem](../resources/externali
 
 This API is provided for diagnostic purposes only. It is not intended to be used for any other purpose. Repeated requests to this API might result in `429` HTTP errors.
 
-[!INCLUDE [search-api-preview](../../includes/search-api-preview-signup.md)]
-
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).

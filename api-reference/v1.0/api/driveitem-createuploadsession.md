@@ -246,7 +246,7 @@ Content-Type: application/json
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "commit-upload", "scopes": "files.readwrite" } -->
 
-```
+```http
 POST https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF866337
 Content-Length: 0
 ```
@@ -324,7 +324,7 @@ Query the status of the upload by sending a GET request to the `uploadUrl`.
 
 <!-- { "blockType": "request", "opaqueUrl": true, "name": "upload-fragment-resume", "scopes": "files.readwrite" } -->
 
-```
+```http
 GET https://sn3302.up.1drv.com/up/fe6987415ace7X4e1eF86633784148bb98a1zjcUhf7b0mpUadahs
 ```
 

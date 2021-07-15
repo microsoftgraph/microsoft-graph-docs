@@ -31,18 +31,19 @@ When you use the Microsoft Search API, your customers benefit from more personal
 
 ## What data can I add or access by using the Microsoft Search API?
 
-The Microsoft Search API supports searching the following content in the Microsoft cloud:
+The Microsoft Search API supports searching the following content in the Microsoft cloud: 
 
-- Outlook email [messages](/graph/api/resources/message) and calendar [events](/graph/api/resources/event) objects
-- SharePoint and OneDrive files and folders ([driveItem](/graph/api/resources/driveitem)), [lists](/graph/api/resources/list), [listItems](/graph/api/resources/listitem), [sites](/graph/api/resources/site) and [drives](/graph/api/resources/drive)
-- Content ingested throught the Graph Connectors platform : [externalItems](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) (preview)
+- Outlook email [message](/graph/api/resources/message) and calendar [event](/graph/api/resources/event) resources.
+- SharePoint and OneDrive files and folders ([driveItem](/graph/api/resources/driveitem) resources), [list](/graph/api/resources/list), [listItem](/graph/api/resources/listitem), [site](/graph/api/resources/site), and [drive](/graph/api/resources/drive) resources.
+- [Person](/graph/api/resources/person) resources in an organization who are most relevant to a user.
+- Content ingested through the Microsoft Graph connectors platform : [externalItem](/graph/api/resources/externalitem?view=graph-rest-beta&preserve-view=true) resources.
 
 ## API reference
 
 Looking for the API reference for this service?
 
-- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-1.0) (v1.0)
-- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-beta) (preview)
+- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-1.0&preserve-view=true) (v1.0)
+- [Use the Microsoft Search API to query data](/graph/api/resources/search-api-overview?view=graph-rest-beta&preserve-view=true) (preview)
 - [Use the Microsoft Search API to index data](/graph/api/resources/indexing-api-overview) (preview)
 
 ## Next steps
@@ -54,9 +55,13 @@ Looking for the API reference for this service?
   - [Search Outlook messages](search-concept-messages.md)
   - [Search calendar events](search-concept-events.md)
   - [Search content in Sharepoint and OneDrive](search-concept-files.md)
-  - [Search external content](search-concept-custom-types.md) (preview)
+  - [Search external content](search-concept-custom-types.md)
+  - [Search person](search-concept-person.md) (preview)
   - [Sort search results](search-concept-sort.md) (preview)
   - [Refine search results](search-concept-aggregation.md) (preview)
+  - [Request spelling correction](search-concept-speller.md) (preview)
+  - [Search display layout](search-concept-display-layout.md) (preview)
+ 
   
 - Explore the search APIs in  [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer).
 - Download the [sample search connector](https://github.com/microsoftgraph/msgraph-search-connector-sample) from GitHub.
