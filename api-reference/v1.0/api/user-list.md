@@ -13,6 +13,8 @@ Namespace: microsoft.graph
 
 Retrieve a list of [user](../resources/user.md) objects.
 
+If you have more than 100 user accounts,　Microsoft Graph returns a `@odata.nextLink` property in the response that contains a URL to the next page of results. If that property is present, continue making additional requests with the `@odata.nextLink` URL in each response, until all the results are returned, as described in [paging Microsoft Graph data in your app](/graph/paging).
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
