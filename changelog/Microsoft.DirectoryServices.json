@@ -1,5 +1,47 @@
 {
   "changelog": [
+    {
+      "ChangeList": [
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a4111",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityProviderBase",
+          "ChangeType": "Addition",
+          "Description": "Added the [identityProviderBase](https://docs.microsoft.com/en-us/graph/api/resources/identityproviderbase?view=graph-rest-1.0) resource and associated methods to support configuring an identity provider in an Azure AD and Azure AD B2C tenant.",
+          "Target": "identityProviderBase"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a4111",
+          "ApiChange": "Resource",
+          "ChangedApiName": "builtInIdentityProvider",
+          "ChangeType": "Addition",
+          "Description": "Added the [builtInIdentityProvider](https://docs.microsoft.com/en-us/graph/api/resources/builtinidentityprovider?view=graph-rest-1.0) resource to support configuring an built-in identity provider in an Azure AD tenant.",
+          "Target": "builtInIdentityProvider"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a4111",
+          "ApiChange": "Resource",
+          "ChangedApiName": "socialIdentityProvider",
+          "ChangeType": "Addition",
+          "Description": "Added the [socialIdentityProvider](https://docs.microsoft.com/en-us/graph/api/resources/socialidentityprovider?view=graph-rest-1.0) resource to support configuring a social identity provider in an Azure AD and Azure AD B2C tenant.",
+          "Target": "socialIdentityProvider"
+        },
+        {
+          "Id": "224526a5-09a4-4895-9b8b-40e8984a4111",
+          "ApiChange": "Resource",
+          "ChangedApiName": "identityProvider",
+          "ChangeType": "Deprecation",
+          "Description": "Deprecated the [identityProvider](https://docs.microsoft.com/en-us/graph/api/resources/identityprovider?view=graph-rest-1.0) resource and related operations and methods to replace it with the new [identity provider API](https://docs.microsoft.com/en-us/graph/api/resources/identityproviderbase?view=graph-rest-1.0).",
+          "Target": "identityProvider"
+        }
+      ],
+      "Id": "224526a5-09a4-4895-9b8b-40e8984a4111",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-07-17T00:00:00.000Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
         {
           "ChangeList": [
               {

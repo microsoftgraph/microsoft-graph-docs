@@ -4684,17 +4684,38 @@ items:
             - name: Dismiss
               href: api/riskyuser-dismiss.md
         - name: Identity provider
-          href: resources/identityprovider.md
           items:
-          - name: List identity providers
+          - name: Identity provider base
+            href: resources/identityproviderbase.md
+          - name: Built-in identity provider
+            href: resources/builtinidentityprovider.md
+          - name: Social identity provider
+            href: resources/socialidentityprovider.md
+          - name: List
+            href: api/identityproviderbase-list.md
+          - name: Create
+            href: api/identityproviderbase-post-identityproviders.md
+          - name: Get
+            href: api/identityproviderbase-get.md
+          - name: Update
+            href: api/identityproviderbase-update.md
+          - name: Delete
+            href: api/identityproviderbase-delete.md
+          - name: List available provider types
+            href: api/identityproviderbase-list-availableprovidertypes.md
+        - name: Identity provider (deprecated)
+          items:
+          - name: Identity provider type
+            href: resources/identityprovider.md
+          - name: List
             href: api/identityprovider-list.md
-          - name: Create identity provider
+          - name: Create
             href: api/identityprovider-post-identityproviders.md
-          - name: Get identity provider
+          - name: Get
             href: api/identityprovider-get.md
-          - name: Update identity provider
+          - name: Update
             href: api/identityprovider-update.md
-          - name: Delete identity provider
+          - name: Delete
             href: api/identityprovider-delete.md
           - name: List available provider types
             href: api/identityprovider-list-availableprovidertypes.md

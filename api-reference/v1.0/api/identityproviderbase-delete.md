@@ -1,18 +1,18 @@
 ---
-title: "List availableProviderTypes"
-description: "Retrieve all available identity provider types in the directory."
+title: "Delete identityProvider"
+description: "Delete an identityProvider."
 localization_priority: Normal
 doc_type: apiPageType
 author: "namkedia"
 ms.prod: "identity-and-sign-in"
 ---
 
-# List availableProviderTypes (deprecated)
+# Delete identityProvider
 Namespace: microsoft.graph
 
-[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
+Delete a [socialIdentityProvider](../resources/socialidentityprovider.md) object in Azure AD.
 
-Retrieves all identity provider types available in a directory.
+In Azure AD B2C, delete a [socialIdentityProvider](../resources/socialidentityprovider.md) object.
 
 ## Permissions
 
@@ -20,9 +20,9 @@ One of the following permissions is required to call this API. To learn more, in
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
-|Delegated (work or school account)|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
+|Delegated (work or school account)|IdentityProvider.ReadWrite.All|
 |Delegated (personal Microsoft account)| Not supported.|
-|Application|IdentityProvider.Read.All, IdentityProvider.ReadWrite.All|
+|Application|IdentityProvider.ReadWrite.All|
 
 The work or school account needs to belong to one of the following roles:
 
@@ -32,9 +32,8 @@ The work or school account needs to belong to one of the following roles:
 ## HTTP request
 
 <!-- { "blockType": "ignored" } -->
-
 ```http
-GET /identityProviders/availableProviderTypes
+DELETE /identity/identityProviders/{id}
 ```
 
 ## Request headers
@@ -49,7 +48,7 @@ Do not supply a request body for this method.
 
 ## Response
 
-If successful, this function returns a `200 OK` response code and a String collection in the response body.
+If successful, this method returns a `204 No Content` response code.
 
 ## Example
 
@@ -57,39 +56,25 @@ If successful, this function returns a `200 OK` response code and a String colle
 
 The following is an example of the request.
 
+
+
 <!-- {
   "blockType": "request",
-  "name": "identityprovider_availableprovidertypes"
+  "name": "delete_identityprovider"
 }
 -->
 
 ``` http
-GET https://graph.microsoft.com/v1.0/identityProviders/availableProviderTypes
+DELETE https://graph.microsoft.com/v1.0/identity/identityProviders/{id}
 ```
 
 ### Response
-
-The following is an example of the response.
-
-**Note:** The response object shown here might be shortened for readability.
-
 <!-- {
   "blockType": "response",
-  "truncated": true,
-  "@odata.type": "Collection(Edm.String)"
+  "truncated": true
 }
 -->
 
 ``` http
-HTTP/1.1 200 OK
-Content-Type: application/json
-
-{
-  "value": [
-      "Google",
-      "Facebook",
-      "MicrosoftAccount",
-      "EmailOTP"
-  ]
-}
+HTTP/1.1 204 No Content
 ```

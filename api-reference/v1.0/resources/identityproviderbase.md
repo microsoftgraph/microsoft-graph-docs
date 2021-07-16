@@ -10,8 +10,6 @@ author: "namkedia"
 # identityProviderBase resource type
 Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
-
 Represents identity providers with [External Identities](/azure/active-directory/external-identities/) for both Azure Active Directory tenant and an Azure AD B2C tenant.
 
 ## Methods
@@ -25,7 +23,7 @@ Represents identity providers with [External Identities](/azure/active-directory
 
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|id|String|The identifier of the identity provider.|
+|id|String|The ID of the identity provider.|
 |displayName|String|The display name of the identity provider.|
 
 ## JSON representation

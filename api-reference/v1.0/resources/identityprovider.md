@@ -2,13 +2,15 @@
 title: "identityProvider resource type"
 description: "Represents an Azure Active Directory (Azure AD) identity provider."
 localization_priority: Priority
-author: "Nickgmicrosoft"
+author: "namkedia"
 ms.prod: "identity-and-sign-in"
 doc_type: resourcePageType
 ---
-# identityProvider resource type
 
+# identityProvider resource type (deprecated)
 Namespace: microsoft.graph
+
+[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Represents an Azure Active Directory (Azure AD) identity provider. The identity provider can be **Microsoft**, **Google**, **Facebook**, **Amazon**,  **LinkedIn**, or **Twitter**. The following Identity Providers are in Preview: **Weibo**, **QQ**, **WeChat**, **GitHub** and any OpenID Connect supported providers. 
 
@@ -61,4 +63,3 @@ The following is a JSON representation of the resource.
     "clientSecret": "String"
 }
 ```
-

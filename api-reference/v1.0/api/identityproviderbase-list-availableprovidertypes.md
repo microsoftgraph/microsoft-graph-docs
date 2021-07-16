@@ -7,10 +7,8 @@ author: "namkedia"
 ms.prod: "identity-and-sign-in"
 ---
 
-# List availableProviderTypes (deprecated)
+# List availableProviderTypes
 Namespace: microsoft.graph
-
-[!INCLUDE [identityprovider-deprecate](../../includes/identityprovider-deprecate.md)]
 
 Retrieves all identity provider types available in a directory.
 
@@ -34,7 +32,7 @@ The work or school account needs to belong to one of the following roles:
 <!-- { "blockType": "ignored" } -->
 
 ```http
-GET /identityProviders/availableProviderTypes
+GET /identity/identityProviders/availableProviderTypes
 ```
 
 ## Request headers
@@ -44,7 +42,6 @@ GET /identityProviders/availableProviderTypes
 |Authorization|Bearer {token}. Required.|
 
 ## Request body
-
 Do not supply a request body for this method.
 
 ## Response
@@ -53,8 +50,9 @@ If successful, this function returns a `200 OK` response code and a String colle
 
 ## Example
 
-### Request
+### Example 1: List all identity providers available in an Azure AD directory
 
+### Request
 The following is an example of the request.
 
 <!-- {
@@ -64,14 +62,14 @@ The following is an example of the request.
 -->
 
 ``` http
-GET https://graph.microsoft.com/v1.0/identityProviders/availableProviderTypes
+GET https://graph.microsoft.com/v1.0/identity/identityProviders/availableProviderTypes
 ```
 
 ### Response
 
 The following is an example of the response.
 
-**Note:** The response object shown here might be shortened for readability.
+>**Note:** The response object shown here might be shortened for readability.
 
 <!-- {
   "blockType": "response",
@@ -85,11 +83,64 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(Edm.String)",
+    "value": [
+        "MicrosoftAccount",
+        "EmailOTP",
+        "Facebook",
+        "Google"
+    ]
+}
+```
+
+### Example 2: List all identity providers available in an Azure AD B2C directory
+
+### Request
+The following is an example of the request.
+
+<!-- {
+  "blockType": "request",
+  "name": "identityprovider_availableprovidertypes_b2c"
+}
+-->
+
+``` http
+GET https://graph.microsoft.com/v1.0/identity/identityProviders/availableProviderTypes
+```
+
+
+### Response
+
+The following is an example of the response.
+
+>**Note:** The response object shown here might be shortened for readability.
+
+<!-- {
+  "blockType": "response",
+  "truncated": true,
+  "@odata.type": "Collection(Edm.String)"
+}
+-->
+
+``` http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+ "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(Edm.String)",
   "value": [
-      "Google",
-      "Facebook",
-      "MicrosoftAccount",
-      "EmailOTP"
+        "Microsoft",
+        "Google",
+        "Facebook",
+        "Amazon",
+        "LinkedIn",
+        "Weibo",
+        "QQ",
+        "WeChat",
+        "Twitter",
+        "GitHub",
+        "AppleManaged",
+        "OpenIdConnect"
   ]
 }
 ```
