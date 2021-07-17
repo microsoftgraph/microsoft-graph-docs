@@ -10542,6 +10542,8 @@ items:
             href: api/administrativeunit-delta.md
           - name: Add a member
             href: api/administrativeunit-post-members.md
+          - name: Add a member object
+            href: api/administrativeunit-post-members-object.md
           - name: List members
             href: api/administrativeunit-list-members.md
           - name: Get a member
