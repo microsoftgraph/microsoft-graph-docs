@@ -205,25 +205,27 @@ public async Task<bool> ValidateToken(string token, string tenantId, IEnumerable
 {
     var configurationManager = new ConfigurationManager<OpenIdConnectConfiguration>("https://login.microsoftonline.com/common/v2.0/.well-known/openid-configuration", new OpenIdConnectConfigurationRetriever());
     var openIdConfig = await configurationManager.GetConfigurationAsync();
+    string microsoftChangeTrackingAppId = "0bf30f3b-4a52-48df-9a82-234910c4a086";
     var handler = new JwtSecurityTokenHandler();
     try
     {
-	handler.ValidateToken(token, new TokenValidationParameters
-	{
-	    ValidateIssuer = true,
-	    ValidateAudience = true,
-	    ValidateIssuerSigningKey = true,
-	    ValidateLifetime = true,
-	    ValidIssuer = $"https://sts.windows.net/{tenantId}/",
-	    ValidAudiences = appIds,
-	    IssuerSigningKeys = openIdConfig.SigningKeys
-	}, out _);
-	return true;
+        var result = handler.ValidateToken(token, new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateIssuerSigningKey = true,
+            ValidateLifetime = true,
+            ValidIssuer = $"https://sts.windows.net/{tenantId}/",
+            ValidAudiences = appIds,
+            IssuerSigningKeys = openIdConfig.SigningKeys
+        }, out _);
+        return result.Claims.Where(x => x.Type.Equals("appid", StringComparison.OrdinalIgnoreCase))
+                .Any(x => x.Value.Equals(microsoftChangeTrackingAppId, StringComparison.OrdinalIgnoreCase));
     }
     catch (Exception ex)
     {
-	Trace.TraceError($"{ex.Message}:{ex.StackTrace}");
-	return false;
+        Trace.TraceError($"{ex.Message}:{ex.StackTrace}");
+        return false;
     }
 }
 ```
