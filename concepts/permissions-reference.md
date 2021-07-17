@@ -91,6 +91,25 @@ The following is the JSON response:
 }
 ```
 
+## Retriving Permission IDs
+
+If you need to set permissions using the Azure CLI, PowerShell or infrastructure as code frameworks, you might need the identifier for the permission that you want to use instead of the name. The identifier can be retrieved using the Azure CLI by running `az ad sp list`. However, this generates a very long list, and it can be hard to find the specific permission you want. If you already know the name of the permission you need, you can run the following command using the Azure CLI:
+
+```bash
+az ad sp list --query "[?appDisplayName=='Microsoft Graph'].{permissions:oauth2Permissions}[0].permissions[?value=='<NAME OF PERMISSION>'].{id: id, value: value, adminConsentDisplayName: adminConsentDisplayName, adminConsentDescription: adminConsentDescription}[0]" --all
+```
+
+The response of the command should be similar to the following example, which contains the description, identifier, display name, and permission name:
+
+```json
+{
+  "adminConsentDescription": "Allows the app to list groups, and to read their properties and all group memberships on behalf of the signed-in user.  Also allows the app to read calendar, conversations, files, and other group content for all groups the signed-in user can access. ",
+  "adminConsentDisplayName": "Read all groups",
+  "id": "5f8c59db-677d-491f-a6b8-5f174b11ec1d",
+  "value": "Group.Read.All"
+}
+```
+
 ---
 
 ## Access reviews permissions
