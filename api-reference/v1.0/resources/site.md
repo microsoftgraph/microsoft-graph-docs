@@ -17,6 +17,7 @@ The **site** resource provides metadata and relationships for a SharePoint site.
 
 | Method                | Return type | Description
 |:-------------------------|:-------------|:----------
+| [Get all sites][]        | collection of site | List all sites within a tenant.
 | [Get root site][]        | site | Access the root SharePoint site within a tenant.
 | [Get site][]             | site | Access a sharePoint site using the siteId.
 | [Get site by path][]     | site | Access the root SharePoint site with a relative path.
