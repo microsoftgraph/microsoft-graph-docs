@@ -25,6 +25,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account) | Not supported.
 |Application                            | Sites.Read.All, Sites.ReadWrite.All
 
+The _Sites.Selected_ application permission is not supported by this API.
+
 ## HTTP request
 
 
@@ -82,7 +84,10 @@ Content-type: application/json
   ]
 }
 ```
->**Note:** The only property that works for sorting is **createdDateTime**. The search filter is a free text search that uses multiple properties when retrieving the search results.
+
+## Remarks 
+
+The only property that works for sorting is **createdDateTime**. The search filter is a free text search that uses multiple properties when retrieving the search results.
 
 <!-- {
   "type": "#page.annotation",
@@ -93,4 +98,3 @@ Content-type: application/json
   "suppressions": [
   ]
 } -->
-
