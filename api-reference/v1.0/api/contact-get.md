@@ -30,7 +30,7 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 <!-- { "blockType": "ignored" } -->
-A [contact](../resources/contact.md) from a user's default [contactFolder](../resources/contactfolder.md).
+A [contact](../resources/contact.md) in the user's mailbox.
 ```http
 GET /me/contacts/{id}
 GET /users/{id | userPrincipalName}/contacts/{id}
