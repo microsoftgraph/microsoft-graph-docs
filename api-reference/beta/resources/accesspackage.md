@@ -38,6 +38,7 @@ To assign a user to an access package, [create an accessPackageAssignmentRequest
 | [Remove group from incompatibleGroups](../api/accesspackage-delete-incompatiblegroup.md) | None | Remove a link that indicated a **group** membership was incompatible.|
 | [List accessPackagesIncompatibleWith](../api/accesspackage-list-accesspackagesincompatiblewith.md) | [accessPackage](accesspackage.md) collection | Retrieve a list of the  **accesspackage** objects which list this access package as incompatible. |
 |[filterByCurrentUser](../api/accesspackage-filterbycurrentuser.md)|[accessPackage](../resources/accesspackage.md) collection|Retrieve the list of **accessPackage** objects filtered on the signed-in user.|
+| [getApplicablePolicyRequirements](../api/accesspackage-getapplicablepolicyrequirements.md) | [accessPackageAssignmentRequestRequirements](../resources/accesspackageassignmentrequestrequirements.md) collection | Retrieve a list of **accessPackageAssignmentRequestRequirement** objects with request requirements. |
 
 ## Properties
 

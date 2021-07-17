@@ -647,6 +647,32 @@
     {
       "ChangeList": [
         {
+          "Id": "62d990bd-ac6b-482a-a161-10ca3c9e92f4",
+          "ApiChange": "api",
+          "ChangedApiName": "getApplicablePolicyRequirements",
+          "ChangeType": "Addition",
+          "Description": "Added the [getApplicablePolicyRequirements](https://docs.microsoft.com/en-us/graph/api/accesspackage-getapplicablepolicyrequirements.md) action to the [accessPackage](https://docs.microsoft.com/en-us/graph/api/resources/accessPackage?view=graph-rest-beta) resource.",
+          "Target": "accesspackage"
+        },
+        {
+          "Id": "62d990bd-ac6b-482a-a161-10ca3c9e92f4",
+          "ApiChange": "Resource",
+          "ChangedApiName": "accessPackageAssignmentRequestRequirements",
+          "ChangeType": "Addition",
+          "Description": "Added the [accessPackageAssignmentRequestRequirements](https://docs.microsoft.com/en-us/graph/api/resources/accessPackageAssignmentRequestRequirements?view=graph-rest-beta) complex type.",
+          "Target": "accessPackageAssignmentRequestRequirements"
+        }
+      ],
+      "Id": "62d990bd-ac6b-482a-a161-10ca3c9e92f4",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-06-08T18:32:06Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Governance"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c3d570f0-e2f4-449c-851e-ad0f0c0d5557",
           "ApiChange": "Property",
           "ChangedApiName": "authorizationPolicy",

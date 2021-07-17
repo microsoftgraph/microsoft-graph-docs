@@ -11852,6 +11852,8 @@ items:
               href: api/accesspackage-delete.md
             - name: Filter by current user
               href: api/accesspackage-filterbycurrentuser.md
+            - name: Get applicable policy requirements
+              href: api/accesspackage-getapplicablepolicyrequirements.md
             - name: List incompatible access packages
               href: api/accesspackage-list-incompatibleaccesspackages.md
             - name: Add incompatible access package
