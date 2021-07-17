@@ -21,8 +21,8 @@ Represents a defined collection of user setting assignments.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique Identifier for the user setting assignment. Read-only. If `target` is a user group, the ID has this structure: {policyID}\_{groupID}.|
-|target|[cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md)|The assignment target for the user setting. Currently, the only target supported for this user setting is a user group. For details, see [cloudPcManagementGroupAssignmentTarget](cloudpcmanagementgroupassignmenttarget.md).|
+|id|String|Unique ID for the user setting assignment.If the assignment is applied to a Microsoft 365 group or security group, the ID is this structure: {policyID}\_{groupID}. Read-only.|
+|target|[cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md)|The object that the assignment is applied to. Currently, assignments can be applied to only Microsoft 365 groups and security groups in Azure AD. For details, see [cloudPcManagementGroupAssignmentTarget](cloudpcmanagementgroupassignmenttarget.md).|
 |createdDateTime|DateTimeOffset|The date and time this assignment was created. The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'.  |
 
 ## Relationships

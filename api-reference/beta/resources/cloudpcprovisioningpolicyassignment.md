@@ -21,8 +21,8 @@ Represents a defined collection of provisioning policy assignments.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique Identifier for the provisioning policy assignment. Read-only. If `target` is a user group, then the ID is shown as {policyId}\_{groupId}.|
-|target|[cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md)|The assignment target for the provisioning policy. Currently, the only target supported for this policy is a user group. For details, see [cloudPcManagementGroupAssignmentTarget](cloudpcmanagementgroupassignmenttarget.md). |
+|id|String|Unique ID for the provisioning policy assignment. If the assignment is applied to a Microsoft 365 group or security groups, the ID is this format {policyId}\_{groupId}. Read-only.|
+|target|[cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md)|The object that the assignment is applied to. Currently, assignments can be applied to only Microsoft 365 groups and security groups in Azure AD. For details, see [cloudPcManagementGroupAssignmentTarget](cloudpcmanagementgroupassignmenttarget.md). |
 
 ## Relationships
 

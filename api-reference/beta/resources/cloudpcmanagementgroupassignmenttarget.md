@@ -13,8 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Complex type that represents the assignment target group.
-Inherits from [cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md).
+Complex type that represents the group that is being assigned a [cloudPcUserSetting](../resources/cloudpcusersetting.md) or a [cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md). Inherits from [cloudPcManagementAssignmentTarget](../resources/cloudpcmanagementassignmenttarget.md).
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
