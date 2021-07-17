@@ -11522,7 +11522,7 @@ items:
             href: api/trustframeworkpolicy-delete.md
         - name: User flows
           items:
-          - name: User flow
+          - name: User flow (deprecated)
             items:
             - name: User flow
               href: resources/identityuserflow.md

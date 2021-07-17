@@ -1,5 +1,5 @@
 ---
-title: "Get userFlow"
+title: "Get userFlow (deprecated)"
 description: "Retrieve the properties and relationships of userflow object."
 localization_priority: Normal
 author: "Nickgmicrosoft"
@@ -12,6 +12,8 @@ doc_type: "apiPageType"
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+
+[!INCLUDE [identityuserflow-deprecate](../../includes/identityuserflow-deprecate.md)]
 
 Retrieve the properties and associations for an [userFlow](../resources/identityuserflow.md) object.
 

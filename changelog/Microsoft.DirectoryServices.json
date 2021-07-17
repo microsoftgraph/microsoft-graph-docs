@@ -8354,6 +8354,48 @@
       "CreatedDateTime": "2021-06-29T00:00:00.000Z",
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "f46a7363-009c-4649-81d4-de52390bb26b",
+          "ApiChange": "Method",
+          "ChangedApiName": "identityuserflow",
+          "ChangeType": "Change",
+          "Description": "Deprecated  [list](https://docs.microsoft.com/en-us/graph/api/identitycontainer-list-b2cuserflows?view=graph-rest-beta) operations to replace it with new [b2cidentityuserflow API](https://docs.microsoft.com/en-us/graph/api/identitycontainer-list-b2cuserflows?view=graph-rest-beta) and [b2xidentityuserflow API](https://docs.microsoft.com/en-us/graph/api/identitycontainer-list-b2xuserflows?view=graph-rest-beta).",
+          "Target": "identityuserflow"
+        },
+        {
+          "Id": "f46a7363-009c-4649-81d4-de52390bb26b",
+          "ApiChange": "Method",
+          "ChangedApiName": "identityuserflow",
+          "ChangeType": "Change",
+          "Description": "Deprecated  [create](https://docs.microsoft.com/en-us/graph/api/identityuserflow-post-userflows?view=graph-rest-beta) operations to replace it with new [b2cidentityuserflow API](https://docs.microsoft.com/en-us/graph/api/identitycontainer-post-b2cuserflows?view=graph-rest-beta) and [b2xidentityuserflow API](https://docs.microsoft.com/en-us/graph/api/identitycontainer-post-b2xuserflows?view=graph-rest-beta).",
+          "Target": "identityuserflow"
+        },
+        {
+          "Id": "f46a7363-009c-4649-81d4-de52390bb26b",
+          "ApiChange": "Method",
+          "ChangedApiName": "identityuserflow",
+          "ChangeType": "Change",
+          "Description": "Deprecated [get](https://docs.microsoft.com/en-us/graph/api/identityuserflow-get?view=graph-rest-beta&tabs=http) operations to replace it with new [b2cidentityuserflow API](https://docs.microsoft.com/en-us/graph/api/b2cidentityuserflow-get?view=graph-rest-beta) and [b2xidentityuserflow API](https://docs.microsoft.com/en-us/graph/api/b2xidentityuserflow-get?view=graph-rest-beta).",
+          "Target": "identityuserflow"
+        },
+        {
+          "Id": "f46a7363-009c-4649-81d4-de52390bb26b",
+          "ApiChange": "Method",
+          "ChangedApiName": "identityuserflow",
+          "ChangeType": "Change",
+          "Description": "Deprecated [delete](https://docs.microsoft.com/en-us/graph/api/identityuserflow-delete?view=graph-rest-beta) operations to replace it with new [b2cidentityuserflow API](https://docs.microsoft.com/en-us/graph/api/b2cidentityuserflow-delete?view=graph-rest-beta) and [b2xidentityuserflow API](https://docs.microsoft.com/en-us/graph/api/b2xidentityuserflow-delete?view=graph-rest-beta).",
+          "Target": "identityuserflow"
+        }
+      ],
+      "Id": "f46a7363-009c-4649-81d4-de52390bb26b",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-07-13T00:00:00",
+      "WorkloadArea": "Identity and access",
+      "SubArea": ""
     }
   ]
 }
