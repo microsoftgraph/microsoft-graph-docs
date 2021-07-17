@@ -47,6 +47,24 @@
     {
       "ChangeList": [
         {
+          "Id": "683a0072-f5ac-4e15-93e2-e3d9270ab9ac",
+          "ApiChange": "Property",
+          "ChangedApiName": "userPurpose",
+          "ChangeType": "Change",
+          "Description": "Added caution banner that [userPurpose](https://docs.microsoft.com/en-us/graph/api/resources/userPurpose?view=graph-rest-beta) would be temporarily unavailable, and that userPurposeV2 would be available as temporary fallback API",
+          "Target": "mailboxSettings"
+        }
+      ],
+      "Id": "683a0072-f5ac-4e15-93e2-e3d9270ab9ac",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2020-04-04T00:00:00",
+      "WorkloadArea": "Mail",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "58585680-2aae-4690-a3f0-7828dc866c20",
           "ApiChange": "Property",
           "ChangedApiName": "hideAttendees",

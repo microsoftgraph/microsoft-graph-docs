@@ -15,13 +15,15 @@ Namespace: microsoft.graph
 
 The purpose of the mailbox. Used to differentiate a mailbox for a single user from a shared mailbox and equipment mailbox in Exchange Online.
 
+> [!CAUTION] 
+> The userPurpose API would be temporarily unavailable to undergo scheduled enhancements and will stop returning data on April 15, 2021. During this time, please use userPurposeV2 as a **temporary** fallback API till the original API is available again. As with Beta policy, this API should not be used in production applications.
 
 ## Properties
 |Property|Type|Description|
 |:---------------|:--------|:----------|
-|value|[mailboxRecipientType](#mailboxrecipienttype-values)|Represents the user's recipient or mailbox type in Exchange Online. Possible values are: `unknown`, `user`, `linked`, `shared`, `room`, `equipment`, and `others`. See the next section for more information.|
+|value|[userPurpose](#userpurpose-values)|Represents the user's recipient or mailbox type in Exchange Online. Possible values are: `unknown`, `user`, `linked`, `shared`, `room`, `equipment`, and `others`. See the next section for more information.|
 
-### mailboxRecipientType values
+### userPurpose values
 |Member|Description|
 |:---------------|:--------|
 |unknown|No information found about the mailbox.|
