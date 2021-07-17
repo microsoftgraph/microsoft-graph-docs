@@ -33,7 +33,7 @@ The user experience analytics applicaiton performance entity contains app perfor
 |appHangCount|Int32|The number of hangs for the app. Valid values -2147483648 to 2147483647|
 |appHealthScore|Double|The health score of the app. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
 |appHealthStatus|String|The overall health status of the app.|
-|allOrgsHealthScore|Double|The median health score of the application across all organizations. Valid values -1.79769313486232E+308 to 1.79769313486232E+308|
+|allOrgsHealthScore|Double|This property is not currently in use. If called, this property will always return a value of 0.0|
 |activeDeviceCount|Int32|The number of devices where the app has been active. Valid values -2147483648 to 2147483647|
 |appName|String|The name of the application.|
 |appDisplayName|String|The friendly name of the application.|
@@ -60,7 +60,7 @@ Here is a JSON representation of the resource.
   "appHangCount": 1024,
   "appHealthScore": "4.2",
   "appHealthStatus": "String",
-  "allOrgsHealthScore": "4.2",
+  "allOrgsHealthScore": "0.0",
   "activeDeviceCount": 1024,
   "appName": "String",
   "appDisplayName": "String",
