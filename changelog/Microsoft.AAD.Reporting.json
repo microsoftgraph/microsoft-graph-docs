@@ -1,6 +1,104 @@
 {
   "changelog": [
-      {
+    {
+      "ChangeList": [
+          {
+              "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+              "ApiChange": "Property",
+              "ChangedApiName": "autonomousSystemNumber",
+              "ChangeType": "Addition",
+              "Description": "Added the **autonomousSystemNumber** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+              "Target": "signIn"
+          },
+          {
+              "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+              "ApiChange": "Property",
+              "ChangedApiName": "crossTenantAccessType",
+              "ChangeType": "Addition",
+              "Description": "Added the **crossTenantAccessType** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+              "Target": "signIn"
+          },
+          {
+              "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+              "ApiChange": "Property",
+              "ChangedApiName": "isTenantRestricted",
+              "ChangeType": "Addition",
+              "Description": "Added the **isTenantRestricted** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+              "Target": "signIn"
+          },
+          {
+              "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+              "ApiChange": "Property",
+              "ChangedApiName": "privateLinkDetails",
+              "ChangeType": "Addition",
+              "Description": "Added the **privateLinkDetails** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+              "Target": "signIn"
+          },
+          {
+              "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+              "ApiChange": "Property",
+              "ChangedApiName": "servicePrincipalCredentialKeyId",
+              "ChangeType": "Addition",
+              "Description": "Added the **servicePrincipalCredentialKeyId** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+              "Target": "signIn"
+          },
+          {
+              "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+              "ApiChange": "Property",
+              "ChangedApiName": "servicePrincipalCredentialThumbprint",
+              "ChangeType": "Addition",
+              "Description": "Added the **servicePrincipalCredentialThumbprint** property to the [signIn](https://docs.microsoft.com/en-us/graph/api/resources/signIn?view=graph-rest-beta) resource.",
+              "Target": "signIn"
+          },
+          {
+              "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+              "ApiChange": "Resource",
+              "ChangedApiName": "privateLinkDetails",
+              "ChangeType": "Addition",
+              "Description": "Added the [privateLinkDetails](https://docs.microsoft.com/en-us/graph/api/resources/privateLinkDetails?view=graph-rest-beta) resource type.",
+              "Target": "privateLinkDetails"
+          },
+          {
+              "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+              "ApiChange": "Member",
+              "ChangedApiName": "deviceFilterIncludeRuleNotMatched",
+              "ChangeType": "Addition",
+              "Description": "Added the `deviceFilterIncludeRuleNotMatched` member to the **conditionalAccessRule** enumeration.",
+              "Target": "conditionalAccessRule"
+          },
+          {
+              "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+              "ApiChange": "Member",
+              "ChangedApiName": "allDeviceStates",
+              "ChangeType": "Addition",
+              "Description": "Added the `allDeviceStates` member to the **conditionalAccessRule** enumeration.",
+              "Target": "conditionalAccessRule"
+          },
+          {
+              "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+              "ApiChange": "Enum type",
+              "ChangedApiName": "signInAccessType",
+              "ChangeType": "Addition",
+              "Description": "Added the **signInAccessType** enumeration type.",
+              "Target": "signInAccessType"
+          },
+          {
+              "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+              "ApiChange": "Member",
+              "ChangedApiName": "unknownFutureValue",
+              "ChangeType": "Deletion",
+              "Description": "Removed the `unknownFutureValue` member from the **conditionalAccessRule** enumeration.",
+              "Target": "conditionalAccessRule"
+          }
+      ],
+      "Id": "2443cc12-cf8c-11eb-995f-5903f88189f5",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-07-06T16:50:37.572Z",
+      "WorkloadArea": "Reports",
+      "SubArea": "Identity and access reports"
+  },  
+    {
         "ChangeList": [
             {
                 "Id": "294a9458-90b6-11eb-874f-059ec3b2db4c",

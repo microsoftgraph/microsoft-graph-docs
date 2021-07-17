@@ -111,102 +111,93 @@ Content-type: application/json
   "@odata.context": "https://graph.microsoft.com/beta/$metadata#auditLogs/signIns",
   "value": [
     {
-      "id": "66ea54eb-blah-4ee5-be62-ff5a759b0100",
-      "createdDateTime": "2020-03-13T19:15:41.6195833Z",
-      "userDisplayName": "Test contoso",
-      "userPrincipalName": "testaccount1@contoso.com",
-      "userId": "26be570a-1111-5555-b4e2-a37c6808512d",
-      "appId": "de8bc8b5-5555-6666-a8ad-b748da725064",
-      "appDisplayName": "Graph explorer",
-      "authenticationRequirement": "multiFactorAuthentication",
-      "ipAddress": "131.107.159.37",
-      "clientAppUsed": "Browser",
-      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36 Edg/80.0.361.66",
-      "correlationId": "d79f5bee-blah-4832-928f-3133e22ae912",
-      "conditionalAccessStatus": "notApplied",
-      "originalRequestId": "66ea54eb-blah-4ee5-be62-ff5a759b0100",
-      "isInteractive": true,
-      "tokenIssuerName": "",
-      "tokenIssuerType": "AzureAD",
-      "processingTimeInMilliseconds": 541,
-      "riskDetail": "none",
-      "riskLevelAggregated": "none",
-      "riskLevelDuringSignIn": "none",
-      "riskState": "none",
-      "riskEventTypes": [],
-      "riskEventTypes_v2": [],
-      "resourceDisplayName": "Microsoft Graph",
-      "resourceId": "00000003-0000-0000-c000-000000000000",
-      "authenticationMethodsUsed": [],
-      "alternateSignInName": "testaccount2.contoso.com",
-      "servicePrincipalName": null,
-      "servicePrincipalId": "",
-      "mfaDetail": null,
-      "status": {
-        "errorCode": 0,
-        "failureReason": null,
-        "additionalDetails": null
-      },
-      "deviceDetail": {
-        "deviceId": "",
-        "displayName": null,
-        "operatingSystem": "Windows 10",
-        "browser": "Edge 80.0.361",
-        "isCompliant": null,
-        "isManaged": null,
-        "trustType": null
-      },
-      "location": {
-        "city": "Redmond",
-        "state": "Washington",
-        "countryOrRegion": "US",
-        "geoCoordinates": {
-          "altitude": null,
-          "latitude": 47.68050003051758,
-          "longitude": -122.12094116210938
-        }
-      },
-      "appliedConditionalAccessPolicies": [
-        {
-          "id": "de7e60eb-ed89-4d73-8205-2227def6b7c9",
-          "displayName": "SharePoint limited access for guest workers",
-          "enforcedGrantControls": [],
-          "enforcedSessionControls": [],
-          "result": "notEnabled",
-          "conditionsSatisfied": "none",
-          "conditionsNotSatisfied": "none"
+      "id":"1691d37b-8579-43a7-966a-0f35583c1300",
+      "createdDateTime":"2021-06-30T16:34:32Z",
+      "userDisplayName":"Test contoso",
+      "userPrincipalName":"testaccount1@contoso.com",
+      "userId":"26be570a-1111-5555-b4e2-a37c6808512d",
+      "appId":"c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
+      "appDisplayName":"Azure Portal",
+      "ipAddress":"131.107.159.37",
+      "clientAppUsed":"Browser",
+      "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36 Edg/91.0.864.54",
+      "correlationId":"5d295068-919b-4017-85d8-44be2f5f5483",
+      "conditionalAccessStatus":"notApplied",
+      "originalRequestId":"7dccb0d7-1041-4d82-b785-d865272e1400",
+      "isInteractive":true,
+      "tokenIssuerName":"",
+      "tokenIssuerType":"AzureAD",
+      "processingTimeInMilliseconds":761,
+      "riskDetail":"none",
+      "riskLevelAggregated":"none",
+      "riskLevelDuringSignIn":"none",
+      "riskState":"none",
+      "riskEventTypes":[],
+      "riskEventTypes_v2":[],
+      "resourceDisplayName":"Windows Azure Service Management API",
+      "resourceId":"797f4846-ba00-4fd7-ba43-dac1f8f63013",
+      "resourceTenantId":"99081087-73c4-48d1-a112-f60ff75114f7",
+      "homeTenantId":"99081087-73c4-48d1-a112-f60ff75114f7",
+      "authenticationMethodsUsed":[],
+      "authenticationRequirement":"singleFactorAuthentication",
+      "alternateSignInName":"testaccount1@contoso.com",
+      "signInIdentifier":"testaccount1@contoso.com",
+      "signInEventTypes":["interactiveUser"],
+      "servicePrincipalId":"",
+      "userType":"member",
+      "flaggedForReview":false,
+      "isTenantRestricted":false,
+      "autonomousSystemNumber":3598,
+      "crossTenantAccessType":"none",
+      "status":{
+          "errorCode":50126,
+          "failureReason":"Error validating credentials due to invalid username or password.",
+          "additionalDetails":"The user didn't enter the right credentials. \u00a0It's expected to see some number of these errors in your logs due to users making mistakes."
         },
-        {
-          "id": "6701123a-b4c6-48af-8565-565c8bf7cabc",
-          "displayName": "Medium signin risk block",
-          "enforcedGrantControls": [],
-          "enforcedSessionControls": [],
-          "result": "notEnabled",
-          "conditionsSatisfied": "none",
-          "conditionsNotSatisfied": "none"
+      "deviceDetail":{
+          "deviceId":"",
+          "displayName":"",
+          "operatingSystem":"Windows 10",
+          "browser":"Edge 91.0.864",
+          "isCompliant":false,
+          "isManaged":false,
+          "trustType":""
         },
-      ],
-      "authenticationProcessingDetails": [],
-      "networkLocationDetails": [],
-      "authenticationDetails": [
-        {
-			    "authenticationStepDateTime":"2018-11-06T18:48:03.8313489Z",
-			    "authenticationMethod":"FIDO2",
-			    "authenticationMethodDetail":"1G54395783",
-			    "succeeded":true,
-			    "authenticationStepResultDetail":"methodSucceeded",
-			    "authenticationStepRequirement":"Primary authentication"
-			  },
-			  {
-			    "authenticationStepDateTime":"2018-11-06T18:48:12.94725647Z",
-			    "authenticationMethod":"Claim in access token",
-			    "authenticationMethodDetail":null,
-			    "succeeded":true,
-			    "authenticationStepResultDetail":"methodSucceeded",
-			    "authenticationStepRequirement":"MFA"
-			  }
-      ],
-      "authenticationRequirementPolicies": []
+      "location":{
+          "city":"Redmond",
+          "state":"Washington",
+          "countryOrRegion":"US",
+          "geoCoordinates":{
+            "altitude":null,
+            "latitude":47.6807,
+            "longitude":-122.1231
+          }
+        },
+      "appliedConditionalAccessPolicies":[],
+      "authenticationProcessingDetails":[
+          {
+            "key":"Login Hint Present",
+            "value":"True"
+          }
+        ],
+      "networkLocationDetails":[
+          {
+            "networkType":"namedNetwork",
+            "networkNames":["North America"]
+          }
+        ],
+      "authenticationDetails":[
+          {
+            "authenticationStepDateTime":"2021-06-30T16:34:32Z",
+            "authenticationMethod":"Password",
+            "authenticationMethodDetail":"Password in the cloud",
+            "succeeded":false,
+            "authenticationStepResultDetail":"Invalid username or password or Invalid on-premise username or password.",
+            "authenticationStepRequirement":"Primary authentication"
+          }
+        ],
+      "authenticationRequirementPolicies":[],
+      "sessionLifetimePolicies":[]
     }
   ]
 }
@@ -242,80 +233,93 @@ Content-type: application/json
   "@odata.nextLink": "https://graph.microsoft.com/beta/auditLogs/signins?$filter=startsWith(appDisplayName%2c%27Azure%27)&$top=10&$skiptoken=3cff228c89605cc89b0dc753668deef4153e8644caa6d83ed1bb5f711b21cba4",
   "value": [
     {
-      "id":"b01b1726-0147-425e-a7f7-21f252050400",
-      "createdDateTime":"2018-11-06T18:48:33.8527147Z",
-      "userDisplayName":"Jon Doe",
-      "userPrincipalName":"jdoe@contoso.com",
-      "userId":"d7cc485d-2c1b-422c-98fd-5ce52859a4a3",
+      "id":"1691d37b-8579-43a7-966a-0f35583c1300",
+      "createdDateTime":"2021-06-30T16:34:32Z",
+      "userDisplayName":"Test contoso",
+      "userPrincipalName":"testaccount1@contoso.com",
+      "userId":"26be570a-1111-5555-b4e2-a37c6808512d",
       "appId":"c44b4083-3bb0-49c1-b47d-974e53cbdf3c",
       "appDisplayName":"Azure Portal",
-      "authenticationRequirement": "singleFactorAuthentication",
       "ipAddress":"131.107.159.37",
       "clientAppUsed":"Browser",
-      "authenticationDetails": [ 
-        {
-          "authenticationStepDateTime":"2018-11-06T18:48:03.8313489Z",
-          "authenticationMethod":"Password",
-          "authenticationMethodDetail":"Cloud password",
-          "succeeded":true,
-          "authenticationStepResultDetail":"methodSucceeded",
-          "authenticationStepRequirement":"Primary authentication"
-        }
-      ],
-      "correlationId":"65dd87ce-2183-419e-81a9-d6e20379bcc2",
-      "conditionalAccessStatus":"applied",
+      "userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36 Edg/91.0.864.54",
+      "correlationId":"5d295068-919b-4017-85d8-44be2f5f5483",
+      "conditionalAccessStatus":"notApplied",
+      "originalRequestId":"7dccb0d7-1041-4d82-b785-d865272e1400",
       "isInteractive":true,
-      "tokenIssuerName":null,
+      "tokenIssuerName":"",
       "tokenIssuerType":"AzureAD",
-      "processingTimeInMilliseconds":100,
+      "processingTimeInMilliseconds":761,
       "riskDetail":"none",
       "riskLevelAggregated":"none",
-      "riskLevelDuringsignIn":"none",
+      "riskLevelDuringSignIn":"none",
       "riskState":"none",
       "riskEventTypes":[],
+      "riskEventTypes_v2":[],
       "resourceDisplayName":"Windows Azure Service Management API",
       "resourceId":"797f4846-ba00-4fd7-ba43-dac1f8f63013",
-      "status":{},
-      "deviceDetail": {
-        "deviceId":null,
-        "displayName":null,
-        "operatingSystem":"Windows 10",
-        "browser":"Chrome 90.0.4430",
-        "isCompliant":null,
-        "isManaged":null,
-        "trustType":null
-      },
-      "location": {
-        "city": "Redmond",
-        "state": "Washington",
-        "countryOrRegion": "US",
-        "geoCoordinates": {
-          "altitude": null,
-          "latitude": 47.68050003051758,
-          "longitude": -122.12094116210938
-        }
-      },
-      "appliedConditionalAccessPolicies": [
-        {
-          "id":"6551c58c-e5da-4036-a6ea-c2c3fad264f1",
-          "displayName":"MFA policy",
-          "enforcedGrantControls": [
-            "Mfa",
-            "RequireCompliantDevice"
-          ],
-          "enforcedSessionControls":[],
-          "result":"notApplied"
+      "resourceTenantId":"99081087-73c4-48d1-a112-f60ff75114f7",
+      "homeTenantId":"99081087-73c4-48d1-a112-f60ff75114f7",
+      "authenticationMethodsUsed":[],
+      "authenticationRequirement":"singleFactorAuthentication",
+      "alternateSignInName":"testaccount1@contoso.com",
+      "signInIdentifier":"testaccount1@contoso.com",
+      "signInEventTypes":["interactiveUser"],
+      "servicePrincipalId":"",
+      "userType":"member",
+      "flaggedForReview":false,
+      "isTenantRestricted":false,
+      "autonomousSystemNumber":3598,
+      "crossTenantAccessType":"none",
+      "status":{
+          "errorCode":50126,
+          "failureReason":"Error validating credentials due to invalid username or password.",
+          "additionalDetails":"The user didn't enter the right credentials. \u00a0It's expected to see some number of these errors in your logs due to users making mistakes."
         },
-        {
-          "id":"b645a140-20fe-4ce0-a724-18ab201e9026",
-          "displayName":"PipelineTest4",
-          "enforcedGrantControls":[],
-          "enforcedSessionControls":[],
-          "result":"notEnabled"
-        }
-      ],
-      "authenticationProcessingDetails":[],
-      "networkLocationDetails":[]
+      "deviceDetail":{
+          "deviceId":"",
+          "displayName":"",
+          "operatingSystem":"Windows 10",
+          "browser":"Edge 91.0.864",
+          "isCompliant":false,
+          "isManaged":false,
+          "trustType":""
+        },
+      "location":{
+          "city":"Redmond",
+          "state":"Washington",
+          "countryOrRegion":"US",
+          "geoCoordinates":{
+            "altitude":null,
+            "latitude":47.6807,
+            "longitude":-122.1231
+          }
+        },
+      "appliedConditionalAccessPolicies":[],
+      "authenticationProcessingDetails":[
+          {
+            "key":"Login Hint Present",
+            "value":"True"
+          }
+        ],
+      "networkLocationDetails":[
+          {
+            "networkType":"namedNetwork",
+            "networkNames":["North America"]
+          }
+        ],
+      "authenticationDetails":[
+          {
+            "authenticationStepDateTime":"2021-06-30T16:34:32Z",
+            "authenticationMethod":"Password",
+            "authenticationMethodDetail":"Password in the cloud",
+            "succeeded":false,
+            "authenticationStepResultDetail":"Invalid username or password or Invalid on-premise username or password.",
+            "authenticationStepRequirement":"Primary authentication"
+          }
+        ],
+      "authenticationRequirementPolicies":[],
+      "sessionLifetimePolicies":[]
     }
   ]
 }

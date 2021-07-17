@@ -1961,6 +1961,45 @@ Possible values for user account types (group membership), per Windows definitio
 |passwordChange|
 |unknownFutureValue|
 
+### conditionalAccessRule values 
+
+|Member|
+|:---|
+|allApps|
+|firstPartyApps|
+|office365|
+|appId|
+|acr|
+|appFilter|
+|allUsers|
+|guest|
+|groupId|
+|roleId|
+|userId|
+|allDevicePlatforms|
+|devicePlatform|
+|allLocations|
+|insideCorpnet|
+|allTrustedLocations|
+|locationId|
+|allDevices|
+|deviceFilter|
+|deviceState|
+|deviceFilterIncludeRuleNotMatched|
+|allDeviceStates|
+|unknownFutureValue|
+
+### signInAccessType values 
+
+|Member|
+|:---|
+|none|
+|b2bCollaboration|
+|b2bDirectConnect|
+|microsoftSupport|
+|serviceProvider|
+|unknownFutureValue|
+
 ### signinFrequencyType values
 
 | Member       |
