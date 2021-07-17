@@ -29,6 +29,7 @@ SDKs are currently available for the following languages and platforms:
 - [Node.js](https://developer.microsoft.com/en-us/graph/get-started/node.js)
 - [Java](https://developer.microsoft.com/en-us/graph/get-started/java)
 - [PHP](https://developer.microsoft.com/en-us/graph/get-started/php)
+- [PowerShell](https://docs.microsoft.com/en-us/graph/powershell/get-started)
 - [Python](https://developer.microsoft.com/en-us/graph/get-started/python)
 - [Ruby](https://developer.microsoft.com/en-us/graph/get-started/ruby)
 
