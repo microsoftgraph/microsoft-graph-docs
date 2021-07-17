@@ -1,0 +1,86 @@
+{
+    "changelog": [
+        {
+            "ChangeList": [
+                {
+                    "Id": "dd7fe28f-e354-11eb-88f7-f923b9ff781d",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "searchAnswer",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [searchAnswer](https://docs.microsoft.com/en-us/graph/api/resources/searchAnswer?view=graph-rest-beta) resource type.",
+                    "Target": "searchAnswer"
+                },
+                {
+                    "Id": "dd824463-e354-11eb-88f7-f923b9ff781d",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "bookmark",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [bookmark](https://docs.microsoft.com/en-us/graph/api/resources/bookmark?view=graph-rest-beta) resource type.",
+                    "Target": "bookmark"
+                },
+                {
+                    "Id": "dd84a7cb-e354-11eb-88f7-f923b9ff781d",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "qna",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [qna](https://docs.microsoft.com/en-us/graph/api/resources/qna?view=graph-rest-beta) resource type.",
+                    "Target": "qna"
+                },
+                {
+                    "Id": "dd896f43-e354-11eb-88f7-f923b9ff781d",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "answerVariant",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [answerVariant](https://docs.microsoft.com/en-us/graph/api/resources/answerVariant?view=graph-rest-beta) resource type.",
+                    "Target": "answerVariant"
+                },
+                {
+                    "Id": "dd8bd236-e354-11eb-88f7-f923b9ff781d",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "answerKeyword",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [answerKeyword](https://docs.microsoft.com/en-us/graph/api/resources/answerKeyword?view=graph-rest-beta) resource type.",
+                    "Target": "answerKeyword"
+                },
+                {
+                    "Id": "dd8e30ca-e354-11eb-88f7-f923b9ff781d",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "identity",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [identity](https://docs.microsoft.com/en-us/graph/api/resources/identity?view=graph-rest-beta) resource type.",
+                    "Target": "identity"
+                },
+                {
+                    "Id": "dd9093b2-e354-11eb-88f7-f923b9ff781d",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "identitySet",
+                    "ChangeType": "Addition",
+                    "Description": "Added the [identitySet](https://docs.microsoft.com/en-us/graph/api/resources/identitySet?view=graph-rest-beta) resource type.",
+                    "Target": "identitySet"
+                },
+                {
+                    "Id": "dd92f4de-e354-11eb-88f7-f923b9ff781d",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "answerState",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **answerState** enumeration type.",
+                    "Target": "answerState"
+                },
+                {
+                    "Id": "dd9558e5-e354-11eb-88f7-f923b9ff781d",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "devicePlatformType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **devicePlatformType** enumeration type.",
+                    "Target": "devicePlatformType"
+                }
+            ],
+            "Id": "dd7d7fe8-e354-11eb-88f7-f923b9ff781d",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-07-12T21:05:19.767Z",
+            "WorkloadArea": "Search",
+            "SubArea": ""
+        }
+    ]
+}
