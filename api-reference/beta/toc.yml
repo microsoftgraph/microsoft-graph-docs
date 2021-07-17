@@ -11873,6 +11873,8 @@ items:
               href: api/accesspackageassignment-list.md
             - name: Filter by current user
               href: api/accesspackageassignment-filterbycurrentuser.md
+            - name: Reprocess
+              href: api/accesspackageassignment-reprocess.md
           - name: Access package assignment approval
             href: resources/approval.md
             items:
@@ -11912,6 +11914,8 @@ items:
               href: api/accesspackageassignmentrequest-filterbycurrentuser.md
             - name: Cancel
               href: api/accesspackageassignmentrequest-cancel.md
+            - name: Reprocess
+              href: api/accesspackageassignmentrequest-reprocess.md
           - name: Access package assignment resource role
             href: resources/accesspackageassignmentresourcerole.md
             items:
