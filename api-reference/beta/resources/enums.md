@@ -1107,15 +1107,17 @@ Namespace: microsoft.graph
 
 ### educationSynchronizationStatus values
 
-| Member             | Value |
-| :----------------- | :---- |
-| paused             | 0     |
-| inProgress         | 1     |
-| success            | 2     |
-| error              | 3     |
-| validationError    | 4     |
-| quarantined        | 5     |
-| unknownFutureValue | 6     |
+| Member             |
+| :----------------- |
+| paused             |
+| inProgress         |
+| success            |
+| error              |
+| validationError    |
+| quarantined        |
+| unknownFutureValue |
+| extracting         |
+| validating         |
 
 ### educationExternalSource values
 

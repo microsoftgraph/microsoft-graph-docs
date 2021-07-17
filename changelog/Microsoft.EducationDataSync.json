@@ -57,7 +57,49 @@
         "CreatedDateTime": "2021-05-25T18:57:27.520Z",
         "WorkloadArea": "Education",
         "SubArea": ""
-      }
+      },
+	  {
+      "ChangeList": [
+        {
+          "Id": "e7ab3e17-4aa1-4daf-90b1-c5d1d6520202",
+          "ApiChange": "Property",
+          "ChangedApiName": "errorCount",
+          "ChangeType": "Addition",
+          "Description": "Added new property **errorCount** to the [educationsynchronizationprofilestatus](https://docs.microsoft.com/en-us/graph/api/resources/educationsynchronizationprofilestatus?view=graph-rest-beta) resource.",
+          "Target": "educationsynchronizationprofilestatus"        
+        },
+        {
+          "Id": "e7ab3e17-4aa1-4daf-90b1-c5d1d6520202",
+          "ApiChange": "Property",
+          "ChangedApiName": "statusMessage",
+          "ChangeType": "Addition",
+          "Description": "Added new property **statusMessage** to the [educationsynchronizationprofilestatus](https://docs.microsoft.com/en-us/graph/api/resources/educationsynchronizationprofilestatus?view=graph-rest-beta) resource.",
+          "Target": "educationsynchronizationprofilestatus"        
+        },
+        {
+          "Id": "e7ab3e17-4aa1-4daf-90b1-c5d1d6520202",
+          "ApiChange": "Member",
+          "ChangedApiName": "extracting",
+          "ChangeType": "Addition",
+          "Description": "Added new enum value `extracting` to the **educationSynchronizationStatus** enumeration.",
+          "Target": "educationSynchronizationStatus"        
+        },
+        {
+          "Id": "e7ab3e17-4aa1-4daf-90b1-c5d1d6520202",
+          "ApiChange": "Member",
+          "ChangedApiName": "validating",
+          "ChangeType": "Addition",
+          "Description": "Added new enum value `validating` to the **educationSynchronizationStatus** enumeration.",
+          "Target": "educationSynchronizationStatus"        
+        }
+      ],
+      "Id": "e7ab3e17-4aa1-4daf-90b1-c5d1d6520202",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-07-13T21:40:07.163Z",
+      "WorkloadArea": "Education",
+      "SubArea": ""
+    }
     ]
   }
   

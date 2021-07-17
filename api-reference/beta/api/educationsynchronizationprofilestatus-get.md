@@ -91,13 +91,16 @@ The following is an example of the response.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 232
+Content-length: 450
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/synchronizationProfiles/{id}/profileStatus/$entity",
     "id": "86904b1e-c7d0-4ead-b13a-98f11fc400ee",
     "status": "inProgress",
-    "lastSynchronizationDateTime": "2017-07-04T22:06:37.6472621Z"
+    "lastSynchronizationDateTime": "2021-07-13T20:55:17.6475128Z",
+    "lastActivityDateTime": "2021-07-13T20:55:17.6475128Z",
+    "errorCount": 0,
+    "statusMessage": "Processed 0 in the last hour.\r\nUpdated 0 in the last hour."
 }
 ```
 
