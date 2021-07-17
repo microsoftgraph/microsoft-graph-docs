@@ -51,7 +51,7 @@ Do not supply a request body for this method.
 If successful, this method returns a `200 OK` response code and collection of [groupSetting](../resources/groupsetting.md) objects in the response body.
 ## Example
 
-##### Request
+### Request
 
 
 # [HTTP](#tab/http)
@@ -80,7 +80,7 @@ GET https://graph.microsoft.com/v1.0/groupSettings
 
 ---
 
-##### Response
+### Response
 
 Note: The response object shown here might be shortened for readability.
 <!-- {
@@ -92,20 +92,72 @@ Note: The response object shown here might be shortened for readability.
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
-Content-length: 263
 
 {
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#groupSettings",
   "value": [
     {
-      "displayName": "displayName-value",
-      "templateId": "templateId-value",
+      "id": "f0b2d6f5-097d-4177-91af-a24e530b53cc",
+      "displayName": "Group.Unified",
+      "templateId": "62375ab9-6b52-47ed-826b-58e47e0e304b",
       "values": [
         {
-          "name": "name-value",
-          "value": "value-value"
+          "name": "EnableMIPLabels",
+          "value": "true"
+        },
+        {
+          "name": "CustomBlockedWordsList",
+          "value": ""
+        },
+        {
+          "name": "EnableMSStandardBlockedWords",
+          "value": "true"
+        },
+        {
+          "name": "ClassificationDescriptions",
+          "value": ""
+        },
+        {
+          "name": "DefaultClassification",
+          "value": ""
+        },
+        {
+          "name": "PrefixSuffixNamingRequirement",
+          "value": "[Contoso-][GroupName]"
+        },
+        {
+          "name": "AllowGuestsToBeGroupOwner",
+          "value": "false"
+        },
+        {
+          "name": "AllowGuestsToAccessGroups",
+          "value": "true"
+        },
+        {
+          "name": "GuestUsageGuidelinesUrl",
+          "value": "https://privacy.contoso.com/privacystatement"
+        },
+        {
+          "name": "GroupCreationAllowedGroupId",
+          "value": ""
+        },
+        {
+          "name": "AllowToAddGuests",
+          "value": "true"
+        },
+        {
+          "name": "UsageGuidelinesUrl",
+          "value": ""
+        },
+        {
+          "name": "ClassificationList",
+          "value": ""
+        },
+        {
+          "name": "EnableGroupCreation",
+          "value": "true"
         }
-      ],
-      "id": "id-value"
+      ]
     }
   ]
 }

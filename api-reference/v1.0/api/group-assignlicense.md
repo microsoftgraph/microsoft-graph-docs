@@ -53,48 +53,33 @@ If successful, this method returns a `202 Accepted` response code and a target [
 The following example adds licenses to the group.
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_assignlicense"
 }-->
 ```http
-POST https://graph.microsoft.com/v1.0/groups/1ad75eeb-7e5a-4367-a493-9214d90d54d0/assignLicense
+POST https://graph.microsoft.com/v1.0/groups/1132b215-826f-42a9-8cfe-1643d19d17fd/assignLicense
 Content-type: application/json
-
 
 {
   "addLicenses": [
     {
-      "disabledPlans": [ "11b0131d-43c8-4bbb-b2c8-e80f9a50834a" ],
-      "skuId": "skuId-value-1"
+      "disabledPlans": [
+        "113feb6c-3fe4-4440-bddc-54d774bf0318",
+        "14ab5db5-e6c4-4b20-b4bc-13e36fd2227f"
+      ],
+      "skuId": "b05e124f-c7cc-45a0-a6aa-8cf78c946968"
     },
     {
-      "disabledPlans": [ "a571ebcc-fqe0-4ca2-8c8c-7a284fd6c235" ],
-      "skuId": "skuId-value-2"
+      "disabledPlans": [
+        "a413a9ff-720c-4822-98ef-2f37c2a21f4c"
+      ],
+      "skuId": "c7df2760-2c81-4ef7-b578-5b5392b571df"
     }
   ],
   "removeLicenses": []
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/group-assignlicense-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/group-assignlicense-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/group-assignlicense-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/group-assignlicense-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### Response
 
@@ -109,15 +94,13 @@ The response is the updated group object.
 ```http
 HTTP/1.1 202 Accepted
 Content-type: application/json
-location: https://graph.microsoft.com/v2/d056d009-17b3-4106-8173-cd3978ada898/directoryObjects/1ad75eeb-7e5a-4367-a493-9214d90d54d0/Microsoft.DirectoryServices.Group
+location: https://graph.microsoft.com/v2/e8e96c2a-d787-4eb1-98d7-9e57c965f1de/directoryObjects/1132b215-826f-42a9-8cfe-1643d19d17fd/Microsoft.DirectoryServices.Group
 
 {
-  "id": "1ad75eeb-7e5a-4367-a493-9214d90d54d0",
-  "deletedDateTime": null,
-  "classification": null,
-  "createdDateTime": "2018-04-18T22:05:03Z",
+  "id": "1132b215-826f-42a9-8cfe-1643d19d17fd",
+  "createdDateTime": "2021-03-12T11:15:03Z",
+  "groupTypes": [],
   "securityEnabled": true,
-
 }
 ```
 
@@ -126,40 +109,23 @@ The following example removes licenses from the group.
 
 #### Request
 
-# [HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "group_removelicense"
 }-->
 
 ```http
-POST https://graph.microsoft.com/v1.0/groups/1ad75eeb-7e5a-4367-a493-9214d90d54d0/assignLicense
+POST https://graph.microsoft.com/v1.0/groups/1132b215-826f-42a9-8cfe-1643d19d17fd/assignLicense
 Content-type: application/json
-
 
 {
   "addLicenses": [],
-  "removeLicenses": ["skuId-value-1", "skuId-value-2"]
+  "removeLicenses": [
+    "c7df2760-2c81-4ef7-b578-5b5392b571df",
+    "b05e124f-c7cc-45a0-a6aa-8cf78c946968"
+  ]
 }
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/group-removelicense-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/group-removelicense-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/group-removelicense-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/group-removelicense-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### Response
 
