@@ -5984,6 +5984,8 @@ items:
           href: api/channel-completemigration.md
         - name: Get channel message
           href: api/chatmessage-get.md
+        - name: Get messages across all channels
+          href: api/channel-getallmessages.md
         - name: Get channel messages delta
           href: api/chatmessage-delta.md
         - name: Get files folder
@@ -6027,6 +6029,8 @@ items:
           href: api/chat-delete-members.md
         - name: List messages in a chat
           href: api/chat-list-messages.md
+        - name: Get messages across all chats
+          href: api/chats-getallmessages.md
         - name: Get message in chat
           href: api/chatmessage-get.md
         - name: Send message in chat
@@ -6054,6 +6058,10 @@ items:
           href: api/chatmessage-update.md
         - name: List hosted content
           href: api/chatmessage-list-hostedcontents.md
+        - name: Get messages across all chats
+          href: api/chats-getallmessages.md
+        - name: Get messages across all channels
+          href: api/channel-getallmessages.md
         - name: Get hosted content
           href: api/chatmessagehostedcontent-get.md
       - name: App
