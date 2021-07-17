@@ -126,6 +126,7 @@ Content-type: application/json
     "webUrl": null,
     "channelIdentity": null,
     "policyViolation": null,
+    "eventDetail": null,
     "from": {
         "application": null,
         "device": null,

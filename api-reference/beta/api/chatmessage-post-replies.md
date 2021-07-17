@@ -125,6 +125,7 @@ Content-type: application/json
     "locale": "en-us",
     "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1616990171266?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1616990171266&parentMessageId=1616990032035",
     "policyViolation": null,
+    "eventDetail": null,
     "from": {
         "application": null,
         "device": null,
@@ -225,6 +226,7 @@ HTTP/1.1 200 OK
    "importance":"normal",
    "locale":"en-us",
    "policyViolation":null,
+   "eventDetail": null,
    "from":{
       "application":null,
       "device":null,

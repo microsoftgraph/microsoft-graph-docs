@@ -53,7 +53,7 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |replyToId| string | Read-only. ID of the parent chat message or root chat message of the thread. (Only applies to chat messages in channels, not chats.) |
 |from|[chatMessageFromIdentitySet](chatmessagefromidentityset.md)| Read only. Details of the sender of the chat message.|
 |etag| string | Read-only. Version number of the chat message. |
-|messageType|string|The type of chat message. The possible value is: `message`.|
+|messageType|string|The type of chat message. The possible values are: `message`, `unknownFutureValue`, `systemEventMessage`.|
 |createdDateTime|dateTimeOffset|Timestamp of when the chat message was created.|
 |lastModifiedDateTime|dateTimeOffset|Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed. |
 |lastEditedDateTime|dateTimeOffset|Read only. Timestamp when edits to the chat message were made. Triggers an "Edited" flag in the Teams UI. If no edits are made the value is `null`.|
@@ -70,6 +70,7 @@ Represents an individual chat message within a [channel](channel.md) or [chat](c
 |chatId|string|If the message was sent in a chat, represents the identity of the chat.|
 |channelIdentity|[channelIdentity](channelidentity.md)|If the message was sent in a channel, represents identity of the channel.|
 |webUrl|string|Read-only. Link to the message in Microsoft Teams.|
+|eventDetail|[eventMessageDetail](../resources/eventmessagedetail.md)|Read-only.  If present, represents details of an event that happened in a chat, a channel, or a team, for example, members were added, and so on. For event messages, the **messageType** property will be set to `systemEventMessage`.|
 ## Relationships
 
 | Relationship   | Type    | Description |
@@ -123,7 +124,10 @@ The following is a JSON representation of the resource.
   "policyViolation": {"@odata.type": "microsoft.graph.chatMessagePolicyViolation"},
   "chatId": "string",
   "channelIdentity": {"@odata.type": "microsoft.graph.channelIdentity"},
-  "webUrl": "string"
+  "webUrl": "string",
+  "eventDetail": {
+    "@odata.type": "microsoft.graph.eventMessageDetail"
+  }
 }
 ```
 

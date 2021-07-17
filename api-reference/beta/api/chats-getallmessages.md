@@ -96,6 +96,7 @@ Content-length: 347
          "webUrl":null,
          "channelIdentity":null,
          "policyViolation":null,
+         "eventDetail": null,
          "from":{
             "application":null,
             "device":null,

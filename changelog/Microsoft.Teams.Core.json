@@ -3426,6 +3426,296 @@
       "CreatedDateTime": "2021-06-15T19:04:47.5265838Z",
       "WorkloadArea": "Teamwork",
       "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "teamworkCallEventType",
+          "ChangeType": "Addition",
+          "Description": "Added the **teamworkCallEventType** enumeration type.",
+          "Target": "teamworkCallEventType"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "EnumType",
+          "ChangedApiName": "callRecordingStatus",
+          "ChangeType": "Addition",
+          "Description": "Added the **callRecordingStatus** enumeration type.",
+          "Target": "callRecordingStatus"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "Member",
+          "ChangedApiName": "unknownFutureValue",
+          "ChangeType": "Addition",
+          "Description": "Added the **unknownFutureValue** member to the **chatMessageType** enumeration.",
+          "Target": "chatMessageType"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "Member",
+          "ChangedApiName": "systemEventMessage",
+          "ChangeType": "Addition",
+          "Description": "Added the **systemEventMessage** member to the **chatMessageType** enumeration.",
+          "Target": "chatMessageType"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "callEndedEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [callEndedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/callEndedEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "callEndedEventMessageDetail"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "callParticipantInfo",
+          "ChangeType": "Addition",
+          "Description": "Added the [callParticipantInfo](https://docs.microsoft.com/en-us/graph/api/resources/callParticipantInfo?view=graph-rest-beta) resource type.",
+          "Target": "callParticipantInfo"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "callRecordingEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [callRecordingEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/callRecordingEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "callRecordingEventMessageDetail"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "callStartedEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [callStartedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/callStartedEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "callStartedEventMessageDetail"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "callTranscriptEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [callTranscriptEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/callTranscriptEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "callTranscriptEventMessageDetail"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "channelAddedEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [channelAddedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/channelAddedEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "channelAddedEventMessageDetail"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "channelDeletedEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [channelDeletedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/channelDeletedEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "channelDeletedEventMessageDetail"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "channelDescriptionUpdatedEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [channelDescriptionUpdatedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/channelDescriptionUpdatedEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "channelDescriptionUpdatedEventMessageDetail"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "channelRenamedEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [channelRenamedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/channelRenamedEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "channelRenamedEventMessageDetail"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "channelSetAsFavoriteByDefaultEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [channelSetAsFavoriteByDefaultEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/channelSetAsFavoriteByDefaultEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "channelSetAsFavoriteByDefaultEventMessageDetail"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "channelUnsetAsFavoriteByDefaultEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [channelUnsetAsFavoriteByDefaultEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/channelUnsetAsFavoriteByDefaultEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "channelUnsetAsFavoriteByDefaultEventMessageDetail"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "chatRenamedEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [chatRenamedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/chatRenamedEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "chatRenamedEventMessageDetail"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "conversationMemberRoleUpdatedEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [conversationMemberRoleUpdatedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/conversationMemberRoleUpdatedEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "conversationMemberRoleUpdatedEventMessageDetail"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "eventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [eventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/eventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "eventMessageDetail"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "meetingPolicyUpdatedEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [meetingPolicyUpdatedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/meetingPolicyUpdatedEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "meetingPolicyUpdatedEventMessageDetail"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "membersAddedEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [membersAddedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/membersAddedEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "membersAddedEventMessageDetail"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "membersDeletedEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [membersDeletedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/membersDeletedEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "membersDeletedEventMessageDetail"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "membersJoinedEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [membersJoinedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/membersJoinedEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "membersJoinedEventMessageDetail"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "membersLeftEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [membersLeftEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/membersLeftEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "membersLeftEventMessageDetail"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "tabUpdatedEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [tabUpdatedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/tabUpdatedEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "tabUpdatedEventMessageDetail"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamArchivedEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamArchivedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamArchivedEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "teamArchivedEventMessageDetail"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamCreatedEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamCreatedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamCreatedEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "teamCreatedEventMessageDetail"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamDescriptionUpdatedEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamDescriptionUpdatedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamDescriptionUpdatedEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "teamDescriptionUpdatedEventMessageDetail"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamJoiningDisabledEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamJoiningDisabledEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamJoiningDisabledEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "teamJoiningDisabledEventMessageDetail"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamJoiningEnabledEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamJoiningEnabledEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamJoiningEnabledEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "teamJoiningEnabledEventMessageDetail"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamRenamedEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamRenamedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamRenamedEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "teamRenamedEventMessageDetail"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsAppInstalledEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsAppInstalledEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppInstalledEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "teamsAppInstalledEventMessageDetail"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsAppRemovedEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsAppRemovedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppRemovedEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "teamsAppRemovedEventMessageDetail"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamsAppUpgradedEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamsAppUpgradedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamsAppUpgradedEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "teamsAppUpgradedEventMessageDetail"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "Resource",
+          "ChangedApiName": "teamUnarchivedEventMessageDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the [teamUnarchivedEventMessageDetail](https://docs.microsoft.com/en-us/graph/api/resources/teamUnarchivedEventMessageDetail?view=graph-rest-beta) resource type.",
+          "Target": "teamUnarchivedEventMessageDetail"
+        },
+        {
+          "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+          "ApiChange": "Property",
+          "ChangedApiName": "eventDetail",
+          "ChangeType": "Addition",
+          "Description": "Added the **eventDetail** property to the [chatMessage](https://docs.microsoft.com/en-us/graph/api/resources/chatMessage?view=graph-rest-beta) resource.",
+          "Target": "chatMessage"
+        }
+      ],
+      "Id": "2271f260-c47f-46b3-88f4-ea84fc865a4c",
+      "Cloud": "Prod",
+      "Version": "beta",
+      "CreatedDateTime": "2021-07-16T07:31:32.9396997Z",
+      "WorkloadArea": "Teamwork",
+      "SubArea": ""
     }
   ]
 }

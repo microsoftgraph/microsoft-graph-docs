@@ -166,6 +166,7 @@ Content-type: application/json
             "locale": "en-us",
             "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1606515483514?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1606515483514&parentMessageId=1606515483514",
             "policyViolation": null,
+            "eventDetail": null,
             "id": "1606515483514",
             "from": {
                 "application": null,
@@ -205,6 +206,7 @@ Content-type: application/json
             "locale": "en-us",
             "webUrl": "https://teams.microsoft.com/l/message/19%3A4a95f7d8db4c4e7fae857bcebe0623e6%40thread.tacv2/1606691795113?groupId=fbe2bf47-16c8-47cf-b4a5-4b9b187c508b&tenantId=2432b57b-0abd-43db-aa7b-16eadd115d34&createdTime=1606691795113&parentMessageId=1606691795113",
             "policyViolation": null,
+            "eventDetail": null,
             "id": "1606691795113",
             "from": {
                 "application": null,

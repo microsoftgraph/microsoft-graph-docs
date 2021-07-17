@@ -109,7 +109,7 @@ Content-type: application/json
 
 {
     "@odata.context": "https://graph.microsoft.com/beta/$metadata#chats('19%3A2da4c29f6d7041eca70b638b43d45437%40thread.v2')/messages",
-    "@odata.count": 2,
+    "@odata.count": 3,
     "@odata.nextLink": "https://graph.microsoft.com/beta/chats/19:2da4c29f6d7041eca70b638b43d45437@thread.v2/messages?$top=2&$skiptoken=M2UyZDAwMDAwMDMxMzkzYTMyNjQ2MTM0NjMzMjM5NjYzNjY0MzczMDM0MzE2NTYzNjEzNzMwNjIzNjMzMzg2MjM0MzM2NDM0MzUzNDMzMzc0MDc0Njg3MjY1NjE2NDJlNzYzMjAxZThmYjY4M2Y3ODAxMDAwMDg4NjA5ODdhNzgwMTAwMDB8MTYxNjk2NDUwOTgzMg%3d%3d",
     "value": [
         {
@@ -129,6 +129,7 @@ Content-type: application/json
             "webUrl": null,
             "channelIdentity": null,
             "policyViolation": null,
+            "eventDetail": null,
             "from": {
                 "application": null,
                 "device": null,
@@ -164,6 +165,7 @@ Content-type: application/json
             "webUrl": null,
             "channelIdentity": null,
             "policyViolation": null,
+            "eventDetail": null,
             "from": {
                 "application": null,
                 "device": null,
@@ -181,6 +183,46 @@ Content-type: application/json
             "attachments": [],
             "mentions": [],
             "reactions": []
+        },
+        {
+            "id": "1615943825123",
+            "replyToId": null,
+            "etag": "1615943825123",
+            "messageType": "systemEventMessage",
+            "createdDateTime": "2021-03-1706:47:05.123Z",
+            "lastModifiedDateTime": "2021-03-1706:47:05.123Z",
+            "lastEditedDateTime": null,
+            "deletedDateTime": null,
+            "subject": null,
+            "summary": null,
+            "chatId": "19:2da4c29f6d7041eca70b638b43d45437@thread.v2",
+            "importance": "normal",
+            "locale": "en-us",
+            "webUrl": null,
+            "channelIdentity": null,
+            "policyViolation": null,
+            "from": null,
+            "body": {
+                "contentType": "html",
+                "content": "<systemEventMessage/>"
+            },
+            "attachments": [],
+            "mentions": [],
+            "reactions": [],
+            "eventDetail": {
+                "@odata.type": "#microsoft.graph.chatRenamedEventMessageDetail",
+                "chatId": "19:2da4c29f6d7041eca70b638b43d45437@thread.v2",
+                "chatDisplayName": "Graph Members",
+                "initiator": {
+                    "application": null,
+                    "device": null,
+                    "user": {
+                        "id": "1fb8890f-423e-4154-8fbf-db6809bc8756",
+                        "displayName": null,
+                        "userIdentityType": "aadUser"
+                    }
+                }
+            }
         }
     ]
 }
