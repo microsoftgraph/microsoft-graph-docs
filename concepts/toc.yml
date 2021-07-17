@@ -97,6 +97,8 @@ items:
             href: application-saml-sso-configure-api.md
           - name: Configure application proxy
             href: application-proxy-configure-api.md
+          - name: Configure provisioning
+            href: application-provisioning-configure-api.md
       - name: Accessing data at scale
         displayName: Microsoft Graph Data Connect
         items:
