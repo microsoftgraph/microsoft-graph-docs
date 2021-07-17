@@ -54,6 +54,50 @@
     },
     {
       "ChangeList": [
+        {
+          "Id": "2dca7e8b-c8af-45c1-9fa6-f108e93d8562",
+          "ApiChange": "Resource",
+          "ChangedApiName": "policies",
+          "ChangeType": "Addition",
+          "Description": "Added navigation properties 'defaultAppManagementPolicy' and 'appManagementPolicies' to policies singleton.",
+          "Target": "policies"
+        }
+      ],
+      "Id": "2dca7e8b-c8af-45c1-9fa6-f108e93d8562",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-07-15T09:02:13.750Z",
+      "WorkloadArea": "Identity and access",
+      "SubArea": "Identity and sign-in"
+    },
+    {
+      "ChangeList": [
+        {
+          "Id": "ebcb5d06-adbe-48b2-bd6d-46e5f6b3d759",
+          "ApiChange": "Property",
+          "ChangedApiName": "application",
+          "ChangeType": "Addition",
+          "Description": "Added and 'appManagementPolicies' to application object.",
+          "Target": "application"
+        },
+        {
+          "Id": "ebcb5d06-adbe-48b2-bd6d-46e5f6b3d759",
+          "ApiChange": "Property",
+          "ChangedApiName": "servicePrincipal",
+          "ChangeType": "Addition",
+          "Description": "Added and 'appManagementPolicies' to service principal object.",
+          "Target": "serviecprincipal"
+        }
+      ],
+      "Id": "ebcb5d06-adbe-48b2-bd6d-46e5f6b3d759",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-07-15T09:02:13.750Z",
+      "WorkloadArea": "Applications",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
       { 
         "Id": "e114cd2d-6d20-498d-a61e-623baee7e0f1",
         "ApiChange": "Method",
@@ -548,6 +592,7 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Identity and sign-in"
     },
+<<<<<<< HEAD
     {
       "ChangeList": [
         {
@@ -566,6 +611,8 @@
       "WorkloadArea": "Identity and access",
       "SubArea": "Directory management"
     },
+=======
+>>>>>>> app-auth-method-policies
     {
       "ChangeList": [
         {

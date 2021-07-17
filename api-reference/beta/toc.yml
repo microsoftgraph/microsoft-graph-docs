@@ -10899,6 +10899,36 @@ items:
               href: api/unifiedRoleEligibilityScheduleInstance-filterbycurrentuser.md
       - name: Identity and sign-in
         items:
+        - name: Application authentication method policy
+          items:
+          - name: Overview
+            href: resources/applicationAuthMethodPolicy.md
+          - name: Organizational default app management policy
+            items:
+            - name: Overview
+              href: resources/defaultAppManagementPolicy.md
+            - name: Get
+              href: api/defaultAppManagementPolicy-get.md
+            - name: Update
+              href: api/defaultAppManagementPolicy-update.md
+          - name: Application or service principal management policy
+            items:
+            - name: Overview
+              href: resources/appManagementPolicy.md
+            - name: List
+              href: api/appManagementPolicy-list.md
+            - name: Get
+              href: api/appManagementPolicy-get.md
+            - name: Create
+              href: api/appManagementPolicy-post.md 
+            - name: Update
+              href: api/appManagementPolicy-update.md
+            - name: Delete
+              href: api/appManagementPolicy-delete.md
+            - name: Assign to application or service principal
+              href: api/appManagementPolicy-post-applyToResource.md
+            - name: List applied to applications
+              href: api/appManagementPolicy-list-appliesTo.md
         - name: Authentication events policy
           items:
           - name: Authentication events policy
