@@ -4361,6 +4361,13 @@ items:
             href: api/administrativeunit-get-scopedrolemembers.md
           - name: Remove a scoped-role administrator
             href: api/administrativeunit-delete-scopedrolemembers.md
+        - name: BitLocker recovery key
+          href: resources/bitlockerrecoverykey.md
+          items:
+          - name: List
+            href: api/bitlocker-list-recoverykeys.md
+          - name: Get
+            href: api/bitlockerrecoverykey-get.md
         - name: Contracts
           href: resources/contract.md
           items:

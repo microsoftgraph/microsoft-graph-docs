@@ -8,15 +8,15 @@ doc_type: apiPageType
 ---
 
 # List recoveryKeys
-Namespace: microsoft.graph
 
-[!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
+Namespace: microsoft.graph
 
 Get a list of the [bitlockerRecoveryKey](../resources/bitlockerrecoverykey.md) objects and their properties. 
 
 This operation does not return the **key** property. For information about how to read the **key** property, see [Get bitlockerRecoveryKey](bitlockerrecoverykey-get.md).
 
 ## Permissions
+
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
 |Permission type|Permissions (from most to least privileged)|
@@ -25,7 +25,8 @@ One of the following permissions is required to call this API. To learn more, in
 |Delegated (personal Microsoft account)|Not supported|
 |Application|Not supported|
 
->**Note**: For delegated permissions to allow apps to get BitLockerRecoveryKey resources on behalf of the signed-in user, the tenant administrator must have assigned the user one of the following roles, or the user must be the registered owner of the device that the BitLocker recovery key was originally backed up from: 
+>**Note**: For delegated permissions to allow apps to get BitLockerRecoveryKey resources on behalf of the signed-in user, the tenant administrator must have assigned the user one of the following roles, or the user must be the registered owner of the device that the BitLocker recovery key was originally backed up from:
+
 * Global administrator
 * Cloud device administrator
 * Helpdesk administrator
@@ -35,12 +36,14 @@ One of the following permissions is required to call this API. To learn more, in
 * Global reader
 
 ## HTTP request
+
 To get a list of BitLocker keys within the tenant:
 
 <!-- {
   "blockType": "ignored"
 }
 -->
+
 ``` http
 GET /informationProtection/bitlocker/recoveryKeys
 ```
@@ -51,16 +54,19 @@ To get a list of BitLocker keys within the tenant filtered by the **device id**:
   "blockType": "ignored"
 }
 -->
+
 ``` http
 GET /informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '{deviceId}'
 ```
 
 ## Optional query parameters
+
 This method supports the `$filter` OData query parameter to filter results by the **device id** the key was most recently backed up to. This method does not support the `$top` filter. For details, see [Example 2](#example-2). For general information, see [OData query parameters](/graph/query-parameters).
 
 The response might also contain an `odata.nextLink`, which you can use to page through the result set. For details, see [Paging Microsoft Graph data](/graph/paging).
 
 ## Request headers
+
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
@@ -68,6 +74,7 @@ The response might also contain an `odata.nextLink`, which you can use to page t
 |ocp-client-version|The version of the client application performing the API call. This header is used for debugging purposes. Optional.|
 
 ## Request body
+
 Do not supply a request body for this method.
 
 ## Response
@@ -77,43 +84,21 @@ If successful, this method returns a `200 OK` response code and a collection of 
 ## Examples
 
 ### Example 1
+
 Retrieve a list of BitLocker keys in the tenant.
 
 #### Request
+
 The following is an example of the request.
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_bitlockerrecoverykey_1"
-}
--->
 ``` http
-GET https://graph.microsoft.com/beta/informationProtection/bitlocker/recoveryKeys
+GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-bitlockerrecoverykey-1-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-bitlockerrecoverykey-1-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-bitlockerrecoverykey-1-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-1-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 
 #### Response
+
 The following is an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.
@@ -123,6 +108,7 @@ The following is an example of the response.
   "@odata.type": "Collection(microsoft.graph.bitlockerRecoveryKey)"
 }
 -->
+
 ``` http
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -146,45 +132,23 @@ Content-Type: application/json
   ]
 }
 ```
+
 ### Example 2
+
 Retrieve a list of BitLocker keys filtered by **device id**.
 
 #### Request
+
 The following is an example of the request.
 
-# [HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "sampleIds": ["1ab40ab2-32a8-4b00-b6b5-ba724e407de9"],
-  "name": "get_bitlockerrecoverykey_2"
-}
--->
 ``` http
-GET https://graph.microsoft.com/beta/informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '1ab40ab2-32a8-4b00-b6b5-ba724e407de9'
+GET https://graph.microsoft.com/v1.0/informationProtection/bitlocker/recoveryKeys?$filter=deviceId eq '1ab40ab2-32a8-4b00-b6b5-ba724e407de9'
 ocp-client-name: "My Friendly Client"
 ocp-client-version: "1.2"
 ```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-bitlockerrecoverykey-2-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-bitlockerrecoverykey-2-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-bitlockerrecoverykey-2-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-bitlockerrecoverykey-2-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
 
 #### Response
+
 The following is an example of the response.
 
 **Note:** The response object shown here might be shortened for readability.

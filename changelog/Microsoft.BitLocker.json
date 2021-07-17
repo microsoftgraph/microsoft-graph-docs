@@ -3,6 +3,48 @@
         {
             "ChangeList": [
                 {
+                    "Id": "94b01c30-2673-43c3-94a2-953c9270ca07",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "bitlockerRecoveryKey-get",
+                    "ChangeType": "Addition",
+                    "Description": "Migrating [bitlockerRecoveryKey](/graph/api/bitlockerrecoverykey-get.md) method to v1.",
+                    "Target": "bitlockerRecoveryKey"
+                },
+                {
+                    "Id": "8353db5f-83bc-45b5-9bf1-847ae94203ec",
+                    "ApiChange": "Method",
+                    "ChangedApiName": "bitlocker-list-recoverykeys",
+                    "ChangeType": "Addition",
+                    "Description": "Migrating [bitlockerRecoveryKey](/graph/api/bitlocker-list-recoverykeys.md) method to v1.",
+                    "Target": "bitlockerRecoveryKey"
+                },
+                {
+                    "Id": "e96ab9f3-448e-43c5-83e9-da072f3b8f3c",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "bitlocker",
+                    "ChangeType": "Addition",
+                    "Description": "Migrating [bitlocker](/graph/resources/bitlocker.md) resource to v1.",
+                    "Target": "bitlocker"
+                },
+                {
+                    "Id": "345b69fb-c4d6-492f-9ba6-02f160ec0a24",
+                    "ApiChange": "Resource",
+                    "ChangedApiName": "bitlockerrecoverykey",
+                    "ChangeType": "Addition",
+                    "Description": "Migrating [bitlockerRecoveryKey](/graph/resources/bitlockerrecoverykey.md) resource to v1.",
+                    "Target": "bitlockerRecoveryKey"
+                },
+                {
+                    "Id": "47bdb98b-dad9-4bb9-b6d7-cb331370ee40",
+                    "ApiChange": "Enum type",
+                    "ChangedApiName": "volumeType",
+                    "ChangeType": "Addition",
+                    "Description": "Added the **volumeType** enumeration type for migration to v1",
+                    "Target": "volumeType"
+                }
+            ],
+            "ChangeList": [
+                {
                     "Id": "f015f292-af31-448d-8dc1-72ab3936e63a",
                     "ApiChange": "Method",
                     "ChangedApiName": "bitlockerRecoveryKey-get",
