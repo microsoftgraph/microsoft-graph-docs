@@ -53,6 +53,9 @@ Do not supply a request body for this method.
 
 If successful, this method returns a `200 OK` response code and collection of [team](../resources/team.md) objects in the response body.
 
+> [!Note]
+> Currently, this API call returns values only for the properties **id**, **displayName**, and **description** of a [team](../resources/team.md). To get information on all properties, use [Get team](../api/team-get.md). For details, see [known issues](/graph/known-issues#unable-to-return-all-values-for-properties-for-a-user-joined-teams).
+
 ## Example
 ### Request
 Here is an example of the request.
@@ -98,7 +101,9 @@ Content-type: application/json
 {
   "value": [
     {
-      "id": "31aa74dd-dd65-43ac-8c4e-0ec1ae5a8ee1"
+      "id": "172b0cce-e65d-44ce-9a49-91d9f2e8493a",
+      "displayName": "Contoso Team",
+      "description": "This is a Contoso team, used to showcase the range of properties supported by this API"
     }
   ]
 }
@@ -106,6 +111,8 @@ Content-type: application/json
 
 ## See also
 [List all teams](/graph/teams-list-all-teams)
+
+[Get team](../api/team-get.md)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
 2015-10-25 14:57:30 UTC -->
