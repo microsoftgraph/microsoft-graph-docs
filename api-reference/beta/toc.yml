@@ -10899,28 +10899,6 @@ items:
               href: api/unifiedRoleEligibilityScheduleInstance-filterbycurrentuser.md
       - name: Identity and sign-in
         items:
-        - name: Authentication events policy
-          items:
-          - name: Authentication events policy
-            href: resources/authenticationeventspolicy.md
-          - name: Sign-up-start event
-            items:
-            - name: Authentication listener
-              href: resources/authenticationlistener.md
-            - name: Invoke user flow listener type
-              href: resources/invokeuserflowlistener.md
-            - name: List listeners
-              href: api/authenticationeventspolicy-list-onsignupstart.md
-            - name: Create listener
-              href: api/authenticationeventspolicy-post-onsignupstart.md            
-            - name: Get listener
-              href: api/authenticationlistener-get.md
-            - name: Update listener
-              href: api/authenticationlistener-update.md
-            - name: Put listener
-              href: api/authenticationlistener-put.md
-            - name: Delete listener
-              href: api/authenticationlistener-delete.md
         - name: Authentication flows policy
           items:
           - name: Authentication flows policy
