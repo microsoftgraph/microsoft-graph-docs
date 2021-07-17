@@ -410,10 +410,13 @@ None.
 |Permission    |Display String   |Description |Admin Consent Required |
 |:-----------------------------|:-----------------------------------------|:-----------------|:-----------------|
 |_CallRecords.Read.All_|Read all call records|Allows the app to read call records for all calls and online meetings without a signed-in user.|Yes|
+|_CallRecord-PstnCalls.Read.All_|Read PSTN and direct routing call log data|Allows the app to read all PSTN and direct routing call log data without a signed-in user.|Yes|
 
 ### Remarks
 
 The _CallRecords.Read.All_ permission grants an application privileged access to [callRecords](/graph/api/resources/callrecords-callrecord) for every call and online meeting within your organization, including calls to and from external phone numbers. This includes potentially sensitive details about who participated in the call, as well as technical information pertaining to these calls and meetings that can be used for network troubleshooting, such as IP addresses, device details, and other network information.
+
+The _CallRecord-PstnCalls.Read.All_ permission grants an application access to [PSTN (calling plans)](/graph/api/callrecords-callrecord-getpstncalls) and [direct routing](/graph/api/callrecords-callrecord-getdirectroutingcalls) call logs. This includes potentially sensitive information about users as well as calls to and from external phone numbers.
 
 > **Important:** Discretion should be used when granting these permissions to applications. Call records can provide insights into the operation of your business, and so can be a target for malicious actors. Only grant these permissions to applications you trust to meet your data protection requirements.
 
@@ -428,6 +431,7 @@ The _CallRecords.Read.All_ permission grants an application privileged access to
 * _CallRecords.Read.All_: Retrieve a call record (`GET /v1.0/communications/callRecords/{id}`).
 * _CallRecords.Read.All_: Subscribe to new call records (`POST /v1.0/subscriptions`).
 * _CallRecords.Read.All_: Retrieve direct routing call records within the specified time range (`GET /v1.0/communications/callRecords/microsoft.graph.callRecords.getDirectRoutingCalls(fromDateTime={start date and time),toDateTime={end date and time))`)
+* _CallRecord-PstnCalls.Read.All_: Retrieve PSTN call records within the specified time range (`GET /v1.0/communications/callRecords/microsoft.graph.callRecords.getPstnCalls(fromDateTime={start date and time),toDateTime={end date and time))`)
 
 For more complex scenarios involving multiple permissions, see [Permission scenarios](#permission-scenarios).
 
