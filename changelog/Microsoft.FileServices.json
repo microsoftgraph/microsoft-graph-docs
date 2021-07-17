@@ -3,6 +3,48 @@
     {
       "ChangeList":[
         {
+          "Id": "cf5f29ba-97d1-42e6-9ea3-4621ff6485b1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "bundle",
+          "ChangeType": "addition",
+          "Description": "Added the [bundle](https://docs.microsoft.com/en-us/graph/api/resources/bundle?view=graph-rest-1.0) resource",
+          "Target": "bundle"
+        },
+        {
+          "Id": "cf5f29ba-97d1-42e6-9ea3-4621ff6485b1",
+          "ApiChange": "Resource",
+          "ChangedApiName": "album",
+          "ChangeType": "addition",
+          "Description": "Added the [album](https://docs.microsoft.com/en-us/graph/api/resources/album?view=graph-rest-1.0) resource",
+          "Target": "album"
+        },
+        {
+          "Id": "cf5f29ba-97d1-42e6-9ea3-4621ff6485b1",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "bundles",
+          "ChangeType": "addition",
+          "Description": "Added the **bundles** navigation to the [drive](https://docs.microsoft.com/en-us/graph/api/resources/drive?view=graph-rest-1.0) resource",
+          "Target": "drive"
+        },
+        {
+          "Id": "cf5f29ba-97d1-42e6-9ea3-4621ff6485b1",
+          "ApiChange": "Property",
+          "ChangedApiName": "bundle",
+          "ChangeType": "addition",
+          "Description": "Added the **bundle** property to the [driveItem](https://docs.microsoft.com/en-us/graph/api/resources/driveitem?view=graph-rest-1.0) resource",
+          "Target": "driveItem"
+        }
+      ],
+      "Id": "cf5f29ba-97d1-42e6-9ea3-4621ff6485b1",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-06-17T00:00:00.000Z",
+      "WorkloadArea": "Files",
+      "SubArea": ""
+    },
+    {
+      "ChangeList":[
+        {
           "Id": "6C5FE045-824E-411C-A316-35ECE4F6DD08",
           "ApiChange": "Parameter",
           "ChangedApiName": "type",

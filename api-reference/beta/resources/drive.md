@@ -63,7 +63,7 @@ Users without a OneDrive license may not have a default drive available.
 | items        | [driveItem][] collection             | All items contained in the drive. Read-only. Nullable.
 | root         | [driveItem][]                        | The root folder of the drive. Read-only.
 | special      | [driveItem][] collection             | Collection of common folders available in OneDrive. Read-only. Nullable.
-
+| list         | [list][]                             | For drives in SharePoint, the underlying document library list. Read-only. Nullable.
 
 ## JSON representation
 
@@ -84,6 +84,7 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
     "webUrl",
     "items",
     "root",
+    "sharepointIds",
     "special",
     "system"
   ],
@@ -108,10 +109,11 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
   "owner": {"@odata.type": "microsoft.graph.identitySet"},
   "quota": {"@odata.type": "microsoft.graph.quota"},
   "root": {"@odata.type": "microsoft.graph.driveItem"},
+  "sharepointIds": {"@odata.type": "microsoft.graph.sharepointIds"},
   "special": [{"@odata.type": "microsoft.graph.driveItem"}],
   "system": {"@odata.type": "microsoft.graph.systemFacet"},
   "webUrl": "string",
-  "sharepointIds": {"@odata.type": "microsoft.graph.sharepointIds"}
+
 }
 ```
 
@@ -121,6 +123,7 @@ The **drive** resource is derived from [**baseItem**](baseitem.md) and inherits 
 [itemActivity]: itemactivity.md
 [item-resource]: driveitem.md
 [identity-set]: identityset.md
+[list]: list.md
 [quota-facet]: quota.md
 [drive-resource]: drive.md
 [drive-activities]: ../api/activities-list.md
