@@ -5831,51 +5831,12 @@ items:
             href: resources/intune-deviceconfig-omasettingstring.md
           - name: OMA setting string xml
             href: resources/intune-deviceconfig-omasettingstringxml.md
-          - name: On prem encrypted payload
-            href: resources/intune-raimportcerts-onpremencryptedpayload.md
-            items:
-            - name: List
-              href: api/intune-raimportcerts-onpremencryptedpayload-list.md
-            - name: Get
-              href: api/intune-raimportcerts-onpremencryptedpayload-get.md
-            - name: Create
-              href: api/intune-raimportcerts-onpremencryptedpayload-create.md
-            - name: Delete
-              href: api/intune-raimportcerts-onpremencryptedpayload-delete.md
-            - name: Update
-              href: api/intune-raimportcerts-onpremencryptedpayload-update.md
           - name: Operating system version range
             href: resources/intune-deviceconfig-operatingsystemversionrange.md
           - name: Operator
             href: resources/intune-deviceconfig-operator.md
           - name: Perfect forward secrecy group
             href: resources/intune-deviceconfig-perfectforwardsecrecygroup.md
-          - name: Pfx recryption request
-            href: resources/intune-raimportcerts-pfxrecryptionrequest.md
-            items:
-            - name: List
-              href: api/intune-raimportcerts-pfxrecryptionrequest-list.md
-            - name: Get
-              href: api/intune-raimportcerts-pfxrecryptionrequest-get.md
-            - name: Create
-              href: api/intune-raimportcerts-pfxrecryptionrequest-create.md
-            - name: Delete
-              href: api/intune-raimportcerts-pfxrecryptionrequest-delete.md
-            - name: Update
-              href: api/intune-raimportcerts-pfxrecryptionrequest-update.md
-          - name: Pfx user certificate
-            href: resources/intune-raimportcerts-pfxusercertificate.md
-            items:
-            - name: List
-              href: api/intune-raimportcerts-pfxusercertificate-list.md
-            - name: Get
-              href: api/intune-raimportcerts-pfxusercertificate-get.md
-            - name: Create
-              href: api/intune-raimportcerts-pfxusercertificate-create.md
-            - name: Delete
-              href: api/intune-raimportcerts-pfxusercertificate-delete.md
-            - name: Update
-              href: api/intune-raimportcerts-pfxusercertificate-update.md
           - name: Power action type
             href: resources/intune-deviceconfig-poweractiontype.md
           - name: Prerelease features
@@ -6021,23 +5982,6 @@ items:
             href: resources/intune-deviceconfig-updateclassification.md
           - name: User email source
             href: resources/intune-deviceconfig-useremailsource.md
-          - name: User PFX certificate
-            href: resources/intune-raimportcerts-userpfxcertificate.md
-            items:
-            - name: List
-              href: api/intune-raimportcerts-userpfxcertificate-list.md
-            - name: Get
-              href: api/intune-raimportcerts-userpfxcertificate-get.md
-            - name: Create
-              href: api/intune-raimportcerts-userpfxcertificate-create.md
-            - name: Delete
-              href: api/intune-raimportcerts-userpfxcertificate-delete.md
-            - name: Update
-              href: api/intune-raimportcerts-userpfxcertificate-update.md
-          - name: User pfx intended purpose
-            href: resources/intune-raimportcerts-userpfxintendedpurpose.md
-          - name: User pfx padding scheme
-            href: resources/intune-raimportcerts-userpfxpaddingscheme.md
           - name: Username source
             href: resources/intune-deviceconfig-usernamesource.md
           - name: Visibility setting
