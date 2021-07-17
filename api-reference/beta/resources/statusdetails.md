@@ -1,65 +1,52 @@
 ---
 title: "statusDetails resource type"
-description: "Describes the status of the provisioning event and the associated errors."
+description: "**TODO: Add Description**"
+author: "**TODO: Provide Github Name. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
 localization_priority: Normal
-author: "ArvindHarinder1"
-ms.prod: "identity-and-access-reports"
-doc_type: "resourcePageType"
+ms.prod: "**TODO: Add MS prod. See [topic-level metadata reference](https://msgo.azurewebsites.net/add/document/guidelines/metadata.html#topic-level-metadata)**"
+doc_type: resourcePageType
 ---
 
-# statusDetails resource type (deprecated)
+# statusDetails resource type
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
->[!CAUTION] 
-> The statusDetails API is deprecated and will stop returning data om December 31, 2021. Please use the new [provisioningStatusInfo](provisioningstatusinfo.md) type.
 
-Describes the status of the provisioning event and the associated errors. It is inherited from [statusBase](/graph/api/resources/statusbase) and only used when status is set to `failure`.  
+**TODO: Add Description**
+
+
+Inherits from [statusBase](../resources/statusbase.md).
 
 ## Properties
+|Property|Type|Description|
+|:---|:---|:---|
+|additionalDetails|String|**TODO: Add Description**|
+|errorCategory|String|**TODO: Add Description**|
+|errorCode|String|**TODO: Add Description**|
+|reason|String|**TODO: Add Description**|
+|recommendedAction|String|**TODO: Add Description**|
+|status|provisioningResult|**TODO: Add Description** Inherited from [statusBase](../resources/statusbase.md). Possible values are: `success`, `failure`, `skipped`, `warning`, `unknownFutureValue`.|
 
-| Property     | Type        | Description |
-|:-------------|:------------|:------------|
-|status|statusBase|Possible values are: `success`, `warning`, `failure`, `skipped`, `unknownFutureValue`. Inherited from statusBase.|
-|additionalDetails|String|Additional details in case of error.|
-|errorCategory|String|Categorizes the error code. Possible values are `Failure`, `NonServiceFailure`, `Success`.|
-|errorCode|String|Unique error code if any occurred. [Learn more](/azure/active-directory/reports-monitoring/concept-provisioning-logs#error-codes)|
-|reason|String|Summarizes the status and describes why the status happened.|
-|recommendedAction|String|Provides the resolution for the corresponding error.|
+## Relationships
+None.
 
 ## JSON representation
-
 The following is a JSON representation of the resource.
-
 <!-- {
   "blockType": "resource",
-  "optionalProperties": [
-
-  ],
-  "@odata.type": "microsoft.graph.statusDetails",
-  "baseType": "microsoft.graph.statusBase"
-}-->
-
-```json
+  "@odata.type": "microsoft.graph.statusDetails"
+}
+-->
+``` json
 {
-  "status": "failure",
-  "additionalDetails": "String",
-  "errorCategory": "String",
+  "@odata.type": "#microsoft.graph.statusDetails",
+  "status": "String",
   "errorCode": "String",
   "reason": "String",
+  "additionalDetails": "String",
+  "errorCategory": "String",
   "recommendedAction": "String"
 }
 ```
-
-<!-- uuid: 16cd6b66-4b1a-43a1-adaf-3a886856ed98
-2019-02-04 14:57:30 UTC -->
-<!-- {
-  "type": "#page.annotation",
-  "description": "statusDetails resource",
-  "keywords": "",
-  "section": "documentation",
-  "tocPath": ""
-}-->
-
 
