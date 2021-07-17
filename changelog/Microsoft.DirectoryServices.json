@@ -647,6 +647,24 @@
     {
       "ChangeList": [
         {
+          "Id": "57605124-495d-44fe-82ed-98dff8bb9c17",
+          "ApiChange": "Resource",
+          "ChangedApiName": "restoring and permanently deleting service principals",
+          "ChangeType": "Addition",
+          "Description": "Added support for [restoring and permanently deleting service principals](https://docs.microsoft.com/en-us/graph/api/resources/serviceprincipal?view=graph-rest-beta).",
+          "Target": "restoring and permanently deleting service principals"
+        }
+      ],
+      "Id": "57605124-495d-44fe-82ed-98dff8bb9c17",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "2021-05-18T00:00:00",
+      "WorkloadArea": "Service Principals",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "c3d570f0-e2f4-449c-851e-ad0f0c0d5557",
           "ApiChange": "Property",
           "ChangedApiName": "authorizationPolicy",

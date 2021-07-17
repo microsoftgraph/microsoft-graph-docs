@@ -954,6 +954,14 @@ items:
           href: api/serviceprincipal-list-ownedobjects.md
         - name: delta
           href: api/serviceprincipal-delta.md
+        - name: List deleted service principals
+          href: api/directory-deleteditems-list.md
+        - name: Get deleted service principal
+          href: api/directory-deleteditems-get.md
+        - name: Permanently delete service principal
+          href: api/directory-deleteditems-delete.md
+        - name: Restore deleted service principal
+          href: api/directory-deleteditems-restore.md
         - name: App role assignments
           href: resources/approleassignment.md
           items:

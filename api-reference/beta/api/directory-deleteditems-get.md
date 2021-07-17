@@ -20,7 +20,7 @@ Currently, deleted items functionality is only supported for the [application](.
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
-### For applications:
+### For applications and servicePrincipals:
 
 |Permission type      | Permissions (from least to most privileged)              |
 |:--------------------|:---------------------------------------------------------|
