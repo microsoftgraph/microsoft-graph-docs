@@ -10617,6 +10617,13 @@ items:
             href: api/device-list-usagerights.md
           - name: Check member objects
             href: api/device-checkmemberobjects.md
+        - name: Device registration policy (preview)
+          href: resources/deviceregistrationpolicy.md
+          items:
+          - name: Get device registration policy
+            href: api/deviceregistrationpolicy-get.md
+          - name: Update device registration policy
+            href: api/deviceregistrationpolicy-update.md
         - name: Directory object
           href: resources/directoryobject.md
           items:
