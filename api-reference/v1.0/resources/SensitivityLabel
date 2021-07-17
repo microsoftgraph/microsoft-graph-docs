@@ -1,0 +1,46 @@
+---
+author: SanjoyanM
+ms.date: 05/05/2021
+title: SensitivityLabel resource type
+localization_priority: Normal
+description: "The SensitivityLabel resource groups sensitivity-label related data items into a single structure."
+ms.prod: "sharepoint"
+doc_type: resourcePageType
+---
+
+# SensitivityLabel resource type
+
+Namespace: microsoft.graph
+
+The **SensitivityLabel** resource groups sensitivity-label related data items into a single structure.
+
+## JSON representation
+
+Here is a JSON representation of the resource.
+
+<!-- {
+  "blockType": "resource",
+  "optionalProperties": [ ],
+  "@odata.type": "microsoft.graph.SensitivityLabel"
+}-->
+
+```json
+{
+  "displayName": "string",
+  "id": "string",
+  "protectionEnabled": false
+}
+```
+
+## Properties
+
+| Property          | Type                     | Description                                        
+|:------------------|:------------------------ |:-----------------------------------------------------------------------------------------
+| displayName       | string                   | Display name of the sensitivity label in format {parent-label name\\child-label name}.
+| id                | string                   | The unique identifier (guid) for sensitivity label.
+| protectionEnabled | boolean                  | Specifies if the label has an encryption policy attached or not.
+
+
+## Remarks 
+
+
