@@ -357,6 +357,10 @@ In certain instances, the `tenantId` / `email` / `displayName` property for the 
 
 Microsoft Graph allows the **userPrincipalName** to begin with a dollar (`$`) character. However, when querying users by userPrincipalName, the request URL `/users/$x@y.com` fails. This is because this request URL violates the OData URL conventions which expects only system query options to be prefixed with a `$` character. As a workaround, remove the slash (/) after `/users` and enclose the **userPrincipalName** in parentheses and single quotes as follows: `/users('$x@y.com')`.
 
+### Encode # symbols
+
+External users in your tenant often contain # characters. When using the filter clause you should translate the # character to %23 in the odata clause otherwise an "Bad request: Invalid filter clause" will be returned.
+
 ### No instant access after creation
 
 Users can be created immediately through a POST on the user entity. A Microsoft 365 license must first be assigned to a user, in order to get access to Microsoft 365 services. Even then, due to the distributed nature of the service, it might take 15 minutes before files, messages and events entities are available for use for this user, through the Microsoft Graph API. During this time, apps will receive a 404 HTTP error response.
