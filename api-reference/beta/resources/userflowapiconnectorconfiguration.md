@@ -21,6 +21,7 @@ Defines which APIs are called at specific points in the user flow.  Each relatio
 | :---------------------- | :---------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | postFederationSignup    | [identityApiConnector](identityapiconnector.md) | Specifies an API to call after federation with an external identity provider (like Google, Facebook, or Azure AD) is completed when user is signing up (does not apply to sign in). |
 | postAttributeCollection | [identityApiConnector](identityapiconnector.md) | Specifies an API to call after a user submits collected attributes and before the user is created during sign up.                                                      |
+| preTokenIssuance | [identityApiConnector](identityapiconnector.md) | Specifies an API to call  invoked when a token is about to be issued for the userflow, including on sign in and sign up. An API connector for this step can be used to enrich the token with claim values from external sources.                                         |
 
 ## JSON representation
 
