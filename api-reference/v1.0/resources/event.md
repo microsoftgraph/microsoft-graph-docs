@@ -66,10 +66,12 @@ by providing a [delta](../api/event-delta.md) function.
 |attendees|[attendee](attendee.md) collection|The collection of attendees for the event.|
 |body|[itemBody](itembody.md)|The body of the message associated with the event. It can be in HTML or text format.|
 |bodyPreview|String|The preview of the message associated with the event. It is in text format.|
+|cancelledOccurrences|String collection|Contains **occurrenceId** property values of cancelled instances in a recurring series, if the event is the series master. Instances in a recurring series that are cancelled are called cancelledOccurences.<br><br>Returned only on $select in a [Get](../api/event-get.md) operation which specifies the id of a series master event (that is, the seriesMasterId property value).|
 |categories|String collection|The categories associated with the event.|
 |changeKey|String|Identifies the version of the event object. Every time the event is changed, ChangeKey changes as well. This allows Exchange to apply changes to the correct version of the object.|
 |createdDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |end|[dateTimeTimeZone](datetimetimezone.md)|The date, time, and time zone that the event ends. By default, the end time is in UTC.|
+|exceptionOccurrences|String collection|Contains the **id** property values of the event instances that are exceptions in a recurring series.<br>Exceptions can differ from other occurrences in a recurring series, such as the subject, start or end times, or attendees. Exceptions do not include cancelled occurrences.<br><br>Returned only on $select and $expand in a [GET](../api/event-get.md) operation which specifies the id of a series master event (that is, the seriesMasterId property value).|
 |hasAttachments|Boolean|Set to true if the event has attachments.|
 |hideAttendees|Boolean|When set to `true`, each attendee only sees themselves in the meeting request and meeting **Tracking** list. Default is false.|
 |iCalUId|String|A unique identifier for an event across calendars. This ID is different for each occurrence in a recurring series. Read-only.|
@@ -84,6 +86,7 @@ by providing a [delta](../api/event-delta.md) function.
 |lastModifiedDateTime|DateTimeOffset|The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`|
 |location|[location](location.md)|The location of the event.|
 |locations|[location](location.md) collection|The locations where the event is held or attended from. The **location** and **locations** properties always correspond with each other. If you update the **location** property, any prior locations in the **locations** collection would be removed and replaced by the new **location** value. |
+|occurrenceId|String|An identifier for an occurrence in a recurring event series. Null if the event is not part of a recurring series.<br><br>The format of the property value is OID.{seriesMasterId-value}.{occurrence-start-date}. The time zone for {occurrence-start-date} is the recurrenceTimeZone property defined for the corresponding [recurrenceRange](recurrencerange.md).<br><br>This property can identify any occurrence in a recurring series, including an occurrence that has been modified or cancelled. You can use this property to perform all operations supported by occurrences in the recurring series.|
 |onlineMeeting|[OnlineMeetingInfo](onlinemeetinginfo.md)| Details for an attendee to join the meeting online. Read-only.|
 |onlineMeetingProvider|onlineMeetingProviderType| Represents the online meeting service provider. The possible values are `teamsForBusiness`, `skypeForBusiness`, and `skypeForConsumer`. Optional. |
 |onlineMeetingUrl|String|A URL for an online meeting. The property is set only when an organizer specifies an event as an online meeting such as a Skype meeting. Read-only.|
@@ -127,8 +130,8 @@ by providing a [delta](../api/event-delta.md) function.
 |:---------------|:--------|:----------|
 |attachments|[attachment](attachment.md) collection|The collection of [fileAttachment](fileattachment.md) and [itemAttachment](itemattachment.md) attachments for the event. Navigation property. Read-only. Nullable.|
 |calendar|[calendar](calendar.md)|The calendar that contains the event. Navigation property. Read-only.|
-|extensions|[Extension](extension.md) collection|The collection of open extensions defined for the event. Read-only. Nullable.|
-|instances|[event](event.md) collection|The instances of the event. Navigation property. Read-only. Nullable.|
+|extensions|[extension](extension.md) collection|The collection of open extensions defined for the event. Read-only. Nullable.|
+|instances|[event](event.md) collection|The occurrences of a recurring series, if the event is a series master. This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series. Navigation property. Read-only. Nullable.|
 |multiValueExtendedProperties|[multiValueLegacyExtendedProperty](multivaluelegacyextendedproperty.md) collection| The collection of multi-value extended properties defined for the event. Read-only. Nullable.|
 |singleValueExtendedProperties|[singleValueLegacyExtendedProperty](singlevaluelegacyextendedproperty.md) collection| The collection of single-value extended properties defined for the event. Read-only. Nullable.|
 
@@ -199,10 +202,12 @@ Here is a JSON representation of the resource
   "attendees": [{"@odata.type": "microsoft.graph.attendee"}],
   "body": {"@odata.type": "microsoft.graph.itemBody"},
   "bodyPreview": "string",
+  "cancelledOccurrences":["string"],
   "categories": ["string"],
   "changeKey": "string",
   "createdDateTime": "String (timestamp)",
   "end": {"@odata.type": "microsoft.graph.dateTimeTimeZone"},
+  "exceptionOccurrences":["string"],
   "hasAttachments": true,
   "hideAttendees": false,
   "iCalUId": "string",
@@ -217,6 +222,7 @@ Here is a JSON representation of the resource
   "lastModifiedDateTime": "String (timestamp)",
   "location": {"@odata.type": "microsoft.graph.location"},
   "locations": [{"@odata.type": "microsoft.graph.location"}],
+  "occurrenceId":"string",
   "onlineMeeting": {"@odata.type": "microsoft.graph.onlineMeetingInfo"},
   "onlineMeetingProvider": "string",
   "onlineMeetingUrl": "string",

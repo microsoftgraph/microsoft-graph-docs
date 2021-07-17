@@ -442,7 +442,7 @@ Content-length: 1992
      "OID.AAMkADAGAADDdm4NAAA=.2020-05-14"
     ],
   "occurrenceId": null,
-    "start": {
+  "start": {
         "dateTime": "2020-04-23T11:30:00.0000000",
         "timeZone": "UTC"
     },

@@ -47,6 +47,40 @@
     {
       "ChangeList": [
         {
+          "Id": "2c7e3e75-3f61-46d9-b0fc-a4b090c71cef",
+          "ApiChange": "Property",
+          "ChangedApiName": "cancelledOccurrences",
+          "ChangeType": "Addition",
+          "Description": "Added the **cancelledOccurrences** property to the [event](https://docs.microsoft.com/en-us/graph/api/resources/event) entity.",
+          "Target": "event"
+        },
+        {
+          "Id": "2c7e3e75-3f61-46d9-b0fc-a4b090c71cef",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "exceptionOccurrences",
+          "ChangeType": "Addition",
+          "Description": "Added the **exceptionOccurrences** property to the [event](https://docs.microsoft.com/en-us/graph/api/resources/event) entity.",
+          "Target": "event"
+        },
+        {
+          "Id": "2c7e3e75-3f61-46d9-b0fc-a4b090c71cef",
+          "ApiChange": "Property",
+          "ChangedApiName": "occurrenceId",
+          "ChangeType": "Addition",
+          "Description": "Added the **occurrenceId** property to the [event](https://docs.microsoft.com/en-us/graph/api/resources/event) entity.",
+          "Target": "event"
+        }
+      ],
+      "Id": "2c7e3e75-3f61-46d9-b0fc-a4b090c71cef",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-04-30T00:00:00",
+      "WorkloadArea": "Calendar",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "58585680-2aae-4690-a3f0-7828dc866c20",
           "ApiChange": "Property",
           "ChangedApiName": "hideAttendees",
