@@ -20,6 +20,10 @@ The response status of a meeting request.
 | response | responseType   | The response type. The possible values are: `None`, `Organizer`, `TentativelyAccepted`, `Accepted`, `Declined`, `NotResponded`.
 | time     | DateTimeOffset | The date and time that the response was returned. It uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is `2014-01-01T00:00:00Z`
 
+**None** This value is used when the status of any attendee is reported to the organizer of a meeting in the organizer's meeting invite. 
+
+**NotResponded** This value is used when the status of an attendee is reported to the attendee of a meeting in his/ her meeting invite. Indicates to the attendee that he/ she has not responded to the meeting request.
+
 ## JSON representation
 
 Here is a JSON representation of the resource

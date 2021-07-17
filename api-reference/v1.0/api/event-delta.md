@@ -21,6 +21,12 @@ you can query for incremental changes in that calender view. This allows you to 
 a local store of a user's events in the primary calendar, without having to fetch all the events of that calendar 
 from the server every time.
 
+## Limitations
+
+When client call the delta query on calendar view with specified time range, events outside the time range that has been modified since the last delta sync call will also be returned under "@removed" with reason "deleted". This is because from the sync window perspective, these events are not part of it and are considered as removed/deleted from the window.
+
+The client can filter these removed events when doing the sync according to their scenario.
+
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
 
@@ -57,7 +63,7 @@ includes the encoded, desired parameters.
 | $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same calendar view. |
 
 When you do a delta query on a calendar view, expect to get all the properties you'd normally get from 
-a `GET /calendarview` request. `$select` is not supported in this case. 
+a `GET /calendarview` request. `$select`, `$orderby`,`$filter`,`$search`,`$expand`is not supported in this case. 
 
 
 ## Request headers
