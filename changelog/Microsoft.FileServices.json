@@ -89,6 +89,32 @@
     {
       "ChangeList": [
         {
+          "Id": "43F5978B-1BAD-423D-A71A-EFB8CB269A40",
+          "ApiChange": "Resource",
+          "ChangedApiName": "siteSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [siteSettings](https://docs.microsoft.com/en-us/graph/api/siteSettings-get?view=graph-rest-beta) resource.",
+          "Target": "siteSettings"
+        },
+        {
+          "Id": "43F5978B-1BAD-423D-A71A-EFB8CB269A40",
+          "ApiChange": "Relationship",
+          "ChangedApiName": "siteSettings",
+          "ChangeType": "Addition",
+          "Description": "Added the [siteSettings](https://docs.microsoft.com/en-us/graph/api/siteSettings-get?view=graph-rest-beta) navigation property to the [site](https://docs.microsoft.com/en-us/graph/api/resources/site?view=graph-rest-beta) resource.",
+          "Target": "site"
+        }
+      ],
+      "Id": "43F5978B-1BAD-423D-A71A-EFB8CB269A40",
+      "Cloud": "prd",
+      "Version": "beta",
+      "CreatedDateTime": "06-08-17T00:00:00",
+      "WorkloadArea": "site",
+      "SubArea": ""
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "aa7c9c04-2a12-458f-9bd5-a46c3b2fccd4",
           "ApiChange": "Relationship",
           "ChangedApiName": "permissions",

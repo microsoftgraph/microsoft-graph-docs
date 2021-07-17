@@ -13381,6 +13381,10 @@ items:
           href: resources/site.md
         - name: Get site
           href: api/site-get.md
+        - name: Get lists
+          href: api/list-list.md
+        - name: List subsites
+          href: api/site-list-subsites.md
         - name: Get site analytics
           href: api/itemanalytics-get.md
         - name: Get activities by interval
@@ -13407,6 +13411,8 @@ items:
           href: api/list-create.md
         - name: List subsites
           href: api/site-list-subsites.md
+        - name: Get site settings
+          href: api/siteSettings-get.md
         - name: Permissions
           items:
           - name: Permission
