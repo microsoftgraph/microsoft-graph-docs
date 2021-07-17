@@ -11,7 +11,7 @@ doc_type: apiPageType
 
 Namespace: microsoft.graph
 
-Copy a message to a folder.
+Copy a message to a folder within the user's mailbox.
 
 ## Permissions
 

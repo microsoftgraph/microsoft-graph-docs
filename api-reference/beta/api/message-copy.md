@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Copy a message to a folder.
+Copy a message to a folder within the user's mailbox.
 
 ## Permissions
 
