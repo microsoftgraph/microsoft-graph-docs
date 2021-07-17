@@ -84,9 +84,9 @@ For details about how errors are returned, see [Error responses][error-response]
 
 ## Example
 
-##### Request
+### Request
 
-Here is an example of the request to send a change notification when the user receives a new mail.
+The following example shows a request to send a change notification when the user receives a new mail.
 
 # [HTTP](#tab/http)
 <!-- {
@@ -129,9 +129,9 @@ Content-type: application/json
 In the request body, supply a JSON representation of the [subscription](../resources/subscription.md) object.
 The `clientState` and `latestSupportedTlsVersion` fields are optional.
 
-##### Resources examples
+### Resources examples
 
-The following are valid values for the resource property of the subscription:
+The following are valid values for the resource property of the subscription.
 
 | Resource type | Examples |
 |:------ |:----- |
@@ -151,9 +151,11 @@ The following are valid values for the resource property of the subscription:
 
 > **Note:** Any path starting with `me` can also be used with `users/{id}` instead of `me` to target a specific user instead of the current user.
 
-##### Response
+### Response
 
-Here is an example of the response. Note: The response object shown here might be shortened for readability.
+The following is an example of the response. 
+
+>**Note:** The response object shown here might be shortened for readability.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -180,9 +182,11 @@ Content-length: 252
 }
 ```
 
-## Notification endpoint validation
+### Error responses and notification endpoint validation
 
-The subscription notification endpoint (specified in the `notificationUrl` property) must be capable of responding to a validation request as described in [Set up notifications for changes in user data](/graph/webhooks#notification-endpoint-validation). If validation fails, the request to create the subscription returns a 400 Bad Request error.
+The subscription notification endpoint (specified in the **notificationUrl** property) must be capable of responding to a validation request as described in [Set up notifications for changes in user data](/graph/webhooks#notification-endpoint-validation). If validation fails, the request to create the subscription returns a `400 Bad Request` error.
+
+Additionally, the Content-type header **must** be set to `application/json`. If you use the PowerShell [`Invoke-RESTMethod`](/powershell/module/microsoft.powershell.utility/invoke-restmethod) command, the `-ContentType` flag **must** be set to `application/json`; otherwise, 400 errors that look similar to the notification endpoint validation error shown earlier will be returned.
 
 [error-response]: /graph/errors
 
