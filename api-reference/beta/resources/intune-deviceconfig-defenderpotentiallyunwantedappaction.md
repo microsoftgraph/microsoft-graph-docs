@@ -20,8 +20,8 @@ Defender’s action to take on detected Potentially Unwanted Application (PUA).
 ## Members
 |Member|Value|Description|
 |:---|:---|:---|
-|deviceDefault|0|PUA Protection is off. Defender will not protect against potentially unwanted applications.|
-|block|1|PUA Protection is on. Detected items are blocked. They will show in history along with other threats.|
+|off - device Default (non-Enterprise)|0|PUA Protection is off. Defender will not protect against potentially unwanted applications.|
+|block - device Default (Enterprise)|1|PUA Protection is on. Detected items are blocked. They will show in history along with other threats.|
 |audit|2|Audit mode. Defender will detect potentially unwanted applications, but take no actions. You can review information about applications Defender would have taken action against by searching for events created by Defender in the Event Viewer.|
 
 
