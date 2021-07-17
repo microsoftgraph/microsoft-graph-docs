@@ -171,3 +171,17 @@ For more complex scenarios or a truly custom UX, this component exposes several 
 | renderNoData | Renders the state when no results are found for the search query. |
 | renderSearchResults | Renders the list of search results. |
 | renderPersonResult | Renders an individual person search result. |
+
+
+## Copying, Cutting and Pasting
+
+You can copy or cut people from one `peoplePicker` component and paste it to another `peoplePicker` component. To select people, you use the `Ctrl/CMD + Arrow Left/Arrow Right` to select or deselect a single person, `Ctrl/CMD + A` to select all, `Ctrl/CMD + C` to copy and `Ctrl/CMD + V` to paste.
+
+You can also a paste a list of emails or user IDs that are delimited with either a comma (',') or semi colon (';'). For example:
+
+- `48d31887-5fad-4d73-a9f5-3c356e68a038,24fcbca3-c3e2-48bf-9ffc-c7f81b81483d`
+- `MeganB@M365x214355.onmicrosoft.com;BrianJ@M365x214355.onmicrosoft.com`
+
+When you use a list of emails, you can paste any email that is not in your contact list by enabling the `allow-any-email` property.
+
+  >**Note:** Mozilla Firefox from version 63+ does not support the `Clipboard.readText()` API used to implement pasting in the component. For more information [see this.](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard/readText#browser_compatibility)
