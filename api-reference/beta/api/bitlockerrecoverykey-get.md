@@ -60,8 +60,8 @@ This method supports the `$select` OData query parameter to return the **key** p
 |Name|Description|
 |:---|:---|
 |Authorization|Bearer {token}. Required.|
-|ocp-client-name|Name of the client application performing the API call. Required.|
-|ocp-client-version|Version of the client application performing the API call. Required.|
+|ocp-client-name|The name of the client application performing the API call. This header is used for debugging purposes. Optional.|
+|ocp-client-version|The version of the client application performing the API call. This header is used for debugging purposes. Optional.|
 
 ## Request body
 Do not supply a request body for this method.

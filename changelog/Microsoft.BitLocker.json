@@ -3,6 +3,32 @@
         {
             "ChangeList": [
                 {
+                    "Id": "3b8493a8-d1b4-4e9f-a6a8-7109fbe17e19",
+                    "ApiChange": "Header",
+                    "ChangedApiName": "ocp-client-name",
+                    "ChangeType": "Change",
+                    "Description": "Changed the request header `ocp-client-name` from required to optional for the list and get operations of the [bitlockerRecoveryKey](https://docs.microsoft.com/en-us/graph/api/resources/bitlockerrecoverykey?view=graph-rest-beta) resource.",
+                    "Target": "bitlockerRecoveryKey"
+                },
+                {
+                    "Id": "3b8493a8-d1b4-4e9f-a6a8-7109fbe17e19",
+                    "ApiChange": "Header",
+                    "ChangedApiName": "ocp-client-version",
+                    "ChangeType": "Change",
+                    "Description": "Changed the request header `ocp-client-version` from required to optional for the list and get operations of the [bitlockerRecoveryKey](https://docs.microsoft.com/en-us/graph/api/resources/bitlockerrecoverykey?view=graph-rest-beta) resource.",
+                    "Target": "bitlockerRecoveryKey"
+                }
+            ],
+            "Id": "3b8493a8-d1b4-4e9f-a6a8-7109fbe17e19",
+            "Cloud": "prd",
+            "Version": "beta",
+            "CreatedDateTime": "2021-07-15T12:41:45.203Z",
+            "WorkloadArea": "Identity and access",
+            "SubArea" : "Directory management"
+        },
+        {
+            "ChangeList": [
+                {
                     "Id": "f015f292-af31-448d-8dc1-72ab3936e63a",
                     "ApiChange": "Method",
                     "ChangedApiName": "bitlockerRecoveryKey-get",
