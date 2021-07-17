@@ -4678,31 +4678,6 @@ items:
             href: api/oauth2permissiongrant-delete.md
           - name: Get delta
             href: api/oauth2permissiongrant-delta.md
-        - name: Identity protection
-          href: resources/identityprotectionroot.md
-          items:
-          - name: Risk detection
-            href: resources/riskdetection.md
-            items:
-              - name: List
-                href: api/riskdetection-list.md
-              - name: Get
-                href: api/riskdetection-get.md
-          - name: Risky user
-            href: resources/riskyuser.md
-            items:
-            - name: List risky users
-              href: api/riskyuser-list.md
-            - name: Get risky user
-              href: api/riskyuser-get.md
-            - name: List history
-              href: api/riskyuser-list-history.md
-            - name: Get history
-              href: api/riskyuser-get-riskyuserhistoryitem.md
-            - name: Confirm compromised
-              href: api/riskyuser-confirmcompromised.md
-            - name: Dismiss
-              href: api/riskyuser-dismiss.md
         - name: Identity provider
           href: resources/identityprovider.md
           items:
