@@ -5740,6 +5740,47 @@ items:
           href: api/securescorecontrolprofile-update.md
       - name: Errors
         href: resources/security-error-codes.md
+    - name: Service health and communications
+      items:
+      - name: Overview
+        href: resources/service-communications-api-overview.md
+      - name: Service announcement
+        href: resources/serviceannouncement.md
+      - name: Service health
+        href: resources/servicehealth.md
+        items:
+        - name: List health overviews
+          href: api/serviceannouncement-list-healthoverviews.md
+        - name: Get service health
+          href: api/servicehealth-get.md
+      - name: Service health issue
+        href: resources/servicehealthissue.md
+        items:
+        - name: List issues
+          href: api/serviceannouncement-list-issues.md
+        - name: Get issue
+          href: api/servicehealthissue-get.md
+        - name: Get post-incident review report
+          href: api/servicehealthissue-incidentreport.md
+      - name: Service update message
+        href: resources/serviceupdatemessage.md
+        items:
+        - name: List messages
+          href: api/serviceannouncement-list-messages.md
+        - name: Get message
+          href: api/serviceupdatemessage-get.md
+        - name: Mark read status
+          href: api/serviceupdatemessage-markread.md
+        - name: Mark unread status
+          href: api/serviceupdatemessage-markunread.md
+        - name: Archive status
+          href: api/serviceupdatemessage-archive.md
+        - name: Unarchive status
+          href: api/serviceupdatemessage-unarchive.md
+        - name: Mark favorite status
+          href: api/serviceupdatemessage-favorite.md
+        - name: Remove favorite status
+          href: api/serviceupdatemessage-unfavorite.md
     - name: Sites and lists
       displayName: SharePoint, OneDrive, OneDrive for Business, OneDrive business, OneDrive personal
       items:

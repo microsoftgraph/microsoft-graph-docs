@@ -61,6 +61,8 @@ From the **Message center** dashboad, you can view upcoming changes, including n
 
 ## Next steps
 
-- Try service communications sample queries in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/?request=admin%2FserviceAnnouncement%2FhealthOverviews&version=beta).
+- Try service communications sample queries in [Graph Explorer](https://developer.microsoft.com/graph/graph-explorer/?request=admin%2FserviceAnnouncement%2FhealthOverviews&version=v1.0).
 
-- Learn more about the [service communications API](/graph/api/resources/service-communications-api-overview?view=graph-rest-beta&preserve-view=true).
+- Learn more about the [service communications API Beta](/graph/api/resources/service-communications-api-overview?view=graph-rest-beta&preserve-view=true).
+
+- Learn more about the [service communications API v1.0](/graph/api/resources/service-communications-api-overview?view=graph-rest-1.0&preserve-view=true).

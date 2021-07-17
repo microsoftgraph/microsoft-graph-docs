@@ -29,25 +29,25 @@ Application permissions are needed to access the service communications API with
 
 |Use cases|API requests| Required permissions| Supported permission types|
 |:--------|:--------|:--------|:--------|
-| List health overviews for tenant | [List healthOverviews](/graph/api/serviceannouncement-list-healthoverviews?view=graph-rest-beta&preserve-view=true) | _ServiceHealth.Read.All_ | Delegated and application | 
-| Get specific service health information for tenant | [Get serviceHealth](/graph/api/servicehealth-get?view=graph-rest-beta&preserve-view=true) | _ServiceHealth.Read.All_ | Delegated and application |
-| List all service issues for tenant | [List issues](/graph/api/serviceannouncement-list-issues?view=graph-rest-beta&preserve-view=true) | _ServiceHealth.Read.All_ | Delegated and application |
-| Get a specific service issue for tenant | [Get issue](/graph/api/servicehealthissue-get?view=graph-rest-beta&preserve-view=true) | _ServiceHealth.Read.All_ | Delegated and application |
-| Get a post-incident review report for tenant | [Get incident report](/graph/api/servicehealthissue-incidentreport?view=graph-rest-beta&preserve-view=true)| _ServiceHealth.Read.All_ | Delegated and application |
-| List all service messages for tenant | [List messages](/graph/api/serviceannouncement-list-messages?view=graph-rest-beta&preserve-view=true) | _ServiceMessage.Read.All_ | Delegated and application |
-| Get a specific service message for tenant | [Get message](/graph/api/serviceupdatemessage-get?view=graph-rest-beta&preserve-view=true) | _ServiceMessage.Read.All_ | Delegated and application |
-| Update service message status for signed in user | For a list of status operations, see [serviceUpdateMessage](/graph/api/resources/serviceupdatemessage?view=graph-rest-beta&preserve-view=true).| _ServiceMessageViewpoint.Write_ | Delegated |
+| List health overviews for tenant | [List healthOverviews](/graph/api/serviceannouncement-list-healthoverviews?view=graph-rest-1.0&preserve-view=true) | _ServiceHealth.Read.All_ | Delegated and application | 
+| Get specific service health information for tenant | [Get serviceHealth](/graph/api/servicehealth-get?view=graph-rest-1.0&preserve-view=true) | _ServiceHealth.Read.All_ | Delegated and application |
+| List all service issues for tenant | [List issues](/graph/api/serviceannouncement-list-issues?view=graph-rest-1.0&preserve-view=true) | _ServiceHealth.Read.All_ | Delegated and application |
+| Get a specific service issue for tenant | [Get issue](/graph/api/servicehealthissue-get?view=graph-rest-1.0&preserve-view=true) | _ServiceHealth.Read.All_ | Delegated and application |
+| Get a post-incident review report for tenant | [Get incident report](/graph/api/servicehealthissue-incidentreport?view=graph-rest-1.0&preserve-view=true)| _ServiceHealth.Read.All_ | Delegated and application |
+| List all service messages for tenant | [List messages](/graph/api/serviceannouncement-list-messages?view=graph-rest-1.0&preserve-view=true) | _ServiceMessage.Read.All_ | Delegated and application |
+| Get a specific service message for tenant | [Get message](/graph/api/serviceupdatemessage-get?view=graph-rest-1.0&preserve-view=true) | _ServiceMessage.Read.All_ | Delegated and application |
+| Update service message status for signed in user | For a list of status operations, see [serviceUpdateMessage](/graph/api/resources/serviceupdatemessage?view=graph-rest-1.0&preserve-view=true).| _ServiceMessageViewpoint.Write_ | Delegated |
 
 ## API on Microsoft Graph national clouds
 Service communications API is available on Microsoft Graph national clouds as well. You could get service health and communications data for your national clouds tenants. More information about [Microsoft Graph national clouds](/graph/deployments).
 
 |National clouds|API url (partial)|
 |:--------------|:-----------------|
-|Microsoft Graph global service| https://graph.microsoft.com/beta/admin/serviceAnnouncement/|
-|Microsoft Graph for US Government L4 (GccHigh)|https://graph.microsoft.us/beta/admin/serviceAnnouncement/|
-|Microsoft Graph for US Government L5 (DoD)|https://dod-graph.microsoft.us/beta/admin/serviceAnnouncement/|
-|Microsoft Graph Germany|https://graph.microsoft.de/beta/admin/serviceAnnouncement/|
-|Microsoft Graph China operated by 21Vianet|https://microsoftgraph.chinacloudapi.cn/beta/admin/serviceAnnouncement/|
+|Microsoft Graph global service| https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/|
+|Microsoft Graph for US Government L4 (GccHigh)|https://graph.microsoft.us/v1.0/admin/serviceAnnouncement/|
+|Microsoft Graph for US Government L5 (DoD)|https://dod-graph.microsoft.us/v1.0/admin/serviceAnnouncement/|
+|Microsoft Graph Germany|https://graph.microsoft.de/v1.0/admin/serviceAnnouncement/|
+|Microsoft Graph China operated by 21Vianet|https://microsoftgraph.chinacloudapi.cn/v1.0/admin/serviceAnnouncement/|
 
 ## What's new
 Find out about the [latest new features and updates](/graph/whats-new-overview) for this API set.

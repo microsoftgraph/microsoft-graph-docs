@@ -185,6 +185,192 @@
           "CreatedDateTime":"2021-05-14T17:02:02.734Z",
           "WorkloadArea":"Service health and communications",
           "SubArea":""
+       },
+       {
+         "ChangeList": [
+           {
+             "Id": "6a3ce525-e679-11eb-88f7-f923b9ff781d",
+             "ApiChange": "Resource",
+             "ChangedApiName": "serviceAnnouncementBase",
+             "ChangeType": "Addition",
+             "Description": "Added the [serviceAnnouncementBase](https://docs.microsoft.com/en-us/graph/api/resources/serviceAnnouncementBase?view=graph-rest-1.0) resource type.",
+             "Target": "serviceAnnouncementBase"
+           },
+           {
+             "Id": "6a3f439e-e679-11eb-88f7-f923b9ff781d",
+             "ApiChange": "Resource",
+             "ChangedApiName": "serviceAnnouncement",
+             "ChangeType": "Addition",
+             "Description": "Added the [serviceAnnouncement](https://docs.microsoft.com/en-us/graph/api/resources/serviceAnnouncement?view=graph-rest-1.0) resource type.",
+             "Target": "serviceAnnouncement"
+           },
+           {
+             "Id": "6a41a9f8-e679-11eb-88f7-f923b9ff781d",
+             "ApiChange": "Resource",
+             "ChangedApiName": "serviceUpdateMessage",
+             "ChangeType": "Addition",
+             "Description": "Added the [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-1.0) resource type.",
+             "Target": "serviceUpdateMessage"
+           },
+           {
+             "Id": "6a440af1-e679-11eb-88f7-f923b9ff781d",
+             "ApiChange": "Resource",
+             "ChangedApiName": "serviceHealthIssue",
+             "ChangeType": "Addition",
+             "Description": "Added the [serviceHealthIssue](https://docs.microsoft.com/en-us/graph/api/resources/serviceHealthIssue?view=graph-rest-1.0) resource type.",
+             "Target": "serviceHealthIssue"
+           },
+           {
+             "Id": "6a466e75-e679-11eb-88f7-f923b9ff781d",
+             "ApiChange": "Resource",
+             "ChangedApiName": "serviceHealth",
+             "ChangeType": "Addition",
+             "Description": "Added the [serviceHealth](https://docs.microsoft.com/en-us/graph/api/resources/serviceHealth?view=graph-rest-1.0) resource type.",
+             "Target": "serviceHealth"
+           },
+           {
+             "Id": "6a48cf03-e679-11eb-88f7-f923b9ff781d",
+             "ApiChange": "Resource",
+             "ChangedApiName": "serviceHealthIssuePost",
+             "ChangeType": "Addition",
+             "Description": "Added the [serviceHealthIssuePost](https://docs.microsoft.com/en-us/graph/api/resources/serviceHealthIssuePost?view=graph-rest-1.0) resource type.",
+             "Target": "serviceHealthIssuePost"
+           },
+           {
+             "Id": "6a4b3212-e679-11eb-88f7-f923b9ff781d",
+             "ApiChange": "Resource",
+             "ChangedApiName": "serviceUpdateMessageViewpoint",
+             "ChangeType": "Addition",
+             "Description": "Added the [serviceUpdateMessageViewpoint](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessageViewpoint?view=graph-rest-1.0) resource type.",
+             "Target": "serviceUpdateMessageViewpoint"
+           },
+           {
+             "Id": "6a4ff527-e679-11eb-88f7-f923b9ff781d",
+             "ApiChange": "Resource",
+             "ChangedApiName": "keyValuePair",
+             "ChangeType": "Addition",
+             "Description": "Added the [keyValuePair](https://docs.microsoft.com/en-us/graph/api/resources/keyValuePair?view=graph-rest-1.0) resource type.",
+             "Target": "keyValuePair"
+           },
+           {
+             "Id": "6a525713-e679-11eb-88f7-f923b9ff781d",
+             "ApiChange": "Enum type",
+             "ChangedApiName": "bodyType",
+             "ChangeType": "Addition",
+             "Description": "Added the **bodyType** enumeration type.",
+             "Target": "bodyType"
+           },
+           {
+             "Id": "6a54bb8e-e679-11eb-88f7-f923b9ff781d",
+             "ApiChange": "Enum type",
+             "ChangedApiName": "serviceUpdateCategory",
+             "ChangeType": "Addition",
+             "Description": "Added the **serviceUpdateCategory** enumeration type.",
+             "Target": "serviceUpdateCategory"
+           },
+           {
+             "Id": "6a571d65-e679-11eb-88f7-f923b9ff781d",
+             "ApiChange": "Enum type",
+             "ChangedApiName": "serviceUpdateSeverity",
+             "ChangeType": "Addition",
+             "Description": "Added the **serviceUpdateSeverity** enumeration type.",
+             "Target": "serviceUpdateSeverity"
+           },
+           {
+             "Id": "6a597fd5-e679-11eb-88f7-f923b9ff781d",
+             "ApiChange": "Enum type",
+             "ChangedApiName": "serviceHealthStatus",
+             "ChangeType": "Addition",
+             "Description": "Added the **serviceHealthStatus** enumeration type.",
+             "Target": "serviceHealthStatus"
+           },
+           {
+             "Id": "6a5be3e5-e679-11eb-88f7-f923b9ff781d",
+             "ApiChange": "Enum type",
+             "ChangedApiName": "serviceHealthClassificationType",
+             "ChangeType": "Addition",
+             "Description": "Added the **serviceHealthClassificationType** enumeration type.",
+             "Target": "serviceHealthClassificationType"
+           },
+           {
+             "Id": "6a5e4419-e679-11eb-88f7-f923b9ff781d",
+             "ApiChange": "Enum type",
+             "ChangedApiName": "serviceHealthOrigin",
+             "ChangeType": "Addition",
+             "Description": "Added the **serviceHealthOrigin** enumeration type.",
+             "Target": "serviceHealthOrigin"
+           },
+           {
+             "Id": "6a60a5e6-e679-11eb-88f7-f923b9ff781d",
+             "ApiChange": "Enum type",
+             "ChangedApiName": "postType",
+             "ChangeType": "Addition",
+             "Description": "Added the **postType** enumeration type.",
+             "Target": "postType"
+           },
+           {
+             "Id": "6a630b31-e679-11eb-88f7-f923b9ff781d",
+             "ApiChange": "Method",
+             "ChangedApiName": "markRead",
+             "ChangeType": "Addition",
+             "Description": "Added the [markRead](https://docs.microsoft.com/en-us/graph/api/serviceUpdateMessage-markRead?view=graph-rest-1.0) method to the [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-1.0) resource.",
+             "Target": "serviceUpdateMessage"
+           },
+           {
+             "Id": "6a656bde-e679-11eb-88f7-f923b9ff781d",
+             "ApiChange": "Method",
+             "ChangedApiName": "markUnread",
+             "ChangeType": "Addition",
+             "Description": "Added the [markUnread](https://docs.microsoft.com/en-us/graph/api/serviceUpdateMessage-markUnread?view=graph-rest-1.0) method to the [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-1.0) resource.",
+             "Target": "serviceUpdateMessage"
+           },
+           {
+             "Id": "6a67cf25-e679-11eb-88f7-f923b9ff781d",
+             "ApiChange": "Method",
+             "ChangedApiName": "archive",
+             "ChangeType": "Addition",
+             "Description": "Added the [archive](https://docs.microsoft.com/en-us/graph/api/serviceUpdateMessage-archive?view=graph-rest-1.0) method to the [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-1.0) resource.",
+             "Target": "serviceUpdateMessage"
+           },
+           {
+             "Id": "6a6a2f94-e679-11eb-88f7-f923b9ff781d",
+             "ApiChange": "Method",
+             "ChangedApiName": "unarchive",
+             "ChangeType": "Addition",
+             "Description": "Added the [unarchive](https://docs.microsoft.com/en-us/graph/api/serviceUpdateMessage-unarchive?view=graph-rest-1.0) method to the [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-1.0) resource.",
+             "Target": "serviceUpdateMessage"
+           },
+           {
+             "Id": "6a6c916d-e679-11eb-88f7-f923b9ff781d",
+             "ApiChange": "Method",
+             "ChangedApiName": "favorite",
+             "ChangeType": "Addition",
+             "Description": "Added the [favorite](https://docs.microsoft.com/en-us/graph/api/serviceUpdateMessage-favorite?view=graph-rest-1.0) method to the [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-1.0) resource.",
+             "Target": "serviceUpdateMessage"
+           },
+           {
+             "Id": "6a6ef733-e679-11eb-88f7-f923b9ff781d",
+             "ApiChange": "Method",
+             "ChangedApiName": "unfavorite",
+             "ChangeType": "Addition",
+             "Description": "Added the [unfavorite](https://docs.microsoft.com/en-us/graph/api/serviceUpdateMessage-unfavorite?view=graph-rest-1.0) method to the [serviceUpdateMessage](https://docs.microsoft.com/en-us/graph/api/resources/serviceUpdateMessage?view=graph-rest-1.0) resource.",
+             "Target": "serviceUpdateMessage"
+           },
+           {
+             "Id": "6a7156f4-e679-11eb-88f7-f923b9ff781d",
+             "ApiChange": "Method",
+             "ChangedApiName": "incidentReport",
+             "ChangeType": "Addition",
+             "Description": "Added the [incidentReport](https://docs.microsoft.com/en-us/graph/api/serviceHealthIssue-incidentReport?view=graph-rest-1.0) method to the [serviceHealthIssue](https://docs.microsoft.com/en-us/graph/api/resources/serviceHealthIssue?view=graph-rest-1.0) resource.",
+             "Target": "serviceHealthIssue"
+           }
+         ],
+         "Id": "6a3a801a-e679-11eb-88f7-f923b9ff781d",
+         "Cloud": "prd",
+         "Version": "v1.0",
+         "CreatedDateTime": "2021-07-16T21:04:31.258Z",
+         "WorkloadArea": "",
+         "SubArea": ""
        }
     ]
  }

@@ -13329,7 +13329,7 @@ items:
           href: api/tiindicator-deletetiindicatorsbyexternalid.md
       - name: Errors
         href: resources/security-error-codes.md
-    - name: Service health and communications (preview)
+    - name: Service health and communications
       items:
       - name: Overview
         href: resources/service-communications-api-overview.md
