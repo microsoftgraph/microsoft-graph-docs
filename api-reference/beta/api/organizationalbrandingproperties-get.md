@@ -112,15 +112,41 @@ Content-Type: application/json
   "backgroundImage@odata.mediaContentType":"image/*",
   "backgroundImage@odata.mediaReadLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/backgroundImage",
   "backgroundImage@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/backgroundImage",
+  "backgroundImageRelativeUrl": "dbd5a2dd-lu-agg67uefzvwzuov0etfhrxchzcqwll6fkclksmuk/logintenantbranding/0/illustration?ts=637478717956164042",
   "bannerLogo@odata.mediaContentType":"image/*",
   "bannerLogo@odata.mediaReadLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/bannerLogo",
   "bannerLogo@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/bannerLogo",
+  "bannerLogoRelativeUrl": "dbd5a2dd-lu-agg67uefzvwzuov0etfhrxchzcqwll6fkclksmuk/logintenantbranding/0/bannerlogo?ts=637533030465682741",
+  "cdnList": [
+      "aadcdn.msftauthimages.net",
+      "aadcdn.msauthimages.net"
+  ],
   "id": "und",
   "squareLogo@odata.mediaContentType":"image/*",
   "squareLogo@odata.mediaReadLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/squareLogo",
   "squareLogo@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/squareLogo",
+  "squareLogoRelativeUrl": "dbd5a2dd-lu-agg67uefzvwzuov0etfhrxchzcqwll6fkclksmuk/logintenantbranding/0/tilelogo?ts=637478717965264297",
   "signInPageText":"Default",
-  "usernameHintText":"DefaultHint"
+  "usernameHintText":"DefaultHint",
+  "customAccountResetCredentialsUrl":null,
+  "customCannotAccessYourAccountText":null,
+  "customCannotAccessYourAccountUrl":null,
+  "customForgotMyPasswordText":null,
+  "customPrivacyAndCookiesText":null,
+  "customPrivacyAndCookiesUrl":null,
+  "customResetItNowText":null,
+  "customTermsofUseText":null,  
+  "customTermsofUseUrl":null,
+  "favicon":null,
+  "faviconRelativeUrl":null,
+  "headerBackgroundColor":null,
+  "loginPageTextVisibilitySettings":{
+      "hideCannotAccessYourAccount":false,
+      "hideTermsOfUse":false,
+      "hidePrivacyAndCookies": true,
+      "hideForgotMyPassword": false,
+      "hideResetItNow":true
+  }  
 }
 ```
 
@@ -190,15 +216,41 @@ Content-Language: fr
     "backgroundImage@odata.mediaContentType":"image/*",
     "backgroundImage@odata.mediaReadLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/backgroundImage",
     "backgroundImage@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr/backgroundImage",
+    "backgroundImageRelativeUrl": "dbd5a2dd-lu-agg67uefzvwzuov0etfhrxchzcqwll6fkclksmuk/logintenantbranding/0/illustration?ts=637478717956164042",
     "bannerLogo@odata.mediaContentType":"image/*",
     "bannerLogo@odata.mediaReadLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/bannerLogo",
     "bannerLogo@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr/bannerLogo",
+    "bannerLogoRelativeUrl": "dbd5a2dd-lu-agg67uefzvwzuov0etfhrxchzcqwll6fkclksmuk/logintenantbranding/0/bannerlogo?ts=637533030465682741",
+    "cdnList": [
+        "aadcdn.msftauthimages.net",
+        "aadcdn.msauthimages.net"
+    ],
     "id": "und",
     "squareLogo@odata.mediaContentType":"image/*",
     "squareLogo@odata.mediaReadLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/squareLogo",
     "squareLogo@odata.mediaEditLink": "https://graph.microsoft.com/beta/organization/d69179bf-f4a4-41a9-a9de-249c0f2efb1d/branding/localizations/fr/squareLogo",
+    "squareLogoRelativeUrl": "dbd5a2dd-lu-agg67uefzvwzuov0etfhrxchzcqwll6fkclksmuk/logintenantbranding/0/tilelogo?ts=637478717965264297",
     "signInPageText":"Default",
-    "usernameHintText":"DefaultHint"
+    "usernameHintText":"DefaultHint",
+    "customAccountResetCredentialsUrl":null,
+    "customCannotAccessYourAccountText":null,
+    "customCannotAccessYourAccountUrl":null,
+    "customForgotMyPasswordText":null,
+    "customPrivacyAndCookiesText":null,
+    "customPrivacyAndCookiesUrl":null,
+    "customResetItNowText":null,
+    "customTermsofUseText":null,  
+    "customTermsofUseUrl":null,
+    "favicon":null,
+    "faviconRelativeUrl":null,
+    "headerBackgroundColor":null,
+    "loginPageTextVisibilitySettings":{
+        "hideCannotAccessYourAccount":false,
+        "hideTermsOfUse":false,
+        "hidePrivacyAndCookies": true,
+        "hideForgotMyPassword": false,
+        "hideResetItNow":true
+    }  
 }
 ```
 
