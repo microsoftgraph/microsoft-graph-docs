@@ -403,6 +403,20 @@ Content-Type: application/json
 }
 ```
 
+Add "Content-Type: application/json" in the request headers.
+
+Add below content in the request body).If the userid is incorrect or there is no userID, it will show error "Bad Request, userIds format is invalid".
+
+{
+  "userIds": [
+    "4628e7df-dff3-407c-a08f-75f08c0806dc"
+  ]
+}
+
+You can check the result by retrieving the riksyUsers and the status will show as dismissed.
+
+**The risky user will continue to be shown in the API because it was at one point at risk and it now exists in our risky users DB**
+
 #### Response
 
 ```http
