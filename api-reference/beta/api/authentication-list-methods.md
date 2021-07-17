@@ -15,6 +15,9 @@ Namespace: microsoft.graph
 
 Retrieve a list of [authentication method](../resources/authenticationmethod.md) objects.
 
+> [!IMPORTANT]
+> Listing users' authentication methods only returns methods supported on this API version. See [Azure AD authentication methods API overview](../resources/authenticationmethods-overview.md) for a list of currently supported methods.
+
 ## Permissions
 
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
