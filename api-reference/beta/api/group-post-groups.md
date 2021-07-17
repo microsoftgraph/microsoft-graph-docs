@@ -188,7 +188,7 @@ Content-type: application/json
 
 ### Example 2: Create a security group with an owner and members
 
-The following example creates a security group with an owner and members specified. Note that a maximum of 20 relationships, such as owners and members, can be added as part of group creation. You can subsequently add more members by using the [add member](/graph/api/group-post-members?view=graph-rest-beta&preserve-view=true) API or JSON batching.
+The following example creates a security group with an owner and members specified. Note that a maximum of 20 relationships, such as owners and members, can be added as part of group creation. You can subsequently add more members by using the [add member](./group-post-members.md?preserve-view=true&view=graph-rest-beta) API or JSON batching.
 
 #### Request
 
@@ -320,7 +320,7 @@ Content-Type: application/json
 ---
 
 
-> **Note:** The **visibility** and **groupTypes** properties are not required for creation, but are auto-populated with these values. A group with **isAssignableToRole** property set to `true` cannot be of dynamic membership type. For more information, see [Using a group to manage Azure AD role assignments](https://go.microsoft.com/fwlink/?linkid=2103037).
+> **Note:** The **visibility** and **groupTypes** properties are not required for creation, but are auto-populated with these values. A group with **isAssignableToRole** property set to `true` cannot be of dynamic membership type. For more information, see [Using a group to manage Azure AD role assignments](/azure/active-directory/roles/groups-concept).
 
 #### Response
 
@@ -392,5 +392,3 @@ Content-type: application/json
   ]
 }
 -->
-
-
