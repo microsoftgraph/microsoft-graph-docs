@@ -15,11 +15,11 @@ Namespace: microsoft.graph
 
 Get a set of [event](../resources/event.md) resources that have been added, deleted, or updated in one or more calendars. 
 
-You can get specific types of these incremental changes in the events in all the calendars of a mailbox or in a specific calendar, or in an event collection of a **calendarView** (range of events defined by start and end dates) of a calendar. The calendar can be the default calendar or some other specified calendar of the user's. In the case of getting incremental changes on **calendarView**, the calendar can be a group calendar as well.
+You can get specific types of these incremental changes in the events in all the calendars of a mailbox or in a specific calendar, or in an event collection of a **calendarView** (range of events defined by start and end dates) of a calendar. The calendar can be the default calendar or some other specified calendar of the identified user. In the case of getting incremental changes on **calendarView**, the calendar can be a user calendar or group calendar.
 
 A **delta** function call is similar to a `GET /events` or `GET /calendarview` request for
 the specified calendar, except that by appropriately applying [state tokens](/graph/delta-query-overview#state-tokens) in one or more of these calls,
-you can query for incremental changes of events in that calender. This allows you to maintain and synchronize
+you can query for incremental changes of events in that calendar. This allows you to maintain and synchronize
 a local store of events in the specified calendar, without having to fetch all the events of that calendar
 from the server every time.
 
@@ -31,7 +31,7 @@ The following table lists the differences between the **delta** function on even
 | Returns only a limited set of **event** properties for performance reasons. Client to subsequently use `GET /events/{id}` to expand any events. | Server-side expansion returns a fuller set of **event** properties. |
 | Response includes single instances and recurring series master. | Response includes single instances, and occurrences and exceptions of recurring series. |
 | Applies to events in user calendars but not group calendars. | Applies to events in user and group calendars. |
-| Currently available only in the beta version. | Available in the v1.0 and beta versions. |
+
 
 ## Permissions
 One of the following permissions is required to call this API. To learn more, including how to choose permissions, see [Permissions](/graph/permissions-reference).
@@ -44,11 +44,11 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
-This section shows the HTTP request syntax for the initial **delta** function call to start a full synchronization that retrieves all the events in the specified calendar or calendar view. This syntax does not contain any [state tokens](/graph/delta-query-overview#state-tokens). 
+This section shows the HTTP request syntax for the initial **delta** function call to start a full synchronization that retrieves all the events in the specified calendar or **calendarView**. This syntax does not contain any [state tokens](/graph/delta-query-overview#state-tokens). 
 
 The query URL returned in a `nextLink` or `deltaLink` of a successful response includes a state token. For any subsequent **delta** function call, use the query URL in a `nextLink` or `deltaLink` preceding it.
 
-### Delta function on events in a user calendar (preview)
+### Delta function on events in a user calendar
 Apply the **delta** function on all the events or events starting on or after a specific date/time, in the specified user calendar(s):
 
 * To get incremental changes of all the events, or of events starting on or after the specified date/time _in the user's mailbox_:
@@ -81,7 +81,17 @@ Apply the **delta** function on all the events or events starting on or after a 
   GET /users/{id | userPrincipalName}/calendars/{id}/events/delta?startDateTime={start_datetime}
   ```
 
-* To get incremental changes all the events, or of events starting on or after the specified date/time _in the specified calendar group and calendar_:
+* To get incremental changes of all the events, or of events starting on or after the specified date/time _in the specified calendar of the default calendar group_:
+  <!-- { "blockType": "ignored" } -->
+  ```http
+  GET /me/calendargroup/calendars/{id}/events/delta 
+  GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/delta 
+
+  GET /me/calendargroup/calendars/{id}/events/delta?startDateTime={start_datetime} 
+  GET /users/{id | userPrincipalName}/calendargroup/calendars/{id}/events/delta?startDateTime={start_datetime}
+  ```
+
+* To get incremental changes of all the events, or of events starting on or after the specified date/time, _in the specified calendar group and specified calendar_:
   <!-- { "blockType": "ignored" } -->
   ```http
   GET /me/calendargroups/{id}/calendars/{id}/events/delta 
@@ -109,14 +119,14 @@ Apply the **delta** function on all the events or events starting on or after a 
 ### Delta function on calendarView in a user calendar
 Apply the **delta** function on a range of events delimited by start and end date/times, in the specified user calendar:
 
-* To get incremental changes in a calendar view of _the user's default calendar_:
+* To get incremental changes in a **calendarView** of _the user's default calendar_:
   <!-- { "blockType": "ignored" } -->
   ```http
   GET /me/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
   GET /users/{id}/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
   ```
 
-* To get incremental changes in a calendar view of _the specified user calendar_:
+* To get incremental changes in a **calendarView** of _the specified user calendar_:
   <!-- { "blockType": "ignored" } -->
   ```http
   GET /me/calendars/{id}/calendarView/delta?startDateTime={start_datetime}&endDateTime={end_datetime}
@@ -124,7 +134,7 @@ Apply the **delta** function on a range of events delimited by start and end dat
   ```
 
 ### Delta function on calendarView in a group calendar
-* To get incremental changes in a calendar view of _a group's calendar_:
+* To get incremental changes in a **calendarView** of _a group's calendar_:
   <!-- { "blockType": "ignored" } -->
   ```http
   GET /groups/{id}/calendarView?startDateTime={start_datetime}&endDateTime={end_datetime}
@@ -143,11 +153,16 @@ includes the encoded, desired parameters.
 |:---------------|:--------|:----------|
 |startDateTime|String|The start date and time of the time range, represented in ISO 8601 format. For example, "2019-11-08T19:00:00-08:00". <br>The timezone is specified in the timezone offset portion of the parameter value, and is not impacted by the `Prefer: outlook.timezone` header if present. If no timezone offset is included in the value, it is interpreted as UTC.<br>Optional for **delta** on events in a calendar. <br>Required for **delta** on **calendarView**. |
 |endDateTime|String|The end date and time of the time range, represented in ISO 8601 format. For example, "2019-11-08T20:00:00-08:00". <br>The timezone is specified in the timezone offset portion of the parameter value, and is not impacted by the `Prefer: outlook.timezone` header if present. If no timezone offset is included in the value, it is interpreted as UTC.<br>_Not supported_ by **delta** on events in a calendar. <br>Required for **delta** on **calendarView**.|
-| $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same calendar view, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that calendar view.|
-| $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same calendar view. |
+| $deltatoken | string | A [state token](/graph/delta-query-overview) returned in the `deltaLink` URL of the previous **delta** function call for the same **calendarView**, indicating the completion of that round of change tracking. Save and apply the entire `deltaLink` URL including this token in the first request of the next round of change tracking for that **calendarView**.|
+| $skiptoken | string | A [state token](/graph/delta-query-overview) returned in the `nextLink` URL of the previous **delta** function call, indicating there are further changes to be tracked in the same **calendarView**. |
 
-Does not support `$expand`, `$filter`, `$orderby`, `$select`, and `$search`.
+Delta query on **calendarView** does not support `$expand`, `$filter`, `$orderby`, `$select`, and `$search`.
 
+###  Limitations
+Delta query on a **calendarView** returns all the properties as returned in a `GET /calendarview` request. You cannot apply the `$select` parameter in this case.
+
+Delta query on **calendarView** also returns events outside the specified date/time range that have been modified since the last delta sync call, under "@removed" with the reason "deleted". This is because from the sync window perspective, these events are not part of it and are considered as removed/deleted from the window.
+You can filter these removed events when doing the sync according to their scenario.
 
 ## Request headers
 | Name       | Type | Description |
@@ -159,7 +174,7 @@ Does not support `$expand`, `$filter`, `$orderby`, `$select`, and `$search`.
 
 ## Response
 
-### Delta function on events (preview)
+### Delta function on events
 If successful, this method returns a `200 OK` response code and an [event](../resources/event.md) collection in the response body. Each **event** in the response contains only 
 the **id**, **type**, **start** and **end** properties for performance reasons. Use `GET /events/{id}` subsequently to expand any events from the response.  
 
@@ -170,7 +185,7 @@ Expect to get all the properties you'd normally get from a `GET /calendarview` r
 
 ## Examples
 
-### Example 1: Delta function on events in a calendar (preview)
+### Example 1: Delta function on events in a calendar
 #### Request
 The following example shows the initial sync request to get events in the signed-in user's default calendar, that occur on or after the specified `startDateTime` parameter. The initial request does not include any state token. 
 
@@ -233,7 +248,7 @@ Content-type: application/json
 The following example shows the initial sync request to get events in the specified calendar of the signed-in user, within the range of dates indicated by the **calendarView**. The initial request does not include any state token. 
 
 The request uses the `Prefer: odata.maxpagesize` header to limit the maximum number of events in each response to 2. 
-Continue calling the `delta` function by using the query returned in `@odata.nextLink` until you get all the events in that calendar view, and a `@odata.deltaLink`
+Continue calling the `delta` function by using the query returned in `@odata.nextLink` until you get all the events in that **calendarView**, and a `@odata.deltaLink`
 in the response.
 
 # [HTTP](#tab/http)
@@ -461,7 +476,7 @@ Content-type: application/json
 
 ## See also
 
-- [Microsoft Graph delta query](/graph/delta-query-overview)
+- [Use delta query to track changes in Microsoft Graph data](/graph/delta-query-overview)
 - [Get incremental changes to events in a folder](/graph/delta-query-events)
 
 <!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
