@@ -12,4 +12,4 @@ ms.topic: include
 | Any | 300 requests per 1 minute | 200 requests per 1 minute |
 
 The preceding limits apply to the following resources:  
-identityContainer, identityProvider.
+assignmentOrder, authenticationFlowsPolicy, b2cAuthenticationMethodsPolicy, b2cIdentityUserFlow, b2xIdentityUserFlow, builtInIdentityProvider, identityApiConnector, identityBuiltInUserFlowAttribute, identityCustomUserFlowAttribute, identityProvider, identityUserFlow, identityUserFlowAttribute, identityUserFlowAttributeAssignment, openIdConnectIdentityProvider, openIdConnectProvider, socialIdentityProvider, trustFramework, trustFrameworkKeySet, trustFrameworkPolicy, userFlowLanguageConfiguration, userFlowLanguagePage.

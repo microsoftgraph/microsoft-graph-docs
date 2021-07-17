@@ -14,4 +14,4 @@ ms.topic: include
 | Any | 2000 requests per 20 seconds | 1000 requests per 20 seconds |
 
 The preceding limits apply to the following resources:  
-deviceInstallState, eBookInstallSummary, iosVppEBook, iosVppEBookAssignment, managedEBook, managedEBookAssignment, userInstallStateSummary.
+deviceInstallState, eBookInstallSummary, iosVppEBook, iosVppEBookAssignment, managedEBook, managedEBookAssignment, managedEBookCategory, userInstallStateSummary.

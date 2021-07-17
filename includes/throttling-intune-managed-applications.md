@@ -14,4 +14,4 @@ ms.topic: include
 | Any | 2000 requests per 20 seconds | 1000 requests per 20 seconds |
 
 The preceding limits apply to the following resources:  
-managedAppOperation, managedAppPolicy, managedAppPolicyDeploymentSummary, managedAppRegistration, managedAppStatus, managedMobileApp, targetedManagedAppPolicyAssignment, windowsInformationProtectionAppLockerFile.
+androidManagedAppProtection, androidManagedAppRegistration, defaultManagedAppProtection, iosManagedAppProtection, iosManagedAppRegistration, managedAppConfiguration, managedAppOperation, managedAppPolicy, managedAppPolicyDeploymentSummary, managedAppProtection, managedAppRegistration, managedAppStatus, managedAppStatusRaw, managedMobileApp, mdmWindowsInformationProtectionPolicy, targetedManagedAppConfiguration, targetedManagedAppPolicyAssignment, targetedManagedAppProtection, windowsInformationProtection, windowsInformationProtectionAppLockerFile, windowsInformationProtectionDeviceRegistration, windowsInformationProtectionPolicy, windowsInformationProtectionWipeAction.

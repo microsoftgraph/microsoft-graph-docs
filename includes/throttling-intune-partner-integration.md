@@ -6,7 +6,7 @@ ms.topic: include
 ---
 <!-- markdownlint-disable MD041 -->
 <!-- this file is auto-generated don't edit it manually! -->
-#### Intune troubleshooting service limits
+#### Intune partner integration service limits
 
 | Request type | Limit per tenant for all apps | Limit per app per tenant |
 | ------------ | ------- | ------- |
@@ -14,4 +14,4 @@ ms.topic: include
 | Any | 2000 requests per 20 seconds | 1000 requests per 20 seconds |
 
 The preceding limits apply to the following resources:  
-appleVppTokenTroubleshootingEvent, deviceManagementAutopilotEvent, deviceManagementAutopilotPolicyStatusDetail, deviceManagementTroubleshootingEvent, enrollmentTroubleshootingEvent, mobileAppIntentAndState, mobileAppTroubleshootingEvent.
+appVulnerabilityManagedDevice, appVulnerabilityMobileApp, appVulnerabilityTask, configManagerCollection, deviceAppManagementTask, securityConfigurationTask, unmanagedDeviceDiscoveryTask, vulnerableManagedDevice.
