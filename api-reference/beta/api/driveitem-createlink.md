@@ -12,12 +12,12 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-You can use **createLink** action to share a [driveItem](../resources/driveitem.md) via a sharing link.
+Share a [driveItem](../resources/driveitem.md) by creating a [permission](../resources/permission.md) with a sharing link.
 
-The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application.
+The **createLink** action creates a new [sharingLink](../resources/sharinglink.md) resource if the specified link type doesn't already exist for the calling application.
 If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 
-DriveItem resources inherit sharing permissions from their ancestors.
+**driveItem** resources inherit sharing permissions from their ancestors.
 
 ## Permissions
 
@@ -68,7 +68,7 @@ The following values are allowed for the **type** parameter.
 | view           | Creates a read-only link to the **driveItem**.                                                                        |
 | review         | Creates a review link to the **driveItem**. This option is only available for files in OneDrive for Business and SharePoint.                   |
 | edit           | Creates an read-write link to the **driveItem**.                                                                       |
-| embed          | Creates an embeddable link to the **driveItem**.                                                                      |
+| embed          | Creates an embeddable link to the **driveItem**. This option is only available for files in OneDrive personal. See an example in [Create embeddable links](/graph/files-share-driveitems-overview#create-embeddable-links).                                                                    |
 | blocksDownload | Creates a read-only link that blocks download to the **driveItem**. This option is only available for files in OneDrive for Business and SharePoint.  |
 | createOnly     | Creates an upload-only link to the **driveItem**. This option is only available for folders in OneDrive for Business and SharePoint.             |
 | addressBar     | Creates the default link that is shown in the browser address bars for newly created files. Only available in OneDrive for Business and SharePoint. The organization admin configures whether this link type is supported, and what features are supported by this link type. |
@@ -81,12 +81,13 @@ The following values are allowed for the **scope** parameter.
 | Value          | Description
 |:---------------|:------------------------------------------------------------
 | anonymous    | Anyone with the link has access, without needing to sign in. This may include people outside of your organization. Anonymous link support may be disabled by an administrator.
-| organization | Anyone signed into your organization (tenant) can use the link to get access. Only available in OneDrive for Business and SharePoint.
+| organization | Anyone signed into your organization (tenant) can use the link to get access. Only available in OneDrive for Business and SharePoint. See an example in [Create company sharable links](/graph/files-share-driveitems-overview#create-company-sharable-links).
 | users        | Specific people in the recipients collection can use the link to get access. Only available in OneDrive for Business and SharePoint.
+
 
 ## Response
 
-If successful, this method returns a single [Permission](../resources/permission.md) resource in the response body that represents the requested sharing permissions.
+If successful, this method returns a single [permission](../resources/permission.md) resource in the response body that represents the requested sharing permissions.
 
 The response will be `201 Created` if a new sharing link is created for the **driveItem** or `200 OK` if an existing link is returned.
 
@@ -167,6 +168,7 @@ Content-Type: application/json
   "hasPassword": true
 }
 ```
+
 
 ### Example 2: Creating company sharable links
 
@@ -299,6 +301,7 @@ Content-Type: application/json
   }
 }
 ```
+
 
 ## Remarks
 

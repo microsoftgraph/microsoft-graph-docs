@@ -5,15 +5,21 @@ ms.date: 09/10/2017
 title: Access shared items
 localization_priority: Normal
 doc_type: apiPageType
-ms.prod: ""
+ms.prod: "sharepoint"
 ---
-# Accessing shared DriveItems
+# Get sharedDriveItem
 
 Namespace: microsoft.graph
 
-Access a shared [DriveItem](../resources/driveitem.md) or a collection of shared items by using a **shareId** or sharing URL.
+Get a shared [driveItem](../resources/driveitem.md) or a collection of shared items by using a **shareId** or sharing URL.
 
 To use a sharing URL with this API, your app needs to [transform the URL into a sharing token](#encoding-sharing-urls).
+
+This method returns a [sharedDriveItem](../resources/shareddriveitem.md) which contains useful relationships such as **root**, **items**, and the actual shared **driveItem**, enabling access to content within the scope of the shared item. 
+
+You can also access the shared [driveItem](../resources/driveitem.md) directly in the same call. See the related examples:
+- [Example 2: Get a shared item which is a single file](#example-2-get-a-shared-item-which-is-a-single-file)
+- [Example 3: Get a shared folder and the files it contains](#example-3-get-a-shared-folder-and-the-files-it-contains)
 
 ## Permissions
 
@@ -27,13 +33,25 @@ One of the following permissions is required to call this API. To learn more, in
 
 ## HTTP request
 
+To get a **sharedDriveItem** resource:
 <!-- { "blockType": "ignored" } -->
-
 ```http
 GET /shares/{shareIdOrEncodedSharingUrl}
 ```
 
-### Path parameters
+To get a shared **driveItem** that is a single file:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /shares/{shareIdOrUrl}/driveItem
+```
+
+To get a shared **driveItem** that is a folder, and the files it contains:
+<!-- { "blockType": "ignored" } -->
+```http
+GET /shares/{shareIdOrUrl}/driveItem?$expand=children
+```
+
+## Path parameters
 
 | Parameter Name                 | Value    | Description                                                                         |
 |:-------------------------------|:---------|:------------------------------------------------------------------------------------|
@@ -76,9 +94,10 @@ whereas redeemSharingLinkIfNecessary is intended for scenarios where the intenti
 
 If successful, this method returns a `200 OK` response code and a [sharedDriveItem](../resources/shareddriveitem.md) resource in the response body.
 
-## Example
+## Examples
 
-### Request
+### Example 1: Get a **sharedDriveItem**
+#### Request
 
 Here is an example of the request to retrieve a shared item:
 
@@ -108,7 +127,7 @@ GET /shares/{shareIdOrEncodedSharingUrl}
 ---
 
 
-### Response
+#### Response
 
 Here is an example of the response.
 
@@ -130,17 +149,11 @@ Content-type: application/json
 }
 ```
 
-## Access the shared item directly
+### Example 2: Get a shared item which is a single file
 
-While the [**SharedDriveItem**](../resources/shareddriveitem.md) contains some useful information, most apps will want to directly access the shared [DriveItem](../resources/driveitem.md).
-The **SharedDriveItem** resource includes a **root** and **items** relationships which can access content within the scope of the shared item.
+#### Request
 
-## Example (single file)
-
-### Request
-
-By requesting the **driveItem** relationship, the **DriveItem** that was shared will be returned.
-
+By requesting the **driveItem** relationship, the **driveItem** that was shared will be returned.
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "get-shared-driveitem" } -->
@@ -167,7 +180,7 @@ GET /shares/{shareIdOrUrl}/driveItem
 ---
 
 
-### Response
+#### Response
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.driveItem" } -->
 
@@ -184,11 +197,11 @@ Content-Type: application/json
 }
 ```
 
-## Example (shared folder)
+### Example 3: Get a shared folder and the files it contains
 
-### Request
+#### Request
 
-By requesting the **driveItem** relationship and expanding the **children** collection, the **DriveItem** that was shared will be returned along with the files within the shared folder.
+By requesting the **driveItem** relationship and expanding the **children** collection, the **driveItem** that was shared will be returned along with the files within the shared folder.
 
 
 # [HTTP](#tab/http)
@@ -216,7 +229,7 @@ GET /shares/{shareIdOrUrl}/driveItem?$expand=children
 ---
 
 
-### Response
+#### Response
 
 <!-- { "blockType": "response", "truncated": true, "@odata.type": "microsoft.graph.driveItem" } -->
 

@@ -4306,25 +4306,43 @@ items:
           href: api/driveitem-preview.md
         - name: Get item analytics
           href: api/itemanalytics-get.md
-      - name: Permissions
-        href: resources/permission.md
+      - name: Share items
         items:
-        - name: Create sharing link
-          href: api/driveitem-createlink.md
-        - name: Use sharing links
-          href: api/shares-get.md
-        - name: Grant access to sharing link
-          href: api/permission-grant.md
-        - name: List permissions
-          href: api/driveitem-list-permissions.md
-        - name: Add permissions
-          href: api/driveitem-invite.md
-        - name: Get permission
-          href: api/permission-get.md
-        - name: Update permission
-          href: api/permission-update.md
-        - name: Delete permission
-          href: api/permission-delete.md
+        - name: Permissions
+          expanded: true
+          items:
+          - name: Permission
+            href: resources/permission.md
+          - name: List permissions
+            href: api/driveitem-list-permissions.md
+          - name: Get permission
+            href: api/permission-get.md
+          - name: Update permission
+            href: api/permission-update.md
+          - name: Delete permission
+            href: api/permission-delete.md
+          - name: Share item by link
+            href: api/driveitem-createlink.md
+          - name: Share item with recipients
+            href: api/driveitem-invite.md
+        - name: Share by link facet
+          expanded: true
+          items:
+          - name: SharingLink
+            href: resources/sharinglink.md
+          - name: Share item by link
+            href: api/driveitem-createlink.md
+          - name: Grant access to sharing link
+            href: api/permission-grant.md
+          - name: Get shared item
+            href: api/shares-get.md
+        - name: Share by invitation facet
+          expanded: true
+          items:
+          - name: SharingInvitation
+            href: resources/sharinginvitation.md
+          - name: Share item with recipients
+            href: api/driveitem-invite.md
     - name: Identity and access
       displayName: Azure AD, Microsoft identity platform
       items:

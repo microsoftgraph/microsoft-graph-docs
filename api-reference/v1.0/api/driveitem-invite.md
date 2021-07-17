@@ -7,12 +7,13 @@ ms.prod: "sharepoint"
 description: "Sends a sharing invitation for a driveItem."
 doc_type: apiPageType
 ---
-# Send a sharing invitation
+# driveItem: invite
 
 Namespace: microsoft.graph
 
-Sends a sharing invitation for a **driveItem**.
-A sharing invitation provides permissions to the recipients and optionally sends them an email with a [sharing link][].
+Share a [driveItem](../resources/driveitem.md) with specified recipients by creating a collection of [permission](../resources/permission.md) objects for the recipients. Optionally sends an email or post to the recipients to invite and notify them of the item sharing.
+
+A successful request sets properties of each **permission** requested on the **driveItem**. Among the properties is the **invitation** property which is a [sharingInvitation](../resources/sharinginvitation.md) resource representing the invitation facet of the permission.
 
 ## Permissions
 
@@ -35,6 +36,12 @@ POST /me/drive/items/{item-id}/invite
 POST /sites/{siteId}/drive/items/{itemId}/invite
 POST /users/{userId}/drive/items/{itemId}/invite
 ```
+
+## Request headers
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer {token}. Required.  |
+| Content-Type  | application/json  |
 
 ## Request body
 
@@ -60,10 +67,14 @@ In the request body, provide a JSON object with the following parameters.
 | recipients       | Collection([DriveRecipient][]) | A collection of recipients who will receive access and the sharing invitation.
 | message          | String                         | A plain text formatted message that is included in the sharing invitation. Maximum length 2000 characters.
 | requireSignIn    | Boolean                        | Specifies whether the recipient of the invitation is required to sign-in to view the shared item.
-| sendInvitation   | Boolean                        | If true, a [sharing link][] is sent to the recipient. Otherwise, a permission is granted directly without sending a notification.
+| sendInvitation   | Boolean                        | If true, a sharing link is sent to each recipient. Otherwise, a permission is granted directly without sending a notification.
 | roles            | Collection(String)             | Specify the roles that are to be granted to the recipients of the sharing invitation.
 | expirationDateTime | DateTimeOffset                       | Specify the DateTime after which the permission expires. Available on OneDrive for Business, SharePoint, and premium personal OneDrive accounts.
 | password           | String                         | The password set on the invite by the creator. Optional and OneDrive Personal only.
+
+## Response
+If successful, this method returns `200 OK` response code and a collection of [permission](../resources/permission.md) resources in the response body. Each **permission** resource corresponds with a single recipient in the `recipients` parameter.
+
 
 ## Example
 
@@ -71,9 +82,6 @@ This example sends a sharing invitation to a user with email address "ryan@conto
 The invitation grants Ryan read-write access to the file.
 
 ### HTTP request
-
-If successful, this method returns `200 OK` response code and [permission](../resources/permission.md) collection object in the response body.
-
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "send-sharing-invite", "scopes": "files.readwrite", "target": "action" } -->
@@ -160,7 +168,6 @@ how errors are returned.
 
 [driveRecipient]: ../resources/driverecipient.md
 [error-response]: /graph/errors
-[sharing link]: ../resources/permission.md#sharing-links
 
 <!-- {
   "type": "#page.annotation",

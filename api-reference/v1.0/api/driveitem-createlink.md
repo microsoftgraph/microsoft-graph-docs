@@ -7,16 +7,16 @@ ms.prod: "sharepoint"
 description: "You can use createLink action to share a DriveItem via a sharing link."
 doc_type: apiPageType
 ---
-# Create a sharing link for a DriveItem
+# driveItem: createLink
 
 Namespace: microsoft.graph
 
-You can use **createLink** action to share a [DriveItem](../resources/driveitem.md) via a sharing link.
+Share a [driveItem](../resources/driveitem.md) by creating a [permission](../resources/permission.md) with a sharing link.
 
-The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application.
+The **createLink** action creates a new [sharingLink](../resources/sharinglink.md) resource if the specified link type doesn't already exist for the calling application.
 If a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 
-DriveItem resources inherit sharing permissions from their ancestors.
+**driveItem** resources inherit sharing permissions from their ancestors.
 
 ## Permissions
 
@@ -40,7 +40,13 @@ POST /sites/{siteId}/drive/items/{itemId}/createLink
 POST /users/{userId}/drive/items/{itemId}/createLink
 ```
 
-### Request body
+## Request headers
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer {token}. Required.  |
+| Content-Type  | application/json  |
+
+## Request body
 
 The body of the request defines properties of the sharing link your application is requesting.
 The request should be a JSON object with the following properties.
@@ -61,7 +67,7 @@ The following values are allowed for the **type** parameter.
 |:-----------|:---------------------------------------------------------------------------------------------|
 | `view`     | Creates a read-only link to the DriveItem.                                                        |
 | `edit`     | Creates a read-write link to the DriveItem.                                                       |
-| `embed`    | Creates an embeddable link to the DriveItem. This option is only available for files in OneDrive personal. |
+| `embed`    | Creates an embeddable link to the DriveItem. This option is only available for files in OneDrive personal. See an example in [Create embeddable links](/graph/files-share-driveitems-overview#create-embeddable-links). |
 
 ### Scope types
 
@@ -71,12 +77,12 @@ If the **scope** parameter is not specified, the default link type for the organ
 | Value          | Description
 |:---------------|:------------------------------------------------------------
 | `anonymous`    | Anyone with the link has access, without needing to sign in. This may include people outside of your organization. Anonymous link support may be disabled by an administrator.
-| `organization` | Anyone signed into your organization (tenant) can use the link to get access. Only available in OneDrive for Business and SharePoint.
+| `organization` | Anyone signed into your organization (tenant) can use the link to get access. Only available in OneDrive for Business and SharePoint. See an example in [Create company sharable links](/graph/files-share-driveitems-overview#create-company-sharable-links).
 
 
 ## Response
 
-If successful, this method returns a single [Permission](../resources/permission.md) resource in the response body that represents the requested sharing permissions.
+If successful, this method returns a single [permission](../resources/permission.md) resource in the response body that represents the requested sharing permission.
 
 The response will be `201 Created` if a new sharing link is created for the item or `200 OK` if an existing link is returned.
 
@@ -147,131 +153,6 @@ Content-Type: application/json
 }
 ```
 
-## Creating company sharable links
-
-OneDrive for Business and SharePoint support company sharable links.
-These are similar to anonymous links, except they only work for members of the owning organization.
-To create a company sharable link, use the **scope** parameter with a value of `organization`.
-
-### Request
-
-
-# [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "create-link-scoped", "scopes": "files.readwrite", "tags": "service.sharepoint" } -->
-
-```http
-POST /me/drive/items/{item-id}/createLink
-Content-Type: application/json
-
-{
-  "type": "edit",
-  "scope": "organization"
-}
-```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-link-scoped-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-link-scoped-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-link-scoped-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-link-scoped-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-### Response
-
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
-
-```http
-HTTP/1.1 201 Created
-Content-Type: application/json
-
-{
-  "id": "123ABC",
-  "roles": ["write"],
-  "link": {
-    "type": "edit",
-    "scope": "organization",
-    "webUrl": "https://contoso-my.sharepoint.com/personal/ellen_contoso_com/...",
-    "application": {
-      "id": "1234",
-      "displayName": "Sample Application"
-    },
-  },
-}
-```
-
-## Creating embeddable links
-
-When using the `embed` link type, the webUrl returned can be embedded in an `<iframe>` HTML element.
-When an embed link is created the `webHtml` property contains the HTML code for an `<iframe>` to host the content.
-
-**Note:** Embed links are only supported for OneDrive personal.
-
-### Request
-
-
-# [HTTP](#tab/http)
-<!-- { "blockType": "request", "name": "create-embedded-link", "scopes": "files.readwrite", "tags": "service.onedrive service.graph" } -->
-
-```http
-POST /me/drive/items/{item-id}/createLink
-Content-Type: application/json
-
-{
-  "type": "embed"
-}
-```
-# [C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/create-embedded-link-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/create-embedded-link-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/create-embedded-link-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# [Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/create-embedded-link-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
-
-### Response
-
-<!-- { "blockType": "response", "@odata.type": "microsoft.graph.permission" } -->
-
-```http
-HTTP/1.1 201 Created
-Content-Type: application/json
-
-{
-  "id": "123ABC",
-  "roles": ["read"],
-  "link": {
-    "type": "embed",
-    "webHtml": "<IFRAME src=\"https://onedrive.live.com/...\"></IFRAME>",
-    "webUrl": "https://onedrive.live.com/...",
-    "application": {
-      "id": "1234",
-      "displayName": "Sample Application"
-    },
-  }
-}
-```
 
 ## Remarks
 

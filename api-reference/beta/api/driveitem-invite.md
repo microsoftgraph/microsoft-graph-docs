@@ -7,14 +7,15 @@ localization_priority: Normal
 ms.prod: "sharepoint"
 doc_type: apiPageType
 ---
-# Send a sharing invitation
+# driveItem: invite
 
 Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Sends a sharing invitation for a **DriveItem**.
-A sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
+Share a [driveItem](../resources/driveitem.md) with specified recipients by creating a collection of [permission](../resources/permission.md) objects for the recipients. Optionally sends an email or post to the recipients to invite and notify them of the item sharing.
+
+A successful request sets properties of each **permission** requested on the **driveItem**. Among the properties is the **invitation** property which is a [sharingInvitation](../resources/sharinginvitation.md) resource representing the invitation facet of the permission.
 
 ## Permissions
 
@@ -38,6 +39,12 @@ POST /sites/{siteId}/drive/items/{itemId}/invite
 POST /users/{userId}/drive/items/{itemId}/invite
 ```
 
+## Request headers
+| Header       | Value |
+|:---------------|:--------|
+| Authorization  | Bearer {token}. Required.  |
+| Content-Type  | application/json  |
+
 ## Request body
 
 In the request body, provide a JSON object with the following parameters.
@@ -59,13 +66,16 @@ In the request body, provide a JSON object with the following parameters.
 
 | Parameter        | Type                                            | Description                                                                                                |
 |:-----------------|:------------------------------------------------|:-----------------------------------------------------------------------------------------------------------|
-| recipients       | Collection([DriveRecipient](../resources/driverecipient.md)) | A collection of recipients who will receive access and the sharing invitation.                                            |
+| recipients       | Collection([driveRecipient](../resources/driverecipient.md)) | A collection of recipients to receive access. The recipients receive a sharing invitation if **sendInvitation** is true.                                            |
 | message          | String                                          | A plain text formatted message that is included in the sharing invitation. Maximum length 2000 characters. |
 | requireSignIn    | Boolean                                         | Specifies where the recipient of the invitation is required to sign-in to view the shared item.            |
-| sendInvitation   | Boolean                                         | Specifies if an email or post is generated (false) or if the permission is just created (true).            |
-| roles            | Collection(String)                              | Specify the roles that are be granted to the recipients of the sharing invitation.                         |
+| sendInvitation   | Boolean                                         | Specifies if an email or post is generated (`true`) or if the permission is just created (`false`).            |
+| roles            | Collection(String)                              | Specify the roles that are be granted to the recipients of the sharing invitation.                       |
 | expirationDateTime | DateTimeOffset                       | Specify the DateTime after which the permission expires. Available on OneDrive for Business, SharePoint, and premium personal OneDrive accounts.
 | password           | String                         | The password set on the invite by the creator. Optional and OneDrive Personal only
+
+## Response
+If successful, this method returns `200 OK` response code and a collection of [permission](../resources/permission.md) resources in the response body. Each **permission** resource corresponds to a single recipient in the `recipients` parameter.
 
 ## Example
 
@@ -73,9 +83,6 @@ This example sends a sharing invitation to a user with email address "ryan@conto
 The invitation grants Ryan read-write access to the file.
 
 ### HTTP request
-
-If successful, this method returns `200 OK` response code and [permission](../resources/permission.md) collection object in the response body.
-
 
 # [HTTP](#tab/http)
 <!-- { "blockType": "request", "name": "send-sharing-invite", "@odata.type": "microsoft.graph.inviteParameters", "scopes": "files.readwrite", "target": "action" } -->

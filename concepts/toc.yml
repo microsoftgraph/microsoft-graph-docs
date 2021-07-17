@@ -244,8 +244,12 @@ items:
           - name: Rubrics
             href: education-rubric-overview.md
       - name: Files
-        href: onedrive-concept-overview.md
         displayName: OneDrive, OneDrive for Business, OneDrive business, OneDrive personal, SharePoint
+        items:
+          - name: Overview
+            href: onedrive-concept-overview.md
+          - name: Share files and folders
+            href: files-share-driveitems-overview.md
       - name: Financials (preview)
         href: dynamics-business-central-concept-overview.md
         displayName: Dynamics, Dynamics 365 Business Central

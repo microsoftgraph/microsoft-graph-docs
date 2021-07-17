@@ -143,7 +143,7 @@ Content-type: application/json
 
 >**Note:** The response object shown here might be shortened for readability.
 
-If the link is an [existing access](../resources/permission.md#existing-access-link) link, additional permissions will be returned representing the following:
+If the link has [existing access](/graph/files-share-driveitems-overview#link-with-existing-access), additional permissions will be returned representing the following:
 
 - User-type permissions representing recipients who were successfully granted access. These can be identified by presence of the **grantedTo** property.
 - Link-type permissions representing invitations that need to be sent to unrecognized external users for them to gain access. These can be identified by the presence of an [invitation](../resources/sharinginvitation.md) facet. These entries will contain a [link][sharing-link] with the invitation URL, and the grantedToIdentities collection will indicate the users to whom the link should be sent.
