@@ -1,6 +1,6 @@
 ---
 title: "cloudPcDeviceImage resource type"
-description: "Represents the image resource on cloud PC."
+description: "Represents the image resource on Cloud PC."
 author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents the image resource on a cloud PC.
+Represents the image resource on a Cloud PC.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -32,14 +32,14 @@ Represents the image resource on a cloud PC.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for the image resource on the cloud PC. Read-only.|
+|id|String|Unique identifier for the image resource on the Cloud PC. Read-only.|
 |sourceImageResourceId|String|The ID of the source image resource on Azure. Required format: "/subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/images/{imageName}".|
 |displayName|String|The image's display name.|
 |version|String|The image version. For example: 0.0.1, 1.5.13.|
 |osBuildNumber|String|The image's OS build version. For example: 1909.|
 |operatingSystem|String|The image's operating system. For example: Windows 10 Enterprise.|
 |lastModifiedDateTime|DateTimeOffset|The data and time that the image was last modified. The time is shown in ISO 8601 format and  Coordinated Universal Time (UTC) time. For example, midnight UTC on Jan 1, 2014 appears as '2014-01-01T00:00:00Z'.|
-|status|cloudPcDeviceImageStatus|The status of the image on cloud PC. Possible values are: `pending`, `ready`, `failed`.|
+|status|cloudPcDeviceImageStatus|The status of the image on Cloud PC. Possible values are: `pending`, `ready`, `failed`.|
 |statusDetails|cloudPcDeviceImageStatusDetails|The details of the image's status, which indicates why the upload failed, if applicable. Possible values are: `internalServerError`, `sourceImageNotFound`, `osVersionNotSupported`, and `sourceImageInvalid`.|
 
 ### cloudPcDeviceImageStatus values
@@ -47,7 +47,7 @@ Represents the image resource on a cloud PC.
 |Member|Description|
 |:---|:---|
 |pending|The image upload is in progress.|
-|ready|The image is ready for use on cloud PCs.|
+|ready|The image is ready for use on Cloud PCs.|
 |failed|The image couldn’t be uploaded. |
 
 ### cloudPcDeviceImageStatusDetails values

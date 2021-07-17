@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Represents a Microsoft 365 RBAC role management entity that provides access to role definitions and role assignments surfaced from various RBAC providers. 
 
 The unified role management API currently supports the following RBAC providers in Microsoft 365:
-- cloud PC 
+- Cloud PC 
 - device management (Intune)
 - directory (Azure AD directory roles)
 - entitlement management (Azure AD entitlement management)
@@ -41,7 +41,7 @@ None.
 
 | Relationship | Type        | Description |
 |:-------------|:------------|:------------|
-|cloudPC|[rbacApplicationMultiple](rbacapplicationmultiple.md)|Provides access to role definitions and role assignments of a cloud PC RBAC provider. Read-only. Nullable.|
+|cloudPC|[rbacApplicationMultiple](rbacapplicationmultiple.md)|Provides access to role definitions and role assignments of a Cloud PC RBAC provider. Read-only. Nullable.|
 |deviceManagement|[rbacApplicationMultiple](rbacapplicationmultiple.md)| Provides access to role definitions and role assignments of an Intune RBAC provider. Read-only. Nullable.|
 |directory|[rbacApplication](rbacapplication.md)|Provides access to role definitions and role assignments of an Azure AD RBAC provider. Read-only. Nullable.|
 |entitlementManagement|[rbacApplication](rbacapplication.md)| Provides access to role definitions and role assignments of Azure AD entitlement management. Read-only. Nullable.|

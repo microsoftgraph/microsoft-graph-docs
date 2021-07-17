@@ -1,6 +1,6 @@
 ---
 title: "cloudPcProvisioningPolicy resource type"
-description: "Represents a cloud PC provisioning policy."
+description: "Represents a Cloud PC provisioning policy."
 author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a cloud PC provisioning policy.
+Represents a Cloud PC provisioning policy.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -32,13 +32,13 @@ Represents a cloud PC provisioning policy.
 
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for the cloud PC provisioning policy. Read-only.|
+|id|String|Unique identifier for the Cloud PC provisioning policy. Read-only.|
 |displayName|String|The display name for the provisioning policy.|
 |description|String|The provisioning policy description.|
-|onPremisesConnectionId|String|The ID of the cloudPcOnPremisesConnection. To ensure that cloud PCs have network connectivity and that they domain join, choose a connection with a virtual network that’s validated by the cloud PC service.|
-|imageId|String|The ID of the OS image you want to provision on cloud PCs. The format for a gallery type image is: {publisher_offer_sku}.|
+|onPremisesConnectionId|String|The ID of the cloudPcOnPremisesConnection. To ensure that Cloud PCs have network connectivity and that they domain join, choose a connection with a virtual network that’s validated by the Cloud PC service.|
+|imageId|String|The ID of the OS image you want to provision on Cloud PCs. The format for a gallery type image is: {publisher_offer_sku}.|
 |imageDisplayName|String|The display name for the OS image you’re provisioning.|
-|imageType|cloudPcProvisioningPolicyImageType|The type of OS image (custom or gallery) you want to provision on cloud PCs. Possible values are: `gallery`, `custom`.|
+|imageType|cloudPcProvisioningPolicyImageType|The type of OS image (custom or gallery) you want to provision on Cloud PCs. Possible values are: `gallery`, `custom`.|
 
 ## Relationships
 

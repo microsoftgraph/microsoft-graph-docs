@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Get the properties and relationships of a [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object of an RBAC provider. 
 
 The following RBAC providers are currently supported:
-- cloud PC 
+- Cloud PC 
 - device management (Intune)
 
 For other Microsoft 365 applications (like Azure AD), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
@@ -47,7 +47,7 @@ Depending on the RBAC provider and the permission type (delegated or application
 
 ## HTTP request
 
-To get the properties and relationships of a unifiedRoleAssignmentMultiple for a cloud PC provider:
+To get the properties and relationships of a unifiedRoleAssignmentMultiple for a Cloud PC provider:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/cloudPC/roleAssignments/{id}
@@ -307,7 +307,7 @@ Content-type: application/json
   ]
 }
 ```
-### Example 4: Get a roleAssignmentMultiple in a cloud PC provider
+### Example 4: Get a roleAssignmentMultiple in a Cloud PC provider
 
 #### Request
 
@@ -369,7 +369,7 @@ Content-type: application/json
 }
 ```
 
-### Example 5: Get a roleAssignmentMultiple in a cloud PC provider with `$expand`
+### Example 5: Get a roleAssignmentMultiple in a Cloud PC provider with `$expand`
 
 #### Request
 

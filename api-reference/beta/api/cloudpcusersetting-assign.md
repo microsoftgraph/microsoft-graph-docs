@@ -1,6 +1,6 @@
 ---
 title: "cloudPcUserSetting: assign"
-description: "Assign a cloud PC user setting to user groups."
+description: "Assign a Cloud PC user setting to user groups."
 author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: "cloud-pc"
@@ -51,7 +51,7 @@ In the request body, supply a JSON representation of the [cloudPcUserSettingAssi
 
 |Parameter|Type|Description|
 |:---|:---|:---|
-|assignments|[cloudPcUserSettingAssignment](../resources/cloudpcusersettingassignment.md) collection | The collection of cloud PC user setting resources each to be assigned to the corresponding target group. Only Microsoft 365 groups and security groups in Azure AD are currently supported. |
+|assignments|[cloudPcUserSettingAssignment](../resources/cloudpcusersettingassignment.md) collection | The collection of Cloud PC user setting resources each to be assigned to the corresponding target group. Only Microsoft 365 groups and security groups in Azure AD are currently supported. |
 
 ## Response
 

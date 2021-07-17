@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Get the properties and relationships of a [unifiedRoleDefinition](../resources/unifiedRoleDefinition.md) object of an RBAC provider. 
 
 The following RBAC providers are currently supported:
-- cloud PC 
+- Cloud PC 
 - device management (Intune)
 - directory (Azure AD directory roles)
 - entitlement management (Azure AD entitlement management)
@@ -61,7 +61,7 @@ Depending on the RBAC provider and the permission type (delegated or application
 
 ## HTTP request
 
-Get a role definition for a cloud PC provider:
+Get a role definition for a Cloud PC provider:
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /roleManagement/cloudPC/roleDefinitions/{id}
@@ -447,7 +447,7 @@ Content-type: application/json
 }
 ```
 
-### Example 4: Get the definition of a built-in role for a cloud PC provider
+### Example 4: Get the definition of a built-in role for a Cloud PC provider
 
 #### Request
 

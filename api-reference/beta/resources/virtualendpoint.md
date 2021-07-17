@@ -1,6 +1,6 @@
 ---
 title: "virtualEndpoint resource type"
-description: "The virtualEndpoint resource represents a container for cloud PC management functionality."
+description: "The virtualEndpoint resource represents a container for Cloud PC management functionality."
 author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: "cloud-pc"
@@ -13,9 +13,9 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a container for APIs to manage cloud PC.
+Represents a container for APIs to manage Cloud PC.
 
-Use the cloud PC API to provision and manage virtual desktops for employees in an organization. Use it in conjunction with the [Intune API](../resources/intune-graph-overview.md) to manage physical and virtual endpoints.
+Use the Cloud PC API to provision and manage virtual desktops for employees in an organization. Use it in conjunction with the [Intune API](../resources/intune-graph-overview.md) to manage physical and virtual endpoints.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## Methods
@@ -45,8 +45,8 @@ Use the cloud PC API to provision and manage virtual desktops for employees in a
 |Relationship|Type|Description|
 |:---|:---|:---|
 |cloudPCs|[cloudPC](../resources/cloudpc.md) collection|Cloud managed virtual desktops.|
-|deviceImages|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) collection|The image resource on cloud PC.|
-|onPremisesConnections|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) collection|A defined collection of Azure resource information that can be used to establish on-premises network connectivity for cloud PCs.|
+|deviceImages|[cloudPcDeviceImage](../resources/cloudpcdeviceimage.md) collection|The image resource on Cloud PC.|
+|onPremisesConnections|[cloudPcOnPremisesConnection](../resources/cloudpconpremisesconnection.md) collection|A defined collection of Azure resource information that can be used to establish on-premises network connectivity for Cloud PCs.|
 |provisioningPolicies|[cloudPcProvisioningPolicy](../resources/cloudpcprovisioningpolicy.md) collection|Cloud PC provisioning policy.|
 |userSettings|[cloudPcUserSetting](../resources/cloudpcusersetting.md) collection|Cloud PC user settings. |
 |auditEvents|[cloudPcAuditEvent](../resources/cloudpcauditevent.md) collection|Cloud PC audit event.|

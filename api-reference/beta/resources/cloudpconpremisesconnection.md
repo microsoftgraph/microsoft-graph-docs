@@ -1,6 +1,6 @@
 ---
 title: "cloudPcOnPremisesConnection resource type"
-description: "Represents a defined collection of Azure resource information that can be used to establish on-premises network connectivity for cloud PCs."
+description: "Represents a defined collection of Azure resource information that can be used to establish on-premises network connectivity for Cloud PCs."
 author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a defined collection of Azure resource information that can be used to establish on-premises network connectivity for cloud PCs.
+Represents a defined collection of Azure resource information that can be used to establish on-premises network connectivity for Cloud PCs.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 

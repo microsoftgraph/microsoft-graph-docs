@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Create a new [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object for an RBAC provider. 
 
 The following RBAC providers are currently supported:
-- cloud PC 
+- Cloud PC 
 - device management (Intune)
 
 For other Microsoft 365 applications (like Azure AD), use [unifiedRoleAssignment](../resources/unifiedroleassignment.md).
@@ -46,7 +46,7 @@ Depending on the RBAC provider and the permission type (delegated or application
 
 ## HTTP request
 
-To create role assignment for a cloud PC provider:
+To create role assignment for a Cloud PC provider:
 
 <!-- { "blockType": "ignored" } -->
 
@@ -222,7 +222,7 @@ Content-type: application/json
 }
 ```
 
-### Example 3: Create a role assignment for a cloud PC provider
+### Example 3: Create a role assignment for a Cloud PC provider
 
 #### Request
 

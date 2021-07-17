@@ -20,7 +20,7 @@ You can create a role assignment with multiple principals and multiple scopes.
 You must provide either **directoryScopeIds** or **appScopeIds**.
 
 The following RBAC providers are currently supported:
-- cloud PC 
+- Cloud PC 
 - Microsoft Intune
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]

@@ -1,6 +1,6 @@
 ---
 title: "cloudPcUserSetting resource type"
-description: "Represent a cloud Pc user setting"
+description: "Represent a Cloud PC user setting"
 author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Represents a cloud PC user setting.
+Represents a Cloud PC user setting.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 
@@ -30,10 +30,10 @@ Represents a cloud PC user setting.
 ## Properties
 |Property|Type|Description|
 |:---|:---|:---|
-|id|String|Unique identifier for the cloud PC user setting. Read-only.|
+|id|String|Unique identifier for the Cloud PC user setting. Read-only.|
 |displayName|String|The setting name displayed in the user interface. |
-|localAdminEnabled|Boolean|Indicates whether the local admin option is enabled. Default value is `false`. To enable the local admin option, change the setting to `true`. If the local admin option is enabled, the end user can be an admin of the cloud PC device. |
-|selfServiceEnabled|Boolean|Indicates whether the self-service option is enabled. Default value is `false`. To enable the self-service option, change the setting to `true`. If the self-service option is enabled, the end user is allowed to perform some self-service operations, such as upgrading the cloud PC through the end user portal.|
+|localAdminEnabled|Boolean|Indicates whether the local admin option is enabled. Default value is `false`. To enable the local admin option, change the setting to `true`. If the local admin option is enabled, the end user can be an admin of the Cloud PC device. |
+|selfServiceEnabled|Boolean|Indicates whether the self-service option is enabled. Default value is `false`. To enable the self-service option, change the setting to `true`. If the self-service option is enabled, the end user is allowed to perform some self-service operations, such as upgrading the Cloud PC through the end user portal.|
 |lastModifiedDateTime|DateTimeOffset|The last date and time the setting was modified. The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'. |
 |createdDateTime|DateTimeOffset|The date and time the setting was created. The Timestamp type represents the date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 looks like this: '2014-01-01T00:00:00Z'. |
 

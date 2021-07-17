@@ -16,7 +16,7 @@ Namespace: microsoft.graph
 Update an existing [unifiedRoleAssignmentMultiple](../resources/unifiedroleassignmentmultiple.md) object of an RBAC provider. 
 
 The following RBAC providers are currently supported:
-- cloud PC 
+- Cloud PC 
 - device management (Intune)
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
@@ -46,7 +46,7 @@ Depending on the RBAC provider and the permission type (delegated or application
 
 ## HTTP request
 
-To update an existing unfiedRoleAssignmentMultiple for a cloud PC provider:
+To update an existing unfiedRoleAssignmentMultiple for a Cloud PC provider:
 <!-- { "blockType": "ignored" } -->
 
 ```http
@@ -130,7 +130,7 @@ HTTP/1.1 204 OK
 
 ```
 
-## Example 2: update an existing unfiedRoleAssignmentMultiple in a cloud PC provider
+## Example 2: update an existing unfiedRoleAssignmentMultiple in a Cloud PC provider
 
 ### Request
 

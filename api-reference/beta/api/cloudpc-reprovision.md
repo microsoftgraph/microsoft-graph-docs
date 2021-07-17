@@ -1,6 +1,6 @@
 ---
 title: "cloudPC: reprovision"
-description: "Reprovision a specific cloud PC."
+description: "Reprovision a specific Cloud PC."
 author: "AshleyYangSZ"
 localization_priority: Normal
 ms.prod: "cloud-pc"
@@ -13,7 +13,7 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Reprovision a specific cloud PC.
+Reprovision a specific Cloud PC.
 
 [!INCLUDE [cloudpc-api-preview](../../includes/cloudpc-api-preview.md)]
 ## Permissions

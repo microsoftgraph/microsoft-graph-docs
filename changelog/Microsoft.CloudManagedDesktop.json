@@ -371,7 +371,7 @@
                     "ApiChange": "Resource",
                     "ChangedApiName": "unifiedroleassignmentmultiple",
                     "ChangeType": "Change",
-                    "Description": "Cloud PC provider supports get, list, create, update and delelte operation for [unifiedroleassignmentmultiple](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroleassignmentmultiple?view=graph-rest-beta).",
+                    "Description": "Cloud PC provider supports get, list, create, update and delete operation for [unifiedroleassignmentmultiple](https://docs.microsoft.com/en-us/graph/api/resources/unifiedroleassignmentmultiple?view=graph-rest-beta).",
                     "Target": "unifiedroleassignmentmultiple"
                 }
             ],
