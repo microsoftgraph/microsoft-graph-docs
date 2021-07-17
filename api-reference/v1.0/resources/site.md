@@ -91,6 +91,7 @@ The `root` identifier always references the root site for a given target, as fol
 | **permissions**   | Collection([permission][])         | The permissions associated with the site. Nullable.
 | **sites**         | Collection([site][])             | The collection of the sub-sites under this site.
 | **onenote**       | [onenote][]                      | Calls the OneNote service for notebook related operations.
+| **termStore**     | [microsoft.graph.termStore.store]  | The termStore under this site.
 
 [columnDefinition]: columndefinition.md
 [baseItem]: baseitem.md
@@ -102,6 +103,7 @@ The `root` identifier always references the root site for a given target, as fol
 [permission]: permission.md
 [site]: site.md
 [onenote]: onenote.md
+[microsoft.graph.termStore.store]: termstore-store.md
 
 ## JSON representation
 
@@ -144,6 +146,7 @@ The **site** resource is derived from [**baseItem**](baseitem.md) and inherits p
   "sites": [ { "@odata.type": "microsoft.graph.site"} ],
   "columns": [ { "@odata.type": "microsoft.graph.columnDefinition" }],
   "onenote": { "@odata.type": "microsoft.graph.onenote"},
+  "termStore": { "@odata.type": "microsoft.graph.termStore.store" },
 
   /* inherited from baseItem */
   "name": "string",

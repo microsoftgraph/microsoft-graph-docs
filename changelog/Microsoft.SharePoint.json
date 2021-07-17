@@ -3,6 +3,24 @@
     {
       "ChangeList": [
         {
+          "Id": "f008d427-4aa4-452d-aa93-0c5c623fdfdd",
+          "ApiChange": "Resource",
+          "ChangedApiName": "termStore.store,termStore.term,termStore.set,termStore.relation",
+          "ChangeType": "Addition",
+          "Description": "Introduced the taxonomy API, including the [termStore.store](https://docs.microsoft.com/en-us/graph/api/resources/termstore-store?view=graph-rest-1.0), [termStore.term](https://docs.microsoft.com/en-us/graph/api/resources/termstore-term?view=graph-rest-1.0), [termStore.set](https://docs.microsoft.com/en-us/graph/api/resources/termstore-set?view=graph-rest-1.0), and [termStore.relation](https://docs.microsoft.com/en-us/graph/api/resources/termstore-relation?view=graph-rest-1.0) resources and associated methods.",
+          "Target": "termStore.store,termStore.term,termStore.set,termStore.relation"
+        }
+      ],
+      "Id": "f008d427-4aa4-452d-aa93-0c5c623fdfdd",
+      "Cloud": "prd",
+      "Version": "v1.0",
+      "CreatedDateTime": "2021-07-13T00:00:00",
+      "WorkloadArea": "Sites and lists ",
+      "SubArea": "Taxonomy"
+    },
+    {
+      "ChangeList": [
+        {
           "Id": "4116e288-18ad-4423-8a95-f1ac63edc3bc",
           "ApiChange": "Resource",
           "ChangedApiName": "site",
