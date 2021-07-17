@@ -184,7 +184,7 @@ Content-Type: application/json
     };
     const client = Client.init(options);
    
-   const fileName = "test.txt";
+    const fileName = "test.txt";
     const file = fs.readFileSync(`./${fileName}`);
     const stats = fs.statSync(`./${fileName}`);
     const requestUrl ="https://graph.microsoft.com/v1.0/print/shares/{id}/jobs/{id}/documents/{id}/createuploadsession"
@@ -197,14 +197,20 @@ Content-Type: application/json
     }
     const uploadSession = await LargeFileUploadTask.createUploadSession(client, requestUrl, payload);
 
-    const fileObject = {
-        content: file,
-        name: fileName,
-        size: stats.size
-    };
-
+    // Create FileUpload object. 
+    /* Note:
+     * As alternatives to using a javascript `File` object to create a `FileUpload`, 
+     * you can use a `ReadStream` object to create a `StreamUpload`.
+     * const readStream = fs.createReadStream(`./test/sample_files/${fileName}`);
+     * const fileObject = new StreamUpload(readStream, fileName, totalsize);
+     * OR
+     * you can also create a custom implementation of the `FileObject` interface.
+     * FileUpload and StreamUpload classes are available in 3.0.0 version of the Microsoft Graph JS client library.
+     */
+    const fileObject = new FileUpload(file, file.name, file.size);
+     
+    // Create LargeFileUploadTask object and start the upload() task
     const task = new LargeFileUploadTask(client, fileObject, uploadSession);
-
     const uploadResponse = await task.upload();
 ```
 ---
