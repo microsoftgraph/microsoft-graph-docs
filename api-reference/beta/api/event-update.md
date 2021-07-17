@@ -13,6 +13,20 @@ Namespace: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
+**Attendee List**
+
+The default behavior of Update event is to send only to modified attendees if the attendee list is the only thing that changed. 
+
+**Note** This requires clients to send only those parameters in the request that were actually updated, rather than sending all properties each time in the `PATCH`.
+
+**When Distribution List (DL) is part of attendee list**
+
+When a client tries to submit a `PATCH` request to remove an attendee from a Distribution List, the service notifies to all attendees.
+
+**Online Meetings**
+
+When modifying the meeting body for an online meeting, the client must first fetch the meeting body and then apply the changes. Since the meeting body contains a meeting blob for an online meeting. If the blob is missing during the meeting body update, the service would assume that the meeting is no longer online and then downgrades the meeting to an offline meeting.
+
 Update the properties of the [event](../resources/event.md) object.
 
 When updating the time zone of the start or end time of an event, first [find the supported time zones](outlookuser-supportedtimezones.md) to make sure you set only time zones that have been configured for the user's mailbox server. 
