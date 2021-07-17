@@ -31,7 +31,7 @@ Represents a Temporary Access Pass registered to a user. A Temporary Access Pass
 |temporaryAccessPass|String|The temporaryAccessPass used to authenticate. Returned only on creation of a new temporaryAccessPass; returned as NULL with GET.|
 |createdDateTime|DateTimeOffset|The date and time when the temporaryAccessPass was created.|
 |startDateTime|DateTimeOffset|The date and time when the temporaryAccessPass becomes available to use.|
-|lifetimeInMinutes|Int32|The lifetime of the temporaryAccessPass in minutes starting at startDateTime. Minimum 10, Maximum 43200 (equivalent to 30 days).|
+|lifetimeInMinutes|Int32|The lifetime of the temporaryAccessPass in minutes starting at startDateTime. Minimum 10, Maximum 480 (equivalent to 30 days).|
 |isUsableOnce|Boolean|Determines whether the pass is limited to a one time use. If `true`, the pass can be used once; if `false`, the pass can be used multiple times within the temporaryAccessPass lifetime.|
 |isUsable|Boolean|The state of the authentication method that indicates whether it's currently usable by the user.|
 |methodUsabilityReason|String|Details about usability state (isUsable). Reasons can include: `enabledByPolicy`, `disabledByPolicy`, `expired`, `notYetValid`, `oneTimeUsed`.|
