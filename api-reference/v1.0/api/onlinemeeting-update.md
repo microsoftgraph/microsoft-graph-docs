@@ -65,6 +65,13 @@ The table below lists the properties that can be updated. In the request body, i
 | isEntryExitAnnounced | Boolean                                                      | Whether or not to announce when callers join or leave.                                                                                         |
 | lobbyBypassSettings  | [lobbyBypassSettings](../resources/lobbyBypassSettings.md)   | Specifies which participants can bypass the meeting lobby.                                                                                     |
 | allowedPresenters    | onlineMeetingPresenters                                      | Specifies who can be a presenter in a meeting. Possible values are everyone, organization, roleIsPresenter, organizer, and unknownFutureValue. |
+| allowAttendeeToEnableCamera     | Boolean                       | Indicates whether attendees can turn on their camera.                          |
+| allowAttendeeToEnableMic     | Boolean                       | Indicates whether attendees can turn on their microphone.                          |
+| allowMeetingChat      | meetingChatMode | Specifies the mode of meeting chat. |
+| allowTeamworkReactions | Boolean | Indicates whether Teams reactions are enabled for the meeting. |
+
+> [!NOTE]
+> For the list of possible values for **allowedPresenters** and **allowMeetingChat**, see [onlineMeeting](../resources/onlinemeeting.md).
 
 ## Response
 If successful, this method returns a `200 OK` response code and an [onlineMeeting](../resources/onlinemeeting.md) object in the response body.

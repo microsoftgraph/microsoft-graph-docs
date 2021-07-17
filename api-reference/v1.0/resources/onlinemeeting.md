@@ -28,12 +28,16 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | Property              | Type                                          | Description                                                                                                                |
 | :-------------------- | :-------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------- |
 | allowedPresenters     | [onlineMeetingPresenters](#onlinemeetingpresenters-values)                       | Specifies who can be a presenter in a meeting. Possible values are listed in the following table.                          |
+| allowAttendeeToEnableCamera     | Boolean                       | Indicates whether attendees can turn on their camera.                          |
+| allowAttendeeToEnableMic     | Boolean                       | Indicates whether attendees can turn on their microphone.                          |
+| allowMeetingChat      | [meetingChatMode](#meetingchatmode-values) | Specifies the mode of meeting chat. |
+| allowTeamworkReactions | Boolean | Indicates whether Teams reactions are enabled for the meeting. |
 | audioConferencing     | [audioConferencing](audioconferencing.md)     | The phone access (dial-in) information for an online meeting. Read-only.                                                   |
 | chatInfo              | [chatInfo](chatinfo.md)                       | The chat information associated with this online meeting.                                                                  |
 | creationDateTime      | DateTime                                      | The meeting creation time in UTC. Read-only.                                                                               |
 | endDateTime           | DateTime                                      | The meeting end time in UTC.                                                                                               |
 | id                    | String                                        | The default ID associated with the online meeting. Read-only.                                                              |
-| isEntryExitAnnounced  | Boolean                                       | Whether or not to announce when callers join or leave.                                                                     |
+| isEntryExitAnnounced  | Boolean                                       | Indicates whether to announce when callers join or leave.                                                                     |
 | joinInformation       | [itemBody](itembody.md)                       | The join information in the language and locale variant specified in the `Accept-Language` request HTTP header. Read-only. |
 | joinWebUrl            | String                                        | The join URL of the online meeting. Read-only.                                                                             |
 | lobbyBypassSettings   | [lobbyBypassSettings](lobbyBypassSettings.md) | Specifies which participants can bypass the meeting   lobby.                                                               |
@@ -51,6 +55,18 @@ Contains information about a meeting, including the URL used to join a meeting, 
 | roleIsPresenter    | Only the participants whose role is presenter are presenters. |
 | organizer          | Only the organizer  is a presenter.                           |
 | unknownFutureValue | Unknow future value.                                          |
+
+> [!NOTE]
+> If the value of **allowedPresenters** is set to `roleIsPresenter`, specify each meeting participant's meeting role using the [meetingParticipantInfo](../resources/meetingparticipantinfo.md) **role** property.
+
+### meetingChatMode values
+
+| Value              | Description                                                            |
+| ------------------ | ---------------------------------------------------------------------- |
+| enabled            | Meeting chat is enabled.                                               |
+| disabled           | Meeting chat is disabled.                                              |
+| limited            | Meeting chat is enabled but only for the duration of the meeting call. |
+| unknownFutureValue | Unknown future value.                                                  |
 
 ## JSON representation
 
@@ -75,7 +91,11 @@ Contains information about a meeting, including the URL used to join a meeting, 
   "videoTeleconferenceId": "String",
   "isEntryExitAnnounced": "Boolean",
   "lobbyBypassSettings": {"@odata.type": "microsoft.graph.lobbyBypassSettings"},
-  "allowedPresenters": "String"
+  "allowedPresenters": "String",
+  "allowMeetingChat": {"@odata.type": "microsoft.graph.meetingChatMode"},
+  "allowTeamworkReactions": "Boolean",
+  "allowAttendeeToEnableMic": "Boolean",
+  "allowAttendeeToEnableCamera": "Boolean"
 }
 ```
 
