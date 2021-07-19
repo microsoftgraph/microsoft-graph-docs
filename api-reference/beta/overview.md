@@ -9,7 +9,7 @@ author: "angelgolfer-ms"
 
 # Microsoft Graph beta endpoint reference
 
-The reference content in this section documents the Microsoft Graph beta endpoint. The beta endpoint includes APIs that are currently in preview and are not yet generally available. We invite you to try these APIs and provide your feedback via the following channels:
+The reference content in this section documents the Microsoft Graph beta endpoint. The beta endpoint includes APIs that are currently in preview and aren't yet generally available. We invite you to try these APIs and provide your feedback via the following channels:
 
 - [GitHub](https://github.com/OfficeDev/microsoft-graph-docs/issues) - For feedback on the Preview APIs. Tag with `beta`.
 - [StackOverflow](https://stackoverflow.com/questions/tagged/microsoft-graph-api) - For questions or help with your code. Tag with `microsoft-graph-api`.
